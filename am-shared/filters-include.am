@@ -1,0 +1,119 @@
+## Process this file with automake to produce Makefile.in
+
+## Copyright (C) 2011 Samediggi
+
+## This program is free software: you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation, either version 3 of the License, or
+## (at your option) any later version.
+
+## This program is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+
+## You should have received a copy of the GNU General Public License
+## along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+####### Source file defs: ########
+
+# need to check way to list build targets like automake
+#! @param GT_FILTER_SRCS required, contains all local additions
+EXTRA_DIST=$(GT_FILTER_SRCS)
+
+####### Automake targets: ########
+
+# @param GT_REGEX_TARGETS required
+noinst_DATA=$(GT_FILTER_TARGETS) $(GT_TAGS)
+
+# Variable to hold filenames for files containing all tags used
+# (all symbols starting with '+')
+GT_TAGS=
+if CAN_HFST
+GT_TAGS+=gttags.txt
+
+gttags.txt: ../morphology/$(GTLANG).lexc.hfst
+	$(AM_V_GEN)$(HFST_SUMMARIZE) -v $^ \
+		| grep -A1 '^sigma set' \
+		| grep -F '+' \
+		| tr ' ' '\n' \
+		| sed 's/,$$//g' \
+		| grep -E '(^\+.|.\+$$)' \
+		> $@
+
+else
+
+if CAN_XFST
+GT_TAGS+=gttags.txt
+
+gttags.txt: ../morphology/$(GTLANG).lexc.xfst
+	$(AM_V_GEN)$(XFST) -q \
+			-e "load stack $^" \
+			-e "print sigma" \
+			-stop \
+		| grep -v '^Size' \
+		| tr ' ' '\n' \
+		| sort \
+		| grep -v '^$$' \
+		| grep -v '^Sigma:' \
+		| grep -E '(^\+.|.\+$$)' \
+		> $@
+
+endif # CAN_XFST
+endif # CAN_HFST
+
+####### Build rules for extracting tags: #######
+
+semantic-tags.txt: gttags.txt
+	$(AM_V_GEN)grep -F '+Sem/' $< > $@
+
+####### Build rules for creating regexes from tag list: #######
+# Do not delete intermediate files:
+.SECONDARY:
+
+# Create regex from tag list for making that tag list optional.
+# The conditional is there to allow for tag list specific shell scripts, ie only
+# optional in certain contexts. If not found, it will fall back to a default
+# shell script.
+make-optional-%-tags.regex: %-tags.txt
+	$(AM_V_GEN)if \
+		test -e $(GTCORE)/scripts/taglist2make_optional_$*_tags_regex.sh ; \
+		then \
+			$(GTCORE)/scripts/taglist2make_optional_$*_tags_regex.sh $< > $@ ; \
+		else \
+			$(GTCORE)/scripts/taglist2make_optional_tags_regex.sh $< > $@ ; \
+		fi
+
+# Create regex from tag list for removing the tags in the tag list from the fst.
+# The conditional is there to allow for tag list specific shell scripts, ie only
+# remove in certain contexts. If not found, it will fall back to a default
+# shell script.
+remove-%-tags.regex: %-tags.txt
+	$(AM_V_GEN)if test -e $(GTCORE)/scripts/taglist2remove_$*_tags_regex.sh ; \
+		then \
+			$(GTCORE)/scripts/taglist2remove_$*_tags_regex.sh $< > $@ ; \
+		else \
+			$(GTCORE)/scripts/taglist2remove_tags_regex.sh $< > $@ ; \
+		fi
+
+####### HFST build rules: ########
+.regex.hfst:
+	$(AM_V_GEN)$(HFST_REGEXP2FST) $(HFST_FLAGS) -S -i $< -o $@
+
+%.hfst: $(GTCORE)/gtshared/src/filters/%.regex
+	$(AM_V_GEN)$(HFST_REGEXP2FST) $(HFST_FLAGS) -S -i $< -o $@
+
+####### Xerox build rules: #######
+.regex.xfst:
+	$(AM_V_GEN)$(PRINTF) "read regex @re\"$<\";\nsave stack $@\nquit\n" |\
+		$(XFST) $(XFSTFLAGS)
+
+%.xfst: $(GTCORE)/gtshared/src/filters/%.regex
+	$(AM_V_GEN)$(PRINTF) "read regex @re\"$<\";\nsave stack $@\nquit\n" |\
+		$(XFST) $(XFSTFLAGS)
+
+####### Other targets: ###########
+clean-local:
+	-rm -f *.hfst *.xfst *.txt
+
+# vim: set ft=automake:
