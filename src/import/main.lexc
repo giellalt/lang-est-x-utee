@@ -1,0 +1,1522 @@
+! Copyright © 1999-2005 by Heli Uibo.
+! Copyright © 2010 by Jaak Pruulmann-Vengerfeldt.
+! All rights reserved.
+
+
+!Definitions
+!  C = [b|d|g|h|j|k|l|m|n|p|r|s|sh|z|zh|t|v];
+!  V = [a|e|i|o|u|õ|ä|ö|ü];
+!  F = [B|D|G|S];	! laadivahelduslikud konsonandid
+!  Alfa = [C | V];
+
+LEXICON Root
+  Tüved;
+  Lisanduvad_erandid;
+  Kohalikud_erandid;
+
+
+LEXICON Kohalikud_erandid
+ teist+Num:teistküm= 05_E-NE;
+ kümmend+Num:küm= 05_E-NE;
+
+ ei+V+neg:ei #;
+ siis+J:siis #;
+ kogu+A:kogu GI;
+ jah+Adv:jah #;
+ nagu+Adv:nagu #;
+ oma+Pron:oma 17;
+ oma+Adv:oma 17;
+ alates+K:alates GI;
+
+ eikeegi+Pron+sg+nom:keegi #;
+ eikeegi+Pron+sg+gen:kellegi #;
+ eikeegi+Pron+sg+part:kedagi #;
+ eikeegi+Pron+sg+ill:kellessegi #;
+ eikeegi+Pron+sg+in:kelleski #;
+ eikeegi+Pron+sg+el:kellestki #;
+ eikeegi+Pron+sg+all:kellelegi #;
+ eikeegi+Pron+sg+ad:kellelgi #;
+ eikeegi+Pron+sg+ad:kelgi #;
+ eikeegi+Pron+sg+abl:kelleltki #;
+ eikeegi+Pron+sg+tr:kellekski #;
+ eikeegi+Pron+sg+abes:kelletagi #;
+ eikeegi+Pron+sg+es:kellenagi #;
+ eikeegi+Pron+sg+term:kellenigi #;
+ eikeegi+Pron+sg+kom:kellegagi #;
+
+ eikusagil+Adv:eikusagil GI;
+ eikusagilt+Adv:eikusagilt GI;
+ eikusagile+Adv:eikusagile GI;
+ eikuskil+Adv:eikuskil GI;
+ eikuskilt+Adv:eikuskilt GI;
+ eikuskile+Adv:eikuskile GI;
+
+! lühitüved
+ hoogne+A+prefix:hoog #;
+ inimene+S+prefix:inim #;
+ kauge+A+prefix:kaug #;
+ kerge+A+prefix:kerg #;
+ kiire+A+prefix:kiir #;
+ kõrge+A+prefix:kõrg #;
+ rõhtne+A+prefix:rõht #;
+ võõras+A+prefix:võõr #;
+ võõras+S+prefix:võõr #;
+ pelgu+A+prefix:pelgu #;
+
+! muutumatud eesliitekomponendid, osa tuletuvad ise.. EKKR, SM31
+ anti+Adv+prefix:anti #; !??
+ eba+Adv+prefix:eba #;
+ ala+Adv+prefix:ala #;
+ all+Adv+prefix:all #;
+ ase+Adv+prefix:ase #;
+ eel+Adv+prefix:eel #;
+ enne+Adv+prefix:enne #;
+ era+Adv+prefix:era #;
+ eri+Adv+prefix:eri #;
+ igi+Adv+prefix:igi #;
+ ilm+Adv+prefix:ilm #;
+ ime+Adv+prefix:ime #;
+ järel+Adv+prefix:järel #;
+ kaas+Adv+prefix:kaas #;
+ kald+Adv+prefix:kald #;
+ kerg+Adv+prefix:kerg #;
+ kõrval+Adv+prefix:kõrval #;
+ liba+Adv+prefix:liba #;
+ läbi+Adv+prefix:läbi #;
+ piki+Adv+prefix:piki #;
+ pool+Adv+prefix:pool #;
+ puht+Adv+prefix:puht #;
+ puru+Adv+prefix:puru #;
+ püsti+Adv+prefix:püsti #;
+ raske+Adv+prefix:rask #;
+ risti+Adv+prefix:risti #;
+ seni+Adv+prefix:seni #;
+ taga+Adv+prefix:taga #;
+ täis+Adv+prefix:täis #;
+ ulgu+Adv+prefix:ulgu #;
+ vaeg+Adv+prefix:vaeg #;
+ vastas+Adv+prefix:vastas #;
+ vastu+Adv+prefix:vastu #;
+ vähe+Adv+prefix:vähe #;
+ üla+Adv+prefix:üla #;
+ üld+Adv+prefix:üld #; !?
+ üli+Adv+prefix:üli #;
+
+ viker+Adv+prefix:viker #; !?
+
+! järelliitekomponendid
+ võitu+Adv+suffix:võitu #;
+
+
+
+! tyvemoodustuse erandid, vokaalmitmuse erandid
+
+! ??? aed+S:aed 22; ! at: aed, bt: aeda, bn: aia, btv: aedu, bnv: aiuA
+ aed+S:aed An_SgN;
+ aed+S:aia$ TP_22bn;
+ aed+S:aeda TP_22bt;
+
+! ??? haug+S:haug 22; ! at: haug, bt: haugi, bn: havi, btv: hauge, bnv: have
+ haug+S:haug An_SgN;
+ haug+S:havi$ TP_22bn;
+ haug+S:haugi TP_22bt;
+
+! erandlik tyvemitmus: king+S:king 22; ! at: king, bt: kinga, bn: kinga, btv: kingi, bnv: kingi
+ king+S:king An_SgN;
+ king+S:kinga$ TP_22bn';
+ king+S:kinga TP_22bt';
+ king+S:kingi An_PlP_V;
+ ! king+S:kingi An_Pl_Vok; ! seda tüvemitmust pigem ei kasutata?
+
+
+! ??? kurat+S:kurat 02; ! a0: kurat, b0: kuradi, b0r: kurade
+ kurat+S:kurat An_SgN;
+ kurat+S:kuradi TP_02b0;
+
+! ??? kuuas+S:kuuas 07_S-0; ! an: kuuas, (at): kuudas, bt: kuuda, btr: #
+ kuuas+S:kuuas$ TP_07an;
+ kuuas+S:kuuda TP_07bt;
+
+! ??? kärbes+S:kärbes 07_S-0; ! an: kärbes, (at): kärbes, bt: kärbse, btr: #
+ kärbes+S:kärbes$ TP_07an;
+ kärbes+S:kärbse TP_07bt;
+
+! ??? köömen+S:köömen 02; ! a0: köömen, b0: köömne, b0r: 0
+ köömen+S:köömen An_SgN;
+ köömen+S:köömne TP_02b0;
+
+! /// küündi:küünDi 28; ! at: küündi, an: küüni
+ küündi TP_28at;
+ küündi:küüni$ TP_28an;
+
+! ??? lemmel+S:lemmel 08; ! an: lemmel, (at): lemmel, bt: lemle
+ lemmel+S:lemmel TP_08an;
+ lemmel+S:lemle TP_07bt;
+
+! ??? lõõg+S:lõõg 22; ! at: lõõg, bt: lõõga, bn: lõa, btv: lõõgu, bnv: 0
+ lõõg+S:lõõg An_SgN;
+ lõõg+S:lõa$ TP_22bn;
+ lõõg+S:lõõga TP_22bt;
+
+! ??? mees+S:mees 13; ! at: mees, (bt): meese, an: mees, bn: mehe, bnv: mehi
+ mees+S:mees An_SgN;
+ mees+S:mehe$ An_SgG;
+ mees+S:mehe$ An_SgG_der; ! ?? need tuletised on ka erandlikud?
+ mees+S:mees An_SgP_t;
+ mees+S:mees An_PlG_te;
+ mees+S:mehi An_PlP_V;
+ ! :i An_Pl_Vok; ! mehile?
+
+! erandlik tyvemitmus: pikk+A+S:pikk 22; ! at: pikk, bt: pikka, bn: pika, btv: pikki, bnv: piki
+ pikk+A:pikk An_SgN;
+ pikk+A:pika TP_22bn';
+ pikk+A:pikka TP_22bt';
+ pikk+A:piki$ An_Pl_Vok;
+ pikk+A:pikki An_PlP_V;
+
+ pikk+S:pikk An_SgN;
+ pikk+S:pika TP_22bn';
+ pikk+S:pikka TP_22bt';
+ pikk+S:piki$ An_Pl_Vok;
+ pikk+S:pikki An_PlP_V;
+
+! ??? pundar+S:pundar 08; ! an: pundar, (at): puntar, bt: puntra
+ pundar+S:pundar$ TP_08an;
+ pundar+S:puntra TP_07bt;
+
+! ??? põrsas+S:põrsas 07_S-0; ! an: põrsas, (at): põrssas, bt: põrssa, btr: #
+ põrsas+S:põrsas$ TP_07an;
+ põrsas+S:põrssa TP_07bt;
+
+! ??? pöial+S:pöial 08; ! an: pöial, (at): pöidal, bt: pöidla
+ pöial+S:pöial$ TP_08an;
+ pöial+S:pöidla TP_07bt;
+
+! ??? raag+S:raag 22; ! at: raag, bt: raaga, bn: raa, btv: raagu, bnv: 0
+ raag+S:raag An_SgN;
+ raag+S:raa$ TP_22bn;
+ raag+S:raaga TP_22bt;
+
+! ??? raag+S:raag 22; ! at: raag, bt: raagu, bn: rao, btv: raage, bnv: 0
+ raag+S:raag An_SgN;
+ raag+S:rao$ TP_22bn;
+ raag+S:raagu TP_22bt;
+
+! ??? roe+S:roe 24_A; ! an: roe, bn: rooja, bt: rooja, bnv: rooje, btv: rooje
+ roe+S:roe An_SgN;
+ roe+S:rooja$ TP_24bn;
+ roe+S:rooja TP_24bt;
+
+! ??? roog+S:roog 22; ! at: roog, bt: rooga, bn: roa, btv: roogi, bnv: 0
+ roog+S:roog An_SgN;
+ roog+S:roa$ TP_22bn;
+ roog+S:rooga TP_22bt;
+
+! ??? saad+S:saad 22; ! at: saad, bt: saadu, bn: sao, btv: saade, bnv: 0
+ saad+S:saad An_SgN;
+ saad+S:sao$ TP_22bn;
+ saad+S:saadu TP_22bt;
+
+! ??? sae+S:sae 24_A; ! an: sae, bn: saaja, bt: saaja, bnv: saaju, btv: saaju
+ sae+S:sae An_SgN;
+ sae+S:saaja$ TP_24bn;
+ sae+S:saaja TP_24bt;
+
+! erandlik tyvemitmus: silm+S:silm 22; ! at: silm, bt: silma, bn: silma, btv: silmi, bnv: silmi
+ silm+S:silm An_SgN;
+ silm+S:silma$ TP_22bn';
+ silm+S:silma TP_22bt';
+ silm+S:silmi$ An_Pl_Vok;
+ silm+S:silmi An_PlP_V;
+
+! ??? soe+A+S:soe 24_A; ! an: soe, bn: sooja, bt: sooja, bnv: sooje, btv: sooje
+ soe+A:soe An_SgN;
+ soe+A:sooja$ TP_24bn;
+ soe+A:sooja TP_24bt;
+
+ soe+S:soe An_SgN;
+ soe+S:sooja$ TP_24bn;
+ soe+S:sooja TP_24bt;
+
+! tun 34_D_TUD; ! at: tund, (bt): tunde, bn: tunne, cn: tun
+ tunD1 TP_34at;
+ tund:tunD1e$ TP_34bn;
+ tund:tun$ TP_34cn;
+
+! tõbi+S:tõB=i 21; ! at: tõbi, bt: tõbe, bn: tõve, btg: tõppe
+ tõbi+S:tõbi TP_21at;
+ tõbi+S:tõve$ TP_21bn;
+ tõbi+S:tõbe$ TP_21bt;
+ tõbi+S:tõppe An_SgAdt_0;
+
+! vähkre 30; ! at: vähkre, (bt): vähker, bn: väher
+ vähK1re TP_30at;
+! vähK:er$ TP_30bn;
+ vähK1re:vähK1er$ An_da;
+ vähK1re:vähK1er$ An_ge;
+ vähK1er$ An_nud_der;
+ vähK1re:vähK1er$ An_dud;
+ vähK1re:vähK1er$ An_dakse;
+
+
+! ??? õlu+S:õlu 24_E; ! an: õlu, bn: õlle, bt: õlle, bnv: 0, btv: 0
+ õlu+S:õlu An_SgN;
+ õlu+S:õlle$ TP_24bn;
+ õlu+S:õlle TP_24bt;
+
+
+! tüvevariantide moodustus ja kasutus
+
+LEXICON 01	!vallatu
+An_SgN;
+An_SgG;
+An_SgG_der;
+An_SgP_t;
+An_PlG_te;
+An_PlP_id;
+
+LEXICON 02_U	!õpik
+An_SgN;
+:u TP_02b0;
+
+LEXICON 02_A 	!tänav
+An_SgN;
+:a TP_02b0;
+An_SgG_der;
+
+LEXICON 02_I	!number
+An_SgN;
+:i TP_02b0;
+
+LEXICON 02_E	!kevad
+An_SgN;
+:e TP_02b0;
+
+LEXICON 02_DA	!tore
+An_SgN;
+:da TP_02b0;
+
+LEXICON 02_NE-SE  !raudne
+:ne An_SgN;
+:se TP_02b0;
+:s An_SgG_der;
+An_Prefix;
+
+LEXICON 02_Vok_NE-SE  !põline
+:ne An_SgN;
+:se TP_02b0;
+:s An_SgG_der;
+:s An_Prefix;
+
+LEXICON 02_NE-SA  !lihtsa
+:ne An_SgN;
+:s An_SgG_der;
+:sa TP_02b0;
+
+LEXICON 02_S-NDA  !kümnes
+:s An_SgN;
+:nda TP_02b0;
+
+LEXICON 02_S-JA  !paraja
+:s An_SgN;
+:j An_SgG_der;
+:ja TP_02b0;
+
+LEXICON 02_T-NDE  !tuhat
+:t An_SgN;
+:nde TP_02b0;
+
+LEXICON 02_GAS_S-0	!sipelgas (3-silbilised)
+:as An_SgN;
+An_Prefix;
+:a TP_02b0;
+
+LEXICON 02_S-0	!elajas
+:s An_SgN;
+TP_02b0;
+
+LEXICON 03_A	!vaher
+:$ An_SgN;
+:a TP_03bt;
+
+LEXICON 03_I	!manner
+:$ An_SgN;
+:i TP_03bt;
+
+LEXICON 04		!ase
+An_SgN;
+An_SgP_t;
+:me TP_04b0-05bt;
+
+LEXICON 05_I-ME	!võti
+:i$ An_SgN;
+:i$ An_SgP_t;
+:me TP_04b0-05bt;
+
+LEXICON 05_E-ME	!seade, liige
+:e$ An_SgN;
+:e$ An_SgP_t;
+:me TP_04b0-05bt;
+
+LEXICON 05_U-ME	!mitu
+:u$ An_SgN;
+:u$ An_SgP_t;
+:me TP_04b0-05bt;
+
+LEXICON 05_A-ME	!luka
+:a$ An_SgN;
+:a$ An_SgP_t;
+:me TP_04b0-05bt;
+
+LEXICON 05_E-NE	!kümme, seeme
+:X2e$ An_SgN;
+:X2e$ An_SgP_t;
+:ne TP_04b0-05bt;
+
+LEXICON 05_S-0	!kallis
+:s$ An_SgN;
+:s$ An_SgP_t;
+TP_04b0-05bt;
+
+LEXICON 05_A	!valvas
+:$ An_SgN;
+:a TP_03bt;
+
+LEXICON 06	!mõte
+:$ TP_09a0;
+TP_07bt;
+
+LEXICON 07_S-0  !hammas
+:S1$ TP_07an;
+TP_07bt;
+
+LEXICON 08_A  !kukal
+:$ TP_08an;
+:a TP_07bt;
+
+LEXICON 08_E  !tütar
+:$ TP_08an;
+:e TP_07bt;
+
+LEXICON 09_E	!katus
+TP_09a0;
+:e TP_09b0;
+
+LEXICON 09_S-KSE !vennas
+:s TP_09a0;
+:kse TP_09b0;
+
+LEXICON 10_0-SE-S	!väike-väikese
+ An_SgN;
+ :se An_SgG;
+ :s An_SgG_der;
+ 10_;
+
+LEXICON 10_NE-SE-S	!soolane, hiline
+ :ne An_SgN;
+ :se An_SgG;
+ :s An_SgG_der;
+ :s An_Prefix;
+ 10_;
+
+LEXICON 10_KSE		!väike-väikse
+ e An_SgN;
+ :se An_SgG;
+ :s An_SgG_der;
+ e 10_;
+
+LEXICON 10_
+:s An_SgP_t;
+:s An_PlG_te;
+:se An_PlP_id;
+
+LEXICON 11		!harjutus
+An_SgN;
+:e An_SgG;
+!:e An_SgG_der;
+An_SgP_t;
+An_SgAdt_se;
+An_PlG_te;
+:i An_PlP_V;
+:i An_Pl_Vok;
+
+LEXICON 12_NE-SE-S  !tavaline
+:ne An_SgN;
+:s An_Prefix;
+:s An_SgG_der;
+12_;
+
+LEXICON 12_0-SE-S   !kleenuke
+An_SgN;
+12_;
+
+LEXICON 12_
+:se An_SgG;
+:si TP_12b0v;
+:s TP_12c0;
+
+LEXICON 13	!suur
+An_SgN;
+:e An_SgG;
+An_SgG_der;
+An_SgP_t;
+An_SgAdt_de;
+An_PlG_te;
+:i An_PlP_V;
+:i An_Pl_Vok;
+
+LEXICON 14_S-NE	!laas
+:s An_SgN;
+:ne$ An_SgG;
+! :ne$ An_SgG_der;
+:n$ An_SgP_t;
+:n$ An_SgAdt_de;
+:n$ An_PlG_te;
+:si An_PlP_V;
+:si An_Pl_Vok; ! ???
+
+LEXICON 14	!uus
+An_SgN;
+:e$ An_SgG;
+! :e$ An_SgG_der;
+:$ An_SgP_t;
+:$ An_SgAdt_de;
+:$ An_PlG_te;
+:i An_PlP_V;
+:i An_Pl_Vok;
+
+LEXICON 15	!käsi
+:i An_SgN;
+:e$ An_SgG;
+!:e$ An_SgG_der;
+:$ An_SgP_tt;
+:$ An_SgAdt_tte;
+:$ An_PlG_te;
+:i An_PlP_V;
+:i An_Pl_Vok;
+
+LEXICON 16	!ratsu
+TP_16a0;
+
+LEXICON 16_Adt	!kõne ?? kere, pere, tare
+TP_16a0;
+:X2 An_SgAdt_0;
+
+LEXICON 16_GRI_Adt	!pogri
+:gri TP_16a0;
+:kri An_SgAdt_0;
+
+LEXICON 17	!tuvi
+TP_17a0;
+
+LEXICON 17_Adt	!saba, kivi
+TP_17a0;
+:X2 An_SgAdt_0;
+
+LEXICON 18	!lagi, ladu, jõgi, lugu
+TP_18at;
+:$ TP_18an;
+:X2 An_SgAdt_0;
+
+LEXICON 18_PlPV
+18;
+:+W An_PlP_V;
+
+LEXICON 18_PlV
+18;
+:$+W An_Pl_Vok;
+
+LEXICON 18_PlPV_PlV
+18;
+:+W An_PlP_V;
+:$+W An_Pl_Vok;
+
+LEXICON 19	!seminar
+TP_19a0;
+:i TP_19b0;
+
+LEXICON 20	!nimi
+:i TP_20a0;
+:e TP_20b0;
+
+LEXICON 21	!jõgi
+ :i An_SgN;
+ :e$ TP_21bn;
+ :e TP_21bt;
+ :X2e An_SgAdt_0;
+
+LEXICON 22_A  !jalg, pikk, sepp
+An_SgN;
+:a$ TP_22bn;
+:a TP_22bt;
+
+LEXICON 22_E  !hetk
+An_SgN;
+:e$ TP_22bn;
+:e TP_22bt;
+
+LEXICON 22_I  !tekk
+An_SgN;
+:i$ TP_22bn;
+:i TP_22bt;
+
+LEXICON 22_FI  !proff, nišš
+:X2 An_SgN;
+:i$ TP_22bn;
+:X2i TP_22bt;
+
+LEXICON 22_KPT_I !sigaret, kompvek, piiskop
+:$ An_SgN; !!!
+:i$ TP_22bn;
+:i TP_22bt;
+
+LEXICON 22_U  !tikk
+An_SgN;
+:u$ TP_22bn;
+:u TP_22bt;
+
+LEXICON 22_0-U ! jõud-jõu-jõudu
+An_SgN;
+:$ TP_22bn;
+:u TP_22bt;
+
+LEXICON 22_KS-HE ! üks, kaks
+:ks An_SgN;
+:he$ TP_22bn;
+:hte TP_22bt;
+
+LEXICON 22_B-E-BE ! kuub-kuue-kuube
+:b An_SgN;
+:e$ TP_22bn;
+:be TP_22bt;
+
+LEXICON 22_OOD-OE ! pood-poe
+:od An_SgN;
+:e$ TP_22bn;
+:odi TP_22bt;
+
+LEXICON 22_AAD-AE ! raad-rae
+:ad An_SgN;
+:e$ TP_22bn;
+:adi TP_22bt;
+
+LEXICON 22_AAS-AE ! paas-pae
+:as An_SgN;
+:e$ TP_22bn;
+:asi TP_22bt;
+
+LEXICON 22_AAG-AE ! saag-sae
+:ag An_SgN;
+:e$ TP_22bn;
+:agi TP_22bt;
+
+LEXICON 22_EG-JA ! poeg-poja, aeg-aja
+:eg An_SgN;
+:ja$ TP_22bn;
+:ega TP_22bt;
+
+
+LEXICON 23_A	!hein
+TP_23a;
+:a$ TP_23bn;
+:a TP_23bt;
+
+LEXICON 23_I  !poiss
+TP_23a;
+:i$ TP_23bn;
+:i TP_23bt;
+
+LEXICON 24_A	!padi
+:$ An_SgN;
+:a$ TP_24bn;
+:a TP_24bt;
+
+LEXICON 24_E	!koger
+:$ An_SgN;
+:e$ TP_24bn;
+:e TP_24bt;
+
+LEXICON 24_U	!puder
+:$ An_SgN;
+:u$ TP_24bn;
+:u TP_24bt;
+
+LEXICON 24_I-VE	!tali
+:i$ An_SgN;
+:ve$ TP_24bn;
+:ve TP_24bt;
+
+LEXICON 25	!õnnelik
+:$ An_SgN;
+:u$ TP_25bn;
+:u TP_25bt;
+: An_SgG_der;
+
+LEXICON 26	!idee
+TP_26a0;
+An_PlP_id;
+:+i An_Pl_Vok;
+
+LEXICON 26_ii	!galerii
+TP_26a0;
+
+!*****noomenite lõpp ja verbide algus********
+
+LEXICON 27	! muutumatu tüvega ja astmevahelduseta verbid (kõige produktiivsem verbitüüp (elama)
+ TP_27a0;
+
+LEXICON 28	! ma ja da - TA, olevik -  NA (leppima)
+ :X2 TP_28at;
+ :$ TP_28an;
+
+LEXICON 29	! ma ja olevik - TA, da - NA - (hüppama)
+ TP_29at;
+ :$ TP_29an;
+
+LEXICON 30	! LE-EL, ma ja olevik - TA, da - NA - (riidlema)
+ le TP_30at;
+ :el$ TP_30bn;
+
+LEXICON 31	! ELE, astmevahelduseta - (rabelema)
+ e TP_30at;
+ TP_31b0;
+
+LEXICON 32	! ma ja da - TA+konsonanttüvi, olevik - NA+Vokaaltüvi (seisma)
+ TP_32at;
+ :a$ TP_32bn;
+
+LEXICON 32_E	! tüvevokaal e (tõusma)
+ TP_32at;
+ :e$ TP_32bn;
+
+LEXICON 33	! erinevus eelmisest - da, dud, sin, sime (naerma)
+ TP_33at;
+ :a$ TP_33bn;
+
+LEXICON 33_E  ! tüvevokaal e (kuulma)
+ TP_33at;
+ :e$ TP_33bn;
+
+LEXICON 34	! ma - TA + kons.tüvi, da - TA, tüvi&formatiiv sulandunud, olevik - NA ja vok.tüvi, umbisik - e+tud
+ TP_34at;
+ :a$ TP_34bn;
+ :e$ TP_34cn;
+
+LEXICON 34_K_TUD ! laskma/mõskma/puskma
+ K1 TP_34at;
+ :K1e$ TP_34bn;
+ :$ TP_34cn;
+
+LEXICON 34_D_TUD ! hoidma-leidma-püüdma
+ D1 TP_34at;
+ d:D1a$ TP_34bn;
+ d:$ TP_34cn;
+
+
+LEXICON 35_	! 4 tüve: nut+ma (at), nuta+b (bn), nute+tud (cn), nutt+a (ct)
+ TP_35at;
+ :a$ TP_35bn;
+ :e$ TP_35cn;
+
+LEXICON 35_T
+ 35_;
+ :t TP_35ct;
+
+LEXICON 35_P
+ 35_;
+ :p TP_35ct;
+
+LEXICON 36	! 5 tüve (tule+ma, tul+i, tul+dud, tull+a, tull+akse)
+ e$ TP_36an;
+ $ TP_36bn;
+ TP_36bt;
+ :=X2 TP_36ct;	!Siin võib-olla alati ei ole l, vaid suvalise konsonandi 2-kordistamine.
+ :=X2 TP_36cn;
+
+LEXICON 37	! võima (sin,ge,me - NA, teised - TA)
+ TP_37at;
+ :$ TP_37an;
+
+LEXICON 38	! sööma (6 tüve: an, at, bn, bt, cn, ct)
+ 38_;
+ :$ TP_38cn;	! "sõi(n,me)" tekib ka reeglitest
+ TP_38ct;
+
+LEXICON 38_SIN ! (ct tüve ei moodustu?) müüma, pooma, käima, viima
+ 38_;
+ An_sin;
+
+LEXICON 38_
+ :$ TP_38an;
+ TP_38at;
+ :$ TP_38bn; ! tüvevariandi "süü(a)" tekitavad reeglid
+ TP_38bt;
+
+
+! TP_  tüvevariantide paigutusviisid paradigmas
+
+LEXICON TP_02b0  ! õpiku
+An_SgG;
+An_SgP_t;
+An_PlG_te;
+An_PlP_id;
+
+LEXICON TP_03bt	!vahtra, numbri
+An_SgG;
+An_SgP_t;
+An_PlG_te;
+An_PlP_id;
+
+LEXICON TP_04b0-05bt	!aseme (=04), liikme (=05)
+An_SgG;
+An_PlG_te;
+An_PlP_id;
+
+LEXICON TP_07an  ! hammas
+An_SgN;
+An_SgP_t;
+An_PlG_te;
+
+LEXICON TP_07bt  ! hamba (= 08)
+An_SgG;
+An_PlP_id;
+
+LEXICON TP_08an  ! kannel
+An_SgN;
+An_SgP_t;
+An_PlG_de;
+
+LEXICON TP_09a0	! katus
+An_SgN;
+An_SgP_t;
+An_PlG_te;
+
+LEXICON TP_09b0	! katuse
+An_SgG;
+An_PlP_id;
+
+LEXICON TP_12b0v  ! tavalisi
+An_PlP_V;
+An_Pl_Vok;
+
+LEXICON TP_12c0  ! tavalis, tasumis
+An_SgP_t;
+An_SgAdt_se;
+An_PlG_te;
+
+LEXICON TP_16a0	!kõne, ratsu
+An_SgN;
+An_SgG;
+!:s An_SgG_der;
+An_SgP_t;
+An_PlG_de;
+An_PlP_sid;
+
+LEXICON TP_17a0	!saba, tuvi
+An_SgN;
+An_SgG;
+!:s An_SgG_der;
+An_SgP_0;
+An_PlG_de;
+An_PlP_sid;
+:+W An_PlP_V;	!Mitmuse tüvevokaali määratakse reeglitega.
+:+W An_Pl_Vok;
+
+LEXICON TP_18at	!sõda, tigu
+An_SgN;
+! siin olid kolmed?
+An_SgP_0; ! TA muutetüvi
+An_PlG_de;
+An_PlP_sid;
+
+LEXICON TP_18an	!sõja, teo
+An_SgG;
+!An_SgG_der;
+
+LEXICON TP_19a0	!seminar
+An_SgN;
+
+LEXICON TP_19b0	!seminari
+An_SgG;
+!An_SgG_der;
+An_SgP_0;
+An_SgAdt_0;
+An_PlG_de;
+:+W An_PlP_V;	!seminare
+:+W An_Pl_Vok;
+
+LEXICON TP_20a0	!nimi
+An_SgN;
+
+LEXICON TP_20b0	!nime
+An_SgG;
+!An_SgG_der;
+An_SgP_0;
+:X2 An_SgAdt_0;
+An_PlG_de;
+An_PlP_sid;
+
+LEXICON TP_21at ! jõgi
+An_SgN;
+
+LEXICON TP_21bn ! jõe
+An_SgG;
+!An_SgG_der;
+
+LEXICON TP_21bt ! jõge
+An_SgP_0;
+An_PlG_de;
+An_PlP_sid;
+
+LEXICON TP_22bn' !jala, tiku, sepa
+An_SgG;
+!An_SgG_der;
+
+LEXICON TP_22bn
+TP_22bn';
+:+W An_Pl_Vok;  !sõnal tikk vokaalmitmuse vormid naljakad, aga mõnel sõnal ehk pole?
+
+
+LEXICON TP_22bt'  ! jal´ga, tikku, seppa
+An_SgP_0;
+An_SgAdt_0;
+An_PlG_de;
+An_PlP_sid;
+
+LEXICON TP_22bt
+TP_22bt';
+:+W An_PlP_V;
+
+LEXICON TP_23a	!hein
+An_SgN;
+:$ An_PlG_te;
+
+LEXICON TP_23bn	!heina
+An_SgG;
+!An_SgG_der;
+:+W An_PlP_V;
+
+LEXICON TP_23bt	!hei´na
+An_SgP_0;
+An_SgAdt_0;
+:+W An_PlP_V;
+
+
+LEXICON TP_24bn	!padja
+An_SgG;
+!An_SgG_der;
+:+W An_Pl_Vok;	!padjus
+
+LEXICON TP_24bt	!patja
+An_SgP_0;
+An_SgAdt_0;
+An_PlG_de;
+An_PlP_sid;
+:+W An_PlP_V;	!patju
+
+LEXICON TP_25bn	!õnneliku
+An_SgG;
+!An_SgG_der;
+:+W An_PlG_V;	!õnnelike, õnnelikes jne.
+
+LEXICON TP_25bt	!õnnelikku
+An_SgP_0;
+An_SgAdt_0;
+An_PlG_de;
+An_PlP_sid;
+:+W An_PlP_V;	!õnnelikke
+
+LEXICON TP_26a0	!idee, galerii
+An_SgN;
+An_SgG;
+!An_SgG_der;
+An_SgP_d;
+An_PlG_de;
+An_PlP_sid;
+
+! noomenite lõpp, verbide algus
+LEXICON TP_27a0	!ela+ma
+ An_ma;
+ An_mata;
+ An_v;
+ An_s;
+ An_sin;
+ An_sime;
+ An_da;
+ An_ge;
+ An_nud_der;
+ An_b;
+ An_me;
+ An_tud;
+ An_takse;
+ Deriv_mine_ja;
+
+LEXICON TP_28at	!leppi+da
+ An_ma;
+ An_mata;
+ An_v;
+ An_s;
+ An_sin;
+ An_sime;
+ An_da;
+ An_ge;
+ An_nud_der;
+ Deriv_mine_ja;
+
+LEXICON TP_28an	!lepi+n
+ An_b;
+ An_me;
+ An_tud;
+ An_takse;
+
+LEXICON TP_29at	!hüppa+ma
+ An_ma;
+ An_mata;
+ An_v;
+ An_s;
+ An_sin;
+ An_sime;
+ An_b;
+ An_me;
+ Deriv_mine_ja;
+
+LEXICON TP_29an	!hüpa+ta
+ An_ta;
+ An_ke;
+ $: An_nud_der;
+ An_tud;
+ An_takse;
+
+LEXICON TP_30at	!riidle+ma; rabele+ma
+ An_ma;
+ An_mata;
+ An_v;
+ An_s;
+ An_sin;
+ An_sime;
+ An_b;
+ An_me;
+ Deriv_mine_ja;
+
+LEXICON TP_30bn	!riiel+da; rabel+da
+ le: An_da;
+ le: An_ge;
+ el$: An_nud_der;
+ le: An_dud;
+ le: An_dakse;
+
+! 31. tüübil langeb tüvevariantide a ja b paigutus täpselt kokku 30. tüübiga, ainult 31 on astmevahelduseta.
+
+LEXICON TP_31b0
+ e: An_da;
+ e: An_ge;
+ An_nud_der;
+ e: An_dud;
+ e: An_dakse;
+
+LEXICON TP_32at	!seis+ma
+ An_ma;
+ An_mata;
+ An_ev;
+ An_is;
+ An_in;
+ An_ime;
+ An_ta;
+ An_ke;
+ An_nud_der;
+ An_tud;
+ An_takse;
+ Deriv_mine_ja;
+
+LEXICON TP_32bn	!seisa+b
+ An_b;
+ An_me;
+
+LEXICON TP_33at	!naer+ma
+ An_ma;
+ An_mata;
+ An_ev;
+ An_is;
+ An_sin;
+ An_sime;
+ An_da;
+ An_ge;
+ An_nud_der;
+ An_dud;
+ An_dakse;
+ Deriv_mine_ja;
+
+LEXICON TP_33bn	!naera+b
+ An_b;
+ An_me;
+
+LEXICON TP_34at	!saat+ma
+ An_ma;
+ An_mata;
+ An_ev;
+ An_is;
+ An_sin;
+ An_sime;
+ An_a;
+ An_ke;
+ An_nud_der;
+ Deriv_mine_ja;
+
+LEXICON TP_34bn	!saada+b
+ An_b;
+ An_me;
+
+LEXICON TP_34cn	!saade+tud
+ An_tud;
+ An_takse;
+
+LEXICON TP_35at	!nut+ma
+ An_ma;
+ An_mata;
+ An_sin;
+ An_sime;
+ An_ke;
+ An_nud_der;
+ Deriv_mine_ja;
+
+LEXICON TP_35bn	!nuta+b
+ An_b;
+ An_me;
+
+LEXICON TP_35cn	!nute+tud
+ An_tud;
+ An_takse;
+
+LEXICON TP_35ct	!nutt+a
+ An_a;
+ An_ev;
+ An_is;
+
+LEXICON TP_36an	!tule+ma
+ An_ma;
+ An_mata;
+ An_v;
+ An_b;
+ An_me;
+ Deriv_mine;
+
+LEXICON TP_36bn	!tul+i
+ e: An_i;
+ e: An_in;
+ e: An_ime;
+ e: An_ge;
+ An_nud_der;
+ i Deriv_ja;
+
+LEXICON TP_36bt	!tul+dud
+ e: An_dud;
+
+LEXICON TP_36cn	!tull+akse
+ e: An_akse;
+
+LEXICON TP_36ct	!tull+a
+ e: An_a;
+
+LEXICON TP_37an	!või+sin, või+me
+ An_mata;
+ An_sin;
+ An_sime;
+ An_ge;
+ An_nud_der;
+ An_me;
+
+LEXICON TP_37at	!või+ma
+ An_ma;
+ An_v;
+ An_s;
+ An_da;
+ An_b;
+ An_dud;
+ An_dakse;
+ Deriv_mine_ja;
+
+LEXICON TP_38an	!söö+me
+ An_mata;
+ An_ge;
+ An_nud_der;
+ An_me;
+
+LEXICON TP_38at !söö+ma
+ An_ma;
+ An_v;
+ An_b;
+ An_dud;
+
+LEXICON TP_38bn	! süü+akse
+ An_akse;
+
+LEXICON TP_38bt	!süü+a
+ An_a;
+
+LEXICON TP_38cn	!sõime
+ An_ime;
+
+LEXICON TP_38ct	!sö.+i -> sõi
+ An_i;
+ An_in;
+
+
+! An_  põhivormide ja nende analoogiavormide moodustamine
+
+LEXICON An_SgN  ! Sg Nom
+ +sg+nom:0 GI;
+ +_ini+Adv:+i0ni GI; ! need võrdlusastmed, mis on otse sõnastikus (valjemini)
+ LIIT;
+
+LEXICON An_SgG  ! SgG analoogiarühm
+ +sg+gen:0 GI;
+ +sg:0 KÄÄNE_1;
+ +pl+nom:+d GI;
+ +comp:+m 02_A;
+ +_ini+Adv:+mini GI;
+ +_lt+Adv:+lt GI;
+ +_ke:ke 12_0-SE-S;
+ +_kene:ke 12_NE-SE-S;
+ LIIT;
+ !LIIT_DEV_G;
+
+LEXICON An_SgG_der ! siia tuleb üleval pool ka sobiv tüvi
+ +_us+S:+us 11;
+ +_us+S:+us 09_E;
+
+
+LEXICON An_SgP_0  ! SgP (formatiiv 0)
+ +sg+part:0 GI;
+ !LIIT_DEV_P;
+
+LEXICON An_SgP_t  ! SgP (formatiiv t)
+ +sg+part:+t GI;
+ !:+t LIIT_DEV_P;
+
+LEXICON An_SgP_tt  ! SgP (formatiiv tt)
+ +sg+part:+tt GI;
+ !:+tt LIIT_DEV_P;
+
+LEXICON An_SgP_d  ! SgP (formatiiv d)
+ +sg+part:+d GI;
+ !:+d LIIT_DEV_P;
+
+
+LEXICON An_SgAdt_0  ! SgAdt (formatiiv 0)
+ +sg+adit:0 GI;
+
+LEXICON An_SgAdt_de  ! SgAdt (formatiiv de)
+ +sg+adit:+de GI;
+
+LEXICON An_SgAdt_se  ! SgAdt (formatiiv se)
+ +sg+adit:+se GI;
+
+LEXICON An_SgAdt_tte ! SgAdt (formatiiv tte)
+ +sg+adit:+tte GI;
+
+
+
+LEXICON An_PlP_id  ! PlP (formatiiv id)
+ +pl+part:+id GI;
+ +pl:+i KÄÄNE_2;
+ :+i Spr;
+
+LEXICON An_PlP_sid  ! PlP (formatiiv sid)
+ +pl+part:+sid GI;
+
+
+
+LEXICON An_PlP_V  ! PlP (vokaallõpp)
+ +pl+part:0 GI;
+
+LEXICON An_Pl_Vok  ! vokaalmitmuse paralleelvormid
+ +pl:0 KÄÄNE_2;
+ Spr;
+
+LEXICON An_PlG_te  ! de-mitmuse (formatiiv te) analoogiarühm
+ +pl+gen:+te GI;
+ +pl:+te KÄÄNE_1;
+ !:+te LIIT_DEV_G;
+
+LEXICON An_PlG_de  ! de-mitmuse (formatiiv de) analoogiarühm
+ +pl+gen:+de GI;
+ +pl:+de KÄÄNE_1;
+ !:+de LIIT_DEV_G;
+ :+de LIIT;
+
+LEXICON An_PlG_V	!õnnelik-tüüp
+ +pl+gen: GI;
+ +pl: KÄÄNE_1;
+! LIIT_DEV_G;
+ LIIT;
+
+LEXICON An_Prefix
+ +prefix: #;
+
+LEXICON An_Suffix
+ +suffix: #;
+
+LEXICON Spr ! ülivõrre
+ +super:%!+im 02_A;
+
+LEXICON KÄÄNE_1  ! käändelõpud illatiivist komitatiivini
+ +ill:+sse GI;
+ +in:+s GI;
+ +el:+st GI;
+ +all:+le GI;
+ +ad:+l GI;
+ +abl:+lt GI;
+ +tr:+ks GI;
+ +term:+ni GI;
+ +es:+na GI;
+ +abes:+ta GI;
+ +kom:+ga GI;
+
+LEXICON KÄÄNE_2  ! käändelõpud illatiivist translatiivini (mitmus)
+ +ill:+sse GI;
+ +in:+s GI;
+ +el:+st GI;
+ +all:+le GI;
+ +ad:+l GI;
+ +abl:+lt GI;
+ +tr:+ks GI;
+
+! Analoogiarühmad verbidele
+LEXICON An_ma
+ ma+V+sup+ill:ma GI;
+ ma+V+quot+pres+ps:vat GI;
+
+LEXICON An_mata
+ ma+V+sup+abes:mata GI;
+ mata+A:mata GI;
+ ma+V+sup+in:mas GI;
+ ma+V+sup+el:mast GI;
+ ma+V+sup+tr:maks GI;
+
+LEXICON An_v
+ ma+V+partic+pres+ps:v GI;
+ v+A:v 02_A;
+ v+S:v 02_A;
+! v+A+sg+nom+partic:v GI;
+
+LEXICON An_ev
+ ma+V+partic+pres+ps:ev GI;
+ ev+A:E1v 02_A;
+ ev+S:E1v 02_A;
+! ev+A+sg+nom+partic GI;
+
+!!!!!
+! Järgmised 7 - kindla kõneviisi lihtmineviku vormid
+!!!!!
+
+LEXICON An_s
+ ma+V+indic+impf+ps3+sg+ps+af:+s GI;
+
+LEXICON An_is
+ ma+V+indic+impf+ps3+sg+ps+af:+is GI;
+
+LEXICON An_i
+ ma+V+indic+impf+ps3+sg+ps+af:+i GI;
+
+LEXICON An_sin
+ ma+V+indic+impf+ps1+sg+ps+af:+sin GI;
+ ma+V+indic+impf+ps2+sg+ps+af:+sid GI;
+ ma+V+indic+impf+ps3+pl+ps+af:+sid GI;
+
+LEXICON An_in
+ ma+V+indic+impf+ps1+sg+ps+af:+0in GI;
+ ma+V+indic+impf+ps2+sg+ps+af:+id GI;
+ ma+V+indic+impf+ps3+pl+ps+af:+id GI;
+
+LEXICON An_sime
+ ma+V+indic+impf+ps1+pl+ps+af:+sime GI;
+ ma+V+indic+impf+ps2+pl+ps+af:+site GI;
+
+LEXICON An_ime
+ ma+V+indic+impf+ps1+pl+ps+af:+ime GI;
+ ma+V+indic+impf+ps2+pl+ps+af:+ite GI;
+
+!!!!!
+
+!!!!!
+! Infinitiivi variandid -da -ta -a
+!!!!!
+
+LEXICON An_da
+ ma+V+inf:+da GI;
+ ma+V+ger:+des GI;
+
+LEXICON An_ta
+ ma+V+inf:+ta GI;
+ ma+V+ger:+tes GI;
+
+LEXICON An_a
+ ma+V+inf:+a GI;
+ ma+V+ger:+0es GI;
+
+!!!!!
+
+!!!!!
+! Käskiv kõneviis + nud + nuks + nuvat
+!!!!!
+
+LEXICON An_ge
+ ma+V+imper+pres+ps3+sg+ps:+gu GI ;
+ ma+V+imper+pres+ps1+pl+ps:+gem GI ;
+ ma+V+imper+pres+ps2+pl+ps:+ge GI ;
+ ma+V+imper+pres+ps3+pl+ps:+gu GI ;
+ An_nud ;
+
+LEXICON An_ke
+ ma+V+imper+pres+ps3+sg+ps:+ku GI ;
+ ma+V+imper+pres+ps1+pl+ps:+kem GI ;
+ ma+V+imper+pres+ps2+pl+ps:+ke GI ;
+ ma+V+imper+pres+ps3+pl+ps:+ku GI ;
+ An_nud ;
+
+LEXICON An_nud
+  ma+V+partic+past+ps:+nud GI ;
+  ma+V+indic+impf+ps+neg:+nud GI ;
+  ma+V+cond+past+ps:+nuks GI ;
+  ma+V+cond+past+ps1+sg+ps:+nuks GI ;
+  ma+V+cond+past+ps1+sg+ps:+nuksin GI ;
+  ma+V+cond+past+ps2+sg+ps:+nuks GI ;
+  ma+V+cond+past+ps2+sg+ps:+nuksid GI ;
+  ma+V+cond+past+ps3+sg+ps:+nuks GI ;
+  ma+V+cond+past+ps1+pl+ps:+nuks GI ;
+  ma+V+cond+past+ps1+pl+ps:+nuksime GI ;
+  ma+V+cond+past+ps2+pl+ps:+nuks GI ;
+  ma+V+cond+past+ps2+pl+ps:+nuksite GI ;
+  ma+V+cond+past+ps3+pl+ps:+nuks GI ;
+  ma+V+cond+past+ps3+pl+ps:+nuksid GI ;
+  ma+V+quot+past+ps:+nuvat GI ;
+
+LEXICON An_nud_der
+  nud+A:+nud GI ;
+!  nud+A+partic:+nud GI;
+  nu+S:nu 01;
+  nu+A:nu 01;
+  nult+Adv:nult GI;
+!!!!!
+
+!!!!!
+! Kindla kõneviisi olevik
+!!!!!
+
+LEXICON An_b
+ ma+V+indic+pres+ps1+sg+ps+af:+n GI;
+ ma+V+indic+pres+ps2+sg+ps+af:+d GI;
+ ma+V+indic+pres+ps3+sg+ps+af:+b GI;
+ ma+V+indic+pres+ps+neg:+0 GI;
+ ma+V+imper+pres+ps2+sg:+0 GI;
+
+ ma+V+cond+pres+ps+af:+ks GI ;
+ ma+V+cond+pres+ps+neg:+ks GI ;
+ ma+V+cond+pres+ps1+sg+ps+af:+ksin GI ;
+ ma+V+cond+pres+ps2+sg+ps+af:+ksid GI ;
+ ma+V+cond+pres+ps3+sg+ps+af:+ks GI ;
+ ma+V+cond+pres+ps3+sg+ps+neg:+ks GI ;
+ ma+V+cond+pres+ps1+pl+ps+af:+ksime GI ;
+ ma+V+cond+pres+ps2+pl+ps+af:+ksite GI ;
+ ma+V+cond+pres+ps3+pl+ps+af:+ksid GI ;
+
+ ma+V+cond+pres+ps1+sg+ps+af:+ks GI ;
+ ma+V+cond+pres+ps2+sg+ps+af:+ks GI ;
+ ma+V+cond+pres+ps1+pl+ps+af:+ks GI ;
+ ma+V+cond+pres+ps2+pl+ps+af:+ks GI ;
+ ma+V+cond+pres+ps3+pl+ps+af:+ks GI ;
+
+
+LEXICON An_me
+ ma+V+indic+pres+ps1+pl+ps+af:+me GI;
+ ma+V+indic+pres+ps2+pl+ps+af:+te GI;
+ ma+V+indic+pres+ps3+pl+ps+af:+vad GI;
+
+!!!!!
+
+!!!!!
+! Umbisikuline tegumood
+!!!!!
+
+LEXICON An_tud
+ ma+V+partic+past+imps:+tud GI ;
+ ma+V+indic+impf+imps+neg:+tud GI ;
+ ma+V+indic+impf+imps+af:+ti GI ;
+ ma+V+cond+pres+imps:+taks GI ;
+ ma+V+cond+past+imps:+tuks GI ;
+ ma+V+quot+pres+imps:+tavat GI ;
+ ma+V+quot+past+imps:+tuvat GI ;
+ ma+V+imper+pres+imps:+tagu GI ;
+ ma+V+sup+imps:+tama GI ;
+ ma+V+indic+pres+imps+neg:+ta GI ;
+ ma+V+partic+pres+imps:+tav GI ;
+
+ $tud+A:+tud GI ;
+ $tud+S:+tud GI ;
+ $tu+A:+tu 01 ;
+ $tu+S:+tu 01 ;
+ $tav+A:+tav 02_A ;
+ $tav+S:+tav 02_A ;
+
+LEXICON An_dud
+ ma+V+partic+past+imps:+dud GI ;
+ ma+V+indic+impf+imps+neg:+dud GI ;
+ ma+V+indic+impf+imps+af:+di GI ;
+ ma+V+cond+pres+imps:+daks GI ;
+ ma+V+cond+past+imps:+duks GI ;
+ ma+V+quot+pres+imps:+davat GI ;
+ ma+V+quot+past+imps:+duvat GI ;
+ ma+V+imper+pres+imps:+dagu GI ;
+ ma+V+sup+imps:+dama GI ;
+ ma+V+indic+pres+imps+neg:+da GI ;
+ ma+V+partic+pres+imps:+dav GI ;
+
+ $dud+A:+dud GI ;
+ $dud+S:+dud GI ;
+ $du+S:+du 01 ;
+ $du+A:+du 01 ;
+ $dav+A:+dav 02_A ;
+ $dav+S:+dav 02_A ;
+
+LEXICON An_takse
+ ma+V+indic+pres+imps+af:+takse GI ;
+
+LEXICON An_dakse
+ ma+V+indic+pres+imps+af:+dakse GI ;
+
+LEXICON An_akse
+ ma+V+indic+pres+imps+af:+akse GI ;
+
+!!!!!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Produktiivne verbituletus (v,tav,nud,nu,tud,tu on analoogiarühmade all)
+!!!!!!
+LEXICON Deriv_mine_ja
+  ja+S:+ja 01;
+  mine+S:+mi 12_NE-SE-S;
+
+LEXICON Deriv_ja
+  ja+S:+ja 01;
+
+LEXICON Deriv_mine
+  mine+S:+mi 12_NE-SE-S;
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! liitsõnade moodustamine
+
+LEXICON LIIT
+
+LIIT; ! tupikuks..
+!& Nimisõna;
+!& Omadussõna;
+!& Tegusõna; ! vähemalt tuletiste jaoks on seda vaja.
+
+
+!LEXICON LIIT_DEV_P
+!+:& Deverbaal_P;
+
+!LEXICON LIIT_DEV_G
+!+:& Deriv_mine_ja;
+

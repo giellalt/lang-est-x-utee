@@ -1,0 +1,110 @@
+! Copyright © 2010 by Jaak Pruulmann-Vengerfeldt.
+! All rights reserved. 
+
+
+! siia ette multicharid ja definitsioonid
+
+
+LEXICON Root
+ < PreKriips > Käänduvad_sõnad;
+ < PreKriips > Tegusõnad;
+ Muutumatud_sõnad;
+
+
+LEXICON Tegusõnad
+ < Tegusõna > GI;
+ < e i "+V" "+neg" > #;
+
+
+LEXICON Nimisõnad 
+ < Nimisõna > GI;
+
+ < Nimisõna "&" "-" "&" > Nimisõnad; ! rindliitnimisõnad, EKKR SM32
+
+ < Nimisõna' "+sg" "+nom" SP > Tegusõnad; ! EKKR, SM19
+ < Nimisõna' "+sg" "+nom" Kriips > #;
+
+ < Nimisõna' [ "+sg" [ "+nom" | "+gen" ] | "+pl" "+gen" | "+prefix" ] SP > Nimisõnad; ! EKKR, SM27 ! FIXME: lühitüved
+ < Nimisõna' [ "+sg" [ "+nom" | "+gen" ] | "+pl" "+gen" | "+prefix" ] SP > Omadussõnad; ! EKKR, SM37 ! FIXME: lühitüved
+ < Nimisõna' [ "+sg" [ "+nom" | "+gen" ] | "+pl" "+gen" | "+prefix" ] SP > Määrsõnad; ! EKKR, S422 ! FIXME: lühitüved
+ < Nimisõna' [ "+sg" [ "+nom" | "+gen" ] | "+pl" "+gen" | "+prefix" ] Kriips > #;
+
+ < Nimisõna' "+sg" "+nom" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+nom" > GI; ! aasta-paar, meeter-kaks jms
+ < Nimisõna' "+sg" "+gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+gen" > GI;
+ < Nimisõna' "+sg" "+part" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+part" > GI;
+ < Nimisõna' "+sg" "+adit" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+adit" > GI;
+ < Nimisõna' "+sg" "+ill" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+ill" > GI;
+ < Nimisõna' "+sg" "+in" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+in" > GI;
+ < Nimisõna' "+sg" "+el" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+el" > GI;
+ < Nimisõna' "+sg" "+all" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+all" > GI;
+ < Nimisõna' "+sg" "+ad" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+ad" > GI;
+ < Nimisõna' "+sg" "+abl" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+abl" > GI;
+ < Nimisõna' "+sg" "+tr" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+tr" > GI;
+ < Nimisõna' "+sg" "+gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+term" > GI;
+ < Nimisõna' "+sg" "+gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+es" > GI;
+ < Nimisõna' "+sg" "+gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+abes" > GI;
+ < Nimisõna' "+sg" "+gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+kom" > GI;
+
+LEXICON Arvsõnad
+ < Arvsõna > GI;
+
+ ! fixme: teistkümned, kümned, sajad
+
+ < Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+nom" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+nom" > GI; ! üht-teist, viies-kuues jm
+ < Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+gen" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+part" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+part" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+adit" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+adit" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+ill" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+ill" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+in" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+in" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+el" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+el" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+all" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+all" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+ad" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+ad" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+abl" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+abl" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+tr" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+tr" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+term" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+es" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+abes" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+sg" "+kom" > GI;
+
+LEXICON Omadussõnad
+ < Omadussõna > GI;
+ < Omadussõna' ("+sg" "+nom") SP > Tegusõnad; ! EKKR, SM19
+ < Omadussõna' ("+sg" "+nom" | "+prefix") SP > Nimisõnad; ! EKKR, SM27 ! FIXME: lühitüved
+ < Omadussõna' ("+sg" "+nom" | "+prefix") SP > Omadussõnad; ! EKKR, SM38 ! FIXME: lühitüved
+ < Omadussõna' ("+sg" "+nom" | "+prefix") SP > Määrsõnad; ! EKKR, SM42 ! FIXME: lühitüved
+ < Omadussõna' ("+sg" "+nom" | "+prefix") Kriips > #;
+
+
+LEXICON Määrsõnad
+ < Määrsõna > GI;
+ < Määrsõna SP > Tegusõnad; ! EKKR, SM19
+ < Määrsõna ("+prefix") SP > Nimisõnad; ! EKKR, SM31
+ < Määrsõna ("+prefix") SP > Omadussõnad; ! EKKR, SM39
+
+ < Määrsõna ("+prefix") SP > Määrsõnad; ! EKKR, SM42
+ < Määrsõna ("+prefix") SP Määrsõna "+suffix" > GI;
+
+
+LEXICON Kaassõnad
+ < Kaassõna > GI;
+ < Kaassõna SP > Käänduvad_sõnad; ! EKKR, SM42 ?
+
+LEXICON Asesõnad
+ < Asesõna > GI;
+
+
+LEXICON Käänduvad_sõnad
+ Nimisõnad;
+ Omadussõnad;
+ Arvsõnad;
+ Asesõnad;
+
+LEXICON Muutumatud_sõnad
+ Määrsõnad;
+ Kaassõnad;
+ < Hüüdsõna | Sidesõna | Muusõna | Genatribuut > GI;
+
+
+LEXICON GI
+< Gi > #;
+
