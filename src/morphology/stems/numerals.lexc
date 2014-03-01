@@ -1,0 +1,70 @@
+LEXICON Numerals
+ 
+ biljones+Ord:biljone 02_S-NDA; ! (02_O -> +Ord) a0: biljones, b0: biljonenda, b0r: 0, c0: 0
+ biljon+Num:biljon 02_I; ! (02_N -> +Num) a0: biljon, b0: biljoni, b0r: biljone, c0: 0
+ esimene+Ord:esime 12_NE-SE-S; ! (12_OP -> +Pron +Ord) a0: esimene, b0: esimese, c0: esimes, b0v: esimesi
+ kaheksandik+Num:kaheksandikK1 25; ! (25_N -> +Num) at: kaheksandik, bt: kaheksandikku, bn: kaheksandiku, btv: kaheksandikke, bnv: kaheksandike
+ kaheksa+Num:kaheksa 01; ! (01_N -> +Num) a0: kaheksa, a0r: 0
+ kaheksas+Ord:kaheksa 02_S-NDA; ! (02_O -> +Ord) a0: kaheksas, b0: kaheksanda, b0r: 0, c0: 0
+ kahendik+Num:kahendikK1 25; ! (25_N -> +Num) at: kahendik, bt: kahendikku, bn: kahendiku, btv: kahendikke, bnv: kahendike
+ kaks+Num:ka 22_KS-HE; ! (22_N -> +Num) at: kaks, bt: kahte, bn: kahe, btv: kaksi, bnv: kaksi
+ kaks+Num+sg+part:kaht GI; ! 22_N,k'aks,k'aht[],------0P,-,-,+
+ kolmandik+Num:kolmandikK1 25; ! (25_N -> +Num) at: kolmandik, bt: kolmandikku, bn: kolmandiku, btv: kolmandikke, bnv: kolmandike
+ kolmas+Ord:kolma 02_S-NDA; ! (02_O -> +Ord) a0: kolmas, b0: kolmanda, b0r: 0, c0: 0
+ kolmas+Ord+sg+part:kolmat GI; ! 02_O,kolmas,kolma[t],------0P,-,-,+
+ kolmat+Num:kolmat GI; ! (41_ND -> +Adv +Num) 
+ kolm+Num:kolm 22_E; ! (22_N -> +Num) at: kolm, bt: kolme, bn: kolme, btv: kolmi, bnv: kolmi
+ kuuendik+Num:kuuendikK1 25; ! (25_N -> +Num) at: kuuendik, bt: kuuendikku, bn: kuuendiku, btv: kuuendikke, bnv: kuuendike
+ kuues+Ord:kuue 02_S-NDA; ! (02_O -> +Ord) a0: kuues, b0: kuuenda, b0r: 0, c0: 0
+ kuus+Num:kuuS1 14; ! (14_N -> +Num) at: kuus, (bt): kuuse, an: kuus, bn: kuue, cn: kuu, ct: kuu
+ kvadriljones+Ord:kvadriljone 02_S-NDA; ! (02_O -> +Ord) a0: kvadriljones, b0: kvadriljonenda, b0r: 0, c0: 0
+ kvadriljon+Num:kvadriljon 19; ! (19_N -> +Num) a0: kvadriljon, b0: kvadriljoni, b0v: kvadriljone
+ kümmekond+Num:kümmekonD1 22_A; ! (22_NS -> +S +Num) at: kümmekond, bt: kümmekonda, bn: kümmekonna, btv: kümmekondi, bnv: kümmekonni
+ ! ??? kümmend+Num:kümmend 05; ! (05_N -> +Num) an: kümmend, (at): kümmend, bt: kümne, btr: #
+ kümme+Num:küm= 05_E-NE; ! (05_N -> +Num) an: kümme, (at): kümme, bt: kümne, btr: #
+ kümnendik+Num:kümnendikK1 25; ! (25_N -> +Num) at: kümnendik, bt: kümnendikku, bn: kümnendiku, btv: kümnendikke, bnv: kümnendike
+ kümnes+Ord:kümne 02_S-NDA; ! (02_O -> +Ord) a0: kümnes, b0: kümnenda, b0r: 0, c0: 0
+ miljardes+Ord:miljarde 02_S-NDA; ! (02_O -> +Ord) a0: miljardes, b0: miljardenda, b0r: 0, c0: 0
+ miljardik+Num:miljardikK1 25; ! (25_N -> +Num) at: miljardik, bt: miljardikku, bn: miljardiku, btv: miljardikke, bnv: miljardike
+ miljard+Num:miljard 02_I; ! (02_N -> +Num) a0: miljard, b0: miljardi, b0r: miljarde, c0: 0
+ miljondik+Num:miljondikK1 25; ! (25_N -> +Num) at: miljondik, bt: miljondikku, bn: miljondiku, btv: miljondikke, bnv: miljondike
+ miljones+Ord:miljone 02_S-NDA; ! (02_O -> +Ord) a0: miljones, b0: miljonenda, b0r: 0, c0: 0
+ miljon+Num:miljon 02_I; ! (02_N -> +Num) a0: miljon, b0: miljoni, b0r: miljone, c0: 0
+ neli+Num:nelj 24_A; ! (24_N -> +Num) an: neli, bn: nelja, bt: nelja, bnv: nelju, btv: nelju
+ neljandik+Num:neljandikK1 25; ! (25_N -> +Num) at: neljandik, bt: neljandikku, bn: neljandiku, btv: neljandikke, bnv: neljandike
+ neljas+Ord:nelja 02_S-NDA; ! (02_O -> +Ord) a0: neljas, b0: neljanda, b0r: 0, c0: 0
+ nullis+Ord:nulli 02_S-NDA; ! (02_O -> +Ord) a0: nullis, b0: nullinda, b0r: 0, c0: 0
+ null+Num:null 22_I; ! (22_NS -> +S +Num) at: null, bt: nulli, bn: nulli, btv: nulle, bnv: nulle
+ paar+Num:paar 22_I; ! (22_NS -> +S +Num) at: paar, bt: paari, bn: paari, btv: paare, bnv: paare
+ pool+Num:pool 13; ! (13_NS -> +S +Num) at: pool, (bt): poole, an: pool, bn: poole, bnv: pooli
+ sadakond+Num:sadakonD1 22_A; ! (22_NS -> +S +Num) at: sadakond, bt: sadakonda, bn: sadakonna, btv: sadakondi, bnv: sadakonni
+ sada+Num:saD1a 18_PlPV; ! (18_N -> +Num) at: sada, an: saja, atv: sadu, atg: #, anv: #
+ sada+Num+sg+part:sadat GI; ! 18_N,sada,sada[t],------0P,-,-,+
+ sajandik+Num:sajandikK1 25; ! (25_N -> +Num) at: sajandik, bt: sajandikku, bn: sajandiku, btv: sajandikke, bnv: sajandike
+ sajas+Ord:saja 02_S-NDA; ! (02_O -> +Ord) a0: sajas, b0: sajanda, b0r: 0, c0: 0
+ seitse+Num:seits 05_E-ME; ! (05_N -> +Num) an: seitse, (at): seitse, bt: seitsme, btr: #
+ seitsmendik+Num:seitsmendikK1 25; ! (25_N -> +Num) at: seitsmendik, bt: seitsmendikku, bn: seitsmendiku, btv: seitsmendikke, bnv: seitsmendike
+ seitsmes+Ord:seitsme 02_S-NDA; ! (02_O -> +Ord) a0: seitsmes, b0: seitsmenda, b0r: 0, c0: 0
+ teine+Ord:tei 12_NE-SE-S; ! (12_OP -> +Pron +Ord) a0: teine, b0: teise, c0: teis, b0v: teisi
+ teist+Num+sg+gen:teist GI; ! 05_N,t'eist,t'eist[],------0G,-,-,+
+ ! ??? teist+Num:teist 05; ! (05_N -> +Num) an: teist, (at): teist, bt: teistkümne, btr: #
+ tosinkond+Num:tosinkonD1 22_A; ! (22_NS -> +S +Num) at: tosinkond, bt: tosinkonda, bn: tosinkonna, btv: tosinkondi, bnv: tosinkonni
+ tosin+Num:tosin 02_A; ! (02_N -> +Num) a0: tosin, b0: tosina, b0r: 0, c0: 0
+ triljones+Ord:triljone 02_S-NDA; ! (02_O -> +Ord) a0: triljones, b0: triljonenda, b0r: 0, c0: 0
+ triljon+Num:triljon 02_I; ! (02_N -> +Num) a0: triljon, b0: triljoni, b0r: triljone, c0: 0
+ tuhandes+Ord:tuhande 02_S-NDA; ! (02_O -> +Ord) a0: tuhandes, b0: tuhandenda, b0r: 0, c0: 0
+ tuhandik+Num:tuhandikK1 25; ! (25_N -> +Num) at: tuhandik, bt: tuhandikku, bn: tuhandiku, btv: tuhandikke, bnv: tuhandike
+ tuhatkond+Num:tuhatkonD1 22_A; ! (22_NS -> +S +Num) at: tuhatkond, bt: tuhatkonda, bn: tuhatkonna, btv: tuhatkondi, bnv: tuhatkonni
+ tuhat+Num+sg+part:tuhat GI; ! 02_N,tuhat,tuhat[],------0P,-,-,+
+ tuhat+Num:tuha 02_T-NDE; ! (02_N -> +Num) a0: tuhat, b0: tuhande, b0r: 0, c0: 0
+ veerandik+Num:veerandikK1 25; ! (25_NS -> +S +Num) at: veerandik, bt: veerandikku, bn: veerandiku, btv: veerandikke, bnv: veerandike
+ veerand+Num:veerand 02_I; ! (02_NS -> +S +Num) a0: veerand, b0: veerandi, b0r: veerande, c0: 0
+ viiendik+Num:viiendikK1 25; ! (25_N -> +Num) at: viiendik, bt: viiendikku, bn: viiendiku, btv: viiendikke, bnv: viiendike
+ viies+Ord:viie 02_S-NDA; ! (02_O -> +Ord) a0: viies, b0: viienda, b0r: 0, c0: 0
+ viis+Num:viiS1 14; ! (14_N -> +Num) at: viis, (bt): viise, an: viis, bn: viie, cn: vii, ct: vii
+ üheksandik+Num:üheksandikK1 25; ! (25_N -> +Num) at: üheksandik, bt: üheksandikku, bn: üheksandiku, btv: üheksandikke, bnv: üheksandike
+ üheksa+Num:üheksa 01; ! (01_N -> +Num) a0: üheksa, a0r: 0
+ üheksas+Ord:üheksa 02_S-NDA; ! (02_O -> +Ord) a0: üheksas, b0: üheksanda, b0r: 0, c0: 0
+ ühendik+Num:ühendikK1 25; ! (25_N -> +Num) at: ühendik, bt: ühendikku, bn: ühendiku, btv: ühendikke, bnv: ühendike
+ üks+Num+sg+part:üht GI; ! 22_NP,'üks,'üht[],------0P,-,-,+
+ üks+Num:ü 22_KS-HE; ! (22_NP -> +Pron +Num) at: üks, bt: ühte, bn: ühe, btv: üksi, bnv: üksi

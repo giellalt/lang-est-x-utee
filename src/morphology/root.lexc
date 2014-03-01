@@ -1,0 +1,484 @@
+Multichar_Symbols
+
+! sõnaliik
+! part of speech
++S	! nimisõna		! substantive		! asi
++H	! päris nimi		! proper name		! Jaan
++A	! omadussõna		! adjective		! asjalik
++Num	! arvsõna		! numeral		! kaks
++Ord	! järgarv		! ordinal		! teine
++Pron	! asesõna		! pronoun		! see
++V	! tegusõna 		! verb			! asjastama
++Adv	! määrsõna		! adverb		! asjatult
++I	! hüüdsõna		! interjection		! hei
++J	! sidesõna		! conjunction		! ja
++G	! genitiivatribuut	! genitive attribute	! saksa
++K	! kaassõna		! pre/postposition	! kaudu
++X	! muu sõna		! other word		! kihku, kihla, minap
+
+! tuletised, sisemiseks kasutamiseks, filtreerimiseks
+! derivation suffixes, used to filter out illegal combinations internally
++_ke	! deminutive
++_kene  ! deminutive
++_us
++_lt
++_ini	! comparation? paremini, kiiremini (how? better than .., faster than ..)
+
+! partikkel -gi/-ki
+! particle -gi/-ki
++gi
+
+! arv 			! number
++sg	! ainsus	! singular
++pl	! mitmus	! plural
+
+! käänded
++nom	! nimetav			! nominative	! part, maja		pardid, majad
++gen	! omastav 			! genitive	! pardi, maja		partide, majade
++part	! osastav			! partitive	! parti, maja		parte, maju
++ill	! sisseütlev			! illative	! pardisse, majasse	partidesse, majadesse
++adit	! suunduv (lühike sisseütlev?)	! aditive	! p'arti, majja
++in	! seesütlev			! inessive	! pardis, majas		partides, majades
++el	! seestütlev			! elative	! pardist, majast	partidest, majadest
++all	! alaleütlev			! allative	! pardile, majale	partidele, majadele
++ad	! alalütlev			! adessive	! pardil, majal		partidel, majadel
++abl	! alaltütlev			! ablative	! pardilt, majalt	partidelt, majadelt
++tr	! saav				! translative	! pardiks, majaks	partideks, majadeks
++term	! rajav				! terminative	! pardini, majani	partideni, majadeni
++es	! olev				! essive	! pardina, majana	partidena, majadena
++abes	! ilmaütlev			! abessive	! pardita, majata	partideta, majadeta
++kom	! kaasaütlev			! comitative	! pardiga, majaga	partidega, majadega
+
+! võrdlusastmed
++comp	! komparatiiv	! comparative
++super	! superlatiiv	! superlative
+
+! verb
+! finiitsed (pöördelised) vormid
+! finite (conjugable) forms
+
+! kategooriad: isik, arv, tegumood, aeg, kõneviis, kõnelaad
+! categories: person, number, voice, tense, mood, aspect
+
+! kõneviis		! mood
++indic	! kindel	! indicative
++imper	! käskiv	! imperative
++cond	! tingiv	! conditional
++quot	! kaudne	! quotative
+
+! aeg			! tense
++pres	! olevik	! present
++past	! minevik	! past (used for conditional and particles)
++impf	! lihtminevik	! past imperfect (used for indicative mood only)
+! täisminevik, past perfect: olema (pres) + nud/tud/dud (olen teinud)
+! enneminevik, past pluperfect: olema (impf) + nut/tud/dud (olin teinud)
+
+! pööre			! person
++ps1	! 1. pööre	! 1st person
++ps2	! 2. pööre	! 2nd person
++ps3 	! 3. pööre	! 3rd person
+
+! kõnelaad		! aspect
++neg	! eitav kõne	! negative
++af 	! jaatav kõne	! affirmative
+
+! tegumood		! voice
++imps	! umbisikuline	! impersonal
++ps	! isikuline	! personal
+
+
+! kategooriate võimalikud kombinatsioonid
+! possible combinations of categories
+
+! affirmative indicative  present singular 1st person	+n		loen
+!					   2nd person	+d		loeb
+!					   3rd person	+b		loed
+!				  plural   1st person	+me		loeme
+!					   2nd person	+te		loete
+!					   3rd person	+vad		loevad
+!				  impersonal		+takse, +dakse	loetakse
+!			  past    singular 1st person	+sin, +in	lugesin, tegin
+!				           2nd person	+sid, +id	lugesid, tegid
+!					   3rd person	+s, +is, +i	luges, tõstis, tegi
+!				  plural   1st person	+sime, +ime	lugesime, tegime
+!					   2nd person	+site, +ite	lugesite, tegite
+!                                          3rd person	+sid, +id	lugesid, tegid
+!				  impersonal		+ti, +di	loeti
+!
+!             quotative   present personal		+vat		lugevat
+!				  impersonal		+tavat, +davat	loetavat
+!			  past    personal		+nuvat		lugenuvat
+!			 	  impersonal		+tuvat		loetuvat* ? (can't think of example sentence)
+!
+!	      conditional present singular 1st person	+ksin		loeksin
+!					   2nd person	+ksid		loeksid
+!					   3rd person	+ks		loeks
+!				  plural   1st person	+ksime		loeksime
+!					   2nd person	+ksite		loeksite
+!					   3rd person	+ksid		loeksid
+!				  personal		+ks		loeks
+!				  impersonal		+taks, +daks	loetaks
+!			  past    singular 1st person	+nuksin		lugenuksin
+!					   2nd person	+nuksid		lugenuksid
+!					   3rd person	+nuks		lugenuks
+!				  plural   1st person	+nuksime	lugenuksime
+!					   2nd person	+nuksite	lugenuksite
+!					   3rd person	+nuksid		lugenuksid
+!				  personal		+nuks		lugenuks
+!				  impersonal		+tuks, +duks	loetuks
+!
+!	      imperative  present singular 1st person	--
+!					   2nd person	+0		loe
+!					   3rd person	+gu, +ku	lugegu
+!				  plural   1st person	+gem, +kem	lugegem
+!					   2nd person	+ge, +ke	lugege
+!					   3rd person	+gu, +ku	lugegu
+!				  impersonal		+tagu, +dagu	loetagu
+!
+! negative    indicative  present personal		ei +0			ei loe
+!				  impersonal		ei +ta, +da		ei loeta
+!			  past	  personal		ei +nud			ei lugenud
+!				  impersonal		ei +tud, +dud		ei loetud
+!
+!	      quotative   present personal		ei +vat			ei lugevat
+!				  impersonal		ei +tavat, +davat	ei loetavat
+!			  past    personal		ei +nuvat		ei lugenuvat
+!				  impersonal		ei +tuvat, +duvat	ei loetuvat
+!
+!	      conditional present personal		ei +ks			ei loeks
+!				  impersonal		ei +taks, +daks		ei loetaks
+!			  past    personal		ei +nuks		ei lugenuks
+!				  impersonal		ei +tuks, +duks		ei loetuks
+!
+!	      imperative  present singular 1st person	--
+!					   2nd person	ära +0			ära loe
+!					   3rd person	ärgu +gu, +ku		ärgu lugegu
+!				  plural   1st person	ärgem +gem, +kem	ärgem lugegem
+!					   2nd person	ärge +ge, +ke		ärge lugege
+!					   3rd person	ärgu +gu, +ku		ärgu lugegu
+!				  impersonal		ärgu +tagu, +dagu	ärgu loetagu
+
+
+! infiniitsed (nn käänduvad) verbivormid
+! infinite ("declinable") verb forms
+
++sup	! ma-tegevusnimi ! supine (ma-infinitive)	! lugema
+! (personal)
+! +sup+ill  -- lugema
+! +sup+in   -- lugemas
+! +sup+el   -- lugemast
+! +sup+tr   -- lugemaks
+! +sup+abes -- lugemata
+! (impersonal)
+! +sup+imps -- loetama
+
++inf	! da-tegevusnimi ! inifinitive (da-infinitive)	! lugeda
+
++ger	! des-vorm	 ! gerund (des-form)		! lugedes
+
++partic	! kesksõnad ! participles
+! +partic+pres+ps   -- personal present particle  -- lugev
+! +partic+pres+imps -- impersonal resent particle -- loetav
+! +partic+past+ps   -- personal past particle     -- lugenud
+! +partic+past+imps -- impersonal past particle   -- loetud
+
+! ainult liitsõna osadena esinevad vormid
+! forms that can exist only as a part of compound
++prefix
++suffix
+
+! morphophonetical
+G1	! g:0, g:j, g:k
+B1	!
+D1
+K1
+P1
+T1
+S1
+A1
+E1
+I1
+U1
+X2
+Q1	! gi/ki 
+
+! Copyright © 1999-2005 by Heli Uibo.
+! Copyright © 2010 by Jaak Pruulmann-Vengerfeldt.
+! All rights reserved.
+
+
+!Definitions
+!  C = [b|d|g|h|j|k|l|m|n|p|r|s|sh|z|zh|t|v];
+!  V = [a|e|i|o|u|õ|ä|ö|ü];
+!  F = [B|D|G|S];	! laadivahelduslikud konsonandid
+!  Alfa = [C | V];
+
+LEXICON Root
+  Tüved;
+  Kohalikud_erandid;
+
+LEXICON Tüved
+
+Adjectives;
+Adverbs;
+Interjections;
+Nouns;
+Numerals;
+PrePostPositions;
+Pronouns;
+Verbs;
+GenAttributes;
+ProperNames;
+Conjunctions;
+! NonInflectionals;
+
+
+LEXICON Kohalikud_erandid
+ teist+Num:teistküm= 05_E-NE;
+ kümmend+Num:küm= 05_E-NE;
+
+ ei+V+neg:ei #;
+ siis+J:siis #;
+ kogu+A:kogu GI;
+ jah+Adv:jah #;
+ nagu+Adv:nagu #;
+ oma+Pron:oma 17;
+ oma+Adv:oma 17;
+ alates+K:alates GI;
+
+ eikeegi+Pron+sg+nom:keegi #;
+ eikeegi+Pron+sg+gen:kellegi #;
+ eikeegi+Pron+sg+part:kedagi #;
+ eikeegi+Pron+sg+ill:kellessegi #;
+ eikeegi+Pron+sg+in:kelleski #;
+ eikeegi+Pron+sg+el:kellestki #;
+ eikeegi+Pron+sg+all:kellelegi #;
+ eikeegi+Pron+sg+ad:kellelgi #;
+ eikeegi+Pron+sg+ad:kelgi #;
+ eikeegi+Pron+sg+abl:kelleltki #;
+ eikeegi+Pron+sg+tr:kellekski #;
+ eikeegi+Pron+sg+abes:kelletagi #;
+ eikeegi+Pron+sg+es:kellenagi #;
+ eikeegi+Pron+sg+term:kellenigi #;
+ eikeegi+Pron+sg+kom:kellegagi #;
+
+ eikusagil+Adv:eikusagil GI;
+ eikusagilt+Adv:eikusagilt GI;
+ eikusagile+Adv:eikusagile GI;
+ eikuskil+Adv:eikuskil GI;
+ eikuskilt+Adv:eikuskilt GI;
+ eikuskile+Adv:eikuskile GI;
+
+! lühitüved
+ hoogne+A+prefix:hoog #;
+ inimene+S+prefix:inim #;
+ kauge+A+prefix:kaug #;
+ kerge+A+prefix:kerg #;
+ kiire+A+prefix:kiir #;
+ kõrge+A+prefix:kõrg #;
+ rõhtne+A+prefix:rõht #;
+ võõras+A+prefix:võõr #;
+ võõras+S+prefix:võõr #;
+ pelgu+A+prefix:pelgu #;
+
+! muutumatud eesliitekomponendid, osa tuletuvad ise.. EKKR, SM31
+ anti+Adv+prefix:anti #; !??
+ eba+Adv+prefix:eba #;
+ ala+Adv+prefix:ala #;
+ all+Adv+prefix:all #;
+ ase+Adv+prefix:ase #;
+ eel+Adv+prefix:eel #;
+ enne+Adv+prefix:enne #;
+ era+Adv+prefix:era #;
+ eri+Adv+prefix:eri #;
+ igi+Adv+prefix:igi #;
+ ilm+Adv+prefix:ilm #;
+ ime+Adv+prefix:ime #;
+ järel+Adv+prefix:järel #;
+ kaas+Adv+prefix:kaas #;
+ kald+Adv+prefix:kald #;
+ kerg+Adv+prefix:kerg #;
+ kõrval+Adv+prefix:kõrval #;
+ liba+Adv+prefix:liba #;
+ läbi+Adv+prefix:läbi #;
+ piki+Adv+prefix:piki #;
+ pool+Adv+prefix:pool #;
+ puht+Adv+prefix:puht #;
+ puru+Adv+prefix:puru #;
+ püsti+Adv+prefix:püsti #;
+ raske+Adv+prefix:rask #;
+ risti+Adv+prefix:risti #;
+ seni+Adv+prefix:seni #;
+ taga+Adv+prefix:taga #;
+ täis+Adv+prefix:täis #;
+ ulgu+Adv+prefix:ulgu #;
+ vaeg+Adv+prefix:vaeg #;
+ vastas+Adv+prefix:vastas #;
+ vastu+Adv+prefix:vastu #;
+ vähe+Adv+prefix:vähe #;
+ üla+Adv+prefix:üla #;
+ üld+Adv+prefix:üld #; !?
+ üli+Adv+prefix:üli #;
+
+ viker+Adv+prefix:viker #; !?
+
+! järelliitekomponendid
+ võitu+Adv+suffix:võitu #;
+
+
+
+! tyvemoodustuse erandid, vokaalmitmuse erandid
+
+! ??? aed+S:aed 22; ! at: aed, bt: aeda, bn: aia, btv: aedu, bnv: aiuA
+ aed+S:aed An_SgN;
+ aed+S:aia$ TP_22bn;
+ aed+S:aeda TP_22bt;
+
+! ??? haug+S:haug 22; ! at: haug, bt: haugi, bn: havi, btv: hauge, bnv: have
+ haug+S:haug An_SgN;
+ haug+S:havi$ TP_22bn;
+ haug+S:haugi TP_22bt;
+
+! erandlik tyvemitmus: king+S:king 22; ! at: king, bt: kinga, bn: kinga, btv: kingi, bnv: kingi
+ king+S:king An_SgN;
+ king+S:kinga$ TP_22bn';
+ king+S:kinga TP_22bt';
+ king+S:kingi An_PlP_V;
+ ! king+S:kingi An_Pl_Vok; ! seda tüvemitmust pigem ei kasutata?
+
+
+! ??? kurat+S:kurat 02; ! a0: kurat, b0: kuradi, b0r: kurade
+ kurat+S:kurat An_SgN;
+ kurat+S:kuradi TP_02b0;
+
+! ??? kuuas+S:kuuas 07_S-0; ! an: kuuas, (at): kuudas, bt: kuuda, btr: #
+ kuuas+S:kuuas$ TP_07an;
+ kuuas+S:kuuda TP_07bt;
+
+! ??? kärbes+S:kärbes 07_S-0; ! an: kärbes, (at): kärbes, bt: kärbse, btr: #
+ kärbes+S:kärbes$ TP_07an;
+ kärbes+S:kärbse TP_07bt;
+
+! ??? köömen+S:köömen 02; ! a0: köömen, b0: köömne, b0r: 0
+ köömen+S:köömen An_SgN;
+ köömen+S:köömne TP_02b0;
+
+! /// küündi:küünDi 28; ! at: küündi, an: küüni
+ küündi TP_28at;
+ küündi:küüni$ TP_28an;
+
+! ??? lemmel+S:lemmel 08; ! an: lemmel, (at): lemmel, bt: lemle
+ lemmel+S:lemmel TP_08an;
+ lemmel+S:lemle TP_07bt;
+
+! ??? lõõg+S:lõõg 22; ! at: lõõg, bt: lõõga, bn: lõa, btv: lõõgu, bnv: 0
+ lõõg+S:lõõg An_SgN;
+ lõõg+S:lõa$ TP_22bn;
+ lõõg+S:lõõga TP_22bt;
+
+! ??? mees+S:mees 13; ! at: mees, (bt): meese, an: mees, bn: mehe, bnv: mehi
+ mees+S:mees An_SgN;
+ mees+S:mehe$ An_SgG;
+ mees+S:mehe$ An_SgG_der; ! ?? need tuletised on ka erandlikud?
+ mees+S:mees An_SgP_t;
+ mees+S:mees An_PlG_te;
+ mees+S:mehi An_PlP_V;
+ ! :i An_Pl_Vok; ! mehile?
+
+! erandlik tyvemitmus: pikk+A+S:pikk 22; ! at: pikk, bt: pikka, bn: pika, btv: pikki, bnv: piki
+ pikk+A:pikk An_SgN;
+ pikk+A:pika TP_22bn';
+ pikk+A:pikka TP_22bt';
+ pikk+A:piki$ An_Pl_Vok;
+ pikk+A:pikki An_PlP_V;
+
+ pikk+S:pikk An_SgN;
+ pikk+S:pika TP_22bn';
+ pikk+S:pikka TP_22bt';
+ pikk+S:piki$ An_Pl_Vok;
+ pikk+S:pikki An_PlP_V;
+
+! ??? pundar+S:pundar 08; ! an: pundar, (at): puntar, bt: puntra
+ pundar+S:pundar$ TP_08an;
+ pundar+S:puntra TP_07bt;
+
+! ??? põrsas+S:põrsas 07_S-0; ! an: põrsas, (at): põrssas, bt: põrssa, btr: #
+ põrsas+S:põrsas$ TP_07an;
+ põrsas+S:põrssa TP_07bt;
+
+! ??? pöial+S:pöial 08; ! an: pöial, (at): pöidal, bt: pöidla
+ pöial+S:pöial$ TP_08an;
+ pöial+S:pöidla TP_07bt;
+
+! ??? raag+S:raag 22; ! at: raag, bt: raaga, bn: raa, btv: raagu, bnv: 0
+ raag+S:raag An_SgN;
+ raag+S:raa$ TP_22bn;
+ raag+S:raaga TP_22bt;
+
+! ??? raag+S:raag 22; ! at: raag, bt: raagu, bn: rao, btv: raage, bnv: 0
+ raag+S:raag An_SgN;
+ raag+S:rao$ TP_22bn;
+ raag+S:raagu TP_22bt;
+
+! ??? roe+S:roe 24_A; ! an: roe, bn: rooja, bt: rooja, bnv: rooje, btv: rooje
+ roe+S:roe An_SgN;
+ roe+S:rooja$ TP_24bn;
+ roe+S:rooja TP_24bt;
+
+! ??? roog+S:roog 22; ! at: roog, bt: rooga, bn: roa, btv: roogi, bnv: 0
+ roog+S:roog An_SgN;
+ roog+S:roa$ TP_22bn;
+ roog+S:rooga TP_22bt;
+
+! ??? saad+S:saad 22; ! at: saad, bt: saadu, bn: sao, btv: saade, bnv: 0
+ saad+S:saad An_SgN;
+ saad+S:sao$ TP_22bn;
+ saad+S:saadu TP_22bt;
+
+! ??? sae+S:sae 24_A; ! an: sae, bn: saaja, bt: saaja, bnv: saaju, btv: saaju
+ sae+S:sae An_SgN;
+ sae+S:saaja$ TP_24bn;
+ sae+S:saaja TP_24bt;
+
+! erandlik tyvemitmus: silm+S:silm 22; ! at: silm, bt: silma, bn: silma, btv: silmi, bnv: silmi
+ silm+S:silm An_SgN;
+ silm+S:silma$ TP_22bn';
+ silm+S:silma TP_22bt';
+ silm+S:silmi$ An_Pl_Vok;
+ silm+S:silmi An_PlP_V;
+
+! ??? soe+A+S:soe 24_A; ! an: soe, bn: sooja, bt: sooja, bnv: sooje, btv: sooje
+ soe+A:soe An_SgN;
+ soe+A:sooja$ TP_24bn;
+ soe+A:sooja TP_24bt;
+
+ soe+S:soe An_SgN;
+ soe+S:sooja$ TP_24bn;
+ soe+S:sooja TP_24bt;
+
+! tun 34_D_TUD; ! at: tund, (bt): tunde, bn: tunne, cn: tun
+ tunD1 TP_34at;
+ tund:tunD1e$ TP_34bn;
+ tund:tun$ TP_34cn;
+
+! tõbi+S:tõB=i 21; ! at: tõbi, bt: tõbe, bn: tõve, btg: tõppe
+ tõbi+S:tõbi TP_21at;
+ tõbi+S:tõve$ TP_21bn;
+ tõbi+S:tõbe$ TP_21bt;
+ tõbi+S:tõppe An_SgAdt_0;
+
+! vähkre 30; ! at: vähkre, (bt): vähker, bn: väher
+ vähK1re TP_30at;
+! vähK:er$ TP_30bn;
+ vähK1re:vähK1er$ An_da;
+ vähK1re:vähK1er$ An_ge;
+ vähK1er$ An_nud_der;
+ vähK1re:vähK1er$ An_dud;
+ vähK1re:vähK1er$ An_dakse;
+
+
+! ??? õlu+S:õlu 24_E; ! an: õlu, bn: õlle, bt: õlle, bnv: 0, btv: 0
+ õlu+S:õlu An_SgN;
+ õlu+S:õlle$ TP_24bn;
+ õlu+S:õlle TP_24bt;
+

@@ -1,0 +1,87 @@
+LEXICON Pronouns
+
+ emb+Pron:emB1 22_A; ! (22_P -> +Pron) at: emb, bt: emba, bn: emma, btv: embi, bnv: emmi
+ esimene+Pron:esime 12_NE-SE-S; ! (12_OP -> +Pron +Ord) a0: esimene, b0: esimese, c0: esimes, b0v: esimesi
+ iga+Pron:iga 16; ! (16_P -> +Pron) a0: iga, a0g: #
+ iga+Pron:iga 17; ! (17_P -> +Pron) a0: iga, a0g: #, a0v: #
+ iga+Pron+sg+part:igat GI; ! 17_P,iga,iga[t],------0P,-,-,+
+ keski+Pron:keski 01; ! (01_P -> +Pron) a0: keski, a0r: keske
+ kesse+Pron:kesse GI; ! (41_P -> +Pron) 
+ kogu+Pron:kogu GI; ! (41_P -> +Pron) 
+ kumb+Pron:kumB1 22_A; ! (22_P -> +Pron) at: kumb, bt: kumba, bn: kumma, btv: kumbi, bnv: kummi
+ mihukene+Pron:mihuke 12_NE-SE-S; ! (12_P -> +Pron) a0: mihukene, b0: mihukese, c0: mihukes, b0v: mihukesi
+ mihuke+Pron:mihuke 12_0-SE-S; ! (12_P -> +Pron) a0: mihuke, b0: mihukese, c0: mihukes, b0v: mihukesi
+ milline+Pron:milli 10_NE-SE-S; ! (10_P -> +Pron) a0: milline, b0: millise, c0: millis
+ minakene+Pron:minake 12_NE-SE-S; ! (12_P -> +Pron) a0: minakene, b0: minakese, c0: minakes, b0v: minakesi
+ minake+Pron:minake 12_0-SE-S; ! (12_P -> +Pron) a0: minake, b0: minakese, c0: minakes, b0v: minakesi
+ mingi+Pron:mingi 01; ! (01_P -> +Pron) a0: mingi, a0r: minge
+ misukene+Pron:misuke 12_NE-SE-S; ! (12_P -> +Pron) a0: misukene, b0: misukese, c0: misukes, b0v: misukesi
+ misuke+Pron:misuke 12_0-SE-S; ! (12_P -> +Pron) a0: misuke, b0: misukese, c0: misukes, b0v: misukesi
+ mitmendik+Pron:mitmendikK1 25; ! (25_P -> +Pron) at: mitmendik, bt: mitmendikku, bn: mitmendiku, btv: mitmendikke, bnv: mitmendike
+ mitmes+Pron:mitme 02_S-NDA; ! (02_P -> +Pron) a0: mitmes, b0: mitmenda, b0r: 0, c0: 0
+ mitu+Pron:mit 05_U-ME; ! (05_P -> +Pron) an: mitu, (at): mittu, bt: mitme, btr: #
+ muist+Pron:muist GI; ! (41_P -> +Pron) 
+ muu+Pron:mu. 26; ! (26_P -> +Pron) a0: muu, a0r: mu
+ muu+Pron+pl+abes:muudeta GI; ! 26_P,m'uu,muu[deta],------1A,a0r,m'u,+
+ muu+Pron+pl+abl:muudelt GI; ! 26_P,m'uu,muu[delt],------16,a0r,m'u,+
+ muu+Pron+pl+ad:muudel GI; ! 26_P,m'uu,muu[del],------15,a0r,m'u,+
+ muu+Pron+pl+all:muudele GI; ! 26_P,m'uu,muu[dele],------14,a0r,m'u,+
+ muu+Pron+pl+el:muudest GI; ! 26_P,m'uu,muu[dest],------13,a0r,m'u,+
+ muu+Pron+pl+es:muudena GI; ! 26_P,m'uu,muu[dena],------1E,a0r,m'u,+
+ muu+Pron+pl+gen:muude GI; ! 26_P,m'uu,muu[de],------1G,a0r,m'u,+
+ muu+Pron+pl+ill:muudesse GI; ! 26_P,m'uu,muu[desse],------11,a0r,m'u,+
+ muu+Pron+pl+in:muudes GI; ! 26_P,m'uu,muu[des],------12,a0r,m'u,+
+ muu+Pron+pl+kom:muudega GI; ! 26_P,m'uu,muu[dega],------1K,a0r,m'u,+
+ muu+Pron+pl+term:muudeni GI; ! 26_P,m'uu,muu[deni],------1R,a0r,m'u,+
+ muu+Pron+pl+tr:muudeks GI; ! 26_P,m'uu,muu[deks],------1T,a0r,m'u,+
+ mõlema+Pron:mõlema 02_S-0; ! (02_P -> +Pron) a0: mõlema, b0: mõlema, b0r: 0, c0: 0
+ mõningane+Pron:mõninga 12_NE-SE-S; ! (12_P -> +Pron) a0: mõningane, b0: mõningase, c0: mõningas, b0v: mõningasi
+ mõningas+Pron:mõning 02_GAS_S-0; ! (02_P -> +Pron) a0: mõningas, b0: mõninga, b0r: 0, c0: 0
+ mõni+Pron:mõn= 20; ! (20_P -> +Pron) a0: mõni, b0: mõne, b0g: 0
+ mäherdune+Pron:mäherdu 12_NE-SE-S; ! (12_P -> +Pron) a0: mäherdune, b0: mäherduse, c0: mäherdus, b0v: mäherdusi
+ nihukene+Pron:nihuke 12_NE-SE-S; ! (12_P -> +Pron) a0: nihukene, b0: nihukese, c0: nihukes, b0v: nihukesi
+ nihuke+Pron:nihuke 12_0-SE-S; ! (12_P -> +Pron) a0: nihuke, b0: nihukese, c0: nihukes, b0v: nihukesi
+ niisuke+Pron:niisuke 12_0-SE-S; ! (12_P -> +Pron) a0: niisuke, b0: niisukese, c0: niisukes, b0v: niisukesi
+ nisukene+Pron:nisuke 12_NE-SE-S; ! (12_P -> +Pron) a0: nisukene, b0: nisukese, c0: nisukes, b0v: nisukesi
+ nisuke+Pron:nisuke 12_0-SE-S; ! (12_P -> +Pron) a0: nisuke, b0: nisukese, c0: nisukes, b0v: nisukesi
+ oma+Pron:oma GI; ! (41_P -> +Pron) 
+ paljuke+Pron:paljuke 12_0-SE-S; ! (12_P -> +Pron) a0: paljuke, b0: paljukese, c0: paljukes, b0v: paljukesi
+ palju+Pron:palju 01; ! (01_P -> +Pron) a0: palju, a0r: 0
+ palju+Pron:palju 16; ! (16_P -> +Pron) a0: palju, a0g: #
+ samane+Pron:sama 10_NE-SE-S; ! (10_AP -> +A +Pron) a0: samane, b0: samase, c0: samas
+ sama+Pron:sama 17; ! (17_P -> +Pron) a0: sama, a0g: #, a0v: samu
+ samune+Pron:samu 10_NE-SE-S; ! (10_P -> +Pron) a0: samune, b0: samuse, c0: samus
+ selline+Pron:selli 10_NE-SE-S; ! (10_P -> +Pron) a0: selline, b0: sellise, c0: sellis
+ setmes+Pron:setme 02_S-NDA; ! (02_P -> +Pron) a0: setmes, b0: setmenda, b0r: 0, c0: 0
+ setu+Pron:set 05_U-ME; ! (05_P -> +Pron) an: setu, (at): settu, bt: setme, btr: #
+ sihukene+Pron:sihuke 12_NE-SE-S; ! (12_P -> +Pron) a0: sihukene, b0: sihukese, c0: sihukes, b0v: sihukesi
+ sihuke+Pron:sihuke 12_0-SE-S; ! (12_P -> +Pron) a0: sihuke, b0: sihukese, c0: sihukes, b0v: sihukesi
+ sinane+Pron:sina 10_NE-SE-S; ! (10_AP -> +A +Pron) a0: sinane, b0: sinase, c0: sinas
+ ! ??? sinane+Pron:sinane 10; ! (10_AP -> +A +Pron) a0: sinane, b0: sinatse, c0: sinas
+ säherdune+Pron:säherdu 12_NE-SE-S; ! (12_P -> +Pron) a0: säherdune, b0: säherduse, c0: säherdus, b0v: säherdusi
+ säärane+Pron:säära 10_NE-SE-S; ! (10_P -> +Pron) a0: säärane, b0: säärase, c0: sääras
+ teine+Pron:tei 12_NE-SE-S; ! (12_OP -> +Pron +Ord) a0: teine, b0: teise, c0: teis, b0v: teisi
+ teise+Pron:teise 12_NE-SE-S; ! (12_P -> +Pron) a0: teise, b0: teise, c0: teis, b0v: teisi
+ temakene+Pron:temake 12_NE-SE-S; ! (12_P -> +Pron) a0: temakene, b0: temakese, c0: temakes, b0v: temakesi
+ temake+Pron:temake 12_0-SE-S; ! (12_P -> +Pron) a0: temake, b0: temakese, c0: temakes, b0v: temakesi
+ ! TODO enda+Pron:enda 00; ! (00_P -> +Pron) a0: enda, b0: enda
+ ! TODO enese+Pron:enese 00; ! (00_P -> +Pron) a0: enese, b0: enese
+ ! TODO ise+Pron:ise 00; ! (00_P -> +Pron) a0: ise, b0: enda
+ ! TODO ise+Pron:ise 00; ! (00_P -> +Pron) a0: ise, b0: enese
+ ! TODO keegi+Pron:keegi 00; ! (00_P -> +Pron) a0: keegi, b0: kellegi
+ ! TODO kes+Pron:kes 00; ! (00_P -> +Pron) a0: kes, b0: kelle
+ ! TODO kumbki+Pron:kumbki 00; ! (00_P -> +Pron) a0: kumbki, b0: kummagi
+ ! TODO kõik+Pron:kõik 00; ! (00_P -> +Pron) a0: kõik, b0: kõige
+ ! TODO ma+Pron:ma 00; ! (00_P -> +Pron) a0: ma, b0: mu
+ ! TODO mina+Pron:mina 00; ! (00_P -> +Pron) a0: mina, b0: minu
+ ! TODO miski+Pron:miski 00; ! (00_P -> +Pron) a0: miski, b0: millegi
+ ! TODO mis+Pron:mis 00; ! (00_P -> +Pron) a0: mis, b0: mille
+ ! TODO sa+Pron:sa 00; ! (00_P -> +Pron) a0: sa, b0: su
+ ! TODO see+Pron:see 00; ! (00_P -> +Pron) a0: see, b0: selle
+ ! TODO sina+Pron:sina 00; ! (00_P -> +Pron) a0: sina, b0: sinu
+ ! TODO ta+Pron:ta 00; ! (00_P -> +Pron) a0: ta, b0: ta
+ ! TODO tema+Pron:tema 00; ! (00_P -> +Pron) a0: tema, b0: tema
+ ! TODO too+Pron:too 00; ! (00_P -> +Pron) a0: too, b0: tolle
+ ! TODO ükski+Pron:ükski 00; ! (00_P -> +Pron) a0: ükski, b0: ühegi
+ üks+Pron+sg+part:üht GI; ! 22_NP,'üks,'üht[],------0P,-,-,+
+ üks+Pron:ü 22_KS-HE; ! (22_NP -> +Pron +Num) at: üks, bt: ühte, bn: ühe, btv: üksi, bnv: üksi

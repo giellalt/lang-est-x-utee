@@ -1,0 +1,21 @@
+LEXICON ProperNames
+ 
+ ! ??? abel+H:abel 02; ! (02_H -> +H) a0: Abel, b0: Abeli, b0r: Abele
+ ameerika+H:ameerika 01; ! (01_H -> +H) a0: Ameerika, a0r: 0
+ ! ??? archimedes+H:archimedes 09; ! (09_H -> +H) a0: Archimedes, b0: Archimedese
+ ! ??? bayes+H:bayes 02; ! (02_H -> +H) a0: Bayes, b0: Bayesi, b0r: Bayese
+ cardano+H:cardano 01; ! (01_H -> +H) a0: Cardano, a0r: 0
+ cartesius+H:cartesius 11; ! (11_H -> +H) a0: Cartesius, b0: Cartesiuse, b0v: Cartesiusi
+ cavalier+H:cavalier 26_ii; ! (26_H -> +H) a0: Cavalier, a0r: #
+ descartes+H:descartes 11; ! (11_H -> +H) a0: Descartes, b0: Descartese, b0v: Descartese
+ eesti+H:eesti 16; ! (16_H -> +H) a0: eesti, a0g: #
+ euroopa+H:euroopa 01; ! (01_H -> +H) a0: euroopa, a0r: 0
+ ! ??? internet+H:internet 22; ! (22_H -> +H) at: Internet, bt: Internetti, bn: Interneti, btv: Internette, bnv: Internete
+ internet+H:internetT1 22_KPT_I; ! (22_H -> +H) at: internet, bt: internetti, bn: interneti, btv: internette, bnv: internete
+ olümpos+H:olümpos 09_E; ! (09_H -> +H) a0: olümpos, b0: olümpose
+ olümpos+H:olümpos 11; ! (11_H -> +H) a0: olümpos, b0: olümpose, b0v: olümposi
+ paide+H:paide 01; ! (01_H -> +H) a0: paide, a0r: 0
+ pärnu+H:pärnu 01; ! (01_H -> +H) a0: pärnu, a0r: 0
+ tallinn+H:tallinn 22_A; ! (22_H -> +H) at: tallinn, bt: tallinna, bn: tallinna, btv: tallinnu, bnv: tallinnu
+ tartu+H:tartu 01; ! (01_H -> +H) a0: tartu, a0r: 0
+ venemaa+H:venema. 26; ! (26_H -> +H) a0: Venemaa, a0r: # 
