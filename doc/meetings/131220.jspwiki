@@ -1,2 +1,17 @@
 
 Placeholder.
+
+Questions:
+
+  jussive mood (möönev kõneviis?)? Ülle Viks does not have one, EKKR09 has. Is there one or do we really use 3rd ps imperative instead?
+
+  (verb) derivations. EKI lexicon (?) and Heli's original system apply phonological/two level rules to both sides of lexicon,
+  so that we get entries for both (eg.) lugema (verb, to read) and loetu (noun, something that has been read) from the same 
+  lexicon entry (luG1e 28;). I had a bit of a problem explaining the motivation to Sjur. Solutions seem to be to either 
+  generate different lexicon entries -- luge:luG1e 28; and loetu 01; or use flags to mark such productive derivations, something
+  like lugema+V+Der/tu+S (and then it is up to the user of analyze to know that the lexicon-form of that word is really loetu. 
+  As the semantic relation is quite close, it might even be easier eg to use for translation in some cases?)
+  Sjur had a article to finish, as it is something that is relevant not only for Estonian, he promised to think about how one
+  should deal with such problems in general in context of GT infra. 
+
+

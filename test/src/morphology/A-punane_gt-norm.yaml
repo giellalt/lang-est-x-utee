@@ -1,0 +1,121 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+  Noun - punane: # Noun 'horse' - full paradigm
+     # according to Eesti keele käsiraamat
+     # http://www.eki.ee/books/ekk09/
+     # -----------------------------------------
+     #
+     # Singular
+     #
+     punane+A+sg+nom: punane
+     punane+A+sg+gen: punase
+     punane+A+sg+part: punast
+     punane+A+sg+ill: punasesse
+     punane+A+sg+in: punases
+     punane+A+sg+el: punasest
+     punane+A+sg+all: punasele
+     punane+A+sg+ad: punasel
+     punane+A+sg+abl: punaselt
+     punane+A+sg+tr: punaseks
+     punane+A+sg+term: punaseni
+     punane+A+sg+es: punasena
+     punane+A+sg+abes: punaseta
+     punane+A+sg+kom: punasega
+     #
+     # Plural
+     #
+     punane+A+pl+nom: punased
+     punane+A+pl+gen: punaste
+     punane+A+pl+part: punaseid
+     punane+A+pl+ill: punastesse
+     punane+A+pl+in: punastes
+     punane+A+pl+el: punastest
+     punane+A+pl+all: punastele
+     punane+A+pl+ad: punastel
+     punane+A+pl+abl: punastelt
+     punane+A+pl+tr: punasteks
+     punane+A+pl+term: punasteni
+     punane+A+pl+es: punastena
+     punane+A+pl+abes: punasteta
+     punane+A+pl+kom: punastega   
+     #
+     # Comparative Singular
+     #
+     punane+A+comp+sg+nom: punasem
+     punane+A+comp+sg+gen: punasema
+     punane+A+comp+sg+part: punasemat
+     punane+A+comp+sg+ill: punasemasse
+     punane+A+comp+sg+in: punasemas
+     punane+A+comp+sg+el: punasemast
+     punane+A+comp+sg+all: punasemale
+     punane+A+comp+sg+ad: punasemal
+     punane+A+comp+sg+abl: punasemalt
+     punane+A+comp+sg+tr: punasemaks
+     punane+A+comp+sg+term: punasemani
+     punane+A+comp+sg+es: punasemana
+     punane+A+comp+sg+abes: punasemata
+     punane+A+comp+sg+kom: punasemaga
+     #
+     # Comparative Plural
+     #
+     punane+A+comp+pl+nom: punasemad
+     punane+A+comp+pl+gen: punasemate
+     punane+A+comp+pl+part: punasemaid
+     punane+A+comp+pl+ill: punasematesse
+     punane+A+comp+pl+in: punasemates
+     punane+A+comp+pl+el: punasematest
+     punane+A+comp+pl+all: punasematele
+     punane+A+comp+pl+ad: punasematel
+     punane+A+comp+pl+abl: punasematelt
+     punane+A+comp+pl+tr: punasemateks
+     punane+A+comp+pl+term: punasemateni
+     punane+A+comp+pl+es: punasematena
+     punane+A+comp+pl+abes: punasemateta
+     punane+A+comp+pl+kom: punasematega   
+     #
+     # Superlative Singular
+     #
+     punane+A+super+sg+nom: punaseim
+     punane+A+super+sg+gen: punaseima
+     punane+A+super+sg+part: punaseimat
+     punane+A+super+sg+ill: punaseimasse
+     punane+A+super+sg+in: punaseimas
+     punane+A+super+sg+el: punaseimast
+     punane+A+super+sg+all: punaseimale
+     punane+A+super+sg+ad: punaseimal
+     punane+A+super+sg+abl: punaseimalt
+     punane+A+super+sg+tr: punaseimaks
+     punane+A+super+sg+term: punaseimani
+     punane+A+super+sg+es: punaseimana
+     punane+A+super+sg+abes: punaseimata
+     punane+A+super+sg+kom: punaseimaga
+     #
+     # Superlative Plural
+     #
+     punane+A+super+pl+nom: punaseimad
+     punane+A+super+pl+gen: punaseimate
+     punane+A+super+pl+part: punaseimaid
+     punane+A+super+pl+ill: punaseimatesse
+     punane+A+super+pl+in: punaseimates
+     punane+A+super+pl+el: punaseimatest
+     punane+A+super+pl+all: punaseimatele
+     punane+A+super+pl+ad: punaseimatel
+     punane+A+super+pl+abl: punaseimatelt
+     punane+A+super+pl+tr: punaseimateks
+     punane+A+super+pl+term: punaseimateni
+     punane+A+super+pl+es: punaseimatena
+     punane+A+super+pl+abes: punaseimateta
+     punane+A+super+pl+kom: punaseimatega   
