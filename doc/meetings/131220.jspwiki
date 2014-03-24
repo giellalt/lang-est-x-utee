@@ -1,6 +1,4 @@
 
-Placeholder.
-
 Questions:
 
   jussive mood (möönev kõneviis?)? Ülle Viks does not have one, EKKR09 has. Is there one or do we really use 3rd ps imperative instead?
@@ -13,5 +11,21 @@ Questions:
   As the semantic relation is quite close, it might even be easier eg to use for translation in some cases?)
   Sjur had a article to finish, as it is something that is relevant not only for Estonian, he promised to think about how one
   should deal with such problems in general in context of GT infra. 
+
+  Distinguishing homonyms -- palk/palgi vs palk/palga. At the moment there is no way to distinguish some words in their lexicon form
+  although the nominative (and thus the lexicon form) is almost the only case of homonymy. It is usual for GT infra to mark different
+  stems with flags like +Hom1, +Hom2 etc. 
+
+  Parallel forms. There are words with possible parallel forms like short and long illative, multiple forms for plural etc. Francis Tyers 
+  argued that it would be handy if generator-fst would generate just one (preferred) surface form. And if there is no single one 
+  preferred form then MT solutions (and probably everything else that generates surface forms) still needs some formalized rules to choose 
+  between forms.
+
+  (do we need a new lexicon format instead of EKI's stem database / morphological database? One possible way would be to use 
+  lexc as format but I'm not sure if that is the best idea)
+
+
+  Rules of compounding. plamk's way of combining machines is somewhat incompatible with gt infra. Some new way to describe compounding rules
+  is needed. OTOH, Filosoft's rules should be partially published by now, should we try to use these somehow?
 
 
