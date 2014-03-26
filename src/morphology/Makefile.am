@@ -21,6 +21,7 @@ GT_LEXC_ROOT=root.lexc
 # Set this to the names of all other source lexc files
 GT_LEXC_SRCS=\
 			 affixes/cmd-rules.lexc \
+			 affixes/digits.lexc \
 			 stems/adjectives.lexc \
 			 stems/adverbs.lexc \
 			 stems/conjunctions.lexc \
