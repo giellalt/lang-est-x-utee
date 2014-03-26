@@ -230,10 +230,14 @@ Verbs;
 GenAttributes;
 ProperNames;
 Conjunctions;
-Punctuation;
-DIGITS;
+Punctuation; !TT
+DIGITS; !TT
 ! NonInflectionals;
 
+LEXICON NOMINAL !to make the finnish digits.lexc work TT
+Adjectives;
+Nouns;
+Numerals;
 
 LEXICON Kohalikud_erandid
  teist+Num:teistküm= 05_E-NE;
