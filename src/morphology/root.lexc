@@ -230,6 +230,8 @@ Verbs;
 GenAttributes;
 ProperNames;
 Conjunctions;
+Punctuation;
+DIGITS;
 ! NonInflectionals;
 
 

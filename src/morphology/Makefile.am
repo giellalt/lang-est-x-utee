@@ -24,6 +24,7 @@ GT_LEXC_SRCS=\
 			 stems/adjectives.lexc \
 			 stems/adverbs.lexc \
 			 stems/conjunctions.lexc \
+			 stems/digits.lexc \
 			 stems/genitive-attributes.lexc \
 			 stems/interjections.lexc \
 			 stems/noninfectionals.lexc \
@@ -32,6 +33,7 @@ GT_LEXC_SRCS=\
 			 stems/prepostpos.lexc \
 			 stems/pronouns.lexc \
 			 stems/proper-names.lexc \
+			 stems/punctuation.lexc \
 			 stems/verbs.lexc
 
 #			 affixes/adjectives.lexc \
