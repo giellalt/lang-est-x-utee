@@ -90,6 +90,26 @@ endif
 #################################################
 #### Add language-specific build rules here: ####
 
+
+inverted-phonology.hfst: phonology/$(GTLANG)-phon.hfst
+	$(HFST_INVERT) $(VERBOSITY) $(HFST_FLAGS) -i $< -o $@
+
+generator-raw-gt-desc.hfst: generator-raw-gt-desc.tmp.hfst inverted-phonology.hfst
+	$(INTRSCT_verbose)$(HFST_COMPOSE_INTERSECT) $(VERBOSITY) $(HFST_FLAGS) \
+		-I -1 generator-raw-gt-desc.tmp.hfst -2 inverted-phonology.hfst | \
+		$(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
+
+
+
+
+analyser-raw-gt-desc.xfst: morphology/$(GTLANG).lexc.xfst analyser-raw-gt-desc.tmp.xfst
+	$(AM_V_at)$(PRINTF) \
+	"read-source analyser-raw-gt-desc.tmp.xfst\ninvert-source\nread-rules  phonology/$(GTLANG)-phon.xfst\ncompose-result\ninvert-result\nsave-result $@\nquit\n" \
+	> $@.script
+	$(LEXC_verbose)$(LEXC) $(VERBOSITY) < $@.script
+	$(AM_V_at)rm -f $@.script
+	
+
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
 ##################################################################

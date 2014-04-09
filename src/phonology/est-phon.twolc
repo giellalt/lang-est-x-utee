@@ -195,7 +195,7 @@ NorkKlus:Klus <=> _ %=: (TyveVok:) X2:;
 "pst -> st ja p kaashäälikuühendis" 	!pst -> st (lapst->last)
 
   p:0 <=> _ s (%$:) %+: t ;
-  Kons Vok _ :p (%$:)(%+:) [Kons-p+]; 	!kaashäälikuühend
+!  Kons Vok _ :p (%$:)(%+:) [Kons-p+]; 	!kaashäälikuühend; teeb katki rippmenüü
 
 "m -> n  t|d ees" 	!(lumd->lund)
 

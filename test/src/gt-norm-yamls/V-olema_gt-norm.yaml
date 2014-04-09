@@ -174,47 +174,6 @@ Tests:
      olema+V+quot+past+ps2+pl+neg: polnuvat
      olema+V+quot+past+ps3+pl+neg: polnuvat
      olema+V+quot+past+imps+neg: poldanuvat
-     # jussive mood
-     # present tense
-     #
-     olema+V+Jus+Prs+ps1+sg+af: olgu
-     olema+V+Jus+Prs+ps2+sg+af: olgu
-     olema+V+Jus+Prs+ps3+sg+af: olgu
-     olema+V+Jus+Prs+ps1+pl+af: olgu
-     olema+V+Jus+Prs+ps2+pl+af: olgu
-     olema+V+Jus+Prs+ps3+pl+af: olgu
-     olema+V+Jus+Prs+imps+af: oldagu
-     olema+V+Jus+Prs+ps1+sg+neg: olgu
-     olema+V+Jus+Prs+ps2+sg+neg: olgu
-     olema+V+Jus+Prs+ps3+sg+neg: olgu
-     olema+V+Jus+Prs+ps1+pl+neg: olgu
-     olema+V+Jus+Prs+ps2+pl+neg: olgu
-     olema+V+Jus+Prs+ps3+pl+neg: olgu
-     olema+V+Jus+Prs+imps+neg: oldagu
-     # jussive mood
-     # past tense
-     #
-     olema+V+Jus+Prt+ps1+sg+af: olnud
-     olema+V+Jus+Prt+ps2+sg+af: olnud
-     olema+V+Jus+Prt+ps3+sg+af: olnud
-     olema+V+Jus+Prt+ps1+pl+af: olnud
-     olema+V+Jus+Prt+ps2+pl+af: olnud
-     olema+V+Jus+Prt+ps3+pl+af: olnud
-     olema+V+Jus+Prt+imps+af: oldud
-     olema+V+Jus+Prt+ps1+sg+neg: olnud
-     olema+V+Jus+Prt+ps2+sg+neg: olnud
-     olema+V+Jus+Prt+ps3+sg+neg: olnud
-     olema+V+Jus+Prt+ps1+pl+neg: olnud
-     olema+V+Jus+Prt+ps2+pl+neg: olnud
-     olema+V+Jus+Prt+ps3+pl+neg: olnud
-     olema+V+Jus+Prt+imps+neg: oldud
-     olema+V+Jus+Prt+ps1+sg+neg: polnud
-     olema+V+Jus+Prt+ps2+sg+neg: polnud
-     olema+V+Jus+Prt+ps3+sg+neg: polnud
-     olema+V+Jus+Prt+ps1+pl+neg: polnud
-     olema+V+Jus+Prt+ps2+pl+neg: polnud
-     olema+V+Jus+Prt+ps3+pl+neg: polnud
-     olema+V+Jus+Prt+imps+neg: poldud
      #
      # Infinitive
      #

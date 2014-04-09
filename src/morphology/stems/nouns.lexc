@@ -6606,7 +6606,7 @@ LEXICON Nouns
  kesa+S:kesa 17; ! (17_S -> +S) a0: kesa, a0g: #, a0v: #
  kese+S:kesK1 05_E-ME; ! (05_S -> +S) an: kese, (at): keske, bt: keskme, btr: #
  kesik+S:kesik 02_U; ! (02_S -> +S) a0: kesik, b0: kesiku, b0r: 0, c0: 0
- =kesi+S:=keS1 15; ! (15_S -> +S) at: kesi, (bt): kesi, bn: kee, ct: ke, cn: ke
+ kesi+S:keS1 15; ! (15_S -> +S) at: kesi, (bt): kesi, bn: kee, ct: ke, cn: ke
  keskendus+S:keskendus 11; ! (11_S -> +S) a0: keskendus, b0: keskenduse, b0v: keskendusi
  keskkond+S:keskkonD1 22_A; ! (22_S -> +S) at: keskkond, bt: keskkonda, bn: keskkonna, btv: keskkondi, bnv: keskkonni
  keskmik+S:keskmikK1 25; ! (25_S -> +S) at: keskmik, bt: keskmikku, bn: keskmiku, btv: keskmikke, bnv: keskmike
@@ -8723,7 +8723,7 @@ LEXICON Nouns
  kõrgendik+S:kõrgendikK1 25; ! (25_S -> +S) at: kõrgendik, bt: kõrgendikku, bn: kõrgendiku, btv: kõrgendikke, bnv: kõrgendike
  kõrgend+S:kõrgend 02_I; ! (02_S -> +S) a0: kõrgend, b0: kõrgendi, b0r: kõrgende, c0: 0
  kõrgendus+S:kõrgendus 11; ! (11_S -> +S) a0: kõrgendus, b0: kõrgenduse, b0v: kõrgendusi
- =kõrge+S:=kõrK1 05_E-ME; ! (05_S -> +S) an: kõrge, (at): kõrke, bt: kõrkme, btr: #
+ kõrge+S:kõrK1 05_E-ME; ! (05_S -> +S) an: kõrge, (at): kõrke, bt: kõrkme, btr: #
  kõrges+S:kõrges 09_E; ! (09_S -> +S) a0: kõrges, b0: kõrgese
  kõrgmik+S:kõrgmikK1 25; ! (25_S -> +S) at: kõrgmik, bt: kõrgmikku, bn: kõrgmiku, btv: kõrgmikke, bnv: kõrgmike
  kõrgus+S:kõrgus 09_E; ! (09_S -> +S) a0: kõrgus, b0: kõrguse
@@ -15761,7 +15761,7 @@ LEXICON Nouns
  rahe+S:rahK1e 06; ! (06_S -> +S) an: rahe, at: rahke
  rahhiitik+S:rahhiitik 02_U; ! (02_S -> +S) a0: rahhiitik, b0: rahhiitiku, b0r: 0, c0: 0
  rahhiit+S:rahhiiT1 22_I; ! (22_S -> +S) at: rahhiit, bt: rahhiiti, bn: rahhiidi, btv: rahhiite, bnv: rahhiide
- =rahk+S:=rahK1 22_A; ! (22_S -> +S) at: rahk, bt: rahka, bn: raha, btv: rahku, bnv: rahu
+ rahk+S:rahK1 22_A; ! (22_S -> +S) at: rahk, bt: rahka, bn: raha, btv: rahku, bnv: rahu
  rahmeldus+S:rahmeldus 11; ! (11_S -> +S) a0: rahmeldus, b0: rahmelduse, b0v: rahmeldusi
  rahn+S:rahn 22_U; ! (22_S -> +S) at: rahn, bt: rahnu, bn: rahnu, btv: rahne, bnv: rahne
  rahnustik+S:rahnustikK1 25; ! (25_S -> +S) at: rahnustik, bt: rahnustikku, bn: rahnustiku, btv: rahnustikke, bnv: rahnustike
@@ -22201,7 +22201,7 @@ LEXICON Nouns
  võidis+S:võidis 09_E; ! (09_S -> +S) a0: võidis, b0: võidise
  võidmine+S:võidmi 10_NE-SE-S; ! (10_S -> +S) a0: võidmine, b0: võidmise, c0: võidmis
  võidmine+S:võidmi 12_NE-SE-S; ! (12_S -> +S) a0: võidmine, b0: võidmise, c0: võidmis, b0v: võidmisi
- =võidu+S:=võidu 01; ! (01_S -> +S) a0: võidu, a0r: 0
+ võidu+S:võidu 01; ! (01_S -> +S) a0: võidu, a0r: 0
  võie+S:võiD1e 06; ! (06_S -> +S) an: võie, at: võide
  võik+S:võiK1 22_U; ! (22_SA -> +A +S) at: võik, bt: võiku, bn: võigu, btv: võike, bnv: võige
  võikus+S:võikus 09_E; ! (09_S -> +S) a0: võikus, b0: võikuse

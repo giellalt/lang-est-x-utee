@@ -13,7 +13,7 @@ Tests:
 # Proofread the gold standard (below)
 # Then: run analyser, then correct. 
 
-  Noun - punane: # Noun 'horse' - full paradigm
+  Noun - punane: # Noun 'red' - full paradigm
      # according to Eesti keele käsiraamat
      # http://www.eki.ee/books/ekk09/
      # -----------------------------------------
