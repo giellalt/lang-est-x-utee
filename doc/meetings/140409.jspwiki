@@ -1,0 +1,107 @@
+Meeting SamEst, April 8th 2014
+
+Present: Jaak, Heli, Heiki, Fran, Sjur, Trond, Neeme
+
+
+!!!CG
+
+No explicit licence online so far.
+
+Solution: Ask Kaili to put the licence on her webpage, but she is not available for 2 weeks or so. She is apparently happy to release it under the LGPL.
+
+Kaili and Tiina Puolukainen are working on a dependency grammar, on top of 
+Kaili's parser. Tiina and Kaili have changed to the compiler vislcg3. There are
+now more rules than can be found on Kaili's webpage.
+
+Does the grammar has to be compatible? Yes. The best solution would be to
+synchronise with Kaili. At the moment They use filosoft + a relabeling 
+perlscript.
+
+The gt pipeline:
+
+{{{
+text | preprocess & m-analysis & postprocess | dis        | syntfunc      | dep
+                                             | (per lang) | (common sámi) | (common all langs)
+}}}
+
+
+The apertium pipeline:
+
+{{{
+text | analysis | dis | syntfunc | dep 
+}}}
+
+
+!!!FST
+
+!!Status
+
+TWolC applied on both sides:
+
+* Sjur has set up certain things: the analyser/generator-raw-gt-desc.[xh]fst
+** build lexical fst - from all lexc files
+** build twol fst - from twol rules
+** combine these two
+*** earlier: => directly producing the -raw-
+*** now: => producing first a -raw-.tmp.hfst file, which can then be further processed
+
+That is: add in src/Makefile.am a target to produce the final raw file with the twolc processing you want from the -raw-*.tmp.hfst file
+
+
+Jaak has something already working and some more tests passing but nothing committed yet.
+
+* adding inverse twolc rules ok
+* adding other transducers (?) from plamk did not rule
+* in plamk there are filters for preventing overgeneration, for written numbers,
+
+plamk lets everything else be done before applying phonological rules,
+at the moment simple words with phon-rules applied.
+
+the same rules should be applied in an normal way to numbers, and then combine.
+
+
+!! fst steps forwards
+
+The TODO list:
+
+* Jaak to continue on the fsts
+* Large enough yaml tests?
+** Jaak took Neeme's test files and changed the tags
+** TODO: Check the paradigms for completeness
+* Many enough yaml tests?
+** One for each Ülle Viks category (NN)
+* CG license issue: Trond, Fran in may
+* Tag filters: input taglist: root.lexc
+** Trond, Fran
+* Report before end of this month
+** Heiki, Trond
+
+
+
+!!!Oahpa
+
+The estonian Oahpa is there, but empty.
+
+Overview:
+
+* Numra: the numerals
+* Leksa: Pedagogical vocabulary: appr 3000 words
+** Heli has a list from the univ, in tabular format
+* MorfaS: Testing the fst against this list
+** fst-ers to look at fst, then Heli to implement
+* MorfaC: Making the sentence frames
+** We will wait with MorfaC
+
+__TODO__:
+
+* Heli to check in the Leksa list in main/ped/est/inc/
+** Then for Jaak or anyone to check against the est.fst
+* Fill inn numbers.lexc, date.lexc, clock.lexc
+** Heli and Trond to look at Numra
+
+
+!!!Next meeting
+
+__May 14th, at 13.00 Swedish time__
+
+
