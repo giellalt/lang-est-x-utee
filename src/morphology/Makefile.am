@@ -21,11 +21,9 @@ GT_LEXC_ROOT=root.lexc
 # Set this to the names of all other source lexc files
 GT_LEXC_SRCS=\
 			 affixes/cmd-rules.lexc \
-			 affixes/digits.lexc \
 			 stems/adjectives.lexc \
 			 stems/adverbs.lexc \
 			 stems/conjunctions.lexc \
-			 stems/digits.lexc \
 			 stems/genitive-attributes.lexc \
 			 stems/interjections.lexc \
 			 stems/noninfectionals.lexc \
@@ -41,11 +39,13 @@ GT_LEXC_SRCS=\
 #			 affixes/nouns.lexc \
 #			 affixes/propernouns.lexc \
 #			 affixes/verbs.lexc \
+#			 affixes/digits.lexc \
 #			 stems/adjectives.lexc \
 #			 stems/nouns.lexc \
 #			 stems/numerals.lexc \
 #			 stems/prefixes.lexc \
 #			 stems/pronouns.lexc \
+#			 stems/digits.lexc \
 #			 stems/verbs.lexc
 
 # Set this to the names of all generated lexc files, if any
@@ -54,6 +54,21 @@ GENERATED_LEXC_SRCS=
 # Set this to the names of all source xml files, if any
 GT_XML_SRCS=
 
+overriding-exceptions.all.lexc:	overriding-exceptions.lexc
+	$(AM_V_GEN)cat $^ > $@
+
+numbers.all.lexc:	numbers.lexc
+	$(AM_V_GEN)cat $^ > $@
+
 include $(top_srcdir)/am-shared/src-morphology-dir-include.am
+
+if CAN_HFST
+noinst_DATA+=overriding-exceptions.lexc.hfst numbers.lexc.hfst
+endif
+
+if CAN_XFST
+noinst_DATA+=overriding-exceptions.lexc.xfst numbers.lexc.xfst
+endif
+
 
 # vim: set ft=automake:

@@ -26,21 +26,9 @@ Tests:
      olema+V+indic+pres+ps1+pl+ps+af: oleme
      olema+V+indic+pres+ps2+pl+ps+af: olete
      olema+V+indic+pres+ps3+pl+ps+af: 'on'
+     olema+V+indic+pres+ps+neg: [ole, pole]
      olema+V+indic+pres+imps+af: ollakse
-     olema+V+indic+pres+ps1+sg+ps+neg: ole
-     olema+V+indic+pres+ps2+sg+ps+neg: ole
-     olema+V+indic+pres+ps1+sg+ps+neg: ole
-     olema+V+indic+pres+ps1+pl+ps+neg: ole
-     olema+V+indic+pres+ps2+pl+ps+neg: ole
-     olema+V+indic+pres+ps3+pl+ps+neg: ole
-     olema+V+indic+pres+imps+neg: olda
-     olema+V+indic+pres+ps1+sg+ps+neg: pole
-     olema+V+indic+pres+ps2+sg+ps+neg: pole
-     olema+V+indic+pres+ps1+sg+ps+neg: pole
-     olema+V+indic+pres+ps1+pl+ps+neg: pole
-     olema+V+indic+pres+ps2+pl+ps+neg: pole
-     olema+V+indic+pres+ps3+pl+ps+neg: pole
-     olema+V+indic+pres+imps+neg: polda
+     olema+V+indic+pres+imps+neg: [olda, polda]
      # indicative mood
      # past tense
      #
@@ -50,130 +38,69 @@ Tests:
      olema+V+indic+impf+ps1+pl+ps+af: olime
      olema+V+indic+impf+ps2+pl+ps+af: olite
      olema+V+indic+impf+ps3+pl+ps+af: olid
+     olema+V+indic+impf+ps+neg: [olnud, polnud]
      olema+V+indic+impf+imps+af: oldi
-     olema+V+indic+impf+ps1+sg+ps+neg: olnud
-     olema+V+indic+impf+ps2+sg+ps+neg: olnud
-     olema+V+indic+impf+ps3+sg+ps+neg: olnud
-     olema+V+indic+impf+ps1+pl+ps+neg: olnud
-     olema+V+indic+impf+ps2+pl+ps+neg: olnud
-     olema+V+indic+impf+ps3+pl+ps+neg: olnud
-     olema+V+indic+impf+imp+neg: oldud
-     olema+V+indic+impf+ps1+sg+ps+neg: polnud
-     olema+V+indic+impf+ps2+sg+ps+neg: polnud
-     olema+V+indic+impf+ps3+sg+ps+neg: polnud
-     olema+V+indic+impf+ps1+pl+ps+neg: polnud
-     olema+V+indic+impf+ps2+pl+ps+neg: polnud
-     olema+V+indic+impf+ps3+pl+ps+neg: polnud
-     olema+V+indic+impf+imps+neg: poldud
+     olema+V+indic+impf+imps+neg: [oldud, poldud]
      # conditional mood
      # present tense
      #
-     olema+V+cond+pres+ps1+sg+af: oleksin
-     olema+V+cond+pres+ps2+sg+af: oleksid
-     olema+V+cond+pres+ps3+sg+af: oleks
-     olema+V+cond+pres+ps1+pl+af: oleksime
-     olema+V+cond+pres+ps2+pl+af: oleksite
-     olema+V+cond+pres+ps3+pl+af: oleksid
      olema+V+cond+pres+imps+af: oldaks
-     olema+V+cond+pres+ps1+sg+neg: oleks
-     olema+V+cond+pres+ps2+sg+neg: oleks
-     olema+V+cond+pres+ps3+sg+neg: oleks
-     olema+V+cond+pres+ps1+pl+neg: oleks
-     olema+V+cond+pres+ps2+pl+neg: oleks
-     olema+V+cond+pres+ps3+pl+neg: oleks
-     olema+V+cond+pres+imps+neg: oldaks
-     olema+V+cond+pres+ps1+sg+neg: poleks
-     olema+V+cond+pres+ps2+sg+neg: poleks
-     olema+V+cond+pres+ps3+sg+neg: poleks
-     olema+V+cond+pres+ps1+pl+neg: poleks
-     olema+V+cond+pres+ps2+pl+neg: poleks
-     olema+V+cond+pres+ps3+pl+neg: poleks
-     olema+V+cond+pres+imps+neg: poldaks
+     olema+V+cond+pres+imps+neg: [oldaks, poldaks]
+     olema+V+cond+pres+ps1+pl+ps+af: oleksime
+     olema+V+cond+pres+ps1+sg+ps+af: oleksin
+     olema+V+cond+pres+ps2+pl+ps+af: oleksite
+     olema+V+cond+pres+ps2+sg+ps+af: oleksid
+     olema+V+cond+pres+ps3+pl+ps+af: oleksid
+     olema+V+cond+pres+ps3+sg+ps+af: oleks
+     olema+V+cond+pres+ps+af: oleks
+     olema+V+cond+pres+ps+neg: [oleks, poleks]
      # conditional mood
      # past tense
      #
-     olema+V+cond+past+ps1+sg+af: olnuksin
-     olema+V+cond+past+ps2+sg+af: olnuksid
-     olema+V+cond+past+ps3+sg+af: olnuks
-     olema+V+cond+past+ps1+pl+af: olnuksime
-     olema+V+cond+past+ps2+pl+af: olnuksite
-     olema+V+cond+past+ps3+pl+af: olnuksid
+     olema+V+cond+past+ps1+sg+ps+af: olnuksin
+     olema+V+cond+past+ps2+sg+ps+af: olnuksid
+     olema+V+cond+past+ps3+sg+ps+af: olnuks
+     olema+V+cond+past+ps1+pl+ps+af: olnuksime
+     olema+V+cond+past+ps2+pl+ps+af: olnuksite
+     olema+V+cond+past+ps3+pl+ps+af: olnuksid
+     olema+V+cond+past+ps1+sg+ps+neg: olnuksin
+     olema+V+cond+past+ps2+sg+ps+neg: olnuksid
+     olema+V+cond+past+ps3+sg+ps+neg: olnuks
+     olema+V+cond+past+ps1+pl+ps+neg: olnuksime
+     olema+V+cond+past+ps2+pl+ps+neg: olnuksite
+     olema+V+cond+past+ps3+pl+ps+neg: olnuksid
+     olema+V+cond+past+ps+af: olnuks
      olema+V+cond+past+imps+af: olduks
-     olema+V+cond+past+ps1+sg+neg: olnuks
-     olema+V+cond+past+ps2+sg+neg: olnuks
-     olema+V+cond+past+ps3+sg+neg: olnuks
-     olema+V+cond+past+ps1+pl+neg: olnuks
-     olema+V+cond+past+ps2+pl+neg: olnuks
-     olema+V+cond+past+ps3+pl+neg: olnuks
+     olema+V+cond+past+ps+neg: olnuks
      olema+V+cond+past+imps+neg: olduks
      # imperative mood
      #
-     olema+V+imper+pres+ps2+sg+af: ole
-     olema+V+imper+pres+ps3+sg+af: olgu
-     olema+V+imper+pres+ps1+pl+af: olgem
-     olema+V+imper+pres+ps2+pl+af: olge
-     olema+V+imper+pres+ps3+pl+af: olgu
+     olema+V+imper+pres+ps2+sg+ps+af: ole
+     olema+V+imper+pres+ps3+sg+ps+af: olgu
+     olema+V+imper+pres+ps1+pl+ps+af: olgem
+     olema+V+imper+pres+ps2+pl+ps+af: olge
+     olema+V+imper+pres+ps3+pl+ps+af: olgu
      olema+V+imper+pres+imps+af: oldagu
-     olema+V+imper+pres+ps2+sg+neg: ole
-     olema+V+imper+pres+ps3+sg+neg: olgu
-     olema+V+imper+pres+ps1+pl+neg: olgem
-     olema+V+imper+pres+ps2+pl+neg: olge
-     olema+V+imper+pres+ps3+pl+neg: olgu
+     olema+V+imper+pres+ps2+sg+ps+neg: ole
+     olema+V+imper+pres+ps3+sg+ps+neg: olgu
+     olema+V+imper+pres+ps1+pl+ps+neg: olgem
+     olema+V+imper+pres+ps2+pl+ps+neg: olge
+     olema+V+imper+pres+ps3+pl+ps+neg: olgu
      olema+V+imper+pres+imps+neg: oldagu
-     olema+V+imper+pres+ps2+sg+neg: pole
-     olema+V+imper+pres+ps3+sg+neg: polgu
-     olema+V+imper+pres+ps1+pl+neg: polgem
-     olema+V+imper+pres+ps2+pl+neg: polge
-     olema+V+imper+pres+ps3+pl+neg: polgu
-     olema+V+imper+pres+imps+neg: poldagu
      # oblique mood (quotative)
      # present tense
      #
-     olema+V+quot+pres+ps1+sg+af: olevat
-     olema+V+quot+pres+ps2+sg+af: olevat
-     olema+V+quot+pres+ps3+sg+af: olevat
-     olema+V+quot+pres+ps1+pl+af: olevat
-     olema+V+quot+pres+ps2+pl+af: olevat
-     olema+V+quot+pres+ps3+pl+af: olevat
+     olema+V+quot+pres+ps+af: olevat
+     olema+V+quot+pres+ps+neg: [olevat, polevat]
      olema+V+quot+pres+imps+af: oldavat
-     olema+V+quot+pres+ps1+sg+neg: olevat
-     olema+V+quot+pres+ps2+sg+neg: olevat
-     olema+V+quot+pres+ps3+sg+neg: olevat
-     olema+V+quot+pres+ps1+pl+neg: olevat
-     olema+V+quot+pres+ps2+pl+neg: olevat
-     olema+V+quot+pres+ps3+pl+neg: olevat
-     olema+V+quot+pres+imps+neg: oldavat
-     olema+V+quot+pres+ps1+sg+neg: polevat
-     olema+V+quot+pres+ps2+sg+neg: polevat
-     olema+V+quot+pres+ps3+sg+neg: polevat
-     olema+V+quot+pres+ps1+pl+neg: polevat
-     olema+V+quot+pres+ps2+pl+neg: polevat
-     olema+V+quot+pres+ps3+pl+neg: polevat
-     olema+V+quot+pres+imps+neg: poldavat
+     olema+V+quot+pres+imps+neg: [oldavat, poldavat]
      # oblique mood (quotative)
      # past tense
      #
-     olema+V+quot+past+ps1+sg+af: olnuvat
-     olema+V+quot+past+ps2+sg+af: olnuvat
-     olema+V+quot+past+ps3+sg+af: olnuvat
-     olema+V+quot+past+ps1+pl+af: olnuvat
-     olema+V+quot+past+ps2+pl+af: olnuvat
-     olema+V+quot+past+ps3+pl+af: olnuvat
-     olema+V+quot+past+imps+af: oldanuvat
-     olema+V+quot+past+ps1+sg+neg: olnuvat
-     olema+V+quot+past+ps2+sg+neg: olnuvat
-     olema+V+quot+past+ps3+sg+neg: olnuvat
-     olema+V+quot+past+ps1+pl+neg: olnuvat
-     olema+V+quot+past+ps2+pl+neg: olnuvat
-     olema+V+quot+past+ps3+pl+neg: olnuvat
-     olema+V+quot+past+imps+neg: oldanuvat
-     olema+V+quot+past+ps1+sg+neg: polnuvat
-     olema+V+quot+past+ps2+sg+neg: polnuvat
-     olema+V+quot+past+ps3+sg+neg: polnuvat
-     olema+V+quot+past+ps1+pl+neg: polnuvat
-     olema+V+quot+past+ps2+pl+neg: polnuvat
-     olema+V+quot+past+ps3+pl+neg: polnuvat
-     olema+V+quot+past+imps+neg: poldanuvat
+     olema+V+quot+past+ps+af: olnuvat
+     olema+V+quot+past+ps+neg: [olnuvat, polnuvat]
+     olema+V+quot+past+imps+af: olduvat
+     olema+V+quot+past+imps+neg: olduvat
      #
      # Infinitive
      #
@@ -181,7 +108,6 @@ Tests:
      #
      # Supine
      #
-     olema+V+sup: olema
      olema+V+sup+ill: olema
      olema+V+sup+in: olemas
      olema+V+sup+el: olemast
@@ -191,10 +117,10 @@ Tests:
      #
      # Participle
      #
-     olema+V+pres+ps: olev
-     olema+V+pres+imps+: oldav
-     olema+V+past+ps: olnud
-     olema+V+past+imps: oldud
+     olema+V+partic+pres+ps: olev
+     olema+V+partic+pres+imps: oldav
+     olema+V+partic+past+ps: olnud
+     olema+V+partic+past+imps: oldud
      #
      # Gerund
      #

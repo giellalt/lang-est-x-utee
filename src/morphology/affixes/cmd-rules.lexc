@@ -1018,11 +1018,11 @@ LEXICON KÄÄNE_2  ! käändelõpud illatiivist translatiivini (mitmus)
 ! Analoogiarühmad verbidele
 LEXICON An_ma
  ma+V+sup+ill:ma GI;
- ma+V+quot+pres+ps:vat GI;
+ ma+V+quot+pres+ps:vat afneg_GI;
 
 LEXICON An_mata
  ma+V+sup+abes:mata GI;
- mata+A:mata GI;
+ mata+A:mata GI; ! ???
  ma+V+sup+in:mas GI;
  ma+V+sup+el:mast GI;
  ma+V+sup+tr:maks GI;
@@ -1095,38 +1095,38 @@ LEXICON An_a
 !!!!!
 
 LEXICON An_ge
- ma+V+imper+pres+ps3+sg+ps:+gu GI ;
- ma+V+imper+pres+ps1+pl+ps:+gem GI ;
- ma+V+imper+pres+ps2+pl+ps:+ge GI ;
- ma+V+imper+pres+ps3+pl+ps:+gu GI ;
+ ma+V+imper+pres+ps3+sg+ps:+gu afneg_GI ;
+ ma+V+imper+pres+ps1+pl+ps:+gem afneg_GI ;
+ ma+V+imper+pres+ps2+pl+ps:+ge afneg_GI ;
+ ma+V+imper+pres+ps3+pl+ps:+gu afneg_GI ;
  An_nud ;
 
 LEXICON An_ke
- ma+V+imper+pres+ps3+sg+ps:+ku GI ;
- ma+V+imper+pres+ps1+pl+ps:+kem GI ;
- ma+V+imper+pres+ps2+pl+ps:+ke GI ;
- ma+V+imper+pres+ps3+pl+ps:+ku GI ;
+ ma+V+imper+pres+ps3+sg+ps:+ku afneg_GI ;
+ ma+V+imper+pres+ps1+pl+ps:+kem afneg_GI ;
+ ma+V+imper+pres+ps2+pl+ps:+ke afneg_GI ;
+ ma+V+imper+pres+ps3+pl+ps:+ku afneg_GI ;
  An_nud ;
 
 LEXICON An_nud
   ma+V+partic+past+ps:+nud GI ;
   ma+V+indic+impf+ps+neg:+nud GI ;
-  ma+V+cond+past+ps:+nuks GI ;
-  ma+V+cond+past+ps1+sg+ps:+nuks GI ;
-  ma+V+cond+past+ps1+sg+ps:+nuksin GI ;
-  ma+V+cond+past+ps2+sg+ps:+nuks GI ;
-  ma+V+cond+past+ps2+sg+ps:+nuksid GI ;
-  ma+V+cond+past+ps3+sg+ps:+nuks GI ;
-  ma+V+cond+past+ps1+pl+ps:+nuks GI ;
-  ma+V+cond+past+ps1+pl+ps:+nuksime GI ;
-  ma+V+cond+past+ps2+pl+ps:+nuks GI ;
-  ma+V+cond+past+ps2+pl+ps:+nuksite GI ;
-  ma+V+cond+past+ps3+pl+ps:+nuks GI ;
-  ma+V+cond+past+ps3+pl+ps:+nuksid GI ;
-  ma+V+quot+past+ps:+nuvat GI ;
+  ma+V+cond+past+ps:+nuks afneg_GI ;
+  ma+V+cond+past+ps1+sg+ps:+nuks afneg_GI ;
+  ma+V+cond+past+ps1+sg+ps:+nuksin afneg_GI ;
+  ma+V+cond+past+ps2+sg+ps:+nuks afneg_GI ;
+  ma+V+cond+past+ps2+sg+ps:+nuksid afneg_GI ;
+  ma+V+cond+past+ps3+sg+ps:+nuks afneg_GI ;
+  ma+V+cond+past+ps1+pl+ps:+nuks afneg_GI ;
+  ma+V+cond+past+ps1+pl+ps:+nuksime afneg_GI ;
+  ma+V+cond+past+ps2+pl+ps:+nuks afneg_GI ;
+  ma+V+cond+past+ps2+pl+ps:+nuksite afneg_GI ;
+  ma+V+cond+past+ps3+pl+ps:+nuks afneg_GI ;
+  ma+V+cond+past+ps3+pl+ps:+nuksid afneg_GI ;
+  ma+V+quot+past+ps:+nuvat afneg_GI ;
 
 LEXICON An_nud_der
-  nud+A:+nud GI ;
+  nud+A:+nud GI ; ! ???
 !  nud+A+partic:+nud GI;
   nu+S:nu 01;
   nu+A:nu 01;
@@ -1142,10 +1142,9 @@ LEXICON An_b
  ma+V+indic+pres+ps2+sg+ps+af:+d GI;
  ma+V+indic+pres+ps3+sg+ps+af:+b GI;
  ma+V+indic+pres+ps+neg:+0 GI;
- ma+V+imper+pres+ps2+sg:+0 GI;
+ ma+V+imper+pres+ps2+sg+ps:+0 afneg_GI;
 
- ma+V+cond+pres+ps+af:+ks GI ;
- ma+V+cond+pres+ps+neg:+ks GI ;
+ ma+V+cond+pres+ps:+ks afneg_GI ;
  ma+V+cond+pres+ps1+sg+ps+af:+ksin GI ;
  ma+V+cond+pres+ps2+sg+ps+af:+ksid GI ;
  ma+V+cond+pres+ps3+sg+ps+af:+ks GI ;
@@ -1176,18 +1175,18 @@ LEXICON An_tud
  ma+V+partic+past+imps:+tud GI ;
  ma+V+indic+impf+imps+neg:+tud GI ;
  ma+V+indic+impf+imps+af:+ti GI ;
- ma+V+cond+pres+imps:+taks GI ;
- ma+V+cond+past+imps:+tuks GI ;
- ma+V+quot+pres+imps:+tavat GI ;
- ma+V+quot+past+imps:+tuvat GI ;
- ma+V+imper+pres+imps:+tagu GI ;
+ ma+V+cond+pres+imps:+taks afneg_GI ;
+ ma+V+cond+past+imps:+tuks afneg_GI ;
+ ma+V+quot+pres+imps:+tavat afneg_GI ;
+ ma+V+quot+past+imps:+tuvat afneg_GI ;
+ ma+V+imper+pres+imps:+tagu afneg_GI ;
  ma+V+sup+imps:+tama GI ;
  ma+V+indic+pres+imps+neg:+ta GI ;
  ma+V+partic+pres+imps:+tav GI ;
 
- $tud+A:+tud GI ;
- $tud+S:+tud GI ;
- $tu+A:+tu 01 ;
+ $tud+A:+tud GI ; ! ???
+ $tud+S:+tud GI ; ! ???
+ $tu+A:+tu 01 ; 
  $tu+S:+tu 01 ;
  $tav+A:+tav 02_A ;
  $tav+S:+tav 02_A ;
@@ -1196,11 +1195,11 @@ LEXICON An_dud
  ma+V+partic+past+imps:+dud GI ;
  ma+V+indic+impf+imps+neg:+dud GI ;
  ma+V+indic+impf+imps+af:+di GI ;
- ma+V+cond+pres+imps:+daks GI ;
- ma+V+cond+past+imps:+duks GI ;
- ma+V+quot+pres+imps:+davat GI ;
- ma+V+quot+past+imps:+duvat GI ;
- ma+V+imper+pres+imps:+dagu GI ;
+ ma+V+cond+pres+imps:+daks afneg_GI ;
+ ma+V+cond+past+imps:+duks afneg_GI ;
+ ma+V+quot+pres+imps:+davat afneg_GI ;
+ ma+V+quot+past+imps:+duvat afneg_GI ;
+ ma+V+imper+pres+imps:+dagu afneg_GI ;
  ma+V+sup+imps:+dama GI ;
  ma+V+indic+pres+imps+neg:+da GI ;
  ma+V+partic+pres+imps:+dav GI ;
@@ -1253,6 +1252,10 @@ LIIT; ! tupikuks..
 
 !LEXICON LIIT_DEV_G
 !+:& Deriv_mine_ja;
+
+LEXICON afneg_GI
+ +af: GI;
+ +neg: GI;
 
 LEXICON GI  ! liide gi/ki
  +gi:Q1i #;

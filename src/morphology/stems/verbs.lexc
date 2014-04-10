@@ -4121,11 +4121,16 @@ LEXICON Verbs
  olB1a 29; ! (29_V -> ) at: olba, an: olva
  olel 31; ! (31_V -> ) a0: olele, b0: olel
  olele 27; ! (27_V -> ) a0: olele
- olema+V+cond+past+ps+neg:polnuks GI; ! 36_V,ole,pol[nuks],-01202--,-,-,+
+ olema+V+cond+impf+ps+neg:polnuks GI; ! 36_V,ole,pol[nuks],-01202--,-,-,+
+ olema+V+cond+pres+imps+neg:poldaks GI;
  olema+V+cond+pres+ps+neg:poleks GI; ! 36_V,ole,pole[ks],-00202--,-,-,+
+ olema+V+indic+impf+imps+neg:poldud GI;
  olema+V+indic+impf+ps+neg:polnud GI; ! 36_V,ole,pol[nud],-02002--,-,-,+
+ olema+V+indic+pres+imps+neg:polda GI;
  olema+V+indic+pres+ps+neg:pole GI; ! 36_V,ole,pole[],-00002--,-,-,+
- olema+V+quot+pres+ps:polevat GI; ! 36_V,ole,pole[vat],-00102--,-,-,+
+ olema+V+quot+pres+imps+neg:poldavat GI; 
+ olema+V+quot+pres+ps+neg:polevat GI; ! 36_V,ole,pole[vat],-00102--,-,-,+
+ olema+V+quot+past+ps+neg:polnuvat GI;
  olene 27; ! (27_V -> ) a0: olene
  oleskel 36; ! (36_V -> ) an: oleskele, bn: oleskel, bt: oleskel, cn: oleskell, ct: oleskell
  oleskle 27; ! (27_V -> ) a0: oleskle

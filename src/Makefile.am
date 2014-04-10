@@ -94,11 +94,23 @@ endif
 inverted-phonology.hfst: phonology/$(GTLANG)-phon.hfst
 	$(HFST_INVERT) $(VERBOSITY) $(HFST_FLAGS) -i $< -o $@
 
-generator-raw-gt-desc.hfst: generator-raw-gt-desc.tmp.hfst inverted-phonology.hfst
+generator-raw-gt-desc-simple-with-av.hfst: morphology/$(GTLANG).lexc.hfst inverted-phonology.hfst
 	$(INTRSCT_verbose)$(HFST_COMPOSE_INTERSECT) $(VERBOSITY) $(HFST_FLAGS) \
-		-I -1 generator-raw-gt-desc.tmp.hfst -2 inverted-phonology.hfst | \
+		-I -1 morphology/$(GTLANG).lexc.hfst -2 inverted-phonology.hfst | \
 		$(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
 
+generator-raw-gt-desc.hfst: generator-raw-gt-desc-simple-with-av.hfst filters/deriv_filter.hfst morphology/overriding-exceptions.lexc.hfst morphology/numbers.lexc.hfst phonology/$(GTLANG)-phon.hfst
+	$(AM_V_at)$(PRINTF) \
+		'[ @"filters/deriv_filter.hfst" .o. [[@"morphology/overriding-exceptions.lexc.hfst"] .P. [@"generator-raw-gt-desc-simple-with-av.hfst"]] .o. ~$$"#"]' | \
+	$(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) | \
+	$(HFST_COMPOSE_INTERSECT) $(VERBOSITY) $(HFST_FLAGS) -2 phonology/$(GTLANG)-phon.hfst | \
+	$(HFST_DISJUNCT) $(VERBOSITY) $(HFST_FLAGS) morphology/numbers.lexc.hfst | \
+	$(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
+
+# generator-raw-gt-desc.hfst: generator-raw-gt-desc-full-simple.hfst
+	
+
+	
 
 
 

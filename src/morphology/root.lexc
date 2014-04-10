@@ -231,7 +231,7 @@ GenAttributes;
 ProperNames;
 Conjunctions;
 Punctuation; !TT
-DIGITS; !TT
+! DIGITS; !TT
 ! NonInflectionals;
 
 LEXICON NOMINAL !to make the finnish digits.lexc work TT
