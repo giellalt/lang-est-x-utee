@@ -7,7 +7,7 @@
   / [affixes|https://victorio.uit.no/langtech/trunk/langs/est/src/morphology/affixes/] 
   / [syntax|https://victorio.uit.no/langtech/trunk/langs/est/src/syntax] 
   / [twolc|https://victorio.uit.no/langtech/trunk/langs/est/src/phonology/est-phon.twolc]   
-  / [yaml|https://victorio.uit.no/langtech/trunk/langs/est/test/src/morphology/]
+  / [yaml|https://victorio.uit.no/langtech/trunk/langs/est/test/src/gt-norm-yamls/]
 * Generation of: [paradigms|http://giellatekno.uit.no/cgi/p-est.fin.html]
   / [text|http://giellatekno.uit.no/cgi/d-est.fin.html]
 
