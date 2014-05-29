@@ -19,7 +19,7 @@ An_SgN;
 An_SgG_der;
 
 LEXICON 02_I	!number
-An_SgN;
+:X2 An_SgN;
 :i TP_02b0;
 
 LEXICON 02_E	!kevad

@@ -4,8 +4,8 @@
 Alphabet
 
 a b c d e f g h i j k l m n o p q r s š z ž t u v õ ä ö ü x y G1:g G1:0 B1:b B1:0 B1:m D1:d D1:0 D1:l D1:n D1:r K1:k K1:g K1:0 P1:p P1:b P1:0 T1:t
-T1:d T1:0 S1:s S1:0 S1:r %+:0 %$:0 %&:0 A1:a A1:0 E1:e E1:0 I1:i I1:0 U1:u U1:0 %.:a %.:e 
-%.:o %.:u %.:ö %.:ä %.:i %.:0 %=:0 X2:0 %!:0 Q1:k %-; 
+T1:d T1:0 S1:s S1:0 S1:r S1:l %+:0 %$:0 %&:0 A1:a A1:0 E1:e E1:0 I1:i I1:0 U1:u U1:0 %.:a %.:e 
+%.:o %.:u %.:ö %.:ä %.:i %.:0 %=:0 %=:h %=:m %=:s %=:k %=:p %=:t X2:0 %!:0 Q1:k %-; 
 
 Sets
 
@@ -174,6 +174,11 @@ matched;
 
   %=:Kons1 <=> Kons1 _ (TyveVok:) X2:;	!mitte-klusiilid
                      where Kons1 in TavaKons;
+
+"Konsonandi/klusiili kahekordistumine nimetavas" ! nikkel, kimmel
+
+  %=:KonsKlus <=> KonsKlus _ VaheVok: ? X2:;
+  		     where KonsKlus in (TavaKons Klus);
 
 "Nõrga klusiili pikendamine III-välteliseks - 1"
  !vagu-vao-vakku, saba-saba-sappa, tuba-toa-tuppa, ladu-lao-lattu

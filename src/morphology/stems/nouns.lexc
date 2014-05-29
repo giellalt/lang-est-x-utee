@@ -8843,7 +8843,7 @@ LEXICON Nouns
  käks+S:käks 22_I; ! (22_S -> +S) at: käks, bt: käksi, bn: käksi, btv: käkse, bnv: käkse
  käli+S:käli 17; ! (17_S -> +S) a0: käli, a0g: #, a0v: #
  kälis+S:käli 09_S-KSE; ! (09_S -> +S) a0: kälis, b0: kälikse
- kämmal+S:kämB1l 08_A; ! (08_S -> +S) an: kämmal, (at): kämbal, bt: kämbla
+ kämmal+S:kämB1al 08_A; ! (08_S -> +S) an: kämmal, (at): kämbal, bt: kämbla
  kämm+S:kämm 22_U; ! (22_S -> +S) at: kämm, bt: kämmu, bn: kämmu, btv: kämme, bnv: kämme
  kämping+S:kämping 02_U; ! (02_S -> +S) a0: kämping, b0: kämpingu, b0r: 0, c0: 0
  kämp+S:kämP1 22_U; ! (22_S -> +S) at: kämp, bt: kämpu, bn: kämbu, btv: kämpe, bnv: kämbe
@@ -16999,7 +16999,7 @@ LEXICON Nouns
  sambo+S:sambo 16; ! (16_S -> +S) a0: sambo, a0g: #
  samb+S:samB1 22_A; ! (22_S -> +S) at: samb, bt: samba, bn: samma, btv: sambu, bnv: sammu
  samet+S:samet 02_I; ! (02_S -> +S) a0: samet, b0: sameti, b0r: samete, c0: 0
- sammal+S:samB1l 08_A; ! (08_S -> +S) an: sammal, (at): sambal, bt: sambla
+ sammal+S:samB1al 08_A; ! (08_S -> +S) an: sammal, (at): sambal, bt: sambla
  sammas+S:samB1a 07_S-0; ! (07_S -> +S) an: sammas, (at): sambas, bt: samba, btr: #
  sammastik+S:sammastikK1 25; ! (25_S -> +S) at: sammastik, bt: sammastikku, bn: sammastiku, btv: sammastikke, bnv: sammastike
  samm+S:samm 22_U; ! (22_S -> +S) at: samm, bt: sammu, bn: sammu, btv: samme, bnv: samme
@@ -21642,7 +21642,7 @@ LEXICON Nouns
  veluur+S:veluur 22_I; ! (22_S -> +S) at: veluur, bt: veluuri, bn: veluuri, btv: veluure, bnv: veluure
  velveton+S:velveton 19; ! (19_S -> +S) a0: velveton, b0: velvetoni, b0v: velvetone
  velvet+S:velvet 02_I; ! (02_S -> +S) a0: velvet, b0: velveti, b0r: velvete, c0: 0
- vemmal+S:vemB1l 08_A; ! (08_S -> +S) an: vemmal, (at): vembal, bt: vembla
+ vemmal+S:vemB1al 08_A; ! (08_S -> +S) an: vemmal, (at): vembal, bt: vembla
  vemp+S:vemP1 22_U; ! (22_S -> +S) at: vemp, bt: vempu, bn: vembu, btv: vempe, bnv: vembe
  vender+S:vendE1r 02_I; ! (02_S -> +S) a0: vender, b0: vendri, b0r: vendre, c0: 0
  vendeta+S:vendeta 16; ! (16_S -> +S) a0: vendeta, a0g: #
