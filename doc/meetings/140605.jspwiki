@@ -1,0 +1,138 @@
+
+SamEst meeting, Jun 5, 2014
+
+Present: Heli, Heiki, Jaak, Neeme, Sjur, Trond, Frann
+
+
+!!! Agenda
+
+# Status
+# Plan
+# Plan a physical meeting
+# Dictionary
+# Next meeting
+
+
+
+!!! Status
+
+!!fst
+
+Not happened as much as planned. No reports, but activity, yes.
+The list of words not generating lemmata is down to 3-4 
+(but the remaining ones are hard to figure out).
+
+Implemented plamks compound to hfst, but not ported it for xfst
+
+Abusing the build system of gt/d in this, thus the issue needs
+some concern.
+
+24 words of Heli's csv file were not analysed:
+
+Ida-Eesti Lõuna-Eesti Lääne-Eesti Põhja-Eesti Hispaania Inglismaa Itaalia Prantsusmaa Ungari maantee puiestee ärge kolmapäev teisipäev võib-olla missugune mõnikord pesema medõde kohupiim seekord mitmesugune triikraud muinasjutt
+
+xfst's side has some problems with two level rules (i guess) for double š and double f at word ends, for some reason.
+
+!!! Estonian Oahpa
+
+Oahpa source files are in ped/est.
+
+The lexicon contains words from the textbook "E nagu Eesti". Reverse lexicons (eng-est, fin-est, rus-est, deu-est) also exist.
+
+Oahpa itself is not online yet, as the est_oahpa folder is
+not checked in yet.
+
+!!! Plan
+
+!!fst
+
+Jaak to go on.
+
+Workshop in late june when everyone is in Tartu.
+
+!!Oahpa
+
+The fst should generate Oahpa __now__ (for demoing at the end of June).
+
+# Minimize list of failures
+# More words into the fst
+
+What exactly has to be done, to use fst in oahpa? 
+
+Heli: It is good enough for using it for the first demo. For me it is important that the FST in langs/est builds and gives me the xfst file that analyses/generates most of the words in the lexicon. And it is so.
+
+Status for oahpa words in fst: 339 of 1529 words do not get an analysis.
+
+{{{
+cd est
+./autogen.sh
+./configure --enable-oahpa
+}}}
+
+!!Tag conversion
+
+the infra is ready, but made for converting __from__ gt/d to X, not
+vice versa as is the case here.
+
+We would like to have the estonian fst using the gt/d tags, and then
+convert back to plamk for people preferring that. If we do that,
+then the setup is straight forward:
+
+Path to file / documentation:
+
+{{{
+src/tagsets/*
+}}}
+
+There is no proper documentation for the tagset conversion as of yet... TBW.
+
+Taglist: The taglist is in {{est/src/morphology/root.lexc}}
+Plan: Copy the {{est/src/morphology/root.lexc}} Finnish list as much as possible.
+
+Reversing the taglist table it should be possible to generate plamk-tagged analysers.
+
+TODO:
+
+# Take the tags out of root, make a list in langs/est/doc/ (Trond)
+## tag TAB tag TAB comment
+## [https://victorio.uit.no/langtech/trunk/langs/est/doc/taglist.txt]
+# Start adding tag candidates to the second column from fin (all)
+## [https://victorio.uit.no/langtech/trunk/langs/fin/src/morphology/root.lexc]
+
+look at:
+[https://victorio.uit.no/langtech/trunk/langs/fin/doc/fin.jspwiki]
+[https://victorio.uit.no/langtech/trunk/langs/fin/src/morphology/root.lexc]
+
+!!CG
+
+As before:
+
+* CG license issue: Trond, Fran in June
+* Tag filters: input taglist: root.lexc Trond, Fran
+
+!!! Plan a physical meeting
+
+About what? Where? When? Who? 
+
+* Topics: The usual.
+* Where: Helsinki or Tartu
+* When: Early, actually. October? September if Trond can make it :)
+* Who: Us + possibly HFST people.
+
+TODO: We all to look at calendars, and return to issue on next meeting.
+
+!!!Dictionary
+Estonian-Norwegian dictionary (the big white) may be used for this MT project.
+
+__Heiki__ to send mail. 
+
+Can it be used for other purposes? Is it open source? What license?
+
+Heiki: The agreement has been reached via e-mails, so it is rather informal, but still it is in written form. I asked for a permission to use it in this project.
+
+Sjur: could you ask for license and possibility for other uses?
+
+
+!!!Next meeting
+
+__June 26th 1300 Norwegian time__. (Because of Trond possibly 13:15)
