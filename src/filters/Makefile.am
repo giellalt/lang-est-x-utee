@@ -108,18 +108,38 @@ GENERATED_REGEXES=remove-semantic-tags.regex \
                   make-optional-semantic-tags.regex \
                   $(DIALECT_REGEXES)
 
+
+compound_filter.all.lexc:	compound_definitions.lexc compound_filter.lexc
+	$(AM_V_GEN)cat $^ > $@
+
+compound_mask.all.lexc:	compound_definitions.lexc compound_rules.lexc
+	$(AM_V_GEN)cat $^ > $@
+
 # Add the target of local additions here:
 # HFST targets here:
 if CAN_HFST
-GT_FILTER_TARGETS+=deriv_filter.hfst
+GT_FILTER_TARGETS+=deriv_filter.hfst compound_mask.lexc.hfst compound_filter.lexc.hfst
 
 endif
 
 # And Xerox targets here:
 if CAN_XFST
-GT_FILTER_TARGETS+=deriv_filter.xfst
+GT_FILTER_TARGETS+=deriv_filter.xfst compound_mask.lexc.xfst compound_filter.lexc.xfst
 
 endif
+
+####### HFST build rules: ########
+%.lexc.hfst: %.all.lexc
+	$(AM_V_HLEXC)$(HFST_LEXC) $(VERBOSITY) $(HFST_LEXC_FLAGS) \
+		-f openfst-tropical -o $@ $^
+
+####### Xerox build rules: #######
+%.lexc.xfst: %.all.lexc
+	$(AM_V_XFST)$(XFST) $(VERBOSITY) \
+			-e "read lexc $^" \
+			-e "compose net" \
+			-e "save stack $@ " \
+			-stop
 
 include $(top_srcdir)/am-shared/src-filters-dir-include.am
 

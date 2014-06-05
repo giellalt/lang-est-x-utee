@@ -10058,7 +10058,7 @@ LEXICON Nouns
  loendus+S:loendus 09_E; ! (09_S -> +S) a0: loendus, b0: loenduse
  loendus+S:loendus 11; ! (11_S -> +S) a0: loendus, b0: loenduse, b0v: loendusi
  loeng+S:loeng 02_U; ! (02_S -> +S) a0: loeng, b0: loengu, b0r: 0, c0: 0
- loe+S:loD1e 06; ! (06_S -> +S) an: loe, at: loode
+ loe+S:lo=D1e 06; ! (06_S -> +S) an: loe, at: loode
  loetavus+S:loetavus 11; ! (11_S -> +S) a0: loetavus, b0: loetavuse, b0v: loetavusi
  loetelu+S:loetel=u 17_Adt; ! (17_S -> +S) a0: loetelu, a0g: loetellu, a0v: #
  loetlus+S:loetlus 09_E; ! (09_S -> +S) a0: loetlus, b0: loetluse
@@ -12297,7 +12297,7 @@ LEXICON Nouns
  neegus+S:neegus 11; ! (11_S -> +S) a0: neegus, b0: neeguse, b0v: neegusi
  neelatus+S:neelatus 11; ! (11_S -> +S) a0: neelatus, b0: neelatuse, b0v: neelatusi
  neelduvus+S:neelduvus 11; ! (11_S -> +S) a0: neelduvus, b0: neelduvuse, b0v: neelduvusi
- neele+S:nD1eele 06; ! (06_S -> +S) an: neele, at: neelde
+ neele+S:neelD1e 06; ! (06_S -> +S) an: neele, at: neelde
  neel+S:neel 22_U; ! (22_S -> +S) at: neel, bt: neelu, bn: neelu, btv: neele, bnv: neele
  neemik+S:neemik 02_U; ! (02_S -> +S) a0: neemik, b0: neemiku, b0r: 0, c0: 0
  neem+S:neem 22_E; ! (22_S -> +S) at: neem, bt: neeme, bn: neeme, btv: neemi, bnv: neemi
@@ -16692,7 +16692,7 @@ LEXICON Nouns
  ränne+S:ränD1e 06; ! (06_S -> +S) an: ränne, at: rände
  räpe+S:räpP1e 06; ! (06_S -> +S) an: räpe, at: räppe
  räppar+S:räppar 02_I; ! (02_S -> +S) a0: räppar, b0: räppari, b0r: räppare, c0: 0
- räppen+S:räp=E1n 02_A; ! (02_S -> +S) a0: räppen, b0: räpna, b0r: 0, c0: 0
+ räppen+S:räppE1n 02_A; ! (02_S -> +S) a0: räppen, b0: räpna, b0r: 0, c0: 0
  räpp+S:räpP1 22_A; ! (22_S -> +S) at: räpp, bt: räppa, bn: räpa, btv: räppi, bnv: räpi
  räpp+S:räpP1 22_I; ! (22_S -> +S) at: räpp, bt: räppi, bn: räpi, btv: räppe, bnv: räpe
  räsa+S:räsa 17; ! (17_S -> +S) a0: räsa, a0g: #, a0v: #

@@ -5,7 +5,7 @@ Alphabet
 
 a b c d e f g h i j k l m n o p q r s š z ž t u v õ ä ö ü x y G1:g G1:0 B1:b B1:0 B1:m D1:d D1:0 D1:l D1:n D1:r K1:k K1:g K1:0 P1:p P1:b P1:0 T1:t
 T1:d T1:0 S1:s S1:0 S1:r S1:l %+:0 %$:0 %&:0 A1:a A1:0 E1:e E1:0 I1:i I1:0 U1:u U1:0 %.:a %.:e 
-%.:o %.:u %.:ö %.:ä %.:i %.:0 %=:0 %=:h %=:m %=:s %=:k %=:p %=:t X2:0 %!:0 Q1:k %-; 
+%.:o %.:u %.:ö %.:ä %.:i %.:0 %=:0 %=:h %=:m %=:s %=:k %=:p %=:t %=:f %=:š X2:0 %!:0 Q1:k %-; 
 
 Sets
 
@@ -48,7 +48,7 @@ Rules
 
 "AV 3 - t kadu"
 ! parandus: suhTeldud-vihTeldud, sigaretT 
- T1:0 <=>Vok [t|h] _ (Vok ([S1: | s: | l ])) %$:;!tt-t (rott-roti) ja ht-h (ehtima-ehib)
+ T1:0 <=>Vok [t|h] _ (:Vok ([S1: | s: | l |r])) %$:;!tt-t (rott-roti) ja ht-h (ehtima-ehib)
         Algus Vok: _ e (l) %$:;	!ütlema-öelda, jätma-jäetakse
 
 
@@ -120,7 +120,7 @@ S1:0 <=> Algus Vok [Kons+] (AV:AVT) TyveVok:  _ Piir; !küngas-künka
  "AV 16 t-d"
  T1:d <=> Vok [Vok|Liq | n ] _ Vok (S1:) %$:;	!paat-paadi, kaart-kaardi, elevant-elevandi
          Vok Vok _ e l %$:;     		!vaatlema-vaadelda
-         Vok _ (VaheVok:) [Liq | v | j:] (Vok) %$:;    	!putru-pudru, patrama-padrata
+         Vok _ (VaheVok:) [Liq | v | j:] (Vok (S1:)) %$:;    	!putru-pudru, patrama-padrata
 	 
 
  "AV 17: g-j"	!märg-märja, hüljes-hülge
