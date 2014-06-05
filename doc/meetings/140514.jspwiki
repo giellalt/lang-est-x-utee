@@ -1,0 +1,187 @@
+
+
+SamEst meeting 14th May 2014
+
+Present: Jaak, Fran, Heiki-Jaan, Heli, Sjur, Trond
+
+* Status fst
+* Status Oahpa
+* Status CG 
+
+
+!!!Status fst
+
+For hfst we have a makefile that does what plamk does.
+Jaak has a plan for completing it
+
+Last commit had tests passing, this one did not.
+
+
+!!Test results, "make check":
+
+!generate-lemma tests:
+
+These 67 words do not generate themeslves when asking for lemma+S+sg+nom:
+
+artikkel,binokkel,dattel,džokker,ekker,epitsükkel,fakkel,fiakker,jokker,kahhel,kappel,kessel,kimmel,kippel,kipper,kittel,klipper,koppel,kukkel,kuppel,kutter,kämmal,kümmel,latter,litter,loe,matrikkel,mikker,monokkel,mutter,neele,nikkel,nippel,nuppel,nüppel,pappel,partikkel,pikkel,pikker,pumpernikkel,räppen,sammal,satter,seppel,simmel,snepper,sokkel,spikker,stihhel,strössel,tapper,tekkel,tikkel,tikker,trikkel,trummel,tsikkel,tsitter,tsükkel,udras,vaher,vekker,vemmal,vikkel,vipper,vuppel,šiffer,
+
+One possible reason is the multichar symbol for the floating vowel.
+
+TODO: Check the phonological rules behind this. Here are the results:
+
+{{{
+artikkel+S+sg+nom   artikel (60)
+loe+S+sg+nom    lode (1)
+sammal+S+sg+nom sambl (2)
+udras+S+sg+nom  utras (1)
+vaher+S+sg+nom  vahter (1)
+}}}
+
+
+* Problem: Generating the ConNeg form (negative form of the verb)
+  in the filosoft generator: [http://www.filosoft.ee/gene_et/]
+* Solution: 
+** Add the form in the interface
+** Add est to the Giellatekno interface
+** use estmorf compiled from source to generate yaml goldstandard files
+** use dest / hdest in the gtd infrastructure
+
+Existing tests are punane, hobune, olema.
+
+TODO: 
+
+Check the paradigms for completeness
+One yaml for each Ülle Viks category (NN) 
+
+{{{{
+    lemma+tag+tag2: wordform
+    lemma+tag+tag3: [awordform, parawordform]
+}}}}
+
+Jaak to continue on the fsts
+
+Large enough yaml tests?
+
+
+
+!!!Status Oahpa
+
+Heli:
+Oahpa Lexicon
+
+Heli Noor (teacher of Estonian as L2) sent Heli Uibo the textbook dictionary of "E nagu Eesti" as pdf. The dictionary was organised by chapters, each word has translations to English, Russian, German and Finnish. ca 1500 words
+
+Goal: lexicon in "Oahpa-XML", has been achieved:
+
+ped/est/inc/E_nagu_Eesti.xml has been checked in.
+
+Semantic classes (e.g. FAMILY, FOOD, DRINK) and POS attributes (N,A,V) added to some words in order to get the demo running.
+
+* main/ped/est/inc/ -- oahpa lexicon source files
+* main/langs/est  -- fst
+
+{{{
+cat inc/E_nagu_Eesti.csv |cut -d"|" -f1|grep -v ' '|tr -d '\?'|uest|grep '?'|wc -l
+     404
+cat inc/E_nagu_Eesti.csv |wc -l
+    1670
+}}}
+    
+The estonian Oahpa is there, but empty (and not online).
+
+Overview:
+
+* Numra: the numerals
+* Leksa: Pedagogical vocabulary: appr 3000 words (1500 are added)
+* fst-ers to look at fst, then Heli to implement
+* MorfaC: Making the sentence frames
+* We will wait with MorfaC
+
+TODO:
+
+* Heli to check in the Leksa list in main/ped/est/inc/
+* Then for Jaak or anyone to check against the est.fst
+* Fill inn numbers.lexc, date.lexc, clock.lexc
+* Heli and Trond to look at Numra
+
+Timing:
+
+Leksa and Numra, and the frames of MorfaC are independent of the  fst, 
+but all work on Morfa really depends on it.
+
+Deadline for an oahpa-fähig fst: June 1st.
+
+
+!!!Status CG 
+
+AS before:
+
+* CG license issue: Trond, Fran in may
+* Tag filters: input taglist: root.lexc Trond, Fran
+
+
+
+!!! Next meting
+
+* Preliminary time: Thursday, June 5th, 1300 Norw time,  (+/- 1 one day)
+* Next meeting slot: Thursday, June 26th, 1300 Norw time (+/- 1 one day)
+
+
+To be or not...
+
+{{{
+$ echo 'olema //_*_ *, //' | etsyn
+olema //_*_ *, // 
+    ol+da //_V_ ta, //
+    ol+dagu //_V_ tagu, //
+    ol+daks //_V_ taks, //
+    ol+dama //_V_ tama, //
+    ol+dav //_V_ tav, //
+    ol+davat //_V_ tavat, //
+    ol+di //_V_ ti, //
+    ol+dud //_V_ tud, //
+    ol+duks //_V_ tuks, //
+    ol+duvat //_V_ tuvat, //
+    ol+ge //_V_ ge, //
+    ol+gem //_V_ gem, //
+    ol+gu //_V_ gu, //
+    ol+i //_V_ s, //
+    ol+id //_V_ sid, //   = BOTH +V+Ind+Pst+Sg2 AND +V+Ind+Pst+Pl3
+    ol+ime //_V_ sime, //
+    ol+in //_V_ sin, //
+    ol+ite //_V_ site, //
+    ol+nud //_V_ nud, //
+    ol+nuks //_V_ nuks, // <-- grammatical tags for nuks = grammatical tags for nuksin, nuksid, nuksime, nuksite ... +Pl3 ...
+    ol+nuksid //_V_ nuksid, // +Pl2
+    ol+nuksime //_V_ nuksime, // 
+    ol+nuksin //_V_ nuksin, //
+    ol+nuksite //_V_ nuksite, //
+    ol+nuvat //_V_ nuvat, //
+    ole //_V_ o, //
+    ole+d //_V_ d, //
+    ole+ks //_V_ ks, //         <--
+    ole+ksid //_V_ ksid, //
+    ole+ksime //_V_ ksime, //
+    ole+ksin //_V_ ksin, //
+    ole+ksite //_V_ ksite, //
+    ole+ma //_V_ ma, //
+    ole+maks //_V_ maks, //
+    ole+mas //_V_ mas, //
+    ole+mast //_V_ mast, //
+    ole+mata //_V_ mata, //
+    ole+me //_V_ me, //
+    ole+n //_V_ n, //
+    ole+te //_V_ te, //
+    ole+v //_V_ v, //
+    ole+vat //_V_ vat, //
+    oll+a //_V_ da, //
+    oll+akse //_V_ takse, //
+    oll+es //_V_ des, //
+    on //_V_ b, //
+    on //_V_ vad, //
+    pol+nud //_V_ neg nud, //
+    pol+nuks //_V_ neg nuks, //
+    pole //_V_ neg o, //
+    pole+ks //_V_ neg ks, //
+    pole+vat //_V_ neg vat, //
+}}}
