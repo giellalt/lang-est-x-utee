@@ -53,10 +53,10 @@ TODO:
 Check the paradigms for completeness
 One yaml for each Ülle Viks category (NN) 
 
-{{{{
+{{{
     lemma+tag+tag2: wordform
     lemma+tag+tag3: [awordform, parawordform]
-}}}}
+}}}
 
 Jaak to continue on the fsts
 
