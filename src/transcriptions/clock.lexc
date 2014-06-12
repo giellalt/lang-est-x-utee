@@ -13,11 +13,10 @@
 ! giellatekno@hum.uit.no or divvun@samediggi.no
 
 ! ==================== !
-! The South Sámi clock !
+! The Estonian clock !
 ! ==================== !
 
-! Note! This is NOT checked with native speakers nor
-! textbooks, just based upon guessing from a dictionary.
+! Adapted to Estonian by Heli Uibo
 
 Multichar_Symbols
 
@@ -109,7 +108,7 @@ LEXICON Root
 23@U.TIME.12@:@U.TIME.12@    BEFpunkt ;     !23:19 - 23:59
 %0%0@U.TIME.12@:@U.TIME.12@  AFTpunkt ;     !00:00 - 00:19
 %0%0@U.TIME.1@:@U.TIME.1@    BEFpunkt ;     !00:19 - 00:59
-24%:%0%0:luhkiegöökte        #        ;     !24:00
+24%:%0%0:kaksteist        #        ;     !24:00
 
 
 LEXICON BEFpunkt
@@ -117,121 +116,183 @@ LEXICON BEFpunkt
  %.+Use/NA: BEF ;
 
 LEXICON AFTpunkt
- %:+Use/NA: AFT ;  ! 2:00 = göökte
- %.+Use/NA: AFT ;  ! 2.00 = göökte
- +Use/NA:  HOUR ;  ! 2    = göökte
+ %:+Use/NA: AFT ;  ! 2:00 = kaks
+ %.+Use/NA: AFT ;  ! 2.00 = kaks
+ +Use/NA:  HOUR ;  ! 2    = kaks
 
 LEXICON BEF
- 2%0:luhkie%               TOHALF ;
- 21:uktsie%                TOHALF ;
- 22:gaektsie%              TOHALF ;
- 23:tjïjhtje%              TOHALF ;
- 24:govhte%                TOHALF ;
- 25:vïjhte%                TOHALF ;  
- 26:njieljie%              TOHALF ;  
- 26+Use/NG:njielje%        TOHALF ;  
- 26+Use/NG:nieljie%        TOHALF ;  
- 26+Use/NG:nielje%         TOHALF ;  
- 27:golme%                 TOHALF ;
- 28:göökte%                TOHALF ; 
- 29:akte%                  TOHALF ;
- 3%0:bielie%               HOUR ;
- 31:akte%                  OVERHALF ;
- 32:göökte%                OVERHALF ;
- 33:golme%                 OVERHALF ;
- 34:njieljie%              OVERHALF ;
- 34+Use/NG:njielje%        OVERHALF ;  
- 34+Use/NG:nieljie%        OVERHALF ;  
- 34+Use/NG:nielje%         OVERHALF ;  
- 35:vïjhte%                OVERHALF ;
- 36:govhte%                OVERHALF ;
- 37:tjïjhtje%              OVERHALF ;
- 38:gaektsie%              OVERHALF ; 
- 39:uktsie%                OVERHALF ;
- 4%0:luhkie%               OVERHALF ;
- 41:luhkieuktsie%          TO ;
- 42:luhkiegaektsie%        TO ;
- 43:luhkietjïjhtje%        TO ;
- 44:luhkiegovhte%          TO ;
- 45:njealjehts%            TO ;
- 46:luhkienjieljie%        TO ;
- 46+Use/NG:luhkienjielje%  TO ;
- 46+Use/NG:luhkienieljie%  TO ;
- 46+Use/NG:luhkienielje%   TO ;
- 47:luhkiegolme%           TO ;
- 48:luhkiegöökte%          TO ;
- 49:luhkieakte%            TO ;
- 5%0:luhkie%               TO ;
- 51:uktsie%                TO ;
- 52:gaektsie%              TO ;
- 53:tjïjhtje%              TO ;
- 54:govhte%                TO ;
- 55:vïjhte%                TO ;  
- 56:njieljie%              TO ;  
- 56+Use/NG:njielje%        TO ;
- 56+Use/NG:nieljie%        TO ;
- 56+Use/NG:nielje%         TO ;
- 57:golme%                 TO ;
- 58:göökte%                TO ; 
- 59:akte%                  TO ;
+ 2%0:kümne%               TOHALF ;
+ 21:üheksa%                TOHALF ;
+ 22:kaheksa%              TOHALF ;
+ 23:seitsme%              TOHALF ;
+ 24:kuue%                TOHALF ;
+ 25:viie%                TOHALF ;
+ 26:nelja%              TOHALF ;
+ 26+Use/NG:nelja%        TOHALF ;
+ 26+Use/NG:nelja%        TOHALF ;
+ 26+Use/NG:nelja%         TOHALF ;
+ 27:kolme%                 TOHALF ;
+ 28:kahe%                TOHALF ;
+ 29:ühe%                  TOHALF ;
+ 3%0:pool%               HOUR ;
+ 31:üks% minut%                  OVERHALF ;
+ 32:kaks% minutit%               OVERHALF ;
+ 33:kolm% minutit%                OVERHALF ;
+ 34:neli% minutit%             OVERHALF ;
+ 34+Use/NG:neli%        OVERHALF ;
+ 34+Use/NG:neli%        OVERHALF ;
+ 34+Use/NG:neli%         OVERHALF ;
+ 35:viis% minutit%               OVERHALF ;
+ 36:kuus% minutit%               OVERHALF ;
+ 37:seitse% minutit%             OVERHALF ;
+ 38:kaheksa% minutit%             OVERHALF ;
+ 39:üheksa% minutit%               OVERHALF ;
+ 4%0:kümme% minutit%              OVERHALF ;
+ 4%0:kahekümne%              TO ;
+ 41:üheksateistkümne%          TO ;
+ 42:kaheksateistkümne%        TO ;
+ 43:seitsmeteistkümne%        TO ;
+ 43:kahe%    TOQUARTER ;
+ 44:kuueteistkümne%          TO ;
+ 44:ühe%    TOQUARTER ;
+ 45:viieteistkümne%            TO ;
+ 45:kolmveerand%    HOUR ;
+ 46:neljateistkümne%        TO ;
+ 46:üks% minut% kolmveerand%    HOUR_OVER ;
+! 46+Use/NG:luhkienjielje%  TO ;
+! 46+Use/NG:luhkienieljie%  TO ;
+! 46+Use/NG:luhkienielje%   TO ;
+ 47:kolmeteistkümne%           TO ;
+ 47:kaks% minutit% kolmveerand%     HOUR_OVER ;
+ 48:kaheteistkümne%          TO ;
+ 49:üheteistkümne%            TO ;
+ 5%0:kümne%               TO ;
+ 51:üheksa%                TO ;
+ 52:kaheksa%              TO ;
+ 53:seitsme%              TO ;
+ 54:kuue%                TO ;
+ 55:viie%                TO ;
+ 56:nelja%              TO ;
+! 56+Use/NG:njielje%        TO ;
+! 56+Use/NG:nieljie%        TO ;
+! 56+Use/NG:nielje%         TO ;
+ 57:kolme%                 TO ;
+ 58:kahe%                TO ;
+ 59:ühe%                  TO ;
 
 LEXICON AFT
  %0%0:                     HOUR ;
- %01:akte%                 OVER ;
- %02:göökte%               OVER ;
- %03:golme%                OVER ;
- %04:njieljie%             OVER ;
- %04+Use/NG:njielje%       OVER ;
- %04+Use/NG:nieljie%       OVER ;
- %04+Use/NG:nielje%        OVER ;
- %05:vïjhte%               OVER ;
- %06:govhte%               OVER ;
- %07:tjïjhtje%             OVER ;
- %08:gaektsie%             OVER ;
- %09:uktsie%               OVER ;
- 1%0:luhkie%               OVER ;
- 11:luhkieakte%            OVER ;
- 12:luhkiegöökte%          OVER ;
- 13:luhkiegolme%           OVER ;
- 14:luhkienjieljie%        OVER ;
- 14+Use/NG:luhkienjielje%  OVER ;
- 14+Use/NG:luhkienieljie%  OVER ;
- 14+Use/NG:luhkienielje%   OVER ;
- 15:njealjehts%            OVER ; 
- 16:luhkiegovhte%          OVER ;
- 17:luhkietjïjhtje%        OVER ;
- 18:luhkiegaektsie%        OVER ;
- 19:luhkieuktsie%          OVER ;
+ %01:üks% minut%                 HOUR_OVER ;
+ %02:kaks% minutit%               HOUR_OVER ;
+ %03:kolm% minutit%                HOUR_OVER ;
+ %04:neli% minutit%            HOUR_OVER ;
+! %04+Use/NG:njielje%       HOUR_OVER ;
+! %04+Use/NG:nieljie%       HOUR_OVER ;
+! %04+Use/NG:nielje%        HOUR_OVER ;
+ %05:viis% minutit%              HOUR_OVER ;
+ %06:kuus% minutit%              HOUR_OVER ;
+ %07:seitse% minutit%            HOUR_OVER ;
+ %08:kaheksa% minutit%            HOUR_OVER ;
+ %09:üheksa% minutit%              HOUR_OVER ;
+ 1%0:kümme% minutit%              HOUR_OVER ;
+ 11:üksteist% minutit%           HOUR_OVER ;
+ 12:kaksteist% minutit%         HOUR_OVER ;
+ 13:kolmteist% minutit%          HOUR_OVER ;
+ 13:kahe%    TO_QUARTER_OVER ;
+ 14:neliteist% minutit%       HOUR_OVER ;
+ 14:ühe%    TO_QUARTER_OVER ;
+! 14+Use/NG:luhkienjielje%  HOUR_OVER ;
+! 14+Use/NG:luhkienieljie%  HOUR_OVER ;
+! 14+Use/NG:luhkienielje%   HOUR_OVER ;
+ 15:viisteist% minutit%           HOUR_OVER ;
+ 15:veerand%    HOUR_PLUS ;
+ 16:kuusteist% minutit%         HOUR_OVER ;
+ 16:üks% minut% veerand%    HOUR_PLUS ;
+ 17:seitseteist% minutit%       HOUR_OVER ;
+ 17:kaks% minutit% veerand%     HOUR_PLUS ;
+ 18:kaheksateist% minutit%       HOUR_OVER ;
+ 19:üheksateist% minutit%         HOUR_OVER ;
+ 20:kakskümmend% minutit%         HOUR_OVER ;
 
 LEXICON TOHALF
- :åvtelen% bielie%         HOUR ;
- +Use/NG:avtelen% bielie%  HOUR ;
+ :minuti% pärast% pool%         HOUR ;
 
 LEXICON OVERHALF
- :bijjelen% bielie%        HOUR ;
+ :pool%        HOUR_OVER ;
 
 LEXICON TO
-        :åvtelen%          HOUR ;
- +Use/NG:avtelen%          HOUR ; ! variant
+        :minuti% pärast%          HOUR ;
 
-LEXICON OVER
- :bijjelen%                HOUR ;
+LEXICON TOQUARTER
+        :minuti% pärast% kolmveerand%          HOUR ;
+
+LEXICON TO_QUARTER_OVER
+        :minuti% pärast% veerand%          HOUR_PLUS_OVER ;
+
 
 LEXICON HOUR
-@U.TIME.1@:akte@U.TIME.1@           # ;           
-@U.TIME.2@:göökte@U.TIME.2@         # ;         
-@U.TIME.3@:golme@U.TIME.3@          # ;          
-@U.TIME.4@:njieljie@U.TIME.4@       # ;       
-@U.TIME.4@+Use/NG:njielje@U.TIME.4@ # ;       
-@U.TIME.4@+Use/NG:nieljie@U.TIME.4@ # ;       
-@U.TIME.4@+Use/NG:nielje@U.TIME.4@  # ;       
-@U.TIME.5@:vïjhte@U.TIME.5@         # ;         
-@U.TIME.6@:govhte@U.TIME.6@         # ;         
-@U.TIME.7@:tjïjhtje@U.TIME.7@       # ;       
-@U.TIME.8@:gaektsie@U.TIME.8@       # ;       
-@U.TIME.9@:uktsie@U.TIME.9@         # ;         
-@U.TIME.10@:luhkie@U.TIME.10@       # ;       
-@U.TIME.11@:luhkieakte@U.TIME.11@   # ;   
-@U.TIME.12@:luhkiegöökte@U.TIME.12@ # ; 
+@U.TIME.1@:üks@U.TIME.1@           # ;
+@U.TIME.2@:kaks@U.TIME.2@         # ;
+@U.TIME.3@:kolm@U.TIME.3@          # ;
+@U.TIME.4@:neli@U.TIME.4@       # ;
+@U.TIME.4@+Use/NG:neli@U.TIME.4@ # ;
+@U.TIME.4@+Use/NG:neli@U.TIME.4@ # ;
+@U.TIME.4@+Use/NG:neli@U.TIME.4@  # ;
+@U.TIME.5@:viis@U.TIME.5@         # ;
+@U.TIME.6@:kuus@U.TIME.6@         # ;
+@U.TIME.7@:seitse@U.TIME.7@       # ;
+@U.TIME.8@:kaheksa@U.TIME.8@       # ;
+@U.TIME.9@:üheksa@U.TIME.9@         # ;
+@U.TIME.10@:kümme@U.TIME.10@       # ;
+@U.TIME.11@:üksteist@U.TIME.11@   # ;
+@U.TIME.12@:kaksteist@U.TIME.12@ # ;
+
+LEXICON HOUR_PLUS
+@U.TIME.1@:kaks@U.TIME.1@           # ;
+@U.TIME.2@:kolm@U.TIME.2@         # ;
+@U.TIME.3@:neli@U.TIME.3@          # ;
+@U.TIME.4@:viis@U.TIME.4@       # ;
+@U.TIME.4@+Use/NG:neli@U.TIME.4@ # ;
+@U.TIME.4@+Use/NG:neli@U.TIME.4@ # ;
+@U.TIME.4@+Use/NG:neli@U.TIME.4@  # ;
+@U.TIME.5@:kuus@U.TIME.5@         # ;
+@U.TIME.6@:seitse@U.TIME.6@         # ;
+@U.TIME.7@:kaheksa@U.TIME.7@       # ;
+@U.TIME.8@:üheksa@U.TIME.8@       # ;
+@U.TIME.9@:kümme@U.TIME.9@         # ;
+@U.TIME.10@:üksteist@U.TIME.10@       # ;
+@U.TIME.11@:kaksteist@U.TIME.11@   # ;
+@U.TIME.12@:üks@U.TIME.12@ # ;
+
+LEXICON HOUR_PLUS_OVER
+@U.TIME.1@:kaks% @U.TIME.1@           OVER ;
+@U.TIME.2@:kolm% @U.TIME.2@         OVER ;
+@U.TIME.3@:neli% @U.TIME.3@          OVER ;
+@U.TIME.4@:viis% @U.TIME.4@       OVER ;
+@U.TIME.5@:kuus% @U.TIME.5@         OVER ;
+@U.TIME.6@:seitse% @U.TIME.6@         OVER ;
+@U.TIME.7@:kaheksa% @U.TIME.7@       OVER ;
+@U.TIME.8@:üheksa% @U.TIME.8@       OVER ;
+@U.TIME.9@:kümme% @U.TIME.9@         OVER ;
+@U.TIME.10@:üksteist% @U.TIME.10@       OVER ;
+@U.TIME.11@:kaksteist% @U.TIME.11@   OVER ;
+@U.TIME.12@:üks% @U.TIME.12@ OVER ;
+
+LEXICON HOUR_OVER
+@U.TIME.1@:üks% @U.TIME.1@           OVER ;
+@U.TIME.2@:kaks% @U.TIME.2@         OVER ;
+@U.TIME.3@:kolm% @U.TIME.3@          OVER ;
+@U.TIME.4@:neli% @U.TIME.4@       OVER ;
+@U.TIME.5@:viis% @U.TIME.5@         OVER ;
+@U.TIME.6@:kuus% @U.TIME.6@         OVER ;
+@U.TIME.7@:seitse% @U.TIME.7@       OVER ;
+@U.TIME.8@:kaheksa% @U.TIME.8@       OVER ;
+@U.TIME.9@:üheksa% @U.TIME.9@         OVER ;
+@U.TIME.10@:kümme% @U.TIME.10@       OVER ;
+@U.TIME.11@:üksteist% @U.TIME.11@   OVER ;
+@U.TIME.12@:kaksteist% @U.TIME.12@ OVER ;
+
+LEXICON OVER
+    :läbi%   # ;
 
 
