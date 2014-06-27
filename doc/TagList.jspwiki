@@ -1,95 +1,159 @@
 Tag conversion table:
 
 {{{
-+S	+N
-+H	+N+Prop
-+A	+A
-+Num	+Num
-+Ord	+Ord
-+Pron	+Pron
-+V	+V
-+Adv	+Adv
-+I	+Interj
-+J	+CC/+CS
-+G	+Attr
-+K	+Pr/Po
-+X	+X
-+_ke	+Dim/ke
-+_kene	+Dim/kene
-+_us	+Der/us
-+_lt	+Der/lt
-+_ini	+Der/ini
-+gi	+Foc/gi
-+sg	+Sg
-+pl	+Pl
-+nom	+Nom
-+gen	+Gen
-+part	+Par
-+ill	+Ill
-+adit	+Add
-+in	+Ine
-+el	+Ela
-+all	+All
-+ad	+Ade
-+abl	+Abl
-+tr	+Tra
-+term	+Trm
-+es	+Ess
-+abes	+Abe
-+kom	+Com
-+comp	+Comp
-+super	+Superl
-+indic	+Ind
-+imper	+Imprt
-+cond	+Cond
-+quot	+Quot
-+pres	+Prs
-+past	+Prt
-+impf	+Impf
-+sg+ps1	+Sg1
-+sg+ps2	+Sg2
-+sg+ps3 	+Sg3
-+pl+ps1	+Pl1
-+pl+ps2	+Pl2
-+pl+ps3 	+Pl3
-+neg	+Neg
-+af 	+Aff
-+imps	+Impers
-+ps	+Pers
-+sup	+Sup
-+inf	+Inf
-+ger	+Ger
-+partic+pres+ps	+Pers+PrsPrc
-+partic+pres+imps	+Impers+PrsPrc
-+partic+past+ps	+Pers+PrfPrc
-+partic+past+imps	+Pers+PrfPrc
-+prefix	+Pref
-+suffix	+Suf
-G1	G1
-B1	B1
-D1	D1
-K1	K1
-P1	P1
-T1	T1
-S1	S1
-A1	A1
-E1	E1
-I1	I1
-U1	U1
-X2	X1
-Q1	Q1
++S		+N
++H		+N+Prop
++A		+A
++Num		+Num+Card
++Ord		+Num+Ord
++Pron		+Pron
++V		+V
++Adv		+Adv
++I		+Interj
++J		+CC/+CS
++G		+Attr
++K		+Pr/Po
++X		+Adv
++_ke		+Dim/ke
++_kene		+Dim/kene
++_us		+Der/us
++_lt		+Der/lt
++_ini		+Der/ini
++gi		+Foc/gi
++sg		+Sg
++pl		+Pl
++nom		+Nom
++gen		+Gen
++part		+Par
++ill		+Ill
++adit		+Ill
++in		+Ine
++el		+Ela
++all		+All
++ad		+Ade
++abl		+Abl
++tr		+Tra
++term		+Trm
++es		+Ess
++abes		+Abe
++kom		+Com
++comp		+Comp
++super		+Superl
++indic		+Ind
++imper		+Imprt
++cond		+Cond
++quot		+Quot
++pres		+Prs
++past		+Prt
++impf		+Impf
++sg+ps1		+Sg1
++sg+ps2		+Sg2
++sg+ps3 		+Sg3
++pl+ps1		+Pl1
++pl+ps2		+Pl2
++pl+ps3 		+Pl3
++neg		+Neg
++af 		+Aff
++imps		+Impers
++ps		+Pers
++sup		+Sup
++inf		+Inf
++ger		+Ger
++partic+pres+ps		+Pers+PrsPrc
++partic+pres+imps		+Impers+PrsPrc
++partic+past+ps		+Pers+PrfPrc
++partic+past+imps		+Pers+PrfPrc
++prefix		+Pref		Stems used as a prefix. = compound?
++suffix		+Suf		Similar for suffixes?
+G1		G1    These are multichar symbols for CG etc., for twolc.
+B1		B1
+D1		D1
+K1		K1
+P1		P1
+T1		T1
+S1		S1
+A1		A1
+E1		E1
+I1		I1
+U1		U1
+X2		X1
+Q1		Q1
 }}}
 
 Heiki's suggestions for tag conversions:
 {{{
-+Num	+Num+Card
-+Ord	+Num+Ord
-+X	+Adv
-+adit	+Ill
-+G	+N+Gen
++Num        +Num+Card
++Ord        +Num+Ord
++X          +Adv
++adit       +Ill
++G          +N+Gen
 }}}
 
-!!!VERB
+Bearing in mind that ordinals are adjectives, we would thus have:
+
+{{{
++Num        +Num+Card
++Ord        +A+Ord ! Heli: but ordinals do not have comparative and superlative
+                   ! Sjur: do all other adjectives have those?
+                   ! Heli: You could form comparative for a regular noun as
+                   !       well.. "majam" -- more house-like.
+                   ! Sjur: Yes, but are there regular adjectives (nouns) that do
+                   !       not compare? Like many Swedish & Norwegian
+                   !       adjectives.
+                   ! Heli: can you give an example of a norwegian adjective?
+                   ! Sjur: eksemplarisk - *eksemplariskere - *eksemplariskest
+                   ! Heli: yes, actually there exist similar adjectives in
+                   !       Estonian, too.
+                   ! Sjur: Exactly, and among them the ordinals ;)
+
+kaksi        kaksi+Num+Card+Sg+Nom
+toinen       toinen+Num+Ord+Sg+Nom
+kolmas       kolmas+Num+Ord+Sg+Nom ==> +A+Ord
+pari         pari+Num+Card+Sg+Nom
+}}}
+
+{{{
++N+Prop
+}}}
+
+There was a long discussion on whether Ordinals should be tagged +Num or +A.
+Compare with [http://nl.ijs.si/ME/Vault/V3/msd/html/] and with Omorfi, which
+both suggest we use {{+Num}}.
+
+Tag sequence: {{+MainPOS +SubPOS}}
+
+Other tags that were discussed:
+{{{
++prefix    +Cmp
++prefix    +Prefix
++suffix    +Suffix
+}}}
+
+In the working document in est/doc/:
+{{{plamktag<tab>newtag<tab>comments}}}
+
+When dust has settled, in root.lexc:
+{{{
+newtag !!≈ * @CODE@ comments plamktag
+!! More comments.
+}}}
+
+Example of use:
+{{{
++prefix, +suffix
+viker in vikerkaar
+viker is not an independent word, it is only used as a prefix.
+}}}
+
+Similar in Sámi:
+{{{
+kultur-        kultuvra+Sem/Domain+N+SgNomCmp+RCmpnd
+kultuvra       kultuvra+Sem/Domain+N+Sg+Nom
+kultur         kultur        +?
+kulturheasta   kultuvra+Sem/Domain+N+SgNomCmp+Cmp#heasta+Sem/Ani+Sem/Veh+N+Sg+Nom
+}}}
+
+!!!Verbs
 
 The first question in determining the tagset for verb categories is: what is
 explicitly expressed, what is underspecified, and what is ambiguous?
@@ -110,7 +174,7 @@ treatment of allomorphs is sloppy here). The justification is that the
 categories are not equal, but form an hierarchy: those closer to the word end 
 tend to be more optional, more often non-specified.   
 
-# __voice:__ personal vs. impersonal (0-morph vs. t/d[aiu]), eg. elaks vs
+# __voice:__ personal vs. impersonal (0-morph vs. {{t/d[aiu]}}), eg. elaks vs
   elataks, elav vs elatav
 # __tense:__ present vs. past (0-morph vs. s/si/nu), e.g. elan vs. elasin;
   elaks vs. elanuks
