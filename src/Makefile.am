@@ -174,13 +174,27 @@ generator-raw-gt-desc.hfst: generator-raw-gt-desc-simple-full.hfst filters/compo
 
 
 
-analyser-raw-gt-desc.xfst: morphology/$(GTLANG).lexc.xfst analyser-raw-gt-desc.tmp.xfst
+analyser-raw-gt-desc-simple-with-av.xfst: morphology/$(GTLANG).lexc.xfst analyser-raw-gt-desc.tmp.xfst
 	$(AM_V_at)$(PRINTF) \
 	"read-source analyser-raw-gt-desc.tmp.xfst\ninvert-source\nread-rules  phonology/$(GTLANG)-phon.xfst\ncompose-result\ninvert-result\nsave-result $@\nquit\n" \
 	> $@.script
 	$(LEXC_verbose)$(LEXC) $(VERBOSITY) < $@.script
 	$(AM_V_at)rm -f $@.script
 	
+analyser-raw-gt-desc-simple-full.xfst: analyser-raw-gt-desc-simple-with-av.xfst filters/deriv_filter.xfst morphology/overriding-exceptions.lexc.xfst morphology/numbers.lexc.xfst phonology/$(GTLANG)-phon.xfst
+	$(AM_V_XFST)$(PRINTF) \
+		'load phonology/$(GTLANG)-phon.xfst\nintersect net\nsave stack intersected-phonology.tmp.xfst\nquit\n' | \
+	        $(XFST) $(VERBOSITY) $(XFSTFLAGS)
+	$(AM_V_XFST)$(PRINTF) \
+		'read regex [ @"filters/deriv_filter.xfst" .o. [[@"morphology/overriding-exceptions.lexc.xfst"] .P. [@"analyser-raw-gt-desc-simple-with-av.xfst"]] .o. ~$$"#" .o. @"intersected-phonology.tmp.xfst"] | @"morphology/numbers.lexc.xfst";\nsave stack $@\nquit\n' | \
+	        $(XFST) $(VERBOSITY) $(XFSTFLAGS)
+	$(AM_V_at)rm -f intersected-phonology.tmp.xfst
+
+analyser-raw-gt-desc.xfst: analyser-raw-gt-desc-simple-full.xfst filters/compound_filter.lexc.xfst filters/compound_mask.lexc.xfst
+	$(AM_V_XFST)$(PRINTF) \
+		'read regex @"filters/compound_filter.lexc.xfst" .o. @"filters/compound_mask.lexc.xfst" .o. [("-" "&") [ @"analyser-raw-gt-desc-simple-full.xfst" "&" ("-" "&") ]* @"analyser-raw-gt-desc-simple-full.xfst" ("&" "-")] .o. [ "&" -> "" ];\nsave stack $@\nquit\n' | \
+	        $(XFST) $(VERBOSITY) $(XFSTFLAGS)
+
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
