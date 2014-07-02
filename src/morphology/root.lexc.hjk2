@@ -1,0 +1,197 @@
+
+! verb
+! finiitsed (pöördelised) ja infiniitsed (nn käänduvad) vormid
+! finite (conjugable) and infinite ("declinable") forms
+
+! pöördelistel vormidel on kategooriad: 
+! tegumood, aeg, kõneviis, isik, arv, kõnelaad
+! (tegumood ja aeg on ka mõnedel infiniitsetel vormidel)
+
+! finite forms have categories: 
+! voice, tense, mood, person, number, aspect
+! (some infinite forms also have voice and tense)
+
+! tegumood		! voice
++Impers	! umbisikuline	! impersonal
++Pers	! isikuline	! personal
+
+! aeg			! tense
++Prs	! olevik	! present
++Past	! minevik	! past (umbrella term for imperfect, perfect, pluperfect)
+! lihtminevik, past imperfect (used for indicative mood only)
+! täisminevik, past perfect: olema (pres) + nud/tud/dud (olen teinud)
+! enneminevik, past pluperfect: olema (impf) + nut/tud/dud (olin teinud)
+
+! kõneviis		! mood
++Ind	! kindel	! indicative
++Cond	! tingiv	! conditional
++Imprt	! käskiv	! imperative / jussive
++Quot	! kaudne	! quotative
+
+! pööre	ja arv		        ! person and number
++Sg1	! ainsuse 1. pööre	! singular 1st person
++Sg2	! ainsuse 2. pööre	! singular 2nd person
++Sg3 	! ainsuse 3. pööre	! singular 3rd person
++Pl1	! mitmuse 1. pööre	! plural   1st person
++Pl2	! mitmuse 2. pööre	! plural   2nd person
++Pl3 	! mitmuse 3. pööre	! plural   3rd person
+
+! kõnelaad		! aspect
++Aff 	! jaatav kõne	! affirmative
++Neg	! eitav kõne	! negative
+
+! infiniitsed (nn käänduvad) verbivormid
+! infinite ("declinable") verb forms
+
++Sup	! ma-tegevusnimi ! supine (ma-infinitive)	! lugema
+
++Inf	! da-tegevusnimi ! infinitive (da-infinitive)	! lugeda
+
++Ger	! des-vorm	 ! gerund (des-form)		! lugedes
+
++Prc	! kesksõna	 ! participle
+
+
+! kategooriate võimalikud kombinatsioonid
+! possible combinations of categories
+
+! The categories are given in the order in which the allomorphs (if they can be
+! distinguished) that represent them are attached to the word stem (note that the
+! treatment of allomorphs is sloppy here). The justification is that the
+! categories are not equal, but form an hierarchy: those closer to the word end 
+! tend to be more optional, more often non-specified.   
+!
+!# __voice:__ personal vs. impersonal (0-morph vs. {{t/d[aiu]}}), eg. elaks vs
+!  elataks, elav vs elatav
+!# __tense:__ present vs. past (0-morph vs. s/si/nu), e.g. elan vs. elasin;
+!  elaks vs. elanuks
+!# __mood:__ indicative vs. conditional vs imperative vs quotative
+!  (0-morph vs. ks vs. k/g[ue] vs. vat)
+!# __person+number:__ notice that in personal present imperative 3rd person
+!  the distinction between singular/plural is lost (ta/nad elagu)
+!# __aspect:__ affirmative vs. negative. The aspect manifests itself via
+!  lexical means: it is either present in an exceptional wordform (some forms of
+!  olema) or gets adhered to a form, normally used in affirmative aspect,
+!  from an immediately preceding word ei or ära (e.g. ei elaks).
+!  The only case when negative aspect has a dedicated form of its own is impersonal
+!  present indicative negative (e.g. ei elata).  
+!
+! Below, brackets are used to indicate the set of non-specified alternative values.
+!
+! ---- personal finite forms ----
+!
+! personal present indicative Sg1 affirmative                                    elan  
+! personal present indicative Sg2 affirmative                                    elad  
+! personal present indicative Sg3 affirmative                                    elab  
+! personal present indicative Pl1 affirmative                                    elame 
+! personal present indicative Pl2 affirmative                                    elate 
+! personal present indicative Pl3 affirmative                                    elavad
+!
+! personal present indicative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                 ela, pole
+!
+! personal present conditional Sg1 affirmative                                   elaksin
+! personal present conditional Sg2 affirmative                                   elaksid
+! personal present conditional (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) (affirmative/negative)  elaks 
+! personal present conditional Pl1 affirmative                                   elaksime
+! personal present conditional Pl2 affirmative                                   elaksite
+! personal present conditional Pl3 affirmative                                   elaksid
+!
+! personal present conditional Sg1 negative                                      poleksin
+! personal present conditional Sg2 negative                                      poleksid
+! personal present conditional (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                poleks
+! personal present conditional Pl1 negative                                      poleksime
+! personal present conditional Pl2 negative                                      poleksite
+! personal present conditional Pl3 negative                                      poleksid
+!
+! personal present imperative Sg2 (affirmative/negative)                         ela
+! personal present imperative Sg3 (affirmative/negative)                         elagu 
+! personal present imperative Pl1 (affirmative/negative)                         elagem
+! personal present imperative Pl2 (affirmative/negative)                         elage 
+! personal present imperative Pl3 (affirmative/negative)                         elagu 
+!
+! personal present imperative Sg2 negative                                       ära
+! personal present imperative Sg3 negative                                       ärgu
+! personal present imperative Pl1 negative                                       ärgem
+! personal present imperative Pl2 negative                                       ärge
+! personal present imperative Pl3 negative                                       ärgu
+!
+! personal present quotative (affirmative/negative)                              elavat
+! personal present quotative negative                                            polevat
+! 
+! personal past indicative Sg1 affirmative                                       elasin
+! personal past indicative Sg2 affirmative                                       elasid
+! personal past indicative Sg3 affirmative                                       elas  
+! personal past indicative Pl1 affirmative                                       elasime
+! personal past indicative Pl2 affirmative                                       elasite
+! personal past indicative Pl3 affirmative                                       elasid
+!
+! personal past indicative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                    polnud
+!
+! personal past conditional Sg1 affirmative                                      elanuksin
+! personal past conditional Sg2 affirmative                                      elanuksid
+! personal past conditional (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) (affirmative/negative)     elanuks
+! personal past conditional Pl1 affirmative                                      elanuksime
+! personal past conditional Pl2 affirmative                                      elanuksite
+! personal past conditional Pl3 affirmative                                      elanuksid
+!
+! personal past conditional (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                   polnuks
+!
+! personal past imperative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) (affirmative/negative)      elanud 
+! personal past imperative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                    ärnud 
+!
+! personal past quotative (affirmative/negative)                                 elanuvat
+! personal past quotative negative                                               polnuvat
+!
+! ---- personal infinite forms ----
+!
+! personal present participle                                                     elav
+! personal past participle                                                        elanud
+!
+! personal supine abessive                                                        elamata
+! personal supine elative                                                         elamast
+! personal supine illative                                                        elama 
+! personal supine inessive                                                        elamas
+! personal supine translative                                                     elamaks
+!
+! ---- impersonal finite forms ----
+!
+! impersonal present indicative affirmative                                       elatakse
+! impersonal present indicative negative                                          elata 
+!                   
+! impersonal present conditional (affirmative/negative)                           elataks
+! impersonal present conditional negative                                         poldaks
+!
+! impersonal present imperative (affirmative/negative)                            elatagu
+! impersonal present imperative negative                                          ärdagu
+!
+! impersonal present quotative (affirmative/negative)                             elatavat
+! impersonal present quotative negative                                           poldavat
+!
+! impersonal past indicative affirmative                                          elati 
+! impersonal past indicative negative                                             poldud 
+!
+! impersonal past conditional (affirmative/negative)                              elatuks
+!
+! ---- impersonal infinite forms ----
+!
+! impersonal present participle                                                   elatav
+! impersonal past participle                                                      elatud
+!
+! impersonal supine                                                               elatama
+!
+! ---- infinite forms with no voice category ----
+!
+! gerund                                                                          elades
+! infinitive                                                                      elada
+!
+!
+! Exceptional cases:
+!
+! personal present (affirmative/negative), 3 words:  kuulukse, tunnukse, näikse
+! negative                                                           ei 
+!
+!
+! Analytical forms (olen elanud, olin elanud, oleksin elanud, ei olnud elanud,
+! ei olnuks elanud etc) are not treated here...
+
+
