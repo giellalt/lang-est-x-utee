@@ -1,7 +1,10 @@
 Multichar_Symbols
 
+!! !!!Estonian morphological tags
+
 ! sõnaliik
-! part of speech
+!! part of speech
+
 +S	! nimisõna		! substantive		! asi
 +H	! päris nimi		! proper name		! Jaan
 +A	! omadussõna		! adjective		! asjalik
@@ -17,7 +20,7 @@ Multichar_Symbols
 +X	! muu sõna		! other word		! kihku, kihla, minap
 
 ! tuletised, sisemiseks kasutamiseks, filtreerimiseks
-! derivation suffixes, used to filter out illegal combinations internally
+!! derivation suffixes, used to filter out illegal combinations internally
 +_ke	! deminutive
 +_kene  ! deminutive
 +_us
