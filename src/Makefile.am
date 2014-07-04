@@ -157,7 +157,7 @@ generator-raw-gt-desc-simple-with-av.hfst: morphology/$(GTLANG).lexc.hfst invert
 
 generator-raw-gt-desc-simple-full.hfst: generator-raw-gt-desc-simple-with-av.hfst filters/deriv_filter.hfst morphology/overriding-exceptions.lexc.hfst morphology/numbers.lexc.hfst phonology/$(GTLANG)-phon.hfst
 	$(AM_V_at)$(PRINTF) \
-		'[ @"filters/deriv_filter.hfst" .o. [[@"morphology/overriding-exceptions.lexc.hfst"] .P. [@"generator-raw-gt-desc-simple-with-av.hfst"]] .o. ~$$"#"]' | \
+		'[ @"filters/deriv_filter.hfst" .o. [[@"morphology/overriding-exceptions.lexc.hfst"] | [ ~[[@"morphology/overriding-exceptions.lexc.hfst"].u] .o. @"generator-raw-gt-desc-simple-with-av.hfst"]] .o. ~$$"#"]' | \
 	$(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) | \
 	$(HFST_COMPOSE_INTERSECT) $(VERBOSITY) $(HFST_FLAGS) -2 phonology/$(GTLANG)-phon.hfst | \
 	$(HFST_DISJUNCT) $(VERBOSITY) $(HFST_FLAGS) morphology/numbers.lexc.hfst | \

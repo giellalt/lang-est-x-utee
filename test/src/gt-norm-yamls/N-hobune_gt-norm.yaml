@@ -40,13 +40,13 @@ Tests:
      hobune+S+pl+nom: hobused
      hobune+S+pl+gen: hobuste
      hobune+S+pl+part: hobuseid
-     hobune+S+pl+ill: hobustesse
-     hobune+S+pl+in: hobustes
-     hobune+S+pl+el: hobustest
-     hobune+S+pl+all: hobustele
-     hobune+S+pl+ad: hobustel
-     hobune+S+pl+abl: hobustelt
-     hobune+S+pl+tr: hobusteks
+     hobune+S+pl+ill: [hobustesse, hobuseisse]
+     hobune+S+pl+in: [hobustes, hobuseis]
+     hobune+S+pl+el: [hobustest, hobuseist]
+     hobune+S+pl+all: [hobustele, hobuseile]
+     hobune+S+pl+ad: [hobustel, hobuseil]
+     hobune+S+pl+abl: [hobustelt, hobuseilt]
+     hobune+S+pl+tr: [hobusteks, hobuseiks]
      hobune+S+pl+term: hobusteni
      hobune+S+pl+es: hobustena
      hobune+S+pl+abes: hobusteta

@@ -256,9 +256,10 @@ LEXICON 18_PlPV
 18;
 :+W An_PlP_V;
 
-LEXICON 18_PlV
-18;
-:$+W An_Pl_Vok;
+! ???
+!LEXICON 18_PlV
+!18;
+!:$+W An_Pl_Vok;
 
 LEXICON 18_PlPV_PlV
 18;
@@ -987,8 +988,8 @@ LEXICON An_PlG_V	!õnnelik-tüüp
 LEXICON An_Prefix
  +prefix: #;
 
-LEXICON An_Suffix
- +suffix: #;
+!LEXICON An_Suffix
+!  +suffix: #;
 
 LEXICON Spr ! ülivõrre
  +super:%!+im 02_A;

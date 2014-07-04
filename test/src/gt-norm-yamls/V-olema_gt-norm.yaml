@@ -46,29 +46,23 @@ Tests:
      #
      olema+V+cond+pres+imps+af: oldaks
      olema+V+cond+pres+imps+neg: [oldaks, poldaks]
-     olema+V+cond+pres+ps1+pl+ps+af: oleksime
-     olema+V+cond+pres+ps1+sg+ps+af: oleksin
-     olema+V+cond+pres+ps2+pl+ps+af: oleksite
-     olema+V+cond+pres+ps2+sg+ps+af: oleksid
-     olema+V+cond+pres+ps3+pl+ps+af: oleksid
+     olema+V+cond+pres+ps1+pl+ps+af: [oleks, oleksime]
+     olema+V+cond+pres+ps1+sg+ps+af: [oleks, oleksin]
+     olema+V+cond+pres+ps2+pl+ps+af: [oleks, oleksite]
+     olema+V+cond+pres+ps2+sg+ps+af: [oleks, oleksid]
+     olema+V+cond+pres+ps3+pl+ps+af: [oleks, oleksid]
      olema+V+cond+pres+ps3+sg+ps+af: oleks
      olema+V+cond+pres+ps+af: oleks
      olema+V+cond+pres+ps+neg: [oleks, poleks]
      # conditional mood
      # past tense
      #
-     olema+V+cond+past+ps1+sg+ps+af: olnuksin
-     olema+V+cond+past+ps2+sg+ps+af: olnuksid
+     olema+V+cond+past+ps1+sg+ps+af: [olnuksin, olnuks]
+     olema+V+cond+past+ps2+sg+ps+af: [olnuksid, olnuks]
      olema+V+cond+past+ps3+sg+ps+af: olnuks
-     olema+V+cond+past+ps1+pl+ps+af: olnuksime
-     olema+V+cond+past+ps2+pl+ps+af: olnuksite
-     olema+V+cond+past+ps3+pl+ps+af: olnuksid
-     olema+V+cond+past+ps1+sg+ps+neg: olnuksin
-     olema+V+cond+past+ps2+sg+ps+neg: olnuksid
-     olema+V+cond+past+ps3+sg+ps+neg: olnuks
-     olema+V+cond+past+ps1+pl+ps+neg: olnuksime
-     olema+V+cond+past+ps2+pl+ps+neg: olnuksite
-     olema+V+cond+past+ps3+pl+ps+neg: olnuksid
+     olema+V+cond+past+ps1+pl+ps+af: [olnuksime, olnuks]
+     olema+V+cond+past+ps2+pl+ps+af: [olnuksite, olnuks]
+     olema+V+cond+past+ps3+pl+ps+af: [olnuksid, olnuks]
      olema+V+cond+past+ps+af: olnuks
      olema+V+cond+past+imps+af: olduks
      olema+V+cond+past+ps+neg: olnuks
