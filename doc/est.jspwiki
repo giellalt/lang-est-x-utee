@@ -10,9 +10,12 @@
 
 This is free and open source South Sámi morphology.
 
+!!!Estonian morphological tags
 
+part of speech
 
 
+derivation suffixes, used to filter out illegal combinations internally
 
 
 
@@ -83,4 +86,5 @@ This is free and open source South Sámi morphology.
 
 
 
-There was no content!
+
+
