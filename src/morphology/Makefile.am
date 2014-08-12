@@ -54,10 +54,10 @@ GENERATED_LEXC_SRCS=
 # Set this to the names of all source xml files, if any
 GT_XML_SRCS=
 
-overriding-exceptions.all.lexc:	overriding-exceptions.lexc
+generated_files/overriding-exceptions.all.lexc:	overriding-exceptions.lexc
 	$(AM_V_GEN)cat $^ > $@
 
-numbers.all.lexc:	numbers.lexc
+generated_files/numbers.all.lexc: numbers.lexc
 	$(AM_V_GEN)cat $^ > $@
 
 include $(top_srcdir)/am-shared/src-morphology-dir-include.am
