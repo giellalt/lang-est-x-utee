@@ -256,21 +256,21 @@ LEXICON Kohalikud_erandid
  oma+Adv:oma 17;
  alates+K:alates GI;
 
- eikeegi+Pron+sg+nom:keegi #;
- eikeegi+Pron+sg+gen:kellegi #;
- eikeegi+Pron+sg+part:kedagi #;
- eikeegi+Pron+sg+ill:kellessegi #;
- eikeegi+Pron+sg+in:kelleski #;
- eikeegi+Pron+sg+el:kellestki #;
- eikeegi+Pron+sg+all:kellelegi #;
- eikeegi+Pron+sg+ad:kellelgi #;
- eikeegi+Pron+sg+ad:kelgi #;
- eikeegi+Pron+sg+abl:kelleltki #;
- eikeegi+Pron+sg+tr:kellekski #;
- eikeegi+Pron+sg+abes:kelletagi #;
- eikeegi+Pron+sg+es:kellenagi #;
- eikeegi+Pron+sg+term:kellenigi #;
- eikeegi+Pron+sg+kom:kellegagi #;
+ eikeegi+Pron+sg+nom:eikeegi #;
+ eikeegi+Pron+sg+gen:eikellegi #;
+ eikeegi+Pron+sg+part:eikedagi #;
+ eikeegi+Pron+sg+ill:eikellessegi #;
+ eikeegi+Pron+sg+in:eikelleski #;
+ eikeegi+Pron+sg+el:eikellestki #;
+ eikeegi+Pron+sg+all:eikellelegi #;
+ eikeegi+Pron+sg+ad:eikellelgi #;
+ eikeegi+Pron+sg+ad:eikelgi #;
+ eikeegi+Pron+sg+abl:eikelleltki #;
+ eikeegi+Pron+sg+tr:eikellekski #;
+ eikeegi+Pron+sg+abes:eikelletagi #;
+ eikeegi+Pron+sg+es:eikellenagi #;
+ eikeegi+Pron+sg+term:eikellenigi #;
+ eikeegi+Pron+sg+kom:eikellegagi #;
 
  eikusagil+Adv:eikusagil GI;
  eikusagilt+Adv:eikusagilt GI;
