@@ -60,7 +60,7 @@ Definitions
     Sidesõna = Sona [ "+CC" | "+CS" ];
     Kaassõna = Sona "+Adp";
     Muusõna = Sona "+Adv";
-    Genatribuut = Sona "+N+Sg+Gen";
+    Genatribuut = Sona "+N" "+Sg" "+Gen";
     Tegusõna = Tähtsõne VerbiParadigma; 
     Muutumatusõna = Määrsõna | Hüüdsõna | Sidesõna | Kaassõna | Muusõna | Genatribuut;
 

@@ -46,23 +46,21 @@ Tests:
      #
      olema+V+Impers+Prs+Cond+Aff: oldaks
      olema+V+Impers+Prs+Cond+Neg: [oldaks, poldaks]
-     olema+V+Pers+Prs+Cond+Pl1+Aff: [oleks, oleksime]
-     olema+V+Pers+Prs+Cond+Sg1+Aff: [oleks, oleksin]
-     olema+V+Pers+Prs+Cond+Pl2+Aff: [oleks, oleksite]
-     olema+V+Pers+Prs+Cond+Sg2+Aff: [oleks, oleksid]
-     olema+V+Pers+Prs+Cond+Pl3+Aff: [oleks, oleksid]
-     olema+V+Pers+Prs+Cond+Sg3+Aff: oleks
+     olema+V+Pers+Prs+Cond+Pl1+Aff: oleksime
+     olema+V+Pers+Prs+Cond+Sg1+Aff: oleksin
+     olema+V+Pers+Prs+Cond+Pl2+Aff: oleksite
+     olema+V+Pers+Prs+Cond+Sg2+Aff: oleksid
+     olema+V+Pers+Prs+Cond+Pl3+Aff: oleksid
      olema+V+Pers+Prs+Cond+Aff: oleks
      olema+V+Pers+Prs+Cond+Neg: [oleks, poleks]
      # conditional mood
      # past tense
      #
-     olema+V+Pers+Past+Cond+Sg1+Aff: [olnuksin, olnuks]
-     olema+V+Pers+Past+Cond+Sg2+Aff: [olnuksid, olnuks]
-     olema+V+Pers+Past+Cond+Sg3+Aff: olnuks
-     olema+V+Pers+Past+Cond+Pl1+Aff: [olnuksime, olnuks]
-     olema+V+Pers+Past+Cond+Pl2+Aff: [olnuksite, olnuks]
-     olema+V+Pers+Past+Cond+Pl3+Aff: [olnuksid, olnuks]
+     olema+V+Pers+Past+Cond+Sg1+Aff: olnuksin
+     olema+V+Pers+Past+Cond+Sg2+Aff: olnuksid
+     olema+V+Pers+Past+Cond+Pl1+Aff: olnuksime
+     olema+V+Pers+Past+Cond+Pl2+Aff: olnuksite
+     olema+V+Pers+Past+Cond+Pl3+Aff: olnuksid
      olema+V+Pers+Past+Cond+Aff: olnuks
      olema+V+Impers+Past+Cond+Aff: olduks
      olema+V+Pers+Past+Cond+Neg: olnuks

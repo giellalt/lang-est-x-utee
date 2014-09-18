@@ -6,16 +6,17 @@ Multichar_Symbols
 !! part of speech
 
 +N	! nimisõna		! substantive		! asi
-+N+Prop	! päris nimi		! proper name		! Jaan
++Prop	! päris nimi		! proper name		! Jaan
 +A	! omadussõna		! adjective		! asjalik
-+Num+Card	! arvsõna		! numeral		! kaks
-+Num+Ord	! järgarv		! ordinal		! teine
++Num +Card +Ord
+! +Num+Card	! arvsõna		! numeral		! kaks
+! +Num+Ord	! järgarv		! ordinal		! teine
 +Pron	! asesõna		! pronoun		! see
 +V	! tegusõna 		! verb			! asjastama
 +Adv	! määrsõna		! adverb		! asjatult
 +Interj	! hüüdsõna		! interjection		! hei
-+CC/+CS	! sidesõna		! conjunction		! ja
-+N+Sg+Gen	! genitiivatribuut	! genitive attribute	! saksa
++CC +CS	! sidesõna		! conjunction		! ja
+!+N+Sg+Gen	! genitiivatribuut	! genitive attribute	! saksa
 +Adp	! kaassõna		! pre/postposition	! kaudu
 +Adv	! muu sõna		! other word		! kihku, kihla, minap
 
