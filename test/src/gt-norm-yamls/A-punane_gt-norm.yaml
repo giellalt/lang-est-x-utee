@@ -20,110 +20,110 @@ Tests:
      #
      # Singular
      #
-     punane+A+sg+nom: punane
-     punane+A+sg+gen: punase
-     punane+A+sg+part: punast
-     punane+A+sg+ill: punasesse
-     punane+A+sg+in: punases
-     punane+A+sg+el: punasest
-     punane+A+sg+all: punasele
-     punane+A+sg+ad: punasel
-     punane+A+sg+abl: punaselt
-     punane+A+sg+tr: punaseks
-     punane+A+sg+term: punaseni
-     punane+A+sg+es: punasena
-     punane+A+sg+abes: punaseta
-     punane+A+sg+kom: punasega
+     punane+A+Sg+Nom: punane
+     punane+A+Sg+Gen: punase
+     punane+A+Sg+Par: punast
+     punane+A+Sg+Ill: punasesse
+     punane+A+Sg+Ine: punases
+     punane+A+Sg+Ela: punasest
+     punane+A+Sg+All: punasele
+     punane+A+Sg+Ade: punasel
+     punane+A+Sg+Abl: punaselt
+     punane+A+Sg+Tra: punaseks
+     punane+A+Sg+Trm: punaseni
+     punane+A+Sg+Ess: punasena
+     punane+A+Sg+Abe: punaseta
+     punane+A+Sg+Com: punasega
      #
      # Plural
      #
-     punane+A+pl+nom: punased
-     punane+A+pl+gen: punaste
-     punane+A+pl+part: punaseid
-     punane+A+pl+ill: [punastesse, punaseisse]
-     punane+A+pl+in: [punastes, punaseis]
-     punane+A+pl+el: [punastest, punaseist]
-     punane+A+pl+all: [punastele, punaseile]
-     punane+A+pl+ad: [punastel, punaseil]
-     punane+A+pl+abl: [punastelt, punaseilt]
-     punane+A+pl+tr: [punasteks, punaseiks]
-     punane+A+pl+term: punasteni
-     punane+A+pl+es: punastena
-     punane+A+pl+abes: punasteta
-     punane+A+pl+kom: punastega   
+     punane+A+Pl+Nom: punased
+     punane+A+Pl+Gen: punaste
+     punane+A+Pl+Par: punaseid
+     punane+A+Pl+Ill: [punastesse, punaseisse]
+     punane+A+Pl+Ine: [punastes, punaseis]
+     punane+A+Pl+Ela: [punastest, punaseist]
+     punane+A+Pl+All: [punastele, punaseile]
+     punane+A+Pl+Ade: [punastel, punaseil]
+     punane+A+Pl+Abl: [punastelt, punaseilt]
+     punane+A+Pl+Tra: [punasteks, punaseiks]
+     punane+A+Pl+Trm: punasteni
+     punane+A+Pl+Ess: punastena
+     punane+A+Pl+Abe: punasteta
+     punane+A+Pl+Com: punastega   
      #
      # Comparative Singular
      #
-     punane+A+comp+sg+nom: punasem
-     punane+A+comp+sg+gen: punasema
-     punane+A+comp+sg+part: punasemat
-     punane+A+comp+sg+ill: punasemasse
-     punane+A+comp+sg+in: punasemas
-     punane+A+comp+sg+el: punasemast
-     punane+A+comp+sg+all: punasemale
-     punane+A+comp+sg+ad: punasemal
-     punane+A+comp+sg+abl: punasemalt
-     punane+A+comp+sg+tr: punasemaks
-     punane+A+comp+sg+term: punasemani
-     punane+A+comp+sg+es: punasemana
-     punane+A+comp+sg+abes: punasemata
-     punane+A+comp+sg+kom: punasemaga
+     punane+A+Comp+Sg+Nom: punasem
+     punane+A+Comp+Sg+Gen: punasema
+     punane+A+Comp+Sg+Par: punasemat
+     punane+A+Comp+Sg+Ill: punasemasse
+     punane+A+Comp+Sg+Ine: punasemas
+     punane+A+Comp+Sg+Ela: punasemast
+     punane+A+Comp+Sg+All: punasemale
+     punane+A+Comp+Sg+Ade: punasemal
+     punane+A+Comp+Sg+Abl: punasemalt
+     punane+A+Comp+Sg+Tra: punasemaks
+     punane+A+Comp+Sg+Trm: punasemani
+     punane+A+Comp+Sg+Ess: punasemana
+     punane+A+Comp+Sg+Abe: punasemata
+     punane+A+Comp+Sg+Com: punasemaga
      #
      # Comparative Plural
      #
-     punane+A+comp+pl+nom: punasemad
-     punane+A+comp+pl+gen: punasemate
-     punane+A+comp+pl+part: punasemaid
-     punane+A+comp+pl+ill: [punasematesse, punasemaisse]
-     punane+A+comp+pl+in: [punasemates, punasemais]
-     punane+A+comp+pl+el: [punasematest, punasemaist]
-     punane+A+comp+pl+all: [punasematele, punasemaile]
-     punane+A+comp+pl+ad: [punasematel, punasemail]
-     punane+A+comp+pl+abl: [punasematelt, punasemailt]
-     punane+A+comp+pl+tr: [punasemateks, punasemaiks]
-     punane+A+comp+pl+term: [punasemateni]
-     punane+A+comp+pl+es: [punasematena]
-     punane+A+comp+pl+abes: [punasemateta]
-     punane+A+comp+pl+kom: [punasematega]   
-     # punane+A+comp+pl+term: [punasemateni, punasemaini]
-     # punane+A+comp+pl+es: [punasematena, punasemaina]
-     # punane+A+comp+pl+abes: [punasemateta, punasemaita]
-     # punane+A+comp+pl+kom: [punasematega, punasemaiga]   
+     punane+A+Comp+Pl+Nom: punasemad
+     punane+A+Comp+Pl+Gen: punasemate
+     punane+A+Comp+Pl+Par: punasemaid
+     punane+A+Comp+Pl+Ill: [punasematesse, punasemaisse]
+     punane+A+Comp+Pl+Ine: [punasemates, punasemais]
+     punane+A+Comp+Pl+Ela: [punasematest, punasemaist]
+     punane+A+Comp+Pl+All: [punasematele, punasemaile]
+     punane+A+Comp+Pl+Ade: [punasematel, punasemail]
+     punane+A+Comp+Pl+Abl: [punasematelt, punasemailt]
+     punane+A+Comp+Pl+Tra: [punasemateks, punasemaiks]
+     punane+A+Comp+Pl+Trm: [punasemateni]
+     punane+A+Comp+Pl+Ess: [punasematena]
+     punane+A+Comp+Pl+Abe: [punasemateta]
+     punane+A+Comp+Pl+Com: [punasematega]   
+     # punane+A+Comp+Pl+Trm: [punasemateni, punasemaini]
+     # punane+A+Comp+Pl+Ess: [punasematena, punasemaina]
+     # punane+A+Comp+Pl+Abe: [punasemateta, punasemaita]
+     # punane+A+Comp+Pl+Com: [punasematega, punasemaiga]   
      #
      # Superlative Singular
      #
-     punane+A+super+sg+nom: punaseim
-     punane+A+super+sg+gen: punaseima
-     punane+A+super+sg+part: punaseimat
-     punane+A+super+sg+ill: punaseimasse
-     punane+A+super+sg+in: punaseimas
-     punane+A+super+sg+el: punaseimast
-     punane+A+super+sg+all: punaseimale
-     punane+A+super+sg+ad: punaseimal
-     punane+A+super+sg+abl: punaseimalt
-     punane+A+super+sg+tr: punaseimaks
-     punane+A+super+sg+term: punaseimani
-     punane+A+super+sg+es: punaseimana
-     punane+A+super+sg+abes: punaseimata
-     punane+A+super+sg+kom: punaseimaga
+     punane+A+Superl+Sg+Nom: punaseim
+     punane+A+Superl+Sg+Gen: punaseima
+     punane+A+Superl+Sg+Par: punaseimat
+     punane+A+Superl+Sg+Ill: punaseimasse
+     punane+A+Superl+Sg+Ine: punaseimas
+     punane+A+Superl+Sg+Ela: punaseimast
+     punane+A+Superl+Sg+All: punaseimale
+     punane+A+Superl+Sg+Ade: punaseimal
+     punane+A+Superl+Sg+Abl: punaseimalt
+     punane+A+Superl+Sg+Tra: punaseimaks
+     punane+A+Superl+Sg+Trm: punaseimani
+     punane+A+Superl+Sg+Ess: punaseimana
+     punane+A+Superl+Sg+Abe: punaseimata
+     punane+A+Superl+Sg+Com: punaseimaga
      #
      # Superlative Plural
      #
-     punane+A+super+pl+nom: punaseimad
-     punane+A+super+pl+gen: punaseimate
-     punane+A+super+pl+part: punaseimaid
-     punane+A+super+pl+ill: [punaseimatesse, punaseimaisse]
-     punane+A+super+pl+in: [punaseimates, punaseimais]
-     punane+A+super+pl+el: [punaseimatest, punaseimaist]
-     punane+A+super+pl+all: [punaseimatele, punaseimaile]
-     punane+A+super+pl+ad: [punaseimatel, punaseimail]
-     punane+A+super+pl+abl: [punaseimatelt, punaseimailt]
-     punane+A+super+pl+tr: [punaseimateks, punaseimaiks]
-     punane+A+super+pl+term: [punaseimateni]
-     punane+A+super+pl+es: [punaseimatena]
-     punane+A+super+pl+abes: [punaseimateta]
-     punane+A+super+pl+kom: [punaseimatega]   
-     # punane+A+super+pl+term: [punaseimateni, punaseimaini]
-     # punane+A+super+pl+es: [punaseimatena, punaseimaina]
-     # punane+A+super+pl+abes: [punaseimateta, punaseimaita]
-     # punane+A+super+pl+kom: [punaseimatega, punaseimaiga]   
+     punane+A+Superl+Pl+Nom: punaseimad
+     punane+A+Superl+Pl+Gen: punaseimate
+     punane+A+Superl+Pl+Par: punaseimaid
+     punane+A+Superl+Pl+Ill: [punaseimatesse, punaseimaisse]
+     punane+A+Superl+Pl+Ine: [punaseimates, punaseimais]
+     punane+A+Superl+Pl+Ela: [punaseimatest, punaseimaist]
+     punane+A+Superl+Pl+All: [punaseimatele, punaseimaile]
+     punane+A+Superl+Pl+Ade: [punaseimatel, punaseimail]
+     punane+A+Superl+Pl+Abl: [punaseimatelt, punaseimailt]
+     punane+A+Superl+Pl+Tra: [punaseimateks, punaseimaiks]
+     punane+A+Superl+Pl+Trm: [punaseimateni]
+     punane+A+Superl+Pl+Ess: [punaseimatena]
+     punane+A+Superl+Pl+Abe: [punaseimateta]
+     punane+A+Superl+Pl+Com: [punaseimatega]   
+     # punane+A+Superl+Pl+Trm: [punaseimateni, punaseimaini]
+     # punane+A+Superl+Pl+Ess: [punaseimatena, punaseimaina]
+     # punane+A+Superl+Pl+Abe: [punaseimateta, punaseimaita]
+     # punane+A+Superl+Pl+Com: [punaseimatega, punaseimaiga]   

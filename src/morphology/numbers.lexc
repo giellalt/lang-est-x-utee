@@ -3,10 +3,10 @@
 
 Multichar_Symbols
 
- +Num +Ord
- +pl +sg
- +nom +gen +part +ill +in +el +all +ad +abl +tr +term +es +abes +kom
- +gi
+ +Num +Card +Ord
+ +Pl +Sg
+ +Nom +Gen +Par +Ill +Ine +Ela +All +Ade +Abl +Tra +Trm +Ess +Abe +Com
+ +Foc/gi
 
 Definitions
 
@@ -19,70 +19,70 @@ LEXICON Root
  < Järgarv > JÄRGARV;
 
 LEXICON PÕHIARV
- +Num: #;
- +Num+sg:- Käänded;
- +Num+sg: Käänded_X;
- +Num: NDIK;
- +Num:- NDIK;
- +Ord: NDA;
- +Ord:- NDA;
+ +Num+Card: #;
+ +Num+Card+Sg:- Käänded;
+ +Num+Card+Sg: Käänded_X;
+ +Num+Card: NDIK;
+ +Num+Card:- NDIK;
+ +Num+Ord: NDA;
+ +Num+Ord:- NDA;
 
 LEXICON JÄRGARV
- +Ord: #;
+ +Num+Ord: #;
 
 
 LEXICON NDIK
- +sg+nom:ndik GI;
- +sg+gen:ndiku GI;
- +sg+part:ndikku KI;
+ +Sg+Nom:ndik GI;
+ +Sg+Gen:ndiku GI;
+ +Sg+Par:ndikku KI;
 
- +sg:ndiku Käänded;
+ +Sg:ndiku Käänded;
 
- +pl+nom:ndikud KI;
- +pl+gen:ndike GI;
- +pl+gen:ndikkude GI;
- +pl+part:ndikke KI;
- +pl+part:ndikkusid KI;
+ +Pl+Nom:ndikud KI;
+ +Pl+Gen:ndike GI;
+ +Pl+Gen:ndikkude GI;
+ +Pl+Par:ndikke KI;
+ +Pl+Par:ndikkusid KI;
 
- +pl:ndike Käänded;
- +pl:ndikkude Käänded;
+ +Pl:ndike Käänded;
+ +Pl:ndikkude Käänded;
 
 LEXICON NDA
- +sg+gen:nda GI;
- +sg+part:ndat KI;
+ +Sg+Gen:nda GI;
+ +Sg+Par:ndat KI;
 
- +sg:nda Käänded;
+ +Sg:nda Käänded;
 
- +pl+nom:ndad KI;
- +pl+gen:ndate GI;
- +pl+part:ndaid KI;
+ +Pl+Nom:ndad KI;
+ +Pl+Gen:ndate GI;
+ +Pl+Par:ndaid KI;
 
- +pl:ndate Käänded;
+ +Pl:ndate Käänded;
 
 LEXICON Käänded
  Käänded_X;
  Käänded_L;
 
 LEXICON Käänded_X ! ilma miinuseta arvule liituda võivad
- +ill:sse GI;
- +in:s KI;
- +el:st KI;
- +tr:ks KI;
- +term:ni GI;
- +es:na GI;
- +abes:ta GI;
- +kom:ga GI;
+ +Ill:sse GI;
+ +Ine:s KI;
+ +Ela:st KI;
+ +Tra:ks KI;
+ +Trm:ni GI;
+ +Ess:na GI;
+ +Abe:ta GI;
+ +Com:ga GI;
 
 LEXICON Käänded_L ! vahel kohustuslik miinus
- +all:le GI;
- +ad:l GI;
- +abl:lt KI;
+ +All:le GI;
+ +Ade:l GI;
+ +Abl:lt KI;
 
 LEXICON GI
  #;
- +gi:gi #;
+ +Foc/gi:gi #;
 
 LEXICON KI
  #;
- +gi:ki #;
+ +Foc/gi:ki #;
 

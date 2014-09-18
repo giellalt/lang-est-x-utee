@@ -125,7 +125,7 @@
 ! personal past indicative Pl2 affirmative                                       elasite
 ! personal past indicative Pl3 affirmative                                       elasid
 !
-! personal past indicative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                    polnud
+! personal past indicative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                    polnud, 
 !
 ! personal past conditional Sg1 affirmative                                      elanuksin
 ! personal past conditional Sg2 affirmative                                      elanuksid
@@ -146,6 +146,7 @@
 !
 ! personal present participle                                                     elav
 ! personal past participle                                                        elanud
+!          (ei, on, oli, ...) + personal past participle = some analytical personal form 
 !
 ! personal supine abessive                                                        elamata
 ! personal supine elative                                                         elamast

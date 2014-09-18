@@ -5,185 +5,255 @@ Multichar_Symbols
 ! sõnaliik
 !! part of speech
 
-+S	! nimisõna		! substantive		! asi
-+H	! päris nimi		! proper name		! Jaan
++N	! nimisõna		! substantive		! asi
++N+Prop	! päris nimi		! proper name		! Jaan
 +A	! omadussõna		! adjective		! asjalik
-+Num	! arvsõna		! numeral		! kaks
-+Ord	! järgarv		! ordinal		! teine
++Num+Card	! arvsõna		! numeral		! kaks
++Num+Ord	! järgarv		! ordinal		! teine
 +Pron	! asesõna		! pronoun		! see
 +V	! tegusõna 		! verb			! asjastama
 +Adv	! määrsõna		! adverb		! asjatult
-+I	! hüüdsõna		! interjection		! hei
-+J	! sidesõna		! conjunction		! ja
-+G	! genitiivatribuut	! genitive attribute	! saksa
-+K	! kaassõna		! pre/postposition	! kaudu
-+X	! muu sõna		! other word		! kihku, kihla, minap
++Interj	! hüüdsõna		! interjection		! hei
++CC/+CS	! sidesõna		! conjunction		! ja
++N+Sg+Gen	! genitiivatribuut	! genitive attribute	! saksa
++Adp	! kaassõna		! pre/postposition	! kaudu
++Adv	! muu sõna		! other word		! kihku, kihla, minap
 
 ! tuletised, sisemiseks kasutamiseks, filtreerimiseks
 !! derivation suffixes, used to filter out illegal combinations internally
-+_ke	! deminutive
-+_kene  ! deminutive
-+_us
-+_lt
-+_ini	! comparation? paremini, kiiremini (how? better than .., faster than ..)
++Dim/ke	! deminutive
++Dim/kene  ! deminutive
++Der/us
++Der/lt
++Der/ini	! comparation? paremini, kiiremini (how? better than .., faster than ..)
 
 ! partikkel -gi/-ki
 ! particle -gi/-ki
-+gi
++Foc/gi
 
 ! arv 			! number
-+sg	! ainsus	! singular
-+pl	! mitmus	! plural
++Sg	! ainsus	! singular
++Pl	! mitmus	! plural
 
 ! käänded
-+nom	! nimetav			! nominative	! part, maja		pardid, majad
-+gen	! omastav 			! genitive	! pardi, maja		partide, majade
-+part	! osastav			! partitive	! parti, maja		parte, maju
-+ill	! sisseütlev			! illative	! pardisse, majasse	partidesse, majadesse
-+adit	! suunduv (lühike sisseütlev?)	! aditive	! p'arti, majja
-+in	! seesütlev			! inessive	! pardis, majas		partides, majades
-+el	! seestütlev			! elative	! pardist, majast	partidest, majadest
-+all	! alaleütlev			! allative	! pardile, majale	partidele, majadele
-+ad	! alalütlev			! adessive	! pardil, majal		partidel, majadel
-+abl	! alaltütlev			! ablative	! pardilt, majalt	partidelt, majadelt
-+tr	! saav				! translative	! pardiks, majaks	partideks, majadeks
-+term	! rajav				! terminative	! pardini, majani	partideni, majadeni
-+es	! olev				! essive	! pardina, majana	partidena, majadena
-+abes	! ilmaütlev			! abessive	! pardita, majata	partideta, majadeta
-+kom	! kaasaütlev			! comitative	! pardiga, majaga	partidega, majadega
++Nom	! nimetav			! nominative	! part, maja		pardid, majad
++Gen	! omastav 			! genitive	! pardi, maja		partide, majade
++Par	! osastav			! partitive	! parti, maja		parte, maju
++Ill	! sisseütlev			! illative	! pardisse, majasse	partidesse, majadesse
++Ill	! suunduv (lühike sisseütlev?)	! aditive	! p'arti, majja
++Ine	! seesütlev			! inessive	! pardis, majas		partides, majades
++Ela	! seestütlev			! elative	! pardist, majast	partidest, majadest
++All	! alaleütlev			! allative	! pardile, majale	partidele, majadele
++Ade	! alalütlev			! adessive	! pardil, majal		partidel, majadel
++Abl	! alaltütlev			! ablative	! pardilt, majalt	partidelt, majadelt
++Tra	! saav				! translative	! pardiks, majaks	partideks, majadeks
++Trm	! rajav				! terminative	! pardini, majani	partideni, majadeni
++Ess	! olev				! essive	! pardina, majana	partidena, majadena
++Abe	! ilmaütlev			! abessive	! pardita, majata	partideta, majadeta
++Com	! kaasaütlev			! comitative	! pardiga, majaga	partidega, majadega
 
 ! võrdlusastmed
-+comp	! komparatiiv	! comparative
-+super	! superlatiiv	! superlative
++Comp	! komparatiiv	! comparative
++Superl	! superlatiiv	! superlative
+
 
 ! verb
-! finiitsed (pöördelised) vormid
-! finite (conjugable) forms
+! finiitsed (pöördelised) ja infiniitsed (nn käänduvad) vormid
+! finite (conjugable) and infinite ("declinable") forms
 
-! kategooriad: isik, arv, tegumood, aeg, kõneviis, kõnelaad
-! categories: person, number, voice, tense, mood, aspect
+! pöördelistel vormidel on kategooriad: 
+! tegumood, aeg, kõneviis, isik, arv, kõnelaad
+! (tegumood ja aeg on ka mõnedel infiniitsetel vormidel)
 
-! kõneviis		! mood
-+indic	! kindel	! indicative
-+imper	! käskiv	! imperative
-+cond	! tingiv	! conditional
-+quot	! kaudne	! quotative
+! finite forms have categories: 
+! voice, tense, mood, person, number, aspect
+! (some infinite forms also have voice and tense)
+
+! tegumood		! voice
++Impers	! umbisikuline	! impersonal
++Pers	! isikuline	! personal
 
 ! aeg			! tense
-+pres	! olevik	! present
-+past	! minevik	! past (used for conditional and particles)
-+impf	! lihtminevik	! past imperfect (used for indicative mood only)
++Prs	! olevik	! present
++Past	! minevik	! past (umbrella term for imperfect, perfect, pluperfect)
+! lihtminevik, past imperfect (used for indicative mood only)
 ! täisminevik, past perfect: olema (pres) + nud/tud/dud (olen teinud)
 ! enneminevik, past pluperfect: olema (impf) + nut/tud/dud (olin teinud)
 
-! pööre			! person
-+ps1	! 1. pööre	! 1st person
-+ps2	! 2. pööre	! 2nd person
-+ps3 	! 3. pööre	! 3rd person
+! kõneviis		! mood
++Ind	! kindel	! indicative
++Cond	! tingiv	! conditional
++Imprt	! käskiv	! imperative / jussive
++Quot	! kaudne	! quotative
+
+! pööre	ja arv		        ! person and number
++Sg1	! ainsuse 1. pööre	! singular 1st person
++Sg2	! ainsuse 2. pööre	! singular 2nd person
++Sg3 	! ainsuse 3. pööre	! singular 3rd person
++Pl1	! mitmuse 1. pööre	! plural   1st person
++Pl2	! mitmuse 2. pööre	! plural   2nd person
++Pl3 	! mitmuse 3. pööre	! plural   3rd person
 
 ! kõnelaad		! aspect
-+neg	! eitav kõne	! negative
-+af 	! jaatav kõne	! affirmative
++Aff 	! jaatav kõne	! affirmative
++Neg	! eitav kõne	! negative
 
-! tegumood		! voice
-+imps	! umbisikuline	! impersonal
-+ps	! isikuline	! personal
+! infiniitsed (nn käänduvad) verbivormid
+! infinite ("declinable") verb forms
+
++Sup	! ma-tegevusnimi ! supine (ma-infinitive)	! lugema
+
++Inf	! da-tegevusnimi ! infinitive (da-infinitive)	! lugeda
+
++Ger	! des-vorm	 ! gerund (des-form)		! lugedes
+
++Prc	! kesksõna	 ! participle
 
 
 ! kategooriate võimalikud kombinatsioonid
 ! possible combinations of categories
 
-! affirmative indicative  present singular 1st person	+n		loen
-!					   2nd person	+d		loeb
-!					   3rd person	+b		loed
-!				  plural   1st person	+me		loeme
-!					   2nd person	+te		loete
-!					   3rd person	+vad		loevad
-!				  impersonal		+takse, +dakse	loetakse
-!			  past    singular 1st person	+sin, +in	lugesin, tegin
-!				           2nd person	+sid, +id	lugesid, tegid
-!					   3rd person	+s, +is, +i	luges, tõstis, tegi
-!				  plural   1st person	+sime, +ime	lugesime, tegime
-!					   2nd person	+site, +ite	lugesite, tegite
-!                                          3rd person	+sid, +id	lugesid, tegid
-!				  impersonal		+ti, +di	loeti
+! The categories are given in the order in which the allomorphs (if they can be
+! distinguished) that represent them are attached to the word stem (note that the
+! treatment of allomorphs is sloppy here). The justification is that the
+! categories are not equal, but form an hierarchy: those closer to the word end 
+! tend to be more optional, more often non-specified.   
 !
-!             quotative   present personal		+vat		lugevat
-!				  impersonal		+tavat, +davat	loetavat
-!			  past    personal		+nuvat		lugenuvat
-!			 	  impersonal		+tuvat		loetuvat* ? (can't think of example sentence)
+!# __voice:__ personal vs. impersonal (0-morph vs. {{t/d[aiu]}}), eg. elaks vs
+!  elataks, elav vs elatav
+!# __tense:__ present vs. past (0-morph vs. s/si/nu), e.g. elan vs. elasin;
+!  elaks vs. elanuks
+!# __mood:__ indicative vs. conditional vs imperative vs quotative
+!  (0-morph vs. ks vs. k/g[ue] vs. vat)
+!# __person+number:__ notice that in personal present imperative 3rd person
+!  the distinction between singular/plural is lost (ta/nad elagu)
+!# __aspect:__ affirmative vs. negative. The aspect manifests itself via
+!  lexical means: it is either present in an exceptional wordform (some forms of
+!  olema) or gets adhered to a form, normally used in affirmative aspect,
+!  from an immediately preceding word ei or ära (e.g. ei elaks).
+!  The only case when negative aspect has a dedicated form of its own is impersonal
+!  present indicative negative (e.g. ei elata).  
 !
-!	      conditional present singular 1st person	+ksin		loeksin
-!					   2nd person	+ksid		loeksid
-!					   3rd person	+ks		loeks
-!				  plural   1st person	+ksime		loeksime
-!					   2nd person	+ksite		loeksite
-!					   3rd person	+ksid		loeksid
-!				  personal		+ks		loeks
-!				  impersonal		+taks, +daks	loetaks
-!			  past    singular 1st person	+nuksin		lugenuksin
-!					   2nd person	+nuksid		lugenuksid
-!					   3rd person	+nuks		lugenuks
-!				  plural   1st person	+nuksime	lugenuksime
-!					   2nd person	+nuksite	lugenuksite
-!					   3rd person	+nuksid		lugenuksid
-!				  personal		+nuks		lugenuks
-!				  impersonal		+tuks, +duks	loetuks
+! Below, brackets are used to indicate the set of non-specified alternative values.
 !
-!	      imperative  present singular 1st person	--
-!					   2nd person	+0		loe
-!					   3rd person	+gu, +ku	lugegu
-!				  plural   1st person	+gem, +kem	lugegem
-!					   2nd person	+ge, +ke	lugege
-!					   3rd person	+gu, +ku	lugegu
-!				  impersonal		+tagu, +dagu	loetagu
+! ---- personal finite forms ----
 !
-! negative    indicative  present personal		ei +0			ei loe
-!				  impersonal		ei +ta, +da		ei loeta
-!			  past	  personal		ei +nud			ei lugenud
-!				  impersonal		ei +tud, +dud		ei loetud
+! personal present indicative Sg1 affirmative                                    elan  
+! personal present indicative Sg2 affirmative                                    elad  
+! personal present indicative Sg3 affirmative                                    elab  
+! personal present indicative Pl1 affirmative                                    elame 
+! personal present indicative Pl2 affirmative                                    elate 
+! personal present indicative Pl3 affirmative                                    elavad
 !
-!	      quotative   present personal		ei +vat			ei lugevat
-!				  impersonal		ei +tavat, +davat	ei loetavat
-!			  past    personal		ei +nuvat		ei lugenuvat
-!				  impersonal		ei +tuvat, +duvat	ei loetuvat
+! personal present indicative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                 ela, pole
 !
-!	      conditional present personal		ei +ks			ei loeks
-!				  impersonal		ei +taks, +daks		ei loetaks
-!			  past    personal		ei +nuks		ei lugenuks
-!				  impersonal		ei +tuks, +duks		ei loetuks
+! personal present conditional Sg1 affirmative                                   elaksin
+! personal present conditional Sg2 affirmative                                   elaksid
+! personal present conditional (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) (affirmative/negative)  elaks 
+! personal present conditional Pl1 affirmative                                   elaksime
+! personal present conditional Pl2 affirmative                                   elaksite
+! personal present conditional Pl3 affirmative                                   elaksid
 !
-!	      imperative  present singular 1st person	--
-!					   2nd person	ära +0			ära loe
-!					   3rd person	ärgu +gu, +ku		ärgu lugegu
-!				  plural   1st person	ärgem +gem, +kem	ärgem lugegem
-!					   2nd person	ärge +ge, +ke		ärge lugege
-!					   3rd person	ärgu +gu, +ku		ärgu lugegu
-!				  impersonal		ärgu +tagu, +dagu	ärgu loetagu
+! personal present conditional Sg1 negative                                      poleksin
+! personal present conditional Sg2 negative                                      poleksid
+! personal present conditional (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                poleks
+! personal present conditional Pl1 negative                                      poleksime
+! personal present conditional Pl2 negative                                      poleksite
+! personal present conditional Pl3 negative                                      poleksid
+!
+! personal present imperative Sg2 (affirmative/negative)                         ela
+! personal present imperative Sg3 (affirmative/negative)                         elagu 
+! personal present imperative Pl1 (affirmative/negative)                         elagem
+! personal present imperative Pl2 (affirmative/negative)                         elage 
+! personal present imperative Pl3 (affirmative/negative)                         elagu 
+!
+! personal present imperative Sg2 negative                                       ära
+! personal present imperative Sg3 negative                                       ärgu
+! personal present imperative Pl1 negative                                       ärgem
+! personal present imperative Pl2 negative                                       ärge
+! personal present imperative Pl3 negative                                       ärgu
+!
+! personal present quotative (affirmative/negative)                              elavat
+! personal present quotative negative                                            polevat
+! 
+! personal past indicative Sg1 affirmative                                       elasin
+! personal past indicative Sg2 affirmative                                       elasid
+! personal past indicative Sg3 affirmative                                       elas  
+! personal past indicative Pl1 affirmative                                       elasime
+! personal past indicative Pl2 affirmative                                       elasite
+! personal past indicative Pl3 affirmative                                       elasid
+!
+! personal past indicative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                    polnud, 
+!
+! personal past conditional Sg1 affirmative                                      elanuksin
+! personal past conditional Sg2 affirmative                                      elanuksid
+! personal past conditional (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) (affirmative/negative)     elanuks
+! personal past conditional Pl1 affirmative                                      elanuksime
+! personal past conditional Pl2 affirmative                                      elanuksite
+! personal past conditional Pl3 affirmative                                      elanuksid
+!
+! personal past conditional (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                   polnuks
+!
+! personal past imperative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) (affirmative/negative)      elanud 
+! personal past imperative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                    ärnud 
+!
+! personal past quotative (affirmative/negative)                                 elanuvat
+! personal past quotative negative                                               polnuvat
+!
+! ---- personal infinite forms ----
+!
+! personal present participle                                                     elav
+! personal past participle                                                        elanud
+!          (ei, on, oli, ...) + personal past participle = some analytical personal form 
+!
+! personal supine abessive                                                        elamata
+! personal supine elative                                                         elamast
+! personal supine illative                                                        elama 
+! personal supine inessive                                                        elamas
+! personal supine translative                                                     elamaks
+!
+! ---- impersonal finite forms ----
+!
+! impersonal present indicative affirmative                                       elatakse
+! impersonal present indicative negative                                          elata 
+!                   
+! impersonal present conditional (affirmative/negative)                           elataks
+! impersonal present conditional negative                                         poldaks
+!
+! impersonal present imperative (affirmative/negative)                            elatagu
+! impersonal present imperative negative                                          ärdagu
+!
+! impersonal present quotative (affirmative/negative)                             elatavat
+! impersonal present quotative negative                                           poldavat
+!
+! impersonal past indicative affirmative                                          elati 
+! impersonal past indicative negative                                             poldud 
+!
+! impersonal past conditional (affirmative/negative)                              elatuks
+!
+! ---- impersonal infinite forms ----
+!
+! impersonal present participle                                                   elatav
+! impersonal past participle                                                      elatud
+!
+! impersonal supine                                                               elatama
+!
+! ---- infinite forms with no voice category ----
+!
+! gerund                                                                          elades
+! infinitive                                                                      elada
+!
+!
+! Exceptional cases:
+!
+! personal present (affirmative/negative), 3 words:  kuulukse, tunnukse, näikse
+! negative                                                           ei 
+!
+!
+! Analytical forms (olen elanud, olin elanud, oleksin elanud, ei olnud elanud,
+! ei olnuks elanud etc) are not treated here...
 
 
-! infiniitsed (nn käänduvad) verbivormid
-! infinite ("declinable") verb forms
-
-+sup	! ma-tegevusnimi ! supine (ma-infinitive)	! lugema
-! (personal)
-! +sup+ill  -- lugema
-! +sup+in   -- lugemas
-! +sup+el   -- lugemast
-! +sup+tr   -- lugemaks
-! +sup+abes -- lugemata
-! (impersonal)
-! +sup+imps -- loetama
-
-+inf	! da-tegevusnimi ! inifinitive (da-infinitive)	! lugeda
-
-+ger	! des-vorm	 ! gerund (des-form)		! lugedes
-
-+partic	! kesksõnad ! participles
-! +partic+pres+ps   -- personal present particle  -- lugev
-! +partic+pres+imps -- impersonal resent particle -- loetav
-! +partic+past+ps   -- personal past particle     -- lugenud
-! +partic+past+imps -- impersonal past particle   -- loetud
 
 ! ainult liitsõna osadena esinevad vormid
 ! forms that can exist only as a part of compound
@@ -250,33 +320,33 @@ NonInflectionals;
 !Numerals;
 
 LEXICON Kohalikud_erandid
- teist+Num:teistküm= 05_E-NE;
- kümmend+Num:küm= 05_E-NE;
+ teist+Num+Card:teistküm= 05_E-NE;
+ kümmend+Num+Card:küm= 05_E-NE;
 
  ei+V+neg:ei #;
- siis+J:siis #;
+ siis+CC/+CS:siis #;
  kogu+A:kogu GI;
  jah+Adv:jah #;
  nagu+Adv:nagu #;
  oma+Pron:oma 17;
  oma+Adv:oma 17;
- alates+K:alates GI;
+ alates+Adp:alates GI;
 
- eikeegi+Pron+sg+nom:eikeegi #;
- eikeegi+Pron+sg+gen:eikellegi #;
- eikeegi+Pron+sg+part:eikedagi #;
- eikeegi+Pron+sg+ill:eikellessegi #;
- eikeegi+Pron+sg+in:eikelleski #;
- eikeegi+Pron+sg+el:eikellestki #;
- eikeegi+Pron+sg+all:eikellelegi #;
- eikeegi+Pron+sg+ad:eikellelgi #;
- eikeegi+Pron+sg+ad:eikelgi #;
- eikeegi+Pron+sg+abl:eikelleltki #;
- eikeegi+Pron+sg+tr:eikellekski #;
- eikeegi+Pron+sg+abes:eikelletagi #;
- eikeegi+Pron+sg+es:eikellenagi #;
- eikeegi+Pron+sg+term:eikellenigi #;
- eikeegi+Pron+sg+kom:eikellegagi #;
+ eikeegi+Pron+Sg+Nom:eikeegi #;
+ eikeegi+Pron+Sg+Gen:eikellegi #;
+ eikeegi+Pron+Sg+Par:eikedagi #;
+ eikeegi+Pron+Sg+Ill:eikellessegi #;
+ eikeegi+Pron+Sg+Ine:eikelleski #;
+ eikeegi+Pron+Sg+Ela:eikellestki #;
+ eikeegi+Pron+Sg+All:eikellelegi #;
+ eikeegi+Pron+Sg+Ade:eikellelgi #;
+ eikeegi+Pron+Sg+Ade:eikelgi #;
+ eikeegi+Pron+Sg+Abl:eikelleltki #;
+ eikeegi+Pron+Sg+Tra:eikellekski #;
+ eikeegi+Pron+Sg+Abe:eikelletagi #;
+ eikeegi+Pron+Sg+Ess:eikellenagi #;
+ eikeegi+Pron+Sg+Trm:eikellenigi #;
+ eikeegi+Pron+Sg+Com:eikellegagi #;
 
  eikusagil+Adv:eikusagil GI;
  eikusagilt+Adv:eikusagilt GI;
@@ -287,14 +357,14 @@ LEXICON Kohalikud_erandid
 
 ! lühitüved
  hoogne+A+prefix:hoog #;
- inimene+S+prefix:inim #;
+ inimene+N+prefix:inim #;
  kauge+A+prefix:kaug #;
  kerge+A+prefix:kerg #;
  kiire+A+prefix:kiir #;
  kõrge+A+prefix:kõrg #;
  rõhtne+A+prefix:rõht #;
  võõras+A+prefix:võõr #;
- võõras+S+prefix:võõr #;
+ võõras+N+prefix:võõr #;
  pelgu+A+prefix:pelgu #;
 
 ! muutumatud eesliitekomponendid, osa tuletuvad ise.. EKKR, SM31
@@ -345,143 +415,143 @@ LEXICON Kohalikud_erandid
 
 ! tyvemoodustuse erandid, vokaalmitmuse erandid
 
-! ??? aed+S:aed 22; ! at: aed, bt: aeda, bn: aia, btv: aedu, bnv: aiuA
- aed+S:aed An_SgN;
- aed+S:aia$ TP_22bn;
- aed+S:aeda TP_22bt;
+! ??? aed+N:aed 22; ! at: aed, bt: aeda, bn: aia, btv: aedu, bnv: aiuA
+ aed+N:aed An_SgN;
+ aed+N:aia$ TP_22bn;
+ aed+N:aeda TP_22bt;
 
-! ??? haug+S:haug 22; ! at: haug, bt: haugi, bn: havi, btv: hauge, bnv: have
- haug+S:haug An_SgN;
- haug+S:havi$ TP_22bn;
- haug+S:haugi TP_22bt;
+! ??? haug+N:haug 22; ! at: haug, bt: haugi, bn: havi, btv: hauge, bnv: have
+ haug+N:haug An_SgN;
+ haug+N:havi$ TP_22bn;
+ haug+N:haugi TP_22bt;
 
-! erandlik tyvemitmus: king+S:king 22; ! at: king, bt: kinga, bn: kinga, btv: kingi, bnv: kingi
- king+S:king An_SgN;
- king+S:kinga$ TP_22bn';
- king+S:kinga TP_22bt';
- king+S:kingi An_PlP_V;
- ! king+S:kingi An_Pl_Vok; ! seda tüvemitmust pigem ei kasutata?
+! erandlik tyvemitmus: king+N:king 22; ! at: king, bt: kinga, bn: kinga, btv: kingi, bnv: kingi
+ king+N:king An_SgN;
+ king+N:kinga$ TP_22bn';
+ king+N:kinga TP_22bt';
+ king+N:kingi An_PlP_V;
+ ! king+N:kingi An_Pl_Vok; ! seda tüvemitmust pigem ei kasutata?
 
 
-! ??? kurat+S:kurat 02; ! a0: kurat, b0: kuradi, b0r: kurade
- kurat+S:kurat An_SgN;
- kurat+S:kuradi TP_02b0;
+! ??? kurat+N:kurat 02; ! a0: kurat, b0: kuradi, b0r: kurade
+ kurat+N:kurat An_SgN;
+ kurat+N:kuradi TP_02b0;
 
-! ??? kuuas+S:kuuas 07_S-0; ! an: kuuas, (at): kuudas, bt: kuuda, btr: #
- kuuas+S:kuuas$ TP_07an;
- kuuas+S:kuuda TP_07bt;
+! ??? kuuas+N:kuuas 07_S-0; ! an: kuuas, (at): kuudas, bt: kuuda, btr: #
+ kuuas+N:kuuas$ TP_07an;
+ kuuas+N:kuuda TP_07bt;
 
-! ??? kärbes+S:kärbes 07_S-0; ! an: kärbes, (at): kärbes, bt: kärbse, btr: #
- kärbes+S:kärbes$ TP_07an;
- kärbes+S:kärbse TP_07bt;
+! ??? kärbes+N:kärbes 07_S-0; ! an: kärbes, (at): kärbes, bt: kärbse, btr: #
+ kärbes+N:kärbes$ TP_07an;
+ kärbes+N:kärbse TP_07bt;
 
-! ??? köömen+S:köömen 02; ! a0: köömen, b0: köömne, b0r: 0
- köömen+S:köömen An_SgN;
- köömen+S:köömne TP_02b0;
+! ??? köömen+N:köömen 02; ! a0: köömen, b0: köömne, b0r: 0
+ köömen+N:köömen An_SgN;
+ köömen+N:köömne TP_02b0;
 
 ! /// küündi:küünDi 28; ! at: küündi, an: küüni
  küündi TP_28at;
  küündi:küüni$ TP_28an;
 
-! ??? lemmel+S:lemmel 08; ! an: lemmel, (at): lemmel, bt: lemle
- lemmel+S:lemmel TP_08an;
- lemmel+S:lemle TP_07bt;
+! ??? lemmel+N:lemmel 08; ! an: lemmel, (at): lemmel, bt: lemle
+ lemmel+N:lemmel TP_08an;
+ lemmel+N:lemle TP_07bt;
 
-! ??? lõõg+S:lõõg 22; ! at: lõõg, bt: lõõga, bn: lõa, btv: lõõgu, bnv: 0
- lõõg+S:lõõg An_SgN;
- lõõg+S:lõa$ TP_22bn;
- lõõg+S:lõõga TP_22bt;
+! ??? lõõg+N:lõõg 22; ! at: lõõg, bt: lõõga, bn: lõa, btv: lõõgu, bnv: 0
+ lõõg+N:lõõg An_SgN;
+ lõõg+N:lõa$ TP_22bn;
+ lõõg+N:lõõga TP_22bt;
 
-! ??? mees+S:mees 13; ! at: mees, (bt): meese, an: mees, bn: mehe, bnv: mehi
- mees+S:mees An_SgN;
- mees+S:mehe$ An_SgG;
- mees+S:mehe$ An_SgG_der; ! ?? need tuletised on ka erandlikud?
- mees+S:mees An_SgP_t;
- mees+S:mees An_PlG_te;
- mees+S:mehi An_PlP_V;
+! ??? mees+N:mees 13; ! at: mees, (bt): meese, an: mees, bn: mehe, bnv: mehi
+ mees+N:mees An_SgN;
+ mees+N:mehe$ An_SgG;
+ mees+N:mehe$ An_SgG_der; ! ?? need tuletised on ka erandlikud?
+ mees+N:mees An_SgP_t;
+ mees+N:mees An_PlG_te;
+ mees+N:mehi An_PlP_V;
  ! :i An_Pl_Vok; ! mehile?
 
-! erandlik tyvemitmus: pikk+A+S:pikk 22; ! at: pikk, bt: pikka, bn: pika, btv: pikki, bnv: piki
+! erandlik tyvemitmus: pikk+A+N:pikk 22; ! at: pikk, bt: pikka, bn: pika, btv: pikki, bnv: piki
  pikk+A:pikk An_SgN;
  pikk+A:pika TP_22bn';
  pikk+A:pikka TP_22bt';
  pikk+A:piki$ An_Pl_Vok;
  pikk+A:pikki An_PlP_V;
 
- pikk+S:pikk An_SgN;
- pikk+S:pika TP_22bn';
- pikk+S:pikka TP_22bt';
- pikk+S:piki$ An_Pl_Vok;
- pikk+S:pikki An_PlP_V;
+ pikk+N:pikk An_SgN;
+ pikk+N:pika TP_22bn';
+ pikk+N:pikka TP_22bt';
+ pikk+N:piki$ An_Pl_Vok;
+ pikk+N:pikki An_PlP_V;
 
-! ??? pundar+S:pundar 08; ! an: pundar, (at): puntar, bt: puntra
- pundar+S:pundar$ TP_08an;
- pundar+S:puntra TP_07bt;
+! ??? pundar+N:pundar 08; ! an: pundar, (at): puntar, bt: puntra
+ pundar+N:pundar$ TP_08an;
+ pundar+N:puntra TP_07bt;
 
-! ??? põrsas+S:põrsas 07_S-0; ! an: põrsas, (at): põrssas, bt: põrssa, btr: #
- põrsas+S:põrsas$ TP_07an;
- põrsas+S:põrssa TP_07bt;
+! ??? põrsas+N:põrsas 07_S-0; ! an: põrsas, (at): põrssas, bt: põrssa, btr: #
+ põrsas+N:põrsas$ TP_07an;
+ põrsas+N:põrssa TP_07bt;
 
-! ??? pöial+S:pöial 08; ! an: pöial, (at): pöidal, bt: pöidla
- pöial+S:pöial$ TP_08an;
- pöial+S:pöidla TP_07bt;
+! ??? pöial+N:pöial 08; ! an: pöial, (at): pöidal, bt: pöidla
+ pöial+N:pöial$ TP_08an;
+ pöial+N:pöidla TP_07bt;
 
-! ??? raag+S:raag 22; ! at: raag, bt: raaga, bn: raa, btv: raagu, bnv: 0
- raag+S:raag An_SgN;
- raag+S:raa$ TP_22bn;
- raag+S:raaga TP_22bt;
+! ??? raag+N:raag 22; ! at: raag, bt: raaga, bn: raa, btv: raagu, bnv: 0
+ raag+N:raag An_SgN;
+ raag+N:raa$ TP_22bn;
+ raag+N:raaga TP_22bt;
 
-! ??? raag+S:raag 22; ! at: raag, bt: raagu, bn: rao, btv: raage, bnv: 0
- raag+S:raag An_SgN;
- raag+S:rao$ TP_22bn;
- raag+S:raagu TP_22bt;
+! ??? raag+N:raag 22; ! at: raag, bt: raagu, bn: rao, btv: raage, bnv: 0
+ raag+N:raag An_SgN;
+ raag+N:rao$ TP_22bn;
+ raag+N:raagu TP_22bt;
 
-! ??? roe+S:roe 24_A; ! an: roe, bn: rooja, bt: rooja, bnv: rooje, btv: rooje
- roe+S:roe An_SgN;
- roe+S:rooja$ TP_24bn;
- roe+S:rooja TP_24bt;
+! ??? roe+N:roe 24_A; ! an: roe, bn: rooja, bt: rooja, bnv: rooje, btv: rooje
+ roe+N:roe An_SgN;
+ roe+N:rooja$ TP_24bn;
+ roe+N:rooja TP_24bt;
 
-! ??? roog+S:roog 22; ! at: roog, bt: rooga, bn: roa, btv: roogi, bnv: 0
- roog+S:roog An_SgN;
- roog+S:roa$ TP_22bn;
- roog+S:rooga TP_22bt;
+! ??? roog+N:roog 22; ! at: roog, bt: rooga, bn: roa, btv: roogi, bnv: 0
+ roog+N:roog An_SgN;
+ roog+N:roa$ TP_22bn;
+ roog+N:rooga TP_22bt;
 
-! ??? saad+S:saad 22; ! at: saad, bt: saadu, bn: sao, btv: saade, bnv: 0
- saad+S:saad An_SgN;
- saad+S:sao$ TP_22bn;
- saad+S:saadu TP_22bt;
+! ??? saad+N:saad 22; ! at: saad, bt: saadu, bn: sao, btv: saade, bnv: 0
+ saad+N:saad An_SgN;
+ saad+N:sao$ TP_22bn;
+ saad+N:saadu TP_22bt;
 
-! ??? sae+S:sae 24_A; ! an: sae, bn: saaja, bt: saaja, bnv: saaju, btv: saaju
- sae+S:sae An_SgN;
- sae+S:saaja$ TP_24bn;
- sae+S:saaja TP_24bt;
+! ??? sae+N:sae 24_A; ! an: sae, bn: saaja, bt: saaja, bnv: saaju, btv: saaju
+ sae+N:sae An_SgN;
+ sae+N:saaja$ TP_24bn;
+ sae+N:saaja TP_24bt;
 
-! erandlik tyvemitmus: silm+S:silm 22; ! at: silm, bt: silma, bn: silma, btv: silmi, bnv: silmi
- silm+S:silm An_SgN;
- silm+S:silma$ TP_22bn';
- silm+S:silma TP_22bt';
- silm+S:silmi$ An_Pl_Vok;
- silm+S:silmi An_PlP_V;
+! erandlik tyvemitmus: silm+N:silm 22; ! at: silm, bt: silma, bn: silma, btv: silmi, bnv: silmi
+ silm+N:silm An_SgN;
+ silm+N:silma$ TP_22bn';
+ silm+N:silma TP_22bt';
+ silm+N:silmi$ An_Pl_Vok;
+ silm+N:silmi An_PlP_V;
 
-! ??? soe+A+S:soe 24_A; ! an: soe, bn: sooja, bt: sooja, bnv: sooje, btv: sooje
+! ??? soe+A+N:soe 24_A; ! an: soe, bn: sooja, bt: sooja, bnv: sooje, btv: sooje
  soe+A:soe An_SgN;
  soe+A:sooja$ TP_24bn;
  soe+A:sooja TP_24bt;
 
- soe+S:soe An_SgN;
- soe+S:sooja$ TP_24bn;
- soe+S:sooja TP_24bt;
+ soe+N:soe An_SgN;
+ soe+N:sooja$ TP_24bn;
+ soe+N:sooja TP_24bt;
 
 ! tun 34_D_TUD; ! at: tund, (bt): tunde, bn: tunne, cn: tun
  tunD1 TP_34at;
  tund:tunD1e$ TP_34bn;
  tund:tun$ TP_34cn;
 
-! tõbi+S:tõB=i 21; ! at: tõbi, bt: tõbe, bn: tõve, btg: tõppe
- tõbi+S:tõbi TP_21at;
- tõbi+S:tõve$ TP_21bn;
- tõbi+S:tõbe$ TP_21bt;
- tõbi+S:tõppe An_SgAdt_0;
+! tõbi+N:tõB=i 21; ! at: tõbi, bt: tõbe, bn: tõve, btg: tõppe
+ tõbi+N:tõbi TP_21at;
+ tõbi+N:tõve$ TP_21bn;
+ tõbi+N:tõbe$ TP_21bt;
+ tõbi+N:tõppe An_SgAdt_0;
 
 ! vähkre 30; ! at: vähkre, (bt): vähker, bn: väher
  vähK1re TP_30at;
@@ -493,8 +563,8 @@ LEXICON Kohalikud_erandid
  vähK1re:vähK1er$ An_dakse;
 
 
-! ??? õlu+S:õlu 24_E; ! an: õlu, bn: õlle, bt: õlle, bnv: 0, btv: 0
- õlu+S:õlu An_SgN;
- õlu+S:õlle$ TP_24bn;
- õlu+S:õlle TP_24bt;
+! ??? õlu+N:õlu 24_E; ! an: õlu, bn: õlle, bt: õlle, bnv: 0, btv: 0
+ õlu+N:õlu An_SgN;
+ õlu+N:õlle$ TP_24bn;
+ õlu+N:õlle TP_24bt;
 

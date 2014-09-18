@@ -4,7 +4,7 @@ LEXICON Pronouns
  esimene+Pron:esime 12_NE-SE-S; ! (12_OP -> +Pron +Ord) a0: esimene, b0: esimese, c0: esimes, b0v: esimesi
  iga+Pron:iga 16; ! (16_P -> +Pron) a0: iga, a0g: #
  iga+Pron:iga 17; ! (17_P -> +Pron) a0: iga, a0g: #, a0v: #
- iga+Pron+sg+part:igat GI; ! 17_P,iga,iga[t],------0P,-,-,+
+ iga+Pron+Sg+Par:igat GI; ! 17_P,iga,iga[t],------0P,-,-,+
  keski+Pron:keski 01; ! (01_P -> +Pron) a0: keski, a0r: keske
  kesse+Pron:kesse GI; ! (41_P -> +Pron) 
  kogu+Pron:kogu GI; ! (41_P -> +Pron) 
@@ -22,18 +22,18 @@ LEXICON Pronouns
  mitu+Pron:mit 05_U-ME; ! (05_P -> +Pron) an: mitu, (at): mittu, bt: mitme, btr: #
  muist+Pron:muist GI; ! (41_P -> +Pron) 
  muu+Pron:mu. 26; ! (26_P -> +Pron) a0: muu, a0r: mu
- muu+Pron+pl+abes:muudeta GI; ! 26_P,m'uu,muu[deta],------1A,a0r,m'u,+
- muu+Pron+pl+abl:muudelt GI; ! 26_P,m'uu,muu[delt],------16,a0r,m'u,+
- muu+Pron+pl+ad:muudel GI; ! 26_P,m'uu,muu[del],------15,a0r,m'u,+
- muu+Pron+pl+all:muudele GI; ! 26_P,m'uu,muu[dele],------14,a0r,m'u,+
- muu+Pron+pl+el:muudest GI; ! 26_P,m'uu,muu[dest],------13,a0r,m'u,+
- muu+Pron+pl+es:muudena GI; ! 26_P,m'uu,muu[dena],------1E,a0r,m'u,+
- muu+Pron+pl+gen:muude GI; ! 26_P,m'uu,muu[de],------1G,a0r,m'u,+
- muu+Pron+pl+ill:muudesse GI; ! 26_P,m'uu,muu[desse],------11,a0r,m'u,+
- muu+Pron+pl+in:muudes GI; ! 26_P,m'uu,muu[des],------12,a0r,m'u,+
- muu+Pron+pl+kom:muudega GI; ! 26_P,m'uu,muu[dega],------1K,a0r,m'u,+
- muu+Pron+pl+term:muudeni GI; ! 26_P,m'uu,muu[deni],------1R,a0r,m'u,+
- muu+Pron+pl+tr:muudeks GI; ! 26_P,m'uu,muu[deks],------1T,a0r,m'u,+
+ muu+Pron+Pl+Abe:muudeta GI; ! 26_P,m'uu,muu[deta],------1A,a0r,m'u,+
+ muu+Pron+Pl+Abl:muudelt GI; ! 26_P,m'uu,muu[delt],------16,a0r,m'u,+
+ muu+Pron+Pl+Ade:muudel GI; ! 26_P,m'uu,muu[del],------15,a0r,m'u,+
+ muu+Pron+Pl+All:muudele GI; ! 26_P,m'uu,muu[dele],------14,a0r,m'u,+
+ muu+Pron+Pl+Ela:muudest GI; ! 26_P,m'uu,muu[dest],------13,a0r,m'u,+
+ muu+Pron+Pl+Ess:muudena GI; ! 26_P,m'uu,muu[dena],------1E,a0r,m'u,+
+ muu+Pron+Pl+Gen:muude GI; ! 26_P,m'uu,muu[de],------1G,a0r,m'u,+
+ muu+Pron+Pl+Ill:muudesse GI; ! 26_P,m'uu,muu[desse],------11,a0r,m'u,+
+ muu+Pron+Pl+Ine:muudes GI; ! 26_P,m'uu,muu[des],------12,a0r,m'u,+
+ muu+Pron+Pl+Com:muudega GI; ! 26_P,m'uu,muu[dega],------1K,a0r,m'u,+
+ muu+Pron+Pl+Trm:muudeni GI; ! 26_P,m'uu,muu[deni],------1R,a0r,m'u,+
+ muu+Pron+Pl+Tra:muudeks GI; ! 26_P,m'uu,muu[deks],------1T,a0r,m'u,+
  mõlema+Pron:mõlema 02_S-0; ! (02_P -> +Pron) a0: mõlema, b0: mõlema, b0r: 0, c0: 0
  mõningane+Pron:mõninga 12_NE-SE-S; ! (12_P -> +Pron) a0: mõningane, b0: mõningase, c0: mõningas, b0v: mõningasi
  mõningas+Pron:mõning 02_GAS_S-0; ! (02_P -> +Pron) a0: mõningas, b0: mõninga, b0r: 0, c0: 0
@@ -83,5 +83,5 @@ LEXICON Pronouns
  ! TODO tema+Pron:tema 00; ! (00_P -> +Pron) a0: tema, b0: tema
  ! TODO too+Pron:too 00; ! (00_P -> +Pron) a0: too, b0: tolle
  ! TODO ükski+Pron:ükski 00; ! (00_P -> +Pron) a0: ükski, b0: ühegi
- üks+Pron+sg+part:üht GI; ! 22_NP,'üks,'üht[],------0P,-,-,+
+ üks+Pron+Sg+Par:üht GI; ! 22_NP,'üks,'üht[],------0P,-,-,+
  üks+Pron:ü 22_KS-HE; ! (22_NP -> +Pron +Num) at: üks, bt: ühte, bn: ühe, btv: üksi, bnv: üksi

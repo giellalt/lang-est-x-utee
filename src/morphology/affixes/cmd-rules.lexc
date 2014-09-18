@@ -899,15 +899,15 @@ LEXICON TP_38ct	!sö.+i -> sõi
 ! An_  põhivormide ja nende analoogiavormide moodustamine
 
 LEXICON An_SgN  ! Sg Nom
- +sg+nom:0 GI;
- +_ini+Adv:+i0ni GI; ! need võrdlusastmed, mis on otse sõnastikus (valjemini)
+ +Sg+Nom:0 GI;
+ +_ini+Adv:+ini GI; ! need võrdlusastmed, mis on otse sõnastikus (valjemini)
  LIIT;
 
 LEXICON An_SgG  ! SgG analoogiarühm
- +sg+gen:0 GI;
- +sg:0 KÄÄNE_1;
- +pl+nom:+d GI;
- +comp:+m 02_A;
+ +Sg+Gen:0 GI;
+ +Sg:0 KÄÄNE_1;
+ +Pl+Nom:+d GI;
+ +Comp:+m 02_A;
  +_ini+Adv:+mini GI;
  +_lt+Adv:+lt GI;
  +_ke:ke 12_0-SE-S;
@@ -916,128 +916,128 @@ LEXICON An_SgG  ! SgG analoogiarühm
  !LIIT_DEV_G;
 
 LEXICON An_SgG_der ! siia tuleb üleval pool ka sobiv tüvi
- +_us+S:+us 11;
- +_us+S:+us 09_E;
+ +_us+N:+us 11;
+ +_us+N:+us 09_E;
 
 
 LEXICON An_SgP_0  ! SgP (formatiiv 0)
- +sg+part:0 GI;
+ +Sg+Par:0 GI;
  !LIIT_DEV_P;
 
 LEXICON An_SgP_t  ! SgP (formatiiv t)
- +sg+part:+t GI;
+ +Sg+Par:+t GI;
  !:+t LIIT_DEV_P;
 
 LEXICON An_SgP_tt  ! SgP (formatiiv tt)
- +sg+part:+tt GI;
+ +Sg+Par:+tt GI;
  !:+tt LIIT_DEV_P;
 
 LEXICON An_SgP_d  ! SgP (formatiiv d)
- +sg+part:+d GI;
+ +Sg+Par:+d GI;
  !:+d LIIT_DEV_P;
 
 
 LEXICON An_SgAdt_0  ! SgAdt (formatiiv 0)
- +sg+adit:0 GI;
+ +Sg+Ill:0 GI;
 
 LEXICON An_SgAdt_de  ! SgAdt (formatiiv de)
- +sg+adit:+de GI;
+ +Sg+Ill:+de GI;
 
 LEXICON An_SgAdt_se  ! SgAdt (formatiiv se)
- +sg+adit:+se GI;
+ +Sg+Ill:+se GI;
 
 LEXICON An_SgAdt_tte ! SgAdt (formatiiv tte)
- +sg+adit:+tte GI;
+ +Sg+Ill:+tte GI;
 
 
 
 LEXICON An_PlP_id  ! PlP (formatiiv id)
- +pl+part:+id GI;
- +pl:+i KÄÄNE_2;
+ +Pl+Par:+id GI;
+ +Pl:+i KÄÄNE_2;
  :+i Spr;
 
 LEXICON An_PlP_sid  ! PlP (formatiiv sid)
- +pl+part:+sid GI;
+ +Pl+Par:+sid GI;
 
 
 
 LEXICON An_PlP_V  ! PlP (vokaallõpp)
- +pl+part:0 GI;
+ +Pl+Par:0 GI;
 
 LEXICON An_Pl_Vok  ! vokaalmitmuse paralleelvormid
- +pl:0 KÄÄNE_2;
+ +Pl:0 KÄÄNE_2;
  Spr;
 
 LEXICON An_PlG_te  ! de-mitmuse (formatiiv te) analoogiarühm
- +pl+gen:+te GI;
- +pl:+te KÄÄNE_1;
+ +Pl+Gen:+te GI;
+ +Pl:+te KÄÄNE_1;
  !:+te LIIT_DEV_G;
 
 LEXICON An_PlG_de  ! de-mitmuse (formatiiv de) analoogiarühm
- +pl+gen:+de GI;
- +pl:+de KÄÄNE_1;
+ +Pl+Gen:+de GI;
+ +Pl:+de KÄÄNE_1;
  !:+de LIIT_DEV_G;
  :+de LIIT;
 
 LEXICON An_PlG_V	!õnnelik-tüüp
- +pl+gen: GI;
- +pl: KÄÄNE_1;
+ +Pl+Gen: GI;
+ +Pl: KÄÄNE_1;
 ! LIIT_DEV_G;
  LIIT;
 
 LEXICON An_Prefix
- +prefix: #;
+ +Prefix: #;
 
 !LEXICON An_Suffix
 !  +suffix: #;
 
 LEXICON Spr ! ülivõrre
- +super:%!+im 02_A;
+ +Superl:%!+im 02_A;
 
 LEXICON KÄÄNE_1  ! käändelõpud illatiivist komitatiivini
- +ill:+sse GI;
- +in:+s GI;
- +el:+st GI;
- +all:+le GI;
- +ad:+l GI;
- +abl:+lt GI;
- +tr:+ks GI;
- +term:+ni GI;
- +es:+na GI;
- +abes:+ta GI;
- +kom:+ga GI;
+ +Ill:+sse GI;
+ +Ine:+s GI;
+ +Ela:+st GI;
+ +All:+le GI;
+ +Ade:+l GI;
+ +Abl:+lt GI;
+ +Tra:+ks GI;
+ +Trm:+ni GI;
+ +Ess:+na GI;
+ +Abe:+ta GI;
+ +Com:+ga GI;
 
 LEXICON KÄÄNE_2  ! käändelõpud illatiivist translatiivini (mitmus)
- +ill:+sse GI;
- +in:+s GI;
- +el:+st GI;
- +all:+le GI;
- +ad:+l GI;
- +abl:+lt GI;
- +tr:+ks GI;
+ +Ill:+sse GI;
+ +Ine:+s GI;
+ +Ela:+st GI;
+ +All:+le GI;
+ +Ade:+l GI;
+ +Abl:+lt GI;
+ +Tra:+ks GI;
 
 ! Analoogiarühmad verbidele
 LEXICON An_ma
- ma+V+sup+ill:ma GI;
- ma+V+quot+pres+ps:vat afneg_GI;
+ ma+V+Pers+Sup+Ill:ma GI;
+ ma+V+Pers+Prs+Quot:vat afneg_GI;
 
 LEXICON An_mata
- ma+V+sup+abes:mata GI;
+ ma+V+Pers+Sup+Abe:mata GI;
  mata+A:mata GI; ! ???
- ma+V+sup+in:mas GI;
- ma+V+sup+el:mast GI;
- ma+V+sup+tr:maks GI;
+ ma+V+Pers+Sup+Ine:mas GI;
+ ma+V+Pers+Sup+Ela:mast GI;
+ ma+V+Pers+Sup+Tra:maks GI;
 
 LEXICON An_v
- ma+V+partic+pres+ps:v GI;
+ ma+V+Pers+Prs+Prc:v GI;
  v+A:v 02_A;
- v+S:v 02_A;
+ v+N:v 02_A;
 ! v+A+sg+nom+partic:v GI;
 
 LEXICON An_ev
- ma+V+partic+pres+ps:ev GI;
+ ma+V+Pers+Prs+Prc:ev GI;
  ev+A:E1v 02_A;
- ev+S:E1v 02_A;
+ ev+N:E1v 02_A;
 ! ev+A+sg+nom+partic GI;
 
 !!!!!
@@ -1045,31 +1045,31 @@ LEXICON An_ev
 !!!!!
 
 LEXICON An_s
- ma+V+indic+impf+ps3+sg+ps+af:+s GI;
+ ma+V+Pers+Past+Ind+Sg3+Aff:+s GI;
 
 LEXICON An_is
- ma+V+indic+impf+ps3+sg+ps+af:+is GI;
+ ma+V+Pers+Past+Ind+Sg3+Aff:+is GI;
 
 LEXICON An_i
- ma+V+indic+impf+ps3+sg+ps+af:+i GI;
+ ma+V+Pers+Past+Ind+Sg3+Aff:+i GI;
 
 LEXICON An_sin
- ma+V+indic+impf+ps1+sg+ps+af:+sin GI;
- ma+V+indic+impf+ps2+sg+ps+af:+sid GI;
- ma+V+indic+impf+ps3+pl+ps+af:+sid GI;
+ ma+V+Pers+Past+Ind+Sg1+Aff:+sin GI;
+ ma+V+Pers+Past+Ind+Sg2+Aff:+sid GI;
+ ma+V+Pers+Past+Ind+Pl3+Aff:+sid GI;
 
 LEXICON An_in
- ma+V+indic+impf+ps1+sg+ps+af:+0in GI;
- ma+V+indic+impf+ps2+sg+ps+af:+id GI;
- ma+V+indic+impf+ps3+pl+ps+af:+id GI;
+ ma+V+Pers+Past+Ind+Sg1+Aff:+in GI;
+ ma+V+Pers+Past+Ind+Sg2+Aff:+id GI;
+ ma+V+Pers+Past+Ind+Pl3+Aff:+id GI;
 
 LEXICON An_sime
- ma+V+indic+impf+ps1+pl+ps+af:+sime GI;
- ma+V+indic+impf+ps2+pl+ps+af:+site GI;
+ ma+V+Pers+Past+Ind+Pl1+Aff:+sime GI;
+ ma+V+Pers+Past+Ind+Pl2+Aff:+site GI;
 
 LEXICON An_ime
- ma+V+indic+impf+ps1+pl+ps+af:+ime GI;
- ma+V+indic+impf+ps2+pl+ps+af:+ite GI;
+ ma+V+Pers+Past+Ind+Pl1+Aff:+ime GI;
+ ma+V+Pers+Past+Ind+Pl2+Aff:+ite GI;
 
 !!!!!
 
@@ -1078,16 +1078,16 @@ LEXICON An_ime
 !!!!!
 
 LEXICON An_da
- ma+V+inf:+da GI;
- ma+V+ger:+des GI;
+ ma+V+Inf:+da GI;
+ ma+V+Ger:+des GI;
 
 LEXICON An_ta
- ma+V+inf:+ta GI;
- ma+V+ger:+tes GI;
+ ma+V+Inf:+ta GI;
+ ma+V+Ger:+tes GI;
 
 LEXICON An_a
- ma+V+inf:+a GI;
- ma+V+ger:+0es GI;
+ ma+V+Inf:+a GI;
+ ma+V+Ger:+es GI;
 
 !!!!!
 
@@ -1096,40 +1096,33 @@ LEXICON An_a
 !!!!!
 
 LEXICON An_ge
- ma+V+imper+pres+ps3+sg+ps:+gu afneg_GI ;
- ma+V+imper+pres+ps1+pl+ps:+gem afneg_GI ;
- ma+V+imper+pres+ps2+pl+ps:+ge afneg_GI ;
- ma+V+imper+pres+ps3+pl+ps:+gu afneg_GI ;
+ ma+V+Pers+Prs+Imprt+Sg3:+gu afneg_GI ;
+ ma+V+Pers+Prs+Imprt+Pl1:+gem afneg_GI ;
+ ma+V+Pers+Prs+Imprt+Pl2:+ge afneg_GI ;
+ ma+V+Pers+Prs+Imprt+Pl3:+gu afneg_GI ;
  An_nud ;
 
 LEXICON An_ke
- ma+V+imper+pres+ps3+sg+ps:+ku afneg_GI ;
- ma+V+imper+pres+ps1+pl+ps:+kem afneg_GI ;
- ma+V+imper+pres+ps2+pl+ps:+ke afneg_GI ;
- ma+V+imper+pres+ps3+pl+ps:+ku afneg_GI ;
+ ma+V+Pers+Prs+Imprt+Sg3:+ku afneg_GI ;
+ ma+V+Pers+Prs+Imprt+Pl1:+kem afneg_GI ;
+ ma+V+Pers+Prs+Imprt+Pl2:+ke afneg_GI ;
+ ma+V+Pers+Prs+Imprt+Pl3:+ku afneg_GI ;
  An_nud ;
 
 LEXICON An_nud
-  ma+V+partic+past+ps:+nud GI ;
-  ma+V+indic+impf+ps+neg:+nud GI ;
-  ma+V+cond+past+ps:+nuks afneg_GI ;
-  ma+V+cond+past+ps1+sg+ps:+nuks afneg_GI ;
-  ma+V+cond+past+ps1+sg+ps:+nuksin afneg_GI ;
-  ma+V+cond+past+ps2+sg+ps:+nuks afneg_GI ;
-  ma+V+cond+past+ps2+sg+ps:+nuksid afneg_GI ;
-  ma+V+cond+past+ps3+sg+ps:+nuks afneg_GI ;
-  ma+V+cond+past+ps1+pl+ps:+nuks afneg_GI ;
-  ma+V+cond+past+ps1+pl+ps:+nuksime afneg_GI ;
-  ma+V+cond+past+ps2+pl+ps:+nuks afneg_GI ;
-  ma+V+cond+past+ps2+pl+ps:+nuksite afneg_GI ;
-  ma+V+cond+past+ps3+pl+ps:+nuks afneg_GI ;
-  ma+V+cond+past+ps3+pl+ps:+nuksid afneg_GI ;
-  ma+V+quot+past+ps:+nuvat afneg_GI ;
+  ma+V+Pers+Past+Prc:+nud GI ;
+  ma+V+Pers+Past+Ind+Neg:+nud GI ; ! +indic+impf+ps+neg
+  ma+V+Pers+Past+Cond:+nuks afneg_GI ;
+  ma+V+Pers+Past+Cond+Sg1+Aff:+nuksin GI ;
+  ma+V+Pers+Past+Cond+Sg2+Aff:+nuksid GI ;
+  ma+V+Pers+Past+Cond+Pl1+Aff:+nuksime GI ;
+  ma+V+Pers+Past+Cond+Pl2+Aff:+nuksite GI ;
+  ma+V+Pers+Past+Cond+Pl3+Aff:+nuksid GI ;
+  ma+V+Pers+Past+Quot:+nuvat afneg_GI ;
 
 LEXICON An_nud_der
   nud+A:+nud GI ; ! ???
-!  nud+A+partic:+nud GI;
-  nu+S:nu 01;
+  nu+N:nu 01;
   nu+A:nu 01;
   nult+Adv:nult GI;
 !!!!!
@@ -1139,32 +1132,25 @@ LEXICON An_nud_der
 !!!!!
 
 LEXICON An_b
- ma+V+indic+pres+ps1+sg+ps+af:+n GI;
- ma+V+indic+pres+ps2+sg+ps+af:+d GI;
- ma+V+indic+pres+ps3+sg+ps+af:+b GI;
- ma+V+indic+pres+ps+neg:+0 GI;
- ma+V+imper+pres+ps2+sg+ps:+0 afneg_GI;
+ ma+V+Pers+Prs+Ind+Sg1+Aff:+n GI;
+ ma+V+Pers+Prs+Ind+Sg2+Aff:+d GI;
+ ma+V+Pers+Prs+Ind+Sg3+Aff:+b GI;
+ ma+V+Pers+Prs+Ind+Neg:+0 GI;
+ ma+V+Pers+Prs+Imprt+Sg2:+0 afneg_GI;
 
- ma+V+cond+pres+ps:+ks afneg_GI ;
- ma+V+cond+pres+ps1+sg+ps+af:+ksin GI ;
- ma+V+cond+pres+ps2+sg+ps+af:+ksid GI ;
- ma+V+cond+pres+ps3+sg+ps+af:+ks GI ;
- ma+V+cond+pres+ps3+sg+ps+neg:+ks GI ;
- ma+V+cond+pres+ps1+pl+ps+af:+ksime GI ;
- ma+V+cond+pres+ps2+pl+ps+af:+ksite GI ;
- ma+V+cond+pres+ps3+pl+ps+af:+ksid GI ;
-
- ma+V+cond+pres+ps1+sg+ps+af:+ks GI ;
- ma+V+cond+pres+ps2+sg+ps+af:+ks GI ;
- ma+V+cond+pres+ps1+pl+ps+af:+ks GI ;
- ma+V+cond+pres+ps2+pl+ps+af:+ks GI ;
- ma+V+cond+pres+ps3+pl+ps+af:+ks GI ;
-
+ ma+V+Pers+Prs+Cond:+ks afneg_GI ;
+ ma+V+Pers+Prs+Cond+Sg1+Aff:+ksin GI ;
+ ma+V+Pers+Prs+Cond+Sg2+Aff:+ksid GI ;
+ ma+V+Pers+Prs+Cond:+ks GI ;
+ ma+V+Pers+Prs+Cond:+ks GI ;
+ ma+V+Pers+Prs+Cond+Pl1+Aff:+ksime GI ;
+ ma+V+Pers+Prs+Cond+Pl2+Aff:+ksite GI ;
+ ma+V+Pers+Prs+Cond+Pl3+Aff:+ksid GI ;
 
 LEXICON An_me
- ma+V+indic+pres+ps1+pl+ps+af:+me GI;
- ma+V+indic+pres+ps2+pl+ps+af:+te GI;
- ma+V+indic+pres+ps3+pl+ps+af:+vad GI;
+ ma+V+Pers+Prs+Ind+Pl1+Aff:+me GI;
+ ma+V+Pers+Prs+Ind+Pl2+Aff:+te GI;
+ ma+V+Pers+Prs+Ind+Pl3+Aff:+vad GI;
 
 !!!!!
 
@@ -1173,53 +1159,53 @@ LEXICON An_me
 !!!!!
 
 LEXICON An_tud
- ma+V+partic+past+imps:+tud GI ;
- ma+V+indic+impf+imps+neg:+tud GI ;
- ma+V+indic+impf+imps+af:+ti GI ;
- ma+V+cond+pres+imps:+taks afneg_GI ;
- ma+V+cond+past+imps:+tuks afneg_GI ;
- ma+V+quot+pres+imps:+tavat afneg_GI ;
- ma+V+quot+past+imps:+tuvat afneg_GI ;
- ma+V+imper+pres+imps:+tagu afneg_GI ;
- ma+V+sup+imps:+tama GI ;
- ma+V+indic+pres+imps+neg:+ta GI ;
- ma+V+partic+pres+imps:+tav GI ;
+ ma+V+Impers+Past+Prc:+tud GI ;
+ ma+V+Impers+Past+Ind+Neg:+tud GI ;
+ ma+V+Impers+Past+Ind+Aff:+ti GI ;
+ ma+V+Impers+Prs+Cond:+taks afneg_GI ;
+ ma+V+Impers+Past+Cond:+tuks afneg_GI ;
+ ma+V+Impers+Prs+Quot:+tavat afneg_GI ;
+ ma+V+Impers+Past+Quot:+tuvat afneg_GI ;
+ ma+V+Impers+Prs+Imprt:+tagu afneg_GI ;
+ ma+V+Impers+Sup:+tama GI ;
+ ma+V+Impers+Prs+Ind+Neg:+ta GI ;
+ ma+V+Impers+Prs+Prc:+tav GI ;
 
  $tud+A:+tud GI ; ! ???
- $tud+S:+tud GI ; ! ???
+ $tud+N:+tud GI ; ! ???
  $tu+A:+tu 01 ; 
- $tu+S:+tu 01 ;
+ $tu+N:+tu 01 ;
  $tav+A:+tav 02_A ;
- $tav+S:+tav 02_A ;
+ $tav+N:+tav 02_A ;
 
 LEXICON An_dud
- ma+V+partic+past+imps:+dud GI ;
- ma+V+indic+impf+imps+neg:+dud GI ;
- ma+V+indic+impf+imps+af:+di GI ;
- ma+V+cond+pres+imps:+daks afneg_GI ;
- ma+V+cond+past+imps:+duks afneg_GI ;
- ma+V+quot+pres+imps:+davat afneg_GI ;
- ma+V+quot+past+imps:+duvat afneg_GI ;
- ma+V+imper+pres+imps:+dagu afneg_GI ;
- ma+V+sup+imps:+dama GI ;
- ma+V+indic+pres+imps+neg:+da GI ;
- ma+V+partic+pres+imps:+dav GI ;
+ ma+V+Impers+Past+Prc:+dud GI ;
+ ma+V+Impers+Past+Ind+Neg:+dud GI ;
+ ma+V+Impers+Past+Ind+Aff:+di GI ;
+ ma+V+Impers+Prs+Cond:+daks afneg_GI ;
+ ma+V+Impers+Past+Cond:+duks afneg_GI ;
+ ma+V+Impers+Prs+Quot:+davat afneg_GI ;
+ ma+V+Impers+Past+Quot:+duvat afneg_GI ;
+ ma+V+Impers+Prs+Imprt:+dagu afneg_GI ;
+ ma+V+Impers+Sup:+dama GI ;
+ ma+V+Impers+Prs+Ind+Neg:+da GI ;
+ ma+V+Impers+Prs+Prc:+dav GI ;
 
  $dud+A:+dud GI ;
- $dud+S:+dud GI ;
- $du+S:+du 01 ;
+ $dud+N:+dud GI ;
+ $du+N:+du 01 ;
  $du+A:+du 01 ;
  $dav+A:+dav 02_A ;
- $dav+S:+dav 02_A ;
+ $dav+N:+dav 02_A ;
 
 LEXICON An_takse
- ma+V+indic+pres+imps+af:+takse GI ;
+ ma+V+Impers+Prs+Ind+Aff:+takse GI ;
 
 LEXICON An_dakse
- ma+V+indic+pres+imps+af:+dakse GI ;
+ ma+V+Impers+Prs+Ind+Aff:+dakse GI ;
 
 LEXICON An_akse
- ma+V+indic+pres+imps+af:+akse GI ;
+ ma+V+Impers+Prs+Ind+Aff:+akse GI ;
 
 !!!!!
 
@@ -1227,14 +1213,14 @@ LEXICON An_akse
 ! Produktiivne verbituletus (v,tav,nud,nu,tud,tu on analoogiarühmade all)
 !!!!!!
 LEXICON Deriv_mine_ja
-  ja+S:+ja 01;
-  mine+S:+mi 12_NE-SE-S;
+  Deriv_ja;
+  Deriv_mine;
 
 LEXICON Deriv_ja
-  ja+S:+ja 01;
+  ja+N:+ja 01;
 
 LEXICON Deriv_mine
-  mine+S:+mi 12_NE-SE-S;
+  mine+N:+mi 12_NE-SE-S;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -1255,11 +1241,11 @@ LIIT; ! tupikuks..
 !+:& Deriv_mine_ja;
 
 LEXICON afneg_GI
- +af: GI;
- +neg: GI;
+ +Aff: GI;
+ +Neg: GI;
 
 LEXICON GI  ! liide gi/ki
- +gi:Q1i #;
+ +Foc/gi:Q1i #;
  #;
 
 

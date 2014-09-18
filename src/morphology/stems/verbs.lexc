@@ -1220,17 +1220,17 @@ LEXICON Verbs
  juhtu 27; ! (27_V -> ) a0: juhtu
  jukerda 27; ! (27_V -> ) a0: jukerda
  julge 27; ! (27_V -> ) a0: julge
- julgema+V+cond+past+imps+af:juletuks GI; ! 27_V,j'ulge,jule[tuks],-112-0--,-,-,+
- julgema+V+cond+pres+imps+af:juletaks GI; ! 27_V,j'ulge,jule[taks],-102-0--,-,-,+
- julgema+V+imper+pres+imps:juletagu GI; ! 27_V,j'ulge,jule[tagu],-103-0--,-,-,+
- julgema+V+indic+impf+imps+af:juleti GI; ! 27_V,j'ulge,jule[ti],-120-1--,-,-,+
- julgema+V+indic+pres+imps+af:juletakse GI; ! 27_V,j'ulge,jule[takse],-100-1--,-,-,+
- julgema+V+indic+pres+imps+neg:juleta GI; ! 27_V,j'ulge,jule[ta],-100-0--,-,-,+
- julgema+V+partic+past+imps:juletud GI; ! 27_V,j'ulge,jule[tud],411--0--,-,-,+
- julgema+V+partic+pres+imps:juletav GI; ! 27_V,j'ulge,jule[tav],410---0N,-,-,+
- julgema+V+quot+past+imps:juletuvat GI; ! 27_V,j'ulge,jule[tuvat],-111-0--,-,-,+
- julgema+V+quot+pres+imps:juletavat GI; ! 27_V,j'ulge,jule[tavat],-101-0--,-,-,+
- julgema+V+sup+imps:juletama GI; ! 27_V,j'ulge,jule[tama],31------,-,-,+
+ julgema+V+Impers+Past+Cond:juletuks GI; ! 27_V,j'ulge,jule[tuks],-112-0--,-,-,+
+ julgema+V+Impers+Past+Ind+Aff:juleti GI; ! 27_V,j'ulge,jule[ti],-120-1--,-,-,+
+ julgema+V+Impers+Past+Prc:juletud GI; ! 27_V,j'ulge,jule[tud],411--0--,-,-,+
+ julgema+V+Impers+Past+Quot:juletuvat GI; ! 27_V,j'ulge,jule[tuvat],-111-0--,-,-,+
+ julgema+V+Impers+Prs+Cond:juletaks GI; ! 27_V,j'ulge,jule[taks],-102-0--,-,-,+
+ julgema+V+Impers+Prs+Imprt:juletagu GI; ! 27_V,j'ulge,jule[tagu],-103-0--,-,-,+
+ julgema+V+Impers+Prs+Ind+Aff:juletakse GI; ! 27_V,j'ulge,jule[takse],-100-1--,-,-,+
+ julgema+V+Impers+Prs+Ind+Neg:juleta GI; ! 27_V,j'ulge,jule[ta],-100-0--,-,-,+
+ julgema+V+Impers+Prs+Prc:juletav GI; ! 27_V,j'ulge,jule[tav],410---0N,-,-,+
+ julgema+V+Impers+Prs+Quot:juletavat GI; ! 27_V,j'ulge,jule[tavat],-101-0--,-,-,+
+ julgema+V+Impers+Sup:juletama GI; ! 27_V,j'ulge,jule[tama],31------,-,-,+
  julgene 27; ! (27_V -> ) a0: julgene
  julgesta 27; ! (27_V -> ) a0: julgesta
  julgu 27; ! (27_V -> ) a0: julgu
@@ -2814,12 +2814,12 @@ LEXICON Verbs
  las 34_K_TUD; ! (34_V -> ) at: lask, (bt): laske, bn: lase, cn: las
  laseeri 28; ! (28_V -> ) at: laseeri, an: laseeri
  laseta 27; ! (27_V -> ) a0: laseta
- laskma+V+indic+impf+ps1+pl+ps+af:lasime GI; ! 34_V,l'ask,las[ime],-02041--,-,-,+
- laskma+V+indic+impf+ps1+sg+ps+af:lasin GI; ! 34_V,l'ask,las[in],-02011--,-,-,+
- laskma+V+indic+impf+ps2+pl+ps+af:lasite GI; ! 34_V,l'ask,las[ite],-02051--,-,-,+
- laskma+V+indic+impf+ps2+sg+ps+af:lasid GI; ! 34_V,l'ask,las[id],-02021--,-,-,+
- laskma+V+indic+impf+ps3+pl+ps+af:lasid GI; ! 34_V,l'ask,las[id],-02061--,-,-,+
- laskma+V+indic+impf+ps3+sg+ps+af:lasi GI; ! 34_V,l'ask,las[i],-02031--,-,-,+
+ laskma+V+Pers+Past+Ind+Sg1+Aff:lasin GI; ! 34_V,l'ask,las[in],-02011--,-,-,+
+ laskma+V+Pers+Past+Ind+Sg2+Aff:lasid GI; ! 34_V,l'ask,las[id],-02021--,-,-,+
+ laskma+V+Pers+Past+Ind+Sg3+Aff:lasi GI; ! 34_V,l'ask,las[i],-02031--,-,-,+
+ laskma+V+Pers+Past+Ind+Pl1+Aff:lasime GI; ! 34_V,l'ask,las[ime],-02041--,-,-,+
+ laskma+V+Pers+Past+Ind+Pl2+Aff:lasite GI; ! 34_V,l'ask,las[ite],-02051--,-,-,+
+ laskma+V+Pers+Past+Ind+Pl3+Aff:lasid GI; ! 34_V,l'ask,las[id],-02061--,-,-,+
  lasku 27; ! (27_V -> ) a0: lasku
  lasti 28; ! (28_V -> ) at: lasti, an: lasti
  lasu 27; ! (27_V -> ) a0: lasu
@@ -4121,16 +4121,16 @@ LEXICON Verbs
  olB1a 29; ! (29_V -> ) at: olba, an: olva
  olel 31; ! (31_V -> ) a0: olele, b0: olel
  olele 27; ! (27_V -> ) a0: olele
- olema+V+cond+impf+ps+neg:polnuks GI; ! 36_V,ole,pol[nuks],-01202--,-,-,+
- olema+V+cond+pres+imps+neg:poldaks GI;
- olema+V+cond+pres+ps+neg:poleks GI; ! 36_V,ole,pole[ks],-00202--,-,-,+
- olema+V+indic+impf+imps+neg:poldud GI;
- olema+V+indic+impf+ps+neg:polnud GI; ! 36_V,ole,pol[nud],-02002--,-,-,+
- olema+V+indic+pres+imps+neg:polda GI;
- olema+V+indic+pres+ps+neg:pole GI; ! 36_V,ole,pole[],-00002--,-,-,+
- olema+V+quot+pres+imps+neg:poldavat GI; 
- olema+V+quot+pres+ps+neg:polevat GI; ! 36_V,ole,pole[vat],-00102--,-,-,+
- olema+V+quot+past+ps+neg:polnuvat GI;
+ olema+V+Pers+Past+Cond+Neg:polnuks GI; ! 36_V,ole,pol[nuks],-01202--,-,-,+
+ olema+V+Impers+Prs+Cond+Neg:poldaks GI;
+ olema+V+Pers+Prs+Cond+Neg:poleks GI; ! 36_V,ole,pole[ks],-00202--,-,-,+
+ olema+V+Impers+Past+Ind+Neg:poldud GI;
+ olema+V+Pers+Past+Ind+Neg:polnud GI; ! 36_V,ole,pol[nud],-02002--,-,-,+
+ olema+V+Impers+Prs+Ind+Neg:polda GI;
+ olema+V+Pers+Prs+Ind+Neg:pole GI; ! 36_V,ole,pole[],-00002--,-,-,+
+ olema+V+Impers+Prs+Quot+Neg:poldavat GI; 
+ olema+V+Pers+Prs+Quot+Neg:polevat GI; ! 36_V,ole,pole[vat],-00102--,-,-,+
+ olema+V+Pers+Past+Quot+Neg:polnuvat GI;
  olene 27; ! (27_V -> ) a0: olene
  oleskel 36; ! (36_V -> ) an: oleskele, bn: oleskel, bt: oleskel, cn: oleskell, ct: oleskell
  oleskle 27; ! (27_V -> ) a0: oleskle
@@ -6829,17 +6829,17 @@ LEXICON Verbs
  urra 29; ! (29_V -> ) at: urra, an: urra
  usalda 27; ! (27_V -> ) a0: usalda
  usK1u 28; ! (28_V -> ) at: usku, an: usu
- uskuma+V+cond+past+imps+af:ustuks GI; ! 28_V,'usku,'us[tuks],-112-0--,-,-,+
- uskuma+V+cond+pres+imps+af:ustaks GI; ! 28_V,'usku,'us[taks],-102-0--,-,-,+
- uskuma+V+imper+pres+imps:ustagu GI; ! 28_V,'usku,'us[tagu],-103-0--,-,-,+
- uskuma+V+indic+impf+imps+af:usti GI; ! 28_V,'usku,'us[ti],-120-1--,-,-,+
- uskuma+V+indic+pres+imps+af:ustakse GI; ! 28_V,'usku,'us[takse],-100-1--,-,-,+
- uskuma+V+indic+pres+imps+neg:usta GI; ! 28_V,'usku,'us[ta],-100-0--,-,-,+
- uskuma+V+partic+past+imps:ustud GI; ! 28_V,'usku,'us[tud],411--0--,-,-,+
- uskuma+V+partic+pres+imps:ustav GI; ! 28_V,'usku,'us[tav],410---0N,-,-,+
- uskuma+V+quot+past+imps:ustuvat GI; ! 28_V,'usku,'us[tuvat],-111-0--,-,-,+
- uskuma+V+quot+pres+imps:ustavat GI; ! 28_V,'usku,'us[tavat],-101-0--,-,-,+
- uskuma+V+sup+imps:ustama GI; ! 28_V,'usku,'us[tama],31------,-,-,+
+ uskuma+V+Impers+Past+Cond:ustuks GI; ! 28_V,'usku,'us[tuks],-112-0--,-,-,+
+ uskuma+V+Impers+Past+Ind+Aff:usti GI; ! 28_V,'usku,'us[ti],-120-1--,-,-,+
+ uskuma+V+Impers+Past+Prc:ustud GI; ! 28_V,'usku,'us[tud],411--0--,-,-,+
+ uskuma+V+Impers+Past+Quot:ustuvat GI; ! 28_V,'usku,'us[tuvat],-111-0--,-,-,+
+ uskuma+V+Impers+Prs+Cond:ustaks GI; ! 28_V,'usku,'us[taks],-102-0--,-,-,+
+ uskuma+V+Impers+Prs+Imprt:ustagu GI; ! 28_V,'usku,'us[tagu],-103-0--,-,-,+
+ uskuma+V+Impers+Prs+Ind+Aff:ustakse GI; ! 28_V,'usku,'us[takse],-100-1--,-,-,+
+ uskuma+V+Impers+Prs+Ind+Neg:usta GI; ! 28_V,'usku,'us[ta],-100-0--,-,-,+
+ uskuma+V+Impers+Prs+Prc:ustav GI; ! 28_V,'usku,'us[tav],410---0N,-,-,+
+ uskuma+V+Impers+Prs+Quot:ustavat GI; ! 28_V,'usku,'us[tavat],-101-0--,-,-,+
+ uskuma+V+Impers+Sup:ustama GI; ! 28_V,'usku,'us[tama],31------,-,-,+
  ussita 27; ! (27_V -> ) a0: ussita
  usurpeeri 28; ! (28_V -> ) at: usurpeeri, an: usurpeeri
  ususta 27; ! (27_V -> ) a0: ususta

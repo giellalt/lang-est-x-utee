@@ -9,55 +9,59 @@ Definitions
     Arv = [ %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ];
     Tähtsõne = [Täht | %- | %=]+;
     Sona = [[Arv]+ (%- | %. | %,)]* [Arv]+ (%. | %% | %' (%') ) | ([Arv]+) Tähtsõne;
-    ArvJaKääne = [ %+sg | %+pl ] [ %+nom | %+gen | %+part | %+ill | %+adit
-    				  | %+in | %+el | %+all | %+ad | %+abl | %+tr
-				  | %+term | %+es | %+abes | %+kom ];
+    ArvJaKääne = [ %+Sg | %+Pl ] [ %+Nom | %+Gen | %+Par | %+Ill | %+Ine
+    				 | %+Ela | %+All | %+Ade | %+Abl | %+Tra
+				 | %+Trm | %+Ess | %+Abe | %+Com ];
 
-    PööreJaArv = [ %+ps1 | %+ps2 | %+ps3 ] [ %+sg | %+pl ];
+    PööreJaArv = [ %+Sg1 | %+Sg2 | %+Sg3 | %+Pl1 | %+Pl2 | %+Pl3 ];
+    AffNeg = [ %+Aff | %+Neg ];
 
     VerbiParadigma = m a %+V [
-		 [ %+sup [ %+ill | %+in | %+el | %+abes | %+tr | %+imps ] ] |
-		   %+inf |
-		   %+ger |
-
-		 [ %+partic [ %+pres | %+past ] [ %+ps | %+imps ] ] |
-
-		 [ %+indic
-		 	[ %+pres | %+impf ]
-		 		[ [ [ %+imps | PööreJaArv %+ps ] %+af ] |
-				  [ [ %+imps |            %+ps ] %+neg ] ] ] |
-
-		 [ %+cond
-		 	[ %+pres | %+past ]
-		 		[ [ [ PööreJaArv %+ps ] %+af ] |
-				  [ [ %+imps | %+ps ] (%+af | %+neg) ] ] ] |
-
-		 [ %+quot [ %+pres | %+past ] [ %+ps | %+imps ] ( %+af | %+neg ) ] |
-
-		 [ %+imper %+pres
-		 	[ %+imps |
- 			[ [ [ %+ps2 | %+ps3 ] %+sg | [ %+ps1 | %+ps2 | %+ps3 ] %+pl ] %+ps ] ]
-				( %+af | %+neg ) ]
-    ];
+		 %+Inf |
+		 %+Ger |
+		 %+Pers 
+		 	[ %+Prs 
+				[ %+Ind [ PööreJaArv %+Aff | (PööreJaArv) %+Neg ] 
+				| %+Cond (PööreJaArv) (AffNeg) 
+				| %+Imprt (%+Sg2 | %+Sg3 | %+Pl1 | %+Pl2 | %+Pl3) (AffNeg)
+				| %+Quot (AffNeg) 
+				| %+Prc ]
+			| %+Past
+				[ %+Ind [ PööreJaArv %+Aff | (PööreJaArv) %+Neg ]
+				| %+Cond (PööreJaArv) (AffNeg) 
+				| %+Imprt (PööreJaArv) (AffNeg) 
+				| %+Quot (AffNeg) 
+				| %+Prc ]
+			| %+Sup [ %+Abe | %+Ela | %+Ill | %+Ine | %+Tra ] ]  |
+		%+Impers 
+		 	[ %+Prs
+				[ %+Ind AffNeg 
+				| %+Cond (AffNeg)
+				| %+Imprt (AffNeg)
+				| %+Quot (AffNeg)
+				| %+Prc ]
+			| %+Past [ %+Ind AffNeg | %+Cond (AffNeg) | %+Prc ]
+			| %+Sup ]
+		]; 
 
 !  +A +Adv +G +H +I +J +K +Num +O +Ord +Pron +S +X
 
     Gi = ( "+gi" );
 
-    Omadussõna' = Sona "+A" ([ "+comp" | "+super" ]);
-    Omadussõna = [ Omadussõna' ArvJaKääne | Sona "+A" ( "+partic" ) ];
-    Nimisõna' = Sona [ "+S" | "+H" ];
+    Omadussõna' = Sona "+A" ([ "+Comp" | "+Superl" ]);
+    Omadussõna = [ Omadussõna' ArvJaKääne | Sona "+A" ( "+Prc" ) ];
+    Nimisõna' = Sona "+N" ("+Prop");
     Nimisõna = Nimisõna' ArvJaKääne;
-    Arvsõna = Sona [ "+Num" | "+Ord" ] (ArvJaKääne);
+    Arvsõna = Sona "+Num" [ "+Card" | "+Ord" ] (ArvJaKääne);
     Asesõna = Sona [ "+Pron" ] ArvJaKääne;
     Käänduvsõna = Omadussõna | Nimisõna | Arvsõna | Asesõna;
     Määrsõna = Sona "+Adv";
-    Hüüdsõna = Sona "+I";
-    Sidesõna = Sona "+J";
-    Kaassõna = Sona "+K";
-    Muusõna = Sona "+X";
-    Genatribuut = Sona "+G";
-    Tegusõna = Tähtsõne VerbiParadigma;
+    Hüüdsõna = Sona "+Interj";
+    Sidesõna = Sona [ "+CC" | "+CS" ];
+    Kaassõna = Sona "+Adp";
+    Muusõna = Sona "+Adv";
+    Genatribuut = Sona "+N+Sg+Gen";
+    Tegusõna = Tähtsõne VerbiParadigma; 
     Muutumatusõna = Määrsõna | Hüüdsõna | Sidesõna | Kaassõna | Muusõna | Genatribuut;
 
     SP = ( %& %- ) %&;

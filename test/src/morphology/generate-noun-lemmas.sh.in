@@ -68,7 +68,7 @@ for f in $fsttype; do
 ###### Test non-comopunds: #######
 		# generate nouns in Singular, extract the resulting generated lemma,
 		# store it:
-		sed 's/$/+S+sg+nom/' $lemmas | $lookuptool $generatorfile.$f \
+		sed 's/$/+N+Sg+Nom/' $lemmas | $lookuptool $generatorfile.$f \
 			| cut -f2 | fgrep -v "+N+Sg" | grep -v "^$" | sort -u \
 			> $generatedlemmas.$f.txt 
 #		# Generate nouns, extract those that do not generate in singular,
