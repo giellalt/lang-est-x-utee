@@ -1,0 +1,135 @@
+SamEst meeting, 18.9.2014 
+
+Present: Francis, Heiki, Heli, Jaak, Neeme, Sjur, Trond
+
+!!!Agenda
+* FST
+* The physical meeting in Tartu
+* Next meeting
+
+!!!FST
+
+!! tag conversion
+
+Tag conversion is almost ready. ... coming to a window close to us.
+There are some points for which "make check" fails, but these poins were there
+earlier as well. The last results are not in svn yet, but will come in after the meeting.
+
+!! remaining issues
+
+* Overanalysis, compounding
+* Extra derivation tags(?): {{_lt _us _ke _kene _ini _ prefix = &-&}}
+* verb generation - could have been an issue also in the PLAMK version
+* errors in noun generation (N+Sg+Nom): {{hernel, poisl, meli, käli}} (__l__ instead of __s__)
+
+The tradition of lexicalisation of compounds
+... of lexicalisation of derivated processes
+
+Compounds are separated with '#':
+
+* lexicalised: __#__
+* dynamic: __+Cmp#__
+
+From the North Saami analyser: 
+{{{
+echo skuvlabusse | usme
+skuvlabusse        
+    skuvlabusse+N+G3+Sg+Gen  <==== the lexicalised one will be picked prior to disambiguation
+    skuvla+N+SgNomCmp+Cmp#busse+N+G3+Sg+Acc
+}}}
+
+With middleprocessing:
+
+{{{
+echo skuvlabusse | usme | lookup2cg
+"<skuvlabusse>"
+         "skuvlabusse" N G3 Sem/Veh Sg Gen
+         "skuvlabusse" N G3 Sem/Veh Sg Nom
+         "skuvlabusse" N G3 Sem/Veh Sg Acc
+}}}
+
+In the lexc file:
+{{{
+Now: lemma is "skuvlabusse":
+skuvlabusse+G3+Sem/Veh:skuvla#bus'se GOAHTI ;
+Earlier lemma was "skuvla#busse":
+skuvla#busse+G3+Sem/Veh:skuvla#bus'se GOAHTI ;
+}}}
+
+derivation boundary: » and «
+
+* surface side: »
+* tags: Der/foo Der/bar
+
+Examples of analysing some Estonian derived forms:
+{{{
+
+tähtsusega
+tähtsusega        tähtsus+N+Sg+Com
+tähtsusega        tähtsus+N+Sg+Nom&ega+Adv
+
+täielikult
+täielikult        täi+N+Sg+Nom&esi+N+Sg+Nom&kult+N+Sg+Nom
+täielikult        täi+N+Sg+Gen&esi+N+Sg+Nom&kult+N+Sg+Nom
+täielikult        täielikult+Adv
+täielikult        täielik+A+Sg+Nom&ült+Adv
+täielikult        täielik+A+Sg+Abl
+
+}}}
+
+There is a lot of garbage.         
+
+A North Saami example:
+
+{{{         
+tf-hsl-m0016:~ ttr000$ echo ustitlaš | usme
+ustitlaš        ustitlaš+A+Sg+Nom
+ustitlaš        ustitlaš+A+Attr
+ustitlaš        ustit+N+Der/laš+A+Sg+Nom
+ustitlaš        ustit+N+Der/laš+A+Attr
+}}}
+
+
+The same s:l error (probably in the two-level rules) shows up in the analysis of ''eli'':
+
+{{{
+eli
+eli        esi+N+Sg+Nom
+eli        esi+N+Pl+Par
+}}}
+
+
+Example of compound analysis:
+{{{
+loodusõnnetuste loodus+N+Sg+Nom&õnn+N+Sg+Gen&tust+N+Pl+Par
+loodusõnnetuste loodus+N+Sg+Nom&õnnetus+N+Pl+Gen
+}}}
+
+A relatively simple but powerful __idea to try__: prefer the analysis with the smallest number of compound boundaries.
+
+* dynamic derivations: marked with the "=" sign
+* dynamic compounds: marked with the "&" sign
+
+__Suggestion__: change to the symbols used by GTDivvun infra: +Der for derivations, +Cmp followed by # for compounds.
+
+!!!The physical meeting in Tartu
+
+* The program will be ready and e-mailed to all participants next week. (__Heiki__, __Heli__, __Trond__)
+* __Heiki__ will book the hotel rooms as follows:
+{{{
+Fran double room sun, mon
+Sjur single room mon
+Trond single room sun, mon, tue
+Jack single room sun, mon, tue
+
+i.e.
+
+Fran double room sun-tue
+Sjur single room mon-tue
+Jack single room sun-wed
+Trond single room sun-wed
+}}}
+
+!!!Next meeting
+
+Next week on fst-remaining, perhaps without Heli and Trond. Fran, Jaak and Sjur on IRC?
