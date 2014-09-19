@@ -1,0 +1,117 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+  Verb - elama: # Verb 'to be' - full paradigm
+
+
+# Isikulised olevikuvormid
+
+     elama+V+Pers+Prs+Ind+Sg1+Aff: elan
+     elama+V+Pers+Prs+Ind+Sg2+Aff: elad
+     elama+V+Pers+Prs+Ind+Sg3+Aff: elab
+     elama+V+Pers+Prs+Ind+Pl1+Aff: elame
+     elama+V+Pers+Prs+Ind+Pl2+Aff: elate
+     elama+V+Pers+Prs+Ind+Pl3+Aff: elavad
+     elama+V+Pers+Prs+Ind+Neg: ela
+
+     elama+V+Pers+Prs+Cond+Sg1+Aff: elaksin
+     elama+V+Pers+Prs+Cond+Sg2+Aff: elaksid
+     elama+V+Pers+Prs+Cond+Pl1+Aff: elaksime
+     elama+V+Pers+Prs+Cond+Pl2+Aff: elaksite
+     elama+V+Pers+Prs+Cond+Pl3+Aff: elaksid
+     elama+V+Pers+Prs+Cond+Aff: elaks
+     elama+V+Pers+Prs+Cond+Neg: elaks
+
+     elama+V+Pers+Prs+Imprt+Sg2+Aff: ela
+     elama+V+Pers+Prs+Imprt+Sg2+Neg: ela
+     elama+V+Pers+Prs+Imprt+Sg3+Aff: elagu
+     elama+V+Pers+Prs+Imprt+Sg3+Neg: elagu
+     elama+V+Pers+Prs+Imprt+Pl1+Aff: elagem
+     elama+V+Pers+Prs+Imprt+Pl1+Neg: elagem
+     elama+V+Pers+Prs+Imprt+Pl2+Aff: elage
+     elama+V+Pers+Prs+Imprt+Pl2+Neg: elage
+     elama+V+Pers+Prs+Imprt+Pl3+Aff: elagu
+     elama+V+Pers+Prs+Imprt+Pl3+Neg: elagu
+
+     elama+V+Pers+Prs+Quot+Aff: elavat
+     elama+V+Pers+Prs+Quot+Neg: elavat
+
+# Isikulised minevikuvormid
+
+     elama+V+Pers+Past+Ind+Sg1+Aff: elasin
+     elama+V+Pers+Past+Ind+Sg2+Aff: elasid
+     elama+V+Pers+Past+Ind+Sg3+Aff: elas
+     elama+V+Pers+Past+Ind+Pl1+Aff: elasime
+     elama+V+Pers+Past+Ind+Pl2+Aff: elasite
+     elama+V+Pers+Past+Ind+Pl3+Aff: elasid
+     elama+V+Pers+Past+Ind+Neg: elanud
+
+     elama+V+Pers+Past+Cond+Sg1+Aff: elanuksin
+     elama+V+Pers+Past+Cond+Sg2+Aff: elanuksid
+     elama+V+Pers+Past+Cond+Pl1+Aff: elanuksime
+     elama+V+Pers+Past+Cond+Pl2+Aff: elanuksite
+     elama+V+Pers+Past+Cond+Pl3+Aff: elanuksid
+     elama+V+Pers+Past+Cond+Aff: elanuks
+     elama+V+Pers+Past+Cond+Neg: elanuks
+
+     elama+V+Pers+Past+Quot+Aff: elanuvat
+     elama+V+Pers+Past+Quot+Neg: elanuvat
+
+# Isikulised käändelised vormid
+
+     elama+V+Pers+Past+Prc: elanud
+     elama+V+Pers+Prs+Prc: elav
+     elama+V+Pers+Sup+Abe: elamata
+     elama+V+Pers+Sup+Ela: elamast
+     elama+V+Pers+Sup+Ill: elama
+     elama+V+Pers+Sup+Ine: elamas
+     elama+V+Pers+Sup+Tra: elamaks
+
+# Umbisikuline olevik
+
+     elama+V+Impers+Prs+Ind+Aff: elatakse
+     elama+V+Impers+Prs+Ind+Neg: elata
+
+     elama+V+Impers+Prs+Cond+Aff: elataks
+     elama+V+Impers+Prs+Cond+Neg: elataks
+
+     elama+V+Impers+Prs+Imprt+Aff: elatagu
+     elama+V+Impers+Prs+Imprt+Neg: elatagu
+
+     elama+V+Impers+Prs+Quot+Aff: elatavat
+     elama+V+Impers+Prs+Quot+Neg: elatavat
+
+# Umbisikuline minevik 
+     elama+V+Impers+Past+Ind+Aff: elati
+     elama+V+Impers+Past+Ind+Neg: elatud
+
+     elama+V+Impers+Past+Cond+Aff: elatuks
+     elama+V+Impers+Past+Cond+Neg: elatuks
+
+     # ??? 
+     elama+V+Impers+Past+Quot+Aff: elatuvat
+     elama+V+Impers+Past+Quot+Neg: elatuvat
+     
+# Umbisikulised käändelised vormid?
+
+     elama+V+Impers+Sup: elatama     
+
+     elama+V+Ger: elades
+     elama+V+Inf: elada
+
+     elama+V+Impers+Past+Prc: elatud
+     elama+V+Impers+Prs+Prc: elatav
+
+# The verb forms list should be complete now

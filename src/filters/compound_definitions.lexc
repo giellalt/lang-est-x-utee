@@ -40,7 +40,7 @@ Definitions
 				| %+Imprt (AffNeg)
 				| %+Quot (AffNeg)
 				| %+Prc ]
-			| %+Past [ %+Ind AffNeg | %+Cond (AffNeg) | %+Prc ]
+			| %+Past [ %+Ind AffNeg | %+Cond (AffNeg) | %+Quot AffNeg | %+Prc ]
 			| %+Sup ]
 		]; 
 
