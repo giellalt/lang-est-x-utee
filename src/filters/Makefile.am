@@ -15,42 +15,41 @@
 ## You should have received a copy of the GNU General Public License
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# List any local filter regexes here:
-GT_FILTER_LOCAL_SRCS=deriv_filter.regex
+#########################################################
+############## BEGIN: Local modifications ###############
 
-# Add the target of local additions here:
-GT_FILTER_TARGETS=
-# HFST targets here:
-if CAN_HFST
-GT_FILTER_TARGETS+=compound_mask.lexc.hfst compound_filter.lexc.hfst
+# List any local filter regex files here:
+GIELLA_FILTER_LOCAL_REGEX_SRCS=deriv_filter.regex
 
-endif
+# List any local filter xfscript files here:
+GIELLA_FILTER_LOCAL_XFSCRIPT_SRCS=
 
-# And Xerox targets here:
-if CAN_XFST
-GT_FILTER_TARGETS+=compound_mask.lexc.xfst compound_filter.lexc.xfst
+# List any local filter lexc files here:
+GIELLA_FILTER_LOCAL_LEXC_SRCS=
 
-endif
+# List any locally generated regex source files here:
+GIELLA_FILTER_LOCAL_GENERATED_REGEX_SRCS=
 
-####### General build rules: ########
+# List any locally generated xfscript source files here:
+GIELLA_FILTER_LOCAL_GENERATED_XFSCRIPT_SRCS=
+
+# List any locally generated lexc source files here:
+GIELLA_FILTER_LOCAL_GENERATED_LEXC_SRCS=compound_filter.lexc compound_mask.lexc
+
+# List any additional source files here, so that they are included in the dist.
+# Source files that are not directly compiled to fst's but are instead used as
+# part of a local build step should be listed here.
+EXTRA_SRCS=compound_definitions.lexc compound_filter_base.lexc
+
+########## Add local build rules below here: ############
 compound_filter.lexc: compound_definitions.lexc compound_filter_base.lexc
 	$(AM_V_GEN)cat $^ > $@
 
 compound_mask.lexc:	compound_definitions.lexc compound_rules.lexc
 	$(AM_V_GEN)cat $^ > $@
 
-####### HFST build rules: ########
-%.hfst: %.lexc
-	$(AM_V_HLEXC)$(HFST_LEXC) $(VERBOSITY) $(HFST_LEXC_FLAGS) \
-		-f openfst-tropical -o $@ $^
-
-####### Xerox build rules: #######
-%.xfst: %.lexc
-	$(AM_V_XFST)$(XFST) $(VERBOSITY) \
-			-e "read lexc $^" \
-			-e "compose net" \
-			-e "save stack $@ " \
-			-stop
+############### END: Local modifications ################
+#########################################################
 
 # Included build file, where the actual build instructions are:
 include $(top_srcdir)/am-shared/src-filters-dir-include.am
