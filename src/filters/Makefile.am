@@ -15,45 +15,44 @@
 ## You should have received a copy of the GNU General Public License
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# Define variable before using it:
-GT_FILTER_TARGETS=
-
-# List any local additions here:
-GT_FILTER_LOCAL_SRCS=
-
-
-compound_filter.all.lexc:	compound_definitions.lexc compound_filter.lexc
-	$(AM_V_GEN)cat $^ > $@
-
-compound_mask.all.lexc:	compound_definitions.lexc compound_rules.lexc
-	$(AM_V_GEN)cat $^ > $@
+# List any local filter regexes here:
+GT_FILTER_LOCAL_SRCS=deriv_filter.regex
 
 # Add the target of local additions here:
+GT_FILTER_TARGETS=
 # HFST targets here:
 if CAN_HFST
-GT_FILTER_TARGETS+=deriv_filter.hfst compound_mask.lexc.hfst compound_filter.lexc.hfst
+GT_FILTER_TARGETS+=compound_mask.lexc.hfst compound_filter.lexc.hfst
 
 endif
 
 # And Xerox targets here:
 if CAN_XFST
-GT_FILTER_TARGETS+=deriv_filter.xfst compound_mask.lexc.xfst compound_filter.lexc.xfst
+GT_FILTER_TARGETS+=compound_mask.lexc.xfst compound_filter.lexc.xfst
 
 endif
 
+####### General build rules: ########
+compound_filter.lexc: compound_definitions.lexc compound_filter_base.lexc
+	$(AM_V_GEN)cat $^ > $@
+
+compound_mask.lexc:	compound_definitions.lexc compound_rules.lexc
+	$(AM_V_GEN)cat $^ > $@
+
 ####### HFST build rules: ########
-%.lexc.hfst: %.all.lexc
+%.hfst: %.lexc
 	$(AM_V_HLEXC)$(HFST_LEXC) $(VERBOSITY) $(HFST_LEXC_FLAGS) \
 		-f openfst-tropical -o $@ $^
 
 ####### Xerox build rules: #######
-%.lexc.xfst: %.all.lexc
+%.xfst: %.lexc
 	$(AM_V_XFST)$(XFST) $(VERBOSITY) \
 			-e "read lexc $^" \
 			-e "compose net" \
 			-e "save stack $@ " \
 			-stop
 
+# Included build file, where the actual build instructions are:
 include $(top_srcdir)/am-shared/src-filters-dir-include.am
 
 # vim: set ft=automake:
