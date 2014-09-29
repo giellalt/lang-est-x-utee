@@ -41,6 +41,9 @@ TEENS ;			! 10-19
 ONES ;			! 1-9
 ZERO ;          	! 0
 
+LEXICON ZERO
+null:0 #;
+
 LEXICON HUNDREDSM
 kaks:2  CUODIM ;
 kolm:3 CUODIM ;
@@ -55,7 +58,7 @@ LEXICON CUODIM
 sada: HUNDREDM ;
 
 LEXICON HUNDREDM
-TENM ;
+! TENM ;
 TENSM ;
 TEENSM ;
 :%0 ONESM ;
@@ -94,6 +97,10 @@ kuus:6 LÅGEVM ;
 seitse:7 LÅGEVM ;
 kaheksa:8 LÅGEVM ;
 üheksa:9 LÅGEVM ;
+
+LEXICON LÅGEVM
+# ;
+
 
 
 LEXICON LUHKIEM
@@ -178,6 +185,9 @@ kuus:6 LÅGEVT ;
 seitse:7 LÅGEVT ;
 kaheksa:8 LÅGEVT ;
 üheksa:9 LÅGEVT ;
+
+LEXICON LÅGEVT
+#;
 
 LEXICON TENT
 kümme% tuhat:1%0 THOUSAND ;
