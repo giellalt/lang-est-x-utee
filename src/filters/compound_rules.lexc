@@ -20,7 +20,7 @@ LEXICON Tegusõnad
 LEXICON Nimisõnad 
  < Nimisõna > GI;
 
- < Nimisõna "&" "-" "&" > Nimisõnad; ! rindliitnimisõnad, EKKR SM32
+ < Nimisõna "#" "-" "#" > Nimisõnad; ! rindliitnimisõnad, EKKR SM32
 
  < Nimisõna' "+Sg" "+Nom" SP > Tegusõnad; ! EKKR, SM19
  < Nimisõna' "+Sg" "+Nom" Kriips > #;
@@ -30,40 +30,40 @@ LEXICON Nimisõnad
  < Nimisõna' [ "+Sg" [ "+Nom" | "+Gen" ] | "+Pl" "+Gen" | "+prefix" ] SP > Määrsõnad; ! EKKR, S422 ! FIXME: lühitüved
  < Nimisõna' [ "+Sg" [ "+Nom" | "+Gen" ] | "+Pl" "+Gen" | "+prefix" ] Kriips > #;
 
- < Nimisõna' "+Sg" "+Nom" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Nom" > GI; ! aasta-paar, meeter-kaks jms
- < Nimisõna' "+Sg" "+Gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" > GI;
- < Nimisõna' "+Sg" "+Par" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Par" > GI;
- < Nimisõna' "+Sg" "+Ill" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ill" > GI;
- < Nimisõna' "+Sg" "+Ine" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ine" > GI;
- < Nimisõna' "+Sg" "+Ela" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ela" > GI;
- < Nimisõna' "+Sg" "+All" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+All" > GI;
- < Nimisõna' "+Sg" "+Ade" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ade" > GI;
- < Nimisõna' "+Sg" "+Abl" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Abl" > GI;
- < Nimisõna' "+Sg" "+Tra" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Tra" > GI;
- < Nimisõna' "+Sg" "+Gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Trm" > GI;
- < Nimisõna' "+Sg" "+Gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ess" > GI;
- < Nimisõna' "+Sg" "+Gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Abe" > GI;
- < Nimisõna' "+Sg" "+Gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Com" > GI;
+ < Nimisõna' "+Sg" "+Nom" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Nom" > GI; ! aasta-paar, meeter-kaks jms
+ < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" > GI;
+ < Nimisõna' "+Sg" "+Par" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Par" > GI;
+ < Nimisõna' "+Sg" "+Ill" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ill" > GI;
+ < Nimisõna' "+Sg" "+Ine" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ine" > GI;
+ < Nimisõna' "+Sg" "+Ela" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ela" > GI;
+ < Nimisõna' "+Sg" "+All" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+All" > GI;
+ < Nimisõna' "+Sg" "+Ade" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ade" > GI;
+ < Nimisõna' "+Sg" "+Abl" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Abl" > GI;
+ < Nimisõna' "+Sg" "+Tra" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Tra" > GI;
+ < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Trm" > GI;
+ < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ess" > GI;
+ < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Abe" > GI;
+ < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Com" > GI;
 
 LEXICON Arvsõnad
  < Arvsõna > GI;
 
  ! fixme: teistkümned, kümned, sajad
 
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Nom" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Nom" > GI; ! üht-teist, viies-kuues jm
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Par" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Par" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ill" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ill" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ine" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ine" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ela" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ela" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+All" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+All" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ade" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ade" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Abl" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Abl" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Tra" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Tra" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Trm" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ess" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Abe" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" "&" "-" "&" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Com" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Nom" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Nom" > GI; ! üht-teist, viies-kuues jm
+ < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Par" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Par" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ill" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ill" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ine" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ine" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ela" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ela" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+All" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+All" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ade" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ade" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Abl" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Abl" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Tra" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Tra" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Trm" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ess" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Abe" > GI;
+ < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Com" > GI;
 
 LEXICON Omadussõnad
  < Omadussõna > GI;

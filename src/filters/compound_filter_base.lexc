@@ -8,7 +8,7 @@ LEXICON Root
 
 <
 [
-	~[ ?* "&" l a "+S" ArvJaKääne ("&" ?*) | (?* "&") l a "+S" ArvJaKääne "&" ?*  ]
+	~[ ?* "#" l a "+S" ArvJaKääne ("#" ?*) | (?* "#") l a "+S" ArvJaKääne "#" ?*  ]
 ]
 > #;
 

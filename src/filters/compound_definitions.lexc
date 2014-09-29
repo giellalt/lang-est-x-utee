@@ -64,7 +64,7 @@ Definitions
     Tegusõna = Tähtsõne VerbiParadigma; 
     Muutumatusõna = Määrsõna | Hüüdsõna | Sidesõna | Kaassõna | Muusõna | Genatribuut;
 
-    SP = ( %& %- ) %&;
-    PreKriips = ( %- %& );
-    Kriips = %& %-;
+    SP = ( %# %- ) %#;
+    PreKriips = ( %- %# );
+    Kriips = %# %-;
 
