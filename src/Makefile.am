@@ -132,28 +132,27 @@ inverted-phonology.hfst: phonology/$(GTLANG)-phon.hfst
 	$(AM_V_HINV)$(HFST_INVERT) $(VERBOSITY) $(HFST_FLAGS) -i $< -o $@
 
 # generator-raw-gt-desc-simple-with-av.hfst:
-generator-raw-gt-desc-simple-with-av.hfst: morphology/$(GTLANG).lexc.hfst \
-										   inverted-phonology.hfst
+generator-raw-gt-desc-simple-with-av.hfst: morphology/lexicon.hfst inverted-phonology.hfst
 	$(AM_V_INTRSCT)$(HFST_COMPOSE_INTERSECT) $(VERBOSITY) $(HFST_FLAGS) \
-		-I -1 morphology/$(GTLANG).lexc.hfst -2 inverted-phonology.hfst | \
+		-I -1 morphology/lexicon.hfst -2 inverted-phonology.hfst | \
 		$(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
 
 # generator-raw-gt-desc-simple-full.hfst: generator-raw-gt-desc-simple-with-av.hfst
 generator-raw-gt-desc-simple-full.hfst: \
 				generator-raw-gt-desc-simple-with-av.hfst \
 				filters/deriv_filter.hfst \
-				morphology/overriding-exceptions.lexc.hfst \
-				morphology/numbers.lexc.hfst \
+				morphology/overriding-exceptions.hfst \
+				morphology/numbers.hfst \
 				phonology/$(GTLANG)-phon.hfst
 	$(AM_V_RGX2FST)$(PRINTF) \
 		'[ @"filters/deriv_filter.hfst" \
-		.o. [   [@"morphology/overriding-exceptions.lexc.hfst"] \
-		    |   [ ~[[@"morphology/overriding-exceptions.lexc.hfst"].u] \
+		.o. [   [@"morphology/overriding-exceptions.hfst"] \
+		    |   [ ~[[@"morphology/overriding-exceptions.hfst"].u] \
 			.o. @"generator-raw-gt-desc-simple-with-av.hfst"]] \
 		.o. ~$$"{}"]' | \
 	$(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) | \
 	$(HFST_COMPOSE_INTERSECT) $(VERBOSITY) $(HFST_FLAGS) -2 phonology/$(GTLANG)-phon.hfst | \
-	$(HFST_DISJUNCT) $(VERBOSITY) $(HFST_FLAGS) morphology/numbers.lexc.hfst | \
+	$(HFST_DISJUNCT) $(VERBOSITY) $(HFST_FLAGS) morphology/numbers.hfst | \
 	$(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
 
 # generator-raw-gt-desc.hfst: generator-raw-gt-desc-full-simple.hfst
@@ -173,7 +172,7 @@ generator-raw-gt-desc.hfst: \
 
 #### Xerox build rules: ####
 analyser-raw-gt-desc-simple-with-av.xfst: \
-			morphology/$(GTLANG).lexc.xfst \
+			morphology/lexicon.xfst \
 			analyser-raw-gt-desc.tmp.xfst
 	$(AM_V_at)$(PRINTF) \
 	"read-source analyser-raw-gt-desc.tmp.xfst\ninvert-source\nread-rules phonology/$(GTLANG)-phon.xfst\ncompose-result\ninvert-result\nsave-result $@\nquit\n" \
@@ -184,8 +183,8 @@ analyser-raw-gt-desc-simple-with-av.xfst: \
 analyser-raw-gt-desc-simple-full.xfst: \
 				analyser-raw-gt-desc-simple-with-av.xfst \
 				filters/deriv_filter.xfst \
-				morphology/overriding-exceptions.lexc.xfst \
-				morphology/numbers.lexc.xfst \
+				morphology/overriding-exceptions.xfst \
+				morphology/numbers.xfst \
 				phonology/$(GTLANG)-phon.xfst
 	$(AM_V_XFST)$(PRINTF) \
 		'load phonology/$(GTLANG)-phon.xfst\n\
@@ -195,11 +194,11 @@ analyser-raw-gt-desc-simple-full.xfst: \
 	        $(XFST) $(VERBOSITY) $(XFSTFLAGS)
 	$(AM_V_XFST)$(PRINTF) \
 		'read regex [ @"filters/deriv_filter.xfst" \
-						.o. [   [@"morphology/overriding-exceptions.lexc.xfst"] \
+						.o. [   [@"morphology/overriding-exceptions.xfst"] \
 							.P. [@"analyser-raw-gt-desc-simple-with-av.xfst"]] \
 						.o. ~$$"{}" \
 						.o. @"intersected-phonology.tmp.xfst"] \
-					| @"morphology/numbers.lexc.xfst";\n\
+					| @"morphology/numbers.xfst";\n\
 					save stack $@\n\
 					quit\n' | \
 	        $(XFST) $(VERBOSITY) $(XFSTFLAGS)
