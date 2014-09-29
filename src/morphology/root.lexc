@@ -24,9 +24,12 @@ Multichar_Symbols
 !! derivation suffixes, used to filter out illegal combinations internally
 +Dim/ke	! deminutive
 +Dim/kene  ! deminutive
++Der
 +Der/us
 +Der/lt
 +Der/ini	! comparation? paremini, kiiremini (how? better than .., faster than ..)
+
++Der/nu
 
 ! partikkel -gi/-ki
 ! particle -gi/-ki
@@ -325,7 +328,7 @@ LEXICON Kohalikud_erandid
  kümmend+Num+Card:küm= 05_E-NE;
 
  ei+V+neg:ei #;
- siis+CC/+CS:siis #;
+ siis+CS:siis #;
  kogu+A:kogu GI;
  jah+Adv:jah #;
  nagu+Adv:nagu #;

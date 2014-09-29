@@ -1,31 +1,33 @@
 ! Copyright © 2010 by Jaak Pruulmann-Vengerfeldt.
 ! All rights reserved. 
 
-[ = k e "+N" -> "+N" "+_ke" ] .o.
-[ = k e n e "+N" -> "+N" "+_kene" ] .o.
-[ = k e "+A" -> "+A" "+_ke" ] .o.
-[ = k e n e "+A" -> "+A" "+_kene" ] .o.
-[ = l t "+Adv" (->) "+A" "+_lt" "+Adv" ] .o.
-[ m a = l t "+Adv" (->) "+A" "+Comp" "+_lt" "+Adv" ] .o.
-[ i m a = l t "+Adv" -> "+A" "+Superl" "+_lt" "+Adv" ] .o. ! kui i lõpuvokaaliga asju tegi, on probleem
-[ = l t "+Adv" -> "+N" "+_lt" "+Adv" ] .o.
-[ = u s "+N" -> "+A" "+_us" "+N" ] .o.
-[ m = i n i "+Adv" -> m "+A" "+_ini" "+Adv" ] .o.
-[ = i n i "+Adv" -> "+A" "+_ini" "+Adv" ] .o.
+
+
+![ = k e "+N" -> "+N" "+_ke" ] .o.
+![ = k e n e "+N" -> "+N" "+_kene" ] .o.
+![ = k e "+A" -> "+A" "+_ke" ] .o.
+![ = k e n e "+A" -> "+A" "+_kene" ] .o.
+![ = l t "+Adv" (->) "+A" "+_lt" "+Adv" ] .o.
+![ m a = l t "+Adv" (->) "+A" "+Comp" "+_lt" "+Adv" ] .o.
+![ i m a = l t "+Adv" -> "+A" "+Superl" "+_lt" "+Adv" ] .o. ! kui i lõpuvokaaliga asju tegi, on probleem
+![ = l t "+Adv" -> "+N" "+_lt" "+Adv" ] .o.
+![ = u s "+N" -> "+A" "+_us" "+N" ] .o.
+![ m = i n i "+Adv" -> m "+A" "+_ini" "+Adv" ] .o.
+![ = i n i "+Adv" -> "+A" "+_ini" "+Adv" ] .o.
 
 
 [! lubatud tuletisevormid?
 
-        [ ~$[ "+_us" ?* "+_us" ] ] &
+        [ ~$[ "+Der/us" ?* "+Der/us" ] ] &
         [ ~$[ "+Comp" ?* "+Comp" ] ] &
         [ ~$[ "+Superl" ?* "+Superl" ] ] &
-        [ ~$[ "+_ke" ?* "+_ke" ] ] &
-        [ ~$[ "+_ke" ?* "+_kene" ] ] &
-        [ ~$[ "+_kene" ?* "+_ke" ] ] &
-        [ ~$[ "+_kene" ?* "+_kene" ] ] &
+        [ ~$[ "+Dim/ke" ?* "+Dim/ke" ] ] &
+        [ ~$[ "+Dim/ke" ?* "+Dim/kene" ] ] &
+        [ ~$[ "+Dim/kene" ?* "+Dim/ke" ] ] &
+        [ ~$[ "+Dim/kene" ?* "+Dim/kene" ] ] &
         [ $[ "+A" %+Comp] | ~$[ "+Comp" ] ] &
         [ $[ "+A" %+Superl] | ~$[ "+Superl" ] ] &
-        [ $[ "+A" "+_us" ] | ~$[ "+_us" ] ] &
-        [ $[ "+A" "+_ini" ] | ~$[ "+_ini" ] ] &
-        [ $[ ["+A" ("+Comp" | "+Superl") | "+N"] "+_lt" ] | ~$[ "+_lt" ] ]
+        [ $[ "+A" "+Der" "+Der/us" ] | ~$[ "+Der/us" ] ] &
+        [ $[ "+A" "+Der" "+Der/ini" ] | ~$[ "+Der/ini" ] ] &
+        [ $[ ["+A" ("+Comp" | "+Superl") | "+N"] "+Der" "+Der/lt" ] | ~$[ "+Der/lt" ] ]
 ];

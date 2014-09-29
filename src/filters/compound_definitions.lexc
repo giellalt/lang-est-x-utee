@@ -8,7 +8,9 @@ Definitions
 	     v | w | x | y | õ | ä | ö | ü ];
     Arv = [ %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ];
     Tähtsõne = [Täht | %- | %=]+;
-    Sona = [[Arv]+ (%- | %. | %,)]* [Arv]+ (%. | %% | %' (%') ) | ([Arv]+) Tähtsõne;
+    TuletisKäänduvast = ( [ "+A" ("+Comp" | "+Superl") | "+N" | "+V" ] [ [ "+Der" [ "+Der/nu" | "+Der/ini" | "+Der/lt" | "+Der/us" ] ] | "+Dim/ke" | "+Dim/kene" ] );
+    Sona = [[Arv]+ (%- | %. | %,)]* [Arv]+ (%. | %% | %' (%') ) | ([Arv]+) Tähtsõne TuletisKäänduvast;
+
     ArvJaKääne = [ %+Sg | %+Pl ] [ %+Nom | %+Gen | %+Par | %+Ill | %+Ine
     				 | %+Ela | %+All | %+Ade | %+Abl | %+Tra
 				 | %+Trm | %+Ess | %+Abe | %+Com ];
@@ -47,6 +49,7 @@ Definitions
 !  +A +Adv +G +H +I +J +K +Num +O +Ord +Pron +S +X
 
     Gi = ( "+gi" );
+
 
     Omadussõna' = Sona "+A" ([ "+Comp" | "+Superl" ]);
     Omadussõna = [ Omadussõna' ArvJaKääne | Sona "+A" ( "+Prc" ) ];

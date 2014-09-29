@@ -900,7 +900,7 @@ LEXICON TP_38ct	!sö.+i -> sõi
 
 LEXICON An_SgN  ! Sg Nom
  +Sg+Nom:0 GI;
- +_ini+Adv:+ini GI; ! need võrdlusastmed, mis on otse sõnastikus (valjemini)
+ +Der+Der/ini+Adv:+ini GI; ! need võrdlusastmed, mis on otse sõnastikus (valjemini)
  LIIT;
 
 LEXICON An_SgG  ! SgG analoogiarühm
@@ -908,16 +908,16 @@ LEXICON An_SgG  ! SgG analoogiarühm
  +Sg:0 KÄÄNE_1;
  +Pl+Nom:+d GI;
  +Comp:+m 02_A;
- +_ini+Adv:+mini GI;
- +_lt+Adv:+lt GI;
- +_ke:ke 12_0-SE-S;
- +_kene:ke 12_NE-SE-S;
+ +Der+Der/ini+Adv:+mini GI;
+ +Der+Der/lt+Adv:+lt GI;
+ +Dim/ke+N:ke 12_0-SE-S;
+ +Dim/kene+N:ke 12_NE-SE-S;
  LIIT;
  !LIIT_DEV_G;
 
 LEXICON An_SgG_der ! siia tuleb üleval pool ka sobiv tüvi
- +_us+N:+us 11;
- +_us+N:+us 09_E;
+ +Der+Der/us+N:+us 11;
+ +Der+Der/us+N:+us 09_E;
 
 
 LEXICON An_SgP_0  ! SgP (formatiiv 0)
@@ -1122,6 +1122,7 @@ LEXICON An_nud
 
 LEXICON An_nud_der
   nud+A:+nud GI ; ! ???
+  ma+V+Der+Der/nu+N:nu 01;
   nu+N:nu 01;
   nu+A:nu 01;
   nult+Adv:nult GI;
