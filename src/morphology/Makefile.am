@@ -69,21 +69,15 @@ GENERATED_LEXC_SRCS=
 # Set this to the names of all source xml files, if any
 GT_XML_SRCS=
 
-generated_files/overriding-exceptions.all.lexc:	overriding-exceptions.lexc
-	$(AM_V_GEN)cat $^ > $@
+# Define any additional sources here (compiled on their own, or just included
+# in the distro):
+GT_LOCAL_SRCS=overriding-exceptions.lexc numbers.lexc
 
-generated_files/numbers.all.lexc: numbers.lexc
-	$(AM_V_GEN)cat $^ > $@
+### BEGIN: Local processing: ###
+
+
+### END: Local processing: ###
 
 include $(top_srcdir)/am-shared/src-morphology-dir-include.am
-
-if CAN_HFST
-noinst_DATA+=overriding-exceptions.lexc.hfst numbers.lexc.hfst
-endif
-
-if CAN_XFST
-noinst_DATA+=overriding-exceptions.lexc.xfst numbers.lexc.xfst
-endif
-
 
 # vim: set ft=automake:
