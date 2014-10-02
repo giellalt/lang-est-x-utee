@@ -19,7 +19,9 @@
 ############## BEGIN: Local modifications ###############
 
 # List any local filter regex files here:
-GIELLA_FILTER_LOCAL_REGEX_SRCS=deriv_filter.regex
+GIELLA_FILTER_LOCAL_REGEX_SRCS=\
+					downcase_UCletters.regex \
+					deriv_filter.regex
 
 # List any local filter xfscript files here:
 GIELLA_FILTER_LOCAL_XFSCRIPT_SRCS=
