@@ -3,10 +3,10 @@
 ## Licence: GPL v3+
 
 # List relabel source files here:
-TAGSET_SRCS=
+TAGSET_SRCS=apertium.fin.relabel
 
 # List reorder regex source files here:
-REGEX_SRCS=
+REGEX_SRCS=modify-tags.fin.regex
 
 ####### Other targets: ###########
 
