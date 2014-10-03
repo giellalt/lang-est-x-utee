@@ -10,6 +10,7 @@ LEXICON ProperNames
  Descartes+N+Prop:Descartes 11; ! (11_H -> +H) a0: Descartes, b0: Descartese, b0v: Descartese
  Eesti+N+Prop:Eesti 16; ! (16_H -> +H) a0: eesti, a0g: #
  Euroopa+N+Prop:Euroopa 01; ! (01_H -> +H) a0: euroopa, a0r: 0
+ Helsingi+N+Prop:Helsingi 01;
  ! ??? internet+N+Prop:Internet 22; ! (22_H -> +H) at: Internet, bt: Internetti, bn: Interneti, btv: Internette, bnv: Internete
  Internet+N+Prop:InternetT1 22_KPT_I; ! (22_H -> +H) at: internet, bt: internetti, bn: interneti, btv: internette, bnv: internete
  Olümpos+N+Prop:Olümpos 09_E; ! (09_H -> +H) a0: olümpos, b0: olümpose
