@@ -1,7 +1,7 @@
 Config:
   hfst:
-    Gen: ../../../src/generator-gt-norm.hfst
-    Morph: ../../../src/analyser-gt-norm.hfst
+    Gen: ../../../src/generator-gt-norm.hfstol
+    Morph: ../../../src/analyser-gt-norm.hfstol
   xerox:
     Gen: ../../../src/generator-gt-norm.xfst
     Morph: ../../../src/analyser-gt-norm.xfst
