@@ -61,7 +61,7 @@ endif # CAN_HFST
 
 
 #### Hfst build rules: ####
-inverted-phonology.hfst: phonology/$(GTLANG)-phon.hfst
+inverted-phonology.hfst: phonology/$(GTLANG)-phon.compose.hfst
 	$(AM_V_HINV)$(HFST_INVERT) $(VERBOSITY) $(HFST_FLAGS) -i $< -o $@
 
 # generator-raw-gt-desc-simple-with-av.hfst:
@@ -76,10 +76,10 @@ generator-raw-gt-desc-simple-full.hfst: \
 				filters/deriv_filter.hfst \
 				morphology/overriding-exceptions.hfst \
 				morphology/numbers.hfst \
-				phonology/$(GTLANG)-phon.hfst
+				phonology/$(GTLANG)-phon.compose.hfst
 	$(AM_V_RGX2FST)$(PRINTF) '[ @"filters/deriv_filter.hfst" .o. [ [@"morphology/overriding-exceptions.hfst"] | [ ~[[@"morphology/overriding-exceptions.hfst"].u] .o. @"generator-raw-gt-desc-simple-with-av.hfst"]] .o. ~$$"{}"]' | \
 	$(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) | \
-	$(HFST_COMPOSE_INTERSECT) $(VERBOSITY) $(HFST_FLAGS) -2 phonology/$(GTLANG)-phon.hfst | \
+	$(HFST_COMPOSE_INTERSECT) $(VERBOSITY) $(HFST_FLAGS) -2 phonology/$(GTLANG)-phon.compose.hfst | \
 	$(HFST_DISJUNCT) $(VERBOSITY) $(HFST_FLAGS) morphology/numbers.hfst | \
 	$(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
 
@@ -97,7 +97,7 @@ analyser-raw-gt-desc-simple-with-av.xfst: \
 			morphology/lexicon.xfst \
 			analyser-raw-gt-desc.tmp.xfst
 	$(AM_V_at)$(PRINTF) \
-	"read-source analyser-raw-gt-desc.tmp.xfst\ninvert-source\nread-rules phonology/$(GTLANG)-phon.xfst\ncompose-result\ninvert-result\nsave-result $@\nquit\n" \
+	"read-source analyser-raw-gt-desc.tmp.xfst\ninvert-source\nread-rules phonology/$(GTLANG)-phon.compose.xfst\ncompose-result\ninvert-result\nsave-result $@\nquit\n" \
 	> $@.script
 	$(AM_V_LEXC)$(LEXC) $(VERBOSITY) < $@.script
 	$(AM_V_at)rm -f $@.script
@@ -107,9 +107,9 @@ analyser-raw-gt-desc-simple-full.xfst: \
 				filters/deriv_filter.xfst \
 				morphology/overriding-exceptions.xfst \
 				morphology/numbers.xfst \
-				phonology/$(GTLANG)-phon.xfst
+				phonology/$(GTLANG)-phon.compose.xfst
 	$(AM_V_XFST)$(PRINTF) \
-		'load phonology/$(GTLANG)-phon.xfst\nintersect net\nsave stack intersected-phonology.tmp.xfst\nquit\n' | \
+		'load phonology/$(GTLANG)-phon.compose.xfst\nintersect net\nsave stack intersected-phonology.tmp.xfst\nquit\n' | \
 		 $(XFST) $(VERBOSITY) $(XFSTFLAGS)
 	$(AM_V_XFST)$(PRINTF) \
 		'read regex [ @"filters/deriv_filter.xfst" .o. [   [@"morphology/overriding-exceptions.xfst"] .P. [@"analyser-raw-gt-desc-simple-with-av.xfst"]] .o. ~$$"{}" .o. @"intersected-phonology.tmp.xfst"] | @"morphology/numbers.xfst";\nsave stack $@\nquit\n' | \
