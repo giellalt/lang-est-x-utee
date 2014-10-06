@@ -20,3 +20,7 @@ LEXICON ProperNames
  Tallinn+N+Prop:Tallinn 22_A; ! (22_H -> +H) at: tallinn, bt: tallinna, bn: tallinna, btv: tallinnu, bnv: tallinnu
  Tartu+N+Prop:Tartu 01; ! (01_H -> +H) a0: tartu, a0r: 0
  Venemaa+N+Prop:Venema. 26; ! (26_H -> +H) a0: Venemaa, a0r: # 
+
+ Jaak+N+Prop:JaaK1 22_U; ! (22_S -> +S) at: jaak, bt: jaaku, bn: jaagu, btv: jaake, bnv: jaage
+ Jaakko+N+Prop:Jaakko 16; 
+ Mari+N+Prop:Mari 16; ! Mari-Mari-Marit
