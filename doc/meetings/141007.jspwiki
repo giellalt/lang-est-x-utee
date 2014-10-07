@@ -1,0 +1,73 @@
+!!!SamEst meeting 07.10.2014
+Present: Fran, Heiki, Heli, Sjur, Trond
+
+!! FST 
+Jaak checked in a todo list in langs/est/doc/.
+
+!! Tag conversion
+* Proper gt-style tagging of components (+Cmpnd-stuff)
+* Ask HJK for improved verb paradigm -- after a month...?
+* Decide how to (not to?) encode "defaults"
+
+!! Improvements waiting to happen
+* proper gt-style punctuation in FST
+* stress information in FST
+Stress information in the lexicon will simplify many (two-level?) rules a lot and make the network of continuation lexica more logical, but we can do without as well.
+
+!!fin-est MT
+http://wiki.apertium.org/wiki/Finnish_and_Estonian#Tagset_stuff
+Procedure:
+Do this for 1 word from each continuation class for open classes. For the closed classes, all. E.g. You expand "minä" "sinä" etc. 
+This can be done using hfst-intersection and a regex like "t a l o <n> ?*" 
+1) Expand a single word form, e.g. "talo"
+{{{
+talo<n><sg><nom>
+talo<n><sg><ine>
+talo<n><sg><gen> 
+...
+}}}
+2) Replace the lemma with the Estonian:
+{{{
+maja<n><sg><nom>
+maja<n><sg><ine>
+maja<n><sg><gen> 
+...
+}}}
+3) Try and generate. See where there are generation errors. 
+Heiki + Jaak to start on it.
+!! Bidix
+eng-fin wordnet, eng-est X
+composition: 
+Reliable: (eng-)fin-est 1-1-1
+Less reliable:
+* (eng-)fin-est 1-1-m / 
+* (eng-)fin-est 1-m-1
+Word triplets ordered by the frequency of the English word.
+The Reliable List will be proofread at the end of this week.
+The worker writes YES and NO
+# YES from reliable
+# YES from unreliable
+# MAYBE from reliable
+# MAYBE from unreliable
+https://svn.code.sf.net/p/apertium/svn/incubator/apertium-fin-est
+https://svn.code.sf.net/p/apertium/svn/incubator/apertium-fin-est/dev/bidix/reliable.fin-est.n
+   6230 dev/bidix/reliable.fin-est.n
+   1692 dev/bidix/reliable.fin-est.adj
+    668 dev/bidix/reliable.fin-est.adv
+    188 dev/bidix/reliable.fin-est.vblex
+    
+  16371 dev/bidix/unreliable.fin-est.n
+   6354 dev/bidix/unreliable.fin-est.adj
+   1762 dev/bidix/unreliable.fin-est.adv
+   1590 dev/bidix/unreliable.fin-est.vblex
+   
+  34855 total
+!!Cooperation with teachers
+Heli and Kadri met some teachers of Estonian the day after the SamEst meeting in Tartu.
+Teachers will cooperate and send material about stuff to put into Oahpa (raw material for Morfa-C templates, new exercise types in Morfa-C). User interface for Leksa, Morfa-S and Morfa-C was also discussed.
+
+!!Paper work
+Remember to send in your tickets and receipts for travel reimbursements!
+
+!!The next meeting
+In two weeks - Tuesday, 21th Oct at 12.00 Norwegian time.
