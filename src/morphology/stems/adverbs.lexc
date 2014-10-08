@@ -3154,5 +3154,7 @@ LEXICON Adverbs
  üüratult+Adv:üüratult GI; ! (41_D -> +Adv) 
 
  hoolikalt+Adv:hoolikalt GI; ! Added FMT: dt oct  7 21:36:09 CEST 2014
- aeglanelt+Adv:aeglanelt GI; ! Added FMT: dt oct  7 23:10:20 CEST 2014
+! correct form is "aeglaselt" and that was already present. 
+! -lt is added to the stem of genitive of adjectives and participles (EKK09 SM41)
+! aeglanelt+Adv:aeglanelt GI; ! Added FMT: dt oct  7 23:10:20 CEST 2014
  tõenäoliselt+Adv:tõenäoliselt GI; ! Added FMT: dt oct  7 23:10:14 CEST 2014
