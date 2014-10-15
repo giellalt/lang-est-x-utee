@@ -14154,8 +14154,8 @@ LEXICON Nouns
  piimatus+N:piimatus 11; ! (11_S -> +S) a0: piimatus, b0: piimatuse, b0v: piimatusi
  piimikas+N:piimik 02_GAS_S-0; ! (02_S -> +S) a0: piimikas, b0: piimika, b0r: 0, c0: 0
  piimik+N:piimik 02_U; ! (02_S -> +S) a0: piimik, b0: piimiku, b0r: 0, c0: 0
- piim+N:piim 22_A; ! (22_S -> +S) at: piim, bt: piima, bn: piima, btv: piimu, bnv: piimu
- piim+N:piim 22_I; ! (22_S -> +S) at: piim, bt: piimi, bn: piimi, btv: piime, bnv: piime
+ piim+Hom1+N:piim 22_A; ! (22_S -> +S) at: piim, bt: piima, bn: piima, btv: piimu, bnv: piimu
+ piim+Hom2+N:piim 22_I; ! (22_S -> +S) at: piim, bt: piimi, bn: piimi, btv: piime, bnv: piime
  piinatu+N:piinatu 01; ! (01_S -> +S) a0: piinatu, a0r: 0
  piinatus+N:piinatus 11; ! (11_S -> +S) a0: piinatus, b0: piinatuse, b0v: piinatusi
  piinia+N:piinia 01; ! (01_S -> +S) a0: piinia, a0r: 0

@@ -57,7 +57,7 @@ Definitions
 
     Omadussõna' = Sona "+A" ([ "+Comp" | "+Superl" ]);
     Omadussõna = [ Omadussõna' ArvJaKääne | Sona "+A" ( "+Prc" ) ];
-    Nimisõna' = Sona "+N" ("+Prop");
+    Nimisõna' = Sona (["+Hom1" | "+Hom2" ]) "+N" ("+Prop");
     Nimisõna = Nimisõna' ArvJaKääne;
     Arvsõna = Sona "+Num" [ "+Card" | "+Ord" ] (ArvJaKääne);
     Asesõna = Sona [ "+Pron" ] ArvJaKääne;
