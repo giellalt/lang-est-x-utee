@@ -1,22 +1,19 @@
-! Things that we might want to or should do
+Things that we might want to or should do
 
 
-!! Tag conversion
+!!! Tag conversion
 
 * Proper gt-style tagging of components (+Cmpnd-stuff)
-
 * Ask HJK for improved verb paradigm
-
 * Decide how to (not to?) encode "defaults"
 
-!! Improvements waiting to happen
+!!! Improvements waiting to happen
 
 * proper gt-style punctuation in FST
-
 * stress information in FST
 
 
-!! Known bugs:
+!!! Known bugs:
 
 süüa/sööa*, juua/jooa*, lapse/lapsu*
 
