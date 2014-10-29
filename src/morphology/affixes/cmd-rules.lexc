@@ -1019,7 +1019,7 @@ LEXICON KÄÄNE_2  ! käändelõpud illatiivist translatiivini (mitmus)
 ! Analoogiarühmad verbidele
 LEXICON An_ma
  ma+V+Pers+Sup+Ill:ma GI;
- ma+V+Pers+Prs+Quot:vat afneg_GI;
+ ma+V+Pers+Prs+Quot:vat GI;
 
 LEXICON An_mata
  ma+V+Pers+Sup+Abe:mata GI;
@@ -1096,29 +1096,28 @@ LEXICON An_a
 !!!!!
 
 LEXICON An_ge
- ma+V+Pers+Prs+Imprt+Sg3:+gu afneg_GI ;
- ma+V+Pers+Prs+Imprt+Pl1:+gem afneg_GI ;
- ma+V+Pers+Prs+Imprt+Pl2:+ge afneg_GI ;
- ma+V+Pers+Prs+Imprt+Pl3:+gu afneg_GI ;
+ ma+V+Pers+Prs+Imprt:+gu GI ;
+ ma+V+Pers+Prs+Imprt+Pl1:+gem GI ;
+ ma+V+Pers+Prs+Imprt+Pl2:+ge GI ;
  An_nud ;
 
 LEXICON An_ke
- ma+V+Pers+Prs+Imprt+Sg3:+ku afneg_GI ;
- ma+V+Pers+Prs+Imprt+Pl1:+kem afneg_GI ;
- ma+V+Pers+Prs+Imprt+Pl2:+ke afneg_GI ;
- ma+V+Pers+Prs+Imprt+Pl3:+ku afneg_GI ;
+ ma+V+Pers+Prs+Imprt:+ku GI ;
+ ma+V+Pers+Prs+Imprt+Pl1:+kem GI ;
+ ma+V+Pers+Prs+Imprt+Pl2:+ke GI ;
  An_nud ;
 
 LEXICON An_nud
   ma+V+Pers+Past+Prc:+nud GI ;
-  ma+V+Pers+Past+Ind+Neg:+nud GI ; ! +indic+impf+ps+neg
-  ma+V+Pers+Past+Cond:+nuks afneg_GI ;
+  ma+V+Pers+Past+Ind+Neg:+nud GI ; 
+  ma+V+Pers+Past+Imprt:+nud GI ; 
+  ma+V+Pers+Past+Cond:+nuks GI ;
   ma+V+Pers+Past+Cond+Sg1+Aff:+nuksin GI ;
   ma+V+Pers+Past+Cond+Sg2+Aff:+nuksid GI ;
   ma+V+Pers+Past+Cond+Pl1+Aff:+nuksime GI ;
   ma+V+Pers+Past+Cond+Pl2+Aff:+nuksite GI ;
   ma+V+Pers+Past+Cond+Pl3+Aff:+nuksid GI ;
-  ma+V+Pers+Past+Quot:+nuvat afneg_GI ;
+  ma+V+Pers+Past+Quot:+nuvat GI ;
 
 LEXICON An_nud_der
   nud+A:+nud GI ; ! ???
@@ -1137,12 +1136,10 @@ LEXICON An_b
  ma+V+Pers+Prs+Ind+Sg2+Aff:+d GI;
  ma+V+Pers+Prs+Ind+Sg3+Aff:+b GI;
  ma+V+Pers+Prs+Ind+Neg:+0 GI;
- ma+V+Pers+Prs+Imprt+Sg2:+0 afneg_GI;
+ ma+V+Pers+Prs+Imprt+Sg2:+0 GI;
 
- ma+V+Pers+Prs+Cond:+ks afneg_GI ;
  ma+V+Pers+Prs+Cond+Sg1+Aff:+ksin GI ;
  ma+V+Pers+Prs+Cond+Sg2+Aff:+ksid GI ;
- ma+V+Pers+Prs+Cond:+ks GI ;
  ma+V+Pers+Prs+Cond:+ks GI ;
  ma+V+Pers+Prs+Cond+Pl1+Aff:+ksime GI ;
  ma+V+Pers+Prs+Cond+Pl2+Aff:+ksite GI ;
@@ -1163,11 +1160,11 @@ LEXICON An_tud
  ma+V+Impers+Past+Prc:+tud GI ;
  ma+V+Impers+Past+Ind+Neg:+tud GI ;
  ma+V+Impers+Past+Ind+Aff:+ti GI ;
- ma+V+Impers+Prs+Cond:+taks afneg_GI ;
- ma+V+Impers+Past+Cond:+tuks afneg_GI ;
- ma+V+Impers+Prs+Quot:+tavat afneg_GI ;
- ma+V+Impers+Past+Quot:+tuvat afneg_GI ;
- ma+V+Impers+Prs+Imprt:+tagu afneg_GI ;
+ ma+V+Impers+Prs+Cond:+taks GI ;
+ ma+V+Impers+Past+Cond:+tuks GI ;
+ ma+V+Impers+Prs+Quot:+tavat GI ;
+ ! ma+V+Impers+Past+Quot:+tuvat GI ;
+ ma+V+Impers+Prs+Imprt:+tagu GI ;
  ma+V+Impers+Sup:+tama GI ;
  ma+V+Impers+Prs+Ind+Neg:+ta GI ;
  ma+V+Impers+Prs+Prc:+tav GI ;
@@ -1183,11 +1180,11 @@ LEXICON An_dud
  ma+V+Impers+Past+Prc:+dud GI ;
  ma+V+Impers+Past+Ind+Neg:+dud GI ;
  ma+V+Impers+Past+Ind+Aff:+di GI ;
- ma+V+Impers+Prs+Cond:+daks afneg_GI ;
- ma+V+Impers+Past+Cond:+duks afneg_GI ;
- ma+V+Impers+Prs+Quot:+davat afneg_GI ;
- ma+V+Impers+Past+Quot:+duvat afneg_GI ;
- ma+V+Impers+Prs+Imprt:+dagu afneg_GI ;
+ ma+V+Impers+Prs+Cond:+daks GI ;
+ ma+V+Impers+Past+Cond:+duks GI ;
+ ma+V+Impers+Prs+Quot:+davat GI ;
+ ma+V+Impers+Past+Quot:+duvat GI ;
+ ma+V+Impers+Prs+Imprt:+dagu GI ;
  ma+V+Impers+Sup:+dama GI ;
  ma+V+Impers+Prs+Ind+Neg:+da GI ;
  ma+V+Impers+Prs+Prc:+dav GI ;

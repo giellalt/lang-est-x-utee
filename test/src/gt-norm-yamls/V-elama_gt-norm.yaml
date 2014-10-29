@@ -13,10 +13,10 @@ Tests:
 # Proofread the gold standard (below)
 # Then: run analyser, then correct. 
 
-  Verb - elama: # Verb 'to be' - full paradigm
+  Verb - elama: # Verb 'to live' - full paradigm
 
 
-# Isikulised olevikuvormid
+# Isikulised olevikuvormid # Personal present forms
 
      elama+V+Pers+Prs+Ind+Sg1+Aff: elan
      elama+V+Pers+Prs+Ind+Sg2+Aff: elad
@@ -28,27 +28,19 @@ Tests:
 
      elama+V+Pers+Prs+Cond+Sg1+Aff: elaksin
      elama+V+Pers+Prs+Cond+Sg2+Aff: elaksid
+     elama+V+Pers+Prs+Cond: elaks
      elama+V+Pers+Prs+Cond+Pl1+Aff: elaksime
      elama+V+Pers+Prs+Cond+Pl2+Aff: elaksite
      elama+V+Pers+Prs+Cond+Pl3+Aff: elaksid
-     elama+V+Pers+Prs+Cond+Aff: elaks
-     elama+V+Pers+Prs+Cond+Neg: elaks
 
-     elama+V+Pers+Prs+Imprt+Sg2+Aff: ela
-     elama+V+Pers+Prs+Imprt+Sg2+Neg: ela
-     elama+V+Pers+Prs+Imprt+Sg3+Aff: elagu
-     elama+V+Pers+Prs+Imprt+Sg3+Neg: elagu
-     elama+V+Pers+Prs+Imprt+Pl1+Aff: elagem
-     elama+V+Pers+Prs+Imprt+Pl1+Neg: elagem
-     elama+V+Pers+Prs+Imprt+Pl2+Aff: elage
-     elama+V+Pers+Prs+Imprt+Pl2+Neg: elage
-     elama+V+Pers+Prs+Imprt+Pl3+Aff: elagu
-     elama+V+Pers+Prs+Imprt+Pl3+Neg: elagu
+     elama+V+Pers+Prs+Imprt+Sg2: ela
+     elama+V+Pers+Prs+Imprt: elagu
+     elama+V+Pers+Prs+Imprt+Pl1: elagem
+     elama+V+Pers+Prs+Imprt+Pl2: elage
 
-     elama+V+Pers+Prs+Quot+Aff: elavat
-     elama+V+Pers+Prs+Quot+Neg: elavat
+     elama+V+Pers+Prs+Quot: elavat
 
-# Isikulised minevikuvormid
+# Isikulised minevikuvormid # Personal past forms
 
      elama+V+Pers+Past+Ind+Sg1+Aff: elasin
      elama+V+Pers+Past+Ind+Sg2+Aff: elasid
@@ -60,58 +52,58 @@ Tests:
 
      elama+V+Pers+Past+Cond+Sg1+Aff: elanuksin
      elama+V+Pers+Past+Cond+Sg2+Aff: elanuksid
+     elama+V+Pers+Past+Cond: elanuks
      elama+V+Pers+Past+Cond+Pl1+Aff: elanuksime
      elama+V+Pers+Past+Cond+Pl2+Aff: elanuksite
      elama+V+Pers+Past+Cond+Pl3+Aff: elanuksid
-     elama+V+Pers+Past+Cond+Aff: elanuks
-     elama+V+Pers+Past+Cond+Neg: elanuks
 
-     elama+V+Pers+Past+Quot+Aff: elanuvat
-     elama+V+Pers+Past+Quot+Neg: elanuvat
+     elama+V+Pers+Past+Imprt: elanud
 
-# Isikulised käändelised vormid
+     elama+V+Pers+Past+Quot: elanuvat
 
-     elama+V+Pers+Past+Prc: elanud
+# Isikulised käändelised vormid # Personal infinite forms
+
      elama+V+Pers+Prs+Prc: elav
-     elama+V+Pers+Sup+Abe: elamata
-     elama+V+Pers+Sup+Ela: elamast
+     elama+V+Pers+Past+Prc: elanud
+
      elama+V+Pers+Sup+Ill: elama
      elama+V+Pers+Sup+Ine: elamas
+     elama+V+Pers+Sup+Ela: elamast
      elama+V+Pers+Sup+Tra: elamaks
+     elama+V+Pers+Sup+Abe: elamata
 
-# Umbisikuline olevik
+# Umbisikuline olevik # Impersonal present forms
 
      elama+V+Impers+Prs+Ind+Aff: elatakse
      elama+V+Impers+Prs+Ind+Neg: elata
 
-     elama+V+Impers+Prs+Cond+Aff: elataks
-     elama+V+Impers+Prs+Cond+Neg: elataks
+     elama+V+Impers+Prs+Cond: elataks
 
-     elama+V+Impers+Prs+Imprt+Aff: elatagu
-     elama+V+Impers+Prs+Imprt+Neg: elatagu
+     elama+V+Impers+Prs+Imprt: elatagu
 
-     elama+V+Impers+Prs+Quot+Aff: elatavat
-     elama+V+Impers+Prs+Quot+Neg: elatavat
+     elama+V+Impers+Prs+Quot: elatavat
 
-# Umbisikuline minevik 
+# Umbisikuline minevik # Impersonal past forms
+
      elama+V+Impers+Past+Ind+Aff: elati
      elama+V+Impers+Past+Ind+Neg: elatud
 
-     elama+V+Impers+Past+Cond+Aff: elatuks
-     elama+V+Impers+Past+Cond+Neg: elatuks
+     elama+V+Impers+Past+Cond: elatuks
 
-     # ??? 
-     elama+V+Impers+Past+Quot+Aff: elatuvat
-     elama+V+Impers+Past+Quot+Neg: elatuvat
+     # elama+V+Impers+Past+Imprt: pole vormi # no form  
+     # elama+V+Impers+Past+Quot: elatuvat # pole võimalik moodustada # not possible
      
-# Umbisikulised käändelised vormid?
+# Umbisikulised käändelised vormid # Impersonal infinite forms
+
+     elama+V+Impers+Prs+Prc: elatav
+     elama+V+Impers+Past+Prc: elatud
 
      elama+V+Impers+Sup: elatama     
 
-     elama+V+Ger: elades
-     elama+V+Inf: elada
+# Tegumoe kategooriata käändelised vormid # Infinite forms without voice category
 
-     elama+V+Impers+Past+Prc: elatud
-     elama+V+Impers+Prs+Prc: elatav
+     elama+V+Inf: elada
+     elama+V+Ger: elades
+
 
 # The verb forms list should be complete now

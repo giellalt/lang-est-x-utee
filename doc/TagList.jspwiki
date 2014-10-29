@@ -86,7 +86,7 @@ Heiki's suggestions for tag conversions:
 +Ord        +Num+Ord
 +X          +Adv
 +adit       +Ill
-+G          +N+Gen
++G          +N+Sg+Gen
 }}}
 
 Bearing in mind that ordinals are adjectives, we would thus have:
@@ -246,6 +246,9 @@ Below, brackets are used to list the set of non-specified alternative values.
 
  personal past condit (1s/2s/3s/1p/2p/3p) negative                  polnuks
 
+ personal past imper (1s/2s/3s/1p/2p/3p) (afirmative/negative)      elanud 
+ personal past imper (1s/2s/3s/1p/2p/3p) negative                   ärnud 
+
  personal past quotat (afirmative/negative)                         elanuvat
  personal past quotat negative                                      polnuvat
 
@@ -262,8 +265,13 @@ Below, brackets are used to list the set of non-specified alternative values.
  impersonal present indic negative                                  elata 
  
  impersonal present condit (afirmative/negative)                    elataks
+ impersonal present condit negative                                 poldaks
+
  impersonal present imper (afirmative/negative)                     elatagu
+ impersonal present imper negative                                  ärdagu
+
  impersonal present quotat (afirmative/negative)                    elatavat
+ impersonal present quotat negative                                 poldavat
 
  impersonal present partic                                          elatav
 
@@ -282,7 +290,7 @@ Below, brackets are used to list the set of non-specified alternative values.
 
 Exceptional cases:
 {{{
- present personal (afirmative/negative), 3 words:  kuulukse, tunnukse, näikse
+ personal present (afirmative/negative), 3 words:  kuulukse, tunnukse, näikse
  negative                                                           ei ?
 }}}
 
