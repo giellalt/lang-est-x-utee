@@ -22,7 +22,7 @@ Definitions
     PööreJaArv = [ %+Sg1 | %+Sg2 | %+Sg3 | %+Pl1 | %+Pl2 | %+Pl3 ];
     AffNeg = [ %+Aff | %+Neg ];
 
-    VerbiParadigma = m a %+V [
+    VerbiParadigma = %+V [
 		 %+Inf |
 		 %+Ger |
 		 %+Pers 
