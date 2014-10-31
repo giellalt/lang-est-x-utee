@@ -4121,16 +4121,27 @@ LEXICON Verbs
  olB1a 29; ! (29_V -> ) at: olba, an: olva
  olel 31; ! (31_V -> ) a0: olele, b0: olel
  olele 27; ! (27_V -> ) a0: olele
- olema+V+Pers+Past+Cond+Neg:polnuks GI; ! 36_V,ole,pol[nuks],-01202--,-,-,+
- olema+V+Impers+Prs+Cond+Neg:poldaks GI;
- olema+V+Pers+Prs+Cond+Neg:poleks GI; ! 36_V,ole,pole[ks],-00202--,-,-,+
- olema+V+Impers+Past+Ind+Neg:poldud GI;
- olema+V+Pers+Past+Ind+Neg:polnud GI; ! 36_V,ole,pol[nud],-02002--,-,-,+
- olema+V+Impers+Prs+Ind+Neg:polda GI;
  olema+V+Pers+Prs+Ind+Neg:pole GI; ! 36_V,ole,pole[],-00002--,-,-,+
- olema+V+Impers+Prs+Quot+Neg:poldavat GI; 
+ olema+V+Pers+Prs+Cond+Sg1+Neg: poleksin GI;
+ olema+V+Pers+Prs+Cond+Sg2+Neg: poleksid GI;
+ olema+V+Pers+Prs+Cond+Neg:poleks GI; ! 36_V,ole,pole[ks],-00202--,-,-,+
+ olema+V+Pers+Prs+Cond+Pl1+Neg: poleksime GI;
+ olema+V+Pers+Prs+Cond+Pl2+Neg: poleksite GI;
+ olema+V+Pers+Prs+Cond+Pl3+Neg: poleksid GI;
  olema+V+Pers+Prs+Quot+Neg:polevat GI; ! 36_V,ole,pole[vat],-00102--,-,-,+
+ olema+V+Pers+Past+Ind+Neg:polnud GI; ! 36_V,ole,pol[nud],-02002--,-,-,+
+ olema+V+Pers+Past+Cond+Sg1+Neg: polnuksin GI;
+ olema+V+Pers+Past+Cond+Sg2+Neg: polnuksid GI;
+ olema+V+Pers+Past+Cond+Neg:polnuks GI; ! 36_V,ole,pol[nuks],-01202--,-,-,+
+ olema+V+Pers+Past+Cond+Pl1+Neg: polnuksime GI;
+ olema+V+Pers+Past+Cond+Pl2+Neg: polnuksite GI;
+ olema+V+Pers+Past+Cond+Pl3+Neg: polnuksid GI;
  olema+V+Pers+Past+Quot+Neg:polnuvat GI;
+ olema+V+Impers+Prs+Ind+Neg:polda GI;
+ olema+V+Impers+Prs+Cond+Neg:poldaks GI;
+ olema+V+Impers+Prs+Quot+Neg:poldavat GI; 
+ olema+V+Impers+Past+Cond+Neg:polduks GI;
+ olema+V+Impers+Past+Ind+Neg:poldud GI;
  olene 27; ! (27_V -> ) a0: olene
  oleskel 36; ! (36_V -> ) an: oleskele, bn: oleskel, bt: oleskel, cn: oleskell, ct: oleskell
  oleskle 27; ! (27_V -> ) a0: oleskle
@@ -7533,6 +7544,13 @@ LEXICON Verbs
  ängistu 27; ! (27_V -> ) a0: ängistu
  äparda 27; ! (27_V -> ) a0: äparda
  äpardu 27; ! (27_V -> ) a0: äpardu
+ ära+V+Pers+Prs+Imprt+Sg2+Neg:ära #;
+ ära+V+Pers+Prs+Imprt+Neg:ärgu #;
+ ära+V+Pers+Prs+Imprt+Pl1+Neg:ärgem #;
+ ära+V+Pers+Prs+Imprt+Pl1+Neg:ärme #;
+ ära+V+Pers+Prs+Imprt+Pl2+Neg:ärge #;
+ ära+V+Pers+Past+Imprt+Neg:ärnud #;
+ ära+V+Impers+Prs+Imprt+Neg:ärdagu #;
  äranda 27; ! (27_V -> ) a0: äranda
  ärasta 27; ! (27_V -> ) a0: ärasta
  ärata 27; ! (27_V -> ) a0: ärata
