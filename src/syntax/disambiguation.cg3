@@ -1441,8 +1441,10 @@ SELECT V (0 Indic + Af)(NOT 0 partic OR Cap OR Pl3Verb + Pres OR Tr)(-1 SNom)(1 
 SELECT VPs1 + Af (NOT 0 PersPron)(-1 Jutum1)(1 Koma OR Jutum2)(*2 Pps1); 
 SELECT Sg1Verb + Af (*0 PersPron + Pps1 + SgNom)(NOT *1 FinV  BARRIER CLB)(NOT *-1 FinV  BARRIER CLB); 
 SELECT Pl1Verb + Af (*0 PersPron + Pps1 + PlNom)(NOT *1 FinV  BARRIER CLB)(NOT *-1 FinV  BARRIER CLB); 
-SELECT Sg1Verb + Af (*>1 PersPron + Pps1 + Sg LINK *-1 Kvm)(NOT *1 FinV  BARRIER CLB OR Kvm)(NOT *-1 FinV  BARRIER CLB); 
-SELECT Sg1Verb + Af (*<-1 PersPron + Pps1 + Sg LINK *1 Kvm)(NOT *1 FinV  BARRIER CLB OR Kvm)(NOT *-1 FinV  BARRIER CLB); 
+#SELECT Sg1Verb + Af (*>1 PersPron + Pps1 + Sg LINK *-1 Kvm)(NOT *1 FinV  BARRIER CLB OR Kvm)(NOT *-1 FinV  BARRIER CLB); # Trond: Error: Invalid position on line 1444 - caused endless loop!
+
+#SELECT Sg1Verb + Af (*<-1 PersPron + Pps1 + Sg LINK *1 Kvm)(NOT *1 FinV  BARRIER CLB OR Kvm)(NOT *-1 FinV  BARRIER CLB); # Trond: Error: Invalid position on line 1445 - caused endless loop!
+
 SELECT Imper (*-1 Jutum1)(-2 >>>)(1 P)(2 ("taht") OR ("soovi")); 
 SELECT SNom OR P + Nom OR I (NOT 0 NudTud OR Imper OR D)(-1 Jutum1)(NOT 1 Jutum2 OR Nom)(NOT *-2 Jutum1)(NOT *1 Ei OR LLZ); 
 SELECT SNom OR P + Nom OR I (NOT 0 NudTud OR Imper OR D OR Ad)(-1 Jutum1)(1 FinV)(NOT *-2 Jutum1)(NOT *1 Ei); 
@@ -1606,7 +1608,8 @@ SELECT J (-1 Kriips) ;
 "<Aga>" SELECT J ;
 "<aga>" SELECT J (-1 KuiEtKas) (*1 Koma) ;
 
-SELECT ("ega") + D (1 D)(2 D) ;
+#SELECT ("ega") + D (1 D)(2 D) ; # Trond: Error: Invalid position on line 1611 - caused endless loop!
+
 SELECT ("ega") + J  (*-1 Ei) ;
 SELECT ("ega") + J  (-1 Jutum1>>>)(*-1< Ei) ;
 SELECT ("ega") + J  (1 IndicPresPsNeg)(NOT *1 ("küll")); 
@@ -3456,9 +3459,10 @@ SELECT:eelistaverbi particV (NOT 0 VäsiVerb OR Cap)(1 Kvm OR J OR SPAND)(NOT 1 
 			(*-1C SP + Nom OR SP + Part LINK NOT 1 V - OlemSaa);
 SELECT:eelistaverbi Aux OR ("saa") + Main (0 FinV - partic)(*1C particV BARRIER CLBC OR OlemSaa) 
 		(*0C SP + Nom OR SP + Part BARRIER CLB);
-SELECT:eelistaverbi Aux OR ("saa") + Main (0 FinV - partic)(*-1C particV BARRIER CLBC OR FinV OR OlemSaa) 
-		(*0C SP + Nom OR SP + Part BARRIER CLB) (*1 CLB OR LLZ LINK NOT -1 SPAN + Nom);
-SELECT:eelistaverbi2 particV (-1 >>>)(*1 Koma BARRIER Kvm LINK 1 FinV); 	
+#SELECT:eelistaverbi Aux OR ("saa") + Main (0 FinV - partic)(*-1C particV BARRIER CLBC OR FinV OR OlemSaa) 
+#		(*0C SP + Nom OR SP + Part BARRIER CLB) (*1 CLB OR LLZ LINK NOT -1 SPAN + Nom); # Trond: Error: Invalid position on line 3463 - caused endless loop!
+
+# SELECT:eelistaverbi2 particV (-1 >>>)(*1 Koma BARRIER Kvm LINK 1 FinV); # Trond: Error: Invalid position on line 3465 - caused endless loop!
 SELECT:eelistaverbi2 VPs3 (-2 >>>)(-1 Cap)(NOT -1 V)(NOT 0 Imper)(1 Adit)(0 AditVerb)
 	(NEGATE *1 VPs2 LINK -1 Konj)(NOT *<-1C VPs2); 
 SELECT:eelistaverbi2 VPs3 (-2 >>>)(-1 Cap)(NOT -1 V)(NOT 0 Imper)(NOT *1C FinV BARRIER CLBC)
@@ -3626,8 +3630,8 @@ REMOVE:noaux particV (1 Konj)(NOT 0 OleSaa)
 	(NOT *1 OleSaa BARRIER CLB)(NOT *-1 OleSaa BARRIER)(NEGATE *1 particV LINK 1 Kvm); 
 				
 
-SELECT:K27A ANom (NOT 0 NudTud OR VPs3)(1 PropCap) (1C Nom); 
-SELECT:K27A A (0 NudTud)(NOT 0 OlemSaa OR Cond)(NOT -1 OleSaa OR Part)(1 PropCap) (1C Nom); 
+#SELECT:K27A ANom (NOT 0 NudTud OR VPs3)(1 PropCap) (1C Nom); # Trond: Warning: Position on line 3633 took many loops.
+#SELECT:K27A A (0 NudTud)(NOT 0 OlemSaa OR Cond)(NOT -1 OleSaa OR Part)(1 PropCap) (1C Nom); # Trond: Warning: Position on line 3633 took many loops.
 SELECT:K28A A (1 PropCap)(2 PropCap) (2C Nom); 
 
 SELECT VPs2 (NOT 0 SP OR J OR D)(NOT *-1 FinV BARRIER CLBC)(*<-1C Pps2);
@@ -4352,8 +4356,8 @@ SELECT S + Es (1 KonjKvm - CLB)(2 SPAN OR Konj - CLB)(3 SGen OR S + Es);
 SELECT S + Abes (1 KonjKvm - CLB)(2 SPAN OR Konj - CLB)(3 SGen OR S + Abes);
 SELECT S + Kom (1 KonjKvm - CLB)(2 SPAN OR Konj - CLB)(3 SGen OR S + Kom);
 
-REMOVE:notnom Nom (0 NimiAse)(NOT 0 NotS OR Pärisnimi)(NOT -1 ANom)(1 Konj - CLBC)
-	(2 SPAND)(NOT 2 Nom)(NOT 3 Nom)(NOT 4 Nom)(*0 Nom BARRIER CLB);  
+#REMOVE:notnom Nom (0 NimiAse)(NOT 0 NotS OR Pärisnimi)(NOT -1 ANom)(1 Konj - CLBC)
+#	(2 SPAND)(NOT 2 Nom)(NOT 3 Nom)(NOT 4 Nom)(*0 Nom BARRIER CLB);  # Trond: Error: Invalid position on line 4360 - caused endless loop!
 
 
 
