@@ -1,0 +1,207 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfstol
+    Morph: ../../../src/analyser-gt-norm.hfstol
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+  Pronouns - all kinds of: # Pronouns - full paradigms
+     # according to Filosoft's analyses
+
+     #
+     üksteise+Pron+Sg+Gen: üksteise
+     üksteise+Pron+Sg+Par: üksteist
+     üksteise+Pron+Sg+Ill: [üksteisesse, üksteise]
+     üksteise+Pron+Sg+Ine: üksteises
+     üksteise+Pron+Sg+Ela: üksteisest
+     üksteise+Pron+Sg+All: üksteisele
+     üksteise+Pron+Sg+Ade: üksteisel
+     üksteise+Pron+Sg+Abl: üksteiselt
+     üksteise+Pron+Sg+Tra: üksteiseks
+     üksteise+Pron+Sg+Trm: üksteiseni
+     üksteise+Pron+Sg+Ess: üksteisena
+     üksteise+Pron+Sg+Abe: üksteiseta
+     üksteise+Pron+Sg+Com: üksteisega
+     üksteise+Pron+Pl+Nom: üksteised
+     üksteise+Pron+Pl+Gen: üksteiste
+     üksteise+Pron+Pl+Par: üksteisi
+     üksteise+Pron+Pl+Ill: üksteistesse
+     üksteise+Pron+Pl+Ine: üksteistes
+     üksteise+Pron+Pl+Ela: üksteistest
+     üksteise+Pron+Pl+All: üksteistele
+     üksteise+Pron+Pl+Ade: üksteistel
+     üksteise+Pron+Pl+Abl: üksteistelt
+     üksteise+Pron+Pl+Tra: üksteisteks
+     üksteise+Pron+Pl+Trm: üksteisteni
+     üksteise+Pron+Pl+Ess: üksteistena
+     üksteise+Pron+Pl+Abe: üksteisteta
+     üksteise+Pron+Pl+Com: üksteistega
+     #
+     teineteise+Pron+Sg+Gen: teineteise
+     teineteise+Pron+Sg+Par: teineteist
+     teineteise+Pron+Sg+Ill: [teineteisesse, teineteise]
+     teineteise+Pron+Sg+Ine: teineteises
+     teineteise+Pron+Sg+Ela: teineteisest
+     teineteise+Pron+Sg+All: teineteisele
+     teineteise+Pron+Sg+Ade: teineteisel
+     teineteise+Pron+Sg+Abl: teineteiselt
+     teineteise+Pron+Sg+Tra: teineteiseks
+     teineteise+Pron+Sg+Trm: teineteiseni
+     teineteise+Pron+Sg+Ess: teineteisena
+     teineteise+Pron+Sg+Abe: teineteiseta
+     teineteise+Pron+Sg+Com: teineteisega
+     teineteise+Pron+Pl+Nom: teineteised
+     teineteise+Pron+Pl+Gen: teineteiste
+     teineteise+Pron+Pl+Par: teineteisi
+     teineteise+Pron+Pl+Ill: teineteistesse
+     teineteise+Pron+Pl+Ine: teineteistes
+     teineteise+Pron+Pl+Ela: teineteistest
+     teineteise+Pron+Pl+All: teineteistele
+     teineteise+Pron+Pl+Ade: teineteistel
+     teineteise+Pron+Pl+Abl: teineteistelt
+     teineteise+Pron+Pl+Tra: teineteisteks
+     teineteise+Pron+Pl+Trm: teineteisteni
+     teineteise+Pron+Pl+Ess: teineteistena
+     teineteise+Pron+Pl+Abe: teineteisteta
+     teineteise+Pron+Pl+Com: teineteistega
+     #
+     eikeegi+Pron+Sg+Nom: eikeegi
+     eikeegi+Pron+Sg+Gen: eikellegi
+     eikeegi+Pron+Sg+Par: eikedagi
+     eikeegi+Pron+Sg+Ill: eikellessegi
+     eikeegi+Pron+Sg+Ine: eikelleski
+     eikeegi+Pron+Sg+Ela: eikellestki
+     eikeegi+Pron+Sg+All: eikellelegi
+     eikeegi+Pron+Sg+Ade: eikellelgi
+     eikeegi+Pron+Sg+Abl: eikelleltki
+     eikeegi+Pron+Sg+Tra: eikellekski
+     eikeegi+Pron+Sg+Trm: eikellenigi
+     eikeegi+Pron+Sg+Ess: eikellenagi
+     eikeegi+Pron+Sg+Abe: eikelletagi
+     eikeegi+Pron+Sg+Com: eikellegagi
+     #
+     eimiski+Pron+Sg+Nom: eimiski
+     eimiski+Pron+Sg+Gen: eimillegi
+     eimiski+Pron+Sg+Par: eimidagi
+     eimiski+Pron+Sg+Ill: eimillessegi
+     eimiski+Pron+Sg+Ine: eimilleski
+     eimiski+Pron+Sg+Ela: eimillestki
+     eimiski+Pron+Sg+All: eimillelegi
+     eimiski+Pron+Sg+Ade: eimillelgi
+     eimiski+Pron+Sg+Abl: eimilleltki
+     eimiski+Pron+Sg+Tra: eimillekski
+     eimiski+Pron+Sg+Trm: eimillenigi
+     eimiski+Pron+Sg+Ess: eimillenagi
+     eimiski+Pron+Sg+Abe: eimilletagi
+     eimiski+Pron+Sg+Com: eimillegagi
+     #
+     seesama+Pron+Sg+Nom: seesama
+     seesama+Pron+Sg+Gen: sellesama
+     seesama+Pron+Sg+Par: sedasama
+     seesama+Pron+Sg+Ill: [sellessesamasse, sessesamasse]
+     seesama+Pron+Sg+Ine: [sellessamas, sessamas]
+     seesama+Pron+Sg+Ela: [sellestsamast, sestsamast]
+     seesama+Pron+Sg+All: sellelesamale
+     seesama+Pron+Sg+Ade: [sellelsamal, selsamal]
+     seesama+Pron+Sg+Abl: [selleltsamalt, seltsamalt]
+     seesama+Pron+Sg+Tra: [sekssamaks, sellekssamaks]
+     seesama+Pron+Sg+Trm: sellesamani
+     seesama+Pron+Sg+Ess: sellesamana
+     seesama+Pron+Sg+Abe: sellesamata
+     seesama+Pron+Sg+Com: sellesamaga
+     seesama+Pron+Pl+Nom: needsamad
+     seesama+Pron+Pl+Gen: nendesamade
+     seesama+Pron+Pl+Par: neidsamu
+     seesama+Pron+Pl+Ill: [nendessesamadesse, neissesamusse]
+     seesama+Pron+Pl+Ine: [nendessamades, neissamus]
+     seesama+Pron+Pl+Ela: [nendestsamadest, neistsamust]
+     seesama+Pron+Pl+All: nendelesamadele
+     seesama+Pron+Pl+Ade: [nendelsamadel, neilsamul]
+     seesama+Pron+Pl+Abl: [nendeltsamadelt, neiltsamult]
+     seesama+Pron+Pl+Tra: [nendekssamadeks, neikssamuks]
+     seesama+Pron+Pl+Trm: nendesamadeni
+     seesama+Pron+Pl+Ess: nendesamadena
+     seesama+Pron+Pl+Abe: nendesamadeta
+     seesama+Pron+Pl+Com: nendesamadega
+     #
+     toosama+Pron+Sg+Nom: toosama
+     toosama+Pron+Sg+Gen: tollesama
+     toosama+Pron+Sg+Par: todasama
+     toosama+Pron+Sg+Ill: tollessesamasse
+     toosama+Pron+Sg+Ine: tollessamas
+     toosama+Pron+Sg+Ela: tollestsamast
+     toosama+Pron+Sg+All: tollelesamale
+     toosama+Pron+Sg+Ade: [tollelsamal, tolsamal]
+     toosama+Pron+Sg+Abl: tolleltsamalt
+     toosama+Pron+Sg+Tra: tollekssamaks
+     toosama+Pron+Sg+Trm: tollesamani
+     toosama+Pron+Sg+Ess: tollesamana
+     toosama+Pron+Sg+Abe: tollesamata
+     toosama+Pron+Sg+Com: tollesamaga
+     toosama+Pron+Pl+Nom: noodsamad
+     toosama+Pron+Pl+Gen: nondesamade
+     toosama+Pron+Pl+Par: noidsamu
+     toosama+Pron+Pl+Ill: [nondessesamadesse, noissesamusse]
+     toosama+Pron+Pl+Ine: [nondessamades, noissamus]
+     toosama+Pron+Pl+Ela: [nondestsamadest, noistsamust]
+     toosama+Pron+Pl+All: nondelesamadele
+     toosama+Pron+Pl+Ade: [nondelsamadel, noilsamul]
+     toosama+Pron+Pl+Abl: [nondeltsamadelt, noiltsamult]
+     toosama+Pron+Pl+Tra: [nondekssamadeks, noikssamuks]
+     toosama+Pron+Pl+Trm: nondesamadeni
+     toosama+Pron+Pl+Ess: nondesamadena
+     toosama+Pron+Pl+Abe: nondesamadeta
+     toosama+Pron+Pl+Com: nondesamadega
+     #
+     igaüks+Pron+Sg+Nom: igaüks
+     igaüks+Pron+Sg+Gen: igaühe
+     igaüks+Pron+Sg+Par: [igaühte, igaüht]
+     igaüks+Pron+Sg+Ill: [igaühte, igaühesse]
+     igaüks+Pron+Sg+Ine: igaühes
+     igaüks+Pron+Sg+Ela: igaühest
+     igaüks+Pron+Sg+All: igaühele
+     igaüks+Pron+Sg+Ade: igaühel
+     igaüks+Pron+Sg+Abl: igaühelt
+     igaüks+Pron+Sg+Tra: igaüheks
+     igaüks+Pron+Sg+Trm: igaüheni
+     igaüks+Pron+Sg+Ess: igaühena
+     igaüks+Pron+Sg+Abe: igaüheta
+     igaüks+Pron+Sg+Com: igaühega
+     #
+     niimitu+Pron+Sg+Nom: niimitu
+     niimitu+Pron+Sg+Gen: niimitme
+     niimitu+Pron+Sg+Par: niimitut
+     niimitu+Pron+Sg+Ill: niimitmesse
+     niimitu+Pron+Sg+Ine: niimitmes
+     niimitu+Pron+Sg+Ela: niimitmest
+     niimitu+Pron+Sg+All: niimitmele
+     niimitu+Pron+Sg+Ade: niimitmel
+     niimitu+Pron+Sg+Abl: niimitmelt
+     niimitu+Pron+Sg+Tra: niimitmeks
+     niimitu+Pron+Sg+Trm: niimitmeni
+     niimitu+Pron+Sg+Ess: niimitmena
+     niimitu+Pron+Sg+Abe: niimitmeta
+     niimitu+Pron+Sg+Com: niimitmega
+     niimitu+Pron+Pl+Nom: niimitmed
+     niimitu+Pron+Pl+Gen: niimitmete
+     niimitu+Pron+Pl+Par: niimitmeid
+     niimitu+Pron+Pl+Ill: [niimitmetesse, niimitmeisse]
+     niimitu+Pron+Pl+Ine: [niimitmetes, niimitmeis]
+     niimitu+Pron+Pl+Ela: [niimitmetest, niimitmeist]
+     niimitu+Pron+Pl+All: [niimitmetele, niimitmeile]
+     niimitu+Pron+Pl+Ade: [niimitmetel, niimitmeil]
+     niimitu+Pron+Pl+Abl: [niimitmetelt, niimitmeilt]
+     niimitu+Pron+Pl+Tra: [niimitmeteks, niimitmeiks]
+     niimitu+Pron+Pl+Trm: niimitmeteni
+     niimitu+Pron+Pl+Ess: niimitmetena
+     niimitu+Pron+Pl+Abe: niimitmeteta
+     niimitu+Pron+Pl+Com: niimitmetega
+     #

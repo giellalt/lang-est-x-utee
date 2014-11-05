@@ -1,0 +1,1005 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfstol
+    Morph: ../../../src/analyser-gt-norm.hfstol
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+  Pronouns - all kinds of: # Pronouns - full paradigms
+     # according to Filosoft's analyses
+
+     #
+     niisugune+Pron+Sg+Nom: niisugune
+     niisugune+Pron+Sg+Gen: niisuguse
+     niisugune+Pron+Sg+Par: niisugust
+     niisugune+Pron+Sg+Ill: niisugusesse
+     niisugune+Pron+Sg+Ine: niisuguses
+     niisugune+Pron+Sg+Ela: niisugusest
+     niisugune+Pron+Sg+All: niisugusele
+     niisugune+Pron+Sg+Ade: niisugusel
+     niisugune+Pron+Sg+Abl: niisuguselt
+     niisugune+Pron+Sg+Tra: niisuguseks
+     niisugune+Pron+Sg+Trm: niisuguseni
+     niisugune+Pron+Sg+Ess: niisugusena
+     niisugune+Pron+Sg+Abe: niisuguseta
+     niisugune+Pron+Sg+Com: niisugusega
+     niisugune+Pron+Pl+Nom: niisugused
+     niisugune+Pron+Pl+Gen: niisuguste
+     niisugune+Pron+Pl+Par: niisuguseid
+     niisugune+Pron+Pl+Ill: [niisugustesse, niisuguseisse]
+     niisugune+Pron+Pl+Ine: [niisugustes, niisuguseis]
+     niisugune+Pron+Pl+Ela: [niisugustest, niisuguseist]
+     niisugune+Pron+Pl+All: [niisugustele, niisuguseile]
+     niisugune+Pron+Pl+Ade: [niisugustel, niisuguseil]
+     niisugune+Pron+Pl+Abl: [niisugustelt, niisuguseilt]
+     niisugune+Pron+Pl+Tra: [niisugusteks, niisuguseiks]
+     niisugune+Pron+Pl+Trm: niisugusteni
+     niisugune+Pron+Pl+Ess: niisugustena
+     niisugune+Pron+Pl+Abe: niisugusteta
+     niisugune+Pron+Pl+Com: niisugustega
+     #
+     teistsugune+Pron+Sg+Nom: teistsugune
+     teistsugune+Pron+Sg+Gen: teistsuguse
+     teistsugune+Pron+Sg+Par: teistsugust
+     teistsugune+Pron+Sg+Ill: teistsugusesse
+     teistsugune+Pron+Sg+Ine: teistsuguses
+     teistsugune+Pron+Sg+Ela: teistsugusest
+     teistsugune+Pron+Sg+All: teistsugusele
+     teistsugune+Pron+Sg+Ade: teistsugusel
+     teistsugune+Pron+Sg+Abl: teistsuguselt
+     teistsugune+Pron+Sg+Tra: teistsuguseks
+     teistsugune+Pron+Sg+Trm: teistsuguseni
+     teistsugune+Pron+Sg+Ess: teistsugusena
+     teistsugune+Pron+Sg+Abe: teistsuguseta
+     teistsugune+Pron+Sg+Com: teistsugusega
+     teistsugune+Pron+Pl+Nom: teistsugused
+     teistsugune+Pron+Pl+Gen: teistsuguste
+     teistsugune+Pron+Pl+Par: teistsuguseid
+     teistsugune+Pron+Pl+Ill: [teistsugustesse, teistsuguseisse]
+     teistsugune+Pron+Pl+Ine: [teistsugustes, teistsuguseis]
+     teistsugune+Pron+Pl+Ela: [teistsugustest, teistsuguseist]
+     teistsugune+Pron+Pl+All: [teistsugustele, teistsuguseile]
+     teistsugune+Pron+Pl+Ade: [teistsugustel, teistsuguseil]
+     teistsugune+Pron+Pl+Abl: [teistsugustelt, teistsuguseilt]
+     teistsugune+Pron+Pl+Tra: [teistsugusteks, teistsuguseiks]
+     teistsugune+Pron+Pl+Trm: teistsugusteni
+     teistsugune+Pron+Pl+Ess: teistsugustena
+     teistsugune+Pron+Pl+Abe: teistsugusteta
+     teistsugune+Pron+Pl+Com: teistsugustega
+     #
+     mingisugune+Pron+Sg+Nom: mingisugune
+     mingisugune+Pron+Sg+Gen: mingisuguse
+     mingisugune+Pron+Sg+Par: mingisugust
+     mingisugune+Pron+Sg+Ill: mingisugusesse
+     mingisugune+Pron+Sg+Ine: mingisuguses
+     mingisugune+Pron+Sg+Ela: mingisugusest
+     mingisugune+Pron+Sg+All: mingisugusele
+     mingisugune+Pron+Sg+Ade: mingisugusel
+     mingisugune+Pron+Sg+Abl: mingisuguselt
+     mingisugune+Pron+Sg+Tra: mingisuguseks
+     mingisugune+Pron+Sg+Trm: mingisuguseni
+     mingisugune+Pron+Sg+Ess: mingisugusena
+     mingisugune+Pron+Sg+Abe: mingisuguseta
+     mingisugune+Pron+Sg+Com: mingisugusega
+     mingisugune+Pron+Pl+Nom: mingisugused
+     mingisugune+Pron+Pl+Gen: mingisuguste
+     mingisugune+Pron+Pl+Par: mingisuguseid
+     mingisugune+Pron+Pl+Ill: [mingisugustesse, mingisuguseisse]
+     mingisugune+Pron+Pl+Ine: [mingisugustes, mingisuguseis]
+     mingisugune+Pron+Pl+Ela: [mingisugustest, mingisuguseist]
+     mingisugune+Pron+Pl+All: [mingisugustele, mingisuguseile]
+     mingisugune+Pron+Pl+Ade: [mingisugustel, mingisuguseil]
+     mingisugune+Pron+Pl+Abl: [mingisugustelt, mingisuguseilt]
+     mingisugune+Pron+Pl+Tra: [mingisugusteks, mingisuguseiks]
+     mingisugune+Pron+Pl+Trm: mingisugusteni
+     mingisugune+Pron+Pl+Ess: mingisugustena
+     mingisugune+Pron+Pl+Abe: mingisugusteta
+     mingisugune+Pron+Pl+Com: mingisugustega
+     #
+     seesamune+Pron+Sg+Nom: seesamune
+     seesamune+Pron+Sg+Gen: sellesamuse
+     seesamune+Pron+Sg+Par: sedasamust
+     seesamune+Pron+Sg+Ill: [sellessesamusesse, sessesamusesse]
+     seesamune+Pron+Sg+Ine: [sellessamuses, sessamuses]
+     seesamune+Pron+Sg+Ela: [sellestsamusest, sestsamusest]
+     seesamune+Pron+Sg+All: sellelesamusele
+     seesamune+Pron+Sg+Ade: [sellelsamusel, selsamusel]
+     seesamune+Pron+Sg+Abl: [selleltsamuselt, seltsamuselt]
+     seesamune+Pron+Sg+Tra: [sekssamuseks, sellekssamuseks]
+     seesamune+Pron+Sg+Trm: sellesamuseni
+     seesamune+Pron+Sg+Ess: sellesamusena
+     seesamune+Pron+Sg+Abe: sellesamuseta
+     seesamune+Pron+Sg+Com: sellesamusega
+     seesamune+Pron+Pl+Nom: needsamused
+     seesamune+Pron+Pl+Gen: nendesamuste
+     seesamune+Pron+Pl+Par: neidsamuseid
+     seesamune+Pron+Pl+Ill: [nendessesamustesse, neissesamuseisse]
+     seesamune+Pron+Pl+Ine: [nendessamustes, neissamuseis]
+     seesamune+Pron+Pl+Ela: [nendestsamustest, neistsamuseist]
+     seesamune+Pron+Pl+All: nendelesamustele
+     seesamune+Pron+Pl+Ade: [nendelsamustel, neilsamuseil]
+     seesamune+Pron+Pl+Abl: [nendeltsamustelt, neiltsamuseilt]
+     seesamune+Pron+Pl+Tra: [nendekssamusteks, neikssamuseiks]
+     seesamune+Pron+Pl+Trm: nendesamusteni
+     seesamune+Pron+Pl+Ess: nendesamustena
+     seesamune+Pron+Pl+Abe: nendesamusteta
+     seesamune+Pron+Pl+Com: nendesamustega
+     #
+     seesamane+Pron+Sg+Nom: seesamane
+     seesamane+Pron+Sg+Gen: sellesamase
+     seesamane+Pron+Sg+Par: sedasamast
+     seesamane+Pron+Sg+Ill: [sellessesamasesse, sessesamasesse]
+     seesamane+Pron+Sg+Ine: [sellessamases, sessamases]
+     seesamane+Pron+Sg+Ela: [sellestsamasest, sestsamasest]
+     seesamane+Pron+Sg+All: sellelesamasele
+     seesamane+Pron+Sg+Ade: [sellelsamasel, selsamasel]
+     seesamane+Pron+Sg+Abl: [selleltsamaselt, seltsamaselt]
+     seesamane+Pron+Sg+Tra: [sekssamaseks, sellekssamaseks]
+     seesamane+Pron+Sg+Trm: sellesamaseni
+     seesamane+Pron+Sg+Ess: sellesamasena
+     seesamane+Pron+Sg+Abe: sellesamaseta
+     seesamane+Pron+Sg+Com: sellesamasega
+     seesamane+Pron+Pl+Nom: needsamased
+     seesamane+Pron+Pl+Gen: nendesamaste
+     seesamane+Pron+Pl+Par: neidsamaseid
+     seesamane+Pron+Pl+Ill: [nendessesamastesse, neissesamaseisse]
+     seesamane+Pron+Pl+Ine: [nendessamastes, neissamaseis]
+     seesamane+Pron+Pl+Ela: [nendestsamastest, neistsamaseist]
+     seesamane+Pron+Pl+All: nendelesamastele
+     seesamane+Pron+Pl+Ade: [nendelsamastel, neilsamaseil]
+     seesamane+Pron+Pl+Abl: [nendeltsamastelt, neiltsamaseilt]
+     seesamane+Pron+Pl+Tra: [nendekssamasteks, neikssamaseiks]
+     seesamane+Pron+Pl+Trm: nendesamasteni
+     seesamane+Pron+Pl+Ess: nendesamastena
+     seesamane+Pron+Pl+Abe: nendesamasteta
+     seesamane+Pron+Pl+Com: nendesamastega
+     #
+     seesinane+Pron+Sg+Nom: seesinane
+     seesinane+Pron+Sg+Gen: [sellesinase, sellesinatse]
+     seesinane+Pron+Sg+Par: sedasinast
+     seesinane+Pron+Sg+Ill: [sellessesinasesse, sellessesinatsesse, sessesinasesse, sessesinatsesse]
+     seesinane+Pron+Sg+Ine: [sellessinases, sellessinatses, sessinases, sessinatses]
+     seesinane+Pron+Sg+Ela: [sellestsinasest, sellestsinatsest, sestsinasest, sestsinatsest]
+     seesinane+Pron+Sg+All: [sellelesinasele, sellelesinatsele]
+     seesinane+Pron+Sg+Ade: [sellelsinasel, sellelsinatsel, selsinasel, selsinatsel]
+     seesinane+Pron+Sg+Abl: [selleltsinaselt, selleltsinatselt, seltsinaselt, seltsinatselt]
+     seesinane+Pron+Sg+Tra: [sekssinaseks, sekssinatseks, sellekssinaseks, sellekssinatseks]
+     seesinane+Pron+Sg+Trm: [sellesinaseni, sellesinatseni]
+     seesinane+Pron+Sg+Ess: [sellesinasena, sellesinatsena]
+     seesinane+Pron+Sg+Abe: [sellesinaseta, sellesinatseta]
+     seesinane+Pron+Sg+Com: [sellesinasega, sellesinatsega]
+     seesinane+Pron+Pl+Nom: [needsinased, needsinatsed]
+     seesinane+Pron+Pl+Gen: nendesinaste
+     seesinane+Pron+Pl+Par: [neidsinaseid, neidsinatseid]
+     seesinane+Pron+Pl+Ill: [nendessesinastesse, neissesinaseisse]
+     seesinane+Pron+Pl+Ine: [nendessinastes, neissinaseis]
+     seesinane+Pron+Pl+Ela: [nendestsinastest, neistsinaseist]
+     seesinane+Pron+Pl+All: nendelesinastele
+     seesinane+Pron+Pl+Ade: [nendelsinastel, neilsinaseil]
+     seesinane+Pron+Pl+Abl: [nendeltsinastelt, neiltsinaseilt]
+     seesinane+Pron+Pl+Tra: [nendekssinasteks, neikssinaseiks]
+     seesinane+Pron+Pl+Trm: nendesinasteni
+     seesinane+Pron+Pl+Ess: nendesinastena
+     seesinane+Pron+Pl+Abe: nendesinasteta
+     seesinane+Pron+Pl+Com: nendesinastega
+     #
+     sinusugune+Pron+Sg+Nom: sinusugune
+     sinusugune+Pron+Sg+Gen: sinusuguse
+     sinusugune+Pron+Sg+Par: sinusugust
+     sinusugune+Pron+Sg+Ill: sinusugusesse
+     sinusugune+Pron+Sg+Ine: sinusuguses
+     sinusugune+Pron+Sg+Ela: sinusugusest
+     sinusugune+Pron+Sg+All: sinusugusele
+     sinusugune+Pron+Sg+Ade: sinusugusel
+     sinusugune+Pron+Sg+Abl: sinusuguselt
+     sinusugune+Pron+Sg+Tra: sinusuguseks
+     sinusugune+Pron+Sg+Trm: sinusuguseni
+     sinusugune+Pron+Sg+Ess: sinusugusena
+     sinusugune+Pron+Sg+Abe: sinusuguseta
+     sinusugune+Pron+Sg+Com: sinusugusega
+     sinusugune+Pron+Pl+Nom: sinusugused
+     sinusugune+Pron+Pl+Gen: sinusuguste
+     sinusugune+Pron+Pl+Par: sinusuguseid
+     sinusugune+Pron+Pl+Ill: [sinusugustesse, sinusuguseisse]
+     sinusugune+Pron+Pl+Ine: [sinusugustes, sinusuguseis]
+     sinusugune+Pron+Pl+Ela: [sinusugustest, sinusuguseist]
+     sinusugune+Pron+Pl+All: [sinusugustele, sinusuguseile]
+     sinusugune+Pron+Pl+Ade: [sinusugustel, sinusuguseil]
+     sinusugune+Pron+Pl+Abl: [sinusugustelt, sinusuguseilt]
+     sinusugune+Pron+Pl+Tra: [sinusugusteks, sinusuguseiks]
+     sinusugune+Pron+Pl+Trm: sinusugusteni
+     sinusugune+Pron+Pl+Ess: sinusugustena
+     sinusugune+Pron+Pl+Abe: sinusugusteta
+     sinusugune+Pron+Pl+Com: sinusugustega
+     #
+     sinutaoline+Pron+Sg+Nom: sinutaoline
+     sinutaoline+Pron+Sg+Gen: sinutaolise
+     sinutaoline+Pron+Sg+Par: sinutaolist
+     sinutaoline+Pron+Sg+Ill: [sinutaolisesse, sinutaolisse]
+     sinutaoline+Pron+Sg+Ine: sinutaolises
+     sinutaoline+Pron+Sg+Ela: sinutaolisest
+     sinutaoline+Pron+Sg+All: sinutaolisele
+     sinutaoline+Pron+Sg+Ade: sinutaolisel
+     sinutaoline+Pron+Sg+Abl: sinutaoliselt
+     sinutaoline+Pron+Sg+Tra: sinutaoliseks
+     sinutaoline+Pron+Sg+Trm: sinutaoliseni
+     sinutaoline+Pron+Sg+Ess: sinutaolisena
+     sinutaoline+Pron+Sg+Abe: sinutaoliseta
+     sinutaoline+Pron+Sg+Com: sinutaolisega
+     sinutaoline+Pron+Pl+Nom: sinutaolised
+     sinutaoline+Pron+Pl+Gen: sinutaoliste
+     sinutaoline+Pron+Pl+Par: [sinutaoliseid, sinutaolisi]
+     sinutaoline+Pron+Pl+Ill: [sinutaolistesse, sinutaolisisse]
+     sinutaoline+Pron+Pl+Ine: [sinutaolistes, sinutaolisis]
+     sinutaoline+Pron+Pl+Ela: [sinutaolistest, sinutaolisist]
+     sinutaoline+Pron+Pl+All: [sinutaolistele, sinutaolisile]
+     sinutaoline+Pron+Pl+Ade: [sinutaolistel, sinutaolisil]
+     sinutaoline+Pron+Pl+Abl: [sinutaolistelt, sinutaolisilt]
+     sinutaoline+Pron+Pl+Tra: [sinutaolisteks, sinutaolisiks]
+     sinutaoline+Pron+Pl+Trm: sinutaolisteni
+     sinutaoline+Pron+Pl+Ess: sinutaolistena
+     sinutaoline+Pron+Pl+Abe: sinutaolisteta
+     sinutaoline+Pron+Pl+Com: sinutaolistega
+     #
+     temasugune+Pron+Sg+Nom: temasugune
+     temasugune+Pron+Sg+Gen: temasuguse
+     temasugune+Pron+Sg+Par: temasugust
+     temasugune+Pron+Sg+Ill: temasugusesse
+     temasugune+Pron+Sg+Ine: temasuguses
+     temasugune+Pron+Sg+Ela: temasugusest
+     temasugune+Pron+Sg+All: temasugusele
+     temasugune+Pron+Sg+Ade: temasugusel
+     temasugune+Pron+Sg+Abl: temasuguselt
+     temasugune+Pron+Sg+Tra: temasuguseks
+     temasugune+Pron+Sg+Trm: temasuguseni
+     temasugune+Pron+Sg+Ess: temasugusena
+     temasugune+Pron+Sg+Abe: temasuguseta
+     temasugune+Pron+Sg+Com: temasugusega
+     temasugune+Pron+Pl+Nom: temasugused
+     temasugune+Pron+Pl+Gen: temasuguste
+     temasugune+Pron+Pl+Par: temasuguseid
+     temasugune+Pron+Pl+Ill: [temasugustesse, temasuguseisse]
+     temasugune+Pron+Pl+Ine: [temasugustes, temasuguseis]
+     temasugune+Pron+Pl+Ela: [temasugustest, temasuguseist]
+     temasugune+Pron+Pl+All: [temasugustele, temasuguseile]
+     temasugune+Pron+Pl+Ade: [temasugustel, temasuguseil]
+     temasugune+Pron+Pl+Abl: [temasugustelt, temasuguseilt]
+     temasugune+Pron+Pl+Tra: [temasugusteks, temasuguseiks]
+     temasugune+Pron+Pl+Trm: temasugusteni
+     temasugune+Pron+Pl+Ess: temasugustena
+     temasugune+Pron+Pl+Abe: temasugusteta
+     temasugune+Pron+Pl+Com: temasugustega
+     #
+     temataoline+Pron+Sg+Nom: temataoline
+     temataoline+Pron+Sg+Gen: temataolise
+     temataoline+Pron+Sg+Par: temataolist
+     temataoline+Pron+Sg+Ill: [temataolisse, temataolisesse]
+     temataoline+Pron+Sg+Ine: temataolises
+     temataoline+Pron+Sg+Ela: temataolisest
+     temataoline+Pron+Sg+All: temataolisele
+     temataoline+Pron+Sg+Ade: temataolisel
+     temataoline+Pron+Sg+Abl: temataoliselt
+     temataoline+Pron+Sg+Tra: temataoliseks
+     temataoline+Pron+Sg+Trm: temataoliseni
+     temataoline+Pron+Sg+Ess: temataolisena
+     temataoline+Pron+Sg+Abe: temataoliseta
+     temataoline+Pron+Sg+Com: temataolisega
+     temataoline+Pron+Pl+Nom: temataolised
+     temataoline+Pron+Pl+Gen: temataoliste
+     temataoline+Pron+Pl+Par: [temataolisi, temataoliseid]
+     temataoline+Pron+Pl+Ill: [temataolistesse, temataolisisse]
+     temataoline+Pron+Pl+Ine: [temataolistes, temataolisis]
+     temataoline+Pron+Pl+Ela: [temataolistest, temataolisist]
+     temataoline+Pron+Pl+All: [temataolistele, temataolisile]
+     temataoline+Pron+Pl+Ade: [temataolistel, temataolisil]
+     temataoline+Pron+Pl+Abl: [temataolistelt, temataolisilt]
+     temataoline+Pron+Pl+Tra: [temataolisteks, temataolisiks]
+     temataoline+Pron+Pl+Trm: temataolisteni
+     temataoline+Pron+Pl+Ess: temataolistena
+     temataoline+Pron+Pl+Abe: temataolisteta
+     temataoline+Pron+Pl+Com: temataolistega
+     #
+     meiesugune+Pron+Sg+Nom: meiesugune
+     meiesugune+Pron+Sg+Gen: meiesuguse
+     meiesugune+Pron+Sg+Par: meiesugust
+     meiesugune+Pron+Sg+Ill: meiesugusesse
+     meiesugune+Pron+Sg+Ine: meiesuguses
+     meiesugune+Pron+Sg+Ela: meiesugusest
+     meiesugune+Pron+Sg+All: meiesugusele
+     meiesugune+Pron+Sg+Ade: meiesugusel
+     meiesugune+Pron+Sg+Abl: meiesuguselt
+     meiesugune+Pron+Sg+Tra: meiesuguseks
+     meiesugune+Pron+Sg+Trm: meiesuguseni
+     meiesugune+Pron+Sg+Ess: meiesugusena
+     meiesugune+Pron+Sg+Abe: meiesuguseta
+     meiesugune+Pron+Sg+Com: meiesugusega
+     meiesugune+Pron+Pl+Nom: meiesugused
+     meiesugune+Pron+Pl+Gen: meiesuguste
+     meiesugune+Pron+Pl+Par: meiesuguseid
+     meiesugune+Pron+Pl+Ill: [meiesugustesse, meiesuguseisse]
+     meiesugune+Pron+Pl+Ine: [meiesugustes, meiesuguseis]
+     meiesugune+Pron+Pl+Ela: [meiesugustest, meiesuguseist]
+     meiesugune+Pron+Pl+All: [meiesugustele, meiesuguseile]
+     meiesugune+Pron+Pl+Ade: [meiesugustel, meiesuguseil]
+     meiesugune+Pron+Pl+Abl: [meiesugustelt, meiesuguseilt]
+     meiesugune+Pron+Pl+Tra: [meiesugusteks, meiesuguseiks]
+     meiesugune+Pron+Pl+Trm: meiesugusteni
+     meiesugune+Pron+Pl+Ess: meiesugustena
+     meiesugune+Pron+Pl+Abe: meiesugusteta
+     meiesugune+Pron+Pl+Com: meiesugustega
+     #
+     meietaoline+Pron+Sg+Nom: meietaoline
+     meietaoline+Pron+Sg+Gen: meietaolise
+     meietaoline+Pron+Sg+Par: meietaolist
+     meietaoline+Pron+Sg+Ill: [meietaolisesse, meietaolisse]
+     meietaoline+Pron+Sg+Ine: meietaolises
+     meietaoline+Pron+Sg+Ela: meietaolisest
+     meietaoline+Pron+Sg+All: meietaolisele
+     meietaoline+Pron+Sg+Ade: meietaolisel
+     meietaoline+Pron+Sg+Abl: meietaoliselt
+     meietaoline+Pron+Sg+Tra: meietaoliseks
+     meietaoline+Pron+Sg+Trm: meietaoliseni
+     meietaoline+Pron+Sg+Ess: meietaolisena
+     meietaoline+Pron+Sg+Abe: meietaoliseta
+     meietaoline+Pron+Sg+Com: meietaolisega
+     meietaoline+Pron+Pl+Nom: meietaolised
+     meietaoline+Pron+Pl+Gen: meietaoliste
+     meietaoline+Pron+Pl+Par: [meietaoliseid, meietaolisi]
+     meietaoline+Pron+Pl+Ill: [meietaolistesse, meietaolisisse]
+     meietaoline+Pron+Pl+Ine: [meietaolistes, meietaolisis]
+     meietaoline+Pron+Pl+Ela: [meietaolistest, meietaolisist]
+     meietaoline+Pron+Pl+All: [meietaolistele, meietaolisile]
+     meietaoline+Pron+Pl+Ade: [meietaolistel, meietaolisil]
+     meietaoline+Pron+Pl+Abl: [meietaolistelt, meietaolisilt]
+     meietaoline+Pron+Pl+Tra: [meietaolisteks, meietaolisiks]
+     meietaoline+Pron+Pl+Trm: meietaolisteni
+     meietaoline+Pron+Pl+Ess: meietaolistena
+     meietaoline+Pron+Pl+Abe: meietaolisteta
+     meietaoline+Pron+Pl+Com: meietaolistega
+     #
+     nendesugune+Pron+Sg+Nom: nendesugune
+     nendesugune+Pron+Sg+Gen: nendesuguse
+     nendesugune+Pron+Sg+Par: nendesugust
+     nendesugune+Pron+Sg+Ill: nendesugusesse
+     nendesugune+Pron+Sg+Ine: nendesuguses
+     nendesugune+Pron+Sg+Ela: nendesugusest
+     nendesugune+Pron+Sg+All: nendesugusele
+     nendesugune+Pron+Sg+Ade: nendesugusel
+     nendesugune+Pron+Sg+Abl: nendesuguselt
+     nendesugune+Pron+Sg+Tra: nendesuguseks
+     nendesugune+Pron+Sg+Trm: nendesuguseni
+     nendesugune+Pron+Sg+Ess: nendesugusena
+     nendesugune+Pron+Sg+Abe: nendesuguseta
+     nendesugune+Pron+Sg+Com: nendesugusega
+     nendesugune+Pron+Pl+Nom: nendesugused
+     nendesugune+Pron+Pl+Gen: nendesuguste
+     nendesugune+Pron+Pl+Par: nendesuguseid
+     nendesugune+Pron+Pl+Ill: [nendesugustesse, nendesuguseisse]
+     nendesugune+Pron+Pl+Ine: [nendesugustes, nendesuguseis]
+     nendesugune+Pron+Pl+Ela: [nendesugustest, nendesuguseist]
+     nendesugune+Pron+Pl+All: [nendesugustele, nendesuguseile]
+     nendesugune+Pron+Pl+Ade: [nendesugustel, nendesuguseil]
+     nendesugune+Pron+Pl+Abl: [nendesugustelt, nendesuguseilt]
+     nendesugune+Pron+Pl+Tra: [nendesugusteks, nendesuguseiks]
+     nendesugune+Pron+Pl+Trm: nendesugusteni
+     nendesugune+Pron+Pl+Ess: nendesugustena
+     nendesugune+Pron+Pl+Abe: nendesugusteta
+     nendesugune+Pron+Pl+Com: nendesugustega
+     #
+     nendetaoline+Pron+Sg+Nom: nendetaoline
+     nendetaoline+Pron+Sg+Gen: nendetaolise
+     nendetaoline+Pron+Sg+Par: nendetaolist
+     nendetaoline+Pron+Sg+Ill: [nendetaolisse, nendetaolisesse]
+     nendetaoline+Pron+Sg+Ine: nendetaolises
+     nendetaoline+Pron+Sg+Ela: nendetaolisest
+     nendetaoline+Pron+Sg+All: nendetaolisele
+     nendetaoline+Pron+Sg+Ade: nendetaolisel
+     nendetaoline+Pron+Sg+Abl: nendetaoliselt
+     nendetaoline+Pron+Sg+Tra: nendetaoliseks
+     nendetaoline+Pron+Sg+Trm: nendetaoliseni
+     nendetaoline+Pron+Sg+Ess: nendetaolisena
+     nendetaoline+Pron+Sg+Abe: nendetaoliseta
+     nendetaoline+Pron+Sg+Com: nendetaolisega
+     nendetaoline+Pron+Pl+Nom: nendetaolised
+     nendetaoline+Pron+Pl+Gen: nendetaoliste
+     nendetaoline+Pron+Pl+Par: [nendetaolisi, nendetaoliseid]
+     nendetaoline+Pron+Pl+Ill: [nendetaolistesse, nendetaolisisse]
+     nendetaoline+Pron+Pl+Ine: [nendetaolistes, nendetaolisis]
+     nendetaoline+Pron+Pl+Ela: [nendetaolistest, nendetaolisist]
+     nendetaoline+Pron+Pl+All: [nendetaolistele, nendetaolisile]
+     nendetaoline+Pron+Pl+Ade: [nendetaolistel, nendetaolisil]
+     nendetaoline+Pron+Pl+Abl: [nendetaolistelt, nendetaolisilt]
+     nendetaoline+Pron+Pl+Tra: [nendetaolisteks, nendetaolisiks]
+     nendetaoline+Pron+Pl+Trm: nendetaolisteni
+     nendetaoline+Pron+Pl+Ess: nendetaolistena
+     nendetaoline+Pron+Pl+Abe: nendetaolisteta
+     nendetaoline+Pron+Pl+Com: nendetaolistega
+     #
+     seesugune+Pron+Sg+Nom: seesugune
+     seesugune+Pron+Sg+Gen: seesuguse
+     seesugune+Pron+Sg+Par: seesugust
+     seesugune+Pron+Sg+Ill: seesugusesse
+     seesugune+Pron+Sg+Ine: seesuguses
+     seesugune+Pron+Sg+Ela: seesugusest
+     seesugune+Pron+Sg+All: seesugusele
+     seesugune+Pron+Sg+Ade: seesugusel
+     seesugune+Pron+Sg+Abl: seesuguselt
+     seesugune+Pron+Sg+Tra: seesuguseks
+     seesugune+Pron+Sg+Trm: seesuguseni
+     seesugune+Pron+Sg+Ess: seesugusena
+     seesugune+Pron+Sg+Abe: seesuguseta
+     seesugune+Pron+Sg+Com: seesugusega
+     seesugune+Pron+Pl+Nom: seesugused
+     seesugune+Pron+Pl+Gen: seesuguste
+     seesugune+Pron+Pl+Par: seesuguseid
+     seesugune+Pron+Pl+Ill: [seesugustesse, seesuguseisse]
+     seesugune+Pron+Pl+Ine: [seesugustes, seesuguseis]
+     seesugune+Pron+Pl+Ela: [seesugustest, seesuguseist]
+     seesugune+Pron+Pl+All: [seesugustele, seesuguseile]
+     seesugune+Pron+Pl+Ade: [seesugustel, seesuguseil]
+     seesugune+Pron+Pl+Abl: [seesugustelt, seesuguseilt]
+     seesugune+Pron+Pl+Tra: [seesugusteks, seesuguseiks]
+     seesugune+Pron+Pl+Trm: seesugusteni
+     seesugune+Pron+Pl+Ess: seesugustena
+     seesugune+Pron+Pl+Abe: seesugusteta
+     seesugune+Pron+Pl+Com: seesugustega
+     #
+     selletaoline+Pron+Sg+Nom: selletaoline
+     selletaoline+Pron+Sg+Gen: selletaolise
+     selletaoline+Pron+Sg+Par: selletaolist
+     selletaoline+Pron+Sg+Ill: [selletaolisesse, selletaolisse]
+     selletaoline+Pron+Sg+Ine: selletaolises
+     selletaoline+Pron+Sg+Ela: selletaolisest
+     selletaoline+Pron+Sg+All: selletaolisele
+     selletaoline+Pron+Sg+Ade: selletaolisel
+     selletaoline+Pron+Sg+Abl: selletaoliselt
+     selletaoline+Pron+Sg+Tra: selletaoliseks
+     selletaoline+Pron+Sg+Trm: selletaoliseni
+     selletaoline+Pron+Sg+Ess: selletaolisena
+     selletaoline+Pron+Sg+Abe: selletaoliseta
+     selletaoline+Pron+Sg+Com: selletaolisega
+     selletaoline+Pron+Pl+Nom: selletaolised
+     selletaoline+Pron+Pl+Gen: selletaoliste
+     selletaoline+Pron+Pl+Par: [selletaoliseid, selletaolisi]
+     selletaoline+Pron+Pl+Ill: [selletaolistesse, selletaolisisse]
+     selletaoline+Pron+Pl+Ine: [selletaolistes, selletaolisis]
+     selletaoline+Pron+Pl+Ela: [selletaolistest, selletaolisist]
+     selletaoline+Pron+Pl+All: [selletaolistele, selletaolisile]
+     selletaoline+Pron+Pl+Ade: [selletaolistel, selletaolisil]
+     selletaoline+Pron+Pl+Abl: [selletaolistelt, selletaolisilt]
+     selletaoline+Pron+Pl+Tra: [selletaolisteks, selletaolisiks]
+     selletaoline+Pron+Pl+Trm: selletaolisteni
+     selletaoline+Pron+Pl+Ess: selletaolistena
+     selletaoline+Pron+Pl+Abe: selletaolisteta
+     selletaoline+Pron+Pl+Com: selletaolistega
+     #
+     isesugune+Pron+Sg+Nom: isesugune
+     isesugune+Pron+Sg+Gen: isesuguse
+     isesugune+Pron+Sg+Par: isesugust
+     isesugune+Pron+Sg+Ill: isesugusesse
+     isesugune+Pron+Sg+Ine: isesuguses
+     isesugune+Pron+Sg+Ela: isesugusest
+     isesugune+Pron+Sg+All: isesugusele
+     isesugune+Pron+Sg+Ade: isesugusel
+     isesugune+Pron+Sg+Abl: isesuguselt
+     isesugune+Pron+Sg+Tra: isesuguseks
+     isesugune+Pron+Sg+Trm: isesuguseni
+     isesugune+Pron+Sg+Ess: isesugusena
+     isesugune+Pron+Sg+Abe: isesuguseta
+     isesugune+Pron+Sg+Com: isesugusega
+     isesugune+Pron+Pl+Nom: isesugused
+     isesugune+Pron+Pl+Gen: isesuguste
+     isesugune+Pron+Pl+Par: isesuguseid
+     isesugune+Pron+Pl+Ill: [isesugustesse, isesuguseisse]
+     isesugune+Pron+Pl+Ine: [isesugustes, isesuguseis]
+     isesugune+Pron+Pl+Ela: [isesugustest, isesuguseist]
+     isesugune+Pron+Pl+All: [isesugustele, isesuguseile]
+     isesugune+Pron+Pl+Ade: [isesugustel, isesuguseil]
+     isesugune+Pron+Pl+Abl: [isesugustelt, isesuguseilt]
+     isesugune+Pron+Pl+Tra: [isesugusteks, isesuguseiks]
+     isesugune+Pron+Pl+Trm: isesugusteni
+     isesugune+Pron+Pl+Ess: isesugustena
+     isesugune+Pron+Pl+Abe: isesugusteta
+     isesugune+Pron+Pl+Com: isesugustega
+     #
+     missugune+Pron+Sg+Nom: missugune
+     missugune+Pron+Sg+Gen: missuguse
+     missugune+Pron+Sg+Par: missugust
+     missugune+Pron+Sg+Ill: missugusesse
+     missugune+Pron+Sg+Ine: missuguses
+     missugune+Pron+Sg+Ela: missugusest
+     missugune+Pron+Sg+All: missugusele
+     missugune+Pron+Sg+Ade: missugusel
+     missugune+Pron+Sg+Abl: missuguselt
+     missugune+Pron+Sg+Tra: missuguseks
+     missugune+Pron+Sg+Trm: missuguseni
+     missugune+Pron+Sg+Ess: missugusena
+     missugune+Pron+Sg+Abe: missuguseta
+     missugune+Pron+Sg+Com: missugusega
+     missugune+Pron+Pl+Nom: missugused
+     missugune+Pron+Pl+Gen: missuguste
+     missugune+Pron+Pl+Par: missuguseid
+     missugune+Pron+Pl+Ill: [missugustesse, missuguseisse]
+     missugune+Pron+Pl+Ine: [missugustes, missuguseis]
+     missugune+Pron+Pl+Ela: [missugustest, missuguseist]
+     missugune+Pron+Pl+All: [missugustele, missuguseile]
+     missugune+Pron+Pl+Ade: [missugustel, missuguseil]
+     missugune+Pron+Pl+Abl: [missugustelt, missuguseilt]
+     missugune+Pron+Pl+Tra: [missugusteks, missuguseiks]
+     missugune+Pron+Pl+Trm: missugusteni
+     missugune+Pron+Pl+Ess: missugustena
+     missugune+Pron+Pl+Abe: missugusteta
+     missugune+Pron+Pl+Com: missugustega
+     #
+     milletaoline+Pron+Sg+Nom: milletaoline
+     milletaoline+Pron+Sg+Gen: milletaolise
+     milletaoline+Pron+Sg+Par: milletaolist
+     milletaoline+Pron+Sg+Ill: [milletaolisesse, milletaolisse]
+     milletaoline+Pron+Sg+Ine: milletaolises
+     milletaoline+Pron+Sg+Ela: milletaolisest
+     milletaoline+Pron+Sg+All: milletaolisele
+     milletaoline+Pron+Sg+Ade: milletaolisel
+     milletaoline+Pron+Sg+Abl: milletaoliselt
+     milletaoline+Pron+Sg+Tra: milletaoliseks
+     milletaoline+Pron+Sg+Trm: milletaoliseni
+     milletaoline+Pron+Sg+Ess: milletaolisena
+     milletaoline+Pron+Sg+Abe: milletaoliseta
+     milletaoline+Pron+Sg+Com: milletaolisega
+     milletaoline+Pron+Pl+Nom: milletaolised
+     milletaoline+Pron+Pl+Gen: milletaoliste
+     milletaoline+Pron+Pl+Par: [milletaoliseid, milletaolisi]
+     milletaoline+Pron+Pl+Ill: [milletaolistesse, milletaolisisse]
+     milletaoline+Pron+Pl+Ine: [milletaolistes, milletaolisis]
+     milletaoline+Pron+Pl+Ela: [milletaolistest, milletaolisist]
+     milletaoline+Pron+Pl+All: [milletaolistele, milletaolisile]
+     milletaoline+Pron+Pl+Ade: [milletaolistel, milletaolisil]
+     milletaoline+Pron+Pl+Abl: [milletaolistelt, milletaolisilt]
+     milletaoline+Pron+Pl+Tra: [milletaolisteks, milletaolisiks]
+     milletaoline+Pron+Pl+Trm: milletaolisteni
+     milletaoline+Pron+Pl+Ess: milletaolistena
+     milletaoline+Pron+Pl+Abe: milletaolisteta
+     milletaoline+Pron+Pl+Com: milletaolistega
+     #
+     igasugune+Pron+Sg+Nom: igasugune
+     igasugune+Pron+Sg+Gen: igasuguse
+     igasugune+Pron+Sg+Par: igasugust
+     igasugune+Pron+Sg+Ill: igasugusesse
+     igasugune+Pron+Sg+Ine: igasuguses
+     igasugune+Pron+Sg+Ela: igasugusest
+     igasugune+Pron+Sg+All: igasugusele
+     igasugune+Pron+Sg+Ade: igasugusel
+     igasugune+Pron+Sg+Abl: igasuguselt
+     igasugune+Pron+Sg+Tra: igasuguseks
+     igasugune+Pron+Sg+Trm: igasuguseni
+     igasugune+Pron+Sg+Ess: igasugusena
+     igasugune+Pron+Sg+Abe: igasuguseta
+     igasugune+Pron+Sg+Com: igasugusega
+     igasugune+Pron+Pl+Nom: igasugused
+     igasugune+Pron+Pl+Gen: igasuguste
+     igasugune+Pron+Pl+Par: igasuguseid
+     igasugune+Pron+Pl+Ill: [igasugustesse, igasuguseisse]
+     igasugune+Pron+Pl+Ine: [igasugustes, igasuguseis]
+     igasugune+Pron+Pl+Ela: [igasugustest, igasuguseist]
+     igasugune+Pron+Pl+All: [igasugustele, igasuguseile]
+     igasugune+Pron+Pl+Ade: [igasugustel, igasuguseil]
+     igasugune+Pron+Pl+Abl: [igasugustelt, igasuguseilt]
+     igasugune+Pron+Pl+Tra: [igasugusteks, igasuguseiks]
+     igasugune+Pron+Pl+Trm: igasugusteni
+     igasugune+Pron+Pl+Ess: igasugustena
+     igasugune+Pron+Pl+Abe: igasugusteta
+     igasugune+Pron+Pl+Com: igasugustega
+     #
+     miskisugune+Pron+Sg+Nom: miskisugune
+     miskisugune+Pron+Sg+Gen: miskisuguse
+     miskisugune+Pron+Sg+Par: miskisugust
+     miskisugune+Pron+Sg+Ill: miskisugusesse
+     miskisugune+Pron+Sg+Ine: miskisuguses
+     miskisugune+Pron+Sg+Ela: miskisugusest
+     miskisugune+Pron+Sg+All: miskisugusele
+     miskisugune+Pron+Sg+Ade: miskisugusel
+     miskisugune+Pron+Sg+Abl: miskisuguselt
+     miskisugune+Pron+Sg+Tra: miskisuguseks
+     miskisugune+Pron+Sg+Trm: miskisuguseni
+     miskisugune+Pron+Sg+Ess: miskisugusena
+     miskisugune+Pron+Sg+Abe: miskisuguseta
+     miskisugune+Pron+Sg+Com: miskisugusega
+     miskisugune+Pron+Pl+Nom: miskisugused
+     miskisugune+Pron+Pl+Gen: miskisuguste
+     miskisugune+Pron+Pl+Par: miskisuguseid
+     miskisugune+Pron+Pl+Ill: [miskisugustesse, miskisuguseisse]
+     miskisugune+Pron+Pl+Ine: [miskisugustes, miskisuguseis]
+     miskisugune+Pron+Pl+Ela: [miskisugustest, miskisuguseist]
+     miskisugune+Pron+Pl+All: [miskisugustele, miskisuguseile]
+     miskisugune+Pron+Pl+Ade: [miskisugustel, miskisuguseil]
+     miskisugune+Pron+Pl+Abl: [miskisugustelt, miskisuguseilt]
+     miskisugune+Pron+Pl+Tra: [miskisugusteks, miskisuguseiks]
+     miskisugune+Pron+Pl+Trm: miskisugusteni
+     miskisugune+Pron+Pl+Ess: miskisugustena
+     miskisugune+Pron+Pl+Abe: miskisugusteta
+     miskisugune+Pron+Pl+Com: miskisugustega
+     #
+     mitmesugune+Pron+Sg+Nom: mitmesugune
+     mitmesugune+Pron+Sg+Gen: mitmesuguse
+     mitmesugune+Pron+Sg+Par: mitmesugust
+     mitmesugune+Pron+Sg+Ill: mitmesugusesse
+     mitmesugune+Pron+Sg+Ine: mitmesuguses
+     mitmesugune+Pron+Sg+Ela: mitmesugusest
+     mitmesugune+Pron+Sg+All: mitmesugusele
+     mitmesugune+Pron+Sg+Ade: mitmesugusel
+     mitmesugune+Pron+Sg+Abl: mitmesuguselt
+     mitmesugune+Pron+Sg+Tra: mitmesuguseks
+     mitmesugune+Pron+Sg+Trm: mitmesuguseni
+     mitmesugune+Pron+Sg+Ess: mitmesugusena
+     mitmesugune+Pron+Sg+Abe: mitmesuguseta
+     mitmesugune+Pron+Sg+Com: mitmesugusega
+     mitmesugune+Pron+Pl+Nom: mitmesugused
+     mitmesugune+Pron+Pl+Gen: mitmesuguste
+     mitmesugune+Pron+Pl+Par: mitmesuguseid
+     mitmesugune+Pron+Pl+Ill: [mitmesugustesse, mitmesuguseisse]
+     mitmesugune+Pron+Pl+Ine: [mitmesugustes, mitmesuguseis]
+     mitmesugune+Pron+Pl+Ela: [mitmesugustest, mitmesuguseist]
+     mitmesugune+Pron+Pl+All: [mitmesugustele, mitmesuguseile]
+     mitmesugune+Pron+Pl+Ade: [mitmesugustel, mitmesuguseil]
+     mitmesugune+Pron+Pl+Abl: [mitmesugustelt, mitmesuguseilt]
+     mitmesugune+Pron+Pl+Tra: [mitmesugusteks, mitmesuguseiks]
+     mitmesugune+Pron+Pl+Trm: mitmesugusteni
+     mitmesugune+Pron+Pl+Ess: mitmesugustena
+     mitmesugune+Pron+Pl+Abe: mitmesugusteta
+     mitmesugune+Pron+Pl+Com: mitmesugustega
+     #
+     mõnesugune+Pron+Sg+Nom: mõnesugune
+     mõnesugune+Pron+Sg+Gen: mõnesuguse
+     mõnesugune+Pron+Sg+Par: mõnesugust
+     mõnesugune+Pron+Sg+Ill: mõnesugusesse
+     mõnesugune+Pron+Sg+Ine: mõnesuguses
+     mõnesugune+Pron+Sg+Ela: mõnesugusest
+     mõnesugune+Pron+Sg+All: mõnesugusele
+     mõnesugune+Pron+Sg+Ade: mõnesugusel
+     mõnesugune+Pron+Sg+Abl: mõnesuguselt
+     mõnesugune+Pron+Sg+Tra: mõnesuguseks
+     mõnesugune+Pron+Sg+Trm: mõnesuguseni
+     mõnesugune+Pron+Sg+Ess: mõnesugusena
+     mõnesugune+Pron+Sg+Abe: mõnesuguseta
+     mõnesugune+Pron+Sg+Com: mõnesugusega
+     mõnesugune+Pron+Pl+Nom: mõnesugused
+     mõnesugune+Pron+Pl+Gen: mõnesuguste
+     mõnesugune+Pron+Pl+Par: mõnesuguseid
+     mõnesugune+Pron+Pl+Ill: [mõnesugustesse, mõnesuguseisse]
+     mõnesugune+Pron+Pl+Ine: [mõnesugustes, mõnesuguseis]
+     mõnesugune+Pron+Pl+Ela: [mõnesugustest, mõnesuguseist]
+     mõnesugune+Pron+Pl+All: [mõnesugustele, mõnesuguseile]
+     mõnesugune+Pron+Pl+Ade: [mõnesugustel, mõnesuguseil]
+     mõnesugune+Pron+Pl+Abl: [mõnesugustelt, mõnesuguseilt]
+     mõnesugune+Pron+Pl+Tra: [mõnesugusteks, mõnesuguseiks]
+     mõnesugune+Pron+Pl+Trm: mõnesugusteni
+     mõnesugune+Pron+Pl+Ess: mõnesugustena
+     mõnesugune+Pron+Pl+Abe: mõnesugusteta
+     mõnesugune+Pron+Pl+Com: mõnesugustega
+     #
+     naasugune+Pron+Sg+Nom: naasugune
+     naasugune+Pron+Sg+Gen: naasuguse
+     naasugune+Pron+Sg+Par: naasugust
+     naasugune+Pron+Sg+Ill: naasugusesse
+     naasugune+Pron+Sg+Ine: naasuguses
+     naasugune+Pron+Sg+Ela: naasugusest
+     naasugune+Pron+Sg+All: naasugusele
+     naasugune+Pron+Sg+Ade: naasugusel
+     naasugune+Pron+Sg+Abl: naasuguselt
+     naasugune+Pron+Sg+Tra: naasuguseks
+     naasugune+Pron+Sg+Trm: naasuguseni
+     naasugune+Pron+Sg+Ess: naasugusena
+     naasugune+Pron+Sg+Abe: naasuguseta
+     naasugune+Pron+Sg+Com: naasugusega
+     naasugune+Pron+Pl+Nom: naasugused
+     naasugune+Pron+Pl+Gen: naasuguste
+     naasugune+Pron+Pl+Par: naasuguseid
+     naasugune+Pron+Pl+Ill: [naasugustesse, naasuguseisse]
+     naasugune+Pron+Pl+Ine: [naasugustes, naasuguseis]
+     naasugune+Pron+Pl+Ela: [naasugustest, naasuguseist]
+     naasugune+Pron+Pl+All: [naasugustele, naasuguseile]
+     naasugune+Pron+Pl+Ade: [naasugustel, naasuguseil]
+     naasugune+Pron+Pl+Abl: [naasugustelt, naasuguseilt]
+     naasugune+Pron+Pl+Tra: [naasugusteks, naasuguseiks]
+     naasugune+Pron+Pl+Trm: naasugusteni
+     naasugune+Pron+Pl+Ess: naasugustena
+     naasugune+Pron+Pl+Abe: naasugusteta
+     naasugune+Pron+Pl+Com: naasugustega
+     #
+     omasugune+Pron+Sg+Nom: omasugune
+     omasugune+Pron+Sg+Gen: omasuguse
+     omasugune+Pron+Sg+Par: omasugust
+     omasugune+Pron+Sg+Ill: omasugusesse
+     omasugune+Pron+Sg+Ine: omasuguses
+     omasugune+Pron+Sg+Ela: omasugusest
+     omasugune+Pron+Sg+All: omasugusele
+     omasugune+Pron+Sg+Ade: omasugusel
+     omasugune+Pron+Sg+Abl: omasuguselt
+     omasugune+Pron+Sg+Tra: omasuguseks
+     omasugune+Pron+Sg+Trm: omasuguseni
+     omasugune+Pron+Sg+Ess: omasugusena
+     omasugune+Pron+Sg+Abe: omasuguseta
+     omasugune+Pron+Sg+Com: omasugusega
+     omasugune+Pron+Pl+Nom: omasugused
+     omasugune+Pron+Pl+Gen: omasuguste
+     omasugune+Pron+Pl+Par: omasuguseid
+     omasugune+Pron+Pl+Ill: [omasugustesse, omasuguseisse]
+     omasugune+Pron+Pl+Ine: [omasugustes, omasuguseis]
+     omasugune+Pron+Pl+Ela: [omasugustest, omasuguseist]
+     omasugune+Pron+Pl+All: [omasugustele, omasuguseile]
+     omasugune+Pron+Pl+Ade: [omasugustel, omasuguseil]
+     omasugune+Pron+Pl+Abl: [omasugustelt, omasuguseilt]
+     omasugune+Pron+Pl+Tra: [omasugusteks, omasuguseiks]
+     omasugune+Pron+Pl+Trm: omasugusteni
+     omasugune+Pron+Pl+Ess: omasugustena
+     omasugune+Pron+Pl+Abe: omasugusteta
+     omasugune+Pron+Pl+Com: omasugustega
+     #
+     omataoline+Pron+Sg+Nom: omataoline
+     omataoline+Pron+Sg+Gen: omataolise
+     omataoline+Pron+Sg+Par: omataolist
+     omataoline+Pron+Sg+Ill: [omataolisesse, omataolisse]
+     omataoline+Pron+Sg+Ine: omataolises
+     omataoline+Pron+Sg+Ela: omataolisest
+     omataoline+Pron+Sg+All: omataolisele
+     omataoline+Pron+Sg+Ade: omataolisel
+     omataoline+Pron+Sg+Abl: omataoliselt
+     omataoline+Pron+Sg+Tra: omataoliseks
+     omataoline+Pron+Sg+Trm: omataoliseni
+     omataoline+Pron+Sg+Ess: omataolisena
+     omataoline+Pron+Sg+Abe: omataoliseta
+     omataoline+Pron+Sg+Com: omataolisega
+     omataoline+Pron+Pl+Nom: omataolised
+     omataoline+Pron+Pl+Gen: omataoliste
+     omataoline+Pron+Pl+Par: [omataoliseid, omataolisi]
+     omataoline+Pron+Pl+Ill: [omataolistesse, omataolisisse]
+     omataoline+Pron+Pl+Ine: [omataolistes, omataolisis]
+     omataoline+Pron+Pl+Ela: [omataolistest, omataolisist]
+     omataoline+Pron+Pl+All: [omataolistele, omataolisile]
+     omataoline+Pron+Pl+Ade: [omataolistel, omataolisil]
+     omataoline+Pron+Pl+Abl: [omataolistelt, omataolisilt]
+     omataoline+Pron+Pl+Tra: [omataolisteks, omataolisiks]
+     omataoline+Pron+Pl+Trm: omataolisteni
+     omataoline+Pron+Pl+Ess: omataolistena
+     omataoline+Pron+Pl+Abe: omataolisteta
+     omataoline+Pron+Pl+Com: omataolistega
+     #
+     mitmetaoline+Pron+Sg+Nom: mitmetaoline
+     mitmetaoline+Pron+Sg+Gen: mitmetaolise
+     mitmetaoline+Pron+Sg+Par: mitmetaolist
+     mitmetaoline+Pron+Sg+Ill: [mitmetaolisesse, mitmetaolisse]
+     mitmetaoline+Pron+Sg+Ine: mitmetaolises
+     mitmetaoline+Pron+Sg+Ela: mitmetaolisest
+     mitmetaoline+Pron+Sg+All: mitmetaolisele
+     mitmetaoline+Pron+Sg+Ade: mitmetaolisel
+     mitmetaoline+Pron+Sg+Abl: mitmetaoliselt
+     mitmetaoline+Pron+Sg+Tra: mitmetaoliseks
+     mitmetaoline+Pron+Sg+Trm: mitmetaoliseni
+     mitmetaoline+Pron+Sg+Ess: mitmetaolisena
+     mitmetaoline+Pron+Sg+Abe: mitmetaoliseta
+     mitmetaoline+Pron+Sg+Com: mitmetaolisega
+     mitmetaoline+Pron+Pl+Nom: mitmetaolised
+     mitmetaoline+Pron+Pl+Gen: mitmetaoliste
+     mitmetaoline+Pron+Pl+Par: [mitmetaoliseid, mitmetaolisi]
+     mitmetaoline+Pron+Pl+Ill: [mitmetaolistesse, mitmetaolisisse]
+     mitmetaoline+Pron+Pl+Ine: [mitmetaolistes, mitmetaolisis]
+     mitmetaoline+Pron+Pl+Ela: [mitmetaolistest, mitmetaolisist]
+     mitmetaoline+Pron+Pl+All: [mitmetaolistele, mitmetaolisile]
+     mitmetaoline+Pron+Pl+Ade: [mitmetaolistel, mitmetaolisil]
+     mitmetaoline+Pron+Pl+Abl: [mitmetaolistelt, mitmetaolisilt]
+     mitmetaoline+Pron+Pl+Tra: [mitmetaolisteks, mitmetaolisiks]
+     mitmetaoline+Pron+Pl+Trm: mitmetaolisteni
+     mitmetaoline+Pron+Pl+Ess: mitmetaolistena
+     mitmetaoline+Pron+Pl+Abe: mitmetaolisteta
+     mitmetaoline+Pron+Pl+Com: mitmetaolistega
+     #
+     niipaljuke+Pron+Sg+Nom: niipaljuke
+     niipaljuke+Pron+Sg+Gen: niipaljukese
+     niipaljuke+Pron+Sg+Par: niipaljukest
+     niipaljuke+Pron+Sg+Ill: [niipaljukesesse, niipaljukesse]
+     niipaljuke+Pron+Sg+Ine: niipaljukeses
+     niipaljuke+Pron+Sg+Ela: niipaljukesest
+     niipaljuke+Pron+Sg+All: niipaljukesele
+     niipaljuke+Pron+Sg+Ade: niipaljukesel
+     niipaljuke+Pron+Sg+Abl: niipaljukeselt
+     niipaljuke+Pron+Sg+Tra: niipaljukeseks
+     niipaljuke+Pron+Sg+Trm: niipaljukeseni
+     niipaljuke+Pron+Sg+Ess: niipaljukesena
+     niipaljuke+Pron+Sg+Abe: niipaljukeseta
+     niipaljuke+Pron+Sg+Com: niipaljukesega
+     niipaljuke+Pron+Pl+Nom: niipaljukesed
+     niipaljuke+Pron+Pl+Gen: niipaljukeste
+     niipaljuke+Pron+Pl+Par: niipaljukesi
+     niipaljuke+Pron+Pl+Ill: [niipaljukestesse, niipaljukesisse]
+     niipaljuke+Pron+Pl+Ine: [niipaljukestes, niipaljukesis]
+     niipaljuke+Pron+Pl+Ela: [niipaljukestest, niipaljukesist]
+     niipaljuke+Pron+Pl+All: [niipaljukestele, niipaljukesile]
+     niipaljuke+Pron+Pl+Ade: [niipaljukestel, niipaljukesil]
+     niipaljuke+Pron+Pl+Abl: [niipaljukestelt, niipaljukesilt]
+     niipaljuke+Pron+Pl+Tra: [niipaljukesteks, niipaljukesiks]
+     niipaljuke+Pron+Pl+Trm: niipaljukesteni
+     niipaljuke+Pron+Pl+Ess: niipaljukestena
+     niipaljuke+Pron+Pl+Abe: niipaljukesteta
+     niipaljuke+Pron+Pl+Com: niipaljukestega
+     #
+     teissugune+Pron+Sg+Nom: teissugune
+     teissugune+Pron+Sg+Gen: teissuguse
+     teissugune+Pron+Sg+Par: teissugust
+     teissugune+Pron+Sg+Ill: teissugusesse
+     teissugune+Pron+Sg+Ine: teissuguses
+     teissugune+Pron+Sg+Ela: teissugusest
+     teissugune+Pron+Sg+All: teissugusele
+     teissugune+Pron+Sg+Ade: teissugusel
+     teissugune+Pron+Sg+Abl: teissuguselt
+     teissugune+Pron+Sg+Tra: teissuguseks
+     teissugune+Pron+Sg+Trm: teissuguseni
+     teissugune+Pron+Sg+Ess: teissugusena
+     teissugune+Pron+Sg+Abe: teissuguseta
+     teissugune+Pron+Sg+Com: teissugusega
+     teissugune+Pron+Pl+Nom: teissugused
+     teissugune+Pron+Pl+Gen: teissuguste
+     teissugune+Pron+Pl+Par: teissuguseid
+     teissugune+Pron+Pl+Ill: [teissugustesse, teissuguseisse]
+     teissugune+Pron+Pl+Ine: [teissugustes, teissuguseis]
+     teissugune+Pron+Pl+Ela: [teissugustest, teissuguseist]
+     teissugune+Pron+Pl+All: [teissugustele, teissuguseile]
+     teissugune+Pron+Pl+Ade: [teissugustel, teissuguseil]
+     teissugune+Pron+Pl+Abl: [teissugustelt, teissuguseilt]
+     teissugune+Pron+Pl+Tra: [teissugusteks, teissuguseiks]
+     teissugune+Pron+Pl+Trm: teissugusteni
+     teissugune+Pron+Pl+Ess: teissugustena
+     teissugune+Pron+Pl+Abe: teissugusteta
+     teissugune+Pron+Pl+Com: teissugustega
+     #
+     minusugune+Pron+Sg+Nom: minusugune
+     minusugune+Pron+Sg+Gen: minusuguse
+     minusugune+Pron+Sg+Par: minusugust
+     minusugune+Pron+Sg+Ill: minusugusesse
+     minusugune+Pron+Sg+Ine: minusuguses
+     minusugune+Pron+Sg+Ela: minusugusest
+     minusugune+Pron+Sg+All: minusugusele
+     minusugune+Pron+Sg+Ade: minusugusel
+     minusugune+Pron+Sg+Abl: minusuguselt
+     minusugune+Pron+Sg+Tra: minusuguseks
+     minusugune+Pron+Sg+Trm: minusuguseni
+     minusugune+Pron+Sg+Ess: minusugusena
+     minusugune+Pron+Sg+Abe: minusuguseta
+     minusugune+Pron+Sg+Com: minusugusega
+     minusugune+Pron+Pl+Nom: minusugused
+     minusugune+Pron+Pl+Gen: minusuguste
+     minusugune+Pron+Pl+Par: minusuguseid
+     minusugune+Pron+Pl+Ill: [minusugustesse, minusuguseisse]
+     minusugune+Pron+Pl+Ine: [minusugustes, minusuguseis]
+     minusugune+Pron+Pl+Ela: [minusugustest, minusuguseist]
+     minusugune+Pron+Pl+All: [minusugustele, minusuguseile]
+     minusugune+Pron+Pl+Ade: [minusugustel, minusuguseil]
+     minusugune+Pron+Pl+Abl: [minusugustelt, minusuguseilt]
+     minusugune+Pron+Pl+Tra: [minusugusteks, minusuguseiks]
+     minusugune+Pron+Pl+Trm: minusugusteni
+     minusugune+Pron+Pl+Ess: minusugustena
+     minusugune+Pron+Pl+Abe: minusugusteta
+     minusugune+Pron+Pl+Com: minusugustega
+     #
+     minutaoline+Pron+Sg+Nom: minutaoline
+     minutaoline+Pron+Sg+Gen: minutaolise
+     minutaoline+Pron+Sg+Par: minutaolist
+     minutaoline+Pron+Sg+Ill: [minutaolisesse, minutaolisse]
+     minutaoline+Pron+Sg+Ine: minutaolises
+     minutaoline+Pron+Sg+Ela: minutaolisest
+     minutaoline+Pron+Sg+All: minutaolisele
+     minutaoline+Pron+Sg+Ade: minutaolisel
+     minutaoline+Pron+Sg+Abl: minutaoliselt
+     minutaoline+Pron+Sg+Tra: minutaoliseks
+     minutaoline+Pron+Sg+Trm: minutaoliseni
+     minutaoline+Pron+Sg+Ess: minutaolisena
+     minutaoline+Pron+Sg+Abe: minutaoliseta
+     minutaoline+Pron+Sg+Com: minutaolisega
+     minutaoline+Pron+Pl+Nom: minutaolised
+     minutaoline+Pron+Pl+Gen: minutaoliste
+     minutaoline+Pron+Pl+Par: [minutaoliseid, minutaolisi]
+     minutaoline+Pron+Pl+Ill: [minutaolistesse, minutaolisisse]
+     minutaoline+Pron+Pl+Ine: [minutaolistes, minutaolisis]
+     minutaoline+Pron+Pl+Ela: [minutaolistest, minutaolisist]
+     minutaoline+Pron+Pl+All: [minutaolistele, minutaolisile]
+     minutaoline+Pron+Pl+Ade: [minutaolistel, minutaolisil]
+     minutaoline+Pron+Pl+Abl: [minutaolistelt, minutaolisilt]
+     minutaoline+Pron+Pl+Tra: [minutaolisteks, minutaolisiks]
+     minutaoline+Pron+Pl+Trm: minutaolisteni
+     minutaoline+Pron+Pl+Ess: minutaolistena
+     minutaoline+Pron+Pl+Abe: minutaolisteta
+     minutaoline+Pron+Pl+Com: minutaolistega
+     #
+     samataoline+Pron+Sg+Nom: samataoline
+     samataoline+Pron+Sg+Gen: samataolise
+     samataoline+Pron+Sg+Par: samataolist
+     samataoline+Pron+Sg+Ill: [samataolisesse, samataolisse]
+     samataoline+Pron+Sg+Ine: samataolises
+     samataoline+Pron+Sg+Ela: samataolisest
+     samataoline+Pron+Sg+All: samataolisele
+     samataoline+Pron+Sg+Ade: samataolisel
+     samataoline+Pron+Sg+Abl: samataoliselt
+     samataoline+Pron+Sg+Tra: samataoliseks
+     samataoline+Pron+Sg+Trm: samataoliseni
+     samataoline+Pron+Sg+Ess: samataolisena
+     samataoline+Pron+Sg+Abe: samataoliseta
+     samataoline+Pron+Sg+Com: samataolisega
+     samataoline+Pron+Pl+Nom: samataolised
+     samataoline+Pron+Pl+Gen: samataoliste
+     samataoline+Pron+Pl+Par: [samataoliseid, samataolisi]
+     samataoline+Pron+Pl+Ill: [samataolistesse, samataolisisse]
+     samataoline+Pron+Pl+Ine: [samataolistes, samataolisis]
+     samataoline+Pron+Pl+Ela: [samataolistest, samataolisist]
+     samataoline+Pron+Pl+All: [samataolistele, samataolisile]
+     samataoline+Pron+Pl+Ade: [samataolistel, samataolisil]
+     samataoline+Pron+Pl+Abl: [samataolistelt, samataolisilt]
+     samataoline+Pron+Pl+Tra: [samataolisteks, samataolisiks]
+     samataoline+Pron+Pl+Trm: samataolisteni
+     samataoline+Pron+Pl+Ess: samataolistena
+     samataoline+Pron+Pl+Abe: samataolisteta
+     samataoline+Pron+Pl+Com: samataolistega
+     #
+     teiesugune+Pron+Sg+Nom: teiesugune
+     teiesugune+Pron+Sg+Gen: teiesuguse
+     teiesugune+Pron+Sg+Par: teiesugust
+     teiesugune+Pron+Sg+Ill: teiesugusesse
+     teiesugune+Pron+Sg+Ine: teiesuguses
+     teiesugune+Pron+Sg+Ela: teiesugusest
+     teiesugune+Pron+Sg+All: teiesugusele
+     teiesugune+Pron+Sg+Ade: teiesugusel
+     teiesugune+Pron+Sg+Abl: teiesuguselt
+     teiesugune+Pron+Sg+Tra: teiesuguseks
+     teiesugune+Pron+Sg+Trm: teiesuguseni
+     teiesugune+Pron+Sg+Ess: teiesugusena
+     teiesugune+Pron+Sg+Abe: teiesuguseta
+     teiesugune+Pron+Sg+Com: teiesugusega
+     teiesugune+Pron+Pl+Nom: teiesugused
+     teiesugune+Pron+Pl+Gen: teiesuguste
+     teiesugune+Pron+Pl+Par: teiesuguseid
+     teiesugune+Pron+Pl+Ill: [teiesugustesse, teiesuguseisse]
+     teiesugune+Pron+Pl+Ine: [teiesugustes, teiesuguseis]
+     teiesugune+Pron+Pl+Ela: [teiesugustest, teiesuguseist]
+     teiesugune+Pron+Pl+All: [teiesugustele, teiesuguseile]
+     teiesugune+Pron+Pl+Ade: [teiesugustel, teiesuguseil]
+     teiesugune+Pron+Pl+Abl: [teiesugustelt, teiesuguseilt]
+     teiesugune+Pron+Pl+Tra: [teiesugusteks, teiesuguseiks]
+     teiesugune+Pron+Pl+Trm: teiesugusteni
+     teiesugune+Pron+Pl+Ess: teiesugustena
+     teiesugune+Pron+Pl+Abe: teiesugusteta
+     teiesugune+Pron+Pl+Com: teiesugustega
+     #
+     teietaoline+Pron+Sg+Nom: teietaoline
+     teietaoline+Pron+Sg+Gen: teietaolise
+     teietaoline+Pron+Sg+Par: teietaolist
+     teietaoline+Pron+Sg+Ill: [teietaolisse, teietaolisesse]
+     teietaoline+Pron+Sg+Ine: teietaolises
+     teietaoline+Pron+Sg+Ela: teietaolisest
+     teietaoline+Pron+Sg+All: teietaolisele
+     teietaoline+Pron+Sg+Ade: teietaolisel
+     teietaoline+Pron+Sg+Abl: teietaoliselt
+     teietaoline+Pron+Sg+Tra: teietaoliseks
+     teietaoline+Pron+Sg+Trm: teietaoliseni
+     teietaoline+Pron+Sg+Ess: teietaolisena
+     teietaoline+Pron+Sg+Abe: teietaoliseta
+     teietaoline+Pron+Sg+Com: teietaolisega
+     teietaoline+Pron+Pl+Nom: teietaolised
+     teietaoline+Pron+Pl+Gen: teietaoliste
+     teietaoline+Pron+Pl+Par: [teietaolisi, teietaoliseid]
+     teietaoline+Pron+Pl+Ill: [teietaolistesse, teietaolisisse]
+     teietaoline+Pron+Pl+Ine: [teietaolistes, teietaolisis]
+     teietaoline+Pron+Pl+Ela: [teietaolistest, teietaolisist]
+     teietaoline+Pron+Pl+All: [teietaolistele, teietaolisile]
+     teietaoline+Pron+Pl+Ade: [teietaolistel, teietaolisil]
+     teietaoline+Pron+Pl+Abl: [teietaolistelt, teietaolisilt]
+     teietaoline+Pron+Pl+Tra: [teietaolisteks, teietaolisiks]
+     teietaoline+Pron+Pl+Trm: teietaolisteni
+     teietaoline+Pron+Pl+Ess: teietaolistena
+     teietaoline+Pron+Pl+Abe: teietaolisteta
+     teietaoline+Pron+Pl+Com: teietaolistega
+     #
