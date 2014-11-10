@@ -79,10 +79,10 @@ Multichar_Symbols
 
 ! aeg			! tense
 +Prs	! olevik	! present
-+Past	! minevik	! past (umbrella term for imperfect, perfect, pluperfect)
-! lihtminevik, past imperfect (used for indicative mood only)
++Past	! minevik	! past (i.e. not present)
+! lihtminevik = minevik ! past imperfect = past
 ! täisminevik, past perfect: olema (pres) + nud/tud/dud (olen teinud)
-! enneminevik, past pluperfect: olema (impf) + nut/tud/dud (olin teinud)
+! enneminevik, past pluperfect: olema (impf) + nud/tud/dud (olin teinud)
 
 ! kõneviis		! mood
 +Ind	! kindel	! indicative
@@ -129,8 +129,8 @@ Multichar_Symbols
 !  elaks vs. elanuks
 !# __mood:__ indicative vs. conditional vs imperative vs quotative
 !  (0-morph vs. ks vs. k/g[ue] vs. vat)
-!# __person+number:__ notice that in personal present imperative 3rd person
-!  the distinction between singular/plural is lost (ta/nad elagu)
+!# __person+number:__ notice that in personal present and past conditional, imperative 
+!  and quotative moods one form is underspecified for person+number
 !# __aspect:__ affirmative vs. negative. The aspect manifests itself via
 !  lexical means: it is either present in an exceptional wordform (some forms of
 !  olema) or gets adhered to a form, normally used in affirmative aspect,
@@ -138,7 +138,9 @@ Multichar_Symbols
 !  The only case when negative aspect has a dedicated form of its own is impersonal
 !  present indicative negative (e.g. ei elata).  
 !
-! Below, brackets are used to indicate the set of non-specified alternative values.
+! Below, brackets are used to indicate the set of underspecified alternative values.
+! The forms of negative words pole and ära are included in order to capture really all 
+!  the combinations 
 !
 ! ---- personal finite forms ----
 !
@@ -166,10 +168,9 @@ Multichar_Symbols
 ! personal present conditional Pl3 negative                                      poleksid
 !
 ! personal present imperative Sg2 (affirmative/negative)                         ela
-! personal present imperative Sg3 (affirmative/negative)                         elagu 
+! personal present imperative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) (affirmative/negative)   elagu 
 ! personal present imperative Pl1 (affirmative/negative)                         elagem
 ! personal present imperative Pl2 (affirmative/negative)                         elage 
-! personal present imperative Pl3 (affirmative/negative)                         elagu 
 !
 ! personal present imperative Sg2 negative                                       ära
 ! personal present imperative Sg3 negative                                       ärgu
@@ -187,7 +188,7 @@ Multichar_Symbols
 ! personal past indicative Pl2 affirmative                                       elasite
 ! personal past indicative Pl3 affirmative                                       elasid
 !
-! personal past indicative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                    polnud, 
+! personal past indicative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                    polnud 
 !
 ! personal past conditional Sg1 affirmative                                      elanuksin
 ! personal past conditional Sg2 affirmative                                      elanuksid
@@ -210,11 +211,11 @@ Multichar_Symbols
 ! personal past participle                                                        elanud
 !          (ei, on, oli, ...) + personal past participle = some analytical personal form 
 !
-! personal supine abessive                                                        elamata
-! personal supine elative                                                         elamast
 ! personal supine illative                                                        elama 
 ! personal supine inessive                                                        elamas
+! personal supine elative                                                         elamast
 ! personal supine translative                                                     elamaks
+! personal supine abessive                                                        elamata
 !
 ! ---- impersonal finite forms ----
 !
@@ -244,8 +245,8 @@ Multichar_Symbols
 !
 ! ---- infinite forms with no voice category ----
 !
-! gerund                                                                          elades
 ! infinitive                                                                      elada
+! gerund                                                                          elades
 !
 !
 ! Exceptional cases:
