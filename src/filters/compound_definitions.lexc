@@ -1,6 +1,28 @@
 ! Copyright © 2010 by Jaak Pruulmann-Vengerfeldt.
 ! All rights reserved.
 
+Multichar_Symbols
+
++N +Prop +A +Num +Card +Ord +Pron +V +Adv +Interj +CC +CS +Adp +Adv 
++Dim/ke +Dim/kene +Der +Der/us +Der/lt +Der/ini +Der/nu +Foc/gi
++Sg +Pl 
++Nom +Gen +Par +Ill +Ill +Ine +Ela +All +Ade +Abl +Tra +Trm +Ess +Abe +Com 
++Comp +Superl 
++Impers +Pers 
++Prs +Past 
++Ind +Cond +Imprt +Quot 
++Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3 
++Aff +Neg 
++Sup +Inf +Ger +Prc 
++prefix +suffix
+G1 B1 D1 K1 P1 T1 S1 A1 E1 I1 U1 X2 Q1 
+
+! «7 
+! »7 
+! %'7
+ 
++Hom1 +Hom2
+
 Definitions
     Täht = [ a | b | c | d | e | f | g | h |
     	     i | j | k | l | m | n | o | p |

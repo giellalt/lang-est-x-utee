@@ -317,8 +317,8 @@ An_SgN;
 
 LEXICON 22_KS-HE ! üks, kaks
 :ks An_SgN;
-:he$ TP_22bn;
-:hte TP_22bt;
+:he$ TP_22bn'; ! ilma vokaalmitmuseta
+:hte TP_22bt';
 
 LEXICON 22_B-E-BE ! kuub-kuue-kuube
 :b An_SgN;

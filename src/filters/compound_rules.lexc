@@ -30,40 +30,40 @@ LEXICON Nimisõnad
  < Nimisõna' [ "+Sg" [ "+Nom" | "+Gen" ] | "+Pl" "+Gen" | "+prefix" ] SP > Määrsõnad; ! EKKR, S422 ! FIXME: lühitüved
  < Nimisõna' [ "+Sg" [ "+Nom" | "+Gen" ] | "+Pl" "+Gen" | "+prefix" ] Kriips > #;
 
- < Nimisõna' "+Sg" "+Nom" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Nom" > GI; ! aasta-paar, meeter-kaks jms
- < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" > GI;
- < Nimisõna' "+Sg" "+Par" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Par" > GI;
- < Nimisõna' "+Sg" "+Ill" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ill" > GI;
- < Nimisõna' "+Sg" "+Ine" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ine" > GI;
- < Nimisõna' "+Sg" "+Ela" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ela" > GI;
- < Nimisõna' "+Sg" "+All" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+All" > GI;
- < Nimisõna' "+Sg" "+Ade" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ade" > GI;
- < Nimisõna' "+Sg" "+Abl" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Abl" > GI;
- < Nimisõna' "+Sg" "+Tra" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Tra" > GI;
- < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Trm" > GI;
- < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ess" > GI;
- < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Abe" > GI;
- < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Com" > GI;
+ < Nimisõna' "+Sg" "+Nom" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Nom" > GI; ! aasta-paar, meeter-kaks jms
+ < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" > GI;
+ < Nimisõna' "+Sg" "+Par" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Par" > GI;
+ < Nimisõna' "+Sg" "+Ill" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ill" > GI;
+ < Nimisõna' "+Sg" "+Ine" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ine" > GI;
+ < Nimisõna' "+Sg" "+Ela" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ela" > GI;
+ < Nimisõna' "+Sg" "+All" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+All" > GI;
+ < Nimisõna' "+Sg" "+Ade" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ade" > GI;
+ < Nimisõna' "+Sg" "+Abl" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Abl" > GI;
+ < Nimisõna' "+Sg" "+Tra" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Tra" > GI;
+ < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Trm" > GI;
+ < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ess" > GI;
+ < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Abe" > GI;
+ < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Com" > GI;
 
 LEXICON Arvsõnad
  < Arvsõna > GI;
 
  ! fixme: teistkümned, kümned, sajad
 
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Nom" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Nom" > GI; ! üht-teist, viies-kuues jm
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Par" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Par" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ill" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ill" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ine" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ine" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ela" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ela" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+All" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+All" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ade" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ade" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Abl" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Abl" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Tra" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Tra" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Trm" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Ess" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Abe" > GI;
- < Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne [ "+Num" | "+Ord" ] "+Sg" "+Com" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Nom" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Nom" > GI; ! üht-teist, viies-kuues jm
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Par" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Par" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ill" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ill" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ine" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ine" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ela" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ela" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+All" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+All" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ade" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ade" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Abl" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Abl" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Tra" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Tra" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Trm" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ess" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Abe" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Com" > GI;
 
 LEXICON Omadussõnad
  < Omadussõna > GI;
@@ -89,6 +89,67 @@ LEXICON Kaassõnad
  < Kaassõna SP > Käänduvad_sõnad; ! EKKR, SM42 ?
 
 LEXICON Asesõnad
+ seesama+Pron+Sg+Nom:see+Pron+Sg+Nom#sama+Pron+Sg+Nom GI;
+ seesama+Pron+Sg+Gen:see+Pron+Sg+Gen#sama+Pron+Sg+Gen GI;
+ seesama+Pron+Sg+Par:see+Pron+Sg+Par#sama+Pron+Sg+Par GI;
+ seesama+Pron+Sg+Ill:see+Pron+Sg+Ill#sama+Pron+Sg+Ill GI;
+ seesama+Pron+Sg+Ine:see+Pron+Sg+Ine#sama+Pron+Sg+Ine GI;
+ seesama+Pron+Sg+Ela:see+Pron+Sg+Ela#sama+Pron+Sg+Ela GI;
+ seesama+Pron+Sg+All:see+Pron+Sg+All#sama+Pron+Sg+All GI;
+ seesama+Pron+Sg+Ade:see+Pron+Sg+Ade#sama+Pron+Sg+Ade GI;
+ seesama+Pron+Sg+Abl:see+Pron+Sg+Abl#sama+Pron+Sg+Abl GI;
+ seesama+Pron+Sg+Tra:see+Pron+Sg+Tra#sama+Pron+Sg+Tra GI;
+ seesama+Pron+Sg+Trm:see+Pron+Sg+Gen#sama+Pron+Sg+Trm GI;
+ seesama+Pron+Sg+Ess:see+Pron+Sg+Gen#sama+Pron+Sg+Ess GI;
+ seesama+Pron+Sg+Abe:see+Pron+Sg+Gen#sama+Pron+Sg+Abe GI;
+ seesama+Pron+Sg+Com:see+Pron+Sg+Gen#sama+Pron+Sg+Com GI;
+ seesama+Pron+Pl+Nom:see+Pron+Pl+Nom#sama+Pron+Pl+Nom GI;
+ seesama+Pron+Pl+Gen:see+Pron+Pl+Gen#sama+Pron+Pl+Gen GI;
+ seesama+Pron+Pl+Par:see+Pron+Pl+Par#sama+Pron+Pl+Par GI;
+ seesama+Pron+Pl+Ill:see+Pron+Pl+Ill#sama+Pron+Pl+Ill GI;
+ seesama+Pron+Pl+Ine:see+Pron+Pl+Ine#sama+Pron+Pl+Ine GI;
+ seesama+Pron+Pl+Ela:see+Pron+Pl+Ela#sama+Pron+Pl+Ela GI;
+ seesama+Pron+Pl+All:see+Pron+Pl+All#sama+Pron+Pl+All GI;
+ seesama+Pron+Pl+Ade:see+Pron+Pl+Ade#sama+Pron+Pl+Ade GI;
+ seesama+Pron+Pl+Abl:see+Pron+Pl+Abl#sama+Pron+Pl+Abl GI;
+ seesama+Pron+Pl+Tra:see+Pron+Pl+Tra#sama+Pron+Pl+Tra GI;
+ seesama+Pron+Pl+Trm:see+Pron+Pl+Gen#sama+Pron+Pl+Trm GI;
+ seesama+Pron+Pl+Ess:see+Pron+Pl+Gen#sama+Pron+Pl+Ess GI;
+ seesama+Pron+Pl+Abe:see+Pron+Pl+Gen#sama+Pron+Pl+Abe GI;
+ seesama+Pron+Pl+Com:see+Pron+Pl+Gen#sama+Pron+Pl+Com GI;
+
+ toosama+Pron+Sg+Nom:too+Pron+Sg+Nom#sama+Pron+Sg+Nom GI;
+ toosama+Pron+Sg+Gen:too+Pron+Sg+Gen#sama+Pron+Sg+Gen GI;
+ toosama+Pron+Sg+Par:too+Pron+Sg+Par#sama+Pron+Sg+Par GI;
+ toosama+Pron+Sg+Ill:too+Pron+Sg+Ill#sama+Pron+Sg+Ill GI;
+ toosama+Pron+Sg+Ine:too+Pron+Sg+Ine#sama+Pron+Sg+Ine GI;
+ toosama+Pron+Sg+Ela:too+Pron+Sg+Ela#sama+Pron+Sg+Ela GI;
+ toosama+Pron+Sg+All:too+Pron+Sg+All#sama+Pron+Sg+All GI;
+ toosama+Pron+Sg+Ade:too+Pron+Sg+Ade#sama+Pron+Sg+Ade GI;
+ toosama+Pron+Sg+Abl:too+Pron+Sg+Abl#sama+Pron+Sg+Abl GI;
+ toosama+Pron+Sg+Tra:too+Pron+Sg+Tra#sama+Pron+Sg+Tra GI;
+ toosama+Pron+Sg+Trm:too+Pron+Sg+Gen#sama+Pron+Sg+Trm GI;
+ toosama+Pron+Sg+Ess:too+Pron+Sg+Gen#sama+Pron+Sg+Ess GI;
+ toosama+Pron+Sg+Abe:too+Pron+Sg+Gen#sama+Pron+Sg+Abe GI;
+ toosama+Pron+Sg+Com:too+Pron+Sg+Gen#sama+Pron+Sg+Com GI;
+ toosama+Pron+Pl+Nom:too+Pron+Pl+Nom#sama+Pron+Pl+Nom GI;
+ toosama+Pron+Pl+Gen:too+Pron+Pl+Gen#sama+Pron+Pl+Gen GI;
+ toosama+Pron+Pl+Par:too+Pron+Pl+Par#sama+Pron+Pl+Par GI;
+ toosama+Pron+Pl+Ill:too+Pron+Pl+Ill#sama+Pron+Pl+Ill GI;
+ toosama+Pron+Pl+Ine:too+Pron+Pl+Ine#sama+Pron+Pl+Ine GI;
+ toosama+Pron+Pl+Ela:too+Pron+Pl+Ela#sama+Pron+Pl+Ela GI;
+ toosama+Pron+Pl+All:too+Pron+Pl+All#sama+Pron+Pl+All GI;
+ toosama+Pron+Pl+Ade:too+Pron+Pl+Ade#sama+Pron+Pl+Ade GI;
+ toosama+Pron+Pl+Abl:too+Pron+Pl+Abl#sama+Pron+Pl+Abl GI;
+ toosama+Pron+Pl+Tra:too+Pron+Pl+Tra#sama+Pron+Pl+Tra GI;
+ toosama+Pron+Pl+Trm:too+Pron+Pl+Gen#sama+Pron+Pl+Trm GI;
+ toosama+Pron+Pl+Ess:too+Pron+Pl+Gen#sama+Pron+Pl+Ess GI;
+ toosama+Pron+Pl+Abe:too+Pron+Pl+Gen#sama+Pron+Pl+Abe GI;
+ toosama+Pron+Pl+Com:too+Pron+Pl+Gen#sama+Pron+Pl+Com GI;
+
+ < Tähtsõne "+Pron" [ "+Sg" | "+Pl" ] "+Gen" "#" s u g u n e "+A" ArvJaKääne > GI;
+ < Tähtsõne "+Pron" [ "+Sg" | "+Pl" ] "+Gen" "#" t a o l i n e "+Pron" ArvJaKääne > GI;
+
  < Asesõna > GI;
 
 

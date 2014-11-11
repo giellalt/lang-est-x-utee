@@ -5,10 +5,13 @@ LEXICON Pronouns
  iga+Pron:iga 16; ! (16_P -> +Pron) a0: iga, a0g: #
  iga+Pron:iga 17; ! (17_P -> +Pron) a0: iga, a0g: #, a0v: #
  iga+Pron+Sg+Par:igat GI; ! 17_P,iga,iga[t],------0P,-,-,+
+ igaüks+Pron+Sg+Par:igaüht GI; ! 22_NP,'üks,'üht[],------0P,-,-,+
+ igaüks+Pron:igaü 22_KS-HE; ! (22_NP -> +Pron +Num) at: üks, bt: ühte, bn: ühe, btv: üksi, bnv: üksi
  keski+Pron:keski 01; ! (01_P -> +Pron) a0: keski, a0r: keske
  kesse+Pron:kesse GI; ! (41_P -> +Pron) 
  kogu+Pron:kogu GI; ! (41_P -> +Pron) 
  kumb+Pron:kumB1 22_A; ! (22_P -> +Pron) at: kumb, bt: kumba, bn: kumma, btv: kumbi, bnv: kummi
+ kumb+Pron+Pl+Par:kumbi GI;
  mihukene+Pron:mihuke 12_NE-SE-S; ! (12_P -> +Pron) a0: mihukene, b0: mihukese, c0: mihukes, b0v: mihukesi
  mihuke+Pron:mihuke 12_0-SE-S; ! (12_P -> +Pron) a0: mihuke, b0: mihukese, c0: mihukes, b0v: mihukesi
  milline+Pron:milli 10_NE-SE-S; ! (10_P -> +Pron) a0: milline, b0: millise, c0: millis
@@ -39,6 +42,7 @@ LEXICON Pronouns
  mõningas+Pron:mõning 02_GAS_S-0; ! (02_P -> +Pron) a0: mõningas, b0: mõninga, b0r: 0, c0: 0
  mõni+Pron:mõn= 20; ! (20_P -> +Pron) a0: mõni, b0: mõne, b0g: 0
  mäherdune+Pron:mäherdu 12_NE-SE-S; ! (12_P -> +Pron) a0: mäherdune, b0: mäherduse, c0: mäherdus, b0v: mäherdusi
+ niimitu+Pron:niimit 05_U-ME; ! (05_P -> +Pron) an: mitu, (at): mittu, bt: mitme, btr: #
  nihukene+Pron:nihuke 12_NE-SE-S; ! (12_P -> +Pron) a0: nihukene, b0: nihukese, c0: nihukes, b0v: nihukesi
  nihuke+Pron:nihuke 12_0-SE-S; ! (12_P -> +Pron) a0: nihuke, b0: nihukese, c0: nihukes, b0v: nihukesi
  niisuke+Pron:niisuke 12_0-SE-S; ! (12_P -> +Pron) a0: niisuke, b0: niisukese, c0: niisukes, b0v: niisukesi
@@ -46,7 +50,7 @@ LEXICON Pronouns
  nisuke+Pron:nisuke 12_0-SE-S; ! (12_P -> +Pron) a0: nisuke, b0: nisukese, c0: nisukes, b0v: nisukesi
  oma+Pron:oma GI; ! (41_P -> +Pron) 
  paljuke+Pron:paljuke 12_0-SE-S; ! (12_P -> +Pron) a0: paljuke, b0: paljukese, c0: paljukes, b0v: paljukesi
- palju+Pron:palju 01; ! (01_P -> +Pron) a0: palju, a0r: 0
+! ??? palju+Pron:palju 01; ! (01_P -> +Pron) a0: palju, a0r: 0 
  palju+Pron:palju 16; ! (16_P -> +Pron) a0: palju, a0g: #
  samane+Pron:sama 10_NE-SE-S; ! (10_AP -> +A +Pron) a0: samane, b0: samase, c0: samas
  sama+Pron:sama 17; ! (17_P -> +Pron) a0: sama, a0g: #, a0v: samu
@@ -60,7 +64,10 @@ LEXICON Pronouns
  ! ??? sinane+Pron:sinane 10; ! (10_AP -> +A +Pron) a0: sinane, b0: sinatse, c0: sinas
  säherdune+Pron:säherdu 12_NE-SE-S; ! (12_P -> +Pron) a0: säherdune, b0: säherduse, c0: säherdus, b0v: säherdusi
  säärane+Pron:säära 10_NE-SE-S; ! (10_P -> +Pron) a0: säärane, b0: säärase, c0: sääras
+ taoline+Pron:taoli 10_NE-SE-S; ! (10_A -> +A) a0: taoline, b0: taolise, c0: taolis
+ taoline+Pron:taoli 12_NE-SE-S; ! (12_A -> +A) a0: taoline, b0: taolise, c0: taolis, b0v: taolisi
  teine+Pron:tei 12_NE-SE-S; ! (12_OP -> +Pron +Ord) a0: teine, b0: teise, c0: teis, b0v: teisi
+ teineteise+Pron:teinetei 12_NE-SE-S;
  teise+Pron:teise 12_NE-SE-S; ! (12_P -> +Pron) a0: teise, b0: teise, c0: teis, b0v: teisi
  temakene+Pron:temake 12_NE-SE-S; ! (12_P -> +Pron) a0: temakene, b0: temakese, c0: temakes, b0v: temakesi
  temake+Pron:temake 12_0-SE-S; ! (12_P -> +Pron) a0: temake, b0: temakese, c0: temakes, b0v: temakesi
@@ -85,3 +92,4 @@ LEXICON Pronouns
  ! TODO ükski+Pron:ükski 00; ! (00_P -> +Pron) a0: ükski, b0: ühegi
  üks+Pron+Sg+Par:üht GI; ! 22_NP,'üks,'üht[],------0P,-,-,+
  üks+Pron:ü 22_KS-HE; ! (22_NP -> +Pron +Num) at: üks, bt: ühte, bn: ühe, btv: üksi, bnv: üksi
+ üksteise+Pron:ükstei 12_NE-SE-S;
