@@ -77,7 +77,10 @@ generator-raw-gt-desc-simple-full.hfst: \
 				morphology/overriding-exceptions.hfst \
 				morphology/numbers.hfst \
 				phonology/$(GTLANG)-phon.compose.hfst
-	$(AM_V_RGX2FST)$(PRINTF) '[ @"filters/deriv_filter.hfst" .o. [ [@"morphology/overriding-exceptions.hfst"] | [ ~[[@"morphology/overriding-exceptions.hfst"].u] .o. @"generator-raw-gt-desc-simple-with-av.hfst"]] .o. ~$$ [ "{" "}" ]]' | \
+	$(AM_V_RGX2FST)$(PRINTF) '[ @"filters/deriv_filter.hfst" \
+						  .o. [ [@"morphology/overriding-exceptions.hfst"] \
+							  | [ ~[ [@"morphology/overriding-exceptions.hfst"].u ] \
+								  .o. @"generator-raw-gt-desc-simple-with-av.hfst"]] .o. ~$$ [ "{" "}" ]]' | \
 	$(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) | \
 	$(HFST_COMPOSE_INTERSECT) $(VERBOSITY) $(HFST_FLAGS) -2 phonology/$(GTLANG)-phon.compose.hfst | \
 	$(HFST_DISJUNCT) $(VERBOSITY) $(HFST_FLAGS) morphology/numbers.hfst | \
