@@ -216,12 +216,12 @@ Below, brackets are used to list the set of non-specified alternative values.
  personal present condit 3p negative                                poleksid
 
  personal present imper 2s (afirmative/negative)                    ela
- personal present imper 3 (singular/plural) (afirmative/negative)   elagu 
+ personal present imper (1s/2s/3s/1p/2p/3p) (afirmative/negative)   elagu 
  personal present imper 1p (afirmative/negative)                    elagem
  personal present imper 2p (afirmative/negative)                    elage 
 
  personal present imper 2s negative                                 ära
- personal present imper 3 (singular/plural) negative                ärgu
+ personal present imper (1s/2s/3s/1p/2p/3p) negative                ärgu
  personal present imper 1p negative                                 ärgem
  personal present imper 2p negative                                 ärge
 
@@ -297,16 +297,14 @@ Exceptional cases:
 Analytical forms (olen elanud, olin elanud, oleksin elanud, ei olnud elanud,
 ei olnuks elanud etc) are not treated here...
 
-Suggestions to simplify the way verb categories are combined above:
-# Omit "personal" where person and number are specified anyway.
+Ways to simplify the way verb categories are combined above:
 # If there is underspecification (afirmative/negative), leave it out.
 # If there is underspecification (1s/2s/3s/1p/2p/3p), leave it out, but keep
   the tag for voice "personal"   
-# For personal present imper 3 (singular/plural), keep only personal present
-  imper 3. In real texts, this form is often used as a general statement,
-  without actually even specifying the subject, so it is impossible to
-  disambiguate between singular and plural.
+
+Possible, but currently not used ways for simplification:
+# Omit "personal" where person and number are specified anyway.
 # If a combination contains "affirmative", leave "affirmative" out. This will
   simplify the output, although it thus fails to capture the fact that the
   corresponding wordform cannot be used with negative aspect, e.g. that
-  "ei elan" is ungrammatical.
+  "ei elan" is ungrammatical. 

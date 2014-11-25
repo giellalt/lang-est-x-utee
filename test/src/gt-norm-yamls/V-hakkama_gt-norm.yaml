@@ -42,29 +42,29 @@ Tests:
 
 # Isikulised minevikuvormid # Personal past forms
 
-     hakkama+V+Pers+Past+Ind+Sg1+Aff: hakkasin
-     hakkama+V+Pers+Past+Ind+Sg2+Aff: hakkasid
-     hakkama+V+Pers+Past+Ind+Sg3+Aff: hakkas
-     hakkama+V+Pers+Past+Ind+Pl1+Aff: hakkasime
-     hakkama+V+Pers+Past+Ind+Pl2+Aff: hakkasite
-     hakkama+V+Pers+Past+Ind+Pl3+Aff: hakkasid
-     hakkama+V+Pers+Past+Ind+Neg: hakanud
+     hakkama+V+Pers+Prt+Ind+Sg1+Aff: hakkasin
+     hakkama+V+Pers+Prt+Ind+Sg2+Aff: hakkasid
+     hakkama+V+Pers+Prt+Ind+Sg3+Aff: hakkas
+     hakkama+V+Pers+Prt+Ind+Pl1+Aff: hakkasime
+     hakkama+V+Pers+Prt+Ind+Pl2+Aff: hakkasite
+     hakkama+V+Pers+Prt+Ind+Pl3+Aff: hakkasid
+     hakkama+V+Pers+Prt+Ind+Neg: hakanud
 
-     hakkama+V+Pers+Past+Cond+Sg1+Aff: hakanuksin
-     hakkama+V+Pers+Past+Cond+Sg2+Aff: hakanuksid
-     hakkama+V+Pers+Past+Cond: hakanuks
-     hakkama+V+Pers+Past+Cond+Pl1+Aff: hakanuksime
-     hakkama+V+Pers+Past+Cond+Pl2+Aff: hakanuksite
-     hakkama+V+Pers+Past+Cond+Pl3+Aff: hakanuksid
+     hakkama+V+Pers+Prt+Cond+Sg1+Aff: hakanuksin
+     hakkama+V+Pers+Prt+Cond+Sg2+Aff: hakanuksid
+     hakkama+V+Pers+Prt+Cond: hakanuks
+     hakkama+V+Pers+Prt+Cond+Pl1+Aff: hakanuksime
+     hakkama+V+Pers+Prt+Cond+Pl2+Aff: hakanuksite
+     hakkama+V+Pers+Prt+Cond+Pl3+Aff: hakanuksid
 
-     hakkama+V+Pers+Past+Imprt: hakanud
+     hakkama+V+Pers+Prt+Imprt: hakanud
 
-     hakkama+V+Pers+Past+Quot: hakanuvat
+     hakkama+V+Pers+Prt+Quot: hakanuvat
 
 # Isikulised käändelised vormid # Personal infinite forms
 
      hakkama+V+Pers+Prs+Prc: hakkav
-     hakkama+V+Pers+Past+Prc: hakanud
+     hakkama+V+Pers+Prt+Prc: hakanud
 
      hakkama+V+Pers+Sup+Ill: hakkama
      hakkama+V+Pers+Sup+Ine: hakkamas
@@ -85,18 +85,18 @@ Tests:
 
 # Umbisikuline minevik # Impersonal past forms
 
-     hakkama+V+Impers+Past+Ind+Aff: hakati
-     hakkama+V+Impers+Past+Ind+Neg: hakatud
+     hakkama+V+Impers+Prt+Ind+Aff: hakati
+     hakkama+V+Impers+Prt+Ind+Neg: hakatud
 
-     hakkama+V+Impers+Past+Cond: hakatuks
+     hakkama+V+Impers+Prt+Cond: hakatuks
 
-     # hakkama+V+Impers+Past+Imprt: pole vormi # no form  
-     # hakkama+V+Impers+Past+Quot: hakatuvat # pole võimalik moodustada # not possible
+     # hakkama+V+Impers+Prt+Imprt: pole vormi # no form  
+     # hakkama+V+Impers+Prt+Quot: hakatuvat # pole võimalik moodustada # not possible
      
 # Umbisikulised käändelised vormid # Impersonal infinite forms
 
      hakkama+V+Impers+Prs+Prc: hakatav
-     hakkama+V+Impers+Past+Prc: hakatud
+     hakkama+V+Impers+Prt+Prc: hakatud
 
      hakkama+V+Impers+Sup: hakatama     
 

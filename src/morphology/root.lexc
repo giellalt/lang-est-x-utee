@@ -79,7 +79,7 @@ Multichar_Symbols
 
 ! aeg			! tense
 +Prs	! olevik	! present
-+Past	! minevik	! past (i.e. not present)
++Prt	! minevik	! past (i.e. not present)
 ! lihtminevik = minevik ! past imperfect = past
 ! täisminevik, past perfect: olema (pres) + nud/tud/dud (olen teinud)
 ! enneminevik, past pluperfect: olema (impf) + nud/tud/dud (olin teinud)
@@ -173,10 +173,9 @@ Multichar_Symbols
 ! personal present imperative Pl2 (affirmative/negative)                         elage 
 !
 ! personal present imperative Sg2 negative                                       ära
-! personal present imperative Sg3 negative                                       ärgu
+! personal present imperative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                 ärgu
 ! personal present imperative Pl1 negative                                       ärgem
 ! personal present imperative Pl2 negative                                       ärge
-! personal present imperative Pl3 negative                                       ärgu
 !
 ! personal present quotative (affirmative/negative)                              elavat
 ! personal present quotative negative                                            polevat

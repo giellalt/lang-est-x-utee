@@ -9,7 +9,7 @@ Multichar_Symbols
 +Nom +Gen +Par +Ill +Ill +Ine +Ela +All +Ade +Abl +Tra +Trm +Ess +Abe +Com 
 +Comp +Superl 
 +Impers +Pers 
-+Prs +Past 
++Prs +Prt 
 +Ind +Cond +Imprt +Quot 
 +Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3 
 +Aff +Neg 
@@ -54,7 +54,7 @@ Definitions
 				| %+Imprt (%+Sg2 | %+Sg3 | %+Pl1 | %+Pl2 | %+Pl3) (AffNeg)
 				| %+Quot (AffNeg) 
 				| %+Prc ]
-			| %+Past
+			| %+Prt
 				[ %+Ind [ PööreJaArv %+Aff | (PööreJaArv) %+Neg ]
 				| %+Cond (PööreJaArv) (AffNeg) 
 				| %+Imprt (PööreJaArv) (AffNeg) 
@@ -68,7 +68,7 @@ Definitions
 				| %+Imprt (AffNeg)
 				| %+Quot (AffNeg)
 				| %+Prc ]
-			| %+Past [ %+Ind AffNeg | %+Cond (AffNeg) | %+Quot AffNeg | %+Prc ]
+			| %+Prt [ %+Ind AffNeg | %+Cond (AffNeg) | %+Quot AffNeg | %+Prc ]
 			| %+Sup ]
 		]; 
 

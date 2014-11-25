@@ -41,29 +41,29 @@ Tests:
 
 # Isikulised minevikuvormid # Personal past forms
 
-     minema+V+Pers+Past+Ind+Sg1+Aff: läksin
-     minema+V+Pers+Past+Ind+Sg2+Aff: läksid
-     minema+V+Pers+Past+Ind+Sg3+Aff: läks
-     minema+V+Pers+Past+Ind+Pl1+Aff: läksime
-     minema+V+Pers+Past+Ind+Pl2+Aff: läksite
-     minema+V+Pers+Past+Ind+Pl3+Aff: läksid
-     minema+V+Pers+Past+Ind+Neg: läinud
+     minema+V+Pers+Prt+Ind+Sg1+Aff: läksin
+     minema+V+Pers+Prt+Ind+Sg2+Aff: läksid
+     minema+V+Pers+Prt+Ind+Sg3+Aff: läks
+     minema+V+Pers+Prt+Ind+Pl1+Aff: läksime
+     minema+V+Pers+Prt+Ind+Pl2+Aff: läksite
+     minema+V+Pers+Prt+Ind+Pl3+Aff: läksid
+     minema+V+Pers+Prt+Ind+Neg: läinud
 
-     minema+V+Pers+Past+Cond+Sg1+Aff: läinuksin
-     minema+V+Pers+Past+Cond+Sg2+Aff: läinuksid
-     minema+V+Pers+Past+Cond: läinuks
-     minema+V+Pers+Past+Cond+Pl1+Aff: läinuksime
-     minema+V+Pers+Past+Cond+Pl2+Aff: läinuksite
-     minema+V+Pers+Past+Cond+Pl3+Aff: läinuksid
+     minema+V+Pers+Prt+Cond+Sg1+Aff: läinuksin
+     minema+V+Pers+Prt+Cond+Sg2+Aff: läinuksid
+     minema+V+Pers+Prt+Cond: läinuks
+     minema+V+Pers+Prt+Cond+Pl1+Aff: läinuksime
+     minema+V+Pers+Prt+Cond+Pl2+Aff: läinuksite
+     minema+V+Pers+Prt+Cond+Pl3+Aff: läinuksid
 
-     minema+V+Pers+Past+Imprt: läinud
+     minema+V+Pers+Prt+Imprt: läinud
 
-     minema+V+Pers+Past+Quot: läinuvat
+     minema+V+Pers+Prt+Quot: läinuvat
 
 # Isikulised käändelised vormid # Personal infinite forms
 
      minema+V+Pers+Prs+Prc: minev
-     minema+V+Pers+Past+Prc: läinud
+     minema+V+Pers+Prt+Prc: läinud
 
      minema+V+Pers+Sup+Ill: minema
      minema+V+Pers+Sup+Ine: minemas
@@ -81,15 +81,15 @@ Tests:
 
 # Umbisikuline minevik # Impersonal past forms
 
-     minema+V+Impers+Past+Ind+Aff: mindi
-     minema+V+Impers+Past+Ind+Neg: mindud
+     minema+V+Impers+Prt+Ind+Aff: mindi
+     minema+V+Impers+Prt+Ind+Neg: mindud
 
-     minema+V+Impers+Past+Cond: minduks
+     minema+V+Impers+Prt+Cond: minduks
 
 # Umbisikulised käändelised vormid # Impersonal infinite forms
 
      minema+V+Impers+Prs+Prc: mindav
-     minema+V+Impers+Past+Prc: mindud
+     minema+V+Impers+Prt+Prc: mindud
 
      minema+V+Impers+Sup: mindama
 

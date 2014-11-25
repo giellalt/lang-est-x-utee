@@ -49,36 +49,36 @@ Tests:
 
 # Isikulised minevikuvormid # Personal past forms
 
-     olema+V+Pers+Past+Ind+Sg1+Aff: olin
-     olema+V+Pers+Past+Ind+Sg2+Aff: olid
-     olema+V+Pers+Past+Ind+Sg3+Aff: oli
-     olema+V+Pers+Past+Ind+Pl1+Aff: olime
-     olema+V+Pers+Past+Ind+Pl2+Aff: olite
-     olema+V+Pers+Past+Ind+Pl3+Aff: olid
-     olema+V+Pers+Past+Ind+Neg: [olnud, polnud]
+     olema+V+Pers+Prt+Ind+Sg1+Aff: olin
+     olema+V+Pers+Prt+Ind+Sg2+Aff: olid
+     olema+V+Pers+Prt+Ind+Sg3+Aff: oli
+     olema+V+Pers+Prt+Ind+Pl1+Aff: olime
+     olema+V+Pers+Prt+Ind+Pl2+Aff: olite
+     olema+V+Pers+Prt+Ind+Pl3+Aff: olid
+     olema+V+Pers+Prt+Ind+Neg: [olnud, polnud]
 
-     olema+V+Pers+Past+Cond+Sg1+Aff: olnuksin
-     olema+V+Pers+Past+Cond+Sg1+Neg: polnuksin
-     olema+V+Pers+Past+Cond+Sg2+Aff: olnuksid
-     olema+V+Pers+Past+Cond+Sg2+Neg: polnuksid
-     olema+V+Pers+Past+Cond: olnuks
-     olema+V+Pers+Past+Cond+Neg: polnuks
-     olema+V+Pers+Past+Cond+Pl1+Aff: olnuksime
-     olema+V+Pers+Past+Cond+Pl1+Neg: polnuksime
-     olema+V+Pers+Past+Cond+Pl2+Aff: olnuksite
-     olema+V+Pers+Past+Cond+Pl2+Neg: polnuksite
-     olema+V+Pers+Past+Cond+Pl3+Aff: olnuksid
-     olema+V+Pers+Past+Cond+Pl3+Neg: polnuksid
+     olema+V+Pers+Prt+Cond+Sg1+Aff: olnuksin
+     olema+V+Pers+Prt+Cond+Sg1+Neg: polnuksin
+     olema+V+Pers+Prt+Cond+Sg2+Aff: olnuksid
+     olema+V+Pers+Prt+Cond+Sg2+Neg: polnuksid
+     olema+V+Pers+Prt+Cond: olnuks
+     olema+V+Pers+Prt+Cond+Neg: polnuks
+     olema+V+Pers+Prt+Cond+Pl1+Aff: olnuksime
+     olema+V+Pers+Prt+Cond+Pl1+Neg: polnuksime
+     olema+V+Pers+Prt+Cond+Pl2+Aff: olnuksite
+     olema+V+Pers+Prt+Cond+Pl2+Neg: polnuksite
+     olema+V+Pers+Prt+Cond+Pl3+Aff: olnuksid
+     olema+V+Pers+Prt+Cond+Pl3+Neg: polnuksid
 
-     olema+V+Pers+Past+Imprt: olnud
+     olema+V+Pers+Prt+Imprt: olnud
 
-     olema+V+Pers+Past+Quot: olnuvat
-     olema+V+Pers+Past+Quot+Neg: polnuvat
+     olema+V+Pers+Prt+Quot: olnuvat
+     olema+V+Pers+Prt+Quot+Neg: polnuvat
 
 # Isikulised käändelised vormid # Personal infinite forms
 
      olema+V+Pers+Prs+Prc: olev
-     olema+V+Pers+Past+Prc: olnud
+     olema+V+Pers+Prt+Prc: olnud
 
      olema+V+Pers+Sup+Ill: olema
      olema+V+Pers+Sup+Ine: olemas
@@ -101,19 +101,19 @@ Tests:
 
 # Umbisikuline minevik # Impersonal past forms
 
-     olema+V+Impers+Past+Ind+Aff: oldi
-     olema+V+Impers+Past+Ind+Neg: [oldud, poldud]
+     olema+V+Impers+Prt+Ind+Aff: oldi
+     olema+V+Impers+Prt+Ind+Neg: [oldud, poldud]
 
-     olema+V+Impers+Past+Cond: olduks
-     olema+V+Impers+Past+Cond+Neg: polduks
+     olema+V+Impers+Prt+Cond: olduks
+     olema+V+Impers+Prt+Cond+Neg: polduks
 
-     # olema+V+Impers+Past+Imprt: pole vormi # no form  
-     # olema+V+Impers+Past+Quot: olduvat # pole võimalik moodustada # not possible
+     # olema+V+Impers+Prt+Imprt: pole vormi # no form  
+     # olema+V+Impers+Prt+Quot: olduvat # pole võimalik moodustada # not possible
      
 # Umbisikulised käändelised vormid # Impersonal infinite forms
 
      olema+V+Impers+Prs+Prc: oldav
-     olema+V+Impers+Past+Prc: oldud
+     olema+V+Impers+Prt+Prc: oldud
 
      olema+V+Impers+Sup: oldama  
 

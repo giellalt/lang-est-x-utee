@@ -76,7 +76,7 @@ Multichar_Symbols
 
 ! aeg			! tense
 +Prs	! olevik	! present
-+Past	! minevik	! past (umbrella term for imperfect, perfect, pluperfect)
++Prt	! minevik	! past (umbrella term for imperfect, perfect, pluperfect)
 ! lihtminevik, past imperfect (used for indicative mood only)
 ! täisminevik, past perfect: olema (pres) + nud/tud/dud (olen teinud)
 ! enneminevik, past pluperfect: olema (impf) + nut/tud/dud (olin teinud)
@@ -311,15 +311,15 @@ punane+A+prefix:puna #;
 
 
 LEXICON Asendavad_erandid_gen
- ajama+V+Impers+Past+Cond+Aff:aetuks GI; ! 27_V,aja,'ae[tuks],-112-0--,-,-,*
+ ajama+V+Impers+Prt+Cond+Aff:aetuks GI; ! 27_V,aja,'ae[tuks],-112-0--,-,-,*
  ajama+V+Impers+Prs+Cond+Aff:aetaks GI; ! 27_V,aja,'ae[taks],-102-0--,-,-,*
  ajama+V+Impers+Prs+Imprt:aetagu afneg_GI; ! 27_V,aja,'ae[tagu],-103-0--,-,-,*
- ajama+V+Impers+Past+Ind+Aff:aeti GI; ! 27_V,aja,'ae[ti],-120-1--,-,-,*
+ ajama+V+Impers+Prt+Ind+Aff:aeti GI; ! 27_V,aja,'ae[ti],-120-1--,-,-,*
  ajama+V+Impers+Prs+Ind+Aff:aetakse GI; ! 27_V,aja,'ae[takse],-100-1--,-,-,*
  ajama+V+Impers+Prs+Ind+Neg:aeta GI; ! 27_V,aja,'ae[ta],-100-0--,-,-,*
- ajama+V+Impers+Past+Prc:aetud afneg_GI; ! 27_V,aja,'ae[tud],411--0--,-,-,*
+ ajama+V+Impers+Prt+Prc:aetud afneg_GI; ! 27_V,aja,'ae[tud],411--0--,-,-,*
  ajama+V+Impers+Prs+Prc:aetav afneg_GI; ! 27_V,aja,'ae[tav],410---0N,-,-,*
- ajama+V+Impers+Past+Quot:aetuvat afneg_GI; ! 27_V,aja,'ae[tuvat],-111-0--,-,-,*
+ ajama+V+Impers+Prt+Quot:aetuvat afneg_GI; ! 27_V,aja,'ae[tuvat],-111-0--,-,-,*
  ajama+V+Impers+Prs+Quot:aetavat afneg_GI; ! 27_V,aja,'ae[tavat],-101-0--,-,-,*
  ajama+V+Impers+Sup:aetama GI; ! 27_V,aja,'ae[tama],31------,-,-,*
  au+N+Sg+Par:au GI; ! 26_S,'au,'au[],------0P,-,-,*
@@ -496,31 +496,31 @@ LEXICON Asendavad_erandid_gen
  ise+Pron+Sg+Trm:eneseni GI; ! 00_P,ise,enese[ni],------0R,-,-,*
  ise+Pron+Sg+Tra:endaks GI; ! 00_P,ise,'enda[ks],------0T,-,-,*
  ise+Pron+Sg+Tra:eneseks GI; ! 00_P,ise,enese[ks],------0T,-,-,*
- jooksma+V+Impers+Past+Cond+Aff:joostuks GI; ! 32_V,j'ooks,j'oos[tuks],-112-0--,-,-,*
+ jooksma+V+Impers+Prt+Cond+Aff:joostuks GI; ! 32_V,j'ooks,j'oos[tuks],-112-0--,-,-,*
  jooksma+V+Impers+Prs+Cond+Aff:joostaks GI; ! 32_V,j'ooks,j'oos[taks],-102-0--,-,-,*
  jooksma+V+Ger:joostes GI; ! 32_V,j'ooks,j'oos[tes],2-------,-,-,*
  jooksma+V+Impers+Prs+Imprt:joostagu afneg_GI; ! 32_V,j'ooks,j'oos[tagu],-103-0--,-,-,*
- jooksma+V+Impers+Past+Ind+Aff:joosti GI; ! 32_V,j'ooks,j'oos[ti],-120-1--,-,-,*
+ jooksma+V+Impers+Prt+Ind+Aff:joosti GI; ! 32_V,j'ooks,j'oos[ti],-120-1--,-,-,*
  jooksma+V+Impers+Prs+Ind+Aff:joostakse GI; ! 32_V,j'ooks,j'oos[takse],-100-1--,-,-,*
  jooksma+V+Impers+Prs+Ind+Neg:joosta GI; ! 32_V,j'ooks,j'oos[ta],-100-0--,-,-,*
  jooksma+V+Inf:joosta GI; ! 32_V,j'ooks,j'oos[ta],1-------,-,-,*
- jooksma+V+Impers+Past+Prc:joostud GI; ! 32_V,j'ooks,j'oos[tud],411--0--,-,-,*
+ jooksma+V+Impers+Prt+Prc:joostud GI; ! 32_V,j'ooks,j'oos[tud],411--0--,-,-,*
  jooksma+V+Impers+Prs+Prc:joostav GI; ! 32_V,j'ooks,j'oos[tav],410---0N,-,-,*
- jooksma+V+Impers+Past+Quot:joostuvat afneg_GI; ! 32_V,j'ooks,j'oos[tuvat],-111-0--,-,-,*
+ jooksma+V+Impers+Prt+Quot:joostuvat afneg_GI; ! 32_V,j'ooks,j'oos[tuvat],-111-0--,-,-,*
  jooksma+V+Impers+Prs+Quot:joostavat afneg_GI; ! 32_V,j'ooks,j'oos[tavat],-101-0--,-,-,*
  jooksma+V+Impers+Sup:joostama GI; ! 32_V,j'ooks,j'oos[tama],31------,-,-,*
- jääma+V+Pers+Past+Ind+Pl1+Aff:jäime GI; ! 37_V,j'ää,jä[ime],-02041--,-,-,*
- jääma+V+Pers+Past+Ind+Sg1+Aff:jäin GI; ! 37_V,j'ää,j'ä[in],-02011--,-,-,*
- jääma+V+Pers+Past+Ind+Pl2+Aff:jäite GI; ! 37_V,j'ää,jä[ite],-02051--,-,-,*
- jääma+V+Pers+Past+Ind+Sg2+Aff:jäid GI; ! 37_V,j'ää,j'ä[id],-02021--,-,-,*
- jääma+V+Pers+Past+Ind+Pl3+Aff:jäid GI; ! 37_V,j'ää,j'ä[id],-02061--,-,-,*
- jääma+V+Pers+Past+Ind+Sg3+Aff:jäi GI; ! 37_V,j'ää,j'ä[i],-02031--,-,-,*
- kaitsma+V+Pers+Past+Ind+Pl1+Aff:kaitsesime GI; ! 32_V,k'aits,k'aitse[sime],-02041--,-,-,*
- kaitsma+V+Pers+Past+Ind+Sg1+Aff:kaitsesin GI; ! 32_V,k'aits,k'aitse[sin],-02011--,-,-,*
- kaitsma+V+Pers+Past+Ind+Pl2+Aff:kaitsesite GI; ! 32_V,k'aits,k'aitse[site],-02051--,-,-,*
- kaitsma+V+Pers+Past+Ind+Sg2+Aff:kaitsesid GI; ! 32_V,k'aits,k'aitse[sid],-02021--,-,-,*
- kaitsma+V+Pers+Past+Ind+Pl3+Aff:kaitsesid GI; ! 32_V,k'aits,k'aitse[sid],-02061--,-,-,*
- kaitsma+V+Pers+Past+Ind+Sg3+Aff:kaitses GI; ! 32_V,k'aits,k'aitse[s],-02031--,-,-,*
+ jääma+V+Pers+Prt+Ind+Pl1+Aff:jäime GI; ! 37_V,j'ää,jä[ime],-02041--,-,-,*
+ jääma+V+Pers+Prt+Ind+Sg1+Aff:jäin GI; ! 37_V,j'ää,j'ä[in],-02011--,-,-,*
+ jääma+V+Pers+Prt+Ind+Pl2+Aff:jäite GI; ! 37_V,j'ää,jä[ite],-02051--,-,-,*
+ jääma+V+Pers+Prt+Ind+Sg2+Aff:jäid GI; ! 37_V,j'ää,j'ä[id],-02021--,-,-,*
+ jääma+V+Pers+Prt+Ind+Pl3+Aff:jäid GI; ! 37_V,j'ää,j'ä[id],-02061--,-,-,*
+ jääma+V+Pers+Prt+Ind+Sg3+Aff:jäi GI; ! 37_V,j'ää,j'ä[i],-02031--,-,-,*
+ kaitsma+V+Pers+Prt+Ind+Pl1+Aff:kaitsesime GI; ! 32_V,k'aits,k'aitse[sime],-02041--,-,-,*
+ kaitsma+V+Pers+Prt+Ind+Sg1+Aff:kaitsesin GI; ! 32_V,k'aits,k'aitse[sin],-02011--,-,-,*
+ kaitsma+V+Pers+Prt+Ind+Pl2+Aff:kaitsesite GI; ! 32_V,k'aits,k'aitse[site],-02051--,-,-,*
+ kaitsma+V+Pers+Prt+Ind+Sg2+Aff:kaitsesid GI; ! 32_V,k'aits,k'aitse[sid],-02021--,-,-,*
+ kaitsma+V+Pers+Prt+Ind+Pl3+Aff:kaitsesid GI; ! 32_V,k'aits,k'aitse[sid],-02061--,-,-,*
+ kaitsma+V+Pers+Prt+Ind+Sg3+Aff:kaitses GI; ! 32_V,k'aits,k'aitse[s],-02031--,-,-,*
  keegi+Pron+Pl+Abe:%{%} GI_0; ! 00_P,k'eegi,#,------1A,-,-,*
  keegi+Pron+Pl+Abl:%{%} GI_0; ! 00_P,k'eegi,#,------16,-,-,*
  keegi+Pron+Pl+Ade:%{%} GI_0; ! 00_P,k'eegi,#,------15,-,-,*
@@ -593,15 +593,15 @@ LEXICON Asendavad_erandid_gen
  kes+Pron+Sg+Par:keda GI; ! 00_P,k'es,ke[da],------0P,-,-,*
  kes+Pron+Sg+Trm:kelleni GI; ! 00_P,k'es,kelle[ni],------0R,-,-,*
  kes+Pron+Sg+Tra:kelleks GI; ! 00_P,k'es,kelle[ks],------0T,-,-,*
- kiskuma+V+Impers+Past+Cond+Aff:kistuks GI; ! 28_V,k'isku,k'is[tuks],-112-0--,-,-,*
+ kiskuma+V+Impers+Prt+Cond+Aff:kistuks GI; ! 28_V,k'isku,k'is[tuks],-112-0--,-,-,*
  kiskuma+V+Impers+Prs+Cond+Aff:kistaks GI; ! 28_V,k'isku,k'is[taks],-102-0--,-,-,*
  kiskuma+V+Impers+Prs+Imprt:kistagu afneg_GI; ! 28_V,k'isku,k'is[tagu],-103-0--,-,-,*
- kiskuma+V+Impers+Past+Ind+Aff:kisti GI; ! 28_V,k'isku,k'is[ti],-120-1--,-,-,*
+ kiskuma+V+Impers+Prt+Ind+Aff:kisti GI; ! 28_V,k'isku,k'is[ti],-120-1--,-,-,*
  kiskuma+V+Impers+Prs+Ind+Aff:kistakse GI; ! 28_V,k'isku,k'is[takse],-100-1--,-,-,*
  kiskuma+V+Impers+Prs+Ind+Neg:kista GI; ! 28_V,k'isku,k'is[ta],-100-0--,-,-,*
- kiskuma+V+Impers+Past+Prc:kistud GI; ! 28_V,k'isku,k'is[tud],411--0--,-,-,*
+ kiskuma+V+Impers+Prt+Prc:kistud GI; ! 28_V,k'isku,k'is[tud],411--0--,-,-,*
  kiskuma+V+Impers+Prs+Prc:kistav GI; ! 28_V,k'isku,k'is[tav],410---0N,-,-,*
- kiskuma+V+Impers+Past+Quot:kistuvat afneg_GI; ! 28_V,k'isku,k'is[tuvat],-111-0--,-,-,*
+ kiskuma+V+Impers+Prt+Quot:kistuvat afneg_GI; ! 28_V,k'isku,k'is[tuvat],-111-0--,-,-,*
  kiskuma+V+Impers+Prs+Quot:kistavat afneg_GI; ! 28_V,k'isku,k'is[tavat],-101-0--,-,-,*
  kiskuma+V+Impers+Sup:kistama GI; ! 28_V,k'isku,k'is[tama],31------,-,-,*
  kohus+N+Sg+Par:kohut GI; ! 05_S,kohus,kohu[t],------0P,-,-,*
@@ -634,52 +634,52 @@ LEXICON Asendavad_erandid_gen
  kumbki+Pron+Sg+Par:kumbagi GI; ! 00_P,k'umbki,k'umba[gi],------0P,-,-,*
  kumbki+Pron+Sg+Trm:kummanigi GI; ! 00_P,k'umbki,kumma[nigi],------0R,-,-,*
  kumbki+Pron+Sg+Tra:kummakski GI; ! 00_P,k'umbki,kumma[kski],------0T,-,-,*
- kusema+V+Impers+Past+Cond+Aff:kustuks GI; ! 36_V,kuse,k'us[tuks],-112-0--,-,-,*
- kusema+V+Pers+Past+Cond+Pl1+Aff:kusnuksime GI; ! 36_V,kuse,k'us[nuksime],-01241--,-,-,*
- kusema+V+Pers+Past+Cond+Sg1+Aff:kusnuksin GI; ! 36_V,kuse,k'us[nuksin],-01211--,-,-,*
- kusema+V+Pers+Past+Cond+Pl2+Aff:kusnuksite GI; ! 36_V,kuse,k'us[nuksite],-01251--,-,-,*
- kusema+V+Pers+Past+Cond+Sg2+Aff:kusnuksid GI; ! 36_V,kuse,k'us[nuksid],-01221--,-,-,*
- kusema+V+Pers+Past+Cond+Pl3+Aff:kusnuksid GI; ! 36_V,kuse,k'us[nuksid],-01261--,-,-,*
- kusema+V+Pers+Past+Cond+Sg3+Aff:kusnuks GI; ! 36_V,kuse,k'us[nuks],-01200--,-,-,*
+ kusema+V+Impers+Prt+Cond+Aff:kustuks GI; ! 36_V,kuse,k'us[tuks],-112-0--,-,-,*
+ kusema+V+Pers+Prt+Cond+Pl1+Aff:kusnuksime GI; ! 36_V,kuse,k'us[nuksime],-01241--,-,-,*
+ kusema+V+Pers+Prt+Cond+Sg1+Aff:kusnuksin GI; ! 36_V,kuse,k'us[nuksin],-01211--,-,-,*
+ kusema+V+Pers+Prt+Cond+Pl2+Aff:kusnuksite GI; ! 36_V,kuse,k'us[nuksite],-01251--,-,-,*
+ kusema+V+Pers+Prt+Cond+Sg2+Aff:kusnuksid GI; ! 36_V,kuse,k'us[nuksid],-01221--,-,-,*
+ kusema+V+Pers+Prt+Cond+Pl3+Aff:kusnuksid GI; ! 36_V,kuse,k'us[nuksid],-01261--,-,-,*
+ kusema+V+Pers+Prt+Cond+Sg3+Aff:kusnuks GI; ! 36_V,kuse,k'us[nuks],-01200--,-,-,*
  kusema+V+Impers+Prs+Cond+Aff:kustaks GI; ! 36_V,kuse,k'us[taks],-102-0--,-,-,*
  kusema+V+Ger:kustes GI; ! 36_V,kuse,k'us[tes],2-------,-,-,*
  kusema+V+Impers+Prs+Imprt:kustagu afneg_GI; ! 36_V,kuse,k'us[tagu],-103-0--,-,-,*
  kusema+V+Pers+Prs+Imprt+Pl1:kuskem afneg_GI; ! 36_V,kuse,k'us[kem],-00340--,-,-,*
  kusema+V+Pers+Prs+Imprt+Pl2:kuske afneg_GI; ! 36_V,kuse,k'us[ke],-00350--,-,-,*
  kusema+V+Pers+Prs+Imprt+Sg3:kusku afneg_GI; ! 36_V,kuse,k'us[ku],-00300--,-,-,*
- kusema+V+Impers+Past+Ind+Aff:kusti GI; ! 36_V,kuse,k'us[ti],-120-1--,-,-,*
- kusema+V+Pers+Past+Ind+Pl1+Aff:kusime GI; ! 36_V,kuse,kus[ime],-02041--,-,-,*
- kusema+V+Pers+Past+Ind+Sg1+Aff:kusin GI; ! 36_V,kuse,kus[in],-02011--,-,-,*
- kusema+V+Pers+Past+Ind+Pl2+Aff:kusite GI; ! 36_V,kuse,kus[ite],-02051--,-,-,*
- kusema+V+Pers+Past+Ind+Sg2+Aff:kusid GI; ! 36_V,kuse,kus[id],-02021--,-,-,*
- kusema+V+Pers+Past+Ind+Pl3+Aff:kusid GI; ! 36_V,kuse,kus[id],-02061--,-,-,*
- kusema+V+Pers+Past+Ind+Sg3+Aff:kusi GI; ! 36_V,kuse,kus[i],-02031--,-,-,*
+ kusema+V+Impers+Prt+Ind+Aff:kusti GI; ! 36_V,kuse,k'us[ti],-120-1--,-,-,*
+ kusema+V+Pers+Prt+Ind+Pl1+Aff:kusime GI; ! 36_V,kuse,kus[ime],-02041--,-,-,*
+ kusema+V+Pers+Prt+Ind+Sg1+Aff:kusin GI; ! 36_V,kuse,kus[in],-02011--,-,-,*
+ kusema+V+Pers+Prt+Ind+Pl2+Aff:kusite GI; ! 36_V,kuse,kus[ite],-02051--,-,-,*
+ kusema+V+Pers+Prt+Ind+Sg2+Aff:kusid GI; ! 36_V,kuse,kus[id],-02021--,-,-,*
+ kusema+V+Pers+Prt+Ind+Pl3+Aff:kusid GI; ! 36_V,kuse,kus[id],-02061--,-,-,*
+ kusema+V+Pers+Prt+Ind+Sg3+Aff:kusi GI; ! 36_V,kuse,kus[i],-02031--,-,-,*
  kusema+V+Impers+Prs+Ind+Aff:kustakse GI; ! 36_V,kuse,k'us[takse],-100-1--,-,-,*
  kusema+V+Impers+Prs+Ind+Neg:kusta GI; ! 36_V,kuse,k'us[ta],-100-0--,-,-,*
  kusema+V+Inf:kusta GI; ! 36_V,kuse,k'us[ta],1-------,-,-,*
- kusema+V+Impers+Past+Prc:kustud GI; ! 36_V,kuse,k'us[tud],411--0--,-,-,*
- kusema+V+Pers+Past+Prc:kusnud GI; ! 36_V,kuse,k'us[nud],401--0--,-,-,*
+ kusema+V+Impers+Prt+Prc:kustud GI; ! 36_V,kuse,k'us[tud],411--0--,-,-,*
+ kusema+V+Pers+Prt+Prc:kusnud GI; ! 36_V,kuse,k'us[nud],401--0--,-,-,*
  kusema+V+Impers+Prs+Prc:kustav GI; ! 36_V,kuse,k'us[tav],410---0N,-,-,*
- kusema+V+Impers+Past+Quot:kustuvat afneg_GI; ! 36_V,kuse,k'us[tuvat],-111-0--,-,-,*
- kusema+V+Pers+Past+Quot:kusnuvat afneg_GI; ! 36_V,kuse,k'us[nuvat],-01100--,-,-,*
+ kusema+V+Impers+Prt+Quot:kustuvat afneg_GI; ! 36_V,kuse,k'us[tuvat],-111-0--,-,-,*
+ kusema+V+Pers+Prt+Quot:kusnuvat afneg_GI; ! 36_V,kuse,k'us[nuvat],-01100--,-,-,*
  kusema+V+Impers+Prs+Quot:kustavat afneg_GI; ! 36_V,kuse,k'us[tavat],-101-0--,-,-,*
  kusema+V+Impers+Sup:kustama GI; ! 36_V,kuse,k'us[tama],31------,-,-,*
  kusi+N+Sg+Par:kust GI; ! 20_S,kusi,k'us[t],------0P,-,-,*
- käima+V+Pers+Past+Ind+Pl1+Aff:käisime GI; ! 38_V,k'äi,käi[sime],-02041--,-,-,*
- käima+V+Pers+Past+Ind+Sg1+Aff:käisin GI; ! 38_V,k'äi,käi[sin],-02011--,-,-,*
- käima+V+Pers+Past+Ind+Pl2+Aff:käisite GI; ! 38_V,k'äi,käi[site],-02051--,-,-,*
- käima+V+Pers+Past+Ind+Sg2+Aff:käisid GI; ! 38_V,k'äi,käi[sid],-02021--,-,-,*
- käima+V+Pers+Past+Ind+Pl3+Aff:käisid GI; ! 38_V,k'äi,käi[sid],-02061--,-,-,*
- käima+V+Pers+Past+Ind+Sg3+Aff:käis GI; ! 38_V,k'äi,k'äi[s],-02031--,-,-,*
- käskima+V+Impers+Past+Cond+Aff:kästuks GI; ! 28_V,k'äski,k'äs[tuks],-112-0--,-,-,*
+ käima+V+Pers+Prt+Ind+Pl1+Aff:käisime GI; ! 38_V,k'äi,käi[sime],-02041--,-,-,*
+ käima+V+Pers+Prt+Ind+Sg1+Aff:käisin GI; ! 38_V,k'äi,käi[sin],-02011--,-,-,*
+ käima+V+Pers+Prt+Ind+Pl2+Aff:käisite GI; ! 38_V,k'äi,käi[site],-02051--,-,-,*
+ käima+V+Pers+Prt+Ind+Sg2+Aff:käisid GI; ! 38_V,k'äi,käi[sid],-02021--,-,-,*
+ käima+V+Pers+Prt+Ind+Pl3+Aff:käisid GI; ! 38_V,k'äi,käi[sid],-02061--,-,-,*
+ käima+V+Pers+Prt+Ind+Sg3+Aff:käis GI; ! 38_V,k'äi,k'äi[s],-02031--,-,-,*
+ käskima+V+Impers+Prt+Cond+Aff:kästuks GI; ! 28_V,k'äski,k'äs[tuks],-112-0--,-,-,*
  käskima+V+Impers+Prs+Cond+Aff:kästaks GI; ! 28_V,k'äski,k'äs[taks],-102-0--,-,-,*
  käskima+V+Impers+Prs+Imprt:kästagu afneg_GI; ! 28_V,k'äski,k'äs[tagu],-103-0--,-,-,*
- käskima+V+Impers+Past+Ind+Aff:kästi GI; ! 28_V,k'äski,k'äs[ti],-120-1--,-,-,*
+ käskima+V+Impers+Prt+Ind+Aff:kästi GI; ! 28_V,k'äski,k'äs[ti],-120-1--,-,-,*
  käskima+V+Impers+Prs+Ind+Aff:kästakse GI; ! 28_V,k'äski,k'äs[takse],-100-1--,-,-,*
  käskima+V+Impers+Prs+Ind+Neg:kästa GI; ! 28_V,k'äski,k'äs[ta],-100-0--,-,-,*
- käskima+V+Impers+Past+Prc:kästud GI; ! 28_V,k'äski,k'äs[tud],411--0--,-,-,*
+ käskima+V+Impers+Prt+Prc:kästud GI; ! 28_V,k'äski,k'äs[tud],411--0--,-,-,*
  käskima+V+Impers+Prs+Prc:kästav GI; ! 28_V,k'äski,k'äs[tav],410---0N,-,-,*
- käskima+V+Impers+Past+Quot:kästuvat afneg_GI; ! 28_V,k'äski,k'äs[tuvat],-111-0--,-,-,*
+ käskima+V+Impers+Prt+Quot:kästuvat afneg_GI; ! 28_V,k'äski,k'äs[tuvat],-111-0--,-,-,*
  käskima+V+Impers+Prs+Quot:kästavat afneg_GI; ! 28_V,k'äski,k'äs[tavat],-101-0--,-,-,*
  käskima+V+Impers+Sup:kästama GI; ! 28_V,k'äski,k'äs[tama],31------,-,-,*
  kõik+Pron+Pl+Abe:kõigita GI; ! 00_P,k'õik,kõigi[ta],------1A,-,-,*
@@ -767,12 +767,12 @@ LEXICON Asendavad_erandid_gen
  ma+Pron+Sg+Trm:%{%} GI_0; ! 00_P,m'a,#,------0R,-,-,*
  ma+Pron+Sg+Tra:%{%} GI_0; ! 00_P,m'a,#,------0T,-,-,*
  maa+N+Sg+Ill:maha GI; ! 26_S,m'aa,ma[ha],------0D,-,-,*
- maitsma+V+Pers+Past+Ind+Pl1+Aff:maitsesime GI; ! 32_V,m'aits,m'aitse[sime],-02041--,-,-,*
- maitsma+V+Pers+Past+Ind+Sg1+Aff:maitsesin GI; ! 32_V,m'aits,m'aitse[sin],-02011--,-,-,*
- maitsma+V+Pers+Past+Ind+Pl2+Aff:maitsesite GI; ! 32_V,m'aits,m'aitse[site],-02051--,-,-,*
- maitsma+V+Pers+Past+Ind+Sg2+Aff:maitsesid GI; ! 32_V,m'aits,m'aitse[sid],-02021--,-,-,*
- maitsma+V+Pers+Past+Ind+Pl3+Aff:maitsesid GI; ! 32_V,m'aits,m'aitse[sid],-02061--,-,-,*
- maitsma+V+Pers+Past+Ind+Sg3+Aff:maitses GI; ! 32_V,m'aits,m'aitse[s],-02031--,-,-,*
+ maitsma+V+Pers+Prt+Ind+Pl1+Aff:maitsesime GI; ! 32_V,m'aits,m'aitse[sime],-02041--,-,-,*
+ maitsma+V+Pers+Prt+Ind+Sg1+Aff:maitsesin GI; ! 32_V,m'aits,m'aitse[sin],-02011--,-,-,*
+ maitsma+V+Pers+Prt+Ind+Pl2+Aff:maitsesite GI; ! 32_V,m'aits,m'aitse[site],-02051--,-,-,*
+ maitsma+V+Pers+Prt+Ind+Sg2+Aff:maitsesid GI; ! 32_V,m'aits,m'aitse[sid],-02021--,-,-,*
+ maitsma+V+Pers+Prt+Ind+Pl3+Aff:maitsesid GI; ! 32_V,m'aits,m'aitse[sid],-02061--,-,-,*
+ maitsma+V+Pers+Prt+Ind+Sg3+Aff:maitses GI; ! 32_V,m'aits,m'aitse[s],-02031--,-,-,*
  mees+N+Pl+Par:mehi GI; ! 13_S,m'ees,mehi[],------1P,-,-,*
  mees+N+Sg+Ill:%{%} GI_0; ! 13_S,m'ees,#,------0D,-,-,*
  meri+N+Sg+Par:merd GI; ! 20_S,meri,m'er[d],------0P,-,-,*
@@ -805,12 +805,12 @@ LEXICON Asendavad_erandid_gen
  mina+Pron+Sg+Par:mind GI; ! 00_P,mina,m'in[d],------0P,-,-,*
  mina+Pron+Sg+Trm:minuni GI; ! 00_P,mina,minu[ni],------0R,-,-,*
  mina+Pron+Sg+Tra:minuks GI; ! 00_P,mina,minu[ks],------0T,-,-,*
- minema+V+Pers+Past+Cond+Pl1+Aff:läinuksime GI; ! 36_V,mine,läi[nuksime],-01241--,-,-,*
- minema+V+Pers+Past+Cond+Sg1+Aff:läinuksin GI; ! 36_V,mine,läi[nuksin],-01211--,-,-,*
- minema+V+Pers+Past+Cond+Pl2+Aff:läinuksite GI; ! 36_V,mine,läi[nuksite],-01251--,-,-,*
- minema+V+Pers+Past+Cond+Sg2+Aff:läinuksid GI; ! 36_V,mine,läi[nuksid],-01221--,-,-,*
- minema+V+Pers+Past+Cond+Pl3+Aff:läinuksid GI; ! 36_V,mine,läi[nuksid],-01261--,-,-,*
- minema+V+Pers+Past+Cond+Sg3+Aff:läinuks GI; ! 36_V,mine,läi[nuks],-01200--,-,-,*
+ minema+V+Pers+Prt+Cond+Pl1+Aff:läinuksime GI; ! 36_V,mine,läi[nuksime],-01241--,-,-,*
+ minema+V+Pers+Prt+Cond+Sg1+Aff:läinuksin GI; ! 36_V,mine,läi[nuksin],-01211--,-,-,*
+ minema+V+Pers+Prt+Cond+Pl2+Aff:läinuksite GI; ! 36_V,mine,läi[nuksite],-01251--,-,-,*
+ minema+V+Pers+Prt+Cond+Sg2+Aff:läinuksid GI; ! 36_V,mine,läi[nuksid],-01221--,-,-,*
+ minema+V+Pers+Prt+Cond+Pl3+Aff:läinuksid GI; ! 36_V,mine,läi[nuksid],-01261--,-,-,*
+ minema+V+Pers+Prt+Cond+Sg3+Aff:läinuks GI; ! 36_V,mine,läi[nuks],-01200--,-,-,*
  minema+V+Pers+Prs+Cond+Pl1+Aff:läheksime GI; ! 36_V,mine,lähe[ksime],-00241--,-,-,*
  minema+V+Pers+Prs+Cond+Sg1+Aff:läheksin GI; ! 36_V,mine,lähe[ksin],-00211--,-,-,*
  minema+V+Pers+Prs+Cond+Pl2+Aff:läheksite GI; ! 36_V,mine,lähe[ksite],-00251--,-,-,*
@@ -818,12 +818,12 @@ LEXICON Asendavad_erandid_gen
  minema+V+Pers+Prs+Cond+Sg3+Aff:läheks GI; ! 36_V,mine,lähe[ks],-00200--,-,-,*
  minema+V+Pers+Prs+Cond+Pl3+Aff:läheksid GI; ! 36_V,mine,lähe[ksid],-00261--,-,-,*
  minema+V+Pers+Prs+Imprt+Sg2:mine afneg_GI; ! 36_V,mine,mine[],-00320--,-,-,*
- minema+V+Pers+Past+Ind+Pl1+Aff:läksime GI; ! 36_V,mine,läk[sime],-02041--,-,-,*
- minema+V+Pers+Past+Ind+Sg1+Aff:läksin GI; ! 36_V,mine,läk[sin],-02011--,-,-,*
- minema+V+Pers+Past+Ind+Pl2+Aff:läksite GI; ! 36_V,mine,läk[site],-02051--,-,-,*
- minema+V+Pers+Past+Ind+Sg2+Aff:läksid GI; ! 36_V,mine,läk[sid],-02021--,-,-,*
- minema+V+Pers+Past+Ind+Pl3+Aff:läksid GI; ! 36_V,mine,läk[sid],-02061--,-,-,*
- minema+V+Pers+Past+Ind+Sg3+Aff:läks GI; ! 36_V,mine,l'äk[s],-02031--,-,-,*
+ minema+V+Pers+Prt+Ind+Pl1+Aff:läksime GI; ! 36_V,mine,läk[sime],-02041--,-,-,*
+ minema+V+Pers+Prt+Ind+Sg1+Aff:läksin GI; ! 36_V,mine,läk[sin],-02011--,-,-,*
+ minema+V+Pers+Prt+Ind+Pl2+Aff:läksite GI; ! 36_V,mine,läk[site],-02051--,-,-,*
+ minema+V+Pers+Prt+Ind+Sg2+Aff:läksid GI; ! 36_V,mine,läk[sid],-02021--,-,-,*
+ minema+V+Pers+Prt+Ind+Pl3+Aff:läksid GI; ! 36_V,mine,läk[sid],-02061--,-,-,*
+ minema+V+Pers+Prt+Ind+Sg3+Aff:läks GI; ! 36_V,mine,l'äk[s],-02031--,-,-,*
  minema+V+Pers+Prs+Ind+Neg:lähe GI; ! 36_V,mine,lähe[],-00000--,-,-,*
  minema+V+Pers+Prs+Ind+Pl1+Aff:läheme GI; ! 36_V,mine,lähe[me],-00041--,-,-,*
  minema+V+Pers+Prs+Ind+Pl1+Aff:lähme GI; ! 36_V,mine,läh[me],-00041--,-,-,*
@@ -832,8 +832,8 @@ LEXICON Asendavad_erandid_gen
  minema+V+Pers+Prs+Ind+Sg2+Aff:lähed GI; ! 36_V,mine,lähe[d],-00021--,-,-,*
  minema+V+Pers+Prs+Ind+Pl3+Aff:lähevad GI; ! 36_V,mine,lähe[vad],-00061--,-,-,*
  minema+V+Pers+Prs+Ind+Sg3+Aff:läheb GI; ! 36_V,mine,lähe[b],-00031--,-,-,*
- minema+V+Pers+Past+Prc:läinud afneg_GI; ! 36_V,mine,läi[nud],401--0--,-,-,*
- minema+V+Pers+Past+Quot:läinuvat afneg_GI; ! 36_V,mine,läi[nuvat],-01100--,-,-,*
+ minema+V+Pers+Prt+Prc:läinud afneg_GI; ! 36_V,mine,läi[nud],401--0--,-,-,*
+ minema+V+Pers+Prt+Quot:läinuvat afneg_GI; ! 36_V,mine,läi[nuvat],-01100--,-,-,*
  mis+Pron+Pl+Abe:milledeta GI; ! 00_P,m'is,mille[deta],------1A,-,-,*
  mis+Pron+Pl+Abe:milleta GI; ! 00_P,m'is,mille[ta],------1A,-,-,*
  mis+Pron+Pl+Abl:milledelt GI; ! 00_P,m'is,mille[delt],------16,-,-,*
@@ -908,26 +908,26 @@ LEXICON Asendavad_erandid_gen
  miski+Pron+Sg+Trm:millenigi GI; ! 00_P,m'iski,mille[nigi],------0R,-,-,*
  miski+Pron+Sg+Tra:mikski GI; ! 00_P,m'iski,m'i[kski],------0T,-,-,*
  miski+Pron+Sg+Tra:millekski GI; ! 00_P,m'iski,mille[kski],------0T,-,-,*
- muuma+V+Impers+Past+Cond+Aff:muuduks GI; ! 27_V,m'uu,m'uu[duks],-112-0--,-,-,*
+ muuma+V+Impers+Prt+Cond+Aff:muuduks GI; ! 27_V,m'uu,m'uu[duks],-112-0--,-,-,*
  muuma+V+Impers+Prs+Cond+Aff:muudaks GI; ! 27_V,m'uu,m'uu[daks],-102-0--,-,-,*
  muuma+V+Impers+Prs+Imprt:muudagu afneg_GI; ! 27_V,m'uu,m'uu[dagu],-103-0--,-,-,*
- muuma+V+Impers+Past+Ind+Aff:muudi GI; ! 27_V,m'uu,m'uu[di],-120-1--,-,-,*
+ muuma+V+Impers+Prt+Ind+Aff:muudi GI; ! 27_V,m'uu,m'uu[di],-120-1--,-,-,*
  muuma+V+Impers+Prs+Ind+Aff:muudakse GI; ! 27_V,m'uu,m'uu[dakse],-100-1--,-,-,*
  muuma+V+Impers+Prs+Ind+Neg:muuda GI; ! 27_V,m'uu,m'uu[da],-100-0--,-,-,*
- muuma+V+Impers+Past+Prc:muudud GI; ! 27_V,m'uu,m'uu[dud],411--0--,-,-,*
+ muuma+V+Impers+Prt+Prc:muudud GI; ! 27_V,m'uu,m'uu[dud],411--0--,-,-,*
  muuma+V+Impers+Prs+Prc:muudav GI; ! 27_V,m'uu,m'uu[dav],410---0N,-,-,*
- muuma+V+Impers+Past+Quot:muuduvat afneg_GI; ! 27_V,m'uu,m'uu[duvat],-111-0--,-,-,*
+ muuma+V+Impers+Prt+Quot:muuduvat afneg_GI; ! 27_V,m'uu,m'uu[duvat],-111-0--,-,-,*
  muuma+V+Impers+Prs+Quot:muudavat afneg_GI; ! 27_V,m'uu,m'uu[davat],-101-0--,-,-,*
  muuma+V+Impers+Sup:muudama GI; ! 27_V,m'uu,m'uu[dama],31------,-,-,*
- määma+V+Impers+Past+Cond+Aff:määduks GI; ! 27_V,m'ää,m'ää[duks],-112-0--,-,-,*
+ määma+V+Impers+Prt+Cond+Aff:määduks GI; ! 27_V,m'ää,m'ää[duks],-112-0--,-,-,*
  määma+V+Impers+Prs+Cond+Aff:määdaks GI; ! 27_V,m'ää,m'ää[daks],-102-0--,-,-,*
  määma+V+Impers+Prs+Imprt:määdagu afneg_GI; ! 27_V,m'ää,m'ää[dagu],-103-0--,-,-,*
- määma+V+Impers+Past+Ind+Aff:määdi GI; ! 27_V,m'ää,m'ää[di],-120-1--,-,-,*
+ määma+V+Impers+Prt+Ind+Aff:määdi GI; ! 27_V,m'ää,m'ää[di],-120-1--,-,-,*
  määma+V+Impers+Prs+Ind+Aff:määdakse GI; ! 27_V,m'ää,m'ää[dakse],-100-1--,-,-,*
  määma+V+Impers+Prs+Ind+Neg:määda GI; ! 27_V,m'ää,m'ää[da],-100-0--,-,-,*
- määma+V+Impers+Past+Prc:määdud GI; ! 27_V,m'ää,m'ää[dud],411--0--,-,-,*
+ määma+V+Impers+Prt+Prc:määdud GI; ! 27_V,m'ää,m'ää[dud],411--0--,-,-,*
  määma+V+Impers+Prs+Prc:määdav GI; ! 27_V,m'ää,m'ää[dav],410---0N,-,-,*
- määma+V+Impers+Past+Quot:määduvat afneg_GI; ! 27_V,m'ää,m'ää[duvat],-111-0--,-,-,*
+ määma+V+Impers+Prt+Quot:määduvat afneg_GI; ! 27_V,m'ää,m'ää[duvat],-111-0--,-,-,*
  määma+V+Impers+Prs+Quot:määdavat afneg_GI; ! 27_V,m'ää,m'ää[davat],-101-0--,-,-,*
  määma+V+Impers+Sup:määdama GI; ! 27_V,m'ää,m'ää[dama],31------,-,-,*
  mõlema+Pron+Sg+Nom:%{%} GI_0; ! 02_P,mõlema,#,------0N,-,-,*
@@ -940,46 +940,46 @@ LEXICON Asendavad_erandid_gen
  mõskma+V+Pers+Prs+Imprt+Pl2:mõske afneg_GI; ! 34_V,m'õsk,m'õs[ke],-00350--,-,-,*
  mõskma+V+Pers+Prs+Imprt+Sg3:mõsku afneg_GI; ! 34_V,m'õsk,m'õs[ku],-00300--,-,-,*
  mõskma+V+Inf:mõsta GI; ! 34_V,m'õsk,m'õs[ta],1-------,-,-,*
- müüma+V+Pers+Past+Ind+Pl1+Aff:müüsime GI; ! 38_V,m'üü,müü[sime],-02041--,-,-,*
- müüma+V+Pers+Past+Ind+Sg1+Aff:müüsin GI; ! 38_V,m'üü,müü[sin],-02011--,-,-,*
- müüma+V+Pers+Past+Ind+Pl2+Aff:müüsite GI; ! 38_V,m'üü,müü[site],-02051--,-,-,*
- müüma+V+Pers+Past+Ind+Sg2+Aff:müüsid GI; ! 38_V,m'üü,müü[sid],-02021--,-,-,*
- müüma+V+Pers+Past+Ind+Pl3+Aff:müüsid GI; ! 38_V,m'üü,müü[sid],-02061--,-,-,*
- müüma+V+Pers+Past+Ind+Sg3+Aff:müüs GI; ! 38_V,m'üü,m'üü[s],-02031--,-,-,*
+ müüma+V+Pers+Prt+Ind+Pl1+Aff:müüsime GI; ! 38_V,m'üü,müü[sime],-02041--,-,-,*
+ müüma+V+Pers+Prt+Ind+Sg1+Aff:müüsin GI; ! 38_V,m'üü,müü[sin],-02011--,-,-,*
+ müüma+V+Pers+Prt+Ind+Pl2+Aff:müüsite GI; ! 38_V,m'üü,müü[site],-02051--,-,-,*
+ müüma+V+Pers+Prt+Ind+Sg2+Aff:müüsid GI; ! 38_V,m'üü,müü[sid],-02021--,-,-,*
+ müüma+V+Pers+Prt+Ind+Pl3+Aff:müüsid GI; ! 38_V,m'üü,müü[sid],-02061--,-,-,*
+ müüma+V+Pers+Prt+Ind+Sg3+Aff:müüs GI; ! 38_V,m'üü,m'üü[s],-02031--,-,-,*
  naine+N+Pl+Par:naisi GI; ! 12_S,naine,n'aisi[],------1P,-,-,*
  naine+N+Sg+Ill:%{%} GI_0; ! 12_S,naine,#,------0D,-,-,*
  naine+N+Sg+Par:naist GI; ! 12_S,naine,n'ais[t],------0P,-,-,*
- nägema+V+Impers+Past+Cond+Aff:nähtuks GI; ! 28_V,näge,n'äh[tuks],-112-0--,-,-,*
- nägema+V+Pers+Past+Cond+Pl1+Aff:näinuksime GI; ! 28_V,näge,näi[nuksime],-01241--,-,-,*
- nägema+V+Pers+Past+Cond+Sg1+Aff:näinuksin GI; ! 28_V,näge,näi[nuksin],-01211--,-,-,*
- nägema+V+Pers+Past+Cond+Pl2+Aff:näinuksite GI; ! 28_V,näge,näi[nuksite],-01251--,-,-,*
- nägema+V+Pers+Past+Cond+Sg2+Aff:näinuksid GI; ! 28_V,näge,näi[nuksid],-01221--,-,-,*
- nägema+V+Pers+Past+Cond+Pl3+Aff:näinuksid GI; ! 28_V,näge,näi[nuksid],-01261--,-,-,*
- nägema+V+Pers+Past+Cond+Sg3+Aff:näinuks GI; ! 28_V,näge,näi[nuks],-01200--,-,-,*
+ nägema+V+Impers+Prt+Cond+Aff:nähtuks GI; ! 28_V,näge,n'äh[tuks],-112-0--,-,-,*
+ nägema+V+Pers+Prt+Cond+Pl1+Aff:näinuksime GI; ! 28_V,näge,näi[nuksime],-01241--,-,-,*
+ nägema+V+Pers+Prt+Cond+Sg1+Aff:näinuksin GI; ! 28_V,näge,näi[nuksin],-01211--,-,-,*
+ nägema+V+Pers+Prt+Cond+Pl2+Aff:näinuksite GI; ! 28_V,näge,näi[nuksite],-01251--,-,-,*
+ nägema+V+Pers+Prt+Cond+Sg2+Aff:näinuksid GI; ! 28_V,näge,näi[nuksid],-01221--,-,-,*
+ nägema+V+Pers+Prt+Cond+Pl3+Aff:näinuksid GI; ! 28_V,näge,näi[nuksid],-01261--,-,-,*
+ nägema+V+Pers+Prt+Cond+Sg3+Aff:näinuks GI; ! 28_V,näge,näi[nuks],-01200--,-,-,*
  nägema+V+Impers+Prs+Cond+Aff:nähtaks GI; ! 28_V,näge,n'äh[taks],-102-0--,-,-,*
  nägema+V+Ger:nähes GI; ! 28_V,näge,näh[es],2-------,-,-,*
  nägema+V+Impers+Prs+Imprt:nähtagu afneg_GI; ! 28_V,näge,n'äh[tagu],-103-0--,-,-,*
  nägema+V+Pers+Prs+Imprt+Pl1:nähkem afneg_GI; ! 28_V,näge,n'äh[kem],-00340--,-,-,*
  nägema+V+Pers+Prs+Imprt+Pl2:nähke afneg_GI; ! 28_V,näge,n'äh[ke],-00350--,-,-,*
  nägema+V+Pers+Prs+Imprt+Sg3:nähku afneg_GI; ! 28_V,näge,n'äh[ku],-00300--,-,-,*
- nägema+V+Impers+Past+Ind+Aff:nähti GI; ! 28_V,näge,n'äh[ti],-120-1--,-,-,*
- nägema+V+Pers+Past+Ind+Pl1+Aff:nägime GI; ! 28_V,näge,näg[ime],-02041--,-,-,*
- nägema+V+Pers+Past+Ind+Sg1+Aff:nägin GI; ! 28_V,näge,näg[in],-02011--,-,-,*
- nägema+V+Pers+Past+Ind+Pl2+Aff:nägite GI; ! 28_V,näge,näg[ite],-02051--,-,-,*
- nägema+V+Pers+Past+Ind+Sg2+Aff:nägid GI; ! 28_V,näge,näg[id],-02021--,-,-,*
- nägema+V+Pers+Past+Ind+Pl3+Aff:nägid GI; ! 28_V,näge,näg[id],-02061--,-,-,*
- nägema+V+Pers+Past+Ind+Sg3+Aff:nägi GI; ! 28_V,näge,näg[i],-02031--,-,-,*
+ nägema+V+Impers+Prt+Ind+Aff:nähti GI; ! 28_V,näge,n'äh[ti],-120-1--,-,-,*
+ nägema+V+Pers+Prt+Ind+Pl1+Aff:nägime GI; ! 28_V,näge,näg[ime],-02041--,-,-,*
+ nägema+V+Pers+Prt+Ind+Sg1+Aff:nägin GI; ! 28_V,näge,näg[in],-02011--,-,-,*
+ nägema+V+Pers+Prt+Ind+Pl2+Aff:nägite GI; ! 28_V,näge,näg[ite],-02051--,-,-,*
+ nägema+V+Pers+Prt+Ind+Sg2+Aff:nägid GI; ! 28_V,näge,näg[id],-02021--,-,-,*
+ nägema+V+Pers+Prt+Ind+Pl3+Aff:nägid GI; ! 28_V,näge,näg[id],-02061--,-,-,*
+ nägema+V+Pers+Prt+Ind+Sg3+Aff:nägi GI; ! 28_V,näge,näg[i],-02031--,-,-,*
  nägema+V+Impers+Prs+Ind+Aff:nähakse GI; ! 28_V,näge,näh[akse],-100-1--,-,-,*
  nägema+V+Impers+Prs+Ind+Neg:nähta GI; ! 28_V,näge,n'äh[ta],-100-0--,-,-,*
  nägema+V+Pers+Prs+Ind+Pl1+Aff:näeme GI; ! 28_V,näge,näe[me],-00041--,-,-,*
  nägema+V+Pers+Prs+Ind+Pl2+Aff:näete GI; ! 28_V,näge,näe[te],-00051--,-,-,*
  nägema+V+Pers+Prs+Ind+Pl3+Aff:näevad GI; ! 28_V,näge,näe[vad],-00061--,-,-,*
  nägema+V+Inf:näha GI; ! 28_V,näge,näh[a],1-------,-,-,*
- nägema+V+Impers+Past+Prc:nähtud GI; ! 28_V,näge,n'äh[tud],411--0--,-,-,*
- nägema+V+Pers+Past+Prc:näinud GI; ! 28_V,näge,näi[nud],401--0--,-,-,*
+ nägema+V+Impers+Prt+Prc:nähtud GI; ! 28_V,näge,n'äh[tud],411--0--,-,-,*
+ nägema+V+Pers+Prt+Prc:näinud GI; ! 28_V,näge,näi[nud],401--0--,-,-,*
  nägema+V+Impers+Prs+Prc:nähtav GI; ! 28_V,näge,n'äh[tav],410---0N,-,-,*
- nägema+V+Impers+Past+Quot:nähtuvat afneg_GI; ! 28_V,näge,n'äh[tuvat],-111-0--,-,-,*
- nägema+V+Pers+Past+Quot:näinuvat afneg_GI; ! 28_V,näge,näi[nuvat],-01100--,-,-,*
+ nägema+V+Impers+Prt+Quot:nähtuvat afneg_GI; ! 28_V,näge,n'äh[tuvat],-111-0--,-,-,*
+ nägema+V+Pers+Prt+Quot:näinuvat afneg_GI; ! 28_V,näge,näi[nuvat],-01100--,-,-,*
  nägema+V+Impers+Prs+Quot:nähtavat afneg_GI; ! 28_V,näge,n'äh[tavat],-101-0--,-,-,*
  nägema+V+Impers+Sup:nähtama GI; ! 28_V,näge,n'äh[tama],31------,-,-,*
  nõu+N+Sg+Par:nõu GI; ! 26_S,n'õu,n'õu[],------0P,-,-,*
@@ -987,44 +987,44 @@ LEXICON Asendavad_erandid_gen
  olema+V+Pers+Prs+Ind+Sg3+Aff:on GI; ! 36_V,ole,'on[],-00031--,-,-,*
  pea+N+Pl+Par:päid GI; ! 26_S,p'ea,p'ä[id],------1P,-,-,*
  pea+N+Sg+Ill:pähe GI; ! 26_S,p'ea,pä[he],------0D,-,-,*
- pesema+V+Impers+Past+Cond+Aff:pestuks GI; ! 36_V,pese,p'es[tuks],-112-0--,-,-,*
- pesema+V+Pers+Past+Cond+Pl1+Aff:pesnuksime GI; ! 36_V,pese,p'es[nuksime],-01241--,-,-,*
- pesema+V+Pers+Past+Cond+Sg1+Aff:pesnuksin GI; ! 36_V,pese,p'es[nuksin],-01211--,-,-,*
- pesema+V+Pers+Past+Cond+Pl2+Aff:pesnuksite GI; ! 36_V,pese,p'es[nuksite],-01251--,-,-,*
- pesema+V+Pers+Past+Cond+Sg2+Aff:pesnuksid GI; ! 36_V,pese,p'es[nuksid],-01221--,-,-,*
- pesema+V+Pers+Past+Cond+Pl3+Aff:pesnuksid GI; ! 36_V,pese,p'es[nuksid],-01261--,-,-,*
- pesema+V+Pers+Past+Cond+Sg3+Aff:pesnuks GI; ! 36_V,pese,p'es[nuks],-01200--,-,-,*
+ pesema+V+Impers+Prt+Cond+Aff:pestuks GI; ! 36_V,pese,p'es[tuks],-112-0--,-,-,*
+ pesema+V+Pers+Prt+Cond+Pl1+Aff:pesnuksime GI; ! 36_V,pese,p'es[nuksime],-01241--,-,-,*
+ pesema+V+Pers+Prt+Cond+Sg1+Aff:pesnuksin GI; ! 36_V,pese,p'es[nuksin],-01211--,-,-,*
+ pesema+V+Pers+Prt+Cond+Pl2+Aff:pesnuksite GI; ! 36_V,pese,p'es[nuksite],-01251--,-,-,*
+ pesema+V+Pers+Prt+Cond+Sg2+Aff:pesnuksid GI; ! 36_V,pese,p'es[nuksid],-01221--,-,-,*
+ pesema+V+Pers+Prt+Cond+Pl3+Aff:pesnuksid GI; ! 36_V,pese,p'es[nuksid],-01261--,-,-,*
+ pesema+V+Pers+Prt+Cond+Sg3+Aff:pesnuks GI; ! 36_V,pese,p'es[nuks],-01200--,-,-,*
  pesema+V+Impers+Prs+Cond+Aff:pestaks GI; ! 36_V,pese,p'es[taks],-102-0--,-,-,*
  pesema+V+Ger:pestes GI; ! 36_V,pese,p'es[tes],2-------,-,-,*
  pesema+V+Impers+Prs+Imprt:pestagu afneg_GI; ! 36_V,pese,p'es[tagu],-103-0--,-,-,*
  pesema+V+Pers+Prs+Imprt+Pl1:peskem afneg_GI; ! 36_V,pese,p'es[kem],-00340--,-,-,*
  pesema+V+Pers+Prs+Imprt+Pl2:peske afneg_GI; ! 36_V,pese,p'es[ke],-00350--,-,-,*
  pesema+V+Pers+Prs+Imprt+Sg3:pesku afneg_GI; ! 36_V,pese,p'es[ku],-00300--,-,-,*
- pesema+V+Impers+Past+Ind+Aff:pesti GI; ! 36_V,pese,p'es[ti],-120-1--,-,-,*
- pesema+V+Pers+Past+Ind+Pl1+Aff:pesime GI; ! 36_V,pese,pes[ime],-02041--,-,-,*
- pesema+V+Pers+Past+Ind+Sg1+Aff:pesin GI; ! 36_V,pese,pes[in],-02011--,-,-,*
- pesema+V+Pers+Past+Ind+Pl2+Aff:pesite GI; ! 36_V,pese,pes[ite],-02051--,-,-,*
- pesema+V+Pers+Past+Ind+Sg2+Aff:pesid GI; ! 36_V,pese,pes[id],-02021--,-,-,*
- pesema+V+Pers+Past+Ind+Pl3+Aff:pesid GI; ! 36_V,pese,pes[id],-02061--,-,-,*
- pesema+V+Pers+Past+Ind+Sg3+Aff:pesi GI; ! 36_V,pese,pes[i],-02031--,-,-,*
+ pesema+V+Impers+Prt+Ind+Aff:pesti GI; ! 36_V,pese,p'es[ti],-120-1--,-,-,*
+ pesema+V+Pers+Prt+Ind+Pl1+Aff:pesime GI; ! 36_V,pese,pes[ime],-02041--,-,-,*
+ pesema+V+Pers+Prt+Ind+Sg1+Aff:pesin GI; ! 36_V,pese,pes[in],-02011--,-,-,*
+ pesema+V+Pers+Prt+Ind+Pl2+Aff:pesite GI; ! 36_V,pese,pes[ite],-02051--,-,-,*
+ pesema+V+Pers+Prt+Ind+Sg2+Aff:pesid GI; ! 36_V,pese,pes[id],-02021--,-,-,*
+ pesema+V+Pers+Prt+Ind+Pl3+Aff:pesid GI; ! 36_V,pese,pes[id],-02061--,-,-,*
+ pesema+V+Pers+Prt+Ind+Sg3+Aff:pesi GI; ! 36_V,pese,pes[i],-02031--,-,-,*
  pesema+V+Impers+Prs+Ind+Aff:pestakse GI; ! 36_V,pese,p'es[takse],-100-1--,-,-,*
  pesema+V+Impers+Prs+Ind+Neg:pesta GI; ! 36_V,pese,p'es[ta],-100-0--,-,-,*
  pesema+V+Inf:pesta GI; ! 36_V,pese,p'es[ta],1-------,-,-,*
- pesema+V+Impers+Past+Prc:pestud GI; ! 36_V,pese,p'es[tud],411--0--,-,-,*
- pesema+V+Pers+Past+Prc:pesnud GI; ! 36_V,pese,p'es[nud],401--0--,-,-,*
+ pesema+V+Impers+Prt+Prc:pestud GI; ! 36_V,pese,p'es[tud],411--0--,-,-,*
+ pesema+V+Pers+Prt+Prc:pesnud GI; ! 36_V,pese,p'es[nud],401--0--,-,-,*
  pesema+V+Impers+Prs+Prc:pestav GI; ! 36_V,pese,p'es[tav],410---0N,-,-,*
- pesema+V+Impers+Past+Quot:pestuvat afneg_GI; ! 36_V,pese,p'es[tuvat],-111-0--,-,-,*
- pesema+V+Pers+Past+Quot:pesnuvat afneg_GI; ! 36_V,pese,p'es[nuvat],-01100--,-,-,*
+ pesema+V+Impers+Prt+Quot:pestuvat afneg_GI; ! 36_V,pese,p'es[tuvat],-111-0--,-,-,*
+ pesema+V+Pers+Prt+Quot:pesnuvat afneg_GI; ! 36_V,pese,p'es[nuvat],-01100--,-,-,*
  pesema+V+Impers+Prs+Quot:pestavat afneg_GI; ! 36_V,pese,p'es[tavat],-101-0--,-,-,*
  pesema+V+Impers+Sup:pestama GI; ! 36_V,pese,p'es[tama],31------,-,-,*
- pidama+V+Impers+Past+Cond+Aff:%{%} GI_0; ! 40_V,pida,#,-112-0--,-,-,*
- pidama+V+Impers+Past+Cond+Aff:peetuks GI; ! 28_V,pida,p'ee[tuks],-112-0--,-,-,*
- pidama+V+Pers+Past+Cond+Pl1+Aff:pidanuksime GI; ! 40_V,pida,pida[nuksime],-01241--,-,-,*
- pidama+V+Pers+Past+Cond+Sg1+Aff:pidanuksin GI; ! 40_V,pida,pida[nuksin],-01211--,-,-,*
- pidama+V+Pers+Past+Cond+Pl2+Aff:pidanuksite GI; ! 40_V,pida,pida[nuksite],-01251--,-,-,*
- pidama+V+Pers+Past+Cond+Sg2+Aff:pidanuksid GI; ! 40_V,pida,pida[nuksid],-01221--,-,-,*
- pidama+V+Pers+Past+Cond+Pl3+Aff:pidanuksid GI; ! 40_V,pida,pida[nuksid],-01261--,-,-,*
- pidama+V+Pers+Past+Cond+Sg3+Aff:pidanuks GI; ! 40_V,pida,pida[nuks],-01200--,-,-,*
+ pidama+V+Impers+Prt+Cond+Aff:%{%} GI_0; ! 40_V,pida,#,-112-0--,-,-,*
+ pidama+V+Impers+Prt+Cond+Aff:peetuks GI; ! 28_V,pida,p'ee[tuks],-112-0--,-,-,*
+ pidama+V+Pers+Prt+Cond+Pl1+Aff:pidanuksime GI; ! 40_V,pida,pida[nuksime],-01241--,-,-,*
+ pidama+V+Pers+Prt+Cond+Sg1+Aff:pidanuksin GI; ! 40_V,pida,pida[nuksin],-01211--,-,-,*
+ pidama+V+Pers+Prt+Cond+Pl2+Aff:pidanuksite GI; ! 40_V,pida,pida[nuksite],-01251--,-,-,*
+ pidama+V+Pers+Prt+Cond+Sg2+Aff:pidanuksid GI; ! 40_V,pida,pida[nuksid],-01221--,-,-,*
+ pidama+V+Pers+Prt+Cond+Pl3+Aff:pidanuksid GI; ! 40_V,pida,pida[nuksid],-01261--,-,-,*
+ pidama+V+Pers+Prt+Cond+Sg3+Aff:pidanuks GI; ! 40_V,pida,pida[nuks],-01200--,-,-,*
  pidama+V+Impers+Prs+Cond+Aff:%{%} GI_0; ! 40_V,pida,#,-102-0--,-,-,*
  pidama+V+Impers+Prs+Cond+Aff:peetaks GI; ! 28_V,pida,p'ee[taks],-102-0--,-,-,*
  pidama+V+Pers+Prs+Cond+Pl1+Aff:peaksime GI; ! 40_V,pida,p'ea[ksime],-00241--,-,-,*
@@ -1040,14 +1040,14 @@ LEXICON Asendavad_erandid_gen
  pidama+V+Pers+Prs+Imprt+Pl2:%{%} afneg_0; ! 40_V,pida,#,-00350--,-,-,*
  pidama+V+Pers+Prs+Imprt+Sg2:%{%} afneg_0; ! 40_V,pida,#,-00320--,-,-,*
  pidama+V+Pers+Prs+Imprt+Sg3:%{%} afneg_0; ! 40_V,pida,#,-00300--,-,-,*
- pidama+V+Impers+Past+Ind+Aff:%{%} GI_0; ! 40_V,pida,#,-120-1--,-,-,*
- pidama+V+Impers+Past+Ind+Aff:peeti GI; ! 28_V,pida,p'ee[ti],-120-1--,-,-,*
- pidama+V+Pers+Past+Ind+Pl1+Aff:pidime GI; ! 40_V,pida,pid[ime],-02041--,-,-,*
- pidama+V+Pers+Past+Ind+Sg1+Aff:pidin GI; ! 40_V,pida,pid[in],-02011--,-,-,*
- pidama+V+Pers+Past+Ind+Pl2+Aff:pidite GI; ! 40_V,pida,pid[ite],-02051--,-,-,*
- pidama+V+Pers+Past+Ind+Sg2+Aff:pidid GI; ! 40_V,pida,pid[id],-02021--,-,-,*
- pidama+V+Pers+Past+Ind+Pl3+Aff:pidid GI; ! 40_V,pida,pid[id],-02061--,-,-,*
- pidama+V+Pers+Past+Ind+Sg3+Aff:pidi GI; ! 40_V,pida,pid[i],-02031--,-,-,*
+ pidama+V+Impers+Prt+Ind+Aff:%{%} GI_0; ! 40_V,pida,#,-120-1--,-,-,*
+ pidama+V+Impers+Prt+Ind+Aff:peeti GI; ! 28_V,pida,p'ee[ti],-120-1--,-,-,*
+ pidama+V+Pers+Prt+Ind+Pl1+Aff:pidime GI; ! 40_V,pida,pid[ime],-02041--,-,-,*
+ pidama+V+Pers+Prt+Ind+Sg1+Aff:pidin GI; ! 40_V,pida,pid[in],-02011--,-,-,*
+ pidama+V+Pers+Prt+Ind+Pl2+Aff:pidite GI; ! 40_V,pida,pid[ite],-02051--,-,-,*
+ pidama+V+Pers+Prt+Ind+Sg2+Aff:pidid GI; ! 40_V,pida,pid[id],-02021--,-,-,*
+ pidama+V+Pers+Prt+Ind+Pl3+Aff:pidid GI; ! 40_V,pida,pid[id],-02061--,-,-,*
+ pidama+V+Pers+Prt+Ind+Sg3+Aff:pidi GI; ! 40_V,pida,pid[i],-02031--,-,-,*
  pidama+V+Impers+Prs+Ind+Aff:%{%} GI_0; ! 40_V,pida,#,-100-1--,-,-,*
  pidama+V+Impers+Prs+Ind+Aff:peetakse GI; ! 28_V,pida,p'ee[takse],-100-1--,-,-,*
  pidama+V+Impers+Prs+Ind+Neg:%{%} GI_0; ! 40_V,pida,#,-100-0--,-,-,*
@@ -1060,15 +1060,15 @@ LEXICON Asendavad_erandid_gen
  pidama+V+Pers+Prs+Ind+Pl3+Aff:peavad GI; ! 40_V,pida,p'ea[vad],-00061--,-,-,*
  pidama+V+Pers+Prs+Ind+Sg3+Aff:peab GI; ! 40_V,pida,p'ea[b],-00031--,-,-,*
  pidama+V+Inf:pidada GI; ! 40_V,pida,pida[da],1-------,-,-,*
- pidama+V+Impers+Past+Prc:%{%} GI_0; ! 40_V,pida,#,411--0--,-,-,*
- pidama+V+Impers+Past+Prc:peetud GI; ! 28_V,pida,p'ee[tud],411--0--,-,-,*
- pidama+V+Pers+Past+Prc:pidanud GI; ! 40_V,pida,pida[nud],401--0--,-,-,*
+ pidama+V+Impers+Prt+Prc:%{%} GI_0; ! 40_V,pida,#,411--0--,-,-,*
+ pidama+V+Impers+Prt+Prc:peetud GI; ! 28_V,pida,p'ee[tud],411--0--,-,-,*
+ pidama+V+Pers+Prt+Prc:pidanud GI; ! 40_V,pida,pida[nud],401--0--,-,-,*
  pidama+V+Impers+Prs+Prc:%{%} GI_0; ! 40_V,pida,#,410---0N,-,-,*
  pidama+V+Impers+Prs+Prc:peetav GI; ! 28_V,pida,p'ee[tav],410---0N,-,-,*
  pidama+V+Pers+Prs+Prc:%{%} GI_0; ! 40_V,pida,#,400---0N,-,-,*
- pidama+V+Impers+Past+Quot:%{%} afneg_0; ! 40_V,pida,#,-111-0--,-,-,*
- pidama+V+Impers+Past+Quot:peetuvat afneg_GI; ! 28_V,pida,p'ee[tuvat],-111-0--,-,-,*
- pidama+V+Pers+Past+Quot:pidanuvat afneg_GI; ! 40_V,pida,pida[nuvat],-01100--,-,-,*
+ pidama+V+Impers+Prt+Quot:%{%} afneg_0; ! 40_V,pida,#,-111-0--,-,-,*
+ pidama+V+Impers+Prt+Quot:peetuvat afneg_GI; ! 28_V,pida,p'ee[tuvat],-111-0--,-,-,*
+ pidama+V+Pers+Prt+Quot:pidanuvat afneg_GI; ! 40_V,pida,pida[nuvat],-01100--,-,-,*
  pidama+V+Impers+Prs+Quot:%{%} afneg_0; ! 40_V,pida,#,-101-0--,-,-,*
  pidama+V+Impers+Prs+Quot:peetavat afneg_GI; ! 28_V,pida,p'ee[tavat],-101-0--,-,-,*
  pidama+V+Pers+Prs+Quot:pidavat afneg_GI; ! 40_V,pida,pida[vat],-00100--,-,-,*
@@ -1079,26 +1079,26 @@ LEXICON Asendavad_erandid_gen
  pidama+V+Impers+Sup:peetama GI; ! 28_V,pida,p'ee[tama],31------,-,-,*
  pidama+V+Pers+Sup+Ine:%{%} GI_0; ! 40_V,pida,#,30-----2,-,-,*
  pidama+V+Pers+Sup+Tra:%{%} GI_0; ! 40_V,pida,#,30-----T,-,-,*
- pooma+V+Pers+Past+Ind+Pl1+Aff:poosime GI; ! 38_V,p'oo,poo[sime],-02041--,-,-,*
- pooma+V+Pers+Past+Ind+Sg1+Aff:poosin GI; ! 38_V,p'oo,poo[sin],-02011--,-,-,*
- pooma+V+Pers+Past+Ind+Pl2+Aff:poosite GI; ! 38_V,p'oo,poo[site],-02051--,-,-,*
- pooma+V+Pers+Past+Ind+Sg2+Aff:poosid GI; ! 38_V,p'oo,poo[sid],-02021--,-,-,*
- pooma+V+Pers+Past+Ind+Pl3+Aff:poosid GI; ! 38_V,p'oo,poo[sid],-02061--,-,-,*
- pooma+V+Pers+Past+Ind+Sg3+Aff:poos GI; ! 38_V,p'oo,p'oo[s],-02031--,-,-,*
+ pooma+V+Pers+Prt+Ind+Pl1+Aff:poosime GI; ! 38_V,p'oo,poo[sime],-02041--,-,-,*
+ pooma+V+Pers+Prt+Ind+Sg1+Aff:poosin GI; ! 38_V,p'oo,poo[sin],-02011--,-,-,*
+ pooma+V+Pers+Prt+Ind+Pl2+Aff:poosite GI; ! 38_V,p'oo,poo[site],-02051--,-,-,*
+ pooma+V+Pers+Prt+Ind+Sg2+Aff:poosid GI; ! 38_V,p'oo,poo[sid],-02021--,-,-,*
+ pooma+V+Pers+Prt+Ind+Pl3+Aff:poosid GI; ! 38_V,p'oo,poo[sid],-02061--,-,-,*
+ pooma+V+Pers+Prt+Ind+Sg3+Aff:poos GI; ! 38_V,p'oo,p'oo[s],-02031--,-,-,*
  puskma+V+Ger:pustes GI; ! 34_V,p'usk,p'us[tes],2-------,-,-,*
  puskma+V+Pers+Prs+Imprt+Pl1:puskem afneg_GI; ! 34_V,p'usk,p'us[kem],-00340--,-,-,*
  puskma+V+Pers+Prs+Imprt+Pl2:puske afneg_GI; ! 34_V,p'usk,p'us[ke],-00350--,-,-,*
  puskma+V+Pers+Prs+Imprt+Sg3:pusku afneg_GI; ! 34_V,p'usk,p'us[ku],-00300--,-,-,*
  puskma+V+Inf:pusta GI; ! 34_V,p'usk,p'us[ta],1-------,-,-,*
- pügama+V+Impers+Past+Cond+Aff:pöetuks GI; ! 28_V,püga,p'öe[tuks],-112-0--,-,-,*
+ pügama+V+Impers+Prt+Cond+Aff:pöetuks GI; ! 28_V,püga,p'öe[tuks],-112-0--,-,-,*
  pügama+V+Impers+Prs+Cond+Aff:pöetaks GI; ! 28_V,püga,p'öe[taks],-102-0--,-,-,*
  pügama+V+Impers+Prs+Imprt:pöetagu afneg_GI; ! 28_V,püga,p'öe[tagu],-103-0--,-,-,*
- pügama+V+Impers+Past+Ind+Aff:pöeti GI; ! 28_V,püga,p'öe[ti],-120-1--,-,-,*
+ pügama+V+Impers+Prt+Ind+Aff:pöeti GI; ! 28_V,püga,p'öe[ti],-120-1--,-,-,*
  pügama+V+Impers+Prs+Ind+Aff:pöetakse GI; ! 28_V,püga,p'öe[takse],-100-1--,-,-,*
  pügama+V+Impers+Prs+Ind+Neg:pöeta GI; ! 28_V,püga,p'öe[ta],-100-0--,-,-,*
- pügama+V+Impers+Past+Prc:pöetud GI; ! 28_V,püga,p'öe[tud],411--0--,-,-,*
+ pügama+V+Impers+Prt+Prc:pöetud GI; ! 28_V,püga,p'öe[tud],411--0--,-,-,*
  pügama+V+Impers+Prs+Prc:pöetav GI; ! 28_V,püga,p'öe[tav],410---0N,-,-,*
- pügama+V+Impers+Past+Quot:pöetuvat afneg_GI; ! 28_V,püga,p'öe[tuvat],-111-0--,-,-,*
+ pügama+V+Impers+Prt+Quot:pöetuvat afneg_GI; ! 28_V,püga,p'öe[tuvat],-111-0--,-,-,*
  pügama+V+Impers+Prs+Quot:pöetavat afneg_GI; ! 28_V,püga,p'öe[tavat],-101-0--,-,-,*
  pügama+V+Impers+Sup:pöetama GI; ! 28_V,püga,p'öe[tama],31------,-,-,*
  sa+Pron+Pl+Abe:%{%} GI_0; ! 00_P,s'a,#,------1A,-,-,*
@@ -1130,12 +1130,12 @@ LEXICON Asendavad_erandid_gen
  sa+Pron+Sg+Par:sind GI; ! 00_P,s'a,s'in[d],------0P,-,-,*
  sa+Pron+Sg+Trm:%{%} GI_0; ! 00_P,s'a,#,------0R,-,-,*
  sa+Pron+Sg+Tra:%{%} GI_0; ! 00_P,s'a,#,------0T,-,-,*
- saama+V+Pers+Past+Ind+Pl1+Aff:saime GI; ! 37_V,s'aa,sa[ime],-02041--,-,-,*
- saama+V+Pers+Past+Ind+Sg1+Aff:sain GI; ! 37_V,s'aa,s'a[in],-02011--,-,-,*
- saama+V+Pers+Past+Ind+Pl2+Aff:saite GI; ! 37_V,s'aa,sa[ite],-02051--,-,-,*
- saama+V+Pers+Past+Ind+Sg2+Aff:said GI; ! 37_V,s'aa,s'a[id],-02021--,-,-,*
- saama+V+Pers+Past+Ind+Pl3+Aff:said GI; ! 37_V,s'aa,s'a[id],-02061--,-,-,*
- saama+V+Pers+Past+Ind+Sg3+Aff:sai GI; ! 37_V,s'aa,s'a[i],-02031--,-,-,*
+ saama+V+Pers+Prt+Ind+Pl1+Aff:saime GI; ! 37_V,s'aa,sa[ime],-02041--,-,-,*
+ saama+V+Pers+Prt+Ind+Sg1+Aff:sain GI; ! 37_V,s'aa,s'a[in],-02011--,-,-,*
+ saama+V+Pers+Prt+Ind+Pl2+Aff:saite GI; ! 37_V,s'aa,sa[ite],-02051--,-,-,*
+ saama+V+Pers+Prt+Ind+Sg2+Aff:said GI; ! 37_V,s'aa,s'a[id],-02021--,-,-,*
+ saama+V+Pers+Prt+Ind+Pl3+Aff:said GI; ! 37_V,s'aa,s'a[id],-02061--,-,-,*
+ saama+V+Pers+Prt+Ind+Sg3+Aff:sai GI; ! 37_V,s'aa,s'a[i],-02031--,-,-,*
  see+Pron+Pl+Abe:nendeta GI; ! 00_P,s'ee,nen[deta],------1A,-,-,*
  see+Pron+Pl+Abl:neilt GI; ! 00_P,s'ee,n'e[ilt],------16,-,-,*
  see+Pron+Pl+Abl:nendelt GI; ! 00_P,s'ee,nen[delt],------16,-,-,*
@@ -1279,37 +1279,37 @@ LEXICON Asendavad_erandid_gen
  ta+Pron+Sg+Par:teda GI; ! 00_P,t'a,te[da],------0P,-,-,*
  ta+Pron+Sg+Tra:%{%} GI_0; ! 00_P,t'a,#,------0T,-,-,*
  ta+Pron+Sg+Trm:%{%} GI_0; ! 00_P,t'a,#,------0R,-,-,*
- tegema+V+Impers+Past+Cond+Aff:tehtuks GI; ! 28_V,tege,t'eh[tuks],-112-0--,-,-,*
- tegema+V+Pers+Past+Cond+Pl1+Aff:teinuksime GI; ! 28_V,tege,tei[nuksime],-01241--,-,-,*
- tegema+V+Pers+Past+Cond+Sg1+Aff:teinuksin GI; ! 28_V,tege,tei[nuksin],-01211--,-,-,*
- tegema+V+Pers+Past+Cond+Pl2+Aff:teinuksite GI; ! 28_V,tege,tei[nuksite],-01251--,-,-,*
- tegema+V+Pers+Past+Cond+Sg2+Aff:teinuksid GI; ! 28_V,tege,tei[nuksid],-01221--,-,-,*
- tegema+V+Pers+Past+Cond+Pl3+Aff:teinuksid GI; ! 28_V,tege,tei[nuksid],-01261--,-,-,*
- tegema+V+Pers+Past+Cond+Sg3+Aff:teinuks GI; ! 28_V,tege,tei[nuks],-01200--,-,-,*
+ tegema+V+Impers+Prt+Cond+Aff:tehtuks GI; ! 28_V,tege,t'eh[tuks],-112-0--,-,-,*
+ tegema+V+Pers+Prt+Cond+Pl1+Aff:teinuksime GI; ! 28_V,tege,tei[nuksime],-01241--,-,-,*
+ tegema+V+Pers+Prt+Cond+Sg1+Aff:teinuksin GI; ! 28_V,tege,tei[nuksin],-01211--,-,-,*
+ tegema+V+Pers+Prt+Cond+Pl2+Aff:teinuksite GI; ! 28_V,tege,tei[nuksite],-01251--,-,-,*
+ tegema+V+Pers+Prt+Cond+Sg2+Aff:teinuksid GI; ! 28_V,tege,tei[nuksid],-01221--,-,-,*
+ tegema+V+Pers+Prt+Cond+Pl3+Aff:teinuksid GI; ! 28_V,tege,tei[nuksid],-01261--,-,-,*
+ tegema+V+Pers+Prt+Cond+Sg3+Aff:teinuks GI; ! 28_V,tege,tei[nuks],-01200--,-,-,*
  tegema+V+Impers+Prs+Cond+Aff:tehtaks GI; ! 28_V,tege,t'eh[taks],-102-0--,-,-,*
  tegema+V+Ger:tehes GI; ! 28_V,tege,teh[es],2-------,-,-,*
  tegema+V+Impers+Prs+Imprt:tehtagu afneg_GI; ! 28_V,tege,t'eh[tagu],-103-0--,-,-,*
  tegema+V+Pers+Prs+Imprt+Pl1:tehkem afneg_GI; ! 28_V,tege,t'eh[kem],-00340--,-,-,*
  tegema+V+Pers+Prs+Imprt+Pl2:tehke afneg_GI; ! 28_V,tege,t'eh[ke],-00350--,-,-,*
  tegema+V+Pers+Prs+Imprt+Sg3:tehku afneg_GI; ! 28_V,tege,t'eh[ku],-00300--,-,-,*
- tegema+V+Impers+Past+Ind+Aff:tehti GI; ! 28_V,tege,t'eh[ti],-120-1--,-,-,*
- tegema+V+Pers+Past+Ind+Pl1+Aff:tegime GI; ! 28_V,tege,teg[ime],-02041--,-,-,*
- tegema+V+Pers+Past+Ind+Sg1+Aff:tegin GI; ! 28_V,tege,teg[in],-02011--,-,-,*
- tegema+V+Pers+Past+Ind+Pl2+Aff:tegite GI; ! 28_V,tege,teg[ite],-02051--,-,-,*
- tegema+V+Pers+Past+Ind+Sg2+Aff:tegid GI; ! 28_V,tege,teg[id],-02021--,-,-,*
- tegema+V+Pers+Past+Ind+Pl3+Aff:tegid GI; ! 28_V,tege,teg[id],-02061--,-,-,*
- tegema+V+Pers+Past+Ind+Sg3+Aff:tegi GI; ! 28_V,tege,teg[i],-02031--,-,-,*
+ tegema+V+Impers+Prt+Ind+Aff:tehti GI; ! 28_V,tege,t'eh[ti],-120-1--,-,-,*
+ tegema+V+Pers+Prt+Ind+Pl1+Aff:tegime GI; ! 28_V,tege,teg[ime],-02041--,-,-,*
+ tegema+V+Pers+Prt+Ind+Sg1+Aff:tegin GI; ! 28_V,tege,teg[in],-02011--,-,-,*
+ tegema+V+Pers+Prt+Ind+Pl2+Aff:tegite GI; ! 28_V,tege,teg[ite],-02051--,-,-,*
+ tegema+V+Pers+Prt+Ind+Sg2+Aff:tegid GI; ! 28_V,tege,teg[id],-02021--,-,-,*
+ tegema+V+Pers+Prt+Ind+Pl3+Aff:tegid GI; ! 28_V,tege,teg[id],-02061--,-,-,*
+ tegema+V+Pers+Prt+Ind+Sg3+Aff:tegi GI; ! 28_V,tege,teg[i],-02031--,-,-,*
  tegema+V+Impers+Prs+Ind+Aff:tehakse GI; ! 28_V,tege,teh[akse],-100-1--,-,-,*
  tegema+V+Impers+Prs+Ind+Neg:tehta GI; ! 28_V,tege,t'eh[ta],-100-0--,-,-,*
  tegema+V+Pers+Prs+Ind+Pl1+Aff:teeme GI; ! 28_V,tege,tee[me],-00041--,-,-,*
  tegema+V+Pers+Prs+Ind+Pl2+Aff:teete GI; ! 28_V,tege,tee[te],-00051--,-,-,*
  tegema+V+Pers+Prs+Ind+Pl3+Aff:teevad GI; ! 28_V,tege,tee[vad],-00061--,-,-,*
  tegema+V+Inf:teha GI; ! 28_V,tege,teh[a],1-------,-,-,*
- tegema+V+Impers+Past+Prc:tehtud GI; ! 28_V,tege,t'eh[tud],411--0--,-,-,*
- tegema+V+Pers+Past+Prc:teinud GI; ! 28_V,tege,tei[nud],401--0--,-,-,*
+ tegema+V+Impers+Prt+Prc:tehtud GI; ! 28_V,tege,t'eh[tud],411--0--,-,-,*
+ tegema+V+Pers+Prt+Prc:teinud GI; ! 28_V,tege,tei[nud],401--0--,-,-,*
  tegema+V+Impers+Prs+Prc:tehtav GI; ! 28_V,tege,t'eh[tav],410---0N,-,-,*
- tegema+V+Impers+Past+Quot:tehtuvat afneg_GI; ! 28_V,tege,t'eh[tuvat],-111-0--,-,-,*
- tegema+V+Pers+Past+Quot:teinuvat afneg_GI; ! 28_V,tege,tei[nuvat],-01100--,-,-,*
+ tegema+V+Impers+Prt+Quot:tehtuvat afneg_GI; ! 28_V,tege,t'eh[tuvat],-111-0--,-,-,*
+ tegema+V+Pers+Prt+Quot:teinuvat afneg_GI; ! 28_V,tege,tei[nuvat],-01100--,-,-,*
  tegema+V+Impers+Prs+Quot:tehtavat afneg_GI; ! 28_V,tege,t'eh[tavat],-101-0--,-,-,*
  tegema+V+Impers+Sup:tehtama GI; ! 28_V,tege,t'eh[tama],31------,-,-,*
  teine+Ord+Pl+Par:teisi GI; ! 12_OP,teine,t'eisi[],------1P,-,-,*
@@ -1437,35 +1437,35 @@ LEXICON Asendavad_erandid_gen
  tuli+N+Sg+Par:tuld GI; ! 20_S,tuli,t'ul[d],------0P,-,-,*
  uks+N+Sg+Ill:uksesse GI_0; ! 14_S,'uks,#,------0D,-,-,*
  uni+N+Sg+Par:und GI; ! 20_S,uni,'un[d],------0P,-,-,*
- vedama+V+Impers+Past+Cond+Aff:veetuks GI; ! 28_V,veda,v'ee[tuks],-112-0--,-,-,*
+ vedama+V+Impers+Prt+Cond+Aff:veetuks GI; ! 28_V,veda,v'ee[tuks],-112-0--,-,-,*
  vedama+V+Impers+Prs+Cond+Aff:veetaks GI; ! 28_V,veda,v'ee[taks],-102-0--,-,-,*
  vedama+V+Impers+Prs+Imprt:veetagu afneg_GI; ! 28_V,veda,v'ee[tagu],-103-0--,-,-,*
- vedama+V+Impers+Past+Ind+Aff:veeti GI; ! 28_V,veda,v'ee[ti],-120-1--,-,-,*
+ vedama+V+Impers+Prt+Ind+Aff:veeti GI; ! 28_V,veda,v'ee[ti],-120-1--,-,-,*
  vedama+V+Impers+Prs+Ind+Aff:veetakse GI; ! 28_V,veda,v'ee[takse],-100-1--,-,-,*
  vedama+V+Impers+Prs+Ind+Neg:veeta GI; ! 28_V,veda,v'ee[ta],-100-0--,-,-,*
- vedama+V+Impers+Past+Prc:veetud GI; ! 28_V,veda,v'ee[tud],411--0--,-,-,*
+ vedama+V+Impers+Prt+Prc:veetud GI; ! 28_V,veda,v'ee[tud],411--0--,-,-,*
  vedama+V+Impers+Prs+Prc:veetav GI; ! 28_V,veda,v'ee[tav],410---0N,-,-,*
- vedama+V+Impers+Past+Quot:veetuvat afneg_GI; ! 28_V,veda,v'ee[tuvat],-111-0--,-,-,*
+ vedama+V+Impers+Prt+Quot:veetuvat afneg_GI; ! 28_V,veda,v'ee[tuvat],-111-0--,-,-,*
  vedama+V+Impers+Prs+Quot:veetavat afneg_GI; ! 28_V,veda,v'ee[tavat],-101-0--,-,-,*
  vedama+V+Impers+Sup:veetama GI; ! 28_V,veda,v'ee[tama],31------,-,-,*
  veri+N+Sg+Par:verd GI; ! 20_S,veri,v'er[d],------0P,-,-,*
- viima+V+Pers+Past+Ind+Pl1+Aff:viisime GI; ! 38_V,v'ii,vii[sime],-02041--,-,-,*
- viima+V+Pers+Past+Ind+Sg1+Aff:viisin GI; ! 38_V,v'ii,vii[sin],-02011--,-,-,*
- viima+V+Pers+Past+Ind+Pl2+Aff:viisite GI; ! 38_V,v'ii,vii[site],-02051--,-,-,*
- viima+V+Pers+Past+Ind+Sg2+Aff:viisid GI; ! 38_V,v'ii,vii[sid],-02021--,-,-,*
- viima+V+Pers+Past+Ind+Pl3+Aff:viisid GI; ! 38_V,v'ii,vii[sid],-02061--,-,-,*
- viima+V+Pers+Past+Ind+Sg3+Aff:viis GI; ! 38_V,v'ii,v'ii[s],-02031--,-,-,*
+ viima+V+Pers+Prt+Ind+Pl1+Aff:viisime GI; ! 38_V,v'ii,vii[sime],-02041--,-,-,*
+ viima+V+Pers+Prt+Ind+Sg1+Aff:viisin GI; ! 38_V,v'ii,vii[sin],-02011--,-,-,*
+ viima+V+Pers+Prt+Ind+Pl2+Aff:viisite GI; ! 38_V,v'ii,vii[site],-02051--,-,-,*
+ viima+V+Pers+Prt+Ind+Sg2+Aff:viisid GI; ! 38_V,v'ii,vii[sid],-02021--,-,-,*
+ viima+V+Pers+Prt+Ind+Pl3+Aff:viisid GI; ! 38_V,v'ii,vii[sid],-02061--,-,-,*
+ viima+V+Pers+Prt+Ind+Sg3+Aff:viis GI; ! 38_V,v'ii,v'ii[s],-02031--,-,-,*
  ära+V+Pers+Prs+Imprt+Pl1+Neg:ärgem GI; ! --_V,ära,är[gem],-00342--,-,-,*
  ära+V+Pers+Prs+Imprt+Pl1+Neg:ärme GI; ! --_V,ära,är[me],-00342--,-,-,*
  ära+V+Pers+Prs+Imprt+Pl2+Neg:ärge GI; ! --_V,ära,är[ge],-00352--,-,-,*
  ära+V+Pers+Prs+Imprt+Sg2+Neg:ära GI; ! --_V,ära,ära[],-00322--,-,-,*
  ära+V+Pers+Prs+Imprt+Pl3+Neg:ärgu GI; ! --_V,ära,är[gu],--0302--,-,-,*
- õitsma+V+Pers+Past+Ind+Pl1+Aff:õitsesime GI; ! 32_V,'õits,'õitse[sime],-02041--,-,-,*
- õitsma+V+Pers+Past+Ind+Sg1+Aff:õitsesin GI; ! 32_V,'õits,'õitse[sin],-02011--,-,-,*
- õitsma+V+Pers+Past+Ind+Pl2+Aff:õitsesite GI; ! 32_V,'õits,'õitse[site],-02051--,-,-,*
- õitsma+V+Pers+Past+Ind+Sg2+Aff:õitsesid GI; ! 32_V,'õits,'õitse[sid],-02021--,-,-,*
- õitsma+V+Pers+Past+Ind+Pl3+Aff:õitsesid GI; ! 32_V,'õits,'õitse[sid],-02061--,-,-,*
- õitsma+V+Pers+Past+Ind+Sg3+Aff:õitses GI; ! 32_V,'õits,'õitse[s],-02031--,-,-,*
+ õitsma+V+Pers+Prt+Ind+Pl1+Aff:õitsesime GI; ! 32_V,'õits,'õitse[sime],-02041--,-,-,*
+ õitsma+V+Pers+Prt+Ind+Sg1+Aff:õitsesin GI; ! 32_V,'õits,'õitse[sin],-02011--,-,-,*
+ õitsma+V+Pers+Prt+Ind+Pl2+Aff:õitsesite GI; ! 32_V,'õits,'õitse[site],-02051--,-,-,*
+ õitsma+V+Pers+Prt+Ind+Sg2+Aff:õitsesid GI; ! 32_V,'õits,'õitse[sid],-02021--,-,-,*
+ õitsma+V+Pers+Prt+Ind+Pl3+Aff:õitsesid GI; ! 32_V,'õits,'õitse[sid],-02061--,-,-,*
+ õitsma+V+Pers+Prt+Ind+Sg3+Aff:õitses GI; ! 32_V,'õits,'õitse[s],-02031--,-,-,*
  õlu+N+Sg+Ill:õllesse GI_0; ! 24_S,õlu,#,------0D,-,-,*
  õlu+N+Sg+Par:õlut GI; ! 24_S,õlu,õlu[t],------0P,-,-,*
  öö+N+Pl+Abl:öilt GI; ! 26_S,'öö,'ö[ilt],------16,-,-,*

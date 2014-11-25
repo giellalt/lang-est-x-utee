@@ -1045,31 +1045,31 @@ LEXICON An_ev
 !!!!!
 
 LEXICON An_s
- ma+V+Pers+Past+Ind+Sg3+Aff:+s GI;
+ ma+V+Pers+Prt+Ind+Sg3+Aff:+s GI;
 
 LEXICON An_is
- ma+V+Pers+Past+Ind+Sg3+Aff:+is GI;
+ ma+V+Pers+Prt+Ind+Sg3+Aff:+is GI;
 
 LEXICON An_i
- ma+V+Pers+Past+Ind+Sg3+Aff:+i GI;
+ ma+V+Pers+Prt+Ind+Sg3+Aff:+i GI;
 
 LEXICON An_sin
- ma+V+Pers+Past+Ind+Sg1+Aff:+sin GI;
- ma+V+Pers+Past+Ind+Sg2+Aff:+sid GI;
- ma+V+Pers+Past+Ind+Pl3+Aff:+sid GI;
+ ma+V+Pers+Prt+Ind+Sg1+Aff:+sin GI;
+ ma+V+Pers+Prt+Ind+Sg2+Aff:+sid GI;
+ ma+V+Pers+Prt+Ind+Pl3+Aff:+sid GI;
 
 LEXICON An_in
- ma+V+Pers+Past+Ind+Sg1+Aff:+in GI;
- ma+V+Pers+Past+Ind+Sg2+Aff:+id GI;
- ma+V+Pers+Past+Ind+Pl3+Aff:+id GI;
+ ma+V+Pers+Prt+Ind+Sg1+Aff:+in GI;
+ ma+V+Pers+Prt+Ind+Sg2+Aff:+id GI;
+ ma+V+Pers+Prt+Ind+Pl3+Aff:+id GI;
 
 LEXICON An_sime
- ma+V+Pers+Past+Ind+Pl1+Aff:+sime GI;
- ma+V+Pers+Past+Ind+Pl2+Aff:+site GI;
+ ma+V+Pers+Prt+Ind+Pl1+Aff:+sime GI;
+ ma+V+Pers+Prt+Ind+Pl2+Aff:+site GI;
 
 LEXICON An_ime
- ma+V+Pers+Past+Ind+Pl1+Aff:+ime GI;
- ma+V+Pers+Past+Ind+Pl2+Aff:+ite GI;
+ ma+V+Pers+Prt+Ind+Pl1+Aff:+ime GI;
+ ma+V+Pers+Prt+Ind+Pl2+Aff:+ite GI;
 
 !!!!!
 
@@ -1108,16 +1108,16 @@ LEXICON An_ke
  An_nud ;
 
 LEXICON An_nud
-  ma+V+Pers+Past+Prc:+nud GI ;
-  ma+V+Pers+Past+Ind+Neg:+nud GI ; 
-  ma+V+Pers+Past+Imprt:+nud GI ; 
-  ma+V+Pers+Past+Cond:+nuks GI ;
-  ma+V+Pers+Past+Cond+Sg1+Aff:+nuksin GI ;
-  ma+V+Pers+Past+Cond+Sg2+Aff:+nuksid GI ;
-  ma+V+Pers+Past+Cond+Pl1+Aff:+nuksime GI ;
-  ma+V+Pers+Past+Cond+Pl2+Aff:+nuksite GI ;
-  ma+V+Pers+Past+Cond+Pl3+Aff:+nuksid GI ;
-  ma+V+Pers+Past+Quot:+nuvat GI ;
+  ma+V+Pers+Prt+Prc:+nud GI ;
+  ma+V+Pers+Prt+Ind+Neg:+nud GI ; 
+  ma+V+Pers+Prt+Imprt:+nud GI ; 
+  ma+V+Pers+Prt+Cond:+nuks GI ;
+  ma+V+Pers+Prt+Cond+Sg1+Aff:+nuksin GI ;
+  ma+V+Pers+Prt+Cond+Sg2+Aff:+nuksid GI ;
+  ma+V+Pers+Prt+Cond+Pl1+Aff:+nuksime GI ;
+  ma+V+Pers+Prt+Cond+Pl2+Aff:+nuksite GI ;
+  ma+V+Pers+Prt+Cond+Pl3+Aff:+nuksid GI ;
+  ma+V+Pers+Prt+Quot:+nuvat GI ;
 
 LEXICON An_nud_der
   nud+A:+nud GI ; ! ???
@@ -1157,13 +1157,13 @@ LEXICON An_me
 !!!!!
 
 LEXICON An_tud
- ma+V+Impers+Past+Prc:+tud GI ;
- ma+V+Impers+Past+Ind+Neg:+tud GI ;
- ma+V+Impers+Past+Ind+Aff:+ti GI ;
+ ma+V+Impers+Prt+Prc:+tud GI ;
+ ma+V+Impers+Prt+Ind+Neg:+tud GI ;
+ ma+V+Impers+Prt+Ind+Aff:+ti GI ;
  ma+V+Impers+Prs+Cond:+taks GI ;
- ma+V+Impers+Past+Cond:+tuks GI ;
+ ma+V+Impers+Prt+Cond:+tuks GI ;
  ma+V+Impers+Prs+Quot:+tavat GI ;
- ! ma+V+Impers+Past+Quot:+tuvat GI ;
+ ! ma+V+Impers+Prt+Quot:+tuvat GI ;
  ma+V+Impers+Prs+Imprt:+tagu GI ;
  ma+V+Impers+Sup:+tama GI ;
  ma+V+Impers+Prs+Ind+Neg:+ta GI ;
@@ -1177,13 +1177,13 @@ LEXICON An_tud
  $tav+N:+tav 02_A ;
 
 LEXICON An_dud
- ma+V+Impers+Past+Prc:+dud GI ;
- ma+V+Impers+Past+Ind+Neg:+dud GI ;
- ma+V+Impers+Past+Ind+Aff:+di GI ;
+ ma+V+Impers+Prt+Prc:+dud GI ;
+ ma+V+Impers+Prt+Ind+Neg:+dud GI ;
+ ma+V+Impers+Prt+Ind+Aff:+di GI ;
  ma+V+Impers+Prs+Cond:+daks GI ;
- ma+V+Impers+Past+Cond:+duks GI ;
+ ma+V+Impers+Prt+Cond:+duks GI ;
  ma+V+Impers+Prs+Quot:+davat GI ;
- ma+V+Impers+Past+Quot:+duvat GI ;
+ ma+V+Impers+Prt+Quot:+duvat GI ;
  ma+V+Impers+Prs+Imprt:+dagu GI ;
  ma+V+Impers+Sup:+dama GI ;
  ma+V+Impers+Prs+Ind+Neg:+da GI ;
