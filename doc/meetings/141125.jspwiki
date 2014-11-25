@@ -1,0 +1,309 @@
+
+Present: Fran, Heiki, Heli, Trond , Sjur
+
+
+Issues/Topics:
+
+* Oahpa
+* MT
+* CG (problem status)
+* Next physical meeting
+
+
+!!! CG
+
+
+!! Problem with running cg
+
+Tiina's segmentation fault: Status unknown.
+
+Sjur checked in empty parenthesis on line 1121, and
+now we get (on gtlab):
+
+{{{
+est>estdist "mina ei ole tulnud."
+Warning: no abbr file found
+  /home/trond/main/langs/est/tools/preprocess/abbr.txt
+............. preprocessing without it!
+... pos disambiguating ...
+0%>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>100%
+
+  *****  LEXICON LOOK-UP  *****
+
+
+LOOKUP STATISTICS (success with different strategies):
+strategy 0:        4 times         (80.00 %)
+not found:        1 times         (20.00 %)
+
+corpus size:        5 words
+execution time:        0 sec
+speed:                5 words/sec
+
+  *****  END OF LEXICON LOOK-UP  *****
+
+"<mina>"
+        "mina" Pron Sg Nom
+        "mina" N Sg Nom
+        "mina" N Sg Par
+        "mina" N Sg Gen
+;        "mi" N Sg Ess REMOVE:1187:E23
+"<ei>"
+        "ei" Adv
+        "ei" V Neg
+"<ole>"
+        "olema" V Pers Prs Ind Neg
+        "olema" V Pers Prs Imprt Sg2
+        "olu" N Pl Par
+"<tulnud>"
+        "tulema" V Pers Past Prc
+        "tulnu" A Pl Nom
+        "tulnud" A
+        "tulema" V Pers Past Ind Neg
+        "tulma" V* Der/nu N Pl Nom
+        "tulnu" N Pl Nom
+        "tulema" V Pers Past Imprt
+"<.>"
+        "." ?
+}}}        
+
+
+!! The Estonian lookup2cg
+
+Why don't we use cg-conv? We desperately need to get away 
+from perl, and from the linguistic hacks in the old perl script(s).
+
+Conversion scripts for Estonian FST -> CG (could it be that the scripts are in
+[http://math.ut.ee/~kaili/grammatika/estmorfcg.tar.gz] ?) -- 6 perl scripts
++ 1 awk script + something that looks like a lexicon that is ~8k lines long.
+
+langs/est$ echo jada | huest | cg-conv -f | vislcg3 -g src/syntax/disambiguation.bin
+
+alias uest='$LOOKUP $GTHOME/langs/est/src/analyser-gt-desc.xfst'
+
+{{{
+$ cg-conv -h
+Usage: cg-conv [OPTIONS]
+
+Options:
+ -h, --help          shows this help
+ -?, --?             shows this help
+ -p, --prefix        sets the mapping prefix; defaults to @
+ -u, --in-auto       auto-detect input format (default)
+ -c, --in-cg         sets input format to CG
+ -n, --in-niceline   sets input format to Niceline CG
+ -a, --in-apertium   sets input format to Apertium
+ -f, --in-fst        sets input format to HFST/XFST
+ -p, --in-plain      sets input format to plain text
+ -C, --out-cg        sets output format to CG (default)
+ -A, --out-apertium  sets output format to Apertium
+ -N, --out-niceline  sets output format to Niceline CG
+ -P, --out-plain     sets output format to plain text
+ -r, --rtl           sets sub-reading direction to RTL (default)
+ -l, --ltr           sets sub-reading direction to LTR
+}}}
+
+
+{{{
+$ echo "mina ei ole tulnud ." | tr ' ' '\n' | hfst-lookup ~/source/giellatekno/langs/est/src/analyser-gt-norm.hfstol  | cg-conv -f 
+Warning: No soft or hard delimiters defined in grammar. Hard limit of 500 cohorts may break windows in unintended places.
+"<mina>"
+    "mi" N Sg Ess
+    "mi" N Sg Gen #na Adv
+    "mi" N Sg Nom #na Adv
+    "mina" N Sg Gen
+    "mina" N Sg Nom
+    "mina" N Sg Par
+    "mina" Pron Sg Nom
+"<ei>"
+    "ei" Adv
+    "ei" V Neg
+"<ole>"
+    "olema" V Pers Prs Imprt Sg2
+    "olema" V Pers Prs Ind Neg
+    "olu" N Pl Par
+"<tulnud>"
+    "tulema" V Pers Past Imprt
+    "tulema" V Pers Past Ind Neg
+    "tulema" V Pers Past Prc
+    "tulma" V Der/nu N Pl Nom
+    "tulnu" A Pl Nom
+    "tulnu" N Pl Nom
+    "tulnud" A
+"<.>"
+    "." ?
+  
+}}}
+
+
+__TODO__
+
+* Write an e-mail to Tiina, ref to this and ask for 
+  documentation on the 6 perl + 1 awk package
+* start outsourcing the 6 + 1 content to the fst and cg  
+  preceding and following the cg-proc component
+* add a weight to dynamic compounds in Hfst (Jaak)
+* test hfst-optimized-lookup with weights, and check that we can remove
+  extraneous compound analysis using weights and the proper option
+** we can't, Sjur will report the bug
+
+
+!!!MT
+
+!!Bidix
+
+The lists Fran created are now included, we now have
+16000 bidix entries for fin-est.
+
+Next step: Working from a frequency list, both for fin
+and eventually for est. Fran sent 2000 words from that list,
+that will take some time.
+
+When the 2000 words from the frequency list are done we
+make a new coverage check.
+
+!!MT and bidix (Heiki's fantastic work)
+
+Conversion script from the Finnish analytical verb forms
+to estonian ones and vice versa. At the moment it is a 
+correspondence table in sed format.
+
+The list contains trivial (identical) and non-trivial
+(different) patterns.
+
+
+error: antakoon -> finnish fst antakon
+
+{{{
+$ ufin
+antakon
+antakon        antaa+V+Act+Imprt+Sg3
+
+antakoon
+antakoon        antakoon        +?
+
+menkön
+menkön        mennä+V+Act+Imprt+Sg3
+
+menköön
+menköön        menköön        +?
+}}}
+
+TODO: Heiki-Jaan to report to Tommi A Pirinen <tommi.pirinen@computing.dcu.ie>
+
+
+
+!!!Oahpa
+
+Heli has analysed the ca 1500 words in the textbook dictionary with the FST and after some work got POS tags for all  the words.
+
+Some problems:
+
+# How to put the pluralia tantum words into the Oahpa lexicon, e.g. käärid, püksid, andmed, jõulud, vastlad, kilekaaned, tangud, vanemad, kirjatarbed, teksad ?
+# What is the lemma?
+## estmorf: käärid, andmed, püksid, teksad, vastlad, jõulud
+## plamk: käär, anne, püks, teksa, vastel, jõul
+
+(we could define plural forms as lemmas in plamk as well?)
+
+{{{
+käärid    käär+N+Pl+Nom 
+In Leksa I need the citation form (käärid), but for generating forms for Morfa-S I need the lemma (käär).
+Solution 1: two records for these words:
+word    POS
+käärid     X  - for Leksa 
+käär        N  - out of this all the (only plural!) forms will be generated
+Solution 2: one record with an additional (optional) field 'lemma'
+citation form (used for Leksa), lemma (used for Morfa-S form generation)
+csv:
+käärid|käär|N|scissors|ножницы|Schere|sakset|14
+Oahpa XML:
+<e>
+    <lg>
+      <l pos="n" use="leksa" gen_only="Pl">käärid</l>
+      <lemma>käär</lemma>
+<e>
+    <lg>
+      <l pos="n" use="leksa" topic="biology">roomajad</l>
+      <l pos="n" use="leksa" topic="countryside">roomaja</l>
+      <lemma>roomaja</lemma>
+}}}
+
+What we do at gt:
+
+{{{
+$ grep housut fkv/src/morphology/stems/nouns.lexc
+!! *** 2.1.1. Kaksitavuiset monikko (housut)     = n_21pl
+alushousut:alushousu n_21pl ; 
+dongerihousut:dongerihousu n_21pl ; 
+housut:housu n_21pl ; 
+palonkihousut:palonkihousu n_21pl ; 
+uimahousut:uimahousu n_21pl ; 
+villahousut:villahousu n_21pl ;
+}}}
+
+For some words we need to give the inflection type (continuation lexicon) in the Oahpa lexicon. 
+
+e.g. kurk - kurgi and kurk - kurgu (both are in the textbook's dictionary but in different chapters)
+
+kaste - kastme, juhe - juhtme, anne - andme, not kaste - kaste, juhe - juhte, anne - ande
+
+We have +Hom1 and +Hom2 for at least piim+N -- we probably should use a lot more of those but what happens to oahpa's dictionary then?
+
+# Generation of forms of non-lexicalised compounds ?
+
+{{{
+merisiga    meri+S+sg+nom&siga+S+sg+nom
+
+merisiga
+merisiga        meri+N+Sg+Nom#si+N+Sg+Com        0,000000
+merisiga        meri+N+Sg+Nom#siga+A+Sg+Ill        0,000000
+merisiga        meri+N+Sg+Nom#siga+A+Sg+Nom        0,000000
+merisiga        meri+N+Sg+Nom#siga+A+Sg+Par        0,000000
+merisiga        meri+N+Sg+Nom#siga+N+Sg+Ill        0,000000
+merisiga        meri+N+Sg+Nom#siga+N+Sg+Nom        0,000000
+merisiga        meri+N+Sg+Nom#siga+N+Sg+Par        0,000000
+
+välissuhted    väline+A+prefix&suhe+S+pl+nom
+
+välissuhted
+välissuhted        välissuhted+?        inf
+
+}}}
+
+There are only about 200 such words in the Oahpa lexicon. Solution: lexicalise them.
+
+
+
+
+!!!Next physical meeting
+
+
+* 13-1.-18.1. Film festival
+* 16.1. Uralic lg tech workshop
+* 21.1. The sun comes back 
+* january: the cod comes in
+* Tommi: arrives 14.1., leaves 17.1.
+
+Things to do:
+
+* Decide upon dates (15.1., 16.1. core dates)
+* Book hotels immediately
+
+
+!!!Next skype meeting
+
+6 suggestions:
+
+* 3.12. After 1300 norw time 
+* 4.12. 0900 norw time (without Fran) 
+* 9.12. 0900 norw time
+* 10.12. after 1300 norw time
+* 11.12. at 0900
+* 11.12. at 1300
+
+We have a __doodle__, please go and fill in during this week:
+
+[http://doodle.com/3f8vffycfdp43w2q]
+
+
+
