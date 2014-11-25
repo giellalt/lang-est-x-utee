@@ -1118,14 +1118,14 @@ ADD CLBtag Dsh (NOT 0 CLBtag)(*-1 FinV BARRIER CLB)(*1 FinV BARRIER J OR CLB)
 
 ADD CLBtag Koma (*-1 Et LINK 1 DaInf)(1C FinV) (NOT 0 CLBtag) ;
 
-SUBSTITUTE CLBtag ( ) TARGET (*) (-1 Kriips); 
-SUBSTITUTE CLBCtag ( ) TARGET (*) (-1 Kriips); 
+SUBSTITUTE CLBtag (*) TARGET (*) (-1 Kriips); 
+SUBSTITUTE CLBCtag (*) TARGET (*) (-1 Kriips); 
 
-SUBSTITUTE CLBtag ( ) TARGET (*) (-1 Prop)(1 Prop); 
-SUBSTITUTE CLBCtag ( ) TARGET (*) (-1 Prop)(1 Prop); 
+SUBSTITUTE CLBtag (*) TARGET (*) (-1 Prop)(1 Prop); 
+SUBSTITUTE CLBCtag (*) TARGET (*) (-1 Prop)(1 Prop); 
 
-SUBSTITUTE CLBCtag ( ) TARGET (*) (*-1 DaVerb - Ole)(NOT *-1 DaInf)(*1 DaInf)(NOT *1 DaVerb); 
-SUBSTITUTE CLBtag ( ) TARGET (*) (*-1 DaVerb - Ole)(NOT *-1 DaInf)(*1 DaInf)(NOT *1 DaVerb); 
+SUBSTITUTE CLBCtag (*) TARGET (*) (*-1 DaVerb - Ole)(NOT *-1 DaInf)(*1 DaInf)(NOT *1 DaVerb); 
+SUBSTITUTE CLBtag (*) TARGET (*) (*-1 DaVerb - Ole)(NOT *-1 DaInf)(*1 DaInf)(NOT *1 DaVerb); 
 
 
 
