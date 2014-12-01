@@ -1455,11 +1455,6 @@ LEXICON Asendavad_erandid_gen
  viima+V+Pers+Prt+Ind+Sg2+Aff:viisid GI; ! 38_V,v'ii,vii[sid],-02021--,-,-,*
  viima+V+Pers+Prt+Ind+Pl3+Aff:viisid GI; ! 38_V,v'ii,vii[sid],-02061--,-,-,*
  viima+V+Pers+Prt+Ind+Sg3+Aff:viis GI; ! 38_V,v'ii,v'ii[s],-02031--,-,-,*
- ära+V+Pers+Prs+Imprt+Pl1+Neg:ärgem GI; ! --_V,ära,är[gem],-00342--,-,-,*
- ära+V+Pers+Prs+Imprt+Pl1+Neg:ärme GI; ! --_V,ära,är[me],-00342--,-,-,*
- ära+V+Pers+Prs+Imprt+Pl2+Neg:ärge GI; ! --_V,ära,är[ge],-00352--,-,-,*
- ära+V+Pers+Prs+Imprt+Sg2+Neg:ära GI; ! --_V,ära,ära[],-00322--,-,-,*
- ära+V+Pers+Prs+Imprt+Pl3+Neg:ärgu GI; ! --_V,ära,är[gu],--0302--,-,-,*
  õitsma+V+Pers+Prt+Ind+Pl1+Aff:õitsesime GI; ! 32_V,'õits,'õitse[sime],-02041--,-,-,*
  õitsma+V+Pers+Prt+Ind+Sg1+Aff:õitsesin GI; ! 32_V,'õits,'õitse[sin],-02011--,-,-,*
  õitsma+V+Pers+Prt+Ind+Pl2+Aff:õitsesite GI; ! 32_V,'õits,'õitse[site],-02051--,-,-,*
