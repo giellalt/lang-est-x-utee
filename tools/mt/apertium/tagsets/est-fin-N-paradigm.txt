@@ -1,0 +1,58 @@
+# eesti ja soome nimisõnaparadigma vormide vastavused
+# soome keele osas on jäetud kõrvale:
+# omastusliited, küsipartikkel (hfst: +Qst), muud partiklid (hfst: +Foc/...)
+
+# Tekitas Heiki-Jaan Kaalep P. Alvre "Soome keele grammatika", Tallinn 1992 põhjal
+# kasutades Giellatekno kategooriaid ja eesti- ning soome hfst-lookupi 
+# nädissõna hobune - hevonen
+# eesti ja soome vastavusi eristab @-märk
+
+# #-märkide taga on kommentaarid 
+
+# corresponding noun forms for Estonian and Finnish verb paradigms
+# in Finnish, the following was left out:
+# possessive suffixes, question particle (hfst: +Qst), other particles (hfst: +Foc/...) 
+ 
+# By Heiki-Jaan Kaalep, based on the book by P. Alvre "Grammar of Finnish", Tallinn 1992
+# using the Giellatekno morphological categories and Finnish and Estonian hfst-lookup tool
+# example word hobune - hevonen (horse)
+# @-sign splits the languages
+
+# commentaries are on lines beginning with #-signs
+
+
+# Singular
+
+Sg+Nom hobune@Sg+Nom hevonen
+Sg+Gen hobuse@Sg+Gen hevosen
+Sg+Par hobust@Sg+Par hevosta
+Sg+Ill hobusesse@Sg+Ill hevoseen
+Sg+Ine hobuses@Sg+Ine hevosessa
+Sg+Ela hobusest@Sg+Ela hevosesta
+Sg+All hobusele@Sg+All hevoselle
+Sg+Ade hobusel@Sg+Ade hevosella
+Sg+Abl hobuselt@Sg+Abl hevoselta
+Sg+Tra hobuseks@Sg+Tra hevoseksi
+Sg+Trm hobuseni@Sg+Gen hevosen (asti)
+Sg+Ess hobusena@Sg+Ess hevosena
+Sg+Abe hobuseta@Sg+Abe hevosetta
+Sg+Com hobusega@Com hevosine
+
+# Plural
+
+Pl+Nom hobused@Pl+Nom hevoset
+Pl+Gen hobuste@Pl+Gen hevosien
+Pl+Par hobuseid@Pl+Par hevosia
+Pl+Ill hobustesse@Pl+Ill hevosiin
+Pl+Ine hobustes@Pl+Ine hevosissa
+Pl+Ela hobustest@Pl+Ela hevosista
+Pl+All hobustele@Pl+All hevosille
+Pl+Ade hobustel@Pl+Ade hevosilla
+Pl+Abl hobustelt@Pl+Abl hevosilta
+Pl+Tra hobusteks@Pl+Tra hevosiksi
+Pl+Trm hobusteni@Pl+Gen hevosien (asti)
+Pl+Ess hobustena@Pl+Ess hevosina
+Pl+Abe hobusteta@Pl+Abe hevositta
+Pl+Com hobustega@Pl+Ins hevosin
+
+

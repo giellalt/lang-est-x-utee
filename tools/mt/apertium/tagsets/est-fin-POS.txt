@@ -1,0 +1,39 @@
+# eesti ja soome sõnaliikide vastavused
+# keeli eristab @-märk
+
+# Estonian and Finnish POS
+# @-sign splits the languages
+
+V@V
+
+N@N
+N+Prop@N+Prop
+
+A@A
+A+Comp@A+Comp
+A+Sup@A+Sup
+
+Num+Card@Num+Card
+Num+Ord@Num+Ord
+
+Pron@Pron+Pers
+Pron@Pron+Dem
+Pron@Pron+Interr
+Pron@Pron+Rel
+Pron@Pron+Qu
+Pron@Pron+Refl
+Pron@Pron+Recipr
+Pron@Pron+Indef
+
+Adv@Adv
+
+Interj@Interj
+
+CC@CC
+@CS
+
+Adp@Po
+
+@Pcle
+
+
