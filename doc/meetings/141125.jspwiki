@@ -5,7 +5,6 @@ Present: Fran, Heiki, Heli, Trond , Sjur
 Issues/Topics:
 
 * Oahpa
-* MT
 * CG (problem status)
 * Next physical meeting
 
@@ -76,11 +75,11 @@ Conversion scripts for Estonian FST -> CG (could it be that the scripts are in
 [http://math.ut.ee/~kaili/grammatika/estmorfcg.tar.gz] ?) -- 6 perl scripts
 + 1 awk script + something that looks like a lexicon that is ~8k lines long.
 
+{{{
 langs/est$ echo jada | huest | cg-conv -f | vislcg3 -g src/syntax/disambiguation.bin
 
 alias uest='$LOOKUP $GTHOME/langs/est/src/analyser-gt-desc.xfst'
 
-{{{
 $ cg-conv -h
 Usage: cg-conv [OPTIONS]
 
@@ -100,10 +99,7 @@ Options:
  -P, --out-plain     sets output format to plain text
  -r, --rtl           sets sub-reading direction to RTL (default)
  -l, --ltr           sets sub-reading direction to LTR
-}}}
 
-
-{{{
 $ echo "mina ei ole tulnud ." | tr ' ' '\n' | hfst-lookup ~/source/giellatekno/langs/est/src/analyser-gt-norm.hfstol  | cg-conv -f 
 Warning: No soft or hard delimiters defined in grammar. Hard limit of 500 cohorts may break windows in unintended places.
 "<mina>"
@@ -147,7 +143,6 @@ __TODO__
 ** we can't, Sjur will report the bug
 
 
-!!!MT
 
 !!Bidix
 
@@ -247,7 +242,8 @@ e.g. kurk - kurgi and kurk - kurgu (both are in the textbook's dictionary but in
 
 kaste - kastme, juhe - juhtme, anne - andme, not kaste - kaste, juhe - juhte, anne - ande
 
-We have +Hom1 and +Hom2 for at least piim+N -- we probably should use a lot more of those but what happens to oahpa's dictionary then?
+We have +Hom1 and +Hom2 for at least piim+N -- we probably should use a 
+lot more of those but what happens to oahpa's dictionary then?
 
 # Generation of forms of non-lexicalised compounds ?
 
