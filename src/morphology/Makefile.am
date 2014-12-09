@@ -33,7 +33,8 @@ GT_LEXC_SRCS_L1_L2=\
 			 stems/pronouns.lexc \
 			 stems/proper-names.lexc \
 			 stems/punctuation.lexc \
-			 stems/verbs.lexc
+			 stems/verbs.lexc \
+			 stems/lexicalized_temporary.lexc
 
 #			 affixes/adjectives.lexc \
 #			 affixes/nouns.lexc \

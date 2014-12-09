@@ -5089,8 +5089,8 @@ LEXICON Nouns
  jalats+N:jalats 02_I; ! (02_S -> +S) a0: jalats, b0: jalatsi, b0r: jalatse, c0: 0
  jalgne+N:jalg 02_NE-SE; ! (02_AS -> +A +S) a0: jalgne, b0: jalgse, b0r: 0, c0: 0
  jalg+N:jalG1 22_A; ! (22_S -> +S) at: jalg, bt: jalga, bn: jala, btv: jalgu, bnv: jalu
- jalg+N+pl+abes:jaluta GI; ! 22_S,j'alg,jalu[ta],------1A,-,-,+
- jalg+N+pl+gen:jalge GI; ! 22_S,j'alg,j'alge[],------1G,-,-,+
+ jalg+N+Pl+Abe:jaluta GI; ! 22_S,j'alg,jalu[ta],------1A,-,-,+
+ jalg+N+Pl+Gen:jalge GI; ! 22_S,j'alg,j'alge[],------1G,-,-,+
  jalgsus+N:jalgsus 09_E; ! (09_S -> +S) a0: jalgsus, b0: jalgsuse
  jalgsus+N:jalgsus 11; ! (11_S -> +S) a0: jalgsus, b0: jalgsuse, b0v: jalgsusi
  jalus+N:jalus 09_E; ! (09_S -> +S) a0: jalus, b0: jaluse
@@ -8571,18 +8571,18 @@ LEXICON Nouns
  kuusik+N:kuusik 02_U; ! (02_S -> +S) a0: kuusik, b0: kuusiku, b0r: 0, c0: 0
  kuusk+N:kuusK1 22_E; ! (22_S -> +S) at: kuusk, bt: kuuske, bn: kuuse, btv: kuuski, bnv: kuusi
  kuu+N:ku. 26; ! (26_S -> +S) a0: kuu, a0r: ku
- kuu+N+pl+abes:kuudeta GI; ! 26_S,k'uu,kuu[deta],------1A,-,-,+
- kuu+N+pl+abl:kuudelt GI; ! 26_S,k'uu,kuu[delt],------16,-,-,+
- kuu+N+pl+ad:kuudel GI; ! 26_S,k'uu,kuu[del],------15,-,-,+
- kuu+N+pl+all:kuudele GI; ! 26_S,k'uu,kuu[dele],------14,-,-,+
- kuu+N+pl+el:kuudest GI; ! 26_S,k'uu,kuu[dest],------13,-,-,+
- kuu+N+pl+es:kuudena GI; ! 26_S,k'uu,kuu[dena],------1E,-,-,+
- kuu+N+pl+gen:kuude GI; ! 26_S,k'uu,kuu[de],------1G,-,-,+
- kuu+N+pl+ill:kuudesse GI; ! 26_S,k'uu,kuu[desse],------11,-,-,+
- kuu+N+pl+in:kuudes GI; ! 26_S,k'uu,kuu[des],------12,-,-,+
- kuu+N+pl+kom:kuudega GI; ! 26_S,k'uu,kuu[dega],------1K,-,-,+
- kuu+N+pl+term:kuudeni GI; ! 26_S,k'uu,kuu[deni],------1R,-,-,+
- kuu+N+pl+tr:kuudeks GI; ! 26_S,k'uu,kuu[deks],------1T,-,-,+
+ kuu+N+Pl+Abe:kuudeta GI; ! 26_S,k'uu,kuu[deta],------1A,-,-,+
+ kuu+N+Pl+Abl:kuudelt GI; ! 26_S,k'uu,kuu[delt],------16,-,-,+
+ kuu+N+Pl+Ade:kuudel GI; ! 26_S,k'uu,kuu[del],------15,-,-,+
+ kuu+N+Pl+All:kuudele GI; ! 26_S,k'uu,kuu[dele],------14,-,-,+
+ kuu+N+Pl+Ela:kuudest GI; ! 26_S,k'uu,kuu[dest],------13,-,-,+
+ kuu+N+Pl+Ess:kuudena GI; ! 26_S,k'uu,kuu[dena],------1E,-,-,+
+ kuu+N+Pl+Gen:kuude GI; ! 26_S,k'uu,kuu[de],------1G,-,-,+
+ kuu+N+Pl+Ill:kuudesse GI; ! 26_S,k'uu,kuu[desse],------11,-,-,+
+ kuu+N+Pl+Ine:kuudes GI; ! 26_S,k'uu,kuu[des],------12,-,-,+
+ kuu+N+Pl+Com:kuudega GI; ! 26_S,k'uu,kuu[dega],------1K,-,-,+
+ kuu+N+Pl+Trm:kuudeni GI; ! 26_S,k'uu,kuu[deni],------1R,-,-,+
+ kuu+N+Pl+Tra:kuudeks GI; ! 26_S,k'uu,kuu[deks],------1T,-,-,+
  kuut+N:kuuT1 22_I; ! (22_S -> +S) at: kuut, bt: kuuti, bn: kuudi, btv: kuute, bnv: kuude
  kuvand+N:kuvand 02_I; ! (02_S -> +S) a0: kuvand, b0: kuvandi, b0r: kuvande, c0: 0
  kuvar+N:kuvar 02_I; ! (02_S -> +S) a0: kuvar, b0: kuvari, b0r: kuvare, c0: 0
@@ -8753,7 +8753,7 @@ LEXICON Nouns
  kõrvik+N:kõrvik 02_U; ! (02_S -> +S) a0: kõrvik, b0: kõrviku, b0r: 0, c0: 0
  kõrvits+N:kõrvits 02_A; ! (02_S -> +S) a0: kõrvits, b0: kõrvitsa, b0r: 0, c0: 0
  kõrv+N:kõrv 22_A; ! (22_S -> +S) at: kõrv, bt: kõrva, bn: kõrva, btv: kõrvu, bnv: kõrvu
- kõrv+N+pl+term:kõrvuni GI; ! 22_S,k'õrv,kõrvu[ni],------1R,-,-,+
+ kõrv+N+Pl+Trm:kõrvuni GI; ! 22_S,k'õrv,kõrvu[ni],------1R,-,-,+
  kõrvutus+N:kõrvutus 11; ! (11_S -> +S) a0: kõrvutus, b0: kõrvutuse, b0v: kõrvutusi
  kõsin+N:kõsin 02_A; ! (02_S -> +S) a0: kõsin, b0: kõsina, b0r: 0, c0: 0
  kõss+N:kõss 22_U; ! (22_S -> +S) at: kõss, bt: kõssu, bn: kõssu, btv: kõsse, bnv: kõsse
@@ -10341,18 +10341,18 @@ LEXICON Nouns
  luuser+N:luuser 02_I; ! (02_S -> +S) a0: luuser, b0: luuseri, b0r: luusere, c0: 0
  luuslank+N:luuslanK1 22_I; ! (22_S -> +S) at: luuslank, bt: luuslanki, bn: luuslangi, btv: luuslanke, bnv: luuslange
  luu+N:lu. 26; ! (26_S -> +S) a0: luu, a0r: lu
- luu+N+pl+abes:luudeta GI; ! 26_S,l'uu,luu[deta],------1A,-,-,+
- luu+N+pl+abl:luudelt GI; ! 26_S,l'uu,luu[delt],------16,-,-,+
- luu+N+pl+ad:luudel GI; ! 26_S,l'uu,luu[del],------15,-,-,+
- luu+N+pl+all:luudele GI; ! 26_S,l'uu,luu[dele],------14,-,-,+
- luu+N+pl+el:luudest GI; ! 26_S,l'uu,luu[dest],------13,-,-,+
- luu+N+pl+es:luudena GI; ! 26_S,l'uu,luu[dena],------1E,-,-,+
- luu+N+pl+gen:luude GI; ! 26_S,l'uu,luu[de],------1G,-,-,+
- luu+N+pl+ill:luudesse GI; ! 26_S,l'uu,luu[desse],------11,-,-,+
- luu+N+pl+in:luudes GI; ! 26_S,l'uu,luu[des],------12,-,-,+
- luu+N+pl+kom:luudega GI; ! 26_S,l'uu,luu[dega],------1K,-,-,+
- luu+N+pl+term:luudeni GI; ! 26_S,l'uu,luu[deni],------1R,-,-,+
- luu+N+pl+tr:luudeks GI; ! 26_S,l'uu,luu[deks],------1T,-,-,+
+ luu+N+Pl+Abe:luudeta GI; ! 26_S,l'uu,luu[deta],------1A,-,-,+
+ luu+N+Pl+Abl:luudelt GI; ! 26_S,l'uu,luu[delt],------16,-,-,+
+ luu+N+Pl+Ade:luudel GI; ! 26_S,l'uu,luu[del],------15,-,-,+
+ luu+N+Pl+All:luudele GI; ! 26_S,l'uu,luu[dele],------14,-,-,+
+ luu+N+Pl+Ela:luudest GI; ! 26_S,l'uu,luu[dest],------13,-,-,+
+ luu+N+Pl+Ess:luudena GI; ! 26_S,l'uu,luu[dena],------1E,-,-,+
+ luu+N+Pl+Gen:luude GI; ! 26_S,l'uu,luu[de],------1G,-,-,+
+ luu+N+Pl+Ill:luudesse GI; ! 26_S,l'uu,luu[desse],------11,-,-,+
+ luu+N+Pl+Ine:luudes GI; ! 26_S,l'uu,luu[des],------12,-,-,+
+ luu+N+Pl+Com:luudega GI; ! 26_S,l'uu,luu[dega],------1K,-,-,+
+ luu+N+Pl+Trm:luudeni GI; ! 26_S,l'uu,luu[deni],------1R,-,-,+
+ luu+N+Pl+Tra:luudeks GI; ! 26_S,l'uu,luu[deks],------1T,-,-,+
  luus+N:luus 22_I; ! (22_S -> +S) at: luus, bt: luusi, bn: luusi, btv: luuse, bnv: luuse
  luustik+N:luustikK1 25; ! (25_S -> +S) at: luustik, bt: luustikku, bn: luustiku, btv: luustikke, bnv: luustike
  luusur+N:luusur 02_I; ! (02_S -> +S) a0: luusur, b0: luusuri, b0r: luusure, c0: 0
@@ -10684,18 +10684,18 @@ LEXICON Nouns
  maar+N:maar 22_I; ! (22_S -> +S) at: maar, bt: maari, bn: maari, btv: maare, bnv: maare
  maasikas+N:maasik 02_GAS_S-0; ! (02_S -> +S) a0: maasikas, b0: maasika, b0r: 0, c0: 0
  maa+N:ma. 26; ! (26_S -> +S) a0: maa, a0r: ma
- maa+N+pl+abes:maadeta GI; ! 26_S,m'aa,maa[deta],------1A,-,-,+
- maa+N+pl+abl:maadelt GI; ! 26_S,m'aa,maa[delt],------16,-,-,+
- maa+N+pl+ad:maadel GI; ! 26_S,m'aa,maa[del],------15,-,-,+
- maa+N+pl+all:maadele GI; ! 26_S,m'aa,maa[dele],------14,-,-,+
- maa+N+pl+el:maadest GI; ! 26_S,m'aa,maa[dest],------13,-,-,+
- maa+N+pl+es:maadena GI; ! 26_S,m'aa,maa[dena],------1E,-,-,+
- maa+N+pl+gen:maade GI; ! 26_S,m'aa,maa[de],------1G,-,-,+
- maa+N+pl+ill:maadesse GI; ! 26_S,m'aa,maa[desse],------11,-,-,+
- maa+N+pl+in:maades GI; ! 26_S,m'aa,maa[des],------12,-,-,+
- maa+N+pl+kom:maadega GI; ! 26_S,m'aa,maa[dega],------1K,-,-,+
- maa+N+pl+term:maadeni GI; ! 26_S,m'aa,maa[deni],------1R,-,-,+
- maa+N+pl+tr:maadeks GI; ! 26_S,m'aa,maa[deks],------1T,-,-,+
+ maa+N+Pl+Abe:maadeta GI; ! 26_S,m'aa,maa[deta],------1A,-,-,+
+ maa+N+Pl+Abl:maadelt GI; ! 26_S,m'aa,maa[delt],------16,-,-,+
+ maa+N+Pl+Ade:maadel GI; ! 26_S,m'aa,maa[del],------15,-,-,+
+ maa+N+Pl+All:maadele GI; ! 26_S,m'aa,maa[dele],------14,-,-,+
+ maa+N+Pl+Ela:maadest GI; ! 26_S,m'aa,maa[dest],------13,-,-,+
+ maa+N+Pl+Ess:maadena GI; ! 26_S,m'aa,maa[dena],------1E,-,-,+
+ maa+N+Pl+Gen:maade GI; ! 26_S,m'aa,maa[de],------1G,-,-,+
+ maa+N+Pl+Ill:maadesse GI; ! 26_S,m'aa,maa[desse],------11,-,-,+
+ maa+N+Pl+Ine:maades GI; ! 26_S,m'aa,maa[des],------12,-,-,+
+ maa+N+Pl+Com:maadega GI; ! 26_S,m'aa,maa[dega],------1K,-,-,+
+ maa+N+Pl+Trm:maadeni GI; ! 26_S,m'aa,maa[deni],------1R,-,-,+
+ maa+N+Pl+Tra:maadeks GI; ! 26_S,m'aa,maa[deks],------1T,-,-,+
  maastik+N:maastikK1 25; ! (25_S -> +S) at: maastik, bt: maastikku, bn: maastiku, btv: maastikke, bnv: maastike
  maastur+N:maastur 02_I; ! (02_S -> +S) a0: maastur, b0: maasturi, b0r: maasture, c0: 0
  maater+N:maatE1r 02_I; ! (02_S -> +S) a0: maater, b0: maatri, b0r: maatre, c0: 0
@@ -13825,13 +13825,13 @@ LEXICON Nouns
  pealsus+N:pealsus 11; ! (11_S -> +S) a0: pealsus, b0: pealsuse, b0v: pealsusi
  peane+N:pea 10_NE-SE-S; ! (10_S -> +S) a0: peane, b0: pease, c0: peas
  pea+N:pea 26_ii; ! (26_S -> +S) a0: pea, a0r: #
- pea+N+pl+abl:päilt GI; ! 26_S,p'ea,p'ä[ilt],------16,-,-,+
- pea+N+pl+ad:päil GI; ! 26_S,p'ea,p'ä[il],------15,-,-,+
- pea+N+pl+all:päile GI; ! 26_S,p'ea,p'ä[ile],------14,-,-,+
- pea+N+pl+el:päist GI; ! 26_S,p'ea,p'ä[ist],------13,-,-,+
- pea+N+pl+ill:päisse GI; ! 26_S,p'ea,p'ä[isse],------11,-,-,+
- pea+N+pl+in:päis GI; ! 26_S,p'ea,p'ä[is],------12,-,-,+
- pea+N+pl+tr:päiks GI; ! 26_S,p'ea,p'ä[iks],------1T,-,-,+
+ pea+N+Pl+Abl:päilt GI; ! 26_S,p'ea,p'ä[ilt],------16,-,-,+
+ pea+N+Pl+Ade:päil GI; ! 26_S,p'ea,p'ä[il],------15,-,-,+
+ pea+N+Pl+All:päile GI; ! 26_S,p'ea,p'ä[ile],------14,-,-,+
+ pea+N+Pl+Ela:päist GI; ! 26_S,p'ea,p'ä[ist],------13,-,-,+
+ pea+N+Pl+Ill:päisse GI; ! 26_S,p'ea,p'ä[isse],------11,-,-,+
+ pea+N+Pl+Ine:päis GI; ! 26_S,p'ea,p'ä[is],------12,-,-,+
+ pea+N+Pl+Tra:päiks GI; ! 26_S,p'ea,p'ä[iks],------1T,-,-,+
  peats+N:peats 02_I; ! (02_S -> +S) a0: peats, b0: peatsi, b0r: peatse, c0: 0
  peatus+N:peatus 09_E; ! (09_S -> +S) a0: peatus, b0: peatuse
  peatus+N:peatus 11; ! (11_S -> +S) a0: peatus, b0: peatuse, b0v: peatusi
@@ -15330,18 +15330,18 @@ LEXICON Nouns
  puur+N:puur 22_I; ! (22_S -> +S) at: puur, bt: puuri, bn: puuri, btv: puure, bnv: puure
  puuslak+N:puuslakK1 22_KPT_I; ! (22_S -> +S) at: puuslak, bt: puuslakki, bn: puuslaki, btv: puuslakke, bnv: puuslake
  puuslik+N:puuslikK1 25; ! (25_S -> +S) at: puuslik, bt: puuslikku, bn: puusliku, btv: puuslikke, bnv: puuslike
- puu+N+pl+abes:puudeta GI; ! 26_S,p'uu,puu[deta],------1A,-,-,+
- puu+N+pl+abl:puudelt GI; ! 26_S,p'uu,puu[delt],------16,-,-,+
- puu+N+pl+ad:puudel GI; ! 26_S,p'uu,puu[del],------15,-,-,+
- puu+N+pl+all:puudele GI; ! 26_S,p'uu,puu[dele],------14,-,-,+
- puu+N+pl+el:puudest GI; ! 26_S,p'uu,puu[dest],------13,-,-,+
- puu+N+pl+es:puudena GI; ! 26_S,p'uu,puu[dena],------1E,-,-,+
- puu+N+pl+gen:puude GI; ! 26_S,p'uu,puu[de],------1G,-,-,+
- puu+N+pl+ill:puudesse GI; ! 26_S,p'uu,puu[desse],------11,-,-,+
- puu+N+pl+in:puudes GI; ! 26_S,p'uu,puu[des],------12,-,-,+
- puu+N+pl+kom:puudega GI; ! 26_S,p'uu,puu[dega],------1K,-,-,+
- puu+N+pl+term:puudeni GI; ! 26_S,p'uu,puu[deni],------1R,-,-,+
- puu+N+pl+tr:puudeks GI; ! 26_S,p'uu,puu[deks],------1T,-,-,+
+ puu+N+Pl+Abe:puudeta GI; ! 26_S,p'uu,puu[deta],------1A,-,-,+
+ puu+N+Pl+Abl:puudelt GI; ! 26_S,p'uu,puu[delt],------16,-,-,+
+ puu+N+Pl+Ade:puudel GI; ! 26_S,p'uu,puu[del],------15,-,-,+
+ puu+N+Pl+All:puudele GI; ! 26_S,p'uu,puu[dele],------14,-,-,+
+ puu+N+Pl+Ela:puudest GI; ! 26_S,p'uu,puu[dest],------13,-,-,+
+ puu+N+Pl+Ess:puudena GI; ! 26_S,p'uu,puu[dena],------1E,-,-,+
+ puu+N+Pl+Gen:puude GI; ! 26_S,p'uu,puu[de],------1G,-,-,+
+ puu+N+Pl+Ill:puudesse GI; ! 26_S,p'uu,puu[desse],------11,-,-,+
+ puu+N+Pl+Ine:puudes GI; ! 26_S,p'uu,puu[des],------12,-,-,+
+ puu+N+Pl+Com:puudega GI; ! 26_S,p'uu,puu[dega],------1K,-,-,+
+ puu+N+Pl+Trm:puudeni GI; ! 26_S,p'uu,puu[deni],------1R,-,-,+
+ puu+N+Pl+Tra:puudeks GI; ! 26_S,p'uu,puu[deks],------1T,-,-,+
  puu+N:pu. 26; ! (26_S -> +S) a0: puu, a0r: pu
  puus+N:puus 22_A; ! (22_S -> +S) at: puus, bt: puusa, bn: puusa, btv: puusi, bnv: puusi
  puustus+N:puustus 09_E; ! (09_S -> +S) a0: puustus, b0: puustuse
@@ -16048,7 +16048,7 @@ LEXICON Nouns
  reha+N:reha 17; ! (17_S -> +S) a0: reha, a0g: #, a0v: #
  reheline+N:reheli 12_NE-SE-S; ! (12_S -> +S) a0: reheline, b0: rehelise, c0: rehelis, b0v: rehelisi
  rehi+N:rehI1 24_E; ! (24_S -> +S) an: rehi, bn: rehe, bt: rehte, bnv: rehi, btv: rehti
- rehi+N+sg+part:reht GI; ! 24_S,rehi,r'eht[],------0P,-,-,+
+ rehi+N+Sg+Par:reht GI; ! 24_S,rehi,r'eht[],------0P,-,-,+
  rehitsus+N:rehitsus 11; ! (11_S -> +S) a0: rehitsus, b0: rehitsuse, b0v: rehitsusi
  rehkendus+N:rehkendus 11; ! (11_S -> +S) a0: rehkendus, b0: rehkenduse, b0v: rehkendusi
  rehnung+N:rehnung 02_I; ! (02_S -> +S) a0: rehnung, b0: rehnungi, b0r: rehnunge, c0: 0
@@ -16332,8 +16332,8 @@ LEXICON Nouns
  rindlus+N:rindlus 09_E; ! (09_S -> +S) a0: rindlus, b0: rindluse
  rindlus+N:rindlus 11; ! (11_S -> +S) a0: rindlus, b0: rindluse, b0v: rindlusi
  rindmik+N:rindmikK1 25; ! (25_S -> +S) at: rindmik, bt: rindmikku, bn: rindmiku, btv: rindmikke, bnv: rindmike
- rind+N+pl+gen:rinde GI; ! 22_S,r'ind,r'inde[],------1G,-,-,+
- rind+N+pl+term:rinnuni GI; ! 22_S,r'ind,rinnu[ni],------1R,-,-,+
+ rind+N+Pl+Gen:rinde GI; ! 22_S,r'ind,r'inde[],------1G,-,-,+
+ rind+N+Pl+Trm:rinnuni GI; ! 22_S,r'ind,rinnu[ni],------1R,-,-,+
  rind+N:rinD1 22_A; ! (22_S -> +S) at: rind, bt: rinda, bn: rinna, btv: rindu, bnv: rinnu
  ringe+N:ringe 06; ! (06_S -> +S) an: ringe, at: ringe
  ringistik+N:ringistikK1 25; ! (25_S -> +S) at: ringistik, bt: ringistikku, bn: ringistiku, btv: ringistikke, bnv: ringistike
@@ -16548,7 +16548,7 @@ LEXICON Nouns
  ruga+N:ruG1=a 18_PlPV; ! (18_S -> +S) at: ruga, an: roa, atv: ruge, atg: rukka, anv: #
  ruhe+N:ruhe 16; ! (16_S -> +S) a0: ruhe, a0g: #
  ruhi+N:ruhI1 24_E; ! (24_S -> +S) an: ruhi, bn: ruhe, bt: ruhte, bnv: ruhi, btv: ruhti
- ruhi+N+sg+part:ruht GI; ! 24_S,ruhi,r'uht[],------0P,-,-,+
+ ruhi+N+Sg+Par:ruht GI; ! 24_S,ruhi,r'uht[],------0P,-,-,+
  ruhnlane+N:ruhnla 10_NE-SE-S; ! (10_S -> +S) a0: ruhnlane, b0: ruhnlase, c0: ruhnlas
  ruhnlane+N:ruhnla 12_NE-SE-S; ! (12_S -> +S) a0: ruhnlane, b0: ruhnlase, c0: ruhnlas, b0v: ruhnlasi
  ruhv+N:ruhv 22_I; ! (22_S -> +S) at: ruhv, bt: ruhvi, bn: ruhvi, btv: ruhve, bnv: ruhve
@@ -17533,8 +17533,8 @@ LEXICON Nouns
  sillutus+N:sillutus 11; ! (11_S -> +S) a0: sillutus, b0: sillutuse, b0v: sillutusi
  silmik+N:silmik 02_U; ! (02_S -> +S) a0: silmik, b0: silmiku, b0r: 0, c0: 0
  silmitsus+N:silmitsus 11; ! (11_S -> +S) a0: silmitsus, b0: silmitsuse, b0v: silmitsusi
- silm+N+pl+gen:silme GI; ! 22_S,s'ilm,s'ilme[],------1G,bt,s'ilma,+
- silm+N+pl+term:silmini GI; ! 22_S,s'ilm,silmi[ni],------1R,bt,s'ilma,+
+ silm+N+Pl+Gen:silme GI; ! 22_S,s'ilm,s'ilme[],------1G,bt,s'ilma,+
+ silm+N+Pl+Trm:silmini GI; ! 22_S,s'ilm,silmi[ni],------1R,bt,s'ilma,+
  silm+N:silm 22_U; ! (22_S -> +S) at: silm, bt: silmu, bn: silmu, btv: silme, bnv: silme
  silmsus+N:silmsus 09_E; ! (09_S -> +S) a0: silmsus, b0: silmsuse
  silmsus+N:silmsus 11; ! (11_S -> +S) a0: silmsus, b0: silmsuse, b0v: silmsusi
@@ -17891,18 +17891,18 @@ LEXICON Nouns
  soor+N:soor 22_I; ! (22_S -> +S) at: soor, bt: soori, bn: soori, btv: soore, bnv: soore
  soosik+N:soosik 02_U; ! (02_S -> +S) a0: soosik, b0: soosiku, b0r: 0, c0: 0
  soosing+N:soosing 02_U; ! (02_S -> +S) a0: soosing, b0: soosingu, b0r: 0, c0: 0
- soo+N+pl+abes:soodeta GI; ! 26_S,s'oo,soo[deta],------1A,-,-,+
- soo+N+pl+abl:soodelt GI; ! 26_S,s'oo,soo[delt],------16,-,-,+
- soo+N+pl+ad:soodel GI; ! 26_S,s'oo,soo[del],------15,-,-,+
- soo+N+pl+all:soodele GI; ! 26_S,s'oo,soo[dele],------14,-,-,+
- soo+N+pl+el:soodest GI; ! 26_S,s'oo,soo[dest],------13,-,-,+
- soo+N+pl+es:soodena GI; ! 26_S,s'oo,soo[dena],------1E,-,-,+
- soo+N+pl+gen:soode GI; ! 26_S,s'oo,soo[de],------1G,-,-,+
- soo+N+pl+ill:soodesse GI; ! 26_S,s'oo,soo[desse],------11,-,-,+
- soo+N+pl+in:soodes GI; ! 26_S,s'oo,soo[des],------12,-,-,+
- soo+N+pl+kom:soodega GI; ! 26_S,s'oo,soo[dega],------1K,-,-,+
- soo+N+pl+term:soodeni GI; ! 26_S,s'oo,soo[deni],------1R,-,-,+
- soo+N+pl+tr:soodeks GI; ! 26_S,s'oo,soo[deks],------1T,-,-,+
+ soo+N+Pl+Abe:soodeta GI; ! 26_S,s'oo,soo[deta],------1A,-,-,+
+ soo+N+Pl+Abl:soodelt GI; ! 26_S,s'oo,soo[delt],------16,-,-,+
+ soo+N+Pl+Ade:soodel GI; ! 26_S,s'oo,soo[del],------15,-,-,+
+ soo+N+Pl+All:soodele GI; ! 26_S,s'oo,soo[dele],------14,-,-,+
+ soo+N+Pl+Ela:soodest GI; ! 26_S,s'oo,soo[dest],------13,-,-,+
+ soo+N+Pl+Ess:soodena GI; ! 26_S,s'oo,soo[dena],------1E,-,-,+
+ soo+N+Pl+Gen:soode GI; ! 26_S,s'oo,soo[de],------1G,-,-,+
+ soo+N+Pl+Ill:soodesse GI; ! 26_S,s'oo,soo[desse],------11,-,-,+
+ soo+N+Pl+Ine:soodes GI; ! 26_S,s'oo,soo[des],------12,-,-,+
+ soo+N+Pl+Com:soodega GI; ! 26_S,s'oo,soo[dega],------1K,-,-,+
+ soo+N+Pl+Trm:soodeni GI; ! 26_S,s'oo,soo[deni],------1R,-,-,+
+ soo+N+Pl+Tra:soodeks GI; ! 26_S,s'oo,soo[deks],------1T,-,-,+
  soo+N:so. 26; ! (26_S -> +S) a0: soo, a0r: so
  soos+N:soos 22_I; ! (22_S -> +S) at: soos, bt: soosi, bn: soosi, btv: soose, bnv: soose
  soostik+N:soostikK1 25; ! (25_S -> +S) at: soostik, bt: soostikku, bn: soostiku, btv: soostikke, bnv: soostike
@@ -18442,18 +18442,18 @@ LEXICON Nouns
  suusataja+N:suusataja 01; ! (01_S -> +S) a0: suusataja, a0r: 0
  suusk+N:suusK1 22_A; ! (22_S -> +S) at: suusk, bt: suuska, bn: suusa, btv: suuski, bnv: suusi
  suuskur+N:suuskur 02_I; ! (02_S -> +S) a0: suuskur, b0: suuskuri, b0r: suuskure, c0: 0
- suu+N+pl+abes:suudeta GI; ! 26_S,s'uu,suu[deta],------1A,a0r,s'u,+
- suu+N+pl+abl:suudelt GI; ! 26_S,s'uu,suu[delt],------16,a0r,s'u,+
- suu+N+pl+ad:suudel GI; ! 26_S,s'uu,suu[del],------15,a0r,s'u,+
- suu+N+pl+all:suudele GI; ! 26_S,s'uu,suu[dele],------14,a0r,s'u,+
- suu+N+pl+el:suudest GI; ! 26_S,s'uu,suu[dest],------13,a0r,s'u,+
- suu+N+pl+es:suudena GI; ! 26_S,s'uu,suu[dena],------1E,a0r,s'u,+
- suu+N+pl+gen:suude GI; ! 26_S,s'uu,suu[de],------1G,a0r,s'u,+
- suu+N+pl+ill:suudesse GI; ! 26_S,s'uu,suu[desse],------11,a0r,s'u,+
- suu+N+pl+in:suudes GI; ! 26_S,s'uu,suu[des],------12,a0r,s'u,+
- suu+N+pl+kom:suudega GI; ! 26_S,s'uu,suu[dega],------1K,a0r,s'u,+
- suu+N+pl+term:suudeni GI; ! 26_S,s'uu,suu[deni],------1R,a0r,s'u,+
- suu+N+pl+tr:suudeks GI; ! 26_S,s'uu,suu[deks],------1T,a0r,s'u,+
+ suu+N+Pl+Abe:suudeta GI; ! 26_S,s'uu,suu[deta],------1A,a0r,s'u,+
+ suu+N+Pl+Abl:suudelt GI; ! 26_S,s'uu,suu[delt],------16,a0r,s'u,+
+ suu+N+Pl+Ade:suudel GI; ! 26_S,s'uu,suu[del],------15,a0r,s'u,+
+ suu+N+Pl+All:suudele GI; ! 26_S,s'uu,suu[dele],------14,a0r,s'u,+
+ suu+N+Pl+Ela:suudest GI; ! 26_S,s'uu,suu[dest],------13,a0r,s'u,+
+ suu+N+Pl+Ess:suudena GI; ! 26_S,s'uu,suu[dena],------1E,a0r,s'u,+
+ suu+N+Pl+Gen:suude GI; ! 26_S,s'uu,suu[de],------1G,a0r,s'u,+
+ suu+N+Pl+Ill:suudesse GI; ! 26_S,s'uu,suu[desse],------11,a0r,s'u,+
+ suu+N+Pl+Ine:suudes GI; ! 26_S,s'uu,suu[des],------12,a0r,s'u,+
+ suu+N+Pl+Com:suudega GI; ! 26_S,s'uu,suu[dega],------1K,a0r,s'u,+
+ suu+N+Pl+Trm:suudeni GI; ! 26_S,s'uu,suu[deni],------1R,a0r,s'u,+
+ suu+N+Pl+Tra:suudeks GI; ! 26_S,s'uu,suu[deks],------1T,a0r,s'u,+
  suu+N:su. 26; ! (26_S -> +S) a0: suu, a0r: su
  suu+N:suu 26_ii; ! (26_S -> +S) a0: suu, a0r: 0
  suutmatus+N:suutmatus 11; ! (11_S -> +S) a0: suutmatus, b0: suutmatuse, b0v: suutmatusi
@@ -19364,18 +19364,18 @@ LEXICON Nouns
  teesklane+N:teeskla 12_NE-SE-S; ! (12_S -> +S) a0: teesklane, b0: teesklase, c0: teesklas, b0v: teesklasi
  teesklus+N:teesklus 09_E; ! (09_S -> +S) a0: teesklus, b0: teeskluse
  teesklus+N:teesklus 11; ! (11_S -> +S) a0: teesklus, b0: teeskluse, b0v: teesklusi
- tee+N+pl+abes:teedeta GI; ! 26_S,t'ee,tee[deta],------1A,a0r,t'e,+
- tee+N+pl+abl:teedelt GI; ! 26_S,t'ee,tee[delt],------16,a0r,t'e,+
- tee+N+pl+ad:teedel GI; ! 26_S,t'ee,tee[del],------15,a0r,t'e,+
- tee+N+pl+all:teedele GI; ! 26_S,t'ee,tee[dele],------14,a0r,t'e,+
- tee+N+pl+el:teedest GI; ! 26_S,t'ee,tee[dest],------13,a0r,t'e,+
- tee+N+pl+es:teedena GI; ! 26_S,t'ee,tee[dena],------1E,a0r,t'e,+
- tee+N+pl+gen:teede GI; ! 26_S,t'ee,tee[de],------1G,a0r,t'e,+
- tee+N+pl+ill:teedesse GI; ! 26_S,t'ee,tee[desse],------11,a0r,t'e,+
- tee+N+pl+in:teedes GI; ! 26_S,t'ee,tee[des],------12,a0r,t'e,+
- tee+N+pl+kom:teedega GI; ! 26_S,t'ee,tee[dega],------1K,a0r,t'e,+
- tee+N+pl+term:teedeni GI; ! 26_S,t'ee,tee[deni],------1R,a0r,t'e,+
- tee+N+pl+tr:teedeks GI; ! 26_S,t'ee,tee[deks],------1T,a0r,t'e,+
+ tee+N+Pl+Abe:teedeta GI; ! 26_S,t'ee,tee[deta],------1A,a0r,t'e,+
+ tee+N+Pl+Abl:teedelt GI; ! 26_S,t'ee,tee[delt],------16,a0r,t'e,+
+ tee+N+Pl+Ade:teedel GI; ! 26_S,t'ee,tee[del],------15,a0r,t'e,+
+ tee+N+Pl+All:teedele GI; ! 26_S,t'ee,tee[dele],------14,a0r,t'e,+
+ tee+N+Pl+Ela:teedest GI; ! 26_S,t'ee,tee[dest],------13,a0r,t'e,+
+ tee+N+Pl+Ess:teedena GI; ! 26_S,t'ee,tee[dena],------1E,a0r,t'e,+
+ tee+N+Pl+Gen:teede GI; ! 26_S,t'ee,tee[de],------1G,a0r,t'e,+
+ tee+N+Pl+Ill:teedesse GI; ! 26_S,t'ee,tee[desse],------11,a0r,t'e,+
+ tee+N+Pl+Ine:teedes GI; ! 26_S,t'ee,tee[des],------12,a0r,t'e,+
+ tee+N+Pl+Com:teedega GI; ! 26_S,t'ee,tee[dega],------1K,a0r,t'e,+
+ tee+N+Pl+Trm:teedeni GI; ! 26_S,t'ee,tee[deni],------1R,a0r,t'e,+
+ tee+N+Pl+Tra:teedeks GI; ! 26_S,t'ee,tee[deks],------1T,a0r,t'e,+
  tees+N:tees 22_I; ! (22_S -> +S) at: tees, bt: teesi, bn: teesi, btv: teese, bnv: teese
  tee+N:te. 26; ! (26_S -> +S) a0: tee, a0r: te
  tee+N:tee 26_ii; ! (26_S -> +S) a0: tee, a0r: 0
@@ -20784,18 +20784,18 @@ LEXICON Nouns
  tööliskond+N:tööliskonD1 22_A; ! (22_S -> +S) at: tööliskond, bt: tööliskonda, bn: tööliskonna, btv: tööliskondi, bnv: tööliskonni
  tööndus+N:tööndus 09_E; ! (09_S -> +S) a0: tööndus, b0: töönduse
  tööndus+N:tööndus 11; ! (11_S -> +S) a0: tööndus, b0: töönduse, b0v: tööndusi
- töö+N+pl+abes:töödeta GI; ! 26_S,t'öö,töö[deta],------1A,-,-,+
- töö+N+pl+abl:töödelt GI; ! 26_S,t'öö,töö[delt],------16,-,-,+
- töö+N+pl+ad:töödel GI; ! 26_S,t'öö,töö[del],------15,-,-,+
- töö+N+pl+all:töödele GI; ! 26_S,t'öö,töö[dele],------14,-,-,+
- töö+N+pl+el:töödest GI; ! 26_S,t'öö,töö[dest],------13,-,-,+
- töö+N+pl+es:töödena GI; ! 26_S,t'öö,töö[dena],------1E,-,-,+
- töö+N+pl+gen:tööde GI; ! 26_S,t'öö,töö[de],------1G,-,-,+
- töö+N+pl+ill:töödesse GI; ! 26_S,t'öö,töö[desse],------11,-,-,+
- töö+N+pl+in:töödes GI; ! 26_S,t'öö,töö[des],------12,-,-,+
- töö+N+pl+kom:töödega GI; ! 26_S,t'öö,töö[dega],------1K,-,-,+
- töö+N+pl+term:töödeni GI; ! 26_S,t'öö,töö[deni],------1R,-,-,+
- töö+N+pl+tr:töödeks GI; ! 26_S,t'öö,töö[deks],------1T,-,-,+
+ töö+N+Pl+Abe:töödeta GI; ! 26_S,t'öö,töö[deta],------1A,-,-,+
+ töö+N+Pl+Abl:töödelt GI; ! 26_S,t'öö,töö[delt],------16,-,-,+
+ töö+N+Pl+Ade:töödel GI; ! 26_S,t'öö,töö[del],------15,-,-,+
+ töö+N+Pl+All:töödele GI; ! 26_S,t'öö,töö[dele],------14,-,-,+
+ töö+N+Pl+Ela:töödest GI; ! 26_S,t'öö,töö[dest],------13,-,-,+
+ töö+N+Pl+Ess:töödena GI; ! 26_S,t'öö,töö[dena],------1E,-,-,+
+ töö+N+Pl+Gen:tööde GI; ! 26_S,t'öö,töö[de],------1G,-,-,+
+ töö+N+Pl+Ill:töödesse GI; ! 26_S,t'öö,töö[desse],------11,-,-,+
+ töö+N+Pl+Ine:töödes GI; ! 26_S,t'öö,töö[des],------12,-,-,+
+ töö+N+Pl+Com:töödega GI; ! 26_S,t'öö,töö[dega],------1K,-,-,+
+ töö+N+Pl+Trm:töödeni GI; ! 26_S,t'öö,töö[deni],------1R,-,-,+
+ töö+N+Pl+Tra:töödeks GI; ! 26_S,t'öö,töö[deks],------1T,-,-,+
  tööstur+N:tööstur 02_I; ! (02_S -> +S) a0: tööstur, b0: töösturi, b0r: töösture, c0: 0
  tööstus+N:tööstus 09_E; ! (09_S -> +S) a0: tööstus, b0: tööstuse
  tööstus+N:tööstus 11; ! (11_S -> +S) a0: tööstus, b0: tööstuse, b0v: tööstusi
@@ -22497,18 +22497,18 @@ LEXICON Nouns
  vöör+N:vöör 22_I; ! (22_S -> +S) at: vöör, bt: vööri, bn: vööri, btv: vööre, bnv: vööre
  vöörus+N:vöörus 09_E; ! (09_S -> +S) a0: vöörus, b0: vööruse
  vöörus+N:vöörus 11; ! (11_S -> +S) a0: vöörus, b0: vööruse, b0v: vöörusi
- vöö+N+pl+abes:vöödeta GI; ! 26_S,v'öö,vöö[deta],------1A,-,-,+
- vöö+N+pl+abl:vöödelt GI; ! 26_S,v'öö,vöö[delt],------16,-,-,+
- vöö+N+pl+ad:vöödel GI; ! 26_S,v'öö,vöö[del],------15,-,-,+
- vöö+N+pl+all:vöödele GI; ! 26_S,v'öö,vöö[dele],------14,-,-,+
- vöö+N+pl+el:vöödest GI; ! 26_S,v'öö,vöö[dest],------13,-,-,+
- vöö+N+pl+es:vöödena GI; ! 26_S,v'öö,vöö[dena],------1E,-,-,+
- vöö+N+pl+gen:vööde GI; ! 26_S,v'öö,vöö[de],------1G,-,-,+
- vöö+N+pl+ill:vöödesse GI; ! 26_S,v'öö,vöö[desse],------11,-,-,+
- vöö+N+pl+in:vöödes GI; ! 26_S,v'öö,vöö[des],------12,-,-,+
- vöö+N+pl+kom:vöödega GI; ! 26_S,v'öö,vöö[dega],------1K,-,-,+
- vöö+N+pl+term:vöödeni GI; ! 26_S,v'öö,vöö[deni],------1R,-,-,+
- vöö+N+pl+tr:vöödeks GI; ! 26_S,v'öö,vöö[deks],------1T,-,-,+
+ vöö+N+Pl+Abe:vöödeta GI; ! 26_S,v'öö,vöö[deta],------1A,-,-,+
+ vöö+N+Pl+Abl:vöödelt GI; ! 26_S,v'öö,vöö[delt],------16,-,-,+
+ vöö+N+Pl+Ade:vöödel GI; ! 26_S,v'öö,vöö[del],------15,-,-,+
+ vöö+N+Pl+All:vöödele GI; ! 26_S,v'öö,vöö[dele],------14,-,-,+
+ vöö+N+Pl+Ela:vöödest GI; ! 26_S,v'öö,vöö[dest],------13,-,-,+
+ vöö+N+Pl+Ess:vöödena GI; ! 26_S,v'öö,vöö[dena],------1E,-,-,+
+ vöö+N+Pl+Gen:vööde GI; ! 26_S,v'öö,vöö[de],------1G,-,-,+
+ vöö+N+Pl+Ill:vöödesse GI; ! 26_S,v'öö,vöö[desse],------11,-,-,+
+ vöö+N+Pl+Ine:vöödes GI; ! 26_S,v'öö,vöö[des],------12,-,-,+
+ vöö+N+Pl+Com:vöödega GI; ! 26_S,v'öö,vöö[dega],------1K,-,-,+
+ vöö+N+Pl+Trm:vöödeni GI; ! 26_S,v'öö,vöö[deni],------1R,-,-,+
+ vöö+N+Pl+Tra:vöödeks GI; ! 26_S,v'öö,vöö[deks],------1T,-,-,+
  vöö+N:vö. 26; ! (26_S -> +S) a0: vöö, a0r: vö
  vööt+N:vööT1 22_I; ! (22_S -> +S) at: vööt, bt: vööti, bn: vöödi, btv: vööte, bnv: vööde
  vürfel+N:vürfE1l 02_I; ! (02_S -> +S) a0: vürfel, b0: vürfli, b0r: vürfle, c0: 0
@@ -22767,11 +22767,11 @@ LEXICON Nouns
  öölane+N:ööla 12_NE-SE-S; ! (12_S -> +S) a0: öölane, b0: öölase, c0: öölas, b0v: öölasi
  ööp+N:ööP1 22_A; ! (22_S -> +S) at: ööp, bt: ööpa, bn: ööba, btv: ööpi, bnv: ööbi
  öör+N:öör 22_I; ! (22_S -> +S) at: öör, bt: ööri, bn: ööri, btv: ööre, bnv: ööre
- öö+N+pl+abes:öödeta GI; ! 26_S,'öö,öö[deta],------1A,-,-,+
- öö+N+pl+es:öödena GI; ! 26_S,'öö,öö[dena],------1E,-,-,+
- öö+N+pl+gen:ööde GI; ! 26_S,'öö,öö[de],------1G,-,-,+
- öö+N+pl+kom:öödega GI; ! 26_S,'öö,öö[dega],------1K,-,-,+
- öö+N+pl+term:öödeni GI; ! 26_S,'öö,öö[deni],------1R,-,-,+
+ öö+N+Pl+Abe:öödeta GI; ! 26_S,'öö,öö[deta],------1A,-,-,+
+ öö+N+Pl+Ess:öödena GI; ! 26_S,'öö,öö[dena],------1E,-,-,+
+ öö+N+Pl+Gen:ööde GI; ! 26_S,'öö,öö[de],------1G,-,-,+
+ öö+N+Pl+Com:öödega GI; ! 26_S,'öö,öö[dega],------1K,-,-,+
+ öö+N+Pl+Trm:öödeni GI; ! 26_S,'öö,öö[deni],------1R,-,-,+
  öös+N:öös 22_I; ! (22_S -> +S) at: öös, bt: öösi, bn: öösi, btv: ööse, bnv: ööse
  öö+N:ö. 26; ! (26_S -> +S) a0: öö, a0r: ö
  üdi+N:üdi 17; ! (17_S -> +S) a0: üdi, a0g: #, a0v: #

@@ -320,6 +320,8 @@ Punctuation; !TT
 ! DIGITS; !TT
 NonInflectionals;
 
+Lexicalized_temporary;
+
 ! the only mention of this lexicon is here?
 !LEXICON NOMINAL !to make the finnish digits.lexc work TT
 !Adjectives;
