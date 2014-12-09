@@ -1,0 +1,286 @@
+
+Samest meeting december 9th 2014
+
+Present: Fran, Heiki, Heli, Jaak, Kadri, Sjur, Trond, (Tiina)
+
+Agenda
+
+* fst
+* Tag comparison
+* Oahpa
+* CG (problem status)
+* Next physical meeting
+
+
+!!! fst
+
+Not much has happened. Q on lexicalisation on compounds (there are some that should be lexicalized for the good of oahpa. They probably will:)
+
+[69/70][FAIL] olema+V+Inf => Missing results: olla
+[69/70][FAIL] olema+V+Inf => Unexpected results: olema+V+Inf+?
+[70/70][FAIL] olema+V+Ger => Missing results: olles
+[70/70][FAIL] olema+V+Ger => Unexpected results: olema+V+Ger+?
+[55/70][FAIL] olema+V+Impers+Prs+Ind+Aff => Missing results: ollakse
+[55/70][FAIL] olema+V+Impers+Prs+Ind+Aff => Unexpected results: olema+V+Impers+Prs+Ind+Aff+?
+
+Total passes: 142, Total fails: 6, Total: 148
+
+Next to be done: Jaak will make tests of pronouns to pass.
+
+
+!!! Tag comparison
+
+est/tools/mt/apertium/tagsets
+
+{{{
+Tein sen antamalla.AgPrc tavalla - Tegin seda antud moel.
+Hurmasit minut antamalla.MaInf minulle kirven. - Võlusid mind andes mulle kirve. 
+}}}
+
+So, on our todolist: Do the same for North Saami. 
+Also, for similar projects: Do the same for sme-smn (North-Inari Saami)
+
+Consider involving Jussi in this.
+
+__TODO__: 
+* Lift finsme tag comparison on the agenda here in Tromsø (__Trond__)
+* Comment the estfin ones (__Heiki-Jaan, Tommi__) 
+
+!!! Oahpa
+
+Oahpa lexicon (the lexicon of the textbook "E nagu Eesti") has been provided with POS tags. Now working on the files of tags and paradigms (Oahpa source files). 
+
+As soon as the lexicalised compounds will be added to the fst Heli will do the next attempt to generate the word forms for Morfa-S and test Morfa-S.
+
+
+!!! CG (problem status)
+
+Segmentation fault is solved with the last vislcg version (was reproducible by Tino side).
+
+
+!!Preprocessing
+
+Current conversion scripts (Filosoft to vislcg3):
+
+defining sentence boundaries (before morphological analysis) - "." is not very reliable, at least in Estonian
+
+In CG you define e.g. <.> <?> <!> as sentence boundaries
+Preprocessor delivers those on single line:
+
+I saw George V. I saw V. Putin. I saw George V. He was ...
+
+In Giellatekno, the abbr.txt is a language-specific file in
+$LANG/tools/preprocess/abbr.txt
+
+The philosophy behind the lexica is documented here:
+[http://giellatekno.uit.no/doc/lang/sme/docu-sme-preprocessor.html]
+
+The abbreviations themselves are written in the abbreviations.lexc
+file in LANG/src/morphology/stems/.
+
+Can it be added somehow to the general philosophy: the rule, that all ordinal numbers (e.g. "7." , if not written with ending like 7-ndal) are ending with fullstop? - Um... you have similar numbers in numbered lists, and there they are really not ordinal numbers...
+
+we have it alredy
+I saw George 7. I saw 2. Putin.
+Yes
+I
+saw
+George
+7
+.
+I
+saw
+2
+.
+Putin
+
+
+{{{
+Giellatekno abbr.txt:
+I
+saw
+George
+V.
+I
+saw
+V.AMBIG
+Putin
+.
+I
+saw
+George
+V.
+He
+was
+
+Apertium:
+George
+V
+    V.
+    V#.
+I
+saw
+}}}
+
+In Estonian above abbreviations and initials we have also ordinal
+numerals ending with ".". It would be nice, if it is solved already.
+
+{{{
+George
+7
+.
+I
+saw
+the
+2.
+tsar
+}}}
+
+The CG is dependent upon the $GTHOME/gt/script/preprocess file
+and upon the $GTHOME/langs/est/tools/data/preprocess/abbr.txt file.
+
+__TODO__
+* Fix the abbr.txt generation problem (__Sjur, Jaak__)
+
+
+!!conversion from Filosoft to vislcg3
+
+Not needed, will be replaced with FST -> vislcg3, but maybe will need some additions to standard scripts 
+
+!!Transitiveness and object cases
+
+Adding additional information on transitiveness and object cases of verbs, kinds on pronouns and adpositions - will remain in scripts or can be moved to some more general lexicons?
+
+This is added by scripts at the moment.
+
+For sme, we add such sets at the preamble of the CG file. Huge 
+sets, yes.
+
+We have transitivity tags and semantic tags in lexc. In general:
+* we onsider lexc tagging to faster 
+* but CG sets to be more flexible
+
+We thus do both.
+
+LIST LOC-V = "ávkkástallat" "ballat" "beassat" "beroštit" "biehttalit" "bihtit" "ceavzit" "dinet" "dolkat" "eastadallat" "eastadit" "fitnat" "fuolahit" "fuollat" "garvit" "gažadit" "geargat" "heaitit" "hehttet" "ilbmat" "jearrat" "jearralit" "luohpat" "máinnašit" "nohkkot" "oassálastit" "spiehkastit" "váibat" "váruhit" "vástidit" ;
+
+LIST ILL-V = "áibbašit" "álgit" "ásaiduvvat" "báitit" "bahkket" "beassat" "čohkkedit" "čujuhit" "čuohcit" "deaivat" "doaškut" "dorvvastit" "došket" "duhtat" "gullat" "guoskat" "gustot" "hárjánit" "heivet" "irgidit" "irggástallat" "jáhkkit" "liikot" "luohttit" "mannat" "máhccat" "mieđihit" "miehtat" "njiedjat" "oahpásmuvvat" "oahpásnuvvat" "ollet" "oskut" "riepmat" "ráhkkanit" "soahpat" "searvat" "suhttat" "váikkuhit" "vástidit" "vuolgit" ; 
+
+LIST VAHKKU-DUR = "álgojahki" "árrageassi" "beaivi" "jándor" "bodda" "čakča" "čakčageassi" "čakčaseavdnj
+at" "čuohtejahki" "dálvi" "diibmu" "eahketbodda" "geassi" "giđđa" "idja" "iđitbodda" "jahki" "jahkebeall
+e" "jahkečuohti" "kaleanddarjahki" "loahppajahki" ("[0-9]*-#lohku"r) "maŋŋe#giđđa" "mánnu" "minuhtta" "m
+inukta" "njealjádasjahki" "skuvlajahki" "tiibma" "vahkkoloahppa" "vahkku" ;
+# these are periodes and can be Acc
+
+Transitivity we do in lexc:
+
+{{{
+berehit:bereh MUITAL_TV ;
+berostit:berost ALIST_IV ;
+berostuvvat:berostuvva RAIMMAHALLA_IV ;
+beroštit:berošt ALIST_IV ;
+beroštuvvat:beroštuvva RAIMMAHALLA_IV ;
+berret:berre GILLE_IV ;
+besset:besse DOHPPE_TV ;
+}}}
+
+We have also some sets in CG rules, but very general tags are added by scripts so far, as follows?
+
+text | preprocess | fst | postproces | scripts* | cg
+
+So it will remain in scripts, will not put in lexicon? In this case it is really more flexible. Yes, flexibility is the key word, and needed. But whether
+the list should be in scripts* or in cg I really do not see as a big difference. Speed is the same? hmm, well, perhaps Echkhard preferred a script for speed reasons? If the script* is a fst, then perhaps very mcuh so? And too long lists in CG rules is a bit clumsy?
+
+* clumsy doesnt matter so much if they are automatically generated. (fran) 
+* Trond. this is irrelevatn: we need a list, period.
+* Tiina: rule file is not generated automatically
+
+
+Tiina do you have those scripts checked in?
+I have to change them before. They worked on Filosoft input.
+You could add them just like that under src/import, perhaps .. 
+so they dont have to work but just to be there for reference.
+
+TODO Tiina: add scripts to src/import.
+
+
+!! Nominalization of verbs
+
+Additional information on the nominalizations of verbs like past and present participles, "-mine", "-ja", "-mata"-forms and others - it would be preferable to get this from the morphological analysis as otherwise it is a hack.
+
+Trond: I definitely agree.
+
+{{{
+dokaaminen
+dokaaminen        dokata+V+Der/minen+Sg+Nom
+
+dokata
+dokata        dokata+V+Pss+Ind+Prs+Pe4+ConNeg    
+
+puhuminen
+puhuminen        puhua+V+Der/minen+Sg+Nom
+puhuminen        puhuminen+N+Sg+Nom  <===== missing for dokaaminen
+}}}
+
+estonian:
+{{{
+jooksmine    jooksmine    +N+Sg+Nom
+jooksmine    jooks    +N+Sg+Nom#mini+N+Pl+Par
+jooksmine    jooks    +N+Sg+Nom#minema+V+Pers+Prs+Imprt+Sg2
+jooksmine    jooks    +N+Sg+Nom#minema+V+Pers+Prs+Imprt+Sg2+Aff
+jooksmine    jooks    +N+Sg+Nom#minema+V+Pers+Prs+Imprt+Sg2+Neg
+jooksmine    jooksmine    +N+Sg+Nom
+
+- there is no link to jooksma, #mini and #minema is irrelevant
+
+andja
+andja        andja+N+Sg+Gen        0.000000
+andja        andja+N+Sg+Nom        0.000000
+
+programmeerimine
+programmeerimine        programmeerimine+N+Sg+Nom        0.000000
+}}}
+
+Generation:
+{{{
+programmeerimine+N+Sg+Gen
+programmeerimine+N+Sg+Gen    programmeerimise
+}}}
+
+programmeerimine is a backward hack. sme did the same in
+lookup2cg, and regret just as much as you do.
+
+So, it should rather be programmeerima+V+Der/mine+... ?
+both programmeerimine+N+Sg+Nom and programmeerima+V+Der/mine+...
+
+Fixing this would not be hard. Jaak did it for some derivations
+and is quite ready to do it for more.
+
+Warning: This could deprive us of lexemes.
+Solution: Large-scale lexicalization (pick a dictionary near you)
+
+lexc or xml for lexc lexica?
+look at the sme/src/../stems/nouns.lexc and at myv/ and yrk/.
+
+This will be a nice coffe-table topic with Jack in Tromsö in January.
+
+__TODO__
+Der/mine may be made easily for Tiina, without removing the
+programmerimine.
+
+
+!!! Next meeting
+
+!!Short virtual meeting
+
+Wednesday 7th at 1300 Norw time.
+
+!!Next physical meeting in Tromsø
+
+Sjur would prefer to not stay over the weekend, and would like to
+participate in the workshop. 
+Short Samest meeting Thursday with topics relevant to
+Sjur.
+
+Long Samest meeting is then 19.-21. More details to be decide 
+on the 7th.
