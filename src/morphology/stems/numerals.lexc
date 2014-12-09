@@ -8,10 +8,10 @@ LEXICON Numerals
  kaheksas+Num+Ord:kaheksa 02_S-NDA; ! (02_O -> +Ord) a0: kaheksas, b0: kaheksanda, b0r: 0, c0: 0
  kahendik+Num+Card:kahendikK1 25; ! (25_N -> +Num) at: kahendik, bt: kahendikku, bn: kahendiku, btv: kahendikke, bnv: kahendike
  kaks+Num+Card:ka 22_KS-HE; ! (22_N -> +Num) at: kaks, bt: kahte, bn: kahe, btv: kaksi, bnv: kaksi
- kaks+Num+Card+sg+part:kaht GI; ! 22_N,k'aks,k'aht[],------0P,-,-,+
+ kaks+Num+Card+Sg+Par:kaht GI; ! 22_N,k'aks,k'aht[],------0P,-,-,+
  kolmandik+Num+Card:kolmandikK1 25; ! (25_N -> +Num) at: kolmandik, bt: kolmandikku, bn: kolmandiku, btv: kolmandikke, bnv: kolmandike
  kolmas+Num+Ord:kolma 02_S-NDA; ! (02_O -> +Ord) a0: kolmas, b0: kolmanda, b0r: 0, c0: 0
- kolmas+Num+Ord+sg+part:kolmat GI; ! 02_O,kolmas,kolma[t],------0P,-,-,+
+ kolmas+Num+Ord+Sg+Par:kolmat GI; ! 02_O,kolmas,kolma[t],------0P,-,-,+
  kolmat+Num+Card:kolmat GI; ! (41_ND -> +Adv +Num) 
  kolm+Num+Card:kolm 22_E; ! (22_N -> +Num) at: kolm, bt: kolme, bn: kolme, btv: kolmi, bnv: kolmi
  kuuendik+Num+Card:kuuendikK1 25; ! (25_N -> +Num) at: kuuendik, bt: kuuendikku, bn: kuuendiku, btv: kuuendikke, bnv: kuuendike
@@ -39,14 +39,14 @@ LEXICON Numerals
  pool+Num+Card:pool 13; ! (13_NS -> +S +Num) at: pool, (bt): poole, an: pool, bn: poole, bnv: pooli
  sadakond+Num+Card:sadakonD1 22_A; ! (22_NS -> +S +Num) at: sadakond, bt: sadakonda, bn: sadakonna, btv: sadakondi, bnv: sadakonni
  sada+Num+Card:saD1a 18_PlPV; ! (18_N -> +Num) at: sada, an: saja, atv: sadu, atg: #, anv: #
- sada+Num+Card+sg+part:sadat GI; ! 18_N,sada,sada[t],------0P,-,-,+
+ sada+Num+Card+Sg+Par:sadat GI; ! 18_N,sada,sada[t],------0P,-,-,+
  sajandik+Num+Card:sajandikK1 25; ! (25_N -> +Num) at: sajandik, bt: sajandikku, bn: sajandiku, btv: sajandikke, bnv: sajandike
  sajas+Num+Ord:saja 02_S-NDA; ! (02_O -> +Ord) a0: sajas, b0: sajanda, b0r: 0, c0: 0
  seitse+Num+Card:seits 05_E-ME; ! (05_N -> +Num) an: seitse, (at): seitse, bt: seitsme, btr: #
  seitsmendik+Num+Card:seitsmendikK1 25; ! (25_N -> +Num) at: seitsmendik, bt: seitsmendikku, bn: seitsmendiku, btv: seitsmendikke, bnv: seitsmendike
  seitsmes+Num+Ord:seitsme 02_S-NDA; ! (02_O -> +Ord) a0: seitsmes, b0: seitsmenda, b0r: 0, c0: 0
  teine+Num+Ord:tei 12_NE-SE-S; ! (12_OP -> +Pron +Ord) a0: teine, b0: teise, c0: teis, b0v: teisi
- teist+Num+Card+sg+gen:teist GI; ! 05_N,t'eist,t'eist[],------0G,-,-,+
+ teist+Num+Card+Sg+Gen:teist GI; ! 05_N,t'eist,t'eist[],------0G,-,-,+
  ! ??? teist+Num+Card:teist 05; ! (05_N -> +Num) an: teist, (at): teist, bt: teistkümne, btr: #
  tosinkond+Num+Card:tosinkonD1 22_A; ! (22_NS -> +S +Num) at: tosinkond, bt: tosinkonda, bn: tosinkonna, btv: tosinkondi, bnv: tosinkonni
  tosin+Num+Card:tosin 02_A; ! (02_N -> +Num) a0: tosin, b0: tosina, b0r: 0, c0: 0
@@ -55,7 +55,7 @@ LEXICON Numerals
  tuhandes+Num+Ord:tuhande 02_S-NDA; ! (02_O -> +Ord) a0: tuhandes, b0: tuhandenda, b0r: 0, c0: 0
  tuhandik+Num+Card:tuhandikK1 25; ! (25_N -> +Num) at: tuhandik, bt: tuhandikku, bn: tuhandiku, btv: tuhandikke, bnv: tuhandike
  tuhatkond+Num+Card:tuhatkonD1 22_A; ! (22_NS -> +S +Num) at: tuhatkond, bt: tuhatkonda, bn: tuhatkonna, btv: tuhatkondi, bnv: tuhatkonni
- tuhat+Num+Card+sg+part:tuhat GI; ! 02_N,tuhat,tuhat[],------0P,-,-,+
+ tuhat+Num+Card+Sg+Par:tuhat GI; ! 02_N,tuhat,tuhat[],------0P,-,-,+
  tuhat+Num+Card:tuha 02_T-NDE; ! (02_N -> +Num) a0: tuhat, b0: tuhande, b0r: 0, c0: 0
  veerandik+Num+Card:veerandikK1 25; ! (25_NS -> +S +Num) at: veerandik, bt: veerandikku, bn: veerandiku, btv: veerandikke, bnv: veerandike
  veerand+Num+Card:veerand 02_I; ! (02_NS -> +S +Num) a0: veerand, b0: veerandi, b0r: veerande, c0: 0
@@ -66,5 +66,5 @@ LEXICON Numerals
  üheksa+Num+Card:üheksa 01; ! (01_N -> +Num) a0: üheksa, a0r: 0
  üheksas+Num+Ord:üheksa 02_S-NDA; ! (02_O -> +Ord) a0: üheksas, b0: üheksanda, b0r: 0, c0: 0
  ühendik+Num+Card:ühendikK1 25; ! (25_N -> +Num) at: ühendik, bt: ühendikku, bn: ühendiku, btv: ühendikke, bnv: ühendike
- üks+Num+Card+sg+part:üht GI; ! 22_NP,'üks,'üht[],------0P,-,-,+
+ üks+Num+Card+Sg+Par:üht GI; ! 22_NP,'üks,'üht[],------0P,-,-,+
  üks+Num+Card:ü 22_KS-HE; ! (22_NP -> +Pron +Num) at: üks, bt: ühte, bn: ühe, btv: üksi, bnv: üksi

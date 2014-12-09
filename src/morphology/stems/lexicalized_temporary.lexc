@@ -134,15 +134,9 @@ sõnajalg+N:sõnajalG1 22_A; ! (22_S -> +S) at: jalg, bt: jalga, bn: jala, btv: 
 !  jalg+N+Pl+Abe:jaluta GI; ! 22_S,j'alg,jalu[ta],------1A,-,-,+
 !   sõnajalg:
 !sõnajalg+N+Pl+Abe:sõnajaluta GI; ! 22_S,j'alg,jalu[ta],------1A,-,-,+
-!  jalg+N+pl+abes:jaluta GI; ! 22_S,j'alg,jalu[ta],------1A,-,-,+
-!   sõnajalg:
-!sõnajalg+N+pl+abes:sõnajaluta GI; ! 22_S,j'alg,jalu[ta],------1A,-,-,+
 !  jalg+N+Pl+Gen:jalge GI; ! 22_S,j'alg,j'alge[],------1G,-,-,+
 !   sõnajalg:
 !sõnajalg+N+Pl+Gen:sõnajalge GI; ! 22_S,j'alg,j'alge[],------1G,-,-,+
-!  jalg+N+pl+gen:jalge GI; ! 22_S,j'alg,j'alge[],------1G,-,-,+
-!   sõnajalg:
-!sõnajalg+N+pl+gen:sõnajalge GI; ! 22_S,j'alg,j'alge[],------1G,-,-,+
 
 ! jook:
 !  jook+N:jooK1 22_I; ! (22_S -> +S) at: jook, bt: jooki, bn: joogi, btv: jooke, bnv: jooge
@@ -377,41 +371,21 @@ välismaa+N:välisma. 26; ! (26_S -> +S) a0: maa, a0r: ma
 Saksamaa+N+Pl+Abe:Saksamaadeta GI; ! 26_S,m'aa,maa[deta],------1A,-,-,+
 !   välismaa:
 välismaa+N+Pl+Abe:välismaadeta GI; ! 26_S,m'aa,maa[deta],------1A,-,-,+
-!  maa+N+pl+abes:maadeta GI; ! 26_S,m'aa,maa[deta],------1A,-,-,+
-!   Saksamaa:
-Saksamaa+N+pl+abes:Saksamaadeta GI; ! 26_S,m'aa,maa[deta],------1A,-,-,+
-!   välismaa:
-välismaa+N+pl+abes:välismaadeta GI; ! 26_S,m'aa,maa[deta],------1A,-,-,+
 !  maa+N+Pl+Abl:maadelt GI; ! 26_S,m'aa,maa[delt],------16,-,-,+
 !   Saksamaa:
 Saksamaa+N+Pl+Abl:Saksamaadelt GI; ! 26_S,m'aa,maa[delt],------16,-,-,+
 !   välismaa:
 välismaa+N+Pl+Abl:välismaadelt GI; ! 26_S,m'aa,maa[delt],------16,-,-,+
-!  maa+N+pl+abl:maadelt GI; ! 26_S,m'aa,maa[delt],------16,-,-,+
-!   Saksamaa:
-Saksamaa+N+pl+abl:Saksamaadelt GI; ! 26_S,m'aa,maa[delt],------16,-,-,+
-!   välismaa:
-välismaa+N+pl+abl:välismaadelt GI; ! 26_S,m'aa,maa[delt],------16,-,-,+
 !  maa+N+Pl+Ade:maadel GI; ! 26_S,m'aa,maa[del],------15,-,-,+
 !   Saksamaa:
 Saksamaa+N+Pl+Ade:Saksamaadel GI; ! 26_S,m'aa,maa[del],------15,-,-,+
 !   välismaa:
 välismaa+N+Pl+Ade:välismaadel GI; ! 26_S,m'aa,maa[del],------15,-,-,+
-!  maa+N+pl+ad:maadel GI; ! 26_S,m'aa,maa[del],------15,-,-,+
-!   Saksamaa:
-Saksamaa+N+pl+ad:Saksamaadel GI; ! 26_S,m'aa,maa[del],------15,-,-,+
-!   välismaa:
-välismaa+N+pl+ad:välismaadel GI; ! 26_S,m'aa,maa[del],------15,-,-,+
 !  maa+N+Pl+All:maadele GI; ! 26_S,m'aa,maa[dele],------14,-,-,+
 !   Saksamaa:
 Saksamaa+N+Pl+All:Saksamaadele GI; ! 26_S,m'aa,maa[dele],------14,-,-,+
 !   välismaa:
 välismaa+N+Pl+All:välismaadele GI; ! 26_S,m'aa,maa[dele],------14,-,-,+
-!  maa+N+pl+all:maadele GI; ! 26_S,m'aa,maa[dele],------14,-,-,+
-!   Saksamaa:
-Saksamaa+N+pl+all:Saksamaadele GI; ! 26_S,m'aa,maa[dele],------14,-,-,+
-!   välismaa:
-välismaa+N+pl+all:välismaadele GI; ! 26_S,m'aa,maa[dele],------14,-,-,+
 !  maa+N+Pl+Com:maadega GI; ! 26_S,m'aa,maa[dega],------1K,-,-,+
 !   Saksamaa:
 Saksamaa+N+Pl+Com:Saksamaadega GI; ! 26_S,m'aa,maa[dega],------1K,-,-,+
@@ -422,16 +396,6 @@ välismaa+N+Pl+Com:välismaadega GI; ! 26_S,m'aa,maa[dega],------1K,-,-,+
 Saksamaa+N+Pl+Ela:Saksamaadest GI; ! 26_S,m'aa,maa[dest],------13,-,-,+
 !   välismaa:
 välismaa+N+Pl+Ela:välismaadest GI; ! 26_S,m'aa,maa[dest],------13,-,-,+
-!  maa+N+pl+el:maadest GI; ! 26_S,m'aa,maa[dest],------13,-,-,+
-!   Saksamaa:
-Saksamaa+N+pl+el:Saksamaadest GI; ! 26_S,m'aa,maa[dest],------13,-,-,+
-!   välismaa:
-välismaa+N+pl+el:välismaadest GI; ! 26_S,m'aa,maa[dest],------13,-,-,+
-!  maa+N+pl+es:maadena GI; ! 26_S,m'aa,maa[dena],------1E,-,-,+
-!   Saksamaa:
-Saksamaa+N+pl+es:Saksamaadena GI; ! 26_S,m'aa,maa[dena],------1E,-,-,+
-!   välismaa:
-välismaa+N+pl+es:välismaadena GI; ! 26_S,m'aa,maa[dena],------1E,-,-,+
 !  maa+N+Pl+Ess:maadena GI; ! 26_S,m'aa,maa[dena],------1E,-,-,+
 !   Saksamaa:
 Saksamaa+N+Pl+Ess:Saksamaadena GI; ! 26_S,m'aa,maa[dena],------1E,-,-,+
@@ -442,51 +406,21 @@ välismaa+N+Pl+Ess:välismaadena GI; ! 26_S,m'aa,maa[dena],------1E,-,-,+
 Saksamaa+N+Pl+Gen:Saksamaade GI; ! 26_S,m'aa,maa[de],------1G,-,-,+
 !   välismaa:
 välismaa+N+Pl+Gen:välismaade GI; ! 26_S,m'aa,maa[de],------1G,-,-,+
-!  maa+N+pl+gen:maade GI; ! 26_S,m'aa,maa[de],------1G,-,-,+
-!   Saksamaa:
-Saksamaa+N+pl+gen:Saksamaade GI; ! 26_S,m'aa,maa[de],------1G,-,-,+
-!   välismaa:
-välismaa+N+pl+gen:välismaade GI; ! 26_S,m'aa,maa[de],------1G,-,-,+
 !  maa+N+Pl+Ill:maadesse GI; ! 26_S,m'aa,maa[desse],------11,-,-,+
 !   Saksamaa:
 Saksamaa+N+Pl+Ill:Saksamaadesse GI; ! 26_S,m'aa,maa[desse],------11,-,-,+
 !   välismaa:
 välismaa+N+Pl+Ill:välismaadesse GI; ! 26_S,m'aa,maa[desse],------11,-,-,+
-!  maa+N+pl+ill:maadesse GI; ! 26_S,m'aa,maa[desse],------11,-,-,+
-!   Saksamaa:
-Saksamaa+N+pl+ill:Saksamaadesse GI; ! 26_S,m'aa,maa[desse],------11,-,-,+
-!   välismaa:
-välismaa+N+pl+ill:välismaadesse GI; ! 26_S,m'aa,maa[desse],------11,-,-,+
 !  maa+N+Pl+Ine:maades GI; ! 26_S,m'aa,maa[des],------12,-,-,+
 !   Saksamaa:
 Saksamaa+N+Pl+Ine:Saksamaades GI; ! 26_S,m'aa,maa[des],------12,-,-,+
 !   välismaa:
 välismaa+N+Pl+Ine:välismaades GI; ! 26_S,m'aa,maa[des],------12,-,-,+
-!  maa+N+pl+in:maades GI; ! 26_S,m'aa,maa[des],------12,-,-,+
-!   Saksamaa:
-Saksamaa+N+pl+in:Saksamaades GI; ! 26_S,m'aa,maa[des],------12,-,-,+
-!   välismaa:
-välismaa+N+pl+in:välismaades GI; ! 26_S,m'aa,maa[des],------12,-,-,+
-!  maa+N+pl+kom:maadega GI; ! 26_S,m'aa,maa[dega],------1K,-,-,+
-!   Saksamaa:
-Saksamaa+N+pl+kom:Saksamaadega GI; ! 26_S,m'aa,maa[dega],------1K,-,-,+
-!   välismaa:
-välismaa+N+pl+kom:välismaadega GI; ! 26_S,m'aa,maa[dega],------1K,-,-,+
-!  maa+N+pl+term:maadeni GI; ! 26_S,m'aa,maa[deni],------1R,-,-,+
-!   Saksamaa:
-Saksamaa+N+pl+term:Saksamaadeni GI; ! 26_S,m'aa,maa[deni],------1R,-,-,+
-!   välismaa:
-välismaa+N+pl+term:välismaadeni GI; ! 26_S,m'aa,maa[deni],------1R,-,-,+
 !  maa+N+Pl+Tra:maadeks GI; ! 26_S,m'aa,maa[deks],------1T,-,-,+
 !   Saksamaa:
 Saksamaa+N+Pl+Tra:Saksamaadeks GI; ! 26_S,m'aa,maa[deks],------1T,-,-,+
 !   välismaa:
 välismaa+N+Pl+Tra:välismaadeks GI; ! 26_S,m'aa,maa[deks],------1T,-,-,+
-!  maa+N+pl+tr:maadeks GI; ! 26_S,m'aa,maa[deks],------1T,-,-,+
-!   Saksamaa:
-Saksamaa+N+pl+tr:Saksamaadeks GI; ! 26_S,m'aa,maa[deks],------1T,-,-,+
-!   välismaa:
-välismaa+N+pl+tr:välismaadeks GI; ! 26_S,m'aa,maa[deks],------1T,-,-,+
 !  maa+N+Pl+Trm:maadeni GI; ! 26_S,m'aa,maa[deni],------1R,-,-,+
 !   Saksamaa:
 Saksamaa+N+Pl+Trm:Saksamaadeni GI; ! 26_S,m'aa,maa[deni],------1R,-,-,+
@@ -688,16 +622,16 @@ vereproov+N:vereproov 22_I; ! (22_S -> +S) at: proov, bt: proovi, bn: proovi, bt
 !  puu+N+Pl+Abe:puudeta GI; ! 26_S,p'uu,puu[deta],------1A,-,-,+
 !   mesipuu:
 mesipuu+N+Pl+Abe:mesipuudeta GI; ! 26_S,p'uu,puu[deta],------1A,-,-,+
-!  puu+N+pl+abes:puudeta GI; ! 26_S,p'uu,puu[deta],------1A,-,-,+
+!  puu+N+Pl+Abl:puudeta GI; ! 26_S,p'uu,puu[deta],------1A,-,-,+
 !   mesipuu:
 mesipuu+N+Pl+Abl:mesipuudelt GI; ! 26_S,p'uu,puu[delt],------16,-,-,+
-!  puu+N+pl+abl:puudelt GI; ! 26_S,p'uu,puu[delt],------16,-,-,+
+!  puu+N+Pl+Ade:puudelt GI; ! 26_S,p'uu,puu[delt],------16,-,-,+
 !   mesipuu:
 mesipuu+N+Pl+Ade:mesipuudel GI; ! 26_S,p'uu,puu[del],------15,-,-,+
-!  puu+N+pl+ad:puudel GI; ! 26_S,p'uu,puu[del],------15,-,-,+
+!  puu+N+Pl+All:puudel GI; ! 26_S,p'uu,puu[del],------15,-,-,+
 !   mesipuu:
 mesipuu+N+Pl+All:mesipuudele GI; ! 26_S,p'uu,puu[dele],------14,-,-,+
-!  puu+N+pl+all:puudele GI; ! 26_S,p'uu,puu[dele],------14,-,-,+
+!  puu+N+Pl+Com:puudele GI; ! 26_S,p'uu,puu[dele],------14,-,-,+
 !   mesipuu:
 mesipuu+N+Pl+Com:mesipuudega GI; ! 26_S,p'uu,puu[dega],------1K,-,-,+
 !  puu+N+Pl+Ela:puudest GI; ! 26_S,p'uu,puu[dest],------13,-,-,+

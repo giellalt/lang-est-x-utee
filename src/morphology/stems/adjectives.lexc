@@ -1084,13 +1084,13 @@ LEXICON Adjectives
  hauduja+A:hauduja 01; ! (01_SA -> +A +S) a0: hauduja, a0r: 0
  haugjas+A:haugja 02_S-0; ! (02_A -> +A) a0: haugjas, b0: haugja, b0r: 0, c0: 0
  hea+A:hea 26_ii; ! (26_AS -> +A +S) a0: hea, a0r: #
- hea+A+pl+abl:häilt GI; ! 26_A,h'ea,h'ä[ilt],------16,-,-,+
- hea+A+pl+ad:häil GI; ! 26_A,h'ea,h'ä[il],------15,-,-,+
- hea+A+pl+all:häile GI; ! 26_A,h'ea,h'ä[ile],------14,-,-,+
- hea+A+pl+el:häist GI; ! 26_A,h'ea,h'ä[ist],------13,-,-,+
- hea+A+pl+ill:häisse GI; ! 26_A,h'ea,h'ä[isse],------11,-,-,+
- hea+A+pl+in:häis GI; ! 26_A,h'ea,h'ä[is],------12,-,-,+
- hea+A+pl+tr:häiks GI; ! 26_A,h'ea,h'ä[iks],------1T,-,-,+
+ hea+A+Pl+Abl:häilt GI; ! 26_A,h'ea,h'ä[ilt],------16,-,-,+
+ hea+A+Pl+Ade:häil GI; ! 26_A,h'ea,h'ä[il],------15,-,-,+
+ hea+A+Pl+All:häile GI; ! 26_A,h'ea,h'ä[ile],------14,-,-,+
+ hea+A+Pl+Ela:häist GI; ! 26_A,h'ea,h'ä[ist],------13,-,-,+
+ hea+A+Pl+Ill:häisse GI; ! 26_A,h'ea,h'ä[isse],------11,-,-,+
+ hea+A+Pl+Ine:häis GI; ! 26_A,h'ea,h'ä[is],------12,-,-,+
+ hea+A+Pl+Tra:häiks GI; ! 26_A,h'ea,h'ä[iks],------1T,-,-,+
  heakene+A:heake 10_NE-SE-S; ! (10_A -> +A) a0: heakene, b0: heakese, c0: heakes
  heakene+A:heake 12_NE-SE-S; ! (12_A -> +A) a0: heakene, b0: heakese, c0: heakes, b0v: heakesi
  hedonistlik+A:hedonistlikK1 25; ! (25_A -> +A) at: hedonistlik, bt: hedonistlikku, bn: hedonistliku, btv: hedonistlikke, bnv: hedonistlike
@@ -4413,7 +4413,7 @@ LEXICON Adjectives
  parandamatu+A:parandamatu 01; ! (01_A -> +A) a0: parandamatu, a0r: 0
  paranduslik+A:paranduslikK1 25; ! (25_A -> +A) at: paranduslik, bt: paranduslikku, bn: parandusliku, btv: paranduslikke, bnv: paranduslike
  paras+A:para 02_S-JA; ! (02_A -> +A) a0: paras, b0: paraja, b0r: 0, c0: 0
- paras+A+sg+part:parast GI; ! 02_A,paras,paras[t],------0P,-,-,+
+ paras+A+Sg+Par:parast GI; ! 02_A,paras,paras[t],------0P,-,-,+
  parasiitlik+A:parasiitlikK1 25; ! (25_A -> +A) at: parasiitlik, bt: parasiitlikku, bn: parasiitliku, btv: parasiitlikke, bnv: parasiitlike
  parasitaarne+A:parasitaar 02_NE-SE; ! (02_A -> +A) a0: parasitaarne, b0: parasitaarse, b0r: 0, c0: parasitaar
  paratamatu+A:paratamatu 01; ! (01_A -> +A) a0: paratamatu, a0r: 0
@@ -4473,18 +4473,18 @@ LEXICON Adjectives
  peedine+A:peedi 10_NE-SE-S; ! (10_A -> +A) a0: peedine, b0: peedise, c0: peedis
  peegeljas+A:peegelja 02_S-0; ! (02_A -> +A) a0: peegeljas, b0: peegelja, b0r: 0, c0: 0
  peen+A:peen 13; ! (13_A -> +A) at: peen, (bt): peene, an: peen, bn: peene, bnv: peeni
- peen+A+sg+abes:peeneta GI; ! 13_A,p'een,p'eene[ta],------0A,-,-,+
- peen+A+sg+abl:peenelt GI; ! 13_A,p'een,p'eene[lt],------06,-,-,+
- peen+A+sg+ad:peenel GI; ! 13_A,p'een,p'eene[l],------05,-,-,+
- peen+A+sg+all:peenele GI; ! 13_A,p'een,p'eene[le],------04,-,-,+
- peen+A+sg+el:peenest GI; ! 13_A,p'een,p'eene[st],------03,-,-,+
- peen+A+sg+es:peenena GI; ! 13_A,p'een,p'eene[na],------0E,-,-,+
- peen+A+sg+gen:peene GI; ! 13_A,p'een,p'eene[],------0G,-,-,+
- peen+A+sg+ill:peenesse GI; ! 13_A,p'een,p'eene[sse],------01,-,-,+
- peen+A+sg+in:peenes GI; ! 13_A,p'een,p'eene[s],------02,-,-,+
- peen+A+sg+kom:peenega GI; ! 13_A,p'een,p'eene[ga],------0K,-,-,+
- peen+A+sg+term:peeneni GI; ! 13_A,p'een,p'eene[ni],------0R,-,-,+
- peen+A+sg+tr:peeneks GI; ! 13_A,p'een,p'eene[ks],------0T,-,-,+
+ peen+A+Sg+Abe:peeneta GI; ! 13_A,p'een,p'eene[ta],------0A,-,-,+
+ peen+A+Sg+Abl:peenelt GI; ! 13_A,p'een,p'eene[lt],------06,-,-,+
+ peen+A+Sg+Ade:peenel GI; ! 13_A,p'een,p'eene[l],------05,-,-,+
+ peen+A+Sg+All:peenele GI; ! 13_A,p'een,p'eene[le],------04,-,-,+
+ peen+A+Sg+Ela:peenest GI; ! 13_A,p'een,p'eene[st],------03,-,-,+
+ peen+A+Sg+Ess:peenena GI; ! 13_A,p'een,p'eene[na],------0E,-,-,+
+ peen+A+Sg+Gen:peene GI; ! 13_A,p'een,p'eene[],------0G,-,-,+
+ peen+A+Sg+Ill:peenesse GI; ! 13_A,p'een,p'eene[sse],------01,-,-,+
+ peen+A+Sg+Ine:peenes GI; ! 13_A,p'een,p'eene[s],------02,-,-,+
+ peen+A+Sg+Com:peenega GI; ! 13_A,p'een,p'eene[ga],------0K,-,-,+
+ peen+A+Sg+Trm:peeneni GI; ! 13_A,p'een,p'eene[ni],------0R,-,-,+
+ peen+A+Sg+Tra:peeneks GI; ! 13_A,p'een,p'eene[ks],------0T,-,-,+
  peenike+A:peenike 12_0-SE-S; ! (12_A -> +A) a0: peenike, b0: peenikese, c0: peenikes, b0v: peenikesi
  peenikene+A:peenike 12_NE-SE-S; ! (12_A -> +A) a0: peenikene, b0: peenikese, c0: peenikes, b0v: peenikesi
  peenjas+A:peenja 02_S-0; ! (02_A -> +A) a0: peenjas, b0: peenja, b0r: 0, c0: 0
@@ -6558,18 +6558,18 @@ LEXICON Adjectives
  truim+A:truim 02_A; ! (02_A -> +A) a0: truim, b0: truima, b0r: 0, c0: 0
  trullakas+A:trullak 02_GAS_S-0; ! (02_A -> +A) a0: trullakas, b0: trullaka, b0r: 0, c0: 0
  trumliline+A:trumlili 12_NE-SE-S; ! (12_A -> +A) a0: trumliline, b0: trumlilise, c0: trumlilis, b0v: trumlilisi
- truu+A+pl+abes:truudeta GI; ! 26_A,tr'uu,truu[deta],------1A,-,-,+
- truu+A+pl+abl:truudelt GI; ! 26_A,tr'uu,truu[delt],------16,-,-,+
- truu+A+pl+ad:truudel GI; ! 26_A,tr'uu,truu[del],------15,-,-,+
- truu+A+pl+all:truudele GI; ! 26_A,tr'uu,truu[dele],------14,-,-,+
- truu+A+pl+el:truudest GI; ! 26_A,tr'uu,truu[dest],------13,-,-,+
- truu+A+pl+es:truudena GI; ! 26_A,tr'uu,truu[dena],------1E,-,-,+
- truu+A+pl+gen:truude GI; ! 26_A,tr'uu,truu[de],------1G,-,-,+
- truu+A+pl+ill:truudesse GI; ! 26_A,tr'uu,truu[desse],------11,-,-,+
- truu+A+pl+in:truudes GI; ! 26_A,tr'uu,truu[des],------12,-,-,+
- truu+A+pl+kom:truudega GI; ! 26_A,tr'uu,truu[dega],------1K,-,-,+
- truu+A+pl+term:truudeni GI; ! 26_A,tr'uu,truu[deni],------1R,-,-,+
- truu+A+pl+tr:truudeks GI; ! 26_A,tr'uu,truu[deks],------1T,-,-,+
+ truu+A+Pl+Abe:truudeta GI; ! 26_A,tr'uu,truu[deta],------1A,-,-,+
+ truu+A+Pl+Abl:truudelt GI; ! 26_A,tr'uu,truu[delt],------16,-,-,+
+ truu+A+Pl+Ade:truudel GI; ! 26_A,tr'uu,truu[del],------15,-,-,+
+ truu+A+Pl+All:truudele GI; ! 26_A,tr'uu,truu[dele],------14,-,-,+
+ truu+A+Pl+Ela:truudest GI; ! 26_A,tr'uu,truu[dest],------13,-,-,+
+ truu+A+Pl+Ess:truudena GI; ! 26_A,tr'uu,truu[dena],------1E,-,-,+
+ truu+A+Pl+Gen:truude GI; ! 26_A,tr'uu,truu[de],------1G,-,-,+
+ truu+A+Pl+Ill:truudesse GI; ! 26_A,tr'uu,truu[desse],------11,-,-,+
+ truu+A+Pl+Ine:truudes GI; ! 26_A,tr'uu,truu[des],------12,-,-,+
+ truu+A+Pl+Com:truudega GI; ! 26_A,tr'uu,truu[dega],------1K,-,-,+
+ truu+A+Pl+Trm:truudeni GI; ! 26_A,tr'uu,truu[deni],------1R,-,-,+
+ truu+A+Pl+Tra:truudeks GI; ! 26_A,tr'uu,truu[deks],------1T,-,-,+
  truu+A:tru. 26; ! (26_A -> +A) a0: truu, a0r: tru
  truudusetu+A:truudusetu 01; ! (01_A -> +A) a0: truudusetu, a0r: 0
  truum+A:truum 02_A; ! (02_A -> +A) a0: truum, b0: truuma, b0r: 0, c0: 0
