@@ -20,7 +20,6 @@ GT_LEXC_ROOT=root.lexc
 
 # Set this to the names of all regular lexc source files:
 GT_LEXC_SRCS_L1_L2=\
-			 affixes/cmd-rules.lexc \
 			 stems/adjectives.lexc \
 			 stems/adverbs.lexc \
 			 stems/conjunctions.lexc \
@@ -34,8 +33,13 @@ GT_LEXC_SRCS_L1_L2=\
 			 stems/proper-names.lexc \
 			 stems/punctuation.lexc \
 			 stems/verbs.lexc \
-			 stems/lexicalized_temporary.lexc
+			 stems/lexicalized_temporary.lexc \
+			 affixes/declinations.lexc \
+			 affixes/verbs.lexc \
+			 affixes/gi.lexc
 
+#			 affixes/cmd-rules.lexc \
+#
 #			 affixes/adjectives.lexc \
 #			 affixes/nouns.lexc \
 #			 affixes/propernouns.lexc \

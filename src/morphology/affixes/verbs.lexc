@@ -1,0 +1,528 @@
+! stem variants and affix rules from Concise Morphological Dictionary of Ülle Viks
+! tüvevariantide moodustus ja kasutus
+
+LEXICON 27	! muutumatu tüvega ja astmevahelduseta verbid (kõige produktiivsem verbitüüp (elama)
+ TP_27a0;
+
+LEXICON 28	! ma ja da - TA, olevik -  NA (leppima)
+ :X2 TP_28at;
+ :$ TP_28an;
+
+LEXICON 29	! ma ja olevik - TA, da - NA - (hüppama)
+ TP_29at;
+ :$ TP_29an;
+
+LEXICON 30	! LE-EL, ma ja olevik - TA, da - NA - (riidlema)
+ le TP_30at;
+ :el$ TP_30bn;
+
+LEXICON 31	! ELE, astmevahelduseta - (rabelema)
+ e TP_30at;
+ TP_31b0;
+
+LEXICON 32	! ma ja da - TA+konsonanttüvi, olevik - NA+Vokaaltüvi (seisma)
+ TP_32at;
+ :a$ TP_32bn;
+
+LEXICON 32_E	! tüvevokaal e (tõusma)
+ TP_32at;
+ :e$ TP_32bn;
+
+LEXICON 33	! erinevus eelmisest - da, dud, sin, sime (naerma)
+ TP_33at;
+ :a$ TP_33bn;
+
+LEXICON 33_E  ! tüvevokaal e (kuulma)
+ TP_33at;
+ :e$ TP_33bn;
+
+LEXICON 34	! ma - TA + kons.tüvi, da - TA, tüvi&formatiiv sulandunud, olevik - NA ja vok.tüvi, umbisik - e+tud
+ TP_34at;
+ :a$ TP_34bn;
+ :e$ TP_34cn;
+
+LEXICON 34_K_TUD ! laskma/mõskma/puskma
+ K1 TP_34at;
+ :K1e$ TP_34bn;
+ :$ TP_34cn;
+
+LEXICON 34_D_TUD ! hoidma-leidma-püüdma
+ D1 TP_34at;
+ d:D1a$ TP_34bn;
+ d:$ TP_34cn;
+
+
+LEXICON 35_	! 4 tüve: nut+ma (at), nuta+b (bn), nute+tud (cn), nutt+a (ct)
+ TP_35at;
+ :a$ TP_35bn;
+ :e$ TP_35cn;
+
+LEXICON 35_T
+ 35_;
+ :t TP_35ct;
+
+LEXICON 35_P
+ 35_;
+ :p TP_35ct;
+
+LEXICON 36	! 5 tüve (tule+ma, tul+i, tul+dud, tull+a, tull+akse)
+ e$ TP_36an;
+ $ TP_36bn;
+ TP_36bt;
+ :=X2 TP_36ct;	!Siin võib-olla alati ei ole l, vaid suvalise konsonandi 2-kordistamine.
+ :=X2 TP_36cn;
+
+LEXICON 37	! võima (sin,ge,me - NA, teised - TA)
+ TP_37at;
+ :$ TP_37an;
+
+LEXICON 38	! sööma (6 tüve: an, at, bn, bt, cn, ct)
+ 38_;
+ :$ TP_38cn;	! "sõi(n,me)" tekib ka reeglitest
+ TP_38ct;
+
+LEXICON 38_SIN ! (ct tüve ei moodustu?) müüma, pooma, käima, viima
+ 38_;
+ An_sin;
+
+LEXICON 38_
+ :$ TP_38an;
+ TP_38at;
+ :$ TP_38bn; ! tüvevariandi "süü(a)" tekitavad reeglid
+ TP_38bt;
+
+
+! TP_  tüvevariantide paigutusviisid paradigmas
+
+LEXICON TP_27a0	!ela+ma
+ An_ma;
+ An_mata;
+ An_v;
+ An_s;
+ An_sin;
+ An_sime;
+ An_da;
+ An_ge;
+ An_nud_der;
+ An_b;
+ An_me;
+ An_tud;
+ An_takse;
+ Deriv_mine_ja;
+
+LEXICON TP_28at	!leppi+da
+ An_ma;
+ An_mata;
+ An_v;
+ An_s;
+ An_sin;
+ An_sime;
+ An_da;
+ An_ge;
+ An_nud_der;
+ Deriv_mine_ja;
+
+LEXICON TP_28an	!lepi+n
+ An_b;
+ An_me;
+ An_tud;
+ An_takse;
+
+LEXICON TP_29at	!hüppa+ma
+ An_ma;
+ An_mata;
+ An_v;
+ An_s;
+ An_sin;
+ An_sime;
+ An_b;
+ An_me;
+ Deriv_mine_ja;
+
+LEXICON TP_29an	!hüpa+ta
+ An_ta;
+ An_ke;
+ $: An_nud_der;
+ An_tud;
+ An_takse;
+
+LEXICON TP_30at	!riidle+ma; rabele+ma
+ An_ma;
+ An_mata;
+ An_v;
+ An_s;
+ An_sin;
+ An_sime;
+ An_b;
+ An_me;
+ Deriv_mine_ja;
+
+LEXICON TP_30bn	!riiel+da; rabel+da
+ le: An_da;
+ le: An_ge;
+ el$: An_nud_der;
+ le: An_dud;
+ le: An_dakse;
+
+! 31. tüübil langeb tüvevariantide a ja b paigutus täpselt kokku 30. tüübiga, ainult 31 on astmevahelduseta.
+
+LEXICON TP_31b0
+ e: An_da;
+ e: An_ge;
+ An_nud_der;
+ e: An_dud;
+ e: An_dakse;
+
+LEXICON TP_32at	!seis+ma
+ An_ma;
+ An_mata;
+ An_ev;
+ An_is;
+ An_in;
+ An_ime;
+ An_ta;
+ An_ke;
+ An_nud_der;
+ An_tud;
+ An_takse;
+ Deriv_mine_ja;
+
+LEXICON TP_32bn	!seisa+b
+ An_b;
+ An_me;
+
+LEXICON TP_33at	!naer+ma
+ An_ma;
+ An_mata;
+ An_ev;
+ An_is;
+ An_sin;
+ An_sime;
+ An_da;
+ An_ge;
+ An_nud_der;
+ An_dud;
+ An_dakse;
+ Deriv_mine_ja;
+
+LEXICON TP_33bn	!naera+b
+ An_b;
+ An_me;
+
+LEXICON TP_34at	!saat+ma
+ An_ma;
+ An_mata;
+ An_ev;
+ An_is;
+ An_sin;
+ An_sime;
+ An_a;
+ An_ke;
+ An_nud_der;
+ Deriv_mine_ja;
+
+LEXICON TP_34bn	!saada+b
+ An_b;
+ An_me;
+
+LEXICON TP_34cn	!saade+tud
+ An_tud;
+ An_takse;
+
+LEXICON TP_35at	!nut+ma
+ An_ma;
+ An_mata;
+ An_sin;
+ An_sime;
+ An_ke;
+ An_nud_der;
+ Deriv_mine_ja;
+
+LEXICON TP_35bn	!nuta+b
+ An_b;
+ An_me;
+
+LEXICON TP_35cn	!nute+tud
+ An_tud;
+ An_takse;
+
+LEXICON TP_35ct	!nutt+a
+ An_a;
+ An_ev;
+ An_is;
+
+LEXICON TP_36an	!tule+ma
+ An_ma;
+ An_mata;
+ An_v;
+ An_b;
+ An_me;
+ Deriv_mine;
+
+LEXICON TP_36bn	!tul+i
+ e: An_i;
+ e: An_in;
+ e: An_ime;
+ e: An_ge;
+ An_nud_der;
+ i Deriv_ja;
+
+LEXICON TP_36bt	!tul+dud
+ e: An_dud;
+
+LEXICON TP_36cn	!tull+akse
+ e: An_akse;
+
+LEXICON TP_36ct	!tull+a
+ e: An_a;
+
+LEXICON TP_37an	!või+sin, või+me
+ An_mata;
+ An_sin;
+ An_sime;
+ An_ge;
+ An_nud_der;
+ An_me;
+
+LEXICON TP_37at	!või+ma
+ An_ma;
+ An_v;
+ An_s;
+ An_da;
+ An_b;
+ An_dud;
+ An_dakse;
+ Deriv_mine_ja;
+
+LEXICON TP_38an	!söö+me
+ An_mata;
+ An_ge;
+ An_nud_der;
+ An_me;
+
+LEXICON TP_38at !söö+ma
+ An_ma;
+ An_v;
+ An_b;
+ An_dud;
+
+LEXICON TP_38bn	! süü+akse
+ An_akse;
+
+LEXICON TP_38bt	!süü+a
+ An_a;
+
+LEXICON TP_38cn	!sõime
+ An_ime;
+
+LEXICON TP_38ct	!sö.+i -> sõi
+ An_i;
+ An_in;
+
+
+! An_  põhivormide ja nende analoogiavormide moodustamine
+! Analoogiarühmad verbidele
+LEXICON An_ma
+ ma+V+Pers+Sup+Ill:ma GI;
+ ma+V+Pers+Prs+Quot:vat GI;
+
+LEXICON An_mata
+ ma+V+Pers+Sup+Abe:mata GI;
+ mata+A:mata GI; ! ???
+ ma+V+Pers+Sup+Ine:mas GI;
+ ma+V+Pers+Sup+Ela:mast GI;
+ ma+V+Pers+Sup+Tra:maks GI;
+
+LEXICON An_v
+ ma+V+Pers+Prs+Prc:v GI;
+ v+A:v 02_A;
+ v+N:v 02_A;
+! v+A+sg+nom+partic:v GI;
+
+LEXICON An_ev
+ ma+V+Pers+Prs+Prc:ev GI;
+ ev+A:E1v 02_A;
+ ev+N:E1v 02_A;
+! ev+A+sg+nom+partic GI;
+
+!!!!!
+! Järgmised 7 - kindla kõneviisi lihtmineviku vormid
+!!!!!
+
+LEXICON An_s
+ ma+V+Pers+Prt+Ind+Sg3+Aff:+s GI;
+
+LEXICON An_is
+ ma+V+Pers+Prt+Ind+Sg3+Aff:+is GI;
+
+LEXICON An_i
+ ma+V+Pers+Prt+Ind+Sg3+Aff:+i GI;
+
+LEXICON An_sin
+ ma+V+Pers+Prt+Ind+Sg1+Aff:+sin GI;
+ ma+V+Pers+Prt+Ind+Sg2+Aff:+sid GI;
+ ma+V+Pers+Prt+Ind+Pl3+Aff:+sid GI;
+
+LEXICON An_in
+ ma+V+Pers+Prt+Ind+Sg1+Aff:+in GI;
+ ma+V+Pers+Prt+Ind+Sg2+Aff:+id GI;
+ ma+V+Pers+Prt+Ind+Pl3+Aff:+id GI;
+
+LEXICON An_sime
+ ma+V+Pers+Prt+Ind+Pl1+Aff:+sime GI;
+ ma+V+Pers+Prt+Ind+Pl2+Aff:+site GI;
+
+LEXICON An_ime
+ ma+V+Pers+Prt+Ind+Pl1+Aff:+ime GI;
+ ma+V+Pers+Prt+Ind+Pl2+Aff:+ite GI;
+
+!!!!!
+
+!!!!!
+! Infinitiivi variandid -da -ta -a
+!!!!!
+
+LEXICON An_da
+ ma+V+Inf:+da GI;
+ ma+V+Ger:+des GI;
+
+LEXICON An_ta
+ ma+V+Inf:+ta GI;
+ ma+V+Ger:+tes GI;
+
+LEXICON An_a
+ ma+V+Inf:+a GI;
+ ma+V+Ger:+es GI;
+
+!!!!!
+
+!!!!!
+! Käskiv kõneviis + nud + nuks + nuvat
+!!!!!
+
+LEXICON An_ge
+ ma+V+Pers+Prs+Imprt:+gu GI ;
+ ma+V+Pers+Prs+Imprt+Pl1:+gem GI ;
+ ma+V+Pers+Prs+Imprt+Pl2:+ge GI ;
+ An_nud ;
+
+LEXICON An_ke
+ ma+V+Pers+Prs+Imprt:+ku GI ;
+ ma+V+Pers+Prs+Imprt+Pl1:+kem GI ;
+ ma+V+Pers+Prs+Imprt+Pl2:+ke GI ;
+ An_nud ;
+
+LEXICON An_nud
+  ma+V+Pers+Prt+Prc:+nud GI ;
+  ma+V+Pers+Prt+Ind+Neg:+nud GI ; 
+  ma+V+Pers+Prt+Imprt:+nud GI ; 
+  ma+V+Pers+Prt+Cond:+nuks GI ;
+  ma+V+Pers+Prt+Cond+Sg1+Aff:+nuksin GI ;
+  ma+V+Pers+Prt+Cond+Sg2+Aff:+nuksid GI ;
+  ma+V+Pers+Prt+Cond+Pl1+Aff:+nuksime GI ;
+  ma+V+Pers+Prt+Cond+Pl2+Aff:+nuksite GI ;
+  ma+V+Pers+Prt+Cond+Pl3+Aff:+nuksid GI ;
+  ma+V+Pers+Prt+Quot:+nuvat GI ;
+
+LEXICON An_nud_der
+  nud+A:+nud GI ; ! ???
+  ma+V+Der+Der/nu+N:nu 01;
+  nu+N:nu 01;
+  nu+A:nu 01;
+  nult+Adv:nult GI;
+!!!!!
+
+!!!!!
+! Kindla kõneviisi olevik
+!!!!!
+
+LEXICON An_b
+ ma+V+Pers+Prs+Ind+Sg1+Aff:+n GI;
+ ma+V+Pers+Prs+Ind+Sg2+Aff:+d GI;
+ ma+V+Pers+Prs+Ind+Sg3+Aff:+b GI;
+ ma+V+Pers+Prs+Ind+Neg:+0 GI;
+ ma+V+Pers+Prs+Imprt+Sg2:+0 GI;
+
+ ma+V+Pers+Prs+Cond+Sg1+Aff:+ksin GI ;
+ ma+V+Pers+Prs+Cond+Sg2+Aff:+ksid GI ;
+ ma+V+Pers+Prs+Cond:+ks GI ;
+ ma+V+Pers+Prs+Cond+Pl1+Aff:+ksime GI ;
+ ma+V+Pers+Prs+Cond+Pl2+Aff:+ksite GI ;
+ ma+V+Pers+Prs+Cond+Pl3+Aff:+ksid GI ;
+
+LEXICON An_me
+ ma+V+Pers+Prs+Ind+Pl1+Aff:+me GI;
+ ma+V+Pers+Prs+Ind+Pl2+Aff:+te GI;
+ ma+V+Pers+Prs+Ind+Pl3+Aff:+vad GI;
+
+!!!!!
+
+!!!!!
+! Umbisikuline tegumood
+!!!!!
+
+LEXICON An_tud
+ ma+V+Impers+Prt+Prc:+tud GI ;
+ ma+V+Impers+Prt+Ind+Neg:+tud GI ;
+ ma+V+Impers+Prt+Ind+Aff:+ti GI ;
+ ma+V+Impers+Prs+Cond:+taks GI ;
+ ma+V+Impers+Prt+Cond:+tuks GI ;
+ ma+V+Impers+Prs+Quot:+tavat GI ;
+ ! ma+V+Impers+Prt+Quot:+tuvat GI ;
+ ma+V+Impers+Prs+Imprt:+tagu GI ;
+ ma+V+Impers+Sup:+tama GI ;
+ ma+V+Impers+Prs+Ind+Neg:+ta GI ;
+ ma+V+Impers+Prs+Prc:+tav GI ;
+
+ $tud+A:+tud GI ; ! ???
+ $tud+N:+tud GI ; ! ???
+ $tu+A:+tu 01 ; 
+ $tu+N:+tu 01 ;
+ $tav+A:+tav 02_A ;
+ $tav+N:+tav 02_A ;
+
+LEXICON An_dud
+ ma+V+Impers+Prt+Prc:+dud GI ;
+ ma+V+Impers+Prt+Ind+Neg:+dud GI ;
+ ma+V+Impers+Prt+Ind+Aff:+di GI ;
+ ma+V+Impers+Prs+Cond:+daks GI ;
+ ma+V+Impers+Prt+Cond:+duks GI ;
+ ma+V+Impers+Prs+Quot:+davat GI ;
+ ma+V+Impers+Prt+Quot:+duvat GI ;
+ ma+V+Impers+Prs+Imprt:+dagu GI ;
+ ma+V+Impers+Sup:+dama GI ;
+ ma+V+Impers+Prs+Ind+Neg:+da GI ;
+ ma+V+Impers+Prs+Prc:+dav GI ;
+
+ $dud+A:+dud GI ;
+ $dud+N:+dud GI ;
+ $du+N:+du 01 ;
+ $du+A:+du 01 ;
+ $dav+A:+dav 02_A ;
+ $dav+N:+dav 02_A ;
+
+LEXICON An_takse
+ ma+V+Impers+Prs+Ind+Aff:+takse GI ;
+
+LEXICON An_dakse
+ ma+V+Impers+Prs+Ind+Aff:+dakse GI ;
+
+LEXICON An_akse
+ ma+V+Impers+Prs+Ind+Aff:+akse GI ;
+
+!!!!!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Produktiivne verbituletus (v,tav,nud,nu,tud,tu on analoogiarühmade all)
+!!!!!!
+LEXICON Deriv_mine_ja
+  Deriv_ja;
+  Deriv_mine;
+
+LEXICON Deriv_ja
+  ja+N:+ja 01;
+
+LEXICON Deriv_mine
+  mine+N:+mi 12_NE-SE-S;
+
+

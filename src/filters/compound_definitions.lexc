@@ -83,14 +83,14 @@ Definitions
     Nimisõna = Nimisõna' ArvJaKääne;
     Arvsõna = Sona "+Num" [ "+Card" | "+Ord" ] (ArvJaKääne);
     Asesõna = Sona [ "+Pron" ] ArvJaKääne;
-    Käänduvsõna = Omadussõna | Nimisõna | Arvsõna | Asesõna;
-    Määrsõna = Sona "+Adv";
+    Käänduvsõna = [ Omadussõna | Nimisõna | Arvsõna | Asesõna ] ( "+Foc/gi" );
+    Määrsõna = Sona "+Adv" ( "+Foc/gi" );
     Hüüdsõna = Sona "+Interj";
     Sidesõna = Sona [ "+CC" | "+CS" ];
     Kaassõna = Sona "+Adp";
-    Muusõna = Sona "+Adv";
-    Genatribuut = Sona "+N" "+Sg" "+Gen";
-    Tegusõna = Tähtsõne VerbiParadigma; 
+    Muusõna = Sona "+Adv" ( "+Foc/gi" );
+    Genatribuut = Sona "+N" "+Sg" "+Gen" ( "+Foc/gi" );
+    Tegusõna = Tähtsõne VerbiParadigma ( "+Foc/gi" ); 
     Muutumatusõna = Määrsõna | Hüüdsõna | Sidesõna | Kaassõna | Muusõna | Genatribuut;
 
     SP = ( %# %- ) %#;
