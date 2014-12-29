@@ -66,11 +66,11 @@ Multichar_Symbols
 ! finite (conjugable) and infinite ("declinable") forms
 
 ! pöördelistel vormidel on kategooriad: 
-! tegumood, aeg, kõneviis, isik, arv, kõnelaad
+! tegumood, aeg, kõneviis, isik, arv, kõneliik
 ! (tegumood ja aeg on ka mõnedel infiniitsetel vormidel)
 
 ! finite forms have categories: 
-! voice, tense, mood, person, number, aspect
+! voice, tense, mood, person, number, negation
 ! (some infinite forms also have voice and tense)
 
 ! tegumood		! voice
@@ -98,7 +98,7 @@ Multichar_Symbols
 +Pl2	! mitmuse 2. pööre	! plural   2nd person
 +Pl3 	! mitmuse 3. pööre	! plural   3rd person
 
-! kõnelaad		! aspect
+! kõneliik		! negation
 +Aff 	! jaatav kõne	! affirmative
 +Neg	! eitav kõne	! negative
 
@@ -131,11 +131,11 @@ Multichar_Symbols
 !  (0-morph vs. ks vs. k/g[ue] vs. vat)
 !# __person+number:__ notice that in personal present and past conditional, imperative 
 !  and quotative moods one form is underspecified for person+number
-!# __aspect:__ affirmative vs. negative. The aspect manifests itself via
+!# __negation:__ affirmative vs. negative. It manifests itself via
 !  lexical means: it is either present in an exceptional wordform (some forms of
-!  olema) or gets adhered to a form, normally used in affirmative aspect,
+!  olema) or gets adhered to a form, normally used in affirmative,
 !  from an immediately preceding word ei or ära (e.g. ei elaks).
-!  The only case when negative aspect has a dedicated form of its own is impersonal
+!  The only case when negation has a dedicated form of its own is impersonal
 !  present indicative negative (e.g. ei elata).  
 !
 ! Below, brackets are used to indicate the set of underspecified alternative values.
