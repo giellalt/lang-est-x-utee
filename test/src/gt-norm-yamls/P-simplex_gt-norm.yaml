@@ -480,20 +480,20 @@ Tests:
      mina+Pron+Sg+Ess: minuna
      mina+Pron+Sg+Abe: minuta
      mina+Pron+Sg+Com: [minuga, muga]
-     mina+Pron+Pl+Nom: [me, meie]
-     mina+Pron+Pl+Gen: [me, meie]
-     mina+Pron+Pl+Par: meid
-     mina+Pron+Pl+Ill: meisse
-     mina+Pron+Pl+Ine: meis
-     mina+Pron+Pl+Ela: meist
-     mina+Pron+Pl+All: meile
-     mina+Pron+Pl+Ade: meil
-     mina+Pron+Pl+Abl: meilt
-     mina+Pron+Pl+Tra: [meieks, meiks]
-     mina+Pron+Pl+Trm: meieni
-     mina+Pron+Pl+Ess: meiena
-     mina+Pron+Pl+Abe: meieta
-     mina+Pron+Pl+Com: meiega
+     meie+Pron+Pl+Nom: [me, meie]
+     meie+Pron+Pl+Gen: [me, meie]
+     meie+Pron+Pl+Par: meid
+     meie+Pron+Pl+Ill: meisse
+     meie+Pron+Pl+Ine: meis
+     meie+Pron+Pl+Ela: meist
+     meie+Pron+Pl+All: meile
+     meie+Pron+Pl+Ade: meil
+     meie+Pron+Pl+Abl: meilt
+     meie+Pron+Pl+Tra: [meieks, meiks]
+     meie+Pron+Pl+Trm: meieni
+     meie+Pron+Pl+Ess: meiena
+     meie+Pron+Pl+Abe: meieta
+     meie+Pron+Pl+Com: meiega
      #
      mis+Pron+Sg+Nom: mis
      mis+Pron+Sg+Gen: mille
@@ -531,9 +531,9 @@ Tests:
      miski+Pron+Sg+Ine: milleski
      miski+Pron+Sg+Ela: millestki
      miski+Pron+Sg+All: millelegi
-     miski+Pron+Sg+Ade: millelgi
+     miski+Pron+Sg+Ade: [millelgi, milgi]
      miski+Pron+Sg+Abl: milleltki
-     miski+Pron+Sg+Tra: millekski
+     miski+Pron+Sg+Tra: [millekski, mikski]
      miski+Pron+Sg+Trm: millenigi
      miski+Pron+Sg+Ess: millenagi
      miski+Pron+Sg+Abe: milletagi
@@ -553,20 +553,20 @@ Tests:
      see+Pron+Sg+Ess: sellena
      see+Pron+Sg+Abe: selleta
      see+Pron+Sg+Com: sellega
-     see+Pron+Pl+Nom: need
-     see+Pron+Pl+Gen: nende
-     see+Pron+Pl+Par: neid
-     see+Pron+Pl+Ill: [nendesse, neisse]
-     see+Pron+Pl+Ine: [nendes, neis]
-     see+Pron+Pl+Ela: [nendest, neist]
-     see+Pron+Pl+All: [nendele, neile]
-     see+Pron+Pl+Ade: [nendel, neil]
-     see+Pron+Pl+Abl: [nendelt, neilt]
-     see+Pron+Pl+Tra: [nendeks, neiks]
-     see+Pron+Pl+Trm: nendeni
-     see+Pron+Pl+Ess: nendena
-     see+Pron+Pl+Abe: nendeta
-     see+Pron+Pl+Com: nendega
+     need+Pron+Pl+Nom: need
+     need+Pron+Pl+Gen: nende
+     need+Pron+Pl+Par: neid
+     need+Pron+Pl+Ill: [nendesse, neisse]
+     need+Pron+Pl+Ine: [nendes, neis]
+     need+Pron+Pl+Ela: [nendest, neist]
+     need+Pron+Pl+All: [nendele, neile]
+     need+Pron+Pl+Ade: [nendel, neil]
+     need+Pron+Pl+Abl: [nendelt, neilt]
+     need+Pron+Pl+Tra: [nendeks, neiks]
+     need+Pron+Pl+Trm: nendeni
+     need+Pron+Pl+Ess: nendena
+     need+Pron+Pl+Abe: nendeta
+     need+Pron+Pl+Com: nendega
      #
      sina+Pron+Sg+Nom: [sa, sina]
      sina+Pron+Sg+Gen: [sinu, su]
@@ -581,21 +581,21 @@ Tests:
      sina+Pron+Sg+Trm: sinuni
      sina+Pron+Sg+Ess: sinuna
      sina+Pron+Sg+Abe: sinuta
-     sina+Pron+Sg+Com: sinuga
-     sina+Pron+Pl+Nom: [teie, te]
-     sina+Pron+Pl+Gen: [teie, te]
-     sina+Pron+Pl+Par: teid
-     sina+Pron+Pl+Ill: teisse
-     sina+Pron+Pl+Ine: teis
-     sina+Pron+Pl+Ela: teist
-     sina+Pron+Pl+All: teile
-     sina+Pron+Pl+Ade: teil
-     sina+Pron+Pl+Abl: teilt
-     sina+Pron+Pl+Tra: teieks
-     sina+Pron+Pl+Trm: teieni
-     sina+Pron+Pl+Ess: teiena
-     sina+Pron+Pl+Abe: teieta
-     sina+Pron+Pl+Com: teiega
+     sina+Pron+Sg+Com: [sinuga, suga]
+     teie+Pron+Pl+Nom: [teie, te]
+     teie+Pron+Pl+Gen: [teie, te]
+     teie+Pron+Pl+Par: teid
+     teie+Pron+Pl+Ill: teisse
+     teie+Pron+Pl+Ine: teis
+     teie+Pron+Pl+Ela: teist
+     teie+Pron+Pl+All: teile
+     teie+Pron+Pl+Ade: teil
+     teie+Pron+Pl+Abl: teilt
+     teie+Pron+Pl+Tra: teieks
+     teie+Pron+Pl+Trm: teieni
+     teie+Pron+Pl+Ess: teiena
+     teie+Pron+Pl+Abe: teieta
+     teie+Pron+Pl+Com: teiega
      #
      tema+Pron+Sg+Nom: [tema, ta]
      tema+Pron+Sg+Gen: [tema, ta]
@@ -610,21 +610,21 @@ Tests:
      tema+Pron+Sg+Trm: temani
      tema+Pron+Sg+Ess: temana
      tema+Pron+Sg+Abe: temata
-     tema+Pron+Sg+Com: temaga
-     tema+Pron+Pl+Nom: [nad, nemad]
-     tema+Pron+Pl+Gen: nende
-     tema+Pron+Pl+Par: neid
-     tema+Pron+Pl+Ill: [nendesse, neisse]
-     tema+Pron+Pl+Ine: [nendes, neis]
-     tema+Pron+Pl+Ela: [nendest, neist]
-     tema+Pron+Pl+All: [nendele, neile]
-     tema+Pron+Pl+Ade: [nendel, neil]
-     tema+Pron+Pl+Abl: [nendelt, neilt]
-     tema+Pron+Pl+Tra: [nendeks, neiks]
-     tema+Pron+Pl+Trm: nendeni
-     tema+Pron+Pl+Ess: nendena
-     tema+Pron+Pl+Abe: nendeta
-     tema+Pron+Pl+Com: nendega
+     tema+Pron+Sg+Com: [temaga, taga]
+     nemad+Pron+Pl+Nom: [nad, nemad]
+     nemad+Pron+Pl+Gen: nende
+     nemad+Pron+Pl+Par: neid
+     nemad+Pron+Pl+Ill: [nendesse, neisse]
+     nemad+Pron+Pl+Ine: [nendes, neis]
+     nemad+Pron+Pl+Ela: [nendest, neist]
+     nemad+Pron+Pl+All: [nendele, neile]
+     nemad+Pron+Pl+Ade: [nendel, neil]
+     nemad+Pron+Pl+Abl: [nendelt, neilt]
+     nemad+Pron+Pl+Tra: [nendeks, neiks]
+     nemad+Pron+Pl+Trm: nendeni
+     nemad+Pron+Pl+Ess: nendena
+     nemad+Pron+Pl+Abe: nendeta
+     nemad+Pron+Pl+Com: nendega
      #
      too+Pron+Sg+Nom: too
      too+Pron+Sg+Gen: tolle
@@ -640,20 +640,20 @@ Tests:
      too+Pron+Sg+Ess: tollena
      too+Pron+Sg+Abe: tolleta
      too+Pron+Sg+Com: tollega
-     too+Pron+Pl+Nom: nood
-     too+Pron+Pl+Gen: nonde
-     too+Pron+Pl+Par: noid
-     too+Pron+Pl+Ill: [nondesse, noisse]
-     too+Pron+Pl+Ine: [nondes, nois]
-     too+Pron+Pl+Ela: [nondest, noist]
-     too+Pron+Pl+All: [nondele, noile]
-     too+Pron+Pl+Ade: [nondel, noil]
-     too+Pron+Pl+Abl: [nondelt, noilt]
-     too+Pron+Pl+Tra: nondeks
-     too+Pron+Pl+Trm: nondeni
-     too+Pron+Pl+Ess: nondena
-     too+Pron+Pl+Abe: nondeta
-     too+Pron+Pl+Com: nondega
+     nood+Pron+Pl+Nom: nood
+     nood+Pron+Pl+Gen: nonde
+     nood+Pron+Pl+Par: noid
+     nood+Pron+Pl+Ill: [nondesse, noisse]
+     nood+Pron+Pl+Ine: [nondes, nois]
+     nood+Pron+Pl+Ela: [nondest, noist]
+     nood+Pron+Pl+All: [nondele, noile]
+     nood+Pron+Pl+Ade: [nondel, noil]
+     nood+Pron+Pl+Abl: [nondelt, noilt]
+     nood+Pron+Pl+Tra: [nondeks, noiks]
+     nood+Pron+Pl+Trm: nondeni
+     nood+Pron+Pl+Ess: nondena
+     nood+Pron+Pl+Abe: nondeta
+     nood+Pron+Pl+Com: nondega
      #
      keegi+Pron+Sg+Nom: keegi
      keegi+Pron+Sg+Gen: kellegi

@@ -3498,7 +3498,62 @@ LEXICON Verbs
  mikserda 27; ! (27_V -> ) a0: mikserda
  miksi 28; ! (28_V -> ) at: miksi, an: miksi
  militariseeri 28; ! (28_V -> ) at: militariseeri, an: militariseeri
- min 36; ! (36_V -> ) an: mine, bn: min, bt: min, cn: minn, ct: minn
+ minema+V+Pers+Prs+Ind+Sg1+Aff:lähen GI;
+ minema+V+Pers+Prs+Ind+Sg2+Aff:lähed GI;
+ minema+V+Pers+Prs+Ind+Sg3+Aff:läheb GI;
+ minema+V+Pers+Prs+Ind+Pl1+Aff:läheme GI;
+ minema+V+Pers+Prs+Ind+Pl1+Aff:lähme GI;
+ minema+V+Pers+Prs+Ind+Pl2+Aff:lähete GI;
+ minema+V+Pers+Prs+Ind+Pl2+Aff:lähte GI;
+ minema+V+Pers+Prs+Ind+Pl3+Aff:lähevad GI;
+ minema+V+Pers+Prs+Ind+Pl3+Aff:lähvad GI;
+ minema+V+Pers+Prs+Ind+Neg:lähe GI;
+ minema+V+Pers+Prs+Cond+Sg1+Aff:läheksin GI;
+ minema+V+Pers+Prs+Cond+Sg2+Aff:läheksid GI;
+ minema+V+Pers+Prs+Cond:läheks GI;
+ minema+V+Pers+Prs+Cond+Pl1+Aff:läheksime GI;
+ minema+V+Pers+Prs+Cond+Pl2+Aff:läheksite GI;
+ minema+V+Pers+Prs+Cond+Pl3+Aff:läheksid GI;
+ minema+V+Pers+Prs+Imprt+Sg2:mine GI;
+ minema+V+Pers+Prs+Imprt:mingu GI;
+ minema+V+Pers+Prs+Imprt+Pl1:mingem GI;
+ minema+V+Pers+Prs+Imprt+Pl2:minge GI;
+ minema+V+Pers+Prs+Quot:minevat GI;
+ minema+V+Pers+Prt+Ind+Sg1+Aff:läksin GI;
+ minema+V+Pers+Prt+Ind+Sg2+Aff:läksid GI;
+ minema+V+Pers+Prt+Ind+Sg3+Aff:läks GI;
+ minema+V+Pers+Prt+Ind+Pl1+Aff:läksime GI;
+ minema+V+Pers+Prt+Ind+Pl2+Aff:läksite GI;
+ minema+V+Pers+Prt+Ind+Pl3+Aff:läksid GI;
+ minema+V+Pers+Prt+Ind+Neg:läinud GI;
+ minema+V+Pers+Prt+Cond+Sg1+Aff:läinuksin GI;
+ minema+V+Pers+Prt+Cond+Sg2+Aff:läinuksid GI;
+ minema+V+Pers+Prt+Cond:läinuks GI;
+ minema+V+Pers+Prt+Cond+Pl1+Aff:läinuksime GI;
+ minema+V+Pers+Prt+Cond+Pl2+Aff:läinuksite GI;
+ minema+V+Pers+Prt+Cond+Pl3+Aff:läinuksid GI;
+ minema+V+Pers+Prt+Imprt:läinud GI;
+ minema+V+Pers+Prt+Quot:läinuvat GI;
+ minema+V+Pers+Prs+Prc:minev GI;
+ minema+V+Pers+Prt+Prc:läinud GI;
+ minema+V+Pers+Sup+Ill:minema GI;
+ minema+V+Pers+Sup+Ine:minemas GI;
+ minema+V+Pers+Sup+Ela:minemast GI;
+ minema+V+Pers+Sup+Tra:minemaks GI;
+ minema+V+Pers+Sup+Abe:minemata GI;
+ minema+V+Impers+Prs+Ind+Aff:minnakse GI;
+ minema+V+Impers+Prs+Ind+Neg:minda GI;
+ minema+V+Impers+Prs+Cond:mindaks GI;
+ minema+V+Impers+Prs+Imprt:mindagu GI;
+ minema+V+Impers+Prs+Quot:mindavat GI;
+ minema+V+Impers+Prt+Ind+Aff:mindi GI;
+ minema+V+Impers+Prt+Ind+Neg:mindud GI;
+ minema+V+Impers+Prt+Cond:minduks GI;
+ minema+V+Impers+Prs+Prc:mindav GI;
+ minema+V+Impers+Prt+Prc:mindud GI;
+ minema+V+Impers+Sup:mindama GI;
+ minema+V+Inf:minna GI;
+ minema+V+Ger:minnes GI;
  mineeri 28; ! (28_V -> ) at: mineeri, an: mineeri
  mineraliseeru 27; ! (27_V -> ) a0: mineraliseeru
  minesta 27; ! (27_V -> ) a0: minesta
@@ -4117,31 +4172,83 @@ LEXICON Verbs
  oksüdeeri 28; ! (28_V -> ) at: oksüdeeri, an: oksüdeeri
  oksüdeeru 27; ! (27_V -> ) a0: oksüdeeru
  okupeeri 28; ! (28_V -> ) at: okupeeri, an: okupeeri
- ol 36; ! (36_V -> ) an: ole, bn: ol, bt: ol, cn: oll, ct: oll
  olB1a 29; ! (29_V -> ) at: olba, an: olva
  olel 31; ! (31_V -> ) a0: olele, b0: olel
  olele 27; ! (27_V -> ) a0: olele
- olema+V+Pers+Prs+Ind+Neg:pole GI; ! 36_V,ole,pole[],-00002--,-,-,+
- olema+V+Pers+Prs+Cond+Sg1+Neg: poleksin GI;
- olema+V+Pers+Prs+Cond+Sg2+Neg: poleksid GI;
- olema+V+Pers+Prs+Cond+Neg:poleks GI; ! 36_V,ole,pole[ks],-00202--,-,-,+
- olema+V+Pers+Prs+Cond+Pl1+Neg: poleksime GI;
- olema+V+Pers+Prs+Cond+Pl2+Neg: poleksite GI;
- olema+V+Pers+Prs+Cond+Pl3+Neg: poleksid GI;
- olema+V+Pers+Prs+Quot+Neg:polevat GI; ! 36_V,ole,pole[vat],-00102--,-,-,+
- olema+V+Pers+Prt+Ind+Neg:polnud GI; ! 36_V,ole,pol[nud],-02002--,-,-,+
- olema+V+Pers+Prt+Cond+Sg1+Neg: polnuksin GI;
- olema+V+Pers+Prt+Cond+Sg2+Neg: polnuksid GI;
- olema+V+Pers+Prt+Cond+Neg:polnuks GI; ! 36_V,ole,pol[nuks],-01202--,-,-,+
- olema+V+Pers+Prt+Cond+Pl1+Neg: polnuksime GI;
- olema+V+Pers+Prt+Cond+Pl2+Neg: polnuksite GI;
- olema+V+Pers+Prt+Cond+Pl3+Neg: polnuksid GI;
+ olema+V+Pers+Prs+Ind+Sg1+Aff:olen GI;
+ olema+V+Pers+Prs+Ind+Sg2+Aff:oled GI;
+ olema+V+Pers+Prs+Ind+Sg3+Aff:on GI;
+ olema+V+Pers+Prs+Ind+Pl1+Aff:oleme GI;
+ olema+V+Pers+Prs+Ind+Pl2+Aff:olete GI;
+ olema+V+Pers+Prs+Ind+Pl3+Aff:on GI;
+ olema+V+Pers+Prs+Ind+Neg:ole GI;
+ olema+V+Pers+Prs+Ind+Neg:pole GI;
+ olema+V+Pers+Prs+Cond+Sg1+Aff:oleksin GI;
+ olema+V+Pers+Prs+Cond+Sg1+Neg:poleksin GI;
+ olema+V+Pers+Prs+Cond+Sg2+Aff:oleksid GI;
+ olema+V+Pers+Prs+Cond+Sg2+Neg:poleksid GI;
+ olema+V+Pers+Prs+Cond:oleks GI;
+ olema+V+Pers+Prs+Cond+Neg:poleks GI;
+ olema+V+Pers+Prs+Cond+Pl1+Aff:oleksime GI;
+ olema+V+Pers+Prs+Cond+Pl1+Neg:poleksime GI;
+ olema+V+Pers+Prs+Cond+Pl2+Aff:oleksite GI;
+ olema+V+Pers+Prs+Cond+Pl2+Neg:poleksite GI;
+ olema+V+Pers+Prs+Cond+Pl3+Aff:oleksid GI;
+ olema+V+Pers+Prs+Cond+Pl3+Neg:poleksid GI;
+ olema+V+Pers+Prs+Imprt+Sg2:ole GI;
+ olema+V+Pers+Prs+Imprt:olgu GI;
+ olema+V+Pers+Prs+Imprt+Pl1:olgem GI;
+ olema+V+Pers+Prs+Imprt+Pl2:olge GI;
+ olema+V+Pers+Prs+Quot:olevat GI;
+ olema+V+Pers+Prs+Quot+Neg:polevat GI;
+ olema+V+Pers+Prt+Ind+Sg1+Aff:olin GI;
+ olema+V+Pers+Prt+Ind+Sg2+Aff:olid GI;
+ olema+V+Pers+Prt+Ind+Sg3+Aff:oli GI;
+ olema+V+Pers+Prt+Ind+Pl1+Aff:olime GI;
+ olema+V+Pers+Prt+Ind+Pl2+Aff:olite GI;
+ olema+V+Pers+Prt+Ind+Pl3+Aff:olid GI;
+ olema+V+Pers+Prt+Ind+Neg:olnud GI;
+ olema+V+Pers+Prt+Ind+Neg:polnud GI;
+ olema+V+Pers+Prt+Cond+Sg1+Aff:olnuksin GI;
+ olema+V+Pers+Prt+Cond+Sg1+Neg:polnuksin GI;
+ olema+V+Pers+Prt+Cond+Sg2+Aff:olnuksid GI;
+ olema+V+Pers+Prt+Cond+Sg2+Neg:polnuksid GI;
+ olema+V+Pers+Prt+Cond:olnuks GI;
+ olema+V+Pers+Prt+Cond+Neg:polnuks GI;
+ olema+V+Pers+Prt+Cond+Pl1+Aff:olnuksime GI;
+ olema+V+Pers+Prt+Cond+Pl1+Neg:polnuksime GI;
+ olema+V+Pers+Prt+Cond+Pl2+Aff:olnuksite GI;
+ olema+V+Pers+Prt+Cond+Pl2+Neg:polnuksite GI;
+ olema+V+Pers+Prt+Cond+Pl3+Aff:olnuksid GI;
+ olema+V+Pers+Prt+Cond+Pl3+Neg:polnuksid GI;
+ olema+V+Pers+Prt+Imprt:olnud GI;
+ olema+V+Pers+Prt+Quot:olnuvat GI;
  olema+V+Pers+Prt+Quot+Neg:polnuvat GI;
+ olema+V+Pers+Prs+Prc:olev GI;
+ olema+V+Pers+Prt+Prc:olnud GI;
+ olema+V+Pers+Sup+Ill:olema GI;
+ olema+V+Pers+Sup+Ine:olemas GI;
+ olema+V+Pers+Sup+Ela:olemast GI;
+ olema+V+Pers+Sup+Tra:olemaks GI;
+ olema+V+Pers+Sup+Abe:olemata GI;
+ olema+V+Impers+Prs+Ind+Aff:ollakse GI;
+ olema+V+Impers+Prs+Ind+Neg:olda GI;
  olema+V+Impers+Prs+Ind+Neg:polda GI;
+ olema+V+Impers+Prs+Cond:oldaks GI;
  olema+V+Impers+Prs+Cond+Neg:poldaks GI;
- olema+V+Impers+Prs+Quot+Neg:poldavat GI; 
- olema+V+Impers+Prt+Cond+Neg:polduks GI;
+ olema+V+Impers+Prs+Imprt:oldagu GI;
+ olema+V+Impers+Prs+Quot:oldavat GI;
+ olema+V+Impers+Prs+Quot+Neg:poldavat GI;
+ olema+V+Impers+Prt+Ind+Aff:oldi GI;
+ olema+V+Impers+Prt+Ind+Neg:oldud GI;
  olema+V+Impers+Prt+Ind+Neg:poldud GI;
+ olema+V+Impers+Prt+Cond:olduks GI;
+ olema+V+Impers+Prt+Cond+Neg:polduks GI;
+ olema+V+Impers+Prs+Prc:oldav GI;
+ olema+V+Impers+Prt+Prc:oldud GI;
+ olema+V+Impers+Sup:oldama  GI;
+ olema+V+Inf:olla GI;
+ olema+V+Ger:olles GI;
  olene 27; ! (27_V -> ) a0: olene
  oleskel 36; ! (36_V -> ) an: oleskele, bn: oleskel, bt: oleskel, cn: oleskell, ct: oleskell
  oleskle 27; ! (27_V -> ) a0: oleskle

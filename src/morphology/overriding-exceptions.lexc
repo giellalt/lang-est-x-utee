@@ -448,35 +448,6 @@ LEXICON Asendavad_erandid_gen
  mees+N+Pl+Par:mehi GI; ! 13_S,m'ees,mehi[],------1P,-,-,*
  mees+N+Sg+Ill:%{%} GI_0; ! 13_S,m'ees,#,------0D,-,-,*
  meri+N+Sg+Par:merd GI; ! 20_S,meri,m'er[d],------0P,-,-,*
- minema+V+Pers+Prt+Cond+Pl1+Aff:läinuksime GI; ! 36_V,mine,läi[nuksime],-01241--,-,-,*
- minema+V+Pers+Prt+Cond+Sg1+Aff:läinuksin GI; ! 36_V,mine,läi[nuksin],-01211--,-,-,*
- minema+V+Pers+Prt+Cond+Pl2+Aff:läinuksite GI; ! 36_V,mine,läi[nuksite],-01251--,-,-,*
- minema+V+Pers+Prt+Cond+Sg2+Aff:läinuksid GI; ! 36_V,mine,läi[nuksid],-01221--,-,-,*
- minema+V+Pers+Prt+Cond+Pl3+Aff:läinuksid GI; ! 36_V,mine,läi[nuksid],-01261--,-,-,*
- minema+V+Pers+Prt+Cond+Sg3+Aff:läinuks GI; ! 36_V,mine,läi[nuks],-01200--,-,-,*
- minema+V+Pers+Prs+Cond+Pl1+Aff:läheksime GI; ! 36_V,mine,lähe[ksime],-00241--,-,-,*
- minema+V+Pers+Prs+Cond+Sg1+Aff:läheksin GI; ! 36_V,mine,lähe[ksin],-00211--,-,-,*
- minema+V+Pers+Prs+Cond+Pl2+Aff:läheksite GI; ! 36_V,mine,lähe[ksite],-00251--,-,-,*
- minema+V+Pers+Prs+Cond+Sg2+Aff:läheksid GI; ! 36_V,mine,lähe[ksid],-00221--,-,-,*
- minema+V+Pers+Prs+Cond+Sg3+Aff:läheks GI; ! 36_V,mine,lähe[ks],-00200--,-,-,*
- minema+V+Pers+Prs+Cond+Pl3+Aff:läheksid GI; ! 36_V,mine,lähe[ksid],-00261--,-,-,*
- minema+V+Pers+Prs+Imprt+Sg2:mine afneg_GI; ! 36_V,mine,mine[],-00320--,-,-,*
- minema+V+Pers+Prt+Ind+Pl1+Aff:läksime GI; ! 36_V,mine,läk[sime],-02041--,-,-,*
- minema+V+Pers+Prt+Ind+Sg1+Aff:läksin GI; ! 36_V,mine,läk[sin],-02011--,-,-,*
- minema+V+Pers+Prt+Ind+Pl2+Aff:läksite GI; ! 36_V,mine,läk[site],-02051--,-,-,*
- minema+V+Pers+Prt+Ind+Sg2+Aff:läksid GI; ! 36_V,mine,läk[sid],-02021--,-,-,*
- minema+V+Pers+Prt+Ind+Pl3+Aff:läksid GI; ! 36_V,mine,läk[sid],-02061--,-,-,*
- minema+V+Pers+Prt+Ind+Sg3+Aff:läks GI; ! 36_V,mine,l'äk[s],-02031--,-,-,*
- minema+V+Pers+Prs+Ind+Neg:lähe GI; ! 36_V,mine,lähe[],-00000--,-,-,*
- minema+V+Pers+Prs+Ind+Pl1+Aff:läheme GI; ! 36_V,mine,lähe[me],-00041--,-,-,*
- minema+V+Pers+Prs+Ind+Pl1+Aff:lähme GI; ! 36_V,mine,läh[me],-00041--,-,-,*
- minema+V+Pers+Prs+Ind+Sg1+Aff:lähen GI; ! 36_V,mine,lähe[n],-00011--,-,-,*
- minema+V+Pers+Prs+Ind+Pl2+Aff:lähete GI; ! 36_V,mine,lähe[te],-00051--,-,-,*
- minema+V+Pers+Prs+Ind+Sg2+Aff:lähed GI; ! 36_V,mine,lähe[d],-00021--,-,-,*
- minema+V+Pers+Prs+Ind+Pl3+Aff:lähevad GI; ! 36_V,mine,lähe[vad],-00061--,-,-,*
- minema+V+Pers+Prs+Ind+Sg3+Aff:läheb GI; ! 36_V,mine,lähe[b],-00031--,-,-,*
- minema+V+Pers+Prt+Prc:läinud afneg_GI; ! 36_V,mine,läi[nud],401--0--,-,-,*
- minema+V+Pers+Prt+Quot:läinuvat afneg_GI; ! 36_V,mine,läi[nuvat],-01100--,-,-,*
  muuma+V+Impers+Prt+Cond+Aff:muuduks GI; ! 27_V,m'uu,m'uu[duks],-112-0--,-,-,*
  muuma+V+Impers+Prs+Cond+Aff:muudaks GI; ! 27_V,m'uu,m'uu[daks],-102-0--,-,-,*
  muuma+V+Impers+Prs+Imprt:muudagu afneg_GI; ! 27_V,m'uu,m'uu[dagu],-103-0--,-,-,*
@@ -547,8 +518,6 @@ LEXICON Asendavad_erandid_gen
  nägema+V+Impers+Prs+Quot:nähtavat afneg_GI; ! 28_V,näge,n'äh[tavat],-101-0--,-,-,*
  nägema+V+Impers+Sup:nähtama GI; ! 28_V,näge,n'äh[tama],31------,-,-,*
  nõu+N+Sg+Par:nõu GI; ! 26_S,n'õu,n'õu[],------0P,-,-,*
- olema+V+Pers+Prs+Ind+Pl3+Aff:on GI; ! 36_V,ole,'on[],-00061--,-,-,*
- olema+V+Pers+Prs+Ind+Sg3+Aff:on GI; ! 36_V,ole,'on[],-00031--,-,-,*
  pea+N+Pl+Par:päid GI; ! 26_S,p'ea,p'ä[id],------1P,-,-,*
  pea+N+Sg+Ill:pähe GI; ! 26_S,p'ea,pä[he],------0D,-,-,*
  pesema+V+Impers+Prt+Cond+Aff:pestuks GI; ! 36_V,pese,p'es[tuks],-112-0--,-,-,*

@@ -41,8 +41,8 @@ Tests:
      samune+Pron+Pl+Ade: [samustel, samuseil]
      samune+Pron+Pl+Abl: [samustelt, samuseilt]
      samune+Pron+Pl+Tra: [samusteks, samuseiks]
-     samune+Pron+Pl+Trm: [samusteni, samuseini]
-     samune+Pron+Pl+Ess: [samustena, samuseina]
+     samune+Pron+Pl+Trm: samusteni
+     samune+Pron+Pl+Ess: samustena
      samune+Pron+Pl+Abe: samusteta
      samune+Pron+Pl+Com: samustega
      #
