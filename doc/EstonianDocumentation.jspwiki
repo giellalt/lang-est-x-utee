@@ -8,8 +8,8 @@
   / [syntax|https://victorio.uit.no/langtech/trunk/langs/est/src/syntax] 
   / [twolc|https://victorio.uit.no/langtech/trunk/langs/est/src/phonology/est-phon.twolc]   
   / [yaml|https://victorio.uit.no/langtech/trunk/langs/est/test/src/gt-norm-yamls/]
-* Generation of: [paradigms|http://giellatekno.uit.no/cgi/p-est.fin.html]
-  / [text|http://giellatekno.uit.no/cgi/d-est.fin.html]
+* Generation of: [paradigms|http://giellatekno.uit.no/cgi/p-est.fi.html]
+  / [text|http://giellatekno.uit.no/cgi/d-est.fi.html]
 
 
 !!! Project pages
