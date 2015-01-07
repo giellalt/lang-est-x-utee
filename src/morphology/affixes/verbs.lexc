@@ -337,12 +337,16 @@ LEXICON An_v
  ma+V+Pers+Prs+Prc:v GI;
  v+A:v 02_A;
  v+N:v 02_A;
+ ma+V+Der+Der/v+A:v 02_A;
+ ma+V+Der+Der/v+N:v 02_A;
 ! v+A+sg+nom+partic:v GI;
 
 LEXICON An_ev
  ma+V+Pers+Prs+Prc:ev GI;
  ev+A:E1v 02_A;
  ev+N:E1v 02_A;
+ ma+V+Der+Der/v+A:E1v 02_A;
+ ma+V+Der+Der/v+N:E1v 02_A;
 ! ev+A+sg+nom+partic GI;
 
 !!!!!
@@ -426,9 +430,10 @@ LEXICON An_nud
 
 LEXICON An_nud_der
   nud+A:+nud GI ; ! ???
-  ma+V+Der+Der/nu+N:nu 01;
   nu+N:nu 01;
   nu+A:nu 01;
+  ma+V+Der+Der/nu+N:nu 01;
+  ma+V+Der+Der/nu+A:nu 01;
   nult+Adv:nult GI;
 !!!!!
 
@@ -480,6 +485,10 @@ LEXICON An_tud
  $tu+N:+tu 01 ;
  $tav+A:+tav 02_A ;
  $tav+N:+tav 02_A ;
+ ma+V+Der+Der/tu+A:+tu 01 ; 
+ ma+V+Der+Der/tu+N:+tu 01 ;
+ ma+V+Der+Der/tav+A:+tav 02_A ;
+ ma+V+Der+Der/tav+N:+tav 02_A ;
 
 LEXICON An_dud
  ma+V+Impers+Prt+Prc:+dud GI ;
@@ -500,6 +509,10 @@ LEXICON An_dud
  $du+A:+du 01 ;
  $dav+A:+dav 02_A ;
  $dav+N:+dav 02_A ;
+ ma+V+Der+Der/tu+N:+du 01 ;
+ ma+V+Der+Der/tu+A:+du 01 ;
+ ma+V+Der+Der/tav+A:+dav 02_A ;
+ ma+V+Der+Der/tav+N:+dav 02_A ;
 
 LEXICON An_takse
  ma+V+Impers+Prs+Ind+Aff:+takse GI ;
@@ -521,8 +534,10 @@ LEXICON Deriv_mine_ja
 
 LEXICON Deriv_ja
   ja+N:+ja 01;
+  ma+V+Der+Der/ja+N:+ja 01;
 
 LEXICON Deriv_mine
   mine+N:+mi 12_NE-SE-S;
+  ma+V+Der+Der/mine+N:+mi 12_NE-SE-S;
 
 
