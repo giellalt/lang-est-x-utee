@@ -74,7 +74,7 @@ void undef(void)
       free(np->defn);
       free(np);
     }
-  fprintf(stderr,"L~opp\n");
+  fprintf(stderr,"Lõpp\n");
 }
 
 /* usage:  display user information */
@@ -118,14 +118,14 @@ void file2hash(char *filename)
     fgets(defn, MAXLEN, lexicon);
     defn[strlen(defn)-1] = '\0';
     if (install(name, defn) == NULL) {
-      fprintf(stderr,"Mälu otsas (%d s6na loetud)\n", n);
+      fprintf(stderr,"Mälu otsas (%d sõna loetud)\n", n);
       fclose(lexicon);
       terminate();
     }
     n++;
   }
   fclose(lexicon);
-  fprintf(stderr,"S6nu loetud:  %d\n", n);
+  fprintf(stderr,"Sõnu loetud:  %d\n", n);
 }
 
 /* copy:  copy one word from source to dest */
@@ -312,16 +312,16 @@ void work(char *fn1, char *fn2)
      input=stdin;
   } else {
   if ((input = fopen(fn1, "rt")) == NULL) {
-    fprintf(stderr,"Sisendfaili ei 6nnestunud avada\n");
+    fprintf(stderr,"Sisendfaili ei õnnestunud avada\n");
     terminate();
   }
   }
-  fprintf(stderr,"V@ljund:  %s\n", fn2);
+  fprintf(stderr,"Väljund:  %s\n", fn2);
   if (strcmp(fn2,"stdout")==0) {
      output=stdout;
   } else {
     if ((output = fopen(fn2, "wt")) == NULL) {
-    fprintf(stderr,"V@ljundfaili ei 6nnestunud avada\n");
+    fprintf(stderr,"Väljundfaili ei õnnestunud avada\n");
     fclose(input);
     terminate();
     }
