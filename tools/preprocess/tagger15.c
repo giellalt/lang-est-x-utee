@@ -118,7 +118,7 @@ void file2hash(char *filename)
     fgets(defn, MAXLEN, lexicon);
     defn[strlen(defn)-1] = '\0';
     if (install(name, defn) == NULL) {
-      fprintf(stderr,"Mälu otsas (%d s6na loetud)\n", n);
+      fprintf(stderr,"MÃ¤lu otsas (%d s6na loetud)\n", n);
       fclose(lexicon);
       terminate();
     }
@@ -354,7 +354,7 @@ void work(char *fn1, char *fn2)
 	//}
 	//count = ptr_slash - bookmark;
 	//strncpy(body, bookmark, count);            /*body=slashide vahel */
-	strcpy(body, ptr_slash + 1);            /*body=kuni lõpuni */
+	strcpy(body, ptr_slash + 1);            /*body=kuni lÃµpuni */
 	//body[count] = '\0';
 	//strcpy(tale, ptr_slash);                   /*tale=viimased slashid...*/
         tale[0]='\0';
@@ -369,7 +369,7 @@ void work(char *fn1, char *fn2)
 	    p=r->addition;
 	    while(p!=NULL)
 	    {
-	      if (!control(word,p->text))  /*NB! sp->addition on märgendite komb */
+	      if (!control(word,p->text))  /*NB! sp->addition on mÃ¤rgendite komb */
 	      {
 		strcat(word, p->text);
 		if (word[strlen(word)-1]!=' ') strcat(word, " ");
