@@ -9414,7 +9414,7 @@ LEXICON Nouns
  lapp+N:lapP1 22_I; ! (22_S -> +S) at: lapp, bt: lappi, bn: lapi, btv: lappe, bnv: lape
  lapsendus+N:lapsendus 11; ! (11_S -> +S) a0: lapsendus, b0: lapsenduse, b0v: lapsendusi
  lapsikus+N:lapsikus 11; ! (11_S -> +S) a0: lapsikus, b0: lapsikuse, b0v: lapsikusi
- laps+N:laps 14; ! (14_S -> +S) at: laps, (bt): lapse, an: laps, bn: lapse, cn: las, ct: las
+ laps+N:laps 14'; ! (14_S -> +S) at: laps, (bt): lapse, an: laps, bn: lapse, cn: las, ct: las
  laps+N:laps 22_U; ! (22_S -> +S) at: laps, bt: lapsu, bn: lapsu, btv: lapse, bnv: lapse
  lapsuke+N:lapsuke 12_0-SE-S; ! (12_S -> +S) a0: lapsuke, b0: lapsukese, c0: lapsukes, b0v: lapsukesi
  lapsus+N:lapsus 09_E; ! (09_S -> +S) a0: lapsus, b0: lapsuse
@@ -9575,6 +9575,7 @@ LEXICON Nouns
  leemine+N:leemi 10_NE-SE-S; ! (10_S -> +S) a0: leemine, b0: leemise, c0: leemis
  leemine+N:leemi 12_NE-SE-S; ! (12_S -> +S) a0: leemine, b0: leemise, c0: leemis, b0v: leemisi
  leem+N:leem 13; ! (13_S -> +S) at: leem, (bt): leeme, an: leen, bn: leeme, bnv: leemi
+ leem+N+Sg+Ill:leende GI; ! 13_S,l'eem,l'een[de],------0D,-,-,*
  leemur+N:leemur 02_I; ! (02_S -> +S) a0: leemur, b0: leemuri, b0r: leemure, c0: 0
  leenis+N:leenis 09_E; ! (09_S -> +S) a0: leenis, b0: leenise
  leen+N:leen 22_I; ! (22_S -> +S) at: leen, bt: leeni, bn: leeni, btv: leene, bnv: leene
@@ -10684,6 +10685,7 @@ LEXICON Nouns
  maar+N:maar 22_I; ! (22_S -> +S) at: maar, bt: maari, bn: maari, btv: maare, bnv: maare
  maasikas+N:maasik 02_GAS_S-0; ! (02_S -> +S) a0: maasikas, b0: maasika, b0r: 0, c0: 0
  maa+N:ma. 26; ! (26_S -> +S) a0: maa, a0r: ma
+ maa+N+Sg+Ill:maha GI; ! 26_S,m'aa,ma[ha],------0D,-,-,* lühike sisseütlev
  maa+N+Pl+Abe:maadeta GI; ! 26_S,m'aa,maa[deta],------1A,-,-,+
  maa+N+Pl+Abl:maadelt GI; ! 26_S,m'aa,maa[delt],------16,-,-,+
  maa+N+Pl+Ade:maadel GI; ! 26_S,m'aa,maa[del],------15,-,-,+
@@ -13825,6 +13827,7 @@ LEXICON Nouns
  pealsus+N:pealsus 11; ! (11_S -> +S) a0: pealsus, b0: pealsuse, b0v: pealsusi
  peane+N:pea 10_NE-SE-S; ! (10_S -> +S) a0: peane, b0: pease, c0: peas
  pea+N:pea 26_ii; ! (26_S -> +S) a0: pea, a0r: #
+ pea+N+Sg+Ill:pähe GI; ! 26_S,p'ea,pä[he],------0D,-,-,*
  pea+N+Pl+Abl:päilt GI; ! 26_S,p'ea,p'ä[ilt],------16,-,-,+
  pea+N+Pl+Ade:päil GI; ! 26_S,p'ea,p'ä[il],------15,-,-,+
  pea+N+Pl+All:päile GI; ! 26_S,p'ea,p'ä[ile],------14,-,-,+
@@ -17904,6 +17907,7 @@ LEXICON Nouns
  soo+N+Pl+Trm:soodeni GI; ! 26_S,s'oo,soo[deni],------1R,-,-,+
  soo+N+Pl+Tra:soodeks GI; ! 26_S,s'oo,soo[deks],------1T,-,-,+
  soo+N:so. 26; ! (26_S -> +S) a0: soo, a0r: so
+ soo+N+Sg+Ill:sohu GI; ! 26_S,s'oo,so[hu],------0D,-,-,*
  soos+N:soos 22_I; ! (22_S -> +S) at: soos, bt: soosi, bn: soosi, btv: soose, bnv: soose
  soostik+N:soostikK1 25; ! (25_S -> +S) at: soostik, bt: soostikku, bn: soostiku, btv: soostikke, bnv: soostike
  soostumus+N:soostumus 11; ! (11_S -> +S) a0: soostumus, b0: soostumuse, b0v: soostumusi
@@ -18455,6 +18459,7 @@ LEXICON Nouns
  suu+N+Pl+Trm:suudeni GI; ! 26_S,s'uu,suu[deni],------1R,a0r,s'u,+
  suu+N+Pl+Tra:suudeks GI; ! 26_S,s'uu,suu[deks],------1T,a0r,s'u,+
  suu+N:su. 26; ! (26_S -> +S) a0: suu, a0r: su
+ suu+N+Sg+Ill:suhu GI; ! 26_S,s'uu,su[hu],------0D,a0r,s'u,*
  suu+N:suu 26_ii; ! (26_S -> +S) a0: suu, a0r: 0
  suutmatus+N:suutmatus 11; ! (11_S -> +S) a0: suutmatus, b0: suutmatuse, b0v: suutmatusi
  suva+N:suva 17; ! (17_S -> +S) a0: suva, a0g: #, a0v: #
@@ -20965,7 +20970,7 @@ LEXICON Nouns
  ukrainlane+N:ukrainla 12_NE-SE-S; ! (12_S -> +S) a0: ukrainlane, b0: ukrainlase, c0: ukrainlas, b0v: ukrainlasi
  ukrainlanna+N:ukrainlanna 16; ! (16_S -> +S) a0: ukrainlanna, a0g: #
  uksik+N:uksik 02_U; ! (02_S -> +S) a0: uksik, b0: uksiku, b0r: 0, c0: 0
- uks+N:uks 14; ! (14_S -> +S) at: uks, (bt): ukse, an: uks, bn: ukse, cn: us, ct: us
+ uks+N:uks 14'; ! (14_S -> +S) at: uks, (bt): ukse, an: uks, bn: ukse, cn: us, ct: us
  ukulele+N:ukulele 16; ! (16_S -> +S) a0: ukulele, a0g: #
  ulaan+N:ulaan 22_I; ! (22_S -> +S) at: ulaan, bt: ulaani, bn: ulaani, btv: ulaane, bnv: ulaane
  ulakus+N:ulakus 11; ! (11_S -> +S) a0: ulakus, b0: ulakuse, b0v: ulakusi
@@ -22774,6 +22779,7 @@ LEXICON Nouns
  öö+N+Pl+Trm:öödeni GI; ! 26_S,'öö,öö[deni],------1R,-,-,+
  öös+N:öös 22_I; ! (22_S -> +S) at: öös, bt: öösi, bn: öösi, btv: ööse, bnv: ööse
  öö+N:ö. 26; ! (26_S -> +S) a0: öö, a0r: ö
+ öö+N+Sg+Ill:öhe GI; ! 26_S,'öö,ö[he],------0D,-,-,*
  üdi+N:üdi 17; ! (17_S -> +S) a0: üdi, a0g: #, a0v: #
  üheline+N:üheli 12_NE-SE-S; ! (12_AS -> +A +S) a0: üheline, b0: ühelise, c0: ühelis, b0v: ühelisi
  ühendamatus+N:ühendamatus 09_E; ! (09_S -> +S) a0: ühendamatus, b0: ühendamatuse

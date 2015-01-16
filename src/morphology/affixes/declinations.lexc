@@ -210,11 +210,14 @@ LEXICON 14_S-NE	!laas
 :si An_Pl_Vok; ! ???
 
 LEXICON 14	!uus
+:$ An_SgAdt_de;
+14;
+
+LEXICON 14'	! uks, laps
 An_SgN;
 :e$ An_SgG;
 ! :e$ An_SgG_der;
 :$ An_SgP_t;
-:$ An_SgAdt_de;
 :$ An_PlG_te;
 :i An_PlP_V;
 :i An_Pl_Vok;
