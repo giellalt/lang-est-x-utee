@@ -76,9 +76,15 @@ GT_XML_SRCS=
 
 # Define any additional sources here (compiled on their own, or just included
 # in the distro):
-GT_LOCAL_SRCS=overriding-exceptions.lexc numbers.lexc
+GT_LOCAL_SRCS=overriding-exceptions.all.lexc numbers.lexc
 
 ### BEGIN: Local processing: ###
+multichars.txt:	root.lexc
+	$(AM_V_GEN)sed -e '/^LEXICON/,$$ d' $^ > $@
+
+overriding-exceptions.all.lexc:	multichars.txt overriding-exceptions.lexc
+	$(AM_V_GEN)cat $^ > $@
+
 
 
 ### END: Local processing: ###

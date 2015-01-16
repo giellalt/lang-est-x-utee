@@ -211,7 +211,7 @@ LEXICON 14_S-NE	!laas
 
 LEXICON 14	!uus
 :$ An_SgAdt_de;
-14;
+14';
 
 LEXICON 14'	! uks, laps
 An_SgN;
@@ -588,6 +588,7 @@ LEXICON An_SgN  ! Sg Nom
 
 LEXICON An_SgG  ! SgG analoogiarühm
  +Sg+Gen:0 GI;
+ +Sg+Gen+Attr:0 Der_GenAttr;
  +Sg:0 KÄÄNE_1;
  +Pl+Nom:+d GI;
  +Comp:+m 02_A;
@@ -699,6 +700,8 @@ LEXICON KÄÄNE_2  ! käändelõpud illatiivist translatiivini (mitmus)
  +Abl:+lt GI;
  +Tra:+ks GI;
 
+LEXICON Der_GenAttr
+@R.Cap.Opt@ GI;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! liitsõnade moodustamine

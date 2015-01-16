@@ -9,9 +9,9 @@ LEXICON Root
 < Tähtsõne 0:"+Pron" [0:"+Sg" | 0:"+Pl"] [0:?] s u g u n e "+Pron":"+A" ArvJaKääne Gi > #;
 
 <
-[
-	~[ ?* "#" l a "+N" ArvJaKääne ("#" ?*) | (?* "#") l a "+N" ArvJaKääne "#" ?*  ]
+[	?*
 ]
 > #;
 
+!	Flags ~[ FlagsOrAny* "#" l a "+N" ArvJaKääne ("#" FlagsOrAny*) | (FlagsOrAny* "#") l a "+N" ArvJaKääne "#" FlagsOrAny*  ]
  

@@ -65,6 +65,9 @@ Multichar_Symbols
 +Comp	! komparatiiv	! comparative
 +Superl	! superlatiiv	! superlative
 
+! genitiivatribuut?
++Attr
+
 
 ! verb
 ! finiitsed (pöördelised) ja infiniitsed (nn käänduvad) vormid
@@ -304,6 +307,16 @@ Q1	! gi/ki
 +Hom1 
 +Hom2
 
+! To allow just some derivations of proper names
++Sem/Plc 
+
+
+! Flag diagritics
+! downcasing for proper name derivations
+@U.Cap.Obl@
+@U.Cap.Opt@
+@R.Cap.Opt@ 
+
 LEXICON Root
   Tüved;
   Kohalikud_erandid;
@@ -319,7 +332,8 @@ PrePostPositions;
 Pronouns;
 Verbs;
 GenAttributes;
-ProperNames;
+@U.Cap.Obl@ ProperNames;
+@U.Cap.Opt@ ProperNames;
 Conjunctions;
 Punctuation; !TT
 ! DIGITS; !TT

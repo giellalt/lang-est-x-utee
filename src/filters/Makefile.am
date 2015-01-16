@@ -44,10 +44,15 @@ GIELLA_FILTER_LOCAL_GENERATED_LEXC_SRCS=compound_filter.lexc compound_mask.lexc
 EXTRA_SRCS=compound_definitions.lexc compound_filter_base.lexc
 
 ########## Add local build rules below here: ############
-compound_filter.lexc: compound_definitions.lexc compound_filter_base.lexc
+
+# .txt (and not .lexc) to get make clean to remove it. 
+multichars.txt: ../morphology/root.lexc
+	$(AM_V_GEN)sed -e '/^LEXICON/,$$ d' $^ > $@
+
+compound_filter.lexc: multichars.txt compound_definitions.lexc compound_filter_base.lexc
 	$(AM_V_GEN)cat $^ > $@
 
-compound_mask.lexc:	compound_definitions.lexc compound_rules.lexc
+compound_mask.lexc: multichars.txt compound_definitions.lexc compound_rules.lexc
 	$(AM_V_GEN)cat $^ > $@
 
 ############### END: Local modifications ################

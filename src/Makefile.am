@@ -74,11 +74,11 @@ generator-raw-gt-desc-simple-with-av.hfst: morphology/lexicon.hfst inverted-phon
 generator-raw-gt-desc-simple-full.hfst: \
 				generator-raw-gt-desc-simple-with-av.hfst \
 				filters/deriv_filter.hfst \
-				morphology/overriding-exceptions.hfst \
+				morphology/overriding-exceptions.all.hfst \
 				morphology/numbers.hfst \
 				phonology/$(GTLANG)-phon.compose.hfst
-	$(AM_V_RGX2FST)$(PRINTF) '[ @"filters/deriv_filter.hfst" .o. [ [@"morphology/overriding-exceptions.hfst"] | [ ~[[@"morphology/overriding-exceptions.hfst"].u] .o. @"generator-raw-gt-desc-simple-with-av.hfst"]] .o. ~$$ [ "{" "}" ]]' | \
-	$(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) | \
+	$(AM_V_RGX2FST)$(PRINTF) '[ @"filters/deriv_filter.hfst" .o. [ [@"morphology/overriding-exceptions.all.hfst"] | [ ~[[@"morphology/overriding-exceptions.all.hfst"].u] .o. @"generator-raw-gt-desc-simple-with-av.hfst"]] .o. ~$$ [ "{" "}" ]]' | \
+	$(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) -x true | \
 	$(HFST_COMPOSE_INTERSECT) $(VERBOSITY) $(HFST_FLAGS) -2 phonology/$(GTLANG)-phon.compose.hfst | \
 	$(HFST_DISJUNCT) $(VERBOSITY) $(HFST_FLAGS) morphology/numbers.hfst | \
 	$(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
@@ -88,8 +88,9 @@ generator-raw-gt-desc.hfst: \
 			generator-raw-gt-desc-simple-full.hfst \
 			filters/compound_filter.hfst \
 			filters/compound_mask.hfst
-	$(AM_V_RGX2FST)$(PRINTF) '   @"filters/compound_filter.hfst" .o. @"filters/compound_mask.hfst" .o. [("-" "#") [ @"generator-raw-gt-desc-simple-full.hfst" "#" ("-" "#") ]* @"generator-raw-gt-desc-simple-full.hfst" ("#" "-")] .o. [ "#" -> "" ]' | \
-	$(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) | \
+#	$(AM_V_RGX2FST)$(PRINTF) '   @"filters/compound_filter.hfst" .o. @"filters/compound_mask.hfst" .o. [("-" "#") [ @"generator-raw-gt-desc-simple-full.hfst" "#" ("-" "#") ]* @"generator-raw-gt-desc-simple-full.hfst" ("#" "-")] .o. [ "#" -> "" ]' | \
+	$(AM_V_RGX2FST)$(PRINTF) ' @"filters/compound_mask.hfst" .o. [("-" "#") [ @"generator-raw-gt-desc-simple-full.hfst" "#" ("-" "#") ]* @"generator-raw-gt-desc-simple-full.hfst" ("#" "-")] .o. [ "#" -> "" ]' | \
+	$(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) -x true | \
 	$(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
 
 #### Xerox build rules: ####
@@ -105,14 +106,14 @@ analyser-raw-gt-desc-simple-with-av.xfst: \
 analyser-raw-gt-desc-simple-full.xfst: \
 				analyser-raw-gt-desc-simple-with-av.xfst \
 				filters/deriv_filter.xfst \
-				morphology/overriding-exceptions.xfst \
+				morphology/overriding-exceptions.all.xfst \
 				morphology/numbers.xfst \
 				phonology/$(GTLANG)-phon.compose.xfst
 	$(AM_V_XFST)$(PRINTF) \
 		'load phonology/$(GTLANG)-phon.compose.xfst\nintersect net\nsave stack intersected-phonology.tmp.xfst\nquit\n' | \
 		 $(XFST) $(VERBOSITY) $(XFSTFLAGS)
 	$(AM_V_XFST)$(PRINTF) \
-		'read regex [ @"filters/deriv_filter.xfst" .o. [   [@"morphology/overriding-exceptions.xfst"] .P. [@"analyser-raw-gt-desc-simple-with-av.xfst"]] .o. ~$$[ "{" "}" ] .o. @"intersected-phonology.tmp.xfst"] | @"morphology/numbers.xfst";\nsave stack $@\nquit\n' | \
+		'read regex [ @"filters/deriv_filter.xfst" .o. [   [@"morphology/overriding-exceptions.all.xfst"] .P. [@"analyser-raw-gt-desc-simple-with-av.xfst"]] .o. ~$$[ "{" "}" ] .o. @"intersected-phonology.tmp.xfst"] | @"morphology/numbers.xfst";\nsave stack $@\nquit\n' | \
 	        $(XFST) $(VERBOSITY) $(XFSTFLAGS)
 	$(AM_V_at)rm -f intersected-phonology.tmp.xfst
 

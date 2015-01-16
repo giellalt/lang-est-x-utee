@@ -1,30 +1,3 @@
-! Copyright © 2010 by Jaak Pruulmann-Vengerfeldt.
-! All rights reserved.
-
-Multichar_Symbols
-
-+N +Prop +A +Num +Card +Ord +Pron +V +Adv +Interj +CC +CS +Adp +Adv 
-+Dim/ke +Dim/kene 
-+Der +Der/us +Der/lt +Der/ini 
-+Der/nu +Der/tu +Der/tav +Der/v +Der/ja +Der/mine
-+Foc/gi
-+Sg +Pl 
-+Nom +Gen +Par +Ill +Ill +Ine +Ela +All +Ade +Abl +Tra +Trm +Ess +Abe +Com 
-+Comp +Superl 
-+Impers +Pers 
-+Prs +Prt 
-+Ind +Cond +Imprt +Quot 
-+Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3 
-+Aff +Neg 
-+Sup +Inf +Ger +Prc 
-+prefix +suffix
-G1 B1 D1 K1 P1 T1 S1 A1 E1 I1 U1 X2 Q1 
-
-! «7 
-! »7 
-! %'7
- 
-+Hom1 +Hom2
 
 Definitions
     Täht = [ a | b | c | d | e | f | g | h |
@@ -36,9 +9,12 @@ Definitions
 	     Q | R | S | Š | Z | Ž | T | U |
 	     V | W | X | Y | Õ | Ä | Ö | Ü ];
     Arv = [ %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ];
-    Tähtsõne = [Täht | %- | %=]+;
+    Flags = ([ "@U.Cap.Opt@" | "@U.Cap.Obl@" | "@R.Cap.Opt@" ]+);
+    FlagsOrAny = [ Flags | ? ];
+    Tähtsõne = Flags [Täht | %- | %=]+;
     Tuletised = "+Der" [ "+Der/ini" | "+Der/ja" | "+Der/lt" | "+Der/mine" | "+Der/nu" | "+Der/tav" | "+Der/tu" | "+Der/us" | "+Der/v" ];
-    TuletisKäänduvast = ( [ "+A" ("+Comp" | "+Superl") | "+N" | "+V" ] [ Tuletised | "+Dim/ke" | "+Dim/kene" ] );
+    Semantilised = [ "+Sem/Plc" ];
+    TuletisKäänduvast = ( [ "+A" ("+Comp" | "+Superl") | "+N" ("+Prop") | "+V" ] (Semantilised) [ Tuletised | "+Dim/ke" | "+Dim/kene" ] );
     Sona = [[Arv]+ (%- | %. | %,)]* [Arv]+ (%. | %% | %' (%') ) | ([Arv]+) Tähtsõne TuletisKäänduvast;
 
     ArvJaKääne = [ %+Sg | %+Pl ] [ %+Nom | %+Gen | %+Par | %+Ill | %+Ine
@@ -47,6 +23,7 @@ Definitions
 
     PööreJaArv = [ %+Sg1 | %+Sg2 | %+Sg3 | %+Pl1 | %+Pl2 | %+Pl3 ];
     AffNeg = [ %+Aff | %+Neg ];
+    Gi = Flags ( "+Foc/gi" );
 
     VerbiParadigma = %+V [
 		 %+Inf |
@@ -78,23 +55,22 @@ Definitions
 
 !  +A +Adv +G +H +I +J +K +Num +O +Ord +Pron +S +X
 
-    Gi = ( "+gi" );
 
 
     Omadussõna' = Sona "+A" ([ "+Comp" | "+Superl" ]);
     Omadussõna = [ Omadussõna' ArvJaKääne | Sona "+A" ( "+Prc" ) ];
-    Nimisõna' = Sona (["+Hom1" | "+Hom2" ]) "+N" ("+Prop");
+    Nimisõna' = Sona (["+Hom1" | "+Hom2" ]) "+N" ("+Prop" (Semantilised));
     Nimisõna = Nimisõna' ArvJaKääne;
     Arvsõna = Sona "+Num" [ "+Card" | "+Ord" ] (ArvJaKääne);
     Asesõna = Sona [ "+Pron" ] ArvJaKääne;
-    Käänduvsõna = [ Omadussõna | Nimisõna | Arvsõna | Asesõna ] ( "+Foc/gi" );
-    Määrsõna = Sona "+Adv" ( "+Foc/gi" );
+    Käänduvsõna = [ Omadussõna | Nimisõna | Arvsõna | Asesõna ] Gi;
+    Määrsõna = Sona "+Adv" Gi;
     Hüüdsõna = Sona "+Interj";
     Sidesõna = Sona [ "+CC" | "+CS" ];
     Kaassõna = Sona "+Adp";
-    Muusõna = Sona "+Adv" ( "+Foc/gi" );
-    Genatribuut = Sona "+N" "+Sg" "+Gen" ( "+Foc/gi" );
-    Tegusõna = Tähtsõne VerbiParadigma ( "+Foc/gi" ); 
+    Muusõna = Sona "+Adv" Gi;
+    Genatribuut = Sona "+N" "+Prop" "+Sem/Plc" "+Sg" "+Gen" "+Attr" Gi;
+    Tegusõna = Tähtsõne VerbiParadigma Gi; 
     Muutumatusõna = Määrsõna | Hüüdsõna | Sidesõna | Kaassõna | Muusõna | Genatribuut;
 
     SP = ( %# %- ) %#;
