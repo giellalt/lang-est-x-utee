@@ -701,7 +701,7 @@ LEXICON KÄÄNE_2  ! käändelõpud illatiivist translatiivini (mitmus)
  +Tra:+ks GI;
 
 LEXICON Der_GenAttr
-@R.Cap.Opt@ GI;
+@R.Cap.Opt@@C.Cap.Opt@ GI;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! liitsõnade moodustamine

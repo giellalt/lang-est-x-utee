@@ -1,6 +1,9 @@
 ! stressing affix gi/ki can be appended to almost any word form
 
 LEXICON GI  ! liide gi/ki
+@U.Cap.Obl@ GI';
+
+LEXICON GI'
  +Foc/gi:Q1i #;
  #;
 
