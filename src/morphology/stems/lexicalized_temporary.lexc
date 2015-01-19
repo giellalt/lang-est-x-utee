@@ -1004,3 +1004,171 @@ etteütlus+N:etteütlus 09_E; ! (09_S -> +S) a0: ütlus, b0: ütluse
 etteütlus+N:etteütlus 11; ! (11_S -> +S) a0: ütlus, b0: ütluse, b0v: ütlusi
 
 
+! Lisatud Heli jaoks, 19.01.2015 
+
+
+! Eesti:
+!  Eesti+N+Prop+Sem/Plc:Eesti 16; ! (16_H -> +H) a0: eesti, a0g: #
+!   Ida-Eesti:
+Ida-Eesti+N+Prop+Sem/Plc:Ida-Eesti 16; ! (16_H -> +H) a0: eesti, a0g: #
+!   Lõuna-Eesti:
+Lõuna-Eesti+N+Prop+Sem/Plc:Lõuna-Eesti 16; ! (16_H -> +H) a0: eesti, a0g: #
+!   Lääne-Eesti:
+Lääne-Eesti+N+Prop+Sem/Plc:Lääne-Eesti 16; ! (16_H -> +H) a0: eesti, a0g: #
+!   Põhja-Eesti:
+Põhja-Eesti+N+Prop+Sem/Plc:Põhja-Eesti 16; ! (16_H -> +H) a0: eesti, a0g: #
+
+! imeja:
+! (|:\+ja )
+!  ja+N:+ja 01;
+!   tolmuimeja:
+tolmuimeja+N:tolmuimeja 01;
+
+! jutt:
+!  jutt+N:jutT1 22_U; ! (22_S -> +S) at: jutt, bt: juttu, bn: jutu, btv: jutte, bnv: jute
+!   muinasjutt:
+muinasjutt+N:muinasjutT1 22_U; ! (22_S -> +S) at: jutt, bt: juttu, bn: jutu, btv: jutte, bnv: jute
+
+! jäänu:
+!  jäänu+N:jäänu 01; ! (01_S -> +S) a0: jäänu, a0r: 0
+!   ülejäänu:
+ülejäänu+N:ülejäänu 01; ! (01_S -> +S) a0: jäänu, a0r: 0
+
+! liha:
+!  liha+N:lih=a 17_Adt; ! (17_S -> +S) a0: liha, a0g: lihha, a0v: #
+!   hakkliha:
+hakkliha+N:hakklih=a 17_Adt; ! (17_S -> +S) a0: liha, a0g: lihha, a0v: #
+
+! mees:
+!  mees+N:mees An_PlG_te;
+!   põllumees:
+põllumees+N:põllumees An_PlG_te;
+!  mees+N:mees An_SgN;
+!   põllumees:
+põllumees+N:põllumees An_SgN;
+!  mees+N:mees An_SgP_t;
+!   põllumees:
+põllumees+N:põllumees An_SgP_t;
+!  mees+N:mehe$ An_SgG;
+!   põllumees:
+põllumees+N:põllumehe$ An_SgG;
+!  mees+N:mehe$ An_SgG_der; ! ?? need tuletised on ka erandlikud?
+!   põllumees:
+põllumees+N:põllumehe$ An_SgG_der; ! ?? need tuletised on ka erandlikud?
+!  mees+N:mehi An_PlP_V;
+!   põllumees:
+põllumees+N:põllumehi An_PlP_V;
+!  mees+N+Pl+Par:mehi GI; ! 13_S,m'ees,mehi[],------1P,-,-,*
+!   põllumees:
+põllumees+N+Pl+Par:põllumehi GI; ! 13_S,m'ees,mehi[],------1P,-,-,*
+
+! piim:
+!  piim+Hom1+N:piim 22_A; ! (22_S -> +S) at: piim, bt: piima, bn: piima, btv: piimu, bnv: piimu
+!   kohupiim:
+kohupiim+Hom1+N:kohupiim 22_A; ! (22_S -> +S) at: piim, bt: piima, bn: piima, btv: piimu, bnv: piimu
+
+! päev:
+!  päev+N:päev 22_A; ! (22_S -> +S) at: päev, bt: päeva, bn: päeva, btv: päevi, bnv: päevi
+!   kolmapäev:
+kolmapäev+N:kolmapäev 22_A; ! (22_S -> +S) at: päev, bt: päeva, bn: päeva, btv: päevi, bnv: päevi
+!   teisipäev:
+teisipäev+N:teisipäev 22_A; ! (22_S -> +S) at: päev, bt: päeva, bn: päeva, btv: päevi, bnv: päevi
+
+! raud:
+!  raud+N:rauD1 22_A; ! (22_S -> +S) at: raud, bt: rauda, bn: raua, btv: raudu, bnv: 0
+!   triikraud:
+triikraud+N:triikrauD1 22_A; ! (22_S -> +S) at: raud, bt: rauda, bn: raua, btv: raudu, bnv: 0
+
+! sepp:
+!  sepp+N:sepP1 22_A; ! (22_S -> +S) at: sepp, bt: seppa, bn: sepa, btv: seppi, bnv: sepi
+!   torulukksepp:
+torulukksepp+N:torulukksepP1 22_A; ! (22_S -> +S) at: sepp, bt: seppa, bn: sepa, btv: seppi, bnv: sepi
+
+! suhe:
+!  suhe+N:suhT1e 06; ! (06_S -> +S) an: suhe, at: suhte
+!   välissuhe:
+välissuhe+N:välissuhT1e 06; ! (06_S -> +S) an: suhe, at: suhte
+
+! tarve:
+!  tarve+N:tarB1e 06; ! (06_S -> +S) an: tarve, at: tarbe
+!   kirjatarve:
+kirjatarve+N:kirjatarB1e 06; ! (06_S -> +S) an: tarve, at: tarbe
+
+! tee:
+!  tee+N+Pl+Abe:teedeta GI; ! 26_S,t'ee,tee[deta],------1A,a0r,t'e,+
+!   maantee:
+maantee+N+Pl+Abe:maanteedeta GI; ! 26_S,t'ee,tee[deta],------1A,a0r,t'e,+
+!   puiestee:
+puiestee+N+Pl+Abe:puiesteedeta GI; ! 26_S,t'ee,tee[deta],------1A,a0r,t'e,+
+!  tee+N+Pl+Abl:teedelt GI; ! 26_S,t'ee,tee[delt],------16,a0r,t'e,+
+!   maantee:
+maantee+N+Pl+Abl:maanteedelt GI; ! 26_S,t'ee,tee[delt],------16,a0r,t'e,+
+!   puiestee:
+puiestee+N+Pl+Abl:puiesteedelt GI; ! 26_S,t'ee,tee[delt],------16,a0r,t'e,+
+!  tee+N+Pl+Ade:teedel GI; ! 26_S,t'ee,tee[del],------15,a0r,t'e,+
+!   maantee:
+maantee+N+Pl+Ade:maanteedel GI; ! 26_S,t'ee,tee[del],------15,a0r,t'e,+
+!   puiestee:
+puiestee+N+Pl+Ade:puiesteedel GI; ! 26_S,t'ee,tee[del],------15,a0r,t'e,+
+!  tee+N+Pl+All:teedele GI; ! 26_S,t'ee,tee[dele],------14,a0r,t'e,+
+!   maantee:
+maantee+N+Pl+All:maanteedele GI; ! 26_S,t'ee,tee[dele],------14,a0r,t'e,+
+!   puiestee:
+puiestee+N+Pl+All:puiesteedele GI; ! 26_S,t'ee,tee[dele],------14,a0r,t'e,+
+!  tee+N+Pl+Com:teedega GI; ! 26_S,t'ee,tee[dega],------1K,a0r,t'e,+
+!   maantee:
+maantee+N+Pl+Com:maanteedega GI; ! 26_S,t'ee,tee[dega],------1K,a0r,t'e,+
+!   puiestee:
+puiestee+N+Pl+Com:puiesteedega GI; ! 26_S,t'ee,tee[dega],------1K,a0r,t'e,+
+!  tee+N+Pl+Ela:teedest GI; ! 26_S,t'ee,tee[dest],------13,a0r,t'e,+
+!   maantee:
+maantee+N+Pl+Ela:maanteedest GI; ! 26_S,t'ee,tee[dest],------13,a0r,t'e,+
+!   puiestee:
+puiestee+N+Pl+Ela:puiesteedest GI; ! 26_S,t'ee,tee[dest],------13,a0r,t'e,+
+!  tee+N+Pl+Ess:teedena GI; ! 26_S,t'ee,tee[dena],------1E,a0r,t'e,+
+!   maantee:
+maantee+N+Pl+Ess:maanteedena GI; ! 26_S,t'ee,tee[dena],------1E,a0r,t'e,+
+!   puiestee:
+puiestee+N+Pl+Ess:puiesteedena GI; ! 26_S,t'ee,tee[dena],------1E,a0r,t'e,+
+!  tee+N+Pl+Gen:teede GI; ! 26_S,t'ee,tee[de],------1G,a0r,t'e,+
+!   maantee:
+maantee+N+Pl+Gen:maanteede GI; ! 26_S,t'ee,tee[de],------1G,a0r,t'e,+
+!   puiestee:
+puiestee+N+Pl+Gen:puiesteede GI; ! 26_S,t'ee,tee[de],------1G,a0r,t'e,+
+!  tee+N+Pl+Ill:teedesse GI; ! 26_S,t'ee,tee[desse],------11,a0r,t'e,+
+!   maantee:
+maantee+N+Pl+Ill:maanteedesse GI; ! 26_S,t'ee,tee[desse],------11,a0r,t'e,+
+!   puiestee:
+puiestee+N+Pl+Ill:puiesteedesse GI; ! 26_S,t'ee,tee[desse],------11,a0r,t'e,+
+!  tee+N+Pl+Ine:teedes GI; ! 26_S,t'ee,tee[des],------12,a0r,t'e,+
+!   maantee:
+maantee+N+Pl+Ine:maanteedes GI; ! 26_S,t'ee,tee[des],------12,a0r,t'e,+
+!   puiestee:
+puiestee+N+Pl+Ine:puiesteedes GI; ! 26_S,t'ee,tee[des],------12,a0r,t'e,+
+!  tee+N+Pl+Tra:teedeks GI; ! 26_S,t'ee,tee[deks],------1T,a0r,t'e,+
+!   maantee:
+maantee+N+Pl+Tra:maanteedeks GI; ! 26_S,t'ee,tee[deks],------1T,a0r,t'e,+
+!   puiestee:
+puiestee+N+Pl+Tra:puiesteedeks GI; ! 26_S,t'ee,tee[deks],------1T,a0r,t'e,+
+!  tee+N+Pl+Trm:teedeni GI; ! 26_S,t'ee,tee[deni],------1R,a0r,t'e,+
+!   maantee:
+maantee+N+Pl+Trm:maanteedeni GI; ! 26_S,t'ee,tee[deni],------1R,a0r,t'e,+
+!   puiestee:
+puiestee+N+Pl+Trm:puiesteedeni GI; ! 26_S,t'ee,tee[deni],------1R,a0r,t'e,+
+!  tee+N:te. 26; ! (26_S -> +S) a0: tee, a0r: te
+!   maantee:
+maantee+N:maante. 26; ! (26_S -> +S) a0: tee, a0r: te
+!   puiestee:
+puiestee+N:puieste. 26; ! (26_S -> +S) a0: tee, a0r: te
+!  tee+N:tee 26_ii; ! (26_S -> +S) a0: tee, a0r: 0
+!   maantee:
+maantee+N:maantee 26_ii; ! (26_S -> +S) a0: tee, a0r: 0
+!   puiestee:
+puiestee+N:puiestee 26_ii; ! (26_S -> +S) a0: tee, a0r: 0
+
+! õde:
+!  õde+N:õD1e 18; ! (18_S -> +S) at: õde, an: õe, atv: #, atg: #, anv: #
+!   medõde:
+medõde+N:medõD1e 18; ! (18_S -> +S) at: õde, an: õe, atv: #, atg: #, anv: #
+
+

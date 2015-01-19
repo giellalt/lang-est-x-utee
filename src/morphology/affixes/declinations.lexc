@@ -298,15 +298,16 @@ An_SgN;
 :i$ TP_22bn;
 :i TP_22bt;
 
-LEXICON 22_FI  !proff, nišš
-:X2 An_SgN;
-:i$ TP_22bn;
-:X2i TP_22bt;
-
 LEXICON 22_KPT_I !sigaret, kompvek, piiskop
 :$ An_SgN; !!!
 :i$ TP_22bn;
 :i TP_22bt;
+
+LEXICON 22_FI  !proff, nišš
+ :X2 An_SgN;
+ :i$ TP_22bn;
+ :X2i TP_22bt;
+
 
 LEXICON 22_U  !tikk
 An_SgN;

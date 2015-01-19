@@ -7,12 +7,14 @@ a b c d e f g h i j k l m n o p q r s š z ž t u v õ ä ö ü x y
 A B C D E F G H I J K L M N O P Q R S Š Z Ž T U V Õ Ä Ö Ü X Y 
 
 G1:g G1:0 B1:b B1:0 B1:m D1:d D1:0 D1:l D1:n D1:r K1:k K1:g K1:0 P1:p P1:b P1:0 T1:t
-T1:d T1:0 S1:s S1:0 S1:r %+:0 %$:0 %&:0 A1:a A1:0 E1:e E1:0 I1:i I1:0 U1:u U1:0 %.:a %.:e 
+T1:d T1:0 S1:s S1:0 S1:r %+:0 %$:0 A1:a A1:0 E1:e E1:0 I1:i I1:0 U1:u U1:0 %.:a %.:e 
 %.:o %.:u %.:ö %.:ä %.:i %.:0 %=:0 %=:h %=:m %=:s %=:k %=:p %=:t %=:f %=:š X2:0 %!:0 Q1:k %-:%-
 
 «7:« 
 »7:»  
 %'7:%'
+
+#
 
 ;
 
@@ -34,13 +36,13 @@ Sets
   AVKlus = K1 P1 T1 ;
   NorkKlus = g b d G1 B1 D1 ;
   Liq = l r ;
-  TavaKons = f h j l m n r s š  v ;
+  TavaKons = f h j l m n r s š v ;
 
 
 Definitions
-  Algus = [.#. (Kons+) | %&: (Kons+)] ;  ! silbi/sõna algus
-  Piir = [.#. | %+: | %&:] ;    ! morfeemidevaheline piir
-  SonaPiir = [ .#. | %&: ];
+  Algus = [.#. (Kons+) | # (Kons+)] ;  ! silbi/sõna algus
+  Piir = [.#. | %+: | %#] ;    ! morfeemidevaheline piir
+  SonaPiir = [ .#. | # ];
   MitteSpr = [ [ ? - %!:0 ] | .#. ];
 
 Rules
@@ -181,18 +183,18 @@ matched;
 
 "Konsonandi kahekordistumine"   !nt. elu-ellu, nime-nimme, tulema-tulla
 
-  %=:Kons1 <=> Kons1 _ (TyveVok:) X2:;	!mitte-klusiilid
+  %=:Kons1 <=> Kons1 _ (TyveVok:) X2:0;	!mitte-klusiilid
                      where Kons1 in TavaKons;
 
 "Konsonandi/klusiili kahekordistumine nimetavas" ! nikkel, kimmel
 
-  %=:KonsKlus <=> KonsKlus _ VaheVok: ? X2:;
+  %=:KonsKlus <=> KonsKlus _ VaheVok: ? X2:0;
   		     where KonsKlus in (TavaKons Klus);
 
 "Nõrga klusiili pikendamine III-välteliseks - 1"
  !vagu-vao-vakku, saba-saba-sappa, tuba-toa-tuppa, ladu-lao-lattu
 
-  %=:Klus <=>  NorkKlus: _ (TyveVok:) X2:; !klusiilid
+  %=:Klus <=>  NorkKlus: _ (TyveVok:) X2:0; !klusiilid
               where NorkKlus in (g G1 b B1 d D1)
       	                Klus in (k k p p t t)
               matched;
@@ -276,14 +278,15 @@ o:õ <=> [ j | l | t ] _ %.: %+: i [ SonaPiir | d | n | m e | t e];
 
 "Konsonantühendi reegel "    ! Konsonantühendis kirjutatakse kõik häälikud ühekordselt, nt. kukkru->kukru, kristallne->kristalne.
 
-  Kons1:0 <=> Vok _ :Kons1 [:0 - %&:0]+ [Kons - Kons1]; ! vähemalt morfeemipiir võiks vahele jääda. 
+  Kons1:0 <=> Vok _ :Kons1 [:0 - #]+ [Kons - Kons1]; ! vähemalt morfeemipiir võiks vahele jääda. 
              where Kons1 in KonsKP;
 
 
-"Liitsõnapiirile sidekriips kolme ühesuguse hääliku korral"	!nt. plekk-katus, jää-äär
-
-  %&:%- <=> :Xx1 (:0) :Xx1 (:0) _ :Xx1; where Xx1 in (a e f h i k l m n o p r s š t u õ ä ö ü);
-
+! liitsõnad on esialgu niikuinii teisiti tehtud. 
+!"Liitsõnapiirile sidekriips kolme ühesuguse hääliku korral"	!nt. plekk-katus, jää-äär
+!
+!  %#:%- <=> :Xx1 (:0) :Xx1 (:0) _ :Xx1; where Xx1 in (a e f h i k l m n o p r s š t u õ ä ö ü);
+!
 
 
 
