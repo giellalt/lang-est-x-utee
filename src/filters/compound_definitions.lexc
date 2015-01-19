@@ -9,7 +9,7 @@ Definitions
 	     Q | R | S | Š | Z | Ž | T | U |
 	     V | W | X | Y | Õ | Ä | Ö | Ü ];
     Arv = [ %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ];
-    Flags = ([ "@U.Cap.Opt@" | "@U.Cap.Obl@" | "@R.Cap.Opt@" | "@C.Cap.Opt@" ]+);
+    Flags = ([ "@U.Cap.Opt@" | "@U.Cap.Obl@" | "@R.Cap.Opt@" | "@C.Cap@" ]+);
     FlagsOrAny = [ Flags | ? ];
     Tähtsõne = Flags [Täht | %- | %=]+;
     Tuletised = "+Der" [ "+Der/ini" | "+Der/ja" | "+Der/lt" | "+Der/mine" | "+Der/nu" | "+Der/tav" | "+Der/tu" | "+Der/us" | "+Der/v" ];
