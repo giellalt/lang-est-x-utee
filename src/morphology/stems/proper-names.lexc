@@ -12,14 +12,25 @@ LEXICON ProperNames
  Euroopa+N+Prop+Sem/Plc:Euroopa 01; ! (01_H -> +H) a0: euroopa, a0r: 0
  Helsingi+N+Prop+Sem/Plc:Helsingi 01;
  Hispaania+N+Prop+Sem/Plc:Hispaania 01;
+ Inglismaa+N+Prop+Sem/Plc:Inglisma. 26;
+
  ! ??? internet+N+Prop:Internet 22; ! (22_H -> +H) at: Internet, bt: Internetti, bn: Interneti, btv: Internette, bnv: Internete
  Internet+N+Prop:InternetT1 22_KPT_I; ! (22_H -> +H) at: internet, bt: internetti, bn: interneti, btv: internette, bnv: internete
+ Itaalia+N+Prop+Sem/Plc:Itaalia 01;
+ Leedu+N+Prop+Sem/Plc:Leedu 01;
+ Norra+N+Prop+Sem/Plc:Norra 01;
  Olümpos+N+Prop+Sem/Plc:Olümpos 09_E; ! (09_H -> +H) a0: olümpos, b0: olümpose
  Olümpos+N+Prop+Sem/Plc:Olümpos 11; ! (11_H -> +H) a0: olümpos, b0: olümpose, b0v: olümposi
  Paide+N+Prop+Sem/Plc:Paide 01; ! (01_H -> +H) a0: paide, a0r: 0
+ Poola+N+Prop+Sem/Plc:Poola 01;
+ Prantsusmaa+N+Prop+Sem/Plc:Prantsusma. 26;
  Pärnu+N+Prop+Sem/Plc:Pärnu 01; ! (01_H -> +H) a0: pärnu, a0r: 0
+ Rootsi+N+Prop+Sem/Plc:Rootsi 01;
+ Soome+N+Prop+Sem/Plc:Soome 01;
+ Taani+N+Prop+Sem/Plc:Taani 01;
  Tallinn+N+Prop+Sem/Plc:Tallinn 22_A; ! (22_H -> +H) at: tallinn, bt: tallinna, bn: tallinna, btv: tallinnu, bnv: tallinnu
  Tartu+N+Prop+Sem/Plc:Tartu 01; ! (01_H -> +H) a0: tartu, a0r: 0
+ Ungari+N+Prop+Sem/Plc:Ungari 01;
  Venemaa+N+Prop+Sem/Plc:Venema. 26; ! (26_H -> +H) a0: Venemaa, a0r: # 
 
  Jaak+N+Prop:JaaK1 22_U; ! (22_S -> +S) at: jaak, bt: jaaku, bn: jaagu, btv: jaake, bnv: jaage
