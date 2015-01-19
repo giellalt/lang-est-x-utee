@@ -532,10 +532,10 @@ lumememm+N:lumememm 22_E; ! (22_S -> +S) at: memm, bt: memme, bn: memme, btv: me
 ! meri:
 !  meri+N:mer= 20; ! (20_S -> +S) a0: meri, b0: mere, b0g: merre
 !   Läänemeri:
-Läänemeri+N:Läänemer= 20; ! (20_S -> +S) a0: meri, b0: mere, b0g: merre
+Läänemeri+N+Prop:Läänemer= 20; ! (20_S -> +S) a0: meri, b0: mere, b0g: merre
 !  meri+N+Sg+Par:merd GI; ! 20_S,meri,m'er[d],------0P,-,-,*
 !   Läänemeri:
-Läänemeri+N+Sg+Par:Läänemerd GI; ! 20_S,meri,m'er[d],------0P,-,-,*
+Läänemeri+N+Prop+Sg+Par:Läänemerd GI; ! 20_S,meri,m'er[d],------0P,-,-,*
 
 ! märk:
 !  märk+N:märK1 22_I; ! (22_S -> +S) at: märk, bt: märki, bn: märgi, btv: märke, bnv: märge
@@ -1002,4 +1002,5 @@ etteütlus+N:etteütlus 09_E; ! (09_S -> +S) a0: ütlus, b0: ütluse
 !  ütlus+N:ütlus 11; ! (11_S -> +S) a0: ütlus, b0: ütluse, b0v: ütlusi
 !   etteütlus:
 etteütlus+N:etteütlus 11; ! (11_S -> +S) a0: ütlus, b0: ütluse, b0v: ütlusi
+
 

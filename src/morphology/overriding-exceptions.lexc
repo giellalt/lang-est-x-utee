@@ -149,10 +149,10 @@ LEXICON Asendavad_erandid
  laskma+V+Pers+Prs+Imprt+Sg3:lasku GI; ! 34_V,l'ask,l'as[ku],-00300--,-,-,*
  laskma+V+Inf:lasta GI; ! 34_V,l'ask,l'as[ta],1-------,-,-,*
  leem+N+Sg+Par:leent GI; ! 13_S,l'eem,l'een[t],------0P,-,-,*
- ligida+A+Sg+Nom:%{%} GI_0; ! 02_A,ligida,#,------0N,-,-,*
+ ligida+A+Sg+Nom:%{%} GI; ! 02_A,ligida,#,------0N,-,-,*
  lumi+N+Sg+Par:lund GI; ! 20_S,lumi,l'un[d],------0P,-,-,*
- läheda+A+Sg+Nom:%{%} GI_0; ! 02_A,läheda,#,------0N,-,-,*
- lühida+A+Sg+Nom:%{%} GI_0; ! 02_A,lühida,#,------0N,-,-,*
+ läheda+A+Sg+Nom:%{%} GI; ! 02_A,läheda,#,------0N,-,-,*
+ lühida+A+Sg+Nom:%{%} GI; ! 02_A,lühida,#,------0N,-,-,*
  maitsma+V+Pers+Prt+Ind+Pl1+Aff:maitsesime GI; ! 32_V,m'aits,m'aitse[sime],-02041--,-,-,*
  maitsma+V+Pers+Prt+Ind+Sg1+Aff:maitsesin GI; ! 32_V,m'aits,m'aitse[sin],-02011--,-,-,*
  maitsma+V+Pers+Prt+Ind+Pl2+Aff:maitsesite GI; ! 32_V,m'aits,m'aitse[site],-02051--,-,-,*
@@ -262,7 +262,7 @@ LEXICON Asendavad_erandid
  pesema+V+Pers+Prt+Quot:pesnuvat GI; ! 36_V,pese,p'es[nuvat],-01100--,-,-,*
  pesema+V+Impers+Prs+Quot:pestavat GI; ! 36_V,pese,p'es[tavat],-101-0--,-,-,*
  pesema+V+Impers+Sup:pestama GI; ! 36_V,pese,p'es[tama],31------,-,-,*
- pidama+V+Impers+Prt+Cond+Aff:%{%} GI_0; ! 40_V,pida,#,-112-0--,-,-,*
+ pidama+V+Impers+Prt+Cond+Aff:%{%} GI; ! 40_V,pida,#,-112-0--,-,-,*
  pidama+V+Impers+Prt+Cond+Aff:peetuks GI; ! 28_V,pida,p'ee[tuks],-112-0--,-,-,*
  pidama+V+Pers+Prt+Cond+Pl1+Aff:pidanuksime GI; ! 40_V,pida,pida[nuksime],-01241--,-,-,*
  pidama+V+Pers+Prt+Cond+Sg1+Aff:pidanuksin GI; ! 40_V,pida,pida[nuksin],-01211--,-,-,*
@@ -270,7 +270,7 @@ LEXICON Asendavad_erandid
  pidama+V+Pers+Prt+Cond+Sg2+Aff:pidanuksid GI; ! 40_V,pida,pida[nuksid],-01221--,-,-,*
  pidama+V+Pers+Prt+Cond+Pl3+Aff:pidanuksid GI; ! 40_V,pida,pida[nuksid],-01261--,-,-,*
  pidama+V+Pers+Prt+Cond+Sg3+Aff:pidanuks GI; ! 40_V,pida,pida[nuks],-01200--,-,-,*
- pidama+V+Impers+Prs+Cond+Aff:%{%} GI_0; ! 40_V,pida,#,-102-0--,-,-,*
+ pidama+V+Impers+Prs+Cond+Aff:%{%} GI; ! 40_V,pida,#,-102-0--,-,-,*
  pidama+V+Impers+Prs+Cond+Aff:peetaks GI; ! 28_V,pida,p'ee[taks],-102-0--,-,-,*
  pidama+V+Pers+Prs+Cond+Pl1+Aff:peaksime GI; ! 40_V,pida,p'ea[ksime],-00241--,-,-,*
  pidama+V+Pers+Prs+Cond+Sg1+Aff:peaksin GI; ! 40_V,pida,p'ea[ksin],-00211--,-,-,*
@@ -278,14 +278,14 @@ LEXICON Asendavad_erandid
  pidama+V+Pers+Prs+Cond+Sg2+Aff:peaksid GI; ! 40_V,pida,p'ea[ksid],-00221--,-,-,*
  pidama+V+Pers+Prs+Cond+Sg3+Aff:peaks GI; ! 40_V,pida,p'ea[ks],-00200--,-,-,*
  pidama+V+Pers+Prs+Cond+Pl3+Aff:peaksid GI; ! 40_V,pida,p'ea[ksid],-00261--,-,-,*
- pidama+V+Ger:%{%} GI_0; ! 40_V,pida,#,2-------,-,-,*
+ pidama+V+Ger:%{%} GI; ! 40_V,pida,#,2-------,-,-,*
  pidama+V+Impers+Prs+Imprt:%{%} afneg_0; ! 40_V,pida,#,-103-0--,-,-,*
  pidama+V+Impers+Prs+Imprt:peetagu GI; ! 28_V,pida,p'ee[tagu],-103-0--,-,-,*
  pidama+V+Pers+Prs+Imprt+Pl1:%{%} afneg_0; ! 40_V,pida,#,-00340--,-,-,*
  pidama+V+Pers+Prs+Imprt+Pl2:%{%} afneg_0; ! 40_V,pida,#,-00350--,-,-,*
  pidama+V+Pers+Prs+Imprt+Sg2:%{%} afneg_0; ! 40_V,pida,#,-00320--,-,-,*
  pidama+V+Pers+Prs+Imprt+Sg3:%{%} afneg_0; ! 40_V,pida,#,-00300--,-,-,*
- pidama+V+Impers+Prt+Ind+Aff:%{%} GI_0; ! 40_V,pida,#,-120-1--,-,-,*
+ pidama+V+Impers+Prt+Ind+Aff:%{%} GI; ! 40_V,pida,#,-120-1--,-,-,*
  pidama+V+Impers+Prt+Ind+Aff:peeti GI; ! 28_V,pida,p'ee[ti],-120-1--,-,-,*
  pidama+V+Pers+Prt+Ind+Pl1+Aff:pidime GI; ! 40_V,pida,pid[ime],-02041--,-,-,*
  pidama+V+Pers+Prt+Ind+Sg1+Aff:pidin GI; ! 40_V,pida,pid[in],-02011--,-,-,*
@@ -293,9 +293,9 @@ LEXICON Asendavad_erandid
  pidama+V+Pers+Prt+Ind+Sg2+Aff:pidid GI; ! 40_V,pida,pid[id],-02021--,-,-,*
  pidama+V+Pers+Prt+Ind+Pl3+Aff:pidid GI; ! 40_V,pida,pid[id],-02061--,-,-,*
  pidama+V+Pers+Prt+Ind+Sg3+Aff:pidi GI; ! 40_V,pida,pid[i],-02031--,-,-,*
- pidama+V+Impers+Prs+Ind+Aff:%{%} GI_0; ! 40_V,pida,#,-100-1--,-,-,*
+ pidama+V+Impers+Prs+Ind+Aff:%{%} GI; ! 40_V,pida,#,-100-1--,-,-,*
  pidama+V+Impers+Prs+Ind+Aff:peetakse GI; ! 28_V,pida,p'ee[takse],-100-1--,-,-,*
- pidama+V+Impers+Prs+Ind+Neg:%{%} GI_0; ! 40_V,pida,#,-100-0--,-,-,*
+ pidama+V+Impers+Prs+Ind+Neg:%{%} GI; ! 40_V,pida,#,-100-0--,-,-,*
  pidama+V+Impers+Prs+Ind+Neg:peeta GI; ! 28_V,pida,p'ee[ta],-100-0--,-,-,*
  pidama+V+Pers+Prs+Ind+Neg:pea GI; ! 40_V,pida,p'ea[],-00000--,-,-,*
  pidama+V+Pers+Prs+Ind+Pl1+Aff:peame GI; ! 40_V,pida,p'ea[me],-00041--,-,-,*
@@ -305,25 +305,25 @@ LEXICON Asendavad_erandid
  pidama+V+Pers+Prs+Ind+Pl3+Aff:peavad GI; ! 40_V,pida,p'ea[vad],-00061--,-,-,*
  pidama+V+Pers+Prs+Ind+Sg3+Aff:peab GI; ! 40_V,pida,p'ea[b],-00031--,-,-,*
  pidama+V+Inf:pidada GI; ! 40_V,pida,pida[da],1-------,-,-,*
- pidama+V+Impers+Prt+Prc:%{%} GI_0; ! 40_V,pida,#,411--0--,-,-,*
+ pidama+V+Impers+Prt+Prc:%{%} GI; ! 40_V,pida,#,411--0--,-,-,*
  pidama+V+Impers+Prt+Prc:peetud GI; ! 28_V,pida,p'ee[tud],411--0--,-,-,*
  pidama+V+Pers+Prt+Prc:pidanud GI; ! 40_V,pida,pida[nud],401--0--,-,-,*
- pidama+V+Impers+Prs+Prc:%{%} GI_0; ! 40_V,pida,#,410---0N,-,-,*
+ pidama+V+Impers+Prs+Prc:%{%} GI; ! 40_V,pida,#,410---0N,-,-,*
  pidama+V+Impers+Prs+Prc:peetav GI; ! 28_V,pida,p'ee[tav],410---0N,-,-,*
- pidama+V+Pers+Prs+Prc:%{%} GI_0; ! 40_V,pida,#,400---0N,-,-,*
+ pidama+V+Pers+Prs+Prc:%{%} GI; ! 40_V,pida,#,400---0N,-,-,*
  pidama+V+Impers+Prt+Quot:%{%} afneg_0; ! 40_V,pida,#,-111-0--,-,-,*
  pidama+V+Impers+Prt+Quot:peetuvat GI; ! 28_V,pida,p'ee[tuvat],-111-0--,-,-,*
  pidama+V+Pers+Prt+Quot:pidanuvat GI; ! 40_V,pida,pida[nuvat],-01100--,-,-,*
  pidama+V+Impers+Prs+Quot:%{%} afneg_0; ! 40_V,pida,#,-101-0--,-,-,*
  pidama+V+Impers+Prs+Quot:peetavat GI; ! 28_V,pida,p'ee[tavat],-101-0--,-,-,*
  pidama+V+Pers+Prs+Quot:pidavat GI; ! 40_V,pida,pida[vat],-00100--,-,-,*
- pidama+V+Pers+Sup+Abe:%{%} GI_0; ! 40_V,pida,#,30-----A,-,-,*
- pidama+V+Pers+Sup+Ela:%{%} GI_0; ! 40_V,pida,#,30-----3,-,-,*
+ pidama+V+Pers+Sup+Abe:%{%} GI; ! 40_V,pida,#,30-----A,-,-,*
+ pidama+V+Pers+Sup+Ela:%{%} GI; ! 40_V,pida,#,30-----3,-,-,*
  pidama+V+Pers+Sup+Ill:pidama GI; ! 40_V,pida,pida[ma],30------,-,-,*
- pidama+V+Impers+Sup:%{%} GI_0; ! 40_V,pida,#,31------,-,-,*
+ pidama+V+Impers+Sup:%{%} GI; ! 40_V,pida,#,31------,-,-,*
  pidama+V+Impers+Sup:peetama GI; ! 28_V,pida,p'ee[tama],31------,-,-,*
- pidama+V+Pers+Sup+Ine:%{%} GI_0; ! 40_V,pida,#,30-----2,-,-,*
- pidama+V+Pers+Sup+Tra:%{%} GI_0; ! 40_V,pida,#,30-----T,-,-,*
+ pidama+V+Pers+Sup+Ine:%{%} GI; ! 40_V,pida,#,30-----2,-,-,*
+ pidama+V+Pers+Sup+Tra:%{%} GI; ! 40_V,pida,#,30-----T,-,-,*
  pooma+V+Pers+Prt+Ind+Pl1+Aff:poosime GI; ! 38_V,p'oo,poo[sime],-02041--,-,-,*
  pooma+V+Pers+Prt+Ind+Sg1+Aff:poosin GI; ! 38_V,p'oo,poo[sin],-02011--,-,-,*
  pooma+V+Pers+Prt+Ind+Pl2+Aff:poosite GI; ! 38_V,p'oo,poo[site],-02051--,-,-,*
@@ -418,7 +418,7 @@ LEXICON Asendavad_erandid
  õitsma+V+Pers+Prt+Ind+Sg2+Aff:õitsesid GI; ! 32_V,'õits,'õitse[sid],-02021--,-,-,*
  õitsma+V+Pers+Prt+Ind+Pl3+Aff:õitsesid GI; ! 32_V,'õits,'õitse[sid],-02061--,-,-,*
  õitsma+V+Pers+Prt+Ind+Sg3+Aff:õitses GI; ! 32_V,'õits,'õitse[s],-02031--,-,-,*
-! õlu+N+Sg+Ill:õllesse GI_0; ! 24_S,õlu,#,------0D,-,-,*
+! õlu+N+Sg+Ill:õllesse GI; ! 24_S,õlu,#,------0D,-,-,*
  õlu+N+Sg+Par:õlut GI; ! 24_S,õlu,õlu[t],------0P,-,-,*
  öö+N+Pl+Abl:öilt GI; ! 26_S,'öö,'ö[ilt],------16,-,-,*
  öö+N+Pl+Abl:öödelt GI; ! 26_S,'öö,'öö[delt],------16,-,-,*
@@ -449,12 +449,11 @@ LEXICON afneg_0
  +Neg: #;
 
 LEXICON GI  ! liide gi/ki
+
+@U.Cap.Obl@ GI';
+
+LEXICON GI'
  +Foc/gi:Q1i #;
  #;
-
-LEXICON GI_0
- +Foc/gi: #;
- #;
-
 
 

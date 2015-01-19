@@ -77,8 +77,8 @@ generator-raw-gt-desc-simple-full.hfst: \
 				morphology/overriding-exceptions.all.hfst \
 				morphology/numbers.hfst \
 				phonology/$(GTLANG)-phon.compose.hfst
-	$(AM_V_RGX2FST)$(PRINTF) '[ @"filters/deriv_filter.hfst" .o. [ [@"morphology/overriding-exceptions.all.hfst"] | [ ~[[@"morphology/overriding-exceptions.all.hfst"].u] .o. @"generator-raw-gt-desc-simple-with-av.hfst"]] .o. ~$$ [ "{" "}" ]]' | \
-	$(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) -x true | \
+	$(AM_V_RGX2FST)$(PRINTF) '[ @"filters/deriv_filter.hfst" .o. [ @"morphology/overriding-exceptions.all.hfst" .P. @"generator-raw-gt-desc-simple-with-av.hfst" ] .o. ~$$ [ "{" "}" ]]' | \
+	$(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) -x true -X flag-is-epsilon | \
 	$(HFST_COMPOSE_INTERSECT) $(VERBOSITY) $(HFST_FLAGS) -2 phonology/$(GTLANG)-phon.compose.hfst | \
 	$(HFST_DISJUNCT) $(VERBOSITY) $(HFST_FLAGS) morphology/numbers.hfst | \
 	$(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
@@ -88,10 +88,11 @@ generator-raw-gt-desc.hfst: \
 			generator-raw-gt-desc-simple-full.hfst \
 			filters/compound_filter.hfst \
 			filters/compound_mask.hfst
-#	$(AM_V_RGX2FST)$(PRINTF) '   @"filters/compound_filter.hfst" .o. @"filters/compound_mask.hfst" .o. [("-" "#") [ @"generator-raw-gt-desc-simple-full.hfst" "#" ("-" "#") ]* @"generator-raw-gt-desc-simple-full.hfst" ("#" "-")] .o. [ "#" -> "" ]' | \
 	$(AM_V_RGX2FST)$(PRINTF) ' @"filters/compound_mask.hfst" .o. [("-" "#") [ @"generator-raw-gt-desc-simple-full.hfst" "#" ("-" "#") ]* @"generator-raw-gt-desc-simple-full.hfst" ("#" "-")] .o. [ "#" -> "" ]' | \
 	$(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) -x true | \
 	$(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
+
+#	$(AM_V_RGX2FST)$(PRINTF) '   @"filters/compound_filter.hfst" .o. @"filters/compound_mask.hfst" .o. [("-" "#") [ @"generator-raw-gt-desc-simple-full.hfst" "#" ("-" "#") ]* @"generator-raw-gt-desc-simple-full.hfst" ("#" "-")] .o. [ "#" -> "" ]' | 
 
 #### Xerox build rules: ####
 analyser-raw-gt-desc-simple-with-av.xfst: \
