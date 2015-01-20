@@ -13,7 +13,7 @@
 "<¶>"
 	"¶" Punct
 "<Soome>"
-	"soome" N Sg Gen
+	"Soome" N Prop Sg Nom
 "<jaguneb>"
 	"jagunema" V Pers Prs Ind Sg3 Aff
 "<valdadeks>"
@@ -63,7 +63,7 @@
 "<elanike>"
 	"elanik" N Pl Gen
 "<poolt>"
-	"pool" N Sg Par
+	"poolt" Po
 "<valitav>"
 	"valitav" A Sg Nom
 "<volikogu>"
@@ -121,7 +121,7 @@
 "<kandideerida>"
 	"kandideerima" V Inf
 "<Soome>"
-	"soome" N Sg Gen
+	"Soome" N Prop Sg Gen
 "<kodanikud>"
 	"kodanik" N Pl Nom
 "<ning>"
@@ -157,7 +157,7 @@
 "<.>"
 	"." Punct
 "<Ahvenamaa>"
-	"ahvena#maa" N Sg Gen
+	"Ahvena#maa" N Sg Gen
 "<maakonnas>"
 	"maakond" N Sg Ine
 "<ei>"
@@ -205,7 +205,7 @@
 "<oled>"
 	"olema" V Pers Prs Ind Sg2 Aff
 "<Soome>"
-	"soome" N Sg Gen
+	"soome" N Prop Sg Gen
 "<või>"
 	"või" CC
 "<mõne>"
@@ -223,11 +223,11 @@
 "<,>"
 	"," Punct
 "<Islandi>"
-	"islandi" N Sg Gen
+	"islandi" N Prop Sg Gen
 "<või>"
 	"või" CC
 "<Norra>"
-	"norra" N Sg Gen
+	"norra" N Prop Sg Gen
 "<kodanik>"
 	"kodanik" N Sg Nom
 "<ja>"
@@ -329,7 +329,7 @@
 "<elanud>"
 	"elama" V Pers Past Prc
 "<Soomes>"
-	"Soome" N Prop Sg Ine
+	"soome" N Prop Sg Ine
 "<seisuga>"
 	"seis" N Sg Com
 "<7.9.2012>"
@@ -389,7 +389,7 @@
 "<selle>"
 	"see" Pron Dem Sg Gen
 "<põhjal>"
-	"põhjal" Adp
+	"põhjal" Po
 "<,>"
 	"," Punct
 "<milline>"
@@ -459,7 +459,7 @@
 "<tuleb>"
 	"tulema" V Pers Prs Ind Sg3 Aff
 "<koju>"
-	"kodu" L0 S com sg adit Adv
+	"koju" Adv
 "<¶>"
 	"¶" Punct
 "<Rahvastikuregister>"
@@ -639,7 +639,7 @@
 "<ole>"
 	"olema" V Pers Prs Ind Neg
 "<piiratud>"
-	"piirama" V Impers Past Prc
+	"piiratud" A
 "<teovõimega>"
 	"teo#võime" N Sg Com
 "<ega>"
@@ -647,7 +647,7 @@
 "<eestkoste>"
 	"eest#koste" N Sg Gen
 "<all>"
-	"all" Adp
+	"all" Po
 "<.>"
 	"." Punct
 "<Mõnedel>"
@@ -791,11 +791,9 @@
 "<.>"
 	"." Punct
 "<Kahel>"
-	"kahu" N Pl Ade
 	"kaks" Num Card Sg Ade
 "<või>"
-	"või" N Sg Gen
-	"või" N Sg Nom
+	"või" CC
 "<enamal>"
 	"enam" A Sg Ade
 "<valimisliidul>"
@@ -895,7 +893,7 @@
 "<alusel>"
 	"alus" N Sg Ade
 "<alates>"
-	"alates" Adp
+	"alates" Pe
 "<numbrist>"
 	"number" N Sg Ela
 "<2>"
@@ -925,7 +923,7 @@
 "<kandidaadi>"
 	"kandidaat" N Sg Gen
 "<kohta>"
-	"kohta" Adp
+	"kohta" Po
 "<on>"
 	"olema" V Pers Prs Ind Pl3 Aff
 "<koondnimekirjas>"
@@ -1001,7 +999,7 @@
 "<kuulu>"
 	"kuuluma" V Pers Prs Ind Neg
 "<koalitsiooni>"
-	"koalitsioon" N Sg Par
+	"koalitsioon" N Sg Ill
 "<¶>"
 	"¶" Punct
 "<->"
@@ -1015,7 +1013,7 @@
 "<kuulu>"
 	"kuuluma" V Pers Prs Ind Neg
 "<ühisnimekirja>"
-	"ühis#nimekiri" N Sg Par
+	"ühis#nimekiri" N Sg Ill
 "<.>"
 	"." Punct
 "<Kandidaatide>"
@@ -1055,7 +1053,7 @@
 "<või>"
 	"või" CC
 "<enne>"
-	"enne" Adp
+	"enne" Pe
 "<valimispäeva>"
 	"valimis#päev" N Sg Par
 "<eelhääletusel>"
@@ -1081,7 +1079,7 @@
 "<hääletamise>"
 	"hääletamine" N Sg Gen
 "<eest>"
-	"eest" Adp
+	"eest" Po
 "<on>"
 	"olema" V Pers Prs Ind Sg3 Aff
 "<kriminaalseadustikus>"
@@ -1133,7 +1131,7 @@
 "<ja>"
 	"ja" CC
 "<Soomes>"
-	"Soome" N Prop Sg Ine
+	"soome" N Prop Sg Ine
 "<,>"
 	"," Punct
 "<teisipäeval>"
@@ -1185,13 +1183,13 @@
 "<->"
 	"-" Punct
 "<Soomes>"
-	"Soome" N Prop Sg Ine
+	"soome" N Prop Sg Ine
 "<kohalike>"
 	"kohalik" A Pl Gen
 "<omavalitsuste>"
 	"oma#valitsus" N Pl Gen
 "<poolt>"
-	"pool" N Sg Par
+	"poolt" Po
 "<määratud>"
 	"määratud" A
 "<eelhääletuspaigad>"
@@ -1219,7 +1217,7 @@
 "<mitmed>"
 	"mitu" Pron Indef Pl Nom
 "<Soome>"
-	"soome" N Sg Gen
+	"soome" N Prop Sg Gen
 "<esindused>"
 	"esindus" N Pl Nom
 "<välismaal>"
@@ -1283,7 +1281,7 @@
 "<->"
 	"-" Punct
 "<Soome>"
-	"soome" N Sg Gen
+	"soome" N Prop Sg Gen
 "<laevad>"
 	"laev" N Pl Nom
 "<,>"
@@ -1295,7 +1293,7 @@
 "<eelhääletuse>"
 	"eel#hääletus" N Sg Gen
 "<ajal>"
-	"ajal" Adp
+	"ajal" Po
 "<välismaal>"
 	"välis#maa" N Sg Ade
 "<.>"
@@ -1427,7 +1425,7 @@
 "<pääse>"
 	"pääsema" V Pers Prs Ind Neg
 "<ilma>"
-	"ilma" Adp
+	"ilma" Pe
 "<suurte>"
 	"suur" A Pl Gen
 "<raskusteta>"
@@ -1531,7 +1529,7 @@
 "<kandidaadi>"
 	"kandidaat" N Sg Gen
 "<poolt>"
-	"poolt" Adp
+	"poolt" Po
 "<,>"
 	"," Punct
 "<kes>"
@@ -1643,7 +1641,7 @@
 "<kelle>"
 	"kes" Pron Interr Rel Sg Gen
 "<poolt>"
-	"poolt" Adp
+	"poolt" Po
 "<hääletad>"
 	"hääletama" V Pers Prs Ind Sg2 Aff
 "<.>"
@@ -1659,7 +1657,7 @@
 "<kandidaadi>"
 	"kandidaat" N Sg Gen
 "<poolt>"
-	"pool" N Sg Par
+	"poolt" Po
 "<.>"
 	"." Punct
 "<Märgi>"
@@ -1703,7 +1701,7 @@
 "<sinu>"
 	"sina" Pron Pers Ps2 Sg Gen
 "<poolt>"
-	"pool" N Sg Par
+	"poolt" Po
 "<kirjutatud>"
 	"kirjutatud" A
 "<number>"
@@ -1713,7 +1711,7 @@
 "<sedeli>"
 	"sedel" N Sg Gen
 "<sisse>"
-	"sisse" Adp
+	"sisse" Po
 "<ega>"
 	"ega" CC
 "<ole>"
@@ -1815,7 +1813,7 @@
 "<sinu>"
 	"sina" Pron Pers Ps2 Sg Gen
 "<võime>"
-	"võima" V Pers Prs Ind Pl1 Aff
+	"võime" N Sg Nom
 "<kanda>"
 	"kandma" V Inf
 "<kandidaadi>"
@@ -1885,7 +1883,7 @@
 "<hääletamise>"
 	"hääletamine" N Sg Gen
 "<ajal>"
-	"ajal" Adp
+	"ajal" Po
 "<saadud>"
 	"saadud" A
 "<andmed>"
@@ -1907,7 +1905,7 @@
 "<valimiste>"
 	"valimine" N Pl Gen
 "<kohta>"
-	"kohta" Adp
+	"kohta" Po
 "<annab>"
 	"andma" V Pers Prs Ind Sg3 Aff
 "<valla>"
@@ -1957,7 +1955,7 @@
 "<ja>"
 	"ja" CC
 "<lahtiolekuajad>"
-	"lahti#olekuaj#aeg" N Pl Nom
+	"lahtioleku#aeg" N Pl Nom
 "<,>"
 	"," Punct
 "<kandidaatide>"
@@ -1973,7 +1971,7 @@
 "<valimiste>"
 	"valimine" N Pl Gen
 "<kohta>"
-	"kohta" Adp
+	"kohta" Po
 "<on>"
 	"olema" V Pers Prs Ind Sg3 Aff
 "<ära>"
@@ -1999,7 +1997,7 @@
 "<kandidaatide>"
 	"kandidaat" N Pl Gen
 "<kohta>"
-	"kohta" Adp
+	"kohta" Po
 "<on>"
 	"olema" V Pers Prs Ind Pl3 Aff
 "<justiitsministeeriumi>"
@@ -2017,11 +2015,11 @@
 "<eelhääletuspaikade>"
 	"eel#hääletus#paik" N Pl Gen
 "<kohta>"
-	"kohta" Adp
+	"kohta" Po
 "<augusti>"
 	"august" N Sg Gen
 "<keskel>"
-	"keskel" Adp
+	"keskel" Po
 "<.>"
 	"." Punct
 "<¶>"
