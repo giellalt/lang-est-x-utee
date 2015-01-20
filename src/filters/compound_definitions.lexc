@@ -73,7 +73,8 @@ Definitions
     Tegusõna = Tähtsõne VerbiParadigma Gi; 
     Muutumatusõna = Määrsõna | Hüüdsõna | Sidesõna | Kaassõna | Muusõna | Genatribuut;
 
-    SP = ( %# %- ) %#;
+    SP = Flags ( %# %- ) %#;
     PreKriips = ( %- %# );
     Kriips = %# %-;
+    KriipsugaSP = Flags %# %- %#;
 

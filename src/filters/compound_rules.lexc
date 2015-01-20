@@ -20,7 +20,7 @@ LEXICON Tegusõnad
 LEXICON Nimisõnad 
  < Nimisõna > GI;
 
- < Nimisõna "#" "-" "#" > Nimisõnad; ! rindliitnimisõnad, EKKR SM32
+ < Nimisõna KriipsugaSP > Nimisõnad; ! rindliitnimisõnad, EKKR SM32
 
  < Nimisõna' "+Sg" "+Nom" SP > Tegusõnad; ! EKKR, SM19
  < Nimisõna' "+Sg" "+Nom" Kriips > #;
@@ -30,40 +30,40 @@ LEXICON Nimisõnad
  < Nimisõna' [ "+Sg" [ "+Nom" | "+Gen" ] | "+Pl" "+Gen" | "+prefix" ] SP > Määrsõnad; ! EKKR, S422 ! FIXME: lühitüved
  < Nimisõna' [ "+Sg" [ "+Nom" | "+Gen" ] | "+Pl" "+Gen" | "+prefix" ] Kriips > #;
 
- < Nimisõna' "+Sg" "+Nom" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Nom" > GI; ! aasta-paar, meeter-kaks jms
- < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" > GI;
- < Nimisõna' "+Sg" "+Par" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Par" > GI;
- < Nimisõna' "+Sg" "+Ill" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ill" > GI;
- < Nimisõna' "+Sg" "+Ine" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ine" > GI;
- < Nimisõna' "+Sg" "+Ela" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ela" > GI;
- < Nimisõna' "+Sg" "+All" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+All" > GI;
- < Nimisõna' "+Sg" "+Ade" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ade" > GI;
- < Nimisõna' "+Sg" "+Abl" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Abl" > GI;
- < Nimisõna' "+Sg" "+Tra" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Tra" > GI;
- < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Trm" > GI;
- < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ess" > GI;
- < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Abe" > GI;
- < Nimisõna' "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Com" > GI;
+ < Nimisõna' "+Sg" "+Nom" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Nom" > GI; ! aasta-paar, meeter-kaks jms
+ < Nimisõna' "+Sg" "+Gen" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" > GI;
+ < Nimisõna' "+Sg" "+Par" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Par" > GI;
+ < Nimisõna' "+Sg" "+Ill" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ill" > GI;
+ < Nimisõna' "+Sg" "+Ine" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ine" > GI;
+ < Nimisõna' "+Sg" "+Ela" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ela" > GI;
+ < Nimisõna' "+Sg" "+All" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+All" > GI;
+ < Nimisõna' "+Sg" "+Ade" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ade" > GI;
+ < Nimisõna' "+Sg" "+Abl" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Abl" > GI;
+ < Nimisõna' "+Sg" "+Tra" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Tra" > GI;
+ < Nimisõna' "+Sg" "+Gen" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Trm" > GI;
+ < Nimisõna' "+Sg" "+Gen" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ess" > GI;
+ < Nimisõna' "+Sg" "+Gen" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Abe" > GI;
+ < Nimisõna' "+Sg" "+Gen" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Com" > GI;
 
 LEXICON Arvsõnad
  < Arvsõna > GI;
 
  ! fixme: teistkümned, kümned, sajad
 
- < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Nom" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Nom" > GI; ! üht-teist, viies-kuues jm
- < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" > GI;
- < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Par" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Par" > GI;
- < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ill" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ill" > GI;
- < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ine" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ine" > GI;
- < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ela" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ela" > GI;
- < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+All" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+All" > GI;
- < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ade" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ade" > GI;
- < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Abl" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Abl" > GI;
- < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Tra" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Tra" > GI;
- < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Trm" > GI;
- < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ess" > GI;
- < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Abe" > GI;
- < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" "#" "-" "#" Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Com" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Nom" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Nom" > GI; ! üht-teist, viies-kuues jm
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Par" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Par" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ill" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ill" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ine" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ine" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ela" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ela" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+All" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+All" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ade" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ade" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Abl" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Abl" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Tra" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Tra" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Trm" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Ess" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Abe" > GI;
+ < Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Gen" KriipsugaSP Tähtsõne "+Num" [ "+Card" | "+Ord" ] "+Sg" "+Com" > GI;
 
 LEXICON Omadussõnad
  < Omadussõna > GI;
@@ -147,8 +147,8 @@ LEXICON Asesõnad
  toosama+Pron+Pl+Abe:too+Pron+Pl+Gen#sama+Pron+Pl+Abe GI;
  toosama+Pron+Pl+Com:too+Pron+Pl+Gen#sama+Pron+Pl+Com GI;
 
- < Tähtsõne "+Pron" [ "+Sg" | "+Pl" ] "+Gen" "#" s u g u n e "+A" ArvJaKääne > GI;
- < Tähtsõne "+Pron" [ "+Sg" | "+Pl" ] "+Gen" "#" t a o l i n e "+Pron" ArvJaKääne > GI;
+ < Tähtsõne "+Pron" [ "+Sg" | "+Pl" ] "+Gen" Flags "#" s u g u n e "+A" ArvJaKääne > GI;
+ < Tähtsõne "+Pron" [ "+Sg" | "+Pl" ] "+Gen" Flags "#" t a o l i n e "+Pron" ArvJaKääne > GI;
 
  < Asesõna > GI;
 
