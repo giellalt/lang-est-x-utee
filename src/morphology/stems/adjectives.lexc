@@ -3405,8 +3405,8 @@ LEXICON Adjectives
  lömakil+A:lömakil GI; ! (41_DA -> +Adv +A) 
  lömmis+A:lömmis GI; ! (41_DA -> +Adv +A) 
  löntis+A:löntis GI; ! (41_DA -> +Adv +A) 
- lörts+A:lörts 22_I; ! (22_SA -> +A +S) at: lörts, bt: lörtsi, bn: lörtsi, btv: lörtse, bnv: lörtse
- lörts+A:lörts 22_U; ! (22_SA -> +A +S) at: lörts, bt: lörtsu, bn: lörtsu, btv: lörtse, bnv: lörtse
+ lörts+Hom1+A:lörts 22_I; ! (22_SA -> +A +S) at: lörts, bt: lörtsi, bn: lörtsi, btv: lörtse, bnv: lörtse
+ lörts+Hom2+A:lörts 22_U; ! (22_SA -> +A +S) at: lörts, bt: lörtsu, bn: lörtsu, btv: lörtse, bnv: lörtse
  lörtsine+A:lörtsi 10_NE-SE-S; ! (10_A -> +A) a0: lörtsine, b0: lörtsise, c0: lörtsis
  lörtsum+A:lörtsum 02_A; ! (02_A -> +A) a0: lörtsum, b0: lörtsuma, b0r: 0, c0: 0
  lösakil+A:lösakil GI; ! (41_DA -> +Adv +A) 
@@ -3555,8 +3555,8 @@ LEXICON Adjectives
  matsakas+A:matsak 02_GAS_S-0; ! (02_SA -> +A +S) a0: matsakas, b0: matsaka, b0r: 0, c0: 0
  mats+A:mats 22_I; ! (22_SA -> +A +S) at: mats, bt: matsi, bn: matsi, btv: matse, bnv: matse
  matslik+A:matslikK1 25; ! (25_A -> +A) at: matslik, bt: matslikku, bn: matsliku, btv: matslikke, bnv: matslike
- matt+A:matT1 22_I; ! (22_SA -> +A +S) at: matt, bt: matti, bn: mati, btv: matte, bnv: mate
- matt+A:matT1 22_U; ! (22_SA -> +A +S) at: matt, bt: mattu, bn: matu, btv: matte, bnv: mate
+ matt+Hom1+A:matT1 22_I; ! (22_SA -> +A +S) at: matt, bt: matti, bn: mati, btv: matte, bnv: mate
+ matt+Hom0+A:matT1 22_U; ! (22_SA -> +A +S) at: matt, bt: mattu, bn: matu, btv: matte, bnv: mate
  mattev+A:mat=E1v 02_A; ! (02_A -> +A) a0: mattev, b0: matva, b0r: 0, c0: 0
  mediaalne+A:mediaal 02_NE-SE; ! (02_A -> +A) a0: mediaalne, b0: mediaalse, b0r: 0, c0: mediaal
  mediaanne+A:mediaan 02_NE-SE; ! (02_A -> +A) a0: mediaanne, b0: mediaanse, b0r: 0, c0: mediaan

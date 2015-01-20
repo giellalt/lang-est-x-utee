@@ -304,8 +304,10 @@ Q1	! gi/ki
 !  F = [B|D|G|S];	! laadivahelduslikud konsonandid
 !  Alfa = [C | V];
 
++Hom0
 +Hom1 
 +Hom2
++Hom3
 
 ! To allow just some derivations of proper names
 +Sem/Plc 
@@ -545,14 +547,14 @@ LEXICON Kohalikud_erandid
  pöial+N:pöidla TP_07bt;
 
 ! ??? raag+N:raag 22; ! at: raag, bt: raaga, bn: raa, btv: raagu, bnv: 0
- raag+N:raag An_SgN;
- raag+N:raa$ TP_22bn;
- raag+N:raaga TP_22bt;
+ raag+Hom1+N:raag An_SgN;
+ raag+Hom1+N:raa$ TP_22bn;
+ raag+Hom1+N:raaga TP_22bt;
 
 ! ??? raag+N:raag 22; ! at: raag, bt: raagu, bn: rao, btv: raage, bnv: 0
- raag+N:raag An_SgN;
- raag+N:rao$ TP_22bn;
- raag+N:raagu TP_22bt;
+ raag+Hom2+N:raag An_SgN;
+ raag+Hom2+N:rao$ TP_22bn;
+ raag+Hom2+N:raagu TP_22bt;
 
 ! ??? roe+N:roe 24_A; ! an: roe, bn: rooja, bt: rooja, bnv: rooje, btv: rooje
  roe+N:roe An_SgN;
@@ -560,9 +562,9 @@ LEXICON Kohalikud_erandid
  roe+N:rooja TP_24bt;
 
 ! ??? roog+N:roog 22; ! at: roog, bt: rooga, bn: roa, btv: roogi, bnv: 0
- roog+N:roog An_SgN;
- roog+N:roa$ TP_22bn;
- roog+N:rooga TP_22bt;
+ roog+Hom2+N:roog An_SgN;
+ roog+Hom2+N:roa$ TP_22bn;
+ roog+Hom2+N:rooga TP_22bt;
 
 ! ??? saad+N:saad 22; ! at: saad, bt: saadu, bn: sao, btv: saade, bnv: 0
  saad+N:saad An_SgN;
@@ -575,11 +577,11 @@ LEXICON Kohalikud_erandid
  sae+N:saaja TP_24bt;
 
 ! erandlik tyvemitmus: silm+N:silm 22; ! at: silm, bt: silma, bn: silma, btv: silmi, bnv: silmi
- silm+N:silm An_SgN;
- silm+N:silma$ TP_22bn';
- silm+N:silma TP_22bt';
- silm+N:silmi$ An_Pl_Vok;
- silm+N:silmi An_PlP_V;
+ silm+Hom1+N:silm An_SgN;
+ silm+Hom1+N:silma$ TP_22bn';
+ silm+Hom1+N:silma TP_22bt';
+ silm+Hom1+N:silmi$ An_Pl_Vok;
+ silm+Hom1+N:silmi An_PlP_V;
 
 ! ??? soe+A+N:soe 24_A; ! an: soe, bn: sooja, bt: sooja, bnv: sooje, btv: sooje
  soe+A:soe An_SgN;
