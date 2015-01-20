@@ -33,10 +33,10 @@ Sg+All hobusele@Sg+All hevoselle
 Sg+Ade hobusel@Sg+Ade hevosella
 Sg+Abl hobuselt@Sg+Abl hevoselta
 Sg+Tra hobuseks@Sg+Tra hevoseksi
-Sg+Trm hobuseni@Sg+Gen hevosen (asti)
+Sg+Trm hobuseni@Sg+Ill hevoseen (asti)
 Sg+Ess hobusena@Sg+Ess hevosena
 Sg+Abe hobuseta@Sg+Abe hevosetta
-Sg+Com hobusega@Com hevosine
+Sg+Com hobusega@Com hevosine + Px
 
 # Plural
 
