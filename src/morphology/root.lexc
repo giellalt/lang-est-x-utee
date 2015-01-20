@@ -374,7 +374,7 @@ LEXICON Kohalikud_erandid
  teist+Num+Card:teistküm= 05_E-NE;
  kümmend+Num+Card:küm= 05_E-NE;
 
- ei+V+neg:ei #;
+ ei+V+Neg:ei #;
  siis+CS:siis #;
  kogu+A:kogu GI;
  jah+Adv:jah #;
