@@ -1,0 +1,2031 @@
+"<2012.>"
+	"2012." Num Ord
+"<AASTA>"
+	"aasta" N Sg Gen
+"<KOHALIKE>"
+	"kohalik" A Pl Gen
+"<VALIMISTE>"
+	"valimine" N Pl Gen
+"<TEADAANNE>"
+	"teada#anne" N Sg Nom
+"<¶>"
+	"¶" Punct
+"<¶>"
+	"¶" Punct
+"<Soome>"
+	"soome" N Sg Gen
+"<jaguneb>"
+	"jagunema" V Pers Prs Ind Sg3 Aff
+"<valdadeks>"
+	"vald" N Pl Tra
+"<,>"
+	"," Punct
+"<millel>"
+	"mis" Pron Interr Rel Pl Ade
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<põhiseaduse>"
+	"põhi#seadus" N Sg Gen
+"<kohaselt>"
+	"kohaselt" Adv
+"<omavalitsus>"
+	"oma#valitsus" N Sg Nom
+"<.>"
+	"." Punct
+"<Vallad>"
+	"vald" N Pl Nom
+"<langetavad>"
+	"langetama" V Pers Prs Ind Pl3 Aff
+"<otsuseid>"
+	"otsus" N Pl Par
+"<paljudes>"
+	"palju" Pron Indef Pl Ine
+"<elanikke>"
+	"elanik" N Pl Par
+"<puudutavates>"
+	"puudutav" A Pl Ine
+"<küsimustes>"
+	"küsimus" N Pl Ine
+"<.>"
+	"." Punct
+"<Valla>"
+	"vald" N Sg Gen
+"<kõrgeim>"
+	"kõrge" A Superl Sg Nom
+"<otsuseid>"
+	"otsus" N Pl Par
+"<langetav>"
+	"langetav" A Sg Nom
+"<organ>"
+	"organ" N Sg Nom
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<elanike>"
+	"elanik" N Pl Gen
+"<poolt>"
+	"pool" N Sg Par
+"<valitav>"
+	"valitav" A Sg Nom
+"<volikogu>"
+	"voli#kogu" N Sg Nom
+"<.>"
+	"." Punct
+"<Volikogu>"
+	"voli#kogu" N Sg Gen
+"<liikmed>"
+	"liige" N Pl Nom
+"<ehk>"
+	"ehk" CC
+"<volinikud>"
+	"volinik" N Pl Nom
+"<valitakse>"
+	"valima" V Impers Prs Ind Aff
+"<kohalikel>"
+	"kohalik" A Pl Ade
+"<valimistel>"
+	"valimine" N Pl Ade
+"<korraga>"
+	"korraga" Adv
+"<neljaks>"
+	"neli" Num Card Sg Tra
+"<aastaks>"
+	"aasta" N Sg Tra
+"<.>"
+	"." Punct
+"<Järgmised>"
+	"järgmine" A Pl Nom
+"<kohalikud>"
+	"kohalik" A Pl Nom
+"<valimised>"
+	"valimine" N Pl Nom
+"<on>"
+	"olema" V Pers Prs Ind Pl3 Aff
+"<pühapäeval>"
+	"püha#päev" N Sg Ade
+"<,>"
+	"," Punct
+"<28.10.2012>"
+	"28.10.2012" Num Card
+"<.>"
+	"." Punct
+"<Kohalikel>"
+	"kohalik" A Pl Ade
+"<valimistel>"
+	"valimine" N Pl Ade
+"<saavad>"
+	"saama" V Pers Prs Ind Pl3 Aff
+"<hääletada>"
+	"hääletama" V Inf
+"<ja>"
+	"ja" CC
+"<kandideerida>"
+	"kandideerima" V Inf
+"<Soome>"
+	"soome" N Sg Gen
+"<kodanikud>"
+	"kodanik" N Pl Nom
+"<ning>"
+	"ning" CC
+"<->"
+	"-" Punct
+"<teatud>"
+	"teatud" A
+"<tingimustel>"
+	"tingimus" N Pl Ade
+"<->"
+	"-" Punct
+"<vallas>"
+	"vald" N Sg Ine
+"<elavad>"
+	"elav" A Pl Nom
+"<teiste>"
+	"teine" Pron Dem Pl Gen
+"<riikide>"
+	"riik" N Pl Gen
+"<kodanikud>"
+	"kodanik" N Pl Nom
+"<.>"
+	"." Punct
+"<Hääletamine>"
+	"hääletamine" N Sg Nom
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<Soomes>"
+	"Soome" N Prop Sg Ine
+"<vabatahtlik>"
+	"vaba#tahtlik" A Sg Nom
+"<.>"
+	"." Punct
+"<Ahvenamaa>"
+	"ahvena#maa" N Sg Gen
+"<maakonnas>"
+	"maakond" N Sg Ine
+"<ei>"
+	"ei" V Neg
+"<ole>"
+	"olu" N Pl Par
+"<aastal>"
+	"aasta" N Sg Ade
+"<2012>"
+	"2012" Num Card
+"<kohalikke>"
+	"kohalik" A Pl Par
+"<valimisi>"
+	"valimine" N Pl Par
+"<.>"
+	"." Punct
+"<¶>"
+	"¶" Punct
+"<Hääleõigus>"
+	"hääle#õigus" N Sg Nom
+"<->"
+	"-" Punct
+"<kes>"
+	"kes" Pron Interr Rel Sg Nom
+"<võib>"
+	"võima" V Pers Prs Ind Sg3 Aff
+"<hääletada>"
+	"hääletama" V Inf
+"<¶>"
+	"¶" Punct
+"<¶>"
+	"¶" Punct
+"<Saad>"
+	"saama" V Pers Prs Ind Sg2 Aff
+"<hääletada>"
+	"hääletama" V Inf
+"<kohalikel>"
+	"kohalik" A Pl Ade
+"<valimistel>"
+	"valimine" N Pl Ade
+"<,>"
+	"," Punct
+"<kui>"
+	"kui" CS
+"<oled>"
+	"olema" V Pers Prs Ind Sg2 Aff
+"<Soome>"
+	"soome" N Sg Gen
+"<või>"
+	"või" CC
+"<mõne>"
+	"mõni" Pron Indef Sg Gen
+"<muu>"
+	"muu" Pron Indef Sg Gen
+"<Euroopa>"
+	"euroopa" N Prop Sg Gen
+"<Liitu>"
+	"liit" N Sg Ill
+"<kuuluva>"
+	"kuuluv" A Sg Gen
+"<riigi>"
+	"riik" N Sg Gen
+"<,>"
+	"," Punct
+"<Islandi>"
+	"islandi" N Sg Gen
+"<või>"
+	"või" CC
+"<Norra>"
+	"norra" N Sg Gen
+"<kodanik>"
+	"kodanik" N Sg Nom
+"<ja>"
+	"ja" CC
+"<vastad>"
+	"vastama" V Pers Prs Ind Sg2 Aff
+"<järgmistele>"
+	"järgmine" A Pl All
+"<tingimustele>"
+	"tingimus" N Pl All
+"<:>"
+	":" Punct
+"<¶>"
+	"¶" Punct
+"<->"
+	"-" Punct
+"<saad>"
+	"saama" V Pers Prs Ind Sg2 Aff
+"<hiljemalt>"
+	"hiljemalt" Adv
+"<valimispäeval>"
+	"valimis#päev" N Sg Ade 
+"<(>"
+	"(" Punct
+"<28.10.2012>"
+	"28.10.2012" Num Card
+"<)>"
+	")" Punct
+"<18-aastaseks>"
+	"18-aastaseks" A Sg Tra 
+"<¶>"
+	"¶" Punct
+"<->"
+	"-" Punct
+"<sinu>"
+	"sina" Pron Pers Ps2 Sg Gen
+"<elukoht>"
+	"elu#koht" N Sg Nom
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<Soomes>"
+	"Soome" N Prop Sg Ine
+"<hiljemalt>"
+	"hiljemalt" Adv
+"<7.9.2012>"
+	"7.9.2012" Num Card
+"<¶>"
+	"¶" Punct
+"<Kui>"
+	"kui" CS
+"<oled>"
+	"olema" V Pers Prs Ind Sg2 Aff
+"<mõne>"
+	"mõni" Pron Indef Sg Gen
+"<muu>"
+	"muu" Pron Indef Sg Gen
+"<riigi>"
+	"riik" N Sg Gen
+"<kodanik>"
+	"kodanik" N Sg Nom
+"<,>"
+	"," Punct
+"<saad>"
+	"saama" V Pers Prs Ind Sg2 Aff
+"<hääletada>"
+	"hääletama" V Inf
+"<kohalikel>"
+	"kohalik" A Pl Ade
+"<valimistel>"
+	"valimine" N Pl Ade
+"<,>"
+	"," Punct
+"<kui>"
+	"kui" CS
+"<¶>"
+	"¶" Punct
+"<->"
+	"-" Punct
+"<saad>"
+	"saama" V Pers Prs Ind Sg2 Aff
+"<hiljemalt>"
+	"hiljemalt" Adv
+"<valimispäeval>"
+	"valimis#päev" N Sg Ade
+"<(>"
+	"(" Punct
+"<28.10.2012>"
+	"28.10.2012" Num Card
+"<)>"
+	")" Punct
+"<18-aastaseks>"
+	"18-aastaseks" A Sg Tra
+"<¶>"
+	"¶" Punct
+"<->"
+	"-" Punct
+"<oled>"
+	"olema" V Pers Prs Ind Sg2 Aff
+"<elanud>"
+	"elama" V Pers Past Prc
+"<Soomes>"
+	"Soome" N Prop Sg Ine
+"<seisuga>"
+	"seis" N Sg Com
+"<7.9.2012>"
+	"7.9.2012" Num Card
+"<katkematult>"
+	"katkematult" Adv
+"<vähemalt>"
+	"vähemalt" Adv
+"<kaks>"
+	"kaks" Num Card Sg Nom
+"<aastat>"
+	"aasta" N Sg Par
+"<¶>"
+	"¶" Punct
+"<Elukoht>"
+	"elu#koht" N Sg Nom
+"<määratletakse>"
+	"määratlema" V Impers Prs Ind Aff
+"<elukohaseaduse>"
+	"elu#koha#seadus" N Sg Gen
+"<alusel>"
+	"alus" N Sg Ade
+"<.>"
+	"." Punct
+"<Tavaliselt>"
+	"tavaliselt" Adv
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<koduvallaks>"
+	"kodu#vald" N Sg Tra
+"<see>"
+	"see" Pron Dem Sg Nom
+"<vald>"
+	"vald" N Sg Nom
+"<,>"
+	"," Punct
+"<kus>"
+	"kus" Adv
+"<sa>"
+	"sina" Pron Pers Ps2 Sg Nom
+"<elad>"
+	"elama" V Pers Prs Ind Sg2 Aff
+"<.>"
+	"." Punct
+"<2012.>"
+	"2012." Num Ord
+"<aasta>"
+	"aasta" N Sg Gen
+"<kohalikel>"
+	"kohalik" A Pl Ade
+"<valimistel>"
+	"valimine" N Pl Ade
+"<määratletakse>"
+	"määratlema" V Impers Prs Ind Aff
+"<koduvald>"
+	"kodu#vald" N Sg Nom
+"<selle>"
+	"see" Pron Dem Sg Gen
+"<põhjal>"
+	"põhjal" Adp
+"<,>"
+	"," Punct
+"<milline>"
+	"milline" Pron Rel Sg Nom
+"<vald>"
+	"vald" N Sg Nom
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<7.9.2012>"
+	"7.9.2012" Num Card
+"<kell>"
+	"kell" N Sg Nom
+"<24>"
+	"24" Num Card
+"<märgitud>"
+	"märkima" V Impers Past Prc
+"<rahvastikuregistris>"
+	"rahvastiku#register" N Sg Ine
+"<valija>"
+	"valija" N Sg Gen
+"<elukohaks>"
+	"elu#koht" N Sg Tra
+"<.>"
+	"." Punct
+"<Vajadusel>"
+	"vajadus" N Sg Ade
+"<saad>"
+	"saama" V Pers Prs Ind Sg2 Aff
+"<magistraadist>"
+	"magistraat" N Sg Ela
+"<kontrollida>"
+	"kontrollima" V Inf
+"<,>"
+	"," Punct
+"<milline>"
+	"milline" Pron Rel Sg Nom
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<sinu>"
+	"sina" Pron Pers Ps2 Sg Gen
+"<koduvald>"
+	"kodu#vald" N Sg Nom
+"<.>"
+	"." Punct
+"<Kohalike>"
+	"kohalik" A Pl Gen
+"<omavalitsuste>"
+	"oma#valitsus" N Pl Gen
+"<valimistel>"
+	"valimine" N Pl Ade
+"<võib>"
+	"võima" V Pers Prs Ind Sg3 Aff
+"<hääletada>"
+	"hääletama" V Inf
+"<ainult>"
+	"ainult" Adv
+"<oma>"
+	"oma" Pron Pos Det Refl Sg Gen
+"<elukoha>"
+	"elu#koht" N Sg Gen
+"<kandidaati>"
+	"kandidaat" N Sg Par
+"<.>"
+	"." Punct
+"<Hääletamisteade>"
+	"Hääletamis#teade" N Sg Nom
+"<tuleb>"
+	"tulema" V Pers Prs Ind Sg3 Aff
+"<koju>"
+	"kodu" L0 S com sg adit Adv
+"<¶>"
+	"¶" Punct
+"<Rahvastikuregister>"
+	"rahvastiku#register" N Sg Nom
+"<ja>"
+	"ja" CC
+"<magistraadid>"
+	"magistraat" N Pl Nom
+"<peavad>"
+	"pidama" V Pers Prs Ind Pl3 Aff
+"<valimisregistrit>"
+	"valimis#register" N Sg Par
+"<,>"
+	"," Punct
+"<milles>"
+	"mis" Pron Interr Rel Sg Ine
+"<on>"
+	"olema" V Pers Prs Ind Pl3 Aff
+"<kõigi>"
+	"kõik" Pron Det Pl Gen
+"<hääleõiguslike>"
+	"hääle#õiguslik" A Pl Gen
+"<inimeste>"
+	"inimene" N Pl Gen
+"<andmed>"
+	"anne" N Pl Nom
+"<.>"
+	"." Punct
+"<Valimisregistrisse>"
+	"valimis#register" N Sg Ill
+"<ei>"
+	"ei" V Neg
+"<ole>"
+	"olema" V Pers Prs Ind Neg
+"<vaja>"
+	"vaja" Adv
+"<eraldi>"
+	"eraldi" Adv
+"<registreeruda>"
+	"registreeruma" V Inf
+"<.>"
+	"." Punct
+"<Magistraat>"
+	"magistraat" N Sg Nom
+"<saadab>"
+	"saatma" V Pers Prs Ind Sg3 Aff
+"<hiljemalt>"
+	"hiljemalt" Adv
+"<4.10.2012>"
+	"4.10.2012" Num Card
+"<igale>"
+	"iga" Pron Det Sg All
+"<hääleõiguslikule>"
+	"hääle#õiguslik" A Sg All
+"<isikule>"
+	"isik" N Sg All
+"<,>"
+	"," Punct
+"<kelle>"
+	"kes" Pron Interr Rel Sg Gen
+"<aadress>"
+	"aadress" N Sg Nom
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<teada>"
+	"teadma" V Inf
+"<,>"
+	"," Punct
+"<hääletamisteate>"
+	"hääletamis#teade" N Sg Gen
+"<.>"
+	"." Punct
+"<Hääletamisteade>"
+	"hääletamis#teade" N Sg Nom
+"<annab>"
+	"andma" V Pers Prs Ind Sg3 Aff
+"<juhiseid>"
+	"juhis" N Pl Par
+"<hääletamiseks>"
+	"hääletamine" N Sg Tra
+"<.>"
+	"." Punct
+"<¶>"
+	"¶" Punct
+"<Kandideerimisõigus>"
+	"Kandideerimis#õigus" N Sg Nom
+"<->"
+	"-" Punct
+"<kes>"
+	"kes" Pron Interr Rel Sg Nom
+"<võib>"
+	"võima" V Pers Prs Ind Sg3 Aff
+"<olla>"
+	"olema" V Inf
+"<kandidaat>"
+	"kandidaat" N Sg Nom
+"<¶>"
+	"¶" Punct
+"<¶>"
+	"¶" Punct
+"<Oled>"
+	"olema" V Pers Prs Ind Sg2 Aff
+"<kandideerimisõiguslik>"
+	"kandideerimis#õiguslik" A Sg Nom
+"<,>"
+	"," Punct
+"<st>"
+	"st" Abbr
+"<võid>"
+	"võima" V Pers Prs Ind Sg2 Aff
+"<kandideerida>"
+	"kandideerima" V Inf
+"<oma>"
+	"oma" Pron Pos Det Refl Sg Gen
+"<koduvalla>"
+	"kodu#vald" N Sg Gen
+"<kohalikel>"
+	"kohalik" A Pl Ade
+"<valimistel>"
+	"valimine" N Pl Ade
+"<,>"
+	"," Punct
+"<kui>"
+	"kui" CS
+"<vastad>"
+	"vastama" V Pers Prs Ind Sg2 Aff
+"<järgmistele>"
+	"järgmine" A Pl All
+"<tingimustele>"
+	"tingimus" N Pl All
+"<:>"
+	":" Punct
+"<¶>"
+	"¶" Punct
+"<->"
+	"-" Punct
+"<vald>"
+	"vald" N Sg Nom
+"<,>"
+	"," Punct
+"<kus>"
+	"kus" Adv
+"<kavatsed>"
+	"kavatsema" V Pers Prs Ind Sg2 Aff
+"<kandideerida>"
+	"kandideerima" V Inf
+"<,>"
+	"," Punct
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<sinu>"
+	"sina" Pron Pers Ps2 Sg Gen
+"<koduvald>"
+	"kodu#vald" N Sg Nom
+"<¶>"
+	"¶" Punct
+"<->"
+	"-" Punct
+"<sul>"
+	"sina" Pron Pers Ps2 Sg Ade
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<hääleõigus>"
+	"hääle#õigus" N Sg Nom
+"<mõnes>"
+	"mõni" Pron Indef Sg Ine
+"<vallas>"
+	"vald" N Sg Ine
+"<¶>"
+	"¶" Punct
+"<->"
+	"-" Punct
+"<sa>"
+	"sina" Pron Pers Ps2 Sg Nom
+"<ei>"
+	"ei" V Neg
+"<ole>"
+	"olema" V Pers Prs Ind Neg
+"<piiratud>"
+	"piirama" V Impers Past Prc
+"<teovõimega>"
+	"teo#võime" N Sg Com
+"<ega>"
+	"ega" CC
+"<eestkoste>"
+	"eest#koste" N Sg Gen
+"<all>"
+	"all" Adp
+"<.>"
+	"." Punct
+"<Mõnedel>"
+	"mõni" Pron Indef Pl Ade
+"<riigiametnikel>"
+	"riigi#ametnik" N Pl Ade
+"<ja>"
+	"ja" CC
+"<valla>"
+	"vald" N Sg Gen
+"<kõrgematel>"
+	"kõrge" A Comp Pl Ade
+"<ametnikel>"
+	"ametnik" N Pl Ade
+"<ning>"
+	"ning" CC
+"<töötajatel>"
+	"töötaja" N Pl Ade
+"<ei>"
+	"ei" V Neg
+"<ole>"
+	"olema" V Pers Prs Ind Neg
+"<õigust>"
+	"õigus" N Sg Par
+"<kandideerida>"
+	"kandideerima" V Inf
+"<.>"
+	"." Punct
+"<¶>"
+	"¶" Punct
+"<Kandidaatide>"
+	"kandidaat" N Pl Gen
+"<ülesseadmine>"
+	"üles#seadmine" N Sg Nom
+"<kohalikel>"
+	"kohalik" A Pl Ade
+"<valimistel>"
+	"valimine" N Pl Ade
+"<¶>"
+	"¶" Punct
+"<¶>"
+	"¶" Punct
+"<Kohalike>"
+	"kohalik" A Pl Gen
+"<omavalitsuste>"
+	"oma#valitsus" N Pl Gen
+"<valimistel>"
+	"valimine" N Pl Ade
+"<võivad>"
+	"võima" V Pers Prs Ind Pl3 Aff
+"<kandidaate>"
+	"kandidaat" N Pl Par
+"<üles>"
+	"üles" Adv
+"<seada>"
+	"seadma" V Inf
+"<¶>"
+	"¶" Punct
+"<->"
+	"-" Punct
+"<registreeritud>"
+	"registreeritud" A
+"<erakonnad>"
+	"erakond" N Pl Nom
+"<¶>"
+	"¶" Punct
+"<->"
+	"-" Punct
+"<hääleõiguslikud>"
+	"hääle#õiguslik" A Pl Nom
+"<isikud>"
+	"isik" N Pl Nom
+"<,>"
+	"," Punct
+"<kes>"
+	"kes" Pron Interr Rel Pl Nom
+"<on>"
+	"olema" V Pers Prs Ind Pl3 Aff
+"<loonud>"
+	"looma" V Pers Past Prc
+"<valimisliidu>"
+	"valimis#liit" N Sg Gen
+"<.>"
+	"." Punct
+"<¶>"
+	"¶" Punct
+"<Valimisliidu>"
+	"valimis#liit" N Sg Gen
+"<loomiseks>"
+	"loomine" N Sg Tra
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<vaja>"
+	"vaja" Adv
+"<vähemalt>"
+	"vähemalt" Adv
+"<kümmet>"
+	"kümmet" Num Card Sg Par
+"<hääleõiguslikku>"
+	"hääle#õiguslik" A Sg Par
+"<valla>"
+	"vald" N Sg Gen
+"<elanikku>"
+	"elanik" N Sg Par
+"<,>"
+	"," Punct
+"<mõnedes>"
+	"mõni" Pron Indef Pl Ine
+"<väikestes>"
+	"väike" A Pl Ine
+"<valdades>"
+	"vald" N Pl Ine
+"<ainult>"
+	"ainult" Adv
+"<kolme>"
+	"kolm" Num Card Sg Par
+"<või>"
+	"või" CC
+"<viit>"
+	"viis" Num Card Sg Par
+"<elanikku>"
+	"elanik" N Sg Par
+"<.>"
+	"." Punct
+"<Kahel>"
+	"kaks" Num Card Sg Ade
+"<või>"
+	"või" CC
+"<enamal>"
+	"enam" A Sg Ade
+"<erakonnal>"
+	"erakond" N Sg Ade
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<õigus>"
+	"õigus" N Sg Nom
+"<moodustada>"
+	"moodustama" V Inf
+"<koalitsioon>"
+	"koalitsioon" N Sg Nom
+"<.>"
+	"." Punct
+"<Kahel>"
+	"kahu" N Pl Ade
+	"kaks" Num Card Sg Ade
+"<või>"
+	"või" N Sg Gen
+	"või" N Sg Nom
+"<enamal>"
+	"enam" A Sg Ade
+"<valimisliidul>"
+	"valimis#liit" N Sg Ade
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<õigus>"
+	"õigus" N Sg Nom
+"<moodustada>"
+	"moodustama" V Inf
+"<ühisnimekiri>"
+	"ühis#nimekiri" N Sg Nom
+"<.>"
+	"." Punct
+"<Erakonnal>"
+	"erakond" N Sg Ade
+"<,>"
+	"," Punct
+"<koalitsioonil>"
+	"koalitsioon" N Sg Ade
+"<või>"
+	"või" CC
+"<ühisnimekirjal>"
+	"ühis#nimekiri" N Sg Ade
+"<võib>"
+	"võima" V Pers Prs Ind Sg3 Aff
+"<olla>"
+	"olema" V Inf
+"<vallas>"
+	"vald" N Sg Ine
+"<kandidaate>"
+	"kandidaat" N Pl Par
+"<maksimaalselt>"
+	"maksimaalselt" Adv
+"<poolteist>"
+	"pool#teist" Num Card Sg Nom
+"<korda>"
+	"kord" N Sg Par
+"<valitavate>"
+	"valitav" A Pl Gen
+"<volinike>"
+	"volinik" N Pl Gen
+"<arvust>"
+	"arv" N Sg Ela
+"<.>"
+	"." Punct
+"<Volikokku>"
+	"voli#kogu" N Sg Ill
+"<valitakse>"
+	"valima" V Impers Prs Ind Aff
+"<valla>"
+	"vald" N Sg Gen
+"<elanike>"
+	"elanik" N Pl Gen
+"<arvust>"
+	"arv" N Sg Ela
+"<sõltuvalt>"
+	"sõltuvalt" Adv
+"<17_-_85>"
+	"17_-_85" Num Card Sg Nom
+"<volinikku>"
+	"volinik" N Sg Par
+"<.>"
+	"." Punct
+"<Igal>"
+	"iga" Pron Det Sg Ade
+"<kandidaadil>"
+	"kandidaat" N Sg Ade
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<oma>"
+	"oma" Pron Pos Det Refl Sg Gen
+"<number>"
+	"number" N Sg Nom
+"<.>"
+	"." Punct
+"<Kandidaatidest>"
+	"kandidaat" N Pl Ela
+"<koostatakse>"
+	"koostama" V Impers Prs Ind Aff
+"<paberkandjale>"
+	"paber#kandja" N Sg All
+"<trükitud>"
+	"trükitud" A
+"<koondnimekiri>"
+	"koond#nime#kiri" N Sg Nom
+"<,>"
+	"," Punct
+"<kuhu>"
+	"kuhu" Adv
+"<kandidaadid>"
+	"kandidaat" N Pl Nom
+"<kantakse>"
+	"kandma" V Impers Prs Ind Aff
+"<järjekorranumbrite>"
+	"järje#korra#number" N Pl Gen
+"<alusel>"
+	"alus" N Sg Ade
+"<alates>"
+	"alates" Adp
+"<numbrist>"
+	"number" N Sg Ela
+"<2>"
+	"2" Num Card
+"<.>"
+	"." Punct
+"<Kandidaadid>"
+	"kandidaat" N Pl Nom
+"<on>"
+	"olema" V Pers Prs Ind Pl3 Aff
+"<koondnimekirjas>"
+	"koond#nime#kiri" N Sg Ine
+"<grupeeritud>"
+	"grupeerima" V Impers Past Prc
+"<vastavalt>"
+	"vastavalt" Adv
+"<erakondadele>"
+	"erakond" N Pl All
+"<ja>"
+	"ja" CC
+"<ühisnimekirjadele>"
+	"ühis#nimekiri" N Pl All
+"<.>"
+	"." Punct
+"<Iga>"
+	"iga" Pron Det Sg Gen
+"<kandidaadi>"
+	"kandidaat" N Sg Gen
+"<kohta>"
+	"kohta" Adp
+"<on>"
+	"olema" V Pers Prs Ind Pl3 Aff
+"<koondnimekirjas>"
+	"koond#nime#kiri" N Sg Ine
+"<järgmised>"
+	"järgmine" A Pl Nom
+"<andmed>"
+	"anne" N Pl Nom
+"<:>"
+	":" Punct
+"<nimi>"
+	"nimi" N Sg Nom
+"<,>"
+	"," Punct
+"<kandidaadi>"
+	"kandidaat" N Sg Gen
+"<number>"
+	"number" N Sg Nom
+"<ja>"
+	"ja" CC
+"<amet>"
+	"amet" N Sg Nom
+"<.>"
+	"." Punct
+"<Lisaks>"
+	"lisaks" Adv
+"<ilmneb>"
+	"ilmnema" V Pers Prs Ind Sg3 Aff
+"<kandidaatide>"
+	"kandidaat" N Pl Gen
+"<koondnimekirjast>"
+	"koond#nime#kiri" N Sg Ela
+"<,>"
+	"," Punct
+"<¶>"
+	"¶" Punct
+"<->"
+	"-" Punct
+"<millised>"
+	"milline" Pron Rel Pl Nom
+"<erakonnad>"
+	"erakond" N Pl Nom
+"<on>"
+	"olema" V Pers Prs Ind Pl3 Aff
+"<moodustanud>"
+	"moodustama" V Pers Past Prc
+"<koalitsiooni>"
+	"koalitsioon" N Sg Gen
+"<¶>"
+	"¶" Punct
+"<->"
+	"-" Punct
+"<millised>"
+	"milline" Pron Rel Pl Nom
+"<valimisliidud>"
+	"valimis#liit" N Pl Nom
+"<on>"
+	"olema" V Pers Prs Ind Pl3 Aff
+"<moodustanud>"
+	"moodustama" V Pers Past Prc
+"<ühisnimekirja>"
+	"ühis#nimekiri" N Sg Gen
+"<¶>"
+	"¶" Punct
+"<->"
+	"-" Punct
+"<millised>"
+	"milline" Pron Rel Pl Nom
+"<erakonnad>"
+	"erakond" N Pl Nom
+"<ei>"
+	"ei" V Neg
+"<kuulu>"
+	"kuuluma" V Pers Prs Ind Neg
+"<koalitsiooni>"
+	"koalitsioon" N Sg Par
+"<¶>"
+	"¶" Punct
+"<->"
+	"-" Punct
+"<millised>"
+	"milline" Pron Rel Pl Nom
+"<kandidaadid>"
+	"kandidaat" N Pl Nom
+"<ei>"
+	"ei" V Neg
+"<kuulu>"
+	"kuuluma" V Pers Prs Ind Neg
+"<ühisnimekirja>"
+	"ühis#nimekiri" N Sg Par
+"<.>"
+	"." Punct
+"<Kandidaatide>"
+	"kandidaat" N Pl Gen
+"<koondnimekiri>"
+	"koond#nime#kiri" N Sg Nom
+"<koostatakse>"
+	"koostama" V Impers Prs Ind Aff
+"<27.9.2012>"
+	"27.9.2012" Num Card
+"<.>"
+	"." Punct
+"<¶>"
+	"¶" Punct
+"<Hääletamisajad>"
+	"Hääletamis#aeg" N Pl Nom
+"<¶>"
+	"¶" Punct
+"<¶>"
+	"¶" Punct
+"<Hääletada>"
+	"hääletama" V Inf
+"<saab>"
+	"saama" V Pers Prs Ind Sg3 Aff
+"<kas>"
+	"kas" Adv
+"<valimispäeval>"
+	"valimis#päev" N Sg Ade
+"<,>"
+	"," Punct
+"<pühapäeval>"
+	"püha#päev" N Sg Ade
+"<28.10.2012>"
+	"28.10.2012" Num Card
+"<,>"
+	"," Punct
+"<või>"
+	"või" CC
+"<enne>"
+	"enne" Adp
+"<valimispäeva>"
+	"valimis#päev" N Sg Par
+"<eelhääletusel>"
+	"eel#hääletus" N Sg Ade
+"<.>"
+	"." Punct
+"<Hääletada>"
+	"hääletama" V Inf
+"<saab>"
+	"saama" V Pers Prs Ind Sg3 Aff
+"<ainult>"
+	"ainult" Adv
+"<üks>"
+	"üks" Num Card Sg Nom
+"<kord>"
+	"kord" N Sg Nom
+"<.>"
+	"." Punct
+"<Kaks>"
+	"kaks" Num Card Sg Nom
+"<korda>"
+	"kord" N Sg Par
+"<hääletamise>"
+	"hääletamine" N Sg Gen
+"<eest>"
+	"eest" Adp
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<kriminaalseadustikus>"
+	"kriminaal#seadustik" N Sg Ine
+"<ette>"
+	"ette" Adv
+"<nähtud>"
+	"nägema" V Impers Past Prc
+"<karistus>"
+	"karistus" N Sg Nom
+"<.>"
+	"." Punct
+"<¶>"
+	"¶" Punct
+"<Eelhääletus>"
+	"eel#hääletus" N Sg Nom
+"<:>"
+	":" Punct
+"<¶>"
+	"¶" Punct
+"<¶>"
+	"¶" Punct
+"<Eelhääletus>"
+	"eel#hääletus" N Sg Nom
+"<algab>"
+	"algama" V Pers Prs Ind Sg3 Aff
+"<kolmapäeval>"
+	"kolma#päev" N Sg Ade
+"<,>"
+	"," Punct
+"<17.10.2012>"
+	"17.10.2012" Num Card
+"<.>"
+	"." Punct
+"<Eelhääletus>"
+	"eel#hääletus" N Sg Nom
+"<lõpeb>"
+	"lõppema" V Pers Prs Ind Sg3 Aff
+"<välismaal>"
+	"välis#maa" N Sg Ade
+"<laupäeval>"
+	"lau#päev" N Sg Ade
+"<,>"
+	"," Punct
+"<20.10.2012>"
+	"20.10.2012" Num Card
+"<,>"
+	"," Punct
+"<ja>"
+	"ja" CC
+"<Soomes>"
+	"Soome" N Prop Sg Ine
+"<,>"
+	"," Punct
+"<teisipäeval>"
+	"teisi#päev" N Sg Ade
+"<,>"
+	"," Punct
+"<23.10.2012>"
+	"23.10.2012" Num Card
+"<.>"
+	"." Punct
+"<Mõnes>"
+	"mõni" Pron Indef Sg Ine
+"<eelvalimispaigas>"
+	"eelvalimis#paik" N Sg Ine
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<hääletamisaeg>"
+	"hääletamis#aeg" N Sg Nom
+"<lühem>"
+	"lühem" A Sg Nom
+"<.>"
+	"." Punct
+"<Saad>"
+	"saama" V Pers Prs Ind Sg2 Aff
+"<hääletada>"
+	"hääletama" V Inf
+"<eelnevalt>"
+	"eelnevalt" Adv
+"<mis>"
+	"mis" Pron Interr Rel Sg Nom
+"<tahes>"
+	"tahes" Adv
+"<eelhääletuspaigas>"
+	"eel#hääletus#paik" N Sg Ine
+"<kodu->"
+	"kodu-" N Sg Gen
+"<või>"
+	"või" CC
+"<välismaal>"
+	"välis#maa" N Sg Ade
+"<.>"
+	"." Punct
+"<Eelhääletuspaikadeks>"
+	"eel#hääletus#paik" N Pl Tra
+"<on>"
+	"olema" V Pers Prs Ind Pl3 Aff
+"<¶>"
+	"¶" Punct
+"<->"
+	"-" Punct
+"<Soomes>"
+	"Soome" N Prop Sg Ine
+"<kohalike>"
+	"kohalik" A Pl Gen
+"<omavalitsuste>"
+	"oma#valitsus" N Pl Gen
+"<poolt>"
+	"pool" N Sg Par
+"<määratud>"
+	"määratud" A
+"<eelhääletuspaigad>"
+	"eel#hääletus#paik" N Pl Nom
+"<,>"
+	"," Punct
+"<sageli>"
+	"sageli" Adv
+"<näiteks>"
+	"näiteks" Adv
+"<kohaliku>"
+	"kohalik" A Sg Gen
+"<omavalitsuse>"
+	"oma#valitsus" N Sg Gen
+"<asutused>"
+	"asutus" N Pl Nom
+"<või>"
+	"või" CC
+"<postkontorid>"
+	"post#kontor" N Pl Nom
+"<¶>"
+	"¶" Punct
+"<->"
+	"-" Punct
+"<mitmed>"
+	"mitu" Pron Indef Pl Nom
+"<Soome>"
+	"soome" N Sg Gen
+"<esindused>"
+	"esindus" N Pl Nom
+"<välismaal>"
+	"välis#maa" N Sg Ade
+"<¶>"
+	"¶" Punct
+"<->"
+	"-" Punct
+"<sellised>"
+	"selline" Pron Dem Pl Nom
+"<asutused>"
+	"asutus" N Pl Nom
+"<nagu>"
+	"nagu" CC
+"<haiglad>"
+	"haigla" N Pl Nom
+"<,>"
+	"," Punct
+"<sotsiaalabi>"
+	"sotsiaal#abi" N Sg Gen
+"<rajatised>"
+	"rajatis" N Pl Nom
+"<ja>"
+	"ja" CC
+"<karistusasutused>"
+	"karistus#asutus" N Pl Nom
+"<.>"
+	"." Punct
+"<Sellistes>"
+	"selline" Pron Dem Pl Ine
+"<asutustes>"
+	"asutus" N Pl Ine
+"<võivad>"
+	"võima" V Pers Prs Ind Pl3 Aff
+"<hääletada>"
+	"hääletama" V Inf
+"<ainult>"
+	"ainult" Adv
+"<inimesed>"
+	"inimene" N Pl Nom
+"<,>"
+	"," Punct
+"<keda>"
+	"kes" Pron Interr Rel Pl Par
+"<seal>"
+	"seal" Adv
+"<ravitakse>"
+	"ravima" V Impers Prs Ind Aff
+"<,>"
+	"," Punct
+"<hooldatakse>"
+	"hooldama" V Impers Prs Ind Aff
+"<või>"
+	"või" CC
+"<kinni>"
+	"kinni" Adv
+"<peetakse>"
+	"pidama" V Impers Prs Ind Aff
+"<.>"
+	"." Punct
+"<->"
+	"-" Punct
+"<Soome>"
+	"soome" N Sg Gen
+"<laevad>"
+	"laev" N Pl Nom
+"<,>"
+	"," Punct
+"<mis>"
+	"mis" Pron Interr Rel Pl Nom
+"<on>"
+	"olema" V Pers Prs Ind Pl3 Aff
+"<eelhääletuse>"
+	"eel#hääletus" N Sg Gen
+"<ajal>"
+	"ajal" Adp
+"<välismaal>"
+	"välis#maa" N Sg Ade
+"<.>"
+	"." Punct
+"<Laevas>"
+	"laev" N Sg Ine
+"<võib>"
+	"võima" V Pers Prs Ind Sg3 Aff
+"<hääletada>"
+	"hääletama" V Inf
+"<vaid>"
+	"vaid" Adv
+"<laeva>"
+	"laev" N Sg Gen
+"<meeskond>"
+	"meeskond" N Sg Nom
+"<,>"
+	"," Punct
+"<reisijad>"
+	"reisija" N Pl Nom
+"<ei>"
+	"ei" V Neg
+"<saa>"
+	"saama" V Pers Prs Ind Neg
+"<laevas>"
+	"laev" N Sg Ine
+"<hääletada>"
+	"hääletama" V Inf
+"<.>"
+	"." Punct
+"<¶>"
+	"¶" Punct
+"<Hääletamine>"
+	"hääletamine" N Sg Nom
+"<valimispäeval>"
+	"valimis#päev" N Sg Ade
+"<:>"
+	":" Punct
+"<¶>"
+	"¶" Punct
+"<¶>"
+	"¶" Punct
+"<Valimispäeval>"
+	"valimis#päev" N Sg Ade
+"<hääletatakse>"
+	"hääletama" V Impers Prs Ind Aff
+"<pühapäeval>"
+	"püha#päev" N Sg Ade
+"<,>"
+	"," Punct
+"<28.10.2012>"
+	"28.10.2012" Num Card
+"<kell>"
+	"kell" N Sg Nom
+"<9–20>"
+	"9–20" Num Card Sg Nom
+"<.>"
+	"." Punct
+"<Valimispäeval>"
+	"valimis#päev" N Sg Ade
+"<saab>"
+	"saama" V Pers Prs Ind Sg3 Aff
+"<hääletada>"
+	"hääletama" V Inf
+"<ainult>"
+	"ainult" Adv
+"<selles>"
+	"see" Pron Dem Sg Ine
+"<vallas>"
+	"vald" N Sg Ine
+"<ja>"
+	"ja" CC
+"<valimisjaoskonnas>"
+	"valimis#jaoskond" N Sg Ine
+"<,>"
+	"," Punct
+"<mis>"
+	"mis" Pron Interr Rel Sg Nom
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<märgitud>"
+	"märkima" V Impers Past Prc
+"<sulle>"
+	"sina" Pron Pers Ps2 Sg All
+"<saadetud>"
+	"saadetud" A
+"<hääletamisteatele>"
+	"hääletamis#teade" N Sg All
+"<.>"
+	"." Punct
+"<¶>"
+	"¶" Punct
+"<Kodus>"
+	"kodu" N Sg Ine
+"<hääletamine>"
+	"hääletamine" N Sg Nom
+"<:>"
+	":" Punct
+"<¶>"
+	"¶" Punct
+"<¶>"
+	"¶" Punct
+"<Kui>"
+	"kui" CS
+"<sinu>"
+	"sina" Pron Pers Ps2 Sg Gen
+"<liikumis->"
+	"liikumis-" N Sg Gen
+"<või>"
+	"või" CC
+"<tegutsemisvõime>"
+	"tegutsemis#võime" N Sg Nom
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<sel>"
+	"see" Pron Dem Sg Ade
+"<määral>"
+	"määr" N Sg Ade
+"<piiratud>"
+	"piiratud" A
+"<,>"
+	"," Punct
+"<et>"
+	"et" CC
+"<sa>"
+	"sina" Pron Pers Ps2 Sg Nom
+"<ei>"
+	"ei" V Neg
+"<pääse>"
+	"pääsema" V Pers Prs Ind Neg
+"<ilma>"
+	"ilma" Adp
+"<suurte>"
+	"suur" A Pl Gen
+"<raskusteta>"
+	"raskus" N Pl Abe
+"<valimisjaoskonda>"
+	"valimis#jaoskond" N Sg Ill
+"<,>"
+	"," Punct
+"<võid>"
+	"võima" V Pers Prs Ind Sg2 Aff
+"<hääletada>"
+	"hääletama" V Inf
+"<eelhääletusajal>"
+	"eel#hääletusaj#aeg" N Sg Ade
+"<kodus>"
+	"kodu" N Sg Ine
+"<.>"
+	"." Punct
+"<Kodus>"
+	"kodu" N Sg Ine
+"<hääletamisest>"
+	"hääletamine" N Sg Ela
+"<tuleb>"
+	"tulema" V Pers Prs Ind Sg3 Aff
+"<teatada>"
+	"teatama" V Inf
+"<hiljemalt>"
+	"hiljemalt" Adv
+"<teisipäeval>"
+	"teisi#päev" N Sg Ade
+"<,>"
+	"," Punct
+"<16.10.2012>"
+	"16.10.2012" Num Card
+"<enne>"
+	"enne" N Sg Nom
+"<kella>"
+	"kell" N Sg Gen
+"<16>"
+	"16" Num Card
+"<.>"
+	"." Punct
+"<Teatada>"
+	"teatama" V Inf
+"<tuleb>"
+	"tulema" V Pers Prs Ind Sg3 Aff
+"<koduvalla>"
+	"kodu#vald" N Sg Gen
+"<keskvalimiskomisjonile>"
+	"keskvalimis#komisjon" N Sg All
+"<.>"
+	"." Punct
+"<Samas>"
+	"sama" Pron Dem Sg Ine
+"<leibkonnas>"
+	"leibkond" N Sg Ine
+"<elav>"
+	"elav" A Sg Nom
+"<omastehooldaja>"
+	"omaste#hooldaja" N Sg Nom
+"<võib>"
+	"võima" V Pers Prs Ind Sg3 Aff
+"<teatud>"
+	"teatud" A
+"<tingimustel>"
+	"tingimus" N Pl Ade
+"<hääletada>"
+	"hääletama" V Inf
+"<samal>"
+	"sama" Pron Dem Sg Ade
+"<ajal>"
+	"aeg" N Sg Ade
+"<.>"
+	"." Punct
+"<¶>"
+	"¶" Punct
+"<Nii>"
+	"nii" Adv
+"<hääletad>"
+	"hääletama" V Pers Prs Ind Sg2 Aff
+"<¶>"
+	"¶" Punct
+"<¶>"
+	"¶" Punct
+"<Hääletamine>"
+	"hääletamine" N Sg Nom
+"<toimub>"
+	"toimuma" V Pers Prs Ind Sg3 Aff
+"<valimisjaoskonnas>"
+	"valimis#jaoskond" N Sg Ine
+"<.>"
+	"." Punct
+"<Hääletada>"
+	"hääletama" V Inf
+"<saab>"
+	"saama" V Pers Prs Ind Sg3 Aff
+"<vaid>"
+	"vaid" Adv
+"<ühe>"
+	"üks" Num Card Sg Gen
+"<kandidaadi>"
+	"kandidaat" N Sg Gen
+"<poolt>"
+	"poolt" Adp
+"<,>"
+	"," Punct
+"<kes>"
+	"kes" Pron Interr Rel Sg Nom
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<kantud>"
+	"kandma" V Impers Past Prc
+"<sinu>"
+	"sina" Pron Pers Ps2 Sg Gen
+"<valla>"
+	"vald" N Sg Gen
+"<kandidaatide>"
+	"kandidaat" N Pl Gen
+"<koondnimekirja>"
+	"koond#nime#kiri" N Sg Ill
+"<.>"
+	"." Punct
+"<1>"
+	"1" Num Card
+"<)>"
+	")" Punct
+"<Tõenda>"
+	"tõendama" V Pers Prs Imprt Sg2 Aff
+"<valimisametnikule>"
+	"valimi#samet#nikk" N Sg All
+"<oma>"
+	"oma" Pron Pos Det Refl Sg Gen
+"<isikut>"
+	"isik" N Sg Par
+"<,>"
+	"," Punct
+"<st>"
+	"st" Abbr
+"<esita>"
+	"esitama" V Pers Prs Imprt Sg2 Aff
+"<pass>"
+	"pass" N Sg Nom
+"<,>"
+	"," Punct
+"<isikutunnistus>"
+	"isiku#tunnistus" N Sg Nom
+"<,>"
+	"," Punct
+"<juhiluba>"
+	"juhi#luba" N Sg Nom
+"<või>"
+	"või" CC
+"<muu>"
+	"muu" Pron Indef Sg Nom
+"<samaväärne>"
+	"sama#väärne" A Sg Nom
+"<dokument>"
+	"dokument" N Sg Nom
+"<.>"
+	"." Punct
+"<Valimisametnik>"
+	"valimis#ametnik" N Sg Nom
+"<annab>"
+	"andma" V Pers Prs Ind Sg3 Aff
+"<sulle>"
+	"sina" Pron Pers Ps2 Sg All
+"<hääletussedeli>"
+	"hääletus#sedel" N Sg Gen
+"<.>"
+	"." Punct
+"<2>"
+	"2" Num Card
+"<)>"
+	")" Punct
+"<Mine>"
+	"minema" V Pers Prs Imprt Sg2 Aff
+"<hääletuskabiini>"
+	"hääletus#kabiin" N Sg Ill
+"<.>"
+	"." Punct
+"<Hääletuskabiinis>"
+	"hääletus#kabiin" N Sg Ine
+"<võib>"
+	"võima" V Pers Prs Ind Sg3 Aff
+"<korraga>"
+	"korraga" Adv
+"<viibida>"
+	"viibima" V Inf
+"<ainult>"
+	"ainult" Adv
+"<üks>"
+	"üks" Num Card Sg Nom
+"<inimene>"
+	"inimene" N Sg Nom
+"<.>"
+	"." Punct
+"<3>"
+	"3" Num Card
+"<)>"
+	")" Punct
+"<Märgi>"
+	"märkima" V Pers Prs Imprt Sg2 Aff
+"<hääletussedelile>"
+	"hääletus#sedel" N Sg All
+"<selle>"
+	"see" Pron Dem Sg Gen
+"<kandidaadi>"
+	"kandidaat" N Sg Gen
+"<number>"
+	"number" N Sg Nom
+"<,>"
+	"," Punct
+"<kelle>"
+	"kes" Pron Interr Rel Sg Gen
+"<poolt>"
+	"poolt" Adp
+"<hääletad>"
+	"hääletama" V Pers Prs Ind Sg2 Aff
+"<.>"
+	"." Punct
+"<Hääletada>"
+	"hääletama" V Inf
+"<saab>"
+	"saama" V Pers Prs Ind Sg3 Aff
+"<vaid>"
+	"vaid" Adv
+"<ühe>"
+	"üks" Num Card Sg Gen
+"<kandidaadi>"
+	"kandidaat" N Sg Gen
+"<poolt>"
+	"pool" N Sg Par
+"<.>"
+	"." Punct
+"<Märgi>"
+	"märkima" V Pers Prs Imprt Sg2 Aff
+"<kandidaadi>"
+	"kandidaat" N Sg Gen
+"<number>"
+	"number" N Sg Nom
+"<hääletussedelil>"
+	"hääletus#sedel" N Sg Ade
+"<olevasse>"
+	"olev" A Sg Ill
+"<ringi>"
+	"ring" N Sg Ill
+"<.>"
+	"." Punct
+"<Ära>"
+	"ära" V Pers Prs Imprt Sg2 Neg
+"<tee>"
+	"tegema" V Pers Prs Imprt Sg2 Neg
+"<hääletussedelile>"
+	"hääletus#sedel" N Sg All
+"<muid>"
+	"muu" Pron Indef Pl Par
+"<märkeid>"
+	"märge" N Pl Par
+"<.>"
+	"." Punct
+"<Murra>"
+	"murdma" V Pers Prs Imprt Sg2 Aff
+"<hääletussedel>"
+	"hääletus#sedel" N Sg Nom
+"<nii>"
+	"nii" Adv
+"<kinni>"
+	"kinni" Adv
+"<,>"
+	"," Punct
+"<et>"
+	"et" CC
+"<sinu>"
+	"sina" Pron Pers Ps2 Sg Gen
+"<poolt>"
+	"pool" N Sg Par
+"<kirjutatud>"
+	"kirjutatud" A
+"<number>"
+	"number" N Sg Nom
+"<jääb>"
+	"jääma" V Pers Prs Ind Sg3 Aff
+"<sedeli>"
+	"sedel" N Sg Gen
+"<sisse>"
+	"sisse" Adp
+"<ega>"
+	"ega" CC
+"<ole>"
+	"olema" V Pers Prs Ind Neg
+"<väljastpoolt>"
+	"väljast#poolt" Adv
+"<nähtav>"
+	"nähtav" A Sg Nom
+"<.>"
+	"." Punct
+"<4>"
+	"4" Num Card
+"<)>"
+	")" Punct
+"<Vii>"
+	"viima" V Pers Prs Imprt Sg2 Aff
+"<sedel>"
+	"sedel" N Sg Nom
+"<kinni>"
+	"kinni" Adv
+"<voldituna>"
+	"volditu" A Sg Ess
+"<valimisametnikule>"
+	"valimis#ametnik" N Sg All
+"<.>"
+	"." Punct
+"<Valimisametnik>"
+	"Valimis#ametnik" N Sg Nom
+"<paneb>"
+	"panema" V Pers Prs Ind Sg3 Aff
+"<sedelile>"
+	"sedel" N Sg All
+"<templi>"
+	"tempel" N Sg Gen
+"<.>"
+	"." Punct
+"<5>"
+	"5" Num Card
+"<a>"
+	"a" Abbr
+"<)>"
+	")" Punct
+"<Kui>"
+	"kui" CS
+"<hääletad>"
+	"hääletama" V Pers Prs Ind Sg2 Aff
+"<valimiste>"
+	"valimine" N Pl Gen
+"<päeval>"
+	"päev" N Sg Ade
+"<,>"
+	"," Punct
+"<viska>"
+	"viskama" V Pers Prs Imprt Sg2 Aff
+"<tembeldatud>"
+	"tembeldatud" A
+"<sedel>"
+	"sedel" N Sg Nom
+"<valimiskasti>"
+	"valimis#kast" N Sg Ill
+"<.>"
+	"." Punct
+"<5>"
+	"5" Num Card
+"<b>"
+	"b" Abbr
+"<)>"
+	")" Punct
+"<Kui>"
+	"kui" CS
+"<hääletad>"
+	"hääletama" V Pers Prs Ind Sg2 Aff
+"<eelhääletusel>"
+	"eel#hääletus" N Sg Ade
+"<,>"
+	"," Punct
+"<saad>"
+	"saama" V Pers Prs Ind Sg2 Aff
+"<valimisametnikult>"
+	"valimis#ametnik" N Sg Abl
+"<valimisümbriku>"
+	"valimis#ümbrik" N Sg Gen
+"<,>"
+	"," Punct
+"<millesse>"
+	"mis" Pron Interr Rel Sg Ill
+"<paned>"
+	"panema" V Pers Prs Ind Sg2 Aff
+"<templiga>"
+	"tempel" N Sg Com
+"<märgistatud>"
+	"märgistatud" A
+"<sedeli>"
+	"sedel" N Sg Gen
+"<.>"
+	"." Punct
+"<Kui>"
+	"kui" CS
+"<sinu>"
+	"sina" Pron Pers Ps2 Sg Gen
+"<võime>"
+	"võima" V Pers Prs Ind Pl1 Aff
+"<kanda>"
+	"kandma" V Inf
+"<kandidaadi>"
+	"kandidaat" N Sg Gen
+"<number>"
+	"number" N Sg Nom
+"<hääletussedelile>"
+	"hääletus#sedel" N Sg All
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<oluliselt>"
+	"oluliselt" Adv
+"<nõrgenenud>"
+	"nõrgenenud" A
+"<,>"
+	"," Punct
+"<võid>"
+	"võima" V Pers Prs Ind Sg2 Aff
+"<kasutada>"
+	"kasutama" V Inf
+"<hääletamisel>"
+	"hääletamine" N Sg Ade
+"<abilist>"
+	"abiline" N Sg Par
+"<või>"
+	"või" CC
+"<valimiste>"
+	"valimine" N Pl Gen
+"<funktsionäri>"
+	"funktsionäri" N Sg Par
+"<.>"
+	"." Punct
+"<Abistajaks>"
+	"abistaja" N Sg Tra
+"<ei>"
+	"ei" V Neg
+"<tohi>"
+	"tohtima" V Pers Prs Ind Neg
+"<olla>"
+	"olla" V Inf
+"<valimistel>"
+	"valimine" N Pl Ade
+"<kandideeriv>"
+	"kandideeriv" A Sg Nom
+"<isik>"
+	"isik" N Sg Nom
+"<.>"
+	"." Punct
+"<Abistaja>"
+	"abistaja" N Sg Nom
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<kohustatud>"
+	"kohustama" V Impers Past Prc
+"<hoidma>"
+	"hoidma" V Pers Sup Ill
+"<valimissaladust>"
+	"valimis#saladus" N Sg Par
+"<,>"
+	"," Punct
+"<st>"
+	"st" Abbr
+"<hoidma>"
+	"hoidma" V Pers Sup Ill
+"<saladuses>"
+	"saladus" N Sg Ine
+"<hääletamise>"
+	"hääletamine" N Sg Gen
+"<ajal>"
+	"ajal" Adp
+"<saadud>"
+	"saadud" A
+"<andmed>"
+	"anne" N Pl Nom
+"<.>"
+	"." Punct
+"<¶>"
+	"¶" Punct
+"<Lisateave>"
+	"lisa#teave" N Sg Nom
+"<¶>"
+	"¶" Punct
+"<¶>"
+	"¶" Punct
+"<->"
+	"-" Punct
+"<Lisateavet>"
+	"lisa#teave" N Sg Par
+"<valimiste>"
+	"valimine" N Pl Gen
+"<kohta>"
+	"kohta" Adp
+"<annab>"
+	"andma" V Pers Prs Ind Sg3 Aff
+"<valla>"
+	"vald" N Sg Gen
+"<keskvalimiskomisjon>"
+	"keskvalimis#komisjon" N Sg Nom
+"<.>"
+	"." Punct
+"<->"
+	"-" Punct
+"<Hääleõigust>"
+	"hääle#õigus" N Sg Par
+"<puudutavatele>"
+	"puudutav" A Pl All
+"<isiklikele>"
+	"isiklik" A Pl All
+"<küsimustele>"
+	"küsimus" N Pl All
+"<vastab>"
+	"vastama" V Pers Prs Ind Sg3 Aff
+"<magistraat>"
+	"magistraat" N Sg Nom
+"<.>"
+	"." Punct
+"<->"
+	"-" Punct
+"<Mõlema>"
+	"mõlema" Pron Det Sg Gen
+"<aadressid>"
+	"aadress" N Pl Nom
+"<ja>"
+	"ja" CC
+"<telefoninumbrid>"
+	"telefoni#number" N Pl Nom
+"<on>"
+	"olema" V Pers Prs Ind Pl3 Aff
+"<hääletamisteatel>"
+	"hääletamis#teade" N Sg Ade
+"<.>"
+	"." Punct
+"<->"
+	"-" Punct
+"<Eelhääletuspaikade>"
+	"eel#hääletus#paik" N Pl Gen
+"<aadressid>"
+	"aadress" N Pl Nom
+"<ja>"
+	"ja" CC
+"<lahtiolekuajad>"
+	"lahti#olekuaj#aeg" N Pl Nom
+"<,>"
+	"," Punct
+"<kandidaatide>"
+	"kandidaat" N Pl Gen
+"<register>"
+	"register" N Sg Nom
+"<ja>"
+	"ja" CC
+"<muu>"
+	"muu" Pron Indef Sg Nom
+"<info>"
+	"info" N Sg Nom
+"<valimiste>"
+	"valimine" N Pl Gen
+"<kohta>"
+	"kohta" Adp
+"<on>"
+	"olema" V Pers Prs Ind Sg3 Aff
+"<ära>"
+	"ära" Adv
+"<toodud>"
+	"tooma" V Impers Past Prc
+"<justiitsministeeriumi>"
+	"justiits#ministeerium" N Sg Gen
+"<veebilehel>"
+	"veebi#leht" N Sg Ade
+"<www.vaalit.fi>"
+	"www.vaalit.fi" Abbr
+"<¶>"
+	"¶" Punct
+"<->"
+	"-" Punct
+"<Andmed>"
+	"anne" N Pl Nom
+"<kohalike>"
+	"kohalik" A Pl Gen
+"<valimiste>"
+	"valimine" N Pl Gen
+"<kandidaatide>"
+	"kandidaat" N Pl Gen
+"<kohta>"
+	"kohta" Adp
+"<on>"
+	"olema" V Pers Prs Ind Pl3 Aff
+"<justiitsministeeriumi>"
+	"justiits#ministeerium" N Sg Gen
+"<veebilehel>"
+	"veebi#leht" N Sg Ade
+"<oktoobri>"
+	"oktoober" N Sg Gen
+"<alguses>"
+	"algus" N Sg Ine
+"<ja>"
+	"ja" CC
+"<andmed>"
+	"anne" N Pl Nom
+"<eelhääletuspaikade>"
+	"eel#hääletus#paik" N Pl Gen
+"<kohta>"
+	"kohta" Adp
+"<augusti>"
+	"august" N Sg Gen
+"<keskel>"
+	"keskel" Adp
+"<.>"
+	"." Punct
+"<¶>"
+	"¶" Punct
+"<JUSTIITSMINISTEERIUM>"
+	"justiits#ministeerium" N Sg Nom
+

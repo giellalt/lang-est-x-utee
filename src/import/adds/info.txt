@@ -1,6 +1,6 @@
 Lexical information added to morphologically analyzed text before CG analysis:
 pron.pl: classification of pronouns,
-tagger08.c + abileksikon06utf.lx:
+tagger15.c + addlex.lx:
 1) transitiveness of verbs and cases of objects,
 2) types of adpositions (pre, post) and cases of nouns.
 
@@ -9,7 +9,7 @@ cap - capitalized wordform
 <nud> - past personal participle
 <tud> - past impersonal participle
 <nu> - nominalization of past personal participle
-<tu> - nominalization of past personal participle
+<tu> - nominalization of past impersonal participle
 <v> - present personal participle
 <tav> - present impersonal participle
 <mine> - -mine-derivation
