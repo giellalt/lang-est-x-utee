@@ -50,7 +50,7 @@ Pl+All hobustele@Pl+All hevosille
 Pl+Ade hobustel@Pl+Ade hevosilla
 Pl+Abl hobustelt@Pl+Abl hevosilta
 Pl+Tra hobusteks@Pl+Tra hevosiksi
-Pl+Trm hobusteni@Pl+Gen hevosien (asti)
+Pl+Trm hobusteni@Pl+Ill hevosiin (asti)
 Pl+Ess hobustena@Pl+Ess hevosina
 Pl+Abe hobusteta@Pl+Abe hevositta
 Pl+Com hobustega@Pl+Ins hevosin
