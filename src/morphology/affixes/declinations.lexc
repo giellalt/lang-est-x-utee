@@ -585,6 +585,7 @@ An_PlP_sid;
 LEXICON An_SgN  ! Sg Nom
  +Sg+Nom:0 GI;
  +Der+Der/ini+Adv:+ini GI; ! need võrdlusastmed, mis on otse sõnastikus (valjemini)
+ +Sg+Nom+Der+Der/lik+A:+likK1 Der_25;
  LIIT;
 
 LEXICON An_SgG  ! SgG analoogiarühm
@@ -594,6 +595,7 @@ LEXICON An_SgG  ! SgG analoogiarühm
  +Pl+Nom:+d GI;
  +Comp:+m 02_A;
  +Der+Der/ini+Adv:+mini GI;
+ +Sg+Gen+Der+Der/lik+A:+likK1 Der_25;
  +Der+Der/lt+Adv:+lt GI;
  +Dim/ke+N:ke 12_0-SE-S;
  +Dim/kene+N:ke 12_NE-SE-S;
@@ -703,6 +705,9 @@ LEXICON KÄÄNE_2  ! käändelõpud illatiivist translatiivini (mitmus)
 
 LEXICON Der_GenAttr
 @R.Cap.Opt@@C.Cap@ GI;
+
+LEXICON Der_25
+@U.Cap.Opt@@C.Cap@ 25;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! liitsõnade moodustamine

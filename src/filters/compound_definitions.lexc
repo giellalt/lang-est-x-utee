@@ -13,14 +13,14 @@ Definitions
     FlagsOrAny = [ Flags | ? ];
     TüveEristajad = ([ "+Hom0" | "+Hom1" | "+Hom2" | "+Hom3" ]);
     Tähtsõne = [ Flags | Täht | %- | %=]+;
-    Tuletised = "+Der" [ "+Der/ini" | "+Der/ja" | "+Der/lt" | "+Der/mine" | "+Der/nu" | "+Der/tav" | "+Der/tu" | "+Der/us" | "+Der/v" ];
+    Tuletised = "+Der" [ "+Der/ini" | "+Der/ja" | "+Der/lik" | "+Der/lt" | "+Der/mine" | "+Der/nu" | "+Der/tav" | "+Der/tu" | "+Der/us" | "+Der/v" ];
     Semantilised = [ "+Sem/Plc" ];
-    TuletisKäänduvast = ( [ "+A" ("+Comp" | "+Superl") | "+N" ("+Prop") | "+V" ] (Semantilised) [ Tuletised | "+Dim/ke" | "+Dim/kene" ] );
-    Sona = [[Arv]+ (%- | %. | %,)]* [Arv]+ (%. | %% | %' (%') ) | ([Arv]+) Tähtsõne TuletisKäänduvast;
-
     ArvJaKääne = [ %+Sg | %+Pl ] [ %+Nom | %+Gen | %+Par | %+Ill | %+Ine
     				 | %+Ela | %+All | %+Ade | %+Abl | %+Tra
 				 | %+Trm | %+Ess | %+Abe | %+Com ];
+    TuletisKäänduvast = ( [ "+A" ("+Comp" | "+Superl") | "+N" ("+Prop") | "+V" ] (Semantilised) (ArvJaKääne) [ Tuletised | "+Dim/ke" | "+Dim/kene" ]);
+    Sona = [[Arv]+ (%- | %. | %,)]* [Arv]+ (%. | %% | %' (%') ) | ([Arv]+) Tähtsõne TuletisKäänduvast;
+
 
     PööreJaArv = [ %+Sg1 | %+Sg2 | %+Sg3 | %+Pl1 | %+Pl2 | %+Pl3 ];
     AffNeg = [ %+Aff | %+Neg ];
@@ -58,11 +58,11 @@ Definitions
 
 
 
-    Omadussõna' = Sona TüveEristajad "+A" ([ "+Comp" | "+Superl" ]);
+    Omadussõna' = Sona TüveEristajad "+A" ([ "+Comp" | "+Superl" ]) Flags;
     Omadussõna = [ Omadussõna' ArvJaKääne | Sona "+A" ( "+Prc" ) ];
-    Nimisõna' = Sona TüveEristajad "+N" ("+Prop" (Semantilised));
+    Nimisõna' = Sona TüveEristajad "+N" ("+Prop" (Semantilised)) Flags;
     Nimisõna = Nimisõna' ArvJaKääne;
-    Arvsõna = Sona "+Num" [ "+Card" | "+Ord" ] (ArvJaKääne);
+    Arvsõna = Sona "+Num" [ "+Card" | "+Ord" ] Flags (ArvJaKääne);
     Asesõna = Sona [ "+Pron" ] ArvJaKääne;
     Käänduvsõna = [ Omadussõna | Nimisõna | Arvsõna | Asesõna ] Gi;
     Määrsõna = Sona "+Adv" Gi;
