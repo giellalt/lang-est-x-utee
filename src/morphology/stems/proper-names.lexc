@@ -1,21 +1,44 @@
 LEXICON ProperNames
  
  ! ??? abel+N+Prop:abel 02; ! (02_H -> +H) a0: Abel, b0: Abeli, b0r: Abele
- Ameerika+N+Prop+Sem/Plc:Ameerika 01; ! (01_H -> +H) a0: Ameerika, a0r: 0
  ! ??? archimedes+N+Prop:archimedes 09; ! (09_H -> +H) a0: Archimedes, b0: Archimedese
  ! ??? bayes+N+Prop:bayes 02; ! (02_H -> +H) a0: Bayes, b0: Bayesi, b0r: Bayese
  Cardano+N+Prop:Cardano 01; ! (01_H -> +H) a0: Cardano, a0r: 0
  Cartesius+N+Prop:Cartesius 11; ! (11_H -> +H) a0: Cartesius, b0: Cartesiuse, b0v: Cartesiusi
  Cavalier+N+Prop:Cavalier 26_ii; ! (26_H -> +H) a0: Cavalier, a0r: #
  Descartes+N+Prop:Descartes 11; ! (11_H -> +H) a0: Descartes, b0: Descartese, b0v: Descartese
+
+ ! ??? internet+N+Prop:Internet 22; ! (22_H -> +H) at: Internet, bt: Internetti, bn: Interneti, btv: Internette, bnv: Internete
+ Internet+N+Prop:InternetT1 22_KPT_I; ! (22_H -> +H) at: internet, bt: internetti, bn: interneti, btv: internette, bnv: internete
+
+ Jaak+N+Prop:JaaK1 22_U; ! (22_S -> +S) at: jaak, bt: jaaku, bn: jaagu, btv: jaake, bnv: jaage
+ Jaakko+N+Prop:Jaakko 16; 
+ Mari+N+Prop:Mari 16; ! Mari-Mari-Marit
+
+ Ida- Place;
+ Lääne- Place;
+ Lõuna- Place;
+ Põhja- Place;
+ Kagu- Place;
+ Edela- Place;
+ Loode- Place;
+ Kirde- Place;
+ Kesk- Place;
+
+ Place';
+
+LEXICON Place
+ Place';
+! @U.Cap.Opt@ Place';
+! @U.Cap.Obl@ Place';
+
+LEXICON Place'
+ Ameerika+N+Prop+Sem/Plc:Ameerika 01; ! (01_H -> +H) a0: Ameerika, a0r: 0
  Eesti+N+Prop+Sem/Plc:Eesti 16; ! (16_H -> +H) a0: eesti, a0g: #
  Euroopa+N+Prop+Sem/Plc:Euroopa 01; ! (01_H -> +H) a0: euroopa, a0r: 0
  Helsingi+N+Prop+Sem/Plc:Helsingi 01;
  Hispaania+N+Prop+Sem/Plc:Hispaania 01;
  Inglismaa+N+Prop+Sem/Plc:Inglisma. 26;
-
- ! ??? internet+N+Prop:Internet 22; ! (22_H -> +H) at: Internet, bt: Internetti, bn: Interneti, btv: Internette, bnv: Internete
- Internet+N+Prop:InternetT1 22_KPT_I; ! (22_H -> +H) at: internet, bt: internetti, bn: interneti, btv: internette, bnv: internete
  Itaalia+N+Prop+Sem/Plc:Itaalia 01;
  Leedu+N+Prop+Sem/Plc:Leedu 01;
  Norra+N+Prop+Sem/Plc:Norra 01;
@@ -33,7 +56,25 @@ LEXICON ProperNames
  Ungari+N+Prop+Sem/Plc:Ungari 01;
  Venemaa+N+Prop+Sem/Plc:Venema. 26; ! (26_H -> +H) a0: Venemaa, a0r: # 
 
- Jaak+N+Prop:JaaK1 22_U; ! (22_S -> +S) at: jaak, bt: jaaku, bn: jaagu, btv: jaake, bnv: jaage
- Jaakko+N+Prop:Jaakko 16; 
- Mari+N+Prop:Mari 16; ! Mari-Mari-Marit
-
+ Saksamaa+N+Prop+Sem/Plc:Saksama. 26; ! (26_S -> +S) a0: maa, a0r: ma
+ Saksamaa+N+Prop+Sem/Plc+Pl+Abe:Saksamaadeta GI; ! 26_S,m'aa,maa[deta],------1A,-,-,+
+ Saksamaa+N+Prop+Sem/Plc+Pl+Abl:Saksamaadelt GI; ! 26_S,m'aa,maa[delt],------16,-,-,+
+ Saksamaa+N+Prop+Sem/Plc+Pl+Ade:Saksamaadel GI; ! 26_S,m'aa,maa[del],------15,-,-,+
+ Saksamaa+N+Prop+Sem/Plc+Pl+All:Saksamaadele GI; ! 26_S,m'aa,maa[dele],------14,-,-,+
+ Saksamaa+N+Prop+Sem/Plc+Pl+Com:Saksamaadega GI; ! 26_S,m'aa,maa[dega],------1K,-,-,+
+ Saksamaa+N+Prop+Sem/Plc+Pl+Ela:Saksamaadest GI; ! 26_S,m'aa,maa[dest],------13,-,-,+
+ Saksamaa+N+Prop+Sem/Plc+Pl+Ess:Saksamaadena GI; ! 26_S,m'aa,maa[dena],------1E,-,-,+
+ Saksamaa+N+Prop+Sem/Plc+Pl+Gen:Saksamaade GI; ! 26_S,m'aa,maa[de],------1G,-,-,+
+ Saksamaa+N+Prop+Sem/Plc+Pl+Ill:Saksamaadesse GI; ! 26_S,m'aa,maa[desse],------11,-,-,+
+ Saksamaa+N+Prop+Sem/Plc+Pl+Ine:Saksamaades GI; ! 26_S,m'aa,maa[des],------12,-,-,+
+ Saksamaa+N+Prop+Sem/Plc+Pl+Tra:Saksamaadeks GI; ! 26_S,m'aa,maa[deks],------1T,-,-,+
+ Saksamaa+N+Prop+Sem/Plc+Pl+Trm:Saksamaadeni GI; ! 26_S,m'aa,maa[deni],------1R,-,-,+
+ ! meri:
+ !  meri+N:mer= 20; ! (20_S -> +S) a0: meri, b0: mere, b0g: merre
+ !   Läänemeri:
+ Läänemeri+N+Prop:Läänemer= 20; ! (20_S -> +S) a0: meri, b0: mere, b0g: merre
+ !  meri+N+Sg+Par:merd GI; ! 20_S,meri,m'er[d],------0P,-,-,*
+ !   Läänemeri:
+ Läänemeri+N+Prop+Sg+Par:Läänemerd GI; ! 20_S,meri,m'er[d],------0P,-,-,*
+ 
+ 

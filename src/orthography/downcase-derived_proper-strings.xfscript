@@ -76,6 +76,6 @@ Y -> y,
 # underscore character 
 #%_  -> [] || .#. %@U%.Cap%.Opt%@ ?+ _ 
 
-] ;
+] .o. [ %- (->) [] || FLAG ?* _ ];
 
 substitute defined Flag for FLAG
