@@ -36,3 +36,5 @@
 
 ## Transition pairs + weight:
 @@
+s	š	0.95
+
