@@ -1417,7 +1417,7 @@
 "<,>"
 	"," Punct
 "<et>"
-	"et" CC
+	"et" CS
 "<sa>"
 	"sina" Pron Pers Ps2 Sg Nom
 "<ei>"
@@ -1697,7 +1697,7 @@
 "<,>"
 	"," Punct
 "<et>"
-	"et" CC
+	"et" CS
 "<sinu>"
 	"sina" Pron Pers Ps2 Sg Gen
 "<poolt>"
