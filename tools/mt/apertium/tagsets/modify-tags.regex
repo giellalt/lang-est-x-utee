@@ -5,6 +5,7 @@
  [ %<cc%> -> %<cnjcoo%> ] .o.
  [ %<a%> -> %<adj%> ] .o.
  [ %<v%> -> %<vblex%> ] .o.
+ [ %<interj%> -> %<ij%> ] .o.
  [ %<sg1%> -> %<p1%> %<sg%> ] .o.
  [ %<pron%> -> %<prn%> ] .o.
  [ %<superl%> -> %<sup%> ] .o.
