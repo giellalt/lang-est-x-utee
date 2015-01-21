@@ -46,13 +46,13 @@ GT_GENERATORS_XFST=
 
 #### Xerox transducers:
 if CAN_XFST
-GT_ANALYSERS_XFST+=
+GT_ANALYSERS_XFST+=analyser-forcg-desc.xfst
 GT_GENERATORS_XFST+=
 endif # CAN_XFST
 
 #### HFST transducers
 if CAN_HFST
-GT_ANALYSERS_HFST+=
+GT_ANALYSERS_HFST+=analyser-forcg-desc.hfst
 GT_GENERATORS_HFST+=
 endif # CAN_HFST
 
