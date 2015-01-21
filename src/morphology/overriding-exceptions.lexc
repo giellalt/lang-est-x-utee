@@ -444,6 +444,11 @@ LEXICON Asendavad_erandid
  öö+N+Pl+Tra:öödeks GI; ! 26_S,'öö,'öö[deks],------1T,-,-,*
  öö+N+Pl+Tra:öödeks GI; ! 26_S,'öö,öö[deks],------1T,-,-,*
 
+ üksteise+Pron+Sg+Nom:%{%} #;
+ üksteise+Pron+Sg+Ill:üksteise GI; ! 12_P,teise,t'eise[],------0D,-,-,*
+ teineteise+Pron+Sg+Nom:%{%} #;
+ teineteise+Pron+Sg+Ill:teineteise GI; ! 12_P,teise,t'eise[],------0D,-,-,*
+
 LEXICON afneg_0
  +Aff: #;
  +Neg: #;
@@ -451,6 +456,7 @@ LEXICON afneg_0
 LEXICON GI  ! liide gi/ki
 
 @U.Cap.Obl@ GI';
+GI';
 
 LEXICON GI'
  +Foc/gi:Q1i #;

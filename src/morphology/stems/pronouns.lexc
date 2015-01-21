@@ -571,20 +571,6 @@ LEXICON Pronouns
  nemad+Pron+Pl+Par:neid GI; ! 00_P,t'a,n'e[id],------1P,-,-,*
  nemad+Pron+Pl+Tra:neiks GI; ! 00_P,t'a,n'e[iks],------1T,-,-,*
  nemad+Pron+Pl+Trm:%{%} #; ! 00_P,t'a,#,------1R,-,-,*
- tema+Pron+Sg+Abe:%{%} #; ! 00_P,t'a,#,------0A,-,-,*
- tema+Pron+Sg+Abl:talt GI; ! 00_P,t'a,t'a[lt],------06,-,-,*
- tema+Pron+Sg+Ade:tal GI; ! 00_P,t'a,t'a[l],------05,-,-,*
- tema+Pron+Sg+All:talle GI; ! 00_P,t'a,t'a[lle],------04,-,-,*
- tema+Pron+Sg+Com:taga GI; ! 00_P,t'a,t'a[ga],------0K,-,-,*
- tema+Pron+Sg+Ela:tast GI; ! 00_P,t'a,t'a[st],------03,-,-,*
- tema+Pron+Sg+Ess:%{%} #; ! 00_P,t'a,#,------0E,-,-,*
- tema+Pron+Sg+Gen:ta GI; ! 00_P,t'a,t'a[],------0G,-,-,*
- tema+Pron+Sg+Ill:tasse GI; ! 00_P,t'a,t'a[sse],------01,-,-,*
- tema+Pron+Sg+Ine:tas GI; ! 00_P,t'a,t'a[s],------02,-,-,*
- tema+Pron+Sg+Nom:ta GI; ! 00_P,t'a,t'a[],------0N,-,-,*
- tema+Pron+Sg+Par:teda GI; ! 00_P,t'a,te[da],------0P,-,-,*
- tema+Pron+Sg+Tra:%{%} #; ! 00_P,t'a,#,------0T,-,-,*
- tema+Pron+Sg+Trm:%{%} #; ! 00_P,t'a,#,------0R,-,-,*
   nemad+Pron+Pl+Abe:nendeta GI; ! 00_P,tema,nen[deta],------1A,-,-,*
  nemad+Pron+Pl+Abl:nendelt GI; ! 00_P,tema,nen[delt],------16,-,-,*
  nemad+Pron+Pl+Ade:nendel GI; ! 00_P,tema,nen[del],------15,-,-,*
@@ -599,21 +585,37 @@ LEXICON Pronouns
  nemad+Pron+Pl+Par:neid GI; ! 00_P,tema,n'e[id],------1P,-,-,*
  nemad+Pron+Pl+Trm:nendeni GI; ! 00_P,tema,nen[deni],------1R,-,-,*
  nemad+Pron+Pl+Tra:nendeks GI; ! 00_P,tema,nen[deks],------1T,-,-,*
- tema+Pron+Sg+Abe:temata GI; ! 00_P,tema,tema[ta],------0A,-,-,*
- tema+Pron+Sg+Abl:temalt GI; ! 00_P,tema,tema[lt],------06,-,-,*
- tema+Pron+Sg+Ade:temal GI; ! 00_P,tema,tema[l],------05,-,-,*
- tema+Pron+Sg+All:temale GI; ! 00_P,tema,tema[le],------04,-,-,*
- tema+Pron+Sg+Ela:temast GI; ! 00_P,tema,tema[st],------03,-,-,*
- tema+Pron+Sg+Ess:temana GI; ! 00_P,tema,tema[na],------0E,-,-,*
- tema+Pron+Sg+Gen:tema GI; ! 00_P,tema,tema[],------0G,-,-,*
- tema+Pron+Sg+Ill:temasse GI; ! 00_P,tema,tema[sse],------01,-,-,*
- tema+Pron+Sg+Ine:temas GI; ! 00_P,tema,tema[s],------02,-,-,*
- tema+Pron+Sg+Com:temaga GI; ! 00_P,tema,tema[ga],------0K,-,-,*
- tema+Pron+Sg+Nom:tema GI; ! 00_P,tema,tema[],------0N,-,-,*
+
+ tema+Pron+Sg+Nom:ta GI; ! 00_P,t'a,t'a[],------0N,-,-,*
+ tema+Pron+Emph+Sg+Nom:tema GI; ! 00_P,tema,tema[],------0N,-,-,*
+ tema+Pron+Sg+Gen:ta GI; ! 00_P,t'a,t'a[],------0G,-,-,*
+ tema+Pron+Emph+Sg+Gen:tema GI; ! 00_P,tema,tema[],------0G,-,-,*
  tema+Pron+Sg+Par:teda GI; ! 00_P,tema,te[da],------0P,-,-,*
- tema+Pron+Sg+Trm:temani GI; ! 00_P,tema,tema[ni],------0R,-,-,*
- tema+Pron+Sg+Tra:temaks GI; ! 00_P,tema,tema[ks],------0T,-,-,*
-  nood+Pron+Pl+Abe:nondeta GI; ! 00_P,t'oo,non[deta],------1A,-,-,*
+ tema+Pron+Emph+Sg+Par:teda GI; ! 00_P,t'a,te[da],------0P,-,-,*
+ tema+Pron+Sg+Ill:tasse GI; ! 00_P,t'a,t'a[sse],------01,-,-,*
+ tema+Pron+Emph+Sg+Ill:temasse GI; ! 00_P,tema,tema[sse],------01,-,-,*
+ tema+Pron+Sg+Ine:tas GI; ! 00_P,t'a,t'a[s],------02,-,-,*
+ tema+Pron+Emph+Sg+Ine:temas GI; ! 00_P,tema,tema[s],------02,-,-,*
+ tema+Pron+Sg+Ela:tast GI; ! 00_P,t'a,t'a[st],------03,-,-,*
+ tema+Pron+Emph+Sg+Ela:temast GI; ! 00_P,tema,tema[st],------03,-,-,*
+ tema+Pron+Sg+All:talle GI; ! 00_P,t'a,t'a[lle],------04,-,-,*
+ tema+Pron+Emph+Sg+All:temale GI; ! 00_P,tema,tema[le],------04,-,-,*
+ tema+Pron+Sg+Ade:tal GI; ! 00_P,t'a,t'a[l],------05,-,-,*
+ tema+Pron+Emph+Sg+Ade:temal GI; ! 00_P,tema,tema[l],------05,-,-,*
+ tema+Pron+Sg+Abl:talt GI; ! 00_P,t'a,t'a[lt],------06,-,-,*
+ tema+Pron+Emph+Sg+Abl:temalt GI; ! 00_P,tema,tema[lt],------06,-,-,*
+ tema+Pron+Sg+Trm:temani #; ! 00_P,t'a,#,------0R,-,-,*
+ tema+Pron+Emph+Sg+Trm:temani GI; ! 00_P,tema,tema[ni],------0R,-,-,*
+ tema+Pron+Sg+Ess:temana #; ! 00_P,t'a,#,------0E,-,-,*
+ tema+Pron+Emph+Sg+Ess:temana GI; ! 00_P,tema,tema[na],------0E,-,-,*
+ tema+Pron+Sg+Abe:temata #; ! 00_P,t'a,#,------0A,-,-,*
+ tema+Pron+Emph+Sg+Abe:temata GI; ! 00_P,tema,tema[ta],------0A,-,-,*
+ tema+Pron+Sg+Com:temaga GI; ! 00_P,t'a,t'a[ga],------0K,-,-,*
+ tema+Pron+Emph+Sg+Com:temaga GI; ! 00_P,tema,tema[ga],------0K,-,-,*
+ tema+Pron+Sg+Tra:temaks #; ! 00_P,t'a,#,------0T,-,-,*
+ tema+Pron+Emph+Sg+Tra:temaks GI; ! 00_P,tema,tema[ks],------0T,-,-,*
+
+ nood+Pron+Pl+Abe:nondeta GI; ! 00_P,t'oo,non[deta],------1A,-,-,*
  nood+Pron+Pl+Abl:noilt GI; ! 00_P,t'oo,n'o[ilt],------16,-,-,*
  nood+Pron+Pl+Abl:nondelt GI; ! 00_P,t'oo,non[delt],------16,-,-,*
  nood+Pron+Pl+Ade:noil GI; ! 00_P,t'oo,n'o[il],------15,-,-,*
@@ -685,10 +687,6 @@ LEXICON Pronouns
  ükski+Pron+Sg+Par:ühtki GI; ! 00_P,'ükski,'üht[ki],------0P,-,-,*
  ükski+Pron+Sg+Trm:ühenigi GI; ! 00_P,'ükski,ühe[nigi],------0R,-,-,*
  ükski+Pron+Sg+Tra:ühekski GI; ! 00_P,'ükski,ühe[kski],------0T,-,-,*
- üksteise+Pron+Sg+Nom:%{%} #;
- üksteise+Pron+Sg+Ill:üksteise GI; ! 12_P,teise,t'eise[],------0D,-,-,*
- teineteise+Pron+Sg+Nom:%{%} #;
- teineteise+Pron+Sg+Ill:teineteise GI; ! 12_P,teise,t'eise[],------0D,-,-,*
 !
 ! 
  esimene+Pron:esime 12_NE-SE-S; ! (12_OP -> +Pron +Ord) a0: esimene, b0: esimese, c0: esimes, b0v: esimesi
@@ -717,6 +715,12 @@ LEXICON Pronouns
  säärane+Pron:säära 10_NE-SE-S; ! (10_P -> +Pron) a0: säärane, b0: säärase, c0: sääras
  taoline+Pron:taoli 12_NE-SE-S; ! (12_A -> +A) a0: taoline, b0: taolise, c0: taolis, b0v: taolisi
  taoline+Pron+Pl+Par:taoliseid GI;
+ üksteise+Pron:ükstei 12_NE-SE-S'; ! (12_P -> +Pron) a0: teise, b0: teise, c0: teis, b0v: teisi ?????
+ teineteise+Pron:teinetei 12_NE-SE-S'; ! (12_P -> +Pron) a0: teise, b0: teise, c0: teis, b0v: teisi ?????
+ teise+Pron:teise 12_NE-SE-S'; ! (12_P -> +Pron) a0: teise, b0: teise, c0: teis, b0v: teisi ?????
+ temakene+Pron:temake 12_NE-SE-S; ! (12_P -> +Pron) a0: temakene, b0: temakese, c0: temakes, b0v: temakesi
+ temake+Pron:temake 12_0-SE-S; ! (12_P -> +Pron) a0: temake, b0: temakese, c0: temakes, b0v: temakesi
+
  teine+Pron+Sg+Nom:teine GI;
  teine+Pron+Sg+Gen:teise GI;
  teine+Pron+Sg+Par:teist GI;
@@ -746,8 +750,4 @@ LEXICON Pronouns
  teine+Pron+Pl+Ess:teistena GI;
  teine+Pron+Pl+Abe:teisteta GI;
  teine+Pron+Pl+Com:teistega GI;
- teineteise+Pron:teinetei 12_NE-SE-S;
- teise+Pron:teise 12_NE-SE-S; ! (12_P -> +Pron) a0: teise, b0: teise, c0: teis, b0v: teisi ?????
- temakene+Pron:temake 12_NE-SE-S; ! (12_P -> +Pron) a0: temakene, b0: temakese, c0: temakes, b0v: temakesi
- temake+Pron:temake 12_0-SE-S; ! (12_P -> +Pron) a0: temake, b0: temakese, c0: temakes, b0v: temakesi
- üksteise+Pron:ükstei 12_NE-SE-S;
+ 

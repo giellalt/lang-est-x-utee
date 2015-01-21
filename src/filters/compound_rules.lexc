@@ -147,8 +147,8 @@ LEXICON Asesõnad
  toosama+Pron+Pl+Abe:too+Pron+Pl+Gen#sama+Pron+Pl+Abe GI;
  toosama+Pron+Pl+Com:too+Pron+Pl+Gen#sama+Pron+Pl+Com GI;
 
- < Tähtsõne "+Pron" [ "+Sg" | "+Pl" ] "+Gen" Flags "#" s u g u n e "+A" ArvJaKääne > GI;
- < Tähtsõne "+Pron" [ "+Sg" | "+Pl" ] "+Gen" Flags "#" t a o l i n e "+Pron" ArvJaKääne > GI;
+ < Tähtsõne "+Pron" ("+Emph") [ "+Sg" | "+Pl" ] "+Gen" Flags "#" s u g u n e "+A" ArvJaKääne > GI;
+ < Tähtsõne "+Pron" ("+Emph") [ "+Sg" | "+Pl" ] "+Gen" Flags "#" t a o l i n e "+Pron" ArvJaKääne > GI;
 
  < Asesõna > GI;
 

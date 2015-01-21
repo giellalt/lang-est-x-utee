@@ -63,7 +63,7 @@ Definitions
     Nimisõna' = Sona TüveEristajad "+N" ("+Prop" (Semantilised)) Flags;
     Nimisõna = Nimisõna' ArvJaKääne;
     Arvsõna = Sona "+Num" [ "+Card" | "+Ord" ] Flags (ArvJaKääne);
-    Asesõna = Sona [ "+Pron" ] ArvJaKääne;
+    Asesõna = Sona [ "+Pron" ( "+Emph" ) ] ArvJaKääne;
     Käänduvsõna = [ Omadussõna | Nimisõna | Arvsõna | Asesõna ] Gi;
     Määrsõna = Sona "+Adv" Gi;
     Hüüdsõna = Sona "+Interj";

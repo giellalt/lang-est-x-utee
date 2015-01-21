@@ -6,7 +6,7 @@ LEXICON Root
 
 ! siin on mugav kasutada varemdefineeritud juppe.
 
-< Tähtsõne 0:"+Pron" [0:"+Sg" | 0:"+Pl"] [0:?] s u g u n e "+Pron":"+A" ArvJaKääne Gi > #;
+< Tähtsõne 0:"+Pron" ("+Emph")  [0:"+Sg" | 0:"+Pl"] [0:?] s u g u n e "+Pron":"+A" ArvJaKääne Gi > #;
 
 <
 [	?*

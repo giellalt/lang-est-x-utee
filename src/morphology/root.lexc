@@ -12,6 +12,7 @@ Multichar_Symbols
 ! +Num+Card	! arvsõna		! numeral		! kaks
 ! +Num+Ord	! järgarv		! ordinal		! teine
 +Pron	! asesõna		! pronoun		! see
++Emph	! rõhutatult		! emphasized (pronoun?)	! tema (vs ta)
 +V	! tegusõna 		! verb			! asjastama
 +Adv	! määrsõna		! adverb		! asjatult
 +Interj	! hüüdsõna		! interjection		! hei
