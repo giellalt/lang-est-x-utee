@@ -597,20 +597,36 @@ Tests:
      teie+Pron+Pl+Abe: teieta
      teie+Pron+Pl+Com: teiega
      #
-     tema+Pron+Sg+Nom: [tema, ta]
-     tema+Pron+Sg+Gen: [tema, ta]
+     tema+Pron+Sg+Nom: ta
+     tema+Pron+Sg+Gen: ta
      tema+Pron+Sg+Par: teda
-     tema+Pron+Sg+Ill: [temasse, tasse]
-     tema+Pron+Sg+Ine: [temas, tas]
-     tema+Pron+Sg+Ela: [temast, tast]
-     tema+Pron+Sg+All: [temale, talle]
-     tema+Pron+Sg+Ade: [temal, tal]
-     tema+Pron+Sg+Abl: [temalt, talt]
+     tema+Pron+Sg+Ill: tasse
+     tema+Pron+Sg+Ine: tas
+     tema+Pron+Sg+Ela: tast
+     tema+Pron+Sg+All: talle
+     tema+Pron+Sg+Ade: tal
+     tema+Pron+Sg+Abl: talt
      tema+Pron+Sg+Tra: temaks
      tema+Pron+Sg+Trm: temani
      tema+Pron+Sg+Ess: temana
      tema+Pron+Sg+Abe: temata
-     tema+Pron+Sg+Com: [temaga, taga]
+     tema+Pron+Sg+Com: temaga
+     #
+     tema+Pron+Emph+Sg+Nom: tema
+     tema+Pron+Emph+Sg+Gen: tema
+     tema+Pron+Emph+Sg+Par: teda
+     tema+Pron+Emph+Sg+Ill: temasse
+     tema+Pron+Emph+Sg+Ine: temas
+     tema+Pron+Emph+Sg+Ela: temast
+     tema+Pron+Emph+Sg+All: temale
+     tema+Pron+Emph+Sg+Ade: temal
+     tema+Pron+Emph+Sg+Abl: temalt
+     tema+Pron+Emph+Sg+Tra: temaks
+     tema+Pron+Emph+Sg+Trm: temani
+     tema+Pron+Emph+Sg+Ess: temana
+     tema+Pron+Emph+Sg+Abe: temata
+     tema+Pron+Emph+Sg+Com: temaga
+     #
      nemad+Pron+Pl+Nom: [nad, nemad]
      nemad+Pron+Pl+Gen: nende
      nemad+Pron+Pl+Par: neid
