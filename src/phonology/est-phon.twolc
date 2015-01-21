@@ -7,8 +7,9 @@ a b c d e f g h i j k l m n o p q r s š z ž t u v õ ä ö ü x y
 A B C D E F G H I J K L M N O P Q R S Š Z Ž T U V Õ Ä Ö Ü X Y 
 
 G1:g G1:0 B1:b B1:0 B1:m D1:d D1:0 D1:l D1:n D1:r K1:k K1:g K1:0 P1:p P1:b P1:0 T1:t
-T1:d T1:0 S1:s S1:0 S1:r %+:0 %$:0 A1:a A1:0 E1:e E1:0 I1:i I1:0 U1:u U1:0 %.:a %.:e 
-%.:o %.:u %.:ö %.:ä %.:i %.:0 %=:0 %=:h %=:m %=:s %=:k %=:p %=:t %=:f %=:š X2:0 %!:0 Q1:k %-:%-
+T1:d T1:0 S1:s S1:0 S1:r %+:0 %$:0 A1:a A1:0 E1:e E1:0 I1:i I1:0 U1:u U1:0 
+! %.:a %.:e %.:o %.:u %.:ö %.:ä %.:i 
+%.:0 %=:0 %=:h %=:m %=:s %=:k %=:p %=:t %=:f %=:š X2:0 %!:0 Q1:k %-:%-
 
 «7:« 
 »7:»  
@@ -302,7 +303,7 @@ o:õ <=> [ j | l | t ] _ %.: %+: i [ SonaPiir | d | n | m e | t e];
 	   o _ D1:0 e %$:;		!loe 
 
 "Pikk vokaal vaikimisi"
-  %.:Vok1 <=> Vok1 _ ~[%+: [ i | h ] :* ] .#.; where  Vok1 in (e o u õ ä ö ü);
+  %.:Vok1 <=> Vok1 _ ~[%+: [ a | i | h ] :* ] .#.; where  Vok1 in (e o u õ ä ö ü);
 
 "Pikk vokaal vaikimisi, a"
   %.:a <=> a _ ~[ [D1: | G1:] i: %$: :* ] .#.;
