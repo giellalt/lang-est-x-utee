@@ -314,6 +314,9 @@ Q1	! gi/ki
 ! To allow just some derivations of proper names
 +Sem/Plc 
 
+! non-generation of parallel forms
++Use/NG
+
 
 !! !!Flag diacritics
 !! We have manually optimised the structure of our lexicon using following

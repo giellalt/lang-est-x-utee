@@ -9,15 +9,16 @@ Definitions
 	     Q | R | S | Š | Z | Ž | T | U |
 	     V | W | X | Y | Õ | Ä | Ö | Ü ];
     Arv = [ %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ];
+    NonGen = ("+Use/NG");
     Flags = ([ "@U.Cap.Opt@" | "@U.Cap.Obl@" | "@R.Cap.Opt@" | "@C.Cap@" ]+);
     FlagsOrAny = [ Flags | ? ];
     TüveEristajad = ([ "+Hom0" | "+Hom1" | "+Hom2" | "+Hom3" ]);
     Tähtsõne = [ Flags | Täht | %- | %=]+;
     Tuletised = "+Der" [ "+Der/ini" | "+Der/ja" | "+Der/lik" | "+Der/lt" | "+Der/mine" | "+Der/nu" | "+Der/tav" | "+Der/tu" | "+Der/us" | "+Der/v" ];
     Semantilised = [ "+Sem/Plc" ];
-    ArvJaKääne = [ %+Sg | %+Pl ] [ %+Nom | %+Gen | %+Par | %+Ill | %+Ine
-    				 | %+Ela | %+All | %+Ade | %+Abl | %+Tra
-				 | %+Trm | %+Ess | %+Abe | %+Com ];
+    ArvJaKääne = NonGen [ %+Sg | %+Pl ] [ %+Nom | %+Gen | %+Par | %+Ill | %+Ine
+    			  	 	| %+Ela | %+All | %+Ade | %+Abl | %+Tra
+				 	| %+Trm | %+Ess | %+Abe | %+Com ] NonGen;
     TuletisKäänduvast = ( [ "+A" ("+Comp" | "+Superl") | "+N" ("+Prop") | "+V" ] (Semantilised) (ArvJaKääne) [ Tuletised | "+Dim/ke" | "+Dim/kene" ]);
     Sona = [[Arv]+ (%- | %. | %,)]* [Arv]+ (%. | %% | %' (%') ) | ([Arv]+) Tähtsõne TuletisKäänduvast;
 

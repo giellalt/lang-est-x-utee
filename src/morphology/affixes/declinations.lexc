@@ -4,6 +4,7 @@
 LEXICON 01	!vallatu
 An_SgN;
 An_SgG;
+An_SgIll;
 An_SgG_der;
 An_SgP_t;
 An_PlG_te;
@@ -143,12 +144,14 @@ LEXICON 09_S-KSE !vennas
 LEXICON 10_0-SE-S	!väike-väikese
  An_SgN;
  :se An_SgG;
+ :se An_SgIll;
  :s An_SgG_der;
  10_;
 
 LEXICON 10_NE-SE-S	!soolane, hiline
  :ne An_SgN;
  :se An_SgG;
+ :se An_SgIll;
  :s An_SgG_der;
  :s An_Prefix;
  10_;
@@ -156,6 +159,7 @@ LEXICON 10_NE-SE-S	!soolane, hiline
 LEXICON 10_KSE		!väike-väikse
  e An_SgN;
  :se An_SgG;
+ :se An_SgIll;
  :s An_SgG_der;
  e 10_;
 
@@ -167,6 +171,7 @@ LEXICON 10_
 LEXICON 11		!harjutus
 An_SgN;
 :e An_SgG;
+:e An_SgIll;
 !:e An_SgG_der;
 An_SgP_t;
 An_SgAdt_se;
@@ -191,12 +196,14 @@ An_SgN;
 
 LEXICON 12_
 :se An_SgG;
+:se An_SgIll;
 :s TP_12c0;
 :si TP_12b0v;
 
 LEXICON 13	!suur
 An_SgN;
 :e An_SgG;
+:e An_SgIll_NG;
 An_SgG_der;
 An_SgP_t;
 An_SgAdt_de;
@@ -206,6 +213,7 @@ An_PlG_te;
 
 LEXICON 14_S-NE	!laas
 :s An_SgN;
+:ne$ An_SgIll_NG;
 :ne$ An_SgG;
 ! :ne$ An_SgG_der;
 :n$ An_SgP_t;
@@ -221,6 +229,7 @@ LEXICON 14	!uus
 LEXICON 14'	! uks, laps
 An_SgN;
 :e$ An_SgG;
+:e$ An_SgIll;
 ! :e$ An_SgG_der;
 :$ An_SgP_t;
 :$ An_PlG_te;
@@ -230,6 +239,7 @@ An_SgN;
 LEXICON 15	!käsi
 :i An_SgN;
 :e$ An_SgG;
+:e$ An_SgIll_NG;
 !:e$ An_SgG_der;
 :$ An_SgP_tt;
 :$ An_SgAdt_tte;
@@ -408,18 +418,21 @@ TP_26a0;
 
 LEXICON TP_02b0  ! õpiku
 An_SgG;
+An_SgIll;
 An_SgP_t;
 An_PlG_te;
 An_PlP_id;
 
 LEXICON TP_03bt	!vahtra, numbri
 An_SgG;
+An_SgIll;
 An_SgP_t;
 An_PlG_te;
 An_PlP_id;
 
 LEXICON TP_04b0-05bt	!aseme (=04), liikme (=05)
 An_SgG;
+An_SgIll;
 An_PlG_te;
 An_PlP_id;
 
@@ -430,6 +443,7 @@ An_PlG_te;
 
 LEXICON TP_07bt  ! hamba (= 08)
 An_SgG;
+An_SgIll;
 An_PlP_id;
 
 LEXICON TP_08an  ! kannel
@@ -444,6 +458,7 @@ An_PlG_te;
 
 LEXICON TP_09b0	! katuse
 An_SgG;
+An_SgIll;
 An_PlP_id;
 
 LEXICON TP_12b0v  ! tavalisi
@@ -460,6 +475,7 @@ An_PlG_te;
 LEXICON TP_16a0	!kõne, ratsu
 An_SgN;
 An_SgG;
+An_SgIll;
 !:s An_SgG_der;
 An_SgP_t;
 An_PlG_de;
@@ -468,6 +484,7 @@ An_PlP_sid;
 LEXICON TP_17a0	!saba, tuvi
 An_SgN;
 An_SgG;
+An_SgIll_NG;
 !:s An_SgG_der;
 An_SgP_0;
 An_PlG_de;
@@ -484,6 +501,7 @@ An_PlP_sid;
 
 LEXICON TP_18an	!sõja, teo
 An_SgG;
+An_SgIll_NG;
 !An_SgG_der;
 
 LEXICON TP_19a0	!seminar
@@ -491,6 +509,7 @@ An_SgN;
 
 LEXICON TP_19b0	!seminari
 An_SgG;
+An_SgIll_NG;
 !An_SgG_der;
 An_SgP_0;
 An_SgAdt_0;
@@ -503,6 +522,7 @@ An_SgN;
 
 LEXICON TP_20b0	!nime
 An_SgG;
+An_SgIll_NG;
 !An_SgG_der;
 An_SgP_0;
 :X2 An_SgAdt_0;
@@ -514,6 +534,7 @@ An_SgN;
 
 LEXICON TP_21bn ! jõe
 An_SgG;
+An_SgIll_NG;
 !An_SgG_der;
 
 LEXICON TP_21bt ! jõge
@@ -523,6 +544,7 @@ An_PlP_sid;
 
 LEXICON TP_22bn' !jala, tiku, sepa
 An_SgG;
+An_SgIll_NG;
 !An_SgG_der;
 
 LEXICON TP_22bn
@@ -557,6 +579,7 @@ An_SgAdt_0;
 
 LEXICON TP_24bn	!padja
 An_SgG;
+An_SgIll_NG;
 !An_SgG_der;
 :+W An_Pl_Vok;	!padjus
 
@@ -569,19 +592,21 @@ An_PlP_sid;
 
 LEXICON TP_25bn	!õnneliku
 An_SgG;
+An_SgIll_NG;
 !An_SgG_der;
 :+W An_PlG_V;	!õnnelike, õnnelikes jne.
 
 LEXICON TP_25bt	!õnnelikku
 An_SgP_0;
 An_SgAdt_0;
-An_PlG_de;
-An_PlP_sid;
++Use/NG: An_PlG_de;
++Use/NG: An_PlP_sid;
 :+W An_PlP_V;	!õnnelikke
 
 LEXICON TP_26a0	!idee, galerii
 An_SgN;
 An_SgG;
+An_SgIll;
 !An_SgG_der;
 An_SgP_d;
 An_PlG_de;
@@ -598,7 +623,7 @@ LEXICON An_SgN  ! Sg Nom
 LEXICON An_SgG  ! SgG analoogiarühm
  +Sg+Gen:0 GI;
  +Sg+Gen+Attr:0 Der_GenAttr;
- +Sg:0 KÄÄNE_1;
+ +Sg:0 KÄÄNE_1';
  +Pl+Nom:+d GI;
  +Comp:+m 02_A;
  +Der+Der/ini+Adv:+mini GI;
@@ -688,8 +713,17 @@ LEXICON An_Prefix
 LEXICON Spr ! ülivõrre
  +Superl:%!+im 02_A;
 
-LEXICON KÄÄNE_1  ! käändelõpud illatiivist komitatiivini
+LEXICON An_SgIll_NG
+ +Sg+Ill+Use/NG:+sse GI;
+
+LEXICON An_SgIll
+ +Sg+Ill:+sse GI;
+
+LEXICON KÄÄNE_1
  +Ill:+sse GI;
+ KÄÄNE_1';
+
+LEXICON KÄÄNE_1'  ! käändelõpud illatiivist komitatiivini
  +Ine:+s GI;
  +Ela:+st GI;
  +All:+le GI;
