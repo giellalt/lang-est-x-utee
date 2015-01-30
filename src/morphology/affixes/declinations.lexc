@@ -180,24 +180,27 @@ An_PlG_te;
 :i An_Pl_Vok;
 
 LEXICON 12_NE-SE-S  !tavaline
-12_PlV;
+:si 12_PlV;
 12_NE-SE-S';
 
 LEXICON 12_NE-SE-S' !teine (ja mitte teisisse)
 :ne An_SgN;
 :s An_Prefix;
 :s An_SgG_der;
+:se An_SgIll_NG;
+:s An_SgAdt_se_NG;
 12_;
 
 LEXICON 12_0-SE-S   !kleenuke
 An_SgN;
+:se An_SgIll_NG;
+:s An_SgAdt_se; 
 12_;
-12_PlV;
+:i 12_PlV;
 
 LEXICON 12_
 :se An_SgG;
-:se An_SgIll;
-:s TP_12c0;
+:s TP_12c0';
 :si TP_12b0v;
 
 LEXICON 13	!suur
@@ -468,8 +471,11 @@ LEXICON 12_PlV
 An_Pl_Vok;
 
 LEXICON TP_12c0  ! tavalis, tasumis
-An_SgP_t;
 An_SgAdt_se;
+TP_12c0';
+
+LEXICON TP_12c0'
+An_SgP_t;
 An_PlG_te;
 
 LEXICON TP_16a0	!kõne, ratsu
@@ -664,6 +670,9 @@ LEXICON An_SgAdt_de  ! SgAdt (formatiiv de)
 
 LEXICON An_SgAdt_se  ! SgAdt (formatiiv se)
  +Sg+Ill:+se GI;
+
+LEXICON An_SgAdt_se_NG  ! SgAdt (formatiiv se)
+ +Sg+Ill+Use/NG:+se GI;
 
 LEXICON An_SgAdt_tte ! SgAdt (formatiiv tte)
  +Sg+Ill:+tte GI;
