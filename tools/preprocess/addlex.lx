@@ -1,31 +1,3 @@
-.
-? *Z Fst &Z *Fst 
-,
-? *Z Com &Z *Com 
-!
-? *Z Exc &Z *Exc 
-?
-? *Z Int &Z *Int 
-:
-? *Z Col &Z *Col 
-;
-? *Z Scl &Z *Scl 
-(
-? *Z Opr &Z *Opr 
-)
-? *Z Cpr &Z *Cpr 
-"
-? *Z Quo &Z *Quo 
-«
-? *Z Oqu &Z *Oqu 
-»
-? *Z Cqu &Z *Cqu 
-“
-? *Z Oqu &Z *Oqu 
-”
-? *Z Cqu &Z *Cqu 
--
-? *Z Dsh &Z *Dsh 
 aasi
 V *<Part> 
 abiellu
@@ -500,6 +472,8 @@ ehmu
 V *<Intr> <El>
 ehti
 V *<NGP-P> <Kom>
+ei
+V *Aux 
 einesta
 V *<Intr> 
 eineta
@@ -5283,7 +5257,7 @@ V *<Intr> <El>
 nähva
 V *<Part> 
 näi
-V *<Intr> 
+V *<Intr> |Mod <Intr> 
 näita
 V *<Part-P> 
 näitu
@@ -5407,7 +5381,7 @@ V *<Intr>
 oksüdeeru
 V *<Intr> 
 ole
-V *<Intr> 
+V *<Intr> |Aux <Intr>
 olele
 V *<Intr> 
 olene
@@ -5611,7 +5585,7 @@ V *<NGP-P>
 paisku
 V *<Intr> 
 paist
-V *<Intr> 
+V *<Intr> |Mod <Intr> 
 paisteta
 V *<Intr> 
 paistetu
@@ -5819,7 +5793,7 @@ V *<Intr>
 pettu
 V *<Intr> <In> 
 pida
-V *<NGP-P> 
+V *<NGP-P> |Mod <NGP-P> 
 pidi
 Adp *Post <part>
 pidurda
@@ -6979,7 +6953,7 @@ V *<Intr>
 šlikerda
 V *<Intr> 
 saa
-V *<NGP-P> 
+V *<NGP-P> |Mod <NGP-P> 
 saabu
 V *<Intr> <Ill> 
 saadik
@@ -7913,7 +7887,7 @@ V *<Part-P>
 tohleta
 V *<Intr> 
 tohti
-V *<Intr> 
+V *<Intr> |Mod <Intr> 
 toibu
 V *<Intr> <El>
 toimeta
@@ -8103,7 +8077,7 @@ V *<Intr>
 tund
 V *<Part-P> 
 tundu
-V *<Intr> 
+V *<Intr> |Mod <Intr> 
 tungi
 V *<Intr> 
 tunnista
@@ -8692,6 +8666,8 @@ võbise
 V *<Intr> 
 võdise
 V *<Intr> 
+või
+V *Mod 
 võidu
 V *<Intr> &Adp *Post <gen>  
 võidutse
@@ -8894,6 +8870,8 @@ V *<NGP-P> <All>
 V *<Intr> 
 äpardu
 V *<Intr> 
+ära
+V *Aux 
 ärata
 V *<NGP-P> 
 ärgita

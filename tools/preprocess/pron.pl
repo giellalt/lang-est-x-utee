@@ -224,6 +224,25 @@ while(<>){
 
  s:\"(.*)ma\" V (.*)$:\"$1ma\" V $2\"$1\" :g;
 
+ s: Adp Post : Po :g;
+ s: Adp Pre : Pr :g;
+
+ s:"\." \?:"\." Punct:g;
+ s:"," \?:"," Punct:g;
+ s:"!" \?:"!" Punct:g;
+ s:"\?" \?:"\?" Punct:g;
+ s:"\:" \?:"\:" Punct:g;
+ s:";" \?:";" Punct:g;
+ s:"\(" \?:"\(" Punct:g;
+ s:"\)" \?:"\)" Punct:g;
+ s:"\"" \?:"\"" Punct:g;
+ s:"«" \?:"«" Punct:g;
+ s:"»" \?:"»" Punct:g;
+ s:"“" \?:"“" Punct:g;
+ s:"”" \?:"”" Punct:g;
+ s:"-" \?:"-" Punct:g;
+ s:"¶" \?:"¶" Punct:g;
+
  print;
 }
 
