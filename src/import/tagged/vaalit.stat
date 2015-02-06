@@ -1,0 +1,1117 @@
+=	 2012. <Num><Ord>
+=	 aasta <N><Sg><Gen>
+=	 kohalik <A><Pl><Gen>
+=	 valimine <N><Pl><Gen>
+*	 teada#anne <N><Sg><Nom>
+=	 Soome <N><Prop><Sg><Nom>
+=	 jagunema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 vald <N><Pl><Tra>
+=	 , <Punct>
+=	 mis <Pron><Interr><Rel><Pl><Ade>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 põhi#seadus <N><Sg><Gen>
+=	 kohaselt <Adv>
+=	 oma#valitsus <N><Sg><Nom>
+=	 . <Punct>
+=	 vald <N><Pl><Nom>
+=	 langetama <V><Pers><Prs><Ind><Pl3><Aff>
+=	 otsus <N><Pl><Par>
+=	 palju <Pron><Indef><Pl><Ine>
+=	 elanik <N><Pl><Par>
+=	 puudutav <A><Pl><Ine>
+=	 küsimus <N><Pl><Ine>
+=	 . <Punct>
+=	 vald <N><Sg><Gen>
+=	 kõrge <A><Superl><Sg><Nom>
+=	 otsus <N><Pl><Par>
+=	 langetav <A><Sg><Nom>
+=	 organ <N><Sg><Nom>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 elanik <N><Pl><Gen>
+=	 poolt <Po>
+=	 valitav <A><Sg><Nom>
+=	 voli#kogu <N><Sg><Nom>
+=	 . <Punct>
+=	 voli#kogu <N><Sg><Gen>
+=	 liige <N><Pl><Nom>
+=	 ehk <CC>
+=	 volinik <N><Pl><Nom>
+=	 valima <V><Impers><Prs><Ind><Aff>
+=	 kohalik <A><Pl><Ade>
+=	 valimine <N><Pl><Ade>
+=	 korraga <Adv>
+=	 neli <Num><Card><Sg><Tra>
+=	 aasta <N><Sg><Tra>
+=	 . <Punct>
+=	 järgmine <A><Pl><Nom>
+=	 kohalik <A><Pl><Nom>
+=	 valimine <N><Pl><Nom>
+=	 olema <V><Pers><Prs><Ind><Pl3><Aff>
+=	 pühapäev <N><Sg><Ade>
+=	 , <Punct>
+=	 28.10.2012 <Num><Card>
+=	 . <Punct>
+=	 kohalik <A><Pl><Ade>
+=	 valimine <N><Pl><Ade>
+=	 saama <V><Pers><Prs><Ind><Pl3><Aff>
+=	 hääletama <V><Inf>
+=	 ja <CC>
+=	 kandideerima <V><Inf>
+=	 Soome <N><Prop><Sg><Gen>
+=	 kodanik <N><Pl><Nom>
+=	 ning <CC>
+=	 - <Punct>
+=	 teatud <A>
+=	 tingimus <N><Pl><Ade>
+=	 - <Punct>
+=	 vald <N><Sg><Ine>
+=	 elav <A><Pl><Nom>
+=	 teine <Pron><Dem><Pl><Gen>
+=	 riik <N><Pl><Gen>
+=	 kodanik <N><Pl><Nom>
+=	 . <Punct>
+=	 hääletamine <N><Sg><Nom>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 Soome <N><Prop><Sg><Ine>
+=	 vaba#tahtlik <A><Sg><Nom>
+=	 . <Punct>
+FALSENEG: Ahvena#maa<N><Sg><Gen> ['ahvena#maa<N><Sg><Gen>']
+-	 Ahvena#maa <N><Sg><Gen> ['ahvena#maa<N><Sg><Gen>', 'ahvena#maa<N><Sg><Nom>']
++	 ahvena#maa <N><Sg><Gen> ['ahvena#maa<N><Sg><Gen>']
+=	 maakond <N><Sg><Ine>
+=	 ei <V><Neg>
+=	 olema <V><Pers><Prs><Ind><Neg>
+=	 aasta <N><Sg><Ade>
+=	 2012 <Num><Card>
+=	 kohalik <A><Pl><Par>
+=	 valimine <N><Pl><Par>
+=	 . <Punct>
+=	 hääle#õigus <N><Sg><Nom>
+=	 - <Punct>
+=	 kes <Pron><Interr><Rel><Sg><Nom>
+=	 võima <V><Pers><Prs><Ind><Sg3><Aff>
+=	 hääletama <V><Inf>
+=	 saama <V><Pers><Prs><Ind><Sg2><Aff>
+=	 hääletama <V><Inf>
+=	 kohalik <A><Pl><Ade>
+=	 valimine <N><Pl><Ade>
+=	 , <Punct>
+=	 kui <CS>
+=	 olema <V><Pers><Prs><Ind><Sg2><Aff>
+FALSENEG: soome<N><Prop><Sg><Gen> ['Soome<N><Prop><Sg><Gen>', 'Soome<N><Prop><Sg><Nom>']
+-	 soome <N><Prop><Sg><Gen> ['Soome<N><Prop><Sg><Gen>', 'Soome<N><Prop><Sg><Gen><Attr>', 'Soome<N><Prop><Sg><Nom>']
++	 Soome <N><Prop><Sg><Gen> ['Soome<N><Prop><Sg><Gen>', 'Soome<N><Prop><Sg><Nom>']
+=	 või <CC>
+=	 mõni <Pron><Indef><Sg><Gen>
+=	 muu <Pron><Indef><Sg><Gen>
+FALSENEG: euroopa<N><Prop><Sg><Gen> ['Euroopa<N><Prop><Sg><Gen>']
+-	 euroopa <N><Prop><Sg><Gen> ['Euroopa<N><Prop><Sg><Gen>', 'Euroopa<N><Prop><Sg><Gen><Attr>', 'Euroopa<N><Prop><Sg><Nom>']
++	 Euroopa <N><Prop><Sg><Gen> ['Euroopa<N><Prop><Sg><Gen>']
+=	 liit <N><Sg><Ill>
+=	 kuuluv <A><Sg><Gen>
+=	 riik <N><Sg><Gen>
+=	 , <Punct>
+*	 islandi <N><Prop><Sg><Gen>
+=	 või <CC>
+FALSENEG: norra<N><Prop><Sg><Gen> ['Norra<N><Prop><Sg><Gen>']
+-	 norra <N><Prop><Sg><Gen> ['Norra<N><Prop><Sg><Gen>', 'Norra<N><Prop><Sg><Nom>', 'Norra<N><Prop><Sg><Gen><Attr>']
++	 Norra <N><Prop><Sg><Gen> ['Norra<N><Prop><Sg><Gen>']
+=	 kodanik <N><Sg><Nom>
+=	 ja <CC>
+=	 vastama <V><Pers><Prs><Ind><Sg2><Aff>
+=	 järgmine <A><Pl><All>
+=	 tingimus <N><Pl><All>
+=	 : <Punct>
+=	 - <Punct>
+=	 saama <V><Pers><Prs><Ind><Sg2><Aff>
+=	 hiljemalt <Adv>
+*	 valimis#päev <N><Sg><Ade>
+=	 ( <Punct>
+=	 28.10.2012 <Num><Card>
+=	 ) <Punct>
+*	 18-aastaseks <A><Sg><Tra>
+=	 - <Punct>
+=	 sina <Pron><Pers><Ps2><Sg><Gen>
+=	 elu#koht <N><Sg><Nom>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 Soome <N><Prop><Sg><Ine>
+=	 hiljemalt <Adv>
+=	 7.9.2012 <Num><Card>
+=	 kui <CS>
+=	 olema <V><Pers><Prs><Ind><Sg2><Aff>
+=	 mõni <Pron><Indef><Sg><Gen>
+=	 muu <Pron><Indef><Sg><Gen>
+=	 riik <N><Sg><Gen>
+=	 kodanik <N><Sg><Nom>
+=	 , <Punct>
+=	 saama <V><Pers><Prs><Ind><Sg2><Aff>
+=	 hääletama <V><Inf>
+=	 kohalik <A><Pl><Ade>
+=	 valimine <N><Pl><Ade>
+=	 , <Punct>
+=	 kui <CS>
+=	 - <Punct>
+=	 saama <V><Pers><Prs><Ind><Sg2><Aff>
+=	 hiljemalt <Adv>
+*	 valimis#päev <N><Sg><Ade>
+=	 ( <Punct>
+=	 28.10.2012 <Num><Card>
+=	 ) <Punct>
+*	 18-aastaseks <A><Sg><Tra>
+=	 - <Punct>
+=	 olema <V><Pers><Prs><Ind><Sg2><Aff>
+=	 elama <V><Pers><Prt><Prc>
+FALSENEG: soome<N><Prop><Sg><Ine> ['Soome<N><Prop><Sg><Ine>']
+-	 soome <N><Prop><Sg><Ine> ['Soome<N><Prop><Sg><Ine>']
++	 Soome <N><Prop><Sg><Ine> ['Soome<N><Prop><Sg><Ine>']
+=	 seis <N><Sg><Com>
+=	 7.9.2012 <Num><Card>
+FALSENEG: katkematult<Adv> ['katkematu<Adv>']
+-	 katkematult <Adv> ['katkematu<A><Sg><Abl>', 'katkematu<Adv>']
++	 katkematu <Adv> ['katkematu<Adv>']
+=	 vähemalt <Adv>
+=	 kaks <Num><Card><Sg><Nom>
+=	 aasta <N><Sg><Par>
+=	 elu#koht <N><Sg><Nom>
+=	 määratlema <V><Impers><Prs><Ind><Aff>
+=	 elu#koha#seadus <N><Sg><Gen>
+=	 alus <N><Sg><Ade>
+=	 . <Punct>
+=	 tavaliselt <Adv>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 kodu#vald <N><Sg><Tra>
+=	 see <Pron><Dem><Sg><Nom>
+=	 vald <N><Sg><Nom>
+=	 , <Punct>
+=	 kus <Adv>
+=	 sina <Pron><Pers><Ps2><Sg><Nom>
+=	 elama <V><Pers><Prs><Ind><Sg2><Aff>
+=	 . <Punct>
+=	 2012. <Num><Ord>
+=	 aasta <N><Sg><Gen>
+=	 kohalik <A><Pl><Ade>
+=	 valimine <N><Pl><Ade>
+=	 määratlema <V><Impers><Prs><Ind><Aff>
+=	 kodu#vald <N><Sg><Nom>
+=	 see <Pron><Dem><Sg><Gen>
+=	 põhjal <Po>
+=	 , <Punct>
+=	 milline <Pron><Rel><Sg><Nom>
+=	 vald <N><Sg><Nom>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 7.9.2012 <Num><Card>
+=	 kell <N><Sg><Nom>
+=	 24 <Num><Card>
+=	 märkima <V><Impers><Prt><Prc>
+=	 rahvastiku#register <N><Sg><Ine>
+=	 valija <N><Sg><Gen>
+=	 elu#koht <N><Sg><Tra>
+=	 . <Punct>
+=	 vajadus <N><Sg><Ade>
+=	 saama <V><Pers><Prs><Ind><Sg2><Aff>
+=	 magistraat <N><Sg><Ela>
+=	 kontrollima <V><Inf>
+=	 , <Punct>
+=	 milline <Pron><Rel><Sg><Nom>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 sina <Pron><Pers><Ps2><Sg><Gen>
+=	 kodu#vald <N><Sg><Nom>
+=	 . <Punct>
+=	 kohalik <A><Pl><Gen>
+=	 oma#valitsus <N><Pl><Gen>
+=	 valimine <N><Pl><Ade>
+=	 võima <V><Pers><Prs><Ind><Sg3><Aff>
+=	 hääletama <V><Inf>
+=	 ainult <Adv>
+=	 oma <Pron><Pos><Det><Refl><Sg><Gen>
+=	 elu#koht <N><Sg><Gen>
+=	 kandidaat <N><Sg><Par>
+=	 . <Punct>
+*	 hääletamis#teade <N><Sg><Nom>
+=	 tulema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 koju <Adv>
+=	 rahvastiku#register <N><Sg><Nom>
+=	 ja <CC>
+=	 magistraat <N><Pl><Nom>
+=	 pidama <V><Pers><Prs><Ind><Pl3><Aff>
+*	 valimis#register <N><Sg><Par>
+=	 , <Punct>
+-	 mis <Pron><Interr><Rel><Sg><Ine> ['mis<Pron><Interr><Rel><Pl><Ine>', 'mill<N><Pl><Ine>', 'mis<Pron><Interr><Rel><Sg><Ine>']
++	 mis <Pron><Interr><Rel><Pl><Ine> ['mis<Pron><Interr><Rel><Pl><Ine>', 'mill<N><Pl><Ine>', 'mis<Pron><Interr><Rel><Sg><Ine>']
+=	 olema <V><Pers><Prs><Ind><Pl3><Aff>
+=	 kõik <Pron><Det><Pl><Gen>
+=	 hääle#õiguslik <A><Pl><Gen>
+=	 inimene <N><Pl><Gen>
+=	 anne <N><Pl><Nom>
+=	 . <Punct>
+*	 valimis#register <N><Sg><Ill>
+=	 ei <V><Neg>
+=	 olema <V><Pers><Prs><Ind><Neg>
+=	 vaja <Adv>
+=	 eraldi <Adv>
+=	 registreeruma <V><Inf>
+=	 . <Punct>
+=	 magistraat <N><Sg><Nom>
+=	 saatma <V><Pers><Prs><Ind><Sg3><Aff>
+=	 hiljemalt <Adv>
+=	 4.10.2012 <Num><Card>
+=	 iga <Pron><Det><Sg><All>
+=	 hääle#õiguslik <A><Sg><All>
+=	 isik <N><Sg><All>
+=	 , <Punct>
+=	 kes <Pron><Interr><Rel><Sg><Gen>
+=	 aadress <N><Sg><Nom>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 teadma <V><Inf>
+=	 , <Punct>
+*	 hääletamis#teade <N><Sg><Gen>
+=	 . <Punct>
+*	 hääletamis#teade <N><Sg><Nom>
+=	 andma <V><Pers><Prs><Ind><Sg3><Aff>
+=	 juhis <N><Pl><Par>
+=	 hääletamine <N><Sg><Tra>
+=	 . <Punct>
+*	 kandideerimis#õigus <N><Sg><Nom>
+=	 - <Punct>
+=	 kes <Pron><Interr><Rel><Sg><Nom>
+=	 võima <V><Pers><Prs><Ind><Sg3><Aff>
+=	 olema <V><Inf>
+=	 kandidaat <N><Sg><Nom>
+=	 olema <V><Pers><Prs><Ind><Sg2><Aff>
+*	 kandideerimis#õiguslik <A><Sg><Nom>
+=	 , <Punct>
+FALSENEG: st<ABBR> ['st<Interj>']
+-	 st <ABBR> ['st<Interj>']
++	 st <Interj> ['st<Interj>']
+=	 võima <V><Pers><Prs><Ind><Sg2><Aff>
+=	 kandideerima <V><Inf>
+=	 oma <Pron><Pos><Det><Refl><Sg><Gen>
+=	 kodu#vald <N><Sg><Gen>
+=	 kohalik <A><Pl><Ade>
+=	 valimine <N><Pl><Ade>
+=	 , <Punct>
+=	 kui <CS>
+=	 vastama <V><Pers><Prs><Ind><Sg2><Aff>
+=	 järgmine <A><Pl><All>
+=	 tingimus <N><Pl><All>
+=	 : <Punct>
+=	 - <Punct>
+=	 vald <N><Sg><Nom>
+=	 , <Punct>
+=	 kus <Adv>
+=	 kavatsema <V><Pers><Prs><Ind><Sg2><Aff>
+=	 kandideerima <V><Inf>
+=	 , <Punct>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 sina <Pron><Pers><Ps2><Sg><Gen>
+=	 kodu#vald <N><Sg><Nom>
+=	 - <Punct>
+=	 sina <Pron><Pers><Ps2><Sg><Ade>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 hääle#õigus <N><Sg><Nom>
+=	 mõni <Pron><Indef><Sg><Ine>
+=	 vald <N><Sg><Ine>
+=	 - <Punct>
+=	 sina <Pron><Pers><Ps2><Sg><Nom>
+=	 ei <V><Neg>
+=	 olema <V><Pers><Prs><Ind><Neg>
+FALSENEG: piiratud<A> ['piirama<V><Impers><Prt><Prc>']
+-	 piiratud <A> ['piirama<N><Pl><Nom>', 'piirama<A><Pl><Nom>', 'piiratu<N><Pl><Nom>', 'piirama<V><Impers><Prt><Prc>', 'piiratud<A>', 'piiratu<A><Pl><Nom>', 'piirama<V><Impers><Prt><Ind><Neg>']
++	 piirama <V><Impers><Prt><Prc> ['piirama<V><Impers><Prt><Prc>']
+!	 piiratud<A> ['piirama<V><Impers><Prt><Prc>']
+=	 teo#võime <N><Sg><Com>
+=	 ega <CC>
+=	 eest#koste <N><Sg><Gen>
+=	 all <Po>
+=	 . <Punct>
+=	 mõni <Pron><Indef><Pl><Ade>
+=	 riigi#ametnik <N><Pl><Ade>
+=	 ja <CC>
+=	 vald <N><Sg><Gen>
+-	 kõrge <A><Comp><Pl><Ade> ['kõrgem<A><Pl><Ade>', 'kõrge<A><Comp><Pl><Ade>']
++	 kõrgem <A><Pl><Ade> ['kõrgem<A><Pl><Ade>', 'kõrge<A><Comp><Pl><Ade>']
+=	 ametnik <N><Pl><Ade>
+=	 ning <CC>
+=	 töötaja <N><Pl><Ade>
+=	 ei <V><Neg>
+=	 olema <V><Pers><Prs><Ind><Neg>
+=	 õigus <N><Sg><Par>
+=	 kandideerima <V><Inf>
+=	 . <Punct>
+=	 kandidaat <N><Pl><Gen>
+=	 üles#seadmine <N><Sg><Nom>
+=	 kohalik <A><Pl><Ade>
+=	 valimine <N><Pl><Ade>
+=	 kohalik <A><Pl><Gen>
+=	 oma#valitsus <N><Pl><Gen>
+=	 valimine <N><Pl><Ade>
+=	 võima <V><Pers><Prs><Ind><Pl3><Aff>
+=	 kandidaat <N><Pl><Par>
+=	 üles <Adv>
+=	 seadma <V><Inf>
+=	 - <Punct>
+FALSENEG: registreeritud<A> ['registreerima<V><Impers><Prt><Prc>']
+-	 registreeritud <A> ['registreeritu<A><Pl><Nom>', 'registreeritud<A>', 'registreerima<A><Pl><Nom>', 'registreerima<V><Impers><Prt><Ind><Neg>', 'registreeritu<N><Pl><Nom>', 'registreerima<N><Pl><Nom>', 'registreerima<V><Impers><Prt><Prc>']
++	 registreerima <V><Impers><Prt><Prc> ['registreerima<V><Impers><Prt><Prc>']
+!	 registreeritud<A> ['registreerima<V><Impers><Prt><Prc>']
+=	 erakond <N><Pl><Nom>
+=	 - <Punct>
+=	 hääle#õiguslik <A><Pl><Nom>
+=	 isik <N><Pl><Nom>
+=	 , <Punct>
+=	 kes <Pron><Interr><Rel><Pl><Nom>
+=	 olema <V><Pers><Prs><Ind><Pl3><Aff>
+=	 looma <V><Pers><Prt><Prc>
+*	 valimis#liit <N><Sg><Gen>
+=	 . <Punct>
+*	 valimis#liit <N><Sg><Gen>
+=	 loomine <N><Sg><Tra>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 vaja <Adv>
+=	 vähemalt <Adv>
+FALSENEG: kümmet<Num><Card><Sg><Par> ['kümme<Num><Card><Sg><Par>', 'kümmend<Num><Card><Sg><Par>']
+-	 kümmet <Num><Card><Sg><Par> ['kümme<Num><Card><Sg><Par>', 'kümmend<Num><Card><Sg><Par>']
++	 kümme <Num><Card><Sg><Par> ['kümme<Num><Card><Sg><Par>', 'kümmend<Num><Card><Sg><Par>']
+=	 hääle#õiguslik <A><Sg><Par>
+=	 vald <N><Sg><Gen>
+=	 elanik <N><Sg><Par>
+=	 , <Punct>
+=	 mõni <Pron><Indef><Pl><Ine>
+=	 väike <A><Pl><Ine>
+=	 vald <N><Pl><Ine>
+=	 ainult <Adv>
+=	 kolm <Num><Card><Sg><Par>
+=	 või <CC>
+=	 viis <Num><Card><Sg><Par>
+=	 elanik <N><Sg><Par>
+=	 . <Punct>
+FALSENEG: kaks<Num><Card><Sg><Ade> ['kahu<N><Pl><Ade>']
+-	 kaks <Num><Card><Sg><Ade> ['kaks<Num><Card><Sg><Ade>', 'kahu<N><Pl><Ade>', 'kahk<N><Pl><Ade>']
++	 kahu <N><Pl><Ade> ['kahu<N><Pl><Ade>']
+!	 kaks<Num><Card><Sg><Ade> ['kahu<N><Pl><Ade>']
+=	 või <CC>
+=	 enam <A><Sg><Ade>
+=	 erakond <N><Sg><Ade>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 õigus <N><Sg><Nom>
+=	 moodustama <V><Inf>
+=	 koalitsioon <N><Sg><Nom>
+=	 . <Punct>
+-	 kaks <Num><Card><Sg><Ade> ['kahk<N><Pl><Ade>', 'kaks<Num><Card><Sg><Ade>', 'kahu<N><Pl><Ade>']
++	 kahu <N><Pl><Ade> ['kahu<N><Pl><Ade>', 'kaks<Num><Card><Sg><Ade>']
+=	 või <CC>
+=	 enam <A><Sg><Ade>
+*	 valimis#liit <N><Sg><Ade>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 õigus <N><Sg><Nom>
+=	 moodustama <V><Inf>
+*	 ühis#nimekiri <N><Sg><Nom>
+=	 . <Punct>
+=	 erakond <N><Sg><Ade>
+=	 , <Punct>
+=	 koalitsioon <N><Sg><Ade>
+=	 või <CC>
+*	 ühis#nimekiri <N><Sg><Ade>
+=	 võima <V><Pers><Prs><Ind><Sg3><Aff>
+=	 olema <V><Inf>
+=	 vald <N><Sg><Ine>
+=	 kandidaat <N><Pl><Par>
+FALSENEG: maksimaalselt<Adv> ['maksimaalne<Adv>']
+-	 maksimaalselt <Adv> ['maksimaalne<A><Sg><Abl>', 'maksimaalne<Adv>']
++	 maksimaalne <Adv> ['maksimaalne<Adv>']
+FALSENEG: pool#teist<Num><Card><Sg><Nom> ['poolte#ist<N><Sg><Nom>', 'pool#tee<N><Pl><Ela>', 'pool#teist<N><Sg><Nom>']
+-	 pool#teist <Num><Card><Sg><Nom> ['poolte#ist<N><Sg><Nom>', 'pool#tee<N><Pl><Ela>', 'pool#teie<Pron><Pers><Ps2><Pl><Ela>', 'pool#teist<Num><Card><Sg><Gen>', 'pool#teine<Num><Ord><Sg><Par>', 'pool#teist<Num><Card><Sg><Nom>', 'pool#teist<N><Sg><Nom>', 'pool#teine<Pron><Dem><Sg><Par>']
++	 poolte#ist <N><Sg><Nom> ['poolte#ist<N><Sg><Nom>', 'pool#tee<N><Pl><Ela>', 'pool#teist<N><Sg><Nom>']
+!	 pool#teist<Num><Card><Sg><Nom> ['poolte#ist<N><Sg><Nom>', 'pool#tee<N><Pl><Ela>', 'pool#teist<N><Sg><Nom>']
+=	 kord <N><Sg><Par>
+=	 valitav <A><Pl><Gen>
+=	 volinik <N><Pl><Gen>
+=	 arv <N><Sg><Ela>
+=	 . <Punct>
+-	 voli#kogu <N><Sg><Ill> ['voli#kokku<Adv>', 'voli#kogu<N><Sg><Ill>']
++	 voli#kokku <Adv> ['voli#kokku<Adv>', 'voli#kogu<N><Sg><Ill>']
+=	 valima <V><Impers><Prs><Ind><Aff>
+=	 vald <N><Sg><Gen>
+=	 elanik <N><Pl><Gen>
+=	 arv <N><Sg><Ela>
+=	 sõltuvalt <Adv>
+*	 17_-_85 <Num><Card><Sg><Nom>
+=	 volinik <N><Sg><Par>
+=	 . <Punct>
+=	 iga <Pron><Det><Sg><Ade>
+=	 kandidaat <N><Sg><Ade>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 oma <Pron><Pos><Det><Refl><Sg><Gen>
+=	 number <N><Sg><Nom>
+=	 . <Punct>
+=	 kandidaat <N><Pl><Ela>
+=	 koostama <V><Impers><Prs><Ind><Aff>
+=	 paber#kandja <N><Sg><All>
+=	 trükitud <A>
+=	 koond#nimekiri <N><Sg><Nom>
+=	 , <Punct>
+=	 kuhu <Adv>
+=	 kandidaat <N><Pl><Nom>
+=	 kandma <V><Impers><Prs><Ind><Aff>
+=	 järje#korra#number <N><Pl><Gen>
+=	 alus <N><Sg><Ade>
+=	 algama <V><Ger>
+=	 number <N><Sg><Ela>
+=	 2 <Num><Card>
+=	 . <Punct>
+=	 kandidaat <N><Pl><Nom>
+=	 olema <V><Pers><Prs><Ind><Pl3><Aff>
+=	 koond#nimekiri <N><Sg><Ine>
+=	 grupeerima <V><Impers><Prt><Prc>
+=	 vastavalt <Adv>
+=	 erakond <N><Pl><All>
+=	 ja <CC>
+*	 ühis#nimekiri <N><Pl><All>
+=	 . <Punct>
+=	 iga <Pron><Det><Sg><Gen>
+=	 kandidaat <N><Sg><Gen>
+=	 kohta <Po>
+=	 olema <V><Pers><Prs><Ind><Pl3><Aff>
+=	 koond#nimekiri <N><Sg><Ine>
+=	 järgmine <A><Pl><Nom>
+=	 anne <N><Pl><Nom>
+=	 : <Punct>
+=	 nimi <N><Sg><Nom>
+=	 , <Punct>
+=	 kandidaat <N><Sg><Gen>
+=	 number <N><Sg><Nom>
+=	 ja <CC>
+=	 amet <N><Sg><Nom>
+=	 . <Punct>
+=	 lisaks <Adv>
+=	 ilmnema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 kandidaat <N><Pl><Gen>
+=	 koond#nimekiri <N><Sg><Ela>
+=	 , <Punct>
+=	 - <Punct>
+=	 milline <Pron><Rel><Pl><Nom>
+=	 erakond <N><Pl><Nom>
+=	 olema <V><Pers><Prs><Ind><Pl3><Aff>
+=	 moodustama <V><Pers><Prt><Prc>
+FALSENEG: koalitsioon<N><Sg><Gen> ['koalitsioon<N><Sg><Par>']
+-	 koalitsioon <N><Sg><Gen> ['koalitsioon<N><Sg><Gen>', 'koalitsioon<N><Sg><Par>', 'koalitsioon<N><Sg><Ill>']
++	 koalitsioon <N><Sg><Par> ['koalitsioon<N><Sg><Par>']
+!	 koalitsioon<N><Sg><Gen> ['koalitsioon<N><Sg><Par>']
+=	 - <Punct>
+=	 milline <Pron><Rel><Pl><Nom>
+*	 valimis#liit <N><Pl><Nom>
+=	 olema <V><Pers><Prs><Ind><Pl3><Aff>
+=	 moodustama <V><Pers><Prt><Prc>
+*	 ühis#nimekiri <N><Sg><Gen>
+=	 - <Punct>
+=	 milline <Pron><Rel><Pl><Nom>
+=	 erakond <N><Pl><Nom>
+=	 ei <V><Neg>
+=	 kuuluma <V><Pers><Prs><Ind><Neg>
+=	 koalitsioon <N><Sg><Ill>
+=	 - <Punct>
+=	 milline <Pron><Rel><Pl><Nom>
+=	 kandidaat <N><Pl><Nom>
+=	 ei <V><Neg>
+=	 kuuluma <V><Pers><Prs><Ind><Neg>
+*	 ühis#nimekiri <N><Sg><Ill>
+=	 . <Punct>
+=	 kandidaat <N><Pl><Gen>
+=	 koond#nimekiri <N><Sg><Nom>
+=	 koostama <V><Impers><Prs><Ind><Aff>
+=	 27.9.2012 <Num><Card>
+=	 . <Punct>
+*	 hääletamis#aeg <N><Pl><Nom>
+=	 hääletama <V><Inf>
+=	 saama <V><Pers><Prs><Ind><Sg3><Aff>
+=	 kas <Adv>
+*	 valimis#päev <N><Sg><Ade>
+=	 , <Punct>
+=	 pühapäev <N><Sg><Ade>
+=	 28.10.2012 <Num><Card>
+=	 , <Punct>
+=	 või <CC>
+FALSENEG: enne<Pr> ['enne<Adv>']
+-	 enne <Pr> ['enne<Adv>', 'enne<Pr>', 'enne<N><Sg><Nom>']
++	 enne <Adv> ['enne<Adv>']
+!	 enne<Pr> ['enne<Adv>']
+*	 valimis#päev <N><Sg><Par>
+=	 eel#hääletus <N><Sg><Ade>
+=	 . <Punct>
+=	 hääletama <V><Inf>
+=	 saama <V><Pers><Prs><Ind><Sg3><Aff>
+=	 ainult <Adv>
+=	 üks <Num><Card><Sg><Nom>
+=	 kord <N><Sg><Nom>
+=	 . <Punct>
+=	 kaks <Num><Card><Sg><Nom>
+=	 kord <N><Sg><Par>
+=	 hääletamine <N><Sg><Gen>
+=	 eest <Po>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+*	 kriminaal#seadustik <N><Sg><Ine>
+=	 ette <Adv>
+=	 nägema <V><Impers><Prt><Prc>
+=	 karistus <N><Sg><Nom>
+=	 . <Punct>
+=	 eel#hääletus <N><Sg><Nom>
+=	 : <Punct>
+=	 eel#hääletus <N><Sg><Nom>
+=	 algama <V><Pers><Prs><Ind><Sg3><Aff>
+=	 kolmapäev <N><Sg><Ade>
+=	 , <Punct>
+=	 17.10.2012 <Num><Card>
+=	 . <Punct>
+=	 eel#hääletus <N><Sg><Nom>
+=	 lõppema <V><Pers><Prs><Ind><Sg3><Aff>
+FALSENEG: välis#maa<N><Sg><Ade> ['välismaa<N><Sg><Ade>']
+-	 välis#maa <N><Sg><Ade> ['välismaa<N><Sg><Ade>']
++	 välismaa <N><Sg><Ade> ['välismaa<N><Sg><Ade>']
+=	 laupäev <N><Sg><Ade>
+=	 , <Punct>
+=	 20.10.2012 <Num><Card>
+=	 , <Punct>
+=	 ja <CC>
+FALSENEG: soome<N><Prop><Sg><Ine> ['Soome<N><Prop><Sg><Ine>']
+-	 soome <N><Prop><Sg><Ine> ['Soome<N><Prop><Sg><Ine>']
++	 Soome <N><Prop><Sg><Ine> ['Soome<N><Prop><Sg><Ine>']
+=	 , <Punct>
+=	 teisipäev <N><Sg><Ade>
+=	 , <Punct>
+=	 23.10.2012 <Num><Card>
+=	 . <Punct>
+=	 mõni <Pron><Indef><Sg><Ine>
+*	 eel#valimis#paik <N><Sg><Ine>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+*	 hääletamis#aeg <N><Sg><Nom>
+=	 lühem <A><Sg><Nom>
+=	 . <Punct>
+=	 saama <V><Pers><Prs><Ind><Sg2><Aff>
+=	 hääletama <V><Inf>
+=	 eelnevalt <Adv>
+=	 mis <Pron><Interr><Rel><Sg><Nom>
+=	 tahes <Adv>
+=	 eel#hääletus#paik <N><Sg><Ine>
+*	 kodu- <N><Sg><Gen>
+=	 või <CC>
+FALSENEG: välis#maa<N><Sg><Ade> ['välismaa<N><Sg><Ade>']
+-	 välis#maa <N><Sg><Ade> ['välismaa<N><Sg><Ade>']
++	 välismaa <N><Sg><Ade> ['välismaa<N><Sg><Ade>']
+=	 . <Punct>
+=	 eel#hääletus#paik <N><Pl><Tra>
+FALSENEG: olema<V><Pers><Prs><Ind><Pl3><Aff> ['olema<V><Pers><Prs><Ind><Sg3><Aff>']
+-	 olema <V><Pers><Prs><Ind><Pl3><Aff> ['olema<V><Pers><Prs><Ind><Sg3><Aff>', 'olema<V><Pers><Prs><Ind><Pl3><Aff>']
++	 olema <V><Pers><Prs><Ind><Sg3><Aff> ['olema<V><Pers><Prs><Ind><Sg3><Aff>']
+!	 olema<V><Pers><Prs><Ind><Pl3><Aff> ['olema<V><Pers><Prs><Ind><Sg3><Aff>']
+=	 - <Punct>
+FALSENEG: soome<N><Prop><Sg><Ine> ['Soome<N><Prop><Sg><Ine>']
+-	 soome <N><Prop><Sg><Ine> ['Soome<N><Prop><Sg><Ine>']
++	 Soome <N><Prop><Sg><Ine> ['Soome<N><Prop><Sg><Ine>']
+FALSENEG: kohalik<A><Pl><Gen> ['koht<A><Pl><Gen>']
+-	 kohalik <A><Pl><Gen> ['kohalik<A><Pl><Gen>', 'kohalik<N><Pl><Gen>', 'koha<A><Pl><Gen>', 'koht<A><Pl><Gen>']
++	 koht <A><Pl><Gen> ['koht<A><Pl><Gen>']
+!	 kohalik<A><Pl><Gen> ['koht<A><Pl><Gen>']
+=	 oma#valitsus <N><Pl><Gen>
+=	 poolt <Po>
+=	 määratud <A>
+=	 eel#hääletus#paik <N><Pl><Nom>
+=	 , <Punct>
+=	 sageli <Adv>
+=	 näiteks <Adv>
+=	 kohalik <A><Sg><Gen>
+=	 oma#valitsus <N><Sg><Gen>
+=	 asutus <N><Pl><Nom>
+=	 või <CC>
+=	 post#kontor <N><Pl><Nom>
+=	 - <Punct>
+=	 mitu <Pron><Indef><Pl><Nom>
+FALSENEG: soome<N><Prop><Sg><Gen> ['Soome<N><Prop><Sg><Gen>']
+-	 soome <N><Prop><Sg><Gen> ['Soome<N><Prop><Sg><Gen><Attr>', 'Soome<N><Prop><Sg><Gen>', 'Soome<N><Prop><Sg><Nom>']
++	 Soome <N><Prop><Sg><Gen> ['Soome<N><Prop><Sg><Gen>']
+=	 esindus <N><Pl><Nom>
+FALSENEG: välis#maa<N><Sg><Ade> ['välismaa<N><Sg><Ade>']
+-	 välis#maa <N><Sg><Ade> ['välismaa<N><Sg><Ade>']
++	 välismaa <N><Sg><Ade> ['välismaa<N><Sg><Ade>']
+=	 - <Punct>
+=	 selline <Pron><Dem><Pl><Nom>
+=	 asutus <N><Pl><Nom>
+FALSENEG: nagu<CC> ['nagu<CS>', 'nagu<Adv>']
+-	 nagu <CC> ['nagu<CS>', 'naga<N><Pl><Par>', 'nagu<Adv>']
++	 nagu <CS> ['nagu<CS>', 'nagu<Adv>']
+=	 haigla <N><Pl><Nom>
+=	 , <Punct>
+*	 sotsiaal#abi <N><Sg><Gen>
+=	 rajatis <N><Pl><Nom>
+=	 ja <CC>
+=	 karistus#asutus <N><Pl><Nom>
+=	 . <Punct>
+=	 selline <Pron><Dem><Pl><Ine>
+=	 asutus <N><Pl><Ine>
+=	 võima <V><Pers><Prs><Ind><Pl3><Aff>
+=	 hääletama <V><Inf>
+=	 ainult <Adv>
+=	 inimene <N><Pl><Nom>
+=	 , <Punct>
+=	 kes <Pron><Interr><Rel><Pl><Par>
+=	 seal <Adv>
+=	 ravima <V><Impers><Prs><Ind><Aff>
+=	 , <Punct>
+=	 hooldama <V><Impers><Prs><Ind><Aff>
+=	 või <CC>
+=	 kinni <Adv>
+=	 pidama <V><Impers><Prs><Ind><Aff>
+=	 . <Punct>
+=	 - <Punct>
+FALSENEG: soome<N><Prop><Sg><Gen> ['Soome<N><Prop><Sg><Gen>']
+-	 soome <N><Prop><Sg><Gen> ['Soome<N><Prop><Sg><Gen>', 'Soome<N><Prop><Sg><Gen><Attr>', 'Soome<N><Prop><Sg><Nom>']
++	 Soome <N><Prop><Sg><Gen> ['Soome<N><Prop><Sg><Gen>']
+=	 laev <N><Pl><Nom>
+=	 , <Punct>
+=	 mis <Pron><Interr><Rel><Pl><Nom>
+=	 olema <V><Pers><Prs><Ind><Pl3><Aff>
+=	 eel#hääletus <N><Sg><Gen>
+=	 ajal <Po>
+FALSENEG: välis#maa<N><Sg><Ade> ['välismaa<N><Sg><Ade>']
+-	 välis#maa <N><Sg><Ade> ['välismaa<N><Sg><Ade>']
++	 välismaa <N><Sg><Ade> ['välismaa<N><Sg><Ade>']
+=	 . <Punct>
+=	 laev <N><Sg><Ine>
+=	 võima <V><Pers><Prs><Ind><Sg3><Aff>
+=	 hääletama <V><Inf>
+=	 vaid <Adv>
+=	 laev <N><Sg><Gen>
+=	 meeskond <N><Sg><Nom>
+=	 , <Punct>
+=	 reisija <N><Pl><Nom>
+=	 ei <V><Neg>
+=	 saama <V><Pers><Prs><Ind><Neg>
+=	 laev <N><Sg><Ine>
+=	 hääletama <V><Inf>
+=	 . <Punct>
+=	 hääletamine <N><Sg><Nom>
+*	 valimis#päev <N><Sg><Ade>
+=	 : <Punct>
+*	 valimis#päev <N><Sg><Ade>
+=	 hääletama <V><Impers><Prs><Ind><Aff>
+=	 pühapäev <N><Sg><Ade>
+=	 , <Punct>
+=	 28.10.2012 <Num><Card>
+=	 kell <N><Sg><Nom>
+*	 9–20 <Num><Card><Sg><Nom>
+=	 . <Punct>
+*	 valimis#päev <N><Sg><Ade>
+=	 saama <V><Pers><Prs><Ind><Sg3><Aff>
+=	 hääletama <V><Inf>
+=	 ainult <Adv>
+=	 see <Pron><Dem><Sg><Ine>
+=	 vald <N><Sg><Ine>
+=	 ja <CC>
+*	 valimis#jaoskond <N><Sg><Ine>
+=	 , <Punct>
+=	 mis <Pron><Interr><Rel><Sg><Nom>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 märkima <V><Impers><Prt><Prc>
+=	 sina <Pron><Pers><Ps2><Sg><All>
+FALSENEG: saadetud<A> ['saattud<A>']
+-	 saadetud <A> ['saattud<A>', 'saattu<A><Pl><Nom>', 'saattu<N><Pl><Nom>', 'saatma<A><Pl><Nom>', 'saatma<N><Pl><Nom>', 'saatma<V><Impers><Prt><Prc>', 'saadetu<N><Pl><Nom>', 'saatma<V><Impers><Prt><Ind><Neg>']
++	 saattud <A> ['saattud<A>']
+*	 hääletamis#teade <N><Sg><All>
+=	 . <Punct>
+=	 kodu <N><Sg><Ine>
+=	 hääletamine <N><Sg><Nom>
+=	 : <Punct>
+=	 kui <CS>
+=	 sina <Pron><Pers><Ps2><Sg><Gen>
+*	 liikumis- <N><Sg><Gen>
+=	 või <CC>
+*	 tegutsemis#võime <N><Sg><Nom>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 see <Pron><Dem><Sg><Ade>
+=	 määr <N><Sg><Ade>
+FALSENEG: piiratud<A> ['piirama<V><Impers><Prt><Prc>']
+-	 piiratud <A> ['piirama<N><Pl><Nom>', 'piirama<A><Pl><Nom>', 'piiratu<N><Pl><Nom>', 'piirama<V><Impers><Prt><Prc>', 'piiratud<A>', 'piiratu<A><Pl><Nom>', 'piirama<V><Impers><Prt><Ind><Neg>']
++	 piirama <V><Impers><Prt><Prc> ['piirama<V><Impers><Prt><Prc>']
+!	 piiratud<A> ['piirama<V><Impers><Prt><Prc>']
+=	 , <Punct>
+=	 et <CS>
+=	 sina <Pron><Pers><Ps2><Sg><Nom>
+=	 ei <V><Neg>
+=	 pääsema <V><Pers><Prs><Ind><Neg>
+=	 ilma <Pr>
+=	 suur <A><Pl><Gen>
+=	 raskus <N><Pl><Abe>
+*	 valimis#jaoskond <N><Sg><Ill>
+=	 , <Punct>
+=	 võima <V><Pers><Prs><Ind><Sg2><Aff>
+=	 hääletama <V><Inf>
+FALSENEG: eel#hääletus#aeg<N><Sg><Ade> ['eel#hääletusaj#aeg<N><Sg><Ade>']
+-	 eel#hääletus#aeg <N><Sg><Ade> ['eel#hääletusaj#aeg<N><Sg><Ade>']
++	 eel#hääletusaj#aeg <N><Sg><Ade> ['eel#hääletusaj#aeg<N><Sg><Ade>']
+=	 kodu <N><Sg><Ine>
+=	 . <Punct>
+=	 kodu <N><Sg><Ine>
+=	 hääletamine <N><Sg><Ela>
+=	 tulema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 teatama <V><Inf>
+=	 hiljemalt <Adv>
+=	 teisipäev <N><Sg><Ade>
+=	 , <Punct>
+=	 16.10.2012 <Num><Card>
+FALSENEG: enne<N><Sg><Nom> ['enne<Adv>']
+-	 enne <N><Sg><Nom> ['enne<Pr>', 'enne<N><Sg><Nom>', 'enne<Adv>']
++	 enne <Adv> ['enne<Adv>']
+!	 enne<N><Sg><Nom> ['enne<Adv>']
+=	 kell <N><Sg><Gen>
+=	 16 <Num><Card>
+=	 . <Punct>
+=	 teatama <V><Inf>
+=	 tulema <V><Pers><Prs><Ind><Sg3><Aff>
+-	 kodu#vald <N><Sg><Gen> ['kodu#vallama<V><Pers><Prs><Ind><Neg>', 'kodu#vald<N><Sg><Gen>', 'kodu#vallama<V><Pers><Prs><Imprt><Sg2>', 'kodu#valla<Adv>']
++	 kodu#valla <Adv> ['kodu#valla<Adv>', 'kodu#vald<N><Sg><Gen>']
+*	 kesk#valimis#komisjon <N><Sg><All>
+=	 . <Punct>
+=	 sama <Pron><Dem><Sg><Ine>
+=	 leibkond <N><Sg><Ine>
+=	 elav <A><Sg><Nom>
+=	 omaste#hooldaja <N><Sg><Nom>
+=	 võima <V><Pers><Prs><Ind><Sg3><Aff>
+=	 teatud <A>
+=	 tingimus <N><Pl><Ade>
+=	 hääletama <V><Inf>
+=	 sama <Pron><Dem><Sg><Ade>
+=	 aeg <N><Sg><Ade>
+=	 . <Punct>
+=	 nii <Adv>
+=	 hääletama <V><Pers><Prs><Ind><Sg2><Aff>
+=	 hääletamine <N><Sg><Nom>
+=	 toimuma <V><Pers><Prs><Ind><Sg3><Aff>
+*	 valimis#jaoskond <N><Sg><Ine>
+=	 . <Punct>
+=	 hääletama <V><Inf>
+=	 saama <V><Pers><Prs><Ind><Sg3><Aff>
+=	 vaid <Adv>
+=	 üks <Num><Card><Sg><Gen>
+=	 kandidaat <N><Sg><Gen>
+=	 poolt <Po>
+=	 , <Punct>
+=	 kes <Pron><Interr><Rel><Sg><Nom>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 kandma <V><Impers><Prt><Prc>
+=	 sina <Pron><Pers><Ps2><Sg><Gen>
+=	 vald <N><Sg><Gen>
+=	 kandidaat <N><Pl><Gen>
+=	 koond#nimekiri <N><Sg><Ill>
+=	 . <Punct>
+=	 1 <Num><Card>
+=	 ) <Punct>
+FALSENEG: tõendama<V><Pers><Prs><Imprt><Sg2><Aff> ['tõendama<V><Pers><Prs><Imprt><Sg2>']
+-	 tõendama <V><Pers><Prs><Imprt><Sg2><Aff> ['tõendama<V><Pers><Prs><Imprt><Sg2>', 'tõendama<V><Pers><Prs><Ind><Neg>']
++	 tõendama <V><Pers><Prs><Imprt><Sg2> ['tõendama<V><Pers><Prs><Imprt><Sg2>']
+FALSENEG: valimis#ametnik<N><Sg><All> ['valimi#samet#nikk<N><Sg><All>']
+-	 valimis#ametnik <N><Sg><All> ['valimi#samet#nikk<N><Sg><All>']
++	 valimi#samet#nikk <N><Sg><All> ['valimi#samet#nikk<N><Sg><All>']
+=	 oma <Pron><Pos><Det><Refl><Sg><Gen>
+=	 isik <N><Sg><Par>
+=	 , <Punct>
+FALSENEG: st<ABBR> ['st<Interj>']
+-	 st <ABBR> ['st<Interj>']
++	 st <Interj> ['st<Interj>']
+FALSENEG: esitama<V><Pers><Prs><Imprt><Sg2><Aff> ['esitama<V><Pers><Prs><Imprt><Sg2>']
+-	 esitama <V><Pers><Prs><Imprt><Sg2><Aff> ['esitama<V><Pers><Prs><Imprt><Sg2>', 'esitama<V><Pers><Prs><Ind><Neg>']
++	 esitama <V><Pers><Prs><Imprt><Sg2> ['esitama<V><Pers><Prs><Imprt><Sg2>']
+=	 pass <N><Sg><Nom>
+=	 , <Punct>
+=	 isiku#tunnistus <N><Sg><Nom>
+=	 , <Punct>
+=	 juhi#luba <N><Sg><Nom>
+=	 või <CC>
+=	 muu <Pron><Indef><Sg><Nom>
+=	 sama#väärne <A><Sg><Nom>
+=	 dokument <N><Sg><Nom>
+=	 . <Punct>
+*	 valimis#ametnik <N><Sg><Nom>
+=	 andma <V><Pers><Prs><Ind><Sg3><Aff>
+=	 sina <Pron><Pers><Ps2><Sg><All>
+=	 hääletus#sedel <N><Sg><Gen>
+=	 . <Punct>
+=	 2 <Num><Card>
+=	 ) <Punct>
+FALSENEG: minema<V><Pers><Prs><Imprt><Sg2><Aff> ['minema<V><Pers><Prs><Imprt><Sg2>']
+-	 minema <V><Pers><Prs><Imprt><Sg2><Aff> ['mini<N><Pl><Par>', 'minema<V><Pers><Prs><Imprt><Sg2>']
++	 minema <V><Pers><Prs><Imprt><Sg2> ['minema<V><Pers><Prs><Imprt><Sg2>']
+=	 hääletus#kabiin <N><Sg><Ill>
+=	 . <Punct>
+=	 hääletus#kabiin <N><Sg><Ine>
+=	 võima <V><Pers><Prs><Ind><Sg3><Aff>
+=	 korraga <Adv>
+=	 viibima <V><Inf>
+=	 ainult <Adv>
+=	 üks <Num><Card><Sg><Nom>
+=	 inimene <N><Sg><Nom>
+=	 . <Punct>
+=	 3 <Num><Card>
+=	 ) <Punct>
+FALSENEG: märkima<V><Pers><Prs><Imprt><Sg2><Aff> ['märkima<V><Pers><Prs><Imprt><Sg2>']
+-	 märkima <V><Pers><Prs><Imprt><Sg2><Aff> ['märg<N><Pl><Par>', 'märg<A><Pl><Par>', 'märkima<V><Pers><Prs><Imprt><Sg2>', 'märkima<V><Pers><Prs><Ind><Neg>', 'märk<N><Sg><Gen>']
++	 märkima <V><Pers><Prs><Imprt><Sg2> ['märkima<V><Pers><Prs><Imprt><Sg2>']
+=	 hääletus#sedel <N><Sg><All>
+=	 see <Pron><Dem><Sg><Gen>
+=	 kandidaat <N><Sg><Gen>
+=	 number <N><Sg><Nom>
+=	 , <Punct>
+=	 kes <Pron><Interr><Rel><Sg><Gen>
+=	 poolt <Po>
+=	 hääletama <V><Pers><Prs><Ind><Sg2><Aff>
+=	 . <Punct>
+=	 hääletama <V><Inf>
+=	 saama <V><Pers><Prs><Ind><Sg3><Aff>
+=	 vaid <Adv>
+=	 üks <Num><Card><Sg><Gen>
+=	 kandidaat <N><Sg><Gen>
+=	 poolt <Po>
+=	 . <Punct>
+FALSENEG: märkima<V><Pers><Prs><Imprt><Sg2><Aff> ['märk<N><Sg><Gen>']
+-	 märkima <V><Pers><Prs><Imprt><Sg2><Aff> ['märk<N><Sg><Gen>', 'märkima<V><Pers><Prs><Ind><Neg>', 'märg<A><Pl><Par>', 'märkima<V><Pers><Prs><Imprt><Sg2>', 'märg<N><Pl><Par>']
++	 märk <N><Sg><Gen> ['märk<N><Sg><Gen>']
+=	 kandidaat <N><Sg><Gen>
+=	 number <N><Sg><Nom>
+=	 hääletus#sedel <N><Sg><Ade>
+=	 olev <A><Sg><Ill>
+=	 ring <N><Sg><Ill>
+=	 . <Punct>
+*	 ära <V><Pers><Prs><Imprt><Sg2><Neg>
+FALSENEG: tegema<V><Pers><Prs><Imprt><Sg2><Neg> ['tegema<V><Pers><Prs><Imprt><Sg2>']
+-	 tegema <V><Pers><Prs><Imprt><Sg2><Neg> ['tee<N><Sg><Gen>', 'tegema<V><Pers><Prs><Imprt><Sg2>', 'tee<N><Sg><Nom>', 'tegema<V><Pers><Prs><Ind><Neg>']
++	 tegema <V><Pers><Prs><Imprt><Sg2> ['tegema<V><Pers><Prs><Imprt><Sg2>']
+=	 hääletus#sedel <N><Sg><All>
+=	 muu <Pron><Indef><Pl><Par>
+=	 märge <N><Pl><Par>
+=	 . <Punct>
+FALSENEG: murdma<V><Pers><Prs><Imprt><Sg2><Aff> ['murdma<V><Pers><Prs><Imprt><Sg2>']
+-	 murdma <V><Pers><Prs><Imprt><Sg2><Aff> ['murdma<V><Pers><Prs><Ind><Neg>', 'murdma<V><Pers><Prs><Imprt><Sg2>']
++	 murdma <V><Pers><Prs><Imprt><Sg2> ['murdma<V><Pers><Prs><Imprt><Sg2>']
+=	 hääletus#sedel <N><Sg><Nom>
+=	 nii <Adv>
+=	 kinni <Adv>
+=	 , <Punct>
+=	 et <CS>
+=	 sina <Pron><Pers><Ps2><Sg><Gen>
+=	 poolt <Po>
+-	 kirjutatud <A> ['kirjutatu<A><Pl><Nom>', 'kirjutatud<A>', 'kirjutama<V><Impers><Prt><Prc>', 'kirjutama<N><Pl><Nom>', 'kirjutatu<N><Pl><Nom>', 'kirjutama<V><Impers><Prt><Ind><Neg>', 'kirjutama<A><Pl><Nom>']
++	 kirjutatu <A><Pl><Nom> ['kirjutatu<A><Pl><Nom>', 'kirjutatud<A>']
+=	 number <N><Sg><Nom>
+=	 jääma <V><Pers><Prs><Ind><Sg3><Aff>
+=	 sedel <N><Sg><Gen>
+FALSENEG: sisse<Po> ['sisse<Adv>']
+-	 sisse <Po> ['sisse<Adv>', 'siss<N><Pl><Par>', 'sisse<Po>', 'si<N><Sg><Ill>']
++	 sisse <Adv> ['sisse<Adv>']
+!	 sisse<Po> ['sisse<Adv>']
+=	 ega <CC>
+=	 olema <V><Pers><Prs><Ind><Neg>
+-	 väljast#poolt <Adv> ['väljast#pool<N><Sg><Par>', 'väljast#poolt<Adv>']
++	 väljast#pool <N><Sg><Par> ['väljast#pool<N><Sg><Par>', 'väljast#poolt<Adv>']
+=	 nähtav <A><Sg><Nom>
+=	 . <Punct>
+=	 4 <Num><Card>
+=	 ) <Punct>
+FALSENEG: viima<V><Pers><Prs><Imprt><Sg2><Aff> ['viima<V><Pers><Prs><Imprt><Sg2>']
+-	 viima <V><Pers><Prs><Imprt><Sg2><Aff> ['viima<V><Pers><Prs><Imprt><Sg2>', 'viima<V><Pers><Prs><Ind><Neg>']
++	 viima <V><Pers><Prs><Imprt><Sg2> ['viima<V><Pers><Prs><Imprt><Sg2>']
+=	 sedel <N><Sg><Nom>
+=	 kinni <Adv>
+FALSENEG: volditu<A><Sg><Ess> ['volditu<N><Sg><Ess>']
+-	 volditu <A><Sg><Ess> ['volditu<N><Sg><Ess>', 'voltima<N><Sg><Ess>', 'voltima<A><Sg><Ess>', 'volditu<A><Sg><Ess>']
++	 volditu <N><Sg><Ess> ['volditu<N><Sg><Ess>']
+!	 volditu<A><Sg><Ess> ['volditu<N><Sg><Ess>']
+FALSENEG: valimis#ametnik<N><Sg><All> ['valimi#samet#nikk<N><Sg><All>']
+-	 valimis#ametnik <N><Sg><All> ['valimi#samet#nikk<N><Sg><All>']
++	 valimi#samet#nikk <N><Sg><All> ['valimi#samet#nikk<N><Sg><All>']
+=	 . <Punct>
+*	 valimis#ametnik <N><Sg><Nom>
+=	 panema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 sedel <N><Sg><All>
+=	 tempel <N><Sg><Gen>
+=	 . <Punct>
+=	 5 <Num><Card>
+*	 a <ABBR>
+=	 ) <Punct>
+=	 kui <CS>
+=	 hääletama <V><Pers><Prs><Ind><Sg2><Aff>
+=	 valimine <N><Pl><Gen>
+=	 päev <N><Sg><Ade>
+=	 , <Punct>
+FALSENEG: viskama<V><Pers><Prs><Imprt><Sg2><Aff> ['viskama<V><Pers><Prs><Imprt><Sg2>']
+-	 viskama <V><Pers><Prs><Imprt><Sg2><Aff> ['viskama<V><Pers><Prs><Imprt><Sg2>', 'viskama<V><Pers><Prs><Ind><Neg>']
++	 viskama <V><Pers><Prs><Imprt><Sg2> ['viskama<V><Pers><Prs><Imprt><Sg2>']
+=	 tembeldatud <A>
+=	 sedel <N><Sg><Nom>
+*	 valimis#kast <N><Sg><Ill>
+=	 . <Punct>
+=	 5 <Num><Card>
+*	 b <ABBR>
+=	 ) <Punct>
+=	 kui <CS>
+=	 hääletama <V><Pers><Prs><Ind><Sg2><Aff>
+=	 eel#hääletus <N><Sg><Ade>
+=	 , <Punct>
+=	 saama <V><Pers><Prs><Ind><Sg2><Aff>
+FALSENEG: valimis#ametnik<N><Sg><Abl> ['valimi#samet#nikk<Adv>']
+-	 valimis#ametnik <N><Sg><Abl> ['valimi#samet#nikk<N><Sg><Abl>', 'valimi#samet#nikk<Adv>']
++	 valimi#samet#nikk <Adv> ['valimi#samet#nikk<Adv>']
+*	 valimis#ümbrik <N><Sg><Gen>
+=	 , <Punct>
+-	 mis <Pron><Interr><Rel><Sg><Ill> ['mis<Pron><Interr><Rel><Pl><Ill>', 'mis<Pron><Interr><Rel><Sg><Ill>', 'mill<N><Pl><Ill>']
++	 mis <Pron><Interr><Rel><Pl><Ill> ['mis<Pron><Interr><Rel><Pl><Ill>', 'mis<Pron><Interr><Rel><Sg><Ill>', 'mill<N><Pl><Ill>']
+=	 panema <V><Pers><Prs><Ind><Sg2><Aff>
+=	 tempel <N><Sg><Com>
+=	 märgistatud <A>
+=	 sedel <N><Sg><Gen>
+=	 . <Punct>
+=	 kui <CS>
+=	 sina <Pron><Pers><Ps2><Sg><Gen>
+-	 võime <N><Sg><Nom> ['võime<N><Sg><Gen>', 'võim<N><Pl><Par>', 'võime<N><Sg><Nom>', 'võima<V><Pers><Prs><Ind><Pl1><Aff>']
++	 võime <N><Sg><Gen> ['võime<N><Sg><Gen>', 'võima<V><Pers><Prs><Ind><Pl1><Aff>', 'võime<N><Sg><Nom>']
+=	 kandma <V><Inf>
+=	 kandidaat <N><Sg><Gen>
+=	 number <N><Sg><Nom>
+=	 hääletus#sedel <N><Sg><All>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+FALSENEG: oluliselt<Adv> ['oluline<Adv>']
+-	 oluliselt <Adv> ['oluline<Adv>', 'oluline<A><Sg><Abl>']
++	 oluline <Adv> ['oluline<Adv>']
+FALSENEG: nõrgenenud<A> ['nõrgenema<V><Pers><Prt><Prc>']
+-	 nõrgenenud <A> ['nõrgenenu<N><Pl><Nom>', 'nõrgenenud<A>', 'nõrgenenu<A><Pl><Nom>', 'nõrgenema<V><Pers><Prt><Prc>', 'nõrgenema<A><Pl><Nom>', 'nõrgenema<V><Pers><Prt><Ind><Neg>', 'nõrgenema<N><Pl><Nom>', 'nõrgenema<V><Pers><Prt><Imprt>']
++	 nõrgenema <V><Pers><Prt><Prc> ['nõrgenema<V><Pers><Prt><Prc>']
+!	 nõrgenenud<A> ['nõrgenema<V><Pers><Prt><Prc>']
+=	 , <Punct>
+=	 võima <V><Pers><Prs><Ind><Sg2><Aff>
+=	 kasutama <V><Inf>
+=	 hääletamine <N><Sg><Ade>
+=	 abiline <N><Sg><Par>
+=	 või <CC>
+=	 valimine <N><Pl><Gen>
+*	 funktsionäri <N><Sg><Par>
+=	 . <Punct>
+=	 abistaja <N><Sg><Tra>
+=	 ei <V><Neg>
+=	 tohtima <V><Pers><Prs><Ind><Neg>
+=	 olema <V><Inf>
+=	 valimine <N><Pl><Ade>
+=	 kandideeriv <A><Sg><Nom>
+=	 isik <N><Sg><Nom>
+=	 . <Punct>
+FALSENEG: abistaja<N><Sg><Nom> ['abistaja<N><Sg><Gen>']
+-	 abistaja <N><Sg><Nom> ['abistaja<N><Sg><Nom>', 'abistaja<N><Sg><Gen>']
++	 abistaja <N><Sg><Gen> ['abistaja<N><Sg><Gen>']
+!	 abistaja<N><Sg><Nom> ['abistaja<N><Sg><Gen>']
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 kohustama <V><Impers><Prt><Prc>
+=	 hoidma <V><Pers><Sup><Ill>
+FALSENEG: valimis#saladus<N><Sg><Par> ['vali#miss#ala#dust<N><Sg><Nom>', 'vali#missa#la#dust<N><Sg><Nom>']
+-	 valimis#saladus <N><Sg><Par> ['vali#miss#ala#dust<N><Sg><Nom>', 'vali#missa#la#dust<N><Sg><Nom>']
++	 vali#miss#ala#dust <N><Sg><Nom> ['vali#miss#ala#dust<N><Sg><Nom>', 'vali#missa#la#dust<N><Sg><Nom>']
+=	 , <Punct>
+FALSENEG: st<ABBR> ['st<Interj>']
+-	 st <ABBR> ['st<Interj>']
++	 st <Interj> ['st<Interj>']
+=	 hoidma <V><Pers><Sup><Ill>
+=	 saladus <N><Sg><Ine>
+=	 hääletamine <N><Sg><Gen>
+=	 ajal <Po>
+=	 saadud <A>
+=	 anne <N><Pl><Nom>
+=	 . <Punct>
+=	 lisa#teave <N><Sg><Nom>
+=	 - <Punct>
+=	 lisa#teave <N><Sg><Par>
+=	 valimine <N><Pl><Gen>
+=	 kohta <Po>
+=	 andma <V><Pers><Prs><Ind><Sg3><Aff>
+=	 vald <N><Sg><Gen>
+*	 kesk#valimis#komisjon <N><Sg><Nom>
+=	 . <Punct>
+=	 - <Punct>
+=	 hääle#õigus <N><Sg><Par>
+=	 puudutav <A><Pl><All>
+=	 isiklik <A><Pl><All>
+=	 küsimus <N><Pl><All>
+=	 vastama <V><Pers><Prs><Ind><Sg3><Aff>
+=	 magistraat <N><Sg><Nom>
+=	 . <Punct>
+=	 - <Punct>
+=	 mõlema <Pron><Det><Sg><Gen>
+=	 aadress <N><Pl><Nom>
+=	 ja <CC>
+=	 telefoni#number <N><Pl><Nom>
+=	 olema <V><Pers><Prs><Ind><Pl3><Aff>
+*	 hääletamis#teade <N><Sg><Ade>
+=	 . <Punct>
+=	 - <Punct>
+=	 eel#hääletus#paik <N><Pl><Gen>
+=	 aadress <N><Pl><Nom>
+=	 ja <CC>
+FALSENEG: lahtioleku#aeg<N><Pl><Nom> ['lahti#olekuaj#aeg<N><Pl><Nom>']
+-	 lahtioleku#aeg <N><Pl><Nom> ['lahti#olekuaj#aeg<N><Pl><Nom>']
++	 lahti#olekuaj#aeg <N><Pl><Nom> ['lahti#olekuaj#aeg<N><Pl><Nom>']
+=	 , <Punct>
+=	 kandidaat <N><Pl><Gen>
+=	 register <N><Sg><Nom>
+=	 ja <CC>
+=	 muu <Pron><Indef><Sg><Nom>
+=	 info <N><Sg><Nom>
+=	 valimine <N><Pl><Gen>
+=	 kohta <Po>
+=	 olema <V><Pers><Prs><Ind><Sg3><Aff>
+=	 ära <Adv>
+=	 tooma <V><Impers><Prt><Prc>
+=	 justiits#ministeerium <N><Sg><Gen>
+=	 veebi#leht <N><Sg><Ade>
+*	 www.vaalit.fi <ACR>
+=	 - <Punct>
+=	 anne <N><Pl><Nom>
+=	 kohalik <A><Pl><Gen>
+=	 valimine <N><Pl><Gen>
+=	 kandidaat <N><Pl><Gen>
+=	 kohta <Po>
+=	 olema <V><Pers><Prs><Ind><Pl3><Aff>
+=	 justiits#ministeerium <N><Sg><Gen>
+=	 veebi#leht <N><Sg><Ade>
+=	 oktoober <N><Sg><Gen>
+=	 algus <N><Sg><Ine>
+=	 ja <CC>
+=	 anne <N><Pl><Nom>
+=	 eel#hääletus#paik <N><Pl><Gen>
+=	 kohta <Po>
+=	 august <N><Sg><Gen>
+=	 keskel <Po>
+=	 . <Punct>
+*	 justiits#ministeerium <N><Sg><Nom>
+
+unknown  :	 54 ( 5.9405940594059405 )
+
+truepos  :	 858
+trueneg  :	 856
+falsepos :	 75
+falseneg :	 51
+
+precision:	 0.9196141479099679
+recall   :	 0.9438943894389439
+accuracy :	 0.9315217391304348
+
+tokens   :	 963
+src_ambig:	 2.041804180418042
+tst_ambig:	 1.0858085808580857
+resolved :	 46.82%
+
+lem      :	 82.72827282728272
+lem+pos  :	 77.44774477447744
+lem+msd  :	 72.05720572057206
+func     :	 0.0
+
+lem      :	 95.81958195819583 ( 13.091309130913103 )
+lem+pos  :	 94.93949394939494 ( 17.4917491749175 )
+lem+msd  :	 93.3993399339934 ( 21.342134213421346 )
+func     :	 0.0 ( 0.0 )
+
+Rule No.	TP	TN	FP	FN
+
