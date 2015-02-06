@@ -42,7 +42,7 @@ while(<>){
  s:(mille#taoline\") A ([S|P]):$1 Pron Dem $2:g;
  s:(milline\" Pron) ([S|P]):$1 Rel $2:g;
  s:(milli=ne\" Pron) ([S|P]):$1 Rel $2:g;
- s:(mina\" Pron) ([S|P]):$1 Pers Ps1 $2:g;
+ s:(mina\" Pron) ([E|S|P]):$1 Pers Ps1 $2:g;
  s:(\"ma\" Pron) ([S|P]):$1 Pers Ps1 $2:g;
  s:(minakene\" Pron) ([S|P]):$1 Dem $2:g;
  s:(mina=kene\" Pron) ([S|P]):$1 Dem $2:g;
@@ -167,7 +167,7 @@ while(<>){
  s:(setmes\" Pron) ([S|P]):$1 Indef $2:g;
  s:(sihuke\" Pron) ([S|P]):$1 Dem $2:g;
  s:(sihuke\" Pron) ([S|P]):$1 Dem $2:g;
- s:(sina\" Pron) ([S|P]):$1 Pers Ps2 $2:g;
+ s:(sina\" Pron) ([E|S|P]):$1 Pers Ps2 $2:g;
  s:(\"sa\" Pron) ([S|P]):$1 Pers Ps2 $2:g;
  s:(sinu_sugune\" Pron) ([S|P]):$1 Dem $2:g;
  s:(sinu#sugune\" Pron) ([S|P]):$1 Dem $2:g;
@@ -199,7 +199,7 @@ while(<>){
  s:(teist_sugune\" Pron) ([S|P]):$1 Dem $2:g;
  s:(teist#sugune\" Pron) ([S|P]):$1 Dem $2:g;
  s:(teist#sugune\") A ([S|P]):$1 Pron Dem $2:g;
- s:(tema\" Pron) ([S|P]):$1 Pers Ps3 $2:g;
+ s:(tema\" Pron) ([E|S|P]):$1 Pers Ps3 $2:g;
  s:(\"ta\" Pron) ([S|P]):$1 Pers Ps3 $2:g;
  s:(temake\" Pron) ([S|P]):$1 Pers Ps3 $2:g;
  s:(temakene\" Pron) ([S|P]):$1 Pers Ps3 $2:g;
