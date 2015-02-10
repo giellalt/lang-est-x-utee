@@ -222,7 +222,7 @@ while(<>){
  s:(üks#teise\" Pron) ([S|P]):$1 Recipr Indef $2:g;
  s:(üks#teise\") A ([S|P]):$1 Pron Recipr Indef $2:g;
 
- s:\"(.*)ma\" V (.*)$:\"$1ma\" V $2\"$1\" :g;
+ #s:\"(.*)ma\" V (.*)$:\"$1ma\" V $2\"$1\" :g;
 
  s: Adp Post : Po :g;
  s: Adp Pre : Pr :g;
@@ -242,6 +242,11 @@ while(<>){
  s:"”" \?:"”" Punct:g;
  s:"-" \?:"-" Punct:g;
  s:"¶" \?:"¶" Punct:g;
+
+ s:"(.+)" \?:"$1" N Prop \?:g; # - guess
+ s:\* ([^D]+) Der:\* Der:g; # remove 'Sg Gen' from '"koht" N* Sg Gen Der/lik A Pl Gen'
+ s:"(.+)-" (.*)$:"$1-" $2 *- :g; 
+ s: <([^ <>]+)>: \*$1:g; # replace <Tags> by *Tags
 
  print;
 }
