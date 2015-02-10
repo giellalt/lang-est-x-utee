@@ -205,7 +205,7 @@
 "<oled>"
 	"olema" V Pers Prs Ind Sg2 Aff
 "<Soome>"
-	"soome" N Prop Sg Gen
+	"Soome" N Prop Sg Gen
 "<või>"
 	"või" CC
 "<mõne>"
@@ -213,7 +213,7 @@
 "<muu>"
 	"muu" Pron Indef Sg Gen
 "<Euroopa>"
-	"euroopa" N Prop Sg Gen
+	"Euroopa" N Prop Sg Gen
 "<Liitu>"
 	"liit" N Sg Ill
 "<kuuluva>"
@@ -223,11 +223,11 @@
 "<,>"
 	"," Punct
 "<Islandi>"
-	"islandi" N Prop Sg Gen
+	"Island" N Prop Sg Gen
 "<või>"
 	"või" CC
 "<Norra>"
-	"norra" N Prop Sg Gen
+	"Norra" N Prop Sg Gen
 "<kodanik>"
 	"kodanik" N Sg Nom
 "<ja>"
@@ -329,7 +329,7 @@
 "<elanud>"
 	"elama" V Pers Prt Prc
 "<Soomes>"
-	"soome" N Prop Sg Ine
+	"Soome" N Prop Sg Ine
 "<seisuga>"
 	"seis" N Sg Com
 "<7.9.2012>"
@@ -949,7 +949,7 @@
 "<.>"
 	"." Punct
 "<Lisaks>"
-	"lisaks" Adv
+	"lisa" N Sg Tra
 "<ilmneb>"
 	"ilmnema" V Pers Prs Ind Sg3 Aff
 "<kandidaatide>"
@@ -1131,7 +1131,7 @@
 "<ja>"
 	"ja" CC
 "<Soomes>"
-	"soome" N Prop Sg Ine
+	"Soome" N Prop Sg Ine
 "<,>"
 	"," Punct
 "<teisipäeval>"
@@ -1183,7 +1183,7 @@
 "<->"
 	"-" Punct
 "<Soomes>"
-	"soome" N Prop Sg Ine
+	"Soome" N Prop Sg Ine
 "<kohalike>"
 	"kohalik" A Pl Gen
 "<omavalitsuste>"
@@ -1217,7 +1217,7 @@
 "<mitmed>"
 	"mitu" Pron Indef Pl Nom
 "<Soome>"
-	"soome" N Prop Sg Gen
+	"Soome" N Prop Sg Gen
 "<esindused>"
 	"esindus" N Pl Nom
 "<välismaal>"
@@ -1281,7 +1281,7 @@
 "<->"
 	"-" Punct
 "<Soome>"
-	"soome" N Prop Sg Gen
+	"Soome" N Prop Sg Gen
 "<laevad>"
 	"laev" N Pl Nom
 "<,>"
