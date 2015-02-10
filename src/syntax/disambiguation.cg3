@@ -20,17 +20,17 @@ LIST Jutum = """ "«" "»" ;
 LIST Jutum1>>> = """ "«" >>> ;
 LIST Jutum2<<< = """ "»" <<< ;
 LIST VoimCLB = "ja" "ning" ("või" CC) "aga" "ega" "ehk" "ja/või" ; 
-LIST ONCLB = "kes" "mis" "milline" "milli =ne" "missugune" "et" "kuni" "sest" "siis" "siiski" "kuna" 
+LIST ONCLB = "kes" "mis" "milline" "milli=ne" "missugune" "et" "kuni" "sest" "siis" "siiski" "kuna" 
  "kus" "kust" "kuhu" "kustkaudu" "kuidas" "mil" "millal" "miks" "mispärast" "mistõttu" "mismoodi"
  "misjaoks" "mistarvis" "seepärast" "sellepärast" "sest" "seetõttu" "selletõttu" "kas" "kuidas" "seega" "järelikult"
  "mis#sugune" "kust#kaudu" "mis#pärast" "mis#tõttu" "mis#moodi"
  "mis#jaoks" "mis#tarvis" "see#pärast" "selle#pärast" "see#tõttu" "selle#tõttu" "selmet" ;
-LIST OnCLB = "kes" "mis" "milline" "milli =ne" "missugune" "et" "kui" "kuni" "sest" "siis" "siiski" "kuna" "nagu" "justkui"
+LIST OnCLB = "kes" "mis" "milline" "milli=ne" "missugune" "et" "kui" "kuni" "sest" "siis" "siiski" "kuna" "nagu" "justkui"
  "otsekui" "kus" "kust" "kuhu" "kustkaudu" "kuidas" "muidu" "mil" "millal" "miks" "mispärast" "mistõttu" "mismoodi"
  "misjaoks" "mistarvis" "seepärast" "sellepärast" "sest" "seetõttu" "selletõttu" "kas" "kuidas" "seega" "järelikult"
- "mis#sugune" "just#kui" "otse#kui" "kust#kaudu" "mis#pärast" "mis#tõttu" "mis#moodi" "vastane" "vasta =ne"
+ "mis#sugune" "just#kui" "otse#kui" "kust#kaudu" "mis#pärast" "mis#tõttu" "mis#moodi" "vastane" "vasta=ne"
  "mis#jaoks" "mis#tarvis" "see#pärast" "selle#pärast" "see#tõttu" "selle#tõttu" "selmet" ;
-LIST On2CLB = "kes" "mis" "milline" "milli =ne" "missugune" "kus" "kust" "kuhu" "mis#sugune" "kuid" ;
+LIST On2CLB = "kes" "mis" "milline" "milli=ne" "missugune" "kus" "kust" "kuhu" "mis#sugune" "kuid" ;
 LIST NaguCLB = "nii" "nõnda" "just" "justkui" "otsekui" "samuti" "niisamuti" "niisama" "just#kui" "otse#kui" "nii#samuti" "nii#sama" ;
 LIST EtCLB = "ilma" "olgugi" "selleks" "vaid" "nii" "nõnda" "just" "niisamuti" "niisama" "nii#samuti" "nii#sama" ;
 LIST KuiCLB = "enne" "niipea" "niivõrd" "seni" "senikaua" "sestsaadik" "sestpeale" "parajasti" "sellal" "nii" "nõnda"
@@ -75,7 +75,7 @@ LIST Ccap = Prop ;
 LIST Cap = Prop Prop ;
 LIST PropCap = Prop (Prop Prop) ;
 LIST Prop = Prop ;
-LIST Pärisnimi = Prop (N Prop) (N <cap>) ;
+LIST Pärisnimi = Prop (N Prop) (N *cap) ;
 
 LIST V = V ;
 LIST Nominal = N Pron A Num ABBR ACR ;
@@ -87,6 +87,7 @@ LIST Et = "et" ;
 LIST AP = A Pron ;
 LIST APN = A Pron Num ; 
 LIST AS = A N ;
+LIST A* = A* ;
 LIST A = A ;
 LIST D = Adv ;
 LIST S = N ;
@@ -101,8 +102,8 @@ LIST X = X ;
 LIST Jcrd = CC ;
 LIST Jsub = CS ;
 LIST Ncard = Card ;
-LIST Digit = digit ;
 LIST NcardSgNom = (Card Sg Nom) ;
+LIST Digit = digit ;
 LIST Nord = Ord ;
 LIST Arv = Num "arv" "tuhatkond" ;
 LIST KuiEtKas = "kui" "et" "kas" ;
@@ -114,14 +115,6 @@ LIST MasInf = (Sup Ine) ;
 LIST MastInf = (Sup Ela) ;
 LIST MataInf = (Sup Abe) ;
 LIST MaDaInf = Inf (Sup Ill) ;
-LIST DaVerb = ("või" V) "tohti" "saa" "ole" "mine" "tege" "valmista" "tekita" "sünnita" "soovi"
-	"pakku" ("too" V) ("jää" V) "kujune" "muutu" "saa" "tekki" "aita" <InfP> ;
-LIST MaVerb = "pida" "asu" "hakka" ("jää" V) "kippu" "mine" "puhke" "sattu" "sundi" "sunni" "sõit" "tule" ;
-LIST VatVerb = "näi" "näge" "paist" "tundu" "aima" "arva" "avasta" "eelda" 
-	 "kaeba" "kart" "kiitle" "kujutle" "kurt" "kuul" "leid" "loot" 
-	 "mõist" "mõtle" "mälesta" "märka" "möön" "nenti" "oleta" "oota" 
-	 "rääki" "taipa" "taju" "tead" "tund" "tunnista" "tõenda" "usku" 
-	 "väit" "ütle" "näikse" ;     
 
 LIST SPAND = N Pron A Num Adv ABBR ACR ABBR ACR ;
 LIST SPAN = N Pron A Num ABBR ACR ABBR ACR ;
@@ -174,9 +167,13 @@ LIST Pps3 = (Pron Ps3) "see" ;
 LIST VPSg12 = (V Sg1) (V Sg2) ;
 LIST VPPl12 = (V Pl1) (V Pl2) ;
 
-LIST Yks = "üks" "esimene" ;
+LIST YksEsimene = "üks" "esimene" "1" ;
+LIST Yks = "üks" "1" ;
 LIST Teine = "teine" ;
 LIST Oma = "oma" ;
+LIST Aga = "aga" ;
+LIST Kui = "kui" ;
+LIST Ka = "ka" ;
 
 LIST KesMis = "kes" "mis" ;
 LIST Kes = "kes" ;
@@ -205,10 +202,10 @@ LIST SgAbl = (Sg Abl) ;
 LIST PlAbl = (Pl Abl) ;
 LIST SgTr = (Sg Tra) ; 
 LIST PlTr = (Pl Tra) ;
-LIST SgTerm = (Sg Trm) ; 
-LIST PlTerm = (Pl Trm) ;
 LIST SgEs = (Sg Ess) ; 
 LIST PlEs = (Pl Ess) ;
+LIST SgTerm = (Sg Trm) ; 
+LIST PlTerm = (Pl Trm) ;
 LIST SgAbes = (Sg Abe) ; 
 LIST PlAbes = (Pl Abe) ;
 LIST SgKom = (Sg Com) ; 
@@ -228,9 +225,9 @@ LIST PropAdit = (Prop Sg Ill) ;
 
 LIST ABC = "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z" 
 	  "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z" ;
-LIST Case = Nom Gen Par (Sg Ill) (Sg Ill) (Pl Ill) Ine Ela Ade All Abl Tra Trm Ess Abe Com ;
+LIST Case = Nom Gen Par (Sg Ill) (Sg Ill) (Pl Ill) Ine Ela Ade All Abl Tra Ess Trm Abe Com ;
 LIST Case10 = Nom Gen Par (Sg Ill) (Sg Ill) (Pl Ill) Ine Ela Ade All Abl Tra ;
-LIST KohaK = (Sg Ill) (Sg Ill) (Pl Ill) Ine Ela Ade All Abl ; # Tra Ess Abe Com 
+LIST KohaK = (Sg Ill) (Sg Ill) (Pl Ill) Ine Ela Ade All Abl ; 
 LIST InIllAditEl = Ine (Sg Ill) (Pl Ill) (Sg Ill) Ela ;
 LIST KustKuhu = (Sg Ill) (Pl Ill) (Sg Ill) Ela Abl All ;
 LIST Kuhu = (Sg Ill) (Pl Ill) (Sg Ill) All "sisse" "välja" "juurde" "vastu" "vahele" "tagasi" "keskele" ;
@@ -239,18 +236,15 @@ LIST Kus = Ine Ade ;
 LIST InAdAll = Ine Ade All ;
 LIST Milleks = Tra Trm Abe ;
 LIST KuhuMilleks = (Sg Ill) (Pl Ill) (Sg Ill) Trm Tra All ;
-LIST MuutVerb = "muutu" "saa" "osutu" "muundu" "pane" "mine" "teisendu" ;
 
 
-LIST OleSaa = ("ole" Aux) ("saa" V) ("jää" V) ; 
-LIST OlemSaa = "ole" ("saa" V) ("jää" V) ; 
-LIST NudTud = Der/nu Der/tu (Prt Prc) ; 
-LIST MataA = Der/mata ;
-LIST MineS = Der/mine ;
-LIST LineS = Der/line ;
-LIST JaS = Der/ja ;
-LIST Vel = <El> ;
-LIST Vin = <In> ;
+LIST NudTud = Der/nu Der#nu Der/tu Der#tu (Prt Prc) ; 
+LIST MataA = Der/mata Der#mata ;
+LIST MineS = Der/mine Der#mine ;
+LIST LineS = Der/line Der#line ;
+LIST JaS = Der/ja Der#ja ;
+LIST Vel = *El ;
+LIST Vin = *In ;
 
 LIST particV = (Prt Prc) ;
 LIST partic = Prc ;
@@ -263,7 +257,7 @@ LIST Impf = Prt ;
 LIST Quot = Quot ;
 LIST QuotPresPs = (Quot Prs Pers) ;
 LIST Cond = Cond ;
-LIST Vsup = Vsup ;
+LIST Vsup = Sup ;
 LIST Mod = Mod ;
 LIST Aux = Aux ;
 
@@ -300,11 +294,8 @@ LIST Sg3Verb = (V Sg3) ;
 LIST Pl3Verb =(V Pl3) ;
 
 LIST ErVerb = Inf Sup Prc ;
-LIST ElaAsu = "ela" "asu" ;
-
 
 LIST EiEga = ("ei" V) "ega" ;
-
 
 LIST ASgGen = (A Sg Gen) ;
 LIST ASgNom = (A Sg Nom) ;
@@ -320,39 +311,39 @@ LIST APart = (A Par) ;
 
 LIST Acomp = (A Comp) ;
 LIST Asuper = (A Superl) ;
-LIST Acm = <m> ;
-LIST Asm = <im> ;
+LIST Acm = *m ;
+LIST Asm = *im ;
 
 
 LIST Post = Po ;
 LIST Pre = Pr ;
-LIST Pren = (Pr <nom>) ;
-LIST Preg = (Pr <gen>) ;
-LIST Prep = (Pr <part>) ;
-LIST Pret = (Pr <term>) ;
-LIST Pree = (Pr <el>) ;
-LIST Prea = (Pr <all>) ;
-LIST Prek = (Pr <kom>) ;
-LIST Preab = (Pr <abes>) ;
-LIST Postn = (Po <nom>) ;
-LIST Postg = (Po <gen>) ;
-LIST Postp = (Po <part>) ;
-LIST Poste = (Po <el>) ;
-LIST Posta = (Po <all>) ;
-LIST Postad = (Po <ad>) ;
-LIST Postabl = (Po <abl>) ;
-LIST Postk = (Po <kom>) ;
+LIST Pren = (Pr *nom) ;
+LIST Preg = (Pr *gen) ;
+LIST Prep = (Pr *part) ;
+LIST Pret = (Pr *term) ;
+LIST Pree = (Pr *el) ;
+LIST Prea = (Pr *all) ;
+LIST Prek = (Pr *kom) ;
+LIST Preab = (Pr *abes) ;
+LIST Postn = (Po *nom) ;
+LIST Postg = (Po *gen) ;
+LIST Postp = (Po *part) ;
+LIST Poste = (Po *el) ;
+LIST Posta = (Po *all) ;
+LIST Postad = (Po *ad) ;
+LIST Postabl = (Po *abl) ;
+LIST Postk = (Po *kom) ;
 
 
 
 LIST Pool = ("pool") ;
-LIST GiKi = <gi> <ki> ;
+LIST GiKi = *gi *ki ;
 LIST Kriips = (<->) ;
 LIST Kysimtag = (<?>) ;
 
 
 LIST OmadusAse = A "sama" "kumb" "samane" "mingi" "mingisugune" "mitmes" "samasugune" "niisugune" "niisamasugune"
- "seesugune" "selline" "selli =ne" "säärane" "taoline" "selletaoline" "seesinane" "säherdune" "missugune" "milline" "milli =ne" "iga"
+ "seesugune" "selline" "selli=ne" "säärane" "taoline" "selletaoline" "seesinane" "säherdune" "missugune" "milline" "milli=ne" "iga"
  "mäherdune" "ükski" "mõni" "mõningane" "mõningas" "misuke" "mihuke" "see" "too" "sama" "seesama" "toosama" 
  "kumbki" "mõlema" "emb-kumb" "miski" "palju" "teine" "üks" "esimene" "muu" "samalaadne" "sarnane"
  "mingi#sugune" "sama#sugune" "nii#sugune" "nii#sama#sugune" "see#sugune" "selle#taoline" 
@@ -366,18 +357,17 @@ LIST Ajamäärus = "aeg" "elu#aeg" "Elu#aeg" "aasta" "kuu" "nädal" "päev" ("tu
  "esmas#päev" "teisi#päev" "kolma#päev" "nelja#päev" "lau#päev" "püha#päev" "aasta#kümme"
  "sajand" "aasta#sajand" "kord" "samm" "aste" ("ulatus" N) "algus" "lõpp" "elu" "igavik" "aja#vahemik" "nüüd" ("(.*)#sekund"r) ("(.*)minut"r) ("(.*)#tund"r) ("(.*)#päev"r) ("(.*)nädal"r) ("(.*)#kuu"r) ("(.*)#aasta"r) ("(.*)#periood"r) ; 
 
-LIST Hulk = "enam" "enim" "rohkem" "vähem" "muist" "mitu" "mi =tu" 
+LIST Hulk = "enam" "enim" "rohkem" "vähem" "muist" "mitu" "mi=tu" 
 	"liiter" "meeter" "kilo#meeter" "tonn" "hektar" ("tund" N) "aasta" "tükk" "natuke" "ivake" "veidike" "korv" "viil" "kott" "ämber" "pudel" "klaas" "pott" "poti#täis" "pann" "panni#täis" "kilo" "kübe" "komplekt" "killu~ke" "m2" "m3" "km2" "km3" 
 	"hulk" "rühm" "paar" "kimp" "kari" "virn" "polk" "trobi#kond" "osa" "enamik" "enamus" "raasuke" "kamp" "punt" "kamakas" "rida" "kuhi" "pakk" "kuu" "nädal" "ohtralt" ("jagu" N) "oma#jagu" "kiht" "tükk" "päts"
 	"täis" "tulvil" ("palju" Adv) "vähe" "pisut" "veidi" "küllalt" "rohkesti" "täis" "tulvil" "peo#täis" "rohkem" "vähem" "enamik" "enamus" "ohtralt" "arvukalt" ("jagu" N) "oma#jagu" "kiht" "patakas"
-	Ncard "mitu" "mi =tu" "mitu#setu" "paar" "tosin" "mitu#kümmend" "mitu#sada" "kümmekond" "sadakond" "pool#teist" "tuh" "milj" "null" "veerand" "kolm#veerand" "kompleks" ; 
+	Ncard "mitu" "mi=tu" "mitu#setu" "paar" "tosin" "mitu#kümmend" "mitu#sada" "kümmekond" "sadakond" "pool#teist" "tuh" "milj" "null" "veerand" "kolm#veerand" "kompleks" ; 
 
 LIST RohkemVähem = ("palju" Adv) "vähe" "rohkem" "vähem" "enam" "enim" "kaua" "natuke" "täis" "piisavalt" "hulgaliselt" ;
 
-LIST Möödunud = "möödu" "mine" ;
 
 LIST Kava = "kava" "kavatsus" "eesmärk" "ees#märk" "plaan" "programm" "strateegia" "võimalus" "valmidus" "valmis#olek" "aeg" "välja#vaade" "vajadus" "oskus" "õigus" "luba" "mõte" "idee" "luba"
-  "huvi" "soov" "tahe" "lootus" Der/mine "nõue" "korraldus" "otsus" "määrus" "alus" "direktiiv" "võim" "kohtustus" "põhjus" "tõenäosus" "ette#panek" "teade" ; 
+  "huvi" "soov" "tahe" "lootus" Der/mine Der#mine "nõue" "korraldus" "otsus" "määrus" "alus" "direktiiv" "võim" "kohtustus" "põhjus" "tõenäosus" "ette#panek" "teade" ; 
 
 LIST RiikVald = "riik" "vaba#riik" "ühend#riik" "maa" "linn" "vald" "alevik" "provints" "osa#riik" "föderatsioon" "konföderatsioon" "riigi#kogu" "partei" "valitsus" "parlament" "as" "oü" "mtü" "ab" ;
 
@@ -408,94 +398,36 @@ LIST Riikjne = Attr "eesti" "läti" "leedu" "balti" "saksa" "hansa" "vene" "vene
 
 LIST Poordumine = "härra" "proua" "neiu" "mister" "miss" "missis" "ms" "mr" "dr" "phd" "msc" "keiser" "krahv" "admiral" "preili" "donna" "filosoof" "president" "minister" "maa#vanem" "juhendaja" "juhataja" "treener" "sensei" "direktor" "fotograaf" "liider" "major" "õpetaja" "kasvataja" "krahv" 
 	"treener" "kirjanik" "professor" "doktor" "kirurg" "dotsent" "akadeemik" "kodanik" "kindral" "kapten" "donna" "leedi" "sekretär" "abikaasa" "abi#kaasa" "isa" "ema" "vana#isa" "vana#ema"
-	"austatud" "lugupeetud" "lugu#peetud" "seltsimees" "esimees" "seltsi#mees" "esi#mees" "esi#naine" "piiskop" "peapiiskop" "pea#piiskop" "staar" "comes" "tsentuurio" "neiuke" "neiu =ke" ("(.*)jumal"r) ("(.*)minister"r) ("(.*)juht"r) ("(.*)juhataja"r) ("(.*)liider"r) ("(.*)kantsler"r) ("(.*)kandidaat"r) ("(.*)ist"r) ("(.*)lane"r) ("(.*)nna"r)("(.*)tar"r) ("(.+)ja"r) ("(.*)arst"r) ("(.*)#õde"r) ("(.*)nt"r) ("(.*)tor"r) ;
+	"austatud" "lugupeetud" "lugu#peetud" "seltsimees" "esimees" "seltsi#mees" "esi#mees" "esi#naine" "piiskop" "peapiiskop" "pea#piiskop" "staar" "comes" "tsentuurio" "neiuke" "neiu=ke" ("(.*)jumal"r) ("(.*)minister"r) ("(.*)juht"r) ("(.*)juhataja"r) ("(.*)liider"r) ("(.*)kantsler"r) ("(.*)kandidaat"r) ("(.*)ist"r) ("(.*)lane"r) ("(.*)nna"r)("(.*)tar"r) ("(.+)ja"r) ("(.*)arst"r) ("(.*)#õde"r) ("(.*)nt"r) ("(.*)tor"r) ;
 
 LIST Inimene = "inimene" "naine" "mees" "poiss" "tüdruk" "laps" "arst" ;
 LIST Kuju = "kuju" "vorm" "formaat" "esitus" "kujutus" "kujutis" "kujutlus" "tutvustus" "staatus" "olek" "seisund" "monument" "mälestus#kivi" "jälg" "foto" ;
 
-LIST Sorti = "sort" "liik" "kord" "mitu" "mi =tu" "milline" "milli =ne" "värv" "puhk" "mall"
-	"laad" "viis" "tõug" "mast" "karv" "kuju" "pärit#olu" "meel" ;
+LIST Sorti = "sort" "liik" "kord" "mitu" "mi=tu" "milline" "milli=ne" "värv" "puhk" "mall"
+	"laad" "viis" "mood" "tõug" "mast" "karv" "kuju" "pärit#olu" "meel" ;
 LIST üsna = "üsna" "väga" "päris" "küllalt" "igati" ;
 LIST Verb&Kvm = V Punct "<{>" "<}>" ;
 LIST LA = "<s>" >>> ;
 LIST Konj = "," "-" "ja" "ning" ("või" CC) "ega" "kui" "otsekui" "otse#kui" "ehk" "kuni" "ja/või" ; 
 LIST KonjKvm = "ja" "ning" ("või" CC) "ega" "kui" "otsekui" "otse#kui" "ehk" "kuni" "ja/või" Punct "<{>" "<}>" ; 
-LIST KuiAdv = "mitu" "mi =tu" "vähe" "palju" "hea" "halb" "hästi" "kaua" "vana" "vägev" "noor" 
+LIST KuiAdv = "mitu" "mi=tu" "vähe" "palju" "hea" "halb" "hästi" "kaua" "vana" "vägev" "noor" 
 		"raske" "kerge" "tihti" "sageli" "kiire" "kiiresti" "väga" "tohutult" ;
 
 
 LIST NotS = V Adv A Num Pron CC CS Adp Po Pr Interj ; 
 LIST NotSP = V Adp Po Pr CC CS A Num Adv Interj ;
-LIST Konj&Kvm = Punct "<{>" "<}>" "ja" "ning" "või" "ega" "kui" "otsekui" "otse#kui" "kuni" "ja/või" ;
+LIST Konj&Kvm = Punct "<{>" "<}>" "ja" "ning" ("või" CC) "ega" "kui" "otsekui" "otse#kui" "kuni" "ja/või" ;
 
-LIST Part-K = <Part> "müü" ("ost" V) "näge" "kasuta" "kohta" "näita" "paranda" "tarvita" 
-	 "takista" "karista" "toeta" "hoid" "huvita" "iseloomusta" "oota" 
-    "aita" "alusta" "harrasta" "jätka" "katkesta" "kavatse" "nõud"
-	 "alahinda" "austa" "arutle" "eelda" "haist" "himusta" "häbene" 
-    "ihalda" "imetle" "jälesta" "kahetse" "kart" "kujutle" "kuula" "kuul" 
-    "käsitle" "lait" "leina" "maits" "meenuta" "mõtle" "neela" "nuusuta" "nauti" 
-    "tead" ("tund" V) ("täna" V) "usalda" "usku" "uuri" "vaja" "vihka" 
-    "ülista" "emba" "hammusta" "kallista" "keeruta" "kehita" "kibruta" 
-    "löö" "nooguta" "nõela" "näpista" "peks" "piitsuta" 
-    "pilguta" "puuduta" "riiva" "silita" "suudle" "süga" "tagu" "vanguta" 
-	"aja" "ae" "aseta" "jät" "heit" 
-	"kalluta" "kand" "keera" "keri" "kirjuta" "kleepi" "kliisterda" "kutsu" 
-	"laadi" "lae" "ladu" "lask" "las" "lohista" "loopi" "loobi" "luba" "löö" "lükka" "lüka" 
-	"määri" "noppi" "paiska" "raputa" "rebi" ("saa" V) "saat" "sidu" "seo" 
-	"sikuta" "siruta" "sundi" "suru" ("too" V) ("too" Prc) ("too" Der/mine) "toppi" 
-	"tõmba" "tõmma" "tõuka" "tõst" "tõste" "tõuka" "tõuga" 
-	"ulata" "upita" "vala" "veda" "veereta" "viska" ; 
-
-LIST Part-P = <Part-P> <Part> <NGP-P> "neela" "seosta" "tüüta" ; 
-LIST NGP-P = <NGP-P> ; 
 LIST LisaNom = "kes" "mis" "ise" "kõik" ;
 LIST Vordlus = "kui" "nagu" "kus" "mis" "ju" ;
 LIST NotSg3 = (V Pl1) (V Pl2) (V Pl3) (V Sg1) (V Sg2) Imps ;
 
-LIST Veel#Verb = "liiku" "sõit" "kõndi" "ole" "asu" "asetse" ; 
-LIST LiikumisVerb = "aja" "ae" "aseta" "astu" "istu" 
-"jaluta" "jooks" "juhtu" ("jää" V) ("jää" Prc) ("jää" Der/mine) "jät" 
-"jõllita" ("jõud" V) ("jõud" Prc) ("jõud" Der/mine) ("jõu" V) ("jõu" Prc) "haara" "heit" "hüppa" 
-"kalluta" "kand" "kappa" "karga" "kasva" "keera" "keerdu" "keri" "kiirusta" "kinnita" "kippu" "kirjuta" "kleepi" "kleepu" 
-"kliisterda" "koba" "komberda" "krapsa" "kukku" "kutsu" "käi" "kükita" "küünita" "kõmata" "kõmpi" "kõndi" "kõnni" 
-"laadi" "lae" "ladu" "lange" "laperda" "lask" "las" "lenda" "lenna" "libista" "liigu" "liiku" "lohista" "lonki" 
-"loopi" "loobi" "luba" "luusi" "läi" "löö" "lükka" "lüka" 
-"marssi" "mine" "määri" "mängi" "märki" "noppi" "nõrgu" 
-"paiska" "paisku" "pane" "pan" "passi" "piilu" "prantsata" "pressi" "pritsi" "pudune" "puge" "puhu" "puista" "põruta" 
-"pääse" "pööra" "pöördu" "põrka" "põruta" 
-"raputa" "rebi" "rivistu" "roni" ("rooma" V) ("rooma" Prc) "rända" "ränna" 
- ("saa" V) "saat" "sammu" "sattu" "sead" "seikle" "siba" "sidu" "seo" "sikuta" "siruta" "sirutu" "sundi" "suru" "sõit" "sõide" "sööst" 
-("too" V) ("too" Prc) ("too" Der/mine) "toppi" "traavi" "tikku" "torma" "trehva" "tule" "tul" "tungi" "turtsu" "tükki" 
-"tõmba" "tõmma" "tõmbu" "tõuka" "tõst" "tõste" "tõuka" "tõuga" 
-"uju" "ulata" "ulatu" "upita" "vaata" "vajuta" "vala" "veda" "veere" "veereta" "vii" "viska" "voola" "vuha" "võt" "võe" ;
-
-LIST PrVerb = "ole" ("saa" V) "näi" "näge" "paist" ("tund" V) "tundu" "hakka" "püsi" 
-    "juhtu" "kasva" "maits" "seis" "jää" "tasu" "koge" "kuuldu" "kõla" ("tule" V) ;
-LIST Modaal = Mod "kavatse" "plaani" "tule" "kõlba" "sobi" "tarvitse" "raatsi" ;
-
-LIST Intr = <Intr> "asu" "astu" "keerle" "lipsa" "lonki" "muutu" "ole" "mine" "tule" "tõmbu" "vaju" "õheta" "tuge" "kogune" "ripne" ;
-
-LIST PartVerb = <Part-P> <Part> "leidu" "juhtu" "siirda" "registreeri" "lehvita" "seedi" "puhasta" "laiuta" "siruta"
-	"too" "kasvata" "taba" "sihti" "saa" "telli" "määratle" "viibuta" "kogu" "toppi" "peegelda" "uudista" 
-	"kirjelda" "kommenteeri" "peit" ("sulge" V) "lendu" "pida" "lausu" "joo" "söö" "õgi" "niit" "astu" "avalda" "kand" ; 
 
 LIST Aine = "aine" "aeg" "asi" "abi" "osa" "õhk" "vesi" "vedelik" "toit" "piim" "hapu#piim" "supp" "kala" "sool" "suhkur" "mais" "tuhk" "puder" "kumm" "liiv" "krohv" "metall" "viin" "alkohol" "süü" "raha" "see"
 	"elu" "nõu" "tolm" "perrooni#tolm" "hein" "kulu" "valu" "nali" "lõbu" "kohv" "raha" "värv" "lõhn" "töö" "edu" ; 
 
 LIST Kahju = "rõõm" "kahju" "hirm" "õnne" ;
 
-LIST AditVerb = "suhtu" "suhtu =v" "puutu" "puutu =v" ("kutsu" V) "mine" ("sõit" V) ("jää" V) "torma" "kihuta" "võt" ("vii" V) "sattu" "illustreeri"
-	("too" V) "liiku" ("tule" V) "roni" ("aja" V) ("tõus" V) "jät" ("saa" V) "astu" "pööra" ("lask" V) "käi" "suuna"
-	"rutta" ("veere" V) ("süsti" V) "keera" ("jooks" V) ("jaluta" V) ("saat" V) "suvita" "lask =mine" "kuulu"
-	("reisi" V) ("pist" V) ("pane" V) "torka" "torki" ("uju" V) "prahvata" "kukku" "kogune" "paiguta" "mana"
-	("lenda" V) ("peit" V) ("tassi" V) ("jõud" V) "vajuta" "viska" "kost" "ilmu" "sihti" "paisku" "upita" "sobitu"
-	"suru" "lükka" "tulista" "sõud" "kuma" "heit" "aita" "lask" "sikuta" "siruta" "aseta" "asetu" "viruta" "vahti"
-"astu" "hüppa" "juhata"	"jää" "kalla" "kand" "karga" "keera" "kihuta" "koli" "kukku" "kutsu" 
-	"kääna" "lange" "lask" "lenda" "logi" "mahtu" "pist" "pääse" "pööra" "pöördu" 
-	"registreeri" "rända" "sattu" "sead" "suru" "sõit" "sätti" "sööt" ("tassi" V) 
-	"too" "toppi" "torka" "trügi" "tungi" "tuupi" "tõmba" "tõmbu" "tükki" "vaju" "vala" 
-	"valgu" "varise" "veda" "vehki" "vii" "villi" "viruta" "viska" "võt" "voola" ;
- ; 
 
 LIST Perfekt = "ära" "välja" "läbi" "maha" "üle" "alla" "edasi" "kaasa" "kinni" "ette" 
 	 "kokku" "külge" ("lahku" Adv) "lahti" "laiali" "ligi" "otsa" "peale" "pealt" 
@@ -515,14 +447,13 @@ LIST Seas = "seas" "hulgas" "keskel" ;
 
 LIST Tegu = ("tegu" Sg Par) ("tegu" Sg Nom) ("tege=mine" Sg Par) ("tegemine" Sg Par) ;
 LIST Vaja =("vaja" Adv) ("tarvis" Adv) ;
-LIST Ole = "ole" ;
 LIST NimiAse = N "mina" "sina" "tema" "ma" "sa" "ta" "meie" "me" "teie" "te" "nemad" "kes" "mis" "igaüks" "üksteise" "teineteise" "ise"
  "iseenese" "see" "too" "sama" "seesama" "toosama" "kõik" "kumbki" "mõlema" "emb-kumb" "miski" 
 "palju" "teine" "üks" "iga#üks" "üks#teise" "teine#teise" "ise#enese" "see#sama" "too#sama" "embkumb" ;
 
 
 LIST Sarnane = "sama" "samane" "mingi" "mingisugune" "mitmes" "samasugune" "niisugune" "niisamasugune"
- "seesugune" "selline" "selli =ne" "säärane" "taoline" "selletaoline" "seesinane" "säherdune" "missugune" "milline" "milli =ne" "iga"
+ "seesugune" "selline" "selli=ne" "säärane" "taoline" "selletaoline" "seesinane" "säherdune" "missugune" "milline" "milli=ne" "iga"
  "mäherdune" "mõni" "mõningane" "mõningas" "misuke" "mihuke" "see" "too" "sama" "seesama" "toosama" 
  "kumbki" "mõlema" "emb-kumb" "muu" "samalaadne" "sarnane"
  "mingi#sugune" "sama#sugune" "nii#sugune" "nii#sama#sugune" "see#sugune" "selle#taoline" 
@@ -530,8 +461,8 @@ LIST Sarnane = "sama" "samane" "mingi" "mingisugune" "mitmes" "samasugune" "niis
 
 LIST Omad&Ases = A "sama" "kumb" "samane" "mingi" "mingisugune" 
 	 "mitmes" "samasugune" "niisugune" "niisamasugune" "seesugune" 
-	 "selline" "selli =ne" "säärane" "taoline" "selletaoline" "seesinane"
-	 "säherdune" "missugune" "milline" "milli =ne" "iga" "mäherdune" 
+	 "selline" "selli=ne" "säärane" "taoline" "selletaoline" "seesinane"
+	 "säherdune" "missugune" "milline" "milli=ne" "iga" "mäherdune" 
 	 "ükski" "mõni" "mõningane" "mõningas" "misuke" "mihuke" 
 	 "see" "too" "sama" "seesama" "toosama" "kõik" "kumbki" 
      "mõlema" "emb-kumb" "miski" "palju" "teine" "üks" "muu"
@@ -541,8 +472,6 @@ LIST Omad&Ases = A "sama" "kumb" "samane" "mingi" "mingisugune"
 
 LIST ühendav = "läbi" "valmis" "üle" "üles" "alla" "ette" "järele" ;
 
-LIST SpordiLe = "kuulu" "kaota" ("jää" V) "saa" "tege" ;
-LIST NOTAdit = "luge" "söö" "maga" ;
 LIST Yliik = ABBR ACR ajectival verval adverbial ;
 
 LIST Loend = "punkt" "loend" "number" ("lisa" N) "artikkel" "peatükk" "pea#tükk" "joonis" "joon" "skeem" "arv" "lõige" "paragrahv" "par" "par." ;
@@ -554,301 +483,14 @@ LIST SubPron = "mina" "sina" "tema" "ma" "sa" "ta" "kes" "mis" "igaüks" "ükste
 LIST Nom-S = Pron A Ord ;
 LIST Laiendamatu = "ise" "see" ;
 
-LIST MinePane = "pane" "mine" ;
 LIST VerbiAdv = "ära" "läbi" "maha" ;
 LIST Sina = ("sina" Sg) ("sa" Sg) ;
 LIST Teie = ("sina" Pl) ("sa" Pl) ("teie" Pron) ("te" Pron) ;
 LIST Tema = ("tema" Sg) ("ta" Sg) ;
 
-
-LIST LiikumisV = "aja" "ae" "aseta" "astu" "istu" 
-"jaluta" "jooks" "juhtu" ("jää" V) ("jää" Prc) ("jää" Der/mine) "jät" 
-"jõllita" ("jõud" V) ("jõud" Prc) ("jõud" Der/mine) ("jõu" V) ("jõu" Prc) "heit" "hüppa" 
-"kalluta" "kand" "kappa" "karga" "kasva" "keera" "keerdu" "keri" "kiirusta" "kinnita" "kippu" "kirjuta" "kleepi" "kleepu" 
-"kliisterda" "koba" "komberda" "krapsa" "kukku" "kutsu" "käi" "kükita" "küünita" "kõmata" "kõmpi" "kõndi" "kõnni" 
-"laadi" "lae" "ladu" "lange" "laperda" "lask" "las" "lasku" "lenda" "lenna" "libista" "liigu" "liiku" "lohista" "lonki" 
-"loopi" "loobi" "luba" "luusi" "läi" "löö" "lükka" "lüka" 
-"marssi" "matka" "mine" "määri" "noppi" "nõrgu" 
-"paiska" "paisku" "pane" "pan" "prantsata" "pressi" "pritsi" "pudune" "puge" "puhu" "puista" "põruta" 
-"pääse" "pööra" "pöördu" "põrka" "põruta" 
-"raputa" "rebi" "reisi" "rivistu" "roni" ("rooma" V) ("rooma" Prc) "rända" "ränna" 
- ("saa" V) "saat" "sammu" "sattu" "sead" "seikle" "siba" "sidu" "seo" "sikuta" "siruta" "sirutu" "sundi" "suru" "sõit" "sõide" "sörki" "sööst" 
-"tiirle" "tikku" ("too" V) ("too" Prc) ("too" Der/mine) "toppi" "traavi" "torma" "trehva" "tule" "tul" "tungi" "turtsu" "tükki" 
-"tõmba" "tõmma" "tõmbu" "tõst" "tõste" "tõuka" "tõuga" ("tõus" V) 
-"uju" "ulata" "ulatu" "upita" "vaata" "vajuta" "vala" "veda" "veere" "veereta" "vihise" "vii" "viska" "vonkle" "voola" "vuha" "võt" "võe" ;
-
-LIST SuunaAdverb = "alla" "edasi" "eemale" "eest" "ette" "juurde" "järele" 
-"kinni" "kohale" "kokku" "kõrvale" "lahti" "laiali" "ligi" "läbi" "mööda" "otsa" "peale" "puruks" "ringi" 
-"sisse" "tagasi" "taha" "tuksi" "välja" "üle" "üles" "vahele" ;
-
-LIST IntrV = <Intr> Mod Aux "asu" "astu" ("jää" V) ("jõud" V) "keerle" "kogune" "käi" "lipsa" "lonki" "mine" "muutu" "mõtiskle" "mõtle" "mõtel" "ole" "pöörle" "ripne" ("saa" V) "sattu" "tiirle" "tuge" "tule" "tõmbu" "vaju" "õheta" ;
-
-
-
-LIST Alla#verb = ("aja" V) "and" "heit" "hinda" "hüppa" "jät" "jää" "kaalu" 
-	"keera" "kirjuta" "kisku" "kriipsuta" "käi" "laadi" "lask" "lenda" 
-	"loputa" "löö" "mine" "neela" "pane" "pildu" "pist" "põle" "pööra" 
-	"suru" "tagu" "tege" "tingi" "tiri" "torka" "tule" "tulista" "tõmba" 
-	"uht" "vaata" "vaju" "vajuta" "vandu" "veda" "vii" "viruta" "võt" ;
-LIST Alt#verb = "lenda" "mine" "tõmba" "veda" ;
-LIST Edasi#verb = "and" "jõud" "kaeba" "kand" "lükka" "mine" "müü"
-	"pääsema" ("saa" V) "sõit" "vii" "õppi" ;
-LIST Eemale#verb = "jää" "tõuka" ;
-LIST Esile#verb = "kutsu" ("too" V) "tõst" "tükki" "võt" ;
-LIST Ette#verb1 = "aima" "and" "arva" "arvesta" "hoiata" "juhtu" "kasvata" "kavatse" 
-	"kirjuta" "kujuta" "kutsu" "kuuluta" "käi" "küsi" "laul" "luge" "luiska" "maali" "maks" "mõtle" "mängi" 
-	"määra" "näge" "näita" "puhu" "rakenda" "rääki" "sööt" "tantsi" "tead" "teata" "tege" "telli"
-	"trehva" ("tund" V) "vaata" "valeta" "valmista" "valmistu" "ütle" "võt" ;
-LIST Ette#verb = ("aja" V) "astu" "heit" "jõud" "kand" "keera" "kujuta" "ladu"
-	"löö" "mine" "pane" "patra" "pist" "puutu" 
-	"rutta" ("saa" V) "sattu" "sead" "sõit" "sätti" 
-	("too" V) "toppi" "torka" "tule" "tõmba" "tõst" "tükki"
-	"vii" "viska" ;
-LIST Ilma#verb = "jät" "jää" ("saa" V) ; 
-LIST Juurde#verb = "and" "arva" "kalla" "kirjuta" ("lisa" V) "lõika" "maks" "mõtle" 
-	"pane" "pooki" ("saa" V) "soola" ("too" V) "tule" "tõmba" "võt" ;
-LIST Järel#verb = "käi" ;
-LIST Järele#verb = "aima" "aita" "and" "arva" "hüüd" "jooks" "jõud" "jät" "jää"
-	"kaalu" "kae" "katsu" "kihuta" "kiit" "kinnita" "kuula" "küsi" "lask"
-	"mine" "mõtle" "pist" "proovi" "päri" ("saa" V) "sõit" "tege" "tule" "uuri"
-	"vaata" "vahti" "vaju" "võt" "õppi" "roni" "kõndi" ;
-LIST Kaasa#verb = "aita" "arva" "ela" "kisku" "kõnele" "laul" "löö" "mine" "mõju"
-	"mängi" "pane" "pist" "rääki" "sõit" "sündi" "tantsi" "tege" ("too" V) 
-	"torma"	("tule" V) ("tund" V) "tõmba" "tööta" "veda" "vii" "ümise" "üürga" 
-	"and" "kutsu" "mõtle" "kõiguta" "võt" ("saa" V) "nut" "kihuta" "pakki" "krapsa" ;
-
-LIST Kaasas#verb = "käi" "kand" ;
-LIST Kallale#verb = "lange" ;
-LIST Kinni#verb = ("aja" V) "and" "haaki" "hakka" "hoid" "istu" "jooks" "jät" "jää" "kasva"
-	"kasvata" "keera" "kiilu" "kleepi" "korki" "krampi" "kukku" "käi" "köit"
-	"külmeta" "külmu" "külmuta" "maks" "mine" "mõist" "mätsi" "müüri" "nabi"
-	"naeluta" "pane" "pida" "pigista" "pist" "pätsi" "raba" ("saa" V) "sidu" "tagu"
-	"toppi" "traagelda" "tuiska" "tõmba" "tõmbu" "vaju" "vajuta" "vii" "võt" ;
-LIST Kokku#verb = ("aja" V) "and" "arva" "astu" "ela" "hakka" "harjuta" "heit" "hoid"
-	"hoidu" "jooks" "joo" "juhtu" "kaapi" "kahmi" "kand" "kasva" "kasvata" "keera"
-	"keeruta" "keet" "keri" "ketra" "kirjuta" "kisku" "klappi" "kleepi" "kleepu"
-	"klopsi" "kobi" "kogu" "koonerda" "kopsi" "korja" "kraami" "kraapi" "kuhja"
-	"kuhju" "kuiva" "kukku" "kutsu" "kuulu" "kõla" "kõlksu" "kõnele" "käi"
-	"käsuta" "kääna" "köit" "kühvelda" "lange" "lappi" "lask" "leppi" "luge"
-	"luiska" "löö" "mine" "monteeri" "murd" "mängi" "ost" "otsi" "pakki" "pane"
-	"passi" "peks" "pigista" "pist" "puutu" "põrka" "raksata" "rehkenda" "rulli"
-	"rääki" "röövi" ("saa" V) "sattu" "sead" "sidu" "sobi" "soperda" "sula" "sulata"
-	"suru" "sõit" "sõlmi" "sätti" "sündi" "tagu" "tassi" "tege" ("too" V) "torma"
-	"traagelda" "trehva" "tule" "tõmba" "tõmbu" "vaju" "vajuta" "valeta"
-	"valgu" "varise" "veda" "veeri" "vii" "volti" "võt" "õmble" ;
-LIST Koos#verb = "käi" "seis" ;
-LIST Kõrvale#verb = "astu" "heit" "hiili" "hoid" "jät" "jää" "kaldu" "karga" "lükka" 
-	"pane" "puikle" "tege" "toimeta" "tõmbu" "tõrju" "viruta" "viska" ;
-LIST Kõrvalt#verb = "vaata" "tege" ;
-LIST Kätte#verb = "harjuta" "juhata" "jõud" "kippu" "leid" "maks" "näita" 
-	"paist" ("saa" V) "tasu" "tule" "võitle" "võit" "võt" "õppi" "ütle" ;
-LIST Külge#verb = "hakka" "harju" "harjuta" "jää" "karga" "kasva" "kleepi"
-	"kleepu" "löö" "pist" "pooki" ("saa" V) "tege" "torka" "tükki" "võt" ;
-LIST Lahku#verb = "kirjuta" "löö" "mine" ;
-LIST Lahti#verb = "haaki" "hargne" "haruta" "keera" "keerdu" "keri" "koori" "korki" 
-	"kouki" "käi" "kängitse" "köit" "lask" "laul" "löö" "mine" "monteeri" "murd" 
-	"mõtesta" "nööri" "ole" "pakki" "pannalda" "pääse" "pääst" "pööra" "raba" "rakenda" 
-	"raputa" "riieta" "riietu" "rulli" "rullu" "rõivasta" "rõivastu" "rääki" 
-	 ("saa" V) "sadulda"	"sidu" "sori" "sõlmi" "šifreeri" "tagu" "tege" "tule" "tõmba" 
-	"urgitse" "vaju" "volti" "võt" "ütle" ;
-LIST Laiali#verb = "kand" "tassi" "valgu" ;
-LIST Ligi#verb = ("aja" V) "and" "kippu" "kleepi" "litsu" "pane" "pressi" "pääse"
-	 ("saa" V) "tikku" "too" "toppi" "tule" "tõmba" "tükki" "võt" ;
-LIST Läbi#verb1 = "aruta" "ela" "kaalu"
-	"kand" "katsu" "kee" "keet" "kirjuta" "kloppi"
-	"koba" "kola" "kompa" "kompi" "kriipsuta" "kulu" "külmu" "küpse" "küpseta" "leota"
-	"luge" "lõika" "löö" "materda" "mõtle" "mõõt" 
-	"mängi"	"müü" "otsi" "paindu" "painuta" "parista" 
-	"peks" "pese" "pet" "piitsuta" "pist" "praga" "proovi" "puhu" 
-	"punni" "pure" "puuri" "põika" "põimi" "põimu" "põle" "põrki" 
-	"rammi" "raputa" "rooska" "roosteta" 
-	"rääki" "saagi" "sarja" "seedi" "sõima" "söö" "tege" "tuhni" 
-	"uuri" "uurista" "vaagi" "võt" ;
-LIST Läbi#verb = ("aja" V) "aruta" "astu" "ela" "imbu" "immitse" "jooks" "kaalu"
-	"kaeva" "kand" "kasva" "katsu" "kee" "keet" "kihuta" "kirjuta" "kloppi"
-	"koba" "kola" "kompa" "kompi" "kost" "kriipsuta" "kukku" "kukuta" "kulu"
-	"kuula"	"kõndi" "käi" "külmu" "küpse" "küpseta" "lask" "lenda" "leota"
-	"libise" "luge" "lõika" "löö" "materda" "mine" "murd" "mõtle" "mõõt" 
-	"mängi"	"müü" "näge" "näri" "otsi" "paindu" "painuta" "paist" "parista" 
-	"peks" "pese" "pet" "piitsuta" "pist" "praga" "pressi" "proovi" "puhu" 
-	"punni" "pure" "puuri" "põika" "põimi" "põimu" "põle" "põleta" "põrki" 
-	"põru" "põruta" "pääse" "raiu" "rammi" "raputa" "rooska" "roosteta" 
-	"rända" "rääki" "saagi" ("saa" V) "sada" "sarja" "seedi" "suru" "sõelu" "sõima" 
-	"sõit" "söö" "tege" "tilku" "torka" "torki" "torma" "trügi" "tuhni" "tule" 
-	"tungi" "tuuselda" "tuusti" "tõmba" "tööta" "uuri" "uurista" "vaagi" 
-	"vaata" "vaju" "valgusta" "veda" "viili" "vii" "võt" ;
-LIST Maha#verb = ("aja" V) "arva" "astu" "heit" "hõika" "hõõrdu" "hääleta" "hüppa" "istu" "jahtu"
-	"jahuta" "jooks" "joo" "joonista" "jät" "jää" "kaalu" "kaapi" "kand" "karga" "karju"
-	"kauple" "keera" "keeruta" "kihuta" "kirjuta" "kisku" "koksa" "koksi" "koli"
-	"koori" "kopsa" "kopsi" "kraapi" "kratsi" "kriipsuta" "kulu" "kustuta"
-	"kuuluta" "kõmmuta" "kõmpi" "kõndi" "kõrveta" "käi" "kärista" "kärva"
-	"kääna" "kükita" "lait" "lask" "luge" "löö" "maga" "maks" "marssi" "mat"
-	"mine" "munsterda" "murd" "mängi" "märki" "müü" "paiska" "pane" "parista"
-	"parselda" "pese" "pida" "puksi" "põle" "põleta" "põmmuta" "põruta" "pööra"
-	"pühki" "raasi" "raba" "rahune" "rahusta" "raiu" "rapsi" "raputa" "rehkenda"
-	"rõhu" "rääki" "saagi" ("saa" V) "sada" "sahkerda" "salga" "sure" "suru" "sõit"
-	"taagelda" "tahu" "tantsi" "tap" "tege" "tingi" "tiri" "toeta" "trampi"
-	"trei" "tule" "tõmba" "unusta" "vaata" "vahti" "vaiki" "vaju" "vali" "vantsi"
-	"vehki" "vihtu" "viili" "vii" "viksi" "viruta" "viska" "vuhki" "võt" "äri" "ütle" ;
-LIST Mööda#verb = "hiili" "käi" "lask" "mine" "pääse" ("saa" V) "saat" "sõit" "vaata" "vaju" ; 
-LIST Otsa#verb = "jää" "lõppe" "pane" "pist" ("saa" V) "sõit" "torka" ;
-LIST Peale#verb = ("aja" V) "hakka" "hüppa" "istu" "juhtu" "jää" "kaeba" "karga" "kasva" "keri"
-	"kippu" "käi" "lange" "maks" "mine" "pane" "passi" "pressi" "põrka" "põruta"
-	"pööra"	"raputa" "rõhu" "rüüpa" "rüüpi" ("saa" V) "sattu" "sundi" "suru" "sõit"
-	"tikku" "toppi" "torma" "trehva" "trügi" "tule" "tungi" "tõmba" "tükki"
-	"vaju" "vajuta" "viska" "võt" "dikteeri" ;
-LIST Peale#verb1 = "juhtu" "pressi" "dikteeri" ;
-LIST Pealt#verb = "kuula" "kuul" "näge" "vaata" "vahti" ;
-LIST Pihta#verb = "and" "hakka" ("saa" V) ;
-LIST Pihta#verb1 = "and" "hakka" "pane" ;
-LIST Pärale#verb = "jõud" ;
-LIST Püsti#verb = "löö" ;
-LIST Ringi#verb = ("aja" V) "jooks" "kand" "karga" "keera" "keeruta" "kihuta" "kila" "kõndi"
-	"käi" "kääna" "käändu" "lask" "liiku" "mõtle" "pööra" "pöördu" "sõelu" "sõit"
-	"tege" "torma" "tuiska" "tõmba" "vaata" "vaheta" "vahti" "rända" ;
-LIST Sekka#verb = "löö" "pist"  ;
-LIST Sisse#verb = ("aja" V) "and" "astu" "ela" "harju" "hinga" "hüppa" "istuta" "juhata" "juurdu"
-	"jää" "kalla" "kand" "karga" "kasva" "keera" "keet" "kihuta" "kirjuta" "klaari"
-	"koli" "kukku" "kulu" "kutsu" "kõnele" "kääna" "künd" "küt" "lange"
-	"lask" "laul" "lenda" "logi" "löö" "lülita" "maga" "mahtu" "maks" "mine"
-	"murd" "mängi" "määri" "müüri" "nõud" "ost" "pakki" "peks" "piira" "pist"
-	"põika" "põimi" "põle" "pääse" "pööra" "pöördu" "pühitse" "raiu" "registreeri"
-	"rända" "rääki" ("saa" V) "sada" "sattu" "sead" "seebita" "soola" "suru" "sõit"
-	"sätti" "söö" "sööt" ("tassi" V) "tagu" "tege" "too" "toppi" "torka" "trügi" 
-	"tuiska" "tule" ("tund" V) "tungi" "tuupi" "tõmba" "tõmbu" "tööta" "tükki" 
-	"vaata"	"vahti" "vaju" "vajuta" "vala" "valgu" "varise" "veda" "vehki" 
-	"vii" "villi" "viruta" "viska" "võt" "õnnista" "äesta" "voola" ; 
-LIST Taga#verb = ("aja" V) "hoid" "igatse" "kaeba" "kahetse" "kihuta" "kiru" "kiusa"
-	"kurt" "küsi" "leina" "nut" "nõud" "ohka" "otsi" "piitsuta" "päri" 
-	"rääki" "sundi" "tap" "torki" "tuupi" "utsita" "õhka" ;
-LIST Tagant#verb = "aita" "kihuta" "kiirusta" "kiit" "piitsuta" "sudi" "sundi"
-	"tap" "torki" "tõuka" "utsita" ;
-LIST Tagasi#verb = ("aja" V) "and" "astu" "haara" "hoid" "kaja" "kihuta" "kohku"
-	"kutsu" "lask" "lõika" "löö" "lükka" "maks" "mine" "mõtle" "nimeta" "peegeldu"
-	"peks" "pööra" "põrka" ("saa" V) "suru" "sõit" "tege" ("too" V) "tule" "tõmba" "tõmbu"
-	"tõrju" "vaata" "vahti" "vaju" "vii" "võit" "võt" ;
-LIST Taha#verb = "jää" "pane" "pist" "torka" ; 
-LIST Takka#verb = "aita" "and" "kihuta" "kiit" "kinnita" "piitsuta" "sundi"
-	"torki" "tõmba" "utsita" "vaata" ;
-LIST Tasa#verb = "teeni" "tege" ;
-LIST Täis#verb = "kiilu" "tege" ;
-LIST Vahele#verb = "astu" "hüüd" "jät" "jää" "kukku" "pane" "pist" "rääki"
-	"sega" "torka" "torki" "tule" "võt" ;
-LIST Vahelt#verb = "lõika" "tege" ;
-LIST Valla#verb = "pääse" "pääst" ;
-LIST Valmis#verb = ("saa" V) "tege" ; 
-LIST Vastu#verb = ("aja" V) "and" "astu" "hakka" "helki" "hüüd" "juhtu" "kaiku" "kaja"
-	"kiiska" "kost" "kuma" "kõla" "kõmise" "kõnele" "käi" "küsi" "löö" "mine" "pane"
-	"peegeldu" "pida" "pist" "puikle" "punni" "purele" "põikle" "põruta"
-	"rabele" "raiu" "rapsi" "rääki" ("saa" V) "sattu" "sead" "seis" "seleta"
-	"siple" "sudi" "suru" "sõdi" "sõitle" "sära" "torise" "torka" "trehva"
-	"tule" "tulista" "tõrju" "tõrku" "tööta" "vaata" "vahti" "vaidle" "võt"
-	"väitle" "väit" "ütle" 
-	"hauku" "hõiska" "hääleta" "jooks" "kaits" "kihuta" "lausu" "lükka" 
-	"mõju" "naerata" "nähva" "peegelda" "põrka" "pööra" "rutta" "ründa" 
-	"sihti" "siru" "tegutse" "tervita" "toimi" "torma" "vaata" "vahti"
-	"sõima" "võitle" ;
-LIST Vastu#verb1 = "helki" "hüüd" "juhtu" "kaiku" "kaja"
-	"kiiska" "kost" "kõla" "kõmise" "küsi" 
-	"pida" "pist" "puikle" "punni" "purele" "põikle" 
-	"rabele" "raiu" "rapsi" "rääki" "seleta"
-	"siple" "sudi" "sõitle" "sära" "torise" "torka" "trehva"
-	"tule" "tulista" "tõrju" "tõrku" "tööta" "vahti" "võt" "väit" 
-	"hauku" "naerata" "peegelda" "pööra" "rutta" "ründa" 
-	"sihti" "siru" "tervita" "toimi" "vaata" "vahti" "sõima" "võitle" ;
-LIST Välja#verb = "aita" ("aja" V) "and" "arenda" "arene" "arva" "arvuta" "astu"
-	"ehita" "ehti" "ela" "haruta" "haudu" "heit" "higista" "hinga" "hüppa" "hüüd"
-	"ilmu" "jaga" "jooks" "joonista" "juuri" "jõud" "jät" "jää" "kaalu" "kaapi"
-	"kaeva" "kalla" "kand" "kanguta" "kannata" "karga" "kasva" "kauple" "kee"
-	"keera" "keeruta" "kest" "kihuta" "kirjuta" "kisku" "klaari" "klani" "koli"
-	"konksuta" "koolita" "koori" "kooru" "kost" "kraami" "kraapi" "kristalliseeru"
-	"kujunda" "kujune" "kukku" "kurna" "kutsu" "kuuluta" "kõrveta" "käi"
-	"kärata" "kärista" "kärki" "küünita" "küünitu" "küüti" "ladu" "laena"
-	"lange" "lask" "logi" "loosi" "luge" "lunasta" "löö" "lülita" "maga"
-	"maks" "meelita" "mine" "murd" "mõist" "mõtle" "mõõt" "mängi" "müü"
-	"naer" "nuhki" "nuputa" "nuru" "nut" "nõidu" "nõud" "näge" "näita" "oksenda"
-	"ost" "otsi" "pahvata" "paina" "paiska" "paist" "pakki" "pakku" "pane"
-	"pasunda" "patra" "peks" "pese" "pet" "pida" "pigista" "pildu" "pinni"
-	"pist" "pomise" "praaki" "praavi" "pressi" "protsessi" "puhasta" "puhka" 
-	"pudene" "puista" "pukerda" "pukseeri" "puksi" "pureta" "purska" "põleta" "põruta" "pääse"
-	"pääst" "pööra" "pühki" "püüd" "rabele" "raiu" "rapsi" "raputa" "ravi"
-	"reageeri" "rebi" "registreeri" "rehkenda" "renti" "riputa" "rooki" "rända" 
-	"rääki" "saagi" ("saa" V) "saat" "selgita" "sihti" "sikuta" "siple" "siruta" "sirutu"
-	"sopista" "sorteeri" "sorti" "suitseta" "sula" "sulata" "sulge" "sure"
-	"sureta" "suru" "sõelu" "sõit" "söö" "sülga" "sülita" "tagu" "tahu" "tassi"
-	"teeni" "tege" "tingi" "tiri" ("too" V) "torka" "torki" "torma" "traali"
-	"trügi" "trükki" "tuhni" "tuiska" "tule" "tungi" "tuula" "tuuldu"
-	"tuuluta" "tõmba" "tõrju" "tõst" "tõuka" "tööta" "uht" "uhtu" "urgitse"
-	"uuri" "uurista" "vaata" "vabanda" "vaheta" "vahti" "vaju" "vala"
-	"valeta" "valgu" "valgusta" "vali" "veda" "veni" "venita" "vii" "vilista"
-	"vingerda" "viruta" "viska" "võitle" "võlu" "võt" "vääna" "õmble" "õpeta"
-	"õppi" "ütle" "üüri" ;
-LIST Ühes#verb = "mine" "too" "tule" "hõlju" ;
-LIST Ühte#verb = "heit" "hoid" "kasva" "kuulu" "käi" "köit" "lange" "löö" "mine"
-	"passi" ("saa" V) "sidu" "sobi" "sula" "sulata" "sündi" ;
-LIST Ülal#verb = "pida" "hoid" ;
-LIST Üle#verb = "aita" "aja" "and" "astu" "ela" "hinda" "hüppa" "jooks" "jät" "jää"
-	"kaalu" "kalla" "kand" "kandu" "karju" "kasva" "kavalda" "kee" "koli" "kontrolli"
-	"koorma" "korda" "kost" "kuhja" "kulda" "kuluta" "kuula" "kuumene" "käi"
-	"küllasta" "külva" "küsi" "küt" "lask" "libise" ("loo" V) "luge" "löö" "majuta"
-	"meelita" "mine" "mõtle" "mõõt" "mängi" "paisuta" "pakku" "pese" "pinguta"
-	"piparda" "piserda" "politiseeri" "praadi" "puista" "punu" "pühki" "rahvasta"
-	"riputa" "rääki" ("saa" V) "soola" "sõit" "söö" "tege" "toit" "too" "trumpa"
-	"tule" "tõmba" "tähtsusta" "tööta" "uht" "uhtu" "ujuta" "vaata" "vahuta"
-	"vala" "valmi" "vii" "viska" "voola" "võimenda" "võt" "võõpa" "väeta"
-	"värvi" "väsi" "väsita" "vürtsita" ;
-LIST Üle#verb2 = "ela" "jää" "võt" ;
-LIST Üles#verb = "aja" "and" "arva" "astu" "ehita" "ehmata" "hargne" "hari" "harune"
-	"haruta" "joonista" "juuri" "kaalu" "kaeva" "karju" "kasva" "kasvata" "kee"
-	"keera" "keeruta" "keet" "kergita" "kerki" "kihuta" "kiit" "kirjuta" "kisku"
-	"klani" "kleepi" "kloppi" "klopsi" "kobi" "kohenda" "kohuta" "koori" "korja"
-	"krutti" "kruvi" "kutsu" "kääna" "künd" "küt" "laadi" "ladu" "laul" "leid"
-	("loo" V) "luge" "löö" "mine" "mukki" "märki" "näita" "ost" "otsi" "paisteta"
-	"paisuta" "pane" "peks" "peleta" "peluta" "piitsuta" "pildu" "pist" "poo"
-	"puhu" "puhvi" "pundu" "putita" "põruta" "pööra" "raiu" "raputa" "riputa"
-	"rääki" "sead" "soojenda" "soojene" "sula" "sulata" "sätti" "tagu" "tege"
-	"torki" "tuhni" "tule" "tunnista" "turguta" "tursu" "tõmba" "tõst" "tõus"
-	"tähenda" "tööta" "vaata" "vahti" "vuntsi" "vurhvi" "võt" "ärata" "ärka"
-	"ärrita" "ütle" "hüppa" ;
-LIST Üleval#verb = "pida" ; 
-LIST Ümber#verb = "aja" "arva" "arvuta" "asu" "asusta" "ehita" "eksi" "haara"
-	"hinda" "istu" "istuta" "jooks" "jutusta" "kaeva" "kasva" "kasvata" "keera"
-	"kehastu" "keri" "kihuta" "kirjuta" "kohenda" "koli" "korralda" "kujunda" "kujune"
-	"kukku" "kvalifitseeru" "kõndi" "käi" "kääna" "künd" "lask" "lõika" "löö"
-	"lükka" "lülita" "lülitu" "mat" "mine" "muut" "mõtesta" "mõtle" "nimeta"
-	"orienteeru" "otsusta" "paiguta" "paiska" "pane" "piira" "pööra" "pöördu"
-	"rahvusta" "rahvustu" "reastu" "riieta" "riietu" "riputa" "risti" "rõivasta"
-	"rõivastu" ("saa" V) "sead" "sidu" "sulata" "sõnasta" "sätti" "sündi" "tege"
-	"trükki" "tõmba" "tõst" "tõuka" "tähti" "tööta" "vaata" "vaheta" "vahti"
-	"vala" "vali" "varise" "veen" "viska" "vormi" "võt" "õmble" "õppi" "ütle" ;
-LIST Ümber#verb1 = "arva" "arvuta" "asu" "asusta" "eksi" "haara"
-	"hinda" "istu" "istuta" "jutusta" "kasvata" 
-	"kehastu" "kirjuta" "kohenda" "koli" "korralda" "kujunda" "kujune"
-	"kukku" "kvalifitseeru" "künd" "lõika" "löö"
-	"lülita" "lülitu" "mat" "muut" "mõtesta" "mõtle" 
-	"orienteeru" "otsusta" "paiguta" "paiska" "pane" "piira" "pöördu"
-	"rahvusta" "rahvustu" "reastu" "riieta" "riietu" "riputa" "risti" "rõivasta"
-	"rõivastu" "sead" "sulata" "sõnasta" "sündi" "tege"
-	"trükki" "tõst" "tõuka" "tähti" "vaata" "vaheta" "vahti"
-	"vala" "vali" "varise" "veen" "vormi" "võt" "õmble" "õppi" "ütle" ; 
-
-LIST Sirgu#verb = "aja" "tõus" "jää" ; 
-LIST Toime#verb = "tule" "pane" ; 
-
-
-LIST SjaD = "ilma" "kaasa" "külge" "lahku" "ringi" "sisse" ;
-
-
-LIST KätteVerb1 = "and" ("jõud" V) "maks" "juhata" "kippu" "paist" ;
-LIST KätteVerb2 = "tule" "võt" "õpeta" "saa" "harjuta" "leid" "näita" "tasu" "võit" "õppi" "ütle" ;
-LIST Pähe#Verb = "jää" "õppi" "tule" ("sada" V) "tärka" "torka" "vilksata" "rääki" "proovi" "pane" "tõmba" "tagu" "raiu" ;
-LIST Aru#Verb = "saa" "and" "võt" "pida" ;
-
-
-
 LIST aastane = "aastane" "pikkune" "kõrgune" "laiune" "suurune" ;
 
-LIST Määramine = "määra" "asenda" "vabasta" "määramine" "asendamine" "vabastamine" "määra =mine" "asenda =mine" "vabasta =mine" ;
+LIST Määramine = "määra" "asenda" "vabasta" "määrama" "asendama" "vabastama" "määramine" "asendamine" "vabastamine" "määra=mine" "asenda=mine" "vabasta=mine" "määra#mine" "asenda#mine" "vabasta#mine" ;
 
 LIST Konkurss = "konkurss" "võistlus" "tiitel" "ralli" "maraton" ;
 
@@ -858,35 +500,471 @@ LIST Kaugus = "kaugus" "pikkus" "laius" "kasv" ;
 
 LIST particGarbage = N Adp Po Pr Pron Num Adv Interj Punct "<{>" "<}>" (V Inf) MaInf (Sup Impers) (V Ind) (V Imprt) (V Cond) (V Quot) ;
 
-LIST VäsiVerb = "tund" "väsi" "kurna" "hirmu" "närtsi" "lõp" "sure" "ussita" "armu" "imesta" "imestu" "pingesta" "huvita" "vetti" ("(.*)#väsi"r) ("(.*)#kurna"r) ("(.*)#huvita"r) ;
-    
-
-LIST AblVerb = "küsi" "päri" "võt" "rebi" ; 
-
 LIST ASPron = "see" ("too" Pron) "sama" "seesama" "toosama" "see#sama" "too#sama" 
 	 "kõik" "kumbki" "mõlema" "emb-kumb" "embkumb" "miski" 
      "palju" "teine" "üks" "mõni" "muu" ; 
-LIST AdjPron = "milline" "milli =ne" "selline" "selli =ne" "esimene" "teine" "iga#sugune" "ise#sugune"
+LIST AdjPron = "milline" "milli=ne" "selline" "selli=ne" "esimene" "teine" "iga#sugune" "ise#sugune"
 	 "mis#sugune" "mingi#sugune" "nii#sugune" "naa#sugune" "minu#sugune" "meie#sugune" "nende#sugune" 
 	"miski#sugune" "mitme#sugune" "mõne#sugune" "niisama#sugune" "mõningane" "mäherdune" "muu" 
 	"niisuke" "nisuke" "nisukene" "nihuke" "nihukene" "siuke" "siukene" "sihuke" "oma#sugune" "sama#sugune"
 	"sinu#sugune" "tema#sugune" "teie#sugune" "säärane" "taoline" "teis#sugune" "teist#sugune" ; 
 LIST Terve = "terve" "kogu" "muu" ;
-LIST On = ("ole" V Sg3 Ind Prs Pers) ("ole" V Pl3 Ind Prs Pers) ;
-LIST OnSg = ("ole" V Sg3 Ind Prs Pers) ;
-LIST OnPl = ("ole" V Pl3 Ind Prs Pers) ;
 LIST AspAdv ="ära" "valmis" ;
-LIST Korda#verb = "tege" "saa" "mine" ;
 LIST PN = Pron Num ;
-LIST GenVerb = "ammenda" "andesta" ;
-LIST ElVerb = "mõtle" ;
-LIST TAditVerb = "vaata" ; 
-LIST Lisaks = ("lisaks" Adv) ;
 LIST Lisa = "lisa" ;
 
-LIST Derivatives = Der/nu Der/tu Der/mine Der/ja Der/mata Der/v Der/tav Dim/ke Dim/kene Der/us Der/lt Der/ini Der/lik Der/line Foc/gi Foc/ki ;
+LIST SjaD = "ilma" "kaasa" "külge" "lahku" "ringi" "sisse" ;
+
+LIST SuunaAdverb = "alla" "edasi" "eemale" "eest" "ette" "juurde" "järele" 
+"kinni" "kohale" "kokku" "kõrvale" "lahti" "laiali" "ligi" "läbi" "mööda" "otsa" "peale" "puruks" "ringi" 
+"sisse" "tagasi" "taha" "tuksi" "välja" "üle" "üles" "vahele" ;
 
 
+
+
+
+LIST DaVerb = ("võima" V) "tohtima" "saama" "olema" "minema" "tegema" "valmistama" "tekitama" "sünnitama" "soovi"
+	"pakkuma" ("tooma" V) ("jääma" V) "kujunema" "muutuma" "saama" "tekkima" "aitama" *InfP ;
+LIST MaVerb = "pidama" "asuma" "hakkama" ("jääma" V) "kippuma" "minema" "puhkema" "sattuma" "sundima" "sunnima" "sõitma" "tulema" ;
+LIST VatVerb = "näima" "nägema" "paistma" "tunduma" "aimama" "arvama" "avastama" "eeldama" 
+	 "kaebama" "kartma" "kiitlema" "kujutlema" "kurtma" "kuulma" "leidma" "lootma" 
+	 "mõistma" "mõtlema" "mälestama" "märkama" "möönma" "nentima" "oletama" "ootama" 
+	 "rääkima" "taipama" "tajuma" "teadma" "tundma" "tunnistama" "tõendama" "uskuma" 
+	 "väitma" "ütlema" "näiksema" ;     
+
+LIST Ole = "olema" ;
+LIST Võima = ("võima" V) ;
+LIST Saama = ("saama" V) ; 
+LIST Andma = ("andma" V) ; 
+LIST Hoidma = ("hoidma" V) ; 
+LIST Käima = ("käima" V) ; 
+LIST Jõudma = ("jõudma" V) ; 
+LIST Laskma = ("laskma" V) ; 
+LIST Leidma = ("leidma" V) ; 
+LIST Panema = ("panema" V) ; 
+LIST Pidama = ("pidama" V) ; 
+LIST Pääsema = ("pääsema" V) ; 
+LIST Püüdma = ("püüdma" V) ; 
+LIST Teadma = ("teadma" V) ; 
+LIST Tooma = ("tooma" V) ; 
+LIST Tundma = ("tundma" V) ; 
+LIST Jooksma = ("jooksma" V) ;
+
+LIST Hakkama = "hakkama" ;
+LIST Jooma = "jooma" ;
+LIST Kiitma = "kiitma" ;
+LIST Kolima = "kolima" ;
+LIST Laadima = "laadima" ;
+LIST Minema = "minema" ;
+LIST Mõistma = "mõistma" ;
+LIST Nägema = "nägema" ;
+LIST Pressima = "pressima" ;
+LIST Otsima = "otsima" ;
+LIST Pöörama = "pöörama" ;
+LIST Paluma = "paluma" ;
+LIST Saabuma = "saabuma" ;
+LIST Saatma = "saatma" ;
+LIST Sõitma = "sõitma" ;
+LIST Teenima = "teenima" ;
+LIST Tegema = "tegema" ;
+LIST Tulema = "tulema" ;
+LIST Tõmbama = "tõmbama" ;
+LIST Tõmbuma = "tõmbuma" ;
+LIST Töötama = "töötama" ;
+LIST Unustama = "unustama" ;
+LIST Usaldama = "usaldama" ;
+LIST Viima = "viima" ;
+LIST Võtma = "võtma" ;
+LIST Aratama = "äratama" ;
+LIST Ytlema = "ütlema" ;
+
+LIST OleSaa = ("olema" Aux) ("saama" V) ("jääma" V) ; 
+LIST OlemSaa = "olema" ("saama" V) ("jääma" V) ; 
+LIST ElamaAsuma = "elama" "asuma" "elutsema" ;
+
+LIST LugemaPidama = "lugema" "pidama" ;
+LIST Vaatama = "vaatama" "vahtima" ;
+LIST Soovima = "tahtma" "soovima" ;
+LIST Algama = "algama" "alustama" ;
+LIST TulemaJääma = "tulema" ("jääma" V) ;
+LIST MinemaTulema = "tulema" "minema" ;
+LIST MinemaPanema = "panema" "minema" ;
+LIST Möödunud = "mööduma" "minema" ;
+LIST JäämaJätma = ("jääma" V) "jätma" ;
+LIST JäämaJätkama = ("jääma" V) "jätkama" ;
+LIST SpordiLe = "kuuluma" "kaotama" ("jääma" V) "saama" "tegema" ;
+LIST Alistama = "alistama" ;
+LIST Võitma = ("võitma" V) ;
+LIST Võitlema = "võitlema" ;
+LIST NOTAdit = "lugema" "sööma" "magama" ;
+LIST NOTDaVerb = "teadma" "kuulma" "hakkama" "vigastama" "pruukima" ;
+LIST HeadingVerb = "teadma" "lugema" "pidama" "vaatama" "kuulama" "ootama" "sündima" ("jõudma" V) ;
+LIST ImperVerb = "kuulama" "vaatama" "ootama" "tulema" "minema" "magama" "istuma" ("tooma" V) ;
+LIST TylliVerb = "minema" "pöörama" "kiskuma" ;
+LIST KuiCLVerb = "näitama" "rääkima" "ütlema" "seletama" "selgitama" ;
+LIST SaamaVerb = "teadma" "kuulma" "vigastama" ;
+LIST KohaleVerb = ("tooma" V) "tulema" "kutsuma" ;
+LIST MuutVerb = "muutuma" "saama" "osutuma" "muunduma" "panema" "minema" "teisenduma" ;
+LIST CoSVerb = "kõrguma" "erinema" "sisalduma" ; 
+
+LIST PropAditVerb = "tulema" ("tooma" V) "saabuma" ("jõudma" V) "saatma" "helistama" "hiilima" ;
+
+LIST Part-K = *Part "müüma" ("ostma" V) "nägema" "kasutama" "kohtama" "näitama" "parandama" "tarvitama" 
+	 "takistama" "karistama" "toetama" "hoidma" "huvitama" "iseloomustama" "ootama" 
+    "aitama" "alustama" "harrastama" "jätkama" "katkestama" "kavatsema" "nõud"
+	 "alahindama" "austama" "arutlema" "eeldama" "haistma" "himustama" "häbenema" 
+    "ihaldama" "imetlema" "jälestama" "kahetsema" "kartma" "kujutlema" "kuulama" "kuulma" 
+    "käsitlema" "laitma" "leinama" "maitsma" "meenutama" "mõtlema" "neelama" "nuusutama" "nautima" 
+    "teadma" ("tundma" V) ("tänama" V) "usaldama" "uskuma" "uurima" "vajama" "vihkama" 
+    "ülistama" "embama" "hammustama" "kallistama" "keerutama" "kehitama" "kibrutama" 
+    "lööma" "noogutama" "nõelama" "näpistama" "peksma" "piitsutama" 
+    "pilgutama" "puudutama" "riivama" "silitama" "suudlema" "sügama" "taguma" "vangutama" 
+	"ajama" "aema" "asetama" "jätma" "heitma" 
+	"kallutama" "kandma" "keerama" "kerima" "kirjutama" "kleepima" "kliisterdama" "kutsuma" 
+	"laadima" "laema" "laduma" "laskma" "lasma" "lohistama" "loopima" "loobima" "lubama" "lööma" "lükkama" "lükama" 
+	"määrima" "noppima" "paiskama" "raputama" "rebima" ("saama" V) "saatma" "siduma" "seoma" 
+	"sikutama" "sirutama" "sundima" "suruma" ("tooma" V) ("tooma" Prc) ("tooma" Der/mine Der#mine) "toppima" 
+	"tõmbama" "tõmmama" "tõukama" "tõstma" "tõstema" "tõukama" "tõugama" 
+	"ulatama" "upitama" "valama" "vedama" "veeretama" "viskama" ; 
+
+LIST Part-P = *Part-P *Part *NGP-P "neelama" "seostama" "tüütama" ; 
+LIST NGP-P = *NGP-P ; 
+
+
+LIST Veel#Verb = "liikuma" "sõitma" "kõndima" "olema" "asuma" "asetsema" ; 
+LIST LiikumisVerb = "ajama" "aema" "asetama" "astuma" "istuma" 
+"jalutama" "jooksma" "juhtuma" ("jääma" V) ("jääma" Prc) ("jääma" Der/mine Der#mine) "jätma" 
+"jõllitama" ("jõudma" V) ("jõudma" Prc) ("jõudma" Der/mine Der#mine) ("jõuma" V) ("jõuma" Prc) "haarama" "heitma" "hüppama" 
+"kallutama" "kandma" "kappama" "kargama" "kasvama" "keerama" "keerduma" "kerima" "kiirustama" "kinnitama" "kippuma" "kirjutama" "kleepima" "kleepuma" 
+"kliisterdama" "kobama" "komberdama" "krapsama" "kukkuma" "kutsuma" "käima" "kükitama" "küünitama" "kõmatama" "kõmpima" "kõndima" "kõnnima" 
+"laadima" "laema" "laduma" "langema" "laperdama" "laskma" "lasma" "lendama" "lennama" "libistama" "liiguma" "liikuma" "lohistama" "lonkima" 
+"loopima" "loobima" "lubama" "luusima" "läima" "lööma" "lükkama" "lükama" 
+"marssima" "minema" "määrima" "mängima" "märkima" "noppima" "nõrguma" 
+"paiskama" "paiskuma" "panema" "panma" "passima" "piiluma" "prantsatama" "pressima" "pritsima" "pudunema" "pugema" "puhuma" "puistama" "põrutama" 
+"pääsema" "pöörama" "pöörduma" "põrkama" "põrutama" 
+"raputama" "rebima" "rivistuma" "ronima" ("roomama" V) ("roomama" Prc) "rändama" "rännama" 
+ ("saama" V) "saatma" "sammuma" "sattuma" "seadma" "seiklema" "sibama" "siduma" "seoma" "sikutama" "sirutama" "sirutuma" "sundima" "suruma" "sõitma" "sõidema" "sööstma" 
+("tooma" V) ("tooma" Prc) ("tooma" Der/mine Der#mine) "toppima" "traavima" "tikkuma" "tormama" "trehvama" "tulema" "tulma" "tungima" "turtsuma" "tükkima" 
+"tõmbama" "tõmmama" "tõmbuma" "tõukama" "tõstma" "tõstema" "tõukama" "tõugama" 
+"ujuma" "ulatama" "ulatuma" "upitama" "vaatama" "vajutama" "valama" "vedama" "veerema" "veeretama" "viima" "viskama" "voolama" "vuhama" "võtma" "võema" ;
+
+LIST PrVerb = "olema" ("saama" V) "näima" "nägema" "paistma" ("tundma" V) "tunduma" "hakkama" "püsima" 
+    "juhtuma" "kasvama" "maitsma" "seisma" ("jääma" V) "tasuma" "kogema" "kuulduma" "kõlama" ("tulema" V) ;
+LIST Modaal = Mod "kavatsema" "plaanima" "tulema" "kõlbama" "sobima" "tarvitsema" "raatsima" ;
+
+LIST Intr = *Intr "asuma" "astuma" "keerlema" "lipsama" "lonkima" "muutuma" "olema" "minema" "tulema" "tõmbuma" "vajuma" "õhetama" "tugema" "kogunema" "ripnema" ;
+
+LIST PartVerb = *Part-P *Part "leiduma" "juhtuma" "siirdama" "registreerima" "lehvitama" "seedima" "puhastama" "laiutama" "siruta"
+	"tooma" "kasvatama" "tabama" "sihtima" "saama" "tellima" "määratlema" "viibutama" "koguma" "toppima" "peegeldama" "uudistama" 
+	"kirjeldama" "kommenteerima" "peitma" ("sulgema" V) "lenduma" "pidama" "lausuma" "jooma" "sööma" "õgima" "niitma" "astuma" "avaldama" "kandma" ; 
+
+
+LIST AditVerb = "suhtuma" "suhtu=vma" "puutuma" "puutu=vma" ("kutsuma" V) "minema" ("sõitma" V) ("jääma" V) "tormama" "kihutama" "võtma" ("viima" V) "sattuma" "illustreeri"
+	("tooma" V) "liikuma" ("tulema" V) "ronima" ("ajama" V) ("tõusma" V) "jätma" ("saama" V) "astuma" "pöörama" ("laskma" V) "käima" "suuna"
+	"ruttama" ("veerema" V) ("süstima" V) "keerama" ("jooksma" V) ("jalutama" V) ("saatma" V) "suvitama" "lask=minema" "kuulu"
+	("reisima" V) ("pistma" V) ("panema" V) "torkama" "torkima" ("ujuma" V) "prahvatama" "kukkuma" "kogunema" "paigutama" "mana"
+	("lendama" V) ("peitma" V) ("tassima" V) ("jõudma" V) "vajutama" "viskama" "kostma" "ilmuma" "sihtima" "paiskuma" "upitama" "sobitu"
+	"suruma" "lükkama" "tulistama" "sõudma" "kumama" "heitma" "aitama" "laskma" "sikutama" "sirutama" "asetama" "asetuma" "virutama" "vahti"
+"astuma" "hüppama" "juhata"	("jääma" V) "kallama" "kandma" "kargama" "keerama" "kihutama" "kolima" "kukkuma" "kutsuma" 
+	"käänama" "langema" "laskma" "lendama" "logima" "mahtuma" "pistma" "pääsema" "pöörama" "pöörduma" 
+	"registreerima" "rändama" "sattuma" "seadma" "suruma" "sõitma" "sättima" "söötma" ("tassima" V) 
+	"tooma" "toppima" "torkama" "trügima" "tungima" "tuupima" "tõmbama" "tõmbuma" "tükkima" "vajuma" "valama" 
+	"valguma" "varisema" "vedama" "vehkima" "viima" "villima" "virutama" "viskama" "võtma" "voolama" ;
+ 
+
+
+LIST LiikumisV = "ajama" "aema" "asetama" "astuma" "istuma" 
+"jalutama" "jooksma" "juhtuma" ("jääma" V) ("jääma" Prc) ("jääma" Der/mine Der#mine) "jätma" 
+"jõllitama" ("jõudma" V) ("jõudma" Prc) ("jõudma" Der/mine Der#mine) ("jõuma" V) ("jõuma" Prc) "heitma" "hüppama" 
+"kallutama" "kandma" "kappama" "kargama" "kasvama" "keerama" "keerduma" "kerima" "kiirustama" "kinnitama" "kippuma" "kirjutama" "kleepima" "kleepuma" 
+"kliisterdama" "kobama" "komberdama" "krapsama" "kukkuma" "kutsuma" "käima" "kükitama" "küünitama" "kõmatama" "kõmpima" "kõndima" "kõnnima" 
+"laadima" "laema" "laduma" "langema" "laperdama" "laskma" "lasma" "laskuma" "lendama" "lennama" "libistama" "liiguma" "liikuma" "lohistama" "lonkima" 
+"loopima" "loobima" "lubama" "luusima" "läima" "lööma" "lükkama" "lükama" 
+"marssima" "matkama" "minema" "määrima" "noppima" "nõrguma" 
+"paiskama" "paiskuma" "panema" "panma" "prantsatama" "pressima" "pritsima" "pudunema" "pugema" "puhuma" "puistama" "põrutama" 
+"pääsema" "pöörama" "pöörduma" "põrkama" "põrutama" 
+"raputama" "rebima" "reisima" "rivistuma" "ronima" ("roomama" V) ("roomama" Prc) "rändama" "rännama" 
+ ("saama" V) "saatma" "sammuma" "sattuma" "seadma" "seiklema" "sibama" "siduma" "seoma" "sikutama" "sirutama" "sirutuma" "sundima" "suruma" "sõitma" "sõidema" "sörkima" "sööstma" 
+"tiirlema" "tikkuma" ("tooma" V) ("tooma" Prc) ("tooma" Der/mine Der#mine) "toppima" "traavima" "tormama" "trehvama" "tulema" "tulma" "tungima" "turtsuma" "tükkima" 
+"tõmbama" "tõmmama" "tõmbuma" "tõstma" "tõstema" "tõukama" "tõugama" ("tõusma" V) 
+"ujuma" "ulatama" "ulatuma" "upitama" "vaatama" "vajutama" "valama" "vedama" "veerema" "veeretama" "vihisema" "viima" "viskama" "vonklema" "voolama" "vuhama" "võtma" "võema" ;
+
+
+LIST IntrV = *Intr Mod Aux "asuma" "astuma" ("jääma" V) ("jõudma" V) "keerlema" "kogunema" "käima" "lipsama" "lonkima" "minema" "muutuma" "mõtisklema" "mõtlema" "mõtelma" "olema" "pöörlema" "ripnema" ("saama" V) "sattuma" "tiirlema" "tugema" "tulema" "tõmbuma" "vajuma" "õhetama" ;
+
+
+
+LIST Alla#verb = ("ajama" V) "andma" "heitma" "hindama" "hüppama" "jätma" ("jääma" V) "kaaluma" 
+	"keerama" "kirjutama" "kiskuma" "kriipsutama" "käima" "laadima" "laskma" "lendama" 
+	"loputama" "lööma" "minema" "neelama" "panema" "pilduma" "pistma" "põlema" "pöörama" 
+	"suruma" "taguma" "tegema" "tingima" "tirima" "torkama" "tulema" "tulistama" "tõmbama" 
+	"uhtma" "vaatama" "vajuma" "vajutama" "vanduma" "vedama" "viima" "virutama" "võtma" ;
+LIST Alt#verb = "lendama" "minema" "tõmbama" "vedama" ;
+LIST Edasi#verb = "andma" "jõudma" "kaebama" "kandma" "lükkama" "minema" "müü"
+	"pääsemama" ("saama" V) "sõitma" "viima" "õppima" ;
+LIST Eemale#verb = ("jääma" V) "tõukama" ;
+LIST Esile#verb = "kutsuma" ("tooma" V) "tõstma" "tükkima" "võtma" ;
+LIST Ette#verb1 = "aimama" "andma" "arvama" "arvestama" "hoiatama" "juhtuma" "kasvatama" "kavatsema" 
+	"kirjutama" "kujutama" "kutsuma" "kuulutama" "käima" "küsima" "laulma" "lugema" "luiskama" "maalima" "maksma" "mõtlema" "mängima" 
+	"määrama" "nägema" "näitama" "puhuma" "rakendama" "rääkima" "söötma" "tantsima" "teadma" "teatama" "tegema" "telli"
+	"trehvama" ("tundma" V) "vaatama" "valetama" "valmistama" "valmistuma" "ütlema" "võtma" ;
+LIST Ette#verb = ("ajama" V) "astuma" "heitma" "jõudma" "kandma" "keerama" "kujutama" "ladu"
+	"lööma" "minema" "panema" "patrama" "pistma" "puutuma" 
+	"ruttama" ("saama" V) "sattuma" "seadma" "sõitma" "sättima" 
+	("tooma" V) "toppima" "torkama" "tulema" "tõmbama" "tõstma" "tükki"
+	"viima" "viskama" ;
+LIST Ilma#verb = "jätma" ("jääma" V) ("saama" V) ; 
+LIST Juurde#verb = "andma" "arvama" "kallama" "kirjutama" ("lisama" V) "lõikama" "maksma" "mõtlema" 
+	"panema" "pookima" ("saama" V) "soolama" ("tooma" V) "tulema" "tõmbama" "võtma" ;
+LIST Järel#verb = "käima" ;
+LIST Järele#verb = "aimama" "aitama" "andma" "arvama" "hüüdma" "jooksma" "jõudma" "jätma" ("jääma" V)
+	"kaaluma" "kaema" "katsuma" "kihutama" "kiitma" "kinnitama" "kuulama" "küsima" "lask"
+	"minema" "mõtlema" "pistma" "proovima" "pärima" ("saama" V) "sõitma" "tegema" "tulema" "uuri"
+	"vaatama" "vahtima" "vajuma" "võtma" "õppima" "ronima" "kõndima" ;
+LIST Kaasa#verb = "aitama" "arvama" "elama" "kiskuma" "kõnelema" "laulma" "lööma" "minema" "mõju"
+	"mängima" "panema" "pistma" "rääkima" "sõitma" "sündima" "tantsima" "tegema" ("tooma" V) 
+	"torma"	("tulema" V) ("tundma" V) "tõmbama" "töötama" "vedama" "viima" "ümisema" "üürgama" 
+	"andma" "kutsuma" "mõtlema" "kõigutama" "võtma" ("saama" V) "nutma" "kihutama" "pakkima" "krapsama" ;
+
+LIST Kaasas#verb = "käima" "kandma" ;
+LIST Kallale#verb = "langema" ;
+LIST Kinni#verb = ("ajama" V) "andma" "haakima" "hakkama" "hoidma" "istuma" "jooksma" "jätma" ("jääma" V) "kasva"
+	"kasvatama" "keerama" "kiiluma" "kleepima" "korkima" "krampima" "kukkuma" "käima" "köit"
+	"külmetama" "külmuma" "külmutama" "maksma" "minema" "mõistma" "mätsima" "müürima" "nabi"
+	"naelutama" "panema" "pidama" "pigistama" "pistma" "pätsima" "rabama" ("saama" V) "siduma" "tagu"
+	"toppima" "traageldama" "tuiskama" "tõmbama" "tõmbuma" "vajuma" "vajutama" "viima" "võtma" ;
+LIST Kokku#verb = ("ajama" V) "andma" "arvama" "astuma" "elama" "hakkama" "harjutama" "heitma" "hoid"
+	"hoiduma" "jooksma" "jooma" "juhtuma" "kaapima" "kahmima" "kandma" "kasvama" "kasvatama" "keera"
+	"keerutama" "keetma" "kerima" "ketrama" "kirjutama" "kiskuma" "klappima" "kleepima" "kleepu"
+	"klopsima" "kobima" "koguma" "koonerdama" "kopsima" "korjama" "kraamima" "kraapima" "kuhja"
+	"kuhjuma" "kuivama" "kukkuma" "kutsuma" "kuuluma" "kõlama" "kõlksuma" "kõnelema" "käi"
+	"käsutama" "käänama" "köitma" "kühveldama" "langema" "lappima" "laskma" "leppima" "luge"
+	"luiskama" "lööma" "minema" "monteerima" "murdma" "mängima" "ostma" "otsima" "pakkima" "pane"
+	"passima" "peksma" "pigistama" "pistma" "puutuma" "põrkama" "raksatama" "rehkendama" "rulli"
+	"rääkima" "röövima" ("saama" V) "sattuma" "seadma" "siduma" "sobima" "soperdama" "sulama" "sulata"
+	"suruma" "sõitma" "sõlmima" "sättima" "sündima" "taguma" "tassima" "tegema" ("tooma" V) "torma"
+	"traageldama" "trehvama" "tulema" "tõmbama" "tõmbuma" "vajuma" "vajutama" "valeta"
+	"valguma" "varisema" "vedama" "veerima" "viima" "voltima" "võtma" "õmblema" ;
+LIST Koos#verb = "käima" "seisma" ;
+LIST Kõrvale#verb = "astuma" "heitma" "hiilima" "hoidma" "jätma" ("jääma" V) "kalduma" "kargama" "lükkama" 
+	"panema" "puiklema" "tegema" "toimetama" "tõmbuma" "tõrjuma" "virutama" "viskama" ;
+LIST Kõrvalt#verb = "vaatama" "tegema" ;
+LIST Kätte#verb = "harjutama" "juhatama" "jõudma" "kippuma" "leidma" "maksma" "näitama" 
+	"paistma" ("saama" V) "tasuma" "tulema" "võitlema" "võitma" "võtma" "õppima" "ütlema" ;
+LIST Külge#verb = "hakkama" "harjuma" "harjutama" ("jääma" V) "kargama" "kasvama" "kleepi"
+	"kleepuma" "lööma" "pistma" "pookima" ("saama" V) "tegema" "torkama" "tükkima" "võtma" ;
+LIST Lahku#verb = "kirjutama" "lööma" "minema" ;
+LIST Lahti#verb = "haakima" "hargnema" "harutama" "keerama" "keerduma" "kerima" "koorima" "korkima" 
+	"koukima" "käima" "kängitsema" "köitma" "laskma" "laulma" "lööma" "minema" "monteerima" "murdma" 
+	"mõtestama" "nöörima" "olema" "pakkima" "pannaldama" "pääsema" "päästma" "pöörama" "rabama" "rakendama" 
+	"raputama" "riietama" "riietuma" "rullima" "rulluma" "rõivastama" "rõivastuma" "rääkima" 
+	 ("saama" V) "sadulda"	"siduma" "sorima" "sõlmima" "šifreerima" "taguma" "tegema" "tulema" "tõmbama" 
+	"urgitsema" "vajuma" "voltima" "võtma" "ütlema" ;
+LIST Laiali#verb = "kandma" "tassima" "valguma" ;
+LIST Ligi#verb = ("ajama" V) "andma" "kippuma" "kleepima" "litsuma" "panema" "pressima" "pääse"
+	 ("saama" V) "tikkuma" "tooma" "toppima" "tulema" "tõmbama" "tükkima" "võtma" ;
+LIST Läbi#verb1 = "arutama" "elama" "kaalu"
+	"kandma" "katsuma" "keema" "keetma" "kirjutama" "kloppi"
+	"kobama" "kolama" "kompama" "kompima" "kriipsutama" "kuluma" "külmuma" "küpsema" "küpsetama" "leota"
+	"lugema" "lõikama" "lööma" "materdama" "mõtlema" "mõõtma" 
+	"mängi"	"müüma" "otsima" "painduma" "painutama" "paristama" 
+	"peksma" "pesema" "petma" "piitsutama" "pistma" "pragama" "proovima" "puhuma" 
+	"punnima" "purema" "puurima" "põikama" "põimima" "põimuma" "põlema" "põrkima" 
+	"rammima" "raputama" "rooskama" "roostetama" 
+	"rääkima" "saagima" "sarjama" "seedima" "sõimama" "sööma" "tegema" "tuhnima" 
+	"uurima" "uuristama" "vaagima" "võtma" ;
+LIST Läbi#verb = ("ajama" V) "arutama" "astuma" "elama" "imbuma" "immitsema" "jooksma" "kaalu"
+	"kaevama" "kandma" "kasvama" "katsuma" "keema" "keetma" "kihutama" "kirjutama" "kloppi"
+	"kobama" "kolama" "kompama" "kompima" "kostma" "kriipsutama" "kukkuma" "kukutama" "kulu"
+	"kuula"	"kõndima" "käima" "külmuma" "küpsema" "küpsetama" "laskma" "lendama" "leota"
+	"libisema" "lugema" "lõikama" "lööma" "materdama" "minema" "murdma" "mõtlema" "mõõtma" 
+	"mängi"	"müüma" "nägema" "närima" "otsima" "painduma" "painutama" "paistma" "paristama" 
+	"peksma" "pesema" "petma" "piitsutama" "pistma" "pragama" "pressima" "proovima" "puhuma" 
+	"punnima" "purema" "puurima" "põikama" "põimima" "põimuma" "põlema" "põletama" "põrkima" 
+	"põruma" "põrutama" "pääsema" "raiuma" "rammima" "raputama" "rooskama" "roostetama" 
+	"rändama" "rääkima" "saagima" ("saama" V) "sadama" "sarjama" "seedima" "suruma" "sõeluma" "sõimama" 
+	"sõitma" "sööma" "tegema" "tilkuma" "torkama" "torkima" "tormama" "trügima" "tuhnima" "tulema" 
+	"tungima" "tuuseldama" "tuustima" "tõmbama" "töötama" "uurima" "uuristama" "vaagima" 
+	"vaatama" "vajuma" "valgustama" "vedama" "viilima" "viima" "võtma" ;
+LIST Maha#verb = ("ajama" V) "arvama" "astuma" "heitma" "hõikama" "hõõrduma" "hääletama" "hüppama" "istuma" "jahtu"
+	"jahutama" "jooksma" "jooma" "joonistama" "jätma" ("jääma" V) "kaaluma" "kaapima" "kandma" "kargama" "karju"
+	"kauplema" "keerama" "keerutama" "kihutama" "kirjutama" "kiskuma" "koksama" "koksima" "koli"
+	"koorima" "kopsama" "kopsima" "kraapima" "kratsima" "kriipsutama" "kuluma" "kustuta"
+	"kuulutama" "kõmmutama" "kõmpima" "kõndima" "kõrvetama" "käima" "käristama" "kärva"
+	"käänama" "kükitama" "laitma" "laskma" "lugema" "lööma" "magama" "maksma" "marssima" "mat"
+	"minema" "munsterdama" "murdma" "mängima" "märkima" "müüma" "paiskama" "panema" "parista"
+	"parseldama" "pesema" "pidama" "puksima" "põlema" "põletama" "põmmutama" "põrutama" "pööra"
+	"pühkima" "raasima" "rabama" "rahunema" "rahustama" "raiuma" "rapsima" "raputama" "rehkenda"
+	"rõhuma" "rääkima" "saagima" ("saama" V) "sadama" "sahkerdama" "salgama" "surema" "suruma" "sõit"
+	"taageldama" "tahuma" "tantsima" "tapma" "tegema" "tingima" "tirima" "toetama" "trampi"
+	"treima" "tulema" "tõmbama" "unustama" "vaatama" "vahtima" "vaikima" "vajuma" "valima" "vantsi"
+	"vehkima" "vihtuma" "viilima" "viima" "viksima" "virutama" "viskama" "vuhkima" "võtma" "ärima" "ütlema" ;
+LIST Mööda#verb = "hiilima" "käima" "laskma" "minema" "pääsema" ("saama" V) "saatma" "sõitma" "vaatama" "vajuma" ; 
+LIST Otsa#verb = ("jääma" V) "lõppema" "panema" "pistma" ("saama" V) "sõitma" "torkama" ;
+LIST Peale#verb = ("ajama" V) "hakkama" "hüppama" "istuma" "juhtuma" ("jääma" V) "kaebama" "kargama" "kasvama" "keri"
+	"kippuma" "käima" "langema" "maksma" "minema" "panema" "passima" "pressima" "põrkama" "põruta"
+	"pööra"	"raputama" "rõhuma" "rüüpama" "rüüpima" ("saama" V) "sattuma" "sundima" "suruma" "sõit"
+	"tikkuma" "toppima" "tormama" "trehvama" "trügima" "tulema" "tungima" "tõmbama" "tükki"
+	"vajuma" "vajutama" "viskama" "võtma" "dikteerima" ;
+LIST Peale#verb1 = "juhtuma" "pressima" "dikteerima" ;
+LIST Pealt#verb = "kuulama" "kuulma" "nägema" "vaatama" "vahtima" ;
+LIST Pihta#verb = "andma" "hakkama" ("saama" V) ;
+LIST Pihta#verb1 = "andma" "hakkama" "panema" ;
+LIST Pärale#verb = "jõudma" ;
+LIST Püsti#verb = "lööma" ;
+LIST Ringi#verb = ("ajama" V) "jooksma" "kandma" "kargama" "keerama" "keerutama" "kihutama" "kilama" "kõndi"
+	"käima" "käänama" "käänduma" "laskma" "liikuma" "mõtlema" "pöörama" "pöörduma" "sõeluma" "sõit"
+	"tegema" "tormama" "tuiskama" "tõmbama" "vaatama" "vahetama" "vahtima" "rändama" ;
+LIST Sekka#verb = "lööma" "pistma"  ;
+LIST Sisse#verb = ("ajama" V) "andma" "astuma" "elama" "harjuma" "hingama" "hüppama" "istutama" "juhatama" "juurdu"
+	("jääma" V) "kallama" "kandma" "kargama" "kasvama" "keerama" "keetma" "kihutama" "kirjutama" "klaari"
+	"kolima" "kukkuma" "kuluma" "kutsuma" "kõnelema" "käänama" "kündma" "kütma" "lange"
+	"laskma" "laulma" "lendama" "logima" "lööma" "lülitama" "magama" "mahtuma" "maksma" "mine"
+	"murdma" "mängima" "määrima" "müürima" "nõudma" "ostma" "pakkima" "peksma" "piirama" "pist"
+	"põikama" "põimima" "põlema" "pääsema" "pöörama" "pöörduma" "pühitsema" "raiuma" "registreeri"
+	"rändama" "rääkima" ("saama" V) "sadama" "sattuma" "seadma" "seebitama" "soolama" "suruma" "sõit"
+	"sättima" "sööma" "söötma" ("tassima" V) "taguma" "tegema" "tooma" "toppima" "torkama" "trügima" 
+	"tuiskama" "tulema" ("tundma" V) "tungima" "tuupima" "tõmbama" "tõmbuma" "töötama" "tükkima" 
+	"vaata"	"vahtima" "vajuma" "vajutama" "valama" "valguma" "varisema" "vedama" "vehkima" 
+	"viima" "villima" "virutama" "viskama" "võtma" "õnnistama" "äestama" "voolama" ; 
+LIST Taga#verb = ("ajama" V) "hoidma" "igatsema" "kaebama" "kahetsema" "kihutama" "kiruma" "kiusa"
+	"kurtma" "küsima" "leinama" "nutma" "nõudma" "ohkama" "otsima" "piitsutama" "pärima" 
+	"rääkima" "sundima" "tapma" "torkima" "tuupima" "utsitama" "õhkama" ;
+LIST Tagant#verb = "aitama" "kihutama" "kiirustama" "kiitma" "piitsutama" "sudima" "sundi"
+	"tapma" "torkima" "tõukama" "utsitama" ;
+LIST Tagasi#verb = ("ajama" V) "andma" "astuma" "haarama" "hoidma" "kajama" "kihutama" "kohku"
+	"kutsuma" "laskma" "lõikama" "lööma" "lükkama" "maksma" "minema" "mõtlema" "nimetama" "peegeldu"
+	"peksma" "pöörama" "põrkama" ("saama" V) "suruma" "sõitma" "tegema" ("tooma" V) "tulema" "tõmbama" "tõmbu"
+	"tõrjuma" "vaatama" "vahtima" "vajuma" "viima" "võitma" "võtma" ;
+LIST Taha#verb = ("jääma" V) "panema" "pistma" "torkama" ; 
+LIST Takka#verb = "aitama" "andma" "kihutama" "kiitma" "kinnitama" "piitsutama" "sundi"
+	"torkima" "tõmbama" "utsitama" "vaatama" ;
+LIST Tasa#verb = "teenima" "tegema" ;
+LIST Täis#verb = "kiiluma" "tegema" ;
+LIST Vahele#verb = "astuma" "hüüdma" "jätma" ("jääma" V) "kukkuma" "panema" "pistma" "rääki"
+	"segama" "torkama" "torkima" "tulema" "võtma" ;
+LIST Vahelt#verb = "lõikama" "tegema" ;
+LIST Valla#verb = "pääsema" "päästma" ;
+LIST Valmis#verb = ("saama" V) "tegema" ; 
+LIST Vastu#verb = ("ajama" V) "andma" "astuma" "hakkama" "helkima" "hüüdma" "juhtuma" "kaikuma" "kaja"
+	"kiiskama" "kostma" "kumama" "kõlama" "kõmisema" "kõnelema" "käima" "küsima" "lööma" "minema" "pane"
+	"peegelduma" "pidama" "pistma" "puiklema" "punnima" "purelema" "põiklema" "põruta"
+	"rabelema" "raiuma" "rapsima" "rääkima" ("saama" V) "sattuma" "seadma" "seisma" "seleta"
+	"siplema" "sudima" "suruma" "sõdima" "sõitlema" "särama" "torisema" "torkama" "trehva"
+	"tulema" "tulistama" "tõrjuma" "tõrkuma" "töötama" "vaatama" "vahtima" "vaidlema" "võt"
+	"väitlema" "väitma" "ütlema" 
+	"haukuma" "hõiskama" "hääletama" "jooksma" "kaitsma" "kihutama" "lausuma" "lükkama" 
+	"mõjuma" "naeratama" "nähvama" "peegeldama" "põrkama" "pöörama" "ruttama" "ründama" 
+	"sihtima" "siruma" "tegutsema" "tervitama" "toimima" "tormama" "vaatama" "vahti"
+	"sõimama" "võitlema" ;
+LIST Vastu#verb1 = "helkima" "hüüdma" "juhtuma" "kaikuma" "kaja"
+	"kiiskama" "kostma" "kõlama" "kõmisema" "küsima" 
+	"pidama" "pistma" "puiklema" "punnima" "purelema" "põiklema" 
+	"rabelema" "raiuma" "rapsima" "rääkima" "seleta"
+	"siplema" "sudima" "sõitlema" "särama" "torisema" "torkama" "trehva"
+	"tulema" "tulistama" "tõrjuma" "tõrkuma" "töötama" "vahtima" "võtma" "väitma" 
+	"haukuma" "naeratama" "peegeldama" "pöörama" "ruttama" "ründama" 
+	"sihtima" "siruma" "tervitama" "toimima" "vaatama" "vahtima" "sõimama" "võitlema" ;
+LIST Välja#verb = "aitama" ("ajama" V) "andma" "arendama" "arenema" "arvama" "arvutama" "astu"
+	"ehitama" "ehtima" "elama" "harutama" "hauduma" "heitma" "higistama" "hingama" "hüppama" "hüüd"
+	"ilmuma" "jagama" "jooksma" "joonistama" "juurima" "jõudma" "jätma" ("jääma" V) "kaaluma" "kaapi"
+	"kaevama" "kallama" "kandma" "kangutama" "kannatama" "kargama" "kasvama" "kauplema" "kee"
+	"keerama" "keerutama" "kestma" "kihutama" "kirjutama" "kiskuma" "klaarima" "klanima" "koli"
+	"konksutama" "koolitama" "koorima" "kooruma" "kostma" "kraamima" "kraapima" "kristalliseeru"
+	"kujundama" "kujunema" "kukkuma" "kurnama" "kutsuma" "kuulutama" "kõrvetama" "käi"
+	"käratama" "käristama" "kärkima" "küünitama" "küünituma" "küütima" "laduma" "laena"
+	"langema" "laskma" "logima" "loosima" "lugema" "lunastama" "lööma" "lülitama" "maga"
+	"maksma" "meelitama" "minema" "murdma" "mõistma" "mõtlema" "mõõtma" "mängima" "müü"
+	"naerma" "nuhkima" "nuputama" "nuruma" "nutma" "nõiduma" "nõudma" "nägema" "näitama" "oksenda"
+	"ostma" "otsima" "pahvatama" "painama" "paiskama" "paistma" "pakkima" "pakkuma" "pane"
+	"pasundama" "patrama" "peksma" "pesema" "petma" "pidama" "pigistama" "pilduma" "pinni"
+	"pistma" "pomisema" "praakima" "praavima" "pressima" "protsessima" "puhastama" "puhkama" 
+	"pudenema" "puistama" "pukerdama" "pukseerima" "puksima" "puretama" "purskama" "põletama" "põrutama" "pääse"
+	"päästma" "pöörama" "pühkima" "püüdma" "rabelema" "raiuma" "rapsima" "raputama" "ravi"
+	"reageerima" "rebima" "registreerima" "rehkendama" "rentima" "riputama" "rookima" "rändama" 
+	"rääkima" "saagima" ("saama" V) "saatma" "selgitama" "sihtima" "sikutama" "siplema" "sirutama" "sirutu"
+	"sopistama" "sorteerima" "sortima" "suitsetama" "sulama" "sulatama" "sulgema" "sure"
+	"suretama" "suruma" "sõeluma" "sõitma" "sööma" "sülgama" "sülitama" "taguma" "tahuma" "tassi"
+	"teenima" "tegema" "tingima" "tirima" ("tooma" V) "torkama" "torkima" "tormama" "traali"
+	"trügima" "trükkima" "tuhnima" "tuiskama" "tulema" "tungima" "tuulama" "tuuldu"
+	"tuulutama" "tõmbama" "tõrjuma" "tõstma" "tõukama" "töötama" "uhtma" "uhtuma" "urgitse"
+	"uurima" "uuristama" "vaatama" "vabandama" "vahetama" "vahtima" "vajuma" "vala"
+	"valetama" "valguma" "valgustama" "valima" "vedama" "venima" "venitama" "viima" "vilista"
+	"vingerdama" "virutama" "viskama" "võitlema" "võluma" "võtma" "väänama" "õmblema" "õpeta"
+	"õppima" "ütlema" "üürima" ;
+LIST Ühes#verb = "minema" "tooma" "tulema" "hõljuma" ;
+LIST Ühte#verb = "heitma" "hoidma" "kasvama" "kuuluma" "käima" "köitma" "langema" "lööma" "mine"
+	"passima" ("saama" V) "siduma" "sobima" "sulama" "sulatama" "sündima" ;
+LIST Ülal#verb = "pidama" "hoidma" ;
+LIST Üle#verb = "aitama" "ajama" "andma" "astuma" "elama" "hindama" "hüppama" "jooksma" "jätma" ("jääma" V)
+	"kaaluma" "kallama" "kandma" "kanduma" "karjuma" "kasvama" "kavaldama" "keema" "kolima" "kontrolli"
+	"koormama" "kordama" "kostma" "kuhjama" "kuldama" "kulutama" "kuulama" "kuumenema" "käi"
+	"küllastama" "külvama" "küsima" "kütma" "laskma" "libisema" ("looma" V) "lugema" "lööma" "majuta"
+	"meelitama" "minema" "mõtlema" "mõõtma" "mängima" "paisutama" "pakkuma" "pesema" "pinguta"
+	"pipardama" "piserdama" "politiseerima" "praadima" "puistama" "punuma" "pühkima" "rahvasta"
+	"riputama" "rääkima" ("saama" V) "soolama" "sõitma" "sööma" "tegema" "toitma" "tooma" "trumpa"
+	"tulema" "tõmbama" "tähtsustama" "töötama" "uhtma" "uhtuma" "ujutama" "vaatama" "vahuta"
+	"valama" "valmima" "viima" "viskama" "voolama" "võimendama" "võtma" "võõpama" "väeta"
+	"värvima" "väsima" "väsitama" "vürtsitama" ;
+LIST Üle#verb2 = "elama" ("jääma" V) "võtma" ;
+LIST Üles#verb = "ajama" "andma" "arvama" "astuma" "ehitama" "ehmatama" "hargnema" "harima" "harune"
+	"harutama" "joonistama" "juurima" "kaaluma" "kaevama" "karjuma" "kasvama" "kasvatama" "kee"
+	"keerama" "keerutama" "keetma" "kergitama" "kerkima" "kihutama" "kiitma" "kirjutama" "kisku"
+	"klanima" "kleepima" "kloppima" "klopsima" "kobima" "kohendama" "kohutama" "koorima" "korja"
+	"kruttima" "kruvima" "kutsuma" "käänama" "kündma" "kütma" "laadima" "laduma" "laulma" "leid"
+	("looma" V) "lugema" "lööma" "minema" "mukkima" "märkima" "näitama" "ostma" "otsima" "paisteta"
+	"paisutama" "panema" "peksma" "peletama" "pelutama" "piitsutama" "pilduma" "pistma" "poo"
+	"puhuma" "puhvima" "punduma" "putitama" "põrutama" "pöörama" "raiuma" "raputama" "riputa"
+	"rääkima" "seadma" "soojendama" "soojenema" "sulama" "sulatama" "sättima" "taguma" "tege"
+	"torkima" "tuhnima" "tulema" "tunnistama" "turgutama" "tursuma" "tõmbama" "tõstma" "tõus"
+	"tähendama" "töötama" "vaatama" "vahtima" "vuntsima" "vurhvima" "võtma" "äratama" "ärka"
+	"ärritama" "ütlema" "hüppama" ;
+LIST Üleval#verb = "pidama" ; 
+LIST Ümber#verb = "ajama" "arvama" "arvutama" "asuma" "asustama" "ehitama" "eksima" "haara"
+	"hindama" "istuma" "istutama" "jooksma" "jutustama" "kaevama" "kasvama" "kasvatama" "keera"
+	"kehastuma" "kerima" "kihutama" "kirjutama" "kohendama" "kolima" "korraldama" "kujundama" "kujune"
+	"kukkuma" "kvalifitseeruma" "kõndima" "käima" "käänama" "kündma" "laskma" "lõikama" "löö"
+	"lükkama" "lülitama" "lülituma" "matma" "minema" "muutma" "mõtestama" "mõtlema" "nimeta"
+	"orienteeruma" "otsustama" "paigutama" "paiskama" "panema" "piirama" "pöörama" "pöördu"
+	"rahvustama" "rahvustuma" "reastuma" "riietama" "riietuma" "riputama" "ristima" "rõivasta"
+	"rõivastuma" ("saama" V) "seadma" "siduma" "sulatama" "sõnastama" "sättima" "sündima" "tege"
+	"trükkima" "tõmbama" "tõstma" "tõukama" "tähtima" "töötama" "vaatama" "vahetama" "vahti"
+	"valama" "valima" "varisema" "veenma" "viskama" "vormima" "võtma" "õmblema" "õppima" "ütlema" ;
+LIST Ümber#verb1 = "arvama" "arvutama" "asuma" "asustama" "eksima" "haara"
+	"hindama" "istuma" "istutama" "jutustama" "kasvatama" 
+	"kehastuma" "kirjutama" "kohendama" "kolima" "korraldama" "kujundama" "kujune"
+	"kukkuma" "kvalifitseeruma" "kündma" "lõikama" "löö"
+	"lülitama" "lülituma" "matma" "muutma" "mõtestama" "mõtlema" 
+	"orienteeruma" "otsustama" "paigutama" "paiskama" "panema" "piirama" "pöördu"
+	"rahvustama" "rahvustuma" "reastuma" "riietama" "riietuma" "riputama" "ristima" "rõivasta"
+	"rõivastuma" "seadma" "sulatama" "sõnastama" "sündima" "tege"
+	"trükkima" "tõstma" "tõukama" "tähtima" "vaatama" "vahetama" "vahti"
+	"valama" "valima" "varisema" "veenma" "vormima" "võtma" "õmblema" "õppima" "ütlema" ; 
+
+LIST Sirgu#verb = "ajama" "tõusma" "jääma" ; 
+LIST Toime#verb = "tulema" "panema" ; 
+
+
+LIST KätteVerb1 = "andma" ("jõudma" V) "maksma" "juhatama" "kippuma" "paistma" ;
+LIST KätteVerb2 = "tulema" "võtma" "õpetama" "saama" "harjutama" "leidma" "näitama" "tasuma" "võitma" "õppima" "ütlema" ;
+LIST Pähe#Verb = ("jääma" V) "õppima" "tulema" ("sadama" V) "tärkama" "torkama" "vilksatama" "rääkima" "proovima" "panema" "tõmbama" "taguma" "raiuma" ;
+LIST Aru#Verb = "saama" "andma" "võtma" "pidama" ;
+
+
+LIST VäsiVerb = "tundma" "väsima" "kurnama" "hirmuma" "närtsima" "lõpma" "surema" "ussitama" "armuma" "imestama" "imestuma" "pingestama" "huvitama" "vettima" ("(.*)#väsima"r) ("(.*)#kurnama"r) ("(.*)#huvitama"r) ;
+    
+
+LIST AblVerb = "küsima" "pärima" "võtma" "rebima" ; 
+
+LIST On = ("olema" V Sg3 Ind Prs Pers) ("olema" V Pl3 Ind Prs Pers) ;
+LIST OnSg = ("olema" V Sg3 Ind Prs Pers) ;
+LIST OnPl = ("olema" V Pl3 Ind Prs Pers) ;
+LIST Korda#verb = "tegema" "saama" "minema" ;
+LIST GenVerb = "ammendama" "andestama" ;
+LIST ElVerb = "mõtlema" ;
+LIST TAditVerb = "vaatama" ; 
+
+LIST Derivatives = Der/nu Der/tu Der/mine Der/ja Der/mata Der/v Der/tav Dim/ke Dim/kene Der/us Der/lt Der/ini Der/lik Der/line Foc/gi Foc/ki Der_nu Der_tu Der_mine Der_ja Der_mata Der_v Der_tav Dim_ke Dim_kene Der_us Der_lt Der_ini Der_lik Der_line Foc_gi Foc_ki;
 
 
 SET SPNom = SP + Nom ;
@@ -904,6 +982,8 @@ SET SPPlGen = SP + PlGen ;
 SET SPPlPart = SP + PlPart ;
 SET SPPlEl = SP + PlEl ;
 SET SSgNom = S + SgNom ;
+SET SSgGen = S + SgGen ;
+SET SSgPart = S + SgPart ;
 SET SSgTr = S + SgTr ;
 SET Scom = S - Prop ; 
 SET ScomSgNom = S + SgNom - Prop ; 
@@ -914,8 +994,6 @@ SET PoleSide = POS - J ;
 SET IndicNeg = Indic + Neg ;
 
 
-
-SUBSTITUTE $$Lisa + SSgTr Lisaks $$Lisa + SSgTr (1 V OR Kvm);
 SUBSTITUTE Neg (*) IndicPresPsNeg (0 Imper)(*-1 ("eks") BARRIER CLBC OR V);
 SELECT IndicPresPs - Neg (0 Imper)(*-1 ("eks") BARRIER CLBC OR V);
 
@@ -933,7 +1011,7 @@ SELECT SgGen (0C S)(NOT -1 A)(1 S + Cap OR A)(2 RiikVald OR Liityhing);
 SELECT SgGen + Cap (0C S)(1 S + Cap OR A)(-1 RiikVald OR Liityhing);
 SELECT SgGen + Cap (0C S)(1 S + Cap OR A)(-1 S + Cap)(-2 RiikVald OR Liityhing);
 SELECT PropAdit (0 G)(NOT 1 KohaK)(*-1 SPNom BARRIER CLB)(NOT *1 Adit OR Ill OR K BARRIER CLB)(NOT *-1 Adit OR Ill OR El OR All BARRIER CLB)
-	(*-1 ("tule") OR ("too") + V OR ("saabu") OR ("jõud") + V OR ("saat") OR ("helista") OR ("hiili") OR ("pilet") BARRIER CLB); 
+	(*-1 PropAditVerb OR ("pilet") BARRIER CLB); 
 SELECT KustKuhu (0 G)(-1 KustKuhu)(1 LLZ OR CLB); 
 SELECT KustKuhu (0 G)(-1C KustKuhu)(1 KustKuhu); 
 SELECT KustKuhu (0 G)(-1 D)(-2 Koma)(-3 KustKuhu)(1 LLZ OR CLB); 
@@ -951,12 +1029,12 @@ SELECT PropNom (0 G)(1C D)(2C FinV);
 SELECT PropNom (0 G)(-1 Liityhing)(-1 Gen)(NOT 1 Cap);
 SELECT PropGen (0 G)(NEGATE 1 Sid|Kvm LINK 1 Nom)(NOT 1 <<<)(NOT -1 PropNom OR FinV); 
 SELECT G (0 ("rooma") OR ("romaani"))(1 Arv OR ("number") OR Rahvaskeel);
-SELECT ("Academia" prop sg nom);
-REMOVE ("kusta") + V OR ("otsa") + V OR ("tähti") + Sg3Verb;
-SELECT ("abi#elu") OR ("abi#ellu");
+SELECT ("Academia") + Prop + SgNom;
+REMOVE ("kusta") + V OR ("otsa") + V OR ("tähti") + Sg3Verb OR ("kustama") + V OR ("otsama") + V OR ("tähtima") + Sg3Verb;
+SELECT ("abi#elu") OR ("abi#ellu") OR ("abi#elluma");
 SELECT Arv + Part (NOT 0 K)(1 MineS + Part);
 SELECT Terve + A (1 S + NGP); 
-SELECT Terve + Nom (1C S + Nom); 
+SELECT Terve + SgNom (NOT 0 NudTud)(1C S + SgNom); 
 SELECT ("külm") + A (0 $$Case)(1 S + $$Case);
 SELECT ANom (0C A)(NOT 0 NudTud)(1C SP + Nom);
 SELECT SNom (0 Hulk)(0C S)(-1C ANom);
@@ -989,12 +1067,12 @@ SELECT Gen (0 Prop + Cap)(0 Riikjne)(1 Cap)(-1 >>> OR Kvm);
 SELECT Nom (0 Cap)(1 Cap)(-1 >>> OR Kvm);
 SELECT Ncard (0 P)(-1 AinultVaid);
 SELECT PropNom (-1 PropNom)(1 Dsh); 
-SELECT PropGen (NOT 1C Pärisnimi OR Nom)(-1 Pärisnimi + Nom)(*-2 Pärisnimi + Nom BARRIER CLBC OR J OR Koma LINK NOT 0 In)(*-1 ("võit") + V BARRIER CLBC LINK NOT -1 Nom); 
-SELECT PropNom (NOT 0 Riikjne)(NOT 1C Pärisnimi OR Nom)(*-1 ("võit") + V BARRIER CLBC LINK NOT -1 Nom);
-SELECT PropEl (NOT 1 Pärisnimi)(*-1 ("saa") + V BARRIER CLBC)(*-1 ("<jagu>") BARRIER CLBC);
-SELECT PropNom (NOT 1 Pärisnimi)(NOT *-1 Pärisnimi + Nom)(*1 Pärisnimi + Gen BARRIER CLBC OR J OR Koma)(*-1 ("alista") + V BARRIER CLBC);
-SELECT PropGen (NOT 1 Pärisnimi)(*-1 ("alista") + V BARRIER CLBC);
-SELECT PropPart (NOT 1 Pärisnimi)(*-1 ("alista") + V BARRIER CLBC); 
+SELECT PropGen (NOT 1C Pärisnimi OR Nom)(-1 Pärisnimi + Nom)(*-2 Pärisnimi + Nom BARRIER CLBC OR J OR Koma LINK NOT 0 In)(*-1 Võitma BARRIER CLBC LINK NOT -1 Nom); 
+SELECT PropNom (NOT 0 Riikjne)(NOT 1C Pärisnimi OR Nom)(*-1 Võitma BARRIER CLBC LINK NOT -1 Nom);
+SELECT PropEl (NOT 1 Pärisnimi)(*-1 Saama BARRIER CLBC)(*-1 ("<jagu>") BARRIER CLBC);
+SELECT PropNom (NOT 1 Pärisnimi)(NOT *-1 Pärisnimi + Nom)(*1 Pärisnimi + Gen BARRIER CLBC OR J OR Koma)(*-1 Alistama BARRIER CLBC);
+SELECT PropGen (NOT 1 Pärisnimi)(*-1 Alistama BARRIER CLBC);
+SELECT PropPart (NOT 1 Pärisnimi)(*-1 Alistama BARRIER CLBC); 
 REMOVE Nom OR Gen OR Part (*-1 SpordiLe BARRIER CLB)(0 Prop + KohaK)(-1C Pärisnimi)(1C Pärisnimi OR Kvm)(NOT 2 Kes);
 SELECT PropNom (-1C Pärisnimi)(1 Dsh OR Koma)(2 Nom OR Prop OR J OR PersPron OR Kes)(NOT 1 Gen)(NOT 2 Gen OR Part)(NOT 3 Prop);
 SELECT PropNom (-1C Pärisnimi)(1 Dsh OR Koma)(2 Nom OR Prop OR J OR PersPron OR Kes)(NOT 1 Gen)(NOT 2 Gen OR Part)(NOT 3 Part);
@@ -1036,16 +1114,16 @@ ADD CLBtag (*) (0 Sid|Kvm)(1 OnCLB)(*1C FinV BARRIER Eraldajad) (NOT 0 CLBtag)  
 ADD CLBtag (*) (0 Sid|Kvm)(1 OnCLB)(*1 IndicNeg BARRIER Eraldajad LINK -1 Ei) (NOT 0 CLBtag)  ; 
 ADD CLBtag (*) (0 Sid|Kvm)(1 OnCLB)(*1C FinV + NudTud BARRIER Eraldajad LINK 1 CLBC) (NOT 0 CLBtag)  ; 
 ADD CLBtag (*) (0 KoolTir)(1 NaguCLB)(2 ("nagu")) (NOT 0 CLBtag)  ;
-ADD CLBtag Koma (1 KuiCLB)(2 ("kui"))  (NOT 0 CLBtag) ;
+ADD CLBtag Koma (1 KuiCLB)(2 Kui)  (NOT 0 CLBtag) ;
 ADD CLBtag Koma (1 EtCLB)(2 Et) (NOT 0 CLBtag)  ;
-ADD CLBtag Koma (1 ("sama") + Ad)(2 ("aeg") + Ad)(3 ("kui")) (NOT 0 CLBtag)  ;
-ADD CLBtag Koma (1 ("pärast"))(2 See + Part)(3 ("kui")) (NOT 0 CLBtag)  ;
+ADD CLBtag Koma (1 ("sama") + Ad)(2 ("aeg") + Ad)(3 Kui) (NOT 0 CLBtag)  ;
+ADD CLBtag Koma (1 ("pärast"))(2 See + Part)(3 Kui) (NOT 0 CLBtag)  ;
 ADD CLBtag Koma (1 ("seni"))(2 ("kuni")) (NOT 0 CLBtag)  ;
 ADD CLBtag Koma (1 See + El)(2 ("hoolimata")) (NOT 0 CLBtag)  ;
 ADD CLBtag Koma (1 See + All)(2 ("vaatamata")) (NOT 0 CLBtag)  ;
 ADD CLBtag Koma (-1 I) ;
 ADD CLBtag Koma (1 FinV ^ D ^ Quot)(NOT 1 S)(*-1 FinV BARRIER CLB) (NOT 0 CLBtag)  ; 
-ADD CLBtag Z - Dsh (-1 VoimCLB ^ CLB)(*1 FinV BARRIER Eraldajad)(*-2 FinV BARRIER CLB) (NOT 0 CLBtag)  ; 
+ADD CLBtag Z (-1 VoimCLB ^ CLB)(*1 FinV BARRIER Eraldajad)(*-2 FinV BARRIER CLB) (NOT 0 CLBtag)  ; 
 ADD CLBtag Z (1 VoimCLB)(*2 FinV BARRIER Eraldajad)(*-1 FinV BARRIER CLB) (NOT 0 CLBtag)  ; 
 ADD CLBtag Z (1 VoimCLB)(2 VoimCLB)(*3 FinV BARRIER Eraldajad)(*-1 FinV BARRIER CLB) ; 
 ADD CLBtag Z (0 KoolTir)(1 See OR KesMis)(*2 FinV BARRIER Eraldajad)(*-1 FinV BARRIER CLB) (NOT 0 CLBtag)  ; 
@@ -1094,8 +1172,8 @@ ADD CLBtag (*)   (0 KoolTir)(1C FinV)(*-1C FinV BARRIER Eraldajad) (NOT 0 CLBtag
 ADD CLBtag (*)   (0 KoolTir)(1C FinV)(*-1 IndicNeg BARRIER Eraldajad LINK -1 Ei) (NOT 0 CLBtag)  ; 
 
 ADD CLBtag (*)   (0 KoolTir)(1 FinV)(NOT 1 partic) 
-                (*-1 ("kui") BARRIER Eraldajad)
-                (*-1 ("ka") BARRIER Eraldajad)
+                (*-1 Kui BARRIER Eraldajad)
+                (*-1 Ka BARRIER Eraldajad)
                 (*-1 FinV BARRIER Eraldajad) (NOT 0 CLBtag) ;     
 ADD CLBCtag (*)   (0 KoolTir)(*2 FinV BARRIER Eraldajad)(*-1 FinV BARRIER Eraldajad) (NOT 0 CLBtag OR CLBCtag) ;     
 ADD CLBCtag (*)   (0 KoolTir)(*1 FinV + Ole BARRIER Eraldajad)
@@ -1119,11 +1197,11 @@ ADD CLBCtag Cpr (*-1 Opr LINK *1 FinV OR particV) (NOT 0 CLBtag OR CLBCtag);
 ADD CLBCtag Z (*-1 Cpr LINK *-1 Opr LINK *1 FinV OR particV) (NOT 0 CLBtag OR CLBCtag);
 
 ADD CLBCtag Z (1 FinV)(NOT 1 NudTud)(*-1 FinV OR particV) (NOT 0 CLBtag OR CLBCtag);
-ADD CLBCtag (*) (0 VoimCLB ^ ("aga")) (*1 FinV OR particV BARRIER Eraldajad)
+ADD CLBCtag (*) (0 VoimCLB ^ Aga) (*1 FinV OR particV BARRIER Eraldajad)
 	     (*-1 FinV ^ NudTud BARRIER Eraldajad) (NOT 0 CLBtag OR CLBCtag)(NOT -1 CLBtag)(NOT -2 CLBtag) ;
-ADD CLBCtag (*) (0 VoimCLB ^ ("aga")) (*1 FinV OR particV BARRIER Eraldajad)
+ADD CLBCtag (*) (0 VoimCLB ^ Aga) (*1 FinV OR particV BARRIER Eraldajad)
 	     (*-1 particV BARRIER Eraldajad LINK -1 CLB) (NOT 0 CLBtag OR CLBCtag) ;
-ADD CLBCtag (*) (0 VoimCLB ^ ("aga")) (*1 FinV OR particV BARRIER Eraldajad)
+ADD CLBCtag (*) (0 VoimCLB ^ Aga) (*1 FinV OR particV BARRIER Eraldajad)
 	     (-1 FinV OR particV) (NOT 0 CLBtag OR CLBCtag) ;
 
 ADD CLBtag Opr (*1C FinV BARRIER J OR Kvm) (NOT 0 CLBtag) ;
@@ -1136,8 +1214,8 @@ ADD CLBtag Jcrd (*-1C FinV BARRIER J OR Kvm)(*1 IndicNeg BARRIER Eraldajad LINK 
 ADD CLBtag Jcrd (*-1 IndicNeg BARRIER Eraldajad LINK -1 Ei)(*1 IndicNeg BARRIER Eraldajad LINK -1 Ei) (NOT 0 CLBtag) ; 
 
 ADD CLBtag Jcrd (*-1 Ole BARRIER J OR Kvm)(*1C FinV BARRIER J OR Kvm) (NOT 0 CLBtag) ;
-ADD CLBCtag Jcrd (NOT 0 ("aga"))(*-1 FinV ^ NudTud ^ Ole BARRIER J OR Kvm)(*1 FinV BARRIER J OR Kvm) (NOT 0 CLBtag OR CLBCtag) ;
-ADD CLBCtag Jcrd (NOT 0 ("aga"))(-1 FinV)(*1 FinV BARRIER J OR Kvm) (NOT 0 CLBtag OR CLBCtag) ;
+ADD CLBCtag Jcrd (NOT 0 Aga)(*-1 FinV ^ NudTud ^ Ole BARRIER J OR Kvm)(*1 FinV BARRIER J OR Kvm) (NOT 0 CLBtag OR CLBCtag) ;
+ADD CLBCtag Jcrd (NOT 0 Aga)(-1 FinV)(*1 FinV BARRIER J OR Kvm) (NOT 0 CLBtag OR CLBCtag) ;
 ADD CLBtag Koma (*1 FinV OR particV BARRIER Kvm LINK *-1C Nom BARRIER Kvm)
 	     (*-1C FinV BARRIER Kvm LINK *-1C Nom  BARRIER CLB) (NOT 0 CLBtag) ; 
 ADD CLBtag Koma (*1 FinV OR particV BARRIER Kvm LINK *-1C Nom BARRIER Kvm)
@@ -1165,7 +1243,7 @@ ADD CLO KomaCLB (NOT 0 CLO)(1 OnCLB)(NOT *-1 FinV OR DaInf BARRIER CLB OR ComCol
 			(**1 KomaCLB LINK NOT 1 OnCLB LINK NOT 1 OnCLB); 
 ADD CLO KomaCLB (NOT 0 CLO)(1 EtCLB)(2 Et)(NOT *-1 FinV OR DaInf BARRIER CLB OR ComCol)
 			(**2 KomaCLB LINK NOT 1 OnCLB LINK NOT 1 OnCLB); 
-ADD CLO KomaCLB (NOT 0 CLO)(1 KuiCLB)(2 ("kui"))(NOT *-1 FinV OR DaInf BARRIER CLB OR ComCol)
+ADD CLO KomaCLB (NOT 0 CLO)(1 KuiCLB)(2 Kui)(NOT *-1 FinV OR DaInf BARRIER CLB OR ComCol)
 			(**2 KomaCLB LINK NOT 1 OnCLB LINK NOT 1 OnCLB); 
 ADD CLO KomaCLB (NOT 0 CLO)(1 NaguCLB)(2 ("nagu"))(NOT *-1 FinV OR DaInf BARRIER CLB OR ComCol)
 			(**2 KomaCLB LINK NOT 1 OnCLB LINK NOT 1 OnCLB); 
@@ -1174,7 +1252,7 @@ ADD CLO KomaCLB (NOT 0 CLO)(1 OnCLB)
 			(**1 KomaCLB LINK NOT 1 OnCLB LINK NOT 0 FinV OR DaInf LINK NOT *1 FinV OR DaInf BARRIER CLB OR ComCol); 
 ADD CLO KomaCLB (NOT 0 CLO)(1 EtCLB)(2 Et)
 			(**2 KomaCLB LINK NOT 1 OnCLB LINK NOT 0 FinV OR DaInf LINK NOT *1 FinV OR DaInf BARRIER CLB OR ComCol); 
-ADD CLO KomaCLB (NOT 0 CLO)(1 KuiCLB)(2 ("kui"))
+ADD CLO KomaCLB (NOT 0 CLO)(1 KuiCLB)(2 Kui)
 			(**2 KomaCLB LINK NOT 1 OnCLB LINK NOT 0 FinV OR DaInf LINK NOT *1 FinV OR DaInf BARRIER CLB OR ComCol); 
 ADD CLO KomaCLB (NOT 0 CLO)(1 NaguCLB)(2 ("nagu"))
 			(**2 KomaCLB LINK NOT 1 OnCLB LINK NOT 0 FinV OR DaInf LINK NOT *1 FinV OR DaInf BARRIER CLB OR ComCol); 
@@ -1187,6 +1265,7 @@ ADD CLC KomaCLB (NOT 0 CLC)(NOT 1 OnCLB)(*-1 CLO LINK NOT *1 CLC)(NOT *1 FinV OR
 ADD CLC KomaCLB (NOT 0 CLC)(NOT 1 OnCLB)(*-1 CLO LINK NOT *1 CLC)(*-1 CLO LINK NOT *-1 FinV OR DaInf BARRIER CLB OR ComCol); 
 
 ADD CLC KomaCLB (NOT 0 CLC)(NOT 1 OnCLB)(*-1 CLO LINK NOT *1 CLC)(*-1 CLO LINK -1 SNom LINK NOT *-1 FinV OR DaInf BARRIER CLB OR ComCol); 
+
 
 ADD CLO Dsh (NOT 0 CLO OR CLC)(NOT *-1 Dsh)(*1 Dsh); 
 ADD CLO Dsh (NOT 0 CLO OR CLC)(*-1 Dsh + CLC BARRIER CLO)(*1 Dsh); 
@@ -1202,40 +1281,39 @@ ADD CLC Cqu (NOT 0 CLO OR CLC)(*-1 Oqu);
 
 
 
-
 REMOVE (H);
-REMOVE:E1 ("aga") + S  OR ("jah") + S  OR ("jaa") + S ;
+REMOVE:E1 Aga + S  OR ("jah") + S  OR ("jaa") + S ;
 REMOVE:E2 ("vaid") + J  (NOT -1 Koma OR Jutum1>>>);
-REMOVE:E3 ("mulle" S sg nom);
+REMOVE:E3 ("mulle") + SSgNom;
 REMOVE:E4 ("ma") (0 ("mina"));
 REMOVE:E5 ("sa") (0 ("sina"));
 REMOVE:E6 ("ta") (0 ("tema"));
 REMOVE:E7 ("ta") (0 ("<taga>"))(-1 Gen);
-REMOVE:E8 ("sa") OR ("sina") (0 ("tege"))(NOT *-1 FinV BARRIER CLBC)(NOT *1 FinV BARRIER CLBC);
-SELECT:E9 ("vari" S sg nom);
+REMOVE:E8 ("sa") OR ("sina") (0 Tegema)(NOT *-1 FinV BARRIER CLBC)(NOT *1 FinV BARRIER CLBC);
+SELECT:E9 ("vari") + SSgNom;
 IFF:E10 ("<vaja>") + V (-1 Ei);
 SELECT:E10 ("vaja") + D;
-SELECT:E11 ("lausu=mata") + A ;
-REMOVE:E11 ("võidu") + V OR ("punkti") + V;
+SELECT:E11 ("lausu=mata") + A OR ("lausumata") + A;
+REMOVE:E11 ("võidu") + V OR ("punkti") + V OR ("võiduma") OR ("punktima");
 SELECT:E11 ("valgus") + S  (*1 V BARRIER CLB);
 SELECT:E12 ("isegi") + D; 
-SELECT:E13 ("oma" P sg tr) (*0 ("võt")); 
+SELECT:E13 Oma + P + SgTr (*0 Võtma); 
 SELECT:E14 ("poiss#laps"); 
 SELECT:E15 ("tütar#laps"); 
 REMOVE:E16 ("<võib-olla>") + V OR ("võim") + PlPart; 
 REMOVE:E17 ("linnas") OR ("(.*)#linnas"r) (0 ("linn") OR ("(.*)#linn"r));
 
-REMOVE:E22 (K <el>) (0 ("alla") OR ("üles")); 
+REMOVE:E22 Poste OR Pree (0 ("alla") OR ("üles")); 
 SELECT Teine;
 REMOVE:E23 ("mi") OR ("vesi") + PlPart OR Teine + Nord + Pl;
 REMOVE:E24 ("kahk") (0 ("kaks"));
-SELECT:E25 (N card ad) (1 ("pool")); 
-REMOVE:E26 ("viim") (0 ("vii"));
-REMOVE:E27 ("minem") (0 ("mine"));
+SELECT:E25 Ncard + Ad (1 ("pool")); 
+REMOVE:E26 ("viim") (0 Viima);
+REMOVE:E27 ("minem") (0 Minema);
 REMOVE:E28 Imper (*0 MasInf BARRIER CLB); 
-REMOVE:E28 Imper (-1C V)(-1 Imper)(NOT -1 ("mine") OR ("tule") OR Aux + Imper); 
+REMOVE:E28 Imper (-1C V)(-1 Imper)(NOT -1 MinemaTulema OR Aux + Imper); 
 REMOVE:E29 Prop + Pl (0 Prop + Sg)(NOT -1 Pl); 
-REMOVE A (0 ("(.*)koer"r)) (NOT 1 ("poiss"));
+REMOVE A OR A* (0 ("(.*)koer"r)) (NOT 1 ("poiss"));
 
 SELECT:E20 ("võib-olla") + D OR ("noh") + I ; 
 
@@ -1248,6 +1326,11 @@ REMOVE V (0 ("<([0-9\-,%\/]++)([a-z]*+)>"r));
 REMOVE Adit (*0 NOTAdit);
 
 SELECT ("kuu") + SgPart (-1 Ncard);
+
+
+
+
+
 
 SELECT (N @ADVL) (1 Ajamäärus); 
 REMOVE ("lõpus") (0 ("lõpp")) ; 
@@ -1263,17 +1346,17 @@ SELECT ("või") + D (-1 ("kas"));
 SELECT ("või") + J (-1 Kriips);
 SELECT ("või") + J (1 Ncard + Digit)(2 Kvm); 
 
-SELECT ("pane") + V (NOT 1 V OR Pärisnimi);
+SELECT Panema (NOT 1 V OR Pärisnimi);
 REMOVE Neg (NOT 0 Ei OR ("ega") OR ("ära"))(NOT *-1 Ei OR ("ega") OR ("ära")) ;
-SELECT ("tule") + Imper OR ("mine") + Imper OR ("vaata") + Imper (1 Imper)(NOT 1 Oma OR Adit);
-SELECT Imper (NOT 0 Oma OR Adit)(-1 ("tule") + Imper OR ("mine") + Imper OR ("vaata") + Imper);
+SELECT ImperVerb + Imper (1 Imper)(NOT 1 Oma OR Adit);
+SELECT Imper (NOT 0 Oma OR Adit)(-1 ImperVerb + Imper);
 REMOVE:Ximper Imper (NOT 0 ("ära"))(*0C FinV BARRIER CLBC);
 
 
 
 IFF ("<või>") + V (-1 Ei); 
-REMOVE FinV (NOT 0 Quot)(-1C FinV)(NOT -1 ("mine") OR ("tule")); 
-SELECT ("või") + Mod (1 Konj)(*2C Mod BARRIER CLBC);
+REMOVE FinV (NOT 0 Quot)(-1C FinV)(NOT -1 MinemaTulema); 
+SELECT Võima OR ("võima") + Mod (1 Konj)(*2C Mod BARRIER CLBC);
 REMOVE ("või") + S  (-1C S)(NOT -1 Gen); 
 SELECT ("või") + S  (-1 ("või") + J )(-2 SPAN + Nom OR SPAN + Gen);
 SELECT ("või") + S  (1 ("või") + J )(2 SPAN + Nom OR SPAN + Gen);
@@ -1286,8 +1369,8 @@ SELECT ("mai") + Sg  OR ("kuu") + Sg  (-1 Nord);
 REMOVE V - Mod - Aux (NOT 0 partic)(-1C PlGen)(NOT -1 ("silm"))(NOT -2 Pre);
 
 
-SELECT S (0 I) (-1 ("ütle")) ; 
-SELECT S (0 I) (1 ("ütle")) ; 
+SELECT S (0 I) (-1 Ytlema) ; 
+SELECT S (0 I) (1 Ytlema) ; 
 SELECT ("jaa") + D ; 
 
 SELECT ("issand") + Prop ;
@@ -1300,18 +1383,18 @@ SELECT ("tere") + I  (1 ("<hommikust>")) ;
 REMOVE ("sel") + Y ;
 REMOVE ("end") + Y ;
 REMOVE ("eks") + Y ;
-REMOVE ("paari") + V ;
+REMOVE ("paari") + V OR ("paarima") + V ;
 SELECT ("alati") + D ;
 SELECT ("kokku") + D (1 D) ;
 SELECT ("kokku") + D (NOT -1 Adit) ;
 SELECT ("afeel") (*0 ("periheel"));
 SELECT ("vald") + Gen  (-1 Cap)(1 S);
-SELECT ("<silmas>") + S  (*1 ("pida") + V BARRIER ("pida") + V) ;
-SELECT ("<silmas>") + S  (*-1 ("pida") + V BARRIER ("pida") + V) ;
-SELECT ("pida") + V - Mod - Aux (*0 ("<silmas>")) ;
+SELECT ("<silmas>") + S  (*1 Pidama BARRIER Pidama) ;
+SELECT ("<silmas>") + S  (*-1 Pidama BARRIER Pidama) ;
+SELECT Pidama - Mod - Aux (*0 ("<silmas>")) ;
 SELECT ("ilma") + Pre (1 Abes);
 REMOVE ("ilma") + Pre (NOT *1 Abes OR Kom BARRIER CLB);
-SELECT ("ilma") + D (NOT *1 Abes BARRIER CLB)(*0 ("jää") + V OR ("jät") + V OR ("saa") + V BARRIER CLB) ;
+SELECT ("ilma") + D (NOT *1 Abes BARRIER CLB)(*0 ("jää") + V OR ("jät") + V OR Saama + V BARRIER CLB) ;
 
 SELECT ("meie") + Gen  (1C Nom + S)(NOT 1 InterRefl) ;
 SELECT ("teie") + Gen  (1C Nom + S)(NOT 1 InterRefl) ;
@@ -1334,9 +1417,9 @@ SELECT ("talv") ;
 SELECT ("mander") ;
 SELECT ("sigarett") ;
 REMOVE ("neid") (0 ("neiu")) ;
-REMOVE ("kaitse") + V (0 ("kaits")) ;
+REMOVE ("kaitse") + V OR ("kaitsema") (0 ("kaits") OR ("kaitsma")) ;
 REMOVE ("välja") + V ;
-REMOVE ("muu") + V  OR ("saad") + S ;
+REMOVE ("muu") + V OR ("muuma") OR ("saad") + S ;
 SELECT ("kuum") + A OR ("külm") + A (0 Gen OR Part)(1 SGen OR SPart) ; 
 SELECT ("kord") + S  (-1 Nord OR ("viimane"))(-1 $$Case)(0 $$Case OR NiNaTaGa); 
 SELECT ("kord") + S + Part (-1 Nord OR ("viimane")) ; 
@@ -1350,11 +1433,13 @@ SELECT SNom OR P + Nom (NOT 0 V)(1 ("ise") + Nom );
 SELECT ("lugu") + S + PlNom (-1 Kom)(*0 Ole BARRIER CLBC); 
 SELECT ("lugu") + S + PlNom (1 Kom)(*0 Ole BARRIER CLBC); 
 SELECT ("tee") + Ad  (-1 Pärisnimi + Gen); 
-SELECT ("lisa") + Tr (2 S + Nom)(NOT 3 Postn); 
-REMOVE ("pakuta") + V (0 ("pakku")); 
+SELECT Lisa + Tr (-1 All); 
+SELECT Lisa + Tr (1 All); 
+SELECT Lisa + Tr (2 S + Nom)(NOT 3 Postn); 
+REMOVE ("pakuta") + V OR ("pakutama") (0 ("pakku")); 
 SELECT ("ots") + S + El (1 ("peale")); 
 SELECT Gen (0 Ajamäärus)(1 ("algus") OR ("lõpp") OR ("keskel")); 
-SELECT Gen (0 Ajamäärus)(NOT 1 Postn)(-1 ("veel") OR ("üks") + Gen  OR ("umbes"))(NOT *0 Neg BARRIER CLB); 
+SELECT Gen (0 Ajamäärus)(NOT 1 Postn)(-1 ("veel") OR Yks + Gen  OR ("umbes"))(NOT *0 Neg BARRIER CLB); 
 SELECT ("lugu") + PlNom (*0 Ole BARRIER CLB)(*0 D BARRIER CLB)(*0 Kom BARRIER CLB); 
 SELECT ("pool") + S  (-1 ("mõlema"))(NOT -1 Gen OR Ad OR All OR Abl); 
 SELECT ("pool") + N  (NOT -1  Gen OR Ad OR All OR Abl)(*1 Ajamäärus OR Arv BARRIER V OR CLBC OR Kvm OR D); 
@@ -1384,8 +1469,8 @@ SELECT ("mina") + P  (1 D) (2 D);
 SELECT Part (0 Aine)(NOT 1 Post)(-1 Oma + Gen )(-2 FinV); 
 SELECT Gen (0 Ajamäärus OR ("elu"))(-1 Gen)(-1 DemPron OR DetPron OR IndefPron OR Terve ^ PersPron ^ Hulk)(NOT 1 Postn OR Kvm); 
 SELECT Gen (0 Ajamäärus OR ("elu"))(-1 Gen)(-2 Gen)(-2 Terve)(NOT 1 Postn); 
-SELECT ("terve") + AGen  OR ("kogu") + A (1C Gen OR NiNaTaGa); 
-SELECT ("terve") + AGen  OR ("kogu") + A (1 OmadusAse)(2C Gen OR NiNaTaGa); 
+SELECT Terve + A (1C Gen OR NiNaTaGa); 
+SELECT Terve + A (1 OmadusAse)(2C Gen OR NiNaTaGa); 
 SELECT ("ise") + P + Nom  (-1 Nom)(NOT -1 V); 
 SELECT ("ise") + D (NOT -1 SP + Nom); 
 SELECT ("ise") + D (-1 V);
@@ -1405,7 +1490,7 @@ SELECT D (1C A)(0 ("kõige") OR ("vähem") OR ("rohkem") OR ("enam") OR ("palju"
 REMOVE ("vähem") + A + SgNom  (NOT *1 SPSgNom BARRIER NOSPANJ); 
 SELECT ("kõige") + D OR ("kõige") + D OR ("kõige") + D (-1 Jcrd)(-2 ("vähem") + D OR ("rohkem") + D OR ("enam") + D); 
 SELECT ("kõige") + D (1 ("vähem") OR ("rohkem") OR ("enam")); 
-SELECT ("lisa") + Sg + Tr  (NOT *0 Nom); 
+SELECT Lisa + SgTr  (NOT *0 Nom); 
 SELECT ("ringis") + K  (-1 N)(*-1 PlPart BARRIER CLB); 
 SELECT ("ring") + S  (-1 N); 
 SELECT ("vastamisi") + D (-1 Kom); 
@@ -1440,33 +1525,33 @@ SELECT Sg1Verb - Neg (*0 PersPron + Pps1 + SgNom)(NOT *1 FinV  BARRIER CLB)(NOT 
 SELECT Pl1Verb - Neg (*0 PersPron + Pps1 + PlNom)(NOT *1 FinV  BARRIER CLB)(NOT *-1 FinV  BARRIER CLB); 
 SELECT Sg1Verb - Neg (*>1 PersPron + Pps1 + Sg LINK *-1 Kvm)(NOT *1 FinV  BARRIER CLB OR Kvm)(NOT *-1 FinV  BARRIER CLB); 
 SELECT Sg1Verb - Neg (*<-1 PersPron + Pps1 + Sg LINK *1 Kvm)(NOT *1 FinV  BARRIER CLB OR Kvm)(NOT *-1 FinV  BARRIER CLB); 
-SELECT Imper (*-1 Jutum1)(-2 >>>)(1 P)(2 ("taht") OR ("soovi")); 
+SELECT Imper (*-1 Jutum1)(-2 >>>)(1 P)(2 Soovima); 
 SELECT SNom OR P + Nom OR I (NOT 0 NudTud OR Imper OR D)(-1 Jutum1)(NOT 1 Jutum2 OR Nom)(NOT *-2 Jutum1)(NOT *1 Ei OR LLZ); 
 SELECT SNom OR P + Nom OR I (NOT 0 NudTud OR Imper OR D OR Ad)(-1 Jutum1)(1 FinV)(NOT *-2 Jutum1)(NOT *1 Ei); 
 SELECT Nom (0 Hulk)(1 SP + Part)(2 FinV);
 
-SELECT ("and") + VPs2 + Imper - Neg (*1 ("andeks") BARRIER Sid|Kvm)(NOT -1 Neg); 
-SELECT ("andeks") + X  (*-1 ("and") OR ("palu") BARRIER Sid|Kvm); 
+SELECT Andma + VPs2 + Imper - Neg (*1 ("andeks") BARRIER Sid|Kvm)(NOT -1 Neg); 
+SELECT ("andeks") + X  (*-1 Andma OR Paluma BARRIER Sid|Kvm); 
 SELECT ("vastas#sugu") ; 
 SELECT ("vastassugu") ; 
 SELECT Mis + Ad  (1 Ad); 
 SELECT ("jalg") (*0 ("king") OR ("toss") OR ("suss") OR ("sokk") OR ("sukk") OR ("püks")); 
-SELECT ("tülli") + D (*0 ("mine") OR ("pööra") OR ("kisku")); 
-SELECT ("paik") + Adit (*0 ("pane") BARRIER CLBC); 
+SELECT ("tülli") + D (*0 TylliVerb); 
+SELECT ("paik") + Adit (*0 Panema BARRIER CLBC); 
 SELECT ("vara") + D (-1 ("veel"))(*0 Ole BARRIER CLBC); 
 SELECT Acomp (-1C El)(NOT 0 D); 
-SELECT ("hool") + Adit (*0 ("and") OR ("usalda") BARRIER CLBC); 
+SELECT ("hool") + Adit (*0 Andma OR ("usalda") BARRIER CLBC); 
 REMOVE ("aja#lukk") ; 
 REMOVE ("ajalukk") ; 
-REMOVE ("tuge") (0 ("tugev")); 
-SELECT ("täis") + D (*0 ("saa") OR ("tege") OR ("joo") BARRIER CLBC OR Kvm); 
+REMOVE ("tuge") OR ("tugema") (0 ("tugev")); 
+SELECT ("täis") + D (*0 Saama OR Tegema OR Jooma BARRIER CLBC OR Kvm); 
 SELECT ("täis") + D (1 V)(NOT 1 Ole OR Imper OR Neg); 
 SELECT ("täis") + D (-1C Part); 
 SELECT ("täis") + D (-1 S + Nom)(*0 OlemSaa BARRIER CLB); 
 SELECT ("täis") + D (1 Konj OR Kvm)(NOT 2 SP + Nom)(*0 V ^ Ole BARRIER CLB); 
 SELECT ("täis") + A (1 El OR Part OR Konj OR Kvm)(NOT *0 V ^ Ole BARRIER CLB); 
-SELECT ("alla") + D OR ("üles") + D (*0 ("laadi") BARRIER CLB); 
-SELECT ("vara") + D (*0 ("ärka") OR ("hilja") OR ("saabu") BARRIER CLBC); 
+SELECT ("alla") + D OR ("üles") + D (*0 Laadima BARRIER CLB); 
+SELECT ("vara") + D (*0 ("ärka") OR ("hilja") OR Saabuma BARRIER CLBC); 
 SELECT ("lääs") (*0 ("pool") OR ("suund") BARRIER CLBC); 
 SELECT ("vara") + D (1 Konj)(2C D); 
 SELECT ("välja") + D (-1 V)(1 SP + NGP); 
@@ -1482,7 +1567,7 @@ SELECT ("paar") + S  (-1C Arv) ;
 SELECT Ncard (NOT 0 V OR ("pool"))(-1C Ncard + Digit) ; 
 SELECT S (0 ("osa#pool") OR ("osapool")); 
 REMOVE V (NOT 0 NudTud)(-1 >>>)(1 <<<); 
-REMOVE V - Mod - Aux (NOT 0 OlemSaa OR ("tead") OR ("luge") OR ("pida") OR ("vaata") OR ("kuula") OR ("oota") OR ("sündi") OR ("jõud"))(-1 >>>)(*1 <<< BARRIER ("luge") OR ("pida") OR ("jooks") LINK NOT -1 LLZ); 
+REMOVE V - Mod - Aux (NOT 0 OlemSaa OR HeadingVerb)(-1 >>>)(*1 <<< BARRIER LugemaPidama OR Jooksma LINK NOT -1 LLZ); 
 SELECT Gen (0 ("allkiri") OR ("all#kiri")); 
 "<võetud>" SELECT particV (-1 ("vastu"))(1 Arv); 
 REMOVE Pret (NOT *1 Term OR Es OR N BARRIER CLB); 
@@ -1496,7 +1581,7 @@ REMOVE S (0 ("(.*)püha"r))(1 Konj)(2C A);
 REMOVE A (0 ("(.*)püha"r))(NOT 1 S OR Kvm OR J); 
 SELECT ("teatud") + A OR ("tea=tud") + A (1 D OR In OR Ad OR Nom); 
 SELECT ("tuntud") + A (*0 Nom BARRIER CLB)(NOT -1 Neg); 
-REMOVE ("nähtu") + V (0 ("näge")); 
+REMOVE ("nähtu") + V (0 Nägema); 
 REMOVE ("siss") (0 ("sisse")); 
 SELECT ("järgi"); 
 REMOVE ("tõu"); 
@@ -1506,7 +1591,7 @@ SELECT ("valmis") + D (-1 OlemSaa)(1 V OR D);
 SELECT ("valmis") + D (1 FinV OR D); 
 SELECT ("ruttu") + D ; 
 SELECT ("kõrgus") + S  OR ("pikkus") + S  OR ("laius") + S  (1C Arv); 
-SELECT ("elu#koht");
+SELECT ("elu#koht"); 
 SELECT ("koht") + S  (-1 Nord); 
 SELECT ("ammu") + D (-1 V OR D OR Kvm); 
 SELECT ("ammu") + D (1 V OR D OR K OR Kvm); 
@@ -1515,56 +1600,56 @@ REMOVE V + Kysimtag (NOT 0 IndicImpfSg3 - Neg)(1 FinV LINK NOT 0 Kysimtag);
 REMOVE V + Kysimtag (1 IndicImpfSg3 - Neg)(1 FinV LINK NOT 0 Kysimtag); 
 REMOVE V + Kysimtag (-1 FinV LINK NOT 0 Kysimtag OR OlemSaa); 
 SELECT ("lausa") + D (NOT 1 S + Gen); 
-REMOVE Nom (0 Gen)(1C Tr ^ Ajamäärus)(NOT 2 Kvm)(NOT 3 OnCLB)(*1 Nom BARRIER CLB LINK NOT 0 NudTud)(NOT *0 ("pida") OR ("luge") BARRIER CLB); 
+REMOVE Nom (0 Gen)(1C Tr ^ Ajamäärus)(NOT 2 Kvm)(NOT 3 OnCLB)(*1 Nom BARRIER CLB LINK NOT 0 NudTud)(NOT *0 Pidama OR ("luge") BARRIER CLB); 
 REMOVE Nom (0 Gen)(1C S + Tr ^ Ajamäärus)(NOT 2 Kvm)(NOT 3 OnCLB)(*-1 Nom); 
-SELECT ("otsa") + D (*0 ("vaata") OR ("vahti") BARRIER Sid|Kvm)(*0 All BARRIER Sid|Kvm); 
+SELECT ("otsa") + D (*0 Vaatama BARRIER Sid|Kvm)(*0 All BARRIER Sid|Kvm); 
 REMOVE S + PlGen (1C FinV + Imps); 
 SELECT ("siin") + D ; 
 REMOVE I (1 FinV); 
 REMOVE I (-1 FinV); 
-SELECT El (NOT 0 Teine)(-1 ("alates") OR ("alusta")); 
-SELECT El (NOT 1 Part)(-1 ("alates") OR ("alusta")); 
+SELECT El (NOT 0 Teine)(-1 ("alates") OR Algama); 
+SELECT El (NOT 1 Part)(-1 ("alates") OR Algama); 
 SELECT Nom (-1 ("nagu"))(-2 ("sõna")); 
-SELECT ("samm") + SgPart (1 ("sõit")); 
-SELECT ("siia") + D (1D V OR ("(.*)mine"r) OR ("(.*)v"r)); 
+SELECT ("samm") + SgPart (1 Sõitma); 
+SELECT ("siia") + D (1D V OR MineS OR ("(.*)v"r)); 
 SELECT ("siia") + D (*0 AditVerb); 
 REMOVE partic + Pres; 
-REMOVE ("täi") + V OR ("tead") + S ;
-SELECT ("lask") + V (*0 DaInf BARRIER CLB);  
-REMOVE DaInf (NOT 0 ("tead") OR ("kuul") OR ("vigasta"))(*0 ("saa") BARRIER CLBC)(*0 ("hakka") OR ("tead") OR ("kuul")  OR ("aru") OR ("vigasta") BARRIER CLBC)(NOT *0 Kava);  
-REMOVE ("saa") + Mod (*0 ("hakka") OR ("tead") OR ("kuul")  OR ("aru") OR ("vigasta") BARRIER CLBC)(NOT *1 Kava OR DaInf BARRIER CLBC)(NOT *-1 Kava OR DaInf BARRIER CLBC);  
+REMOVE ("täi") + V OR Teadma + S ;
+SELECT Laskma (*0 DaInf BARRIER CLB);  
+REMOVE DaInf (NOT 0 SaamaVerb)(*0 Saama BARRIER CLBC)(*0 NOTDaVerb OR ("aru") BARRIER CLBC)(NOT *0 Kava);  
+REMOVE Saama + Mod (*0 NOTDaVerb OR ("aru") BARRIER CLBC)(NOT *1 Kava OR DaInf BARRIER CLBC)(NOT *-1 Kava OR DaInf BARRIER CLBC);  
 REMOVE Mod (0 VatVerb)(NOT *1 QuotPresPs OR MaInf BARRIER CLB)(NOT *-1 QuotPresPs OR MaInf BARRIER CLB);
 SELECT Mod (0 MaVerb) (*0 MaInf BARRIER CLB);
-SELECT Mod OR (<InfP>) (0 DaVerb) (NOT 0 ("võime") OR K OR Imper)(1 DaInf)(NOT *0 ("tead") OR ("kuul") OR ("hakka") OR ("aru") OR ("vigasta") OR ("pruuki") OR Kava);
-SELECT Mod OR (<InfP>) (0 DaVerb) (NOT 0 ("võime") OR K OR Imper)(-1 DaInf)(NOT *-2 DaInf BARRIER CLB OR DaVerb OR Cpr OR Opr OR J)(NOT *-1 DaVerb BARRIER CLB)(NOT *0 ("tead") OR ("kuul") OR ("hakka") OR ("aru") OR ("vigasta") OR ("pruuki") OR Kava);
-SELECT Mod OR (<InfP>) (0 DaVerb) (NOT 0 ("võime") OR K OR Imper)(-1 Aux)(-2 DaInf)(NOT *-2 DaInf BARRIER CLB OR DaVerb OR Cpr OR Opr OR J)(NOT *-1 DaVerb BARRIER CLB)(NOT *0 ("tead") OR ("kuul") OR ("hakka") OR ("aru") OR ("vigasta") OR ("pruuki") OR Kava);
-SELECT Mod OR (<InfP>) (0 DaVerb) (NOT 0 ("võime") OR K)(*1 DaInf BARRIER CLB OR DaVerb OR Cpr OR Opr OR J)(NOT *0 ("tead") OR ("kuul") OR ("hakka") OR ("aru") OR ("vigasta") OR ("pruuki") OR Kava);
+SELECT Mod OR (<InfP>) (0 DaVerb) (NOT 0 ("võime") OR K OR Imper)(1 DaInf)(NOT *0 NOTDaVerb OR ("aru") OR Kava);
+SELECT Mod OR (<InfP>) (0 DaVerb) (NOT 0 ("võime") OR K OR Imper)(-1 DaInf)(NOT *-2 DaInf BARRIER CLB OR DaVerb OR Cpr OR Opr OR J)(NOT *-1 DaVerb BARRIER CLB)(NOT *0 NOTDaVerb OR ("aru") OR Kava);
+SELECT Mod OR (<InfP>) (0 DaVerb) (NOT 0 ("võime") OR K OR Imper)(-1 Aux)(-2 DaInf)(NOT *-2 DaInf BARRIER CLB OR DaVerb OR Cpr OR Opr OR J)(NOT *-1 DaVerb BARRIER CLB)(NOT *0 NOTDaVerb OR ("aru") OR Kava);
+SELECT Mod OR (<InfP>) (0 DaVerb) (NOT 0 ("võime") OR K)(*1 DaInf BARRIER CLB OR DaVerb OR Cpr OR Opr OR J)(NOT *0 NOTDaVerb OR ("aru") OR Kava);
 REMOVE Mod (0 V - Mod)(0 MaVerb)(NOT *1 MaInf)(NOT *-1 MaInf BARRIER CLB); 
 REMOVE Mod (0 V - Mod)(0 DaVerb)(NOT 0 VatVerb)(NOT *1 DaInf)(NOT *-1 DaInf BARRIER CLB); 
 SELECT:E38C Mod (0 MaVerb)(NOT 0 K)(*0 MaInf BARRIER CLBC)(NOT *1C FinV BARRIER CLBC); 
 SELECT:E38C MaInf (*0 MaVerb BARRIER CLB OR DaInf)(NOT *-1 FinV ^ MaVerb BARRIER CLB)(NOT *1 MaInf BARRIER CLB); 
-SELECT DaInf (1 DaVerb OR (<InfP>) OR ("või") + Mod)(NOT 0 Neg); 
-SELECT DaInf (-1 DaVerb OR (<InfP>) OR ("või") + Mod)(NOT 0 Neg); 
+SELECT DaInf (1 DaVerb OR (<InfP>) OR Võima)(NOT 0 Neg); 
+SELECT DaInf (-1 DaVerb OR (<InfP>) OR Võima)(NOT 0 Neg); 
 SELECT DaInf (1 Konj OR LLZ)(*-1 DaVerb OR (<InfP>) BARRIER CLB); 
 SELECT particV (-1 Jcrd)(*-2 Ole BARRIER CLB)(*-2 particV BARRIER CLB); 
 REMOVE Aux (NOT 0 EiAra)(NOT *-1 particV BARRIER CLB)(NOT *1 particV BARRIER CLB); 
-REMOVE ("käia") (0 ("käi")); 
-REMOVE ("peeta") (0 ("pida")); 
-REMOVE ("süst") + V (0 ("süsti") + V); 
-REMOVE ("serva") + V ; 
+REMOVE ("käia") OR ("käiama") (0 Käima OR ("käima")); 
+REMOVE ("peeta") OR ("peetama") (0 Pidama OR ("pidama")); 
+REMOVE ("süst") + V OR ("süstma") (0 ("süstima") OR ("süsti") + V); 
+REMOVE ("serva") + V OR ("servama"); 
 SELECT El (NOT 0 K OR Teine)(-1 Vel); 
 SELECT El (NOT 0 K OR Teine)(1 Vel); 
 SELECT Prop (1 Pärisnimi)(NOT -1 Jutum1>>>); 
 SELECT PropNom (1 LLZ)(-1 PropNom); 
 SELECT A OR D OR J (NOT 0 V OR P OR K OR Pl)(-1 ("eriti")); 
-SELECT ("külge") + D (1 ("pane"))(NOT -1 Gen); 
+SELECT ("külge") + D (1 Panema)(NOT -1 Gen); 
 REMOVE VPs2 (1 OlemSaa); 
 SELECT Gen (1 ("kukil")); 
 SELECT ("täna") + D (1 Ajamäärus); 
 SELECT ("kahtlemata") + D; 
-SELECT Imper + Pres (0 ("kuula") OR ("vaata") OR ("oota") OR ("maga") OR ("istu"))(-1 Jutum1>>> OR Opr)(1 Kvm); 
+SELECT Imper + Pres (0 ImperVerb)(-1 Jutum1>>> OR Opr)(1 Kvm); 
 SELECT Imper + Pres (NOT 0 PersPron)(NOT -2 NGP)(-1 Jutum1>>> OR Opr)(1 Kvm); 
-SELECT ("hakka")(*0 MaInf BARRIER CLB); 
+SELECT Hakkama (*0 MaInf BARRIER CLB); 
 SELECT S (0 ("austatud") OR ("lugu#peetud")); 
 SELECT S (0 Poordumine + S)(NOT 0 V OR D); 
 SELECT Gen (0 Pärisnimi)(NOT -1 >>>)(1 ("tee") OR ("tänav") OR ("puies#tee") OR ("maantee") OR ("linn") OR ("küla") OR ("vald") OR ("maa#kond") OR ("jõgi") OR ("järv") OR ("laht")); 
@@ -1586,7 +1671,7 @@ SELECT ("ots") + SgIn (-1 OmadusAse + Sg + In);
 SELECT ("ots") + SgIn (-1 SPSgGen)(-2 OmadusAse + Sg + In); 
 SELECT ("kohustus") + S  (NOT -1 S + SgNom OR Pps3 + SgNom)(NOT 1 S + SgNom OR Pps3 + SgNom); 
 REMOVE ("pära") + S ; 
-REMOVE ("tead") + S ; 
+REMOVE Teadma + S ; 
 "<raske>" SELECT ANom (*-1 Ole BARRIER Nom OR CLBC) ;
 REMOVE ("raske") + S  ;     
 REMOVE ("tähelepanu") + Nom  (*1 Nom BARRIER CLB)(*0 V BARRIER CLB LINK NOT 0 Ole);     
@@ -1681,44 +1766,44 @@ SELECT:siis ("siis") + D (1 Koma)(2 OnCLB) ;
 SELECT:siis ("siis") + D (-1 InterPron) ; 
 SELECT:siis ("siis") + J  (-1 Koma)(*-2 Mis LINK -1 CLB) ; 
 SELECT:siis ("siis") + J  (NOT -1C J OR D)
-	(*-1 Koma LINK *-1 ("kui") OR ("kuna") OR Et LINK *-1 ("kui") OR ("kuna") OR Et) ; 
+	(*-1 Koma LINK *-1 Kui OR ("kuna") OR Et LINK *-1 Kui OR ("kuna") OR Et) ; 
 SELECT:siis ("siis") + J  (NOT -1C J OR D)
-	(*-1 Koma LINK *-1 Et LINK -1 ("aga") LINK NOT *-1 V BARRIER CLB OR Kvm OR ("kui")) ; 
+	(*-1 Koma LINK *-1 Et LINK -1 Aga LINK NOT *-1 V BARRIER CLB OR Kvm OR Kui) ; 
 SELECT:etsiis ("siis") + J  (NOT -1C J OR D)(*-1 Koma LINK *-1 Et LINK -1 Jutum1>>>) ; 
 IFF:siis ("siis") + J  (NOT -1C J OR D)
-	(*-1 Koma LINK *-1 ("kui") OR ("kuna") LINK NOT *-1 V BARRIER CLB OR Kvm OR ("kui")) ; 
+	(*-1 Koma LINK *-1 Kui OR ("kuna") LINK NOT *-1 V BARRIER CLB OR Kvm OR Kui) ; 
 
 SELECT ("kuigi");
 "<kui>" SELECT Jcrd (-1 Cap OR Ccap) (1 Cap OR Ccap) ;
-SELECT ("kui") + D OR ("sama") + Nom  (1 KuiAdv)(NOT -1 Koma OR V) ; 
-SELECT ("kui") + D OR ("sama") + Nom  (1 KuiAdv)(-1 Koma)(*1 FinV BARRIER CLB) ;
-SELECT ("kui") + Jsub (-1 KuiCLB OR ("siis")) ;
-SELECT ("kui") + Jcrd (-1 FinV OR Acomp) ;
-SELECT ("kui") + Jsub (-1 Koma)(-2 KuiCLB OR ("siis"))(NOT -2 ("näita") OR ("rääki") OR ("ütle") OR ("seleta") OR ("selgita")) ;
-SELECT ("kui") + Jcrd (-1 Koma OR S)(-2 FinV OR Acomp); 
-SELECT ("kui") + Jcrd (*1 ("ka") BARRIER CLB LINK NOT -1 J) ;
-SELECT ("kui") + D (1C A ^ ("ala#ealine"))(NOT 2 S OR Kvm)(NOT *-1 ("niisama") BARRIER CLB) ; 
-SELECT ("kui") + Jsub (-1 CLBC)(*1 V BARRIER CLB)(NOT 1 KuiAdv)(NOT 1 A) ;
-SELECT ("kui") + Jsub (-1 CLBC)(NOT -2 See)(1 A)(NOT 2 V)(*1 V BARRIER CLB)(NOT 1 KuiAdv) ;
-SELECT ("kui") + D (-1 CLBC)(*1 V BARRIER CLB)(1 D)(2 A)(3 V) ;
-SELECT ("kui") + Jcrd (1 ("ka")) ;
+SELECT Kui + D OR ("sama") + Nom  (1 KuiAdv)(NOT -1 Koma OR V) ; 
+SELECT Kui + D OR ("sama") + Nom  (1 KuiAdv)(-1 Koma)(*1 FinV BARRIER CLB) ;
+SELECT Kui + Jsub (-1 KuiCLB OR ("siis")) ;
+SELECT Kui + Jcrd (-1 FinV OR Acomp) ;
+SELECT Kui + Jsub (-1 Koma)(-2 KuiCLB OR ("siis"))(NOT -2 KuiCLVerb) ;
+SELECT Kui + Jcrd (-1 Koma OR S)(-2 FinV OR Acomp); 
+SELECT Kui + Jcrd (*1 Ka BARRIER CLB LINK NOT -1 J) ;
+SELECT Kui + D (1C A ^ ("ala#ealine"))(NOT 2 S OR Kvm)(NOT *-1 ("niisama") BARRIER CLB) ; 
+SELECT Kui + Jsub (-1 CLBC)(*1 V BARRIER CLB)(NOT 1 KuiAdv)(NOT 1 A) ;
+SELECT Kui + Jsub (-1 CLBC)(NOT -2 See)(1 A)(NOT 2 V)(*1 V BARRIER CLB)(NOT 1 KuiAdv) ;
+SELECT Kui + D (-1 CLBC)(*1 V BARRIER CLB)(1 D)(2 A)(3 V) ;
+SELECT Kui + Jcrd (1 Ka) ;
 "<kui>" SELECT Jcrd (-1 ("välja") OR ("eriti"))(1 A) ;
 "<kui>" SELECT Jcrd (*-1 ("niisama")) ;
-REMOVE ("kui") + D (NOT 1 D OR A) ;
+REMOVE Kui + D (NOT 1 D OR A) ;
 "<kui>" SELECT J (-1 V) ;
-SELECT ("kui") + J  (1 V) ; 
+SELECT Kui + J  (1 V) ; 
 
 "<kui>" SELECT Jsub (-1 Koma) (-2 ("siis")) ;
-SELECT ("kui") + Jsub (*1 ("siis") LINK -1 Koma) ;
-SELECT ("kui") + Jsub (*1 Koma LINK 1 V) ;
+SELECT Kui + Jsub (*1 ("siis") LINK -1 Koma) ;
+SELECT Kui + Jsub (*1 Koma LINK 1 V) ;
 "<kui>" SELECT Jcrd (-1 Acomp) ;
 "<kui>" SELECT Jcrd (-1 S + Nom) (1 S + Nom) ;
 "<kui>" SELECT Jcrd (-1 S + Nom) (1 ANom) (2 S + Nom) ; 
-SELECT ("kui") + D (1 KuiAdv) ;
+SELECT Kui + D (1 KuiAdv) ;
 SELECT ("kuid") + J  (-1 CLB) ;
 SELECT ("kuid") + J  (-1 Koma)(-2 A OR OmadusAse)(1 A OR OmadusAse) ;
 REMOVE ("kuu") + PlPart (NOT 1 V) ;
-"<muud>" SELECT P + Part (1 ("kui") OR Ei) ;
+"<muud>" SELECT P + Part (1 Kui OR Ei) ;
 SELECT ("kuigi") + J  (-1 CLB)(*1 V BARRIER CLB) ;
 "<kuigi>" SELECT J (-1 J)(*1 V BARRIER CLB) ;
 SELECT ("kuigi") + D (NOT *1 V OR S BARRIER CLB)(NOT 1 Kvm) ;
@@ -1742,7 +1827,7 @@ SELECT ("kuni") + J  (NOT -1 NudTud)(-1 $$Case)(1 $$Case);
 
 SELECT ("või") + D (-1 Jutum1)(*1C Nom BARRIER Jutum2)(*1 D BARRIER Jutum2)(NOT *1 V BARRIER Jutum2) ; 
 REMOVE ("või") + SNom (1 Arv OR Pärisnimi)(NOT 2 ("<g>"));
-REMOVE ("<või>") + V OR ("Või") + V (NOT *-1 Ei OR ("ega")) ;
+REMOVE ("<või>") + V OR ("<Või>") + V (NOT *-1 Ei OR ("ega")) ;
 "<või>" REMOVE D (-1 ("kas"))(NOT 1 FinV) ;
 "<või>" SELECT J (*-1 ("kas") LINK *1 FinV)(1 FinV) ;
 "<või>" SELECT J (*-1 CLBC LINK 1 ("kas"))(NOT -1 Ei OR ("ega")) ;
@@ -1783,44 +1868,44 @@ REMOVE:X011 Part OR Gen (0 SjaD) (NOT -1C APart OR AGen)(*1 Intr BARRIER CLB LIN
 REMOVE ("peale") + D OR ("peal") + D OR ("pealt") + D OR ("alla") + D OR ("all") + D OR ("alt") + D (-1 SPGen)(1 SPGen OR SPPart); 
 
 REMOVE:X020 Postg (0 D)(-1 SPGen) (NOT 1 LLZ OR CLB)
-	(*-2 Part-K - Mod - Aux + Ps BARRIER CLB OR Kvm LINK NOT 0 ("saa") LINK NOT *1 V)(NOT *1 V BARRIER CLB)
+	(*-2 Part-K - Mod - Aux + Ps BARRIER CLB OR Kvm LINK NOT 0 Saama LINK NOT *1 V)(NOT *1 V BARRIER CLB)
 	(NOT *1 SPGen OR SPPart BARRIER CLB)(NOT *-2 SPGen OR SPPart BARRIER CLB) ;
 REMOVE:X021 Postg (0 D)(-1 SPGen) 
-	(*1 Part-K - Mod - Aux + Ps BARRIER CLB OR Kvm LINK NOT 0 ("saa") LINK NOT *-1 V)(NOT *-1 V BARRIER CLB) 
+	(*1 Part-K - Mod - Aux + Ps BARRIER CLB OR Kvm LINK NOT 0 Saama LINK NOT *-1 V)(NOT *-1 V BARRIER CLB) 
 	(NOT *1 SPGen OR SPPart BARRIER CLB)(NOT *-2 SPGen OR SPPart BARRIER CLB) ;
 REMOVE:X022 Postg (0 D)(-1 SPGen) 
-	(*-2 Part-K - Mod - Aux + Ps BARRIER CLB LINK NOT 0 ("saa") LINK NOT *1 V)(NOT *1 V BARRIER CLB) 
+	(*-2 Part-K - Mod - Aux + Ps BARRIER CLB LINK NOT 0 Saama LINK NOT *1 V)(NOT *1 V BARRIER CLB) 
 	(NOT *1 SPGen OR SPPart OR SPNom BARRIER CLB)(*-2 SPGen BARRIER CLB OR SPNom LINK 0 SPNom LINK NOT *-1 SPNom) ;
 REMOVE:X023 Postg (0 D)(-1 SPGen) 
-	(*1 Part-K - Mod - Aux + Ps BARRIER CLB LINK NOT 0 ("saa") LINK NOT *-1 V)(NOT *-1 V BARRIER CLB) 
+	(*1 Part-K - Mod - Aux + Ps BARRIER CLB LINK NOT 0 Saama LINK NOT *-1 V)(NOT *-1 V BARRIER CLB) 
 	(NOT *1 SPGen OR SPPart OR SPNom BARRIER CLB)(*-2 SPGen BARRIER CLB OR SPNom LINK 0 SPNom LINK NOT *-1 SPNom) ;
 
-REMOVE:X020 ("üle" K post <gen>) (0 D)(-1 SPGen) 
-	(*-2 Part-P + Ps BARRIER CLB LINK NOT 0 ("saa") LINK NOT *1 V)(NOT *1 V BARRIER CLB)
+REMOVE:X020 ("üle") + Postg (0 D)(-1 SPGen) 
+	(*-2 Part-P + Ps BARRIER CLB LINK NOT 0 Saama LINK NOT *1 V)(NOT *1 V BARRIER CLB)
 	(NOT *1 SPGen OR SPPart BARRIER CLB)(NOT *-2 SPGen OR SPPart BARRIER CLB) ;
-REMOVE:X021 ("üle" K post <gen>) (0 D)(-1 SPGen) 
-	(*1 Part-P + Ps BARRIER CLB LINK NOT 0 ("saa") LINK NOT *-1 V)(NOT *-1 V BARRIER CLB) 
+REMOVE:X021 ("üle") + Postg (0 D)(-1 SPGen) 
+	(*1 Part-P + Ps BARRIER CLB LINK NOT 0 Saama LINK NOT *-1 V)(NOT *-1 V BARRIER CLB) 
 	(NOT *1 SPGen OR SPPart BARRIER CLB)(NOT *-2 SPGen OR SPPart BARRIER CLB) ;
-REMOVE:X022 ("üle" K post <gen>) (0 D)(-1 SPGen) 
-	(*-2 Part-P + Ps BARRIER CLB LINK NOT 0 ("saa") LINK NOT *1 V)(NOT *1 V BARRIER CLB) 
+REMOVE:X022 ("üle") + Postg (0 D)(-1 SPGen) 
+	(*-2 Part-P + Ps BARRIER CLB LINK NOT 0 Saama LINK NOT *1 V)(NOT *1 V BARRIER CLB) 
 	(NOT *1 SPGen OR SPPart OR SPNom BARRIER CLB)(*-2 SPGen BARRIER CLB OR SPNom LINK 0 SPNom LINK NOT *-1 SPNom) ;
-REMOVE:X023 ("üle" K post <gen>) (0 D)(-1 SPGen) 
-	(*1 Part-P + Ps BARRIER CLB LINK NOT 0 ("saa") LINK NOT *-1 V)(NOT *-1 V BARRIER CLB) 
+REMOVE:X023 ("üle") + Postg (0 D)(-1 SPGen) 
+	(*1 Part-P + Ps BARRIER CLB LINK NOT 0 Saama LINK NOT *-1 V)(NOT *-1 V BARRIER CLB) 
 	(NOT *1 SPGen OR SPPart OR SPNom BARRIER CLB)(*-2 SPGen BARRIER CLB OR SPNom LINK 0 SPNom LINK NOT *-1 SPNom) ;
 
 REMOVE:X020 Preg (0 D)(1 SPGen) 
-	(-1 Part-K - Mod - Aux + Ps)(NOT -1 ("saa"))(NOT *1 V BARRIER CLB)
+	(-1 Part-K - Mod - Aux + Ps)(NOT -1 Saama)(NOT *1 V BARRIER CLB)
 	(NOT *2 SPGen OR SPPart BARRIER CLB OR J)(NOT *-1 SPGen OR SPPart BARRIER CLB OR J) ;
 REMOVE:X021 Preg (0 D)(1 SPGen) 
-	(*1 Part-K - Mod - Aux + Ps BARRIER CLB LINK NOT 0 ("saa") LINK NOT *-1 V)(NOT *-1 V BARRIER CLB) 
+	(*1 Part-K - Mod - Aux + Ps BARRIER CLB LINK NOT 0 Saama LINK NOT *-1 V)(NOT *-1 V BARRIER CLB) 
 	(NOT *2 SPGen OR SPPart BARRIER CLB OR J) (NOT *-1 SPGen OR SPPart BARRIER CLB OR J) ;
 REMOVE:X022 Preg (0 D)(1 SPGen) (2 MineS)(NOT 2 Gen);
 
 REMOVE:X020 Prep (0 D)(1 SPPart) 
-	(-1 Part-K - Mod - Aux + Ps)(NOT -1 ("saa"))(NOT *1 V BARRIER CLB)
+	(-1 Part-K - Mod - Aux + Ps)(NOT -1 Saama)(NOT *1 V BARRIER CLB)
 	(NOT *2 SPGen OR SPPart BARRIER CLB OR J)(NOT *-1 SPGen OR SPPart BARRIER CLB OR J) ;
 REMOVE:X020 Prep (0 D)(1 SPPart) 
-	(*-1 Part-K - Mod - Aux + Ps BARRIER CLB LINK NOT 0 ("saa") LINK NOT *1 V)(NOT *1 V BARRIER CLB)
+	(*-1 Part-K - Mod - Aux + Ps BARRIER CLB LINK NOT 0 Saama LINK NOT *1 V)(NOT *1 V BARRIER CLB)
 	(NOT 2 J)(NOT *2 SPGen OR SPPart BARRIER CLB OR J)(NOT *-1 SPGen OR SPPart BARRIER CLB OR J) ;
 
 REMOVE ("alla") + D (-1 Gen)(*0 Alla#verb - Mod BARRIER  CLB LINK 0 Intr) ;
@@ -1872,7 +1957,7 @@ SELECT ("pihta") + D (*0 Pihta#verb1 - Mod BARRIER CLB) ;
 SELECT ("pärale") + D (*0 Pärale#verb - Mod BARRIER CLB LINK NOT 0 MaDaInf) ;
 SELECT ("ringi") + D (1 Ringi#verb - Mod OR LiikumisVerb - Mod - Aux) ; 
 SELECT ("ringi") + D (-1 Ringi#verb - Mod OR LiikumisVerb - Mod - Aux) ; 
-SELECT ("ringi") + D (*0 Ringi#verb ^ AditVerb - Mod BARRIER CLB LINK NOT 0 MaDaInf)(NOT -1 Gen OR Ajamäärus) ;
+SELECT ("ringi") + D (*0 Ringi#verb - AditVerb - Mod BARRIER CLB LINK NOT 0 MaDaInf)(NOT -1 Gen OR Ajamäärus) ;
 SELECT ("ringi") + D (*0 Ringi#verb - Mod OR LiikumisVerb - Mod - Aux BARRIER CLB LINK NOT 0 MaDaInf)(*0 Adit BARRIER CLB) ;
 SELECT ("ringi") + D (*0 Ringi#verb - Mod OR LiikumisVerb - Mod - Aux BARRIER CLB LINK NOT 0 MaDaInf)(-1 Nom OR Part)(NOT -1 Ajamäärus) ;
 SELECT ("sekka") + D (*0 Sekka#verb - Mod BARRIER CLB LINK NOT 0 MaDaInf) ;
@@ -1900,11 +1985,11 @@ SELECT ("valmis") + D (*0 Valmis#verb - Mod BARRIER CLB LINK NOT 0 MaDaInf)(NOT 
 SELECT ("vastu") + D (NOT -1 Gen)(NOT *1 Part BARRIER FinV OR CLB)(*1 Vastu#verb - Mod BARRIER CLB LINK NOT 0 MaDaInf) ;
 "<vastu>" SELECT D (NOT -1 Gen)(NOT *1 Part BARRIER FinV OR CLB)(*-1 Vastu#verb - Mod BARRIER CLB LINK NOT 0 MaDaInf) ;
 "<vastu>" SELECT Post (-1 Gen)(*-1 Ole - Aux BARRIER CLB); 
-SELECT ("vastu") + Post (-1C Gen)(*0C ("võitle") OR Ole BARRIER CLBC) ;
+SELECT ("vastu") + Post (-1C Gen)(*0C Võitlema OR Ole BARRIER CLBC) ;
 SELECT ("vastu") + D (*0C Vastu#verb1 - Mod BARRIER CLBC LINK NOT 0 MaDaInf) ;
 SELECT ("välja") + D (NOT 1C S OR D OR K)(*0 Välja#verb - Mod OR LiikumisVerb - Mod - Aux BARRIER CLB LINK NOT 0 MaDaInf) ;
 "<välja>" SELECT D (NOT 1C D OR K)(-1 Välja#verb - Mod OR LiikumisVerb - Mod - Aux LINK NOT 0 MaDaInf) ;
-"<välja>" SELECT D (*0 ("pressi") OR ("pane") BARRIER CLB);
+"<välja>" SELECT D (*0 Pressima OR Panema BARRIER CLB);
 SELECT ("ühes") + D (*0 Ühes#verb - Mod BARRIER  CLB LINK NOT 0 MaDaInf)(NOT 1 Sg + In) ;
 SELECT ("ühte") + D (NOT 1 Part)(*0 Ühte#verb - Mod BARRIER  CLB LINK NOT 0 MaDaInf)(NOT 1 Ill) ; 
 SELECT V (0 Ühte#verb - Mod)(*0 ("ühte") BARRIER  CLB LINK NOT 0 MaDaInf) ; 
@@ -1915,31 +2000,31 @@ SELECT ("üleval") + D (*0 Üleval#verb - Mod BARRIER CLB LINK NOT 0 MaDaInf) ;
 SELECT ("ümber") + D (*0 Ümber#verb1 - Mod BARRIER CLBC LINK NOT 0 MaDaInf) ;
 SELECT ("ümber") + D (NOT -1 Gen)(NOT 1 Gen)(*0 Ümber#verb - Mod BARRIER  CLB LINK NOT 0 MaDaInf) ;
 SELECT ("ümber") + D (-1 Ümber#verb - Mod)(NOT -1 S)(NOT 1 Gen);
-SELECT ("viimane") (NOT *-1 ("unusta"));
+SELECT ("viimane") (NOT *-1 Unustama);
 
 
 
-SELECT ("heaks") + D (1 ("kiit") OR ("võt")) ;
-SELECT ("heaks") + D (1 ("tege"))(NOT -1 Gen) ;
-"<heaks>" SELECT D (-1 ("kiit") OR ("võt") OR ("tege")) ;
+SELECT ("heaks") + D (1 Kiitma OR Võtma) ;
+SELECT ("heaks") + D (1 Tegema)(NOT -1 Gen) ;
+"<heaks>" SELECT D (-1 Kiitma OR Võtma OR Tegema) ;
 
-SELECT ("omaks") + D (*0 ("võt") BARRIER CLB) ;
+SELECT ("omaks") + D (*0 Võtma BARRIER CLB) ;
 SELECT ("kord") + S  (*0 ("kaos")) ;
-SELECT ("korda") + D (*0 ("tege") OR ("saa") OR ("mine") BARRIER CLBC) ;
+SELECT ("korda") + D (*0 Tegema OR Saama OR Minema BARRIER CLBC) ;
 "<korras>" SELECT S + SgIn (-1C A + SgIn ) ;
-SELECT ("korras") + D (*0 ("hoid") BARRIER CLBC) ;
+SELECT ("korras") + D (*0 Hoidma BARRIER CLBC) ;
 SELECT ("korraga") + D (NOT -1 Arv) ;
 SELECT ("kord") + D (1C FinV)(NOT -1 Arv OR P OR A) ;
 "<kord>" SELECT D (-1C FinV)(1 V) ;
 "<kord>" SELECT D (-1C PersPron + Nom) ;
 "<kord>" SELECT D (-1 PersPron + Nom)(*0C VPs3 BARRIER CLB) ;
 
-SELECT ("krampi") + D (*0 ("tõmbu") BARRIER CLBC) ;
+SELECT ("krampi") + D (*0 Tõmbuma BARRIER CLBC) ;
 SELECT ("sirgu") + D (*0 Sirgu#verb - Mod BARRIER CLBC) ;
-SELECT ("nahka") + D (*0 ("mine") BARRIER CLBC) ;
+SELECT ("nahka") + D (*0 Minema BARRIER CLBC) ;
 
-SELECT ("jaole") + D (NOT -1 All)(*0 ("saa") BARRIER  CLB) ;
-SELECT ("kohale") + D (NOT -1 All)(*0 ("saa") OR ("too") + V OR ("tule") + V OR ("kutsu") + V BARRIER CLB) ;
+SELECT ("jaole") + D (NOT -1 All)(*0 Saama BARRIER  CLB) ;
+SELECT ("kohale") + D (NOT -1 All)(*0 Saama OR KohaleVerb + V BARRIER CLB) ;
 
 SELECT Postg (0 ("ajal") OR ("paiku") OR ("võrra") OR ("poolest"))(-1C Digit);
 SELECT SGen OR P + Gen OR N + Gen (1C Postg);
@@ -1953,26 +2038,26 @@ SELECT:katte ("käsi") + S + Adit (*0 KätteVerb2 BARRIER CLB);
 SELECT:pahe ("pea") + S + Adit (*0 Pähe#Verb BARRIER CLB) ; 
 
 SELECT ("aru") + S + SgPart OR ("aim") + S + SgPart (*0 Aru#Verb BARRIER CLB) ;
-SELECT ("raha") + S + Part (NOT 1 MineS)(*0 ("teeni") OR ("saa") BARRIER CLB LINK NOT -1 ("otsa")) ;
-SELECT ("põhi") + S + Adit (*0 ("lask") BARRIER CLB) ; 
-SELECT ("liig") + S + Part (*0 ("tege") BARRIER CLB)(NOT *0 Part BARRIER CLB)(NOT 1 D OR A);
-SELECT ("hing") + S + SgPart (*0 ("tõmba") BARRIER CLBC) ;
+SELECT ("raha") + S + Part (NOT 1 MineS)(*0 Teenima OR Saama BARRIER CLB LINK NOT -1 ("otsa")) ;
+SELECT ("põhi") + S + Adit (*0 Laskma BARRIER CLB) ; 
+SELECT ("liig") + S + Part (*0 Tegema BARRIER CLB)(NOT *0 Part BARRIER CLB)(NOT 1 D OR A);
+SELECT ("hing") + S + SgPart (*0 Tõmbama BARRIER CLBC) ;
 SELECT ("toime") + S + Adit (*0 Toime#verb - Mod BARRIER CLB) ;
 SELECT ("kasu") + S + SgPart (*0 Ole BARRIER CLBC) ;
-SELECT ("surm") + S + Adit (*0 ("mõist") BARRIER CLBC) ;
-SELECT ("kiri") + S + Adit (*0 ("pane") BARRIER CLBC) ;
-SELECT ("tähelepanu") + S + SgPart OR ("tähele#panu") + S + SgPart (*0 ("pööra") OR ("ärata") BARRIER CLB) ;
-SELECT ("pööra") + V OR ("ärata") + V (*0C ("tähelepanu") + Part  OR ("tähele#panu") + Part  BARRIER CLB) ;
-SELECT ("õnge") + S + Adit (*0 ("mine") OR ("võt") BARRIER CLB) ;
-SELECT ("tähele") + X  (*0 ("pane") BARRIER CLBC) ;
-SELECT ("alla") + D (-1 ("tuul"))(*0 ("tege") BARRIER CLBC) ;
+SELECT ("surm") + S + Adit (*0 Mõistma BARRIER CLBC) ;
+SELECT ("kiri") + S + Adit (*0 Panema BARRIER CLBC) ;
+SELECT ("tähelepanu") + S + SgPart OR ("tähele#panu") + S + SgPart (*0 Pöörama OR Aratama BARRIER CLB) ;
+SELECT Pöörama + V OR Aratama + V (*0C ("tähelepanu") + Part  OR ("tähele#panu") + Part  BARRIER CLB) ;
+SELECT ("õnge") + S + Adit (*0 Minema OR Võtma BARRIER CLB) ;
+SELECT ("tähele") + X  (*0 Panema BARRIER CLBC) ;
+SELECT ("alla") + D (-1 ("tuul"))(*0 Tegema BARRIER CLBC) ;
 
 
 SELECT All (NOT 0 Gen)(1 ("alla"));
 SELECT ("teiseks") + D (*-1 ("esiteks")) ;
 REMOVE N (0 ("ükski")) ;
-REMOVE N (0 ("üks" <ki>)) ; 
-REMOVE ("üks") + N + Pl OR Teine + N + Pl ; 
+REMOVE N (0 Yks + GiKi) ; 
+REMOVE Yks + N + Pl OR Teine + N + Pl ; 
 SELECT ("esimene") + N  OR Teine + N  (1 ("päris") OR El) ; 
 SELECT ("esimene") + P  OR Teine + P  (1 OmadusAse + P) ;
 SELECT Nord (*1 Nord LINK NOT 0 ("esimene") OR Teine LINK NOT -1 Loend) ;
@@ -2017,8 +2102,8 @@ SELECT ("veel") + D (1 Acomp OR D) ;
 SELECT ("veelgi") + D (NOT *1 Veel#Verb BARRIER CLB) (NOT *-1 Veel#Verb BARRIER CLB) ;
 SELECT ("veel") + D (NOT *1 Veel#Verb BARRIER CLB) (NOT *-1 Veel#Verb BARRIER CLB) ;
 
-SELECT SgPart (1 ("viisi") OR ("laadi") OR ("moodi")) (NOT 0 SPN + Gen) ;
-SELECT S + SgPart (0 ("viisi") OR ("laadi") OR ("moodi")) (-1C Part) ;
+SELECT SgPart (1 Sorti) (NOT 0 SPN + Gen) ;
+SELECT S + SgPart (0 Sorti) (-1C Part) ;
 
 SELECT El (0 Cap)(NOT 0 K OR D OR J)(NOT 1 J)(NOT -1 Pärisnimi + Nom OR Jutum1>>>)(0 ("<(.*)est>"r) OR ("<(.*)ast>"r) OR ("<(.*)ist>"r));
 SELECT ANom (0 ("(.*)jas"r) OR ("(.*)lik"r))(1C Pärisnimi) ;
@@ -2047,7 +2132,7 @@ SELECT S + LineS (NOT 0 D)(NOT 1C S OR V)(NOT *-1C Ole - Aux BARRIER CLB);
 
 SELECT ("ainult") + D ;
 
-SELECT ("ammu") + D (-1 ("kui") OR ("kunagi") ) ;
+SELECT ("ammu") + D (-1 Kui OR ("kunagi") ) ;
 
 REMOVE ("esi") + S  ;
 
@@ -2061,7 +2146,7 @@ SELECT ("kell") + S + SgGen (1C Ncard)(NOT 1 Part) ;
 SELECT S + SgPart (-1C ("kell") + S + SgPart) ; 
 SELECT S + SgGen (-1C ("kell") + S + SgGen) ; 
 SELECT ("küll") + D (1 ("küllalt"))(2 A OR D) ;
-IFF ("küll") + D (NOT 1 ("küll")) (NOT 1 ("saa")) ;
+IFF ("küll") + D (NOT 1 ("küll")) (NOT 1 Saama) ;
 SELECT A (NOT 0 V OR D)(1C ("küll") + D)(NOT 2 V) ; 
 
 SELECT ("küllalt") + D (1C D) ;
@@ -2071,16 +2156,16 @@ SELECT ("liiga") + D (1 D) ;
 SELECT ("liigagi") + D (1 A)(NOT *1 SPN BARRIER CLB) ;
 SELECT ("liiga") + D (1 A)(NOT *1 SPN BARRIER CLB) ;
 
-SELECT ("lisa") + S  (NOT 0 PlPart)(-1 Y) ;
-SELECT ("lisa") + VPs3 (-1 Pps3 + Nom) ;
-SELECT ("lisa") + S  (1 Kvm) (NOT *-1 Neg) ;
+SELECT Lisa + S  (NOT 0 PlPart)(-1 Y) ;
+SELECT Lisa + VPs3 (-1 Pps3 + Nom) ;
+SELECT Lisa + S  (1 Kvm) (NOT *-1 Neg) ;
 
 SELECT ("maha") + D ;
 
 SELECT Nom (NOT 0 NotSP OR P)(-1 ("kõik") + Nom ) ; 
 SELECT P (-1 ("kõik")) ; 
-SELECT ("muu") + P  (1 ("kui")) ;
-SELECT ("muu") + P  (1 Koma)(2 ("kui")) ;
+SELECT ("muu") + P  (1 Kui) ;
+SELECT ("muu") + P  (1 Koma)(2 Kui) ;
 
 "<nimelt>" SELECT D (-1 KesMis OR ("kus")) ;
 
@@ -2121,7 +2206,7 @@ REMOVE ("umme") + S  (1 Nom + Ncard) ;
 SELECT ("umbes") + D (1 N) ;
 
 "<vaja>" SELECT D (-1 Mis) ;
-"<vaja>" SELECT D (-1 ("kui")) ;
+"<vaja>" SELECT D (-1 Kui) ;
 "<vaja>" SELECT D (*-1 Ole BARRIER CLBC) ;
 "<vaja>" SELECT D (*1 Ole BARRIER CLBC) ;
 SELECT ("nüüd") + D ;  			
@@ -2137,7 +2222,7 @@ SELECT Mis + IndefPron ;
 SELECT ("miski") + IndefPron ;
 SELECT ("enamasti") + D ;			
 
-SELECT ("sama") + Part  (-2 ("üks")) (-2C Part) ;	
+SELECT ("sama") + Part  (-2 Yks) (-2C Part) ;	
 SELECT ("kaunis") + D (1 D) ;
 REMOVE ("kaunis") + D (NOT 1 A) ;   	
 "<parem>" SELECT ANom (*-1 Ole BARRIER CLBC LINK *-1 Nom) ;
@@ -2165,8 +2250,8 @@ SELECT Gen (1 ("aeg") + Sg + Ad) ;
 SELECT N (NOT 0 ("pool"))(1 Hulk) ; 
 SELECT N (NOT -1 Gen)(1 Hulk) ; 
 REMOVE D (0 MitteAdverb) ;
-SELECT Adit (0 ("pea") OR ("selg") OR ("jalg") OR ("kodu"))(*1 ("pane") OR ("saa") BARRIER CLBC)(NOT *-1 FinV OR DaInf BARRIER CLB); 
-SELECT Adit (0 ("pea") OR ("selg") OR ("jalg") OR ("kodu"))(*-1 ("pane") OR ("saa") BARRIER CLBC)(NOT *1 FinV OR DaInf BARRIER CLB); 
+SELECT Adit (0 ("pea") OR ("selg") OR ("jalg") OR ("kodu"))(*1 Panema OR Saama BARRIER CLBC)(NOT *-1 FinV OR DaInf BARRIER CLB); 
+SELECT Adit (0 ("pea") OR ("selg") OR ("jalg") OR ("kodu"))(*-1 Panema OR Saama BARRIER CLBC)(NOT *1 FinV OR DaInf BARRIER CLB); 
 REMOVE SAdit (0 Part)(NOT 0 ("paik") OR ("silm") OR ("pihk") OR ("kael"))(*0 NGP-P BARRIER CLB)(*0 All BARRIER CLB)
 	(NOT *-1 Part BARRIER CLB)(NOT *1 Part BARRIER CLB);
 REMOVE D (0 ("käsi")) ;
@@ -2187,12 +2272,12 @@ SELECT SPart (NOT 1 Postg)(-1 APart)(-2C APart);
 SELECT S + SgEl (1 Jcrd)(2C S + SgEl);
 
 
-SELECT S (0 ("tule"))(0 ("tuli"))(1 ("takk") + In) ;
-SELECT S (0 ("tule"))(0 ("tuli"))(-*1C (<FinV) BARRIER CLB);
-SELECT S (0 ("tule"))(0 ("tuli"))(*1C (<FinV) BARRIER CLB);
-SELECT V (0 ("tule"))(*1 DaInf BARRIER CLB);
-SELECT V (0 ("tule"))(*-1 DaInf BARRIER CLB);
-SELECT V (0 ("tule"))(*-1C Nom BARRIER CLB)(NOT *-1 FinV BARRIER CLB)(NOT *1 (FinV) BARRIER CLB);
+SELECT S (0 Tulema)(0 ("tuli"))(1 ("takk") + In) ;
+SELECT S (0 Tulema)(0 ("tuli"))(-*1C (<FinV) BARRIER CLB);
+SELECT S (0 Tulema)(0 ("tuli"))(*1C (<FinV) BARRIER CLB);
+SELECT V (0 Tulema)(*1 DaInf BARRIER CLB);
+SELECT V (0 Tulema)(*-1 DaInf BARRIER CLB);
+SELECT V (0 Tulema)(*-1C Nom BARRIER CLB)(NOT *-1 FinV BARRIER CLB)(NOT *1 (FinV) BARRIER CLB);
 REMOVE V (0 ("tuli"))(NOT -1 Ei)(*-1C FinV BARRIER CLBC);
 REMOVE V (0 ("tuli"))(NOT -1 Ei)(*-1C FinV ^ Ole BARRIER CLBC);
 REMOVE V (0 ("tuli"))(NOT -1 Ei)(*1C FinV BARRIER CLBC OR J);
@@ -2201,21 +2286,21 @@ SELECT V (0 ("tuli"))(-1 D);
 
 
 
-SELECT V (0 ("saa")) (*-1 ("valmis") BARRIER CLB) ;
-SELECT V (0 ("saa")) (*1 ("valmis") BARRIER CLB) ;
+SELECT V (0 Saama) (*-1 ("valmis") BARRIER CLB) ;
+SELECT V (0 Saama) (*1 ("valmis") BARRIER CLB) ;
 
-SELECT ("vii") + IndicImpfSg3 (-1 Jcrd OR Koma)(*-2 IndicImpfSg3 - Neg BARRIER CLB)(NOT *1 FinV BARRIER CLB) ;
+SELECT Viima + IndicImpfSg3 (-1 Jcrd OR Koma)(*-2 IndicImpfSg3 - Neg BARRIER CLB)(NOT *1 FinV BARRIER CLB) ;
 SELECT ("viis") + S  (-1 ("parem") OR ("parim")) ; 
 SELECT ("viis") + S  (1 Part)(2 MaInf OR DaInf) ; 
 SELECT ("viis") + N  (1 Part) ;
 SELECT ("viis") + N  (-1 Ncard)(*0 V BARRIER CLB);
-SELECT ("vii") + V (NOT 0 D)(*1 KustKuhu BARRIER CLB)(NOT *1 FinV BARRIER CLB)(NOT *-1 FinV BARRIER CLB) ;
+SELECT Viima + V (NOT 0 D)(*1 KustKuhu BARRIER CLB)(NOT *1 FinV BARRIER CLB)(NOT *-1 FinV BARRIER CLB) ;
 "<viis>" SELECT V (NOT 0 D)(*-1 KustKuhu BARRIER CLB) (NOT *1 FinV BARRIER CLB)(NOT *-1 FinV BARRIER CLB) ;
 
 
 "<ise>" SELECT P (-1 S OR P) (*-1 SNom OR P + Nom BARRIER CLB OR V) ;
 "<ise>" REMOVE A (NOT *-1 ("iga")) (NOT *-1 N) (NOT 1 S) (NOT *-1 Pl) ;
-SELECT ("ise") + P  (*1 ("aga"));
+SELECT ("ise") + P  (*1 Aga);
 REMOVE ("ise") + A (NOT 1 Nominal) ;
 REMOVE ("ise") + A (NOT *1 SP + Sg ) ;
 "<ise>" REMOVE Pl (-1C SgNom) ;
@@ -2244,81 +2329,81 @@ SELECT Oma + Gen  (1C NiNaTaGa) ;
 SELECT Oma + Gen  (1C S OR A) ;  
 
 
-SELECT ("saa") + V (NOT *1 FinV - Neg BARRIER CLB) (NOT *-1 FinV - Neg BARRIER CLB)(*1 particV BARRIER CLB) ;
-SELECT ("saa") + V (NOT *1 FinV - Neg BARRIER CLB) (NOT *-1 FinV - Neg BARRIER CLB)(*1 Tr BARRIER CLB) ;
+SELECT Saama (NOT *1 FinV - Neg BARRIER CLB) (NOT *-1 FinV - Neg BARRIER CLB)(*1 particV BARRIER CLB) ;
+SELECT Saama (NOT *1 FinV - Neg BARRIER CLB) (NOT *-1 FinV - Neg BARRIER CLB)(*1 Tr BARRIER CLB) ;
 
 
 SELECT ("üksi") + D OR ("<ühtegi>") + N  OR ("<ühtki>") + N ; 
 SELECT ("ükski") + P  OR Teine + P + Pl ; 
-SELECT ("üks") + N  OR ("esimene") + N  OR Teine + N  (0 NGP OR NiNaTaGa)(1 Ajamäärus OR ("samm") OR ("etapp") OR ("tase") OR ("tasand"));       	
+SELECT Yks + N  OR ("esimene") + N  OR Teine + N  (0 NGP OR NiNaTaGa)(1 Ajamäärus OR ("samm") OR ("etapp") OR ("tase") OR ("tasand"));       	
 SELECT Teine + P  (-1 Konj)(-2 Ncard); 
-SELECT ("üks") + P  (1 Konj)(2 Nord); 
-SELECT ("üks") + N  (-1 Loend); 
-SELECT ("üks") + P  OR Teine + P  (NOT 0 D)(1 LLZ);  
-REMOVE ("üks") + P  (0 (<gi>) OR (<ki>))(NOT 2 Post); 
+SELECT Yks + P  (1 Konj)(2 Nord); 
+SELECT Yks + N  (-1 Loend); 
+SELECT Yks + P  OR Teine + P  (NOT 0 D)(1 LLZ);  
+REMOVE Yks + P  (0 (<gi>) OR (<ki>))(NOT 2 Post); 
 SELECT Teine + P  (-1 ("vaid") OR ("veel") OR ("vähemalt") OR ("ainult"))(NOT *-1 ("pärast")); 
-SELECT ("üks") + N  (-1 NaguKui)(-2 ("rohkem") OR ("enam") OR ("vähem") OR ("veel")); 
-SELECT ("üks") + P  (-1 DemPron ^ See ^ IndefPron); 
-SELECT ("üks") + N  (1 Ncard); 
+SELECT Yks + N  (-1 NaguKui)(-2 ("rohkem") OR ("enam") OR ("vähem") OR ("veel")); 
+SELECT Yks + P  (-1 DemPron ^ See ^ IndefPron); 
+SELECT Yks + N  (1 Ncard); 
 SELECT ("pool") + S  (-1 Ncard)(NOT 0 Nom); 
-SELECT N (NOT 0 ("pool"))(-1 Ncard ^ Yks ^ ("vaid") ^ ("veel") ^ ("vähemalt") ^ ("ainult")); 
-SELECT ("üks") + N  (*1C Ncard BARRIER NOSPAN); 
-SELECT ("üks") + N  (*1 ("kolmas") + Sg ); 
-SELECT ("üks") + N  OR Teine + N  (1 Rahvaskeel)(2 FinV) ;	    
-SELECT ("üks") + P  OR Teine + P  (1 Riikjne OR Liityhing OR Rahvaskeel OR Teine) ;	    
-SELECT ("üks") + P + All (1 ("poole"));
-SELECT ("üks") + P + Ad (1C S + Ad) ;		
+SELECT N (NOT 0 ("pool"))(-1 Ncard ^ YksEsimene ^ ("vaid") ^ ("veel") ^ ("vähemalt") ^ ("ainult")); 
+SELECT Yks + N  (*1C Ncard BARRIER NOSPAN); 
+SELECT Yks + N  (*1 ("kolmas") + Sg ); 
+SELECT Yks + N  OR Teine + N  (1 Rahvaskeel)(2 FinV) ;	    
+SELECT Yks + P  OR Teine + P  (1 Riikjne OR Liityhing OR Rahvaskeel OR Teine) ;	    
+SELECT Yks + P + All (1 ("poole"));
+SELECT Yks + P + Ad (1C S + Ad) ;		
 IFF ("ükski") + N + Part (1 SPart);	
-IFF ("üks") + N + Part (1 SPart ^ ("nägu") ^ Sorti);	
-SELECT ("üks") + P  (1 El);
-SELECT ("üks") + P  (2 El)(NOT 2 K OR D);
-SELECT ("üks") + P + Pl ;
-SELECT ("üks") + P  (*1 KesMis LINK -2 POS LINK NOT *-1 Koma); 
-SELECT ("üks") + N  OR ("esimene") + N  OR Teine + N  (NOT 0 K)(1 Ajamäärus OR Sarnane OR DemPron OR IndefPron ^ ("aeg") ); 
-SELECT ("üks") + N  (NOT 0 K)(1 Ajamäärus ^ ("aeg"))(NOT 1 Ad)(NOT 1 In); 
+IFF Yks + N + Part (1 SPart ^ ("nägu") ^ Sorti);	
+SELECT Yks + P  (1 El);
+SELECT Yks + P  (2 El)(NOT 2 K OR D);
+SELECT Yks + P + Pl ;
+SELECT Yks + P  (*1 KesMis LINK -2 POS LINK NOT *-1 Koma); 
+SELECT Yks + N  OR ("esimene") + N  OR Teine + N  (NOT 0 K)(1 Ajamäärus OR Sarnane OR DemPron OR IndefPron ^ ("aeg") ); 
+SELECT Yks + N  (NOT 0 K)(1 Ajamäärus ^ ("aeg"))(NOT 1 Ad)(NOT 1 In); 
 
-SELECT ("üks") + N  (NOT 0 Prek)(1 NiNaTaGa)(NOT -1 V) ;
-SELECT ("üks") + N  (-1 Loend) ;
-SELECT ("üks") + N  (*-1 ("vaid")) ;
-SELECT ("üks") + P  (2 ("sama")) ;
-SELECT ("sama") + Nom  (-2 ("üks") + Nom ) ;
-SELECT ("sama") + Gen  (-2 ("üks") + Gen ) ;
-SELECT ("sama") + Part  (-2 ("üks") + Part ) ;
-SELECT ("üks") + P  (-1 P)(NOT -1 PersPron) ; 
-SELECT ("üks") + P  (0 Pl) ;
+SELECT Yks + N  (NOT 0 Prek)(1 NiNaTaGa)(NOT -1 V) ;
+SELECT Yks + N  (-1 Loend) ;
+SELECT Yks + N  (*-1 ("vaid")) ;
+SELECT Yks + P  (2 ("sama")) ;
+SELECT ("sama") + Nom  (-2 Yks + Nom ) ;
+SELECT ("sama") + Gen  (-2 Yks + Gen ) ;
+SELECT ("sama") + Part  (-2 Yks + Part ) ;
+SELECT Yks + P  (-1 P)(NOT -1 PersPron) ; 
+SELECT Yks + P  (0 Pl) ;
 
-SELECT ("üks") + N  (*0 ("üks") BARRIER CLB); 
-SELECT ("üks") + Part  (1C S + Part); 
-SELECT ("üks") + Adit (1C S + Ill); 
-SELECT ("üks") + Gen  (1C S)(1 Gen); 
-SELECT ("üks") + P  (-1 S + Gen); 
+SELECT Yks + N  (*0 Yks BARRIER CLB); 
+SELECT Yks + Part  (1C S + Part); 
+SELECT Yks + Adit (1C S + Ill); 
+SELECT Yks + Gen  (1C S)(1 Gen); 
+SELECT Yks + P  (-1 S + Gen); 
 
-SELECT ("üks") + P  OR ("esimene") + P  (*0C Teine + P ) ;
-SELECT ("üks") + N  OR ("esimene") + N  (*0C Teine + N ) ;
-REMOVE ("üks") + N  (-1 Ole) (*-2 P) ;
-REMOVE ("üks") + N  (-2 Ole) (*-3 P) ;
-SELECT ("üks") + P + Nom  (1C Part); 
-SELECT ("üks") + N  (1 S + NGP)(2 Koma); 
+SELECT Yks + P  OR ("esimene") + P  (*0C Teine + P ) ;
+SELECT Yks + N  OR ("esimene") + N  (*0C Teine + N ) ;
+REMOVE Yks + N  (-1 Ole) (*-2 P) ;
+REMOVE Yks + N  (-2 Ole) (*-3 P) ;
+SELECT Yks + P + Nom  (1C Part); 
+SELECT Yks + N  (1 S + NGP)(2 Koma); 
 
-SELECT ("üks") + N  (-1 Loend);
-SELECT ("üks") + P  (1C FinV) ;
-SELECT ("üks") + N  (-1 ("veel")) ;
-SELECT:K18 ("üks") + N  (1 Nominal + PlPart OR Kvm) ;
-SELECT:K19 ("üks") + N  (1 Nominal + PlEl) ;
-SELECT:K20 ("üks") + P  (1 Nominal + PlGen)(2 Seast); 
-SELECT:K21 ("üks") + P  (1 Nominal + PlGen)(2 S + PlGen)(3 Seast) ;
-SELECT:K22 ("üks") + P  (1 Nominal + PlPart)(2 S + PlGen)(3 Seast OR Seas) ; 
-SELECT:K23 ("üks") + P  (1 Kvm)(1 CLB) (-1 Ole)(-2 PersPron);
-SELECT:K24 ("üks") + N  (0 NGP)(1 Kvm)(1 CLB) ;
-SELECT:K25 ("üks") + P  (1 Konj) (2 ("sama")) ;
-SELECT ("üks") + In (1 In) ;
+SELECT Yks + N  (-1 Loend);
+SELECT Yks + P  (1C FinV) ;
+SELECT Yks + N  (-1 ("veel")) ;
+SELECT:K18 Yks + N  (1 Nominal + PlPart OR Kvm) ;
+SELECT:K19 Yks + N  (1 Nominal + PlEl) ;
+SELECT:K20 Yks + P  (1 Nominal + PlGen)(2 Seast); 
+SELECT:K21 Yks + P  (1 Nominal + PlGen)(2 S + PlGen)(3 Seast) ;
+SELECT:K22 Yks + P  (1 Nominal + PlPart)(2 S + PlGen)(3 Seast OR Seas) ; 
+SELECT:K23 Yks + P  (1 Kvm)(1 CLB) (-1 Ole)(-2 PersPron);
+SELECT:K24 Yks + N  (0 NGP)(1 Kvm)(1 CLB) ;
+SELECT:K25 Yks + P  (1 Konj) (2 ("sama")) ;
+SELECT Yks + In (1 In) ;
 
 
 SELECT ("teiseks") + D (*-1 ("esiteks"));
 SELECT ("esiteks") + D OR ("teiseks") + D (NOT 1 Tr)(NOT -1 Tr); 
-SELECT Teine + N  (*-1C ("üks") + N  OR ("esimene") + N  OR ("sama") OR ("järgmine") OR ("pärast"))(NOT 2 Post); 
-SELECT Teine + P  (*-1C ("üks") + P  OR ("esimene") + P );
-SELECT Teine + P  OR ("üks") + P  (-1 DemPron OR IndefPron); 
+SELECT Teine + N  (*-1C Yks + N  OR ("esimene") + N  OR ("sama") OR ("järgmine") OR ("pärast"))(NOT 2 Post); 
+SELECT Teine + P  (*-1C Yks + P  OR ("esimene") + P );
+SELECT Teine + P  OR Yks + P  (-1 DemPron OR IndefPron); 
 REMOVE Teine + P  (0 (<gi>) OR (<ki>))(NOT 2 Post); 
 SELECT Teine + N + Sg (-1 ("suuruselt"));
 SELECT Teine + N  (-1 Järel) ;        	
@@ -2348,19 +2433,19 @@ SELECT Pl (0 KesMis) (-1 CLB + Kvm)(-2 Kvm)(-3C SP + Sg )
 SELECT Pl (0 KesMis) (NOT 0 Ad)(-1 CLB + Kvm)(-2C SP + Pl )
             (1 V + Pl)(NOT -2 Part);
 SELECT Pl (0 KesMis) (NOT 0 Ad)(-1 CLB + Kvm)(-2C SP + Pl )
-            (1 V + Pl)(-2 Part)(NOT *-3 ("üks"));
+            (1 V + Pl)(-2 Part)(NOT *-3 Yks);
 SELECT Pl (0 KesMis) (NOT 0 Ad)(-1 CLB + Kvm)(-2 SP + Sg )
             (-3 Konj)(-4C SP)(1 V + Pl)(NOT -2 Part); 
 SELECT Pl (0 KesMis) (NOT 0 Ad)(-1 CLB + Kvm)(-2 SP + Sg )
-            (-3 Jcrd OR Koma)(-4C SP)(1 V + Pl)(-2 Part)(NOT *-3 ("üks")); 
+            (-3 Jcrd OR Koma)(-4C SP)(1 V + Pl)(-2 Part)(NOT *-3 Yks); 
 SELECT Pl (0 KesMis) (NOT 0 Ad)(-1 CLB + Kvm)(-2 Kvm)(-3C SP + Pl )
             (1 V + Pl)(NOT -3 Part);
 SELECT Pl (0 KesMis) (NOT 0 Ad)(-1 CLB + Kvm)(-2 Kvm)(-3C SP + Pl )
-            (1 V + Pl)(-3 Part)(NOT *-4 ("üks"));
+            (1 V + Pl)(-3 Part)(NOT *-4 Yks);
 SELECT Pl (0 KesMis) (NOT 0 Ad)(-1 CLB + Kvm)(-2 Kvm)(-3 SP + Sg )
             (-4 Konj)(-5C SP)(1 V + Pl)(NOT -3 Part); 
 SELECT Pl (0 KesMis) (NOT 0 Ad)(-1 CLB + Kvm)(-2 Kvm)(-3 SP + Sg )
-            (-4 Konj)(-5C SP)(1 V + Pl)(-3 Part)(NOT *-4 ("üks")); 
+            (-4 Konj)(-5C SP)(1 V + Pl)(-3 Part)(NOT *-4 Yks); 
 SELECT Sg (0 KesMis) (NOT 0 Ad)(-1 CLB + Kvm)(-2C SP + Sg )
             (NOT *1 V + Pl BARRIER CLB) (NOT -2 Part);
 SELECT Sg (0 KesMis) (NOT 0 Ad)(-1 CLB + Kvm)(-2C SP + Sg )
@@ -2385,19 +2470,19 @@ SELECT Sg (0 KesMis) (-1 CLB)(NOT *-2 SP + Pl)(NOT *-2 Jcrd OR Ncard)(NOT *1 Pl3
 
 SELECT Kes + PlNom OR Mis + PlNom (*1C V + Pl BARRIER CLBC)(NOT 1 PlNom) ;
 SELECT Kes + SgNom OR Mis + SgNom (*1C Sg3Verb BARRIER CLBC)(NOT 1 SgNom);
-SELECT Kes + Sg  OR Mis + Sg  (-1 CLB + Kvm)(-2C SP + Part)(*-3 ("üks") BARRIER NOSPAN);
-SELECT Kes + Sg  OR Mis + Sg  (-1 CLB + Kvm)(-2 Kvm)(-3C SP + Part)(*-4 ("üks") BARRIER NOSPAN);
+SELECT Kes + Sg  OR Mis + Sg  (-1 CLB + Kvm)(-2C SP + Part)(*-3 Yks BARRIER NOSPAN);
+SELECT Kes + Sg  OR Mis + Sg  (-1 CLB + Kvm)(-2 Kvm)(-3C SP + Part)(*-4 Yks BARRIER NOSPAN);
 SELECT Mis + PlNom (*1C V + Pl BARRIER CLBC) (NOT *1C Pl BARRIER CLBC)(NOT *1 J BARRIER CLBC) ;  
 SELECT Mis + SgNom (*1C Sg3Verb BARRIER CLBC LINK NOT *-1 SPSgNom);    
-SELECT Kes + Pl  OR Mis + Pl  (-1 CLB + Kvm)(-2C SPSgPart)(-3 SPAN)(-4 Ncard ^ ("üks"));
-SELECT Kes + Pl  OR Mis + Pl  (-1 CLB + Kvm)(-2 Kvm)(-3C SPSgPart)(-4 SPAN)(-5 Ncard ^ ("üks"));
-SELECT Kes + Pl  OR Mis + Pl  (-1 CLB + Kvm)(-2C SPSgPart)(-3 Ncard ^ ("üks"));
-SELECT Kes + Pl  OR Mis + Pl  (-1 CLB + Kvm)(-2 Kvm)(-3C SPSgPart)(-4 Ncard ^ ("üks"));
+SELECT Kes + Pl  OR Mis + Pl  (-1 CLB + Kvm)(-2C SPSgPart)(-3 SPAN)(-4 Ncard ^ Yks);
+SELECT Kes + Pl  OR Mis + Pl  (-1 CLB + Kvm)(-2 Kvm)(-3C SPSgPart)(-4 SPAN)(-5 Ncard ^ Yks);
+SELECT Kes + Pl  OR Mis + Pl  (-1 CLB + Kvm)(-2C SPSgPart)(-3 Ncard ^ Yks);
+SELECT Kes + Pl  OR Mis + Pl  (-1 CLB + Kvm)(-2 Kvm)(-3C SPSgPart)(-4 Ncard ^ Yks);
 SELECT Kes + Sg  OR Mis + Sg  (-1 CLB + Kvm)(-2C SP + Sg )(NOT *1 V + Pl BARRIER CLB);
-SELECT Kes + Sg  OR Mis + Sg  (-1 CLB + Kvm)(-2C SP + Pl )(-3 Yks + Sg); 
+SELECT Kes + Sg  OR Mis + Sg  (-1 CLB + Kvm)(-2C SP + Pl )(-3 YksEsimene + Sg); 
 SELECT Kes + Pl  OR Mis + Pl  (-1 CLB + Kvm)(-2C SP + Pl )(NOT -2 Kes + SgNom);
 SELECT Kes + Sg  OR Mis + Sg  (-1 CLB + Kvm)(-2 Kvm)(-3C SP + Sg )(NOT *1 V + Pl BARRIER CLB);
-SELECT Kes + Sg  OR Mis + Sg  (-1 CLB + Kvm)(-2 Kvm)(-3C SP + Pl )(-4 Yks + Sg); 
+SELECT Kes + Sg  OR Mis + Sg  (-1 CLB + Kvm)(-2 Kvm)(-3C SP + Pl )(-4 YksEsimene + Sg); 
 SELECT Kes + Pl  OR Mis + Pl  (-1 CLB + Koma)(-2 Kvm)(-3C SP + Pl );
 
 SELECT Mis + Pl  (-1 CLB + Kvm)(-2 ("kõik"))(NOT -2 Gen);
@@ -2406,8 +2491,8 @@ SELECT Mis + PlNom (-1 CLB + Kvm)(-2C FinV)(-3C SP + PlNom);
 SELECT Mis + PlNom (-1 CLB + Kvm)(-2 Kvm)(-3C FinV)(-4C SP + PlNom);
 
 SELECT Mis + SgNom (*1C NominalSg BARRIER CLBC) (NOT *-1 V + Pl BARRIER CLBC)(NOT *1 V + Pl BARRIER CLBC);
-SELECT Mis + Pl  (-1 CLB) (-2 NimiAse) (-3 N) (NOT -3 ("üks"));
-SELECT Mis + Pl  (-1 CLB) (-2 Kvm)(-3 NimiAse) (-4 N) (NOT -4 ("üks"));
+SELECT Mis + Pl  (-1 CLB) (-2 NimiAse) (-3 N) (NOT -3 Yks);
+SELECT Mis + Pl  (-1 CLB) (-2 Kvm)(-3 NimiAse) (-4 N) (NOT -4 Yks);
 
 SELECT Kes + SgNom OR Mis + SgNom (1 Sorti + Part); 
 				
@@ -2425,10 +2510,10 @@ SELECT Kes + PlNom OR Mis + PlNom (-1 CLB LINK *-1C Kes + Pl  OR Mis + Pl  BARRI
 REMOVE ("aeg") + Adit (-1 Part) 
 
 "<kodu>" SELECT D (-1 Ole)(NOT 1 Postg)(NOT 1 In OR Ad)(NOT 1 KustKuhu);
-"<kodu>" SELECT D (-1 ("mine"))(NOT 1 Postg)(NOT 1 In OR Ad)(NOT 1 KustKuhu);
+"<kodu>" SELECT D (-1 Minema)(NOT 1 Postg)(NOT 1 In OR Ad)(NOT 1 KustKuhu);
 REMOVE D (0 ("kodu"));
 
-SELECT ("lõpuks") + D (*0 ("jõud") + V BARRIER CLB);
+SELECT ("lõpuks") + D (*0 Jõudma BARRIER CLB);
 
 
 "<näol>" SELECT S + Ad (-1 Pärisnimi);
@@ -2484,8 +2569,8 @@ SELECT ("kõik") + P + Sg  (1 A) (2C Nominal + SgNom) ;
 SELECT ("kõik") + P + Pl  (1 A)(2C Nominal + PlNom) ;    
 SELECT ("kõik") + P + Sg  (1 SPGen)(2C Nominal + SgNom) ; 
 SELECT ("kõik") + P + Pl  (1 SPGen)(2 Nominal + PlNom ^ NudTud) ;
-SELECT ("kõik" P el sg) (1 SP + SgEl);
-SELECT ("kõik" P  el pl) (1 SP + PlEl);    
+SELECT ("kõik") + P + SgEl (1 SP + SgEl);
+SELECT ("kõik") + P + PlEl (1 SP + PlEl);    
 SELECT ("kõik") + P + Pl  (1C Nominal + Gen)(2C SP + PlNom);
 SELECT ("kõik") + P + Sg  (1C Nominal + SgNom)
 	(NOT *1 V + Pl BARRIER CLBC)(NOT *-1 V + Pl BARRIER CLBC);
@@ -2523,8 +2608,8 @@ SELECT ("kust") + D ;
 "<soo>" IFF I (-1 I);
 SELECT I (NOT 0 S)(1 Kvm)(*1 Exc);
 
-SELECT ("käi") + V (NOT *1 FinV BARRIER CLB)(NOT *-1 FinV BARRIER CLB) ;
-SELECT ("saa") + V OR ("saat") + FinV (NOT *1 FinV BARRIER CLB)(NOT *-1 FinV BARRIER CLB) ;
+SELECT Käima (NOT *1 FinV BARRIER CLB)(NOT *-1 FinV BARRIER CLB) ;
+SELECT Saama OR Saatma + FinV (NOT *1 FinV BARRIER CLB)(NOT *-1 FinV BARRIER CLB) ;
 SELECT ("seega") + D;
 
 SELECT Ei + D (*1 ("ega") BARRIER Neg);
@@ -2553,7 +2638,7 @@ SELECT SGen OR P (-1 Jutum1)(1 Jutum2)(-2C OmadusAse + Gen);
 SELECT SPart OR P (-1 Jutum1)(1 Jutum2)(-2C OmadusAse + Part); 
 SELECT SNom OR P (NOT 0 NudTud)(-1 Jutum1)(1 Jutum2)(NOT 2 Postg OR Gen);
 
-SELECT ("koht") (*0 Määramine BARRIER CLBC LINK NOT 0 ("määr")); 
+SELECT ("koht") + S (*0 Määramine BARRIER CLBC LINK NOT 0 ("määr")); 
 
 SELECT:XVps3 IndicImpfSg3 (1C SPNom) (NOT *1C FinV barrier CLBC)(NOT *-1C FinV barrier CLBC); 
 SELECT:XVps3 IndicImpfSg3 (-1 PersPron + SgNom) 
@@ -2580,8 +2665,8 @@ SELECT:onsubj SNom OR P + Nom (0C SPY + Cap ^ DetPron)(NOT 1 <<< OR Post)(-1C Om
 REMOVE Oma + Part ;
 SELECT SEl (0C Nominal) (-1 ("osa")); 
 SELECT Gen (0C Nominal) (-1 Hulk + SgNom)(-2 Preg);
-SELECT SgPart (0C Nominal ^ Cap) (-1 Hulk ^ ("üks") ^ ("1"))(-1 SgNom)(NOT 1 El);
-SELECT SgPart (0C Nominal) (-1 Hulk ^ ("üks") ^ ("1"))(-1 SgNom)(NOT 0 Gen);
+SELECT SgPart (0C Nominal ^ Cap) (-1 Hulk ^ Yks)(-1 SgNom)(NOT 1 El);
+SELECT SgPart (0C Nominal) (-1 Hulk ^ Yks)(-1 SgNom)(NOT 0 Gen);
 
 SELECT SGen OR P + Gen (NOT 0 D OR Gen OR V)(-1 RohkemVähem)(1 NiNaTaGa);
 SELECT APart (NOT 0 V)(-1 RohkemVähem) (1 SP + Part);
@@ -2631,16 +2716,16 @@ REMOVE G (0 Riikjne + Cap)(1 Konj)(2 Riikjne + Cap);
 REMOVE G (0 Riikjne + Cap)(NOT -1 Jutum1>>>);  
 SELECT G (0 Riikjne) (1 Rahvaskeel)(-1 Jutum1>>>); 
 SELECT G (0 Riikjne) (NOT 0 Cap);  
-REMOVE G (0 Riikjne + Cap)(*0 ("ela") OR ("asu") OR ("elutse") OR Liityhing);  
+REMOVE G (0 Riikjne + Cap)(*0 ElamaAsuma OR Liityhing);  
 SELECT G (0 Riikjne + Cap)(-1 Jutum1>>>)(NOT 1 Cap);  
 SELECT Nom (0 Riikjne + Cap)(NOT -1 Jutum1>>>)(1 FinV ^ AS)(NOT 1 Imper)(NOT 1 Postg);  
 SELECT PropNom (1 ("de"))(2 Pärisnimi);  
 SELECT ("de") + Y (1 Pärisnimi);  
 SELECT Gen (0 Pärisnimi) (1 Pärisnimi)(1 Liityhing) ;  
-SELECT Adit OR Ill (1 ("pääse") + V OR ("saat") OR ("koli"))(NOT 1 ("saa"))(2 CLB OR LLZ);   
-SELECT Adit OR Ill (-1 ("pääse") + V OR ("saat") OR ("koli"))(NOT -1 ("saa"))(NOT 1 Post);   
-SELECT Adit OR Ill (-1 Cap)(-2 ("pääse") + V OR ("saat") OR ("koli"))(NOT -2 ("saa"))(NOT 1 Post);   
-SELECT ("kiri") + Adit (-1 ("mine") OR ("pane") + V);   
+SELECT Adit OR Ill (1 Pääsema OR Saatma OR Kolima)(NOT 1 Saama)(2 CLB OR LLZ);   
+SELECT Adit OR Ill (-1 Pääsema OR Saatma OR Kolima)(NOT -1 Saama)(NOT 1 Post);   
+SELECT Adit OR Ill (-1 Cap)(-2 Pääsema OR Saatma OR Kolima)(NOT -2 Saama)(NOT 1 Post);   
+SELECT ("kiri") + Adit (-1 Minema OR Panema);   
 SELECT Part (-1C APart OR Quot)(NOT 0 Gen OR El)(NOT 1 Gen);   
 SELECT Part (-1C APart OR Quot)(NOT 0 Gen)(NOT 1 Gen OR El);   
 SELECT Part (-1C APart OR Quot)(NOT 1 Post OR Gen);   
@@ -2674,7 +2759,7 @@ SELECT PropGen (0 Pärisnimi)(0 Riikjne) (1 Cap);
 
 SELECT PropGen (0 Pärisnimi)(0 Riikjne) (1C S ^ NiNaTaGa);  
 
-SELECT Nom (0C Pärisnimi) (NOT 0 Riikjne) (-1 ("as")); 
+SELECT Nom (0C Pärisnimi) (NOT 0 Riikjne) (-1 ("as") OR ("AS")); 
 
 SELECT Nom (0C Pärisnimi)(NOT 0 Riikjne OR All)(-1 Pärisnimi + Nom)(-2 Ole + VPs3)(NOT *1C Nom)(NOT *-2C Nom); 
 SELECT:E39C Nom (0C Pärisnimi)(NOT 0 Riikjne OR All)(-1 Pärisnimi + Nom)(-2 VPs3 ^ Ole LINK NOT -1 SPSgNom)
@@ -2709,7 +2794,7 @@ SELECT Gen (0 Pärisnimi) (-1 Konj)(-2C Pärisnimi + Gen)(1C Scom);
 SELECT Nom (0 Pärisnimi) (1 Konj)(2C Pärisnimi + Nom)(3C Scom); 
 SELECT Nom (0 Pärisnimi) (-1 Konj)(-2C Pärisnimi + Nom)(1C Scom); 
 
-REMOVE PropNom (1C ("tead") + V + Imps OR ("tund") + V + Imps); 
+REMOVE PropNom (1C Teadma + Imps OR Tundma + Imps); 
 SELECT PropNom OR PropPart (1C Imps)(NOT 1 partic)(NOT 0 Ad)(NOT -1 Pre); 
 
 SELECT Nom (0 Pärisnimi) (1 Cap)(1  YNominal) ; 
@@ -2758,8 +2843,8 @@ SELECT:K28 SNom (NOT 0 VPs3 OR NudTud)(1 PropCap)(2 PropCap) (2C Nom)
 SELECT:millemine SGen OR DetPron + Gen (NOT 0 Adit OR Hulk OR A OR Pärisnimi)(1 S + MineS)(NOT 2 Postg); 
 SELECT:millemine SGen OR DetPron + Gen (NOT 0 Hulk OR A OR Pärisnimi)(NOT -1 Gen)(1 S + MineS)(NOT 2 Postg); 
 SELECT:millemine SGen OR DetPron + Gen (NOT 0 Hulk OR A OR Pärisnimi)(-1 Hulk)(1 S + MineS)(NOT 2 Postg); 
-SELECT ("töö") + SgPart (*-1 ("otsi") OR ("leid") + V OR ("saa") + V BARRIER CLB);
-SELECT ("töö") + PlNom (NOT 0 ("tööta"))(1 CLB OR LLZ)(*-1 Pl3Verb - Neg OR ("too") + V);
+SELECT ("töö") + SgPart (*-1 Otsima OR Leidma OR Saama BARRIER CLB);
+SELECT ("töö") + PlNom (NOT 0 Töötama)(1 CLB OR LLZ)(*-1 Pl3Verb - Neg OR Tooma);
 SELECT:minein SAdit (NOT 0 K OR Ajamäärus)(-1 S + MineS)(*-2 S + Part BARRIER CLB LINK NOT *1 Konj)(NOT *-1C Kuhu)(NOT *1 Post BARRIER CLBC OR V); 
 SELECT S + SgEl (-1 A + SgEl );
 REMOVE:ainepl SPart OR P + Part (0 SP + Sg)(0 SP + Pl)(NOT 1 V)(NOT -1 ("kõik") + Part)(NOT *0 DaInf BARRIER CLBC)(NOT *1C VPs2)(NOT *-1C VPs2)
@@ -2834,23 +2919,23 @@ SELECT SgNom (0 Pärisnimi)(NOT 0 Part OR Ad OR All)(NOT 1 Kom)(*-1C Sg3Verb  BA
 
   
 
-SELECT N (NOT 0 ("üks")) (NOT 0 Nord) (1 Ajamäärus);
-SELECT N (NOT 0 ("üks" <ki>))(NOT 0 Nord) (-1 Ncard);
-SELECT ("tuhat" N card part) (-1 Ncard + Nom);    
+SELECT N (NOT 0 Yks) (NOT 0 Nord) (1 Ajamäärus);
+SELECT N (NOT 0 Yks + GiKi) (NOT 0 Nord) (-1 Ncard);
+SELECT ("tuhat") + Ncard + Part (-1 Ncard + Nom);    
 SELECT Ncard + Nom (-1 Ncard + Nom)(NOT 0 SPNom);    
 SELECT Ncard + Part (-1 Ncard + Part)(NOT 0 SPNom);
 SELECT Ncard + Nom (1 SPSgPart)(NOT 0 SPNom);
 
-SELECT Part (0 ("üks")) (1C Part);
+SELECT Part (0 Yks) (1C Part);
 
 SELECT Ncard + Nom (0C Ncard)(1 SPPart)  
 SELECT Ncard + Part (0C Ncard) (1C SPPart) (NOT 0 Nom);   
 SELECT Gen (0C Ncard) (1C SPGen);
 
-SELECT SgGen  (-1 ("üks") + N + SgGen);
-SELECT SgNom (-1 ("üks") + N + SgNom)(*1C nppiir BARRIER SP OR CLB) ;
-SELECT SgPart (-1 ("üks") + N + SgPart)(NOT 0 Gen)(NOT 0 Adit);
-SELECT SgPart  (-1 ("üks") + N + SgPart) (0 Gen) (NOT 1 Part);
+SELECT SgGen  (-1 Yks + N + SgGen);
+SELECT SgNom (-1 Yks + N + SgNom)(*1C nppiir BARRIER SP OR CLB) ;
+SELECT SgPart (-1 Yks + N + SgPart)(NOT 0 Gen)(NOT 0 Adit);
+SELECT SgPart  (-1 Yks + N + SgPart) (0 Gen) (NOT 1 Part);
 
 SELECT:E42C SgPart  (-1 ("mitu") + SgNom OR ("mi=tu") + SgNom);
 SELECT:E43C SgGen  (-1 ("mitu") + SgGen OR ("mi=tu") + SgGen);
@@ -2865,6 +2950,7 @@ SELECT APart OR SGen OR SPart (-1 Ncard)(1C Part) ;
 SELECT Gen (-1 Ncard)(1C A + ("(.*)ne"r)); 
 
 SELECT ("kroon") (-1 Arv) ; 
+SELECT A + SgPart (0 aastane)(1 SPAN + SgPart);
 SELECT SPSgPart (0 aastane)(NOT 1 SPAN + SgEl);
 SELECT SgGen (NOT 0 Ncard) (-1 Ncard) (-2C Preg); 
 SELECT SgGen (NOT 0 Ncard) (-1 Ncard) (-2 ("üle") + Preg); 
@@ -2875,22 +2961,22 @@ SELECT SgGen (NOT 0 Ncard) (-1C Ncard + Gen);
 SELECT SgEl (NOT 0 Ncard) (-1 Ncard + El); 
 SELECT SgPart (NOT 0 Ncard) (-1 Ncard) (-2 Prep OR V); 
 
-SELECT SgPart (NOT 0 Ncard) (-1 Ncard + SgNom) (NOT -1 ("üks"));
-SELECT SgPart (NOT 0 Ncard) (-1 Ncard + SgPart)(-2 Ncard + SgNom) (NOT -2 ("üks"));
-SELECT SgGen (NOT 0 Ncard) (-1 A)(-2 Ncard + SgNom) (NOT -2 ("üks"))(1C Part);
-SELECT SgPart (NOT 0 Ncard) (-1 A)(-2 Ncard + SgNom) (NOT -2 ("üks"));
+SELECT SgPart (NOT 0 Ncard) (-1 Ncard + SgNom) (NOT -1 Yks);
+SELECT SgPart (NOT 0 Ncard) (-1 Ncard + SgPart)(-2 Ncard + SgNom) (NOT -2 Yks);
+SELECT SgGen (NOT 0 Ncard) (-1 A)(-2 Ncard + SgNom) (NOT -2 Yks)(1C Part);
+SELECT SgPart (NOT 0 Ncard) (-1 A)(-2 Ncard + SgNom) (NOT -2 Yks);
 SELECT PlNom (NOT 0 FinV)(-1 Ncard + PlNom);     
 
 SELECT SgPart (NOT 0 Ncard) (-1 Ncard + Digit ^ ("1"))(NOT 1 Postg); 
 SELECT SgPart (NOT 0 Ncard) (-1 APart OR NudTud)(-2 Ncard + Digit) (NOT -2 ("1"));  
 
 
-SELECT Part  (NOT -1 ("üks"))(-1 Ncard + Part) (NOT 0 Gen);
+SELECT Part  (NOT -1 Yks)(-1 Ncard + Part) (NOT 0 Gen);
 SELECT Part  (-1 Ncard + Part) (0 Gen) (NOT 1 Part OR Post OR Kaugus);
 
 SELECT Gen (-1 Ncard + Gen);
-SELECT Ill (-1 Ncard + Ill)(NOT -1 ("üks"));
-SELECT Adit (-1 Ncard + Ill)(NOT -1 ("üks"));
+SELECT Ill (-1 Ncard + Ill)(NOT -1 Yks);
+SELECT Adit (-1 Ncard + Ill)(NOT -1 Yks);
 SELECT Ill (-1C Ncard + Ill);     
 SELECT Adit (-1C Ncard + Ill);
 REMOVE SAdit (-1C N)(-1 Nom OR Gen OR Part);
@@ -2908,7 +2994,7 @@ SELECT SPart (NOT 0 A OR SgGen)(-1 A)(-2C D)(-3 Ncard + SgNom OR Ncard + Part ^ 
 SELECT SPart (NOT 1 SPAN)(-1 A)(-2C D)(-3 Ncard + SgNom OR Ncard + Part ^ Yks); 
 SELECT A (1C SPSgPart)(-1C D)(-2 Ncard + SgNom OR Ncard + Part ^ Yks); 
 
-SELECT Gen (0 Ajamäärus)(1 Arv OR ("üks") OR Teine); 
+SELECT Gen (0 Ajamäärus)(1 Arv OR Yks OR Teine); 
 
 SELECT ("tee") + SgNom (-1 SGen)(1 Arv)(3 Kvm); 
 
@@ -2983,8 +3069,8 @@ REMOVE K (NOT 0 Pre OR Post)(1 CLB OR LLZ);
 REMOVE ("poole") + K  (-1 Teine + Gen );
 REMOVE K (NOT 0 ("ees"))(-1 ("<kõige>"));
 SELECT K (-1 SPGen) (NOT 0 Pre OR Post)(NOT 1 K); 
-SELECT ("kandis" post) (-1 S + Gen)(*-1C FinV BARRIER CLBC); 
-IFF ("kandis" post) (-1 S + Gen)(*1C FinV BARRIER CLB); 
+SELECT ("kandis") + Post (-1 S + Gen)(*-1C FinV BARRIER CLBC); 
+IFF ("kandis") + Post (-1 S + Gen)(*1C FinV BARRIER CLB); 
 SELECT Postg (-1 SPGen) (NOT 0 Prep OR ("läbi") OR ("enne") OR S + Gen);
 SELECT Postg (-1 SPGen) (NOT 0 Prep OR ("läbi") OR ("enne") OR ("võidu") OR ("seltsi") OR ("kaela") )(NOT 1 Postg);
 SELECT Postg (-1 SPGen) (NOT 1 Part)(NOT 0 ("läbi") OR S + Gen); 
@@ -3117,8 +3203,8 @@ REMOVE Quot + Neg (NOT *-1 EiEga BARRIER CLB);
 REMOVE Cond + Neg (NOT *-1 EiEga BARRIER CLB);
 REMOVE Neg (NOT 0 EiEga)(NOT *-1 EiEga BARRIER CLBC);           
 SELECT ("ega") + D (*1C Neg BARRIER CLBC);           
-REMOVE ("täna") + V (*1 FinV BARRIER CLBC);
-REMOVE ("täna") + V (*-1 FinV BARRIER CLBC);
+REMOVE ("täna") + V OR ("tänama") (*1 FinV BARRIER CLBC);
+REMOVE ("täna") + V OR ("tänama") (*-1 FinV BARRIER CLBC);
 SELECT DaInf (-1 ("ega"))(-2 DaInf) ; 
 SELECT DaInf (*-1 ("ega") BARRIER CLB OR Ei LINK -1 $$Case LINK 2 $$Case) ; 
 IFF IndicNeg (*-1 EiEga BARRIER V OR CLBC OR FinV); 
@@ -3153,15 +3239,15 @@ SELECT Ole + Aux (NOT 0 Ger)(*1C particV BARRIER CLB LINK NOT 1 J LINK NOT *-1 S
 SELECT Ole + Indic - Aux (-1 SNom OR P + Nom)(1C SNom OR P + Nom)(NOT *1 partic BARRIER CLBC)(NOT *-1 partic BARRIER CLBC) 
 SELECT Ole + Indic - Aux (-1 SNom OR P + Nom)(1 Nom)(2 SNom OR P + Nom)(NOT *1 partic BARRIER CLBC)(NOT *-1 partic BARRIER CLBC) 
 
-SELECT OnPl (-1C SPSgNom)(-2 Konj ^ CLBC ^ ("ehk") ^ ("aga"))(-3 SPAN + Nom);
-SELECT OnPl (-1C SPSgNom)(-2 ("ka") OR SP + Gen OR ANom)(-3 Konj ^ CLBC ^ ("ehk") ^ ("aga"))(-4 SPAN + Nom); 
-SELECT OnPl (-1C SPSgNom)(-2 SP + Gen OR ANom)(-3 Konj ^ CLB OR ("ehk") OR ("aga"))(-4 SPAN + Nom);
+SELECT OnPl (-1C SPSgNom)(-2 Konj ^ CLBC ^ ("ehk") ^ Aga)(-3 SPAN + Nom);
+SELECT OnPl (-1C SPSgNom)(-2 Ka OR SP + Gen OR ANom)(-3 Konj ^ CLBC ^ ("ehk") ^ Aga)(-4 SPAN + Nom); 
+SELECT OnPl (-1C SPSgNom)(-2 SP + Gen OR ANom)(-3 Konj ^ CLB OR ("ehk") OR Aga)(-4 SPAN + Nom);
 SELECT OnSg (-1C SPSgNom);
 SELECT OnSg (*1 DaInf BARRIER CLBC OR Kvm OR J OR particV); 
 SELECT OnPl (-1C SP + PlNom);
-SELECT OnPl (1C SPSgNom)(2 Konj ^ CLBC ^ ("ehk") ^ ("või") ^ ("aga"))(3 SPAN + Nom)(4 J ^ ("aga"))(5 S + Nom);
-SELECT OnPl (1C SPSgNom)(2 Konj ^ CLBC ^ ("ehk") ^ ("või") ^ ("aga"))(3 SPAN + Nom)(NOT 4 J);
-SELECT OnPl (1 A OR Oma ^ CLBC OR ("ehk") OR ("või") OR ("aga"))(2C SPSgNom)(3 Konj ^ CLBC ^ ("ehk") ^ ("või") ^ ("aga"))(4 SPAN + Nom);
+SELECT OnPl (1C SPSgNom)(2 Konj ^ CLBC ^ ("ehk") ^ ("või") ^ Aga)(3 SPAN + Nom)(4 J ^ Aga)(5 S + Nom);
+SELECT OnPl (1C SPSgNom)(2 Konj ^ CLBC ^ ("ehk") ^ ("või") ^ Aga)(3 SPAN + Nom)(NOT 4 J);
+SELECT OnPl (1 A OR Oma ^ CLBC OR ("ehk") OR ("või") OR Aga)(2C SPSgNom)(3 Konj ^ CLBC ^ ("ehk") ^ ("või") ^ Aga)(4 SPAN + Nom);
 SELECT OnSg (1C SPSgNom);
 SELECT OnPl (*-1C SP + PlNom ^ Ajamäärus BARRIER CLB OR Kvm LINK NOT 1 Postn);
 SELECT OnSg (*-1C SPSgNom ^ Ajamäärus ^ Poordumine BARRIER CLB OR Kvm LINK NOT 1 Postn);
@@ -3174,8 +3260,8 @@ SELECT OnSg (-1 KesMis)(-1C SgNom)(NOT -1 Ad);
 SELECT OnSg (1C SPPart)(NOT *-1 PlNom BARRIER CLB)(NOT *1 PlNom BARRIER CLB)(*-1 Ad BARRIER CLB);
 SELECT OnSg (-1C SPSgNom) (NOT -2 Jcrd);
 SELECT OnSg (-1 SPSgNom)(NOT -1 SP + PlNom)(-2 CLB); 
-SELECT OnPl (*1 Konj ^ CLBC ^ ("ehk") ^ ("või") ^ ("aga") BARRIER Nom OR CLB LINK -1C SNom OR P + Nom LINK 2C SNom OR P + Nom);        
-SELECT OnPl (*-1 Konj ^ CLBC ^ ("ehk") ^ ("või") ^ ("aga") BARRIER Nom OR CLB LINK 1C SNom OR P + Nom LINK -2C SNom OR P + Nom)
+SELECT OnPl (*1 Konj ^ CLBC ^ ("ehk") ^ ("või") ^ Aga BARRIER Nom OR CLB LINK -1C SNom OR P + Nom LINK 2C SNom OR P + Nom);        
+SELECT OnPl (*-1 Konj ^ CLBC ^ ("ehk") ^ ("või") ^ Aga BARRIER Nom OR CLB LINK 1C SNom OR P + Nom LINK -2C SNom OR P + Nom)
                    (NOT *-1 ("iga") BARRIER CLB);        
 SELECT OnSg (*0 ("vaja") OR ("tarvis") BARRIER CLB); 
 
@@ -3235,7 +3321,7 @@ SELECT Mod (0 DaVerb) (NOT 0 J) (*1 DaInf BARRIER CLBC OR (<Inf>) OR Cpr)
                  (NOT *-1C FinV BARRIER CLBC)(NOT *1C FinV BARRIER CLBC) ; 
 REMOVE Mod (0 DaVerb) (*0C Mod BARRIER DaInf);
 
-SELECT Mod (0 DaVerb) (NOT 0 J) (*-1 DaInf BARRIER CLBC OR (<Inf>) LINK NOT 0 ("taht"))  
+SELECT Mod (0 DaVerb) (NOT 0 J) (*-1 DaInf BARRIER CLBC OR (<Inf>) LINK NOT 0 Soovima)  
                  (NOT *-1C FinV BARRIER CLBC)(NOT *1C FinV BARRIER CLBC) ; 
 SELECT Mod (0 MaVerb) (*1 MaInf BARRIER CLBC) 
                  (NOT *-1C FinV BARRIER CLBC)(NOT *1C FinV BARRIER CLBC) ;
@@ -3243,14 +3329,14 @@ SELECT Mod (0 MaVerb) (*-1 MaInf BARRIER CLBC)
                  (NOT *-1C FinV BARRIER CLBC)(NOT *1C FinV BARRIER CLBC) ;
 SELECT Mod (0 VatVerb) (*1C QuotPresPs BARRIER CLBC) 
                  (NOT *-1C FinV BARRIER CLBC)(NOT *1C FinV BARRIER CLBC) ;
-SELECT Mod (0 VatVerb) (NOT 0 ("näge")) (*1 QuotPresPs BARRIER CLBC OR Prep) 
+SELECT Mod (0 VatVerb) (NOT 0 Nägema) (*1 QuotPresPs BARRIER CLBC OR Prep) 
                  (NOT *-1C FinV BARRIER CLBC)(NOT *1C FinV BARRIER CLBC) ;
 SELECT Mod (0 VatVerb) (*-1C QuotPresPs)(NOT *-1C FinV BARRIER CLBC)(NOT *1C FinV BARRIER CLBC);
 
 SELECT DaInf (-1 MasInf); 
 SELECT DaInf (1 MasInf); 
-SELECT DaInf (*1 DaVerb OR (<InfP>) OR ("või") + Mod); 
-SELECT DaInf (*-1 DaVerb OR (<InfP>) OR ("või") + Mod); 
+SELECT DaInf (*1 DaVerb OR (<InfP>) OR Võima); 
+SELECT DaInf (*-1 DaVerb OR (<InfP>) OR Võima); 
 
 
 REMOVE:VS IndicImpfSg3 (0 S)(-1 Gen OR A)(*1C IndicPresPs)
@@ -3278,13 +3364,13 @@ REMOVE Sg2Verb + Imper (*-1 Et BARRIER DaInf OR CLBC)(NOT *1 FinV BARRIER CLBC)(
 
 SELECT S + SgTr (-1 A)(-1C Tr); 
 
-REMOVE:intr ("kõrgu") + FinV OR ("erine") + FinV OR ("sisaldu") + FinV (0 Intr)(NOT 0 VPs2 OR VPs1)(NOT *-1 Nom Or Part OR El) (NOT *1 Nom Or Part OR El BARRIER CLB)(NOT *1 Et)(NOT -1 Jutum1>>>);
+REMOVE:intr CoSVerb + FinV (NOT 0 VPs2 OR VPs1)(NOT *-1 Nom Or Part OR El) (NOT *1 Nom Or Part OR El BARRIER CLB)(NOT *1 Et)(NOT -1 Jutum1>>>);
 
 SELECT S + PlNom (NOT 0 NudTud OR P)(1 Pl3Verb - Neg); 
 REMOVE V (NOT 0 NudTud)(0 S + PlNom) (1 Pl3Verb - Neg); 
 
-REMOVE:finv FinV (NOT 0 Imper OR Quot OR D)(*-1C FinV BARRIER CLBC - _ENCL_) ;
-REMOVE:finv FinV (NOT 0 Imper OR Quot OR D)(*-1 CLC BARRIER FinV LINK *-1 CLO BARRIER FinV LINK *-1C FinV BARRIER CLBC - _ENCL_) ;
+REMOVE:finv FinV (NOT 0 Imper OR Quot OR D)(*-1C FinV BARRIER CLBC) ;
+REMOVE:finv FinV (NOT 0 Imper OR Quot OR D)(*-1 CLC BARRIER FinV LINK *-1 CLO BARRIER FinV LINK *-1C FinV BARRIER CLBC) ;
 SELECT:finv FinV (NOT 0 Imper OR Quot OR D)(NOT *-1 V ^ Ger BARRIER CLB) (NOT *1 V ^ Ger BARRIER CLB)(-1 POS)(*1 LLZ);
 SELECT:finv FinV (NOT 0 Imper OR Quot OR D)(NOT *-1 V ^ Ger BARRIER CLB) (NOT *1 V ^ Ger BARRIER CLB)(-1 POS)(NOT -2 D)(*1 LLZ);
 SELECT:finv FinV (NOT 0 Imper OR Quot OR D)(NOT *-1 V ^ Ger BARRIER CLB) (NOT *1 V ^ Ger BARRIER CLB)(1 POS - Kvm)(*1 LLZ);
@@ -3300,7 +3386,7 @@ SELECT VPs3 (NOT 0 SP OR D)(-1C Pps3 + Nom);
 
 
 REMOVE S (0 particV) (1 S); 
-REMOVE particV (*0 ("ole" sup in) BARRIER CLBC) ; 
+REMOVE particV (*0 Ole + MasInf BARRIER CLBC) ; 
 REMOVE particV (1 SPAN)(*1 particV BARRIER CLBC LINK 1 Kvm OR J) ; 
 
 SELECT particV (*-1 OleSaa BARRIER particV OR CLB)(-1 Perfekt); 
@@ -3402,7 +3488,7 @@ REMOVE V + partic - Mod - Aux (NOT *-1 OleSaa BARRIER CLBC)(*1C FinV ^ OleSaa BA
 SELECT:toonud particV (-1 KustKuhu)(1C S + Nom)(-2 FinV + OlemSaa) ;
 SELECT:tuntud A + partic (1C S + Nom)(-2 FinV + OlemSaa) ;
 SELECT particV (NOT 0 VäsiVerb)(1 FinV + OleSaa);
-REMOVE particV (NOT 0 ("mine"))(*-1 Vaja BARRIER CLB)(*-1 FinV + Ole BARRIER CLB) ;
+REMOVE particV (NOT 0 Minema)(*-1 Vaja BARRIER CLB)(*-1 FinV + Ole BARRIER CLB) ;
 SELECT particV (-1 Koma)(*-2C particV  BARRIER CLBC);
 REMOVE:new particV (NOT *0 Ole)(*-1 FinV BARRIER CLB);
 REMOVE:new particV (NOT *0 Ole)(*1C FinV BARRIER CLBC);
@@ -3415,7 +3501,7 @@ REMOVE V + partic - Mod - Aux (*-1C V + partic - Mod - Aux BARRIER CLBC LINK *-1
 REMOVE:new particV (*1C particV BARRIER CLBC OR J OR Koma);
 REMOVE:new particV (*-1C particV BARRIER CLBC OR J OR Koma); 
 REMOVE:new particV (NOT 1 Kvm)(*1C ScomSgNom BARRIER CLBC LINK NOT 1 V)(*-1 OleSaa BARRIER CLBC OR Nom LINK -1C Nom); 
-REMOVE:new particV (*-1 ("üks") BARRIER CLBC OR FinV)(*1 El BARRIER CLBC OR FinV); 
+REMOVE:new particV (*-1 Yks BARRIER CLBC OR FinV)(*1 El BARRIER CLBC OR FinV); 
 REMOVE:new particV (-1 Ajamäärus OR D OR A)(1C SPSgNom)(NOT 1 Cap);
 
 REMOVE:new particV (-1C Gen OR A)(1 S);
@@ -3465,9 +3551,9 @@ SELECT:eelistaverbi particV (NOT 0 VäsiVerb OR Cap)(1 Kvm OR J OR SPAND)(NOT 1 
 			(*1 OleSaa BARRIER particV OR CLBC OR OlemSaa OR Kvm) 
 			(NOT *1 particV OR SPNom ^ Cap ^ Ajamäärus BARRIER CLBC OR Konj)(NOT *-1C FinV OR OleSaa BARRIER CLB)
 			(*-1C SP + Nom OR SP + Part LINK NOT 1 V ^ OlemSaa);
-SELECT:eelistaverbi Aux OR ("saa") - Mod (0 FinV ^ partic)(*1C particV BARRIER CLBC OR OlemSaa) 
+SELECT:eelistaverbi Aux OR Saama - Mod (0 FinV ^ partic)(*1C particV BARRIER CLBC OR OlemSaa) 
 		(*0C SP + Nom OR SP + Part BARRIER CLB);
-SELECT:eelistaverbi Aux OR ("saa") - Mod (0 FinV ^ partic)(*-1C particV BARRIER CLBC OR FinV OR OlemSaa) 
+SELECT:eelistaverbi Aux OR Saama - Mod (0 FinV ^ partic)(*-1C particV BARRIER CLBC OR FinV OR OlemSaa) 
 		(*0C SP + Nom OR SP + Part BARRIER CLB) (*1 CLB OR LLZ LINK NOT -1 SPAN + Nom);
 SELECT:eelistaverbi2 particV (-1 >>>)(*1 Koma BARRIER Kvm LINK 1 FinV); 	
 SELECT:eelistaverbi2 VPs3 (-2 >>>)(-1 Cap)(NOT -1 V)(NOT 0 Imper)(1 Adit)(0 AditVerb)
@@ -3570,13 +3656,13 @@ SELECT Quot (1 Pärisnimi)(NOT 2 Part)(NOT *1 FinV BARRIER CLBC)(NOT *-1 FinV OR
 
 SELECT ("kogemata") + D (NOT -1 Part);
 REMOVE MastInf (0 A + SgPart)(1C SPSgPart);
-SELECT ("tege") + MataInf (-1C FinV)(1C NGP); 
+SELECT Tegema + MataInf (-1C FinV)(1C NGP); 
 SELECT MataInf (-1 >>> OR CLBC)(1 Kvm); 
 SELECT MataInf (-1 >>> OR CLBC)(NOT 1 S + Nom)(2 Kvm); 
 SELECT MataInf (-2 >>> OR CLBC)(1 Kvm); 
 SELECT MataInf (-1 FinV OR D)(NOT 1 S OR A); 
 SELECT MataInf (1 FinV)(2 Kvm OR <<< OR CLBC); 
-SELECT MataInf (*0 ("jää") + V OR ("jätka") + V); 
+SELECT MataInf (*0 JäämaJätkama + V); 
 REMOVE MataInf (-1 Jutum1>>> OR J OR CLB OR A); 
 REMOVE MataInf (*0 Tr BARRIER CLB); 
 REMOVE MataInf (1C S); 
@@ -3705,14 +3791,14 @@ REMOVE A + In (NOT *1 InAdAll) (NOT *-1 InAdAll);
 REMOVE A + Ad (NOT *1 InAdAll) (NOT *-1 InAdAll); 
 REMOVE A + All (NOT *1 InAdAll) (NOT *-1 InAdAll); 
 
-SELECT S + SgPart (-1 ("kui") OR ("nagu")) (-2 Prop + Gen); 
-SELECT S + SgGen (-1 ("kui") OR ("nagu")) (-2 S + Gen); 
+SELECT S + SgPart (-1 Kui OR ("nagu")) (-2 Prop + Gen); 
+SELECT S + SgGen (-1 Kui OR ("nagu")) (-2 S + Gen); 
 
 SELECT SgPart (NOT 0 P)(-1 DemPron) (-1C SgPart);
 SELECT PlPart (NOT 0 P)(-1 DemPron) (-1C PlPart);	
-SELECT SgNom (NOT 0 P OR V OR Gen)(NOT -1 ("üks"))(-1 DemPron) (-1C SgNom);
-SELECT SgNom (NOT 0 P OR V)(NOT *1C Nom BARRIER CLBC OR Kvm)(NOT -1 ("üks"))(-1 DemPron) (-1C SgNom);
-SELECT PlNom (NOT 0 P)(NOT -1 ("üks"))(-1 DemPron) (-1C PlNom);
+SELECT SgNom (NOT 0 P OR V OR Gen)(NOT -1 Yks)(-1 DemPron) (-1C SgNom);
+SELECT SgNom (NOT 0 P OR V)(NOT *1C Nom BARRIER CLBC OR Kvm)(NOT -1 Yks)(-1 DemPron) (-1C SgNom);
+SELECT PlNom (NOT 0 P)(NOT -1 Yks)(-1 DemPron) (-1C PlNom);
 
 SELECT SGen + Kriips (1 J)(2 S);
 SELECT AGen + Kriips (1 J)(2 A);
@@ -3755,10 +3841,10 @@ SELECT PlPart (0 SPPart)(NOT 0 NotS) (1 Konj ^ CLBC)(2C NimiAse + PlPart) ;
 
 SELECT Adit (0 NimiAse)(NOT 0 NotS)(1 Konj ^ CLBC)(2C NimiAse + Ill) ;
 
-SELECT Nom (0 SPNom)(NOT 0 NotS) (1 ("kui"))(2 ("ka")) (3C SPAN + Nom);  
-SELECT Gen (0 NimiAse)(NOT 0 NotS) (1 ("kui"))(2 ("ka")) (3C SPAN + Gen); 
-SELECT Part (0 SPPart)(NOT 0 NotS) (1 ("kui"))(2 ("ka")) (3C SPAN + Part);
-SELECT Adit (0 NimiAse)(NOT 0 NotS) (1 ("kui"))(2 ("ka")) (3C SPAN + Ill);  
+SELECT Nom (0 SPNom)(NOT 0 NotS) (1 Kui)(2 Ka) (3C SPAN + Nom);  
+SELECT Gen (0 NimiAse)(NOT 0 NotS) (1 Kui)(2 Ka) (3C SPAN + Gen); 
+SELECT Part (0 SPPart)(NOT 0 NotS) (1 Kui)(2 Ka) (3C SPAN + Part);
+SELECT Adit (0 NimiAse)(NOT 0 NotS) (1 Kui)(2 Ka) (3C SPAN + Ill);  
 
 SELECT Nom  (0 SPNom)(NOT 0 NotS) (-1 Konj ^ CLBC)(-2C NimiAse + Nom) (NOT 0 Gen);
 SELECT Nom  (0 SPNom)(NOT 0 NotS) (-1 Konj ^ CLBC)(-2C NimiAse + Nom) (NOT 1 Nom);
@@ -3770,14 +3856,14 @@ SELECT Part (0 SPPart)(NOT 0 NotS) (-1 Konj ^ CLBC) (-2C NimiAse + Part) (NOT 1 
 SELECT SGen (NOT 0 NotS) (-1 Konj ^ CLBC) (-2C NimiAse + Ill)(1C NimiAse + Ill);
 SELECT Adit (0 NimiAse)(NOT 0 NotS) (-1 Konj ^ CLBC) (-2C NimiAse + Ill) ;
 
-SELECT Nom (0 NimiAse)(NOT 0 NotS) (-2 ("kui"))(-1 ("ka")) (-3C NimiAse + Nom);
-SELECT Gen (0 NimiAse)(NOT 0 NotS) (-2 ("kui"))(-1 ("ka")) (-3C NimiAse + Gen); 
-SELECT Part (0 NimiAse)(NOT 0 NotS) (-2 ("kui"))(-1 ("ka")) (-3C NimiAse + Part)(NOT 1 NudTud); 
-SELECT Adit (0 NimiAse)(NOT 0 NotS) (-2 ("kui"))(-1 ("ka")) (-3C NimiAse + Ill);
+SELECT Nom (0 NimiAse)(NOT 0 NotS) (-2 Kui)(-1 Ka) (-3C NimiAse + Nom);
+SELECT Gen (0 NimiAse)(NOT 0 NotS) (-2 Kui)(-1 Ka) (-3C NimiAse + Gen); 
+SELECT Part (0 NimiAse)(NOT 0 NotS) (-2 Kui)(-1 Ka) (-3C NimiAse + Part)(NOT 1 NudTud); 
+SELECT Adit (0 NimiAse)(NOT 0 NotS) (-2 Kui)(-1 Ka) (-3C NimiAse + Ill);
 
 SELECT S + SgNom (-1 Konj)(-2C SPNSgNom)(NOT *1 S BARRIER CLB);
-SELECT S + SgGen (-1 ("nii"))(1 ("kui"))(2 Gen);
-SELECT S + SgGen (-1 ("nii"))(1 ("kui"))(2 NiNaTaGa);
+SELECT S + SgGen (-1 ("nii"))(1 Kui)(2 Gen);
+SELECT S + SgGen (-1 ("nii"))(1 Kui)(2 NiNaTaGa);
 
 SELECT S + SgKom (-1 Konj)(-2C SPSgGen) ;
 
@@ -3798,7 +3884,7 @@ SELECT:sela ANom (NOT 0 NudTud OR POS-AS)
 SELECT SNom (0 A OR Gen)(NOT 0 V)(1 ("<ise>"));
 
 REMOVE ANom (0 S)(NOT 0 V)(*-1 Aux BARRIER CLBC OR Kvm)(1 NudTud)(NOT 2 SPAN); 
-REMOVE ANom (0 S)(NOT 0 V)(1 LLZ)(-1 Gen)(*-1 Ole ^ Aux BARRIER CLBC); 
+REMOVE ANom (0 S)(NOT 0 V)(1 LLZ)(-1 Gen)(*-1 Ole - Aux BARRIER CLBC); 
 
 SELECT A (0 ("(.*)ja"r))(NOT 0 V OR NudTud)(-1 Konj)(-2C ANom OR AGen)(NOT 1 Nom OR Gen); 
 SELECT SGen (0 ("(.*)ja"r) OR ("(.*)ik"r))(NOT 0 V OR NudTud)(*-1 Ole BARRIER CLBC OR Kvm)(1C Nom); 
@@ -3976,7 +4062,7 @@ REMOVE A + Tr  (-1C A ^ NudTud ^ MataA)(NOT -1 Tr)(NOT 1 V);
 REMOVE A + NiNaTaGa (-1C A ^ NudTud ^ MataA)(NOT -1 Gen);
 
 REMOVE S + SgNom (-1C A ^ V ^ NudTud ^ MataA)(NOT -1 SgNom);
-REMOVE SPart (-1C A ^ NudTud ^ MataA)(NOT -1 Part OR PlGen OR Hulk)(NOT -2 ("ole") + VPs3);
+REMOVE SPart (-1C A ^ NudTud ^ MataA)(NOT -1 Part OR PlGen OR Hulk)(NOT -2 Ole + VPs3);
 REMOVE S + SgAdit (-1C A ^ NudTud ^ MataA)(NOT -1 SgAdit);
 REMOVE SNom (-1C A ^ NudTud ^ MataA)(NOT -1 Nom);
 REMOVE SPart (-1C A ^ NudTud ^ MataA)(NOT -1 Part OR Hulk);
@@ -4245,7 +4331,7 @@ REMOVE Pps3 + SgNom (*-1 Ole BARRIER CLB)(*1C particV + Ps ^ Ole BARRIER CLB)
 
 SELECT Pps3 + SgNom (-1 Ole)(1C particV + Ps); 
 
-SELECT Pps3 + SgNom (*-1 CLB LINK 1 ("kui"))(*1 Sg3Verb  BARRIER CLB LINK NOT *-1 V BARRIER CLB)
+SELECT Pps3 + SgNom (*-1 CLB LINK 1 Kui)(*1 Sg3Verb  BARRIER CLB LINK NOT *-1 V BARRIER CLB)
                              (NOT *-1 SPNSgNom BARRIER CLB)(NOT *1 SPNSgNom BARRIER CLB);
 
 REMOVE S + SgNom (NOT -1 V OR CLBC)(NOT 0 Ajamäärus)(NOT *0 Perfekt BARRIER CLBC)
@@ -4387,9 +4473,9 @@ SELECT FinV (NOT 0 J OR D)(NOT *1 V BARRIER CLB)(NOT *-1 V BARRIER CLB)(1 POS ^ 
 SELECT FinV (NOT 0 J OR D)(NOT *1 V BARRIER CLB)(NOT *-1 V BARRIER CLB)(1 POS ^ CLB)(NOT -2 D)
                   (NOT *-1 Jutum1 BARRIER CLB)(NOT *1 Jutum2 BARRIER CLB)(*1 LLZ);
 
-SELECT S + In (NOT 0 Ger)(1 CLB OR LLZ) (*-1 ElaAsu BARRIER CLBC OR Kvm);
-SELECT S + Ad (1 CLB OR LLZ) (*-1 ElaAsu BARRIER CLBC OR Kvm);
-SELECT S + All (1 CLB OR LLZ) (*-1 ElaAsu BARRIER CLBC OR Kvm);   
+SELECT S + In (NOT 0 Ger)(1 CLB OR LLZ) (*-1 ElamaAsuma BARRIER CLBC OR Kvm);
+SELECT S + Ad (1 CLB OR LLZ) (*-1 ElamaAsuma BARRIER CLBC OR Kvm);
+SELECT S + All (1 CLB OR LLZ) (*-1 ElamaAsuma BARRIER CLBC OR Kvm);   
 
 REMOVE SgNom (0 S)(NOT 0 NotSP) (-1 VPs1 ^ Ole); 
 REMOVE SgNom (0 S)(NOT 0 NotSP) (*-1C Sg2Verb  BARRIER CLB LINK NOT 0 Quot OR Imper)
@@ -4512,7 +4598,7 @@ SELECT A (NOT 0 Abl)(NOT 1 A OR V)(NOT 0 K OR S)(NOT 0 V)(NOT 0 SPGen)(NOT 0 InI
 	(-1 D)(NOT 1 Konj&Kvm);		
 
 REMOVE A (1 ("kõik"))(NOT *2 S BARRIER CLB);
-SELECT ANom (-1 ("tule"))(1 ("ette"));
+SELECT ANom (-1 Tulema)(1 ("ette"));
 REMOVE A + Sg (NOT 0 Part)(1 Ncard) (2 SPSgPart);
 
 REMOVE ANom  (NOT 0 NudTud) (NOT *1 SPNom BARRIER CLB)(*-1 FinV ^ partic BARRIER CLB) 
@@ -4585,13 +4671,13 @@ REMOVE Gen (0 SubPron) (NOT 1 Nominal) (NOT *1 Nom BARRIER CLBC) (NOT *-1 Nom BA
              (NOT *1 Imps BARRIER CLBC) (NOT *-1 Imps BARRIER CLBC); 
 
 SELECT SgNom (NOT 0 NotNominal OR NudTud)(NOT 1 Nominal)(NOT 0 InAdAll)(NOT *-1 FinV BARRIER CLBC)
-             (*1 Ole ^ Aux ^ Neg BARRIER CLBC LINK *1C SPSgNom BARRIER Kvm OR CLBC);
+             (*1 Ole - Aux - Neg BARRIER CLBC LINK *1C SPSgNom BARRIER Kvm OR CLBC);
 SELECT PlNom (NOT 0 NotNominal OR NudTud)(NOT 1 Nominal)(NOT 0 InAdAll)(NOT *-1 FinV BARRIER CLBC)
-             (*1 Ole ^ Aux ^ Neg BARRIER CLBC LINK *1C SP + PlNom BARRIER Kvm OR CLBC);
+             (*1 Ole - Aux - Neg BARRIER CLBC LINK *1C SP + PlNom BARRIER Kvm OR CLBC);
 SELECT SgNom (NOT 0 NotNominal OR NudTud)(NOT 1 Nominal)(NOT -1 DaInf)(NOT -1 MaInf)
-             (*-1C Ole ^ Aux ^ Neg BARRIER CLBC LINK *-1C SPSgNom BARRIER Kvm OR CLBC)(NOT *1 Nom BARRIER CLBC); 
+             (*-1C Ole - Aux - Neg BARRIER CLBC LINK *-1C SPSgNom BARRIER Kvm OR CLBC)(NOT *1 Nom BARRIER CLBC); 
 SELECT PlNom (NOT 0 NotNominal OR NudTud)(NOT 1 Nominal)(NOT -1 DaInf)(NOT -1 MaInf)
-             (*-1C Ole ^ Aux ^ Neg BARRIER CLBC LINK *-1C SP + PlNom BARRIER Kvm OR CLBC)(NOT *1 Nom BARRIER CLBC); 
+             (*-1C Ole - Aux - Neg BARRIER CLBC LINK *-1C SP + PlNom BARRIER Kvm OR CLBC)(NOT *1 Nom BARRIER CLBC); 
 
 SELECT SgNom (0 S) (NOT 0 NotS) (-1 Ole ^ (ps1) ^ VPs2) (NOT 1 Nominal) 
                 (NOT *-1 Nom BARRIER CLBC) (NOT *1 Nom BARRIER CLBC)
@@ -4690,22 +4776,22 @@ SELECT SgGen (0 Omad&Ases) (NOT 0 NotAP)(1 Konj) (2 partic)
 SELECT SgPart (0 Omad&Ases) (NOT 0 NotAP)(1 Konj) (2 partic) 
                  (3C S + SgPart);
 
-SELECT SgNom (0 Omad&Ases ^ NudTud) (NOT 0 NotAP) (1 ("kui"))(2 ("ka")) 
+SELECT SgNom (0 Omad&Ases ^ NudTud) (NOT 0 NotAP) (1 Kui)(2 Ka) 
                 (3C Omad&Ases + SgNom) ;
-SELECT SgGen (0 Omad&Ases) (NOT 0 NotAP) (1 ("kui"))(2 ("ka")) 
+SELECT SgGen (0 Omad&Ases) (NOT 0 NotAP) (1 Kui)(2 Ka) 
                 (3C Omad&Ases + SgGen) ; 
-SELECT SgPart (0 Omad&Ases) (NOT 0 NotAP) (1 ("kui"))(2 ("ka")) 
+SELECT SgPart (0 Omad&Ases) (NOT 0 NotAP) (1 Kui)(2 Ka) 
                  (3C Omad&Ases + SgPart) ; 
 
 SELECT SgNom (0 Omad&Ases ^ NudTud) (NOT 0 NotAP) 
-                (1 ("kui"))(2 ("ka")) (3 partic) 
-                (4C S + SgNom);
+                (1 Kui)(2 Ka) (3 partic) 
+                (4C SSgNom);
 SELECT SgGen (0 Omad&Ases) (NOT 0 NotAP) 
-                (1 ("kui))(2 ("ka")) (3 partic) 
-                (4C S + SgGen); 
+                (1 Kui)(2 Ka) (3 partic) 
+                (4C SSgGen); 
 SELECT SgPart (0 Omad&Ases) (NOT 0 NotAP)
-                 (1 ("kui"))(2 ("ka")) (3 partic) 
-                 (4C S + SgPart) ;
+                 (1 Kui)(2 Ka) (3 partic) 
+                 (4C SSgPart) ;
 SELECT PlNom (0 Omad&Ases ^ NudTud) (NOT 0 NotAP) 
                 (1 Konj) (2 Omad&Ases + PlNom) ;
 SELECT PlGen (0 Omad&Ases) (NOT 0 NotAP)  
@@ -4729,21 +4815,21 @@ SELECT PlPart (0 Omad&Ases) (NOT 0 NotAP)
                  (1 Konj) (2 partic) 
                  (3C S + PlPart) ;
 
-SELECT PlNom (0 Omad&Ases ^ NudTud) (NOT 0 NotAP) (1 ("kui"))(2 ("ka")) 
+SELECT PlNom (0 Omad&Ases ^ NudTud) (NOT 0 NotAP) (1 Kui)(2 Ka) 
                 (3C Omad&Ases + PlNom) ;
-SELECT PlGen (0 Omad&Ases) (NOT 0 NotAP) (1 ("kui"))(2 ("ka")) 
+SELECT PlGen (0 Omad&Ases) (NOT 0 NotAP) (1 Kui)(2 Ka) 
                 (3C Omad&Ases + PlGen) ;
-SELECT PlPart (0 Omad&Ases) (NOT 0 NotAP) (1 ("kui"))(2 ("ka")) 
+SELECT PlPart (0 Omad&Ases) (NOT 0 NotAP) (1 Kui)(2 Ka) 
                  (3C Omad&Ases + PlPart) ;
 
 SELECT PlNom (0 Omad&Ases ^ NudTud) (NOT 0 NotAP)   
-                (1 ("kui"))(2 ("ka")) (3 partic) 
+                (1 Kui)(2 Ka) (3 partic) 
                 (4C S + PlNom) ;
 SELECT PlGen (0 Omad&Ases) (NOT 0 NotAP) 
-                (1 ("kui"))(2 ("ka")) (3 partic) 
+                (1 Kui)(2 Ka) (3 partic) 
                 (4C S + PlGen) ;
 SELECT PlPart (0 Omad&Ases) (NOT 0 NotAP) 
-                 (1 ("kui"))(2 ("ka")) (3 partic) 
+                 (1 Kui)(2 Ka) (3 partic) 
                  (4C S + PlPart) ;
 
 
@@ -4822,9 +4908,9 @@ SELECT A + PlPart (0 S) (NOT 0 NotAS OR NudTud) (NOT 1 Pärisnimi)
 
 SELECT:ASadit SAdit (-1C A + Adit) ; 
 
-REMOVE A (0 S + Nom)(NOT 0 NotAS OR Es)(NOT -1 Mis + Nom  OR ("kui"))(NOT *1 S OR A BARRIER CLB) (NOT 0 Tr) 
+REMOVE A (0 S + Nom)(NOT 0 NotAS OR Es)(NOT -1 Mis + Nom  OR Kui)(NOT *1 S OR A BARRIER CLB) (NOT 0 Tr) 
               (NOT 0 partic) (*-1 V BARRIER CLB)(NOT *-1 PrVerb - Mod - Aux BARRIER CLB);
-REMOVE A (0 S)(NOT 0 NotAS OR Nom OR Es)(NOT -1 Mis + Nom  OR ("kui"))(NOT *1 S OR A BARRIER CLB) (NOT 0 Tr) 
+REMOVE A (0 S)(NOT 0 NotAS OR Nom OR Es)(NOT -1 Mis + Nom  OR Kui)(NOT *1 S OR A BARRIER CLB) (NOT 0 Tr) 
               (NOT 0 partic) (*-1 V BARRIER CLB)(NOT *-1 PrVerb - Mod - Aux BARRIER CLB);
 REMOVE I (NOT -1 Jutum1>>> OR Kvm) (NOT 1 Kvm OR ("nii") OR Et);
 
@@ -4926,7 +5012,7 @@ SELECT Adit (1C Adit + Pärisnimi)(NOT *2 Ill);
 REMOVE Adit (0 Nominal) (1C S) (NOT 1 Adit) (NOT 1 In) (NOT 2 Post)
               (NOT *1 AditVerb BARRIER CLB) (NOT *-1 AditVerb BARRIER CLB);
 REMOVE S + In (0 SPNom)(NOT 1 SPAND)(-1 ANom OR SPGen)(-2 OlemSaa)(-3C In) ; 
-SELECT Pl3Verb (NOT -1 Kvm)(NOT *-1 V + Sg BARRIER CLB)(*1C SP + PlNom CBARRIER Nom OR CLBC OR ("või") OR ("ehk") OR ("aga"));
+SELECT Pl3Verb (NOT -1 Kvm)(NOT *-1 V + Sg BARRIER CLB)(*1C SP + PlNom CBARRIER Nom OR CLBC OR ("või") OR ("ehk") OR Aga);
 SELECT Sg3Verb (NOT -1 Kvm)(NOT *-1 V + Pl BARRIER CLB)(*1C SP + PlNom BARRIER CLBC);
 
 SELECT S (0 (L0) + NudTud)(NOT 1 SPAN OR J)(*-1C FinV ^ partic BARRIER CLB) (NOT *-1 OlemSaa BARRIER CLB) (NOT *1 OlemSaa BARRIER CLB);
@@ -4937,8 +5023,8 @@ SELECT VPs3 + Pres (-1 Konj) (*-2C VPs3 + Pres BARRIER Kvm);
 SELECT VPs3 + Past (-1 Konj) (*-2C VPs3 + Past BARRIER Kvm);
 
 SELECT SGen (0 Ajamäärus) (1 Ajamäärus);
-SELECT ("kokku") + D (*1 MinePane BARRIER CLB);
-"<kokku>" SELECT D (*-1 MinePane BARRIER CLB);
+SELECT ("kokku") + D (*1 MinemaPanema BARRIER CLB);
+"<kokku>" SELECT D (*-1 MinemaPanema BARRIER CLB);
 SELECT ("lõpp") + S (-1 Ajamäärus);
 "<lõpuks>" SELECT D;
 REMOVE S + Tr (0 A);
@@ -4970,10 +5056,10 @@ REMOVE FinV (0 Quot OR Imper)(1 S ^ D)(*0 FinV ^ Imper ^ Quot BARRIER CLB OR Col
 REMOVE FinV - Mod - Aux (NOT 0 Quot OR Cond)
                 (*-1 FinV ^ Imper ^ Quot BARRIER CLBC LINK NOT 0 D OR S LINK NOT *-1 Konj&Kvm);
 
-SELECT P (0 ("üks")) (*2 Teine BARRIER CLB);
-SELECT DemPron (0 Teine) (*-2 ("üks") BARRIER CLB);
-SELECT ("kord") + D (1 ("üks")) (*2 Koma BARRIER CLB LINK 1 ("kord")) ;
-"<kord>" SELECT D (-1 Koma) (*-2 ("üks") BARRIER CLB LINK -1 ("kord"));
+SELECT P (0 Yks) (*2 Teine BARRIER CLB);
+SELECT DemPron (0 Teine) (*-2 Yks BARRIER CLB);
+SELECT ("kord") + D (1 Yks) (*2 Koma BARRIER CLB LINK 1 ("kord")) ;
+"<kord>" SELECT D (-1 Koma) (*-2 Yks BARRIER CLB LINK -1 ("kord"));
 
 "<korraks>" IFF D (NOT -1 Tr) ;
 "<kord>" SELECT D (-1 Ole)(1 D) ;
@@ -4999,8 +5085,8 @@ REMOVE ("tall") + S + Adit (NOT *-1 LiikumisVerb - Mod - Aux BARRIER CLB) (NOT *
 
 REMOVE ("jah") + I  (NOT 1 Exc OR Int);
 
-SELECT D (-1 ("kui"))(NOT 0 S + Nom);
-SELECT D (-1 ("kui"))(*0C SP + Nom OR SP + Part BARRIER CLBC);
+SELECT D (-1 Kui)(NOT 0 S + Nom);
+SELECT D (-1 Kui)(*0C SP + Nom OR SP + Part BARRIER CLBC);
 
 
 SELECT IndicPresSg2 (-1 Konj) 
@@ -5024,8 +5110,8 @@ SELECT:PS P (NOT 0 Arv OR PersPron)(0 $$Case)(1C S + $$Case);
 
 "<näiteks>" IFF S (-1 AP)(-1 Tr);
 
-SELECT P (0 Yks OR Teine)(0 GiKi); 
-SELECT N (0 Yks OR Teine)(-1 Ajamäärus); 
+SELECT P (0 YksEsimene OR Teine)(0 GiKi); 
+SELECT N (0 YksEsimene OR Teine)(-1 Ajamäärus); 
 SELECT P (0 Teine)(1 Pool)(1C S);
 SELECT P (0 Teine)(1 Pool)(NOT 0 Gen);
 SELECT P (0 Teine)(1C S)(-1 D); 
@@ -5040,8 +5126,8 @@ SELECT N + Sg (0 Teine)(0C All)(1C All)(1C Sg);
 SELECT N + Sg (0 Teine)(0C Ad)(1C Ad)(1C Sg);
 SELECT N + Sg (0 Teine)(0C Abl)(1C Abl)(1C Sg);
 SELECT N + SgTr (0 Teine)(1C Tr)(1C Sg);
-SELECT Adit (0 Yks OR Teine)(1 Adit); 
-SELECT Adit (0 Yks OR Teine)(1 S + Gen)(2 Adit); 
+SELECT Adit (0 YksEsimene OR Teine)(1 Adit); 
+SELECT Adit (0 YksEsimene OR Teine)(1 S + Gen)(2 Adit); 
 SELECT:K37 P (0 Teine);   
 
 
@@ -5059,8 +5145,8 @@ REMOVE ("neid") + S ;
 REMOVE ("palju") + P  (0 Nom);
 SELECT Postg (-1 SPAN + Gen);
 SELECT ("peale") + D (NONE -1 SPGen)(NOT *1 SPGen);
-SELECT ("kui") + D (1C D OR A) (2 FinV ^ partic ^ DaInf)(NOT *-1 ("kas"));
-SELECT ("kui") + J ;
+SELECT Kui + D (1C D OR A) (2 FinV ^ partic ^ DaInf)(NOT *-1 ("kas"));
+SELECT Kui + J ;
 SELECT ("lahti") + D;
 SELECT ("tuntud") + A (*0C Nom BARRIER CLBC); 
 SELECT ("välja") + D;
@@ -5186,7 +5272,7 @@ SELECT S + SgNom (1 Konj)(NOT 1 CLBC) (2C S + SgNom) (NOT 3 S)(NOT 0 NotS);
 SELECT S + SgGen (1 Konj)(NOT 1 CLBC) (2C S + SgGen) (3 S) ;
 SELECT S + SgPart (1 Konj)(NOT 1 CLBC) (2C S + SgPart) ;
 SELECT S + SgNom (-1 Konj) (-2C S + SgNom)(NOT 1 S)(NOT 0 NotS);
-SELECT S + SgGen (-1 Konj) (-2C S + SgGen) (NOT 0 ("Või"));
+SELECT S + SgGen (-1 Konj) (-2C S + SgGen) (NOT 0 ("või"));
 SELECT S + SgPart (-1 Konj) (-2C S + SgPart);
 
 SELECT S + PlNom (1 Konj) (2C S + PlNom)  ;
@@ -5222,7 +5308,7 @@ SELECT MaInf (*1 MaVerb BARRIER CLB LINK NOT 0 partic);
 SELECT DaInf (*-1 DaVerb BARRIER CLB LINK NOT 0 partic);
 SELECT DaInf (*1 DaVerb BARRIER CLB LINK NOT 0 partic);
 
-SELECT FinV (NOT 0 ("või")) (0 SPAND) (NOT 0 Pärisnimi) (NOT *-1 OlemSaa)
+SELECT FinV (NOT 0 Võima) (0 SPAND) (NOT 0 Pärisnimi) (NOT *-1 OlemSaa)
 		(NOT *1 Koma OR FinV OR DaInf BARRIER CLB) (NOT *-1 FinV OR DaInf BARRIER CLB);
 SELECT S + SgPart (NOT 0 El) (NOT -1 Gen OR D OR KustKuhu) (NOT 0 D) (NOT 1 Kvm)
 	(NOT 1 SubstAdj)(*-1 Part-P CBARRIER Part OR PlNom OR CLB) 
@@ -5340,7 +5426,7 @@ SELECT Gen (0 NimiAse) (1 Postg);
 SELECT MaInf (*0 MaVerb BARRIER CLB LINK NOT 0 partic);
 SELECT DaInf (*0 DaVerb BARRIER CLB LINK NOT 0 partic);
 
-SELECT FinV (NOT 0 ("või")) (0 SPAND) (NOT 0 Pärisnimi) (NOT *1 Koma BARRIER CLB) 
+SELECT FinV (NOT 0 Võima) (0 SPAND) (NOT 0 Pärisnimi) (NOT *1 Koma BARRIER CLB) 
     (NOT *-1 OlemSaa)(NOT *-1 FinV BARRIER CLB) (NOT *1 FinV BARRIER CLB);
 
 SELECT S + SgGen (NOT 0 A OR FinV)(1C S)(*0C NimiAse + Nom OR Part BARRIER CLB OR Konj)
@@ -5387,7 +5473,7 @@ SECTION
 REMOVE Oma + S  ;
 REMOVE Oma + Imper - Neg ;
 
-SELECT Ncard + Sg (NOT 0 ("üks") OR Kysimtag)(0 Ncard + Sg + $$Case)(1C S + Sg + $$Case);
+SELECT Ncard + Sg (NOT 0 Yks OR Kysimtag)(0 Ncard + Sg + $$Case)(1C S + Sg + $$Case);
 
 
 
@@ -5413,13 +5499,13 @@ REMOVE:Aninataga A + Term (1 Nominal);
 REMOVE:Aninataga A + Es (1 Nominal);
 REMOVE:Aninataga A + Abes (1 Nominal);
 
-SELECT:millest SEl (-1C ("saa"))(NOT *1 El BARRIER CLB)(NOT *-1 El BARRIER CLB);
-SELECT:millest SEl (1C ("saa"))(NOT *1 El BARRIER CLB)(NOT *-1 El BARRIER CLB);
+SELECT:millest SEl (-1C Saama)(NOT *1 El BARRIER CLB)(NOT *-1 El BARRIER CLB);
+SELECT:millest SEl (1C Saama)(NOT *1 El BARRIER CLB)(NOT *-1 El BARRIER CLB);
 
-SELECT:partv S + SgPart OR P + Part (NOT 1C Perfekt OR KustKuhu OR Intr)(NOT -1C Perfekt OR KustKuhu OR Milleks OR Part)
-	(*0C PartVerb ^ Imps BARRIER CLB LINK NOT -1C Perfekt OR KustKuhu OR D)(NOT 1 NGP)
-	(*-1 Nom OR Part ^ NudTud BARRIER CLB)(NOT *1 Part BARRIER CLB);
-SELECT:partv S + SgPart OR P + Part (NOT 1 Perfekt OR KustKuhu OR Milleks)(NOT -1C Perfekt OR KustKuhu OR Milleks)
+SELECT:partv SP + SgPart (NOT 1C Perfekt OR KustKuhu OR Intr)(NOT -1C Perfekt OR KustKuhu OR Milleks OR Part)
+	(*0C PartVerb + Sg3Verb ^ Imps BARRIER CLB LINK NOT -1C Perfekt OR KustKuhu OR D)(NOT 1 NGP)
+	(*-1 SgNom OR Part ^ NudTud BARRIER CLB)(NOT *1 Part BARRIER CLB);
+SELECT:partv SP + SgPart (NOT 1 Perfekt OR KustKuhu OR Milleks)(NOT -1C Perfekt OR KustKuhu OR Milleks)
 	(*0C PartVerb + Imps BARRIER CLB)(NOT 1 NGP)(NOT *-1 Nom OR Part BARRIER CLB)(NOT *1 Part BARRIER CLB);
 
 SELECT:partk SPart (-1 SPAN)(-2C Part-K - Mod - Aux ^ AditVerb LINK NOT 0 Cond)(NOT *1C Part OR PlNom BARRIER CLB)(NOT *-1C Part OR PlNom BARRIER CLB);
@@ -5478,13 +5564,13 @@ SELECT:mida* SP + Part (*0C Part-P BARRIER NOSPAN)(NOT 0 Gen OR Adit OR El)(NOT 
 SELECT:mida* SP + Part (*-1C Part-P BARRIER CLBC LINK *-1 Nom BARRIER CLB)(NOT *0 Perfekt OR PersPron + Part)
 			(1 Konj)(NOT *-1 ("kogu") BARRIER CLB OR V);
 
-SELECT:mida*ole SPSgPart (NOT 0 D OR El OR Nom)(*0C Ole OR ("tule") + V OR ("jää") + V BARRIER NOSPAN)
+SELECT:mida*ole SPSgPart (NOT 0 D OR El OR Nom)(*0C Ole OR TulemaJääma BARRIER NOSPAN)
 	(NOT *1 SP + Part OR partic OR NaguKui BARRIER CLBC)(NOT *-1 SP + Part OR partic BARRIER CLBC);
-SELECT:mida*ole SPSgPart (NOT 0 D OR El OR Nom)(*0C Ole OR ("tule") + V OR ("jää") + V BARRIER NOSPAN)
+SELECT:mida*ole SPSgPart (NOT 0 D OR El OR Nom)(*0C Ole OR TulemaJääma BARRIER NOSPAN)
 	(NOT *1 SP + Part OR partic OR NaguKui BARRIER CLBC)(NOT *-1 SP + Part OR partic BARRIER CLBC)(NOT 1 Nom OR CLBC)(*2C Nom BARRIER CLBC);
-SELECT:mida*ole SPSgPart (NOT 0 D OR El OR Gen OR Nom)(*0C Ole OR ("tule") + V OR ("jää") + V BARRIER NOSPAN)
+SELECT:mida*ole SPSgPart (NOT 0 D OR El OR Gen OR Nom)(*0C Ole OR TulemaJääma BARRIER NOSPAN)
 	(NOT *1 SP + Part OR partic OR NaguKui BARRIER CLBC)(NOT *-1 SP + Part OR partic BARRIER CLBC)(NOT 1 CLBC)(*2C Nom BARRIER CLBC);
-SELECT:mida*ole SPSgPart (NOT 0 D OR El OR Nom)(*0C Ole OR ("tule") + V OR ("jää") + V BARRIER NOSPAN)
+SELECT:mida*ole SPSgPart (NOT 0 D OR El OR Nom)(*0C Ole OR TulemaJääma BARRIER NOSPAN)
 	(NOT *1 SP + Part OR partic OR NaguKui BARRIER CLBC)(NOT *-1 SP + Part OR partic BARRIER CLBC)(*-1C Nom BARRIER CLBC);
 
 SELECT:perfekt Gen (0 S) (NOT 0 Nom) (NOT 0 NotS) (1C Part-P) 
@@ -5526,7 +5612,7 @@ REMOVE Sg (0C A) (0C NudTud);
 REMOVE Pl (0C A) (0C NudTud);
 
 REMOVE:KK3 Cond + Pres + Imps (0 Cond + Pres + Ps) ;
-REMOVE:K3 ("jõuta") + V (0 (V "jõud")) ; 
+REMOVE:K3 ("jõuta") + V OR ("jõutama") (0 Jõudma) ; 
 REMOVE:K3 Indic + Pres + Imps (0 IndicPresPs) ; 
 REMOVE:K3 Vsup + Imps (0 MaInf) ; 
 REMOVE:K3 V + Ps (0 Imps)(NOT *1 SPNom BARRIER CLB)(NOT *-1 SPNom BARRIER CLB)(NOT 0 ("ära")) ;
@@ -5561,7 +5647,7 @@ REMOVE:Pgenp P + Gen (0 SubPron) (1 PersPron + Gen)(NOT 1 ("ise"));
 SELECT:prop PropGen (0 Pärisnimi)(NOT 0 Riikjne) (-1C Sg3Verb)
 	(-2 Konj + CLB)(-3C Sg3Verb LINK *-1 SPSgNom); 
 
-SELECT:ngpp S + SgAdit (*-1C NGP-P + AditVerb OR ("vaata") BARRIER NOSPAN)(NOT 1 NGP OR Ill)
+SELECT:ngpp S + SgAdit (*-1C NGP-P + AditVerb OR Vaatama BARRIER NOSPAN)(NOT 1 NGP OR Ill)
 	(*-1 Nom BARRIER CLB)(*-1 All BARRIER CLB);
 
 
@@ -5575,14 +5661,13 @@ REMOVE ("([a-z]++)=(.*)"r) (NOT 0 NudTud);
 
 SUBSTITUTE $$Ncard $$Ncard + Sg + Nom TARGET $$Ncard (NOT 0 sgpl)(-1 Loend);
 SUBSTITUTE $$Ncard $$Ncard + Sg + Nom TARGET $$Ncard (NOT 0 sgpl)(1 Kvm)(NOT 2 Ncard); 
-SUBSTITUTE $$Ncard $$Ncard + Sg + Nom TARGET $$Ncard (NOT 0 sgpl)(1C Jutum1>>> OR V); # 7 tasemest #1#
+SUBSTITUTE $$Ncard $$Ncard + Sg + Nom TARGET $$Ncard (NOT 0 sgpl)(1C Jutum1>>> OR V); 
 SUBSTITUTE $$Ncard $$Ncard + Sg + Nom TARGET $$Ncard (0 ("<([0-9\-,%\/]++)>"r))
-	(NOT 0 sgpl) (*1C ASP + Nom OR ASP + Part CBARRIER piir); # 3 viset
+	(NOT 0 sgpl) (*1C ASP + Nom OR ASP + Part CBARRIER piir); 
 SUBSTITUTE Ncard Ncard + Sg + $$Case10 TARGET Ncard (0 ("<([0-9\-,%\/]++)>"r))
 	(NOT 0 sgpl)(*1C ASP + $$Case10 CBARRIER piir);
 SUBSTITUTE $$Ncard $$Ncard + SgGen TARGET $$Ncard (0 ("<([0-9\-,%\/]++)>"r))
 	(NOT 0 sgpl)(*1C ASP + NiNaTaGa CBARRIER piir);
-
 
 SUBSTITUTE Nord Nord + $$sgpl + $$Case10 TARGET Nord
 	(NOT 0 sgpl)(*1C $$sgpl + $$Case10 CBARRIER piir);
@@ -5590,7 +5675,6 @@ SUBSTITUTE $$Nord $$Nord + SgGen TARGET $$Nord
 	(NOT 0 sgpl)(*1C Sg + NiNaTaGa CBARRIER piir);
 SUBSTITUTE $$Nord $$Nord + PlGen TARGET $$Nord
 	(NOT 0 sgpl)(*1C Pl + NiNaTaGa CBARRIER piir);
-
 
 
 AFTER-SECTIONS
@@ -5687,7 +5771,7 @@ SELECT:adit SAdit (NOT 1 V OR Nom)(*0 AditVerb ^ Part-P BARRIER CLBC OR J OR V)
 SELECT:adit SAdit (NOT 1 V OR Nom)(*0 AditVerb BARRIER CLBC OR J OR V) 
 	(NOT *1 Adit + SP OR Tr OR ("juurde") OR ("vahele") OR ("tagasi") BARRIER CLB)(NOT *-1 Adit + SP BARRIER CLB)
 	(NOT -1 Prep OR Kuhu)(*0 Part OR PlNom BARRIER CLBC OR J OR V LINK NOT -1 Arv OR Hulk);
-SELECT:adit SAdit (NOT 0 D)(1 AditVerb OR ("püüd") + V)(NOT 1 ("saa"))
+SELECT:adit SAdit (NOT 0 D)(1 AditVerb OR Püüdma)(NOT 1 Saama)
 	(NOT *2 Adit + SP OR Tr OR ("juurde") OR ("vahele") OR ("tagasi") OR DaInf BARRIER CLB)
 	(NOT -1 Prep OR Kuhu);
 
@@ -5716,8 +5800,9 @@ REMOVE:notmida SPart OR P + Part (*-1C VPs1 BARRIER CLBC)
 	(*-1C SP + Part ^ Ajamäärus ^ Pps1 ^ PlNom ^ Ajamäärus BARRIER CLBC)(NOT 1 V);
 
 REMOVE ("([a-z]++)#(.*)"r); 
+
 REMOVE Derivatives;
 
-
 END
+
 
