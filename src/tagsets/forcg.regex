@@ -1,5 +1,6 @@
 [! what we want it to be        what it was after regular analysis
- [ s e e "+Pron" "+Dem" ]  <-  [ s e e "+Pron" ],    ! replace always
+ [ s e e "+Pron" "+Dem" ]  <-  [ s e e "+Pron" ]    ! replace always
+ .o.
  [ t o o "+Pron" "+Dem" ] (<-) [ t o o "+Pron" ]    ! retain old
 
 ] .o. [ ! rules that  should apply on word boundary
