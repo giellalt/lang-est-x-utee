@@ -74,9 +74,11 @@ GENERATED_LEXC_SRCS=
 # Set this to the names of all source xml files, if any
 GT_XML_SRCS=
 
-# Define any additional sources here (compiled on their own, or just included
-# in the distro):
+# Define any additional sources here (compiled on their own):
 GT_LOCAL_SRCS=overriding-exceptions.all.lexc numbers.lexc
+
+# Define here any additional sources just included in the distro:
+GT_DISTRO_SRCS=
 
 ### BEGIN: Local processing: ###
 multichars.txt:	root.lexc
