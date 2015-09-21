@@ -1,4 +1,4 @@
-DELIMITERS = "<.>" "<?>" "<!>" "<..>" "<...>" "<¶>"  ;
+DELIMITERS = "<.>" "<?>" "<!>" "<..>" "<...>" "<¶>" QDL "^vastas" ;
 
 PARENTHESES = ("<(>" "<)>") ("<[>" "<]>") ("<{>" "<}>") (CLO CLC) ; 
 
@@ -605,7 +605,8 @@ LIST KuiCLVerb = "näitama" "rääkima" "ütlema" "seletama" "selgitama" ;
 LIST SaamaVerb = "teadma" "kuulma" "vigastama" ;
 LIST KohaleVerb = ("tooma" V) "tulema" "kutsuma" ;
 LIST MuutVerb = "muutuma" "saama" "osutuma" "muunduma" "panema" "minema" "teisenduma" ;
-LIST CoSVerb = "kõrguma" "erinema" "sisalduma" ; 
+LIST CoSVerb = "kõrguma" "erinema" "sisalduma" ;
+LIST Sooma = "sööma" "maitsma" "maitsema" "maiustama" "tarvitama" "valmistama" "maitsestama" "lisama" "valama" "tõstma" "serveerima" "pakkuma" "korjama" ;
 
 LIST PropAditVerb = "tulema" ("tooma" V) "saabuma" ("jõudma" V) "saatma" "helistama" "hiilima" ;
 
@@ -1091,6 +1092,8 @@ SELECT PropCap (-1 Prop);
 
 REMOVE Prop (0 Scom OR A)(1C  Scom + Cap OR  A + Cap);
 REMOVE Prop (0 Scom OR A)(-1C  Scom + Cap OR  A + Cap);
+REMOVE Ad (0 D)(0 S) (NOT -1 Ad OR Gen)(NOT 1 Ad) ;
+REMOVE Ad (0 D)(0 S) (NOT -1 Ad OR Gen)(1 D) ;
 SELECT APN + Ad (1 Ad);
 SELECT APN + Ad (1 Cap)(2 Ad);
 SELECT PropGen OR Y (1 Ad)(NOT 1 D)(NOT -1 FinV);
@@ -2228,6 +2231,7 @@ REMOVE ("kaunis") + D (NOT 1 A) ;
 "<parem>" SELECT ANom (*-1 Ole BARRIER CLBC LINK *-1 Nom) ;
 "<varem>" SELECT D (-1 D) ;   
 "<seal>" SELECT D (-1 D) ;
+"<seal>" SELECT D (1 D) ;
 "<harvemini>" SELECT D (-1 D) ;
 SELECT ("kõige") + D (1 A) ;
 REMOVE ("järg") + S + PlAll ;   
@@ -2235,7 +2239,6 @@ SELECT ("samas") + D (NOT 1 In) ;
 SELECT ("aina") + D ;    
 SELECT ("seadus") + S + Part ;
 SELECT ("kord") + Ad  (-1 Ad OR A + NudTud); 
-REMOVE Ad (0 D) (NOT -1 Ad OR Gen)(NOT 1 Ad) ;
 
 "<seas>" REMOVE S (-1 Gen) ;
 "<seas>" REMOVE A (-1 Gen) ;
@@ -2261,6 +2264,7 @@ SELECT El (1 ("tulenevalt"))	;
 SELECT El (-1 ("tulenevalt"))	;	
 
 REMOVE ("meene") (0 ("mees"));
+REMOVE ("mesi") (0 ("mees"))(*0 V - OlemSaa - Sooma BARRIER CLB)(NOT *0 Sooma BARRIER CLB);
 SELECT ("mees") + SNom OR ("esi#mees") + SNom OR ("seltsi#mees") + SNom (1 Sg3Verb) ;
 SELECT ("mees") + SNom OR ("esi#mees") + SNom OR ("seltsi#mees") + SNom  (-1 Sg3Verb) ; 
 SELECT ("mees") + S  OR ("esi#mees") + S  OR ("seltsi#mees") + S   (-1 Riikjne OR Liityhing) ; 
