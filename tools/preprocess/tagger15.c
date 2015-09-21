@@ -74,7 +74,7 @@ void undef(void)
       free(np->defn);
       free(np);
     }
-  fprintf(stderr,"Lõpp\n");
+  //fprintf(stderr,"Lõpp\n");
 }
 
 /* usage:  display user information */
@@ -125,7 +125,7 @@ void file2hash(char *filename)
     n++;
   }
   fclose(lexicon);
-  fprintf(stderr,"Sõnu loetud:  %d\n", n);
+  //fprintf(stderr,"Sõnu loetud:  %d\n", n);
 }
 
 /* copy:  copy one word from source to dest */
@@ -307,7 +307,7 @@ void work(char *fn1, char *fn2)
   int count;
   char ok;
 
-  fprintf(stderr,"Sisend:  %s\n", fn1);
+  //fprintf(stderr,"Sisend:  %s\n", fn1);
   if (strcmp(fn1,"stdin")==0) {
      input=stdin;
   } else {
@@ -316,7 +316,7 @@ void work(char *fn1, char *fn2)
     terminate();
   }
   }
-  fprintf(stderr,"Väljund:  %s\n", fn2);
+  //fprintf(stderr,"Väljund:  %s\n", fn2);
   if (strcmp(fn2,"stdout")==0) {
      output=stdout;
   } else {
@@ -409,7 +409,7 @@ if (argc != 4)usage();
 if (strcmp(argv[1], argv[2]) == 0) usage();
 if (strcmp(argv[1], argv[3]) == 0) usage();
 if (strcmp(argv[2], argv[3]) == 0) usage();
-fprintf(stderr,"Leksikon:  %s\n", argv[1]);
+//fprintf(stderr,"Leksikon:  %s\n", argv[1]);
 for (i = 0; i < HASHSIZE; i++) hashtab[i] = NULL;
 file2hash(argv[1]);
 work(argv[2], argv[3]);
