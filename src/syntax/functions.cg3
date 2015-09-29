@@ -831,7 +831,8 @@ SELECT Ppos + (@NN>) + Ad (*1 S + Ad BARRIER Oeldis OR Võrdlus OR CLB) ;
 SELECT Ppos + (@NN>) + Abl (*1 S + Abl BARRIER Oeldis OR Võrdlus OR CLB) ;
 SELECT Ppos + (@NN>) + Tr (*1 S + Tr BARRIER Oeldis OR Võrdlus OR CLB) ;
 
-REMOVE:XTP Ppers + (@ADVL) (0 NGP) ; # TP: ei tule pähe, et saaks olla
+REMOVE:XTP Ppers + (@ADVL) (NEGATE *-1 Verb - Intr BARRIER CLB)(NEGATE *1 Verb - Intr BARRIER CLB); # TP: ei saa objekt olla
+REMOVE:XTP Ppers + (@ADVL) (0 NGP)(NEGATE 1 LLZ OR <<<); # TP: ei tule pähe, et saaks olla
 REMOVE Ppers + (@NN>) + Nom  ; # TP: tingimus (0 Ppers + Nom) läks sihti, muidu kustutas ka gen!!! Ka kõik teised reeglid !!!
 REMOVE Ppers + (@<NN) + Nom (NEGATE *-1 Koolon BARRIER Koolon OR CLB) ; # TP: sama
 
@@ -1140,10 +1141,11 @@ REMOVE (@SUBJ) (0 Nom)(1C Sprop + Nom)(1 Subjekt)(NEGATE 0 Pindef OR Ppers) ;
 # pole muud ühest subjekti ja öeldiseks on verb "olema"
 SELECT SP + PlPar + (@SUBJ) (*-1 Olema BARRIER Verb OR CLB)
                (NEGATE *1 Verb BARRIER CLB)
-               (NEGATE *-1C Subjekt BARRIER CLB)
+               (NEGATE *-1 Subjekt BARRIER CLB)
                (NEGATE *1C Subjekt BARRIER CLB)
                (NEGATE *-1 NimKv OR KvAdv OR ("üks") BARRIER CLB) ;
 # Viga tekkis enne: et on _teisigi_ Partei vaenlasi
+# TP: oli: (NEGATE *-1C Subjekt BARRIER CLB)
 
 # sõna partitiivis pole subjekt, kui talle järgneb da-infinitiivne öeldis
 REMOVE Par + (@SUBJ) (1 Inf)(1C Oeldis) ; # TP Par viidud Subj juurde, oli 0-ting
@@ -1694,14 +1696,15 @@ REMOVE (@PRD) (*1C (@ORD) BARRIER CLB LINK *-1 Olema BARRIER CLB)
               (NEGATE *-1 Olema BARRIER CLB) ;
 
 #7) Osastavas nimisonaline öeldistäide
-REMOVE SP + Par + (@PRD) (NEGATE -1 Adj OR Pdem)(NEGATE 0 ("miski") + Par) ;
+REMOVE SP + Par + (@PRD) (NEGATE -1 Adj OR Pdem)(NEGATE 0 ("miski") + Par OR Pdem OR Pindef) ;
+# TP: oli: ilma  OR Pdem OR Pindef
 REMOVE Par + (@PRD) (*-1 SgNom BARRIER CLBC)(*1 SgNom  BARRIER CLBC) ;
 # see oli teatavat _liiki_ hüpnoos
 REMOVE SgPar + (@PRD) (*-1 Olema BARRIER CLB 
                                 LINK *1 SgNom BARRIER CLB LINK 1 Inf) ;
 # nii kange oli mu tahtmine alustada iseseisvalt vanemate _otsinguid_
 REMOVE Par + (@PRD) (*-1 Olema BARRIER CLB LINK *1 Adj + Nom BARRIER CLB) ;
-REMOVE PlPar + (@PRD)  ;
+REMOVE PlPar + (@PRD) (NEGATE *-1 Pl + (@SUBJ)) ; # TP: oli: ilma (NEGATE *-1 Pl + (@SUBJ))
 
 
 
