@@ -245,10 +245,6 @@ ADD (&grm-missing-ade) TARGET SP - Cor - Ade - Gen (-1 A + Cor + Ade) ;
 
 ADD (&grm-missing-ade) TARGET A - Cor - Ade - NudTud (0 case) (1 SP + Cor + Ade) ;
 
-AFTER-SECTIONS
-
-LIST grm = &grm-correct &err-spellingerror &grm-wrong-lemma &grm-wrong-homonym &grm-non-agr-subj-v &grm-non-agr-v-prd &grm-incorr-tense &grm-incorr-verbform &grm-non-agr-noun-mod &grm-missing-ade ;
-
 #UNMAP UNSAFE (&correct) ;
 
 END 
