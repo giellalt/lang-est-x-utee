@@ -147,10 +147,10 @@ viker is not an independent word, it is only used as a prefix.
 
 Similar in Sámi:
 {{{
-kultur-        kultuvra+Sem/Domain+N+SgNomCmp+RCmpnd
+kultur-        kultuvra+Sem/Domain+N+Cmp/SgNom+RCmpnd
 kultuvra       kultuvra+Sem/Domain+N+Sg+Nom
 kultur         kultur        +?
-kulturheasta   kultuvra+Sem/Domain+N+SgNomCmp+Cmp#heasta+Sem/Ani+Sem/Veh+N+Sg+Nom
+kulturheasta   kultuvra+Sem/Domain+N+Cmp/SgNom+Cmp#heasta+Sem/Ani+Sem/Veh+N+Sg+Nom
 }}}
 
 !!!Verbs

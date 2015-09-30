@@ -35,7 +35,7 @@ From the North Saami analyser:
 echo skuvlabusse | usme
 skuvlabusse        
     skuvlabusse+N+G3+Sg+Gen  <==== the lexicalised one will be picked prior to disambiguation
-    skuvla+N+SgNomCmp+Cmp#busse+N+G3+Sg+Acc
+    skuvla+N+Cmp/SgNom+Cmp#busse+N+G3+Sg+Acc
 }}}
 
 With middleprocessing:
