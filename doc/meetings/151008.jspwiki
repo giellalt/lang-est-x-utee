@@ -1,0 +1,291 @@
+SamEst meeting 08.10.2015
+Participants: Fran, Heiki, Heli, Jaak, Jack, Kadri, Sjur, Tiina, Trond
+
+!! Agenda
+
+# What we had planned. (Heli finds the table.)       
+# What we have done. (The status of each subproject.)       
+# What are the next todo-s.       
+
+!! What we had planned
+
+! The updated project plan from 30.09.2014 (meeting in Tartu)
+
+| Task            |  2014 | 2015  | 2016  | Persons
+--------------------------------------------------------------------------
+| Est + fin FST   |   3   |    2  |  2    | Jaak, Heli, Heiki, Trond, etc.
+| Võro FST        |   3   |    3  |  3    | Sulev
+| CG              |   0   |    2  |  2    | Tiina, Kadri
+| Oahpa L,N,M     |   4   |    3  |  1    | Heli, teachers
+| Oahpa V, S      |   0   |    2  |  3    | Heli, teachers
+| MT fin-est      |   0   |    2  |  2    | -
+| f-e lex. proof. |   1   |    1  |  0    | TBD
+| MT fin-sme      |   1   |    1  |  1    | Same team as fin-est
+| MT fin CG       |   0   |    3  |  0    | -
+| Total           |  12   |   19  | 14    | 45+ 
+
+Notes from that meeting: [http://giellatekno.uit.no/doc/lang/est/meetings/140930.html]
+
+
+!! Est + fin FST  
+
+Jaak has moved, but is now settled and can work more efficiently.
+There could have been more fst-input from the est Oahpa, that will now come.
+
+The tools from Filosoft are now public, we should consider the Filosoft dict
+as an alternative to the ÜV one.
+
+Heiki has had trouble with hfst, but cannot be really concrete at the moment... will ask Jaak and/or Sjur
+
+{{{
+e.g. 1/2-finaal
+12-finaal        12-finaal        +?
+123-finaal        123-finaal        +?
+}}}
+
+Yaml results as of today:
+* SUMMARY for the gt-norm fst(s): PASSES: 4538 / FAILS: 2448 / TOTAL: 6986
+
+Missing Noun lemmas
+
+{{{
+afišš
+apašš
+bjeff
+bluff
+...
+loe
+}}}
+
+__Action__
+
+* __Heli__, __Tiina__ and __Heiki__ will send feedback to Jaak.
+* This will help.
+
+!! Võro FST       
+
+Yaml results as of today:
+* SUMMARY for the gt-desc fst(s): PASSES: 102 / FAILS: 235 / TOTAL: 337
+
+Jack has worked with vowel harmony. 
+Issue: Which form is the primary form.
+Oahpa Morfa: There are several correct answers but one of them is the preferred one.
+This is implemented in vro.fst with the help of +Use/NG tag that has been added to the non-preferred forms. In one of the built FSTs the +Use/NG forms are present and in another they are missing. This works in Oahpa. 
+
+Verbs: Here there are weaknesses.
+
+The Võro group (Sulev, Jack, Heli) is having regular meetings every 2-3 weeks where they discuss the progress and set intermediate goals. 
+
+!! CG
+
+! est.cg
+est.cg is converted to Giellatekno version, and works well.
+
+!Transitivity
+
+How to add (in)transitiveness to verbs?
+# Separate steps after fst
+# Tartu approach: transitivity-adding.fst .o. est.fst
+# Tromsø approach: add in lexicon 
+## (task: script in from separate list to stems/verbs.lexc)
+## 30 verb types
+### will give 60 lexica and not 30
+### V1_TV ; V1_IV ; // LE V1_TV +V+TV V1 ; LE V1_IV +V+IV V1 ; LE V1 ... ;
+### may be put on the stem
+# langs/ipk approach (Iñupiaq): Flag diacrit
+## stem iv/tv FLAG // lots of derivation // two sets of infl affixes (modulo FLAG)
+## Flags since we did not want to duplicate __lots__ of derivation
+
+{{{
+olla+V+IV:ol V_OLLA ; !
+or:
+olla+IV:ola V_OLLA ; ! will need tag-reshuffeling.fst
+}}}
+
+est.fst .o. tag-reshuffeling.fst
+
+__TODO:__
+__Jaak__ and __Tiina__ to discuss and __Jaak__ to implement.
+
+! Finnish cg
+
+* fin/src/syntax/disambiguation.cg3
+* fin/src/syntax/function.cg3
+
+Tiina has converted cg1 to cg3 (corrected the former conversion).
+
+The cg used tags from old fst that were not in the new fst.
+As far as these tags were present in the texts used for testing, the
+mismatches have been solved.
+
+Gold standard corpus improvement:
+# Work ourselves
+# Take the Helsinki-Turku treebank, which uses omorfi tags
+
+One possibility
+
+# Take text from the treebank corpus
+## url: [http://bionlp.utu.fi/fintreebank-datafiles.html]
+# Analyse with our analyser
+# Disambiguate by means of the treebank (with a script)
+
+__TODO:__
+* Tartu: Take corpus + analyse + have a look
+* Tartu + Fran: Adjust script and voilá.
+
+
+This is the treebank (180k words):
+
+{{{
+# f301/46
+1    Viisainta    viisas    _    A    A    NUM_Sg|CASE_Par|CMP_Superl|CASECHANGE_Up    0    ROOT    _    _
+2    on    olla    _    V    V    PRS_Sg3|VOICE_Act|TENSE_Prs|MOOD_Ind    1    cop    _    _
+3    piilottaa    piilottaa    _    V    V    NUM_Sg|CASE_Lat|VOICE_Act|INF_Inf1    1    iccomp    _    _
+4    pillerit    pilleri    _    N    N    NUM_Pl|CASE_Nom    3    dobj    _    _
+5    takaisin    takaisin    _    Adv    Adv    _    7    advmod    _    _
+6    lääkekaapin    lääke|kaappi    _    N    N    NUM_Sg|CASE_Gen    7    poss    _    _
+7    perille    perä    _    N    N    NUM_Pl|CASE_All    3    nommod    _    _
+8    .    .    _    Punct    Punct    _    1    punct    _    _
+}}}
+
+STrategy: Use this to disambiguate 
+
+
+We have compiled a parallel corpus of textbook texts (12000 words)
+
+One possibility:
+* Analyse the fin part of the parallel corpus + disambiguate + correct manually
+* In that case, we will get a gold standard of parallel text
+
+__TODO:__
+* Analyse + disambiguate
+* Have students correct
+
+!! Oahpa Leksa, Numra, Morfa    
+
+Leksa has got a new language, Swedish. Heli has talked to teachers and await
+feedback. Teachers were most interested in Leksa, also in Leksa for 
+Estonian L1 wanting to learn Swedish.
+
+For Swedish-speaking students of Estonian, they are on different levels,
+and are interested in using Oahpa for differentiating the teaching.
+
+Morfa-C now tests for nouns, in q/a pairs. Heli has manually corrected/deleted
+forms from the MySQL database. The tag +Use/NG ?
+
+Unfortunately we removed the separate tag for short illative. Get it back?
+Discussion with Jaak.
+
+__Todo:__
+__Heli__ sends the errors discovered during setting up Morfa-C to Jaak.
+__Heli, Jaak__ Introduce +Use/NG tag for marking the non-preferred forms?  
+__Heli__ works on verbs in Morfa-S and Morfa-C.
+__All__ - Feedback to the developer is welcome.
+
+!! Oahpa Vasta, Sahka     
+
+!Vasta-S
+
+Heli has started with Vasta-S (the words are given in base form).
+The system generates q/a but does not check answers yet.
+Tiina has worked on the CG rules for this, and next step is implementation.
+
+Tiina: could we have the correct answer given?
+Yes, for Vasta-S is possible and Heli has implemented the generation of correct answers based on similar templates as Vasta questions and answers.
+
+__TODO:__
+__Heli__ continues working on the implementation.
+
+!Vasta-F
+
+... will come next.
+
+!Sahka
+
+requires coopertation with teachers. Building dialogues is not too easy.
+
+!!Võru Oahpa
+
+* Leksa is ok
+* Morfa-S is ok (N, V)
+** N almost ok, but problems for V
+* Morfa-C: a couple of sentences, some work on semantic sets needs to be done. 
+* Numra works well
+
+No disambiguation, hence no Sahka, Vasta.
+
+
+!! MT fin-est
+
+Some commits from Tiina - new dictionary entries, converted est and fin morph. disambiguation rules to apertium format, some transfer rules, for ex for translating finnish possessive suffixes.
+
+
+!! f-e lex. proof.
+
+{{{
+$ echo "Viisainta on piilottaa pillerit takaisin lääkekaapin perille ." | apertium -d . fin-est-debug
+Tarkimat on *piilottaa *pillerit kamin issi ravim kapa päradele/pärile .
+}}}
+
+Appr 17000 entries ("pilleri" is missing), Europarl-heavy.
+
+For the moment we are more concerned about other aspects of the MT system.
+Rising 17000 to 34000 will then come later.
+
+There is no ban, though. If you have a bilingual list, please add it.
+
+
+!! MT fin-sme     
+
+The folder exists, with a bidix of appr 7000 entries.
+Technically, fin-sme is up to date.
+
+$ echo "Viisainta on piilottaa pillerit takaisin lääkekaapin perille ." | apertium -d . fin-sme
+*Viisainta #leat #čiehkat *pillerit ruovttoluotta dálkkas skábe #rádjái #.
+
+Tromsø to look at the sme side of this.
+
+!! MT fin CG      
+
+Convert the tags. This is done.
+
+!! MT-kurssi
+
+Forthcoming in 3 weeks, and will be very nice.
+
+Course web site: It will be up in a few days.
+
+
+!!! Forward
+
+Before that meeting:
+
+* fst 
+** technicalities + progress on the lexicon
+** get rid of duplicate forms
+** easy linguistic issues fixed and hard ones listed
+* oahpa-est
+** select preferred forms (relevant for duplicate)
+** set up Morfa-S verbs + Vasta-S
+* oahpa-vro
+** the process is running, next milestone will be verbs
+** also check nouns
+* cg
+** treebank goldcorpus: A month of scripting?
+*** Until next meeting: Having started + having a clearer picture
+** textbook goldcorpus:
+*** create initial annotation setup
+*** Students started and a substantial part done.
+* mt
+** Prepare the course
+** Put parallel corpus in svn (Fran)
+** fin-est: 
+*** topic for a whole course + all kinds of things
+** fin-sme: 
+*** expand the bidix
+*** Look at tag mismatches
+
+!!!Next meeting
+
+* __17.11. 09.00 Swedish time, 10.00 Estonian time__
+
