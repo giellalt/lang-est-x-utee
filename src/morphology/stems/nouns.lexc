@@ -10058,7 +10058,6 @@ LEXICON Nouns
  loendus+N:loendus 09_E; ! (09_S -> +S) a0: loendus, b0: loenduse
  loendus+N:loendus 11; ! (11_S -> +S) a0: loendus, b0: loenduse, b0v: loendusi
  loeng+N:loeng 02_U; ! (02_S -> +S) a0: loeng, b0: loengu, b0r: 0, c0: 0
- loe+N:lo.D1e 06; ! (06_S -> +S) an: loe, at: loode
  loetavus+N:loetavus 11; ! (11_S -> +S) a0: loetavus, b0: loetavuse, b0v: loetavusi
  loetelu+N:loetel=u 17_Adt; ! (17_S -> +S) a0: loetelu, a0g: loetellu, a0v: #
  loetlus+N:loetlus 09_E; ! (09_S -> +S) a0: loetlus, b0: loetluse

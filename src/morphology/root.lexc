@@ -126,6 +126,8 @@ Multichar_Symbols
 
 ! kategooriate võimalikud kombinatsioonid
 ! possible combinations of categories
+! allikas / source :
+! Heiki-Jaan Kaalep. Eesti verbi vormistik. Keel ja kirjandus 1/2015 lk 1-15. http://kjk.eki.ee/ee/issues/2015/1/582 
 
 ! The categories are given in the order in which the allomorphs (if they can be
 ! distinguished) that represent them are attached to the word stem (note that the
@@ -144,13 +146,16 @@ Multichar_Symbols
 !# __negation:__ affirmative vs. negative. It manifests itself via
 !  lexical means: it is either present in an exceptional wordform (some forms of
 !  olema) or gets adhered to a form, normally used in affirmative,
-!  from an immediately preceding word ei or ära (e.g. ei elaks).
+!  from an immediately preceding word ei, ega or ära (e.g. ei elaks).
 !  The only case when negation has a dedicated form of its own is impersonal
 !  present indicative negative (e.g. ei elata).  
 !
 ! Below, brackets are used to indicate the set of underspecified alternative values.
 ! The forms of negative words pole and ära are included in order to capture really all 
-!  the combinations 
+!  the combinations
+! 
+! * tähistab kategooriate kombinatsiooni või sõnavormi, mida 1.10.2015 ei genereerita ega tunta ära 
+! * denotes the categories or word form that is not recognized nor generated as of Oct 1, 2015
 !
 ! ---- personal finite forms ----
 !
@@ -170,12 +175,12 @@ Multichar_Symbols
 ! personal present conditional Pl2 affirmative                                   elaksite
 ! personal present conditional Pl3 affirmative                                   elaksid
 !
-! personal present conditional Sg1 negative                                      poleksin
-! personal present conditional Sg2 negative                                      poleksid
+! personal present conditional Sg1 negative                                      poleksin*
+! personal present conditional Sg2 negative                                      poleksid*
 ! personal present conditional (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                poleks
-! personal present conditional Pl1 negative                                      poleksime
-! personal present conditional Pl2 negative                                      poleksite
-! personal present conditional Pl3 negative                                      poleksid
+! personal present conditional Pl1 negative                                      poleksime*
+! personal present conditional Pl2 negative                                      poleksite*
+! personal present conditional Pl3 negative                                      poleksid*
 !
 ! personal present imperative Sg2 (affirmative/negative)                         ela
 ! personal present imperative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) (affirmative/negative)   elagu 
@@ -184,7 +189,7 @@ Multichar_Symbols
 !
 ! personal present imperative Sg2 negative                                       ära
 ! personal present imperative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                 ärgu
-! personal present imperative Pl1 negative                                       ärgem
+! personal present imperative Pl1 negative                                       ärgem, ärme
 ! personal present imperative Pl2 negative                                       ärge
 !
 ! personal present quotative (affirmative/negative)                              elavat
@@ -206,10 +211,15 @@ Multichar_Symbols
 ! personal past conditional Pl2 affirmative                                      elanuksite
 ! personal past conditional Pl3 affirmative                                      elanuksid
 !
+! personal past conditional Sg1 negative                                         polnuksin*
+! personal past conditional Sg2 negative                                         polnuksid*
 ! personal past conditional (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                   polnuks
+! personal past conditional Pl1 negative                                         polnuksime*
+! personal past conditional Pl2 negative                                         polnuksite*
+! personal past conditional Pl3 negative                                         polnuksid*
 !
-! personal past imperative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) (affirmative/negative)      elanud 
-! personal past imperative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative                    ärnud 
+! personal past imperative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) (affirmative/negative) *    elanud 
+! personal past imperative (Sg1/Sg2/Sg3/Pl1/Pl2/Pl3) negative  *                 ärnud*
 !
 ! personal past quotative (affirmative/negative)                                 elanuvat
 ! personal past quotative negative                                               polnuvat
@@ -229,7 +239,7 @@ Multichar_Symbols
 ! ---- impersonal finite forms ----
 !
 ! impersonal present indicative affirmative                                       elatakse
-! impersonal present indicative negative                                          elata 
+! impersonal present indicative negative                                          elata, polda 
 !                   
 ! impersonal present conditional (affirmative/negative)                           elataks
 ! impersonal present conditional negative                                         poldaks
@@ -241,9 +251,10 @@ Multichar_Symbols
 ! impersonal present quotative negative                                           poldavat
 !
 ! impersonal past indicative affirmative                                          elati 
-! impersonal past indicative negative                                             poldud 
+! impersonal past indicative negative                                             elatud, poldud 
 !
 ! impersonal past conditional (affirmative/negative)                              elatuks
+! impersonal past conditional negative                                            polduks*
 !
 ! ---- impersonal infinite forms ----
 !
