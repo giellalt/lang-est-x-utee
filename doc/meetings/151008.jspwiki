@@ -1,15 +1,15 @@
 SamEst meeting 08.10.2015
 Participants: Fran, Heiki, Heli, Jaak, Jack, Kadri, Sjur, Tiina, Trond
 
-!! Agenda
+!!Agenda
 
 # What we had planned. (Heli finds the table.)       
 # What we have done. (The status of each subproject.)       
 # What are the next todo-s.       
 
-!! What we had planned
+!!What we had planned
 
-! The updated project plan from 30.09.2014 (meeting in Tartu)
+!The updated project plan from 30.09.2014 (meeting in Tartu)
 
 | Task            |  2014 | 2015  | 2016  | Persons
 --------------------------------------------------------------------------
@@ -26,8 +26,7 @@ Participants: Fran, Heiki, Heli, Jaak, Jack, Kadri, Sjur, Tiina, Trond
 
 Notes from that meeting: [http://giellatekno.uit.no/doc/lang/est/meetings/140930.html]
 
-
-!! Est + fin FST  
+!!Est + fin FST  
 
 Jaak has moved, but is now settled and can work more efficiently.
 There could have been more fst-input from the est Oahpa, that will now come.
@@ -76,7 +75,7 @@ Verbs: Here there are weaknesses.
 
 The Võro group (Sulev, Jack, Heli) is having regular meetings every 2-3 weeks where they discuss the progress and set intermediate goals. 
 
-!! CG
+!!CG
 
 ! est.cg
 est.cg is converted to Giellatekno version, and works well.
@@ -107,7 +106,7 @@ est.fst .o. tag-reshuffeling.fst
 __TODO:__
 __Jaak__ and __Tiina__ to discuss and __Jaak__ to implement.
 
-! Finnish cg
+!Finnish cg
 
 * fin/src/syntax/disambiguation.cg3
 * fin/src/syntax/function.cg3
@@ -161,7 +160,7 @@ __TODO:__
 * Analyse + disambiguate
 * Have students correct
 
-!! Oahpa Leksa, Numra, Morfa    
+!!Oahpa Leksa, Numra, Morfa    
 
 Leksa has got a new language, Swedish. Heli has talked to teachers and await
 feedback. Teachers were most interested in Leksa, also in Leksa for 
@@ -182,9 +181,9 @@ __Heli, Jaak__ Introduce +Use/NG tag for marking the non-preferred forms?
 __Heli__ works on verbs in Morfa-S and Morfa-C.
 __All__ - Feedback to the developer is welcome.
 
-!! Oahpa Vasta, Sahka     
+!!Oahpa Vasta, Sahka     
 
-!Vasta-S
+! Vasta-S
 
 Heli has started with Vasta-S (the words are given in base form).
 The system generates q/a but does not check answers yet.
@@ -215,19 +214,19 @@ requires coopertation with teachers. Building dialogues is not too easy.
 No disambiguation, hence no Sahka, Vasta.
 
 
-!! MT fin-est
+!!MT fin-est
 
 Some commits from Tiina - new dictionary entries, converted est and fin morph. disambiguation rules to apertium format, some transfer rules, for ex for translating finnish possessive suffixes.
 
 
-!! f-e lex. proof.
+!!fin-est lex. proof.
 
 {{{
 $ echo "Viisainta on piilottaa pillerit takaisin lääkekaapin perille ." | apertium -d . fin-est-debug
 Tarkimat on *piilottaa *pillerit kamin issi ravim kapa päradele/pärile .
 }}}
 
-Appr 17000 entries ("pilleri" is missing), Europarl-heavy.
+Appr 17000 entries (''pilleri'' is missing), Europarl-heavy.
 
 For the moment we are more concerned about other aspects of the MT system.
 Rising 17000 to 34000 will then come later.
@@ -235,21 +234,23 @@ Rising 17000 to 34000 will then come later.
 There is no ban, though. If you have a bilingual list, please add it.
 
 
-!! MT fin-sme     
+!!MT fin-sme     
 
 The folder exists, with a bidix of appr 7000 entries.
 Technically, fin-sme is up to date.
 
+{{{
 $ echo "Viisainta on piilottaa pillerit takaisin lääkekaapin perille ." | apertium -d . fin-sme
 *Viisainta #leat #čiehkat *pillerit ruovttoluotta dálkkas skábe #rádjái #.
+}}}
 
 Tromsø to look at the sme side of this.
 
-!! MT fin CG      
+!!MT fin CG      
 
 Convert the tags. This is done.
 
-!! MT-kurssi
+!!MT-kurssi
 
 Forthcoming in 3 weeks, and will be very nice.
 
@@ -288,4 +289,5 @@ Before that meeting:
 !!!Next meeting
 
 * __17.11. 09.00 Swedish time, 10.00 Estonian time__
+
 
