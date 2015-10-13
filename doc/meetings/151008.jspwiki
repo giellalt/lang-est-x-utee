@@ -3,9 +3,9 @@ Participants: Fran, Heiki, Heli, Jaak, Jack, Kadri, Sjur, Tiina, Trond
 
 !!Agenda
 
-# What we had planned. (Heli finds the table.)       
-# What we have done. (The status of each subproject.)       
-# What are the next todo-s.       
+# What we had planned. (Heli finds the table.)
+# What we have done. (The status of each subproject.)
+# What are the next todo-s.
 
 !!What we had planned
 
@@ -22,11 +22,11 @@ Participants: Fran, Heiki, Heli, Jaak, Jack, Kadri, Sjur, Tiina, Trond
 | f-e lex. proof. |   1   |    1  |  0    | TBD
 | MT fin-sme      |   1   |    1  |  1    | Same team as fin-est
 | MT fin CG       |   0   |    3  |  0    | -
-| Total           |  12   |   19  | 14    | 45+ 
+| Total           |  12   |   19  | 14    | 45+
 
 Notes from that meeting: [http://giellatekno.uit.no/doc/lang/est/meetings/140930.html]
 
-!!Est + fin FST  
+!!Est + fin FST
 
 Jaak has moved, but is now settled and can work more efficiently.
 There could have been more fst-input from the est Oahpa, that will now come.
@@ -61,19 +61,19 @@ __Action__
 * __Heli__, __Tiina__ and __Heiki__ will send feedback to Jaak.
 * This will help.
 
-!! Võro FST       
+!! Võro FST
 
 Yaml results as of today:
 * SUMMARY for the gt-desc fst(s): PASSES: 102 / FAILS: 235 / TOTAL: 337
 
-Jack has worked with vowel harmony. 
+Jack has worked with vowel harmony.
 Issue: Which form is the primary form.
 Oahpa Morfa: There are several correct answers but one of them is the preferred one.
-This is implemented in vro.fst with the help of +Use/NG tag that has been added to the non-preferred forms. In one of the built FSTs the +Use/NG forms are present and in another they are missing. This works in Oahpa. 
+This is implemented in vro.fst with the help of +Use/NG tag that has been added to the non-preferred forms. In one of the built FSTs the +Use/NG forms are present and in another they are missing. This works in Oahpa.
 
 Verbs: Here there are weaknesses.
 
-The Võro group (Sulev, Jack, Heli) is having regular meetings every 2-3 weeks where they discuss the progress and set intermediate goals. 
+The Võro group (Sulev, Jack, Heli) is having regular meetings every 2-3 weeks where they discuss the progress and set intermediate goals.
 
 !!CG
 
@@ -85,7 +85,7 @@ est.cg is converted to Giellatekno version, and works well.
 How to add (in)transitiveness to verbs?
 # Separate steps after fst
 # Tartu approach: transitivity-adding.fst .o. est.fst
-# Tromsø approach: add in lexicon 
+# Tromsø approach: add in lexicon
 ## (task: script in from separate list to stems/verbs.lexc)
 ## 30 verb types
 ### will give 60 lexica and not 30
@@ -147,7 +147,7 @@ This is the treebank (180k words):
 8    .    .    _    Punct    Punct    _    1    punct    _    _
 }}}
 
-STrategy: Use this to disambiguate 
+STrategy: Use this to disambiguate
 
 
 We have compiled a parallel corpus of textbook texts (12000 words)
@@ -160,10 +160,10 @@ __TODO:__
 * Analyse + disambiguate
 * Have students correct
 
-!!Oahpa Leksa, Numra, Morfa    
+!!Oahpa Leksa, Numra, Morfa
 
 Leksa has got a new language, Swedish. Heli has talked to teachers and await
-feedback. Teachers were most interested in Leksa, also in Leksa for 
+feedback. Teachers were most interested in Leksa, also in Leksa for
 Estonian L1 wanting to learn Swedish.
 
 For Swedish-speaking students of Estonian, they are on different levels,
@@ -177,11 +177,11 @@ Discussion with Jaak.
 
 __Todo:__
 __Heli__ sends the errors discovered during setting up Morfa-C to Jaak.
-__Heli, Jaak__ Introduce +Use/NG tag for marking the non-preferred forms?  
+__Heli, Jaak__ Introduce +Use/NG tag for marking the non-preferred forms?
 __Heli__ works on verbs in Morfa-S and Morfa-C.
 __All__ - Feedback to the developer is welcome.
 
-!!Oahpa Vasta, Sahka     
+!!Oahpa Vasta, Sahka
 
 ! Vasta-S
 
@@ -208,7 +208,7 @@ requires coopertation with teachers. Building dialogues is not too easy.
 * Leksa is ok
 * Morfa-S is ok (N, V)
 ** N almost ok, but problems for V
-* Morfa-C: a couple of sentences, some work on semantic sets needs to be done. 
+* Morfa-C: a couple of sentences, some work on semantic sets needs to be done.
 * Numra works well
 
 No disambiguation, hence no Sahka, Vasta.
@@ -234,7 +234,7 @@ Rising 17000 to 34000 will then come later.
 There is no ban, though. If you have a bilingual list, please add it.
 
 
-!!MT fin-sme     
+!!MT fin-sme
 
 The folder exists, with a bidix of appr 7000 entries.
 Technically, fin-sme is up to date.
@@ -246,7 +246,7 @@ $ echo "Viisainta on piilottaa pillerit takaisin lääkekaapin perille ." | aper
 
 Tromsø to look at the sme side of this.
 
-!!MT fin CG      
+!!MT fin CG
 
 Convert the tags. This is done.
 
@@ -261,7 +261,7 @@ Course web site: It will be up in a few days.
 
 Before that meeting:
 
-* fst 
+* fst
 ** technicalities + progress on the lexicon
 ** get rid of duplicate forms
 ** easy linguistic issues fixed and hard ones listed
@@ -280,9 +280,9 @@ Before that meeting:
 * mt
 ** Prepare the course
 ** Put parallel corpus in svn (Fran)
-** fin-est: 
+** fin-est:
 *** topic for a whole course + all kinds of things
-** fin-sme: 
+** fin-sme:
 *** expand the bidix
 *** Look at tag mismatches
 
