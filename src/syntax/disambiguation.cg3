@@ -67,8 +67,8 @@ LIST nppiir = Ind Imprt Cond Quot Ger Inf CLB ;
 
 
 LIST piir = CLB-C V N ABBR ACR Adp Po Pr Interj Num Pron X ;
-LIST CLB = CLB >>> ; 
-LIST CLBC = CLB CLBC >>> ;
+LIST CLB = CLB >>>  <<<  "st" "et" "sest" ; 
+LIST CLBC = CLB CLBC >>>  <<<  "st" "et" "sest" ;
 LIST Kvm = Punct "<{>" "<}>" ;
 LIST Z = Punct ;
 LIST Ccap = Prop ;
@@ -227,6 +227,7 @@ LIST ABC = "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "p" "q" "
 	  "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z" ;
 LIST Case = Nom Gen Par (Sg Ill) (Sg Ill) (Pl Ill) Ine Ela Ade All Abl Tra Ess Trm Abe Com ;
 LIST Case10 = Nom Gen Par (Sg Ill) (Sg Ill) (Pl Ill) Ine Ela Ade All Abl Tra ;
+LIST NotNom = Nom Gen Par (Sg Ill) (Sg Ill) (Pl Ill) Ine Ela Ade All Abl Tra Ess Trm Abe Com ;
 LIST KohaK = (Sg Ill) (Sg Ill) (Pl Ill) Ine Ela Ade All Abl ; 
 LIST InIllAditEl = Ine (Sg Ill) (Pl Ill) (Sg Ill) Ela ;
 LIST KustKuhu = (Sg Ill) (Pl Ill) (Sg Ill) Ela Abl All ;
@@ -404,7 +405,7 @@ LIST Inimene = "inimene" "naine" "mees" "poiss" "tüdruk" "laps" "arst" ;
 LIST Kuju = "kuju" "vorm" "formaat" "esitus" "kujutus" "kujutis" "kujutlus" "tutvustus" "staatus" "olek" "seisund" "monument" "mälestus#kivi" "jälg" "foto" ;
 
 LIST Sorti = "sort" "liik" "kord" "mitu" "mi=tu" "milline" "milli=ne" "värv" "puhk" "mall"
-	"laad" "viis" "mood" "tõug" "mast" "karv" "kuju" "pärit#olu" "meel" ;
+	"laad" "viis" "mood" "tõug" "mast" "karv" "pärit#olu" "meel" ;
 LIST üsna = "üsna" "väga" "päris" "küllalt" "igati" ;
 LIST Verb&Kvm = V Punct "<{>" "<}>" ;
 LIST LA = "<s>" >>> ;
@@ -524,9 +525,9 @@ LIST SuunaAdverb = "alla" "edasi" "eemale" "eest" "ette" "juurde" "järele"
 
 
 
-LIST DaVerb = ("võima" V) "tohtima" "saama" "olema" "minema" "tegema" "valmistama" "tekitama" "sünnitama" "soovi"
+LIST DaVerb = ("võima" V) "tohtima" "saama" "olema" "minema" "tegema" "valmistama" "tekitama" "sünnitama" "soovima"
 	"pakkuma" ("tooma" V) ("jääma" V) "kujunema" "muutuma" "saama" "tekkima" "aitama" *InfP ;
-LIST MaVerb = "pidama" "asuma" "hakkama" ("jääma" V) "kippuma" "minema" "puhkema" "sattuma" "sundima" "sunnima" "sõitma" "tulema" ;
+LIST MaVerb = "pidama" "asuma" "hakkama" ("jääma" V) "jätma" "kippuma" "minema" "puhkema" "sattuma" "sundima" "sunnima" "sõitma" "tulema" ;
 LIST VatVerb = "näima" "nägema" "paistma" "tunduma" "aimama" "arvama" "avastama" "eeldama" 
 	 "kaebama" "kartma" "kiitlema" "kujutlema" "kurtma" "kuulma" "leidma" "lootma" 
 	 "mõistma" "mõtlema" "mälestama" "märkama" "möönma" "nentima" "oletama" "ootama" 
@@ -603,7 +604,7 @@ LIST HeadingVerb = "teadma" "lugema" "pidama" "vaatama" "kuulama" "ootama" "sün
 LIST ImperVerb = "kuulama" "vaatama" "ootama" "tulema" "minema" "magama" "istuma" ("tooma" V) ;
 LIST TylliVerb = "minema" "pöörama" "kiskuma" ;
 LIST KuiCLVerb = "näitama" "rääkima" "ütlema" "seletama" "selgitama" ;
-LIST SaamaVerb = "teadma" "kuulma" "vigastama" ;
+LIST SaamaVerb = "teadma" "kuulma" "nägema" "vigastama" ;
 LIST KohaleVerb = ("tooma" V) "tulema" "kutsuma" ;
 LIST MuutVerb = "muutuma" "saama" "osutuma" "muunduma" "panema" "minema" "teisenduma" ;
 LIST CoSVerb = "kõrguma" "erinema" "sisalduma" ;
@@ -613,7 +614,7 @@ LIST PropAditVerb = "tulema" ("tooma" V) "saabuma" ("jõudma" V) "saatma" "helis
 
 LIST Part-K = *Part "müüma" ("ostma" V) "nägema" "kasutama" "kohtama" "näitama" "parandama" "tarvitama" 
 	 "takistama" "karistama" "toetama" "hoidma" "huvitama" "iseloomustama" "ootama" 
-    "aitama" "alustama" "harrastama" "jätkama" "katkestama" "kavatsema" "nõud"
+    "aitama" "alustama" "harrastama" "jätkama" "katkestama" "kavatsema" "nõudma"
 	 "alahindama" "austama" "arutlema" "eeldama" "haistma" "himustama" "häbenema" 
     "ihaldama" "imetlema" "jälestama" "kahetsema" "kartma" "kujutlema" "kuulama" "kuulma" 
     "käsitlema" "laitma" "leinama" "maitsma" "meenutama" "mõtlema" "neelama" "nuusutama" "nautima" 
@@ -656,17 +657,17 @@ LIST Modaal = Mod "kavatsema" "plaanima" "tulema" "kõlbama" "sobima" "tarvitsem
 
 LIST Intr = *Intr "asuma" "astuma" "keerlema" "lipsama" "lonkima" "muutuma" "olema" "minema" "tulema" "tõmbuma" "vajuma" "õhetama" "tugema" "kogunema" "ripnema" ;
 
-LIST PartVerb = *Part-P *Part "leiduma" "juhtuma" "siirdama" "registreerima" "lehvitama" "seedima" "puhastama" "laiutama" "siruta"
+LIST PartVerb = *Part-P *Part "leiduma" "juhtuma" "siirdama" "registreerima" "lehvitama" "seedima" "puhastama" "laiutama" "sirutama"
 	"tooma" "kasvatama" "tabama" "sihtima" "saama" "tellima" "määratlema" "viibutama" "koguma" "toppima" "peegeldama" "uudistama" 
 	"kirjeldama" "kommenteerima" "peitma" ("sulgema" V) "lenduma" "pidama" "lausuma" "jooma" "sööma" "õgima" "niitma" "astuma" "avaldama" "kandma" ; 
 
 
-LIST AditVerb = "suhtuma" "suhtu=vma" "puutuma" "puutu=vma" ("kutsuma" V) "minema" ("sõitma" V) ("jääma" V) "tormama" "kihutama" "võtma" ("viima" V) "sattuma" "illustreeri"
-	("tooma" V) "liikuma" ("tulema" V) "ronima" ("ajama" V) ("tõusma" V) "jätma" ("saama" V) "astuma" "pöörama" ("laskma" V) "käima" "suuna"
-	"ruttama" ("veerema" V) ("süstima" V) "keerama" ("jooksma" V) ("jalutama" V) ("saatma" V) "suvitama" "lask=minema" "kuulu"
-	("reisima" V) ("pistma" V) ("panema" V) "torkama" "torkima" ("ujuma" V) "prahvatama" "kukkuma" "kogunema" "paigutama" "mana"
-	("lendama" V) ("peitma" V) ("tassima" V) ("jõudma" V) "vajutama" "viskama" "kostma" "ilmuma" "sihtima" "paiskuma" "upitama" "sobitu"
-	"suruma" "lükkama" "tulistama" "sõudma" "kumama" "heitma" "aitama" "laskma" "sikutama" "sirutama" "asetama" "asetuma" "virutama" "vahti"
+LIST AditVerb = "suhtuma" "suhtu=vma" "puutuma" "puutu=vma" ("kutsuma" V) "minema" ("sõitma" V) ("jääma" V) "tormama" "kihutama" "võtma" ("viima" V) "sattuma" "illustreerima"
+	("tooma" V) "liikuma" ("tulema" V) "ronima" ("ajama" V) ("tõusma" V) "jätma" ("saama" V) "astuma" "pöörama" ("laskma" V) "käima" "suunama"
+	"ruttama" ("veerema" V) ("süstima" V) "keerama" ("jooksma" V) ("jalutama" V) ("saatma" V) "suvitama" "lask=minema" "kuuluma"
+	("reisima" V) ("pistma" V) ("panema" V) "torkama" "torkima" ("ujuma" V) "prahvatama" "kukkuma" "kogunema" "paigutama" "manama"
+	("lendama" V) ("peitma" V) ("tassima" V) ("jõudma" V) "vajutama" "viskama" "kostma" "ilmuma" "sihtima" "paiskuma" "upitama" "sobituma"
+	"suruma" "lükkama" "tulistama" "sõudma" "kumama" "heitma" "aitama" "laskma" "sikutama" "sirutama" "asetama" "asetuma" "virutama" "vahtima"
 "astuma" "hüppama" "juhata"	("jääma" V) "kallama" "kandma" "kargama" "keerama" "kihutama" "kolima" "kukkuma" "kutsuma" 
 	"käänama" "langema" "laskma" "lendama" "logima" "mahtuma" "pistma" "pääsema" "pöörama" "pöörduma" 
 	"registreerima" "rändama" "sattuma" "seadma" "suruma" "sõitma" "sättima" "söötma" ("tassima" V) 
@@ -702,28 +703,28 @@ LIST Alla#verb = ("ajama" V) "andma" "heitma" "hindama" "hüppama" "jätma" ("j�
 	"suruma" "taguma" "tegema" "tingima" "tirima" "torkama" "tulema" "tulistama" "tõmbama" 
 	"uhtma" "vaatama" "vajuma" "vajutama" "vanduma" "vedama" "viima" "virutama" "võtma" ;
 LIST Alt#verb = "lendama" "minema" "tõmbama" "vedama" ;
-LIST Edasi#verb = "andma" "jõudma" "kaebama" "kandma" "lükkama" "minema" "müü"
+LIST Edasi#verb = "andma" "jõudma" "kaebama" "kandma" "lükkama" "minema" "müüma"
 	"pääsemama" ("saama" V) "sõitma" "viima" "õppima" ;
 LIST Eemale#verb = ("jääma" V) "tõukama" ;
 LIST Esile#verb = "kutsuma" ("tooma" V) "tõstma" "tükkima" "võtma" ;
 LIST Ette#verb1 = "aimama" "andma" "arvama" "arvestama" "hoiatama" "juhtuma" "kasvatama" "kavatsema" 
 	"kirjutama" "kujutama" "kutsuma" "kuulutama" "käima" "küsima" "laulma" "lugema" "luiskama" "maalima" "maksma" "mõtlema" "mängima" 
-	"määrama" "nägema" "näitama" "puhuma" "rakendama" "rääkima" "söötma" "tantsima" "teadma" "teatama" "tegema" "telli"
+	"määrama" "nägema" "näitama" "puhuma" "rakendama" "rääkima" "söötma" "tantsima" "teadma" "teatama" "tegema" "tellima"
 	"trehvama" ("tundma" V) "vaatama" "valetama" "valmistama" "valmistuma" "ütlema" "võtma" ;
-LIST Ette#verb = ("ajama" V) "astuma" "heitma" "jõudma" "kandma" "keerama" "kujutama" "ladu"
+LIST Ette#verb = ("ajama" V) "astuma" "heitma" "jõudma" "kandma" "keerama" "kujutama" "laduma"
 	"lööma" "minema" "panema" "patrama" "pistma" "puutuma" 
 	"ruttama" ("saama" V) "sattuma" "seadma" "sõitma" "sättima" 
-	("tooma" V) "toppima" "torkama" "tulema" "tõmbama" "tõstma" "tükki"
+	("tooma" V) "toppima" "torkama" "tulema" "tõmbama" "tõstma" "tükkima"
 	"viima" "viskama" ;
 LIST Ilma#verb = "jätma" ("jääma" V) ("saama" V) ; 
 LIST Juurde#verb = "andma" "arvama" "kallama" "kirjutama" ("lisama" V) "lõikama" "maksma" "mõtlema" 
 	"panema" "pookima" ("saama" V) "soolama" ("tooma" V) "tulema" "tõmbama" "võtma" ;
 LIST Järel#verb = "käima" ;
 LIST Järele#verb = "aimama" "aitama" "andma" "arvama" "hüüdma" "jooksma" "jõudma" "jätma" ("jääma" V)
-	"kaaluma" "kaema" "katsuma" "kihutama" "kiitma" "kinnitama" "kuulama" "küsima" "lask"
-	"minema" "mõtlema" "pistma" "proovima" "pärima" ("saama" V) "sõitma" "tegema" "tulema" "uuri"
+	"kaaluma" "kaema" "katsuma" "kihutama" "kiitma" "kinnitama" "kuulama" "küsima" "laskma"
+	"minema" "mõtlema" "pistma" "proovima" "pärima" ("saama" V) "sõitma" "tegema" "tulema" "uurima"
 	"vaatama" "vahtima" "vajuma" "võtma" "õppima" "ronima" "kõndima" ;
-LIST Kaasa#verb = "aitama" "arvama" "elama" "kiskuma" "kõnelema" "laulma" "lööma" "minema" "mõju"
+LIST Kaasa#verb = "aitama" "arvama" "elama" "kiskuma" "kõnelema" "laulma" "lööma" "minema" "mõjuma"
 	"mängima" "panema" "pistma" "rääkima" "sõitma" "sündima" "tantsima" "tegema" ("tooma" V) 
 	"torma"	("tulema" V) ("tundma" V) "tõmbama" "töötama" "vedama" "viima" "ümisema" "üürgama" 
 	"andma" "kutsuma" "mõtlema" "kõigutama" "võtma" ("saama" V) "nutma" "kihutama" "pakkima" "krapsama" ;
@@ -731,21 +732,21 @@ LIST Kaasa#verb = "aitama" "arvama" "elama" "kiskuma" "kõnelema" "laulma" "lö�
 LIST Kaasas#verb = "käima" "kandma" ;
 LIST Kallale#verb = "langema" ;
 LIST Kinni#verb = ("ajama" V) "andma" "haakima" "hakkama" "hoidma" "istuma" "jooksma" "jätma" ("jääma" V) "kasva"
-	"kasvatama" "keerama" "kiiluma" "kleepima" "korkima" "krampima" "kukkuma" "käima" "köit"
-	"külmetama" "külmuma" "külmutama" "maksma" "minema" "mõistma" "mätsima" "müürima" "nabi"
-	"naelutama" "panema" "pidama" "pigistama" "pistma" "pätsima" "rabama" ("saama" V) "siduma" "tagu"
+	"kasvatama" "keerama" "kiiluma" "kleepima" "korkima" "krampima" "kukkuma" "käima" "köitma"
+	"külmetama" "külmuma" "külmutama" "maksma" "minema" "mõistma" "mätsima" "müürima" "nabima"
+	"naelutama" "panema" "pidama" "pigistama" "pistma" "pätsima" "rabama" ("saama" V) "siduma" "taguma"
 	"toppima" "traageldama" "tuiskama" "tõmbama" "tõmbuma" "vajuma" "vajutama" "viima" "võtma" ;
-LIST Kokku#verb = ("ajama" V) "andma" "arvama" "astuma" "elama" "hakkama" "harjutama" "heitma" "hoid"
-	"hoiduma" "jooksma" "jooma" "juhtuma" "kaapima" "kahmima" "kandma" "kasvama" "kasvatama" "keera"
-	"keerutama" "keetma" "kerima" "ketrama" "kirjutama" "kiskuma" "klappima" "kleepima" "kleepu"
-	"klopsima" "kobima" "koguma" "koonerdama" "kopsima" "korjama" "kraamima" "kraapima" "kuhja"
-	"kuhjuma" "kuivama" "kukkuma" "kutsuma" "kuuluma" "kõlama" "kõlksuma" "kõnelema" "käi"
-	"käsutama" "käänama" "köitma" "kühveldama" "langema" "lappima" "laskma" "leppima" "luge"
-	"luiskama" "lööma" "minema" "monteerima" "murdma" "mängima" "ostma" "otsima" "pakkima" "pane"
-	"passima" "peksma" "pigistama" "pistma" "puutuma" "põrkama" "raksatama" "rehkendama" "rulli"
+LIST Kokku#verb = ("ajama" V) "andma" "arvama" "astuma" "elama" "hakkama" "harjutama" "heitma" "hoidma"
+	"hoiduma" "jooksma" "jooma" "juhtuma" "kaapima" "kahmima" "kandma" "kasvama" "kasvatama" "keerama"
+	"keerutama" "keetma" "kerima" "ketrama" "kirjutama" "kiskuma" "klappima" "kleepima" "kleepuma"
+	"klopsima" "kobima" "koguma" "koonerdama" "kopsima" "korjama" "kraamima" "kraapima" "kuhjama"
+	"kuhjuma" "kuivama" "kukkuma" "kutsuma" "kuuluma" "kõlama" "kõlksuma" "kõnelema" "käima"
+	"käsutama" "käänama" "köitma" "kühveldama" "langema" "lappima" "laskma" "leppima" "lugema"
+	"luiskama" "lööma" "minema" "monteerima" "murdma" "mängima" "ostma" "otsima" "pakkima" "panema"
+	"passima" "peksma" "pigistama" "pistma" "puutuma" "põrkama" "raksatama" "rehkendama" "rullima"
 	"rääkima" "röövima" ("saama" V) "sattuma" "seadma" "siduma" "sobima" "soperdama" "sulama" "sulata"
-	"suruma" "sõitma" "sõlmima" "sättima" "sündima" "taguma" "tassima" "tegema" ("tooma" V) "torma"
-	"traageldama" "trehvama" "tulema" "tõmbama" "tõmbuma" "vajuma" "vajutama" "valeta"
+	"suruma" "sõitma" "sõlmima" "sättima" "sündima" "taguma" "tassima" "tegema" ("tooma" V) "tormama"
+	"traageldama" "trehvama" "tulema" "tõmbama" "tõmbuma" "vajuma" "vajutama" "valetama"
 	"valguma" "varisema" "vedama" "veerima" "viima" "voltima" "võtma" "õmblema" ;
 LIST Koos#verb = "käima" "seisma" ;
 LIST Kõrvale#verb = "astuma" "heitma" "hiilima" "hoidma" "jätma" ("jääma" V) "kalduma" "kargama" "lükkama" 
@@ -753,7 +754,7 @@ LIST Kõrvale#verb = "astuma" "heitma" "hiilima" "hoidma" "jätma" ("jääma" V)
 LIST Kõrvalt#verb = "vaatama" "tegema" ;
 LIST Kätte#verb = "harjutama" "juhatama" "jõudma" "kippuma" "leidma" "maksma" "näitama" 
 	"paistma" ("saama" V) "tasuma" "tulema" "võitlema" "võitma" "võtma" "õppima" "ütlema" ;
-LIST Külge#verb = "hakkama" "harjuma" "harjutama" ("jääma" V) "kargama" "kasvama" "kleepi"
+LIST Külge#verb = "hakkama" "harjuma" "harjutama" ("jääma" V) "kargama" "kasvama" "kleepima"
 	"kleepuma" "lööma" "pistma" "pookima" ("saama" V) "tegema" "torkama" "tükkima" "võtma" ;
 LIST Lahku#verb = "kirjutama" "lööma" "minema" ;
 LIST Lahti#verb = "haakima" "hargnema" "harutama" "keerama" "keerduma" "kerima" "koorima" "korkima" 
@@ -763,11 +764,11 @@ LIST Lahti#verb = "haakima" "hargnema" "harutama" "keerama" "keerduma" "kerima" 
 	 ("saama" V) "sadulda"	"siduma" "sorima" "sõlmima" "šifreerima" "taguma" "tegema" "tulema" "tõmbama" 
 	"urgitsema" "vajuma" "voltima" "võtma" "ütlema" ;
 LIST Laiali#verb = "kandma" "tassima" "valguma" ;
-LIST Ligi#verb = ("ajama" V) "andma" "kippuma" "kleepima" "litsuma" "panema" "pressima" "pääse"
+LIST Ligi#verb = ("ajama" V) "andma" "kippuma" "kleepima" "litsuma" "panema" "pressima" "pääsema"
 	 ("saama" V) "tikkuma" "tooma" "toppima" "tulema" "tõmbama" "tükkima" "võtma" ;
-LIST Läbi#verb1 = "arutama" "elama" "kaalu"
-	"kandma" "katsuma" "keema" "keetma" "kirjutama" "kloppi"
-	"kobama" "kolama" "kompama" "kompima" "kriipsutama" "kuluma" "külmuma" "küpsema" "küpsetama" "leota"
+LIST Läbi#verb1 = "arutama" "elama" "kaaluma"
+	"kandma" "katsuma" "keema" "keetma" "kirjutama" "kloppima"
+	"kobama" "kolama" "kompama" "kompima" "kriipsutama" "kuluma" "külmuma" "küpsema" "küpsetama" "leotama"
 	"lugema" "lõikama" "lööma" "materdama" "mõtlema" "mõõtma" 
 	"mängi"	"müüma" "otsima" "painduma" "painutama" "paristama" 
 	"peksma" "pesema" "petma" "piitsutama" "pistma" "pragama" "proovima" "puhuma" 
@@ -775,10 +776,10 @@ LIST Läbi#verb1 = "arutama" "elama" "kaalu"
 	"rammima" "raputama" "rooskama" "roostetama" 
 	"rääkima" "saagima" "sarjama" "seedima" "sõimama" "sööma" "tegema" "tuhnima" 
 	"uurima" "uuristama" "vaagima" "võtma" ;
-LIST Läbi#verb = ("ajama" V) "arutama" "astuma" "elama" "imbuma" "immitsema" "jooksma" "kaalu"
-	"kaevama" "kandma" "kasvama" "katsuma" "keema" "keetma" "kihutama" "kirjutama" "kloppi"
-	"kobama" "kolama" "kompama" "kompima" "kostma" "kriipsutama" "kukkuma" "kukutama" "kulu"
-	"kuula"	"kõndima" "käima" "külmuma" "küpsema" "küpsetama" "laskma" "lendama" "leota"
+LIST Läbi#verb = ("ajama" V) "arutama" "astuma" "elama" "imbuma" "immitsema" "jooksma" "kaaluma"
+	"kaevama" "kandma" "kasvama" "katsuma" "keema" "keetma" "kihutama" "kirjutama" "kloppima"
+	"kobama" "kolama" "kompama" "kompima" "kostma" "kriipsutama" "kukkuma" "kukutama" "kuluma"
+	"kuula"	"kõndima" "käima" "külmuma" "küpsema" "küpsetama" "laskma" "lendama" "leotama"
 	"libisema" "lugema" "lõikama" "lööma" "materdama" "minema" "murdma" "mõtlema" "mõõtma" 
 	"mängi"	"müüma" "nägema" "närima" "otsima" "painduma" "painutama" "paistma" "paristama" 
 	"peksma" "pesema" "petma" "piitsutama" "pistma" "pragama" "pressima" "proovima" "puhuma" 
@@ -788,25 +789,25 @@ LIST Läbi#verb = ("ajama" V) "arutama" "astuma" "elama" "imbuma" "immitsema" "j
 	"sõitma" "sööma" "tegema" "tilkuma" "torkama" "torkima" "tormama" "trügima" "tuhnima" "tulema" 
 	"tungima" "tuuseldama" "tuustima" "tõmbama" "töötama" "uurima" "uuristama" "vaagima" 
 	"vaatama" "vajuma" "valgustama" "vedama" "viilima" "viima" "võtma" ;
-LIST Maha#verb = ("ajama" V) "arvama" "astuma" "heitma" "hõikama" "hõõrduma" "hääletama" "hüppama" "istuma" "jahtu"
-	"jahutama" "jooksma" "jooma" "joonistama" "jätma" ("jääma" V) "kaaluma" "kaapima" "kandma" "kargama" "karju"
-	"kauplema" "keerama" "keerutama" "kihutama" "kirjutama" "kiskuma" "koksama" "koksima" "koli"
-	"koorima" "kopsama" "kopsima" "kraapima" "kratsima" "kriipsutama" "kuluma" "kustuta"
-	"kuulutama" "kõmmutama" "kõmpima" "kõndima" "kõrvetama" "käima" "käristama" "kärva"
-	"käänama" "kükitama" "laitma" "laskma" "lugema" "lööma" "magama" "maksma" "marssima" "mat"
-	"minema" "munsterdama" "murdma" "mängima" "märkima" "müüma" "paiskama" "panema" "parista"
-	"parseldama" "pesema" "pidama" "puksima" "põlema" "põletama" "põmmutama" "põrutama" "pööra"
-	"pühkima" "raasima" "rabama" "rahunema" "rahustama" "raiuma" "rapsima" "raputama" "rehkenda"
-	"rõhuma" "rääkima" "saagima" ("saama" V) "sadama" "sahkerdama" "salgama" "surema" "suruma" "sõit"
-	"taageldama" "tahuma" "tantsima" "tapma" "tegema" "tingima" "tirima" "toetama" "trampi"
-	"treima" "tulema" "tõmbama" "unustama" "vaatama" "vahtima" "vaikima" "vajuma" "valima" "vantsi"
+LIST Maha#verb = ("ajama" V) "arvama" "astuma" "heitma" "hõikama" "hõõrduma" "hääletama" "hüppama" "istuma" "jahtuma"
+	"jahutama" "jooksma" "jooma" "joonistama" "jätma" ("jääma" V) "kaaluma" "kaapima" "kandma" "kargama" "karjuma"
+	"kauplema" "keerama" "keerutama" "kihutama" "kirjutama" "kiskuma" "koksama" "koksima" "kolima"
+	"koorima" "kopsama" "kopsima" "kraapima" "kratsima" "kriipsutama" "kuluma" "kustutama"
+	"kuulutama" "kõmmutama" "kõmpima" "kõndima" "kõrvetama" "käima" "käristama" "kärvama"
+	"käänama" "kükitama" "laitma" "laskma" "lugema" "lööma" "magama" "maksma" "marssima" "matma"
+	"minema" "munsterdama" "murdma" "mängima" "märkima" "müüma" "paiskama" "panema" "paristama"
+	"parseldama" "pesema" "pidama" "puksima" "põlema" "põletama" "põmmutama" "põrutama" "pöörama"
+	"pühkima" "raasima" "rabama" "rahunema" "rahustama" "raiuma" "rapsima" "raputama" "rehkendama"
+	"rõhuma" "rääkima" "saagima" ("saama" V) "sadama" "sahkerdama" "salgama" "surema" "suruma" "sõitma"
+	"taageldama" "tahuma" "tantsima" "tapma" "tegema" "tingima" "tirima" "toetama" "trampima"
+	"treima" "tulema" "tõmbama" "unustama" "vaatama" "vahtima" "vaikima" "vajuma" "valima" "vantsima"
 	"vehkima" "vihtuma" "viilima" "viima" "viksima" "virutama" "viskama" "vuhkima" "võtma" "ärima" "ütlema" ;
 LIST Mööda#verb = "hiilima" "käima" "laskma" "minema" "pääsema" ("saama" V) "saatma" "sõitma" "vaatama" "vajuma" ; 
 LIST Otsa#verb = ("jääma" V) "lõppema" "panema" "pistma" ("saama" V) "sõitma" "torkama" ;
-LIST Peale#verb = ("ajama" V) "hakkama" "hüppama" "istuma" "juhtuma" ("jääma" V) "kaebama" "kargama" "kasvama" "keri"
-	"kippuma" "käima" "langema" "maksma" "minema" "panema" "passima" "pressima" "põrkama" "põruta"
-	"pööra"	"raputama" "rõhuma" "rüüpama" "rüüpima" ("saama" V) "sattuma" "sundima" "suruma" "sõit"
-	"tikkuma" "toppima" "tormama" "trehvama" "trügima" "tulema" "tungima" "tõmbama" "tükki"
+LIST Peale#verb = ("ajama" V) "hakkama" "hüppama" "istuma" "juhtuma" ("jääma" V) "kaebama" "kargama" "kasvama" "kerima"
+	"kippuma" "käima" "langema" "maksma" "minema" "panema" "passima" "pressima" "põrkama" "põrutama"
+	"pööra"	"raputama" "rõhuma" "rüüpama" "rüüpima" ("saama" V) "sattuma" "sundima" "suruma" "sõitma"
+	"tikkuma" "toppima" "tormama" "trehvama" "trügima" "tulema" "tungima" "tõmbama" "tükkima"
 	"vajuma" "vajutama" "viskama" "võtma" "dikteerima" ;
 LIST Peale#verb1 = "juhtuma" "pressima" "dikteerima" ;
 LIST Pealt#verb = "kuulama" "kuulma" "nägema" "vaatama" "vahtima" ;
@@ -814,133 +815,133 @@ LIST Pihta#verb = "andma" "hakkama" ("saama" V) ;
 LIST Pihta#verb1 = "andma" "hakkama" "panema" ;
 LIST Pärale#verb = "jõudma" ;
 LIST Püsti#verb = "lööma" ;
-LIST Ringi#verb = ("ajama" V) "jooksma" "kandma" "kargama" "keerama" "keerutama" "kihutama" "kilama" "kõndi"
-	"käima" "käänama" "käänduma" "laskma" "liikuma" "mõtlema" "pöörama" "pöörduma" "sõeluma" "sõit"
+LIST Ringi#verb = ("ajama" V) "jooksma" "kandma" "kargama" "keerama" "keerutama" "kihutama" "kilama" "kõndima"
+	"käima" "käänama" "käänduma" "laskma" "liikuma" "mõtlema" "pöörama" "pöörduma" "sõeluma" "sõitma"
 	"tegema" "tormama" "tuiskama" "tõmbama" "vaatama" "vahetama" "vahtima" "rändama" ;
 LIST Sekka#verb = "lööma" "pistma"  ;
-LIST Sisse#verb = ("ajama" V) "andma" "astuma" "elama" "harjuma" "hingama" "hüppama" "istutama" "juhatama" "juurdu"
-	("jääma" V) "kallama" "kandma" "kargama" "kasvama" "keerama" "keetma" "kihutama" "kirjutama" "klaari"
-	"kolima" "kukkuma" "kuluma" "kutsuma" "kõnelema" "käänama" "kündma" "kütma" "lange"
-	"laskma" "laulma" "lendama" "logima" "lööma" "lülitama" "magama" "mahtuma" "maksma" "mine"
-	"murdma" "mängima" "määrima" "müürima" "nõudma" "ostma" "pakkima" "peksma" "piirama" "pist"
-	"põikama" "põimima" "põlema" "pääsema" "pöörama" "pöörduma" "pühitsema" "raiuma" "registreeri"
-	"rändama" "rääkima" ("saama" V) "sadama" "sattuma" "seadma" "seebitama" "soolama" "suruma" "sõit"
+LIST Sisse#verb = ("ajama" V) "andma" "astuma" "elama" "harjuma" "hingama" "hüppama" "istutama" "juhatama" "juurduma"
+	("jääma" V) "kallama" "kandma" "kargama" "kasvama" "keerama" "keetma" "kihutama" "kirjutama" "klaarima"
+	"kolima" "kukkuma" "kuluma" "kutsuma" "kõnelema" "käänama" "kündma" "kütma" "langema"
+	"laskma" "laulma" "lendama" "logima" "lööma" "lülitama" "magama" "mahtuma" "maksma" "minema"
+	"murdma" "mängima" "määrima" "müürima" "nõudma" "ostma" "pakkima" "peksma" "piirama" "pistma"
+	"põikama" "põimima" "põlema" "pääsema" "pöörama" "pöörduma" "pühitsema" "raiuma" "registreerima"
+	"rändama" "rääkima" ("saama" V) "sadama" "sattuma" "seadma" "seebitama" "soolama" "suruma" "sõitma"
 	"sättima" "sööma" "söötma" ("tassima" V) "taguma" "tegema" "tooma" "toppima" "torkama" "trügima" 
 	"tuiskama" "tulema" ("tundma" V) "tungima" "tuupima" "tõmbama" "tõmbuma" "töötama" "tükkima" 
 	"vaata"	"vahtima" "vajuma" "vajutama" "valama" "valguma" "varisema" "vedama" "vehkima" 
 	"viima" "villima" "virutama" "viskama" "võtma" "õnnistama" "äestama" "voolama" ; 
-LIST Taga#verb = ("ajama" V) "hoidma" "igatsema" "kaebama" "kahetsema" "kihutama" "kiruma" "kiusa"
+LIST Taga#verb = ("ajama" V) "hoidma" "igatsema" "kaebama" "kahetsema" "kihutama" "kiruma" "kiusama"
 	"kurtma" "küsima" "leinama" "nutma" "nõudma" "ohkama" "otsima" "piitsutama" "pärima" 
 	"rääkima" "sundima" "tapma" "torkima" "tuupima" "utsitama" "õhkama" ;
-LIST Tagant#verb = "aitama" "kihutama" "kiirustama" "kiitma" "piitsutama" "sudima" "sundi"
+LIST Tagant#verb = "aitama" "kihutama" "kiirustama" "kiitma" "piitsutama" "sudima" "sundima"
 	"tapma" "torkima" "tõukama" "utsitama" ;
-LIST Tagasi#verb = ("ajama" V) "andma" "astuma" "haarama" "hoidma" "kajama" "kihutama" "kohku"
-	"kutsuma" "laskma" "lõikama" "lööma" "lükkama" "maksma" "minema" "mõtlema" "nimetama" "peegeldu"
-	"peksma" "pöörama" "põrkama" ("saama" V) "suruma" "sõitma" "tegema" ("tooma" V) "tulema" "tõmbama" "tõmbu"
+LIST Tagasi#verb = ("ajama" V) "andma" "astuma" "haarama" "hoidma" "kajama" "kihutama" "kohkuma"
+	"kutsuma" "laskma" "lõikama" "lööma" "lükkama" "maksma" "minema" "mõtlema" "nimetama" "peegelduma"
+	"peksma" "pöörama" "põrkama" ("saama" V) "suruma" "sõitma" "tegema" ("tooma" V) "tulema" "tõmbama" "tõmbuma"
 	"tõrjuma" "vaatama" "vahtima" "vajuma" "viima" "võitma" "võtma" ;
 LIST Taha#verb = ("jääma" V) "panema" "pistma" "torkama" ; 
-LIST Takka#verb = "aitama" "andma" "kihutama" "kiitma" "kinnitama" "piitsutama" "sundi"
+LIST Takka#verb = "aitama" "andma" "kihutama" "kiitma" "kinnitama" "piitsutama" "sundima"
 	"torkima" "tõmbama" "utsitama" "vaatama" ;
 LIST Tasa#verb = "teenima" "tegema" ;
 LIST Täis#verb = "kiiluma" "tegema" ;
-LIST Vahele#verb = "astuma" "hüüdma" "jätma" ("jääma" V) "kukkuma" "panema" "pistma" "rääki"
+LIST Vahele#verb = "astuma" "hüüdma" "jätma" ("jääma" V) "kukkuma" "panema" "pistma" "rääkima"
 	"segama" "torkama" "torkima" "tulema" "võtma" ;
 LIST Vahelt#verb = "lõikama" "tegema" ;
 LIST Valla#verb = "pääsema" "päästma" ;
 LIST Valmis#verb = ("saama" V) "tegema" ; 
-LIST Vastu#verb = ("ajama" V) "andma" "astuma" "hakkama" "helkima" "hüüdma" "juhtuma" "kaikuma" "kaja"
-	"kiiskama" "kostma" "kumama" "kõlama" "kõmisema" "kõnelema" "käima" "küsima" "lööma" "minema" "pane"
-	"peegelduma" "pidama" "pistma" "puiklema" "punnima" "purelema" "põiklema" "põruta"
-	"rabelema" "raiuma" "rapsima" "rääkima" ("saama" V) "sattuma" "seadma" "seisma" "seleta"
-	"siplema" "sudima" "suruma" "sõdima" "sõitlema" "särama" "torisema" "torkama" "trehva"
-	"tulema" "tulistama" "tõrjuma" "tõrkuma" "töötama" "vaatama" "vahtima" "vaidlema" "võt"
+LIST Vastu#verb = ("ajama" V) "andma" "astuma" "hakkama" "helkima" "hüüdma" "juhtuma" "kaikuma" "kajama"
+	"kiiskama" "kostma" "kumama" "kõlama" "kõmisema" "kõnelema" "käima" "küsima" "lööma" "minema" "panema"
+	"peegelduma" "pidama" "pistma" "puiklema" "punnima" "purelema" "põiklema" "põrutama"
+	"rabelema" "raiuma" "rapsima" "rääkima" ("saama" V) "sattuma" "seadma" "seisma" "seletama"
+	"siplema" "sudima" "suruma" "sõdima" "sõitlema" "särama" "torisema" "torkama" "trehvama"
+	"tulema" "tulistama" "tõrjuma" "tõrkuma" "töötama" "vaatama" "vahtima" "vaidlema" "võtma"
 	"väitlema" "väitma" "ütlema" 
 	"haukuma" "hõiskama" "hääletama" "jooksma" "kaitsma" "kihutama" "lausuma" "lükkama" 
 	"mõjuma" "naeratama" "nähvama" "peegeldama" "põrkama" "pöörama" "ruttama" "ründama" 
-	"sihtima" "siruma" "tegutsema" "tervitama" "toimima" "tormama" "vaatama" "vahti"
+	"sihtima" "siruma" "tegutsema" "tervitama" "toimima" "tormama" "vaatama" "vahtima"
 	"sõimama" "võitlema" ;
-LIST Vastu#verb1 = "helkima" "hüüdma" "juhtuma" "kaikuma" "kaja"
+LIST Vastu#verb1 = "helkima" "hüüdma" "juhtuma" "kaikuma" "kajama"
 	"kiiskama" "kostma" "kõlama" "kõmisema" "küsima" 
 	"pidama" "pistma" "puiklema" "punnima" "purelema" "põiklema" 
-	"rabelema" "raiuma" "rapsima" "rääkima" "seleta"
-	"siplema" "sudima" "sõitlema" "särama" "torisema" "torkama" "trehva"
+	"rabelema" "raiuma" "rapsima" "rääkima" "seletama"
+	"siplema" "sudima" "sõitlema" "särama" "torisema" "torkama" "trehvama"
 	"tulema" "tulistama" "tõrjuma" "tõrkuma" "töötama" "vahtima" "võtma" "väitma" 
 	"haukuma" "naeratama" "peegeldama" "pöörama" "ruttama" "ründama" 
 	"sihtima" "siruma" "tervitama" "toimima" "vaatama" "vahtima" "sõimama" "võitlema" ;
-LIST Välja#verb = "aitama" ("ajama" V) "andma" "arendama" "arenema" "arvama" "arvutama" "astu"
-	"ehitama" "ehtima" "elama" "harutama" "hauduma" "heitma" "higistama" "hingama" "hüppama" "hüüd"
-	"ilmuma" "jagama" "jooksma" "joonistama" "juurima" "jõudma" "jätma" ("jääma" V) "kaaluma" "kaapi"
-	"kaevama" "kallama" "kandma" "kangutama" "kannatama" "kargama" "kasvama" "kauplema" "kee"
-	"keerama" "keerutama" "kestma" "kihutama" "kirjutama" "kiskuma" "klaarima" "klanima" "koli"
-	"konksutama" "koolitama" "koorima" "kooruma" "kostma" "kraamima" "kraapima" "kristalliseeru"
-	"kujundama" "kujunema" "kukkuma" "kurnama" "kutsuma" "kuulutama" "kõrvetama" "käi"
-	"käratama" "käristama" "kärkima" "küünitama" "küünituma" "küütima" "laduma" "laena"
-	"langema" "laskma" "logima" "loosima" "lugema" "lunastama" "lööma" "lülitama" "maga"
-	"maksma" "meelitama" "minema" "murdma" "mõistma" "mõtlema" "mõõtma" "mängima" "müü"
-	"naerma" "nuhkima" "nuputama" "nuruma" "nutma" "nõiduma" "nõudma" "nägema" "näitama" "oksenda"
-	"ostma" "otsima" "pahvatama" "painama" "paiskama" "paistma" "pakkima" "pakkuma" "pane"
-	"pasundama" "patrama" "peksma" "pesema" "petma" "pidama" "pigistama" "pilduma" "pinni"
+LIST Välja#verb = "aitama" ("ajama" V) "andma" "arendama" "arenema" "arvama" "arvutama" "astuma"
+	"ehitama" "ehtima" "elama" "harutama" "hauduma" "heitma" "higistama" "hingama" "hüppama" "hüüdma"
+	"ilmuma" "jagama" "jooksma" "joonistama" "juurima" "jõudma" "jätma" ("jääma" V) "kaaluma" "kaapima"
+	"kaevama" "kallama" "kandma" "kangutama" "kannatama" "kargama" "kasvama" "kauplema" "keema"
+	"keerama" "keerutama" "kestma" "kihutama" "kirjutama" "kiskuma" "klaarima" "klanima" "kolima"
+	"konksutama" "koolitama" "koorima" "kooruma" "kostma" "kraamima" "kraapima" "kristalliseeruma"
+	"kujundama" "kujunema" "kukkuma" "kurnama" "kutsuma" "kuulutama" "kõrvetama" "käima"
+	"käratama" "käristama" "kärkima" "küünitama" "küünituma" "küütima" "laduma" "laenama"
+	"langema" "laskma" "logima" "loosima" "lugema" "lunastama" "lööma" "lülitama" "magama"
+	"maksma" "meelitama" "minema" "murdma" "mõistma" "mõtlema" "mõõtma" "mängima" "müüma"
+	"naerma" "nuhkima" "nuputama" "nuruma" "nutma" "nõiduma" "nõudma" "nägema" "näitama" "oksendama"
+	"ostma" "otsima" "pahvatama" "painama" "paiskama" "paistma" "pakkima" "pakkuma" "panema"
+	"pasundama" "patrama" "peksma" "pesema" "petma" "pidama" "pigistama" "pilduma" "pinnima"
 	"pistma" "pomisema" "praakima" "praavima" "pressima" "protsessima" "puhastama" "puhkama" 
-	"pudenema" "puistama" "pukerdama" "pukseerima" "puksima" "puretama" "purskama" "põletama" "põrutama" "pääse"
-	"päästma" "pöörama" "pühkima" "püüdma" "rabelema" "raiuma" "rapsima" "raputama" "ravi"
+	"pudenema" "puistama" "pukerdama" "pukseerima" "puksima" "puretama" "purskama" "põletama" "põrutama" "pääsema"
+	"päästma" "pöörama" "pühkima" "püüdma" "rabelema" "raiuma" "rapsima" "raputama" "ravima"
 	"reageerima" "rebima" "registreerima" "rehkendama" "rentima" "riputama" "rookima" "rändama" 
-	"rääkima" "saagima" ("saama" V) "saatma" "selgitama" "sihtima" "sikutama" "siplema" "sirutama" "sirutu"
-	"sopistama" "sorteerima" "sortima" "suitsetama" "sulama" "sulatama" "sulgema" "sure"
-	"suretama" "suruma" "sõeluma" "sõitma" "sööma" "sülgama" "sülitama" "taguma" "tahuma" "tassi"
-	"teenima" "tegema" "tingima" "tirima" ("tooma" V) "torkama" "torkima" "tormama" "traali"
-	"trügima" "trükkima" "tuhnima" "tuiskama" "tulema" "tungima" "tuulama" "tuuldu"
-	"tuulutama" "tõmbama" "tõrjuma" "tõstma" "tõukama" "töötama" "uhtma" "uhtuma" "urgitse"
-	"uurima" "uuristama" "vaatama" "vabandama" "vahetama" "vahtima" "vajuma" "vala"
-	"valetama" "valguma" "valgustama" "valima" "vedama" "venima" "venitama" "viima" "vilista"
-	"vingerdama" "virutama" "viskama" "võitlema" "võluma" "võtma" "väänama" "õmblema" "õpeta"
+	"rääkima" "saagima" ("saama" V) "saatma" "selgitama" "sihtima" "sikutama" "siplema" "sirutama" "sirutuma"
+	"sopistama" "sorteerima" "sortima" "suitsetama" "sulama" "sulatama" "sulgema" "surema"
+	"suretama" "suruma" "sõeluma" "sõitma" "sööma" "sülgama" "sülitama" "taguma" "tahuma" "tassima"
+	"teenima" "tegema" "tingima" "tirima" ("tooma" V) "torkama" "torkima" "tormama" "traalima"
+	"trügima" "trükkima" "tuhnima" "tuiskama" "tulema" "tungima" "tuulama" "tuulduma"
+	"tuulutama" "tõmbama" "tõrjuma" "tõstma" "tõukama" "töötama" "uhtma" "uhtuma" "urgitsema"
+	"uurima" "uuristama" "vaatama" "vabandama" "vahetama" "vahtima" "vajuma" "valama"
+	"valetama" "valguma" "valgustama" "valima" "vedama" "venima" "venitama" "viima" "vilistama"
+	"vingerdama" "virutama" "viskama" "võitlema" "võluma" "võtma" "väänama" "õmblema" "õpetama"
 	"õppima" "ütlema" "üürima" ;
 LIST Ühes#verb = "minema" "tooma" "tulema" "hõljuma" ;
-LIST Ühte#verb = "heitma" "hoidma" "kasvama" "kuuluma" "käima" "köitma" "langema" "lööma" "mine"
+LIST Ühte#verb = "heitma" "hoidma" "kasvama" "kuuluma" "käima" "köitma" "langema" "lööma" "minema"
 	"passima" ("saama" V) "siduma" "sobima" "sulama" "sulatama" "sündima" ;
 LIST Ülal#verb = "pidama" "hoidma" ;
 LIST Üle#verb = "aitama" "ajama" "andma" "astuma" "elama" "hindama" "hüppama" "jooksma" "jätma" ("jääma" V)
-	"kaaluma" "kallama" "kandma" "kanduma" "karjuma" "kasvama" "kavaldama" "keema" "kolima" "kontrolli"
-	"koormama" "kordama" "kostma" "kuhjama" "kuldama" "kulutama" "kuulama" "kuumenema" "käi"
-	"küllastama" "külvama" "küsima" "kütma" "laskma" "libisema" ("looma" V) "lugema" "lööma" "majuta"
-	"meelitama" "minema" "mõtlema" "mõõtma" "mängima" "paisutama" "pakkuma" "pesema" "pinguta"
-	"pipardama" "piserdama" "politiseerima" "praadima" "puistama" "punuma" "pühkima" "rahvasta"
-	"riputama" "rääkima" ("saama" V) "soolama" "sõitma" "sööma" "tegema" "toitma" "tooma" "trumpa"
-	"tulema" "tõmbama" "tähtsustama" "töötama" "uhtma" "uhtuma" "ujutama" "vaatama" "vahuta"
-	"valama" "valmima" "viima" "viskama" "voolama" "võimendama" "võtma" "võõpama" "väeta"
+	"kaaluma" "kallama" "kandma" "kanduma" "karjuma" "kasvama" "kavaldama" "keema" "kolima" "kontrollima"
+	"koormama" "kordama" "kostma" "kuhjama" "kuldama" "kulutama" "kuulama" "kuumenema" "käima"
+	"küllastama" "külvama" "küsima" "kütma" "laskma" "libisema" ("looma" V) "lugema" "lööma" "majutama"
+	"meelitama" "minema" "mõtlema" "mõõtma" "mängima" "paisutama" "pakkuma" "pesema" "pingutama"
+	"pipardama" "piserdama" "politiseerima" "praadima" "puistama" "punuma" "pühkima" "rahvastama"
+	"riputama" "rääkima" ("saama" V) "soolama" "sõitma" "sööma" "tegema" "toitma" "tooma" "trumpama"
+	"tulema" "tõmbama" "tähtsustama" "töötama" "uhtma" "uhtuma" "ujutama" "vaatama" "vahutama"
+	"valama" "valmima" "viima" "viskama" "voolama" "võimendama" "võtma" "võõpama" "väetama"
 	"värvima" "väsima" "väsitama" "vürtsitama" ;
 LIST Üle#verb2 = "elama" ("jääma" V) "võtma" ;
-LIST Üles#verb = "ajama" "andma" "arvama" "astuma" "ehitama" "ehmatama" "hargnema" "harima" "harune"
-	"harutama" "joonistama" "juurima" "kaaluma" "kaevama" "karjuma" "kasvama" "kasvatama" "kee"
-	"keerama" "keerutama" "keetma" "kergitama" "kerkima" "kihutama" "kiitma" "kirjutama" "kisku"
-	"klanima" "kleepima" "kloppima" "klopsima" "kobima" "kohendama" "kohutama" "koorima" "korja"
-	"kruttima" "kruvima" "kutsuma" "käänama" "kündma" "kütma" "laadima" "laduma" "laulma" "leid"
-	("looma" V) "lugema" "lööma" "minema" "mukkima" "märkima" "näitama" "ostma" "otsima" "paisteta"
-	"paisutama" "panema" "peksma" "peletama" "pelutama" "piitsutama" "pilduma" "pistma" "poo"
-	"puhuma" "puhvima" "punduma" "putitama" "põrutama" "pöörama" "raiuma" "raputama" "riputa"
-	"rääkima" "seadma" "soojendama" "soojenema" "sulama" "sulatama" "sättima" "taguma" "tege"
-	"torkima" "tuhnima" "tulema" "tunnistama" "turgutama" "tursuma" "tõmbama" "tõstma" "tõus"
-	"tähendama" "töötama" "vaatama" "vahtima" "vuntsima" "vurhvima" "võtma" "äratama" "ärka"
+LIST Üles#verb = "ajama" "andma" "arvama" "astuma" "ehitama" "ehmatama" "hargnema" "harima" "harunema"
+	"harutama" "joonistama" "juurima" "kaaluma" "kaevama" "karjuma" "kasvama" "kasvatama" "keema"
+	"keerama" "keerutama" "keetma" "kergitama" "kerkima" "kihutama" "kiitma" "kirjutama" "kiskuma"
+	"klanima" "kleepima" "kloppima" "klopsima" "kobima" "kohendama" "kohutama" "koorima" "korjama"
+	"kruttima" "kruvima" "kutsuma" "käänama" "kündma" "kütma" "laadima" "laduma" "laulma" "leidma"
+	("looma" V) "lugema" "lööma" "minema" "mukkima" "märkima" "näitama" "ostma" "otsima" "paistetama"
+	"paisutama" "panema" "peksma" "peletama" "pelutama" "piitsutama" "pilduma" "pistma" "pooma"
+	"puhuma" "puhvima" "punduma" "putitama" "põrutama" "pöörama" "raiuma" "raputama" "riputama"
+	"rääkima" "seadma" "soojendama" "soojenema" "sulama" "sulatama" "sättima" "taguma" "tegema"
+	"torkima" "tuhnima" "tulema" "tunnistama" "turgutama" "tursuma" "tõmbama" "tõstma" "tõusma"
+	"tähendama" "töötama" "vaatama" "vahtima" "vuntsima" "vurhvima" "võtma" "äratama" "ärkama"
 	"ärritama" "ütlema" "hüppama" ;
 LIST Üleval#verb = "pidama" ; 
-LIST Ümber#verb = "ajama" "arvama" "arvutama" "asuma" "asustama" "ehitama" "eksima" "haara"
-	"hindama" "istuma" "istutama" "jooksma" "jutustama" "kaevama" "kasvama" "kasvatama" "keera"
-	"kehastuma" "kerima" "kihutama" "kirjutama" "kohendama" "kolima" "korraldama" "kujundama" "kujune"
-	"kukkuma" "kvalifitseeruma" "kõndima" "käima" "käänama" "kündma" "laskma" "lõikama" "löö"
-	"lükkama" "lülitama" "lülituma" "matma" "minema" "muutma" "mõtestama" "mõtlema" "nimeta"
-	"orienteeruma" "otsustama" "paigutama" "paiskama" "panema" "piirama" "pöörama" "pöördu"
-	"rahvustama" "rahvustuma" "reastuma" "riietama" "riietuma" "riputama" "ristima" "rõivasta"
-	"rõivastuma" ("saama" V) "seadma" "siduma" "sulatama" "sõnastama" "sättima" "sündima" "tege"
-	"trükkima" "tõmbama" "tõstma" "tõukama" "tähtima" "töötama" "vaatama" "vahetama" "vahti"
+LIST Ümber#verb = "ajama" "arvama" "arvutama" "asuma" "asustama" "ehitama" "eksima" "haarama"
+	"hindama" "istuma" "istutama" "jooksma" "jutustama" "kaevama" "kasvama" "kasvatama" "keerama"
+	"kehastuma" "kerima" "kihutama" "kirjutama" "kohendama" "kolima" "korraldama" "kujundama" "kujunema"
+	"kukkuma" "kvalifitseeruma" "kõndima" "käima" "käänama" "kündma" "laskma" "lõikama" "lööma"
+	"lükkama" "lülitama" "lülituma" "matma" "minema" "muutma" "mõtestama" "mõtlema" "nimetama"
+	"orienteeruma" "otsustama" "paigutama" "paiskama" "panema" "piirama" "pöörama" "pöörduma"
+	"rahvustama" "rahvustuma" "reastuma" "riietama" "riietuma" "riputama" "ristima" "rõivastama"
+	"rõivastuma" ("saama" V) "seadma" "siduma" "sulatama" "sõnastama" "sättima" "sündima" "tegema"
+	"trükkima" "tõmbama" "tõstma" "tõukama" "tähtima" "töötama" "vaatama" "vahetama" "vahtima"
 	"valama" "valima" "varisema" "veenma" "viskama" "vormima" "võtma" "õmblema" "õppima" "ütlema" ;
-LIST Ümber#verb1 = "arvama" "arvutama" "asuma" "asustama" "eksima" "haara"
+LIST Ümber#verb1 = "arvama" "arvutama" "asuma" "asustama" "eksima" "haarama"
 	"hindama" "istuma" "istutama" "jutustama" "kasvatama" 
-	"kehastuma" "kirjutama" "kohendama" "kolima" "korraldama" "kujundama" "kujune"
-	"kukkuma" "kvalifitseeruma" "kündma" "lõikama" "löö"
+	"kehastuma" "kirjutama" "kohendama" "kolima" "korraldama" "kujundama" "kujunema"
+	"kukkuma" "kvalifitseeruma" "kündma" "lõikama" "lööma"
 	"lülitama" "lülituma" "matma" "muutma" "mõtestama" "mõtlema" 
-	"orienteeruma" "otsustama" "paigutama" "paiskama" "panema" "piirama" "pöördu"
-	"rahvustama" "rahvustuma" "reastuma" "riietama" "riietuma" "riputama" "ristima" "rõivasta"
-	"rõivastuma" "seadma" "sulatama" "sõnastama" "sündima" "tege"
-	"trükkima" "tõstma" "tõukama" "tähtima" "vaatama" "vahetama" "vahti"
+	"orienteeruma" "otsustama" "paigutama" "paiskama" "panema" "piirama" "pöörduma"
+	"rahvustama" "rahvustuma" "reastuma" "riietama" "riietuma" "riputama" "ristima" "rõivastama"
+	"rõivastuma" "seadma" "sulatama" "sõnastama" "sündima" "tegema"
+	"trükkima" "tõstma" "tõukama" "tähtima" "vaatama" "vahetama" "vahtima"
 	"valama" "valima" "varisema" "veenma" "vormima" "võtma" "õmblema" "õppima" "ütlema" ; 
 
 LIST Sirgu#verb = "ajama" "tõusma" "jääma" ; 
@@ -953,7 +954,7 @@ LIST Pähe#Verb = ("jääma" V) "õppima" "tulema" ("sadama" V) "tärkama" "tork
 LIST Aru#Verb = "saama" "andma" "võtma" "pidama" ;
 
 
-LIST VäsiVerb = "tundma" "väsima" "kurnama" "hirmuma" "närtsima" "lõpma" "surema" "ussitama" "armuma" "imestama" "imestuma" "pingestama" "huvitama" "vettima" ("(.*)#väsima"r) ("(.*)#kurnama"r) ("(.*)#huvitama"r) ;
+LIST VäsiVerb = "tundma" "väsima" "kurnama" "hirmuma" "närtsima" "lõpma" "surema" "ussitama" "armuma" "imestama" "imestuma" "pingestama" "huvitama" "vettima" "ehmu" "pettu" "nördi" ("(.*)#väsima"r) ("(.*)#kurnama"r) ("(.*)#huvitama"r) ;
     
 
 LIST AblVerb = "küsima" "pärima" "võtma" "rebima" ; 
@@ -1006,9 +1007,9 @@ SELECT PropGen (NEGATE -1 FinV)(1 RiikVald OR Liityhing)(NEGATE 1 D OR A);
 SELECT Gen (0C S)(NEGATE 0 ("osa"))(1 RiikVald OR Liityhing)(NEGATE 1 D OR A)(NEGATE -1 OmadusAse)(*-1 S + Part BARRIER CLB);
 SELECT S OR G (0 Liityhing OR Riikjne)(NEGATE 0 D OR ("kiri") OR ("kanal") OR ("Maa") OR ("Linn") OR ("Saks")); 
 SELECT SgNom (0 Kuju OR ("Academia"))(1 Cap);
-SELECT Nom OR D OR I (NEGATE 0 V)(-1 Opr OR >>>)(1 Cpr OR <<<)
-SELECT Nom OR D OR I (NEGATE 0 V)(-1 Opr OR >>>)(1 Arv OR Et OR Kvm OR Cap)(2 Cpr OR <<<)
-SELECT Nom OR D OR I (-1 Opr OR >>>)(1 Kvm)(2 Arv OR Et OR Kvm OR Cap)(3 Cpr OR <<<)
+SELECT Nom OR D OR I (NEGATE 0 V)(-1 Opr OR >>>)(1 Cpr OR <<<);
+SELECT Nom OR D OR I (NEGATE 0 V)(-1 Opr OR >>>)(1 Arv OR Et OR Kvm OR Cap)(2 Cpr OR <<<);
+SELECT Nom OR D OR I (-1 Opr OR >>>)(1 Kvm)(2 Arv OR Et OR Kvm OR Cap)(3 Cpr OR <<<);
 SELECT SgGen (0C S)(NEGATE -1 A)(1 S + Cap OR A)(2 RiikVald OR Liityhing);
 SELECT SgGen + Cap (0C S)(1 S + Cap OR A)(-1 RiikVald OR Liityhing);
 SELECT SgGen + Cap (0C S)(1 S + Cap OR A)(-1 S + Cap)(-2 RiikVald OR Liityhing);
@@ -1032,7 +1033,7 @@ SELECT PropNom (0 G)(-1 Liityhing)(-1 Gen)(NEGATE 1 Cap);
 SELECT PropGen (0 G)(NEGATE 1 Sid|Kvm LINK 1 Nom)(NEGATE 1 <<<)(NEGATE -1 PropNom OR FinV); 
 SELECT G (0 ("rooma") OR ("romaani"))(1 Arv OR ("number") OR Rahvaskeel);
 SELECT ("Academia") + Prop + SgNom;
-REMOVE ("kusta") + V OR ("otsa") + V OR ("tähti") + Sg3Verb OR ("kustama") + V OR ("otsama") + V OR ("tähtima") + Sg3Verb;
+REMOVE ("ruumi") + V OR ("kusta") + V OR ("otsa") + V OR ("tähti") + Sg3Verb OR ("kustama") + V OR ("otsama") + V OR ("tähtima") + Sg3Verb (*0 V);
 SELECT ("abi#elu") OR ("abi#ellu") OR ("abi#elluma");
 SELECT Arv + Part (NEGATE 0 K)(1 MineS + Part);
 SELECT Terve + A (1 S + NGP); 
@@ -1067,6 +1068,12 @@ REMOVE Prop OR G (-1 N OR Y)
 	(-2 LA OR LLZ OR Jutum1)(NEGATE 1 Prop); 
 SELECT Gen (0 Prop + Cap)(0 Riikjne)(1 Cap)(-1 >>> OR Kvm);
 SELECT Nom (0 Cap)(1 Cap)(-1 >>> OR Kvm);
+SELECT A (NEGATE 0 S OR D OR K OR V)(1 Dsh)(*-1 Dsh LINK -1C A); 
+SELECT S (NEGATE 0 S OR D OR K OR V)(1 Dsh)(*-1 Dsh LINK -1C S); 
+SELECT V (1 Dsh)(*-1 Dsh LINK -1C V); 
+REMOVE PersPron (0 Tegema); 
+REMOVE V (0 PersPron); 
+REMOVE S (0 PersPron)(NOT -1 Oqu OR ("'") OR ("(.*)sõna"r)); 
 SELECT Ncard (0 P)(-1 AinultVaid);
 SELECT PropNom (-1 PropNom)(1 Dsh); 
 SELECT PropGen (NEGATE 1C Pärisnimi OR Nom)(-1 Pärisnimi + Nom)(*-2 Pärisnimi + Nom BARRIER CLBC OR J OR Koma LINK NOT 0 In)(*-1 Võitma BARRIER CLBC LINK NOT -1 Nom); 
@@ -1149,6 +1156,7 @@ ADD CLBtag Koma (*-1C V + OlemSaa BARRIER Kvm)(*1 IndicNeg BARRIER Eraldajad LIN
 
 ADD CLBCtag Koma (*-1C FinV BARRIER CLB)(*1 FinV BARRIER J OR Kvm LINK NOT 0 NudTud) (NEGATE 0 CLBtag OR CLBCtag) ; 
 ADD CLBCtag Koma (*-1 IndicNeg BARRIER Eraldajad LINK -1 Ei)(*1 FinV BARRIER J OR Kvm LINK NOT 0 NudTud) (NEGATE 0 CLBtag OR CLBCtag) ; 
+ADD CLBCtag Koma (1C SNom)(NEGATE -1 SNom)(*-1 FinV BARRIER CLB)(*1 FinV - NudTud BARRIER Kvm) (NEGATE 0 CLBtag OR CLBCtag) ; 
 
 ADD CLBtag (*)   (0 On2CLB)(*1C FinV BARRIER Eraldajad)(*-1C FinV BARRIER CLB) (NEGATE 0 CLBtag)(NEGATE -1 CLBtag)(NEGATE -2 CLBtag)  ;
 ADD CLBtag (*)   (0 On2CLB)(*1 IndicNeg BARRIER Eraldajad LINK -1 Ei)(*-1C FinV BARRIER CLB) (NEGATE 0 CLBtag)(NEGATE -1 CLBtag)(NEGATE -2 CLBtag)  ; 
@@ -1342,7 +1350,7 @@ REMOVE S (0 ("koos")) ;
 
 SELECT ("keegi") + P ;
 SELECT Pl2Verb (-1C Pps2 + PlNom);
-REMOVE PersPron + Gen  (1 DemPron + Part OR DemPron + Gen)(NEGATE -1 S + Nom);
+REMOVE PersPron + Gen  (1 DemPron + Part OR DemPron + Gen)(NEGATE -1 SNom);
 SELECT Gen (0 Kriips)(1 Konj); 
 SELECT Nom (0 Kriips)(1 Konj); 
 SELECT ("või") + D (1 Int); 
@@ -1359,7 +1367,7 @@ REMOVE:Ximper Imper (NEGATE 0 ("ära"))(*0C FinV BARRIER CLBC);
 
 
 IFF ("<või>") + V (-1 Ei); 
-REMOVE FinV (NEGATE 0 Quot)(-1C FinV)(NEGATE -1 MinemaTulema); 
+REMOVE FinV (NEGATE 0 Quot OR Ole)(-1C FinV)(NEGATE -1 MinemaTulema); 
 SELECT Võima OR ("võima") + Mod (1 Konj)(*2C Mod BARRIER CLBC);
 REMOVE ("või") + S  (-1C S)(NEGATE -1 Gen); 
 SELECT ("või") + S  (-1 ("või") + J )(-2 SPAN + Nom OR SPAN + Gen);
@@ -1410,7 +1418,7 @@ SELECT ("teie") + Gen  (1C Nom)(NEGATE 1 InterRefl)(NEGATE *-1 Ole)(NEGATE *1 Ol
 "<Suuremalt>" SELECT D (1 ("<osalt>")) ;
 "<osalt>" SELECT D (-1 ("<suuremalt>")) ;
 
-REMOVE Mod (NEGATE *-1 V ^ EiAra)(NEGATE *1 V ^ EiAra);
+REMOVE Mod (NOT 0 Võima)(NEGATE *-1 V ^ EiAra)(NEGATE *1 V ^ EiAra);
 REMOVE V (0 Cap)(NEGATE 0 NudTud)(NEGATE -1 Kvm OR >>>); 
 SELECT ("kust") + D (-1 Sid|Kvm|Clb) ; 
 SELECT ("kust") + D (*1 Int) ;	
@@ -1439,7 +1447,7 @@ SELECT ("lugu") + S + PlNom (1 Kom)(*0 Ole BARRIER CLBC);
 SELECT ("tee") + Ad  (-1 Pärisnimi + Gen); 
 SELECT Lisa + Tr (-1 All); 
 SELECT Lisa + Tr (1 All); 
-SELECT Lisa + Tr (2 S + Nom)(NEGATE 3 Postn); 
+SELECT Lisa + Tr (2 SNom)(NEGATE 3 Postn); 
 REMOVE ("pakuta") + V OR ("pakutama") (0 ("pakku")); 
 SELECT ("ots") + S + El (1 ("peale")); 
 SELECT Gen (0 Ajamäärus)(1 ("algus") OR ("lõpp") OR ("keskel")); 
@@ -1452,7 +1460,7 @@ REMOVE ("enne") + S  ;
 REMOVE A (1 ("<midagi>")) ; 
 SELECT ("&sect;") + YNominal ; 
 SELECT  YNominal (1 Kvm)(2C Y); 
-SELECT ("must") + ANom  (*1C S + Nom BARRIER NOSPANJ) ; 
+SELECT ("must") + ANom  (*1C SNom BARRIER NOSPANJ) ; 
 SELECT ("must") (*0 ("valge")); 
 SELECT ("ligi") + D (1 Arv); 
 SELECT ("valge") + A (*0 ("must") + A); 
@@ -1468,7 +1476,7 @@ SELECT ("poeg") + S  (*0 ("tütar"));
 "<mulle>" REMOVE Part (*0 Part BARRIER CLB) (NEGATE -1 APart); 
 REMOVE ("mina") + S  (*0 VPs1)(NEGATE *-1 Pps1)(NEGATE *1 Pps1); 
 SELECT ("mina") + P  (*0 Pps1 OR Pps3); 
-SELECT ("mina") + P  (*-1 S + Nom BARRIER CLBC); 
+SELECT ("mina") + P  (*-1 SNom BARRIER CLBC); 
 SELECT ("mina") + P  (1 D) (2 D); 
 SELECT Part (0 Aine)(NEGATE 1 Post)(-1 Oma + Gen )(-2 FinV); 
 SELECT Gen (0 Ajamäärus OR ("elu"))(-1 Gen)(-1 DemPron OR DetPron OR IndefPron OR Terve ^ PersPron ^ Hulk)(NEGATE 1 Postn OR Kvm); 
@@ -1487,7 +1495,7 @@ SELECT ("päris") + D (1C D OR A)(*1 FinV BARRIER CLB);
 SELECT ("päris") + D (-1C D OR P)(1 D OR A)(*-1 FinV BARRIER CLB); 
 SELECT ("päris") + D (-1C D OR P)(1 D OR A)(*1 FinV BARRIER CLB); 
 REMOVE ("päri") + V (0 D)(NEGATE *1 Nom OR Part BARRIER CLB)(NEGATE *-1 Nom OR Part BARRIER CLB); 
-SELECT ("enam") + D (-1 ("kõige")); 
+SELECT ("enam") + D (-1 ("kõige") OR ("mis") + Part OR ("see") + Part) (NOT 1 Part); 
 SELECT Acomp (-1 ("kõige")); 
 SELECT A (NEGATE 0 V OR D)(-1 ("vähem") OR ("rohkem") OR ("enam"))(NEGATE -1 ("palju") OR ("kõige") OR ("veel"))(NEGATE *-1 ("<pole>") OR ("<polnud>")); 
 SELECT D (1C A)(0 ("kõige") OR ("vähem") OR ("rohkem") OR ("enam") OR ("palju") OR ("veel")); 
@@ -1501,7 +1509,7 @@ SELECT ("vastamisi") + D (-1 Kom);
 SELECT ("vastamisi") + D (*1 Kom BARRIER CLBC OR Kvm); 
 REMOVE ("nali") + Adit OR ("rõõm") + Adit OR ("kahju") + Adit OR ("õnne") + Adit  OR ("telefon") + Adit; 
 REMOVE Adit (0 Inimene OR Poordumine + S) ; 
-REMOVE Adit (0 Pärisnimi)(-1 Poordumine + S + Nom) ; 
+REMOVE Adit (0 Pärisnimi)(-1 Poordumine + SNom) ; 
 SELECT S (NEGATE 0 NudTud)(0 Loend)(1 Arv); 
 SELECT PersPron + Nom (1C PersPron LINK NOT 0 Nom)(NEGATE *0 VPs1 BARRIER CLB); 
 REMOVE:mina ("mina") + Nom  OR ("ma") + Nom  (*0C VPs3 OR VPs2 + Indic BARRIER CLBC OR Jutum OR J LINK NOT 0 Ole); 
@@ -1551,7 +1559,7 @@ REMOVE ("tuge") OR ("tugema") (0 ("tugev"));
 SELECT ("täis") + D (*0 Saama OR Tegema OR Jooma BARRIER CLBC OR Kvm); 
 SELECT ("täis") + D (1 V)(NEGATE 1 Ole OR Imper OR Neg); 
 SELECT ("täis") + D (-1C Part); 
-SELECT ("täis") + D (-1 S + Nom)(*0 OlemSaa BARRIER CLB); 
+SELECT ("täis") + D (-1 SNom)(*0 OlemSaa BARRIER CLB); 
 SELECT ("täis") + D (1 Konj OR Kvm)(NEGATE 2 SP + Nom)(*0 V ^ Ole BARRIER CLB); 
 SELECT ("täis") + A (1 El OR Part OR Konj OR Kvm)(NEGATE *0 V ^ Ole BARRIER CLB); 
 SELECT ("alla") + D OR ("üles") + D (*0 Laadima BARRIER CLB); 
@@ -1621,8 +1629,10 @@ REMOVE partic + Pres;
 REMOVE ("täi") + V OR Teadma + S ;
 SELECT Laskma (*0 DaInf BARRIER CLB);  
 REMOVE DaInf (NEGATE 0 SaamaVerb)(*0 Saama BARRIER CLBC)(*0 NOTDaVerb OR ("aru") BARRIER CLBC)(NEGATE *0 Kava);  
-REMOVE Saama + Mod (*0 NOTDaVerb OR ("aru") BARRIER CLBC)(NEGATE *1 Kava OR DaInf BARRIER CLBC)(NEGATE *-1 Kava OR DaInf BARRIER CLBC);  
-REMOVE Mod (0 VatVerb)(NEGATE *1 QuotPresPs OR MaInf BARRIER CLB)(NEGATE *-1 QuotPresPs OR MaInf BARRIER CLB);
+REMOVE Saama + Mod (*0 NOTDaVerb OR SaamaVerb OR ("aru") BARRIER CLBC)(NEGATE *1 Kava OR DaInf BARRIER CLBC)(NEGATE *-1 Kava OR DaInf BARRIER CLBC);  
+SELECT Saama + V - Mod (*0 SaamaVerb OR ("aru") BARRIER CLBC);
+SELECT Saama + V (*0 Kava OR DaInf BARRIER CLBC);
+REMOVE Mod (NOT 0 Võima)(0 VatVerb)(NEGATE *1 QuotPresPs OR MaInf BARRIER CLB)(NEGATE *-1 QuotPresPs OR MaInf BARRIER CLB);
 SELECT Mod (0 MaVerb) (*0 MaInf BARRIER CLB);
 SELECT Mod OR (<InfP>) (0 DaVerb) (NEGATE 0 ("võime") OR K OR Imper)(1 DaInf)(NEGATE *0 NOTDaVerb OR ("aru") OR Kava);
 SELECT Mod OR (<InfP>) (0 DaVerb) (NEGATE 0 ("võime") OR K OR Imper)(-1 DaInf)(NEGATE *-2 DaInf BARRIER CLB OR DaVerb OR Cpr OR Opr OR J)(NEGATE *-1 DaVerb BARRIER CLB)(NEGATE *0 NOTDaVerb OR ("aru") OR Kava);
@@ -1638,7 +1648,7 @@ SELECT DaInf (1 Konj OR LLZ)(*-1 DaVerb OR (<InfP>) BARRIER CLB);
 SELECT particV (-1 Jcrd)(*-2 Ole BARRIER CLB)(*-2 particV BARRIER CLB); 
 REMOVE Aux (NEGATE 0 EiAra)(NEGATE *-1 particV BARRIER CLB)(NEGATE *1 particV BARRIER CLB); 
 REMOVE ("käia") OR ("käiama") (0 Käima OR ("käima")); 
-REMOVE ("peeta") OR ("peetama") (0 Pidama OR ("pidama")); 
+REMOVE ("peeta") OR ("peetama") OR ("peetu") OR ("peetuma") (0 Pidama OR ("pidama")); 
 REMOVE ("süst") + V OR ("süstma") (0 ("süstima") OR ("süsti") + V); 
 REMOVE ("serva") + V OR ("servama"); 
 SELECT El (NEGATE 0 K OR Teine)(-1 Vel); 
@@ -1654,6 +1664,7 @@ SELECT ("kahtlemata") + D;
 SELECT Imper + Pres (0 ImperVerb)(-1 Jutum1>>> OR Opr)(1 Kvm); 
 SELECT Imper + Pres (NEGATE 0 PersPron)(NEGATE -2 NGP)(-1 Jutum1>>> OR Opr)(1 Kvm); 
 SELECT Hakkama (*0 MaInf BARRIER CLB); 
+SELECT Saama (*0 Hakkama + Vsup BARRIER CLB);
 SELECT S (0 ("austatud") OR ("lugu#peetud")); 
 SELECT S (0 Poordumine + S)(NEGATE 0 V OR D); 
 SELECT Gen (0 Pärisnimi)(NEGATE -1 >>>)(1 ("tee") OR ("tänav") OR ("puies#tee") OR ("maantee") OR ("linn") OR ("küla") OR ("vald") OR ("maa#kond") OR ("jõgi") OR ("järv") OR ("laht")); 
@@ -1801,8 +1812,8 @@ SELECT Kui + J  (1 V) ;
 SELECT Kui + Jsub (*1 ("siis") LINK -1 Koma) ;
 SELECT Kui + Jsub (*1 Koma LINK 1 V) ;
 "<kui>" SELECT Jcrd (-1 Acomp) ;
-"<kui>" SELECT Jcrd (-1 S + Nom) (1 S + Nom) ;
-"<kui>" SELECT Jcrd (-1 S + Nom) (1 ANom) (2 S + Nom) ; 
+"<kui>" SELECT Jcrd (-1 SNom) (1 SNom) ;
+"<kui>" SELECT Jcrd (-1 SNom) (1 ANom) (2 SNom) ; 
 SELECT Kui + D (1 KuiAdv) ;
 SELECT ("kuid") + J  (-1 CLB) ;
 SELECT ("kuid") + J  (-1 Koma)(-2 A OR OmadusAse)(1 A OR OmadusAse) ;
@@ -1815,11 +1826,11 @@ SELECT ("kuigi") + D (1 A)(NEGATE *1 FinV BARRIER CLB) ;
 
 SELECT ("nagu") + J  (-1 CLB)(NEGATE -1 LA) ;
 "<nagu>" SELECT J (-1 A) ;
-"<nagu>" SELECT J (-1 S + PlPart)(1 S + PlPart)
+"<nagu>" SELECT J (-1 S + PlPart)(1 S + PlPart) ;
 "<nagu>" SELECT D (-1 Cond) ;
-"<nagu>" SELECT D (-1 SPN + Nom)(1 Sg3Verb)
+"<nagu>" SELECT D (-1 SPN + Nom)(1 Sg3Verb) ;
 SELECT ("nagu") + J  (*1 SPNSgNom BARRIER nppiir)(NEGATE *-1 Ole BARRIER CLB) ;
-"<nagu>" SELECT J (1 SPNSgNom)(*-1 Ole BARRIER CLB)(*-1 Nom BARRIER CLB LINK *-1 Nom BARRIER CLB) 
+"<nagu>" SELECT J (1 SPNSgNom)(*-1 Ole BARRIER CLB)(*-1 Nom BARRIER CLB LINK *-1 Nom BARRIER CLB) ;
 "<nagu>" SELECT J (-1 SPNSgNom)(*1 S + Ad BARRIER nppiir) ;
 
 SELECT ("sest") + J  (-1 CLB)(NEGATE 1 V) ;
@@ -2098,7 +2109,7 @@ SELECT ("enam") + D (1 SPart) ;
 IFF ("enam") + D (NEGATE 1 SPAN ^ Pärisnimi) ;
 
 SELECT D (NEGATE 0 P OR K OR ANom)(-1C FinV)(-1 Imper)(NEGATE -2 Neg) ;
-SELECT D (NEGATE 0 P OR K)(NEGATE 1 S + Nom)(-1C FinV)(-1 Imper)(NEGATE -2 Neg)(NEGATE 0 P) ;
+SELECT D (NEGATE 0 P OR K)(NEGATE 1 SNom)(-1C FinV)(-1 Imper)(NEGATE -2 Neg)(NEGATE 0 P) ;
 REMOVE D (NEGATE 0 Oma)(0 A + SgNom )(1 SPN + Sg + Nom)(NEGATE 1 D OR A) ;
 
 SELECT ("veelgi") + D (1 Acomp OR D) ;
@@ -2173,8 +2184,8 @@ SELECT ("muu") + P  (1 Koma)(2 Kui) ;
 
 "<nimelt>" SELECT D (-1 KesMis OR ("kus")) ;
 
-"<osalt>" SELECT D (NEGATE *-1 PoleSide BARRIER CLBC)
-"<Osalt>" SELECT D (NEGATE *-1 PoleSide BARRIER CLBC)
+"<osalt>" SELECT D (NEGATE *-1 PoleSide BARRIER CLBC) ;
+"<Osalt>" SELECT D (NEGATE *-1 PoleSide BARRIER CLBC) ;
 
 "<otsas>" SELECT S + SgIn (-1 In) ;
 
@@ -2512,7 +2523,7 @@ SELECT A + SgPart (-1 ("<midagi>") OR ("<Midagi>"))(NEGATE *-1 VatVerb OR PrVerb
 SELECT Kes + PlNom OR Mis + PlNom (-1 CLB LINK *-1C Kes + Pl  OR Mis + Pl  BARRIER CLB) ; 
 
 
-REMOVE ("aeg") + Adit (-1 Part) 
+REMOVE ("aeg") + Adit (-1 Part) ;
 
 "<kodu>" SELECT D (-1 Ole)(NEGATE 1 Postg)(NEGATE 1 In OR Ad)(NEGATE 1 KustKuhu);
 "<kodu>" SELECT D (-1 Minema)(NEGATE 1 Postg)(NEGATE 1 In OR Ad)(NEGATE 1 KustKuhu);
@@ -2524,7 +2535,7 @@ SELECT ("lõpuks") + D (*0 Jõudma BARRIER CLB);
 "<näol>" SELECT S + Ad (-1 Pärisnimi);
 
 SELECT ("päev") + El  (1 ("päev") + Part );
-"<päeva>" SELECT Adit (-1 ("päev") + El ) 
+"<päeva>" SELECT Adit (-1 ("päev") + El );
 
 REMOVE ("näide") + S + SgTr (NEGATE -1 Tr);
 "<näiteks>" SELECT S (-1C Tr);
@@ -2545,7 +2556,7 @@ REMOVE ("mina") + S  (1 J)(2 SP);
 "<mina>" REMOVE S (-1 J)(-2 SP);
 "<mina>" SELECT S (-1 Jutum1)(1 Jutum2);
 "<mina>" SELECT P (*-1 Jutum1)(*1 Jutum2);
-REMOVE ("sina") + S  (*0 VPs2 BARRIER CLB)
+REMOVE ("sina") + S  (*0 VPs2 BARRIER CLB);
 SELECT ("sina") + P  (NEGATE 0 ("tee"))(1 J)(2 SP);
 "<sina>" SELECT P (NEGATE 0 ("tee"))(-1 J)(-2 SP);
 "<sina>" SELECT P (NEGATE 0 ("tee"))(-1 Jutum1)(1 Jutum2);
@@ -2554,7 +2565,7 @@ REMOVE ("mina") + S  (1 J)(2 SP);
 "<ma>" REMOVE S (-1 J)(-2 SP);
 "<ma>" SELECT S (-1 Jutum1)(1 Jutum2);
 "<ma>" SELECT P (*-1 Jutum1)(*1 Jutum2);
-REMOVE ("sina") + S  (*0 VPs2 BARRIER CLB)
+REMOVE ("sina") + S  (*0 VPs2 BARRIER CLB);
 SELECT ("sina") + P  (1 J)(2 SP);
 "<sa>" SELECT P (-1 J)(-2 SP);
 "<sa>" SELECT P (-1 Jutum1)(1 Jutum2);
@@ -2593,7 +2604,7 @@ SELECT ("kõik") + P + PlNom (*1 V + Pl BARRIER CLBC) (NEGATE *-1 SPSgNom BARRIE
 "<kõik>" SELECT P + PlNom (*-1C V + Pl BARRIER J OR CLBC);
 
 SELECT ("kõige") + D (1 Acomp);
-SELECT ("kõige") + D (1 Nord)  
+SELECT ("kõige") + D (1 Nord);  
 REMOVE ("kõik") + P + Adit (0 Part);
 SELECT ("kõik") + P  (1 ("muu"));
 
@@ -2601,7 +2612,7 @@ SELECT ("mingi") + P + SgNom (1C SgNom);
 SELECT ("mingi") + P + SgGen (1C SgNom)(NEGATE *1 SPSgNom BARRIER CLBC);
 
 REMOVE I (0 S + $$Case)(-1 Jcrd)(-2 S + $$Case);
-REMOVE I (0 S + Nom)(-1 ANom OR SP + Gen);
+REMOVE I (0 SNom)(-1 ANom OR SP + Gen);
 SELECT I (NEGATE 0 V)(*-1 Jutum1)(-1 Kvm OR >>> OR I); 
 SELECT I (NEGATE 0 V)(*-1 Jutum1 BARRIER CLB)(1 Kvm - Fst OR I)(NEGATE -1 Gen); 
 SELECT I (NEGATE 0 V)(*1 Jutum2)(NEGATE -1 V)(NEGATE 1 Post);  
@@ -2775,13 +2786,13 @@ SELECT PropGen (0 Cap)(1 Poordumine ^ Cap)(NEGATE -1 Liityhing + Gen)(NEGATE -2 
 SELECT PropGen (0 Cap)(1 Cap + Gen)(2 Poordumine ^ Cap)(NEGATE -1 Liityhing + Gen); 
 SELECT PropNom (NEGATE 0 Ccap)(1 Cap)(1C S);
 
-REMOVE Prop (-1 >>>)(NEGATE 0 V)(1 V)(*1C S + Nom BARRIER CLBC LINK *1C S + Nom BARRIER CLBC); 
+REMOVE Prop (-1 >>>)(NEGATE 0 V)(1 V)(*1C SNom BARRIER CLBC LINK *1C SNom BARRIER CLBC); 
 
 SELECT PropGen (1 Konj)(2C Pärisnimi + Gen ^ Kriips);   
 SELECT PropNom (1 Konj)(2C Pärisnimi + Kriips)
-		  (3 Konj)(4C S + Nom);   
+		  (3 Konj)(4C SNom);   
 SELECT PropNom (-1 Konj)(-2C Pärisnimi + Kriips)
-		  (-3 Konj)(-4C S + Nom);   
+		  (-3 Konj)(-4C SNom);   
 
 SELECT (prop kom) (NEGATE -1 Pärisnimi)(-1C S + Gen); 
 
@@ -2882,7 +2893,7 @@ REMOVE SPart (0 Nom OR Gen)(NEGATE 0 Ajamäärus OR Sorti)(NEGATE 1 Konj OR V OR
 	(NEGATE *1 Neg BARRIER CLBC)(NEGATE *-1 Neg BARRIER CLBC); 
 
 REMOVE ANom (0 NudTud)(1 LineS + Nom);  
-SELECT A (0 NudTud)(NEGATE 0 Ole)(1 MineS + Nom);  
+SELECT A (0 NudTud + Nom)(NEGATE 0 Ole)(1 MineS + Nom);  
 SELECT ANom (NEGATE 0 V OR NudTud)(1 MineS + Nom OR LineS + Nom);  
 SELECT AGen (NEGATE 0 V OR NudTud)(1 MineS + Gen OR LineS + Gen);  
 SELECT APart (NEGATE 0 V OR NudTud OR Prep)(1 MineS + Part OR LineS + Part);  
@@ -2933,7 +2944,7 @@ SELECT Ncard + Nom (1 SPSgPart)(NEGATE 0 SPNom);
 
 SELECT Part (0 Yks) (1C Part);
 
-SELECT Ncard + Nom (0C Ncard)(1 SPPart)  
+SELECT Ncard + Nom (0C Ncard)(1 SPPart);  
 SELECT Ncard + Part (0C Ncard) (1C SPPart) (NEGATE 0 Nom);   
 SELECT Gen (0C Ncard) (1C SPGen);
 
@@ -3007,7 +3018,7 @@ SELECT Nord (0 ("<(.*)\\.>"r) OR ("(.*)\\."r));
 SELECT Nord OR Y (1 Fst)(NEGATE 2 ("</s>")); 
 SELECT Nord + SgNom (NEGATE 0 P)(1 SPNSgNom);
 SELECT Nord + SgGen (NEGATE 0 P)(1C SPSgGen);
-REMOVE Nord + SgGen (NEGATE *1 SubstSgCo BARRIER CLB)
+REMOVE Nord + SgGen (NEGATE *1 SubstSgCo BARRIER CLB);
 REMOVE Nord + Adit (NEGATE *1 Ill BARRIER CLB);
 REMOVE Nord + All (NEGATE *1 All BARRIER CLB);
 REMOVE Nord (NEGATE 1 Nominal OR Konj OR J OR V);
@@ -3090,8 +3101,8 @@ SELECT SGen OR P + Gen (1 Jutum2)(2C Postg);
 SELECT Postg (-1C SPGen) (1 Part)(*-1C Neg BARRIER CLB);
 
 SELECT Postn (-1 NimiAse + Nom)(-1 Ajamäärus);
-SELECT Postn (-1 NimiAse + Part)(-2 Ncard + Nom) 
-IFF Postn (-1 NimiAse + Part)(-2 Ncard + Digit) 
+SELECT Postn (-1 NimiAse + Part)(-2 Ncard + Nom); 
+IFF Postn (-1 NimiAse + Part)(-2 Ncard + Digit); 
 SELECT Postp (-1 NimiAse + Part)(-1 Ajamäärus) (NEGATE 0 FinV);
 SELECT Postp (-1 NimiAse + Part)(NEGATE 0 ("tagasi") OR ("edasi") OR ("läbi")) (NEGATE 0 FinV)(NEGATE 1 FinV);
 SELECT Postk (-1 NimiAse + Kom);
@@ -3145,7 +3156,7 @@ SELECT Abes (0 NimiAse) (-1 Gen OR NudTud) (-2C Preab) (NEGATE -1 Post);
 SELECT Kom (0 NimiAse) (-1 Gen OR NudTud) (-2C Prek) (NEGATE -1 Post);
 SELECT All (0 NimiAse) (-1 Gen OR A + All OR NudTud) (-2C Prea) (NEGATE -1 Post);
 SELECT El (0 NimiAse) (-1 Gen OR A + El OR NudTud) (-2C Pree) (NEGATE -1 Post);
-SELECT Gen (0 NimiAse) (-1 Gen OR NudTud)(-2C Preg) (NEGATE 0 S + Nom OR Adit);
+SELECT Gen (0 NimiAse) (-1 Gen OR NudTud)(-2C Preg) (NEGATE 0 SNom OR Adit);
 SELECT Part (0 NimiAse) (NEGATE 0 Gen) (-1 Gen OR APart OR NudTud) (-2 Prep) (NEGATE -1 Post);
 SELECT Part (0 NimiAse) (NEGATE 0 Gen)(NEGATE 1 NGP) (-1 Gen) (-2C Prep) ; 
 SELECT Part (0 NimiAse) (NEGATE 1 NGP) (-1 Gen) (-2C Prep) ; 
@@ -3212,7 +3223,7 @@ REMOVE ("täna") + V OR ("tänama") (*1 FinV BARRIER CLBC);
 REMOVE ("täna") + V OR ("tänama") (*-1 FinV BARRIER CLBC);
 SELECT DaInf (-1 ("ega"))(-2 DaInf) ; 
 SELECT DaInf (*-1 ("ega") BARRIER CLB OR Ei LINK -1 $$Case LINK 2 $$Case) ; 
-IFF IndicNeg (*-1 EiEga BARRIER V OR CLBC OR FinV); 
+IFF IndicNeg (*-1 EiEga BARRIER CLBC OR FinV OR V - Vsup - DaInf); 
 IFF Imper + Neg (*-1 ("ega") or ("ära") BARRIER V OR CLBC);
 SELECT ANom (0 Pl3Verb)(1C S)(1C Nom)(*1 FinV BARRIER CLBC OR Koma LINK NOT 0 Quot OR Imper) ; 
 SELECT ANom (0 Pl3Verb)(1C S)(1C Nom)(*-1 FinV + Sg BARRIER CLBC)(*0C Nom + Sg BARRIER CLBC) ; 
@@ -3238,11 +3249,11 @@ REMOVE Ole + Aux (*1 particV  BARRIER CLBC LINK 1C SPSgNom LINK NOT 1 Pärisnimi
 
 SELECT Ole + Aux (*1C particV BARRIER CLBC LINK NOT 1 Nom)(NEGATE 1 Nom)(NEGATE 2 Nom) ; 
 SELECT Ole + Aux (0 FinV)(*-1C particV BARRIER CLBC LINK NOT 1C S) ;
-SELECT Ole + Aux (NEGATE 0 Ger)(*1C particV BARRIER CLB LINK NOT 1 J LINK NOT *-1 Sid|Kvm)
+SELECT Ole + Aux (NEGATE 0 Ger)(*1C particV BARRIER CLB LINK NOT 1 J LINK NOT *-1 Sid|Kvm);
 
 
-SELECT Ole + Indic - Aux (-1 SNom OR P + Nom)(1C SNom OR P + Nom)(NEGATE *1 partic BARRIER CLBC)(NEGATE *-1 partic BARRIER CLBC) 
-SELECT Ole + Indic - Aux (-1 SNom OR P + Nom)(1 Nom)(2 SNom OR P + Nom)(NEGATE *1 partic BARRIER CLBC)(NEGATE *-1 partic BARRIER CLBC) 
+SELECT Ole + Indic - Aux (-1 SNom OR P + Nom)(1C SNom OR P + Nom)(NEGATE *1 partic BARRIER CLBC)(NEGATE *-1 partic BARRIER CLBC); 
+SELECT Ole + Indic - Aux (-1 SNom OR P + Nom)(1 Nom)(2 SNom OR P + Nom)(NEGATE *1 partic BARRIER CLBC)(NEGATE *-1 partic BARRIER CLBC); 
 
 SELECT OnPl (-1C SPSgNom)(-2 Konj ^ CLBC ^ ("ehk") ^ Aga)(-3 SPAN + Nom);
 SELECT OnPl (-1C SPSgNom)(-2 Ka OR SP + Gen OR ANom)(-3 Konj ^ CLBC ^ ("ehk") ^ Aga)(-4 SPAN + Nom); 
@@ -3250,7 +3261,7 @@ SELECT OnPl (-1C SPSgNom)(-2 SP + Gen OR ANom)(-3 Konj ^ CLB OR ("ehk") OR Aga)(
 SELECT OnSg (-1C SPSgNom);
 SELECT OnSg (*1 DaInf BARRIER CLBC OR Kvm OR J OR particV); 
 SELECT OnPl (-1C SP + PlNom);
-SELECT OnPl (1C SPSgNom)(2 Konj ^ CLBC ^ ("ehk") ^ ("või") ^ Aga)(3 SPAN + Nom)(4 J ^ Aga)(5 S + Nom);
+SELECT OnPl (1C SPSgNom)(2 Konj ^ CLBC ^ ("ehk") ^ ("või") ^ Aga)(3 SPAN + Nom)(4 J ^ Aga)(5 SNom);
 SELECT OnPl (1C SPSgNom)(2 Konj ^ CLBC ^ ("ehk") ^ ("või") ^ Aga)(3 SPAN + Nom)(NEGATE 4 J);
 SELECT OnPl (1 A OR Oma ^ CLBC OR ("ehk") OR ("või") OR Aga)(2C SPSgNom)(3 Konj ^ CLBC ^ ("ehk") ^ ("või") ^ Aga)(4 SPAN + Nom);
 SELECT OnSg (1C SPSgNom);
@@ -3312,7 +3323,7 @@ SELECT ("tuli") + S  (0 $$Case)(-1 Koma OR Jcrd)(NEGATE -1 CLBC)(-2 $$Case)(NEGA
 SELECT ("tuli") + S  (0 $$Case)(1 Koma OR Jcrd)(NEGATE 1 CLBC)(2 $$Case)(NEGATE 2 D);
 REMOVE Ole + Aux (-1C SP + SgNom)(1C SgNom ^ Ajamäärus)(NEGATE 2 Ajamäärus); 
 SELECT ("maitse") + S  (0 $$Case)(-1 A + $$Case); 
-SELECT VPs3 OR VPs2 OR DaInf (0 PrVerb - Mod - Aux)(NEGATE *1 FinV OR Nom BARRIER CLBC)(NEGATE *-1 FinV OR Nom BARRIER CLBC); 
+SELECT VPs3 OR VPs2 OR DaInf (0 PrVerb - Mod - Aux)(NEGATE *1 FinV OR Nom BARRIER CLB)(NEGATE *-1 FinV OR Nom BARRIER CLB); 
 
 
 REMOVE Mod (0 V - Mod)(0 DaVerb) (NEGATE *1 DaInf OR MaInf OR particV BARRIER CLB) 
@@ -3324,7 +3335,7 @@ REMOVE Mod (0 V - Mod)(0 VatVerb) (NEGATE *1 QuotPresPs BARRIER CLB)(NEGATE *-1 
 
 SELECT Mod (0 DaVerb) (NEGATE 0 J) (*1 DaInf BARRIER CLBC OR (<Inf>) OR Cpr) 
                  (NEGATE *-1C FinV BARRIER CLBC)(NEGATE *1C FinV BARRIER CLBC) ; 
-REMOVE Mod (0 DaVerb) (*0C Mod BARRIER DaInf);
+REMOVE Mod (NOT 0 Võima)(0 DaVerb) (*0C Mod BARRIER DaInf);
 
 SELECT Mod (0 DaVerb) (NEGATE 0 J) (*-1 DaInf BARRIER CLBC OR (<Inf>) LINK NOT 0 Soovima)  
                  (NEGATE *-1C FinV BARRIER CLBC)(NEGATE *1C FinV BARRIER CLBC) ; 
@@ -3373,7 +3384,7 @@ REMOVE:intr CoSVerb + FinV (NEGATE 0 VPs2 OR VPs1)(NEGATE *-1 Nom Or Part OR El)
 
 SELECT S + PlNom (NEGATE 0 NudTud OR P)(1 Pl3Verb - Neg); 
 REMOVE V (NEGATE 0 NudTud)(0 S + PlNom) (1 Pl3Verb - Neg); 
-
+SELECT Ole + V (0 NudTud)(*-1 Ole BARRIER CLB); 
 REMOVE:finv FinV (NEGATE 0 Imper OR Quot OR D)(*-1C FinV BARRIER CLBC) ;
 REMOVE:finv FinV (NEGATE 0 Imper OR Quot OR D)(*-1 CLC BARRIER FinV LINK *-1 CLO BARRIER FinV LINK *-1C FinV BARRIER CLBC) ;
 SELECT:finv FinV (NEGATE 0 Imper OR Quot OR D)(NEGATE *-1 V ^ Ger BARRIER CLB) (NEGATE *1 V ^ Ger BARRIER CLB)(-1 POS)(*1 LLZ);
@@ -3490,8 +3501,8 @@ SELECT V (0 particV) (-1 OleSaa) (-1 Aux) (1 MaInf);
 
 REMOVE V + partic - Mod - Aux (NEGATE *-1 OleSaa BARRIER CLBC)(*1C FinV ^ OleSaa BARRIER CLBC);
 
-SELECT:toonud particV (-1 KustKuhu)(1C S + Nom)(-2 FinV + OlemSaa) ;
-SELECT:tuntud A + partic (1C S + Nom)(-2 FinV + OlemSaa) ;
+SELECT:toonud particV (-1 KustKuhu)(1C SNom)(-2 FinV + OlemSaa) ;
+SELECT:tuntud A + partic (1C SNom)(-2 FinV + OlemSaa) ;
 SELECT particV (NEGATE 0 VäsiVerb)(1 FinV + OleSaa);
 REMOVE particV (NEGATE 0 Minema)(*-1 Vaja BARRIER CLB)(*-1 FinV + Ole BARRIER CLB) ;
 SELECT particV (-1 Koma)(*-2C particV  BARRIER CLBC);
@@ -3514,7 +3525,7 @@ REMOVE:new particV (NEGATE -1 Ole)(1C Scom + NGP)(2 Kvm OR CLB);
 REMOVE:new particV (-1C NiNaTaGa)(1 NiNaTaGa);
 
 SELECT:K29 particV (NEGATE 0 VäsiVerb) (*-1 OleSaa + FinV BARRIER particV OR CLBC)
-	(NEGATE *1 particV BARRIER CLBC LINK 1 Kvm); 
+	(NEGATE *1 particV OR DaInf BARRIER CLBC LINK 1 Kvm); 
 SELECT V (0 particV) (NEGATE 1 Konj)(NEGATE -1 Konj)(*-1C FinV + OleSaa BARRIER CLB OR DaInf) 
              (NEGATE *1 particV BARRIER CLB) (NEGATE *-1 particV BARRIER CLB) (NEGATE 1C Nom) ;
 SELECT V (0 particV) (0 OlemSaa)(NEGATE 1C S + NGP)(NEGATE -1 V ^ OlemSaa);
@@ -3537,11 +3548,11 @@ SELECT particV + Ps (1 Konj)(2C particV + Ps) ;
 SELECT particV + Imps (-1 Konj)(-2C particV + Imps)(NEGATE *1 S BARRIER CLB);
 SELECT particV + Imps (1 Konj)(2C particV + Imps);
 
-REMOVE:ehk particV (-1 Konj)(-2 ANom)(1 S + Nom);
-REMOVE:ehk particV (-1 Konj)(-2 S + Nom)(1 S + Nom);
+REMOVE:ehk particV (-1 Konj)(-2 ANom)(1 SNom);
+REMOVE:ehk particV (-1 Konj)(-2 SNom)(1 SNom);
 
 SELECT:eelistaverbi particV (NEGATE 0 VäsiVerb OR Cap)(1 Kvm OR J OR SPAND)(NEGATE -1 KustKuhu OR Konj)
-			(*-1 OleSaa BARRIER particV OR CLBC OR OlemSaa OR Kvm LINK NOT *-1C FinV BARRIER CLB) 
+			(*-1 OleSaa - Ger BARRIER particV OR CLBC OR OlemSaa OR Kvm LINK NOT *-1C FinV BARRIER CLB) 
 			(NEGATE *1 particV OR SPNom ^ Cap ^ Ajamäärus BARRIER CLBC OR Konj)
 			(*-1C SP + Nom OR SP + Part LINK NOT 1 V ^ OlemSaa);
 SELECT:eelistaverbi particV (NEGATE 0 VäsiVerb OR Cap)(1 Kvm OR J OR SPAND)(NEGATE -1 KustKuhu OR Konj)
@@ -3549,7 +3560,7 @@ SELECT:eelistaverbi particV (NEGATE 0 VäsiVerb OR Cap)(1 Kvm OR J OR SPAND)(NEG
 			(NEGATE *1 particV OR SPNom ^ Cap ^ Ajamäärus BARRIER CLBC OR Konj)(NEGATE *-1C FinV OR OleSaa BARRIER CLB) 
 			(*-1C SP + Nom OR SP + Part LINK NOT 1 V ^ OlemSaa);
 SELECT:eelistaverbi particV (NEGATE 0 VäsiVerb OR Cap)(1 Kvm OR J OR SPAND)(NEGATE 1 Kus)(NEGATE -1 Konj)
-			(*-1 OleSaa BARRIER particV OR CLBC OR OlemSaa OR Kvm LINK NOT *-1C FinV BARRIER CLB) 
+			(*-1 OleSaa - Ger BARRIER particV OR CLBC OR OlemSaa OR Kvm LINK NOT *-1C FinV BARRIER CLB) 
 			(NEGATE *1 particV OR SPNom ^ Cap ^ Ajamäärus BARRIER CLBC OR Konj)
 			(*-1C SP + Nom OR SP + Part LINK NOT 1 V ^ OlemSaa);
 SELECT:eelistaverbi particV (NEGATE 0 VäsiVerb OR Cap)(1 Kvm OR J OR SPAND)(NEGATE 1 Kus)(NEGATE -1 Konj)
@@ -3581,7 +3592,7 @@ SELECT SNom (NEGATE 0 J)(1 A)(NEGATE 1 S)(-1 Koma OR >>>)(2 Koma OR LLZ OR <<<);
 
 
 
-REMOVE FinV (NEGATE 0 Ole OR VatVerb OR QuotPresPs) (*1C FinV ^ Ole CBARRIER Konj OR CLBC);
+REMOVE FinV (NEGATE 0 Ole OR VatVerb OR QuotPresPs) (*1C FinV ^ Ole BARRIER Konj OR Kvm OR CLBC); # OR CLO-CLC);
 REMOVE FinV (NEGATE 0 Ole OR ("või") OR VatVerb)(NEGATE 0 QuotPresPs)
 				(*-1C FinV ^ Ole BARRIER Konj OR CLBC) ;
 REMOVE FinV (0 QuotPresPs) (*1C FinV ^ VatVerb BARRIER Konj OR CLBC)(NEGATE *-1 VatVerb);
@@ -3607,14 +3618,14 @@ REMOVE V + Sg (1C SP + PlNom)(NEGATE *1 SgNom BARRIER CLB)(NEGATE *-1 SgNom BARR
 REMOVE V + Sg (-1 Konj)(NEGATE *1 SgNom BARRIER CLB)(*-1C V + Pl BARRIER SgNom OR CLBC);
 REMOVE:E48 VPs2 (0 Pl3Verb)(NEGATE *-1 VPs2)(NEGATE *1 VPs2 OR Int)(*-1C Ncard + Nom BARRIER CLBC LINK NOT 1 Ajamäärus); 
 REMOVE:E49 VPs2 (0 Pl3Verb)(NEGATE *-1 VPs2)(NEGATE *1 VPs2 OR Int)(*1C Ncard + Nom BARRIER CLBC LINK NOT 1 Ajamäärus); 
-REMOVE VPs2 (0 Pl3Verb)(NEGATE *-1 VPs2)(NEGATE *1 VPs2 OR Int)(*1C S + Nom LINK NOT 1 Postn); 
+REMOVE VPs2 (0 Pl3Verb)(NEGATE *-1 VPs2)(NEGATE *1 VPs2 OR Int)(*1C SNom LINK NOT 1 Postn); 
 REMOVE IndicImpfPl3 (NEGATE *-1 Pl)(NEGATE *1 Pl)(NEGATE *-1 Jcrd)(NEGATE *1 Jcrd)(NEGATE *-1 ("kõik"))(NEGATE *1 ("kõik"));
 
 SELECT Sg1Verb (-1 ("mina") OR ("ma"))(-1C Nom);
 
 SELECT VPs2 (-1 ("sina") OR ("sa"))(-1 SgNom)(NEGATE 0 Oma);
 REMOVE VPs2 (NEGATE 0 Imper)(NEGATE *1 ("sina") OR ("sa") BARRIER CLBC) (NEGATE *-1 ("sina") OR ("sa")) 
-                 (*1 S + Nom BARRIER FinV OR CLBC);
+                 (*1 SNom BARRIER FinV OR CLBC);
     
 REMOVE Pl2Verb (-1C A + PlGen);
 
@@ -3650,7 +3661,7 @@ SELECT IndicImpfImps - Mod - Aux - Neg (-1 SPAND)(-2 IndicImpfImps - Mod - Aux -
 SELECT IndicImpfImps - Mod - Aux - Neg (-1 SPAND)(-2 Konj)(-3 IndicImpfImps - Mod - Aux - Neg); 
 
 SELECT Ger (-1 Koma)(NEGATE 1 Koma)(*1 Koma BARRIER FinV OR CLB);
-SELECT Ger (-1 CLB)(NEGATE 1 Koma)(*1 Koma BARRIER FinV OR CLB)
+SELECT Ger (-1 CLB)(NEGATE 1 Koma)(*1 Koma BARRIER FinV OR CLB);
 SELECT Ger (-1 Koma)(1 DaInf);
 SELECT Ger (-1C SPN + Sg + In);
 
@@ -3663,7 +3674,7 @@ SELECT ("kogemata") + D (NEGATE -1 Part);
 REMOVE MastInf (0 A + SgPart)(1C SPSgPart);
 SELECT Tegema + MataInf (-1C FinV)(1C NGP); 
 SELECT MataInf (-1 >>> OR CLBC)(1 Kvm); 
-SELECT MataInf (-1 >>> OR CLBC)(NEGATE 1 S + Nom)(2 Kvm); 
+SELECT MataInf (-1 >>> OR CLBC)(NEGATE 1 SNom)(2 Kvm); 
 SELECT MataInf (-2 >>> OR CLBC)(1 Kvm); 
 SELECT MataInf (-1 FinV OR D)(NEGATE 1 S OR A); 
 SELECT MataInf (1 FinV)(2 Kvm OR <<< OR CLBC); 
@@ -3675,8 +3686,8 @@ REMOVE MataInf (1 Konj)(2C A)(2C Nom OR Part);
 SELECT MataInf (NEGATE 0 PrVerb - Mod - Aux)(*0C OlemSaa BARRIER CLBC); 
 
 REMOVE  Cond - Mod - Aux (-1C Tr)(-1C DemPron);
-
-SELECT IndicPresPl3 (NEGATE 0 Ole)(NEGATE *1 V ^ NudTud BARRIER CLB)(NEGATE *-1 V ^ NudTud ^ DaInf BARRIER CLB) ;
+SELECT IndicPresPl3 - Ole (1 CLBC);
+SELECT IndicPresPl3 - Ole (NEGATE *1 V ^ NudTud BARRIER CLB)(NEGATE *-1 V ^ NudTud ^ DaInf BARRIER CLB) ;
 REMOVE PlNom (0 IndicPresPl3)(1 Konj)(2 IndicPresPl3);
 SELECT PlNom (0 IndicPresPl3)(1C SPAN + PlNom)(*-1 Pl3Verb  BARRIER CLBC OR Kvm OR J);
 SELECT A + PlNom (0 IndicPresPl3)(1C S + PlNom)(*-1 NaguKui LINK *-1C SP + PlNom BARRIER CLB); 
@@ -3687,14 +3698,15 @@ SELECT PlNom (0 IndicPresPl3)(1 Konj)(2C A + PlNom OR S + PlNom)(NEGATE *-1 S + 
 SELECT PlNom (0 IndicPresPl3)(-1 Konj)(-2C A + PlNom OR S + PlNom)(1 S + PlNom OR Konj);
 SELECT PlNom (0 IndicPresPl3)(1 S + PlNom)(2 Konj)(3C A + PlNom OR S + PlNom);
 SELECT PlNom (0 IndicPresPl3)(1 S + PlNom)(-1 SPAND)(-2C A + PlNom OR SGen);
-REMOVE IndicPresPl3 (NEGATE 0 Ole OR Mod)(-1C DaInf OR MaInf);
-REMOVE IndicPresPl3 (NEGATE 0 Ole OR Mod)(*0C FinV ^ IndicPresPl3 BARRIER CLBC OR Kvm);
-REMOVE IndicPresPl3 (NEGATE 0 Ole OR Mod)(1 PlNom)(*0C FinV ^ IndicPresPl3 BARRIER CLBC OR Kvm);
+REMOVE IndicPresPl3 - Ole - Mod (-1C DaInf OR MaInf);
+REMOVE IndicPresPl3 - Ole - Mod (*0C FinV ^ IndicPresPl3 BARRIER CLBC OR Kvm);
+REMOVE IndicPresPl3 - Ole - Mod (1 PlNom)(*0C FinV ^ IndicPresPl3 BARRIER CLBC OR Kvm);
 REMOVE IndicPresPl3 (-1 Pärisnimi + Gen)(1C PlNom) ; 
 SELECT:Ael A (0 IndicPresPl3) (1 Konj ^ CLBC)(2 El OR Tr)(NEGATE 2 V)(3C OmadusAse) ; 
 SELECT:Ael A (0 IndicPresPl3) (-1 El OR Tr)(-2 Konj ^ CLB) (-3C OmadusAse) ; 
 
-SELECT IndicPresPl3 (NEGATE 0 Ole) ; 
+SELECT IndicPresPl3 (NEGATE 0 Ole) (NEGATE *1 IndicPresPl3 BARRIER CLB)(NEGATE *-1 IndicPresPl3 BARRIER CLB) ; 
+REMOVE IndicPresPl3 (NEGATE 0 Ole) (*1 IndicPresPl3 BARRIER FinV OR CLB LINK -1 PlNom) ; 
 
 SELECT:withoutaux particV (-1 Jutum1>>>)(NEGATE *-1 V BARRIER CLB)(NEGATE *1 V BARRIER CLB)(NEGATE 1 A OR S + Gen); 
 SELECT:withoutaux particV (-2 CLB)(NEGATE 1 Jutum1)(NEGATE *-1 V BARRIER CLB)(NEGATE *1 V BARRIER CLB); 
@@ -3708,7 +3720,7 @@ SELECT:K27V particV (*-1 Konj BARRIER Kvm LINK -1C particV LINK *-1 OleSaa)
 SELECT:K27V particV (*-1 OleSaa)(1 Konj)(*2 Konj LINK -1C particV)
 	(NEGATE *1C FinV BARRIER CLBC)(NEGATE *-1C FinV BARRIER CLBC); 
 
-SELECT:silmad A (0 NudTud)(-2 Koma)(-1 S + Nom)(1 Koma); 
+SELECT:silmad A (0 NudTud)(-2 Koma)(-1 SNom)(1 Koma); 
 
 SELECT:K27VL particV (2 CLBC)(1C D)(NEGATE *-1 V ^ OleSaa BARRIER CLBC); 
 SELECT:K27VL particV (1 CLB)(2 FinV)(-1 D)(NEGATE *-1 V ^ Imper ^ OleSaa BARRIER CLBC); 
@@ -3720,7 +3732,7 @@ SELECT:ONCLB particV (-2 CLB)(-1 ONCLB)(NEGATE *1 V ^ Imper ^ Quot BARRIER CLBC)
 SELECT:ONCLB particV (-3 CLB + Kvm)(-2 ONCLB)(NEGATE -1 FinV)(NEGATE *1 V ^ Imper ^ Quot BARRIER CLBC); 
 SELECT:ONCLB particV (-3 CLB)(-2 ONCLB)(NEGATE 1 SPAN)(NEGATE *1 V ^ Imper ^ Quot BARRIER CLBC); 
 SELECT:ONCLB particV (-1 >>>)(NEGATE 1 A OR S + Gen); 
-SELECT:ONCLB particV (1 D); 
+SELECT:ONCLB particV (1 D)(NEGATE *1 FinV BARRIER CLBC)(NEGATE *-1 FinV BARRIER CLBC); 
 
 REMOVE:noaux particV (NEGATE 1 LLZ OR Dsh OR CLB OR Col OR Konj)(NEGATE 0 OleSaa)
 	(NEGATE *1 OleSaa BARRIER CLB)(NEGATE *-1 OleSaa BARRIER CLB); 
@@ -3881,7 +3893,7 @@ SELECT A (0 S) (NEGATE 0 NotAS) (0 Tr)
 
 SELECT:sela A (NEGATE 0 POS-AS)(1C PrVerb - Mod - Aux ^ Ole OR Pl OR NudTud)(NEGATE -1 A OR Gen) ; 
 SELECT:sela A (NEGATE 0 POS-AS)(1C G) ; 
-SELECT:sela ANom (NEGATE 0 NudTud OR POS-AS)(1C ANom OR A + NudTud)(*2 S + Nom BARRIER CLB + V); 
+SELECT:sela ANom (NEGATE 0 NudTud OR POS-AS)(1C ANom OR A + NudTud)(*2 SNom BARRIER CLB + V); 
 SELECT:sela ANom (NEGATE 0 NudTud OR POS-AS)
 	(*-1C Ole - Aux)(*1 DaInf BARRIER CLB)
 	(NEGATE *1 ANom OR D BARRIER CLB)(NEGATE *-1 ANom OR D BARRIER CLB); 
@@ -3902,11 +3914,11 @@ SELECT ANom (0 S)(NEGATE 1 S)(NEGATE 0 V OR NudTud)(NEGATE -1 In)(*-1 Ole BARRIE
 SELECT AGen (0 S)(NEGATE 0 V OR NudTud)(1C Gen)(*-1 Ole BARRIER CLBC OR Kvm)(*-1 Nom OR Part BARRIER CLBC OR Kvm); 
 SELECT APart (0 S)(NEGATE 0 V OR NudTud OR Prep)(1C Part ^ Pärisnimi)(*-1 Ole BARRIER CLBC OR Kvm); 
 
-SELECT Past + Ps (0 NudTud)(1 Kvm)(*-1 Ole BARRIER CLBC OR Kvm)(*-1C S + Nom BARRIER CLBC OR Kvm); 
-SELECT Past (0 NudTud)(1 Kvm)(*-1 Ole BARRIER CLBC OR Kvm)(NEGATE *-1 PrVerb - Mod - Aux BARRIER CLBC OR Kvm)(*-1C S + Nom BARRIER CLBC OR Kvm); 
-SELECT A (0 NudTud)(1 Kvm)(*-1 Ole BARRIER CLBC OR Kvm)(*-1C S + Nom BARRIER CLBC OR Kvm); 
+SELECT Past + Ps (0 NudTud)(1 Kvm)(*-1 Ole BARRIER CLBC OR Kvm)(*-1C SNom BARRIER CLBC OR Kvm); 
+SELECT Past (0 NudTud)(1 Kvm)(*-1 Ole BARRIER CLBC OR Kvm)(NEGATE *-1 PrVerb - Mod - Aux BARRIER CLBC OR Kvm)(*-1C SNom BARRIER CLBC OR Kvm); 
+SELECT A (0 NudTud)(1 Kvm)(*-1 Ole BARRIER CLBC OR Kvm)(*-1C SNom BARRIER CLBC OR Kvm); 
 
-SELECT A (0C Nom)(1 S + Nom); 
+SELECT A (0C Nom)(1 SNom); 
 SELECT S + Sg (0C Gen)(1 Oma)(-1 SPAN + SgGen); 
 SELECT A + Sg (0C Gen ^ Oma)(1 SP + SgGen); 
 SELECT A + Pl (0C Gen ^ Oma)(1 SP + PlGen); 
@@ -3918,9 +3930,9 @@ SELECT Past (0 NudTud)(*1 MaInf BARRIER CLBC OR particV)
 		(NEGATE *1 FinV ^ Ole BARRIER CLBC)(NEGATE *-1 FinV ^ Ole BARRIER CLBC); 
 SELECT Past (0 NudTud)(1C S)(NEGATE *-1 Nom BARRIER CLBC)(NEGATE *-1C Tr BARRIER CLBC)
 	(*-1 OleSaa BARRIER CLBC OR Konj OR particV)(NEGATE *1 particV OR MineS BARRIER CLBC OR Konj); 
-SELECT A (0 NudTud)(NEGATE 0 Gen)(1C S + Nom)(NEGATE *-1 OleSaa BARRIER CLBC); 
-SELECT ANom (0 S)(NEGATE 0 V OR NudTud)(NEGATE 0 Gen)(1C S + Nom)(*-1 FinV BARRIER CLB); 
-SELECT ANom (0 S)(NEGATE 0 V OR NudTud)(NEGATE 0 Gen)(1C S + Nom)(*1 FinV BARRIER CLB); 
+SELECT A (0 NudTud)(NEGATE 0 Gen)(1C SNom)(NEGATE *-1 OleSaa BARRIER CLBC); 
+SELECT ANom (0 S)(NEGATE 0 V OR NudTud)(NEGATE 0 Gen)(1C SNom)(*-1 FinV BARRIER CLB); 
+SELECT ANom (0 S)(NEGATE 0 V OR NudTud)(NEGATE 0 Gen)(1C SNom)(*1 FinV BARRIER CLB); 
 SELECT A + SgGen (0 S)(NEGATE 0 V OR Oma)(1C SPSgGen); 
 SELECT A + PlGen (0 S)(NEGATE 0 V)(1C SP + PlGen); 
 SELECT AGen (0 S)(NEGATE 0 V OR Oma)(1C S + NiNaTaGa); 
@@ -3936,7 +3948,7 @@ SELECT A + Abl (0 S)(NEGATE 0 V)(NEGATE 0 Gen)(1C S + Abl);
 SELECT A + Tr  (0 S)(NEGATE 0 V)(NEGATE 0 Gen)(1C S + Tr); 
 REMOVE A (0 S)(0 NiNaTaGa)(1C S)(NEGATE *1 PrVerb - Mod - Aux BARRIER CLBC)(NEGATE *-1 PrVerb - Mod - Aux BARRIER CLBC); 
 
-SELECT A (0 NudTud)(NEGATE 0 Gen)(1 S + Gen)(2C S + Nom)(NEGATE *-1 OleSaa BARRIER CLBC); 
+SELECT A (0 NudTud)(NEGATE 0 Gen)(1 S + Gen)(2C SNom)(NEGATE *-1 OleSaa BARRIER CLBC); 
 SELECT A + SgNom (0 S)(NEGATE 0 V OR NudTud)(NEGATE 0 Gen)(1 S + Gen)(2C S + Sg + Nom); 
 SELECT A + PlNom (0 S)(NEGATE 0 V OR NudTud)(NEGATE 0 Gen)(1 S + Gen)(2C S + Pl + Nom); 
 SELECT A + SgGen (0 S)(NEGATE 0 V OR Oma)(1 S + Gen)(2C SPSgGen); 
@@ -3953,7 +3965,7 @@ SELECT A + Ad (0 S)(NEGATE 0 V)(NEGATE 0 Gen)(1 S + Gen)(2C S + Ad);
 SELECT A + Abl (0 S)(NEGATE 0 V)(NEGATE 0 Gen)(1 S + Gen)(2C S + Abl); 
 SELECT A + Tr  (0 S)(NEGATE 0 V)(NEGATE 0 Gen)(1 S + Gen)(2C S + Tr); 
 
-SELECT ANom (0 S)(NEGATE 0 V OR NudTud)(NEGATE 0 Gen)(1 S)(2 NudTud)(3C S + Nom); 
+SELECT ANom (0 S)(NEGATE 0 V OR NudTud)(NEGATE 0 Gen)(1 S)(2 NudTud)(3C SNom); 
 SELECT AGen (0 S)(NEGATE 0 V)(1 S)(2 NudTud)(1C S + Gen); 
 SELECT AGen (0 S)(NEGATE 0 V)(1 S)(2 NudTud)(1C S + NiNaTaGa); 
 SELECT A + SgPart (0 S)(NEGATE 0 V)(NEGATE 0 Gen)(1 S)(2 NudTud)(3C S + SgPart); 
@@ -4071,7 +4083,7 @@ REMOVE SPart (-1C A ^ NudTud ^ MataA)(NEGATE -1 Part OR PlGen OR Hulk)(NEGATE -2
 REMOVE S + SgAdit (-1C A ^ NudTud ^ MataA)(NEGATE -1 SgAdit);
 REMOVE SNom (-1C A ^ NudTud ^ MataA)(NEGATE -1 Nom);
 REMOVE SPart (-1C A ^ NudTud ^ MataA)(NEGATE -1 Part OR Hulk);
-REMOVE SAdit (-1C A ^ NudTud ^ MataA)(NEGATE -1 Adit)
+REMOVE SAdit (-1C A ^ NudTud ^ MataA)(NEGATE -1 Adit);
 REMOVE S + In (-1C A ^ NudTud ^ MataA)(NEGATE -1 In);
 REMOVE SEl (-1C A ^ NudTud ^ MataA)(NEGATE -1 El);
 REMOVE S + All (-1C A ^ NudTud ^ MataA)(NEGATE -1 All);
@@ -4097,7 +4109,7 @@ SELECT A + SgAd  (1C S + SgAd);
 SELECT A + SgAbl  (1C S + SgAbl);
 SELECT A + SgTr  (1C S + SgTr);
 SELECT A + SgGen (1C S + Sg + NiNaTaGa);
-SELECT A + PlNom (NEGATE 0 NudTud)(1C S + PlNom);
+SELECT A + PlNom (NEGATE 0 V OR NudTud)(1C S + PlNom); # ka vad
 SELECT A + PlGen (1C S + PlGen);
 SELECT A + PlPart (1C S + PlPart);
 SELECT A + PlAdit (1C S + PlAdit);
@@ -4178,7 +4190,7 @@ REMOVE Adit (0 NimiAse)(NEGATE 0 NotS)(1 Kvm)(2 Dsh ^ CLBC)(NEGATE *-1 Dsh)(3 NG
 
 SELECT A (0 NudTud)(1 Konj)(2C ANom);
 SELECT A + SgNom (NEGATE 0 NudTud)(1 Konj)(2C A + SgNom);
-SELECT A + PlNom (1 Konj)(2C A + PlNom) ;
+SELECT A + PlNom (NEGATE 0 V)(1 Konj)(2C A + PlNom) ;
 SELECT A + SgPart (1 Konj)(2C A + SgPart) ;
 SELECT A + PlPart (1 Konj)(2C A + PlPart) ;
 SELECT A + SgGen (1 Konj)(2C A + SgGen) ;
@@ -4186,7 +4198,7 @@ SELECT A + PlGen (1 Konj)(2C A + PlGen) ;
 SELECT A + SgGen (1 Konj)(2 A + Sg)(2 NiNaTaGa) ;
 SELECT A (0 NudTud)(-1 Konj)(-2C ANom);
 SELECT A + SgNom (NEGATE 0 NudTud)(-1 Konj)(-2C A + SgNom);
-SELECT A + PlNom (NEGATE 0 NudTud)(-1 Konj)(-2C A + PlNom) ;
+SELECT A + PlNom (NEGATE 0 NudTud OR V)(-1 Konj)(-2C A + PlNom) ;
 SELECT A + SgPart (-1 Konj)(2C A + SgPart) ;
 SELECT A + PlPart (-1 Konj)(-2C A + PlPart) ;
 SELECT A + SgGen (-1 Konj)(-2C A + SgGen) ;
@@ -4386,13 +4398,14 @@ SELECT:new A + SgPart (NEGATE 0 S OR K OR Gen OR Sg + El)(*1C Scom + SgPart BARR
 SELECT:new A + SgPart (NEGATE 0 K OR Gen OR Sg + El)(*1C Scom + SgPart BARRIER nppiir OR Sid|Kvm);
 SELECT SGen OR P + Gen OR N + Gen (NEGATE 0 FinV)(NEGATE 1 LLZ OR CLB OR Opr)(-1 SPAN OR Konj ^ CLB)(NOt -1 Cap)(-2 KonjKvm ^ CLB ^ Jutum)(-3C SGen)(*-1 Nom BARRIER CLB);
 
-SELECT ANom (0 S + Nom ^ NudTud)(1 Konj)(2C SNom)(-1C S + Nom); 
+SELECT ANom (0 SNom ^ NudTud)(1 Konj)(2C SNom)(-1C SNom); 
 SELECT SGen OR P + Gen (NEGATE 0 FinV OR Terve)(1C SNom)(-1 Konj ^ CLBC)(-2C SNom);
 SELECT SNom OR P + Nom OR N + Nom OR ANom (NEGATE 0 FinV OR NudTud)(-1 Konj ^ CLBC)(-2C SNom);
 SELECT SGen OR P + Gen (NEGATE 0 FinV)(-1 Konj ^ CLBC)(-2C SGen); 
 SELECT SPart OR P + Part (NEGATE 0 FinV OR J)(-1 Konj ^ CLB)(-2C SPart);
 SELECT S + Ill OR SAdit OR P + Ill OR P + Adit (-1 Konj ^ CLBC)(-2C S + Ill);
-SELECT S + In OR P + In (NEGATE 0 Ger)(-1 Konj ^ CLB)(-2C S + In);
+SELECT S + In OR P + In (NEGATE 0 Ger)(-1 Konj ^ CLBC)(-2C S + In);
+SELECT S + In OR P + In (NEGATE 0 V)(-1 Konj ^ CLB)(-2C S + In);
 SELECT SEl OR P + El (-1 Konj ^ CLB)(-2C SEl);
 SELECT S + All OR P + All (-1 Konj ^ CLB)(-2C S + All);
 SELECT S + Ad OR P + Ad (-1 Konj ^ CLB)(-2C S + Ad);
@@ -4913,7 +4926,7 @@ SELECT A + PlPart (0 S) (NEGATE 0 NotAS OR NudTud) (NEGATE 1 Pärisnimi)
 
 SELECT:ASadit SAdit (-1C A + Adit) ; 
 
-REMOVE A (0 S + Nom)(NEGATE 0 NotAS OR Es)(NEGATE -1 Mis + Nom  OR Kui)(NEGATE *1 S OR A BARRIER CLB) (NEGATE 0 Tr) 
+REMOVE A (0 SNom)(NEGATE 0 NotAS OR Es)(NEGATE -1 Mis + Nom  OR Kui)(NEGATE *1 S OR A BARRIER CLB) (NEGATE 0 Tr) 
               (NEGATE 0 partic) (*-1 V BARRIER CLB)(NEGATE *-1 PrVerb - Mod - Aux BARRIER CLB);
 REMOVE A (0 S)(NEGATE 0 NotAS OR Nom OR Es)(NEGATE -1 Mis + Nom  OR Kui)(NEGATE *1 S OR A BARRIER CLB) (NEGATE 0 Tr) 
               (NEGATE 0 partic) (*-1 V BARRIER CLB)(NEGATE *-1 PrVerb - Mod - Aux BARRIER CLB);
@@ -4954,7 +4967,7 @@ REMOVE A (*-1C A + SgNom BARRIER Konj OR CLB)(NEGATE *-1 SP BARRIER CLB)(NEGATE 
 SELECT Sg3Verb  (-2 Sg3Verb)(-1 Konj);
 SELECT Pl3Verb  (*-1C PersPron + PlNom BARRIER CLBC);
 
-REMOVE SNom (NEGATE 0 Pärisnimi) (-1C S + Nom);
+REMOVE SNom (NEGATE 0 Pärisnimi) (-1C SNom);
 
 SELECT A (0 NudTud)(-1 Konj)(-2C A + SgNom);
 SELECT A + SgNom (NEGATE 0 NudTud)(-1 Konj)(-2C A + SgNom);
@@ -4982,21 +4995,21 @@ SELECT V (NEGATE *-1 V BARRIER CLB)(NEGATE *1 V BARRIER CLB)(-1C D + ühendav);
 
 
 
-REMOVE S + SgNom (0 GP) (*-1C Pl3Verb ^ Imper CBARRIER Sg3Verb OR NaguKui OR CLBC) 
+REMOVE S + SgNom - NudTud (0 GP) (*-1C Pl3Verb ^ Imper CBARRIER Sg3Verb OR NaguKui OR CLBC) 
                     (NEGATE 1 Konj)(NEGATE -1 Konj);
-REMOVE S + PlNom (0 GP) (*-1C Sg3Verb CBARRIER Pl3Verb OR CLB LINK NOT *-1 Pps3 BARRIER CLB)
+REMOVE S + PlNom - NudTud (0 GP) (*-1C Sg3Verb CBARRIER Pl3Verb OR CLB LINK NOT *-1 Pps3 BARRIER CLB)
                          (NEGATE *-1C Pl3Verb BARRIER CLB)(NEGATE *-1C Pl3Verb BARRIER CLB);
-REMOVE S + SgNom (0 GP) (*1C Pl3Verb ^ Imper CBARRIER Sg3Verb OR CLBC)(NEGATE *1 Konj BARRIER S LINK 0 V)(NEGATE -1 Konj);
-REMOVE S + PlNom (0 GP) (*1C Sg3Verb CBARRIER Pl3Verb OR CLB) (NEGATE *1 Imps BARRIER CLB) (NEGATE *-1 Imps BARRIER CLB);
+REMOVE S + SgNom - NudTud (0 GP) (*1C Pl3Verb ^ Imper CBARRIER Sg3Verb OR CLBC)(NEGATE *1 Konj BARRIER S LINK 0 V)(NEGATE -1 Konj);
+REMOVE S + PlNom - NudTud (0 GP) (*1C Sg3Verb CBARRIER Pl3Verb OR CLB) (NEGATE *1 Imps BARRIER CLB) (NEGATE *-1 Imps BARRIER CLB);
 
 
 REMOVE SGen (1 Kvm) (2 <<<) (*-1C SPPart BARRIER CLB)(NEGATE *-1 Prep OR Preg BARRIER CLB);
-SELECT S + PlNom (NEGATE 0 P) (*-1C Pl3Verb BARRIER CLB) (NEGATE *-1 Ei BARRIER CLB) 
+SELECT S + PlNom - P - NudTud (*-1C Pl3Verb BARRIER CLB) (NEGATE *-1 Ei BARRIER CLB) 
                  (NEGATE *1 SPNom BARRIER CLB) (NEGATE *-1 SPNom BARRIER CLB) 
                  (NEGATE *1 SPPart BARRIER CLB) (NEGATE *-1 SPPart BARRIER CLB);
-SELECT S + SgNom (*1C Sg3Verb BARRIER CLB OR SPPart) 
+SELECT S + SgNom - P - NudTud (*1C Sg3Verb BARRIER CLB OR SPPart) 
                  (NEGATE *-1 Ei)(NEGATE *1 SPNom) (NEGATE *-1 SPNom) (NEGATE *-1 SPPart);
-SELECT S + PlNom (*1C Pl3Verb BARRIER CLB OR SPPart) 
+SELECT S + PlNom - P - NudTud (*1C Pl3Verb BARRIER CLB OR SPPart) 
                  (NEGATE *-1 Ei)(NEGATE *1 SPNom) (NEGATE *-1 SPNom) (NEGATE *-1 SPPart);
 
 
@@ -5019,8 +5032,8 @@ SELECT Adit (1C Adit + Pärisnimi)(NEGATE *2 Ill);
 REMOVE Adit (0 Nominal) (1C S) (NEGATE 1 Adit) (NEGATE 1 In) (NEGATE 2 Post)
               (NEGATE *1 AditVerb BARRIER CLB) (NEGATE *-1 AditVerb BARRIER CLB);
 REMOVE S + In (0 SPNom)(NEGATE 1 SPAND)(-1 ANom OR SPGen)(-2 OlemSaa)(-3C In) ; 
-SELECT Pl3Verb (NEGATE -1 Kvm)(NEGATE *-1 V + Sg BARRIER CLB)(*1C SP + PlNom CBARRIER Nom OR CLBC OR ("või") OR ("ehk") OR Aga);
-SELECT Sg3Verb (NEGATE -1 Kvm)(NEGATE *-1 V + Pl BARRIER CLB)(*1C SP + PlNom BARRIER CLBC);
+SELECT Pl3Verb (NEGATE -1 Kvm)(NEGATE *-1 V + Sg BARRIER CLB)(NEGATE *1 V + Sg BARRIER CLB)(*1C SP + PlNom CBARRIER Nom OR CLBC OR ("või") OR ("ehk") OR Aga);
+SELECT Sg3Verb (NEGATE -1 Kvm)(NEGATE *-1 V + Pl BARRIER CLB)(NEGATE *1 V + Pl BARRIER CLB)(*1C SP + PlNom BARRIER CLBC);
 
 SELECT S (0 (L0) + NudTud)(NEGATE 1 SPAN OR J)(*-1C FinV ^ partic BARRIER CLB) (NEGATE *-1 OlemSaa BARRIER CLB) (NEGATE *1 OlemSaa BARRIER CLB);
 
@@ -5036,7 +5049,7 @@ SELECT ("lõpp") + S (-1 Ajamäärus);
 "<lõpuks>" SELECT D;
 REMOVE S + Tr (0 A);
 
-SELECT DetPron + SgNom (1 S + Nom) (2 SubstSgCo)(*-1 FinV BARRIER CLB)(NEGATE *-1 Nom BARRIER CLB);
+SELECT DetPron + SgNom (1 SNom) (2 SubstSgCo)(*-1 FinV BARRIER CLB)(NEGATE *-1 Nom BARRIER CLB);
 SELECT DetPron + SgGen (1 Arv + Gen) (2 SubstSgCo);
 
 SELECT FinV (NEGATE *-1 FinV BARRIER CLB) (NEGATE *-1 FinV BARRIER CLB) (*1 VerbiAdv BARRIER CLB);
@@ -5073,17 +5086,17 @@ SELECT ("kord") + D (1 Yks) (*2 Koma BARRIER CLB LINK 1 ("kord")) ;
 "<kord>" REMOVE D (-1 Nominal) ; 
 
 
-REMOVE S + SgNom (-1 Kes + Nom )(NEGATE *1 Ole)(NEGATE 1 Postn)
+REMOVE S + SgNom (-1 Kes + Nom )(NEGATE *1 Ole)(NEGATE 1 Postn);
 
 SELECT SNom (-1C Nom) (NEGATE -1 S OR PersPron)(NEGATE -1 InterPron OR DemPron)(NEGATE 0 Gen OR A OR FinV);
 SELECT SNom (NEGATE 0 J OR P OR A OR FinV)(-1C Nom) (NEGATE -1 S) (NEGATE 1 Nominal);
 
 SELECT A (0 NudTud)(-1 Konj&Kvm) (1 Konj&Kvm) 
                  (-2C ANom)(2 ANom);
-SELECT A (0 NudTud)(-1 Konj&Kvm) (1 S + Nom) (-2 ANom);
+SELECT A (0 NudTud)(-1 Konj&Kvm) (1 SNom) (-2 ANom);
 SELECT ANom (NEGATE 0 NudTud)(-1 Konj&Kvm) (1 Konj&Kvm) 
                  (-2C ANom)(2 ANom);
-SELECT ANom (NEGATE 0 NudTud)(-1 Konj&Kvm) (1 S + Nom) (-2 ANom);
+SELECT ANom (NEGATE 0 NudTud)(-1 Konj&Kvm) (1 SNom) (-2 ANom);
 
 REMOVE ("tall") + S + Adit (NEGATE *-1 LiikumisVerb - Mod - Aux BARRIER CLB) (NEGATE *1 LiikumisVerb - Mod - Aux BARRIER CLB);
 
@@ -5092,7 +5105,7 @@ REMOVE ("tall") + S + Adit (NEGATE *-1 LiikumisVerb - Mod - Aux BARRIER CLB) (NE
 
 REMOVE ("jah") + I  (NEGATE 1 Exc OR Int);
 
-SELECT D (-1 Kui)(NEGATE 0 S + Nom);
+SELECT D (-1 Kui)(NEGATE 0 SNom);
 SELECT D (-1 Kui)(*0C SP + Nom OR SP + Part BARRIER CLBC);
 
 
@@ -5208,20 +5221,20 @@ SELECT SgNom (0 S) (NEGATE 0 A)(NEGATE 1 Oma OR NiNaTaGa)
                 (NEGATE *1 DaInf BARRIER CLB)(NEGATE *-1 Konj BARRIER CLB)  
                 (NEGATE *1 SPSgNom BARRIER CLB) (NEGATE *-1 SPSgNom BARRIER CLB) ;
 REMOVE Scom + SgGen (-1 Gen ^ Prop)(NEGATE -1 V OR Oma)(1C S + SgGen)(NEGATE 1 ("kael"))(2C S ^ Prop)(2 Sg)(NEGATE *-1C Nom BARRIER CLB); 
-SELECT S + SgGen (NEGATE 0 A) (1C S)(NEGATE -1 PersPron)(*1C S + Nom BARRIER FinV OR CLB OR Konj) 
+SELECT S + SgGen (NEGATE 0 A) (1C S)(NEGATE -1 PersPron)(*1C SNom BARRIER FinV OR CLB OR Konj) 
 	(NEGATE 1 Pärisnimi)(NEGATE *1 AditVerb BARRIER CLB)(NEGATE *-1 AditVerb BARRIER CLB) ;
 SELECT S + SgGen (NEGATE 0 NotS OR Pärisnimi) (1C S)(NEGATE 1 Kust)
-	(*-1C S + Nom BARRIER FinV OR CLB OR Kvm OR Konj LINK NOT 1 Pärisnimi); 
+	(*-1C SNom BARRIER FinV OR CLB OR Kvm OR Konj LINK NOT 1 Pärisnimi); 
 SELECT S + SgGen (0 Cap)(NEGATE 0 NotS) (1C S)(NEGATE 1 Kust)
-	(*-2C S + Nom BARRIER FinV OR CLB OR Kvm OR Konj LINK NOT 1 Pärisnimi); 
+	(*-2C SNom BARRIER FinV OR CLB OR Kvm OR Konj LINK NOT 1 Pärisnimi); 
 
 SELECT Nom (-1C ANom)(NEGATE *1 Scom + Nom BARRIER CLB OR FinV);
 
 SELECT:K38 SGen (1C S) (NEGATE 1 KuhuMilleks) (NEGATE -1C S) 
-             (NEGATE *1 Neg BARRIER CLBC)(NEGATE *-1 Neg BARRIER CLBC)(NEGATE 1 Pärisnimi) (*<-1C S + Nom BARRIER CLBC);
+             (NEGATE *1 Neg BARRIER CLBC)(NEGATE *-1 Neg BARRIER CLBC)(NEGATE 1 Pärisnimi) (*<-1C SNom BARRIER CLBC);
 
 SELECT:K39 Gen (0C S) (1C S) (NEGATE 1 KuhuMilleks) (NEGATE -1C S OR AditVerb) 
-  (NEGATE *1 Neg BARRIER CLBC)(NEGATE *-1 Neg BARRIER CLBC)(NEGATE 1 Pärisnimi) (*2C S + Nom BARRIER CLBC);
+  (NEGATE *1 Neg BARRIER CLBC)(NEGATE *-1 Neg BARRIER CLBC)(NEGATE 1 Pärisnimi) (*2C SNom BARRIER CLBC);
 
 SELECT A + SgNom (NEGATE 0 S OR NudTud)(*-1 PrVerb - Mod - Aux BARRIER CLB LINK -1 SPSgNom)(1 Kvm) ;
 SELECT A + PlNom (NEGATE 0 S OR NudTud)(*-1 PrVerb - Mod - Aux BARRIER CLB LINK -1 SP + PlNom)(1 Kvm) ;
@@ -5291,9 +5304,9 @@ SELECT S + PlPart (-1 Konj) (-2C S + PlPart) (NEGATE *1C SP + PlPart);
 
 
 SELECT:loetelu Gen (-2C Gen) (-1 J OR Kvm)(NEGATE 1 FinV + VPs3);
-SELECT:loetelu Gen (-3C Gen) (-2 J OR Kvm)(-1 AGen OR S + Nom OR S + Gen);
-SELECT:loetelu Gen (-4C Gen) (-3 Arv OR Y)(-2 J OR Kvm)(-1 AGen OR S + Nom OR S + Gen);
-SELECT:loetelu Gen (-5C Gen) (-2 Kvm)(-3 Arv OR Y)(-2 J OR Kvm)(-1 AGen OR S + Nom OR S + Gen);
+SELECT:loetelu Gen (-3C Gen) (-2 J OR Kvm)(-1 AGen OR SNom OR S + Gen);
+SELECT:loetelu Gen (-4C Gen) (-3 Arv OR Y)(-2 J OR Kvm)(-1 AGen OR SNom OR S + Gen);
+SELECT:loetelu Gen (-5C Gen) (-2 Kvm)(-3 Arv OR Y)(-2 J OR Kvm)(-1 AGen OR SNom OR S + Gen);
 SELECT:loetelu Gen (1 J OR Kvm)(2 AGen OR S + Gen)(3C Gen);
 SELECT:loetelu Gen (1 J OR Kvm)(2 Arv OR Y)(3C Gen)(4 J OR Kvm OR V); 
 SELECT:loetelu Gen (1 J OR Kvm)(2 Arv OR Y)(3 AGen OR S + Gen)(4C Gen) ;
