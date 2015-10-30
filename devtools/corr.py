@@ -96,10 +96,10 @@ def correlate():
       if word[0] == '"' and word[1] == '<':
         print(word) 
       else: 
-        if lemmac == 0:
+        if lemmac == 2 or lemma in "\"¶\"":
+          tag += " &correct"
+        elif lemmac == 0:
           tag += " &grm-wrong-word"
-        elif lemmac == 2:
-          tag += " &grm-correct"
         print("\t"+word+tag) 
       i += 1
   except IndexError:
