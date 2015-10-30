@@ -7,7 +7,7 @@ LIST <<< = <<<  ;
 LIST QM = ? ;
 LIST QDL = QDL "^vastas" ;
 
-LIST Cor = &grm-correct ;
+LIST Cor = &correct ;
 LIST CLB = "," ";" "-" "(" ")" CC CS ;
 
 LIST V = V ;
