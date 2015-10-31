@@ -4928,8 +4928,10 @@ SELECT:ASadit SAdit (-1C A + Adit) ;
 
 REMOVE A (0 SNom)(NEGATE 0 NotAS OR Es)(NEGATE -1 Mis + Nom  OR Kui)(NEGATE *1 S OR A BARRIER CLB) (NEGATE 0 Tr) 
               (NEGATE 0 partic) (*-1 V BARRIER CLB)(NEGATE *-1 PrVerb - Mod - Aux BARRIER CLB);
-REMOVE A (0 S)(NEGATE 0 NotAS OR Nom OR Es)(NEGATE -1 Mis + Nom  OR Kui)(NEGATE *1 S OR A BARRIER CLB) (NEGATE 0 Tr) 
-              (NEGATE 0 partic) (*-1 V BARRIER CLB)(NEGATE *-1 PrVerb - Mod - Aux BARRIER CLB);
+REMOVE A (0 S)(NEGATE 0 NotAS OR Nom OR Gen OR Es OR Tr OR partic)(NEGATE -1 Mis + Nom  OR Kui)(NEGATE *1 S OR A BARRIER CLB)  
+              (*-1 V BARRIER CLB)(NEGATE *-1 PrVerb - Mod - Aux BARRIER CLB); # CH
+REMOVE A + Gen (0 S)(NEGATE 0 NotAS OR Nom OR Es OR Tr OR partic)(NEGATE -1 Mis + Nom  OR Kui)(NEGATE *1 S OR A BARRIER CLB)  
+              (*-1 V BARRIER CLB)(NEGATE *-1 SGen OR PrVerb - Mod - Aux BARRIER CLB); # CH
 REMOVE I (NEGATE -1 Jutum1>>> OR Kvm) (NEGATE 1 Kvm OR ("nii") OR Et);
 
 
