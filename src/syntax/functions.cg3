@@ -301,6 +301,7 @@ LIST SpetsAdj = "suurune" "jämedune" "laiune" "kitsune" "pikkune" "kõrgune"
 LIST ParObjVerb = *Part *Part-P ;
 LIST Trans = *NGP-P ;
 
+LIST Tr2Intr = "hakkama" "rõõmustama"  ;
 #LIST Tr2Intr = "aitama" "andma" "haarama" "hakkama" "hammustama" "hauduma" "heitma" "hoidma" "jooma" "jõllitama" "kiiluma" "kiitma" "kirjutama" "laskma" "litsuma" "lööma" "maksma" "murdma" "mõtlema" "mängima" "nägema" "pakkuma" "paluma" "panema" "passima" "pidama" "pingutama" "pistma" "pressima" "raiuma" "rebima" "rõõmustama" "rääkima" "saama" "tundma" "ulatama" "vaatama" "vahtima" "vedama" "viskama" "ütlema"  ;
 
 

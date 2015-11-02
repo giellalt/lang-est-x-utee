@@ -13,6 +13,7 @@ LIST CLB = "," ";" "-" "(" ")" CC CS ;
 LIST V = V ;
 LIST S = N ;
 LIST SP = N Pron ;
+LIST Pers = Pers ;
 LIST A = A ;
 
 LIST Nom = Nom  ;
@@ -129,6 +130,7 @@ ADD (&grm-non-agr-noun-mod) TARGET SP + (c@nn>) - Cor - Gen ;
 #>>         &grm-missing-ade        (wrong case, should be adessive)
 
 ADD (&grm-missing-ade) TARGET SP - Cor - Ade - Gen (-1 A + Cor + Ade) ;
+ADD (&grm-missing-ade) TARGET SP + Gen - Cor - Ade (-1 A + Cor + Ade)(NOT 1 SP + Gen - Pers OR Ade) ;
 
 ADD (&grm-missing-ade) TARGET A - Cor - Ade - NudTud (0 case) (1 SP + Cor + Ade) ;
 
