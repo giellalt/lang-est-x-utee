@@ -294,11 +294,11 @@ LEXICON Pronouns
  mina+Pron+Sg+All:minule GI; ! 00_P,mina,minu[le],------04,-,-,*
  mina+Pron+Sg+Ela:minust GI; ! 00_P,mina,minu[st],------03,-,-,*
  mina+Pron+Sg+Ess:minuna GI; ! 00_P,mina,minu[na],------0E,-,-,*
- mina+Pron+Sg+Gen:minu GI; ! 00_P,mina,minu[],------0G,-,-,*
+ mina+Pron+Sg+Gen+Emph:minu GI; ! 00_P,mina,minu[],------0G,-,-,*
  mina+Pron+Sg+Ill:minusse GI; ! 00_P,mina,minu[sse],------01,-,-,*
  mina+Pron+Sg+Ine:minus GI; ! 00_P,mina,minu[s],------02,-,-,*
  mina+Pron+Sg+Com:minuga GI; ! 00_P,mina,minu[ga],------0K,-,-,*
- mina+Pron+Sg+Nom:mina GI; ! 00_P,mina,mina[],------0N,-,-,*
+ mina+Pron+Sg+Nom+Emph:mina GI; ! 00_P,mina,mina[],------0N,-,-,*
  mina+Pron+Sg+Par:mind GI; ! 00_P,mina,m'in[d],------0P,-,-,*
  mina+Pron+Sg+Trm:minuni GI; ! 00_P,mina,minu[ni],------0R,-,-,*
  mina+Pron+Sg+Tra:minuks GI; ! 00_P,mina,minu[ks],------0T,-,-,*

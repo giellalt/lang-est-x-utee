@@ -21,6 +21,8 @@ Multichar_Symbols
 +Adp	! kaassõna		! pre/postposition	! kaudu
 +Adv	! muu sõna		! other word		! kihku, kihla, minap
 
++Emph ! Long form personal pronouns
+
 ! tuletised, sisemiseks kasutamiseks, filtreerimiseks
 !! derivation suffixes, used to filter out illegal combinations internally
 +Dim/ke	! deminutive
