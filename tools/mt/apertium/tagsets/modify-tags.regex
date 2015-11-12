@@ -3,6 +3,7 @@
  [ %<punct%> -> %<guio%> || %- _ ] .o.
  [ %<clb%> -> %<sent%> || %. _ ] .o.
  [ %<cc%> -> %<cnjcoo%> ] .o.
+ [ %<cs%> -> %<cnjsub%> ] .o.
  [ %<a%> -> %<adj%> ] .o.
  [ %<v%> -> %<vblex%> ] .o.
  [ %<interj%> -> %<ij%> ] .o.
