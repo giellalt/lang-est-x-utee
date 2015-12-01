@@ -64,7 +64,7 @@ LEXICON Adjectives
  ahker+A:ahkE1r 02_A; ! (02_A -> +A) a0: ahker, b0: ahkra, b0r: 0, c0: 0
  ahne+A:ahne 01; ! (01_A -> +A) a0: ahne, a0r: 0
  ahne+A:ahne 06; ! (06_A -> +A) an: ahne, at: ahne
- ahtev+A:aht=E1v 02_A; ! (02_A -> +A) a0: ahtev, b0: ahtva, b0r: 0, c0: 0
+ ahtev+A:ahtE1v 02_A; ! (02_A -> +A) a0: ahtev, b0: ahtva, b0r: 0, c0: 0
  ahtuke+A:ahtuke 12_0-SE-S; ! (12_A -> +A) a0: ahtuke, b0: ahtukese, c0: ahtukes, b0v: ahtukesi
  ahvatlev+A:ahvatlev 02_A; ! (02_A -> +A) a0: ahvatlev, b0: ahvatleva, b0r: 0, c0: 0
  ahvilik+A:ahvilikK1 25; ! (25_A -> +A) at: ahvilik, bt: ahvilikku, bn: ahviliku, btv: ahvilikke, bnv: ahvilike
@@ -202,7 +202,7 @@ LEXICON Adjectives
  andestamatu+A:andestamatu 01; ! (01_A -> +A) a0: andestamatu, a0r: 0
  andestatav+A:andestatav 02_A; ! (02_A -> +A) a0: andestatav, b0: andestatava, b0r: 0, c0: 0
  andetu+A:andetu 01; ! (01_A -> +A) a0: andetu, a0r: 0
- andev+A:and=E1v 02_A; ! (02_A -> +A) a0: andev, b0: andva, b0r: 0, c0: 0
+ andev+A:andE1v 02_A; ! (02_A -> +A) a0: andev, b0: andva, b0r: 0, c0: 0
  andlik+A:andlikK1 25; ! (25_A -> +A) at: andlik, bt: andlikku, bn: andliku, btv: andlikke, bnv: andlike
  andmatu+A:andmatu 01; ! (01_A -> +A) a0: andmatu, a0r: 0
  aneemiline+A:aneemili 12_NE-SE-S; ! (12_A -> +A) a0: aneemiline, b0: aneemilise, c0: aneemilis, b0v: aneemilisi
@@ -999,7 +999,7 @@ LEXICON Adjectives
  haiglane+A:haigla 12_NE-SE-S; ! (12_A -> +A) a0: haiglane, b0: haiglase, c0: haiglas, b0v: haiglasi
  haiglaslik+A:haiglaslikK1 25; ! (25_A -> +A) at: haiglaslik, bt: haiglaslikku, bn: haiglasliku, btv: haiglaslikke, bnv: haiglaslike
  haiguslik+A:haiguslikK1 25; ! (25_A -> +A) at: haiguslik, bt: haiguslikku, bn: haigusliku, btv: haiguslikke, bnv: haiguslike
- haisev+A:hais=E1v 02_A; ! (02_A -> +A) a0: haisev, b0: haisva, b0r: 0, c0: 0
+ haisev+A:haisE1v 02_A; ! (02_A -> +A) a0: haisev, b0: haisva, b0r: 0, c0: 0
  haisev+A:haisev 02_A; ! (02_A -> +A) a0: haisev, b0: haiseva, b0r: 0, c0: 0
  haisukas+A:haisuk 02_GAS_S-0; ! (02_A -> +A) a0: haisukas, b0: haisuka, b0r: 0, c0: 0
  haisuline+A:haisuli 12_NE-SE-S; ! (12_A -> +A) a0: haisuline, b0: haisulise, c0: haisulis, b0v: haisulisi
@@ -1100,7 +1100,7 @@ LEXICON Adjectives
  heinakas+A:heinak 02_GAS_S-0; ! (02_A -> +A) a0: heinakas, b0: heinaka, b0r: 0, c0: 0
  heinane+A:heina 10_NE-SE-S; ! (10_A -> +A) a0: heinane, b0: heinase, c0: heinas
  heinjas+A:heinja 02_S-0; ! (02_A -> +A) a0: heinjas, b0: heinja, b0r: 0, c0: 0
- heitev+A:heit=E1v 02_A; ! (02_A -> +A) a0: heitev, b0: heitva, b0r: 0, c0: 0
+ heitev+A:heitE1v 02_A; ! (02_A -> +A) a0: heitev, b0: heitva, b0r: 0, c0: 0
  heitlik+A:heitlikK1 25; ! (25_A -> +A) at: heitlik, bt: heitlikku, bn: heitliku, btv: heitlikke, bnv: heitlike
  heitmatu+A:heitmatu 01; ! (01_A -> +A) a0: heitmatu, a0r: 0
  heksaeedriline+A:heksaeedrili 12_NE-SE-S; ! (12_A -> +A) a0: heksaeedriline, b0: heksaeedrilise, c0: heksaeedrilis, b0v: heksaeedrilisi
@@ -1190,7 +1190,7 @@ LEXICON Adjectives
  hitlerlik+A:hitlerlikK1 25; ! (25_A -> +A) at: hitlerlik, bt: hitlerlikku, bn: hitlerliku, btv: hitlerlikke, bnv: hitlerlike
  hobuseline+A:hobuseli 12_NE-SE-S; ! (12_A -> +A) a0: hobuseline, b0: hobuselise, c0: hobuselis, b0v: hobuselisi
  hobuslik+A:hobuslikK1 25; ! (25_A -> +A) at: hobuslik, bt: hobuslikku, bn: hobusliku, btv: hobuslikke, bnv: hobuslike
- hoidev+A:hoid=E1v 02_A; ! (02_A -> +A) a0: hoidev, b0: hoidva, b0r: 0, c0: 0
+ hoidev+A:hoidE1v 02_A; ! (02_A -> +A) a0: hoidev, b0: hoidva, b0r: 0, c0: 0
  hoidlik+A:hoidlikK1 25; ! (25_A -> +A) at: hoidlik, bt: hoidlikku, bn: hoidliku, btv: hoidlikke, bnv: hoidlike
  hoidmatu+A:hoidmatu 01; ! (01_A -> +A) a0: hoidmatu, a0r: 0
  hoiuline+A:hoiuli 12_NE-SE-S; ! (12_A -> +A) a0: hoiuline, b0: hoiulise, c0: hoiulis, b0v: hoiulisi
@@ -1581,7 +1581,7 @@ LEXICON Adjectives
  joodav+A:joodav 02_A; ! (02_AS -> +A +S) a0: joodav, b0: joodava, b0r: 0, c0: 0
  joodik+A:joodik 02_U; ! (02_SA -> +A +S) a0: joodik, b0: joodiku, b0r: 0, c0: 0
  joodine+A:joodi 10_NE-SE-S; ! (10_A -> +A) a0: joodine, b0: joodise, c0: joodis
- jooksev+A:jooks=E1v 02_A; ! (02_A -> +A) a0: jooksev, b0: jooksva, b0r: 0, c0: 0
+ jooksev+A:jooksE1v 02_A; ! (02_A -> +A) a0: jooksev, b0: jooksva, b0r: 0, c0: 0
  joomane+A:jooma 10_NE-SE-S; ! (10_A -> +A) a0: joomane, b0: joomase, c0: joomas
  joomeline+A:joomeli 12_NE-SE-S; ! (12_A -> +A) a0: joomeline, b0: joomelise, c0: joomelis, b0v: joomelisi
  joondus+A:joondus GI; ! (41_DA -> +Adv +A) 
@@ -1789,7 +1789,7 @@ LEXICON Adjectives
  kainosoiline+A:kainosoili 12_NE-SE-S; ! (12_A -> +A) a0: kainosoiline, b0: kainosoilise, c0: kainosoilis, b0v: kainosoilisi
  kaitseline+A:kaitseli 12_NE-SE-S; ! (12_A -> +A) a0: kaitseline, b0: kaitselise, c0: kaitselis, b0v: kaitselisi
  kaitsetu+A:kaitsetu 01; ! (01_A -> +A) a0: kaitsetu, a0r: 0
- kaitsev+A:kaits=E1v 02_A; ! (02_A -> +A) a0: kaitsev, b0: kaitsva, b0r: 0, c0: 0
+ kaitsev+A:kaitsE1v 02_A; ! (02_A -> +A) a0: kaitsev, b0: kaitsva, b0r: 0, c0: 0
  kaitsev+A:kaitsev 02_A; ! (02_A -> +A) a0: kaitsev, b0: kaitseva, b0r: 0, c0: 0
  kajaline+A:kajali 12_NE-SE-S; ! (12_A -> +A) a0: kajaline, b0: kajalise, c0: kajalis, b0v: kajalisi
  kakane+A:kaka 10_NE-SE-S; ! (10_A -> +A) a0: kakane, b0: kakase, c0: kakas
@@ -1841,7 +1841,7 @@ LEXICON Adjectives
  kamraadlik+A:kamraadlikK1 25; ! (25_A -> +A) at: kamraadlik, bt: kamraadlikku, bn: kamraadliku, btv: kamraadlikke, bnv: kamraadlike
  kanalik+A:kanalikK1 25; ! (25_A -> +A) at: kanalik, bt: kanalikku, bn: kanaliku, btv: kanalikke, bnv: kanalike
  kandeline+A:kandeli 12_NE-SE-S; ! (12_A -> +A) a0: kandeline, b0: kandelise, c0: kandelis, b0v: kandelisi
- kandev+A:kand=E1v 02_A; ! (02_A -> +A) a0: kandev, b0: kandva, b0r: 0, c0: 0
+ kandev+A:kandE1v 02_A; ! (02_A -> +A) a0: kandev, b0: kandva, b0r: 0, c0: 0
  kandiline+A:kandili 12_NE-SE-S; ! (12_A -> +A) a0: kandiline, b0: kandilise, c0: kandilis, b0v: kandilisi
  kandmatu+A:kandmatu 01; ! (01_A -> +A) a0: kandmatu, a0r: 0
  kandmine+A:kandmi 10_NE-SE-S; ! (10_SA -> +A +S) a0: kandmine, b0: kandmise, c0: kandmis
@@ -1909,7 +1909,7 @@ LEXICON Adjectives
  karrane+A:karra 10_NE-SE-S; ! (10_A -> +A) a0: karrane, b0: karrase, c0: karras
  karske+A:karske 01; ! (01_A -> +A) a0: karske, a0r: 0
  kartelliline+A:kartellili 12_NE-SE-S; ! (12_A -> +A) a0: kartelliline, b0: kartellilise, c0: kartellilis, b0v: kartellilisi
- kartev+A:kart=E1v 02_A; ! (02_A -> +A) a0: kartev, b0: kartva, b0r: 0, c0: 0
+ kartev+A:kartE1v 02_A; ! (02_A -> +A) a0: kartev, b0: kartva, b0r: 0, c0: 0
  kartlik+A:kartlikK1 25; ! (25_A -> +A) at: kartlik, bt: kartlikku, bn: kartliku, btv: kartlikke, bnv: kartlike
  kartmatu+A:kartmatu 01; ! (01_A -> +A) a0: kartmatu, a0r: 0
  kartusetu+A:kartusetu 01; ! (01_A -> +A) a0: kartusetu, a0r: 0
@@ -2087,7 +2087,7 @@ LEXICON Adjectives
  keskne+A:kesk 02_NE-SE; ! (02_A -> +A) a0: keskne, b0: keskse, b0r: 0, c0: kesk
  kestaline+A:kestali 12_NE-SE-S; ! (12_A -> +A) a0: kestaline, b0: kestalise, c0: kestalis, b0v: kestalisi
  kestane+A:kesta 10_NE-SE-S; ! (10_A -> +A) a0: kestane, b0: kestase, c0: kestas
- kestev+A:kest=E1v 02_A; ! (02_A -> +A) a0: kestev, b0: kestva, b0r: 0, c0: 0
+ kestev+A:kestE1v 02_A; ! (02_A -> +A) a0: kestev, b0: kestva, b0r: 0, c0: 0
  kestjas+A:kestja 02_S-0; ! (02_A -> +A) a0: kestjas, b0: kestja, b0r: 0, c0: 0
  kesvane+A:kesva 10_NE-SE-S; ! (10_A -> +A) a0: kesvane, b0: kesvase, c0: kesvas
  ketjas+A:ketja 02_S-0; ! (02_A -> +A) a0: ketjas, b0: ketja, b0r: 0, c0: 0
@@ -2128,7 +2128,7 @@ LEXICON Adjectives
  kiirjas+A:kiirja 02_S-0; ! (02_A -> +A) a0: kiirjas, b0: kiirja, b0r: 0, c0: 0
  kiiruseline+A:kiiruseli 12_NE-SE-S; ! (12_A -> +A) a0: kiiruseline, b0: kiiruselise, c0: kiiruselis, b0v: kiiruselisi
  kiiruslik+A:kiiruslikK1 25; ! (25_A -> +A) at: kiiruslik, bt: kiiruslikku, bn: kiirusliku, btv: kiiruslikke, bnv: kiiruslike
- kiitev+A:kiit=E1v 02_A; ! (02_A -> +A) a0: kiitev, b0: kiitva, b0r: 0, c0: 0
+ kiitev+A:kiitE1v 02_A; ! (02_A -> +A) a0: kiitev, b0: kiitva, b0r: 0, c0: 0
  kiitlik+A:kiitlikK1 25; ! (25_A -> +A) at: kiitlik, bt: kiitlikku, bn: kiitliku, btv: kiitlikke, bnv: kiitlike
  kiitsakas+A:kiitsak 02_GAS_S-0; ! (02_AS -> +A +S) a0: kiitsakas, b0: kiitsaka, b0r: 0, c0: 0
  kiivane+A:kiiva 10_NE-SE-S; ! (10_A -> +A) a0: kiivane, b0: kiivase, c0: kiivas
@@ -2429,7 +2429,7 @@ LEXICON Adjectives
  kookus+A:kookus GI; ! (41_DA -> +Adv +A) 
  koolane+A:koola 10_NE-SE-S; ! (10_A -> +A) a0: koolane, b0: koolase, c0: koolas
  kooldus+A:kooldus GI; ! (41_DA -> +Adv +A) 
- koolev+A:kool=E1v 02_A; ! (02_A -> +A) a0: koolev, b0: koolva, b0r: 0, c0: 0
+ koolev+A:koolE1v 02_A; ! (02_A -> +A) a0: koolev, b0: koolva, b0r: 0, c0: 0
  kooliline+A:koolili 12_NE-SE-S; ! (12_A -> +A) a0: kooliline, b0: koolilise, c0: koolilis, b0v: koolilisi
  kooljalik+A:kooljalikK1 25; ! (25_A -> +A) at: kooljalik, bt: kooljalikku, bn: kooljaliku, btv: kooljalikke, bnv: kooljalike
  koomiline+A:koomili 12_NE-SE-S; ! (12_A -> +A) a0: koomiline, b0: koomilise, c0: koomilis, b0v: koomilisi
@@ -2667,7 +2667,7 @@ LEXICON Adjectives
  kurruline+A:kurruli 12_NE-SE-S; ! (12_A -> +A) a0: kurruline, b0: kurrulise, c0: kurrulis, b0v: kurrulisi
  kursiline+A:kursili 12_NE-SE-S; ! (12_A -> +A) a0: kursiline, b0: kursilise, c0: kursilis, b0v: kursilisi
  kurt+A:kurT1 22_I; ! (22_AS -> +A +S) at: kurt, bt: kurti, bn: kurdi, btv: kurte, bnv: kurde
- kurtev+A:kurt=E1v 02_A; ! (02_A -> +A) a0: kurtev, b0: kurtva, b0r: 0, c0: 0
+ kurtev+A:kurtE1v 02_A; ! (02_A -> +A) a0: kurtev, b0: kurtva, b0r: 0, c0: 0
  kurtuaasne+A:kurtuaas 02_NE-SE; ! (02_A -> +A) a0: kurtuaasne, b0: kurtuaasse, b0r: 0, c0: kurtuaas
  kurvem+A:kurvem 02_A; ! (02_A -> +A) a0: kurvem, b0: kurvema, b0r: 0, c0: 0
  kurviline+A:kurvili 12_NE-SE-S; ! (12_A -> +A) a0: kurviline, b0: kurvilise, c0: kurvilis, b0v: kurvilisi
@@ -2688,7 +2688,7 @@ LEXICON Adjectives
  kuuldeline+A:kuuldeli 12_NE-SE-S; ! (12_A -> +A) a0: kuuldeline, b0: kuuldelise, c0: kuuldelis, b0v: kuuldelisi
  kuulekas+A:kuulek 02_GAS_S-0; ! (02_A -> +A) a0: kuulekas, b0: kuuleka, b0r: 0, c0: 0
  kuulelik+A:kuulelikK1 25; ! (25_A -> +A) at: kuulelik, bt: kuulelikku, bn: kuuleliku, btv: kuulelikke, bnv: kuulelike
- kuulev+A:kuul=E1v 02_A; ! (02_A -> +A) a0: kuulev, b0: kuulva, b0r: 0, c0: 0
+ kuulev+A:kuulE1v 02_A; ! (02_A -> +A) a0: kuulev, b0: kuulva, b0r: 0, c0: 0
  kuuline+A:kuuli 10_NE-SE-S; ! (10_A -> +A) a0: kuuline, b0: kuulise, c0: kuulis
  kuuline+A:kuuli 12_NE-SE-S; ! (12_A -> +A) a0: kuuline, b0: kuulise, c0: kuulis, b0v: kuulisi
  kuulja+A:kuulja 01; ! (01_SA -> +A +S) a0: kuulja, a0r: 0
@@ -2862,7 +2862,7 @@ LEXICON Adjectives
  köbruline+A:köbruli 12_NE-SE-S; ! (12_A -> +A) a0: köbruline, b0: köbrulise, c0: köbrulis, b0v: köbrulisi
  köetav+A:köetav 02_A; ! (02_A -> +A) a0: köetav, b0: köetava, b0r: 0, c0: 0
  köiteline+A:köiteli 12_NE-SE-S; ! (12_A -> +A) a0: köiteline, b0: köitelise, c0: köitelis, b0v: köitelisi
- köitev+A:köit=E1v 02_A; ! (02_A -> +A) a0: köitev, b0: köitva, b0r: 0, c0: 0
+ köitev+A:köitE1v 02_A; ! (02_A -> +A) a0: köitev, b0: köitva, b0r: 0, c0: 0
  könksus+A:könksus GI; ! (41_DA -> +Adv +A) 
  köntis+A:köntis GI; ! (41_DA -> +Adv +A) 
  kördine+A:kördi 10_NE-SE-S; ! (10_A -> +A) a0: kördine, b0: kördise, c0: kördis
@@ -3016,7 +3016,7 @@ LEXICON Adjectives
  lapsik+A:lapsik 02_U; ! (02_A -> +A) a0: lapsik, b0: lapsiku, b0r: 0, c0: 0
  lapsine+A:lapsi 10_NE-SE-S; ! (10_A -> +A) a0: lapsine, b0: lapsise, c0: lapsis
  larüngaalne+A:larüngaal 02_NE-SE; ! (02_A -> +A) a0: larüngaalne, b0: larüngaalse, b0r: 0, c0: larüngaal
- laskev+A:lask=E1v 02_A; ! (02_A -> +A) a0: laskev, b0: laskva, b0r: 0, c0: 0
+ laskev+A:laskE1v 02_A; ! (02_A -> +A) a0: laskev, b0: laskva, b0r: 0, c0: 0
  laskmatu+A:laskmatu 01; ! (01_A -> +A) a0: laskmatu, a0r: 0
  lastav+A:lastav 02_A; ! (02_A -> +A) a0: lastav, b0: lastava, b0r: 0, c0: 0
  lastetu+A:lastetu 01; ! (01_A -> +A) a0: lastetu, a0r: 0
@@ -3035,7 +3035,7 @@ LEXICON Adjectives
  lauk+A:lauK1 22_U; ! (22_SA -> +A +S) at: lauk, bt: lauku, bn: laugu, btv: lauke, bnv: lauge
  laukaline+A:laukali 12_NE-SE-S; ! (12_A -> +A) a0: laukaline, b0: laukalise, c0: laukalis, b0v: laukalisi
  lauldav+A:lauldav 02_A; ! (02_A -> +A) a0: lauldav, b0: lauldava, b0r: 0, c0: 0
- laulev+A:laul=E1v 02_A; ! (02_A -> +A) a0: laulev, b0: laulva, b0r: 0, c0: 0
+ laulev+A:laulE1v 02_A; ! (02_A -> +A) a0: laulev, b0: laulva, b0r: 0, c0: 0
  laululine+A:laululi 12_NE-SE-S; ! (12_A -> +A) a0: laululine, b0: laululise, c0: laululis, b0v: laululisi
  lausaldane+A:lausalda 12_NE-SE-S; ! (12_A -> +A) a0: lausaldane, b0: lausaldase, c0: lausaldas, b0v: lausaldasi
  lausaline+A:lausali 12_NE-SE-S; ! (12_A -> +A) a0: lausaline, b0: lausalise, c0: lausalis, b0v: lausalisi
@@ -3433,7 +3433,7 @@ LEXICON Adjectives
  lüngis+A:lüngis GI; ! (41_DA -> +Adv +A) 
  lünklik+A:lünklikK1 25; ! (25_A -> +A) at: lünklik, bt: lünklikku, bn: lünkliku, btv: lünklikke, bnv: lünklike
  lüofiilne+A:lüofiil 02_NE-SE; ! (02_A -> +A) a0: lüofiilne, b0: lüofiilse, b0r: 0, c0: lüofiil
- lüpsev+A:lüps=E1v 02_A; ! (02_A -> +A) a0: lüpsev, b0: lüpsva, b0r: 0, c0: 0
+ lüpsev+A:lüpsE1v 02_A; ! (02_A -> +A) a0: lüpsev, b0: lüpsva, b0r: 0, c0: 0
  lüüme+A:lüüme 01; ! (01_A -> +A) a0: lüüme, a0r: 0
  lüüriline+A:lüürili 12_NE-SE-S; ! (12_A -> +A) a0: lüüriline, b0: lüürilise, c0: lüürilis, b0v: lüürilisi
  lüütiline+A:lüütili 12_NE-SE-S; ! (12_A -> +A) a0: lüütiline, b0: lüütilise, c0: lüütilis, b0v: lüütilisi
@@ -3485,7 +3485,7 @@ LEXICON Adjectives
  maitsekas+A:maitsek 02_GAS_S-0; ! (02_A -> +A) a0: maitsekas, b0: maitseka, b0r: 0, c0: 0
  maitseline+A:maitseli 12_NE-SE-S; ! (12_A -> +A) a0: maitseline, b0: maitselise, c0: maitselis, b0v: maitselisi
  maitsetu+A:maitsetu 01; ! (01_A -> +A) a0: maitsetu, a0r: 0
- maitsev+A:maits=E1v 02_A; ! (02_A -> +A) a0: maitsev, b0: maitsva, b0r: 0, c0: 0
+ maitsev+A:maitsE1v 02_A; ! (02_A -> +A) a0: maitsev, b0: maitsva, b0r: 0, c0: 0
  maitsev+A:maitsev 02_A; ! (02_A -> +A) a0: maitsev, b0: maitseva, b0r: 0, c0: 0
  majaline+A:majali 12_NE-SE-S; ! (12_SA -> +A +S) a0: majaline, b0: majalise, c0: majalis, b0v: majalisi
  majandav+A:majandav 02_A; ! (02_A -> +A) a0: majandav, b0: majandava, b0r: 0, c0: 0
@@ -3494,7 +3494,7 @@ LEXICON Adjectives
  makjavellistlik+A:makjavellistlikK1 25; ! (25_A -> +A) at: makjavellistlik, bt: makjavellistlikku, bn: makjavellistliku, btv: makjavellistlikke, bnv: makjavellistlike
  makroskoopiline+A:makroskoopili 12_NE-SE-S; ! (12_A -> +A) a0: makroskoopiline, b0: makroskoopilise, c0: makroskoopilis, b0v: makroskoopilisi
  maksane+A:maksa 10_NE-SE-S; ! (10_A -> +A) a0: maksane, b0: maksase, c0: maksas
- maksev+A:maks=E1v 02_A; ! (02_A -> +A) a0: maksev, b0: maksva, b0r: 0, c0: 0
+ maksev+A:maksE1v 02_A; ! (02_A -> +A) a0: maksev, b0: maksva, b0r: 0, c0: 0
  maksimaalne+A:maksimaal 02_NE-SE; ! (02_A -> +A) a0: maksimaalne, b0: maksimaalse, b0r: 0, c0: maksimaal
  maksuline+A:maksuli 12_NE-SE-S; ! (12_A -> +A) a0: maksuline, b0: maksulise, c0: maksulis, b0v: maksulisi
  maksunduslik+A:maksunduslikK1 25; ! (25_A -> +A) at: maksunduslik, bt: maksunduslikku, bn: maksundusliku, btv: maksunduslikke, bnv: maksunduslike
@@ -3738,7 +3738,7 @@ LEXICON Adjectives
  muneja+A:muneja 01; ! (01_SA -> +A +S) a0: muneja, a0r: 0
  mungalik+A:mungalikK1 25; ! (25_A -> +A) at: mungalik, bt: mungalikku, bn: mungaliku, btv: mungalikke, bnv: mungalike
  murdeline+A:murdeli 12_NE-SE-S; ! (12_A -> +A) a0: murdeline, b0: murdelise, c0: murdelis, b0v: murdelisi
- murdev+A:murd=E1v 02_A; ! (02_A -> +A) a0: murdev, b0: murdva, b0r: 0, c0: 0
+ murdev+A:murdE1v 02_A; ! (02_A -> +A) a0: murdev, b0: murdva, b0r: 0, c0: 0
  murdja+A:murdja 01; ! (01_SA -> +A +S) a0: murdja, a0r: 0
  murdjalik+A:murdjalikK1 25; ! (25_A -> +A) at: murdjalik, bt: murdjalikku, bn: murdjaliku, btv: murdjalikke, bnv: murdjalike
  murdlik+A:murdlikK1 25; ! (25_A -> +A) at: murdlik, bt: murdlikku, bn: murdliku, btv: murdlikke, bnv: murdlike
@@ -3787,7 +3787,7 @@ LEXICON Adjectives
  mõisteline+A:mõisteli 12_NE-SE-S; ! (12_A -> +A) a0: mõisteline, b0: mõistelise, c0: mõistelis, b0v: mõistelisi
  mõistetamatu+A:mõistetamatu 01; ! (01_A -> +A) a0: mõistetamatu, a0r: 0
  mõistetav+A:mõistetav 02_A; ! (02_A -> +A) a0: mõistetav, b0: mõistetava, b0r: 0, c0: 0
- mõistev+A:mõist=E1v 02_A; ! (02_A -> +A) a0: mõistev, b0: mõistva, b0r: 0, c0: 0
+ mõistev+A:mõistE1v 02_A; ! (02_A -> +A) a0: mõistev, b0: mõistva, b0r: 0, c0: 0
  mõistlik+A:mõistlikK1 25; ! (25_A -> +A) at: mõistlik, bt: mõistlikku, bn: mõistliku, btv: mõistlikke, bnv: mõistlike
  mõistmatu+A:mõistmatu 01; ! (01_A -> +A) a0: mõistmatu, a0r: 0
  mõistusetu+A:mõistusetu 01; ! (01_A -> +A) a0: mõistusetu, a0r: 0
@@ -3813,7 +3813,7 @@ LEXICON Adjectives
  mõrukas+A:mõruk 02_GAS_S-0; ! (02_A -> +A) a0: mõrukas, b0: mõruka, b0r: 0, c0: 0
  mõrum+A:mõrum 02_A; ! (02_A -> +A) a0: mõrum, b0: mõruma, b0r: 0, c0: 0
  mõrvarlik+A:mõrvarlikK1 25; ! (25_A -> +A) at: mõrvarlik, bt: mõrvarlikku, bn: mõrvarliku, btv: mõrvarlikke, bnv: mõrvarlike
- mõskev+A:mõsk=E1v 02_A; ! (02_A -> +A) a0: mõskev, b0: mõskva, b0r: 0, c0: 0
+ mõskev+A:mõskE1v 02_A; ! (02_A -> +A) a0: mõskev, b0: mõskva, b0r: 0, c0: 0
  mõtlematu+A:mõtlematu 01; ! (01_A -> +A) a0: mõtlematu, a0r: 0
  mõtlik+A:mõtlikK1 25; ! (25_A -> +A) at: mõtlik, bt: mõtlikku, bn: mõtliku, btv: mõtlikke, bnv: mõtlike
  mõttekas+A:mõttek 02_GAS_S-0; ! (02_A -> +A) a0: mõttekas, b0: mõtteka, b0r: 0, c0: 0
@@ -3873,7 +3873,7 @@ LEXICON Adjectives
  mööda+A:mööda GI; ! (41_A -> +A) 
  möödunud+A:möödunud GI; ! (41_A -> +A) 
  mööndlik+A:mööndlikK1 25; ! (25_A -> +A) at: mööndlik, bt: mööndlikku, bn: mööndliku, btv: mööndlikke, bnv: mööndlike
- möönev+A:möön=E1v 02_A; ! (02_A -> +A) a0: möönev, b0: möönva, b0r: 0, c0: 0
+ möönev+A:möönE1v 02_A; ! (02_A -> +A) a0: möönev, b0: möönva, b0r: 0, c0: 0
  mügarane+A:mügara 12_NE-SE-S; ! (12_A -> +A) a0: mügarane, b0: mügarase, c0: mügaras, b0v: mügarasi
  mügarik+A:mügarikK1 25; ! (25_SA -> +A +S) at: mügarik, bt: mügarikku, bn: mügariku, btv: mügarikke, bnv: mügarike
  mügarlik+A:mügarlikK1 25; ! (25_A -> +A) at: mügarlik, bt: mügarlikku, bn: mügarliku, btv: mügarlikke, bnv: mügarlike
@@ -3896,14 +3896,14 @@ LEXICON Adjectives
  müütiline+A:müütili 12_NE-SE-S; ! (12_A -> +A) a0: müütiline, b0: müütilise, c0: müütilis, b0v: müütilisi
  müüv+A:müüv 02_A; ! (02_A -> +A) a0: müüv, b0: müüva, b0r: 0, c0: 0
  naaberlik+A:naaberlikK1 25; ! (25_A -> +A) at: naaberlik, bt: naaberlikku, bn: naaberliku, btv: naaberlikke, bnv: naaberlike
- naasev+A:naas=E1v 02_A; ! (02_A -> +A) a0: naasev, b0: naasva, b0r: 0, c0: 0
+ naasev+A:naasE1v 02_A; ! (02_A -> +A) a0: naasev, b0: naasva, b0r: 0, c0: 0
  naaskeljas+A:naaskelja 02_S-0; ! (02_A -> +A) a0: naaskeljas, b0: naaskelja, b0r: 0, c0: 0
  naastuline+A:naastuli 12_NE-SE-S; ! (12_A -> +A) a0: naastuline, b0: naastulise, c0: naastulis, b0v: naastulisi
  nabamine+A:nabami 12_NE-SE-S; ! (12_A -> +A) a0: nabamine, b0: nabamise, c0: nabamis, b0v: nabamisi
  nadi+A:nadi 17; ! (17_SA -> +A +S) a0: nadi, a0g: #, a0v: #
  nadine+A:nadi 10_NE-SE-S; ! (10_A -> +A) a0: nadine, b0: nadise, c0: nadis
  naelane+A:naela 10_NE-SE-S; ! (10_AS -> +A +S) a0: naelane, b0: naelase, c0: naelas
- naerev+A:naer=E1v 02_A; ! (02_A -> +A) a0: naerev, b0: naerva, b0r: 0, c0: 0
+ naerev+A:naerE1v 02_A; ! (02_A -> +A) a0: naerev, b0: naerva, b0r: 0, c0: 0
  naerukas+A:naeruk 02_GAS_S-0; ! (02_A -> +A) a0: naerukas, b0: naeruka, b0r: 0, c0: 0
  naerukil+A:naerukil GI; ! (41_DA -> +Adv +A) 
  naerune+A:naeru 10_NE-SE-S; ! (10_A -> +A) a0: naerune, b0: naeruse, c0: naerus
@@ -4085,7 +4085,7 @@ LEXICON Adjectives
  nõtke+A:nõtke 01; ! (01_A -> +A) a0: nõtke, a0r: 0
  nõtkus+A:nõtkus GI; ! (41_DA -> +Adv +A) 
  nõudeline+A:nõudeli 12_NE-SE-S; ! (12_A -> +A) a0: nõudeline, b0: nõudelise, c0: nõudelis, b0v: nõudelisi
- nõudev+A:nõud=E1v 02_A; ! (02_A -> +A) a0: nõudev, b0: nõudva, b0r: 0, c0: 0
+ nõudev+A:nõudE1v 02_A; ! (02_A -> +A) a0: nõudev, b0: nõudva, b0r: 0, c0: 0
  nõudlik+A:nõudlikK1 25; ! (25_A -> +A) at: nõudlik, bt: nõudlikku, bn: nõudliku, btv: nõudlikke, bnv: nõudlike
  nõukas+A:nõuka 02_S-0; ! (02_A -> +A) a0: nõukas, b0: nõuka, b0r: 0, c0: 0
  nõukogude+A:nõukogude GI; ! (41_A -> +A) 
@@ -4340,7 +4340,7 @@ LEXICON Adjectives
  paisteline+A:paisteli 12_NE-SE-S; ! (12_A -> +A) a0: paisteline, b0: paistelise, c0: paistelis, b0v: paistelisi
  paistes+A:paistes GI; ! (41_DA -> +Adv +A) 
  paistetu+A:paistetu 01; ! (01_A -> +A) a0: paistetu, a0r: 0
- paistev+A:paist=E1v 02_A; ! (02_A -> +A) a0: paistev, b0: paistva, b0r: 0, c0: 0
+ paistev+A:paistE1v 02_A; ! (02_A -> +A) a0: paistev, b0: paistva, b0r: 0, c0: 0
  paistmatu+A:paistmatu 01; ! (01_A -> +A) a0: paistmatu, a0r: 0
  paisul+A:paisul GI; ! (41_DA -> +Adv +A) 
  paisuv+A:paisuv 02_A; ! (02_A -> +A) a0: paisuv, b0: paisuva, b0r: 0, c0: 0
@@ -4502,7 +4502,7 @@ LEXICON Adjectives
  peiteljas+A:peitelja 02_S-0; ! (02_A -> +A) a0: peiteljas, b0: peitelja, b0r: 0, c0: 0
  pejoratiivne+A:pejoratiiv 02_NE-SE; ! (02_A -> +A) a0: pejoratiivne, b0: pejoratiivse, b0r: 0, c0: pejoratiiv
  pekine+A:peki 10_NE-SE-S; ! (10_A -> +A) a0: pekine, b0: pekise, c0: pekis
- peksev+A:peks=E1v 02_A; ! (02_A -> +A) a0: peksev, b0: peksva, b0r: 0, c0: 0
+ peksev+A:peksE1v 02_A; ! (02_A -> +A) a0: peksev, b0: peksva, b0r: 0, c0: 0
  peletu+A:peletu 01; ! (01_A -> +A) a0: peletu, a0r: 0
  pelglik+A:pelglikK1 25; ! (25_A -> +A) at: pelglik, bt: pelglikku, bn: pelgliku, btv: pelglikke, bnv: pelglike
  pelk+A:pelK1 22_A; ! (22_A -> +A) at: pelk, bt: pelka, bn: pelga, btv: pelki, bnv: pelgi
@@ -5016,7 +5016,7 @@ LEXICON Adjectives
  pääsematu+A:pääsematu 01; ! (01_A -> +A) a0: pääsematu, a0r: 0
  pääsetav+A:pääsetav 02_A; ! (02_A -> +A) a0: pääsetav, b0: pääsetava, b0r: 0, c0: 0
  pääsmatu+A:pääsmatu 01; ! (01_A -> +A) a0: pääsmatu, a0r: 0
- päästev+A:pääst=E1v 02_A; ! (02_A -> +A) a0: päästev, b0: päästva, b0r: 0, c0: 0
+ päästev+A:päästE1v 02_A; ! (02_A -> +A) a0: päästev, b0: päästva, b0r: 0, c0: 0
  päästmatu+A:päästmatu 01; ! (01_A -> +A) a0: päästmatu, a0r: 0
  pööbellik+A:pööbellikK1 25; ! (25_A -> +A) at: pööbellik, bt: pööbellikku, bn: pööbelliku, btv: pööbellikke, bnv: pööbellike
  pöörane+A:pööra 10_NE-SE-S; ! (10_A -> +A) a0: pöörane, b0: pöörase, c0: pööras
@@ -5487,7 +5487,7 @@ LEXICON Adjectives
  saatana+A:saatana GI; ! (41_DA -> +Adv +A) 
  saatanama+A:saatanama GI; ! (41_DA -> +Adv +A) 
  saatanlik+A:saatanlikK1 25; ! (25_A -> +A) at: saatanlik, bt: saatanlikku, bn: saatanliku, btv: saatanlikke, bnv: saatanlike
- saatev+A:saat=E1v 02_A; ! (02_A -> +A) a0: saatev, b0: saatva, b0r: 0, c0: 0
+ saatev+A:saatE1v 02_A; ! (02_A -> +A) a0: saatev, b0: saatva, b0r: 0, c0: 0
  saatuslik+A:saatuslikK1 25; ! (25_A -> +A) at: saatuslik, bt: saatuslikku, bn: saatusliku, btv: saatuslikke, bnv: saatuslike
  saav+A:saav 02_A; ! (02_A -> +A) a0: saav, b0: saava, b0r: 0, c0: 0
  saavutamatu+A:saavutamatu 01; ! (01_A -> +A) a0: saavutamatu, a0r: 0
@@ -5613,7 +5613,7 @@ LEXICON Adjectives
  seinaline+A:seinali 12_NE-SE-S; ! (12_A -> +A) a0: seinaline, b0: seinalise, c0: seinalis, b0v: seinalisi
  seinmine+A:seinmi 10_NE-SE-S; ! (10_A -> +A) a0: seinmine, b0: seinmise, c0: seinmis
  seinmine+A:seinmi 12_NE-SE-S; ! (12_A -> +A) a0: seinmine, b0: seinmise, c0: seinmis, b0v: seinmisi
- seisev+A:seis=E1v 02_A; ! (02_A -> +A) a0: seisev, b0: seisva, b0r: 0, c0: 0
+ seisev+A:seisE1v 02_A; ! (02_A -> +A) a0: seisev, b0: seisva, b0r: 0, c0: 0
  seismiline+A:seismili 12_NE-SE-S; ! (12_A -> +A) a0: seismiline, b0: seismilise, c0: seismilis, b0v: seismilisi
  seisuline+A:seisuli 12_NE-SE-S; ! (12_A -> +A) a0: seisuline, b0: seisulise, c0: seisulis, b0v: seisulisi
  seisuslik+A:seisuslikK1 25; ! (25_A -> +A) at: seisuslik, bt: seisuslikku, bn: seisusliku, btv: seisuslikke, bnv: seisuslike
@@ -5713,7 +5713,7 @@ LEXICON Adjectives
  siinuseline+A:siinuseli 12_NE-SE-S; ! (12_A -> +A) a0: siinuseline, b0: siinuselise, c0: siinuselis, b0v: siinuselisi
  siiras+A:siira 07_S-0; ! (07_A -> +A) an: siiras, (at): siiras, bt: siira, btr: #
  siirdeline+A:siirdeli 12_NE-SE-S; ! (12_A -> +A) a0: siirdeline, b0: siirdelise, c0: siirdelis, b0v: siirdelisi
- siirev+A:siir=E1v 02_A; ! (02_A -> +A) a0: siirev, b0: siirva, b0r: 0, c0: 0
+ siirev+A:siirE1v 02_A; ! (02_A -> +A) a0: siirev, b0: siirva, b0r: 0, c0: 0
  siirupine+A:siirupi 12_NE-SE-S; ! (12_A -> +A) a0: siirupine, b0: siirupise, c0: siirupis, b0v: siirupisi
  siirupjas+A:siirupja 02_S-0; ! (02_A -> +A) a0: siirupjas, b0: siirupja, b0r: 0, c0: 0
  siivas+A:siivA1s 03_A; ! (03_A -> +A) an: siivas, (at): siivas, bt: siivsa, btr: #
@@ -6051,7 +6051,7 @@ LEXICON Adjectives
  säsine+A:säsi 10_NE-SE-S; ! (10_A -> +A) a0: säsine, b0: säsise, c0: säsis
  säärekas+A:säärek 02_GAS_S-0; ! (02_A -> +A) a0: säärekas, b0: sääreka, b0r: 0, c0: 0
  sääreline+A:sääreli 12_NE-SE-S; ! (12_A -> +A) a0: sääreline, b0: säärelise, c0: säärelis, b0v: säärelisi
- säästev+A:sääst=E1v 02_A; ! (02_A -> +A) a0: säästev, b0: säästva, b0r: 0, c0: 0
+ säästev+A:säästE1v 02_A; ! (02_A -> +A) a0: säästev, b0: säästva, b0r: 0, c0: 0
  säästlik+A:säästlikK1 25; ! (25_A -> +A) at: säästlik, bt: säästlikku, bn: säästliku, btv: säästlikke, bnv: säästlike
  söakas+A:söaka 02_S-0; ! (02_A -> +A) a0: söakas, b0: söaka, b0r: 0, c0: 0
  söekas+A:söeka 02_S-0; ! (02_A -> +A) a0: söekas, b0: söeka, b0r: 0, c0: 0
@@ -6200,7 +6200,7 @@ LEXICON Adjectives
  tahtekas+A:tahtek 02_GAS_S-0; ! (02_A -> +A) a0: tahtekas, b0: tahteka, b0r: 0, c0: 0
  tahteline+A:tahteli 12_NE-SE-S; ! (12_A -> +A) a0: tahteline, b0: tahtelise, c0: tahtelis, b0v: tahtelisi
  tahtetu+A:tahtetu 01; ! (01_A -> +A) a0: tahtetu, a0r: 0
- tahtev+A:taht=E1v 02_A; ! (02_A -> +A) a0: tahtev, b0: tahtva, b0r: 0, c0: 0
+ tahtev+A:tahtE1v 02_A; ! (02_A -> +A) a0: tahtev, b0: tahtva, b0r: 0, c0: 0
  tahtlik+A:tahtlikK1 25; ! (25_A -> +A) at: tahtlik, bt: tahtlikku, bn: tahtliku, btv: tahtlikke, bnv: tahtlike
  tahtlusetu+A:tahtlusetu 01; ! (01_A -> +A) a0: tahtlusetu, a0r: 0
  tahtmatu+A:tahtmatu 01; ! (01_A -> +A) a0: tahtmatu, a0r: 0
@@ -6295,7 +6295,7 @@ LEXICON Adjectives
  tavotine+A:tavoti 10_NE-SE-S; ! (10_A -> +A) a0: tavotine, b0: tavotise, c0: tavotis
  teabekas+A:teabek 02_GAS_S-0; ! (02_A -> +A) a0: teabekas, b0: teabeka, b0r: 0, c0: 0
  teabeline+A:teabeli 12_NE-SE-S; ! (12_A -> +A) a0: teabeline, b0: teabelise, c0: teabelis, b0v: teabelisi
- teadev+A:tead=E1v 02_A; ! (02_A -> +A) a0: teadev, b0: teadva, b0r: 0, c0: 0
+ teadev+A:teadE1v 02_A; ! (02_A -> +A) a0: teadev, b0: teadva, b0r: 0, c0: 0
  teadlik+A:teadlikK1 25; ! (25_A -> +A) at: teadlik, bt: teadlikku, bn: teadliku, btv: teadlikke, bnv: teadlike
  teadmata+A:teadmata GI; ! (41_AD -> +Adv +A) 
  teadmatu+A:teadmatu 01; ! (01_A -> +A) a0: teadmatu, a0r: 0
@@ -6458,7 +6458,7 @@ LEXICON Adjectives
  toimetu+A:toimetu 01; ! (01_A -> +A) a0: toimetu, a0r: 0
  toimne+A:toim 02_NE-SE; ! (02_A -> +A) a0: toimne, b0: toimse, b0r: 0, c0: 0
  toiteline+A:toiteli 12_NE-SE-S; ! (12_A -> +A) a0: toiteline, b0: toitelise, c0: toitelis, b0v: toitelisi
- toitev+A:toit=E1v 02_A; ! (02_A -> +A) a0: toitev, b0: toitva, b0r: 0, c0: 0
+ toitev+A:toitE1v 02_A; ! (02_A -> +A) a0: toitev, b0: toitva, b0r: 0, c0: 0
  tojakil+A:tojakil GI; ! (41_DA -> +Adv +A) 
  tokerjas+A:tokerja 02_S-0; ! (02_A -> +A) a0: tokerjas, b0: tokerja, b0r: 0, c0: 0
  toksiline+A:toksili 12_NE-SE-S; ! (12_A -> +A) a0: toksiline, b0: toksilise, c0: toksilis, b0v: toksilisi
@@ -6483,7 +6483,7 @@ LEXICON Adjectives
  tooniline+A:toonili 12_NE-SE-S; ! (12_A -> +A) a0: tooniline, b0: toonilise, c0: toonilis, b0v: toonilisi
  toorekas+A:toorek 02_GAS_S-0; ! (02_A -> +A) a0: toorekas, b0: tooreka, b0r: 0, c0: 0
  toores+A:toore 07_S-0; ! (07_A -> +A) an: toores, (at): toores, bt: toore, btr: #
- tootev+A:toot=E1v 02_A; ! (02_A -> +A) a0: tootev, b0: tootva, b0r: 0, c0: 0
+ tootev+A:tootE1v 02_A; ! (02_A -> +A) a0: tootev, b0: tootva, b0r: 0, c0: 0
  tootlik+A:tootlikK1 25; ! (25_A -> +A) at: tootlik, bt: tootlikku, bn: tootliku, btv: tootlikke, bnv: tootlike
  tootmislik+A:tootmislikK1 25; ! (25_A -> +A) at: tootmislik, bt: tootmislikku, bn: tootmisliku, btv: tootmislikke, bnv: tootmislike
  tootus+A:tootU1s 02_A; ! (02_A -> +A) a0: tootus, b0: tootsa, b0r: 0, c0: 0
@@ -6730,7 +6730,7 @@ LEXICON Adjectives
  tõukeline+A:tõukeli 12_NE-SE-S; ! (12_A -> +A) a0: tõukeline, b0: tõukelise, c0: tõukelis, b0v: tõukelisi
  tõuline+A:tõuli 10_NE-SE-S; ! (10_A -> +A) a0: tõuline, b0: tõulise, c0: tõulis
  tõuline+A:tõuli 12_NE-SE-S; ! (12_A -> +A) a0: tõuline, b0: tõulise, c0: tõulis, b0v: tõulisi
- tõusev+A:tõus=E1v 02_A; ! (02_A -> +A) a0: tõusev, b0: tõusva, b0r: 0, c0: 0
+ tõusev+A:tõusE1v 02_A; ! (02_A -> +A) a0: tõusev, b0: tõusva, b0r: 0, c0: 0
  tõusiklik+A:tõusiklikK1 25; ! (25_A -> +A) at: tõusiklik, bt: tõusiklikku, bn: tõusikliku, btv: tõusiklikke, bnv: tõusiklike
  tõutu+A:tõutu 01; ! (01_A -> +A) a0: tõutu, a0r: 0
  tõveline+A:tõveli 12_NE-SE-S; ! (12_A -> +A) a0: tõveline, b0: tõvelise, c0: tõvelis, b0v: tõvelisi
@@ -6745,7 +6745,7 @@ LEXICON Adjectives
  tähitud+A:tähitud GI; ! (41_A -> +A) 
  tähnik+A:tähnik 02_U; ! (02_SA -> +A +S) a0: tähnik, b0: tähniku, b0r: 0, c0: 0
  tähniline+A:tähnili 12_NE-SE-S; ! (12_A -> +A) a0: tähniline, b0: tähnilise, c0: tähnilis, b0v: tähnilisi
- tähtis+A:täht=I1s 02_A; ! (02_A -> +A) a0: tähtis, b0: tähtsa, b0r: 0, c0: 0
+ tähtis+A:tähtI1s 02_A; ! (02_A -> +A) a0: tähtis, b0: tähtsa, b0r: 0, c0: 0
  tähtjas+A:tähtja 02_S-0; ! (02_A -> +A) a0: tähtjas, b0: tähtja, b0r: 0, c0: 0
  tähtsusetu+A:tähtsusetu 01; ! (01_A -> +A) a0: tähtsusetu, a0r: 0
  täidetav+A:täidetav 02_A; ! (02_A -> +A) a0: täidetav, b0: täidetava, b0r: 0, c0: 0
@@ -6759,7 +6759,7 @@ LEXICON Adjectives
  täis+A:täiS1 14; ! (14_AS -> +A +S) at: täis, (bt): täise, an: täis, bn: täie, cn: täi, ct: täi
  täis+A:täis GI; ! (41_DA -> +Adv +A) 
  täiteline+A:täiteli 12_NE-SE-S; ! (12_A -> +A) a0: täiteline, b0: täitelise, c0: täitelis, b0v: täitelisi
- täitev+A:täit=E1v 02_A; ! (02_A -> +A) a0: täitev, b0: täitva, b0r: 0, c0: 0
+ täitev+A:täitE1v 02_A; ! (02_A -> +A) a0: täitev, b0: täitva, b0r: 0, c0: 0
  täitlik+A:täitlikK1 25; ! (25_A -> +A) at: täitlik, bt: täitlikku, bn: täitliku, btv: täitlikke, bnv: täitlike
  täitmatu+A:täitmatu 01; ! (01_A -> +A) a0: täitmatu, a0r: 0
  täiuslik+A:täiuslikK1 25; ! (25_A -> +A) at: täiuslik, bt: täiuslikku, bn: täiusliku, btv: täiuslikke, bnv: täiuslike
@@ -6856,7 +6856,7 @@ LEXICON Adjectives
  ugriline+A:ugrili 12_NE-SE-S; ! (12_A -> +A) a0: ugriline, b0: ugrilise, c0: ugrilis, b0v: ugrilisi
  uhke+A:uhke 01; ! (01_A -> +A) a0: uhke, a0r: 0
  uhteline+A:uhteli 12_NE-SE-S; ! (12_A -> +A) a0: uhteline, b0: uhtelise, c0: uhtelis, b0v: uhtelisi
- uhtev+A:uht=E1v 02_A; ! (02_A -> +A) a0: uhtev, b0: uhtva, b0r: 0, c0: 0
+ uhtev+A:uhtE1v 02_A; ! (02_A -> +A) a0: uhtev, b0: uhtva, b0r: 0, c0: 0
  uimane+A:uima 10_NE-SE-S; ! (10_A -> +A) a0: uimane, b0: uimase, c0: uimas
  uimastav+A:uimastav 02_A; ! (02_A -> +A) a0: uimastav, b0: uimastava, b0r: 0, c0: 0
  uimastuslik+A:uimastuslikK1 25; ! (25_A -> +A) at: uimastuslik, bt: uimastuslikku, bn: uimastusliku, btv: uimastuslikke, bnv: uimastuslike
@@ -7103,7 +7103,7 @@ LEXICON Adjectives
  veeline+A:veeli 10_NE-SE-S; ! (10_A -> +A) a0: veeline, b0: veelise, c0: veelis
  veeline+A:veeli 12_NE-SE-S; ! (12_A -> +A) a0: veeline, b0: veelise, c0: veelis, b0v: veelisi
  veene+A:vee 10_NE-SE-S; ! (10_A -> +A) a0: veene, b0: veese, c0: vees
- veenev+A:veen=E1v 02_A; ! (02_A -> +A) a0: veenev, b0: veenva, b0r: 0, c0: 0
+ veenev+A:veenE1v 02_A; ! (02_A -> +A) a0: veenev, b0: veenva, b0r: 0, c0: 0
  veerandiline+A:veerandili 12_NE-SE-S; ! (12_A -> +A) a0: veerandiline, b0: veerandilise, c0: veerandilis, b0v: veerandilisi
  veerandine+A:veerandi 12_NE-SE-S; ! (12_A -> +A) a0: veerandine, b0: veerandise, c0: veerandis, b0v: veerandisi
  veeriseline+A:veeriseli 12_NE-SE-S; ! (12_A -> +A) a0: veeriseline, b0: veeriselise, c0: veeriselis, b0v: veeriselisi
@@ -7194,7 +7194,7 @@ LEXICON Adjectives
  viitane+A:viita 10_NE-SE-S; ! (10_A -> +A) a0: viitane, b0: viitase, c0: viitas
  viitane+A:viita 12_NE-SE-S; ! (12_A -> +A) a0: viitane, b0: viitase, c0: viitas, b0v: viitasi
  viiteline+A:viiteli 12_NE-SE-S; ! (12_A -> +A) a0: viiteline, b0: viitelise, c0: viitelis, b0v: viitelisi
- viitev+A:viit=E1v 02_A; ! (02_A -> +A) a0: viitev, b0: viitva, b0r: 0, c0: 0
+ viitev+A:viitE1v 02_A; ! (02_A -> +A) a0: viitev, b0: viitva, b0r: 0, c0: 0
  viitlik+A:viitlikK1 25; ! (25_A -> +A) at: viitlik, bt: viitlikku, bn: viitliku, btv: viitlikke, bnv: viitlike
  viiv+A:viiv 02_A; ! (02_A -> +A) a0: viiv, b0: viiva, b0r: 0, c0: 0
  viivitamatu+A:viivitamatu 01; ! (01_A -> +A) a0: viivitamatu, a0r: 0
@@ -7330,7 +7330,7 @@ LEXICON Adjectives
  võine+A:või 10_NE-SE-S; ! (10_A -> +A) a0: võine, b0: võise, c0: võis
  võistkondlik+A:võistkondlikK1 25; ! (25_A -> +A) at: võistkondlik, bt: võistkondlikku, bn: võistkondliku, btv: võistkondlikke, bnv: võistkondlike
  võistluslik+A:võistluslikK1 25; ! (25_A -> +A) at: võistluslik, bt: võistluslikku, bn: võistlusliku, btv: võistluslikke, bnv: võistluslike
- võitev+A:võit=E1v 02_A; ! (02_A -> +A) a0: võitev, b0: võitva, b0r: 0, c0: 0
+ võitev+A:võitE1v 02_A; ! (02_A -> +A) a0: võitev, b0: võitva, b0r: 0, c0: 0
  võitleja+A:võitleja 01; ! (01_SA -> +A +S) a0: võitleja, a0r: 0
  võitlejalik+A:võitlejalikK1 25; ! (25_A -> +A) at: võitlejalik, bt: võitlejalikku, bn: võitlejaliku, btv: võitlejalikke, bnv: võitlejalike
  võitluslik+A:võitluslikK1 25; ! (25_A -> +A) at: võitluslik, bt: võitluslikku, bn: võitlusliku, btv: võitluslikke, bnv: võitluslike
@@ -7487,7 +7487,7 @@ LEXICON Adjectives
  õilis+A:õilI1s 03_A; ! (03_A -> +A) an: õilis, (at): õilis, bt: õilsa, btr: #
  õilis+A:õilI1s 05_A; ! (05_A -> +A) an: õilis, (at): õilis, bt: õilsa, btr: #
  õitsel+A:õitsel GI; ! (41_DA -> +Adv +A) 
- õitsev+A:õits=E1v 02_A; ! (02_A -> +A) a0: õitsev, b0: õitsva, b0r: 0, c0: 0
+ õitsev+A:õitsE1v 02_A; ! (02_A -> +A) a0: õitsev, b0: õitsva, b0r: 0, c0: 0
  õitsev+A:õitsev 02_A; ! (02_A -> +A) a0: õitsev, b0: õitseva, b0r: 0, c0: 0
  õlakas+A:õlak 02_GAS_S-0; ! (02_A -> +A) a0: õlakas, b0: õlaka, b0r: 0, c0: 0
  õlaline+A:õlali 12_NE-SE-S; ! (12_A -> +A) a0: õlaline, b0: õlalise, c0: õlalis, b0v: õlalisi

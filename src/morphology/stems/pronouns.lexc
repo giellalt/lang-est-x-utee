@@ -289,16 +289,16 @@ LEXICON Pronouns
  meie+Pron+Pl+Trm:meieni GI; ! 00_P,mina,meie[ni],------1R,-,-,*
  meie+Pron+Pl+Tra:meieks GI; ! 00_P,mina,meie[ks],------1T,-,-,*
  mina+Pron+Sg+Abe:minuta GI; ! 00_P,mina,minu[ta],------0A,-,-,*
- mina+Pron+Sg+Abl+Emph:minult GI; ! 00_P,mina,minu[lt],------06,-,-,*
- mina+Pron+Sg+Ade+Emph:minul GI; ! 00_P,mina,minu[l],------05,-,-,*
- mina+Pron+Sg+All+Emph:minule GI; ! 00_P,mina,minu[le],------04,-,-,*
- mina+Pron+Sg+Ela+Emph:minust GI; ! 00_P,mina,minu[st],------03,-,-,*
+ mina+Pron+Emph+Sg+Abl:minult GI; ! 00_P,mina,minu[lt],------06,-,-,*
+ mina+Pron+Emph+Sg+Ade:minul GI; ! 00_P,mina,minu[l],------05,-,-,*
+ mina+Pron+Emph+Sg+All:minule GI; ! 00_P,mina,minu[le],------04,-,-,*
+ mina+Pron+Emph+Sg+Ela:minust GI; ! 00_P,mina,minu[st],------03,-,-,*
  mina+Pron+Sg+Ess:minuna GI; ! 00_P,mina,minu[na],------0E,-,-,*
- mina+Pron+Sg+Gen+Emph:minu GI; ! 00_P,mina,minu[],------0G,-,-,*
- mina+Pron+Sg+Ill+Emph:minusse GI; ! 00_P,mina,minu[sse],------01,-,-,*
- mina+Pron+Sg+Ine+Emph:minus GI; ! 00_P,mina,minu[s],------02,-,-,*
+ mina+Pron+Emph+Sg+Gen:minu GI; ! 00_P,mina,minu[],------0G,-,-,*
+ mina+Pron+Emph+Sg+Ill:minusse GI; ! 00_P,mina,minu[sse],------01,-,-,*
+ mina+Pron+Emph+Sg+Ine:minus GI; ! 00_P,mina,minu[s],------02,-,-,*
  mina+Pron+Sg+Com:minuga GI; ! 00_P,mina,minu[ga],------0K,-,-,*
- mina+Pron+Sg+Nom+Emph:mina GI; ! 00_P,mina,mina[],------0N,-,-,*
+ mina+Pron+Emph+Sg+Nom:mina GI; ! 00_P,mina,mina[],------0N,-,-,*
  mina+Pron+Sg+Par:mind GI; ! 00_P,mina,m'in[d],------0P,-,-,*
  mina+Pron+Sg+Trm:minuni GI; ! 00_P,mina,minu[ni],------0R,-,-,*
  mina+Pron+Sg+Tra:minuks GI; ! 00_P,mina,minu[ks],------0T,-,-,*
@@ -543,16 +543,16 @@ LEXICON Pronouns
  teie+Pron+Pl+Trm:teieni GI; ! 00_P,sina,teie[ni],------1R,-,-,*
  teie+Pron+Pl+Tra:teieks GI; ! 00_P,sina,teie[ks],------1T,-,-,*
  sina+Pron+Sg+Abe:sinuta GI; ! 00_P,sina,sinu[ta],------0A,-,-,*
- sina+Pron+Sg+Abl+Emph:sinult GI; ! 00_P,sina,sinu[lt],------06,-,-,*
- sina+Pron+Sg+Ade+Emph:sinul GI; ! 00_P,sina,sinu[l],------05,-,-,*
- sina+Pron+Sg+All+Emph:sinule GI; ! 00_P,sina,sinu[le],------04,-,-,*
- sina+Pron+Sg+Ela+Emph:sinust GI; ! 00_P,sina,sinu[st],------03,-,-,*
+ sina+Pron+Emph+Sg+Abl:sinult GI; ! 00_P,sina,sinu[lt],------06,-,-,*
+ sina+Pron+Emph+Sg+Ade:sinul GI; ! 00_P,sina,sinu[l],------05,-,-,*
+ sina+Pron+Emph+Sg+All:sinule GI; ! 00_P,sina,sinu[le],------04,-,-,*
+ sina+Pron+Emph+Sg+Ela:sinust GI; ! 00_P,sina,sinu[st],------03,-,-,*
  sina+Pron+Sg+Ess:sinuna GI; ! 00_P,sina,sinu[na],------0E,-,-,*
- sina+Pron+Sg+Gen+Emph:sinu GI; ! 00_P,sina,sinu[],------0G,-,-,*
- sina+Pron+Sg+Ill+Emph:sinusse GI; ! 00_P,sina,sinu[sse],------01,-,-,*
- sina+Pron+Sg+Ine+Emph:sinus GI; ! 00_P,sina,sinu[s],------02,-,-,*
- sina+Pron+Sg+Com+Emph:sinuga GI; ! 00_P,sina,sinu[ga],------0K,-,-,*
- sina+Pron+Sg+Nom+Emph:sina GI; ! 00_P,sina,sina[],------0N,-,-,*
+ sina+Pron+Emph+Sg+Gen:sinu GI; ! 00_P,sina,sinu[],------0G,-,-,*
+ sina+Pron+Emph+Sg+Ill:sinusse GI; ! 00_P,sina,sinu[sse],------01,-,-,*
+ sina+Pron+Emph+Sg+Ine:sinus GI; ! 00_P,sina,sinu[s],------02,-,-,*
+ sina+Pron+Emph+Sg+Com:sinuga GI; ! 00_P,sina,sinu[ga],------0K,-,-,*
+ sina+Pron+Emph+Sg+Nom:sina GI; ! 00_P,sina,sina[],------0N,-,-,*
  sina+Pron+Sg+Par:sind GI; ! 00_P,sina,s'in[d],------0P,-,-,*
  sina+Pron+Sg+Trm:sinuni GI; ! 00_P,sina,sinu[ni],------0R,-,-,*
  sina+Pron+Sg+Tra:sinuks GI; ! 00_P,sina,sinu[ks],------0T,-,-,*
@@ -572,38 +572,38 @@ LEXICON Pronouns
  nemad+Pron+Pl+Tra:neiks GI; ! 00_P,t'a,n'e[iks],------1T,-,-,*
  nemad+Pron+Pl+Trm:%{%} #; ! 00_P,t'a,#,------1R,-,-,*
   nemad+Pron+Pl+Abe:nendeta GI; ! 00_P,tema,nen[deta],------1A,-,-,*
- nemad+Pron+Pl+Abl+Emph:nendelt GI; ! 00_P,tema,nen[delt],------16,-,-,*
- nemad+Pron+Pl+Ade+Emph:nendel GI; ! 00_P,tema,nen[del],------15,-,-,*
- nemad+Pron+Pl+All+Emph:nendele GI; ! 00_P,tema,nen[dele],------14,-,-,*
- nemad+Pron+Pl+Ela+Emph:nendest GI; ! 00_P,tema,nen[dest],------13,-,-,*
+ nemad+Pron+Emph+Pl+Abl:nendelt GI; ! 00_P,tema,nen[delt],------16,-,-,*
+ nemad+Pron+Emph+Pl+Ade:nendel GI; ! 00_P,tema,nen[del],------15,-,-,*
+ nemad+Pron+Emph+Pl+All:nendele GI; ! 00_P,tema,nen[dele],------14,-,-,*
+ nemad+Pron+Emph+Pl+Ela:nendest GI; ! 00_P,tema,nen[dest],------13,-,-,*
  nemad+Pron+Pl+Ess:nendena GI; ! 00_P,tema,nen[dena],------1E,-,-,*
  nemad+Pron+Pl+Gen:nende GI; ! 00_P,tema,nen[de],------1G,-,-,*
- nemad+Pron+Pl+Ill+Emph:nendesse GI; ! 00_P,tema,nen[desse],------11,-,-,*
- nemad+Pron+Pl+Ine+Emph:nendes GI; ! 00_P,tema,nen[des],------12,-,-,*
+ nemad+Pron+Emph+Pl+Ill:nendesse GI; ! 00_P,tema,nen[desse],------11,-,-,*
+ nemad+Pron+Emph+Pl+Ine:nendes GI; ! 00_P,tema,nen[des],------12,-,-,*
  nemad+Pron+Pl+Com:nendega GI; ! 00_P,tema,nen[dega],------1K,-,-,*
- nemad+Pron+Pl+Nom+Emph:nemad GI; ! 00_P,tema,nema[d],------1N,-,-,*
+ nemad+Pron+Emph+Pl+Nom:nemad GI; ! 00_P,tema,nema[d],------1N,-,-,*
  nemad+Pron+Pl+Par:neid GI; ! 00_P,tema,n'e[id],------1P,-,-,*
  nemad+Pron+Pl+Trm:nendeni GI; ! 00_P,tema,nen[deni],------1R,-,-,*
  nemad+Pron+Pl+Tra:nendeks GI; ! 00_P,tema,nen[deks],------1T,-,-,*
 
  tema+Pron+Sg+Nom:ta GI; ! 00_P,t'a,t'a[],------0N,-,-,*
- tema+Pron+Sg+Nom+Emph:tema GI; ! 00_P,tema,tema[],------0N,-,-,*
+ tema+Pron+Emph+Sg+Nom:tema GI; ! 00_P,tema,tema[],------0N,-,-,*
  tema+Pron+Sg+Gen:ta GI; ! 00_P,t'a,t'a[],------0G,-,-,*
- tema+Pron+Sg+Gen+Emph:tema GI; ! 00_P,tema,tema[],------0G,-,-,*
+ tema+Pron+Emph+Sg+Gen:tema GI; ! 00_P,tema,tema[],------0G,-,-,*
  tema+Pron+Sg+Par:teda GI; ! 00_P,tema,te[da],------0P,-,-,*
- tema+Pron+Sg+Par+Emph:teda GI; ! 00_P,t'a,te[da],------0P,-,-,*
+ tema+Pron+Emph+Sg+Par:teda GI; ! 00_P,t'a,te[da],------0P,-,-,*
  tema+Pron+Sg+Ill:tasse GI; ! 00_P,t'a,t'a[sse],------01,-,-,*
- tema+Pron+Sg+Ill+Emph:temasse GI; ! 00_P,tema,tema[sse],------01,-,-,*
+ tema+Pron+Emph+Sg+Ill:temasse GI; ! 00_P,tema,tema[sse],------01,-,-,*
  tema+Pron+Sg+Ine:tas GI; ! 00_P,t'a,t'a[s],------02,-,-,*
- tema+Pron+Sg+Ine+Emph:temas GI; ! 00_P,tema,tema[s],------02,-,-,*
+ tema+Pron+Emph+Sg+Ine:temas GI; ! 00_P,tema,tema[s],------02,-,-,*
  tema+Pron+Sg+Ela:tast GI; ! 00_P,t'a,t'a[st],------03,-,-,*
- tema+Pron+Sg+Ela+Emph:temast GI; ! 00_P,tema,tema[st],------03,-,-,*
+ tema+Pron+Emph+Sg+Ela:temast GI; ! 00_P,tema,tema[st],------03,-,-,*
  tema+Pron+Sg+All:talle GI; ! 00_P,t'a,t'a[lle],------04,-,-,*
- tema+Pron+Sg+All+Emph:temale GI; ! 00_P,tema,tema[le],------04,-,-,*
+ tema+Pron+Emph+Sg+All:temale GI; ! 00_P,tema,tema[le],------04,-,-,*
  tema+Pron+Sg+Ade:tal GI; ! 00_P,t'a,t'a[l],------05,-,-,*
- tema+Pron+Sg+Ade+Emph:temal GI; ! 00_P,tema,tema[l],------05,-,-,*
+ tema+Pron+Emph+Sg+Ade:temal GI; ! 00_P,tema,tema[l],------05,-,-,*
  tema+Pron+Sg+Abl:talt GI; ! 00_P,t'a,t'a[lt],------06,-,-,*
- tema+Pron+Sg+Abl+Emph:temalt GI; ! 00_P,tema,tema[lt],------06,-,-,*
+ tema+Pron+Emph+Sg+Abl:temalt GI; ! 00_P,tema,tema[lt],------06,-,-,*
  tema+Pron+Sg+Trm:temani #; ! 00_P,t'a,#,------0R,-,-,*
  tema+Pron+Sg+Trm:temani GI; ! 00_P,tema,tema[ni],------0R,-,-,*
  tema+Pron+Sg+Ess:temana #; ! 00_P,t'a,#,------0E,-,-,*
