@@ -270,7 +270,7 @@ Lexicon size:
 
 Bug reports:
 * Leksa: tahtma책 ville, 책 ønske - should be å ville, å ønske
-Tibetan (?) pro Norwegian å.
+Korean (chaeg = book) pro Norwegian å.
 * Numra is too picky on date formats. Look at the sloppifyer for sma, it has been commented out. 12.2 was not accepted, but should (probably) be.
 * Answer without q seen as correct (but should there be a hint mechanism)
 * Answer without palatalisation is optional (both kats and kats' and kats´ accepted)
