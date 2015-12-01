@@ -121,8 +121,9 @@ S1:0 <=> Algus Vok [Kons+] (AV:AVT) TyveVok:  _ Piir; !küngas-künka
 
 
  "AV 14 k-g"
- K1:g <=> Vok [Liq | n | Vok] _ (Vok | VaheVok:) (S1:|l|s) %$:;	!kook-koogi, pilk-pilgu, küngas-künka
+ K1:g <=> Vok [Liq | n | Vok] _ (r) (Vok | VaheVok:) (S1:|l|s) %$:;	!kook-koogi, pilk-pilgu, küngas-künka, nugris?
  	 Vok _ VaheVok: Liq (Vok) %$:;    	!kogre-kokre
+	 Vok _ (VaheVok:) v %$:;		!õgev
 
  "AV 15 p-b"
  P1:b <=> Vok [Liq | m | Vok] _  [Vok | VaheVok:] ([S1:|s]) %$:0 ;	!karp-karbi, kimp-kimbu, loopida-loobin
@@ -285,9 +286,9 @@ o:õ <=> [ j | l | t ] _ %.: %+: i [ SonaPiir | d | n | m e | t e];
 
 ! liitsõnad on esialgu niikuinii teisiti tehtud. 
 !"Liitsõnapiirile sidekriips kolme ühesuguse hääliku korral"	!nt. plekk-katus, jää-äär
-!
+! 
 !  %#:%- <=> :Xx1 (:0) :Xx1 (:0) _ :Xx1; where Xx1 in (a e f h i k l m n o p r s š t u õ ä ö ü);
-!
+! 
 
 
 

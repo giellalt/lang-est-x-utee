@@ -714,7 +714,7 @@ LEXICON An_PlG_V	!õnnelik-tüüp
  LIIT;
 
 LEXICON An_Prefix
- +Prefix: #;
+ +prefix: #;
 
 !LEXICON An_Suffix
 !  +suffix: #;
