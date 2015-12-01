@@ -4182,7 +4182,7 @@ LEXICON Verbs
  olema+V+Pers+Prs+Ind+Pl2+Aff:olete GI;
  olema+V+Pers+Prs+Ind+Pl3+Aff:on GI;
  olema+V+Pers+Prs+Ind+Neg:ole GI;
- olema+V+Pers+Prs+Ind+Neg:pole GI;
+ ei+V+Neg#olema+V+Pers+Prs+Ind+Neg:pole GI;
  olema+V+Pers+Prs+Cond+Sg1+Aff:oleksin GI;
  olema+V+Pers+Prs+Cond+Sg1+Neg:poleksin GI;
  olema+V+Pers+Prs+Cond+Sg2+Aff:oleksid GI;
