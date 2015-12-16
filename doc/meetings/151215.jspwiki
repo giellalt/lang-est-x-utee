@@ -1,0 +1,277 @@
+SamEst meeting 15.12.2015
+
+Participants: Heli, Jaska, Jaak, Heiki, Tiina, Trond, Sjur (late due to machine issues)
+
+!!!Agenda
+
+* Status Estonian FST
+* Status Finnish FST
+* Status MT
+* Status Oahpa
+* Articles
+* Establishing subgroups
+
+
+!!Status Estonian FST
+
+!Capital letters
+Jaska pointed out some problems with capital letters
+{{langs/LANG/src/orthography/inituppercase.regex}}. Otherwise not much has 
+happened.
+
+In Heli's last e-mail(s) there were specific problems to address.
+
+!Priority union
+
+Jaak is looking at hfst priority union, a feature needed 
+(p. 300-307, esp. 306 in Beesley & Karttunen). When it does not
+work correctly, nothing works correctly for the est FST.. The words failing 
+are among the most frequent words.
+
+Either rewrite the morphology or correct the bug. The bug may be delegated.
+Which of the people from Helsinki should be the one to do?
+
+!Steps forward
+
+There are a class of other errors:
+Double generation. Fin
+ $GTLANG_est/devtools/find_parallels.sh
+
+Testing:
+* Lexical coverage (on running text, on frequency list)
+* Appropriate analysis for any given form
+* Distinguish between non-standard forms, standard parallel forms and preferred unique form
+Script to find double forms find_parallels
+
+The way to solve it  +Use/NG, +Err/Orth
+
+__TODO:__
+* Discuss the bug with the hfst team, and get it solved. [ https://sourceforge.net/p/hfst/bugs/321/ ]
+
+
+!!Status Finnish FST
+
+Script to find double forms: langs/est/devtools/find_parallels.sh 
+
+
+!!Status MT
+
+!FST issues
+
+* sme2fin - double forms in FST {{maiden/maitten}}, 
+  perhaps lacunas as well
+* fin2sme, fin2est - bad CG
+** missing disambiguation
+** too many double analyses (multiple POS tags) for the same form in the fin (and est) FST
+
+!Open questions
+* two entries & POS tags in FST, one in the bidix pair, what 
+  happens to the Apertium FST, it will get only the one POS tags.
+
+{{{
+  aina Adv
+  aina Pcle
+}}}
+
+Translate verb categories correct and systematically.
+
+!CG issues
+
+Three fsts:
+* GT/D fst (lookup2cg)
+* Apertium fst, not pruned by bidix (cg-conv)
+* Apertium fst, pruned by bidix (cg-conv)
+
+{{{
+echo tietokonealalla | hufin | cg-conv
+}}}
+
+Wanted to approach more systematically to the disambiguation of Finnish and use for that translated textbook, but don't know what is a good solution for compounds, which are regular, not exceptional (even for choosing for golden standard):
+
+{{{
+"<hyväntuulinen>"
+    "tuulinen" A Sg Nom <W:0>
+        "hyvä" N Sg Gen Use/Hyphen <W:0>
+    "tuulinen" A Sg Nom <W:0>
+        "hyvä" N Sg Gen Use/NoHyphens <W:0>
+    "hyväntuulinen" A Sg Nom <W:0>
+
+"<tietokonealalla>"
+    "ala" N Sg Ade <W:0>
+        "kone" N Sg Nom Use/Hyphen <W:0>
+            "tieto" N Sg Nom Use/Hyphen <W:0>
+    "ala" N Sg Ade <W:0>
+        "kone" N Sg Nom Use/NoHyphens <W:0>
+            "tieto" N Sg Nom Use/Hyphen <W:0>
+    "ala" N Sg Ade <W:0>
+        "kone" N Sg Nom Use/NoHyphens <W:0>
+            "tieto" N Sg Nom Use/NoHyphens <W:0>
+    "ala" N Sg Ade <W:0>
+        "tietokone" N Sg Nom Use/Hyphen <W:0>
+    "ala" N Sg Ade <W:0>
+        "tietokone" N Sg Nom Use/NoHyphens <W:0>
+}}}
+
+
+Trond:
+
+{{{
+     echo tietokonealalla | '$HLOOKUP $GTHOME/langs/fin/src/analyser-gt-desc.hfstol | cg-conv
+     
+"<tietokonealalla>"
+        "tietokonealalla"
+"<tieto+N+Sg+Nom+Use/Hyphen#kone+N+Sg+Nom+Use/Hyphen#ala+N+Sg+Ade>"
+        "tieto+n+sg+nom+use/hyphen#kone+n+sg+nom+use/hyphen#ala+n+sg+ade" <mixed-upper>
+"<0,000000>"
+        "0,000000"
+"<tietokonealalla>"
+        "tietokonealalla"
+"<tieto+N+Sg+Nom+Use/Hyphen#kone+N+Sg+Nom+Use/NoHyphens#ala+N+Sg+Ade>"
+        "tieto+n+sg+nom+use/hyphen#kone+n+sg+nom+use/nohyphens#ala+n+sg+ade" <mixed-upper>
+"<0,000000>"
+        "0,000000"
+"<tietokonealalla>"
+        "tietokonealalla"
+"<tieto+N+Sg+Nom+Use/NoHyphens#kone+N+Sg+Nom+Use/Hyphen#ala+N+Sg+Ade>"
+        "tieto+n+sg+nom+use/nohyphens#kone+n+sg+nom+use/hyphen#ala+n+sg+ade" <mixed-upper>
+"<0,000000>"
+        "0,000000"
+"<tietokonealalla>"
+        "tietokonealalla"
+"<tieto+N+Sg+Nom+Use/NoHyphens#kone+N+Sg+Nom+Use/NoHyphens#ala+N+Sg+Ade>"
+        "tieto+n+sg+nom+use/nohyphens#kone+n+sg+nom+use/nohyphens#ala+n+sg+ade" <mixed-upper>
+"<0,000000>"
+        "0,000000"
+"<tietokonealalla>"
+        "tietokonealalla"
+"<tietokone+N+Sg+Nom+Use/Hyphen#ala+N+Sg+Ade>"
+        "tietokone+n+sg+nom+use/hyphen#ala+n+sg+ade" <mixed-upper>
+"<0,000000>"
+        "0,000000"
+"<tietokonealalla>"
+        "tietokonealalla"
+"<tietokone+N+Sg+Nom+Use/NoHyphens#ala+N+Sg+Ade>"
+        "tietokone+n+sg+nom+use/nohyphens#ala+n+sg+ade" <mixed-upper>
+"<0,000000>"
+        "0,000000"
+}}}    
+    
+All in same form but cannot predict which of them would be better for MT.
+
+Conclusion for Trond: for MT purposes I have to use for CG input that is parsed already with apertium fst, otherwise there wil be more choices in input. But: bidix will be constantly changing and thus the apertium fst! Luckily, most bidix changes are augmentative.
+
+Conclusion: 2 golden standards!
+
+Gold corpus so far: 
+The story text
+A textbook (problems: Tag issues)
+Convert
+
+__TODO:__
+* Look at tag/format issues for the gold corpus 
+  (Tiina, Fran/Kevin)
+* Two golden corpora (?)
+
+!!Status Oahpa
+
+!Improvement in Morfa-C
+
+* no more repeating exercises within the same set
+
+Point to use for all Oahpas: 
+''no more repeating exercises within the same set''
+
+Student modeling: Keep track of input for Leksa to students.
+
+!Improvements in the user interface
+* localisation to Estonian, Finnish, Russian (not ready yet)
+* book chapters added under the "book" choice in Leksa and Morfa-S 
+  (atm it is only working in Leksa)
+
+
+
+__TODO:__
+* Heli to write to Oahpa teams on the no more repeating issue
+* Heli to write sketch on plan for student modeling for Leksa
+
+!Võru Oahpa
+
+* Work on semantic sets underway.
+* Work on completing the FST.
+
+!!Articles
+
+
+(to be looked at during forthcoming meetings)
+
+* Monitor the "before" (implementation) articles
+* Move article topics from "after" to "before"
+
+!!The "before" articles
+
+!Contrastive/comparative tag/grammar article
+
+Heiki-Jaan, Trond, Lene, Fran, ...
+
+Heiki-Jaan has rewritten the tag conversion fin-est.
+This is, in a way, an implementation of this article.
+
+__TODO:__
+# Comment the transfer rules:
+## incubator/apertium-fin-est.fin-est.t1x
+## apertium-sme-fin.fin-sme.t1x (...)
+## apertium-sme-fin.sme-fin.t1x (...)
+# Start drafting an article
+
+Look at this, and mail between each other.
+
+{{{
+echo 'olisin' | apertium -d . fin-est
+Oleksin
+}}}
+
+!Article before spellchecker is out?
+
+Relevant for Võru
+
+__TODO:__
+* Look at this idea (Note: the deadline of the forthcoming speller)
+
+
+!!The "after" articles
+
+!The usual MT articles
+
+finest: Comparing SMT (Google), SMT (Europarl),  RBMT (Apertium), GF?
+
+Time frame: Do this when these things are solved:
+* technical problems related to tags
+* CG harmonising
+* Some MT work:
+** A reasonable bidix
+** some work on lexical selection (.lrx) and 
+** transfer (.t?x) files
+
+Goal: Look for a deadline before summer.
+
+Then, for the article:
+
+Looking not at BLEU/WER, but at robustness:
+What can you trust, on what grounds (the kissa - koer - example)
+* Marilla on kissa, hänellä ei ole koiraa.  
+* Google : Marilla on kass , ta ei ole koera .
+* Apertium (old) Maril on kass, tal ei ole koera.
+
+
+!!Establishing subgroups
+
+* Oahpa: As today
+* Võru: As today
+* CG: Tiina, Trond, Lene, Fran to discuss
+* MT: fin2X, X2fin: Heiki, Trond, Fran, Tiina, 
+* Infra: Sjur, Fran, ...
+
+
+!!Next meeting
+
+5.1.2016 10.00 Estonian time / 9.00 Norwegian time
