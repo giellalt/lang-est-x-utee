@@ -6878,7 +6878,7 @@ LEXICON Nouns
  kinofikatsioon+N:kinofikatsioon 22_I; ! (22_S -> +S) at: kinofikatsioon, bt: kinofikatsiooni, bn: kinofikatsiooni, btv: kinofikatsioone, bnv: kinofikatsioone
  kinoline+N:kinoli 12_NE-SE-S; ! (12_S -> +S) a0: kinoline, b0: kinolise, c0: kinolis, b0v: kinolisi
  kinoon+N:kinoon 22_I; ! (22_S -> +S) at: kinoon, bt: kinooni, bn: kinooni, btv: kinoone, bnv: kinoone
- kino+N:kino 17_Adt; ! (17_S -> +S) a0: kino, a0g: kinno, a0v: #
+ kino+N:kin=o 17_Adt; ! (17_S -> +S) a0: kino, a0g: kinno, a0v: #
  kinžall+N:kinžall 22_I; ! (22_S -> +S) at: kinžall, bt: kinžalli, bn: kinžalli, btv: kinžalle, bnv: kinžalle
  kints+N:kints 22_U; ! (22_S -> +S) at: kints, bt: kintsu, bn: kintsu, btv: kintse, bnv: kintse
  kiosk+N:kiosk 02_I; ! (02_S -> +S) a0: kiosk, b0: kioski, b0r: kioske, c0: 0
