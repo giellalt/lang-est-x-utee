@@ -1,7 +1,7 @@
 
 Samest meeting Jan 5 2016
 
-Participants: Heiki-Jaan, Heli, Jaak, Tiina, Trond, 
+Participants: Heiki-Jaan, Heli, Jaak, Tiina, Trond 
 
 Last meeting: http://giellatekno.uit.no/doc/lang/est/meetings/151215.html
 
@@ -22,17 +22,17 @@ Everything in the overriding exceptions file is probably fixed now.
 __Next step:__ Jaak to fix the issues in Heli's letter.
 
 * Vokaalmitmus (vocal plural?) -- there seems to be overgeneration (when does the word have it?)
-* Short illative -- HJKhas told that he has classes where it is possible and where it is preferred? Oahpa would like to have them distinctively tagged when both are possible (or even if the pupil uses form that is obtained "regularly" but which actually is not used: *poesse, )
+* Short illative -- HJK has told that he has classes where it is possible and where it is preferred? Oahpa would like to have them distinctively tagged when both are possible (or even if the pupil uses form that is obtained "regularly" but which actually is not used: *poesse, )
 * Lexicalized compounds -- some twolc rules assume # being there, should we add it? (töökojas)
 
 
 
 !!!Oahpa
 
-Recently, Heli has wrked on Oahpa-C for both vro and est. The new solution for avoiding repeating exercises should be implememented for other lgs, but the solution is still not general enough. Heli works on this.
+Recently, Heli has worked on Morfa-C for both vro and est. The new solution for avoiding repeating exercises should be implememented for other lgs, but the solution is still not general enough. Heli works on this.
 
 __Heli__ will regenerate the lexicon (after the priority-union fix) and have a look.
-Next step is to generalise Oahpa C and work on Vasta S.
+Next step is to generalise Morfa-C and work on Vasta-S.
 
 !!!MT
 
