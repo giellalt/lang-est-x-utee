@@ -9,7 +9,7 @@ A B C D E F G H I J K L M N O P Q R S Š Z Ž T U V Õ Ä Ö Ü X Y
 G1:g G1:0 B1:b B1:0 B1:m D1:d D1:0 D1:l D1:n D1:r K1:k K1:g K1:0 P1:p P1:b P1:0 T1:t
 T1:d T1:0 S1:s S1:0 S1:r %+:0 %$:0 A1:a A1:0 E1:e E1:0 I1:i I1:0 U1:u U1:0 
 ! %.:a %.:e %.:o %.:u %.:ö %.:ä %.:i 
-%.:0 %=:0 %=:h %=:m %=:s %=:k %=:p %=:t %=:f %=:š X2:0 %!:0 Q1:k %-:%-
+%.:0 %=:0 %=:h %=:m %=:n %=:s %=:k %=:p %=:t %=:f %=:š X2:0 %!:0 Q1:k %-:%-
 
 «7:« 
 »7:»  
@@ -183,9 +183,10 @@ where Vok1 in (a o u ö ä)
 matched;
 
 
-"Konsonandi kahekordistumine"   !nt. elu-ellu, nime-nimme, tulema-tulla
+"Konsonandi kahekordistumine"   !nt. elu-ellu, nime-nimme, tulema-tulla 
 
-  %=:Kons1 <=> Kons1 _ (TyveVok:) X2:0;	!mitte-klusiilid
+  %=:Kons1 <=>  Kons1 _ (TyveVok:) X2:0;	!mitte-klusiilid
+  		k i Kons1 _ o X2:0;			!o polegi tüvevokaalide hulgas?
                      where Kons1 in TavaKons;
 
 "Konsonandi/klusiili kahekordistumine nimetavas" ! nikkel, kimmel
