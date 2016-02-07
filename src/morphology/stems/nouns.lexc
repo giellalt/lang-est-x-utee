@@ -7200,6 +7200,7 @@ LEXICON Nouns
  kodukas+N:koduk 02_GAS_S-0; ! (02_S -> +S) a0: kodukas, b0: koduka, b0r: 0, c0: 0
  kodundus+N:kodundus 11; ! (11_S -> +S) a0: kodundus, b0: kodunduse, b0v: kodundusi
  kodu+N:kodu 17; ! (17_S -> +S) a0: kodu, a0g: #, a0v: #
+ kodu+N+Sg+Ill:koju GI; ! (17_S -> +S) a0: kodu, a0g: #, a0v: #
  kodustus+N:kodustus 11; ! (11_S -> +S) a0: kodustus, b0: kodustuse, b0v: kodustusi
  kodusus+N:kodusus 11; ! (11_S -> +S) a0: kodusus, b0: kodususe, b0v: kodususi
  kodutu+N:kodutu 01; ! (01_AS -> +A +S) a0: kodutu, a0r: 0
