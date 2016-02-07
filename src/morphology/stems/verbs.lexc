@@ -4052,7 +4052,7 @@ LEXICON Verbs
  nõutle 27; ! (27_V -> ) a0: nõutle
  nõõta 27; ! (27_V -> ) a0: nõõta
  näbrasta 27; ! (27_V -> ) a0: näbrasta
- näG1e 28; ! (28_V -> ) at: näge, an: näe
+ nä 28_gema; ! (28_V -> ) at: näge, an: näe
  nägel 31; ! (31_V -> ) a0: nägele, b0: nägel
  nägele 27; ! (27_V -> ) a0: nägele
  nägusta 27; ! (27_V -> ) a0: nägusta
@@ -6367,7 +6367,7 @@ LEXICON Verbs
  teeninda 27; ! (27_V -> ) a0: teeninda
  teesK1 30; ! (30_V -> ) at: teeskle, (bt): teeskel, bn: teesel
  teesta 27; ! (27_V -> ) a0: teesta
- teG1e 28; ! (28_V -> ) at: tege, an: tee
+ te 28_gema; ! (28_V -> ) at: tege, an: tee
  tegel 31; ! (31_V -> ) a0: tegele, b0: tegel
  tegele 27; ! (27_V -> ) a0: tegele
  tegurda 27; ! (27_V -> ) a0: tegurda

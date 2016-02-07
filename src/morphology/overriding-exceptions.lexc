@@ -197,39 +197,6 @@ LEXICON Asendavad_erandid
  naine+N+Pl+Par:naisi GI; ! 12_S,naine,n'aisi[],------1P,-,-,*
  naine+N+Sg+Ill:naisesse GI; ! 12_S,naine,#,------0D,-,-,*
  naine+N+Sg+Par:naist GI; ! 12_S,naine,n'ais[t],------0P,-,-,*
- nägema+V+Impers+Prt+Cond+Aff:nähtuks GI; ! 28_V,näge,n'äh[tuks],-112-0--,-,-,*
- nägema+V+Pers+Prt+Cond+Pl1+Aff:näinuksime GI; ! 28_V,näge,näi[nuksime],-01241--,-,-,*
- nägema+V+Pers+Prt+Cond+Sg1+Aff:näinuksin GI; ! 28_V,näge,näi[nuksin],-01211--,-,-,*
- nägema+V+Pers+Prt+Cond+Pl2+Aff:näinuksite GI; ! 28_V,näge,näi[nuksite],-01251--,-,-,*
- nägema+V+Pers+Prt+Cond+Sg2+Aff:näinuksid GI; ! 28_V,näge,näi[nuksid],-01221--,-,-,*
- nägema+V+Pers+Prt+Cond+Pl3+Aff:näinuksid GI; ! 28_V,näge,näi[nuksid],-01261--,-,-,*
- nägema+V+Pers+Prt+Cond+Sg3+Aff:näinuks GI; ! 28_V,näge,näi[nuks],-01200--,-,-,*
- nägema+V+Impers+Prs+Cond+Aff:nähtaks GI; ! 28_V,näge,n'äh[taks],-102-0--,-,-,*
- nägema+V+Ger:nähes GI; ! 28_V,näge,näh[es],2-------,-,-,*
- nägema+V+Impers+Prs+Imprt:nähtagu GI; ! 28_V,näge,n'äh[tagu],-103-0--,-,-,*
- nägema+V+Pers+Prs+Imprt+Pl1:nähkem GI; ! 28_V,näge,n'äh[kem],-00340--,-,-,*
- nägema+V+Pers+Prs+Imprt+Pl2:nähke GI; ! 28_V,näge,n'äh[ke],-00350--,-,-,*
- nägema+V+Pers+Prs+Imprt+Sg3:nähku GI; ! 28_V,näge,n'äh[ku],-00300--,-,-,*
- nägema+V+Impers+Prt+Ind+Aff:nähti GI; ! 28_V,näge,n'äh[ti],-120-1--,-,-,*
- nägema+V+Pers+Prt+Ind+Pl1+Aff:nägime GI; ! 28_V,näge,näg[ime],-02041--,-,-,*
- nägema+V+Pers+Prt+Ind+Sg1+Aff:nägin GI; ! 28_V,näge,näg[in],-02011--,-,-,*
- nägema+V+Pers+Prt+Ind+Pl2+Aff:nägite GI; ! 28_V,näge,näg[ite],-02051--,-,-,*
- nägema+V+Pers+Prt+Ind+Sg2+Aff:nägid GI; ! 28_V,näge,näg[id],-02021--,-,-,*
- nägema+V+Pers+Prt+Ind+Pl3+Aff:nägid GI; ! 28_V,näge,näg[id],-02061--,-,-,*
- nägema+V+Pers+Prt+Ind+Sg3+Aff:nägi GI; ! 28_V,näge,näg[i],-02031--,-,-,*
- nägema+V+Impers+Prs+Ind+Aff:nähakse GI; ! 28_V,näge,näh[akse],-100-1--,-,-,*
- nägema+V+Impers+Prs+Ind+Neg:nähta GI; ! 28_V,näge,n'äh[ta],-100-0--,-,-,*
- nägema+V+Pers+Prs+Ind+Pl1+Aff:näeme GI; ! 28_V,näge,näe[me],-00041--,-,-,*
- nägema+V+Pers+Prs+Ind+Pl2+Aff:näete GI; ! 28_V,näge,näe[te],-00051--,-,-,*
- nägema+V+Pers+Prs+Ind+Pl3+Aff:näevad GI; ! 28_V,näge,näe[vad],-00061--,-,-,*
- nägema+V+Inf:näha GI; ! 28_V,näge,näh[a],1-------,-,-,*
- nägema+V+Impers+Prt+Prc:nähtud GI; ! 28_V,näge,n'äh[tud],411--0--,-,-,*
- nägema+V+Pers+Prt+Prc:näinud GI; ! 28_V,näge,näi[nud],401--0--,-,-,*
- nägema+V+Impers+Prs+Prc:nähtav GI; ! 28_V,näge,n'äh[tav],410---0N,-,-,*
- nägema+V+Impers+Prt+Quot:nähtuvat GI; ! 28_V,näge,n'äh[tuvat],-111-0--,-,-,*
- nägema+V+Pers+Prt+Quot:näinuvat GI; ! 28_V,näge,näi[nuvat],-01100--,-,-,*
- nägema+V+Impers+Prs+Quot:nähtavat GI; ! 28_V,näge,n'äh[tavat],-101-0--,-,-,*
- nägema+V+Impers+Sup:nähtama GI; ! 28_V,näge,n'äh[tama],31------,-,-,*
  nõu+N+Sg+Par:nõu GI; ! 26_S,n'õu,n'õu[],------0P,-,-,*
  pea+N+Pl+Par:päid GI; ! 26_S,p'ea,p'ä[id],------1P,-,-,*
  pesema+V+Impers+Prt+Cond+Aff:pestuks GI; ! 36_V,pese,p'es[tuks],-112-0--,-,-,*
@@ -353,39 +320,6 @@ LEXICON Asendavad_erandid
  saama+V+Pers+Prt+Ind+Pl3+Aff:said GI; ! 37_V,s'aa,s'a[id],-02061--,-,-,*
  saama+V+Pers+Prt+Ind+Sg3+Aff:sai GI; ! 37_V,s'aa,s'a[i],-02031--,-,-,*
  süda+N+Sg+Par:südant GI; ! 04_S,süda,südan[t],------0P,-,-,*
- tegema+V+Impers+Prt+Cond+Aff:tehtuks GI; ! 28_V,tege,t'eh[tuks],-112-0--,-,-,*
- tegema+V+Pers+Prt+Cond+Pl1+Aff:teinuksime GI; ! 28_V,tege,tei[nuksime],-01241--,-,-,*
- tegema+V+Pers+Prt+Cond+Sg1+Aff:teinuksin GI; ! 28_V,tege,tei[nuksin],-01211--,-,-,*
- tegema+V+Pers+Prt+Cond+Pl2+Aff:teinuksite GI; ! 28_V,tege,tei[nuksite],-01251--,-,-,*
- tegema+V+Pers+Prt+Cond+Sg2+Aff:teinuksid GI; ! 28_V,tege,tei[nuksid],-01221--,-,-,*
- tegema+V+Pers+Prt+Cond+Pl3+Aff:teinuksid GI; ! 28_V,tege,tei[nuksid],-01261--,-,-,*
- tegema+V+Pers+Prt+Cond+Sg3+Aff:teinuks GI; ! 28_V,tege,tei[nuks],-01200--,-,-,*
- tegema+V+Impers+Prs+Cond+Aff:tehtaks GI; ! 28_V,tege,t'eh[taks],-102-0--,-,-,*
- tegema+V+Ger:tehes GI; ! 28_V,tege,teh[es],2-------,-,-,*
- tegema+V+Impers+Prs+Imprt:tehtagu GI; ! 28_V,tege,t'eh[tagu],-103-0--,-,-,*
- tegema+V+Pers+Prs+Imprt+Pl1:tehkem GI; ! 28_V,tege,t'eh[kem],-00340--,-,-,*
- tegema+V+Pers+Prs+Imprt+Pl2:tehke GI; ! 28_V,tege,t'eh[ke],-00350--,-,-,*
- tegema+V+Pers+Prs+Imprt+Sg3:tehku GI; ! 28_V,tege,t'eh[ku],-00300--,-,-,*
- tegema+V+Impers+Prt+Ind+Aff:tehti GI; ! 28_V,tege,t'eh[ti],-120-1--,-,-,*
- tegema+V+Pers+Prt+Ind+Pl1+Aff:tegime GI; ! 28_V,tege,teg[ime],-02041--,-,-,*
- tegema+V+Pers+Prt+Ind+Sg1+Aff:tegin GI; ! 28_V,tege,teg[in],-02011--,-,-,*
- tegema+V+Pers+Prt+Ind+Pl2+Aff:tegite GI; ! 28_V,tege,teg[ite],-02051--,-,-,*
- tegema+V+Pers+Prt+Ind+Sg2+Aff:tegid GI; ! 28_V,tege,teg[id],-02021--,-,-,*
- tegema+V+Pers+Prt+Ind+Pl3+Aff:tegid GI; ! 28_V,tege,teg[id],-02061--,-,-,*
- tegema+V+Pers+Prt+Ind+Sg3+Aff:tegi GI; ! 28_V,tege,teg[i],-02031--,-,-,*
- tegema+V+Impers+Prs+Ind+Aff:tehakse GI; ! 28_V,tege,teh[akse],-100-1--,-,-,*
- tegema+V+Impers+Prs+Ind+Neg:tehta GI; ! 28_V,tege,t'eh[ta],-100-0--,-,-,*
- tegema+V+Pers+Prs+Ind+Pl1+Aff:teeme GI; ! 28_V,tege,tee[me],-00041--,-,-,*
- tegema+V+Pers+Prs+Ind+Pl2+Aff:teete GI; ! 28_V,tege,tee[te],-00051--,-,-,*
- tegema+V+Pers+Prs+Ind+Pl3+Aff:teevad GI; ! 28_V,tege,tee[vad],-00061--,-,-,*
- tegema+V+Inf:teha GI; ! 28_V,tege,teh[a],1-------,-,-,*
- tegema+V+Impers+Prt+Prc:tehtud GI; ! 28_V,tege,t'eh[tud],411--0--,-,-,*
- tegema+V+Pers+Prt+Prc:teinud GI; ! 28_V,tege,tei[nud],401--0--,-,-,*
- tegema+V+Impers+Prs+Prc:tehtav GI; ! 28_V,tege,t'eh[tav],410---0N,-,-,*
- tegema+V+Impers+Prt+Quot:tehtuvat GI; ! 28_V,tege,t'eh[tuvat],-111-0--,-,-,*
- tegema+V+Pers+Prt+Quot:teinuvat GI; ! 28_V,tege,tei[nuvat],-01100--,-,-,*
- tegema+V+Impers+Prs+Quot:tehtavat GI; ! 28_V,tege,t'eh[tavat],-101-0--,-,-,*
- tegema+V+Impers+Sup:tehtama GI; ! 28_V,tege,t'eh[tama],31------,-,-,*
  teine+Ord+Pl+Par:teisi GI; ! 12_OP,teine,t'eisi[],------1P,-,-,*
  teine+Ord+Sg+Ill:teise GI; ! 12_OP,teine,t'eise[],------0D,-,-,*
  teine+Ord+Sg+Ill:teisesse GI; ! 12_OP,teine,t'eise[],------0D,-,-,*

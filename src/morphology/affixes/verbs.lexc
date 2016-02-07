@@ -8,6 +8,28 @@ LEXICON 28	! ma ja da - TA, olevik -  NA (leppima)
  :X2 TP_28at;
  :$ TP_28an;
 
+LEXICON 28_gema	! nägema, tegema tüveerandid
+! G1e:G1eX2 TP_28at;
+! G1e:G1e$ TP_28an;
+
+! TP_28at
+ G1e:G1eX2 An_ma;
+ G1e:G1eX2 An_mata;
+ G1e:G1eX2 An_v;
+ G1e:G1eX2 Deriv_mine_ja; ! nägemine
+ G1e:g An_i; ! nägi
+ G1e:g An_in; ! nägin
+ G1e:g An_ime; ! nägime
+ G1e:h An_a; ! näha 
+ G1e:h An_ke; ! nähke
+ G1e:i An_nud_der; ! näinud
+
+! TP_28an	!lepi+n
+ G1e:G1e$ An_b;
+ G1e:G1e$ An_me;
+ G1e:h An_tud;
+ G1e:h An_akse;
+
 LEXICON 29	! ma ja olevik - TA, da - NA - (hüppama)
  TP_29at;
  :$ TP_29an;
