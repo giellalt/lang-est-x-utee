@@ -300,7 +300,7 @@ o:õ <=> [ j | l | t ] _ %.: %+: i [ SonaPiir | d | n | m e | t e];
 !enne i-ga algavat formatiivi, nt.maa+id->maid, maaha->maha.
                                     ! Võõrsõnades ainult 'e': idee-ideid, aga miljöö-miljöösid,depoo-depoosid,kanuu-kanuusid
 
-  %.:0 <=> [Vok [Kons+] e] | [Algus LyhVoka] _ [%+: [ i | h ]] ;
+  %.:0 <=> [[Vok [Kons+] e] | [Algus LyhVok]] _ [%+: [ i | h ]] ;
            a _ [D1:|G1:] i: %$:;	!praadida-praeb, saagida-saeb
 	   o _ D1:0 e %$:;		!loe 
 
@@ -308,7 +308,7 @@ o:õ <=> [ j | l | t ] _ %.: %+: i [ SonaPiir | d | n | m e | t e];
   %.:Vok1 <=> Vok1 _ ~[%+: [ a | i | h ] :* ] .#.; where  Vok1 in (e o u õ ä ö ü);
 
 "Pikk vokaal vaikimisi, a"
-  %.:a <=> a _ ~[ [D1: | G1:] i: %$: :* ] .#.;
+  %.:a <=> a _ ~[ [D1: | G1: ] i: %$: :* | %+: [i | h] ?*] .#.;
 
 
 "morfeemipiiril kaks s-i saavad üheks"
