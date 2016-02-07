@@ -484,19 +484,53 @@ LEXICON Kohalikud_erandid
  võitu+Adv+suffix:võitu #;
 
 
+Tüveerandid; 
+
+
 
 ! tyvemoodustuse erandid, vokaalmitmuse erandid
+LEXICON Tüveerandid
+te_aed;
+te_haug;
+te_king;
+te_kurat;
+te_kuuas;
+te_kärbes;
+te_köömen;
+te_küündima;
+te_lemmel;
+te_lõõg;
+te_mees;
+te_pikk;
+te_pundar;
+te_põrsas;
+te_pöial;
+te_raag1;
+te_raag2;
+te_roe;
+te_roog;
+te_saad;
+te_sae;
+te_silm;
+te_soe;
+te_tund;
+te_tõbi;
+te_vähkrema;
+te_õlu;
 
-! ??? aed+N:aed 22; ! at: aed, bt: aeda, bn: aia, btv: aedu, bnv: aiuA
+LEXICON te_aed
+! ??? aed+N:aed 22; ! at: aed, bt: aeda, bn: aia, btv: aedu, bnv: aiu
  aed+N:aed An_SgN;
  aed+N:aia$ TP_22bn;
  aed+N:aeda TP_22bt;
 
+LEXICON te_haug
 ! ??? haug+N:haug 22; ! at: haug, bt: haugi, bn: havi, btv: hauge, bnv: have
  haug+N:haug An_SgN;
  haug+N:havi$ TP_22bn;
  haug+N:haugi TP_22bt;
 
+LEXICON te_king
 ! erandlik tyvemitmus: king+N:king 22; ! at: king, bt: kinga, bn: kinga, btv: kingi, bnv: kingi
  king+N:king An_SgN;
  king+N:kinga$ TP_22bn';
@@ -504,45 +538,54 @@ LEXICON Kohalikud_erandid
  king+N:kingi An_PlP_V;
  ! king+N:kingi An_Pl_Vok; ! seda tüvemitmust pigem ei kasutata?
 
-
+LEXICON te_kurat
 ! ??? kurat+N:kurat 02; ! a0: kurat, b0: kuradi, b0r: kurade
  kurat+N:kurat An_SgN;
  kurat+N:kuradi TP_02b0;
 
+LEXICON te_kuuas
 ! ??? kuuas+N:kuuas 07_S-0; ! an: kuuas, (at): kuudas, bt: kuuda, btr: #
  kuuas+N:kuuas$ TP_07an;
  kuuas+N:kuuda TP_07bt;
 
+LEXICON te_kärbes
 ! ??? kärbes+N:kärbes 07_S-0; ! an: kärbes, (at): kärbes, bt: kärbse, btr: #
  kärbes+N:kärbes$ TP_07an;
  kärbes+N:kärbse TP_07bt;
 
+LEXICON te_köömen
 ! ??? köömen+N:köömen 02; ! a0: köömen, b0: köömne, b0r: 0
  köömen+N:köömen An_SgN;
  köömen+N:köömne TP_02b0;
 
+LEXICON te_küündima
 ! /// küündi:küünDi 28; ! at: küündi, an: küüni
  küündi TP_28at;
  küündi:küüni$ TP_28an;
 
+LEXICON te_lemmel
 ! ??? lemmel+N:lemmel 08; ! an: lemmel, (at): lemmel, bt: lemle
  lemmel+N:lemmel TP_08an;
  lemmel+N:lemle TP_07bt;
 
+LEXICON te_lõõg
 ! ??? lõõg+N:lõõg 22; ! at: lõõg, bt: lõõga, bn: lõa, btv: lõõgu, bnv: 0
  lõõg+N:lõõg An_SgN;
  lõõg+N:lõa$ TP_22bn;
  lõõg+N:lõõga TP_22bt;
 
+LEXICON te_mees
 ! ??? mees+N:mees 13; ! at: mees, (bt): meese, an: mees, bn: mehe, bnv: mehi
  mees+N:mees An_SgN;
  mees+N:mehe$ An_SgG;
+ mees+N:mehe$ An_SgIll;
  mees+N:mehe$ An_SgG_der; ! ?? need tuletised on ka erandlikud?
  mees+N:mees An_SgP_t;
  mees+N:mees An_PlG_te;
  mees+N:mehi An_PlP_V;
  ! :i An_Pl_Vok; ! mehile?
 
+LEXICON te_pikk
 ! erandlik tyvemitmus: pikk+A+N:pikk 22; ! at: pikk, bt: pikka, bn: pika, btv: pikki, bnv: piki
  pikk+A:pikk An_SgN;
  pikk+A:pika TP_22bn';
@@ -556,48 +599,58 @@ LEXICON Kohalikud_erandid
  pikk+N:piki$ An_Pl_Vok;
  pikk+N:pikki An_PlP_V;
 
+LEXICON te_pundar
 ! ??? pundar+N:pundar 08; ! an: pundar, (at): puntar, bt: puntra
  pundar+N:pundar$ TP_08an;
  pundar+N:puntra TP_07bt;
 
+LEXICON te_põrsas
 ! ??? põrsas+N:põrsas 07_S-0; ! an: põrsas, (at): põrssas, bt: põrssa, btr: #
  põrsas+N:põrsas$ TP_07an;
  põrsas+N:põrssa TP_07bt;
 
+LEXICON te_pöial
 ! ??? pöial+N:pöial 08; ! an: pöial, (at): pöidal, bt: pöidla
  pöial+N:pöial$ TP_08an;
  pöial+N:pöidla TP_07bt;
 
+LEXICON te_raag1
 ! ??? raag+N:raag 22; ! at: raag, bt: raaga, bn: raa, btv: raagu, bnv: 0
  raag+Hom1+N:raag An_SgN;
  raag+Hom1+N:raa$ TP_22bn;
  raag+Hom1+N:raaga TP_22bt;
 
+LEXICON te_raag2
 ! ??? raag+N:raag 22; ! at: raag, bt: raagu, bn: rao, btv: raage, bnv: 0
  raag+Hom2+N:raag An_SgN;
  raag+Hom2+N:rao$ TP_22bn;
  raag+Hom2+N:raagu TP_22bt;
 
+LEXICON te_roe
 ! ??? roe+N:roe 24_A; ! an: roe, bn: rooja, bt: rooja, bnv: rooje, btv: rooje
  roe+N:roe An_SgN;
  roe+N:rooja$ TP_24bn;
  roe+N:rooja TP_24bt;
 
+LEXICON te_roog
 ! ??? roog+N:roog 22; ! at: roog, bt: rooga, bn: roa, btv: roogi, bnv: 0
  roog+Hom2+N:roog An_SgN;
  roog+Hom2+N:roa$ TP_22bn;
  roog+Hom2+N:rooga TP_22bt;
 
+LEXICON te_saad
 ! ??? saad+N:saad 22; ! at: saad, bt: saadu, bn: sao, btv: saade, bnv: 0
  saad+N:saad An_SgN;
  saad+N:sao$ TP_22bn;
  saad+N:saadu TP_22bt;
 
+LEXICON te_sae
 ! ??? sae+N:sae 24_A; ! an: sae, bn: saaja, bt: saaja, bnv: saaju, btv: saaju
  sae+N:sae An_SgN;
  sae+N:saaja$ TP_24bn;
  sae+N:saaja TP_24bt;
 
+LEXICON te_silm
 ! erandlik tyvemitmus: silm+N:silm 22; ! at: silm, bt: silma, bn: silma, btv: silmi, bnv: silmi
  silm+Hom1+N:silm An_SgN;
  silm+Hom1+N:silma$ TP_22bn';
@@ -605,6 +658,7 @@ LEXICON Kohalikud_erandid
  silm+Hom1+N:silmi$ An_Pl_Vok;
  silm+Hom1+N:silmi An_PlP_V;
 
+LEXICON te_soe
 ! ??? soe+A+N:soe 24_A; ! an: soe, bn: sooja, bt: sooja, bnv: sooje, btv: sooje
  soe+A:soe An_SgN;
  soe+A:sooja$ TP_24bn;
@@ -614,17 +668,20 @@ LEXICON Kohalikud_erandid
  soe+N:sooja$ TP_24bn;
  soe+N:sooja TP_24bt;
 
+LEXICON te_tund
 ! tun 34_D_TUD; ! at: tund, (bt): tunde, bn: tunne, cn: tun
  tunD1 TP_34at;
  tund:tunD1e$ TP_34bn;
  tund:tun$ TP_34cn;
 
+LEXICON te_tõbi
 ! tõbi+N:tõB=i 21; ! at: tõbi, bt: tõbe, bn: tõve, btg: tõppe
  tõbi+N:tõbi TP_21at;
  tõbi+N:tõve$ TP_21bn;
  tõbi+N:tõbe$ TP_21bt;
  tõbi+N:tõppe An_SgAdt_0;
 
+LEXICON te_vähkrema
 ! vähkre 30; ! at: vähkre, (bt): vähker, bn: väher
  vähK1re TP_30at;
 ! vähK:er$ TP_30bn;
@@ -634,7 +691,7 @@ LEXICON Kohalikud_erandid
  vähK1re:vähK1er$ An_dud;
  vähK1re:vähK1er$ An_dakse;
 
-
+LEXICON te_õlu
 ! ??? õlu+N:õlu 24_E; ! an: õlu, bn: õlle, bt: õlle, bnv: 0, btv: 0
  õlu+N:õlu An_SgN;
  õlu+N:õlle$ TP_24bn;

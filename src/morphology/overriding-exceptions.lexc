@@ -159,7 +159,7 @@ LEXICON Asendavad_erandid
  maitsma+V+Pers+Prt+Ind+Sg2+Aff:maitsesid GI; ! 32_V,m'aits,m'aitse[sid],-02021--,-,-,*
  maitsma+V+Pers+Prt+Ind+Pl3+Aff:maitsesid GI; ! 32_V,m'aits,m'aitse[sid],-02061--,-,-,*
  maitsma+V+Pers+Prt+Ind+Sg3+Aff:maitses GI; ! 32_V,m'aits,m'aitse[s],-02031--,-,-,*
- mees+N+Pl+Par:mehi GI; ! 13_S,m'ees,mehi[],------1P,-,-,*
+! mees+N+Pl+Par:mehi GI; ! 13_S,m'ees,mehi[],------1P,-,-,*
  meri+N+Sg+Par:merd GI; ! 20_S,meri,m'er[d],------0P,-,-,*
  muuma+V+Impers+Prt+Cond+Aff:muuduks GI; ! 27_V,m'uu,m'uu[duks],-112-0--,-,-,*
  muuma+V+Impers+Prs+Cond+Aff:muudaks GI; ! 27_V,m'uu,m'uu[daks],-102-0--,-,-,*

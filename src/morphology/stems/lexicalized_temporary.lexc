@@ -433,78 +433,14 @@ pesumasin+N:pesumasin 02_A; ! (02_S -> +S) a0: masin, b0: masina, b0r: 0, c0: 0
 
 ! mees:
 !  mees+N:mees An_PlG_te;
-!   lumemees:
-lumemees+N:lumemees An_PlG_te;
-!   naljamees:
-naljamees+N:naljamees An_PlG_te;
-!   turvamees:
-turvamees+N:turvamees An_PlG_te;
-!   ärimees:
-ärimees+N:ärimees An_PlG_te;
-!  mees+N:mees An_SgN;
-!   lumemees:
-lumemees+N:lumemees An_SgN;
-!   naljamees:
-naljamees+N:naljamees An_SgN;
-!   turvamees:
-turvamees+N:turvamees An_SgN;
-!   ärimees:
-ärimees+N:ärimees An_SgN;
-!  mees+N:mees An_SgP_t;
-!   lumemees:
-lumemees+N:lumemees An_SgP_t;
-!   naljamees:
-naljamees+N:naljamees An_SgP_t;
-!   turvamees:
-turvamees+N:turvamees An_SgP_t;
-!   ärimees:
-ärimees+N:ärimees An_SgP_t;
-!  mees+N:mehe$ An_SgG;
-!   lumemees:
-lumemees+N:lumemehe$ An_SgG;
-!   naljamees:
-naljamees+N:naljamehe$ An_SgG;
-!   turvamees:
-turvamees+N:turvamehe$ An_SgG;
-!   ärimees:
-ärimees+N:ärimehe$ An_SgG;
-!  mees+N:mehe$ An_SgG_der; ! ?? need tuletised on ka erandlikud?
-!   lumemees:
-lumemees+N:lumemehe$ An_SgG_der; ! ?? need tuletised on ka erandlikud?
-!   naljamees:
-naljamees+N:naljamehe$ An_SgG_der; ! ?? need tuletised on ka erandlikud?
-!   turvamees:
-turvamees+N:turvamehe$ An_SgG_der; ! ?? need tuletised on ka erandlikud?
-!   ärimees:
-ärimees+N:ärimehe$ An_SgG_der; ! ?? need tuletised on ka erandlikud?
-!  mees+N:mehi An_PlP_V;
-!   lumemees:
-lumemees+N:lumemehi An_PlP_V;
-!   naljamees:
-naljamees+N:naljamehi An_PlP_V;
-!   turvamees:
-turvamees+N:turvamehi An_PlP_V;
-!   ärimees:
-ärimees+N:ärimehi An_PlP_V;
-!  mees+N+Pl+Par:mehi GI; ! 13_S,m'ees,mehi[],------1P,-,-,*
-!   lumemees:
-lumemees+N+Pl+Par:lumemehi GI; ! 13_S,m'ees,mehi[],------1P,-,-,*
-!   naljamees:
-naljamees+N+Pl+Par:naljamehi GI; ! 13_S,m'ees,mehi[],------1P,-,-,*
-!   turvamees:
-turvamees+N+Pl+Par:turvamehi GI; ! 13_S,m'ees,mehi[],------1P,-,-,*
-!   ärimees:
-ärimees+N+Pl+Par:ärimehi GI; ! 13_S,m'ees,mehi[],------1P,-,-,*
-! ??? short illative
-!  mees+N+Sg+Ill:%{%} GI_0; ! 13_S,m'ees,#,------0D,-,-,*
-!   lumemees:
-!lumemees+N+Sg+Ill:lume%{%} GI_0; ! 13_S,m'ees,#,------0D,-,-,*
-!   naljamees:
-!naljamees+N+Sg+Ill:nalja%{%} GI_0; ! 13_S,m'ees,#,------0D,-,-,*
-!   turvamees:
-!turvamees+N+Sg+Ill:turva%{%} GI_0; ! 13_S,m'ees,#,------0D,-,-,*
-!   ärimees:
-!ärimees+N+Sg+Ill:äri%{%} GI_0; ! 13_S,m'ees,#,------0D,-,-,*
+! lumemees
+lume:lume te_mees;
+! naljamees
+nalja te_mees;
+! turvamees
+turva te_mees;
+! ärimees
+äri te_mees;
 
 ! mehaanik:
 !  mehaanik+N:mehaanik 02_U; ! (02_S -> +S) a0: mehaanik, b0: mehaaniku, b0r: 0, c0: 0
