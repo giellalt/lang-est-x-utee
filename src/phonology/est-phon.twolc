@@ -3,11 +3,11 @@
 ! All rights reserved. 
 Alphabet
 
-a b c d e f g h i j k l m n o p q r s š z ž t u v õ ä ö ü x y 
-A B C D E F G H I J K L M N O P Q R S Š Z Ž T U V Õ Ä Ö Ü X Y 
+a b c d e f g h i j k l m n o p q r s š z ž t u v w õ ä ö ü x y 
+A B C D E F G H I J K L M N O P Q R S Š Z Ž T U V W Õ Ä Ö Ü X Y 
 
 G1:g G1:0 B1:b B1:0 B1:m D1:d D1:0 D1:l D1:n D1:r K1:k K1:g K1:0 P1:p P1:b P1:0 T1:t
-T1:d T1:0 S1:s S1:0 S1:r %+:0 %$:0 A1:a A1:0 E1:e E1:0 I1:i I1:0 U1:u U1:0 
+T1:d T1:0 S1:s S1:0 S1:r %+:0 %$:0 A1:a A1:0 E1:e E1:0 I1:i I1:0 U1:u U1:0 W1:i W1:e W1:u W1:0
 ! %.:a %.:e %.:o %.:u %.:ö %.:ä %.:i 
 %.:0 %=:0 %=:h %=:m %=:n %=:s %=:k %=:p %=:t %=:f %=:š X2:0 %!:0 Q1:k %-:%-
 
@@ -41,7 +41,7 @@ Sets
 
 
 Definitions
-  Algus = [.#. (Kons+) | # (Kons+)] ;  ! silbi/sõna algus
+  Algus = [.#. (Kons+) | # (Kons+) ] ;  ! silbi/sõna algus
   Piir = [.#. | %+: | %#] ;    ! morfeemidevaheline piir
   SonaPiir = [ .#. | # ];
   MitteSpr = [ [ ? - %!:0 ] | .#. ];
@@ -111,7 +111,11 @@ G1:0 <=> Vok _ (%=:) (Vok|h) %$: ;
 
 "AV 12-13 - s sise- ja lõpukadu"
 
-S1:0 <=> Algus Vok [Kons+] (AV:AVT) TyveVok:  _ Piir; !küngas-künka
+! k o P1:b r a S1 $
+
+! .#. ? ü ü ü v ü ü s _ ü $: .#.
+
+S1:0 <=> Algus Vok [Kons+] AV:AVT TyveVok:  _ Piir; !küngas-künka
         Algus Vok AV:AVT TavaKons Vok  _  Piir;  !kobras-kopra
         Algus Vok (Vok) _ (Vok) %$:;		!käsi-käe, õis-õie
         Algus Vok (Vok) (Liq | n) s _ Vok %$:; 	!kauss-kausi, kurss-kursi?
@@ -233,27 +237,34 @@ NorkKlus:Klus <=> _ %=: (TyveVok:) X2:;
 
 ! Järgmised kolm on mitmuse vokaali valikureeglid:
 
- "mitmuse vokaal i"
-W:i <=> e: (%$:) %+: _ MitteSpr;	! e-tüvelised
-	Algus [e | o (o)| u| ä ([e]) | ö| ü] [[(Kons) [:Kons - [:j|:b|:n]]] | [ h :t ] ] (%=:) a: (%$:) %+: _ MitteSpr; 
-	!"eks ämm söö kodus sütt"
-
  "mitmuse vokaal e"
-W:e <=> [i: | u:] (%$:) %+: _ ;		! i- ja u-tüvelised
+W1:e <=> [i: | u:] (%$:) %+: _ ;		! i- ja u-tüvelised
         Algus [u | o] [B1:|n] (%=:) a: (%$:) %+: _ MitteSpr;	!a-tüvelised,lühikeses  
 						!esisilbis u või o
         Algus [u | o | ü] Kons j: a: (%$:) %+: _ MitteSpr;	!a-tüvelised, esisilbis uCj, 
 						!oCj, üCj (kuri)
 
  "mitmuse vokaal u"
-W:u <=> [[i: [D1:|G1:]]|[[Kons | Algus] 
+W1:u <=> [[i: [D1:|G1:]]|[[Kons | Algus] 
 		[a | a a | i | i i | õ | õ õ | a e | a i 
-		   | e i | ä i | õ i | a u | i u | õ u ] [:Kons | VaheVok:0]+]] (%=:) a: (%$:) %+: _ MitteSpr; !"kass kõrtsis ei käi"
+		   | e i | ä i | õ i | a u | i u | õ u ] [:Kons | VaheVok:0]*]] (%=:) a: (%$:) %+: _ MitteSpr; !"kass kõrtsis ei käi"
 	 [a | ä | e] Kons j: a: (%$:) %+: _ MitteSpr ; !a-tüvelised, esisilbis äCj, eCj (väli, neli) (asjus?)
 
 
+ "mitmuse vokaal i"
+W1:i <=> e: (%$:) %+: _ MitteSpr;	! e-tüvelised
+	Algus [[[e | o ([o | e])| u | ä ([e]) | ö| ü] [ :Kons* [ :Kons - :j ]  ] | [ h :t ] ] - 
+		[ [a | ä | e] Kons j: | ! a -> u
+		  [u | o | ü] Kons j: | ! a -> e
+		  [u | o] [B1:|n]       ! a -> e
+		]] 
+		(%=:) a: (%$:) %+: _ MitteSpr; 
+	k o n D1: a: %+: _ MitteSpr; ! -kond
+	!"eks ämm söö kodus sütt"
+
+
  "ainsuse vokaal kirjutada korstnasse"
-TyveVok:0 <=> [Kons|AV:] (%=:) _ (%$:) %+: [ W: ~%!: |u s];
+TyveVok:0 <=> (%=:) _ (%$:) %+: [ W1: ~%!: |u s];
 	where TyveVok in (a e i u);  !pesa+i ->pesi, kana+u->kanu
 
 
@@ -341,6 +352,6 @@ o:õ <=> [ j | l | t ] _ %.: %+: i [ SonaPiir | d | n | m e | t e];
 
 "vokaalikadu +im eest"
 
- V:0 <=> _ %!: %+: i m; where V in (a e i u W);
+ V:0 <=> _ %!: %+: i m; where V in (a e i u W1);
 
 

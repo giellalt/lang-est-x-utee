@@ -275,17 +275,17 @@ TP_18at;
 
 LEXICON 18_PlPV
 18;
-:+W An_PlP_V;
+:+W1 An_PlP_V;
 
 ! ???
 !LEXICON 18_PlV
 !18;
-!:$+W An_Pl_Vok;
+!:$+W1 An_Pl_Vok;
 
 LEXICON 18_PlPV_PlV
 18;
-:+W An_PlP_V;
-:$+W An_Pl_Vok;
+:+W1 An_PlP_V;
+:$+W1 An_Pl_Vok;
 
 LEXICON 19	!seminar
 TP_19a0;
@@ -495,8 +495,8 @@ An_SgIll_NG;
 An_SgP_0;
 An_PlG_de;
 An_PlP_sid;
-:+W An_PlP_V;	!Mitmuse tüvevokaali määratakse reeglitega.
-:+W An_Pl_Vok;
+:+W1 An_PlP_V;	!Mitmuse tüvevokaali määratakse reeglitega.
+:+W1 An_Pl_Vok;
 
 LEXICON TP_18at	!sõda, tigu
 An_SgN;
@@ -520,8 +520,8 @@ An_SgIll_NG;
 An_SgP_0;
 An_SgAdt_0;
 An_PlG_de;
-:+W An_PlP_V;	!seminare
-:+W An_Pl_Vok;
+:+W1 An_PlP_V;	!seminare
+:+W1 An_Pl_Vok;
 
 LEXICON TP_20a0	!nimi
 An_SgN;
@@ -555,7 +555,7 @@ An_SgIll_NG;
 
 LEXICON TP_22bn
 TP_22bn';
-:+W An_Pl_Vok;  !sõnal tikk vokaalmitmuse vormid naljakad, aga mõnel sõnal ehk pole?
+:+W1 An_Pl_Vok;  !sõnal tikk vokaalmitmuse vormid naljakad, aga mõnel sõnal ehk pole?
 
 
 LEXICON TP_22bt'  ! jal´ga, tikku, seppa
@@ -566,7 +566,7 @@ An_PlP_sid;
 
 LEXICON TP_22bt
 TP_22bt';
-:+W An_PlP_V;
+:+W1 An_PlP_V;
 
 LEXICON TP_23a	!hein
 An_SgN;
@@ -575,39 +575,39 @@ An_SgN;
 LEXICON TP_23bn	!heina
 An_SgG;
 !An_SgG_der;
-:+W An_PlP_V;
+:+W1 An_PlP_V;
 
 LEXICON TP_23bt	!hei´na
 An_SgP_0;
 An_SgAdt_0;
-:+W An_PlP_V;
+:+W1 An_PlP_V;
 
 
 LEXICON TP_24bn	!padja
 An_SgG;
 An_SgIll_NG;
 !An_SgG_der;
-:+W An_Pl_Vok;	!padjus
+:+W1 An_Pl_Vok;	!padjus
 
 LEXICON TP_24bt	!patja
 An_SgP_0;
 An_SgAdt_0;
 An_PlG_de;
 An_PlP_sid;
-:+W An_PlP_V;	!patju
+:+W1 An_PlP_V;	!patju
 
 LEXICON TP_25bn	!õnneliku
 An_SgG;
 An_SgIll_NG;
 !An_SgG_der;
-:+W An_PlG_V;	!õnnelike, õnnelikes jne.
+:+W1 An_PlG_V;	!õnnelike, õnnelikes jne.
 
 LEXICON TP_25bt	!õnnelikku
 An_SgP_0;
 An_SgAdt_0;
 +Use/NG: An_PlG_de;
 +Use/NG: An_PlP_sid;
-:+W An_PlP_V;	!õnnelikke
+:+W1 An_PlP_V;	!õnnelikke
 
 LEXICON TP_26a0	!idee, galerii
 An_SgN;
