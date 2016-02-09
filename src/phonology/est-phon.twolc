@@ -239,7 +239,7 @@ NorkKlus:Klus <=> _ %=: (TyveVok:) X2:;
 
  "mitmuse vokaal e"
 W1:e <=> [i: | u:] (%$:) %+: _ ;		! i- ja u-tüvelised
-        Algus [u | o] [B1:|n] (%=:) a: (%$:) %+: _ MitteSpr;	!a-tüvelised,lühikeses  
+        Algus [u | o] [G1: | B1: | n] (%=:) a: (%$:) %+: _ MitteSpr;	!a-tüvelised,lühikeses  
 						!esisilbis u või o
         Algus [u | o | ü] Kons j: a: (%$:) %+: _ MitteSpr;	!a-tüvelised, esisilbis uCj, 
 						!oCj, üCj (kuri)
@@ -256,7 +256,7 @@ W1:i <=> e: (%$:) %+: _ MitteSpr;	! e-tüvelised
 	Algus [[[e | o ([o | e])| u | ä ([e]) | ö| ü] [ :Kons* [ :Kons - :j ]  ] | [ h :t ] ] - 
 		[ [a | ä | e] Kons j: | ! a -> u
 		  [u | o | ü] Kons j: | ! a -> e
-		  [u | o] [B1:|n]       ! a -> e
+		  [u | o] [G1:|B1:|n]   ! a -> e
 		]] 
 		(%=:) a: (%$:) %+: _ MitteSpr; 
 	k o n D1: a: %+: _ MitteSpr; ! -kond
