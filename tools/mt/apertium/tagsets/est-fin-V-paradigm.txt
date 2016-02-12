@@ -45,12 +45,12 @@ Pers+Prs+Ind+Pl3+Aff annavad@Act+Ind+Prs+Pl3 antavat
 #isikuline olevik kindel kv eitus
 # active present indicative negative
 
-(ma)  ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Sg1=en    Ind+Prs+ConNeg anna
-(sa)  ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Sg2=et    Ind+Prs+ConNeg anna
-(ta)  ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Sg3=ei    Ind+Prs+ConNeg anna
-(me)  ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Pl1=emme  Ind+Prs+ConNeg anna
-(te)  ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Pl2=ette  Ind+Prs+ConNeg anna
-(nad) ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Pl2=eivät Ind+Prs+ConNeg anna
+(ma)  ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Sg1=en    Act+Ind+Prs+ConNeg anna
+(sa)  ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Sg2=et    Act+Ind+Prs+ConNeg anna
+(ta)  ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Sg3=ei    Act+Ind+Prs+ConNeg anna
+(me)  ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Pl1=emme  Act+Ind+Prs+ConNeg anna
+(te)  ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Pl2=ette  Act+Ind+Prs+ConNeg anna
+(nad) ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Pl2=eivät Act+Ind+Prs+ConNeg anna
 
 #isikuline lihtminevik kindel kv jaatus
 # active preteritum indicative affirmative
@@ -85,19 +85,19 @@ Pers+Prs+Ind+Pl3+Aff annavad@Act+Ind+Prs+Pl3 antavat
 #isikuline täisminevik kindel kv eitus (NB! ole ja pole saavad morfis täpselt sama eitava analüüsi !)
 # active perfect indicative negative (Estonian ole and pole have exactly the same categories in +Neg)
 
-(ma)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg1=en    olla+V+Ind+Prs+ConNeg=ole Act+Ind+Prt+ConNeg antanut
-(sa)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg2=et    olla+V+Ind+Prs+ConNeg=ole Act+Ind+Prt+ConNeg antanut
-(ta)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg3=ei    olla+V+Ind+Prs+ConNeg=ole Act+Ind+Prt+ConNeg antanut
-(me)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl1=emme  olla+V+Ind+Prs+ConNeg=ole Act+PrfPrc+Pl+Nom  antaneet
-(te)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl2=ette  olla+V+Ind+Prs+ConNeg=ole Act+PrfPrc+Pl+Nom  antaneet
-(nad) ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl3=eivät olla+V+Ind+Prs+ConNeg=ole Act+PrfPrc+Pl+Nom  antaneet
+(ma)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg1=en    olla+V+Act+Ind+Prs+ConNeg=ole Act+Ind+Prt+ConNeg antanut
+(sa)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg2=et    olla+V+Act+Ind+Prs+ConNeg=ole Act+Ind+Prt+ConNeg antanut
+(ta)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg3=ei    olla+V+Act+Ind+Prs+ConNeg=ole Act+Ind+Prt+ConNeg antanut
+(me)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl1=emme  olla+V+Act+Ind+Prs+ConNeg=ole Act+PrfPrc+Pl+Nom  antaneet
+(te)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl2=ette  olla+V+Act+Ind+Prs+ConNeg=ole Act+PrfPrc+Pl+Nom  antaneet
+(nad) ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl3=eivät olla+V+Act+Ind+Prs+ConNeg=ole Act+PrfPrc+Pl+Nom  antaneet
 
-(ma)  olema+V+Pers+Prs+Ind+Neg=pole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg1=en    olla+V+Ind+Prs+ConNeg=ole Act+Ind+Prt+ConNeg antanut
-(sa)  olema+V+Pers+Prs+Ind+Neg=pole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg2=et    olla+V+Ind+Prs+ConNeg=ole Act+Ind+Prt+ConNeg antanut
-(ta)  olema+V+Pers+Prs+Ind+Neg=pole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg3=ei    olla+V+Ind+Prs+ConNeg=ole Act+Ind+Prt+ConNeg antanut
-(me)  olema+V+Pers+Prs+Ind+Neg=pole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl1=emme  olla+V+Ind+Prs+ConNeg=ole Act+PrfPrc+Pl+Nom  antaneet
-(te)  olema+V+Pers+Prs+Ind+Neg=pole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl2=ette  olla+V+Ind+Prs+ConNeg=ole Act+PrfPrc+Pl+Nom  antaneet
-(nad) olema+V+Pers+Prs+Ind+Neg=pole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl3=eivät olla+V+Ind+Prs+ConNeg=ole Act+PrfPrc+Pl+Nom  antaneet
+(ma)  olema+V+Pers+Prs+Ind+Neg=pole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg1=en    olla+V+Act+Ind+Prs+ConNeg=ole Act+Ind+Prt+ConNeg antanut
+(sa)  olema+V+Pers+Prs+Ind+Neg=pole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg2=et    olla+V+Act+Ind+Prs+ConNeg=ole Act+Ind+Prt+ConNeg antanut
+(ta)  olema+V+Pers+Prs+Ind+Neg=pole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg3=ei    olla+V+Act+Ind+Prs+ConNeg=ole Act+Ind+Prt+ConNeg antanut
+(me)  olema+V+Pers+Prs+Ind+Neg=pole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl1=emme  olla+V+Act+Ind+Prs+ConNeg=ole Act+PrfPrc+Pl+Nom  antaneet
+(te)  olema+V+Pers+Prs+Ind+Neg=pole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl2=ette  olla+V+Act+Ind+Prs+ConNeg=ole Act+PrfPrc+Pl+Nom  antaneet
+(nad) olema+V+Pers+Prs+Ind+Neg=pole Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl3=eivät olla+V+Act+Ind+Prs+ConNeg=ole Act+PrfPrc+Pl+Nom  antaneet
 
 #isikuline enneminevik kindel kv jaatus
 # active past perfect indicative affirmative
@@ -186,32 +186,32 @@ Pers+Prs+Ind+Pl3+Aff annavad@Act+Ind+Prs+Pl3 antavat
 #isikuline (üld-, täis- ?) minevik tingiv kv eitus
 # active perfect conditional negative
 
-(ma)  ei+V+Neg=ei Pers+Prt+Cond andnuks@ei+V+Neg+Act+Sg1=en    olla+V+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
-(sa)  ei+V+Neg=ei Pers+Prt+Cond andnuks@ei+V+Neg+Act+Sg2=et    olla+V+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
-(ta)  ei+V+Neg=ei Pers+Prt+Cond andnuks@ei+V+Neg+Act+Sg3=ei    olla+V+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
-(me)  ei+V+Neg=ei Pers+Prt+Cond andnuks@ei+V+Neg+Act+Pl1=emme  olla+V+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
-(te)  ei+V+Neg=ei Pers+Prt+Cond andnuks@ei+V+Neg+Act+Pl2=ette  olla+V+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
-(nad) ei+V+Neg=ei Pers+Prt+Cond andnuks@ei+V+Neg+Act+Pl3=eivät olla+V+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
+(ma)  ei+V+Neg=ei Pers+Prt+Cond andnuks@ei+V+Neg+Act+Sg1=en    olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
+(sa)  ei+V+Neg=ei Pers+Prt+Cond andnuks@ei+V+Neg+Act+Sg2=et    olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
+(ta)  ei+V+Neg=ei Pers+Prt+Cond andnuks@ei+V+Neg+Act+Sg3=ei    olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
+(me)  ei+V+Neg=ei Pers+Prt+Cond andnuks@ei+V+Neg+Act+Pl1=emme  olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
+(te)  ei+V+Neg=ei Pers+Prt+Cond andnuks@ei+V+Neg+Act+Pl2=ette  olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
+(nad) ei+V+Neg=ei Pers+Prt+Cond andnuks@ei+V+Neg+Act+Pl3=eivät olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
 
-(ma)  ei+V+Neg=ei olema+V+Pers+Prs+Cond=oleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Sg1=en    olla+V+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
-(sa)  ei+V+Neg=ei olema+V+Pers+Prs+Cond=oleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Sg2=et    olla+V+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
-(ta)  ei+V+Neg=ei olema+V+Pers+Prs+Cond=oleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Sg3=ei    olla+V+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
-(me)  ei+V+Neg=ei olema+V+Pers+Prs+Cond=oleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Pl1=emme  olla+V+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
-(te)  ei+V+Neg=ei olema+V+Pers+Prs+Cond=oleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Pl2=ette  olla+V+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
-(nad) ei+V+Neg=ei olema+V+Pers+Prs+Cond=oleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Pl3=eivät olla+V+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
+(ma)  ei+V+Neg=ei olema+V+Pers+Prs+Cond=oleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Sg1=en    olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
+(sa)  ei+V+Neg=ei olema+V+Pers+Prs+Cond=oleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Sg2=et    olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
+(ta)  ei+V+Neg=ei olema+V+Pers+Prs+Cond=oleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Sg3=ei    olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
+(me)  ei+V+Neg=ei olema+V+Pers+Prs+Cond=oleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Pl1=emme  olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
+(te)  ei+V+Neg=ei olema+V+Pers+Prs+Cond=oleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Pl2=ette  olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
+(nad) ei+V+Neg=ei olema+V+Pers+Prs+Cond=oleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Pl3=eivät olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
 
-      olema+V+Pers+Prs+Cond+Sg1+Neg=poleksin  Pers+Prt+Prc andnud@ei+V+Neg+Act+Sg1=en    olla+V+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
-(sa)  olema+V+Pers+Prs+Cond+Sg2+Neg=poleksid  Pers+Prt+Prc andnud@ei+V+Neg+Act+Sg2=et    olla+V+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
-      olema+V+Pers+Prs+Cond+Pl1+Neg=poleksime Pers+Prt+Prc andnud@ei+V+Neg+Act+Pl1=emme  olla+V+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
-      olema+V+Pers+Prs+Cond+Pl2+Neg=poleksite Pers+Prt+Prc andnud@ei+V+Neg+Act+Pl2=ette  olla+V+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
-(nad) olema+V+Pers+Prs+Cond+Pl3+Neg=poleksid  Pers+Prt+Prc andnud@ei+V+Neg+Act+Pl3=eivät olla+V+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
+      olema+V+Pers+Prs+Cond+Sg1+Neg=poleksin  Pers+Prt+Prc andnud@ei+V+Neg+Act+Sg1=en    olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
+(sa)  olema+V+Pers+Prs+Cond+Sg2+Neg=poleksid  Pers+Prt+Prc andnud@ei+V+Neg+Act+Sg2=et    olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
+      olema+V+Pers+Prs+Cond+Pl1+Neg=poleksime Pers+Prt+Prc andnud@ei+V+Neg+Act+Pl1=emme  olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
+      olema+V+Pers+Prs+Cond+Pl2+Neg=poleksite Pers+Prt+Prc andnud@ei+V+Neg+Act+Pl2=ette  olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
+(nad) olema+V+Pers+Prs+Cond+Pl3+Neg=poleksid  Pers+Prt+Prc andnud@ei+V+Neg+Act+Pl3=eivät olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
 
-(ma)  olema+V+Pers+Prs+Cond+Neg=poleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Sg1=en    olla+V+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
-(sa)  olema+V+Pers+Prs+Cond+Neg=poleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Sg2=et    olla+V+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
-(ta)  olema+V+Pers+Prs+Cond+Neg=poleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Sg3=ei    olla+V+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
-(me)  olema+V+Pers+Prs+Cond+Neg=poleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Pl1=emme  olla+V+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
-(te)  olema+V+Pers+Prs+Cond+Neg=poleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Pl2=ette  olla+V+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
-(nad) olema+V+Pers+Prs+Cond+Neg=poleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Pl3=eivät olla+V+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
+(ma)  olema+V+Pers+Prs+Cond+Neg=poleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Sg1=en    olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
+(sa)  olema+V+Pers+Prs+Cond+Neg=poleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Sg2=et    olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
+(ta)  olema+V+Pers+Prs+Cond+Neg=poleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Sg3=ei    olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Sg+Nom antanut
+(me)  olema+V+Pers+Prs+Cond+Neg=poleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Pl1=emme  olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
+(te)  olema+V+Pers+Prs+Cond+Neg=poleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Pl2=ette  olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
+(nad) olema+V+Pers+Prs+Cond+Neg=poleks Pers+Prt+Prc andnud@ei+V+Neg+Act+Pl3=eivät olla+V+Act+Cond+ConNeg=olisi Act+PrfPrc+Pl+Nom antaneet
 
 #-------------------------------
 
@@ -239,11 +239,11 @@ Pers+Prs+Imprt+Pl2 andke@antaa+V+Act+Imprt+Pl2 antakaa
 ära+V+Pers+Prs+Imprt+Pl2+Neg=ärge  Pers+Prs+Imprt+Pl2 andke@ei+V+Neg+Act+Imprt+Pl2=älkää Act+Imprt+Pl2 antakaa
 
 (ma)  ära+V+Pers+Prs+Imprt+Neg=ärgu Pers+Prs+Imprt andku@
-(sa)  ära+V+Pers+Prs+Imprt+Neg=ärgu Pers+Prs+Imprt andku@ei+V+Neg+Act+Imprt+Sg2=älä      Imprt+Prs+ConNeg anna
-(ta)  ära+V+Pers+Prs+Imprt+Neg=ärgu Pers+Prs+Imprt andku@ei+V+Neg+Act+Imprt+Sg3=älköön   Imprt+ConNeg antako
-(me)  ära+V+Pers+Prs+Imprt+Neg=ärgu Pers+Prs+Imprt andku@ei+V+Neg+Act+Imprt+Pl1=älkäämme Imprt+ConNeg antako
-(te)  ära+V+Pers+Prs+Imprt+Neg=ärgu Pers+Prs+Imprt andku@ei+V+Neg+Act+Imprt+Pl2=älkää    Imprt+ConNeg antako
-(nad) ära+V+Pers+Prs+Imprt+Neg=ärgu Pers+Prs+Imprt andku@ei+V+Neg+Act+Imprt+Pl3=älkööt   Imprt+ConNeg antako
+(sa)  ära+V+Pers+Prs+Imprt+Neg=ärgu Pers+Prs+Imprt andku@ei+V+Neg+Act+Imprt+Sg2=älä      Act+Imprt+Prs+ConNeg anna
+(ta)  ära+V+Pers+Prs+Imprt+Neg=ärgu Pers+Prs+Imprt andku@ei+V+Neg+Act+Imprt+Sg3=älköön   Act+Imprt+ConNeg antako
+(me)  ära+V+Pers+Prs+Imprt+Neg=ärgu Pers+Prs+Imprt andku@ei+V+Neg+Act+Imprt+Pl1=älkäämme Act+Imprt+ConNeg antako
+(te)  ära+V+Pers+Prs+Imprt+Neg=ärgu Pers+Prs+Imprt andku@ei+V+Neg+Act+Imprt+Pl2=älkää    Act+Imprt+ConNeg antako
+(nad) ära+V+Pers+Prs+Imprt+Neg=ärgu Pers+Prs+Imprt andku@ei+V+Neg+Act+Imprt+Pl3=älkööt   Act+Imprt+ConNeg antako
 
 #isikuline (üld-, täis- ?) minevik käskiv kv jaatus
 # active perfect imperative affirmative
@@ -262,12 +262,12 @@ Pers+Prt+Imprt andnud@
 
 ära+V+Pers+Prt+Imprt+Neg=ärnud Pers+Prt+Imprt andnud@
 
-(ma)  ära+V+Pers+Prs+Imprt+Neg=ärgu olema+V+Pers+Prs+Imprt=olgu Pers+Prt+Prc andnud@ei+V+Neg+Act+Imprt+Sg3=älköön olla+V+Imprt+ConNeg=olko Act+PrfPrc+Sg+Nom antanut
-(sa)  ära+V+Pers+Prs+Imprt+Neg=ärgu olema+V+Pers+Prs+Imprt=olgu Pers+Prt+Prc andnud@ei+V+Neg+Act+Imprt+Sg3=älköön olla+V+Imprt+ConNeg=olko Act+PrfPrc+Sg+Nom antanut
-(ta)  ära+V+Pers+Prs+Imprt+Neg=ärgu olema+V+Pers+Prs+Imprt=olgu Pers+Prt+Prc andnud@ei+V+Neg+Act+Imprt+Sg3=älköön olla+V+Imprt+ConNeg=olko Act+PrfPrc+Sg+Nom antanut
-(me)  ära+V+Pers+Prs+Imprt+Neg=ärgu olema+V+Pers+Prs+Imprt=olgu Pers+Prt+Prc andnud@ei+V+Neg+Act+Imprt+Pl3=älkööt olla+V+Imprt+ConNeg=olko Act+PrfPrc+Pl+Nom antaneet
-(te)  ära+V+Pers+Prs+Imprt+Neg=ärgu olema+V+Pers+Prs+Imprt=olgu Pers+Prt+Prc andnud@ei+V+Neg+Act+Imprt+Pl3=älkööt olla+V+Imprt+ConNeg=olko Act+PrfPrc+Pl+Nom antaneet
-(nad) ära+V+Pers+Prs+Imprt+Neg=ärgu olema+V+Pers+Prs+Imprt=olgu Pers+Prt+Prc andnud@ei+V+Neg+Act+Imprt+Pl3=älkööt olla+V+Imprt+ConNeg=olko Act+PrfPrc+Pl+Nom antaneet
+(ma)  ära+V+Pers+Prs+Imprt+Neg=ärgu olema+V+Pers+Prs+Imprt=olgu Pers+Prt+Prc andnud@ei+V+Neg+Act+Imprt+Sg3=älköön olla+V+Act+Imprt+ConNeg=olko Act+PrfPrc+Sg+Nom antanut
+(sa)  ära+V+Pers+Prs+Imprt+Neg=ärgu olema+V+Pers+Prs+Imprt=olgu Pers+Prt+Prc andnud@ei+V+Neg+Act+Imprt+Sg3=älköön olla+V+Act+Imprt+ConNeg=olko Act+PrfPrc+Sg+Nom antanut
+(ta)  ära+V+Pers+Prs+Imprt+Neg=ärgu olema+V+Pers+Prs+Imprt=olgu Pers+Prt+Prc andnud@ei+V+Neg+Act+Imprt+Sg3=älköön olla+V+Act+Imprt+ConNeg=olko Act+PrfPrc+Sg+Nom antanut
+(me)  ära+V+Pers+Prs+Imprt+Neg=ärgu olema+V+Pers+Prs+Imprt=olgu Pers+Prt+Prc andnud@ei+V+Neg+Act+Imprt+Pl3=älkööt olla+V+Act+Imprt+ConNeg=olko Act+PrfPrc+Pl+Nom antaneet
+(te)  ära+V+Pers+Prs+Imprt+Neg=ärgu olema+V+Pers+Prs+Imprt=olgu Pers+Prt+Prc andnud@ei+V+Neg+Act+Imprt+Pl3=älkööt olla+V+Act+Imprt+ConNeg=olko Act+PrfPrc+Pl+Nom antaneet
+(nad) ära+V+Pers+Prs+Imprt+Neg=ärgu olema+V+Pers+Prs+Imprt=olgu Pers+Prt+Prc andnud@ei+V+Neg+Act+Imprt+Pl3=älkööt olla+V+Act+Imprt+ConNeg=olko Act+PrfPrc+Pl+Nom antaneet
 
 #------------------------------------
 
@@ -284,12 +284,12 @@ Pers+Prt+Imprt andnud@
 #isikuline olevik kaudne kv eitus (soome k. kv puudub)
 # active present quotative negative (mood missing in Finnish)
 
-(ma)  ei+V+Neg=ei Pers+Prs+Quot andvat@ei+V+Neg+Act+Sg1=en    (kuulemma) Ind+Prs+ConNeg anna
-(sa)  ei+V+Neg=ei Pers+Prs+Quot andvat@ei+V+Neg+Act+Sg2=et    (kuulemma) Ind+Prs+ConNeg anna
-(ta)  ei+V+Neg=ei Pers+Prs+Quot andvat@ei+V+Neg+Act+Sg3=ei    (kuulemma) Ind+Prs+ConNeg anna
-(me)  ei+V+Neg=ei Pers+Prs+Quot andvat@ei+V+Neg+Act+Pl1=emme  (kuulemma) Ind+Prs+ConNeg anna
-(te)  ei+V+Neg=ei Pers+Prs+Quot andvat@ei+V+Neg+Act+Pl2=ette  (kuulemma) Ind+Prs+ConNeg anna
-(nad) ei+V+Neg=ei Pers+Prs+Quot andvat@ei+V+Neg+Act+Pl2=eivät (kuulemma) Ind+Prs+ConNeg anna
+(ma)  ei+V+Neg=ei Pers+Prs+Quot andvat@ei+V+Neg+Act+Sg1=en    (kuulemma) Act+Ind+Prs+ConNeg anna
+(sa)  ei+V+Neg=ei Pers+Prs+Quot andvat@ei+V+Neg+Act+Sg2=et    (kuulemma) Act+Ind+Prs+ConNeg anna
+(ta)  ei+V+Neg=ei Pers+Prs+Quot andvat@ei+V+Neg+Act+Sg3=ei    (kuulemma) Act+Ind+Prs+ConNeg anna
+(me)  ei+V+Neg=ei Pers+Prs+Quot andvat@ei+V+Neg+Act+Pl1=emme  (kuulemma) Act+Ind+Prs+ConNeg anna
+(te)  ei+V+Neg=ei Pers+Prs+Quot andvat@ei+V+Neg+Act+Pl2=ette  (kuulemma) Act+Ind+Prs+ConNeg anna
+(nad) ei+V+Neg=ei Pers+Prs+Quot andvat@ei+V+Neg+Act+Pl2=eivät (kuulemma) Act+Ind+Prs+ConNeg anna
 
 #isikuline (üld-, täis- ?) minevik kaudne kv jaatus (soome k. kv puudub)
 # active perfect quotative affirmative (mood missing in Finnish)
@@ -347,12 +347,12 @@ Pers+Prt+Imprt andnud@
 #isikuline olevik potentsiaal kv eitus (eesti k kv puudub)
 # active present potential negative (mood missing in Estonian)
 
-(ma)  (vist) ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Sg1=en    Ind+Pot+ConNeg antane
-(sa)  (vist) ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Sg2=et    Ind+Pot+ConNeg antane
-(ta)  (vist) ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Sg3=ei    Ind+Pot+ConNeg antane
-(me)  (vist) ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Pl1=emme  Ind+Pot+ConNeg antane
-(te)  (vist) ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Pl2=ette  Ind+Pot+ConNeg antane
-(nad) (vist) ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Pl2=eivät Ind+Pot+ConNeg antane
+(ma)  (vist) ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Sg1=en    Act+Pot+ConNeg antane
+(sa)  (vist) ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Sg2=et    Act+Pot+ConNeg antane
+(ta)  (vist) ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Sg3=ei    Act+Pot+ConNeg antane
+(me)  (vist) ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Pl1=emme  Act+Pot+ConNeg antane
+(te)  (vist) ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Pl2=ette  Act+Pot+ConNeg antane
+(nad) (vist) ei+V+Neg=ei Pers+Prs+Ind+Neg anna@ei+V+Neg+Act+Pl2=eivät Act+Pot+ConNeg antane
 
 #isikuline (üld-, täis- ?) minevik potentsiaal kv jaatus (eesti k kv puudub)
 # active perfect potential affirmative (mood missing in Estonian)
@@ -367,19 +367,19 @@ Pers+Prt+Imprt andnud@
 #isikuline (üld-, täis- ?) minevik potentsiaal kv eitus (eesti k puudub) (NB! ole ja pole saavad morfis täpselt sama eitava analüüsi !)
 # active perfect potential negative (mood missing in Estonian) (Estonian ole and pole have exactly the same categories in +Neg)
 
-(ma)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg1=en    olla+V+Pot+ConNeg=liene Act+Ind+Prt+ConNeg antanut
-(sa)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg2=et    olla+V+Pot+ConNeg=liene Act+Ind+Prt+ConNeg antanut
-(ta)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg3=ei    olla+V+Pot+ConNeg=liene Act+Ind+Prt+ConNeg antanut
-(me)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl1=emme  olla+V+Pot+ConNeg=liene Act+PrfPrc+Pl+Nom  antaneet
-(te)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl2=ette  olla+V+Pot+ConNeg=liene Act+PrfPrc+Pl+Nom  antaneet
-(nad) ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl3=eivät olla+V+Pot+ConNeg=liene Act+PrfPrc+Pl+Nom  antaneet
+(ma)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg1=en    olla+V+Act+Pot+ConNeg=liene Act+Ind+Prt+ConNeg antanut
+(sa)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg2=et    olla+V+Act+Pot+ConNeg=liene Act+Ind+Prt+ConNeg antanut
+(ta)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg3=ei    olla+V+Act+Pot+ConNeg=liene Act+Ind+Prt+ConNeg antanut
+(me)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl1=emme  olla+V+Act+Pot+ConNeg=liene Act+PrfPrc+Pl+Nom  antaneet
+(te)  ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl2=ette  olla+V+Act+Pot+ConNeg=liene Act+PrfPrc+Pl+Nom  antaneet
+(nad) ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl3=eivät olla+V+Act+Pot+ConNeg=liene Act+PrfPrc+Pl+Nom  antaneet
 
-(ma)  olema+V+Pers+Prs+Ind+Neg=pole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg1=en    olla+V+Pot+ConNeg=liene Act+Ind+Prt+ConNeg antanut
-(sa)  olema+V+Pers+Prs+Ind+Neg=pole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg2=et    olla+V+Pot+ConNeg=liene Act+Ind+Prt+ConNeg antanut
-(ta)  olema+V+Pers+Prs+Ind+Neg=pole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg3=ei    olla+V+Pot+ConNeg=liene Act+Ind+Prt+ConNeg antanut
-(me)  olema+V+Pers+Prs+Ind+Neg=pole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl1=emme  olla+V+Pot+ConNeg=liene Act+PrfPrc+Pl+Nom  antaneet
-(te)  olema+V+Pers+Prs+Ind+Neg=pole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl2=ette  olla+V+Pot+ConNeg=liene Act+PrfPrc+Pl+Nom  antaneet
-(nad) olema+V+Pers+Prs+Ind+Neg=pole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl3=eivät olla+V+Pot+ConNeg=liene Act+PrfPrc+Pl+Nom  antaneet
+(ma)  olema+V+Pers+Prs+Ind+Neg=pole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg1=en    olla+V+Act+Pot+ConNeg=liene Act+Ind+Prt+ConNeg antanut
+(sa)  olema+V+Pers+Prs+Ind+Neg=pole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg2=et    olla+V+Act+Pot+ConNeg=liene Act+Ind+Prt+ConNeg antanut
+(ta)  olema+V+Pers+Prs+Ind+Neg=pole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Sg3=ei    olla+V+Act+Pot+ConNeg=liene Act+Ind+Prt+ConNeg antanut
+(me)  olema+V+Pers+Prs+Ind+Neg=pole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl1=emme  olla+V+Act+Pot+ConNeg=liene Act+PrfPrc+Pl+Nom  antaneet
+(te)  olema+V+Pers+Prs+Ind+Neg=pole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl2=ette  olla+V+Act+Pot+ConNeg=liene Act+PrfPrc+Pl+Nom  antaneet
+(nad) olema+V+Pers+Prs+Ind+Neg=pole (vist) Pers+Prt+Ind+Neg andnud@ei+V+Neg+Act+Pl3=eivät olla+V+Act+Pot+ConNeg=liene Act+PrfPrc+Pl+Nom  antaneet
 
 #--------------------------------
 
@@ -532,8 +532,8 @@ olema+V+Pers+Prs+Ind+Sg3+Aff=on Impers+Prt+Prc antud@olla+V+Act+Ind+Prs+Sg3=on P
 #umbisikuline täisminevik kindel kõneviis eitus (NB! annettu PrfPrc+Sg+Nom)
 # passive perfect indicative negative
 
-ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole Impers+Prt+Prc antud@ei+V+Neg+Act+Sg3=ei olla+V+Ind+Prs+ConNeg=ole Pss+PrfPrc+Sg+Nom annettu
-olema+V+Pers+Prs+Ind+Neg=pole Impers+Prt+Prc antud@ei+V+Neg+Act+Sg3=ei olla+V+Ind+Prs+ConNeg=ole Pss+PrfPrc+Sg+Nom annettu
+ei+V+Neg=ei olema+V+Pers+Prs+Ind+Neg=ole Impers+Prt+Prc antud@ei+V+Neg+Act+Sg3=ei olla+V+Act+Ind+Prs+ConNeg=ole Pss+PrfPrc+Sg+Nom annettu
+olema+V+Pers+Prs+Ind+Neg=pole Impers+Prt+Prc antud@ei+V+Neg+Act+Sg3=ei olla+V+Act+Ind+Prs+ConNeg=ole Pss+PrfPrc+Sg+Nom annettu
 
 #umbisikuline enneminevik kindel kõneviis jaatus (NB! annettu PrfPrc+Sg+Nom)
 # passive past perfect indicative affirmative
@@ -565,8 +565,8 @@ olema+V+Pers+Prs+Cond=oleks Impers+Prt+Prc antud@olla+V+Act+Cond+Sg3=olisi Pss+P
 # umbisikuline (üld-, täis- ?) minevik tingiv kõneviis eitus
 # passive perfect conditional negative
 
-ei+V+Neg=ei olema+V+Pers+Prs+Cond=oleks Impers+Prt+Prc antud@ei+V+Neg+Act+Sg3=ei olla+V+Cond+ConNeg=olisi Pss+PrfPrc+Sg+Nom annettu
-olema+V+Pers+Prs+Cond+Neg=poleks Impers+Prt+Prc antud@ei+V+Neg+Act+Sg3=ei olla+V+Cond+ConNeg=olisi Pss+PrfPrc+Sg+Nom annettu
+ei+V+Neg=ei olema+V+Pers+Prs+Cond=oleks Impers+Prt+Prc antud@ei+V+Neg+Act+Sg3=ei olla+V+Act+Cond+ConNeg=olisi Pss+PrfPrc+Sg+Nom annettu
+olema+V+Pers+Prs+Cond+Neg=poleks Impers+Prt+Prc antud@ei+V+Neg+Act+Sg3=ei olla+V+Act+Cond+ConNeg=olisi Pss+PrfPrc+Sg+Nom annettu
 
 #----------------
 # umbisikuline olevik käskiv kõneviis jaatus
@@ -587,7 +587,7 @@ olema+V+Pers+Prs+Imprt=olgu Impers+Prt+Prc antud@olla+V+Act+Imprt+Sg3=olkoon Pss
 # umbisikuline (üld-, täis- ?) minevik käskiv kõneviis eitus
 # passive perfect imperative negative
 
-ära+V+Pers+Prs+Imprt+Neg=ärgu olema+V+Pers+Prs+Imprt=olgu Impers+Prt+Prc antud@ei+V+Neg+Act+Imprt+Sg3=älköön olla+V+Imprt+ConNeg=olko Pss+PrfPrc+Sg+Nom annettu
+ära+V+Pers+Prs+Imprt+Neg=ärgu olema+V+Pers+Prs+Imprt=olgu Impers+Prt+Prc antud@ei+V+Neg+Act+Imprt+Sg3=älköön olla+V+Act+Imprt+ConNeg=olko Pss+PrfPrc+Sg+Nom annettu
 
 #---------------------
 # umbisikuline olevik kaudne kõneviis jaatus (soome k. kv puudub)
@@ -608,8 +608,8 @@ olema+V+Pers+Prs+Quot=olevat Impers+Prt+Prc antud@(kuulemma) olla+V+Act+Ind+Prs+
 # umbisikuline (üld-, täis- ?) minevik kaudne kõneviis eitus (soome k. kv puudub)
 # passive perfect quotative negative (mood missing in Finnish)
 
-ei+V+Neg=ei olema+V+Pers+Prs+Quot=olevat Impers+Prt+Prc antud@(kuulemma) ei+V+Neg+Act+Sg3=ei olla+V+Ind+Prs+ConNeg=ole Pss+PrfPrc+Sg+Nom annettu
-olema+V+Pers+Prs+Quot+Neg=polevat Impers+Prt+Prc antud@(kuulemma) ei+V+Neg+Act+Sg3=ei olla+V+Ind+Prs+ConNeg=ole Pss+PrfPrc+Sg+Nom annettu
+ei+V+Neg=ei olema+V+Pers+Prs+Quot=olevat Impers+Prt+Prc antud@(kuulemma) ei+V+Neg+Act+Sg3=ei olla+V+Act+Ind+Prs+ConNeg=ole Pss+PrfPrc+Sg+Nom annettu
+olema+V+Pers+Prs+Quot+Neg=polevat Impers+Prt+Prc antud@(kuulemma) ei+V+Neg+Act+Sg3=ei olla+V+Act+Ind+Prs+ConNeg=ole Pss+PrfPrc+Sg+Nom annettu
 
 #-------------
 # umbisikuline olevik potentsiaal jaatus (eesti k kv puudub)
