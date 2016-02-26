@@ -71,7 +71,7 @@ Definitions
     Sidesõna = Sona [ "+CC" | "+CS" ];
     Kaassõna = Sona "+Adp";
     Muusõna = Sona "+Adv" Gi;
-    Genatribuut = Sona TüveEristajad "+N" "+Prop" "+Sem/Plc" "+Sg" "+Gen" "+Attr" Gi;
+    Genatribuut = Sona TüveEristajad "+N" ( "+Prop" "+Sem/Plc" ) "+Sg" "+Gen" "+Attr" Gi;
     Tegusõna = Tähtsõne VerbiParadigma Gi; 
     Muutumatusõna = Määrsõna | Hüüdsõna | Sidesõna | Kaassõna | Muusõna | Genatribuut;
 
