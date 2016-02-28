@@ -281,6 +281,7 @@ LEXICON Nouns
  ait+N:aiT1 22_A; ! (22_S -> +S) at: ait, bt: aita, bn: aida, btv: aitu, bnv: aidu
  aiva+N:aiva 16; ! (16_S -> +S) a0: aiva, a0g: #
  ajaja+N:ajaja 01; ! (01_S -> +S) a0: ajaja, a0r: 0
+ ajalugu+N:ajaluG1=u 18; ! (18_S -> +S) at: lugu, an: loo, atv: #, atg: lukku, anv: #
  ajam+N:ajam 02_I; ! (02_S -> +S) a0: ajam, b0: ajami, b0r: ajame, c0: 0
  ajastik+N:ajastikK1 25; ! (25_S -> +S) at: ajastik, bt: ajastikku, bn: ajastiku, btv: ajastikke, bnv: ajastike
  ajastu+N:ajastu 01; ! (01_S -> +S) a0: ajastu, a0r: 0
@@ -7306,6 +7307,7 @@ LEXICON Nouns
  kohver+N:kohvE1r 02_I; ! (02_S -> +S) a0: kohver, b0: kohvri, b0r: kohvre, c0: 0
  kohvik+N:kohvik 02_U; ! (02_S -> +S) a0: kohvik, b0: kohviku, b0r: 0, c0: 0
  kohv+N:kohv 22_I; ! (22_S -> +S) at: kohv, bt: kohvi, bn: kohvi, btv: kohve, bnv: kohve
+ kohv+N+Sg+Nom:kohvi GI;
  koib+N:koiB1 22_A; ! (22_S -> +S) at: koib, bt: koiba, bn: koiva, btv: koibi, bnv: koivi
  koidik+N:koidik 02_U; ! (02_S -> +S) a0: koidik, b0: koidiku, b0r: 0, c0: 0
  koiku+N:koiku 16; ! (16_S -> +S) a0: koiku, a0g: #
@@ -9009,6 +9011,7 @@ LEXICON Nouns
  kükk+N:kükK1 22_I; ! (22_S -> +S) at: kükk, bt: kükki, bn: küki, btv: kükke, bnv: küke
  kükloop+N:küklooP1 22_I; ! (22_S -> +S) at: kükloop, bt: kükloopi, bn: kükloobi, btv: kükloope, bnv: kükloobe
  külakond+N:külakonD1 22_A; ! (22_S -> +S) at: külakond, bt: külakonda, bn: külakonna, btv: külakondi, bnv: külakonni
+ külakost+N:külakost 22_I; ! (22_S -> +S) at: kost, bt: kosti, bn: kosti, btv: koste, bnv: koste
  külaline+N:külali 12_NE-SE-S; ! (12_S -> +S) a0: külaline, b0: külalise, c0: külalis, b0v: külalisi
  külalus+N:külalus 11; ! (11_S -> +S) a0: külalus, b0: külaluse, b0v: külalusi
  küla+N:kül=a 17_Adt; ! (17_S -> +S) a0: küla, a0g: külla, a0v: #
@@ -13835,6 +13838,7 @@ LEXICON Nouns
  pea+N+Pl+Ill:päisse GI; ! 26_S,p'ea,p'ä[isse],------11,-,-,+
  pea+N+Pl+Ine:päis GI; ! 26_S,p'ea,p'ä[is],------12,-,-,+
  pea+N+Pl+Tra:päiks GI; ! 26_S,p'ea,p'ä[iks],------1T,-,-,+
+ peahoone+N:peahoone 06; ! (06_S -> +S) an: hoone, at: hoone
  peats+N:peats 02_I; ! (02_S -> +S) a0: peats, b0: peatsi, b0r: peatse, c0: 0
  peatus+N:peatus 09_E; ! (09_S -> +S) a0: peatus, b0: peatuse
  peatus+N:peatus 11; ! (11_S -> +S) a0: peatus, b0: peatuse, b0v: peatusi
@@ -15705,6 +15709,7 @@ LEXICON Nouns
  raakel+N:raakE1l 02_I; ! (02_S -> +S) a0: raakel, b0: raakli, b0r: raakle, c0: 0
  raal+N:raal 22_I; ! (22_S -> +S) at: raal, bt: raali, bn: raali, btv: raale, bnv: raale
  raamat+N:raamat 02_U; ! (02_S -> +S) a0: raamat, b0: raamatu, b0r: 0, c0: 0
+ raamatukogu+N:raamatukog=u 17_Adt; ! (17_S -> +S) a0: kogu, a0g: kokku, a0v: #
  raamistik+N:raamistikK1 25; ! (25_S -> +S) at: raamistik, bt: raamistikku, bn: raamistiku, btv: raamistikke, bnv: raamistike
  raamistus+N:raamistus 11; ! (11_S -> +S) a0: raamistus, b0: raamistuse, b0v: raamistusi
  raam+N:raam 22_I; ! (22_S -> +S) at: raam, bt: raami, bn: raami, btv: raame, bnv: raame

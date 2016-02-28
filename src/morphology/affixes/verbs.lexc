@@ -468,6 +468,7 @@ LEXICON An_b
  ma+V+Pers+Prs+Ind+Sg2+Aff:+d GI;
  ma+V+Pers+Prs+Ind+Sg3+Aff:+b GI;
  ma+V+Pers+Prs+Ind+Neg:+0 GI;
+ ma+V+Pers+Prs+Imprt+Sg2+Neg:+0 GI;
  ma+V+Pers+Prs+Imprt+Sg2:+0 GI;
 
  ma+V+Pers+Prs+Cond+Sg1+Aff:+ksin GI ;
