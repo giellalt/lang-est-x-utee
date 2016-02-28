@@ -10701,6 +10701,7 @@ LEXICON Nouns
  maa+N+Pl+Com:maadega GI; ! 26_S,m'aa,maa[dega],------1K,-,-,+
  maa+N+Pl+Trm:maadeni GI; ! 26_S,m'aa,maa[deni],------1R,-,-,+
  maa+N+Pl+Tra:maadeks GI; ! 26_S,m'aa,maa[deks],------1T,-,-,+
+ maailm+N:maailm 22_A; ! (22_S -> +S) at: ilm, bt: ilma, bn: ilma, btv: ilmu, bnv: ilmu
  maastik+N:maastikK1 25; ! (25_S -> +S) at: maastik, bt: maastikku, bn: maastiku, btv: maastikke, bnv: maastike
  maastur+N:maastur 02_I; ! (02_S -> +S) a0: maastur, b0: maasturi, b0r: maasture, c0: 0
  maater+N:maatE1r 02_I; ! (02_S -> +S) a0: maater, b0: maatri, b0r: maatre, c0: 0

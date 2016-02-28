@@ -781,6 +781,10 @@ vihmatrall+N:vihma#trall 22_I; ! (22_S -> +S) at: trall, bt: tralli, bn: tralli,
 ! tuba:
 !  tuba+N:tuB1=a 18_PlPV; ! (18_S -> +S) at: tuba, an: toa, atv: tube, atg: tuppa, anv: #
 !   vannituba:
+elutuba+N:elu#tuB1=a 18_PlPV; ! (18_S -> +S) at: tuba, an: toa, atv: tube, atg: tuppa, anv: #
+magamistuba+N:magamis#tuB1=a 18_PlPV; ! (18_S -> +S) at: tuba, an: toa, atv: tube, atg: tuppa, anv: #
+söögituba+N:söögi#tuB1=a 18_PlPV; ! (18_S -> +S) at: tuba, an: toa, atv: tube, atg: tuppa, anv: #
+töötuba+N:töö#tuB1=a 18_PlPV; ! (18_S -> +S) at: tuba, an: toa, atv: tube, atg: tuppa, anv: #
 vannituba+N:vanni#tuB1=a 18_PlPV; ! (18_S -> +S) at: tuba, an: toa, atv: tube, atg: tuppa, anv: #
 
 ! tugi:

@@ -3515,6 +3515,7 @@ LEXICON Verbs
  minema+V+Pers+Prs+Cond+Pl2+Aff:läheksite GI;
  minema+V+Pers+Prs+Cond+Pl3+Aff:läheksid GI;
  minema+V+Pers+Prs+Imprt+Sg2:mine GI;
+ minema+V+Pers+Prs+Imprt+Sg2+Neg:mine GI;
  minema+V+Pers+Prs+Imprt:mingu GI;
  minema+V+Pers+Prs+Imprt+Pl1:mingem GI;
  minema+V+Pers+Prs+Imprt+Pl2:minge GI;
@@ -4197,6 +4198,7 @@ LEXICON Verbs
  olema+V+Pers+Prs+Cond+Pl3+Aff:oleksid GI;
  olema+V+Pers+Prs+Cond+Pl3+Neg:poleksid GI;
  olema+V+Pers+Prs+Imprt+Sg2:ole GI;
+ olema+V+Pers+Prs+Imprt+Sg2+Neg:ole GI;
  olema+V+Pers+Prs+Imprt:olgu GI;
  olema+V+Pers+Prs+Imprt+Pl1:olgem GI;
  olema+V+Pers+Prs+Imprt+Pl2:olge GI;
