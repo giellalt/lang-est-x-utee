@@ -1227,7 +1227,7 @@ LEXICON Verbs
  julgema+V+Impers+Prs+Cond:juletaks GI; ! 27_V,j'ulge,jule[taks],-102-0--,-,-,+
  julgema+V+Impers+Prs+Imprt:juletagu GI; ! 27_V,j'ulge,jule[tagu],-103-0--,-,-,+
  julgema+V+Impers+Prs+Ind+Aff:juletakse GI; ! 27_V,j'ulge,jule[takse],-100-1--,-,-,+
- julgema+V+Impers+Prs+Ind+Neg:juleta GI; ! 27_V,j'ulge,jule[ta],-100-0--,-,-,+
+ julgema+V+Impers+Prs+Ind+ConNeg:juleta GI; ! 27_V,j'ulge,jule[ta],-100-0--,-,-,+
  julgema+V+Impers+Prs+Prc:juletav GI; ! 27_V,j'ulge,jule[tav],410---0N,-,-,+
  julgema+V+Impers+Prs+Quot:juletavat GI; ! 27_V,j'ulge,jule[tavat],-101-0--,-,-,+
  julgema+V+Impers+Sup:juletama GI; ! 27_V,j'ulge,jule[tama],31------,-,-,+
@@ -3507,15 +3507,16 @@ LEXICON Verbs
  minema+V+Pers+Prs+Ind+Pl2+Aff:lähte GI;
  minema+V+Pers+Prs+Ind+Pl3+Aff:lähevad GI;
  minema+V+Pers+Prs+Ind+Pl3+Aff:lähvad GI;
- minema+V+Pers+Prs+Ind+Neg:lähe GI;
+ minema+V+Pers+Prs+Ind+ConNeg:lähe GI;
  minema+V+Pers+Prs+Cond+Sg1+Aff:läheksin GI;
  minema+V+Pers+Prs+Cond+Sg2+Aff:läheksid GI;
  minema+V+Pers+Prs+Cond:läheks GI;
+ minema+V+Pers+Prs+Cond+ConNeg:läheks GI;
  minema+V+Pers+Prs+Cond+Pl1+Aff:läheksime GI;
  minema+V+Pers+Prs+Cond+Pl2+Aff:läheksite GI;
  minema+V+Pers+Prs+Cond+Pl3+Aff:läheksid GI;
  minema+V+Pers+Prs+Imprt+Sg2:mine GI;
- minema+V+Pers+Prs+Imprt+Sg2+Neg:mine GI;
+ minema+V+Pers+Prs+Imprt+Sg2+ConNeg:mine GI;
  minema+V+Pers+Prs+Imprt:mingu GI;
  minema+V+Pers+Prs+Imprt+Pl1:mingem GI;
  minema+V+Pers+Prs+Imprt+Pl2:minge GI;
@@ -3526,7 +3527,7 @@ LEXICON Verbs
  minema+V+Pers+Prt+Ind+Pl1+Aff:läksime GI;
  minema+V+Pers+Prt+Ind+Pl2+Aff:läksite GI;
  minema+V+Pers+Prt+Ind+Pl3+Aff:läksid GI;
- minema+V+Pers+Prt+Ind+Neg:läinud GI;
+ minema+V+Pers+Prt+Ind+ConNeg:läinud GI;
  minema+V+Pers+Prt+Cond+Sg1+Aff:läinuksin GI;
  minema+V+Pers+Prt+Cond+Sg2+Aff:läinuksid GI;
  minema+V+Pers+Prt+Cond:läinuks GI;
@@ -3543,12 +3544,12 @@ LEXICON Verbs
  minema+V+Pers+Sup+Tra:minemaks GI;
  minema+V+Pers+Sup+Abe:minemata GI;
  minema+V+Impers+Prs+Ind+Aff:minnakse GI;
- minema+V+Impers+Prs+Ind+Neg:minda GI;
+ minema+V+Impers+Prs+Ind+ConNeg:minda GI;
  minema+V+Impers+Prs+Cond:mindaks GI;
  minema+V+Impers+Prs+Imprt:mindagu GI;
  minema+V+Impers+Prs+Quot:mindavat GI;
  minema+V+Impers+Prt+Ind+Aff:mindi GI;
- minema+V+Impers+Prt+Ind+Neg:mindud GI;
+ minema+V+Impers+Prt+Ind+ConNeg:mindud GI;
  minema+V+Impers+Prt+Cond:minduks GI;
  minema+V+Impers+Prs+Prc:mindav GI;
  minema+V+Impers+Prt+Prc:mindud GI;
@@ -4182,7 +4183,7 @@ LEXICON Verbs
  olema+V+Pers+Prs+Ind+Pl1+Aff:oleme GI;
  olema+V+Pers+Prs+Ind+Pl2+Aff:olete GI;
  olema+V+Pers+Prs+Ind+Pl3+Aff:on GI;
- olema+V+Pers+Prs+Ind+Neg:ole GI;
+ olema+V+Pers+Prs+Ind+ConNeg:ole GI;
  ! ei+V+Neg#olema+V+Pers+Prs+Ind+Neg:pole GI; ! Fran's solution for ei ole / pole
  olema+V+Pers+Prs+Ind+Neg:pole GI; 
  olema+V+Pers+Prs+Cond+Sg1+Aff:oleksin GI;
@@ -4198,7 +4199,7 @@ LEXICON Verbs
  olema+V+Pers+Prs+Cond+Pl3+Aff:oleksid GI;
  olema+V+Pers+Prs+Cond+Pl3+Neg:poleksid GI;
  olema+V+Pers+Prs+Imprt+Sg2:ole GI;
- olema+V+Pers+Prs+Imprt+Sg2+Neg:ole GI;
+ olema+V+Pers+Prs+Imprt+Sg2+ConNeg:ole GI;
  olema+V+Pers+Prs+Imprt:olgu GI;
  olema+V+Pers+Prs+Imprt+Pl1:olgem GI;
  olema+V+Pers+Prs+Imprt+Pl2:olge GI;
@@ -4210,7 +4211,7 @@ LEXICON Verbs
  olema+V+Pers+Prt+Ind+Pl1+Aff:olime GI;
  olema+V+Pers+Prt+Ind+Pl2+Aff:olite GI;
  olema+V+Pers+Prt+Ind+Pl3+Aff:olid GI;
- olema+V+Pers+Prt+Ind+Neg:olnud GI;
+ olema+V+Pers+Prt+Ind+ConNeg:olnud GI;
  olema+V+Pers+Prt+Ind+Neg:polnud GI;
  olema+V+Pers+Prt+Cond+Sg1+Aff:olnuksin GI;
  olema+V+Pers+Prt+Cond+Sg1+Neg:polnuksin GI;
@@ -4235,7 +4236,7 @@ LEXICON Verbs
  olema+V+Pers+Sup+Tra:olemaks GI;
  olema+V+Pers+Sup+Abe:olemata GI;
  olema+V+Impers+Prs+Ind+Aff:ollakse GI;
- olema+V+Impers+Prs+Ind+Neg:olda GI;
+ olema+V+Impers+Prs+Ind+ConNeg:olda GI;
  olema+V+Impers+Prs+Ind+Neg:polda GI;
  olema+V+Impers+Prs+Cond:oldaks GI;
  olema+V+Impers+Prs+Cond+Neg:poldaks GI;
@@ -4243,7 +4244,7 @@ LEXICON Verbs
  olema+V+Impers+Prs+Quot:oldavat GI;
  olema+V+Impers+Prs+Quot+Neg:poldavat GI;
  olema+V+Impers+Prt+Ind+Aff:oldi GI;
- olema+V+Impers+Prt+Ind+Neg:oldud GI;
+ olema+V+Impers+Prt+Ind+ConNeg:oldud GI;
  olema+V+Impers+Prt+Ind+Neg:poldud GI;
  olema+V+Impers+Prt+Cond:olduks GI;
  olema+V+Impers+Prt+Cond+Neg:polduks GI;
@@ -6957,7 +6958,7 @@ LEXICON Verbs
  uskuma+V+Impers+Prs+Cond:ustaks GI; ! 28_V,'usku,'us[taks],-102-0--,-,-,+
  uskuma+V+Impers+Prs+Imprt:ustagu GI; ! 28_V,'usku,'us[tagu],-103-0--,-,-,+
  uskuma+V+Impers+Prs+Ind+Aff:ustakse GI; ! 28_V,'usku,'us[takse],-100-1--,-,-,+
- uskuma+V+Impers+Prs+Ind+Neg:usta GI; ! 28_V,'usku,'us[ta],-100-0--,-,-,+
+ uskuma+V+Impers+Prs+Ind+ConNeg:usta GI; ! 28_V,'usku,'us[ta],-100-0--,-,-,+
  uskuma+V+Impers+Prs+Prc:ustav GI; ! 28_V,'usku,'us[tav],410---0N,-,-,+
  uskuma+V+Impers+Prs+Quot:ustavat GI; ! 28_V,'usku,'us[tavat],-101-0--,-,-,+
  uskuma+V+Impers+Sup:ustama GI; ! 28_V,'usku,'us[tama],31------,-,-,+

@@ -440,9 +440,10 @@ LEXICON An_ke
 
 LEXICON An_nud
   ma+V+Pers+Prt+Prc:+nud GI ;
-  ma+V+Pers+Prt+Ind+Neg:+nud GI ; 
+  ma+V+Pers+Prt+Ind+ConNeg:+nud GI ; 
   ma+V+Pers+Prt+Imprt:+nud GI ; 
   ma+V+Pers+Prt+Cond:+nuks GI ;
+  ma+V+Pers+Prt+Cond+ConNeg:+nuks GI ;
   ma+V+Pers+Prt+Cond+Sg1+Aff:+nuksin GI ;
   ma+V+Pers+Prt+Cond+Sg2+Aff:+nuksid GI ;
   ma+V+Pers+Prt+Cond+Pl1+Aff:+nuksime GI ;
@@ -467,13 +468,14 @@ LEXICON An_b
  ma+V+Pers+Prs+Ind+Sg1+Aff:+n GI;
  ma+V+Pers+Prs+Ind+Sg2+Aff:+d GI;
  ma+V+Pers+Prs+Ind+Sg3+Aff:+b GI;
- ma+V+Pers+Prs+Ind+Neg:+0 GI;
- ma+V+Pers+Prs+Imprt+Sg2+Neg:+0 GI;
+ ma+V+Pers+Prs+Ind+ConNeg:+0 GI;
+ ma+V+Pers+Prs+Imprt+Sg2+ConNeg:+0 GI;
  ma+V+Pers+Prs+Imprt+Sg2:+0 GI;
 
  ma+V+Pers+Prs+Cond+Sg1+Aff:+ksin GI ;
  ma+V+Pers+Prs+Cond+Sg2+Aff:+ksid GI ;
  ma+V+Pers+Prs+Cond:+ks GI ;
+ ma+V+Pers+Prs+Cond+ConNeg:+ks GI ;
  ma+V+Pers+Prs+Cond+Pl1+Aff:+ksime GI ;
  ma+V+Pers+Prs+Cond+Pl2+Aff:+ksite GI ;
  ma+V+Pers+Prs+Cond+Pl3+Aff:+ksid GI ;
@@ -491,15 +493,17 @@ LEXICON An_me
 
 LEXICON An_tud
  ma+V+Impers+Prt+Prc:+tud GI ;
- ma+V+Impers+Prt+Ind+Neg:+tud GI ;
+ ma+V+Impers+Prt+Ind+ConNeg:+tud GI ;
  ma+V+Impers+Prt+Ind+Aff:+ti GI ;
  ma+V+Impers+Prs+Cond:+taks GI ;
+ ma+V+Impers+Prs+Cond+ConNeg:+taks GI ;
  ma+V+Impers+Prt+Cond:+tuks GI ;
+ ma+V+Impers+Prt+Cond+ConNeg:+tuks GI ;
  ma+V+Impers+Prs+Quot:+tavat GI ;
  ! ma+V+Impers+Prt+Quot:+tuvat GI ;
  ma+V+Impers+Prs+Imprt:+tagu GI ;
  ma+V+Impers+Sup:+tama GI ;
- ma+V+Impers+Prs+Ind+Neg:+ta GI ;
+ ma+V+Impers+Prs+Ind+ConNeg:+ta GI ;
  ma+V+Impers+Prs+Prc:+tav GI ;
 
  $tud+A:+tud GI ; ! ???
@@ -515,15 +519,17 @@ LEXICON An_tud
 
 LEXICON An_dud
  ma+V+Impers+Prt+Prc:+dud GI ;
- ma+V+Impers+Prt+Ind+Neg:+dud GI ;
+ ma+V+Impers+Prt+Ind+ConNeg:+dud GI ;
  ma+V+Impers+Prt+Ind+Aff:+di GI ;
  ma+V+Impers+Prs+Cond:+daks GI ;
+ ma+V+Impers+Prs+Cond+ConNeg:+daks GI ;
  ma+V+Impers+Prt+Cond:+duks GI ;
+ ma+V+Impers+Prt+Cond+ConNeg:+duks GI ;
  ma+V+Impers+Prs+Quot:+davat GI ;
  ma+V+Impers+Prt+Quot:+duvat GI ;
  ma+V+Impers+Prs+Imprt:+dagu GI ;
  ma+V+Impers+Sup:+dama GI ;
- ma+V+Impers+Prs+Ind+Neg:+da GI ;
+ ma+V+Impers+Prs+Ind+ConNeg:+da GI ;
  ma+V+Impers+Prs+Prc:+dav GI ;
 
  $dud+A:+dud GI ;

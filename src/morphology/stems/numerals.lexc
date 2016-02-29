@@ -37,6 +37,7 @@ LEXICON Numerals
  null+Num+Card:null 22_I; ! (22_NS -> +S +Num) at: null, bt: nulli, bn: nulli, btv: nulle, bnv: nulle
  paar+Num+Card:paar 22_I; ! (22_NS -> +S +Num) at: paar, bt: paari, bn: paari, btv: paare, bnv: paare
  pool+Num+Card:pool 13; ! (13_NS -> +S +Num) at: pool, (bt): poole, an: pool, bn: poole, bnv: pooli
+ poolteist+Num+Card+Sg+Gen:pool#teist GI; ! 05_N,t'eist,t'eist[],------0G,-,-,+
  sadakond+Num+Card:sadakonD1 22_A; ! (22_NS -> +S +Num) at: sadakond, bt: sadakonda, bn: sadakonna, btv: sadakondi, bnv: sadakonni
  sada+Num+Card:saD1a 18_PlPV; ! (18_N -> +Num) at: sada, an: saja, atv: sadu, atg: #, anv: #
  sada+Num+Card+Sg+Par:sadat GI; ! 18_N,sada,sada[t],------0P,-,-,+

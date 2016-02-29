@@ -113,6 +113,7 @@ Multichar_Symbols
 ! kõneliik		! negation
 +Aff 	! jaatav kõne	! affirmative
 +Neg	! eitav kõne	! negative
++ConNeg	! eitav kõne	! connegative composite forms
 
 ! infiniitsed (nn käänduvad) verbivormid
 ! infinite ("declinable") verb forms

@@ -10396,6 +10396,7 @@ LEXICON Nouns
  lõhmus+N:lõhmus 09_E; ! (09_S -> +S) a0: lõhmus, b0: lõhmuse
  lõhnasti+N:lõhnasti 01; ! (01_S -> +S) a0: lõhnasti, a0r: lõhnaste
  lõhnastus+N:lõhnastus 11; ! (11_S -> +S) a0: lõhnastus, b0: lõhnastuse, b0v: lõhnastusi
+ lõhnaõli+N:lõhna#õli 17; ! (17_S -> +S) a0: õli, a0g: #, a0v: #
  lõhn+N:lõhn 22_A; ! (22_S -> +S) at: lõhn, bt: lõhna, bn: lõhna, btv: lõhnu, bnv: lõhnu
  lõhustus+N:lõhustus 11; ! (11_S -> +S) a0: lõhustus, b0: lõhustuse, b0v: lõhustusi
  lõhutavus+N:lõhutavus 09_E; ! (09_S -> +S) a0: lõhutavus, b0: lõhutavuse
@@ -20719,6 +20720,7 @@ LEXICON Nouns
  täimine+N:täimi 12_NE-SE-S; ! (12_S -> +S) a0: täimine, b0: täimise, c0: täimis, b0v: täimisi
  täis+N:täiS1 14; ! (14_AS -> +A +S) at: täis, (bt): täise, an: täis, bn: täie, cn: täi, ct: täi
  täi+N:täi 26_ii; ! (26_S -> +S) a0: täi, a0r: #
+ täiskasvanu+N:täis#kasvanu 01; ! (01_S -> +S) a0: kasvanu, a0r: 0
  täitja+N:täitja 01; ! (01_S -> +S) a0: täitja, a0r: 0
  täitmatus+N:täitmatus 11; ! (11_S -> +S) a0: täitmatus, b0: täitmatuse, b0v: täitmatusi
  täitumus+N:täitumus 11; ! (11_S -> +S) a0: täitumus, b0: täitumuse, b0v: täitumusi

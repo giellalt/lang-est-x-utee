@@ -171,6 +171,11 @@ kilekaas+N:kile#kaa 14_S-NE;
 !   vikerkaar:
 vikerkaar+N:viker#kaar 13; ! (13_S -> +S) at: kaar, (bt): kaare, an: kaar, bn: kaare, bnv: kaari
 
+! kaart:
+!  kaart+N:kaarT1 22_I; ! (22_S -> +S) at: kaart, bt: kaarti, bn: kaardi, btv: kaarte, bnv: kaarde
+!   postkaart:
+ postkaart+N:post#kaarT1 22_I; ! (22_S -> +S) at: kaart, bt: kaarti, bn: kaardi, btv: kaarte, bnv: kaarde
+
 ! kaasa:
 !  kaasa+N:kaasa 16; ! (16_S -> +S) a0: kaasa, a0g: #
 !   abikaasa:
@@ -354,6 +359,11 @@ pealinn+N:pea#linn 22_A; ! (22_S -> +S) at: linn, bt: linna, bn: linna, btv: lin
 !  loom+N:loom 22_U; ! (22_S -> +S) at: loom, bt: loomu, bn: loomu, btv: loome, bnv: loome
 !   iseloom:
 iseloom+N:ise#loom 22_U; ! (22_S -> +S) at: loom, bt: loomu, bn: loomu, btv: loome, bnv: loome
+
+! lugu:
+!  lugu+N:luG1=u 18; ! (18_S -> +S) at: lugu, an: loo, atv: #, atg: lukku, anv: #
+!   elulugu:
+elulugu+N:elu#luG1=u 18; ! (18_S -> +S) at: lugu, an: loo, atv: #, atg: lukku, anv: #
 
 ! lõiv:
 !  lõiv+N:lõiv 22_U; ! (22_S -> +S) at: lõiv, bt: lõivu, bn: lõivu, btv: lõive, bnv: lõive

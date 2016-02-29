@@ -19,12 +19,15 @@ Definitions
     ArvJaKääne = NonGen [ %+Sg | %+Pl ] [ %+Nom | %+Gen | %+Par | %+Ill | %+Ine
     			  	 	| %+Ela | %+All | %+Ade | %+Abl | %+Tra
 				 	| %+Trm | %+Ess | %+Abe | %+Com ] NonGen;
+    ArvIsikJaKääne = [ %+Sg1 | %+Sg2 | %+Sg3 | %+Pl1 | %+Pl2 | %+Pl3 ] [ %+Nom | %+Gen | %+Par | %+Ill | %+Ine
+    			  	 	| %+Ela | %+All | %+Ade | %+Abl | %+Tra
+				 	| %+Trm | %+Ess | %+Abe | %+Com ] NonGen;
     TuletisKäänduvast = ( [ "+A" ("+Comp" | "+Superl") | "+N" ("+Prop") | "+V" ] (Semantilised) (ArvJaKääne) [ Tuletised | "+Dim/ke" | "+Dim/kene" ]);
     Sona = [[Arv]+ (%- | %. | %,)]* [Arv]+ (%. | %% | %' (%') ) | ([Arv]+) Tähtsõne TuletisKäänduvast;
 
 
     PööreJaArv = [ %+Sg1 | %+Sg2 | %+Sg3 | %+Pl1 | %+Pl2 | %+Pl3 ];
-    AffNeg = [ %+Aff | %+Neg ];
+    AffNeg = [ %+Aff | %+Neg | %+ConNeg ];
     Gi = Flags ( "+Foc/gi" );
 
     VerbiParadigma = %+V [
@@ -64,7 +67,7 @@ Definitions
     Nimisõna' = Sona TüveEristajad "+N" ("+Prop" (Semantilised)) Flags;
     Nimisõna = Nimisõna' ArvJaKääne;
     Arvsõna = Sona "+Num" [ "+Card" | "+Ord" ] Flags (ArvJaKääne);
-    Asesõna = Sona [ "+Pron" ( "+Emph" ) ] ArvJaKääne;
+    Asesõna = Sona [ "+Pron" ( "+Emph" ) ] ArvIsikJaKääne;
     Käänduvsõna = [ Omadussõna | Nimisõna | Arvsõna | Asesõna ] Gi;
     Määrsõna = Sona "+Adv" Gi;
     Hüüdsõna = Sona "+Interj";
