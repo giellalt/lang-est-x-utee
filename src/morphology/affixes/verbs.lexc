@@ -28,6 +28,8 @@ LEXICON 28_gema	! nägema, tegema tüveerandid
  G1e:G1e$ An_b;
  G1e:G1e$ An_me;
  G1e:h An_tud;
+ G1e:h An_tud_derA;
+ G1e:h An_tud_derV;
  G1e:h An_akse;
 
 LEXICON 29	! ma ja olevik - TA, da - NA - (hüppama)
@@ -78,6 +80,7 @@ LEXICON 35_	! 4 tüve: nut+ma (at), nuta+b (bn), nute+tud (cn), nutt+a (ct)
  TP_35at;
  :a$ TP_35bn;
  :e$ TP_35cn;
+ :e$ An_tud_derA;
 
 LEXICON 35_T
  35_;
@@ -89,10 +92,23 @@ LEXICON 35_P
 
 LEXICON 36	! 5 tüve (tule+ma, tul+i, tul+dud, tull+a, tull+akse)
  e$ TP_36an;
- $ TP_36bn;
+ e:$ TP_36bn;
+ $ An_nud_derA;
+ $ An_dud_derA;
+ i Deriv_jaN;
  TP_36bt;
  :=X2 TP_36ct;	!Siin võib-olla alati ei ole l, vaid suvalise konsonandi 2-kordistamine.
  :=X2 TP_36cn;
+
+LEXICON 36_ema	! pesema tüveerandid
+ e$ TP_36an;
+ e:$ TP_36bnk;
+ $ An_nud_derA;
+ $ An_tud_derA;
+ i Deriv_jaN;
+ e:$ TP_35cn;
+ An_tud_derA;
+ An_ta;
 
 LEXICON 37	! võima (sin,ge,me - NA, teised - TA)
  TP_37at;
@@ -129,6 +145,8 @@ LEXICON TP_27a0	!ela+ma
  An_b;
  An_me;
  An_tud;
+ An_tud_derA;
+ An_tud_derV;
  An_takse;
  Deriv_mine_ja;
 
@@ -148,6 +166,8 @@ LEXICON TP_28an	!lepi+n
  An_b;
  An_me;
  An_tud;
+ An_tud_derA;
+ An_tud_derV;
  An_takse;
 
 LEXICON TP_29at	!hüppa+ma
@@ -166,6 +186,8 @@ LEXICON TP_29an	!hüpa+ta
  An_ke;
  $: An_nud_der;
  An_tud;
+ An_tud_derA;
+ An_tud_derV;
  An_takse;
 
 LEXICON TP_30at	!riidle+ma; rabele+ma
@@ -184,6 +206,8 @@ LEXICON TP_30bn	!riiel+da; rabel+da
  le: An_ge;
  el$: An_nud_der;
  le: An_dud;
+ le: An_dud_derA;
+ le: An_dud_derV;
  le: An_dakse;
 
 ! 31. tüübil langeb tüvevariantide a ja b paigutus täpselt kokku 30. tüübiga, ainult 31 on astmevahelduseta.
@@ -193,6 +217,8 @@ LEXICON TP_31b0
  e: An_ge;
  An_nud_der;
  e: An_dud;
+ e: An_dud_derA;
+ e: An_dud_derV;
  e: An_dakse;
 
 LEXICON TP_32at	!seis+ma
@@ -206,6 +232,8 @@ LEXICON TP_32at	!seis+ma
  An_ke;
  An_nud_der;
  An_tud;
+ An_tud_derA;
+ An_tud_derV;
  An_takse;
  Deriv_mine_ja;
 
@@ -224,6 +252,8 @@ LEXICON TP_33at	!naer+ma
  An_ge;
  An_nud_der;
  An_dud;
+ An_dud_derA;
+ An_dud_derV;
  An_dakse;
  Deriv_mine_ja;
 
@@ -249,6 +279,8 @@ LEXICON TP_34bn	!saada+b
 
 LEXICON TP_34cn	!saade+tud
  An_tud;
+ e:$ An_tud_derA;
+ An_tud_derV;
  An_takse;
 
 LEXICON TP_35at	!nut+ma
@@ -266,6 +298,7 @@ LEXICON TP_35bn	!nuta+b
 
 LEXICON TP_35cn	!nute+tud
  An_tud;
+ An_tud_derV;
  An_takse;
 
 LEXICON TP_35ct	!nutt+a
@@ -282,15 +315,24 @@ LEXICON TP_36an	!tule+ma
  Deriv_mine;
 
 LEXICON TP_36bn	!tul+i
- e: An_i;
- e: An_in;
- e: An_ime;
- e: An_ge;
- An_nud_der;
- i Deriv_ja;
+ An_i;
+ An_in;
+ An_ime;
+ An_ge;
+ An_nud_derV;
+ :i$ Deriv_jaV;
+
+LEXICON TP_36bnk	!pes+i
+ An_i;
+ An_in;
+ An_ime;
+ An_ke;
+ An_nud_derV;
+ :i$ Deriv_jaV;
 
 LEXICON TP_36bt	!tul+dud
  e: An_dud;
+ e: An_dud_derV;
 
 LEXICON TP_36cn	!tull+akse
  e: An_akse;
@@ -313,6 +355,8 @@ LEXICON TP_37at	!või+ma
  An_da;
  An_b;
  An_dud;
+ An_dud_derA;
+ An_dud_derV;
  An_dakse;
  Deriv_mine_ja;
 
@@ -327,7 +371,9 @@ LEXICON TP_38at !söö+ma
  An_v;
  An_b;
  An_dud;
-
+ An_dud_derA;
+ An_dud_derV;
+ 
 LEXICON TP_38bn	! süü+akse
  An_akse;
 
@@ -452,12 +498,18 @@ LEXICON An_nud
   ma+V+Pers+Prt+Quot:+nuvat GI ;
 
 LEXICON An_nud_der
+  An_nud_derA;
+  An_nud_derV;
+
+LEXICON An_nud_derA
   nud+A:+nud GI ; ! ???
   nu+N:nu 01;
   nu+A:nu 01;
+  nult+Adv:nult GI;
+
+LEXICON An_nud_derV
   ma+V+Der+Der/nu+N:nu 01;
   ma+V+Der+Der/nu+A:nu 01;
-  nult+Adv:nult GI;
 !!!!!
 
 !!!!!
@@ -506,16 +558,19 @@ LEXICON An_tud
  ma+V+Impers+Prs+Ind+ConNeg:+ta GI ;
  ma+V+Impers+Prs+Prc:+tav GI ;
 
+LEXICON An_tud_derA
  $tud+A:+tud GI ; ! ???
  $tud+N:+tud GI ; ! ???
  $tu+A:+tu 01 ; 
  $tu+N:+tu 01 ;
  $tav+A:+tav 02_A ;
  $tav+N:+tav 02_A ;
- ma+V+Der+Der/tu+A:+tu 01 ; 
- ma+V+Der+Der/tu+N:+tu 01 ;
- ma+V+Der+Der/tav+A:+tav 02_A ;
- ma+V+Der+Der/tav+N:+tav 02_A ;
+
+LEXICON An_tud_derV
+ ma+V+Der+Der/tu+A:tu 01 ; 
+ ma+V+Der+Der/tu+N:tu 01 ;
+ ma+V+Der+Der/tav+A:tav 02_A ;
+ ma+V+Der+Der/tav+N:tav 02_A ;
 
 LEXICON An_dud
  ma+V+Impers+Prt+Prc:+dud GI ;
@@ -532,12 +587,15 @@ LEXICON An_dud
  ma+V+Impers+Prs+Ind+ConNeg:+da GI ;
  ma+V+Impers+Prs+Prc:+dav GI ;
 
+LEXICON An_dud_derA
  $dud+A:+dud GI ;
  $dud+N:+dud GI ;
  $du+N:+du 01 ;
  $du+A:+du 01 ;
  $dav+A:+dav 02_A ;
  $dav+N:+dav 02_A ;
+
+LEXICON An_dud_derV
  ma+V+Der+Der/tu+N:+du 01 ;
  ma+V+Der+Der/tu+A:+du 01 ;
  ma+V+Der+Der/tav+A:+dav 02_A ;
@@ -563,6 +621,12 @@ LEXICON Deriv_mine_ja
 
 LEXICON Deriv_ja
   ja+N:+ja 01;
+  ma+V+Der+Der/ja+N:+ja 01;
+
+LEXICON Deriv_jaN
+  ja+N:+ja 01;
+
+LEXICON Deriv_jaV
   ma+V+Der+Der/ja+N:+ja 01;
 
 LEXICON Deriv_mine

@@ -2359,7 +2359,7 @@ LEXICON Verbs
  kurvasta 27; ! (27_V -> ) a0: kurvasta
  kurvastu 27; ! (27_V -> ) a0: kurvastu
  kurvatse 27; ! (27_V -> ) a0: kurvatse
- ! ??? kuse:kus 36; ! (36_V -> ) an: kuse, bn: #, bt: #, cn: #, ct: #
+ kus 36_ema; ! (36_V -> ) an: kuse, bn: #, bt: #, cn: #, ct: #
  kusel 31; ! (31_V -> ) a0: kusele, b0: kusel
  kusele 27; ! (27_V -> ) a0: kusele
  kuseta 27; ! (27_V -> ) a0: kuseta
@@ -4514,7 +4514,7 @@ LEXICON Verbs
  perkuteeri 28; ! (28_V -> ) at: perkuteeri, an: perkuteeri
  personifitseeri 28; ! (28_V -> ) at: personifitseeri, an: personifitseeri
  peruta 27; ! (27_V -> ) a0: peruta
- ! ??? pese:pes 36; ! (36_V -> ) an: pese, bn: #, bt: #, cn: #, ct: #
+ pes 36_ema; ! (36_V -> ) an: pese, bn: #, bt: #, cn: #, ct: #
  pesita 27; ! (27_V -> ) a0: pesita
  pesitse 27; ! (27_V -> ) a0: pesitse
  pet 35_T; ! (35_V -> ) at: pet, (bt): petta, bn: peta, ct: pett, cn: pete
