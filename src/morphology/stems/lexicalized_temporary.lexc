@@ -32,6 +32,8 @@ peaaegu+Adv:peaaegu GI; ! (41_DK -> +Adv +K)
 !  ala+N:ala 17; ! (17_S -> +S) a0: ala, a0g: #, a0v: alu
 !   eriala:
 eriala+N:eri#ala 17; ! (17_S -> +S) a0: ala, a0g: #, a0v: alu
+!   pindala:
+pindala+N:pind#ala 17; ! (17_S -> +S) a0: ala, a0g: #, a0v: alu
 !   spordiala:
 spordiala+N:spordi#ala 17; ! (17_S -> +S) a0: ala, a0g: #, a0v: alu
 
@@ -94,6 +96,11 @@ kõrgharidus+N:kõrg#haridus 11; ! (11_S -> +S) a0: haridus, b0: hariduse, b0v: 
 !   uudishimulik:
 uudishimulik+A:uudis#himulikK1 25; ! (25_A -> +A) at: himulik, bt: himulikku, bn: himuliku, btv: himulikke, bnv: himulike
 
+! hind:
+!  hind+N:hinD1 22_A; ! (22_S -> +S) at: hind, bt: hinda, bn: hinna, btv: hindu, bnv: hinnu
+!   auhind:
+auhind+N:auhinD1 22_A; ! (22_S -> +S) at: hind, bt: hinda, bn: hinna, btv: hindu, bnv: hinnu
+
 ! hindlus:
 !  hindlus+N:hindlus 09_E; ! (09_S -> +S) a0: hindlus, b0: hindluse
 !   allahindlus:
@@ -114,6 +121,11 @@ tagasihoidlik+A:tagasi#hoidlikK1 25; ! (25_A -> +A) at: hoidlik, bt: hoidlikku, 
 
 ! imeja:
 tolmuimeja:tolmu#imeja 01;
+
+! isa:
+!  isa+N:isa 17; ! (17_S -> +S) a0: isa, a0g: #, a0v: #
+!   vanaisa:
+vanaisa+N:vana#isa 17; ! (17_S -> +S) a0: isa, a0g: #, a0v: #
 
 ! iste:
 !  iste+N:ist 05_E-ME; ! (05_S -> +S) an: iste, (at): iste, bt: istme, btr: #
@@ -234,6 +246,8 @@ päikesekiir+N:päikese#kiir 13; ! (13_S -> +S) at: kiir, (bt): kiire, an: kiir,
 
 ! kiri:
 !  kiri+N:kirj 24_A; ! (24_S -> +S) an: kiri, bn: kirja, bt: kirja, bnv: kirju, btv: kirju
+!   ajakiri:
+ajakiri+N:aja#kirj 24_A; ! (24_S -> +S) an: kiri, bn: kirja, bt: kirja, bnv: kirju, btv: kirju
 !   nimekiri:
 nimekiri+N:nime#kirj 24_A; ! (24_S -> +S) an: kiri, bn: kirja, bt: kirja, bnv: kirju, btv: kirju
 
@@ -251,6 +265,10 @@ töökoda+N:töö#koD1=a 18; ! (18_S -> +S) at: koda, an: koja, atv: #, atg: kot
 
 ! kogu:
 !  kogu+N:kog=u 17_Adt; ! (17_S -> +S) a0: kogu, a0g: kokku, a0v: #
+!   nõukogu:
+nõukogu+N:nõu#kog=u 17_Adt; ! (17_S -> +S) a0: kogu, a0g: kokku, a0v: #
+!   raamatukogu:
+raamatukogu+N:raamatu#kog=u 17_Adt; ! (17_S -> +S) a0: kogu, a0g: kokku, a0v: #
 !   veekogu:
 veekogu+N:vee#kog=u 17_Adt; ! (17_S -> +S) a0: kogu, a0g: kokku, a0v: #
 
@@ -279,6 +297,8 @@ vahukoor+N:vahu#koor 13; ! (13_S -> +S) at: koor, (bt): koore, an: koor, bn: koo
 !  kord+N:korD1 22_A; ! (22_S -> +S) at: kord, bt: korda, bn: korra, btv: kordi, bnv: korri
 !   järjekord:
 järjekord+N:järje#korD1 22_A; ! (22_S -> +S) at: kord, bt: korda, bn: korra, btv: kordi, bnv: korri
+!   olukord:
+olukord+N:olu#korD1 22_A; ! (22_S -> +S) at: kord, bt: korda, bn: korra, btv: kordi, bnv: korri
 
 ! kott:
 !  kott+N:kotT1 22_I; ! (22_S -> +S) at: kott, bt: kotti, bn: koti, btv: kotte, bnv: kote
@@ -289,6 +309,11 @@ kilekott+N:kile#kotT1 22_I; ! (22_S -> +S) at: kott, bt: kotti, bn: koti, btv: k
 !  kumm+N:kumm 22_I; ! (22_S -> +S) at: kumm, bt: kummi, bn: kummi, btv: kumme, bnv: kumme
 !   kustukumm:
 kustukumm+N:kustu#kumm 22_I; ! (22_S -> +S) at: kumm, bt: kummi, bn: kummi, btv: kumme, bnv: kumme
+
+! kunst:
+!  kunst+N:kunst 22_I; ! (22_S -> +S) at: kunst, bt: kunsti, bn: kunsti, btv: kunste, bnv: kunste
+!   helikunst:
+helikunst+N:heli#kunst 22_I; ! (22_S -> +S) at: kunst, bt: kunsti, bn: kunsti, btv: kunste, bnv: kunste
 
 ! kutse:
 !  kutse+N:kutse 06; ! (06_S -> +S) an: kutse, at: kutse
@@ -355,6 +380,11 @@ kesklinn+N:kesk#linn 22_A; ! (22_S -> +S) at: linn, bt: linna, bn: linna, btv: l
 !   pealinn:
 pealinn+N:pea#linn 22_A; ! (22_S -> +S) at: linn, bt: linna, bn: linna, btv: linnu, bnv: linnu
 
+! looja:
+!  looja+N:looja 01; ! (01_S -> +S) a0: looja, a0r: 0
+!   helilooja
+helilooja+N:heli#looja 01; ! (01_S -> +S) a0: looja, a0r: 0
+
 ! loom:
 !  loom+N:loom 22_U; ! (22_S -> +S) at: loom, bt: loomu, bn: loomu, btv: loome, bnv: loome
 !   iseloom:
@@ -362,6 +392,8 @@ iseloom+N:ise#loom 22_U; ! (22_S -> +S) at: loom, bt: loomu, bn: loomu, btv: loo
 
 ! lugu:
 !  lugu+N:luG1=u 18; ! (18_S -> +S) at: lugu, an: loo, atv: #, atg: lukku, anv: #
+!   ajalugu:
+ajalugu+N:aja#luG1=u 18; ! (18_S -> +S) at: lugu, an: loo, atv: #, atg: lukku, anv: #
 !   elulugu:
 elulugu+N:elu#luG1=u 18; ! (18_S -> +S) at: lugu, an: loo, atv: #, atg: lukku, anv: #
 
@@ -372,6 +404,8 @@ riigilõiv+N:riigi#lõiv 22_U; ! (22_S -> +S) at: lõiv, bt: lõivu, bn: lõivu,
 
 ! maa:
 !  maa+N:ma. 26; ! (26_S -> +S) a0: maa, a0r: ma
+!   isamaa:
+isamaa+N:isama. 26; ! (26_S -> +S) a0: maa, a0r: ma
 !   Saksamaa:
 !   välismaa:
 välismaa+N:välis#ma. 26; ! (26_S -> +S) a0: maa, a0r: ma
@@ -423,6 +457,11 @@ välismaa+N+Pl+Tra:välis#maadeks GI; ! 26_S,m'aa,maa[deks],------1T,-,-,+
 !   Saksamaa:
 !   välismaa:
 välismaa+N+Pl+Trm:välis#maadeni GI; ! 26_S,m'aa,maa[deni],------1R,-,-,+
+
+! maaline:
+!  maaline+A:maali 12_NE-SE-S; ! (12_A -> +A) a0: maaline, b0: maalise, c0: maalis, b0v: maalisi
+!   isamaaline:
+isamaaline+A:isamaali 12_NE-SE-S; ! (12_A -> +A) a0: maaline, b0: maalise, c0: maalis, b0v: maalisi
 
 ! maja:
 !  maja+N:maj=a 17_Adt; ! (17_S -> +S) a0: maja, a0g: majja, a0v: maju
@@ -476,11 +515,18 @@ koosolek+N:koos#olek 02_U; ! (02_S -> +S) a0: olek, b0: oleku, b0r: 0, c0: 0
 !  olu+N:ol=u 17_Adt; ! (17_S -> +S) a0: olu, a0g: ollu, a0v: #
 !   meeleolu:
 meeleolu+N:meele#ol=u 17_Adt; ! (17_S -> +S) a0: olu, a0g: ollu, a0v: #
+!   päritolu:
+päritolu+N:pärit#ol=u 17_Adt; ! (17_S -> +S) a0: olu, a0g: ollu, a0v: #
 
 ! osa:
 !  osa+N:os=a 17_Adt; ! (17_S -> +S) a0: osa, a0g: ossa, a0v: osi
 !   linnaosa:
 linnaosa+N:linna#os=a 17_Adt; ! (17_S -> +S) a0: osa, a0g: ossa, a0v: osi
+
+! paistev:
+!  paistev+A:paistE1v 02_A; ! (02_A -> +A) a0: paistev, b0: paistva, b0r: 0, c0: 0
+!   silmapaistev:
+silmapaistev+A:silma#paistE1v 02_A; ! (02_A -> +A) a0: paistev, b0: paistva, b0r: 0, c0: 0
 
 ! pall:
 !  pall+N:pall 22_I; ! (22_S -> +S) at: pall, bt: palli, bn: palli, btv: palle, bnv: palle
@@ -527,6 +573,11 @@ näopilt+N:näo#pilT1 22_I; ! (22_S -> +S) at: pilt, bt: pilti, bn: pildi, btv: 
 !  plaan+N:plaan 22_I; ! (22_S -> +S) at: plaan, bt: plaani, bn: plaani, btv: plaane, bnv: plaane
 !   sõiduplaan:
 sõiduplaan+N:sõidu#plaan 22_I; ! (22_S -> +S) at: plaan, bt: plaani, bn: plaani, btv: plaane, bnv: plaane
+
+! pooletus:
+!  pooletus+N:pooletus 11; ! (11_S -> +S) a0: pooletus, b0: pooletuse, b0v: pooletusi
+!   erapooletus:
+erapooletus+N:era#pooletus 11; ! (11_S -> +S) a0: pooletus, b0: pooletuse, b0v: pooletusi
 
 ! poolik:
 !  poolik+N:poolik 02_U; ! (02_AS -> +A +S) a0: poolik, b0: pooliku, b0r: 0, c0: 0
@@ -591,6 +642,8 @@ lapsepõlv+N:lapse#põlv 22_E; ! (22_S -> +S) at: põlv, bt: põlve, bn: põlve,
 
 ! päev:
 !  päev+N:päev 22_A; ! (22_S -> +S) at: päev, bt: päeva, bn: päeva, btv: päevi, bnv: päevi
+!   argipäev:
+argipäev+N:argi#päev 22_A; ! (22_S -> +S) at: päev, bt: päeva, bn: päeva, btv: päevi, bnv: päevi
 !   esmaspäev:
 esmaspäev+N:esmas#päev 22_A; ! (22_S -> +S) at: päev, bt: päeva, bn: päeva, btv: päevi, bnv: päevi
 !   kuupäev:
@@ -601,12 +654,16 @@ laupäev+N:lau#päev 22_A; ! (22_S -> +S) at: päev, bt: päeva, bn: päeva, btv
 neljapäev+N:nelja#päev 22_A; ! (22_S -> +S) at: päev, bt: päeva, bn: päeva, btv: päevi, bnv: päevi
 !   puhkepäev:
 puhkepäev+N:puhke#päev 22_A; ! (22_S -> +S) at: päev, bt: päeva, bn: päeva, btv: päevi, bnv: päevi
+!   pööripäev:
+pööripäev+N:pööri#päev 22_A; ! (22_S -> +S) at: päev, bt: päeva, bn: päeva, btv: päevi, bnv: päevi
 !   pühapäev:
 pühapäev+N:püha#päev 22_A; ! (22_S -> +S) at: päev, bt: päeva, bn: päeva, btv: päevi, bnv: päevi
 !   sünnipäev:
 sünnipäev+N:sünni#päev 22_A; ! (22_S -> +S) at: päev, bt: päeva, bn: päeva, btv: päevi, bnv: päevi
 !   tähtpäev:
 tähtpäev+N:täht#päev 22_A; ! (22_S -> +S) at: päev, bt: päeva, bn: päeva, btv: päevi, bnv: päevi
+!   tänapäev:
+tänapäev+N:täna#päev 22_A; ! (22_S -> +S) at: päev, bt: päeva, bn: päeva, btv: päevi, bnv: päevi
 
 ! pärane:
 !  pärane+A:pära 10_NE-SE-S; ! (10_A -> +A) a0: pärane, b0: pärase, c0: päras
@@ -629,6 +686,11 @@ väljapääs+N:välja#pääs 22_U; ! (22_S -> +S) at: pääs, bt: pääsu, bn: p
 võidupüha+N:võidu#püha 17; ! (17_SA -> +A +S) a0: püha, a0g: #, a0v: pühi
 !   ülestõusmispüha:
 ülestõusmispüha+N:üles#tõusmis#püha 17; ! (17_SA -> +A +S) a0: püha, a0g: #, a0v: pühi
+
+! raamat
+!  raamat+N:raamat 02_U; ! (02_S -> +S) a0: raamat, b0: raamatu, b0r: 0, c0: 0
+!   sõnaraamat
+sõnaraamat+N:sõna#raamat 02_U; ! (02_S -> +S) a0: raamat, b0: raamatu, b0r: 0, c0: 0
 
 ! rada:
 !  rada+N:raD1a 18_PlPV; ! (18_S -> +S) at: rada, an: raja, atv: radu, atg: #, anv: #
@@ -772,6 +834,8 @@ infotehnoloog+N:info#tehnoloog 22_I; ! (22_S -> +S) at: tehnoloog, bt: tehnoloog
 taimetoit+N:taime#toiT1 22_U; ! (22_S -> +S) at: toit, bt: toitu, bn: toidu, btv: toite, bnv: toide
 !   ühepajatoit:
 ühepajatoit+N:ühe#paja#toiT1 22_U; ! (22_S -> +S) at: toit, bt: toitu, bn: toidu, btv: toite, bnv: toide
+!   magustoit:
+magustoit+N:magus#toiT1 22_U; ! (22_S -> +S) at: toit, bt: toitu, bn: toidu, btv: toite, bnv: toide
 
 ! tool:
 !  tool+N:tool 22_I; ! (22_S -> +S) at: tool, bt: tooli, bn: tooli, btv: toole, bnv: toole
@@ -801,6 +865,11 @@ vannituba+N:vanni#tuB1=a 18_PlPV; ! (18_S -> +S) at: tuba, an: toa, atv: tube, a
 !  tugi+N:tuG1= 21; ! (21_S -> +S) at: tugi, bt: tuge, bn: toe, btg: #
 !   klienditugi:
 klienditugi+N:kliendi#tuG1= 21; ! (21_S -> +S) at: tugi, bt: tuge, bn: toe, btg: #
+
+! tunne:
+!  tunne+N:tunD1e 06; ! (06_S -> +S) an: tunne, at: tunde
+!   enesetunne:
+enesetunne+N:enese#tunD1e 06; ! (06_S -> +S) an: tunne, at: tunde
 
 ! uks:
 !  uks+N+Sg+Ill:uksesse GI_0; ! 14_S,'uks,#,------0D,-,-,*

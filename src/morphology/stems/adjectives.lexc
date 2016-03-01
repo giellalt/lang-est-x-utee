@@ -1363,6 +1363,7 @@ LEXICON Adjectives
  idutu+A:idutu 01; ! (01_A -> +A) a0: idutu, a0r: 0
  idülliline+A:idüllili 12_NE-SE-S; ! (12_A -> +A) a0: idülliline, b0: idüllilise, c0: idüllilis, b0v: idüllilisi
  igandlik+A:igandlikK1 25; ! (25_A -> +A) at: igandlik, bt: igandlikku, bn: igandliku, btv: igandlikke, bnv: igandlike
+ igasugune+A:igasugu 10_NE-SE-S; ! (10_A -> +A) a0: sugune, b0: suguse, c0: sugus 
  igatsuslik+A:igatsuslikK1 25; ! (25_A -> +A) at: igatsuslik, bt: igatsuslikku, bn: igatsusliku, btv: igatsuslikke, bnv: igatsuslike
  igav+A:igav 02_A; ! (02_A -> +A) a0: igav, b0: igava, b0r: 0, c0: 0
  igavene+A:igave 12_NE-SE-S; ! (12_A -> +A) a0: igavene, b0: igavese, c0: igaves, b0v: igavesi
@@ -1516,6 +1517,7 @@ LEXICON Adjectives
  ise+A:ise GI; ! (41_DA -> +Adv +A) 
  isekas+A:isek 02_GAS_S-0; ! (02_A -> +A) a0: isekas, b0: iseka, b0r: 0, c0: 0
  isendiline+A:isendili 12_NE-SE-S; ! (12_A -> +A) a0: isendiline, b0: isendilise, c0: isendilis, b0v: isendilisi
+ iseseisev+A:iseseisE1v 02_A; ! (02_A -> +A) a0: seisev, b0: seisva, b0r: 0, c0: 0
  isetu+A:isetu 01; ! (01_A -> +A) a0: isetu, a0r: 0
  isiklik+A:isiklikK1 25; ! (25_A -> +A) at: isiklik, bt: isiklikku, bn: isikliku, btv: isiklikke, bnv: isiklike
  isikuline+A:isikuli 12_NE-SE-S; ! (12_A -> +A) a0: isikuline, b0: isikulise, c0: isikulis, b0v: isikulisi
@@ -5542,6 +5544,7 @@ LEXICON Adjectives
  salvav+A:salvav 02_A; ! (02_A -> +A) a0: salvav, b0: salvava, b0r: 0, c0: 0
  salvine+A:salvi 10_NE-SE-S; ! (10_A -> +A) a0: salvine, b0: salvise, c0: salvis
  samane+A:sama 10_NE-SE-S; ! (10_AP -> +A +Pron) a0: samane, b0: samase, c0: samas
+ samasugune+A:samasugu 10_NE-SE-S; ! (10_A -> +A) a0: sugune, b0: suguse, c0: sugus 
  sambaline+A:sambali 12_NE-SE-S; ! (12_A -> +A) a0: sambaline, b0: sambalise, c0: sambalis, b0v: sambalisi
  samblane+A:sambla 10_NE-SE-S; ! (10_A -> +A) a0: samblane, b0: samblase, c0: samblas
  samblane+A:sambla 12_NE-SE-S; ! (12_A -> +A) a0: samblane, b0: samblase, c0: samblas, b0v: samblasi
@@ -5603,6 +5606,7 @@ LEXICON Adjectives
  seerialine+A:seeriali 12_NE-SE-S; ! (12_A -> +A) a0: seerialine, b0: seerialise, c0: seerialis, b0v: seerialisi
  seesmine+A:seesmi 10_NE-SE-S; ! (10_A -> +A) a0: seesmine, b0: seesmise, c0: seesmis
  seesmine+A:seesmi 12_NE-SE-S; ! (12_A -> +A) a0: seesmine, b0: seesmise, c0: seesmis, b0v: seesmisi
+ seesugune+A:seesugu 10_NE-SE-S; ! (10_A -> +A) a0: sugune, b0: suguse, c0: sugus 
  segamatu+A:segamatu 01; ! (01_A -> +A) a0: segamatu, a0r: 0
  segamini+A:segamini GI; ! (41_DA -> +Adv +A) 
  segane+A:sega 10_NE-SE-S; ! (10_A -> +A) a0: segane, b0: segase, c0: segas

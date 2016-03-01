@@ -7,6 +7,7 @@ LEXICON ProperNames
  Cartesius+N+Prop:Cartesius 11; ! (11_H -> +H) a0: Cartesius, b0: Cartesiuse, b0v: Cartesiusi
  Cavalier+N+Prop:Cavalier 26_ii; ! (26_H -> +H) a0: Cavalier, a0r: #
  Descartes+N+Prop:Descartes 11; ! (11_H -> +H) a0: Descartes, b0: Descartese, b0v: Descartese
+ Kalevala+N+Prop:Kalevala 16; ! (16_S -> +S) 
 
  ! ??? internet+N+Prop:Internet 22; ! (22_H -> +H) at: Internet, bt: Internetti, bn: Interneti, btv: Internette, bnv: Internete
  Internet+N+Prop:InternetT1 22_KPT_I; ! (22_H -> +H) at: internet, bt: internetti, bn: interneti, btv: internette, bnv: internete
@@ -50,13 +51,19 @@ LEXICON Place'
  Hispaania+N+Prop+Sem/Plc:Hispaania 01;
  Inglismaa+N+Prop+Sem/Plc:Inglisma. 26;
  Itaalia+N+Prop+Sem/Plc:Itaalia 01;
+ Jaapan+N+Sem/Plc:Jaapan 19; ! (19_S -> +S) a0: Jaapan, b0: Jaapani
+ Karelia+N+Sem/Plc:Karelia 01; ! (01_S -> +S) a0: Karelia, a0r: 0
+ Kuopio+N+Prop+Sem/Plc:Kuopio 16; 
+ Lapimaa+N+Prop+Sem/Plc:Lapima. 26;
  Leedu+N+Prop+Sem/Plc:Leedu 01;
  Norra+N+Prop+Sem/Plc:Norra 01;
  Olümpos+N+Prop+Sem/Plc:Olümpos 09_E; ! (09_H -> +H) a0: olümpos, b0: olümpose
  Olümpos+N+Prop+Sem/Plc:Olümpos 11; ! (11_H -> +H) a0: olümpos, b0: olümpose, b0v: olümposi
  Paide+N+Prop+Sem/Plc:Paide 01; ! (01_H -> +H) a0: paide, a0r: 0
  Poola+N+Prop+Sem/Plc:Poola 01;
+ Pohjanmaa+N+Prop+Sem/Plc:Pohjanma. 26;
  Prantsusmaa+N+Prop+Sem/Plc:Prantsusma. 26;
+ Põhjamaa+N+Prop+Sem/Plc:Põhjama. 26;
  Pärnu+N+Prop+Sem/Plc:Pärnu 01; ! (01_H -> +H) a0: pärnu, a0r: 0
  Rootsi+N+Prop+Sem/Plc:Rootsi 01;
  Soome+N+Prop+Sem/Plc:Soome 01;
