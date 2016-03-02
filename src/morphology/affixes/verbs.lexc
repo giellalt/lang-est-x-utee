@@ -64,7 +64,7 @@ LEXICON 34	! ma - TA + kons.tüvi, da - TA, tüvi&formatiiv sulandunud, olevik -
  TP_34at;
  :a$ TP_34bn;
  :e$ TP_34cn;
- e An_tud_derA;
+ :e$ An_tud_derA;
 
 LEXICON 34_K_TUD ! laskma/mõskma/puskma
  K1 TP_34at;
@@ -132,7 +132,7 @@ LEXICON 38_SIN ! (ct tüve ei moodustu?) müüma, pooma, käima, viima
 LEXICON 38_
  :$ TP_38an;
  TP_38at;
- :$ TP_38bn; ! tüvevariandi "süü(a)" tekitavad reeglid
+ ! :$ TP_38bn; ! tüvevariandi "süü(a)" tekitavad reeglid järgmisel real: TP_38bt;
  TP_38bt;
 
 
@@ -379,11 +379,12 @@ LEXICON TP_38at !söö+ma
  An_dud_derA;
  An_dud_derV;
  
-LEXICON TP_38bn	! süü+akse
- An_akse;
+!LEXICON TP_38bn	! süü+akse
+! An_akse;
 
 LEXICON TP_38bt	!süü+a
  An_a;
+ An_akse;
 
 LEXICON TP_38cn	!sõime
  An_ime;
