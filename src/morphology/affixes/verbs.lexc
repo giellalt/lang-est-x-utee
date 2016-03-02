@@ -22,13 +22,14 @@ LEXICON 28_gema	! nägema, tegema tüveerandid
  G1e:g An_ime; ! nägime
  G1e:h An_a; ! näha 
  G1e:h An_ke; ! nähke
- G1e:i An_nud_der; ! näinud
+ i:i An_nud_derA; ! näinud
+ G1e:i An_nud_derV; ! näinud
 
 ! TP_28an	!lepi+n
  G1e:G1e$ An_b;
  G1e:G1e$ An_me;
  G1e:h An_tud;
- G1e:h An_tud_derA;
+ h:h An_tud_derA;
  G1e:h An_tud_derV;
  G1e:h An_akse;
 
@@ -206,14 +207,15 @@ LEXICON TP_30at	!riidle+ma; rabele+ma
  An_sime;
  An_b;
  An_me;
+ An_nud_derV;
  Deriv_mine_ja;
 
 LEXICON TP_30bn	!riiel+da; rabel+da
  le: An_da;
  le: An_ge;
- el$: An_nud_der;
+ el$: An_nud_derA;
+ el$: An_dud_derA;
  le: An_dud;
- le: An_dud_derA;
  le: An_dud_derV;
  le: An_dakse;
 
