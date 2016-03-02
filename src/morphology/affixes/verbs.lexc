@@ -64,16 +64,22 @@ LEXICON 34	! ma - TA + kons.tüvi, da - TA, tüvi&formatiiv sulandunud, olevik -
  TP_34at;
  :a$ TP_34bn;
  :e$ TP_34cn;
+ e An_tud_derA;
 
 LEXICON 34_K_TUD ! laskma/mõskma/puskma
  K1 TP_34at;
- :K1e$ TP_34bn;
- :$ TP_34cn;
+ k:K1e$ TP_34bn;
+ k:$ TP_34cn;
+ :$ An_tud_derA;
+ k:$ An_nud; ! parallel forms??
+ :$ An_nud_derA; ! parallel forms??
+ k:$ An_nud_derV; ! parallel forms??
 
-LEXICON 34_D_TUD ! hoidma-leidma-püüdma
+LEXICON 34_D_TUD ! hoidma-leidma-püüdma andma-nõudma-teadma
  D1 TP_34at;
  d:D1a$ TP_34bn;
  d:$ TP_34cn;
+ :$ An_tud_derA;
 
 
 LEXICON 35_	! 4 tüve: nut+ma (at), nuta+b (bn), nute+tud (cn), nutt+a (ct)
@@ -279,7 +285,6 @@ LEXICON TP_34bn	!saada+b
 
 LEXICON TP_34cn	!saade+tud
  An_tud;
- e:$ An_tud_derA;
  An_tud_derV;
  An_takse;
 

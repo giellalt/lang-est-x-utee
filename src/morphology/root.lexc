@@ -675,6 +675,7 @@ LEXICON te_tund
  tunD1 TP_34at;
  tund:tunD1e$ TP_34bn;
  tund:tun$ TP_34cn;
+ tun$ An_tud_derA;
 
 LEXICON te_tõbi
 ! tõbi+N:tõB=i 21; ! at: tõbi, bt: tõbe, bn: tõve, btg: tõppe

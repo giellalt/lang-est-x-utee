@@ -454,7 +454,6 @@ LEXICON Verbs
  eputa 27; ! (27_V -> ) a0: eputa
  eralda 27; ! (27_V -> ) a0: eralda
  eraldu 27; ! (27_V -> ) a0: eraldu
- ! erandlik tyvevokaal tund:tund 34; ! (34_V -> ) at: tund, (bt): tunde, bn: tunne, cn: tun
  ! erand vähkre:vähkre 30; ! (30_V -> ) at: vähkre, (bt): vähker, bn: väher
  erasta 27; ! (27_V -> ) a0: erasta
  erenda 27; ! (27_V -> ) a0: erenda
@@ -6691,6 +6690,7 @@ LEXICON Verbs
  tumesta 27; ! (27_V -> ) a0: tumesta
  tumestu 27; ! (27_V -> ) a0: tumestu
  tummu 27; ! (27_V -> ) a0: tummu
+ ! exception in root.lexc tun 34_D_TUD; ! (34_V -> ) at: tund, (bt): tunde, bn: tunne, cn: tun
  tunD1 30; ! (30_V -> ) at: tundle, (bt): tundel, bn: tunnel
  tundlikusta 27; ! (27_V -> ) a0: tundlikusta
  tundu 27; ! (27_V -> ) a0: tundu
