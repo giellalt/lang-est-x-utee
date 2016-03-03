@@ -1,232 +1,411 @@
 LEXICON PrePostPositions
 
- abil+Adp:abil GI; ! (41_K -> +K) 
- aega+Adp:aega GI; ! (41_K -> +K) 
- aegu+Adp:aegu GI; ! (41_DK -> +Adv +K) 
- ajal+Adp:ajal GI; ! (41_K -> +K) 
- ajel+Adp:ajel GI; ! (41_K -> +K) 
- alates+Adp:alates GI; ! (41_KD -> +Adv +K) 
- alguks+Adp:alguks GI; ! (41_K -> +K) 
- algule+Adp:algule GI; ! (41_K -> +K) 
- algul+Adp:algul GI; ! (41_DK -> +Adv +K) 
- algult+Adp:algult GI; ! (41_K -> +K) 
- alguni+Adp:alguni GI; ! (41_K -> +K) 
- alla+Adp:alla GI; ! (41_DK -> +Adv +K) 
- all+Adp:all GI; ! (41_DK -> +Adv +K) 
- alt+Adp:alt GI; ! (41_DK -> +Adv +K) 
- alutsi+Adp:alutsi GI; ! (41_DK -> +Adv +K) 
- arvele+Adp:arvele GI; ! (41_K -> +K) 
- arvel+Adp:arvel GI; ! (41_K -> +K) 
- arvelt+Adp:arvelt GI; ! (41_K -> +K) 
- asemele+Adp:asemele GI; ! (41_DK -> +Adv +K) 
- asemel+Adp:asemel GI; ! (41_K -> +K) 
- asemelt+Adp:asemelt GI; ! (41_K -> +K) 
- edasi+Adp:edasi GI; ! (41_DK -> +Adv +K) 
- eeli+Adp:eeli GI; ! (41_K -> +K) 
- eel+Adp:eel GI; ! (41_DK -> +Adv +K) 
- ees+Adp:ees GI; ! (41_DK -> +Adv +K) 
- eest+Adp:eest GI; ! (41_DK -> +Adv +K) 
- enne+Adp:enne GI; ! (41_DK -> +Adv +K) 
- ette+Adp:ette GI; ! (41_DK -> +Adv +K) 
- haaval+Adp:haaval GI; ! (41_K -> +K) 
- hakul+Adp:hakul GI; ! (41_K -> +K) 
- heaks+Adp:heaks GI; ! (41_K -> +K) 
- hoolimata+Adp:hoolimata GI; ! (41_K -> +K) 
- hulgas+Adp:hulgas GI; ! (41_DK -> +Adv +K) 
- hulgast+Adp:hulgast GI; ! (41_K -> +K) 
- hulka+Adp:hulka GI; ! (41_K -> +K) 
- ilma+Adp:ilma GI; ! (41_DK -> +Adv +K) 
- jaoks+Adp:jaoks GI; ! (41_DK -> +Adv +K) 
- jooksul+Adp:jooksul GI; ! (41_K -> +K) 
- juhti+Adp:juhti GI; ! (41_K -> +K) 
- juurde+Adp:juurde GI; ! (41_DK -> +Adv +K) 
- juures+Adp:juures GI; ! (41_DK -> +Adv +K) 
- juurest+Adp:juurest GI; ! (41_K -> +K) 
- jõul+Adp:jõul GI; ! (41_K -> +K) 
- järele+Adp:järele GI; ! (41_DK -> +Adv +K) 
- järel+Adp:järel GI; ! (41_DK -> +Adv +K) 
- järelt+Adp:järelt GI; ! (41_K -> +K) 
- järgi+Adp:järgi GI; ! (41_DK -> +Adv +K) 
- kaasas+Adp:kaasas GI; ! (41_DK -> +Adv +K) 
- kaela+Adp:kaela GI; ! (41_K -> +K) 
- kaelas+Adp:kaelas GI; ! (41_K -> +K) 
- kaelast+Adp:kaelast GI; ! (41_K -> +K) 
- kallale+Adp:kallale GI; ! (41_DK -> +Adv +K) 
- kallal+Adp:kallal GI; ! (41_DK -> +Adv +K) 
- kallalt+Adp:kallalt GI; ! (41_K -> +K) 
- kamul+Adp:kamul GI; ! (41_K -> +K) 
- kandis+Adp:kandis GI; ! (41_DK -> +Adv +K) 
- kandist+Adp:kandist GI; ! (41_DK -> +Adv +K) 
- kannule+Adp:kannule GI; ! (41_DK -> +Adv +K) 
- kannul+Adp:kannul GI; ! (41_DK -> +Adv +K) 
- kannult+Adp:kannult GI; ! (41_K -> +K) 
- kanti+Adp:kanti GI; ! (41_DK -> +Adv +K) 
- kaudu+Adp:kaudu GI; ! (41_DK -> +Adv +K) 
- kaupa+Adp:kaupa GI; ! (41_K -> +K) 
- keset+Adp:keset GI; ! (41_K -> +K) 
- keskele+Adp:keskele GI; ! (41_DK -> +Adv +K) 
- keskel+Adp:keskel GI; ! (41_DK -> +Adv +K) 
- keskelt+Adp:keskelt GI; ! (41_DK -> +Adv +K) 
- keskis+Adp:keskis GI; ! (41_DK -> +Adv +K) 
- kesk+Adp:kesk GI; ! (41_K -> +K) 
- kestel+Adp:kestel GI; ! (41_K -> +K) 
- kilda+Adp:kilda GI; ! (41_K -> +K) 
- killas+Adp:killas GI; ! (41_K -> +K) 
- killast+Adp:killast GI; ! (41_K -> +K) 
- kimpu+Adp:kimpu GI; ! (41_DK -> +Adv +K) 
- kiuste+Adp:kiuste GI; ! (41_DK -> +Adv +K) 
- kohale+Adp:kohale GI; ! (41_DK -> +Adv +K) 
- kohal+Adp:kohal GI; ! (41_DK -> +Adv +K) 
- kohalt+Adp:kohalt GI; ! (41_DK -> +Adv +K) 
- kohta+Adp:kohta GI; ! (41_DK -> +Adv +K) 
- kombel+Adp:kombel GI; ! (41_DK -> +Adv +K) 
- koos+Adp:koos GI; ! (41_DK -> +Adv +K) 
- korral+Adp:korral GI; ! (41_DK -> +Adv +K) 
- korras+Adp:korras GI; ! (41_K -> +K) 
- kujul+Adp:kujul GI; ! (41_K -> +K) 
- kulul+Adp:kulul GI; ! (41_K -> +K) 
- kuni+Adp:kuni GI; ! (41_JK -> +J +K) 
- kõrvale+Adp:kõrvale GI; ! (41_DK -> +Adv +K) 
- kõrval+Adp:kõrval GI; ! (41_DK -> +Adv +K) 
- kõrvalt+Adp:kõrvalt GI; ! (41_DK -> +Adv +K) 
- käes+Adp:käes GI; ! (41_DK -> +Adv +K) 
- käest+Adp:käest GI; ! (41_DK -> +Adv +K) 
- käigus+Adp:käigus GI; ! (41_K -> +K) 
- kätte+Adp:kätte GI; ! (41_DK -> +Adv +K) 
- külge+Adp:külge GI; ! (41_DK -> +Adv +K) 
- küljes+Adp:küljes GI; ! (41_DK -> +Adv +K) 
- küljest+Adp:küljest GI; ! (41_DK -> +Adv +K) 
- küüsi+Adp:küüsi GI; ! (41_K -> +K) 
- küüsis+Adp:küüsis GI; ! (41_K -> +K) 
- küüsist+Adp:küüsist GI; ! (41_K -> +K) 
- ligidale+Adp:ligidale GI; ! (41_DK -> +Adv +K) 
- ligidal+Adp:ligidal GI; ! (41_DK -> +Adv +K) 
- ligidalt+Adp:ligidalt GI; ! (41_DK -> +Adv +K) 
- ligi+Adp:ligi GI; ! (41_DK -> +Adv +K) 
- läbi+Adp:läbi GI; ! (41_DK -> +Adv +K) 
- lähedale+Adp:lähedale GI; ! (41_DK -> +Adv +K) 
- lähedal+Adp:lähedal GI; ! (41_DK -> +Adv +K) 
- lähedalt+Adp:lähedalt GI; ! (41_DK -> +Adv +K) 
- lähistele+Adp:lähistele GI; ! (41_K -> +K) 
- lähistel+Adp:lähistel GI; ! (41_K -> +K) 
- lähistelt+Adp:lähistelt GI; ! (41_K -> +K) 
- man+Adp:man GI; ! (41_DK -> +Adv +K) 
- mant+Adp:mant GI; ! (41_DK -> +Adv +K) 
- manu+Adp:manu GI; ! (41_DK -> +Adv +K) 
- meelest+Adp:meelest GI; ! (41_K -> +K) 
- moel+Adp:moel GI; ! (41_K -> +K) 
- moodi+Adp:moodi GI; ! (41_K -> +K) 
- mõjul+Adp:mõjul GI; ! (41_K -> +K) 
- mööda+Adp:mööda GI; ! (41_DK -> +Adv +K) 
- nahas+Adp:nahas GI; ! (41_DK -> +Adv +K) 
- nahka+Adp:nahka GI; ! (41_DK -> +Adv +K) 
- nahkas+Adp:nahkas GI; ! (41_DK -> +Adv +K) 
- najale+Adp:najale GI; ! (41_K -> +K) 
- najal+Adp:najal GI; ! (41_K -> +K) 
- najalt+Adp:najalt GI; ! (41_K -> +K) 
- nimel+Adp:nimel GI; ! (41_K -> +K) 
- nõjal+Adp:nõjal GI; ! (41_K -> +K) 
- näol+Adp:näol GI; ! (41_K -> +K) 
- ootel+Adp:ootel GI; ! (41_K -> +K) 
- osas+Adp:osas GI; ! (41_K -> +K) 
- otsa+Adp:otsa GI; ! (41_DK -> +Adv +K) 
- otsas+Adp:otsas GI; ! (41_DK -> +Adv +K) 
- otsast+Adp:otsast GI; ! (41_DK -> +Adv +K) 
- paiku+Adp:paiku GI; ! (41_K -> +K) 
- peale+Adp:peale GI; ! (41_DK -> +Adv +K) 
- peal+Adp:peal GI; ! (41_DK -> +Adv +K) 
- pealt+Adp:pealt GI; ! (41_DK -> +Adv +K) 
- peast+Adp:peast GI; ! (41_DK -> +Adv +K) 
- perra+Adp:perra GI; ! (41_DK -> +Adv +K) 
- pidi+Adp:pidi GI; ! (41_K -> +K) 
- pihta+Adp:pihta GI; ! (41_DK -> +Adv +K) 
- piires+Adp:piires GI; ! (41_K -> +K) 
- piki+Adp:piki GI; ! (41_K -> +K) 
- pikku+Adp:pikku GI; ! (41_DK -> +Adv +K) 
- pinnale+Adp:pinnale GI; ! (41_K -> +K) 
- pinnal+Adp:pinnal GI; ! (41_K -> +K) 
- pinnalt+Adp:pinnalt GI; ! (41_K -> +K) 
- poole+Adp:poole GI; ! (41_DK -> +Adv +K) 
- poolest+Adp:poolest GI; ! (41_DK -> +Adv +K) 
- pool+Adp:pool GI; ! (41_DK -> +Adv +K) 
- poolt+Adp:poolt GI; ! (41_DK -> +Adv +K) 
- puhul+Adp:puhul GI; ! (41_DK -> +Adv +K) 
- põhjal+Adp:põhjal GI; ! (41_K -> +K) 
- pähe+Adp:pähe GI; ! (41_DK -> +Adv +K) 
- päralt+Adp:päralt GI; ! (41_K -> +K) 
- päras+Adp:päras GI; ! (41_DK -> +Adv +K) 
- pärast+Adp:pärast GI; ! (41_DK -> +Adv +K) 
- pääle+Adp:pääle GI; ! (41_DK -> +Adv +K) 
- pääl+Adp:pääl GI; ! (41_DK -> +Adv +K) 
- päält+Adp:päält GI; ! (41_DK -> +Adv +K) 
- raames+Adp:raames GI; ! (41_K -> +K) 
- ringi+Adp:ringi GI; ! (41_DK -> +Adv +K) 
- ringis+Adp:ringis GI; ! (41_K -> +K) 
- saadik+Adp:saadik GI; ! (41_DK -> +Adv +K) 
- saatel+Adp:saatel GI; ! (41_K -> +K) 
- saati+Adp:saati GI; ! (41_DK -> +Adv +K) 
- seas+Adp:seas GI; ! (41_DK -> +Adv +K) 
- seast+Adp:seast GI; ! (41_K -> +K) 
- sees+Adp:sees GI; ! (41_DK -> +Adv +K) 
- seest+Adp:seest GI; ! (41_DK -> +Adv +K) 
- sekka+Adp:sekka GI; ! (41_DK -> +Adv +K) 
- seltsi+Adp:seltsi GI; ! (41_DK -> +Adv +K) 
- seltsis+Adp:seltsis GI; ! (41_DK -> +Adv +K) 
- seltsist+Adp:seltsist GI; ! (41_K -> +K) 
- seoses+Adp:seoses GI; ! (41_K -> +K) 
- sisse+Adp:sisse GI; ! (41_DK -> +Adv +K) 
- suhtes+Adp:suhtes GI; ! (41_K -> +K) 
- sunnil+Adp:sunnil GI; ! (41_K -> +K) 
- suunas+Adp:suunas GI; ! (41_K -> +K) 
- suunast+Adp:suunast GI; ! (41_K -> +K) 
- suunda+Adp:suunda GI; ! (41_K -> +K) 
- taga+Adp:taga GI; ! (41_DK -> +Adv +K) 
- tagant+Adp:tagant GI; ! (41_DK -> +Adv +K) 
- tagasi+Adp:tagasi GI; ! (41_DK -> +Adv +K) 
- tagutsi+Adp:tagutsi GI; ! (41_K -> +K) 
- taha+Adp:taha GI; ! (41_DK -> +Adv +K) 
- takka+Adp:takka GI; ! (41_DK -> +Adv +K) 
- tarvis+Adp:tarvis GI; ! (41_DK -> +Adv +K) 
- teel+Adp:teel GI; ! (41_DK -> +Adv +K) 
- toel+Adp:toel GI; ! (41_K -> +K) 
- tõttu+Adp:tõttu GI; ! (41_DK -> +Adv +K) 
- tõukel+Adp:tõukel GI; ! (41_K -> +K) 
- tänu+Adp:tänu GI; ! (41_K -> +K) 
- tükkis+Adp:tükkis GI; ! (41_DK -> +Adv +K) 
- uhal+Adp:uhal GI; ! (41_K -> +K) 
- vaatamata+Adp:vaatamata GI; ! (41_K -> +K) 
- vahele+Adp:vahele GI; ! (41_DK -> +Adv +K) 
- vahel+Adp:vahel GI; ! (41_DK -> +Adv +K) 
- vahelt+Adp:vahelt GI; ! (41_DK -> +Adv +K) 
- vahetsi+Adp:vahetsi GI; ! (41_K -> +K) 
- valgele+Adp:valgele GI; ! (41_DK -> +Adv +K) 
- valgel+Adp:valgel GI; ! (41_DK -> +Adv +K) 
- varale+Adp:varale GI; ! (41_K -> +K) 
- varal+Adp:varal GI; ! (41_K -> +K) 
- varju+Adp:varju GI; ! (41_K -> +K) 
- varjus+Adp:varjus GI; ! (41_K -> +K) 
- varjust+Adp:varjust GI; ! (41_K -> +K) 
- varul+Adp:varul GI; ! (41_K -> +K) 
- vastas+Adp:vastas GI; ! (41_DK -> +Adv +K) 
- vastast+Adp:vastast GI; ! (41_DK -> +Adv +K) 
- vastu+Adp:vastu GI; ! (41_DK -> +Adv +K) 
- veerde+Adp:veerde GI; ! (41_K -> +K) 
- veeres+Adp:veeres GI; ! (41_K -> +K) 
- veerest+Adp:veerest GI; ! (41_K -> +K) 
- viisi+Adp:viisi GI; ! (41_K -> +K) 
- viisil+Adp:viisil GI; ! (41_DK -> +Adv +K) 
- võidu+Adp:võidu GI; ! (41_DK -> +Adv +K) 
- võrra+Adp:võrra GI; ! (41_DK -> +Adv +K) 
- väele+Adp:väele GI; ! (41_DK -> +Adv +K) 
- väel+Adp:väel GI; ! (41_DK -> +Adv +K) 
- vältel+Adp:vältel GI; ! (41_K -> +K) 
- õlule+Adp:õlule GI; ! (41_K -> +K) 
- õlul+Adp:õlul GI; ! (41_K -> +K) 
- õlult+Adp:õlult GI; ! (41_K -> +K) 
- äärde+Adp:äärde GI; ! (41_K -> +K) 
- ääres+Adp:ääres GI; ! (41_K -> +K) 
- äärest+Adp:äärest GI; ! (41_K -> +K) 
- ühes+Adp:ühes GI; ! (41_DK -> +Adv +K) 
- üle+Adp:üle GI; ! (41_DK -> +Adv +K) 
- ümber+Adp:ümber GI; ! (41_DK -> +Adv +K) 
- ümbert+Adp:ümbert GI; ! (41_K -> +K) 
+ abil+Adp:abil PoGen; ! (41_K -> +K) 
+ aega+Adp:aega PoGen; ! (41_K -> +K) 
+ aegu+Adp:aegu PoGen; ! (41_DK -> +Adv +K) 
+ ajal+Adp:ajal PoGen; ! (41_K -> +K) 
+ ajel+Adp:ajel PoGen; ! (41_K -> +K) 
+ alates+Adp:alates PoGen; ! (41_KD -> +Adv +K) 
+ alguks+Adp:alguks PoGen; ! (41_K -> +K) 
+ algule+Adp:algule PoGen; ! (41_K -> +K) 
+ algul+Adp:algul PoGen; ! (41_DK -> +Adv +K) 
+ algult+Adp:algult PoGen; ! (41_K -> +K) 
+ alguni+Adp:alguni PoGen; ! (41_K -> +K) 
+ alla+Adp:alla PoGenPrGenPar; ! (41_DK -> +Adv +K) 
+ allapoole+Adp:alla#poole PrPar; ! (41_DK -> +Adv +K) 
+ allpool+Adp:all#pool PrPar; ! (41_DK -> +Adv +K) 
+ altpoolt+Adp:alt#poolt PrPar; ! (41_DK -> +Adv +K) 
+ all+Adp:all PoGen; ! (41_DK -> +Adv +K) 
+ alt+Adp:alt PoGen; ! (41_DK -> +Adv +K) 
+ alutsi+Adp:alutsi PoGen; ! (41_DK -> +Adv +K) 
+ arvele+Adp:arvele PoGen; ! (41_K -> +K) 
+ arvel+Adp:arvel PoGen; ! (41_K -> +K) 
+ arvelt+Adp:arvelt PoGen; ! (41_K -> +K) 
+ asemele+Adp:asemele PoGen; ! (41_DK -> +Adv +K) 
+ asemel+Adp:asemel PoGen; ! (41_K -> +K) 
+ asemelt+Adp:asemelt PoGen; ! (41_K -> +K) 
+ edasi+Adp:edasi PoNomPar; ! (41_DK -> +Adv +K) 
+ eeli+Adp:eeli PoGen; ! (41_K -> +K) 
+ eel+Adp:eel PoGen; ! (41_DK -> +Adv +K) 
+ ees+Adp:ees PoGen; ! (41_DK -> +Adv +K) 
+ eest+Adp:eest PoGen; ! (41_DK -> +Adv +K) 
+ enne+Adp:enne PrPar; ! (41_DK -> +Adv +K) 
+ ette+Adp:ette PoGen; ! (41_DK -> +Adv +K) 
+ ettepoole+Adp:ette#poole PrPar; ! (41_DK -> +Adv +K) 
+ eespool+Adp:ees#pool PrPar; ! (41_DK -> +Adv +K) 
+ eestpoolt+Adp:eest#poolt PrPar; ! (41_DK -> +Adv +K) 
+ haaval+Adp:haaval PoGen; ! (41_K -> +K) 
+ hakul+Adp:hakul PoGen; ! (41_K -> +K) 
+ heaks+Adp:heaks PoGen; ! (41_K -> +K) 
+ hommikupoole+Adp:hommiku#poole PrPar; ! (41_DK -> +Adv +K) 
+ hoolimata+Adp:hoolimata PoPrEla; ! (41_K -> +K) 
+ hulgas+Adp:hulgas PoGen; ! (41_DK -> +Adv +K) 
+ hulgast+Adp:hulgast PoGen; ! (41_K -> +K) 
+ hulka+Adp:hulka PoGen; ! (41_K -> +K) 
+ ilma+Adp:ilma PrAbe; ! (41_DK -> +Adv +K) 
+ jaoks+Adp:jaoks PoGen; ! (41_DK -> +Adv +K) 
+ jooksul+Adp:jooksul PoGen; ! (41_K -> +K) 
+ juhti+Adp:juhti PoGen; ! (41_K -> +K) 
+ juurde+Adp:juurde PoGen; ! (41_DK -> +Adv +K) 
+ juures+Adp:juures PoGen; ! (41_DK -> +Adv +K) 
+ juurest+Adp:juurest PoGen; ! (41_K -> +K) 
+ jõul+Adp:jõul PoGen; ! (41_K -> +K) 
+ järele+Adp:järele PoGen; ! (41_DK -> +Adv +K) 
+ järel+Adp:järel PoGen; ! (41_DK -> +Adv +K) 
+ järelt+Adp:järelt PoGen; ! (41_K -> +K) 
+ järgi+Adp:järgi PoGen; ! (41_DK -> +Adv +K) 
+ kaasas+Adp:kaasas PoCom; ! (41_DK -> +Adv +K) 
+ kaela+Adp:kaela PoGen; ! (41_K -> +K) 
+ kaelas+Adp:kaelas PoGen; ! (41_K -> +K) 
+ kaelast+Adp:kaelast PoGen; ! (41_K -> +K) 
+ kallale+Adp:kallale PoGen; ! (41_DK -> +Adv +K) 
+ kallal+Adp:kallal PoGen; ! (41_DK -> +Adv +K) 
+ kallalt+Adp:kallalt PoGen; ! (41_K -> +K) 
+ kamul+Adp:kamul PoGen; ! (41_K -> +K) 
+ kandis+Adp:kandis PoGen; ! (41_DK -> +Adv +K) 
+ kandist+Adp:kandist PoGen; ! (41_DK -> +Adv +K) 
+ kannule+Adp:kannule PoGen; ! (41_DK -> +Adv +K) 
+ kannul+Adp:kannul PoGen; ! (41_DK -> +Adv +K) 
+ kannult+Adp:kannult PoGen; ! (41_K -> +K) 
+ kanti+Adp:kanti PoGen; ! (41_DK -> +Adv +K) 
+ kaudu+Adp:kaudu PoGenPar; ! (41_DK -> +Adv +K) 
+ kaupa+Adp:kaupa PoGen; ! (41_K -> +K) 
+ keset+Adp:keset PrPar; ! (41_K -> +K) 
+ keskele+Adp:keskele PoGen; ! (41_DK -> +Adv +K) 
+ keskel+Adp:keskel PoGen; ! (41_DK -> +Adv +K) 
+ keskelt+Adp:keskelt PoGen; ! (41_DK -> +Adv +K) 
+ keskis+Adp:keskis PoGen; ! (41_DK -> +Adv +K) 
+ kesk+Adp:kesk PrPar; ! (41_K -> +K) 
+ kestel+Adp:kestel PoGen; ! (41_K -> +K) 
+ kilda+Adp:kilda PoGen; ! (41_K -> +K) 
+ killas+Adp:killas PoGen; ! (41_K -> +K) 
+ killast+Adp:killast PoGen; ! (41_K -> +K) 
+ kimpu+Adp:kimpu PoGen; ! (41_DK -> +Adv +K) 
+ kiuste+Adp:kiuste PoGen; ! (41_DK -> +Adv +K) 
+ kohale+Adp:kohale PoGen; ! (41_DK -> +Adv +K) 
+ kohal+Adp:kohal PoGen; ! (41_DK -> +Adv +K) 
+ kohalt+Adp:kohalt PoGen; ! (41_DK -> +Adv +K) 
+ kohta+Adp:kohta PoGen; ! (41_DK -> +Adv +K) 
+ kombel+Adp:kombel PoGen; ! (41_DK -> +Adv +K) 
+ koos+Adp:koos PoPrCom; ! (41_DK -> +Adv +K) 
+ korral+Adp:korral PoGen; ! (41_DK -> +Adv +K) 
+ korras+Adp:korras PoGen; ! (41_K -> +K) 
+ kujul+Adp:kujul PoGen; ! (41_K -> +K) 
+ kulul+Adp:kulul PoGen; ! (41_K -> +K) 
+ kuni+Adp:kuni PrTrm; ! (41_JK -> +J +K) 
+ kõrvale+Adp:kõrvale PoGen; ! (41_DK -> +Adv +K) 
+ kõrval+Adp:kõrval PoGen; ! (41_DK -> +Adv +K) 
+ kõrvalt+Adp:kõrvalt PoGen; ! (41_DK -> +Adv +K) 
+ käes+Adp:käes PoGen; ! (41_DK -> +Adv +K) 
+ käest+Adp:käest PoGen; ! (41_DK -> +Adv +K) 
+ käigus+Adp:käigus PoGen; ! (41_K -> +K) 
+ kätte+Adp:kätte PoGen; ! (41_DK -> +Adv +K) 
+ külge+Adp:külge PoGen; ! (41_DK -> +Adv +K) 
+ küljes+Adp:küljes PoGen; ! (41_DK -> +Adv +K) 
+ küljest+Adp:küljest PoGen; ! (41_DK -> +Adv +K) 
+ küüsi+Adp:küüsi PoGen; ! (41_K -> +K) 
+ küüsis+Adp:küüsis PoGen; ! (41_K -> +K) 
+ küüsist+Adp:küüsist PoGen; ! (41_K -> +K) 
+ ligidale+Adp:ligidale PoGen; ! (41_DK -> +Adv +K) 
+ ligidal+Adp:ligidal PoGen; ! (41_DK -> +Adv +K) 
+ ligidalt+Adp:ligidalt PoGen; ! (41_DK -> +Adv +K) 
+ ligi+Adp:ligi PoGenPrPar; ! (41_DK -> +Adv +K) 
+ läbi+Adp:läbi PoGenNomElaPrGen; ! (41_DK -> +Adv +K) 
+ lähedale+Adp:lähedale PoGen; ! (41_DK -> +Adv +K) 
+ lähedal+Adp:lähedal PoGen; ! (41_DK -> +Adv +K) 
+ lähedalt+Adp:lähedalt PoGen; ! (41_DK -> +Adv +K) 
+ lähistele+Adp:lähistele PoGen; ! (41_K -> +K) 
+ lähistel+Adp:lähistel PoGen; ! (41_K -> +K) 
+ lähistelt+Adp:lähistelt PoGen; ! (41_K -> +K) 
+ man+Adp:man PoGen; ! (41_DK -> +Adv +K) 
+ mant+Adp:mant PoGen; ! (41_DK -> +Adv +K) 
+ manu+Adp:manu PoGen; ! (41_DK -> +Adv +K) 
+ meelest+Adp:meelest PoGen; ! (41_K -> +K) 
+ moel+Adp:moel PoGen; ! (41_K -> +K) 
+ moodi+Adp:moodi PoGen; ! (41_K -> +K) 
+ mõjul+Adp:mõjul PoGen; ! (41_K -> +K) 
+ mööda+Adp:mööda PoPrPar; ! (41_DK -> +Adv +K) 
+ nahas+Adp:nahas PoGen; ! (41_DK -> +Adv +K) 
+ nahka+Adp:nahka PoGen; ! (41_DK -> +Adv +K) 
+ nahkas+Adp:nahkas PoGen; ! (41_DK -> +Adv +K) 
+ najale+Adp:najale PoGen; ! (41_K -> +K) 
+ najal+Adp:najal PoGen; ! (41_K -> +K) 
+ najalt+Adp:najalt PoGen; ! (41_K -> +K) 
+ nimel+Adp:nimel PoGen; ! (41_K -> +K) 
+ nõjal+Adp:nõjal PoGen; ! (41_K -> +K) 
+ näol+Adp:näol PoGen; ! (41_K -> +K) 
+ ootel+Adp:ootel PoGen; ! (41_K -> +K) 
+ osas+Adp:osas PoGen; ! (41_K -> +K) 
+ otsa+Adp:otsa PoGenNom; ! (41_DK -> +Adv +K) 
+ otsas+Adp:otsas PoGen; ! (41_DK -> +Adv +K) 
+ otsast+Adp:otsast PoGen; ! (41_DK -> +Adv +K) 
+ paiku+Adp:paiku PoGen; ! (41_K -> +K) 
+ peale+Adp:peale PoGenElaPrGenPar; ! (41_DK -> +Adv +K) 
+ peal+Adp:peal PoGen; ! (41_DK -> +Adv +K) 
+ pealt+Adp:pealt PoPrGen; ! (41_DK -> +Adv +K) 
+ pealepoole+Adp:peale#poole PrPar; ! (41_DK -> +Adv +K) 
+ pealpool+Adp:peal#pool PrPar; ! (41_DK -> +Adv +K) 
+ pealtpoolt+Adp:pealt#poolt PrPar; ! (41_DK -> +Adv +K) 
+ peast+Adp:peast PoGen; ! (41_DK -> +Adv +K) 
+ perra+Adp:perra PoGen; ! (41_DK -> +Adv +K) 
+ pidi+Adp:pidi PoPar; ! (41_K -> +K) 
+ pihta+Adp:pihta PoGen; ! (41_DK -> +Adv +K) 
+ piires+Adp:piires PoGen; ! (41_K -> +K) 
+ piki+Adp:piki PrPar; ! (41_K -> +K) 
+ pikku+Adp:pikku PoGen; ! (41_DK -> +Adv +K) 
+ pinnale+Adp:pinnale PoGen; ! (41_K -> +K) 
+ pinnal+Adp:pinnal PoGen; ! (41_K -> +K) 
+ pinnalt+Adp:pinnalt PoGen; ! (41_K -> +K) 
+ poole+Adp:poole PoGen; ! (41_DK -> +Adv +K) 
+ poolest+Adp:poolest PoGen; ! (41_DK -> +Adv +K) 
+ pool+Adp:pool PoGenAde; ! (41_DK -> +Adv +K) 
+ poolt+Adp:poolt PoGenAbl; ! (41_DK -> +Adv +K) 
+ puhul+Adp:puhul PoGen; ! (41_DK -> +Adv +K) 
+ põhjal+Adp:põhjal PoGen; ! (41_K -> +K) 
+ pähe+Adp:pähe PoGen; ! (41_DK -> +Adv +K) 
+ päralt+Adp:päralt PoGen; ! (41_K -> +K) 
+ päras+Adp:päras PoGen; ! (41_DK -> +Adv +K) 
+ pärast+Adp:pärast PoGenPrPar; ! (41_DK -> +Adv +K) 
+ pääle+Adp:pääle PoGen; ! (41_DK -> +Adv +K) 
+ pääl+Adp:pääl PoGen; ! (41_DK -> +Adv +K) 
+ päält+Adp:päält PoGen; ! (41_DK -> +Adv +K) 
+ raames+Adp:raames PoGen; ! (41_K -> +K) 
+ ringi+Adp:ringi PoNom; ! (41_DK -> +Adv +K) 
+ ringis+Adp:ringis PoGen; ! (41_K -> +K) 
+ saadik+Adp:saadik PoEla; ! (41_DK -> +Adv +K) 
+ saatel+Adp:saatel PoGen; ! (41_K -> +K) 
+ saati+Adp:saati PoEla; ! (41_DK -> +Adv +K) 
+ sealpool+Adp:seal#pool PrPar; ! (41_DK -> +Adv +K) 
+ sealtpoolt+Adp:sealt#poolt PrPar; ! (41_DK -> +Adv +K) 
+ seas+Adp:seas PoGen; ! (41_DK -> +Adv +K) 
+ seast+Adp:seast PoGen; ! (41_K -> +K) 
+ sees+Adp:sees PoGen; ! (41_DK -> +Adv +K) 
+ seest+Adp:seest PoGen; ! (41_DK -> +Adv +K) 
+ seespool+Adp:sees#pool PrPar; ! (41_DK -> +Adv +K) 
+ seestpoolt+Adp:seest#poolt PrPar; ! (41_DK -> +Adv +K) 
+ sekka+Adp:sekka PoGen; ! (41_DK -> +Adv +K) 
+ seltsi+Adp:seltsi PoGen; ! (41_DK -> +Adv +K) 
+ seltsis+Adp:seltsis PoGen; ! (41_DK -> +Adv +K) 
+ seltsist+Adp:seltsist PoGen; ! (41_K -> +K) 
+ seoses+Adp:seoses PoPrCom; ! (41_K -> +K) 
+ siiapoole+Adp:siia#poole PrPar; ! (41_DK -> +Adv +K) 
+ siinpool+Adp:siin#pool PrPar; ! (41_DK -> +Adv +K) 
+ siitpoolt+Adp:siit#poolt PrPar; ! (41_DK -> +Adv +K) 
+ sinnapoole+Adp:sinna#poole PrPar; ! (41_DK -> +Adv +K) 
+ sisse+Adp:sisse PoGen; ! (41_DK -> +Adv +K) 
+ sissepoole+Adp:sisse#poole PrPar; ! (41_DK -> +Adv +K) 
+ suhtes+Adp:suhtes PoGen; ! (41_K -> +K) 
+ sunnil+Adp:sunnil PoGen; ! (41_K -> +K) 
+ suunas+Adp:suunas PoGen; ! (41_K -> +K) 
+ suunast+Adp:suunast PoGen; ! (41_K -> +K) 
+ suunda+Adp:suunda PoGen; ! (41_K -> +K) 
+ taga+Adp:taga PoGen; ! (41_DK -> +Adv +K) 
+ tagant+Adp:tagant PoGen; ! (41_DK -> +Adv +K) 
+ tagantpoolt+Adp:tagant#poolt PrPar; ! (41_DK -> +Adv +K) 
+ tagapool+Adp:taga#pool PrPar; ! (41_DK -> +Adv +K) 
+ tagasi+Adp:tagasi PoNomPar; ! (41_DK -> +Adv +K) 
+ tagutsi+Adp:tagutsi PoGen; ! (41_K -> +K) 
+ taha+Adp:taha PoGen; ! (41_DK -> +Adv +K) 
+ tahapoole+Adp:taha#poole PrPar; ! (41_DK -> +Adv +K) 
+ takka+Adp:takka PoGen; ! (41_DK -> +Adv +K) 
+ tarvis+Adp:tarvis PoGen; ! (41_DK -> +Adv +K) 
+ teel+Adp:teel PoGen; ! (41_DK -> +Adv +K) 
+ teispool+Adp:teis#pool PrPar; ! (41_DK -> +Adv +K) 
+ teispoole+Adp:teis#poole PrPar; ! (41_DK -> +Adv +K) 
+ teispoolt+Adp:teis#poolt PrPar; ! (41_DK -> +Adv +K) 
+ toel+Adp:toel PoGen; ! (41_K -> +K) 
+ tõttu+Adp:tõttu PoGen; ! (41_DK -> +Adv +K) 
+ tõukel+Adp:tõukel PoGen; ! (41_K -> +K) 
+ tänu+Adp:tänu PrAll; ! (41_K -> +K) 
+ tükkis+Adp:tükkis PoPrCom; ! (41_DK -> +Adv +K) 
+ uhal+Adp:uhal PoGen; ! (41_K -> +K) 
+ vaatamata+Adp:vaatamata PoPrAll; ! (41_K -> +K) 
+ vahele+Adp:vahele PoGen; ! (41_DK -> +Adv +K) 
+ vahel+Adp:vahel PoGen; ! (41_DK -> +Adv +K) 
+ vahelt+Adp:vahelt PoGen; ! (41_DK -> +Adv +K) 
+ vahetsi+Adp:vahetsi PoGen; ! (41_K -> +K) 
+ valgele+Adp:valgele PoGen; ! (41_DK -> +Adv +K) 
+ valgel+Adp:valgel PoGen; ! (41_DK -> +Adv +K) 
+ varale+Adp:varale PoGen; ! (41_K -> +K) 
+ varal+Adp:varal PoGen; ! (41_K -> +K) 
+ varju+Adp:varju PoGen; ! (41_K -> +K) 
+ varjus+Adp:varjus PoGen; ! (41_K -> +K) 
+ varjust+Adp:varjust PoGen; ! (41_K -> +K) 
+ varul+Adp:varul PoGen; ! (41_K -> +K) 
+ vastas+Adp:vastas PoGen; ! (41_DK -> +Adv +K) 
+ vastast+Adp:vastast PoGen; ! (41_DK -> +Adv +K) 
+ vastu+Adp:vastu PoGenPrPar; ! (41_DK -> +Adv +K) 
+ veerde+Adp:veerde PoGen; ! (41_K -> +K) 
+ veeres+Adp:veeres PoGen; ! (41_K -> +K) 
+ veerest+Adp:veerest PoGen; ! (41_K -> +K) 
+ viisi+Adp:viisi PoGen; ! (41_K -> +K) 
+ viisil+Adp:viisil PoGen; ! (41_DK -> +Adv +K) 
+ võidu+Adp:võidu PoGen; ! (41_DK -> +Adv +K) 
+ võrra+Adp:võrra PoGen; ! (41_DK -> +Adv +K) 
+ väele+Adp:väele PoGen; ! (41_DK -> +Adv +K) 
+ väel+Adp:väel PoGen; ! (41_DK -> +Adv +K) 
+ väljapoole+Adp:välja#poole PrPar; ! (41_DK -> +Adv +K) 
+ väljaspool+Adp:väljas#pool PrPar; ! (41_DK -> +Adv +K) 
+ väljastpoolt+Adp:väljast#poolt PrPar; ! (41_DK -> +Adv +K) 
+ vältel+Adp:vältel PoGen; ! (41_K -> +K) 
+ õhtupoole+Adp:õhtu#poole PrPar; ! (41_DK -> +Adv +K) 
+ õlule+Adp:õlule PoGen; ! (41_K -> +K) 
+ õlul+Adp:õlul PoGen; ! (41_K -> +K) 
+ õlult+Adp:õlult PoGen; ! (41_K -> +K) 
+ äärde+Adp:äärde PoGen; ! (41_K -> +K) 
+ ääres+Adp:ääres PoGen; ! (41_K -> +K) 
+ äärest+Adp:äärest PoGen; ! (41_K -> +K) 
+ ühelepoole+Adp:ühele#poole PrPar; ! (41_DK -> +Adv +K) 
+ ühelpool+Adp:ühel#pool PrPar; ! (41_DK -> +Adv +K) 
+ üheltpoolt+Adp:ühelt#poolt PrPar; ! (41_DK -> +Adv +K) 
+ ühes+Adp:ühes PoPrCom; ! (41_DK -> +Adv +K) 
+ ülalpool+Adp:ülal#pool PrPar; ! (41_DK -> +Adv +K) 
+ ülaltpoolt+Adp:ülalt#poolt PrPar; ! (41_DK -> +Adv +K) 
+ üle+Adp:üle PoPrGen; ! (41_DK -> +Adv +K) 
+ ülespoole+Adp:üles#poole PrPar; ! (41_DK -> +Adv +K) 
+ ülevalpool+Adp:üleval#pool PrPar; ! (41_DK -> +Adv +K) 
+ ülevaltpoolt+Adp:ülevalt#poolt PrPar; ! (41_DK -> +Adv +K) 
+ ümber+Adp:ümber PoPrGen; ! (41_DK -> +Adv +K) 
+ ümbert+Adp:ümbert PoPrGen; ! (41_K -> +K) 
+
+
+LEXICON PoGen
+ +Po+SC/Gen: GI; 
+ GI;
+
+LEXICON PoNom
+ +Po+SC/Nom: GI; 
+ GI;
+
+LEXICON PoPar
+ +Po+SC/Par: GI; 
+ GI;
+
+LEXICON PoEla
+ +Po+SC/Ela: GI; 
+ GI;
+
+LEXICON PoAll
+ +Po+SC/All: GI; 
+ GI;
+
+LEXICON PoAbl
+ +Po+SC/Abl: GI; 
+ GI;
+
+LEXICON PoAde
+ +Po+SC/Ade: GI; ! pool
+ GI;
+
+LEXICON PoCom
+ +Po+SC/Com: GI; 
+ GI;
+
+!LEXICON PoAbe
+! +Po+SC/Abe: GI; 
+ GI;
+
+LEXICON PrGen
+ +Pr+SC/Gen: GI; 
+ GI;
+
+!LEXICON PrNom
+! +Pr+SC/Nom: GI; 
+ GI;
+
+LEXICON PrPar
+ +Pr+SC/Par: GI; 
+ GI;
+
+LEXICON PrEla
+ +Pr+SC/Ela: GI; 
+ GI;
+
+LEXICON PrAll
+ +Pr+SC/All: GI; 
+ GI;
+
+!LEXICON PrAbl
+! +Pr+SC/Abl: GI; 
+ GI;
+
+!LEXICON PrAde
+! +Pr+SC/Ade: GI; 
+ GI;
+
+LEXICON PrCom
+ +Pr+SC/Com: GI; 
+ GI;
+
+LEXICON PrAbe
+ +Pr+SC/Abe: GI; 
+ GI;
+
+LEXICON PrTrm
+ +Pr+SC/Trm: GI; 
+ GI;
+
+
+LEXICON PoPrGen
+ PoGen;
+ PrGen;
+
+LEXICON PoPrPar
+ PoPar;
+ PrPar;
+
+LEXICON PoPrEla
+ PoEla;
+ PrEla;
+
+LEXICON PoPrAll
+ PoAll;
+ PrAll;
+
+LEXICON PoPrCom
+ PoCom;
+ PrCom;
+
+
+LEXICON PoGenPar
+ PoGen;
+ PoPar;
+
+LEXICON PoGenNom
+ PoGen;
+ PoNom;
+
+LEXICON PoNomPar
+ PoNom;
+ PoPar;
+
+LEXICON PoGenPrPar
+ PoGen;
+ PrPar;
+
+LEXICON PoGenAde
+ PoGen;
+ PoAde;
+
+LEXICON PoGenAbl
+ PoGen;
+ PoAbl;
+
+
+LEXICON PoGenPrGenPar
+ PoGen;
+ PrGen;
+ PrPar;
+
+LEXICON PoGenElaPrGenPar
+ PoGen;
+ PoEla;
+ PrGen;
+ PrPar;
+
+LEXICON PoGenNomElaPrGen
+ PoGen;
+ PoNom;
+ PoEla;
+ PrGen;
+
