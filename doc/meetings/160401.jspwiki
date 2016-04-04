@@ -1,0 +1,149 @@
+!!!SamEst meeting 01.04.2016
+!!!Participants 
+Heiki, Heli, Jaak, Jack, Sjur, Tiina, Trond
+
+!!!Agenda
+* Subgroup updates:
+** est-oahpa
+** vro-oahpa
+** CG
+** MT
+** est FST
+** vro FST
+* Next meeting
+
+!!! Subgroup updates:
+
+!! est-oahpa
+
+Heli has done similar things for est-oahpa and vro-oahpa: Removing repetitions from sets of five. This was different in Morfa-C and Morfa-S earlier. In Morfa-S we had a control for repetitions, but in Morfa-C we did not. In sme the number of words was so big that this did not arise as a problem, whereas in vro some sets had just a handful of members. Now it is done.
+
+A good idea to have personal names in sentences, instead of taking professions or family members. There are less semantic restrictions for names than for e.g. professions (''Mati runs on the beach'' vs. ''The grandmother runs on the beach'').
+
+Picked out 20 female and 20 male first names from a list and added them into the Oahpa dictionary.
+
+Filosoft has a base of appr 3000 names (first, last, other names).
+
+{{{
+lisa:0094|<Aabel <Aabeli!\H\.2.SG+9!%i>e[I%
+lisa:0094|<Aabram <Aabrami!\H\.2+9!%i>e[I%
+lisa:0094|<Aadam <Aadama!\H\.2+9!
+}}}
+
+__TODO__ Add the 3000 to the fst-s ([http://giellatekno.uit.no/bugzilla/show_bug.cgi?id=2169])
+
+!! vro-oahpa
+
+Mostly dealt with Morfa-C. Added lots of words to the Oahpa dictionary,
+in order to enrich the exercises.
+
+Idea: Ensure that the form that occured in the last task and got a correct answer does not occur in the next set. This omission could "spill over" to another student squeezing in before you, but this does not matter.
+
+Another idea: Implement a repetition memory along the lines of Anki etc. Requires login, and should be returned to later.
+
+Negative words:
+
+kick, steal, vomit, ... (policemen stealing, teachers cheating, ...).
+A possibility: Marking the negative words, and ensure that they are 
+not coocurring with certain professions.
+
+There are still both too many errors and especially too low coverage in the fst (see below), so that we may not release the Morfa-S or Morfa-C for students yet.
+
+
+!! CG
+
+EstCG
+
+Took the same textbook as we use for Finnish and made a gold standard for Estonian, started to tune the CG rules based on that. Very many compounds that were not present in the previous version. 
+
+Need to add the subcategories of the adpositions, but do not know what is the best way for it. Suppose that a good way would be to add such tags that could be included in analysers but not in generators as there are some Sem/ or Err/ or other tags. Which subcategory name would be suitable for it, some existing or new one? I saw there some others (Var/) but don't know what they mean.
+I need the tags for subcategory - valency as transitivity for verbs.
+
+* Verbs: +TV, +IV (transitivity, i.e. meaning +TV/Acc, or +TV/Gen, in Estonian)
+**
+** perhaps also: +TV/Ill, +TV/Ine, ... (or, equivalently +TV +SC/Ill)
+* Adpositions: "+IV" = +Adv, "+TV" = +Pr, +Po (transitivity and direction)
+
+Tiina would like to add the case information >>there<<. She tried to add for example SC/Nom.
+
+Of course, the verbs are the next question. But first the simplest one.
+
+* Tags in the fst gives fast processing.
+* Sets in the cg gives a flexible development environment.
+
+Tiina prefers to have different adposition subclasses in different readings, not on one line. She added them as SC/Nom, SC/Gen,... But question is, may be some other name instead of SC would be more suitable. 
+
+But how can I (by default) exclude them from generators?
+** tags are excluded from the generator (or usually made optional) in a regular expression of the type: 0 (<-) %+SC%/Par , 0 (<-) %+SC%/Gen ;
+** this regex is then applied to all generators by adding a target in the src/Makefile.am: generators-%.hfst: generators-%.tmp.hfst (see examples in SME, other languages)
+* One would not like +Pr/Par, but +Pr and +SC/Par as separate tags 
+
+sme verb valency:
+
+Do they contain parentheses <>? yes
+
+Then they are not suitable for apertium? Ask Linda, They should be.
+
+Jack: I was interested in them from sms and adpositions.
+But I know so far, that in apertium I cannot use +%<XXX%>, it is additional conversion and so have to remember that in CG-rules also.
+
+
+The valency tag for sme is: +%<loc%>
+
+
+cf. sme/src/morphology/root.lexc:
+
+{{{
+Valency tags, i.e. tags assigned to verbs for denoting their arguments                                                                                                                                                                                    
+
+
++%<loc%>                  !!≈ * @CODE@ case tags                                                                                                                                                                                                             
++%<ill%>                  !!≈ * @CODE@                                                                                                                                                                                                                       
++%<com%>          !!≈ * @CODE@                                                                                                                                                                                                                               
++%<inf%>                  !!≈ * @CODE@ infinitive tags                                                                                                                                                                                                       
++%<acc_inf%>      !!≈ * @CODE@                                                                                                                                                                                                                               
++%<po_lusa%>      !!≈ * @CODE@  adposition tags                                                                                                                                                                                                              
++%<po_ala%>       !!≈ * @CODE@                                                                                                                                                                                                                               
++%<po_alde%>      !!≈ * @CODE@                                                                                                                                                                                                                               
++%<po_birra%>     !!≈ * @CODE@                                                                                                                                                                                                                               
++%<sub%>          !!≈ * @CODE@  clause                                                                                                                                                                                                                       
++%<acc_loc%>      !!≈ * @CODE@  combi case tags                                                                                                                                                                                                              
++%<acc_ill%>      !!≈ * @CODE@                                                                                                                                                                                                                               
++%<actio_ess%>    !!≈ * @CODE@                                                                                                                                                                                                                               
++%<actio_loc%>    !!≈ * @CODE@                                                                                                                                                                                                                               
+}}}
+
+__TODO__
+# Start experimenting with +SC/Par (declare in root.lexc and introduce in .lexc - are already in Est and .cg3 - locally)
+# add the deletion regex to the src/filters/ directory, remember to list the file in src/filters/Makefile.am
+# add deletion/optionalisation to generators by specifying it in src/Makefile.am (cf above)
+# Discuss tag format (+SC/Par vs. <pr_par> in CG meeting next week)
+
+
+!! MT
+
+!Setup issues
+There are still problems in the setup of sme-est.
+
+{{{
+./autogen.sh --with-lang1=/Users/ttr000/main/langs/sme/tools/mt/apertium --with-lang2=/Users/ttr000/main/langs/est/tools/mt/apertium
+
+configure: error: Could not find sources dir for giella-sme (AP_SRC1="/Users/ttr000/main/langs/sme/tools/mt/apertium")
+}}}
+
+We have not had a separate MT meeting yet. Goal: next week.
+
+!! est FST
+
+Not much happening, Jaak is slowly recovering from vabruari. Outlook is quite good.
+
+!! vro FST
+
+Hard work by Jack and Sulev, so that the fst is improving.
+
+In a 200k corpus (biggies/trunk/langs/vro/corp/*.txt), recognition percentage is 12%.
+
+Important lacunas explaining the low recognition: punctuation marks {{(.,:;)}}, names (Rõugõ, Eesti), closed class words (vai, nink). 
+
+!!! Next meeting
+__18. April 9:00__ Norwegian time / __10:00__ Estonian time
