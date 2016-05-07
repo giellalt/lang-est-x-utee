@@ -2,6 +2,7 @@
 <pron>	<prn>
 <v>	<vblex>
 <cc>	<cnjcoo>
+<cs>	<cnjsub>
 <interr>	<itg>
 <sg1>	<p1><sg>
 <sg2>	<p2><sg>
@@ -10,3 +11,4 @@
 <pl2>	<p2><pl>
 <pl3>	<p3><pl>
 <aff>	@0@
+

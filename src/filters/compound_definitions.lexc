@@ -16,6 +16,7 @@ Definitions
     Tähtsõne = [ Flags | Täht | %- | %=]+;
     Tuletised = "+Der" [ "+Der/ini" | "+Der/ja" | "+Der/lik" | "+Der/lt" | "+Der/mine" | "+Der/nu" | "+Der/tav" | "+Der/tu" | "+Der/us" | "+Der/v" ];
     Semantilised = [ "+Sem/Plc" ];
+    PronType = [ "+Pers" ];
     ArvJaKääne = NonGen [ %+Sg | %+Pl ] [ %+Nom | %+Gen | %+Par | %+Ill | %+Ine
     			  	 	| %+Ela | %+All | %+Ade | %+Abl | %+Tra
 				 	| %+Trm | %+Ess | %+Abe | %+Com ] NonGen;
@@ -67,12 +68,12 @@ Definitions
     Nimisõna' = Sona TüveEristajad "+N" ("+Prop" (Semantilised)) Flags;
     Nimisõna = Nimisõna' ArvJaKääne;
     Arvsõna = Sona "+Num" [ "+Card" | "+Ord" ] Flags (ArvJaKääne);
-    Asesõna = Sona [ "+Pron" ( "+Emph" ) ] ArvIsikJaKääne;
+    Asesõna = Sona "+Pron"  [ "+Pers" ( "+Emph" ) ArvIsikJaKääne | ( PronType ) ( "+Emph" ) ArvJaKääne ];
     Käänduvsõna = [ Omadussõna | Nimisõna | Arvsõna | Asesõna ] Gi;
     Määrsõna = Sona "+Adv" Gi;
     Hüüdsõna = Sona "+Interj";
     Sidesõna = Sona [ "+CC" | "+CS" ];
-    Kaassõna = Sona "+Adp" ([ "+Po" | "+Pr" ]) ([ "+SC/Nom" | "+SC/Gen" | "+SC/Par" | "+SC/Ela" | "+SC/All" | "+SC/Ade" | "+SC/Abl" | "+SC/Trm" | "+SC/Com" | "+SC/Abe" ]);
+    Kaassõna = Sona "+Adp" ([ "+Po" | "+Pr" ]) ([ "+SC/Nom" | "+SC/Gen" | "+SC/Par" | "+SC/Ela" | "+SC/All" | "+SC/Ade" | "+SC/Abl" | "+SC/Trm" | "+SC/Com" | "+SC/Abe" ]) Gi;
     Muusõna = Sona "+Adv" Gi;
     Genatribuut = Sona TüveEristajad "+N" ( "+Prop" "+Sem/Plc" ) "+Sg" "+Gen" "+Attr" Gi;
     Tegusõna = Tähtsõne VerbiParadigma Gi; 

@@ -5,7 +5,7 @@ LEXICON PrePostPositions
  aegu+Adp:aegu PoGen; ! (41_DK -> +Adv +K) 
  ajal+Adp:ajal PoGen; ! (41_K -> +K) 
  ajel+Adp:ajel PoGen; ! (41_K -> +K) 
- alates+Adp:alates PoGen; ! (41_KD -> +Adv +K) 
+ alates+Adp:alates PoGenPoPrEla; ! (41_KD -> +Adv +K) 
  alguks+Adp:alguks PoGen; ! (41_K -> +K) 
  algule+Adp:algule PoGen; ! (41_K -> +K) 
  algul+Adp:algul PoGen; ! (41_DK -> +Adv +K) 
@@ -303,7 +303,7 @@ LEXICON PoCom
 
 !LEXICON PoAbe
 ! +Po+SC/Abe: GI; 
- GI;
+! GI;
 
 LEXICON PrGen
  +Pr+SC/Gen: GI; 
@@ -311,7 +311,7 @@ LEXICON PrGen
 
 !LEXICON PrNom
 ! +Pr+SC/Nom: GI; 
- GI;
+! GI;
 
 LEXICON PrPar
  +Pr+SC/Par: GI; 
@@ -327,11 +327,11 @@ LEXICON PrAll
 
 !LEXICON PrAbl
 ! +Pr+SC/Abl: GI; 
- GI;
+! GI;
 
 !LEXICON PrAde
 ! +Pr+SC/Ade: GI; 
- GI;
+! GI;
 
 LEXICON PrCom
  +Pr+SC/Com: GI; 
@@ -391,6 +391,9 @@ LEXICON PoGenAbl
  PoGen;
  PoAbl;
 
+LEXICON PoGenPoPrEla
+ PoGen;
+ PoPrEla;
 
 LEXICON PoGenPrGenPar
  PoGen;
