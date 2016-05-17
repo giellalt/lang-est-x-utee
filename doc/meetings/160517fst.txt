@@ -1,0 +1,64 @@
+!!Eesti FST koosolek 17.05.2015
+Osalejad: Heiki, Jaak
+
+[9:05.41] Heiki-Jaan Kaalep: hei
+[9:05.56] Heiki-Jaan Kaalep: meil pidi täna kl 10 koosolek olema
+[9:06.04] Jaak Pruulmann-Vengerfeldt: Just.
+[9:06.20] Heiki-Jaan Kaalep: ni, mul läks vahepeal ubuntu katki
+[9:06.29] Jaak Pruulmann-Vengerfeldt: ma saan raporteerida, et mul pole millestki uuest enda poolt raporteerida. isegi eelmist protokolli pole ma üles pandud saanud.
+[9:06.38] Heiki-Jaan Kaalep: paha lugu
+[9:06.41] Jaak Pruulmann-Vengerfeldt: aga ma olen valmis lahendama igasuguseid su muresid, kui Sul neid on :)
+[9:07.11] Heiki-Jaan Kaalep: mul kahjuks praegu neid polegi, s.t. mu mured on seotud masinaga ja sellega tegeleb Tarmo
+[9:07.17] Jaak Pruulmann-Vengerfeldt: (ühtlasi kasvab minu sees üha suuremaks plaan cyberist puhkust võtta, et teha ära kõik need asjad, mille tegemist cyberis töötamine täiega segab)
+[9:07.36] Heiki-Jaan Kaalep: mnjah, sul on ennegi plaane olnud...
+[9:08.10] Heiki-Jaan Kaalep: kui ma nüüd oma töödest aru annan, siis...
+[9:09.00] Heiki-Jaan Kaalep: hakkasin kirjutama skripte, mis fs_lex teisendaksid seellele kujule, mida experimental-langs/est nõuab
+[9:10.12] Heiki-Jaan Kaalep: alustasin sellest, et kirjutada igale kirjele taha tema muuttüüp; jõudsin sellega poole peale ja siis läks ketas katki
+[9:10.33] Jaak Pruulmann-Vengerfeldt: ookei.
+[9:11.23] Heiki-Jaan Kaalep: ma mõtlen, et kui arvuti on korras, siis kuluks mul veel 2 päeva, et need muuttüübid, mis root.lexc-s on, ära katta
+[9:11.53] Heiki-Jaan Kaalep: siis jäävad erandid (asesõnad jms), mille teisendamise peale kulub muidugi üksjagu kauem
+[9:12.04] Jaak Pruulmann-Vengerfeldt: ja siis tulevad liitsõnad?
+[9:12.28] Heiki-Jaan Kaalep: alguses oleksid need liitsõnad nagunii olemas, mis fs_lex sees on
+[9:13.14] Jaak Pruulmann-Vengerfeldt: ja see katab mingi märkimisväärselt suure hulga juba ära?
+[9:13.30] Heiki-Jaan Kaalep: enne liitsõnu tuleb veel see, et pean tüvedele õiged arhifoneemid (või kuidas neid nüüd nimetataksegi) sisse genema, est-phon.twolc jaoks
+[9:14.26] Jaak Pruulmann-Vengerfeldt: nii neid vist nimetati jah. see oli see, mida mu magistritöö eki sõnastikuga tegi. ma ei tea, kui taaskasutatav see on, muidugi.
+[9:15.19] Heiki-Jaan Kaalep: eriti ei ole, ehkki ma olen neid vaadanud küll ja oma lahendustega võrrelnud
+[9:15.44] Heiki-Jaan Kaalep: päris mitmes kohas on su lahendus sama, s.t. mina lihtsalt taasleiutasin jalgratta
+[9:15.50] Jaak Pruulmann-Vengerfeldt: minu asja probleem on ilmselt küll see, et ma võtsin Heli tähistuse alla..
+[9:16.05] Heiki-Jaan Kaalep: jha, just
+[9:16.50] Jaak Pruulmann-Vengerfeldt: ja Heli tähistuse probleem on see, et ta kasutas (Koskenniemi eeskujul) ühetähelisi märgendeid (suurtähti). ja sellepärast on mingid asjad mitmetähenduslikud, selle asemel et oleks kaks erinevat arhifoneemi, vist.
+[9:17.22] Heiki-Jaan Kaalep: ei, ma ei arva, et asi oleks tähistuses
+[9:18.50] Heiki-Jaan Kaalep: pigem selles, et mina eristaksin neid juhtumeid, kus hääliku teisendust tuleks mäletada (näit jalG) ja neid, kus teisendus on reeglipärne, nt. kott - koti
+[9:20.35] Heiki-Jaan Kaalep: minu meelest Heli ei eristanud neid juhtumeid ja tulemuseks on see, et pidevalt juhtuvad üllatused selle twolc-ga, kui mõni uus sõna lisandub
+[9:21.21] Jaak Pruulmann-Vengerfeldt: nojah. tema vabandus on ilmselt see, et kui ta seda 17..18 aastat tagasi tegi, siis ei osanud keegi talle väga nõu anda. :)
+[9:21.59] Heiki-Jaan Kaalep: jah, muidugi, ega mina poleks ka mõned aastad tagasi seda osanud niimoodi teha nagu praegu
+[9:24.28] Jaak Pruulmann-Vengerfeldt: sesmõttes on see, mis sa teed ilmselt parim, mis praegu olemas on.
+[9:24.45] Heiki-Jaan Kaalep: loodame
+[9:25.08] Heiki-Jaan Kaalep: igatahes kui ma tuletiste ja liitsõnadeni jõuan, siis küsin jälle sult abi
+[9:25.31] Jaak Pruulmann-Vengerfeldt: hm. kui suur vahe on "meie" praeguse märgenduse ja estmorfi vahel -- kas on reaalne kirjutada tagseti-teisendus?
+[9:26.40] Heiki-Jaan Kaalep: see märgenditeisendus on täiesti olemas ja töötab, nt. keeleveebi korpused on lastud läbi estmorfi ja seejärel väljund keeratud giellatekno märgenditeks
+[9:27.51] Heiki-Jaan Kaalep: seejuures on lisatud paar ühestamisreeglit, et -sid (mis võib olla sa, nad jooksid) õigesti ära märkida sg2 ja pl3 jaoks
+[9:29.15] Jaak Pruulmann-Vengerfeldt: hm, siis peaks proovima selle kuskile tagseti alamkataloogi teisendustabelina vormistama. siis võiks saada gt asju estmorfi asendusena kasutada mingites kohtades, kasvõi testimiseks.
+[9:31.12] Heiki-Jaan Kaalep: ei saa praegu aru, mille testimiseks vms, aga teisendus estmorfilt gt-le on olems nii unixi skriptidena kui ka c-programmina
+[9:32.04] Heiki-Jaan Kaalep: ma usun, et mõlemad on mingis svn-is olemas (tarmo teab, kus täpselt) ja pole mingit põhjust, miks need ei või suvalises kohas veel olla
+[9:32.56] Heiki-Jaan Kaalep: tegelikult on ka NEED KORPUSED SVN-IS, NII ET SAAKS KA NEID KASUTADA TESTIMISEKS
+[9:33.06] Jaak Pruulmann-Vengerfeldt: (valesid eelduseid tegev) mõttekäik arvas, et kui Sa sisulise asja ise ära teed, siis ma saan ehitada mingeid korpuse vastu võrdlemise asju. ja selleks oli _vist_ (ja see oli vale eeldus) vaja estmorfi märgendust.
+[9:33.07] Heiki-Jaan Kaalep: VABANDUST, kogemata
+[9:34.13] Jaak Pruulmann-Vengerfeldt: ja mõte oli, et ehitada need tagsetiteisendusena, nii et lisaks generator-gt-desc moodi asjadele ehitatakse ka nt generator-estmorf-desc  -- FSTd, mis kasutavad estmorfi märgendust.
+[9:34.37] Heiki-Jaan Kaalep: ma arvan, et estmorfi märgendust ei maksaks edaspidi kasutada
+[9:35.30] Heiki-Jaan Kaalep: sest see pole nii hea kui see uus GT märgendus (v.a. need hiljutised muutused, mida Tiina ja Trond on sisse viinud)
+[9:36.23] Jaak Pruulmann-Vengerfeldt: selle väärtus oleks ilmselt nende rakenduse fst peale kolimine, mis praegu estmorfi eeldavad. aga jah, see on jälle selline stiili küsimus. et kas õpetada ujuma kuival maal või vetteviskamise läbi vms :)
+[9:37.44] Jaak Pruulmann-Vengerfeldt: (st, et.. kas loota, et kes iganes peaks efektiivse fst kasutamise jaoks niikuinii koodi muutma ja seega võib ka märgendust muuta.. või siis pakkuda seda poolfabrikaadina)
+[9:37.44] Heiki-Jaan Kaalep: ma prooviksin teha uue fst, mis on sama hea või parem kui estmorf, siis neid kolimisi polekski vaja
+[9:38.18] Heiki-Jaan Kaalep: tegelikult minu teada nagunii estmorfi kasutavad rakendused alatihti kasutavad mingeid märgenditeisendusi veel lisaks
+[9:39.10] Jaak Pruulmann-Vengerfeldt: okei. siis on pigem vist jah see, et kui selliseid huvitatud rakendusi on, siis võivad nad samahästi oma enda relevantsed teisendused tagsetina otse gtst teha.
+[9:39.54] Jaak Pruulmann-Vengerfeldt: ja suurema osa rakenduste jaoks on morfoanalüüsil point koos ühestamise ja süntaksianalüüsiga, mis praeguse seisuga kasutavad gt märgendust, eksole?
+[9:40.45] Heiki-Jaan Kaalep: süntaksianalüüsi märgendus on pea-aegu sama mis GT märgendus
+[9:41.26] Heiki-Jaan Kaalep: nii et jah, FS märgendust kasutavad üsna vähesed asjad, kõige tähtsamana vast meie statistiline ühestaja
+[9:42.26] Heiki-Jaan Kaalep: okei, praegu vist rohkem arutada ei olegi
+[9:42.45] Heiki-Jaan Kaalep: ma ikka paluks, et sa paneksid eelmise koosoleku protokolli välja
+[9:43.02] Heiki-Jaan Kaalep: seal oli minu meelest mitu head mõtet, mis võiksid alles jääda
+[9:44.04] Jaak Pruulmann-Vengerfeldt: jah, ma arvan, et ma teengi selle nüüd kohe ära. kas ma panen selle toorelt chati-logina (kirjutan nimed selguse mõttes vahele, võibolla) või püüan sellest mingi "rääkisime-tegime-otsustasime" struktuuri tuletada?
+[9:44.20] Heiki-Jaan Kaalep: pane toorelt
+[9:45.11] Jaak Pruulmann-Vengerfeldt: okei
+
