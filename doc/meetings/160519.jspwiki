@@ -1,0 +1,56 @@
+!!!Samest meeting 19.05.2016
+Participants: Heiki-Jaan, Heli, Jaak, Jack, Sjur, Trond.
+
+!!Agenda
+* Status
+* Information
+* Next meeting
+
+
+!! Status
+!CG
+No meeting.
+
+!FST
+3 meetings. H-J has committed experimental work to gt svn. The experimental
+code now compiles. The parallel forms in the main branch have not progressed.
+
+Now building out the alternative in full form, to compare the two.
+
+!MT
+
+Two meetings. Topic: Tag adjustment between fin.fst and the other fst-s.
+We adjusted tags for pronouns, and discussed other tag issues as well.
+
+Finnish deviates from the other fst-s in several respects:
+* The tags are to a lesser degree syntactically tuned.
+* There are case markings in adverbs that are hard to uphold.
+
+It seems that fin would adjust to sme and est. An issue at hand: Pcle vs. Adv.
+
+There seems to be a master student in Tartu who wants to work on fin2est translation.
+
+Two ways:
+
+# Write a script to change the tags from fin to est/sme conventions.
+# Change the code.
+
+!VRO
+
+The vro group has made progress. 
+* Two abstracts to the Läänemeresoome conference, one about vro Oahpa and one about vro fst.
+* Continuous work on the FST.
+* New QA templates for verb negation in MorfaC (due to two alternative possibilities to express negation in Võru, both in the present and in the past tense). 
+* Planning to add pronounciation to Leksa. There is a dictionary with sound files, we may use it. Heli uses experiences from crk Oahpa (nehiyawetan, Plains Cree) for that.
+
+!Estonian Oahpa
+
+No progress there.
+
+!! Information
+
+Baltic HLT, __abstract deadline May 30__, final article deadline August 1st. Papers on our project fit well into this conference. Let's write! 
+
+!! Next meeting
+
+__Thursday, June 9, at 10.00 AM__ Estonian time.
