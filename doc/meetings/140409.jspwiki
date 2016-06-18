@@ -38,7 +38,7 @@ text | analysis | dis | syntfunc | dep
 
 TWolC applied on both sides:
 
-* Sjur has set up certain things: the analyser/generator-raw-gt-desc.[xh]fst
+* Sjur has set up certain things: the analyser/generator-raw-gt-desc.xfst (and .hfst)
 ** build lexical fst - from all lexc files
 ** build twol fst - from twol rules
 ** combine these two
