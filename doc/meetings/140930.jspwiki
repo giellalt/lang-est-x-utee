@@ -2,10 +2,11 @@
 Present: Fran, Heiki, Heli, Inari, Jaak, Kadri, Sjur, Tiina, Trond
 
 !!!MT
+
 !!Finnish analyser 
+
 # Implement weighted FST (also for Estonian)
-# Clean up Finnish CG
-The Finnish CG-1 we got from Fred have been updated but do not quite work.
+# Clean up Finnish CG The Finnish CG-1 we got from Fred have been updated but do not quite work.
 # Look at the rules never used on a big corpus
 # Look at the most frequently used rules
 # Look at the largest remaining homonymies
@@ -19,12 +20,15 @@ Heiki-Jaan to look at this, also Tommi, Trond, Sjur, Fran.
 We would also like to involve grammarians doing contrastive est-fin grammar.
 
 !! Bilingual lexicon
+
 # Fran: Create list from composition of fin-eng est-eng
 ## Fran to improve the script and provide list
 # Proofread (40,000 stems?)
 ## Workload: 10000 words in a couple of weeks (Tartu)
+
 The next step will then be to take a Finnish frequency list and fill in holes.
 Relevant domains:
+
 * Eurospeak, policy statements
 * Regulations 
 * Work or travel related
@@ -32,14 +36,17 @@ Relevant domains:
 * Software localisation
 
 !!Transfer component
+
 #  First stage: based on tagset difference 
 # Second stage: TBD.
 
 !!Practical stuff
+
 Make sure everyone is set up with the Giellatekno + Apertium infrastructure.
 
 !! Evaluation
-# Article
+
+Article
 [http://ec.europa.eu/transparency/regcomitology/index.cfm?do=search.documentdetail&Yq9XhlnCmsmjEbl3DTIoXrCju19xIogcRSPVjQMmGtE=
 http://ec.europa.eu/transparency/regcomitology/index.cfm?do=search.documentdetail&wRMf8QUM3tZdTALxMadrddO+1LhYfhR2hoY/G4AJtVgxdbQ+AI/X9VTTMRqv00VG]
 
@@ -51,8 +58,10 @@ x    gerund    gerundi<n>    kesksõna
 }}}
 
 !!!Plans
+
 What did we promise? What have we done?
 Plan for the samest project, 2014 - 2016
+
 * Estonian FST - 2013 - 2015
 ** Revise the plamk fst or integrate it in the gt infra 
 *** Degree of adjustment of fst 
@@ -61,14 +70,21 @@ Plan for the samest project, 2014 - 2016
 * Võru FST - 2013 - 2015
 ** Oahpa quality: generating the pedagogical lexicon
 * MT 
+
 Work underway
 
 !!Finnish - Saami MT 
+
 There is a dictionary of appr. 7,000 words.
+
+{{{
 piim  milk mait+o
 ==> piim maito
+}}}
+
 if all nodes in the net clusert around the same 
 mielki piim ? Yes, if many links between them via family: maito milk mjölk melk
+
 {{{
 sme-nob    77,000
 nob-est    20,000
@@ -78,32 +94,39 @@ est-eng   100,000
 eng-fin    80,000
 fin-sme   ???,???
 sme-eng     8,000 ?!
-}}}
 
-{{{ 
 Mausam, Soderland, S., Etzioni, O.,  Weld, D. S., Skinner, M., Bilmes J. (2009)  ``Compiling a Massive, Multilingual Dictionary via Probabilistic Inference''.
 Wushouer, M., Lin, D., Ishida, T., Hirayama, K. (2014) ``Bilingual Dictionary Induction as an Optimization Problem''.
 }}}
 
 !!Finnish-Estonian MT
+
 Task order:
+
 # start with alignment
 # start with fst adjustment
 # start with getting some dictionary, e.g. nob-est, est-nob (additional nicety)
+
 !!Apertium usage
+
 Install, compile, etc. as described 
 [here|http://wiki.apertium.org/wiki/Installation]
 and in the INSTALL file of apertium-lang1-lang2
 Then stand in apertium-fin-est (the dot is the folder) and write:
+
 {{{
 echo "Tämä on hauska" | apertium -d . fin-est
 }}}
 
 !!!Oahpa
+
 The application said
+
 * Evaluation of Oahpa by teachers and students - 2015-2016
 * Publication of results at conferences - 2014 - 2016
+
 Setting up Estonian and Võro Oahpa - 2014-1
+
 * Numra est, vro 2014-1
 ** Numra est - does not exist
 ** Numra vro - exists, needs proofreading
@@ -118,17 +141,21 @@ Setting up Estonian and Võro Oahpa - 2014-1
 * We will also give Vasta and Sahka a go
 
 The plan for vro oahpa was:
+
 # set up 2014-1,                                \\
    Prototypes of Morfa-S, Leksa, Numra: 2014-2  \\
    Morfa-s: fst to generate forms of vocabulary \\
    Leksa: vocabulary + semantic markup
 # Use in courses, feedback, adjustment: 2014-3,4 <==
+
 Here we are after schedule.
 Later: Morfa-c, further work
 
 Teachers
+
 * est: Heli Noor, Piret Toomet, Katrin Jänese
 * vro: Sulev is the teacher + colleagues in Võro Institute + TÜ
+
 Time schedule:
 * 2013-4 Estonian fst (discussion, adjustment) , Võro fst: approaching oahpa quality
 * 2014-1 Set up Oahpa for est, vro
@@ -137,60 +164,74 @@ Time schedule:
 * 2014-4 Oahpa in courses: vro, est
 * 2015 It will be planned later
 * 2016 It will be planned later
+
 !!!Resources: People, tasks, time allocated
+
 !! Revised time - month schedule
-{{{
-| Task            |  2014 | 2015  | 2016  | Persons
---------------------------------------------------------------------------
+
+
+|| Task           ||  2014 || 2015  || 2016  || Persons
 | Est + fin FST   |   3   |    2  |  2    | Jaak, Heli, Heiki, Trond, etc.
 | Võro FST        |   3   |    3  |  3    | Sulev
 | CG              |   0   |    2  |  2    | Tiina, Kadri
 | Oahpa L, N, M   |   4   |    3  |  1    | Heli, teachers
 | Oahpa V, S      |   0   |    2  |  3    | Heli, teachers
-| MT fin-est      |   0   |    2  |  2    | 
+| MT fin-est      |   0   |    2  |  2    | -
 | f-e lex. proof. |   1   |    1  |  0    | TBD
 | MT fin-sme      |   1   |    1  |  1    | Same team as fin-est
-| MT fin CG       |   0   |    3  |  0    | 
+| MT fin CG       |   0   |    3  |  0    | -
 | Total           |  12   |   19  |  14   | 45+ 
-}}}
+
 
 !!!Publications
 !!Publication venues
 Journal, Conference, Workshop... which one(s).
+
 * NoDaLiDa 2015
 * Virsu symposium, Oulu FU Congress August 2015
-http://gtweb.uit.no/cgi-bin/wiki/index.php/Publiseringskanaler
+[http://gtweb.uit.no/cgi-bin/wiki/index.php/Publiseringskanaler]
+
 !!Research questions / Development descriptions
 well...
+
 !!Topics
+
 !FST+CG(?)
 * Comparative fin-est tags & grammar
+
 !Oahpa 
 * Publication presenting the system
 ** Publication in Estonian pedagogical publication
 ** Keel ja kirjandus, Rakenduslingvistika aastaraamat
 * Publication on usage / learning effect
+
 !MT
 * Evaluation paper RBMT vs SMT
 * Usage cases
-!!Timing
+
 !!!E-dictionary
+
 * Estonian - Norwegian - Estonian
 ** Trond
 * More?
 
 !!!Estonian Oahpa
+
 !!Sources of input:
+
 * FST - generating forms for Morfa-S (continuous work by Jaak)
 * tags and paradigms (= complete tag strings) - extract from yaml tests
+
 {{{
 grep elama+V  $GTHOME/langs/est/test/src/gt-norm-yamls/V-elama_gt-norm.yaml | awk '{  print $1 } ' | sed -e 's/^.*+V//' -e 's/:$//' | sort -u
 }}}
+
 * synonyms for Leksa - electronic dictionaries of synonyms (WordNets)
 sentence frames for Morfa-C - ideas from the teachers -> students of CL (supervised by Kadri) formalise the ideas 
 * user interface, exercise types - teachers
 * adding the word class to the words in the Oahpa lexicon automatically - Heli
 * programming, configuration, etc. - Heli
+
 !!Plan for the next 6 months:
 * full-scale Morfa-S
 * Morfa-C
@@ -198,12 +239,16 @@ sentence frames for Morfa-C - ideas from the teachers -> students of CL (supervi
 !!! FST
 Problem: compound analysis
 Add weights or classifying tags to the components / non-components of compound words based on a corpus.
+
 positions: first, middle, last
+
 Adverbs in compounding:
+
 * lexicalise
 * use lists (e.g. -ohtu, -karva, -värvi as final components)
 
 !!! Next meetings
+
 In Tromsø: perhaps in January 2015, before [the First International Workshop for Uralic Languages|http://gtweb.uit.no/iwclul2015/]. ??
 
 In Skype: Tuesday, 7th October 12.00 Norwegian time
