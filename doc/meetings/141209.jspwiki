@@ -16,12 +16,14 @@ Agenda
 
 Not much has happened. Q on lexicalisation on compounds (there are some that should be lexicalized for the good of oahpa. They probably will:)
 
+{{{
 [69/70][FAIL] olema+V+Inf => Missing results: olla
 [69/70][FAIL] olema+V+Inf => Unexpected results: olema+V+Inf+?
 [70/70][FAIL] olema+V+Ger => Missing results: olles
 [70/70][FAIL] olema+V+Ger => Unexpected results: olema+V+Ger+?
 [55/70][FAIL] olema+V+Impers+Prs+Ind+Aff => Missing results: ollakse
 [55/70][FAIL] olema+V+Impers+Prs+Ind+Aff => Unexpected results: olema+V+Impers+Prs+Ind+Aff+?
+}}}
 
 Total passes: 142, Total fails: 6, Total: 148
 
@@ -81,6 +83,7 @@ file in LANG/src/morphology/stems/.
 Can it be added somehow to the general philosophy: the rule, that all ordinal numbers (e.g. "7." , if not written with ending like 7-ndal) are ending with fullstop? - Um... you have similar numbers in numbered lists, and there they are really not ordinal numbers...
 
 we have it alredy
+{{{
 I saw George 7. I saw 2. Putin.
 Yes
 I
@@ -94,8 +97,6 @@ saw
 .
 Putin
 
-
-{{{
 Giellatekno abbr.txt:
 I
 saw
