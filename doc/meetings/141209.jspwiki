@@ -163,6 +163,7 @@ We have transitivity tags and semantic tags in lexc. In general:
 
 We thus do both.
 
+{{{
 LIST LOC-V = "ávkkástallat" "ballat" "beassat" "beroštit" "biehttalit" "bihtit" "ceavzit" "dinet" "dolkat" "eastadallat" "eastadit" "fitnat" "fuolahit" "fuollat" "garvit" "gažadit" "geargat" "heaitit" "hehttet" "ilbmat" "jearrat" "jearralit" "luohpat" "máinnašit" "nohkkot" "oassálastit" "spiehkastit" "váibat" "váruhit" "vástidit" ;
 
 LIST ILL-V = "áibbašit" "álgit" "ásaiduvvat" "báitit" "bahkket" "beassat" "čohkkedit" "čujuhit" "čuohcit" "deaivat" "doaškut" "dorvvastit" "došket" "duhtat" "gullat" "guoskat" "gustot" "hárjánit" "heivet" "irgidit" "irggástallat" "jáhkkit" "liikot" "luohttit" "mannat" "máhccat" "mieđihit" "miehtat" "njiedjat" "oahpásmuvvat" "oahpásnuvvat" "ollet" "oskut" "riepmat" "ráhkkanit" "soahpat" "searvat" "suhttat" "váikkuhit" "vástidit" "vuolgit" ; 
@@ -172,6 +173,7 @@ at" "čuohtejahki" "dálvi" "diibmu" "eahketbodda" "geassi" "giđđa" "idja" "i�
 e" "jahkečuohti" "kaleanddarjahki" "loahppajahki" ("[0-9]*-#lohku"r) "maŋŋe#giđđa" "mánnu" "minuhtta" "m
 inukta" "njealjádasjahki" "skuvlajahki" "tiibma" "vahkkoloahppa" "vahkku" ;
 # these are periodes and can be Acc
+}}}
 
 Transitivity we do in lexc:
 
