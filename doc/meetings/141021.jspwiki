@@ -81,7 +81,7 @@ The .hfst ones are removed by automake, as they are seen as
 intermediate files. They may be defined as goals in themselves, and
 thus kept. File to keep: {{analyser-gt-desc.hfst}} (in addition to
 the {{analyser-gt-desc.hfstol}}. __Sjur__ will add this file for all
-languages, as default. [Update: done]
+languages, as default. Update: done
 
 
 !!Tag conversion
