@@ -1,0 +1,45 @@
+
+
+fin2X MT meeting.
+
+
+Present: Francis, Heiki-Jaan, Tiina, Trond
+
+!!!Agenda: Integrating fin in the fin2X MT systems
+
+Conclusions, in list format:
+
+* Tag harmonising the fsts:
+** Change fin.fst to sme.fst and est.fst style whenever possible
+* CG outsourcing
+** Do tag conversion (whenever not harmonised) in fst relabeling, and remove from CG.
+** Guesser components in FST and bidix, not in CG
+** ADD (add more) and MAP (add many) -  rules for adding syntactic tags is ok
+* Set up Makefiles etc for all directions in apertium
+* Set up transfer rules in .t1x and .lrx
+* CG
+** Find the Finnish objects (ADD @OBJ> and @<OBJ)
+* Tags
+** Whenever tag mismatches (Pron, Adp, ...), omit the finer distinctions
+** Gear the fin tags of indeclinables from morphology to syntax
+* Pronouns
+** Less types, more MT
+* Pcle
+** fin: Pcle, other lgs: Adv and/or Po, Pr
+** The concept of Pcle should be confined to words with more restricted syntax than adverbs
+
+Overall thinking on fin tags:
+
+* Harmonise form: Pass vs. Pss, Pron vs. Prn to sme / est.
+** Act vs. 0 is not form only: we have Act vs Pass and 0 vs. Der/Pass
+* Change interpretation whenever clear what to do
+* When not, postpone until a , and let MT context be part of decision
+
+
+
+!!!Deadlines:
+
+* Summer: Prepare for first August week
+* First August week: Fix the system (before 1400 Estonian time thursday)
+
+
