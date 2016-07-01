@@ -7,14 +7,15 @@
  [ %<a%> -> %<adj%> ] .o.
  [ %<v%> -> %<vblex%> ] .o.
  [ %<interj%> -> %<ij%> ] .o.
- [ %<sg1%> -> %<p1%> %<sg%> ] .o.
+ [ m i n a %<pron%> %<sg%> -> m i n a %<pron%> %<p1%> %<sg%> ] .o. 
+ [ s i n a %<pron%> %<sg%> -> m i n a %<pron%> %<p2%> %<sg%> ] .o. 
+ [ t e m a %<pron%> %<sg%> -> t e m a %<pron%> %<p3%> %<sg%> ] .o. 
+ [ m e i e %<pron%> %<pl%> -> m e i e %<pron%> %<p1%> %<pl%> ] .o. 
+ [ t e i e %<pron%> %<pl%> -> m e i e %<pron%> %<p2%> %<pl%> ] .o. 
+ [ n e m a d %<pron%> %<pl%> -> n e m a d %<pron%> %<p3%> %<pl%> ] .o. 
  [ %<pron%> -> %<prn%> ] .o.
+ [ %<emph%> -> [] ] .o.
  [ %<superl%> -> %<sup%> ] .o.
- [ %<sg2%> -> %<p2%> %<sg%> ] .o.
- [ %<sg3%> -> %<p3%> %<sg%> ] .o.
- [ %<pl1%> -> %<p1%> %<pl%> ] .o.
- [ %<pl2%> -> %<p2%> %<pl%> ] .o.
- [ %<pl3%> -> %<p3%> %<pl%> ] .o.
  [ %<n%> %<prop%> -> %<np%> ] .o.
  [ %<use%_rare%> -> [] ] .o.
  [ %<aff%> -> [] ]
