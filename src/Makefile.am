@@ -127,8 +127,10 @@ analyser-raw-gt-desc.xfst: \
 			filters/compound_filter.xfst \
 			filters/compound_mask.xfst
 	$(AM_V_XFST)$(PRINTF) \
-		'read regex @"filters/compound_filter.xfst" .o. @"filters/compound_mask.xfst" .o. [("-" "#") [ @"analyser-raw-gt-desc-simple-full.xfst" "#" ("-" "#") ]* @"analyser-raw-gt-desc-simple-full.xfst" ("#" "-")] .o. [ "#" -> "" ];\nsave stack $@\nquit\n' | \
+		'read regex @"filters/compound_mask.xfst" .o. [("-" "#") [ @"analyser-raw-gt-desc-simple-full.xfst" "#" ("-" "#") ]* @"analyser-raw-gt-desc-simple-full.xfst" ("#" "-")] .o. [ "#" -> "" ];\nsave stack $@\nquit\n' | \
 	        $(XFST) $(VERBOSITY) $(XFSTFLAGS)
+
+#		'read regex @"filters/compound_filter.xfst" .o. @"filters/compound_mask.xfst" .o. [("-" "#") [ @"analyser-raw-gt-desc-simple-full.xfst" "#" ("-" "#") ]* @"analyser-raw-gt-desc-simple-full.xfst" ("#" "-")] .o. [ "#" -> "" ];\nsave stack $@\nquit\n' | 
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
