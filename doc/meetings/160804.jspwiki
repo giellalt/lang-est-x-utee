@@ -1,0 +1,102 @@
+Samest meeting, 4th August 2016
+
+Present: Fran, Heiki, Heli, Jaak, Trond, Tiina
+
+!!!Agenda
+
+* MT 
+* Est FST
+* Oahpa
+** General
+** vro-oahpa
+** est-oahpa
+
+
+!!! MT 
+
+From last meeting: "Fix the system".
+
+* Tag harmonising
+* CG outsourcing
+* makefiles for all directions in apertium
+** fin-est, est-fin ok
+** sme-fin ok, fin-sme ?
+* transfer rules in .t1x and lexical selection in .lrx
+* CG: Finnish objects
+* Tags: Pron, Adp etc.
+* Compounding
+
+
+!!FST
+
+Summing up the summer: 
+* Perhaps 90% of the FST tag pleonasms (Act vs. Act Ind etc) are gone
+* Some CG rules have been added, to disambiguate more
+* Summary on CG recall (removing correct entries):
+** The recall from a small corpus is 99%
+** The recall from the univ treebank is 90%. Half of the errors are due
+   to tag differences, so a more realistic estimate would be 
+   a recall of 95%
+** A case in point: nuorille (N Pl All/A Pl All) (these are free rides)
+** participle vs adjective: innostamana (V AgPrc Sg Ess/A Sg Ess)
+** noun vs postposition: avulla (N Sg Ade/Po)
+
+
+!!Apertium setup
+
+The list "MT" above is good. Status is open, so let us have
+a physical meeting in Tromsø next thursday.
+
+
+Keit Mõisavald attended RBMT summer school in Alacant. Worked on Fin-Est.
+
+!!! Est FST
+
+Not much has happened during sun shining. Back on track soon.
+
+!!! Oahpa
+
+!! General
+
+We will start brainstorming next week, scheduling for mid-september week.
+
+!! vro-oahpa
+
+Sulev and Heli had a meeting on 30.6. in Tartu and set up a todo-list that should be done before the autumn term starts (or in October, latest). Most of the things are related to Morfa-C: 
+
+* avoid all kind of repetitions
+* add more words to the semantic classes
+* add a possibility to read aloud the Morfa-C questions using the Võro speech synthesis ([http://www.eki.ee/~indrek/voru/index.php])
+
+!! est-oahpa
+
+Summer holiday.
+
+!! rus-oahpa
+Tiina has been working on rus-oahpa during the summer, as part 
+of the preparations for Oahpa 2.0.
+
+Differences are mainly linguistic.
+
+The challenge is to combine languages with different needs in the
+same infrastructure.
+
+
+!!!Next meeting
+
+August 19th, 0900 Norwegian time, 1000 Estonian time
+
+
+Things to do until then:
+
+* mt
+** fin.fst + fin.cg improvement
+** tag conversion gt to ap
+** preparing for tag changes fin - est + fin - sme
+* est.fst
+** recover from vacation
+* oahpa
+** vro - work on the todo-list
+** est - set up the next goals
+
+
