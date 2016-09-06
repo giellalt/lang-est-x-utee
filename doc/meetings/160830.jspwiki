@@ -1,0 +1,167 @@
+!!!Samest meeting 30.08.2016
+Participants: Fran, Heiki, Heli, Kadri, Tiina, Trond
+
+!!!Agenda
+* MT and CG
+* Estonian FST
+* Estonian Oahpa
+* Võro FST and Oahpa
+* Other information (if any)
+* Paper(s) to Acta Hungarica?
+* Next meeting
+
+!! MT and CG
+
+!Conclusions
+
+We are making progress. Fin syn is now the best component of the fin2est and fin2sme systems. Things to look at:
+
+# Naive grammatical correspondencies (context-free transfer)
+## Make (dig out) tag correspondence lists + implement them
+# Transfer rules (context-dependent transfer)
+## Make (dig out) tag correspondence lists + implement them
+# Lexical selection
+## lohkat -> read, count, tell
+## pick polysemous words from bidix, sort in freq order (using corpus)
+# Coverage
+
+Tiina has been working on Finnish CG, tuning the rules and definitions, recall currently 94% with punctuation and unknown words, 96% without punctuation and unknown words.
+The top frequency list of the errors in udt corpus (Words:  16537, Sentences:  1744):
+{{{
+ 165 N Prop Sg Nom & <W:0> - unknown words
+  51 Pcle CS & CC
+          -> q of one word 'kuin', don't have CS reading in fst
+  47 N Prop Sg Gen & <W:0>
+  38 Num Card Sg Nom & <W:0>
+  19 Pron Qu Sg Nom & <W:0>
+  17 Pron Qu Sg Par & <W:0>
+  17 Po & Adp Po 
+          -> same as Po
+  16 Po & Pcle
+          -> 'muun muassa' - how to agree on fixed expressions?
+  15 Pron Qu Sg Gen & <W:0>
+  15 N Sg Nom & <W:0>
+  15 Adv & N Sg Tra
+          -> 'lisäksi' - what to prioritize and what to assume in MT - is Adv in lexicon or not
+  13 Pron Dem Sg Ine & Adv
+          -> siinä, tässä
+          -> in udt only pron se and tämä, so no distinction made
+          -> in korp adverbs, but depends on corpuses
+  12 Pron Dem Sg Ela & Adv
+          -> siitä tästä - same as previous
+  12 A Pl Gen & Pron Pl Gen
+          -> muiden useiden
+          -> q of two words, what is the principle in adj vs adjectival pronoun?
+  11 N Prop Sg Gen & ACR Prop Sg Gen
+          -> acronyms, changed the tags
+  10 V Act PrfPrc Sg Nom & V Act Ind Prt ConNeg Sg
+          -> ei ollut 
+          -> disam analysis correct, change the gold corpus
+  10 N Prop Sg All & <W:0>
+   9 Pcle A & N Sg Nom
+                  -> q of one word 'koko', don't have A in fst as in original udt
+   9 N Sg Ill & Adv
+          alkuun aikaan tapaan loppuun puoleen ennakkoon
+          aikaan N Po Adv Pcle, alkuun N Adv, tapaan and loppuun adn ennakkoon N Adv Pcle, puoleen N Num Adv Po
+                -> in udt only N, that means no distinction made there
+   9 N Prop Sg Nom & N Sg Nom
+          -> unknown proper names 
+   9 Adp Po & Adv
+          1 käsin
+          8 vastaan mukaan mukana
+          -> prev word unknown, CG guesser would help, but it is removed
+   8 Pcle A & Pron
+          eri (mieltä)
+          -> q of one word
+          -> Pron, N Pref, Pcle - no A in fst, then by my opinion Pron
+   8 N Prop Sg Ade & <W:0>
+   7 Pr & Adv
+          ennen vasten pitkin sitten lähellä
+          -> don't have Pr in finnish fst
+   7 N Sg Nom & N Prop Sg Nom
+          -> change the gold corpus
+          some N and Prop collisions as Palo
+   7 N Sg Gen & <W:0>
+   7 N Prop Sg Par & <W:0>
+   7 N Sg Ade & Adp Po
+          avulla kohdalla puolella (prev gen)
+          -> changed the gld corpus  
+   7 N Pl Ade & N Prop Pl Ade
+          Prop correct
+          -> change the gold corpus  
+   7 Adv & Pcle
+          sitä sittenkin siltikin vieläkään iltapäivisin perhekunnittain tee-se-itse kappalemääräisesti
+          -> general question on difference between Adv & Pcle
+}}}
+          
+A small test of MT from Helsingin Yliopisto internet page:
+
+Helsingin yliopistossa tehdään korkeatasoista kansainvälistä tutkimusta. Tutkijoillemme myönnettävä tutkimusrahoitus, palkinnot ja kunnianosoitukset ovat merkkejä laaja-alaisesta arvostuksesta kansainvälisessä tiedeyhteisössä. Kansainvälisessä arvioinnissa Helsingin yliopisto sijoittuu säännöllisesti sijoille 10-15 Euroopan tutkimusyliopistojen listauksessa. Vuosittain Helsingin yliopistossa suoritetaan noin 470 tohtorintutkintoa ja julkaistaan lähes 10 000 tieteellistä artikkelia ja monografiaa.
+
+Etsitkö tutkimukselle tekijää tai hankkeeseen projektikumppania? Yliopiston tieteellisen tutkimuksen laaja pohja antaa mahdollisuudet monitieteelliselle ja -alaiselle yhteistyölle eri alojen suurten ja pienempien yritysten ja yhteisöjen kanssa. Helsingin yliopisto on jatkuvasti mukana useissa yhteistyöprojekteissa ja yritysyhteistyö tuottaa hyötyä kaikille kumppaniosapuolille. Yliopiston tutkimuspalveluiden asiantuntijoilla on vankka kokemus sekä rahoituksen hakemisesta että tutkimustulosten arvioinnista ja hyödyntämisestä.
+
+__->est__ (using Jaak's fst from langs/est)
+
+#Helsinki ülikoolis tehakse *korkeatasoista rahvusvahelist uurimust. #Meie teadureile/teaduritele nõustutav uurimus rahastamine, tasud ja #austusavaldus #olema endeid lai-alusest *arvostuksesta rahvusvahelises teadus kollektiivis. Rahvusvahelises hinnangus #Helsinki ülikool *sijoittuu *säännöllisesti kohtadele/kohtile #10-#15 Euroopa uurimus ülikoolide *listauksessa. #Igal aastal #Helsinki ülikoolis sooritatakse nii #470 #doktor eksamit ja avaldatakse peaaegu #10 *000 teaduslikku artiklit ja monograafiat.
+
+Kas #otsima uurimusele tegijat või üritusesse/üritusse *projektikumppania? Ülikooli teadusliku uurimuse lai põhi #andma võimalused *monitieteelliselle ja -alusele #koostöö #eri erialade suurte ja väikeste ürituste ja kollektiividega. #Helsinki ülikool #olema jätkuvalt koos mitmeis/mitmetes *yhteistyöprojekteissa ja üritus #koostöö #tootma kasu *kaikille *kumppaniosapuolille. Ülikooli *tutkimuspalveluiden #erialateadlane #olema tugev kogemus ja rahastamise #tooma et uurimus tulemuste hinnangust ja #rakendama.
+
+__->sme__
+
+Helssega universitehtas *tehdään *korkeatasoista gaskariikkalačča dutkama. Dutkiidasamet *myönnettävä *tutkimusrahoitus, vuoittut ja gudni čájáhusat leat mearkkaid viiddis+ vuollásaččas *arvostuksesta gaskariikkalaččas dieđa orgánas. Gaskariikkalaččas árvvoštallamis Helssega universitehta *sijoittuu *säännöllisesti sajiide #10-#15 Eurohpá dutkan universitehtaid *listauksessa. Jahkásaččat Helssega universitehtas *suoritetaan sullii #470 *tohtorintutkintoa ja *julkaistaan *lähes #10 *000 dieđalačča artihkkala ja *monografiaa.
+
+Ozat go dutkamii dahkki vai *hankkeeseen projeakta orgána? Universitehta dieđalačča dutkama viiddis bodni addá liibbat *monitieteelliselle ja + vuollásažžii ovttasbargui *eri surggiid stuorráid ja unnibuid fitnodagaid ja orgánaid mielde. Helssega universitehta lea *jatkuvasti mielde #máŋga ovttasbargu projeavttain ja fitnodat ovttasbargu šaddada gutta *kaikille #orgána oassi buoláhiidda. Universitehta dutkan bálvalusaid #áššedovdi lea #váŋká vásihus sihke *rahoituksen *hakemisesta ahte dutkan bohtosiid árvvoštallamis ja *hyödyntämisestä.
+
+{{{
+tf-hsl-m0016:apertium-sme-fin ttr000$ grep '>tehdä<' apertium-sme-fin.sme-fin.dix
+    <e><p><l>bargat<s n="vblex"/><s n="tv"/></l><r>tehdä<s n="vblex"/></r></p><par n="V_V"/></e>
+    <e><p><l>dahkat<s n="vblex"/><s n="tv"/></l><r>tehdä<s n="vblex"/></r></p><par n="V_V"/></e>
+    <e><p><l>márfut<s n="vblex"/><s n="tv"/></l><r>tehdä<s n="vblex"/></r></p><par n="V_V"/></e><!-- makkaraa -->
+    <e><p><l>ráhkadit<s n="vblex"/><s n="tv"/></l><r>tehdä<s n="vblex"/></r></p><par n="V_V"/></e>
+}}}    
+
+
+!! Estonian FST
+
+Jaak sent an e-mail about his progress. He tried to (re)start work on removing parallel forms from generators. Found out that at least part of the rules were already there in the source but +Use/NG (as a flag, not paths containing it) got filtered out when building generic generators (generator-gt-{desc,norm}). Asked Sjur and got hint that it should work for generators for Oahpa and apertium.
+So far I have found out that the generator for Oahpa works more or less
+the same as the generic one -- the flag is removed, NG-forms are still
+generated. Reading the makefile says that it should be better for Oahpa
+dialect generators (?). Have not tried the apertium side yet or asked
+anyone if the "regular" oahpa generator (generator-oahpa-gt-norm) should
+be built like that. 
+
+Heli: I should try to generate the forms for the oahpa database with generator-oahpa-gt-norm-dial_main.hfst as I have done for vro and sms.
+
+Jaak has started removing parallel forms. 
+
+* For generating for Oapha: include Use/NG but exclude Err/Orth
+* For generating for MT: exclude both Use/NG and Err/Orth
+
+
+!! Estonian Oahpa
+
+Things to do:
+* generate the oahpa database anew, using the dialect_main generator (Heli)
+* create more Morfa-C and Vasta-S templates (student helper from Tartu)
+* make the templates working and build new CG rules for handling the student answers (Heli, Tiina)
+
+!! Võro FST and Oahpa
+
+Heli has been working on reading morpha-C questions aloud. Still not managed to get the link to the page for speech synthesis. (problem running scripts on different domains)
+
+Smaller updates on Võru Oahpa
+
+Jack has worked on verbs in the vro fst (not so good coverage previously). 
+Corpus: Now the fiu-vrowiki.txt is back in {{biggies/trunk/langs/vro/corp}}.
+
+Use: Sulev will have a course in Võru this autum, shall use Vôru Oahpa there.
+
+!! Other information (if any)
+
+MT Workshop in Helsinki: [http://blogs.helsinki.fi/hi-nlp/news/finmt-2016/]
+
+!! Next meeting
+Monday, 12. September in Helsinki (those who are there)
+
+Friday, 23. September 9:00 Norwegian time / 10:00 Estonian time in Tromsø / Skype (?)
