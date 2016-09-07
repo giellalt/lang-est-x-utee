@@ -3,10 +3,11 @@
 ## Licence: GPL v3+
 
 # List relabel source files here:
-TAGSET_SRCS=apertium.fin.relabel
+#TAGSET_SRCS=apertium.fin.relabel
 
 # List reorder regex source files here:
-REGEX_SRCS=modify-tags.regex modify-tags.fin.regex
+#REGEX_SRCS=modify-tags.regex modify-tags.fin.regex
+REGEX_SRCS=modify-tags.regex
 
 clean-local:
 	rm -f *.hfst

@@ -1,23 +1,37 @@
 [
- [ %<clb%> -> %<cm%> || %, _ ] .o.
- [ %<punct%> -> %<guio%> || %- _ ] .o.
- [ %<clb%> -> %<sent%> || %. _ ] .o.
- [ %<cc%> -> %<cnjcoo%> ] .o.
- [ %<cs%> -> %<cnjsub%> ] .o.
- [ %<a%> -> %<adj%> ] .o.
- [ %<v%> -> %<vblex%> ] .o.
- [ %<interj%> -> %<ij%> ] .o.
- [ m i n a %<pron%> %<sg%> -> m i n a %<pron%> %<p1%> %<sg%> ] .o. 
- [ s i n a %<pron%> %<sg%> -> m i n a %<pron%> %<p2%> %<sg%> ] .o. 
- [ t e m a %<pron%> %<sg%> -> t e m a %<pron%> %<p3%> %<sg%> ] .o. 
- [ m e i e %<pron%> %<pl%> -> m e i e %<pron%> %<p1%> %<pl%> ] .o. 
- [ t e i e %<pron%> %<pl%> -> m e i e %<pron%> %<p2%> %<pl%> ] .o. 
- [ n e m a d %<pron%> %<pl%> -> n e m a d %<pron%> %<p3%> %<pl%> ] .o. 
- [ %<pron%> -> %<prn%> ] .o.
- [ %<emph%> -> [] ] .o.
- [ %<superl%> -> %<sup%> ] .o.
- [ %<n%> %<prop%> -> %<np%> ] .o.
- [ %<use%_rare%> -> [] ] .o.
- [ %<aff%> -> [] ]
+  [ %<emph%> -> [] ] .o.
+  [ %<superl%> -> %<sup%> ] .o.
+  [ %<n%> %<prop%> -> %<np%> ] .o.
+  [ %<use%_rare%> -> [] ] .o.
+  [ %<aff%> -> [] ] .o.
+  [ "<v>" "<pers>"  ->	"<v>" "<actv>" ] .o.
+  [ "<v>" "<impers>"  ->	"<v>" "<pasv>" ] .o.
+  [ "<vblex>" "<pers>"  ->	"<vblex>" "<actv>" ] .o.
+  [ "<vblex>" "<impers>"  ->	"<vblex>" "<pasv>" ] .o.
+  [ "<adp>" "<pr>"  ->	"<pr>" ] .o.
+  [ "<adp>" "<po>"  ->	"<post>" ] .o.
+  [ "<adp>" "<post>"  ->	"<post>" ] .o.
+  [ "<part>" "<cnjsub>" -> "<cnjsub>" ] .o.
+  [ "#"            ->	"+" ] .o.
+  [ "^"          ->		0 ] .o.
+  [ "!" "<clb>" -> "!" "<sent>" ] .o.
+  [ {excl} "<clb>" -> "!" "<sent>" ] .o.
+  [ {pipe} "<clb>" -> "|" "<sent>" ] .o.
+  [ "<clb>"   -> "<cm>"   || "," _ ] .o.
+  [ "<clb>"   -> "<sent>" || "." _ ] .o.
+  [ "<clb>"   -> "<sent>" || "…" _ ] .o.
+  [ "<clb>"   -> "<sent>" || {..} _ ] .o.
+  [ "<clb>"   -> "<sent>" || {...} _ ] .o.
+  [ "<clb>"   -> "<sent>" || "¿" _ ] .o.
+  [ "<clb>"   -> "<sent>" || "¶" _ ] .o.
+  [ "<clb>"   -> "<sent>" || "?" _ ] .o.
+  [ "<clb>"   -> "<sent>" || ":" _ ] .o.
+  [ "<clb>"   -> "<sent>" || ";" _ ] .o.
+  [ "<punct>" -> "<guio>" || "-" _ ] .o.
+  [ "-"       -> "<guio>" || [ "<cmp>" ] _ ] .o.
+  [ "<punct>" "<left>"  -> "<lquot>"  ] .o.
+  [ "<punct>" "<right>" -> "<rquot>" ] .o.
+  [ "<punct>" -> "<quot>" || %" _ ] .o.
+  [ %<clb%> -> %<punct%> ] 
 ];
 
