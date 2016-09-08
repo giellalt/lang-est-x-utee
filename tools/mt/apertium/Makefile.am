@@ -13,8 +13,6 @@ SUBDIRS = filters tagsets .
 # Apertium directory names in these two variables (replace und):
 APERTIUM_TARGET_LANGS=und
 APERTIUM_TARGET_LANG_NAME=apertium-und
-#APERTIUM_TARGET_LANGS=fin
-#APERTIUM_TARGET_LANG_NAME=apertium-fin-est
 
 ##################################################################
 #### Specify CG3 source files, main and included ones:        ####
