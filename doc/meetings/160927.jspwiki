@@ -1,0 +1,190 @@
+!!!Samest meeting 27.9.2016
+
+Participants: Fran, Heiki, Heli, Jaak, Jack, Sjur, Sulev, Tiina, Trond
+
+
+!!Topics
+* New Oahpa
+* MT and CG
+* Estonian FST
+* Estonian Oahpa
+* Võro FST and Oahpa
+* Information
+* Next meeting
+
+
+!! New Oahpa
+
+Goals: modularisation, new design, path for learners, also with specific topics
+
+apertium-apy:
+[http://wiki.apertium.org/wiki/Apertium-apy]
+
+Comments: Lookupserver does the same (keeps process idle with no 
+need for starting up process for each query) for fsts, but this 
+apertium-apy promises doing the same for cg as well. Keep this in mind. 
+
+(also does load balancing and stuff)
+
+
+
+!! Estonian FST
+Heiki has worked on his FST version (experimental-langs), but not finished yet.
+
+
+
+!Normative/Descriptive fsts
+
+-norm- and -desc- will differ when +Use/Err etc.
+
+echo president+N+Sg+Ill|destNorm
+president+N+Sg+Ill        presidendisse
+president+N+Sg+Ill        presidenti
+
+echo president+N+Sg+Ill|hfst-lookup tools/mt/apertium/generator-mt-gt-norm.hfstol 
+> president+N+Sg+Ill        presidenti        0.000000
+
+
+The Russian FST has lots of Err/Orth, relegating forms that 
+according to Zaliznyak are marginal.
+
+!Dialectal fsts
+
+Generating the "dialect" forms:
+
+file {{configure.ac}}:
+
+{{{
+# Specify the tags for all dialects in this variable, leave it empty if you do NOT support dialectal variant fst's. Use upper case, separate with space.
+# Dialects are presently only used in Oahpa fst's, and only support dialectal variation within the -norm- fst's.
+AC_SUBST([DIALECTS], ["Ord Rare"])
+}}}
+
+[Documentation (for North Sámi)|http://giellatekno.uit.no/doc/lang/sme/KompilereFST.html]
+
+
+* Standard (Ordinary) Estonian = +Dial/+Ord, +Dial/-Rare
+* Traditional (Rare) Estonian = +Dial/+Rare, +Dial/-Ord
+* Unmarked strings will turn up in both versions
+
+The tags above must be declared in root.lexc and the lexc must correspond to the tags specified in {{configure.ac}} (as said above).
+The tag may occur anywhere in the string, strings containing 
+them are deleted.
+
+There is nothing to do in any Makefile.am.
+
+
+!! Estonian Oahpa
+
+No progress recently.
+
+!! Võro FST and Oahpa
+
+Sulev has completed correction of the Jack's nouns' table (devtools). Now working with the verb table.
+
+Gave sounds of Eesti-Võro to Heli. Heli will add them to the Vro-Oahpa vocabulary to be used in Leksa.
+
+Heli is trying to add Võro synthetic voices to the Morfa C sentenses.
+
+Vro synthetic voice:
+[http://wi.ee/voro-kiil/voro-keele-sunteeshelu/]
+More technical information can be asked from Indrek Kiissel (ikiissel@gmail.com).
+
+Jack has brought the recognition level for the Võro fst up to 32% testing vro wikitxt. Intending to work in Tartu with Sulev 4th through 6th of October, leaving 7th. (Oahpa-fst development and poster)
+
+466 out of 2548 vro entries in vro-oahpa are not recognised by 
+the analyser.
+
+
+!! MT and CG
+
+Tiina has been harmonizing conversion of tags to apertium format for pairs fin-est and fin-sme, this also enabled to simplify some transfer rules. Have some trouble with general conversion pipeline to apertium format: 
+
+2 of the tag conversion files from langs/lll/tools/mt/apertium/tagsets are compiled with the base transducer in different order for analysers compared to generators. The generators are composed with {{modify-tags.regex}} and then relabelled with apertium.postproc.relabel (as says doc), but the analysers are first relabelled and then composed with modify-tags.hfst. This may result in different tag usage in generators and analysers if to be unaware of such order difference.
+
+Tiina will add this bug to Bugzilla, see [http://giellatekno.uit.no/bugzilla].
+
+Two issues:
+
+# Different (non-corresponding) forms, hence different tags
+# Different tag string for corresponding forms
+
+
+! Different (non-corresponding) forms, hence different tags
+
+* This should preferably be fixed in the {{apertium-lang1-lang2.lang1-lang2.t?x}} file.
+* Alternatively, we might e.g. generate {{+V+Neg+Sg1:ei}} etc for Sg2,
+for Estonian, etc.
+* In cg, we might disambiguate e.g. sme +Loc as @loc-ine vs. @loc-ela for subsequent translation to fin, sma or smj.
+
+Priorities:
+
+fin2est en, et: .t1x
+If you need context: do it in cg
+
+This could be one-to-many, many-to-one, or just mismatch
+
+
+! Different tag string for corresponding forms
+
+This should preferably be fixed in {{modify-tags.regex}}.
+
+Examples of tag issues:
+
+{{{
+est: nad        nemad<prn><pl><nom>        0.000000 ***
+est: tulema        tulema<vblex><actv><sup><ill>        0.000000
+???: tulema        tulema<vblex><actv><infma>        0.000000
+est: tulla        tulema<vblex><inf>        0.000000
+est: ole        olema<vblex><actv><pres><imp><p2><sg>        0.000000
+est: mina        mina<prn><sg><nom>        0.000000 ***
+est: pole        pole+?        inf
+
+----
+
+fin: he        he<prn><pers><p3><pl><nom>        0.000000
+fin: ne        ne<prn><dem><pl><nom>        0.000000
+fin: ne        ne<prn><pl><nom>        0.000000
+fin: tulla        tulla<vblex><actv><infa><sg><lat>        0.000000
+???: tulla        tulla<vblex><actv><infa>        0.000000
+fin: ole        olla<vblex><actv><indic><pres><conneg>        0.000000
+fin: minä        minä<prn><pers><p1><sg><nom>        0.000000
+
+----
+
+fkv: he        he<prn><pers><p3><pl><nom>        0.000000
+fkv: tulla        tulla<vblex><actv><infa><sg><lat>        0.000000
+fkv: ole        olla<vblex><conneg>        0.000000
+
+----
+
+sme: boahtit        boahtit<vblex><iv><inf>        0.000000
+sme: sii        son<prn><pers><p3><pl><nom>        0.000000
+sme: dat        dat<prn><dem><pl><nom>        0.000000
+sme: dat        dat<prn><dem><sg><nom>        0.000000
+sme: leat        leat<vblex><iv><indic><pres><conneg>        0.000000
+}}}
+
+
+Should we add versions [http://gtweb.uit.no/mt/testing/]? No, not
+until hashtag-errors under 1%. hashtag errors are generation errors.
+
+
+
+#1<num><card><digit>        KUS JAAKKO ON?
+#2<num><card><digit>        Jaakko ja Mari on aias. Ilm on täna hea, on väga sooja. Aga eile oli väga külma! Siis #nemad<prn><pers><p3><pl><nom> ei #saama<vblex><actv><pret><indic><conneg> mängida väljas. Jaakko ja Mari peavad väga mängimisest, #nemad<prn><pers><p3><pl><nom> mängivad alati ühes aias suure maja ees.
+#3<num><card><digit>        Jaakko on väike poiss ja #tema<prn><pers><p3><sg><nom> on kuus aastat vana. Väike tüdruk on #tema<prn><pers><p3><sg><gen> #nemad<prn><pers><p3><pl><gen> õe, #tema<prn><pers><p3><sg><nom> on viis aastat vana. Jaakkol on väike koer, ka koer on nüüd aias. Koerast on meeldivat mängida nende kahe lapsega. Koer on väga õnnelik nüüd.
+#4<num><card><digit>        kas On ka Maril koer? Ei, Maril ei #olema<vblex><actv><pres><indic><conneg> koera, #tema<prn><pers><p3><sg><ade> on kass. Aga kass on majas, kass on magamas.
+
+MT meeting this week: Tiina, Trond, Fran, Heiki-Jaan
+
+!! Information
+
+* Käbi Suvi and Keit Mõisavald are not actively working on MT at the moment.
+Status: sme-est.dix 
+* There is some interest in Literary Museum (transcription or translation of Setu folk tales into Estonian).
+
+!! Next meetings
+
+* MT-meeting: __Friday 30. September, 10:00__ Norwegian time
+* Samest-meeting: __Tuesday, 18. October at 10:00__ Norwegian time
