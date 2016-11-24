@@ -1,0 +1,112 @@
+!!!Samest meeting 21.11.2016
+
+Participants: Fran, Heiki, Heli, Jaak, Jack, Kadri, Kaili, Trond
+
+!!!Agenda
+
+* Estonian FST
+* Estonian Oahpa
+* MT
+* Võru Oahpa and FST
+* Papers/articles
+* Next meeting
+
+
+!!!Estonian FST
+
+!!experiment-langs
+Not much has happened.
+
+The exp-est.fst is now slightly more beautiful.
+
+!!langs
+Work on generation done. Overgeneration has been a problem, is not that to the same extent.
+
+!!Testing
+
+Differences in coverage between langs/est and experimental-langs/est? Jaak is working on setting up a testing environment. 
+
+
+
+!!!Estonian Oahpa
+
+Heli has made the first attempt to generate the Oahpa database with Heiki's FST (experiment-langs). 
+* The overall impression is good. 
+* About 30 compound nouns and 50 simple nouns (those with Sg Nom homonyms) were not generated.
+* A few errors have been discovered.
+* Some specific discussions about preferred vs non-preferred forms with Heiki will follow.
+
+The work on Morfa-C question-answer templates is in progress (a student from Tartu is working on it).
+
+!!!MT
+
+Both est-fin and fin-est now on [http://gtweb.uit.no/jorgal/index.cat.html?dir=est-fin]
+
+URL: [https://svn.code.sf.net/p/apertium/svn/incubator/apertium-fin-est]
+
+
+
+!!Summing up MT group meeting
+
+We went through and fixed errors for finest
+
+We also corrected spellrelax (both for est.fst and experimental-est.fst)
+
+!!Online tools
+
+Online at [http://gtweb.uit.no/jorgal], but still not on [http://gtweb.uit.no/mt/testing] (perhaps not needed)
+
+!!OmegaT
+
+[http://wiki.apertium.org/wiki/Apertium_OmegaT_Native]
+
+[http://wiki.apertium.org/wiki/Apertium-OmegaT]
+
+!!fin2X
+
+Issues with the Finnish fst:
+
+minoriteettii: before the meeting it was analysed as min#ori#tee#tii
+
+How to work with compound blocking:
+
++CmpNP/None = does not participate in compounding
+
+example in the lexicon:
+{{{
+gaskka+CmpNP/Last+Sem/Dummytag:gas'kam8 SEAMU ;
+}}}
+
+!!!Võru Oahpa and FST
+
+Too much generation.
+
+!!! Papers/articles
+
+!!Topics
+
+* MT general paper (fmt, tt)
+* MT special aspects?  (fmt, tt)
+** Assimilation/Dissemination?
+** Specific fin-est syntactic differences
+* MT system(s) --- sme-fin (fmt, tt)
+* Oahpa presentation (Heli)
+* Võru FST presentation
+* Estonian FST this-or-that way (Heiki)
+* FST and compounding for Germanic-like Uralic languages... (Heiki, tt?)
+* Est-Nob dictionary
+* Contrastive Linguistics (fmt, tt, Heiki ?)
+
+!!Conferences
+
+* NODALIDA   papers due 20th Jan., demo papers 20th March
+* EAMT   ??? 
+* ACL 2017    6th Feb
+
+
+!!!Next meeting
+... in Helsinki, for the ones there.
+__Wednesday, 7th December 13:00 Norwegian time__
+
+fmt has flight at 17:05
+
