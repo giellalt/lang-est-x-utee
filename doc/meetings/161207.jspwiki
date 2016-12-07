@@ -1,0 +1,142 @@
+
+7.12.16
+Participants
+
+
+!!!Agenda
+
+
+* MT 
+* Võru FST 
+* Papers/articles 
+* Next meeting
+
+
+!!!Estonian FST 
+
+!!Status
+
+Heiki: Consider expest.fst also a documentation for grammar work, 
+try to make the code also grammarian-readable.
+
+Jaak: Continued getting rid of multiple generations.
+It is now somewhat better, but still uncommitted.
+
+
+Filter is in {{src/filters/}}
+Need to include it in the {{src/filters/Makefile.am}} to make sure the regex is turned into an fst.
+
+Then, to use the filter when building the Oahpa fst, add a target for {{analyser-oahpa-desc.%: analyser-oahpa-desc.tmp.%}}, and specify how to use the filter in that target.
+
+Fst build process:
+{{{
+1: build *-raw-* fst, containing everything with tags in a known order
+2: build *.tmp.?fst from the *-raw-* fst (language independent build step)
+3: build the final fst from the *.tmp.?fst file (language-specific build step, ie the place to add filters only relevant to estonian); if there are no build steps here, the tmp file is just copied to the final target file
+}}}
+
+Documentation for namning convetion:
+
+[http://giellatekno.uit.no/doc/infra/infraremake/TransducerNamesInTheNewInfra.html]
+
+
+!!Testing
+
+* Coverage of large corpus
+* Result of generation 
+** Number of double generations
+* common lemmatest: Find a lemmalist and test
+** generate the lemma forms of the biggest (or most relevant) est bidix
+** Eventually some other lemmalist
+* different lemmatest: make check
+** In this test we measure each fst against its own lemmalist
+** 70
+* Other?
+
+__ACTION POINTS__
+
+* __Jaak__ sets up tests, and __Jaak__ and __Heiki__ (etc) to test
+
+
+!!Documentation
+
+Heiki-Jaan and Sjur have discussed the jspwiki generated documentation 
+issue in Helsinki
+
+!!!MT 
+
+
+* [http://gtweb.uit.no/jorgal]
+
+est -> fin
+
+Tänases Postimehes langevad viimased maskid: idarahaskandaalist alates on viimased kuus aastat jäetud avalikkusele mulje, et Keskerakonna ja Ühtse Venemaa suhted seisavad külmutatuna.
+
+*Tänases *Postimehes lankeavat #uusin *maskid: *idarahaskandaalist #alkaa ovat #uusin kuusi vuotta *jäetud julkisuudelle *mulje, että #Keskeinen puolueen ja *Ühtse Venäjän maan *suhted seisovat *külmutatuna.
+
+[http://gtweb.uit.no/jorgal/index.sme.html?dir=fin-est&qP=http://giellatekno.uit.no/index.fin.html#webpageTranslation]
+
+
+
+document generation issues Heiki had and
+Trond corrected: in /doc, make-B; forrest, and get the error message:
+
+{{{
+X [0]                                     root-morphology.html        BROKEN: Couldn't accept input link ["[ue]"]
+}}}
+
+this indicates that 
+
+{{{
+    [ ] 
+}}}
+
+was used in the documentation to be generated (following !! ), and it should not have been.
+
+
+
+!!!Võru FST 
+
+!!Status
+
+Not much happened lately. Problem: Identifying A vs N from a 6000
+lemma list. Trying to do that via POS info from Estonian. Probably
+a 2000 residue of those 6000 will remain for manual work.
+
+
+!!!Papers/articles 
+
+!!MT
+* typology papers (typology of MT systems, that is)
+* ordinary MT system presentation papers
+** sme-fin is a good candidate
+
+!!Oahpa
+* Systems in use papers
+
+!!FST
+* heiki vs. jaak paper (subtracting or not)
+* presentation FST papers
+* lexc vs twolc: where to put the complexity
+
+!!Grammar
+Contrastive
+
+!!CG
+hmm
+
+__ACTION POINT__
+* Push this to a more concrete level to the next meeting (__all__)
+* Articles as issue next time
+
+!!!Summary of the Helsinki trip
+
+Heiki presented Hki slides, and still has had no lunch.
+
+http://blogs.helsinki.fi/language-technology/news/bault-2016/
+Highlight: Lg tech developers out there meet academia
+
+!!!Next meeting
+
+__Monday Dec 19th 13.30 Norwegian time__
+
