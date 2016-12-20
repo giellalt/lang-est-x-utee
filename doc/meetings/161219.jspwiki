@@ -1,0 +1,108 @@
+!!!Samest meeting 19.12.2016
+Participants: Heiki, Heli, Jaak, Jack, Kaili, Trond
+
+!!!Agenda
+* Estonian FST
+* Articles
+
+
+
+!!!Estonian FST
+
+Heiki has maybe discovered a way to decrease the number of inflection types of verbs -> simplification of the FST.
+
+{{{
+YAML test 8: analyser-gt-norm.xfst + gt-norm-yamls/V1-Oct_2016_gt-norm.yaml - 5050/0/5050 PASS
+YAML test 9: analyser-gt-norm.xfst + gt-norm-yamls/V2-Oct_2016_gt-norm.yaml - 4098/0/4098 PASS
+}}}
+
+
+!!!Papers/articles 
+
+!!MT
+
+!Typology
+
+* Production vs. understanding
+** fin-est and est-fin equally relevant for both types (?)
+* Lmin vs. Lmaj (or: mono- or bilingual users)
+** fin-est becoming more symmetric as time passes
+
+This could also involve sme-X and X-sme.
+English-Irish as a good example of a pit to fall in (no use for system for understanding)
+
+Key question(s): 
+* What do we need a MT system for?
+* ... and does the MT system give us what we want?
+
+Aarne Ranta: Meaning representation: 
+TODO: Heiki to provide AR reference.
+
+Trond:
+
+Google Translate is a system __used__ for understanding, 
+but unfortunately it is better suited for production:
+# good at idiomatic expressions, getting long strings of words correct
+# totally unreliable for keeping track of semantic roles
+
+
+RBMT out of fashion:
+# not that suited for production of distantly or unrelated lgs
+## especially bad for English, which has underspecified words (N = A = V)
+# making RBMT systems requires work __and__ tag standardisatoin
+# All RB things out of fashion
+
+RBMT for closely rel lgs
+# reliable: whodonnit = ok
+# less editing (similar syntax)
+# but to get it good, one would need to do the 
+
+Quoting [Wikipedia|https://en.wikipedia.org/wiki/Machine_translation#Rule-based]:
+
+''To translate between closely related languages, the technique referred to as rule-based machine translation may be used.''
+
+
+!Ordinary MT system presentation papers
+
+* sme-fin is a good candidate
+* fin-est (together with fin-sme?) the best candidate?
+* or eventually est-fin (together with sme-fin)?
+
+!Neural networks
+
+For one example, see: [Google Brain|https://research.google.com/teams/brain/]
+
+
+
+!!Oahpa-est
+* System in use papers
+
+!Efficiency testing
+This should come at some point later this spring.
+Heli has some thoughts on experiment setup.
+Teachers should be asked about relevant grammar topics.
+Pupils should be tested ''before'' and ''after'' using Oahpa.
+
+!Popularity testing
+
+Usage statistics is (hopefully!) being collected all the time.
+
+!Preparation
+# Collect statistics
+# Look at earlier papers
+# Choose an approach (learning effect e.g.)
+
+
+!!Oahpa-vro
+* System in use papers
+
+The vro users will be asked to fill in questionnaries. So, in addition to
+the issues above, there is this source.
+
+
+!!!Next meeting
+
+__Friday Jan 13th, 1300 Norw time.__
+
+__TODO__: Follow up the article issue.
+
