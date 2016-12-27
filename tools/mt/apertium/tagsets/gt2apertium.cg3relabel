@@ -1,4 +1,43 @@
 # Exceptional relabellings (incomplete):
+
+MAP (Adp) (adp);
+
+MAP (Card) (card);
+
+MAP (Aux) (aux);
+MAP (Der) (der);
+MAP (Prc) (prc);
+
+MAP (Sup) (sup);
+MAP (Pers) (actv);
+MAP (Impers) (pasv);
+
+MAP (SC/Nom) (sc_nom);
+MAP (SC/Gen) (sc_gen);
+MAP (SC/Par) (sc_par);
+MAP (SC/Trm) (sc_trm);
+MAP (SC/Ela) (sc_ela);
+MAP (SC/All) (sc_all);
+MAP (SC/Ade) (sc_ade);
+MAP (SC/Abe) (sc_abe);
+MAP (SC/Abl) (sc_abl);
+MAP (SC/Com) (sc_com);
+
+MAP (Nom) (nom);
+MAP (Gen) (gen);
+MAP (Par) (par);
+MAP (Ill) (ill);
+MAP (Ine) (ine);
+MAP (Ela) (ela);
+MAP (Ade) (ade);
+MAP (All) (all);
+MAP (Abl) (abl);
+MAP (Tra) (tra);
+MAP (Ess) (ess);
+MAP (Trm) (trm);
+MAP (Abe) (abe);
+MAP (Com) (com);
+
 MAP (Ind) (indic);
 MAP (Pron) (prn);
 MAP (V) (vblex);
@@ -66,8 +105,8 @@ MAP (<smj>) (←smj→);
 MAP (<ext>) (←ext→);
 MAP (<vdic>) (←vdic→);
 
-LIST was_clb = cm sent;
-MAP (CLB) was_clb;
+#LIST was_clb = cm sent;
+#MAP (CLB) was_clb;
 
 LIST was_punct = quot punct ("-" guio);
 MAP (PUNCT) was_punct;
@@ -236,7 +275,7 @@ MAP (Num) (num);
 MAP (NumAg) (numag);
 MAP (Ord) (ord);
 MAP (Pcle) (pcle);
-MAP (Pers) (pers);
+#MAP (Pers) (pers);
 MAP (Pl) (pl);
 MAP (Pot) (pot);
 MAP (Pr) (pr);
