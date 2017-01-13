@@ -23,6 +23,14 @@ LEXICON 02_I	!number
 :X2 An_SgN;
 :i TP_02b0;
 
+LEXICON AKORDION !akordion, hamburger
+02_I;
++Use/NG: 19;
+
+LEXICON 02_I_NG	!muuseum, Use/NG parallel form
++Use/NG:X2 An_SgN;
++Use/NG:i TP_02b0;
+
 LEXICON 02_E	!kevad
 An_SgN;
 :e TP_02b0;
@@ -137,6 +145,10 @@ LEXICON 09_E	!katus
 TP_09a0;
 :e TP_09b0;
 
+LEXICON 09_E_NG	!õiglus
++Use/NG: TP_09a0;
++Use/NG:e TP_09b0;
+
 LEXICON 09_S-KSE !vennas
 :s TP_09a0;
 :kse TP_09b0;
@@ -147,6 +159,11 @@ LEXICON 10_0-SE-S	!väike-väikese
  :se An_SgIll;
  :s An_SgG_der;
  10_;
+
+
+LEXICON 10_NE-SE-S_NG	!aeglane
+
++Use/NG: 10_NE-SE-S;
 
 LEXICON 10_NE-SE-S	!soolane, hiline
  :ne An_SgN;
@@ -263,6 +280,11 @@ LEXICON 16_GRI_Adt	!pogri
 
 LEXICON 17	!tuvi
 TP_17a0;
+
+LEXICON 17'	!kena
+TP_17a0;
+TP_17a0';
+
 
 LEXICON 17_Adt	!saba, kivi
 TP_17a0;
@@ -495,6 +517,8 @@ An_SgIll_NG;
 An_SgP_0;
 An_PlG_de;
 An_PlP_sid;
+
+LEXICON TP_17a0' !sabu, keni 
 :+W1 An_PlP_V;	!Mitmuse tüvevokaali määratakse reeglitega.
 :+W1 An_Pl_Vok;
 
@@ -562,7 +586,7 @@ LEXICON TP_22bt'  ! jal´ga, tikku, seppa
 An_SgP_0;
 An_SgAdt_0;
 An_PlG_de;
-An_PlP_sid;
++Use/NG: An_PlP_sid;
 
 LEXICON TP_22bt
 TP_22bt';

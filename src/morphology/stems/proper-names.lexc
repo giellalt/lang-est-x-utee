@@ -57,7 +57,7 @@ LEXICON Place'
  Lapimaa+N+Prop+Sem/Plc:Lapima. 26;
  Leedu+N+Prop+Sem/Plc:Leedu 01;
  Norra+N+Prop+Sem/Plc:Norra 01;
- Olümpos+N+Prop+Sem/Plc:Olümpos 09_E; ! (09_H -> +H) a0: olümpos, b0: olümpose
+ Olümpos+N+Prop+Sem/Plc:Olümpos 09_E_NG; ! (09_H -> +H) a0: olümpos, b0: olümpose
  Olümpos+N+Prop+Sem/Plc:Olümpos 11; ! (11_H -> +H) a0: olümpos, b0: olümpose, b0v: olümposi
  Paide+N+Prop+Sem/Plc:Paide 01; ! (01_H -> +H) a0: paide, a0r: 0
  Poola+N+Prop+Sem/Plc:Poola 01;

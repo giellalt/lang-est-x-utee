@@ -130,31 +130,31 @@ LEXICON Pronouns
  keegi+Pron+Sg+Par:kedagi GI; ! 00_P,k'eegi,ke[dagi],------0P,-,-,*
  keegi+Pron+Sg+Trm:kellenigi GI; ! 00_P,k'eegi,kelle[nigi],------0R,-,-,*
  keegi+Pron+Sg+Tra:kellekski GI; ! 00_P,k'eegi,kelle[kski],------0T,-,-,*
- kes+Pron+Pl+Abe:kelledeta GI; ! 00_P,k'es,kelle[deta],------1A,-,-,*
+ kes+Pron+Use/NG+Pl+Abe:kelledeta GI; ! 00_P,k'es,kelle[deta],------1A,-,-,*
  kes+Pron+Pl+Abe:kelleta GI; ! 00_P,k'es,kelle[ta],------1A,-,-,*
- kes+Pron+Pl+Abl:kelledelt GI; ! 00_P,k'es,kelle[delt],------16,-,-,*
+ kes+Pron+Use/NG+Pl+Abl:kelledelt GI; ! 00_P,k'es,kelle[delt],------16,-,-,*
  kes+Pron+Pl+Abl:kellelt GI; ! 00_P,k'es,kelle[lt],------16,-,-,*
- kes+Pron+Pl+Ade:kelledel GI; ! 00_P,k'es,kelle[del],------15,-,-,*
+ kes+Pron+Use/NG+Pl+Ade:kelledel GI; ! 00_P,k'es,kelle[del],------15,-,-,*
  kes+Pron+Pl+Ade:kellel GI; ! 00_P,k'es,kelle[l],------15,-,-,*
- kes+Pron+Pl+All:kelledele GI; ! 00_P,k'es,kelle[dele],------14,-,-,*
+ kes+Pron+Use/NG+Pl+All:kelledele GI; ! 00_P,k'es,kelle[dele],------14,-,-,*
  kes+Pron+Pl+All:kellele GI; ! 00_P,k'es,kelle[le],------14,-,-,*
- kes+Pron+Pl+Ela:kelledest GI; ! 00_P,k'es,kelle[dest],------13,-,-,*
+ kes+Pron+Use/NG+Pl+Ela:kelledest GI; ! 00_P,k'es,kelle[dest],------13,-,-,*
  kes+Pron+Pl+Ela:kellest GI; ! 00_P,k'es,kelle[st],------13,-,-,*
- kes+Pron+Pl+Ess:kelledena GI; ! 00_P,k'es,kelle[dena],------1E,-,-,*
+ kes+Pron+Use/NG+Pl+Ess:kelledena GI; ! 00_P,k'es,kelle[dena],------1E,-,-,*
  kes+Pron+Pl+Ess:kellena GI; ! 00_P,k'es,kelle[na],------1E,-,-,*
  kes+Pron+Pl+Gen:kelle GI; ! 00_P,k'es,kelle[],------1G,-,-,*
- kes+Pron+Pl+Gen:kellede GI; ! 00_P,k'es,kelle[de],------1G,-,-,*
- kes+Pron+Pl+Ill:kelledesse GI; ! 00_P,k'es,kelle[desse],------11,-,-,*
+ kes+Pron+Use/NG+Pl+Gen:kellede GI; ! 00_P,k'es,kelle[de],------1G,-,-,*
+ kes+Pron+Use/NG+Pl+Ill:kelledesse GI; ! 00_P,k'es,kelle[desse],------11,-,-,*
  kes+Pron+Pl+Ill:kellesse GI; ! 00_P,k'es,kelle[sse],------11,-,-,*
- kes+Pron+Pl+Ine:kelledes GI; ! 00_P,k'es,kelle[des],------12,-,-,*
+ kes+Pron+Use/NG+Pl+Ine:kelledes GI; ! 00_P,k'es,kelle[des],------12,-,-,*
  kes+Pron+Pl+Ine:kelles GI; ! 00_P,k'es,kelle[s],------12,-,-,*
- kes+Pron+Pl+Com:kelledega GI; ! 00_P,k'es,kelle[dega],------1K,-,-,*
+ kes+Pron+Use/NG+Pl+Com:kelledega GI; ! 00_P,k'es,kelle[dega],------1K,-,-,*
  kes+Pron+Pl+Com:kellega GI; ! 00_P,k'es,kelle[ga],------1K,-,-,*
  kes+Pron+Pl+Nom:kes GI; ! 00_P,k'es,k'es[],------1N,-,-,*
  kes+Pron+Pl+Par:keda GI; ! 00_P,k'es,ke[da],------1P,-,-,*
- kes+Pron+Pl+Trm:kelledeni GI; ! 00_P,k'es,kelle[deni],------1R,-,-,*
+ kes+Pron+Use/NG+Pl+Trm:kelledeni GI; ! 00_P,k'es,kelle[deni],------1R,-,-,*
  kes+Pron+Pl+Trm:kelleni GI; ! 00_P,k'es,kelle[ni],------1R,-,-,*
- kes+Pron+Pl+Tra:kelledeks GI; ! 00_P,k'es,kelle[deks],------1T,-,-,*
+ kes+Pron+Use/NG+Pl+Tra:kelledeks GI; ! 00_P,k'es,kelle[deks],------1T,-,-,*
  kes+Pron+Pl+Tra:kelleks GI; ! 00_P,k'es,kelle[ks],------1T,-,-,*
  kes+Pron+Sg+Abe:kelleta GI; ! 00_P,k'es,kelle[ta],------0A,-,-,*
  kes+Pron+Sg+Abl:kellelt GI; ! 00_P,k'es,kelle[lt],------06,-,-,*
@@ -303,31 +303,31 @@ LEXICON Pronouns
  mina+Pron+Pers+Sg1+Trm:minuni GI; ! 00_P,mina,minu[ni],------0R,-,-,*
  mina+Pron+Pers+Sg1+Tra:minuks GI; ! 00_P,mina,minu[ks],------0T,-,-,*
  mingi+Pron:mingi 01; ! (01_P -> +Pron) a0: mingi, a0r: minge
- mis+Pron+Pl+Abe:milledeta #; ! 00_P,m'is,mille[deta],------1A,-,-,*
+ mis+Pron+Use/NG+Pl+Abe:milledeta #; ! 00_P,m'is,mille[deta],------1A,-,-,*
  mis+Pron+Pl+Abe:milleta #; ! 00_P,m'is,mille[ta],------1A,-,-,*
- mis+Pron+Pl+Abl:milledelt #; ! 00_P,m'is,mille[delt],------16,-,-,*
+ mis+Pron+Use/NG+Pl+Abl:milledelt #; ! 00_P,m'is,mille[delt],------16,-,-,*
  mis+Pron+Pl+Abl:millelt #; ! 00_P,m'is,mille[lt],------16,-,-,*
- mis+Pron+Pl+Ade:milledel #; ! 00_P,m'is,mille[del],------15,-,-,*
+ mis+Pron+Use/NG+Pl+Ade:milledel #; ! 00_P,m'is,mille[del],------15,-,-,*
  mis+Pron+Pl+Ade:millel #; ! 00_P,m'is,mille[l],------15,-,-,*
- mis+Pron+Pl+All:milledele #; ! 00_P,m'is,mille[dele],------14,-,-,*
+ mis+Pron+Use/NG+Pl+All:milledele #; ! 00_P,m'is,mille[dele],------14,-,-,*
  mis+Pron+Pl+All:millele #; ! 00_P,m'is,mille[le],------14,-,-,*
- mis+Pron+Pl+Ela:milledest #; ! 00_P,m'is,mille[dest],------13,-,-,*
+ mis+Pron+Use/NG+Pl+Ela:milledest #; ! 00_P,m'is,mille[dest],------13,-,-,*
  mis+Pron+Pl+Ela:millest #; ! 00_P,m'is,mille[st],------13,-,-,*
- mis+Pron+Pl+Ess:milledena #; ! 00_P,m'is,mille[dena],------1E,-,-,*
+ mis+Pron+Use/NG+Pl+Ess:milledena #; ! 00_P,m'is,mille[dena],------1E,-,-,*
  mis+Pron+Pl+Ess:millena #; ! 00_P,m'is,mille[na],------1E,-,-,*
  mis+Pron+Pl+Gen:mille #; ! 00_P,m'is,mille[],------1G,-,-,*
- mis+Pron+Pl+Gen:millede #; ! 00_P,m'is,mille[de],------1G,-,-,*
- mis+Pron+Pl+Ill:milledesse #; ! 00_P,m'is,mille[desse],------11,-,-,*
+ mis+Pron+Use/NG+Pl+Gen:millede #; ! 00_P,m'is,mille[de],------1G,-,-,*
+ mis+Pron+Use/NG+Pl+Ill:milledesse #; ! 00_P,m'is,mille[desse],------11,-,-,*
  mis+Pron+Pl+Ill:millesse #; ! 00_P,m'is,mille[sse],------11,-,-,*
- mis+Pron+Pl+Ine:milledes #; ! 00_P,m'is,mille[des],------12,-,-,*
+ mis+Pron+Use/NG+Pl+Ine:milledes #; ! 00_P,m'is,mille[des],------12,-,-,*
  mis+Pron+Pl+Ine:milles #; ! 00_P,m'is,mille[s],------12,-,-,*
- mis+Pron+Pl+Com:milledega #; ! 00_P,m'is,mille[dega],------1K,-,-,*
+ mis+Pron+Use/NG+Pl+Com:milledega #; ! 00_P,m'is,mille[dega],------1K,-,-,*
  mis+Pron+Pl+Com:millega #; ! 00_P,m'is,mille[ga],------1K,-,-,*
  mis+Pron+Pl+Nom:mis #; ! 00_P,m'is,m'is[],------1N,-,-,*
  mis+Pron+Pl+Par:mida #; ! 00_P,m'is,mi[da],------1P,-,-,*
- mis+Pron+Pl+Trm:milledeni #; ! 00_P,m'is,mille[deni],------1R,-,-,*
+ mis+Pron+Use/NG+Pl+Trm:milledeni #; ! 00_P,m'is,mille[deni],------1R,-,-,*
  mis+Pron+Pl+Trm:milleni #; ! 00_P,m'is,mille[ni],------1R,-,-,*
- mis+Pron+Pl+Tra:milledeks #; ! 00_P,m'is,mille[deks],------1T,-,-,*
+ mis+Pron+Use/NG+Pl+Tra:milledeks #; ! 00_P,m'is,mille[deks],------1T,-,-,*
  mis+Pron+Pl+Tra:milleks #; ! 00_P,m'is,mille[ks],------1T,-,-,*
  mis+Pron+Sg+Abe:milleta #; ! 00_P,m'is,mille[ta],------0A,-,-,*
  mis+Pron+Sg+Abl:millelt #; ! 00_P,m'is,mille[lt],------06,-,-,*

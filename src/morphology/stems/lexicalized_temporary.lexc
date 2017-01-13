@@ -31,11 +31,11 @@ peaaegu+Adv:peaaegu GI; ! (41_DK -> +Adv +K)
 ! ala:
 !  ala+N:ala 17; ! (17_S -> +S) a0: ala, a0g: #, a0v: alu
 !   eriala:
-eriala+N:eri#ala 17; ! (17_S -> +S) a0: ala, a0g: #, a0v: alu
+eriala+N:eri#ala 17'; ! (17_S -> +S) a0: ala, a0g: #, a0v: alu
 !   pindala:
-pindala+N:pind#ala 17; ! (17_S -> +S) a0: ala, a0g: #, a0v: alu
+pindala+N:pind#ala 17'; ! (17_S -> +S) a0: ala, a0g: #, a0v: alu
 !   spordiala:
-spordiala+N:spordi#ala 17; ! (17_S -> +S) a0: ala, a0g: #, a0v: alu
+spordiala+N:spordi#ala 17'; ! (17_S -> +S) a0: ala, a0g: #, a0v: alu
 
 ! amet:
 !  amet+N:amet 02_I; ! (02_S -> +S) a0: amet, b0: ameti, b0r: amete, c0: 0
@@ -102,9 +102,9 @@ uudishimulik+A:uudis#himulikK1 25; ! (25_A -> +A) at: himulik, bt: himulikku, bn
 auhind+N:auhinD1 22_A; ! (22_S -> +S) at: hind, bt: hinda, bn: hinna, btv: hindu, bnv: hinnu
 
 ! hindlus:
-!  hindlus+N:hindlus 09_E; ! (09_S -> +S) a0: hindlus, b0: hindluse
+!  hindlus+N:hindlus 09_E_NG; ! (09_S -> +S) a0: hindlus, b0: hindluse
 !   allahindlus:
-allahindlus+N:alla#hindlus 09_E; ! (09_S -> +S) a0: hindlus, b0: hindluse
+allahindlus+N:alla#hindlus 09_E_NG; ! (09_S -> +S) a0: hindlus, b0: hindluse
 !  hindlus+N:hindlus 11; ! (11_S -> +S) a0: hindlus, b0: hindluse, b0v: hindlusi
 !   allahindlus:
 allahindlus+N:alla#hindlus 11; ! (11_S -> +S) a0: hindlus, b0: hindluse, b0v: hindlusi
@@ -194,9 +194,9 @@ vikerkaar+N:viker#kaar 13; ! (13_S -> +S) at: kaar, (bt): kaare, an: kaar, bn: k
 abikaasa+N:abi#kaasa 16; ! (16_S -> +S) a0: kaasa, a0g: #
 
 ! kaaslane:
-!  kaaslane+N:kaasla 10_NE-SE-S; ! (10_S -> +S) a0: kaaslane, b0: kaaslase, c0: kaaslas
+!  kaaslane+N:kaasla 10_NE-SE-S_NG; ! (10_S -> +S) a0: kaaslane, b0: kaaslase, c0: kaaslas
 !   elukaaslane:
-elukaaslane+N:elu#kaasla 10_NE-SE-S; ! (10_S -> +S) a0: kaaslane, b0: kaaslase, c0: kaaslas
+elukaaslane+N:elu#kaasla 10_NE-SE-S_NG; ! (10_S -> +S) a0: kaaslane, b0: kaaslase, c0: kaaslas
 !  kaaslane+N:kaasla 12_NE-SE-S; ! (12_S -> +S) a0: kaaslane, b0: kaaslase, c0: kaaslas, b0v: kaaslasi
 !   elukaaslane:
 elukaaslane+N:elu#kaasla 12_NE-SE-S; ! (12_S -> +S) a0: kaaslane, b0: kaaslase, c0: kaaslas, b0v: kaaslasi
@@ -683,9 +683,9 @@ väljapääs+N:välja#pääs 22_U; ! (22_S -> +S) at: pääs, bt: pääsu, bn: p
 ! püha:
 !  püha+N:püha 17; ! (17_SA -> +A +S) a0: püha, a0g: #, a0v: pühi
 !   võidupüha:
-võidupüha+N:võidu#püha 17; ! (17_SA -> +A +S) a0: püha, a0g: #, a0v: pühi
+võidupüha+N:võidu#püha 17'; ! (17_SA -> +A +S) a0: püha, a0g: #, a0v: pühi
 !   ülestõusmispüha:
-ülestõusmispüha+N:üles#tõusmis#püha 17; ! (17_SA -> +A +S) a0: püha, a0g: #, a0v: pühi
+ülestõusmispüha+N:üles#tõusmis#püha 17'; ! (17_SA -> +A +S) a0: püha, a0g: #, a0v: pühi
 
 ! raamat
 !  raamat+N:raamat 02_U; ! (02_S -> +S) a0: raamat, b0: raamatu, b0r: 0, c0: 0
@@ -733,9 +733,9 @@ jõusaal+N:jõu#saal 22_I; ! (22_S -> +S) at: saal, bt: saali, bn: saali, btv: s
 reisisaatja+N:reisi#saatja 01; ! (01_S -> +S) a0: saatja, a0r: 0
 
 ! seisvus:
-!  seisvus+N:seisvus 09_E; ! (09_S -> +S) a0: seisvus, b0: seisvuse
+!  seisvus+N:seisvus 09_E_NG; ! (09_S -> +S) a0: seisvus, b0: seisvuse
 !   iseseisvus:
-iseseisvus+N:ise#seisvus 09_E; ! (09_S -> +S) a0: seisvus, b0: seisvuse
+iseseisvus+N:ise#seisvus 09_E_NG; ! (09_S -> +S) a0: seisvus, b0: seisvuse
 !  seisvus+N:seisvus 11; ! (11_S -> +S) a0: seisvus, b0: seisvuse, b0v: seisvusi
 !   iseseisvus:
 iseseisvus+N:ise#seisvus 11; ! (11_S -> +S) a0: seisvus, b0: seisvuse, b0v: seisvusi
@@ -885,9 +885,9 @@ välisuks+N:välis#uks 14; ! (14_S -> +S) at: uks, (bt): ukse, an: uks, bn: ukse
 jaaniuss+N:jaani#uss 22_I; ! (22_S -> +S) at: uss, bt: ussi, bn: ussi, btv: usse, bnv: usse
 
 ! vaatus:
-!  vaatus+N:vaatus 09_E; ! (09_S -> +S) a0: vaatus, b0: vaatuse
+!  vaatus+N:vaatus 09_E_NG; ! (09_S -> +S) a0: vaatus, b0: vaatuse
 !   ettevaatus:
-ettevaatus+N:ette#vaatus 09_E; ! (09_S -> +S) a0: vaatus, b0: vaatuse
+ettevaatus+N:ette#vaatus 09_E_NG; ! (09_S -> +S) a0: vaatus, b0: vaatuse
 !  vaatus+N:vaatus 11; ! (11_S -> +S) a0: vaatus, b0: vaatuse, b0v: vaatusi
 !   ettevaatus:
 ettevaatus+N:ette#vaatus 11; ! (11_S -> +S) a0: vaatus, b0: vaatuse, b0v: vaatusi
@@ -994,9 +994,9 @@ magistriõpe+N:magistri#õpP1e 06; ! (06_S -> +S) an: õpe, at: õppe
 üliõpilane+N:üli#õpila 12_NE-SE-S; ! (12_S -> +S) a0: õpilane, b0: õpilase, c0: õpilas, b0v: õpilasi
 
 ! ütlus:
-!  ütlus+N:ütlus 09_E; ! (09_S -> +S) a0: ütlus, b0: ütluse
+!  ütlus+N:ütlus 09_E_NG; ! (09_S -> +S) a0: ütlus, b0: ütluse
 !   etteütlus:
-etteütlus+N:ette#ütlus 09_E; ! (09_S -> +S) a0: ütlus, b0: ütluse
+etteütlus+N:ette#ütlus 09_E_NG; ! (09_S -> +S) a0: ütlus, b0: ütluse
 !  ütlus+N:ütlus 11; ! (11_S -> +S) a0: ütlus, b0: ütluse, b0v: ütlusi
 !   etteütlus:
 etteütlus+N:ette#ütlus 11; ! (11_S -> +S) a0: ütlus, b0: ütluse, b0v: ütlusi
