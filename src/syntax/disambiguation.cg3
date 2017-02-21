@@ -93,7 +93,7 @@ LIST AP = A Pron ;
 LIST APN = A Pron Num ; 
 LIST AS = A N ;
 LIST A* = A* ;
-LIST A = A ;
+SET A = (A) - (Der/lt) - (Der_lt) ;
 LIST D = Adv ;
 LIST S = N ;
 LIST P = Pron ;
@@ -358,7 +358,7 @@ LIST Ajamäärus = "aeg" "elu#aeg" "Elu#aeg" "aasta" "kuu" "nädal" "päev" ("tu
  "juuni" "juunikuu" "juuni#kuu" "juuli" "juulikuu" "juuli#kuu" "august" "september" "oktoober" "november" "detsember" 
  "esmaspäev" "teisipäev" "kolmapäev" "neljapäev" "reede" "laupäev" "pühapäev" "aastakümme"
  "esmas#päev" "teisi#päev" "kolma#päev" "nelja#päev" "lau#päev" "püha#päev" "aasta#kümme"
- "sajand" "aasta#sajand" "kord" "samm" "aste" ("ulatus" N) "algus" "lõpp" "elu" "igavik" "aja#vahemik" "nüüd" ("(.*)sekund"r) ("(.*)minut"r) ("(.*)tund"r) ("(.*)päev"r) ("(.*)nädal"r) ("(.*)kuu"r) ("(.*)aasta"r) ("(.*)periood"r) ; 
+ "sajand" "aasta#sajand" "kord" "samm" "aste" ("ulatus" N) "algus" "lõpp" "elu" "igavik" "aja#vahemik" "nüüd" ("(.*)sekund"r) ("(.*)minut"r) ("(.*)tund"r) "tunniti" ("(.*)päev"r) ("(.*)päeviti"r) "reedeti" ("(.*)nädal"r) "nädalati" ("(.*)kuu"r) "kuuti" ("(.*)aasta"r) "aastati" ("(.*)periood"r) "periooditi" ; 
 
 LIST Hulk = Card Num "enam" "enim" "rohkem" "vähem" "muist" "mitu" "mi=tu" 
 	("(.*)liiter"r) ("(.*)meeter") "kraad" "toll" "tonn" "hektar" ("tund" N) "aasta" "tükk" "natuke" "ivake" "veidike" "korv" "viil" "kott" "ämber" "pudel" "klaas" "pott" "poti#täis" "pann" "panni#täis" "kilo" "kübe" "komplekt" "killu~ke" "m2" "m3" "km2" "km3" 
@@ -370,7 +370,7 @@ LIST RohkemVähem = ("palju" Adv) "vähe" "rohkem" "vähem" "enam" "enim" "kaua"
 
 
 LIST Kava = "kava" "kavatsus" "eesmärk" "ees#märk" "plaan" "programm" "strateegia" "võimalus" "valmidus" "valmis#olek" "aeg" "välja#vaade" "vajadus" "oskus" "õigus" "luba" "mõte" "idee" "luba"
-  "huvi" "soov" "tahe" "lootus" Der/mine "nõue" "korraldus" "otsus" "määrus" "alus" "direktiiv" "võim" "kohtustus" "põhjus" "tõenäosus" "ette#panek" "teade" ; 
+  "huvi" "soov" "tahe" "lootus" Der/mine "nõue" "korraldus" "otsus" "määrus" "alus" "direktiiv" "võim" "kohtustus" "põhjus" "tõenäosus" "ette#panek" "teade" "traditdioon" "tava" "komme" "viis" ; 
 
 LIST RiikVald = "riik" "vabariik" "ühendriik" "maa" "linn" "vald" "alevik" "provints" "osa#riik" "föderatsioon" "konföderatsioon" "riigikogu" "partei" "valitsus" "parlament" "as" "oü" "mtü" "ab" ;
 
@@ -1443,7 +1443,8 @@ SELECT ("väljas") + D (1 Z OR CLB)(-2 Ole)(NEGATE *-1 particV BARRIER CLB);
 
 
 
-SELECT (N @ADVL) (1 Ajamäärus); 
+SELECT N OR D (0 Ajamäärus)(1 Jcrd OR Koma)(2 Ajamäärus); 
+SELECT N OR D (0 Ajamäärus)(-1 Jcrd OR Koma)(-2 Ajamäärus); 
 REMOVE ("lõpus") (0 ("lõpp")) ; 
 REMOVE ("alasi") (0 ("ala")) ; 
 REMOVE S (0 ("koos")) ; 
@@ -1746,6 +1747,7 @@ REMOVE DaInf (NEGATE 0 SaamaVerb)(*0 Saama BARRIER CLBC)(*0 NOTDaVerb OR ("aru")
 REMOVE Saama + Mod (*0 NOTDaVerb OR SaamaVerb OR ("aru") BARRIER CLBC)(NEGATE *1 Kava OR DaInf BARRIER CLBC)(NEGATE *-1 Kava OR DaInf BARRIER CLBC);  
 SELECT Saama + V - Mod (*0 SaamaVerb OR ("aru") BARRIER CLBC);
 SELECT Saama + V (*0 Kava OR DaInf BARRIER CLBC);
+SELECT Kava (*0 DaInf BARRIER CLBC);
 REMOVE Mod (NOT 0 Võima)(0 VatVerb)(NEGATE *1 QuotPresPs OR MaInf BARRIER CLB)(NEGATE *-1 QuotPresPs OR MaInf BARRIER CLB);
 SELECT Mod (0 MaVerb) (*0 MaInf BARRIER CLB);
 SELECT Mod (0 DaVerb) (NEGATE 0 ("võime") OR K OR Imper)(1 DaInf)(NEGATE *0 NOTDaVerb OR ("aru") OR Kava);
@@ -1811,7 +1813,7 @@ REMOVE ("pära") + S ;
 REMOVE Teadma + S ; 
 "<raske>" SELECT ANom (*-1 Ole BARRIER Nom OR CLBC) ;
 REMOVE ("raske") + S  ;     
-REMOVE ("nagu") + J  ;     
+REMOVE ("naga") + S (0 ("nagu")) ;     
 REMOVE ("tähelepanu") + Nom  (*1 Nom BARRIER CLB)(*0 V BARRIER CLB LINK NOT 0 Ole);     
 SELECT ("võimas") + A ;
 SELECT ("veel") + D (*1 Hulk BARRIER CLBC) ;
@@ -2370,6 +2372,7 @@ SELECT ("sama") + Part  (-2 Yks) (-2C Part) ;
 SELECT ("kaunis") + D (1 D) ;
 REMOVE ("kaunis") + D (NEGATE 1 A) ;   	
 "<parem>" SELECT ANom (*-1 Ole BARRIER CLBC LINK *-1 Nom) ;
+REMOVE ("varem") + A + $$Case (NEGATE 1 $$Case) ;   	
 "<varem>" SELECT D (-1 D) ;   
 "<seal>" SELECT D (-1 D) ;
 "<seal>" SELECT D (1 D) ;
