@@ -16,7 +16,8 @@ LEXICON ProperNames
  Jaakko+N+Prop:Jaakko 16; 
  Riho+N+Prop:Riho 16; 
  Mari+N+Prop:Mari 16; ! Mari-Mari-Marit
-
+ Maria+N+Prop:Maria 16;
+ Matti+N+Prop:Matti 16;
  Jens+N+Prop:Jens 22_I;
  Eija+N+Prop:Eija 16; 
  Anu+N+Prop:Anu 16; 
@@ -53,6 +54,7 @@ LEXICON Place'
  Itaalia+N+Prop+Sem/Plc:Itaalia 01;
  Jaapan+N+Sem/Plc:Jaapan 19; ! (19_S -> +S) a0: Jaapan, b0: Jaapani
  Karelia+N+Sem/Plc:Karelia 01; ! (01_S -> +S) a0: Karelia, a0r: 0
+ Karjala+N+Prop+Sem/Plc:Karjala 16;
  Kuopio+N+Prop+Sem/Plc:Kuopio 16; 
  Lapimaa+N+Prop+Sem/Plc:Lapima. 26;
  Leedu+N+Prop+Sem/Plc:Leedu 01;
@@ -68,6 +70,7 @@ LEXICON Place'
  Rootsi+N+Prop+Sem/Plc:Rootsi 01;
  Soome+N+Prop+Sem/Plc:Soome 01;
  Taani+N+Prop+Sem/Plc:Taani 01;
+ Tampere+N+Prop+Sem/Plc:Tampere 01;
  Tallinn+N+Prop+Sem/Plc:Tallinn 22_A; ! (22_H -> +H) at: tallinn, bt: tallinna, bn: tallinna, btv: tallinnu, bnv: tallinnu
  Tartu+N+Prop+Sem/Plc:Tartu 01; ! (01_H -> +H) a0: tartu, a0r: 0
  Ungari+N+Prop+Sem/Plc:Ungari 01;
