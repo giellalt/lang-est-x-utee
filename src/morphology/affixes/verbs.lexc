@@ -5,8 +5,8 @@ LEXICON 27	! muutumatu tüvega ja astmevahelduseta verbid (kõige produktiivsem 
  TP_27a0;
 
 LEXICON 28	! ma ja da - TA, olevik -  NA (leppima)
- :X2 TP_28at;
- :$ TP_28an;
+ X2 TP_28at;
+ $ TP_28an;
 
 LEXICON 28_gema	! nägema, tegema tüveerandid
 ! G1e:G1eX2 TP_28at;
@@ -34,8 +34,8 @@ LEXICON 28_gema	! nägema, tegema tüveerandid
  G1e:h An_akse;
 
 LEXICON 29	! ma ja olevik - TA, da - NA - (hüppama)
- TP_29at;
- :$ TP_29an;
+ X2 TP_29at;
+ $ TP_29an;
 
 LEXICON 30	! LE-EL, ma ja olevik - TA, da - NA - (riidlema)
  le TP_30at;

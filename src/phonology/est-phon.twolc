@@ -125,7 +125,8 @@ S1:0 <=> Algus Vok [Kons+] AV:AVT TyveVok:  _ Piir; !küngas-künka
 
 
  "AV 14 k-g"
- K1:g <=> Vok [Liq | n | Vok] _ (r) (Vok | VaheVok:) (S1:|l|s) %$:;	!kook-koogi, pilk-pilgu, küngas-künka, nugris?
+ K1:g <=> Vok [Liq | n | Vok] _ (Vok | VaheVok:) (S1:|l|s) %$:;	!kook-koogi, pilk-pilgu, küngas-künka
+ 	 n u _ r i (S1:) %$:;			!nugris
  	 Vok _ VaheVok: Liq (Vok) %$:;    	!kogre-kokre
 	 Vok _ (VaheVok:) v %$:;		!õgev
 

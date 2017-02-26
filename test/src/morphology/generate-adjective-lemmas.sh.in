@@ -60,7 +60,7 @@ EXTEDITOR=@SEE@
 ##### --include "(pattern1|pattern2|...)"                          #####
 ##### --exclude "(pattern1|pattern2|...)"                          #####
 @GTCORE@/scripts/extract-lemmas.sh \
-    $source_file > $lemmas
+    --exclude '(ligida|lühida|läheda)' $source_file > $lemmas
 
 ###### Start testing: #######
 transducer_found=0

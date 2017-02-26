@@ -2555,7 +2555,7 @@ LEXICON Verbs
  kärmene 27; ! (27_V -> ) a0: kärmene
  kärni 28; ! (28_V -> ) at: kärni, an: kärni
  kärP1i 28; ! (28_V -> ) at: kärpi, an: kärbi
- kärs=2a 29; ! (29_V -> ) at: kärssa, an: kärsa
+ kärs=a 29; ! (29_V -> ) at: kärssa, an: kärsa
  kärsata 27; ! (27_V -> ) a0: kärsata
  kärsi 28; ! (28_V -> ) at: kärsi, an: kärsi
  kärssu 27; ! (27_V -> ) a0: kärssu

@@ -59,8 +59,21 @@ EXTEDITOR=@SEE@
 ##### Extract lemmas - add additional egrep pattern as parameters: #####
 ##### --include "(pattern1|pattern2|...)"                          #####
 ##### --exclude "(pattern1|pattern2|...)"                          #####
-@GTCORE@/scripts/extract-lemmas.sh \
-    $source_file > $lemmas
+@GTCORE@/scripts/extract-lemmas.sh -k \
+    $source_file | \
+	sed \
+		-e '/^ära	;$/d' \
+		-e 's/	GI;$//' \
+		-e 's/	28_gema;$/gema/' \
+		-e 's/	34_D_TUD;$/dma/' \
+		-e 's/	34_K_TUD;$/kma/' \
+		-e 's/	30;$/lema/' \
+		-e 's/	36_ema;$/ema/' \
+		-e 's/	3[16];$/ema/' \
+		-e 's/	.*;$/ma/' \
+		-e 's/\(.\)[=.]2\?/\1\1/' \
+		-e 's/\([[:upper:]]\)1/\1/' | \
+		tr 'KPTGBD' 'kptgbd' | sort -u > $lemmas
 
 ###### Start testing: #######
 transducer_found=0
@@ -89,10 +102,10 @@ for f in $fsttype; do
     if [ -f "$generator_file.$suffix" ]; then
         let "transducer_found += 1"
 
-###### Test non-comopunds: #######
+###### Test non-compounds: #######
         # generate verbs in infitive, extract the resulting generated lemma,
         # store it:
-        sed 's/$/+V+Inf/' $lemmas | $lookup_tool $generator_file.$suffix \
+        sed 's/$/+V+Pers+Sup+Ill/' $lemmas | $lookup_tool $generator_file.$suffix \
             | fgrep -v "+?" | grep -v "^$" | cut -f2 | sort -u \
             > $generated_lemmas.$f.txt 
 
@@ -105,7 +118,7 @@ for f in $fsttype; do
         # Open the diff file in SubEthaEdit (if there is a diff):
         if [ -s $result_file.$f.txt ]; then
             grep -v '^$' $result_file.$f.txt \
-              | sed 's/$/+V+Inf/' \
+              | sed 's/$/+V+Pers+Sup+Ill/' \
               | $lookup_tool $generator_file.$suffix \
               > $gen_result_file.$f.txt
             # If we have an analyser, analyse the missing lemmas as well:
