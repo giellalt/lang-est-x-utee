@@ -22,7 +22,7 @@ LEXICON 28_gema	! nägema, tegema tüveerandid
  G1e:g An_ime; ! nägime
  G1e:h An_a; ! näha 
  G1e:h An_ke; ! nähke
- i:i An_nud_derA; ! näinud
+ i An_nud_derA; ! näinud
  G1e:i An_nud_derV; ! näinud
 
 ! TP_28an	!lepi+n
@@ -35,7 +35,7 @@ LEXICON 28_gema	! nägema, tegema tüveerandid
 
 LEXICON 29	! ma ja olevik - TA, da - NA - (hüppama)
  X2 TP_29at;
- $ TP_29an;
+ :$ TP_29an;
 
 LEXICON 30	! LE-EL, ma ja olevik - TA, da - NA - (riidlema)
  le TP_30at;

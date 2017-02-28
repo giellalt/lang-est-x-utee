@@ -23,7 +23,7 @@ Tests:
      minema+V+Pers+Prs+Ind+Pl1+Aff: [läheme, lähme]
      minema+V+Pers+Prs+Ind+Pl2+Aff: [lähete, lähte]
      minema+V+Pers+Prs+Ind+Pl3+Aff: [lähevad, lähvad]
-     minema+V+Pers+Prs+Ind+Neg: lähe
+     minema+V+Pers+Prs+Ind+ConNeg: lähe
 
      minema+V+Pers+Prs+Cond+Sg1+Aff: läheksin
      minema+V+Pers+Prs+Cond+Sg2+Aff: läheksid
@@ -47,7 +47,7 @@ Tests:
      minema+V+Pers+Prt+Ind+Pl1+Aff: läksime
      minema+V+Pers+Prt+Ind+Pl2+Aff: läksite
      minema+V+Pers+Prt+Ind+Pl3+Aff: läksid
-     minema+V+Pers+Prt+Ind+Neg: läinud
+     minema+V+Pers+Prt+Ind+ConNeg: läinud
 
      minema+V+Pers+Prt+Cond+Sg1+Aff: läinuksin
      minema+V+Pers+Prt+Cond+Sg2+Aff: läinuksid
@@ -74,7 +74,7 @@ Tests:
 # Umbisikuline olevik # Impersonal present forms
 
      minema+V+Impers+Prs+Ind+Aff: minnakse
-     minema+V+Impers+Prs+Ind+Neg: minda
+     minema+V+Impers+Prs+Ind+ConNeg: minda
      minema+V+Impers+Prs+Cond: mindaks
      minema+V+Impers+Prs+Imprt: mindagu
      minema+V+Impers+Prs+Quot: mindavat
@@ -82,7 +82,7 @@ Tests:
 # Umbisikuline minevik # Impersonal past forms
 
      minema+V+Impers+Prt+Ind+Aff: mindi
-     minema+V+Impers+Prt+Ind+Neg: mindud
+     minema+V+Impers+Prt+Ind+ConNeg: mindud
 
      minema+V+Impers+Prt+Cond: minduks
 

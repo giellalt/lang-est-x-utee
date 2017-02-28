@@ -24,7 +24,7 @@ Tests:
      elama+V+Pers+Prs+Ind+Pl1+Aff: elame
      elama+V+Pers+Prs+Ind+Pl2+Aff: elate
      elama+V+Pers+Prs+Ind+Pl3+Aff: elavad
-     elama+V+Pers+Prs+Ind+Neg: ela
+     elama+V+Pers+Prs+Ind+ConNeg: ela
 
      elama+V+Pers+Prs+Cond+Sg1+Aff: elaksin
      elama+V+Pers+Prs+Cond+Sg2+Aff: elaksid
@@ -48,7 +48,7 @@ Tests:
      elama+V+Pers+Prt+Ind+Pl1+Aff: elasime
      elama+V+Pers+Prt+Ind+Pl2+Aff: elasite
      elama+V+Pers+Prt+Ind+Pl3+Aff: elasid
-     elama+V+Pers+Prt+Ind+Neg: elanud
+     elama+V+Pers+Prt+Ind+ConNeg: elanud
 
      elama+V+Pers+Prt+Cond+Sg1+Aff: elanuksin
      elama+V+Pers+Prt+Cond+Sg2+Aff: elanuksid
@@ -75,7 +75,7 @@ Tests:
 # Umbisikuline olevik # Impersonal present forms
 
      elama+V+Impers+Prs+Ind+Aff: elatakse
-     elama+V+Impers+Prs+Ind+Neg: elata
+     elama+V+Impers+Prs+Ind+ConNeg: elata
 
      elama+V+Impers+Prs+Cond: elataks
 
@@ -86,7 +86,7 @@ Tests:
 # Umbisikuline minevik # Impersonal past forms
 
      elama+V+Impers+Prt+Ind+Aff: elati
-     elama+V+Impers+Prt+Ind+Neg: elatud
+     elama+V+Impers+Prt+Ind+ConNeg: elatud
 
      elama+V+Impers+Prt+Cond: elatuks
 

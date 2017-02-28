@@ -24,7 +24,7 @@ Tests:
      hakkama+V+Pers+Prs+Ind+Pl1+Aff: hakkame
      hakkama+V+Pers+Prs+Ind+Pl2+Aff: hakkate
      hakkama+V+Pers+Prs+Ind+Pl3+Aff: hakkavad
-     hakkama+V+Pers+Prs+Ind+Neg: hakka
+     hakkama+V+Pers+Prs+Ind+ConNeg: hakka
 
      hakkama+V+Pers+Prs+Cond+Sg1+Aff: hakkaksin
      hakkama+V+Pers+Prs+Cond+Sg2+Aff: hakkaksid
@@ -48,7 +48,7 @@ Tests:
      hakkama+V+Pers+Prt+Ind+Pl1+Aff: hakkasime
      hakkama+V+Pers+Prt+Ind+Pl2+Aff: hakkasite
      hakkama+V+Pers+Prt+Ind+Pl3+Aff: hakkasid
-     hakkama+V+Pers+Prt+Ind+Neg: hakanud
+     hakkama+V+Pers+Prt+Ind+ConNeg: hakanud
 
      hakkama+V+Pers+Prt+Cond+Sg1+Aff: hakanuksin
      hakkama+V+Pers+Prt+Cond+Sg2+Aff: hakanuksid
@@ -75,7 +75,7 @@ Tests:
 # Umbisikuline olevik # Impersonal present forms
 
      hakkama+V+Impers+Prs+Ind+Aff: hakatakse
-     hakkama+V+Impers+Prs+Ind+Neg: hakata
+     hakkama+V+Impers+Prs+Ind+ConNeg: hakata
 
      hakkama+V+Impers+Prs+Cond: hakataks
 
@@ -86,7 +86,7 @@ Tests:
 # Umbisikuline minevik # Impersonal past forms
 
      hakkama+V+Impers+Prt+Ind+Aff: hakati
-     hakkama+V+Impers+Prt+Ind+Neg: hakatud
+     hakkama+V+Impers+Prt+Ind+ConNeg: hakatud
 
      hakkama+V+Impers+Prt+Cond: hakatuks
 

@@ -24,7 +24,8 @@ Tests:
      olema+V+Pers+Prs+Ind+Pl1+Aff: oleme
      olema+V+Pers+Prs+Ind+Pl2+Aff: olete
      olema+V+Pers+Prs+Ind+Pl3+Aff: 'on'
-     olema+V+Pers+Prs+Ind+Neg: [ole, pole]
+     olema+V+Pers+Prs+Ind+ConNeg: ole
+     olema+V+Pers+Prs+Ind+Neg: pole
 
      olema+V+Pers+Prs+Cond+Sg1+Aff: oleksin
      olema+V+Pers+Prs+Cond+Sg1+Neg: poleksin
@@ -55,7 +56,8 @@ Tests:
      olema+V+Pers+Prt+Ind+Pl1+Aff: olime
      olema+V+Pers+Prt+Ind+Pl2+Aff: olite
      olema+V+Pers+Prt+Ind+Pl3+Aff: olid
-     olema+V+Pers+Prt+Ind+Neg: [olnud, polnud]
+     olema+V+Pers+Prt+Ind+ConNeg: olnud
+     olema+V+Pers+Prt+Ind+Neg: polnud
 
      olema+V+Pers+Prt+Cond+Sg1+Aff: olnuksin
      olema+V+Pers+Prt+Cond+Sg1+Neg: polnuksin
@@ -89,7 +91,8 @@ Tests:
 # Umbisikuline olevik # Impersonal present forms
 
      olema+V+Impers+Prs+Ind+Aff: ollakse
-     olema+V+Impers+Prs+Ind+Neg: [olda, polda]
+     olema+V+Impers+Prs+Ind+ConNeg: olda
+     olema+V+Impers+Prs+Ind+Neg: polda
 
      olema+V+Impers+Prs+Cond: oldaks
      olema+V+Impers+Prs+Cond+Neg: poldaks
@@ -102,7 +105,8 @@ Tests:
 # Umbisikuline minevik # Impersonal past forms
 
      olema+V+Impers+Prt+Ind+Aff: oldi
-     olema+V+Impers+Prt+Ind+Neg: [oldud, poldud]
+     olema+V+Impers+Prt+Ind+ConNeg: oldud
+     olema+V+Impers+Prt+Ind+Neg: poldud
 
      olema+V+Impers+Prt+Cond: olduks
      olema+V+Impers+Prt+Cond+Neg: polduks
