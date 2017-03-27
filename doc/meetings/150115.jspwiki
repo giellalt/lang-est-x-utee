@@ -149,7 +149,7 @@ There are still unresolved tag issues in the Finnish cg1/cg3 conversion.
 This is a topic for the Tromsø week.
 
 !Gold standard
-http://giellatekno.uit.no/doc/lang/sme/j-sme.html
+/doc/lang/sme/j-sme.html
 
 {{{
 "<Monta>"
@@ -204,7 +204,7 @@ To regulate:
 * handle lowercasing of derived names
 ** also handle Genitive Attribute (genitive of place names written in lower
    case and used as a modifier for the following word)
-[http://giellatekno.uit.no/doc/lang/sme/docu-sme-flag-diacritics.html]
+[/doc/lang/sme/docu-sme-flag-diacritics.html]
 
 The proper nouns as genitive attributes are tagged like this right now (no special +G or +Attr or whatever tags):
 

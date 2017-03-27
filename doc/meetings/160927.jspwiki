@@ -60,7 +60,7 @@ file {{configure.ac}}:
 AC_SUBST([DIALECTS], ["Ord Rare"])
 }}}
 
-[Documentation (for North Sámi)|http://giellatekno.uit.no/doc/lang/sme/KompilereFST.html]
+[Documentation (for North Sámi)|/doc/lang/sme/KompilereFST.html]
 
 
 * Standard (Ordinary) Estonian = +Dial/+Ord, +Dial/-Rare

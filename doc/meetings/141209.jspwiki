@@ -75,7 +75,7 @@ In Giellatekno, the abbr.txt is a language-specific file in
 $LANG/tools/preprocess/abbr.txt
 
 The philosophy behind the lexica is documented here:
-[http://giellatekno.uit.no/doc/lang/sme/docu-sme-preprocessor.html]
+[/doc/lang/sme/docu-sme-preprocessor.html]
 
 The abbreviations themselves are written in the abbreviations.lexc
 file in LANG/src/morphology/stems/.
