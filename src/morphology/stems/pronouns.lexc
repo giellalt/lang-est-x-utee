@@ -174,7 +174,7 @@ LEXICON Pronouns
  keski+Pron:keski 01; ! (01_P -> +Pron) a0: keski, a0r: keske
  kesse+Pron:kesse # ; ! (41_P -> +Pron) 
  kogu+Pron:kogu # ; ! (41_P -> +Pron) 
- kumb+Pron:kumB1 22_A; ! (22_P -> +Pron) at: kumb, bt: kumba, bn: kumma, btv: kumbi, bnv: kummi
+ kumb+Pron:kumB1 22_A'; ! (22_P -> +Pron) at: kumb, bt: kumba, bn: kumma, btv: kumbi, bnv: kummi
  kumb+Pron+Pl+Par:kumbi GI;
  kumbki+Pron+Pl+Abe:kumbadetagi GI; ! 00_P,k'umbki,k'umba[detagi],------1A,-,-,*
  kumbki+Pron+Pl+Abl:kumbadeltki GI; ! 00_P,k'umbki,k'umba[deltki],------16,-,-,*
@@ -750,4 +750,12 @@ LEXICON Pronouns
  teine+Pron+Pl+Ess:teistena GI;
  teine+Pron+Pl+Abe:teisteta GI;
  teine+Pron+Pl+Com:teistega GI;
- 
+
+ niisugune+Pron:niisugu 10_NE-SE-S;
+ teistsugune+Pron:teistsugu 10_NE-SE-S;
+ samasugune+Pron:samasugu 10_NE-SE-S;
+ mingisugune+Pron:mingisugu 10_NE-SE-S;
+
+ seesamune+Pron:seesamu 10_NE-SE-S;
+
+

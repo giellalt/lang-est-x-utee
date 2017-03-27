@@ -105,7 +105,7 @@ D1:0 <=>  Algus Vok [Vok: | %.:0]  _ (TyveVok:) (l) %$:; !laud-laua, vaidlema-va
 "AV 11 - g kadu"
 
 G1:0 <=> Vok _ (%=:) (Vok|h) %$: ;
-        [ a | i | õ | u ] [ l | r ] _ (Vok (S1:)) %$: ; ! jalg-jala, kirg-kire
+        [ a | i | õ | u ] [ l | r ] _ (Vok: (S1:)) %$: ; ! jalg-jala, kirg-kire
         [ e | ä | ü ]  [ l | r ] _ [ i | u ]  %$: ;  ! pürgima-pürin
 	a %.: _ i: %$: ;     !saagida-saenA
 
@@ -246,9 +246,9 @@ W1:e <=> [i: | u:] (%$:) %+: _ ;		! i- ja u-tüvelised
 						!oCj, üCj (kuri)
 
  "mitmuse vokaal u"
-W1:u <=> [[i: [D1:|G1:]]|[[Kons | Algus] 
+W1:u <=> [[[Kons | Algus] 
 		[a | a a | i | i i | õ | õ õ | a e | a i 
-		   | e i | ä i | õ i | a u | i u | õ u ] [:Kons | VaheVok:0]*]] (%=:) a: (%$:) %+: _ MitteSpr; !"kass kõrtsis ei käi"
+		   | e i | ä i | õ i | a u | i u | õ u ] [:Kons | VaheVok:0 | :0]* ]] (%=:) a:0 (%$:) %+: _ MitteSpr; !"kass kõrtsis ei käi"
 	 [a | ä | e] Kons j: a: (%$:) %+: _ MitteSpr ; !a-tüvelised, esisilbis äCj, eCj (väli, neli) (asjus?)
 
 

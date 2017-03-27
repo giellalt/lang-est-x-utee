@@ -416,8 +416,8 @@ LEXICON Kohalikud_erandid
  kogu+A:kogu GI;
  jah+Adv:jah #;
  nagu+Adv:nagu #;
- oma+Pron:oma 17;
- oma+Adv:oma 17;
+ oma+Pron:oma 17';
+ oma+Adv:oma 17';
  alates+Adp:alates GI;
 
  eikeegi+Pron+Sg+Nom:eikeegi #;

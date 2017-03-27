@@ -213,7 +213,7 @@ An_SgN;
 :se An_SgIll_NG;
 :s An_SgAdt_se; 
 12_;
-:i 12_PlV;
+:si 12_PlV;
 
 LEXICON 12_
 :se An_SgG;
@@ -326,6 +326,11 @@ LEXICON 21	!jõgi
 LEXICON 22_A  !jalg, pikk, sepp
 An_SgN;
 :a$ TP_22bn;
+:a TP_22bt;
+
+LEXICON 22_A'  !jalg, pikk, sepp
+An_SgN;
+:a$ TP_22bn';
 :a TP_22bt;
 
 LEXICON 22_E  !hetk
@@ -579,7 +584,7 @@ An_SgIll_NG;
 
 LEXICON TP_22bn
 TP_22bn';
-:+W1 An_Pl_Vok;  !sõnal tikk vokaalmitmuse vormid naljakad, aga mõnel sõnal ehk pole?
++Use/NG:+W1 An_Pl_Vok;  !sõnal tikk vokaalmitmuse vormid naljakad, aga mõnel sõnal ehk pole?
 
 
 LEXICON TP_22bt'  ! jal´ga, tikku, seppa

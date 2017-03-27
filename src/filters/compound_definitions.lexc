@@ -36,13 +36,13 @@ Definitions
 		 %+Ger |
 		 %+Pers 
 		 	[ %+Prs 
-				[ %+Ind [ PööreJaArv %+Aff | (PööreJaArv) %+ConNeg ] 
+				[ %+Ind [ PööreJaArv %+Aff | (PööreJaArv) [ %+ConNeg | %+Neg ] ] 
 				| %+Cond (PööreJaArv) (AffNeg) 
 				| %+Imprt (%+Sg2 | %+Sg3 | %+Pl1 | %+Pl2 | %+Pl3) (AffNeg)
 				| %+Quot (AffNeg) 
 				| %+Prc ]
 			| %+Prt
-				[ %+Ind [ PööreJaArv %+Aff | (PööreJaArv) %+ConNeg ]
+				[ %+Ind [ PööreJaArv %+Aff | (PööreJaArv) [ %+ConNeg | %+Neg ] ]
 				| %+Cond (PööreJaArv) (AffNeg) 
 				| %+Imprt (PööreJaArv) (AffNeg) 
 				| %+Quot (AffNeg) 
