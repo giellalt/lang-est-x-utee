@@ -466,34 +466,34 @@ Tests:
      kõik+Pron+Pl+Abe: [kõikideta, kõigita]
      kõik+Pron+Pl+Com: [kõikidega, kõigiga]
      #
-     mina+Pron+Sg+Nom: [ma, mina]
-     mina+Pron+Sg+Gen: [minu, mu]
-     mina+Pron+Sg+Par: mind
-     mina+Pron+Sg+Ill: [minusse, musse]
-     mina+Pron+Sg+Ine: [minus, mus]
-     mina+Pron+Sg+Ela: [minust, must]
-     mina+Pron+Sg+All: [minule, mulle]
-     mina+Pron+Sg+Ade: [minul, mul]
-     mina+Pron+Sg+Abl: [minult, mult]
-     mina+Pron+Sg+Tra: minuks
-     mina+Pron+Sg+Trm: minuni
-     mina+Pron+Sg+Ess: minuna
-     mina+Pron+Sg+Abe: minuta
-     mina+Pron+Sg+Com: [minuga, muga]
-     meie+Pron+Pl+Nom: [me, meie]
-     meie+Pron+Pl+Gen: [me, meie]
-     meie+Pron+Pl+Par: meid
-     meie+Pron+Pl+Ill: meisse
-     meie+Pron+Pl+Ine: meis
-     meie+Pron+Pl+Ela: meist
-     meie+Pron+Pl+All: meile
-     meie+Pron+Pl+Ade: meil
-     meie+Pron+Pl+Abl: meilt
-     meie+Pron+Pl+Tra: [meieks, meiks]
-     meie+Pron+Pl+Trm: meieni
-     meie+Pron+Pl+Ess: meiena
-     meie+Pron+Pl+Abe: meieta
-     meie+Pron+Pl+Com: meiega
+     mina+Pron+Sg1+Nom: [ma, mina]
+     mina+Pron+Sg1+Gen: [minu, mu]
+     mina+Pron+Sg1+Par: mind
+     mina+Pron+Sg1+Ill: [minusse, musse]
+     mina+Pron+Sg1+Ine: [minus, mus]
+     mina+Pron+Sg1+Ela: [minust, must]
+     mina+Pron+Sg1+All: [minule, mulle]
+     mina+Pron+Sg1+Ade: [minul, mul]
+     mina+Pron+Sg1+Abl: [minult, mult]
+     mina+Pron+Sg1+Tra: minuks
+     mina+Pron+Sg1+Trm: minuni
+     mina+Pron+Sg1+Ess: minuna
+     mina+Pron+Sg1+Abe: minuta
+     mina+Pron+Sg1+Com: [minuga, muga]
+     meie+Pron+Pl1+Nom: [me, meie]
+     meie+Pron+Pl1+Gen: [me, meie]
+     meie+Pron+Pl1+Par: meid
+     meie+Pron+Pl1+Ill: meisse
+     meie+Pron+Pl1+Ine: meis
+     meie+Pron+Pl1+Ela: meist
+     meie+Pron+Pl1+All: meile
+     meie+Pron+Pl1+Ade: meil
+     meie+Pron+Pl1+Abl: meilt
+     meie+Pron+Pl1+Tra: [meieks, meiks]
+     meie+Pron+Pl1+Trm: meieni
+     meie+Pron+Pl1+Ess: meiena
+     meie+Pron+Pl1+Abe: meieta
+     meie+Pron+Pl1+Com: meiega
      #
      mis+Pron+Sg+Nom: mis
      mis+Pron+Sg+Gen: mille
@@ -568,79 +568,79 @@ Tests:
      need+Pron+Pl+Abe: nendeta
      need+Pron+Pl+Com: nendega
      #
-     sina+Pron+Sg+Nom: [sa, sina]
-     sina+Pron+Sg+Gen: [sinu, su]
-     sina+Pron+Sg+Par: sind
-     sina+Pron+Sg+Ill: [sinusse, susse]
-     sina+Pron+Sg+Ine: [sinus, sus]
-     sina+Pron+Sg+Ela: [sinust, sust]
-     sina+Pron+Sg+All: [sinule, sulle]
-     sina+Pron+Sg+Ade: [sinul, sul]
-     sina+Pron+Sg+Abl: [sinult, sult]
-     sina+Pron+Sg+Tra: sinuks
-     sina+Pron+Sg+Trm: sinuni
-     sina+Pron+Sg+Ess: sinuna
-     sina+Pron+Sg+Abe: sinuta
-     sina+Pron+Sg+Com: [sinuga, suga]
-     teie+Pron+Pl+Nom: [teie, te]
-     teie+Pron+Pl+Gen: [teie, te]
-     teie+Pron+Pl+Par: teid
-     teie+Pron+Pl+Ill: teisse
-     teie+Pron+Pl+Ine: teis
-     teie+Pron+Pl+Ela: teist
-     teie+Pron+Pl+All: teile
-     teie+Pron+Pl+Ade: teil
-     teie+Pron+Pl+Abl: teilt
-     teie+Pron+Pl+Tra: teieks
-     teie+Pron+Pl+Trm: teieni
-     teie+Pron+Pl+Ess: teiena
-     teie+Pron+Pl+Abe: teieta
-     teie+Pron+Pl+Com: teiega
+     sina+Pron+Sg2+Nom: [sa, sina]
+     sina+Pron+Sg2+Gen: [sinu, su]
+     sina+Pron+Sg2+Par: sind
+     sina+Pron+Sg2+Ill: [sinusse, susse]
+     sina+Pron+Sg2+Ine: [sinus, sus]
+     sina+Pron+Sg2+Ela: [sinust, sust]
+     sina+Pron+Sg2+All: [sinule, sulle]
+     sina+Pron+Sg2+Ade: [sinul, sul]
+     sina+Pron+Sg2+Abl: [sinult, sult]
+     sina+Pron+Sg2+Tra: sinuks
+     sina+Pron+Sg2+Trm: sinuni
+     sina+Pron+Sg2+Ess: sinuna
+     sina+Pron+Sg2+Abe: sinuta
+     sina+Pron+Sg2+Com: [sinuga, suga]
+     teie+Pron+Pl2+Nom: [teie, te]
+     teie+Pron+Pl2+Gen: [teie, te]
+     teie+Pron+Pl2+Par: teid
+     teie+Pron+Pl2+Ill: teisse
+     teie+Pron+Pl2+Ine: teis
+     teie+Pron+Pl2+Ela: teist
+     teie+Pron+Pl2+All: teile
+     teie+Pron+Pl2+Ade: teil
+     teie+Pron+Pl2+Abl: teilt
+     teie+Pron+Pl2+Tra: teieks
+     teie+Pron+Pl2+Trm: teieni
+     teie+Pron+Pl2+Ess: teiena
+     teie+Pron+Pl2+Abe: teieta
+     teie+Pron+Pl2+Com: teiega
      #
-     tema+Pron+Sg+Nom: ta
-     tema+Pron+Sg+Gen: ta
-     tema+Pron+Sg+Par: teda
-     tema+Pron+Sg+Ill: tasse
-     tema+Pron+Sg+Ine: tas
-     tema+Pron+Sg+Ela: tast
-     tema+Pron+Sg+All: talle
-     tema+Pron+Sg+Ade: tal
-     tema+Pron+Sg+Abl: talt
-     tema+Pron+Sg+Tra: temaks
-     tema+Pron+Sg+Trm: temani
-     tema+Pron+Sg+Ess: temana
-     tema+Pron+Sg+Abe: temata
-     tema+Pron+Sg+Com: temaga
+     tema+Pron+Sg3+Nom: ta
+     tema+Pron+Sg3+Gen: ta
+     tema+Pron+Sg3+Par: teda
+     tema+Pron+Sg3+Ill: tasse
+     tema+Pron+Sg3+Ine: tas
+     tema+Pron+Sg3+Ela: tast
+     tema+Pron+Sg3+All: talle
+     tema+Pron+Sg3+Ade: tal
+     tema+Pron+Sg3+Abl: talt
+     tema+Pron+Sg3+Tra: temaks
+     tema+Pron+Sg3+Trm: temani
+     tema+Pron+Sg3+Ess: temana
+     tema+Pron+Sg3+Abe: temata
+     tema+Pron+Sg3+Com: temaga
      #
-     tema+Pron+Emph+Sg+Nom: tema
-     tema+Pron+Emph+Sg+Gen: tema
-     tema+Pron+Emph+Sg+Par: teda
-     tema+Pron+Emph+Sg+Ill: temasse
-     tema+Pron+Emph+Sg+Ine: temas
-     tema+Pron+Emph+Sg+Ela: temast
-     tema+Pron+Emph+Sg+All: temale
-     tema+Pron+Emph+Sg+Ade: temal
-     tema+Pron+Emph+Sg+Abl: temalt
-     tema+Pron+Emph+Sg+Tra: temaks
-     tema+Pron+Emph+Sg+Trm: temani
-     tema+Pron+Emph+Sg+Ess: temana
-     tema+Pron+Emph+Sg+Abe: temata
-     tema+Pron+Emph+Sg+Com: temaga
+     tema+Pron+Emph+Sg3+Nom: tema
+     tema+Pron+Emph+Sg3+Gen: tema
+     tema+Pron+Emph+Sg3+Par: teda
+     tema+Pron+Emph+Sg3+Ill: temasse
+     tema+Pron+Emph+Sg3+Ine: temas
+     tema+Pron+Emph+Sg3+Ela: temast
+     tema+Pron+Emph+Sg3+All: temale
+     tema+Pron+Emph+Sg3+Ade: temal
+     tema+Pron+Emph+Sg3+Abl: temalt
+     tema+Pron+Emph+Sg3+Tra: temaks
+     tema+Pron+Emph+Sg3+Trm: temani
+     tema+Pron+Emph+Sg3+Ess: temana
+     tema+Pron+Emph+Sg3+Abe: temata
+     tema+Pron+Emph+Sg3+Com: temaga
      #
-     nemad+Pron+Pl+Nom: [nad, nemad]
-     nemad+Pron+Pl+Gen: nende
-     nemad+Pron+Pl+Par: neid
-     nemad+Pron+Pl+Ill: [nendesse, neisse]
-     nemad+Pron+Pl+Ine: [nendes, neis]
-     nemad+Pron+Pl+Ela: [nendest, neist]
-     nemad+Pron+Pl+All: [nendele, neile]
-     nemad+Pron+Pl+Ade: [nendel, neil]
-     nemad+Pron+Pl+Abl: [nendelt, neilt]
-     nemad+Pron+Pl+Tra: [nendeks, neiks]
-     nemad+Pron+Pl+Trm: nendeni
-     nemad+Pron+Pl+Ess: nendena
-     nemad+Pron+Pl+Abe: nendeta
-     nemad+Pron+Pl+Com: nendega
+     nemad+Pron+Pl3+Nom: [nad, nemad]
+     nemad+Pron+Pl3+Gen: nende
+     nemad+Pron+Pl3+Par: neid
+     nemad+Pron+Pl3+Ill: [nendesse, neisse]
+     nemad+Pron+Pl3+Ine: [nendes, neis]
+     nemad+Pron+Pl3+Ela: [nendest, neist]
+     nemad+Pron+Pl3+All: [nendele, neile]
+     nemad+Pron+Pl3+Ade: [nendel, neil]
+     nemad+Pron+Pl3+Abl: [nendelt, neilt]
+     nemad+Pron+Pl3+Tra: [nendeks, neiks]
+     nemad+Pron+Pl3+Trm: nendeni
+     nemad+Pron+Pl3+Ess: nendena
+     nemad+Pron+Pl3+Abe: nendeta
+     nemad+Pron+Pl3+Com: nendega
      #
      too+Pron+Sg+Nom: too
      too+Pron+Sg+Gen: tolle

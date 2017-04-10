@@ -751,11 +751,48 @@ LEXICON Pronouns
  teine+Pron+Pl+Abe:teisteta GI;
  teine+Pron+Pl+Com:teistega GI;
 
- niisugune+Pron:niisugu 10_NE-SE-S;
- teistsugune+Pron:teistsugu 10_NE-SE-S;
- samasugune+Pron:samasugu 10_NE-SE-S;
- mingisugune+Pron:mingisugu 10_NE-SE-S;
+
+! need on suuresti regulaarsed, tegelikult?
+iga _SUGUNE;
+ise _SUGUNE;
+mingi _SUGUNE;
+miski _SUGUNE;
+mis _SUGUNE;
+mõne _SUGUNE;
+naa _SUGUNE;
+nii _SUGUNE;
+see _SUGUNE;
+teis  _SUGUNE; ! ??? ÕS ütleb, et ARGI teistsugune, kas peaks olema deskriptiivses ainult?
+teist _SUGUNE;
+
+mille _TAOLINE;
+sama _TAOLINE;
+selle _TAOLINE;
+
+meie _TAOLINE_SUGUNE;
+minu _TAOLINE_SUGUNE;
+mitme _TAOLINE_SUGUNE;
+nende _TAOLINE_SUGUNE;
+oma _TAOLINE_SUGUNE;
+sinu _TAOLINE_SUGUNE;
+teie _TAOLINE_SUGUNE;
+tema _TAOLINE_SUGUNE;
+
 
  seesamune+Pron:seesamu 10_NE-SE-S;
+
+LEXICON _TAOLINE_SUGUNE
+
+ _TAOLINE;
+ _SUGUNE;
+
+LEXICON _TAOLINE
+
+taoline+Pron:taoli 12_NE-SE-S;
+taoline+Pron:taoli 10_NE-SE-S;
+
+LEXICON _SUGUNE
+
+sugune+Pron:sugu 10_NE-SE-S;
 
 
