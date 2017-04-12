@@ -1,0 +1,297 @@
+!!!Samest meeting 10.04.2017
+Participants: Heiki, Heli, Jaak, Jack, Sjur, Trond
+
+!!!Agenda:
+* Võro FST and Oahpa
+** status
+** papers
+* Estonian FST and Finnish-Estonian MT
+** status
+* Next meeting
+
+!!!Võro FST and Oahpa
+!!status
+
+* Heli implemented back negation exercises for verbs in Võro Oahpa.
+This is something that does not exist in Estonian.
+E.g. 
+{{{
+Midä sa kunagiq ei tiiq? (süümä)                                                                                                                                                                                                                                                                                                                         Ma süü-üiq kunagiq kärbläsesiint.                                                                                                                                                                                                                                                                                                                       
+}}}
+
+* Problem 1: generation of Oahpa forms does not work as before.
+
+We have used the tag Use/NG for marking the forms that are acceptable but should  not be used as correct forms. 
+Now we probably need to use Err/Orth instead. ?
+
+''viuhtõ'' is the one we want to show as a correct answer
+
+''viudõ'' is the one we do not want
+
+Both are correct.
+
+{{{
+viu                     Harm-Neutr_SG-ILL_htE ;
++Err/Orth+Use/NG:       SG-ILL_dE ;
+}}}
+
+* Problem 2: Dictionary forms appear in Oahpa instead of orthographical forms.
+
+E.g.
+
+{{{
+puumi - norm
+pu̬u̬mi - dict
+ˋnäütelejä - dict
+näütelejä - norm
+}}}
+
+vro src/morpholog/stems/
+
+{{{
+verbs.lexc:puuma:puu V_77JUUMA  "" ;
+verbs_newwords.lexc:puuma:p%{ou%}%{ou%} V_77JUUMA "_puvvaq, pu̬u̬, ˋpoi(õ)__pu̬u̬ma_" ;
+nouns_newwords.lexc:puumvillanõ:pu̬u̬mvilla A_13ALONÕ"_#dsõ, #st__pu̬u̬mvilla
+}}}
+
+u̬ in lexc:
+{{{
+cat src/morphology/stems/*.lexc|grep ";"|cut -d'"' -f1|grep 'u̬'|wc -l
+     136
+}}}
+
+remove-combining-caron-below.regex
+
+{{{
+# File that reduces Võro enriched
+# dictionary orthogrphy to ordinary orthography
+
+u̬ -> u ,
+U̬ -> U ,
+ü̬ -> ü ,
+Ü̬ -> Ü ,
+i̬ -> i ,
+I̬ -> I ;
+}}}
+
+
+lexc:
+{{{
+näütelejä:näütelejä N_2KERGE  "" ;
+}}}
+
+xml:
+{{{
+     <l pos="N">näütelejä</l><stg><st Contlex="N_2KERGE">näütelejä</st>
+     </stg> <stress>`näütelejä</stress>
+}}}
+
+Documentation about different FSTs:
+[http://giellatekno.uit.no/doc/lang/sme/KompilereFST.html]
+
+So far, Heli has used in Oahpa (est, vro, sms):
+
+gen_norm_fst = "generator-oahpa-gt-norm-dial_main.hfstol"
+
+gen_all_fst = "generator-oahpa-gt-norm.hfstol"
+
+Use/NG should be part of the normative fst for spellers. 
+
+* MT, Oahpa feedback: __string__ with tag Use/NG disappears, form with it
+* Speller: __tag__ Use/NG disappears, form stays
+
+
+{{{
+./configure --without-xfst --with-hfst --enable-oahpa --enable-reversed-intersect --enable-alignment
+Produced fst's:
+  HFST2FST analyser-disamb-gt-desc.hfstol
+  HFST2FST analyser-gt-desc.hfstol
+  HFST2FST analyser-gt-norm.hfstol
+  HFST2FST analyser-oahpa-gt-norm.hfstol
+  HFST2FST generator-gt-desc.hfstol
+  HFST2FST generator-gt-norm.hfstol
+  HFST2FST generator-oahpa-gt-norm.hfstol
+}}}
+
+Where is {{generator-oahpa-gt-norm-dial_main.hfstol}}?
+
+In configure.ac we define the dialect main in order to get this.
+
+for langs/est:
+
+(from svn blame langs/est/configure.ac)
+
+{{{
+108188       sjur # variation within the -norm- fst's.
+146567       jjpp AC_SUBST([DIALECTS], ["main"])
+ 91112       sjur AM_CONDITIONAL([HAVE_DIALECTS], [test "x$DIALECTS" != "x"])
+
+generator-oahpa-gt-norm = all norm
+generator-oahpa-gt-dial = all norm but one wordform only
+
+generator-oahpa-gt-dial_GG
+generator-oahpa-gt-dial_KJ
+then remove _XX and you get 107
+
+generator-oahpa-gt-represent = all norm but one wordform only
+generator-oahpa-gt-represent_GG
+generator-oahpa-gt-represent_KJ
+
+generator-oahpa-gt-present = all norm but one wordform only
+generator-oahpa-gt-present_GG
+generator-oahpa-gt-present_KJ
+}}}
+
+restr, present, represent, show, restricted
+
+Decision: 
+# Suggest to the relevant oahpa stakeholders to replace "dial" with "restricted" (__Trond__)
+# replace it (__Sjur__)
+# update relevant configuration files (Heli and est to revert the local/committed change)
+
+(There is only 2 hard things in CS -- naming things, cache invalidation and one-off bugs.)
+
+!!papers
+Paper about Võro Oahpa accepted to NLP4CALL&LA workshop at Nodalida.
+
+!!!Estonian FST and Finnish-Estonian MT
+
+Downcasing uppercase in propernoun derivations.
+
+__Jaak__ will hold Heiki's hand while he tries to implement it...
+
+# flag diacritics
+# declaring where downcasing can happen
+# there is general downcasing happening
+
+SUMMARY for the gt-norm fst(s): PASSES: 6720 / FAILS: 574 / TOTAL: 7294
+
+
+{{{
+ufin
+minä
+minä        minä+Pron+Pers+Sg1+Nom
+
+uest
+ma
+ma        mina+Pron+Sg+Nom
+}}}
+
+fin->est works by changing Sg1 to Sg
+
+Trond (using experiment-langs):
+
+{{{
+echo Sinä olet kokouksessa|apertium -d. fin-est-debug
+#Sina<prn><pers><p2><sg><nom> oled koosolekus
+
+echo Sa oled koosolekus|apertium -d. est-fin-debug
+#Sinä<prn><sg><nom> olet kokouksessa
+}}}
+
+Heiki's machine:
+Sa oled koosolekus
+
+modify-tags.regex has the line:
+
+{{{
+  [ "<pron>" "<sg>" ->  "<pron>" "<pers>" "<sg1>" || {mina} _ ] .o.
+}}}
+
+giella to apertium format with +sg1 to <s1><sg>
+
+loppuukin -> loppu ukin = lõpuvanaisa
+
+Actually, this is a trivial bug: missing word on bidix.
+
+{{{
+The principled issue is that V-V strings are not part
+of the Finnish orthography.
+
+e Kokous loppuukin pian|apertium -d. fin-est
+Koosolek lõpebki varsti
+
+echo 'Mul on raskusi' | apertium -d . est-fin
+Minulla on painoja
+
+presently in modify-tags.regex:
+  [ "<emph>" -> "<use_ng>" ] .o.
+}}}
+
+The result is that this gets wrong:
+
+{{{
+echo 'See olin mina' | apertium -d . est-fin
+Se olin #minä
+}}}
+
+{{{
+       <e><p><l>aukko<s n="n"/></l><r>auk<s n="n"/></r></p></e>  <==== auk is most frequent
+<e r="RL"><p><l>aukko<s n="n"/></l><r>lõhe<s n="n"/></r></p></e>
+<e r="RL"><p><l>aukko<s n="n"/></l><r>lünk<s n="n"/></r></p></e>
+<e r="RL"><p><l>aukko<s n="n"/></l><r>mulk<s n="n"/></r></p></e>
+<e r="RL"><p><l>aukko<s n="n"/></l><r>pragu<s n="n"/></r></p></e>
+<e r="RL"><p><l>aukko<s n="n"/></l><r>tühimik<s n="n"/></r></p></e>
+<e r="RL"><p><l>aukko<s n="n"/></l><r>õõs<s n="n"/></r></p></e>
+
+       <e><p><l>avuttomuus<s n="n"/></l><r>abitus<s n="n"/></r></p></e>
+<e r="RL"><p><l>avuttomuus<s n="n"/></l><r>jõuetus<s n="n"/></r></p></e>
+<e r="RL"><p><l>avuttomuus<s n="n"/></l><r>saamatus<s n="n"/></r></p></e>
+
+       <e><p><l>bibliofiili<s n="n"/></l><r>bibliofiil<s n="n"/></r></p></e>
+<e r="RL"><p><l>bibliofiili<s n="n"/></l><r>raamatusõber<s n="n"/></r></p></e>
+
+       <e><p><l>byrokraatti<s n="n"/></l><r>bürokraat<s n="n"/></r></p></e>
+<e r="RL"><p><l>byrokraatti<s n="n"/></l><r>bürokraat<s n="n"/></r></p></e>
+}}}
+
+
+  <rule weight = "1.0"> <===
+    <match lemma="pitää"><select lemma="pidama"/></match>
+  </rule>
+
+{{{
+grep '<rule' apertium-sme-smn.sme-smn.metalrx |wc -l
+     358
+
+<rule weight="0.80">
+  <match lemma="ráđđa" tags="n.*"><select lemma="cekki" tags="n.*"/></match>
+</rule>
+<rule weight="0.20">
+  <match lemma="ráđđa" tags="n.*"><select lemma="raddalâs" tags="n.*"/></match>
+</rule>
+
+<rule weight="0.24">
+  <match lemma="riifu" tags="n.*"><select lemma="háárááv" tags="n.*"/></match>
+</rule>
+<rule weight="0.76">
+  <match lemma="riifu" tags="n.*"><select lemma="rippo" tags="n.*"/></match>
+</rule>
+
+...
+}}}
+
+1000 ( 4000) rules were too much, says Heiki-Jaan
+
+One should use the m-flag here; what happens if you don't?
+
+{{{
+lrx-proc -m '/home/hkaalep/apertium/apertium-fin-est/fin-est.autolex.bin'
+}}}
+
+To improve:
+
+# Change the RL tag if choice is just wrong
+# write lrx rule if you for certain contexts want some other fin2est
+# write a t1x or t2x rule
+
+
+!!How to get a larger bidix
+# via parallel corpus and giza: Make candidates and evaluate them
+# More dictionaries
+# Via a third dictionary: fin - swe / swe - est ==> fin - est
+
+
+!!!Next meeting
+
+__Heli__ will set up a Doodle poll for choosing the best time.
