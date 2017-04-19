@@ -342,7 +342,7 @@ Links:
 * Should be: [/doc/lang/est/EstonianDocumentation.html]
 * Can also be a relative link: [../EstonianDocumentation.html]
 
-[../common/MorphologicalTags.htm]
+[/doc/lang/common/MorphologicalTags.html]
 
 Võro meetings are here: [http://giellatekno.uit.no/ped/vro-oahpa.html]
 A relative link? [/ped/vro-oahpa.html]
