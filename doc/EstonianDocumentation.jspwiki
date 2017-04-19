@@ -78,7 +78,7 @@ tbw.
 !!! Grammatical issues
 
 * [The tags that are in use|https://victorio.uit.no/langtech/trunk/langs/est/src/morphology/root.lexc]   
-* [A list of morphological tags|../common/MorphologicalTags.html]
+* [A list of morphological tags|/doc/lang/common/MorphologicalTags.html]
 
 
 !!!Using the analysers
