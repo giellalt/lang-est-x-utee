@@ -1,0 +1,271 @@
+!!!Samest meeting 28.4.2017
+
+Participants: Fran, Heli, Heiki, Jaak, Sjur, Sulev, Trond
+
+!!!Agenda
+
+* Võro FST and Oahpa
+** status
+** papers
+* Estonian FST 
+** status
+** papers
+*Finnish-Estonian MT
+** status
+** papers
+*Estonian-Finnish MT
+*status
+* Future
+* Deadline
+
+
+!!!Võro FST and Oahpa
+!! status
+
+FST and Oahpa
+* temporary solution: Err/Orth for the same forms as Use/NG
+* Võro Oahpa is working now with very few mistakes
+* Oahpa-wise, the FST quality is good.
+* Lexical coverage is low (cf. possible use for spelling, Korp)
+* Problem with using synthetic voice in Oahpa: works properly only 
+  in Safari. In other browsers the first sound only is hearable.
+
+Visualising:
+
+* alphabet: t a l o s a +N +Sg
+* analysis input: talossa -- output: talo+N+Sg+Ine
+* generation input: talo +N +Sg + I n e -- output: ?talossa
+
+Anssi Yli-Jyrä, Ken Beesley, Lauri Karttunen
+
+!! papers
+Final version of a paper on Võro Oahpa and FST is submitted to Nodalida workshop NLP4CALL&LA.
+
+Paper about Võro Oahpa in the Publications of Võro Institute (Heli/Sulev)?
+
+
+!!!Estonian FST 
+!! status
+
+Heiki tried to use flag diacritics in regular expressions used as filters, and found that:
+Heiki-Jaan found and reported a bug in hfst-xfst related to flag
+diacritics and double negation.
+
+The punctuation.lexc file included multichar symbols that were not declared
+
+There was also a bug regarding difference between xfst and hfst (xfst lookup bug)? No, this is perhaps because of my own errors in punctuation.lexc.
+
+** papers
+
+Nothing for now, but:
+# fst + applic (focus on implementation / linguistics / impact (socioling))
+# estonian shedding light over fst
+# fst shedding light over estonian
+
+
+!!!Finnish-Estonian MT
+
+!! status
+the same as before
+
+!! papers
+a demo on rakenduslingvistika konverents
+
+!!!Estonian-Finnish MT
+!!status
+
+kaataa -> kaasi/kaatoi -> kaatoi (as of yesterday)
+
+The est-fin dictionary made by eki and kotus will be available on the net.
+The release will be linked to the 100th year anniversary of Estonia and Finland,
+a deadline is february 2018.
+
+Margit would like to connect dictionary and RBMT. The RBMT may be used as a 
+substitution for the usage examples. 
+
+Heiki hopes that we will get the lexicon to be included in apertium-fin-est also.
+
+The weakest point is 
+* all the technical issues with tags
+* thereafter we will get to lingustics
+
+!!!Sami-Estonian MT
+
+The student Käbi Suvi working on it will try to finish this spring
+
+sme-fin // fin-est ==> sme-est
+
+Fran: Do not use crossdict. 
+
+* There is a 20-line python script that does intersection.
+* There is the unix join
+
+
+!!!Võru-Estonian
+
+
+!!!Future
+
+paper (congratulations!):
+
+Tiina Puolakainen. Semi-automatic Enhancement of Bidictionary from Aligned Sentences.
+18th International Conference on Computational Linguistics and  Intelligent Text Processing (CICLing 2017), April 17 - 23, 2017,  Budapest, Hungary.
+Preprint: http://www.cicling.org/2017/Papers/paper%20268.pdf   (auth required) ask Tiina for her pdf
+* Uibo, Heli: Võru Oahpa (NoDaLiDa)
+* Johnson et al: sme-fin MT (NoDaLiDa)
+
+Officially, the project time will run out in 2 days...
+
+Rough evaluation:
+at the outset: we have a FST and we want applications
+reality: we have spent more time on plugging in the FST in the infra than on working on the applications
+
+!!Thoughts for the future
+!mt
+!icall
+!spellchecking
+* context-sensitive spellchecker
+** disambiguate POS/grammar category based on context, and do suggestions based upon that
+
+Should we go beta? http://divvun.org/proofing/proofing.html
+
+There, the feedback address given is su
+
+!grammar checking
+* Here we have a web version of a cg-based grammar checker for sme
+* ... and an implication in LibreOffice is forthcoming
+
+Is there some version of spellers built on current fsts available somewhere to be downloaded? 
+(something to give ta bit more langtec-knowledgeable users to test)
+
+[http://divvun.no] (Sámi languages) and [http://divvun.org] (non-Sámi), 
+a few more here (nighty builds): [https://apertium.projectjj.com/spellers/nightly/]
+
+* The download page is: 
+[http://divvun.org/proofing/proofing.html]
+
+the feedback address is {{support@divvun.no}}, and the address may be split into 
+different addresses for different languages.
+
+The speller easteregg is: nuvviDspeller
+
+
+(no estonian versions seem to be there. i can probably find someone on irc to ask for those:)
+
+There are two estonians:
+the over-arching estonian = et, est
+the non-south estonian estonian = ekk (Standard Estonian), vro = V~
+
+* et.zhfst usual version
+* et-x-exp.zhfst experimental version
+
+!context
+
+???
+
+!Priorities for the future
+
+* what is fun
+* what is needed
+* what can be funded
+* what can result in publications
+
+!Taking stock
+
+Unpaid resources
+Possible funding sources
+
+!!!Conference and article deadlines
+
+A sample from the calendar:
+
+http://cs.rochester.edu/~omidb/nlpcalendar/
+
+* 21 May: FSMNLP 2017 (Sweden)
+* 7 Jul: IJCNLP (Taiwan)
+* 25 Sep: LREC 2018 (Japan)
+* ?  ?: BalticHLT 2018 (?)
+
+For MT: 
+topics?
+* fin-est: aim at better gisting than Google (real estate good, sports bad)
+* est-fin: aim at better gisting than Google
+* sme-fin: How good gisting
+
+* LREC
+
+{{{
+      output   link to orig
+rbmt  -        +
+ smt  -        -
+ nmt  +        -
+}}}
+
+Other regional/non-NLP conferences possible.
+
+!!September
+
+# Improve all components (fst > mt/oahpa > speller)
+# Write the presentation
+
+!Presentation
+
+* Having (est, fin, sme) and making (vro) a linguistic core
+* Putting it into use
+** MT: gisting, production
+** Oahpa: ...
+** Spelling: basic, context-driven, grammar checking
+* Feedback to basic linguistic research (mostly for vro)
+
+!!!Future funding:
+
+* Estonian Language Technology program: sometime in the autumn
+Possibly also international cooperation will be supported from Estonian Lang Tech program. 
+Both Estonian and Võro FST could be continued.
+Maybe also Estonian-Võro Apertium machine translation could be started?
+
+There is a attempt of Est-Vro MT here: voroaader (Ants Aader) but I would not trust him much - he has dealed with it for years but with no good system and results.
+
+(This is the guy that Jack is in contact with)
+
+synaq.org - est-vro-est bilingual dictionary
+
+(What is the licence?)
+Free to use
+
+Is it under a free software/open-source/creative commons licence that allows commercial use ?
+
+Not licenceced under that. You must ask permission of Võro Insitute.
+
+Then it cannot be used in the MT system right now (but perhaps someone can contact the Voro Institute to ask for permission)
+
+Of course - I am working there and I am the main composer of the  dict :)
+
+
+Great! :)
+
+
+Sulev: I am iterested to continue with Võro Oahpa/FST work and Skype meetings 
+with Heli and Jack! Regardless of funding. But of course it would need some 
+funding in longer perspective. Estonian LangTech program 2018 international 
+cooperation? The same with possible future Est-Vro MT on Apertium.
+- Vro spellcheckers etc.
+
+
+!!Narratives for funding
+
+People who make useful things people with a track record will have higher chanses
+
+* Link our ICALL to educational priorities in Estonia
+* Link our Võro work to language preservation and revitalisation
+(Estonian Min of Education? Kone Säätiö? ...)
+
+Estonian: Make ourself useful for Eki (e.g. the MT aspect for the forthcoming dictionary). EKI with Võro Institute are dealing with Võro speech synthesiser. They/we need our Võro FST for that.
+
+
+!!! Next meetings
+
+* At Nodalida 22-24 May in Gothenburg (Heiki, Heli, Trond, Jaak?, Jack?) (first evening?)
+* Skype: June, August
+
+* Next Võro Oahpa/FST meeting - could be in May!
