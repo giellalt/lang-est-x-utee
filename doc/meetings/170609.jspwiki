@@ -1,0 +1,70 @@
+!!!Samest meeting 9.6.2017
+
+Present: Fran, Heiki, Heli, Jaak, Jack, Sjur, Sulev, Trond 
+
+!!!Agenda
+
+* Summary from Gothenburg Samest meeting
+* Happened since last time
+* Future
+
+!!! Summary from Gothenburg Samest meeting
+
+* future projects - võro fst should be finalised (Sulev, Jack, Heiki, Heli?)
+* intent to apply for funding from EKT (Estonian Language Technology programme)
+* cooperation project on iCALL with Uppsala University? (where Estonian is taught) - Heli has written an e-mail to prof Raimo Raag but not got any answer yet
+
+!!! Happened since last time
+* sme2est (Käbi Suvi's BA thesis); she got "B"
+  [https://svn.code.sf.net/p/apertium/svn/incubator/apertium-sme-est]
+* Võro keyboards are created by Sjur for Windows and Mac
+  Tested both on Mac and Windows - works good. Windows installer could be better.
+* Heiki has worked with ''jompikumpi''-type words in est (double inflecting words), e.g. ''emb-kumb, kihin-kahin, seesama, kakssada''. This done with concatenating two transducers.
+* Fin-Est dict (Kotus) from EKI to be used in Apertium
+
+* working on synchronized editing xml<->django<->mediawiki
+[https://sanat2.csc.fi/wiki/Sms:autt]
+
+Testing with sms and izh, but things should be ready for expanding this summer to other languages.
+
+Testing xml output for finsms:
+
+[http://sanat2.csc.fi:8000/smsxml/xml_out/?language=sms&type=finsms&file=V_finsms.xml]
+xml output for _sms2x.xml
+
+[http://sanat2.csc.fi:8000/smsxml/xml_out/?language=sms&type=morph&file=V_sms2x.xml]
+xml output for ped/sms/src/*xml
+
+!!! Future
+
+FST speller for predictive input
+
+Documentation: [http://divvun.no/doc/keyboards/PlanForMoreKeyboards.html]
+
+Possible extensions:
+* grammar checking
+* predictive word completion (based upon start of word)
+* predictive next word (based upon last word(s))
+
+Next Võro meeting (Heli, Jack, Sulev) will be 20.06.
+Then we can discuss closer what you have talked in Göteborg (future of Võro FST, funding) and other things.
+
+
+Priorities
+
+* Immediate
+** Estonian fst in shape
+** fin-est dictionary into bidix format
+* X-fin
+** Improve fin doubleforms and strange forms
+* Project closing conference 21-22.9. in Laulasmaa, we should write a 
+  comprehensive presentation of what we did.
+
+
+
+Future funding:
+* NordForsk [https://www.nordforsk.org/no/funding/utlysninger/call-for-proposals-nordic-centre-of-excellence-2013-new-learning-and-teaching-environments-and-practices] (probably hopeless)
+
+!!!Next meeting
+__Tuesday 29. August 13:00__ Norwegian time
+
