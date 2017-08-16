@@ -1,4 +1,4 @@
-DELIMITERS = "<.>" "<?>" "<!>" "<..>" "<...>" "<¶>" QDL "^vastas" ;
+DELIMITERS = "<.>" "<?>" "<!>" "<..>" "<...>" "<¶>" QDL "^vastas" sent ;
 
 PARENTHESES = ("<(>" "<)>") ("<[>" "<]>") ("<{>" "<}>") (CLO CLC) ; 
 
