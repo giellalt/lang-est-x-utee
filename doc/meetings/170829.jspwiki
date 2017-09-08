@@ -1,0 +1,72 @@
+!!!Samest meeting 29.08.2017
+Participants: Heiki, Heli, Jaak, Jack, Sjur, Trond
+
+!!Agenda
+* Presentation about our project at the final conference.
+The website of the conference: [http://www.etag.ee/uritus/norra-eesti-teaduskoostoo-programmi-loppkonverents/]
+
+!!!The presentation
+                                                                           
+
+!!Highlights 
+
+Language technology actually needs linguists, not only statisticians.
+
+We have made things that actually work, and that are on the net.
+
+We have made learning programs for minority languages (Heli, Sulev, Jaska).
+
+The work done on the keyboard infrastructure for Võro
+ ś, ń, l´, t´, k´, h´
+
+Debian has included hfst-based spelling ==> our work will give both Estonian and Võro speller for Debian
+
+
+
+!!Narrative for the presentation
+
+Perhaps more about the meaning of life, science, the universe and all that:
+
+This paper presents infrastructure and language technology work for languages with a rich and productive morphology. The infrastructure (called Giella) may be characterised as a de- velopment environment for language processing. It contains language-independent modules for compiling and building both  finite-state grammatical models and a wide range of language technology applications, as well as language-specific modules, one for each language in question. The infrastructure, grammatical models and language applications are all available as open source. 
+
+!!Intro with philosophy and all that
+
+Quoting the application
+
+* Estonians: "have analysis, need infrastructure for applications" 
+* Norwegians: "have infrastructure for applications, open for more languages to add" 
+* Outcome: "Languages added, applications online, + new applications made for this project is reused for other languages as well"
+
+!!Content and results
+
+...
+
+!!Future perspectives
+
+Future perspectives in two parts:
+
+- application-wise (what can we do that people woud like (to the extent that they contribute)
+
+- content-wise (what is so fun and scientifically promising that we will do it as research)
+
+Work:
+* FST development -- is going on, and Estonian gives new perspectives on FST manipulation
+* ICALL -- Tromsø now has a new programmer, Võro is going on + good prospects (educational partners?)
+* Speller -- student project to improve? -- new platforms: is continuing via the debian development, New languages, new techniques (weighting, context, mobile..., grammar checking)
+* MT -- is continuing -- langtech with an industry to back it up... (OmegaT with MT gets users?)
+
+-----
+Applications for grants (Where, What)
+
+
+!!!Going to the conference
+21-22 september
+Heiki; Sjur or Trond
+
+!!!Next meeting
+__Wednesday 13 September at 13:00__ Norwegian time
+
+Agenda: 
+* presentation
+* LREC
+
