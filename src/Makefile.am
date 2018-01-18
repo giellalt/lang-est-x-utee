@@ -85,8 +85,8 @@ generator-raw-gt-desc-simple-full.hfst: \
 		'[ @"filters/deriv_filter.hfst" \
 		.o. [ @"morphology/overriding-exceptions.all.hfst" \
 			.P. @"generator-raw-gt-desc-simple-with-av.hfst" ] \
-		.o. ~$$ [ "{" "}" ]]' \
-	| $(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) $(HFST_FORMAT) \
+		.o. ~$$ [ "{" "}" ]];' \
+	| $(HFST_REGEXP2FST) -S $(VERBOSITY) $(HFST_FLAGS) $(HFST_FORMAT) \
 		-x true -X flag-is-epsilon \
 	| $(HFST_COMPOSE_INTERSECT) $(VERBOSITY) $(HFST_FLAGS) \
 		-2 phonology/$(GTLANG)-phon.compose.hfst \
@@ -103,8 +103,8 @@ generator-raw-gt-desc.hfst: \
 		.o. [("-" "#") \
 			[ @"generator-raw-gt-desc-simple-full.hfst" "#" ("-" "#") ]* \
 			@"generator-raw-gt-desc-simple-full.hfst" ("#" "-")] \
-		.o. [ "#" -> "" ]' \
-	|  $(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) $(HFST_FORMAT) -x true \
+		.o. [ "#" -> "" ];' \
+	| $(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) $(HFST_FORMAT) -x true -S \
 	| $(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
 
 #	$(AM_V_RGX2FST)$(PRINTF) '   @"filters/compound_filter.hfst" .o. @"filters/compound_mask.hfst" .o. [("-" "#") [ @"generator-raw-gt-desc-simple-full.hfst" "#" ("-" "#") ]* @"generator-raw-gt-desc-simple-full.hfst" ("#" "-")] .o. [ "#" -> "" ]' | 
