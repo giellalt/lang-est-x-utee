@@ -11,9 +11,11 @@ T1:d T1:0 S1:s S1:0 S1:r %+:0 %$:0 A1:a A1:0 E1:e E1:0 I1:i I1:0 U1:u U1:0 W1:i 
 ! %.:a %.:e %.:o %.:u %.:ö %.:ä %.:i 
 %.:0 %=:0 %=:h %=:m %=:n %=:s %=:k %=:p %=:t %=:f %=:š X2:0 %!:0 Q1:k %-:%-
 
-«7:« 
-»7:»  
-%'7:%'
+! Literal quotes and angles must be escaped (cf morpheme boundaries further down):
+ »7     ! »
+ «7     ! «
+ %[%>%] ! >
+ %[%<%] ! <
 
 #
 
