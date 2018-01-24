@@ -308,10 +308,10 @@ Q1	! gi/ki
 
 !! !Symbols that need to be escaped on the lower side (towards twolc):
 
- »7     !! * »
- «7     !! * «
- %[%>%] !! * > (escaped with square brackets, to avoid collision with > as morpheme boundary)
- %[%<%] !! * < (escaped with square brackets, to avoid collision with < as morpheme boundary)
+ »7     !! * »7 = literal », as plain » is reserved for use as a derivation morpheme boundary symbol
+ «7     !! * «7 = literal «, as plain « is reserved for use as a derivation morpheme boundary symbol
+ %[%>%] !! * [[>] = literal > escaped with square brackets, to avoid collision with > as morpheme boundary)
+ %[%<%] !! * [[<] = literal < escaped with square brackets, to avoid collision with < as morpheme boundary)
 
 
 
