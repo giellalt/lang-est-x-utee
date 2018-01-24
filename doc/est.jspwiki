@@ -45,6 +45,12 @@ derivation suffixes, used to filter out illegal combinations internally
 
 
 
+!Symbols that need to be escaped on the lower side (towards twolc):
+
+* »7 = literal », as plain » is reserved for use as a derivation morpheme boundary symbol
+* «7 = literal «, as plain « is reserved for use as a derivation morpheme boundary symbol
+* [[>] = literal > escaped with square brackets, to avoid collision with > as morpheme boundary)
+* [[<] = literal < escaped with square brackets, to avoid collision with < as morpheme boundary)
 
 
 
