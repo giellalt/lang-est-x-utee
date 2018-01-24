@@ -306,9 +306,12 @@ X2
 W1
 Q1	! gi/ki
 
-«7 
-»7  
-%'7
+!! !Symbols that need to be escaped on the lower side (towards twolc):
+
+ »7     !! * »
+ «7     !! * «
+ %[%>%] !! * > (escaped with square brackets, to avoid collision with > as morpheme boundary)
+ %[%<%] !! * < (escaped with square brackets, to avoid collision with < as morpheme boundary)
 
 
 
