@@ -306,7 +306,7 @@ X2
 W1
 Q1	! gi/ki
 
-!! !Symbols that need to be escaped on the lower side (towards twolc):
+!! !!Symbols that need to be escaped on the lower side (towards twolc):
 
  »7     !! * »7 = literal », as plain » is reserved for use as a derivation morpheme boundary symbol
  «7     !! * «7 = literal «, as plain « is reserved for use as a derivation morpheme boundary symbol
