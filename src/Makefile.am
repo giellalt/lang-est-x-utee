@@ -85,7 +85,7 @@ generator-raw-gt-desc-simple-full.hfst: \
 				morphology/numbers.hfst \
 				phonology/$(GTLANG)-phon.compose.hfst
 	$(AM_V_RGX2FST)$(PRINTF) \
-		'[ @"filters/deriv_filter.hfst" .o. [ @"morphology/overriding-exceptions.all.hfst" .P. @"generator-raw-gt-desc-simple-with-av.hfst" ] .o. ~$ [ "{" "}" ]]' \
+		'[ @"filters/deriv_filter.hfst" .o. [ @"morphology/overriding-exceptions.all.hfst" .P. @"generator-raw-gt-desc-simple-with-av.hfst" ] .o. ~$$ [ "{" "}" ]]' \
 	| $(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) $(HFST_FORMAT) \
 		-x true -X flag-is-epsilon \
 	| $(HFST_COMPOSE_INTERSECT) $(VERBOSITY) $(HFST_FLAGS) \
