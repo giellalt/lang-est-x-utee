@@ -56,7 +56,7 @@ endif # CAN_HFST
 
 #### FOMA transducers
 if CAN_FOMA
-GT_ANALYSERS+=
+GT_ANALYSERS+=analyser-forcg-desc.foma
 GT_GENERATORS+=
 endif # CAN_FOMA
 
