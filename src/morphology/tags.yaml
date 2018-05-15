@@ -1,0 +1,86 @@
+!!python/object/apply:collections.defaultdict
+args:
+- !!python/name:__builtin__.set ''
+dictitems:
+  Hom: !!set
+    !!python/unicode 'Hom0': null
+    !!python/unicode 'Hom1': null
+    !!python/unicode 'Hom2': null
+    !!python/unicode 'Hom3': null
+  Sem: !!set
+    !!python/unicode 'Sem/Plc': null
+  Use: !!set
+    !!python/unicode 'Use/NG': null
+  resten: !!set
+    ? !!python/unicode ''
+    : null
+    !!python/unicode '/-': null
+    !!python/unicode 'A': null
+    !!python/unicode 'Abe': null
+    !!python/unicode 'Abl': null
+    !!python/unicode 'Ade': null
+    !!python/unicode 'Adp': null
+    !!python/unicode 'Adv': null
+    !!python/unicode 'Aff': null
+    !!python/unicode 'All': null
+    !!python/unicode 'Attr': null
+    !!python/unicode 'CC': null
+    !!python/unicode 'CLB': null
+    !!python/unicode 'CS': null
+    !!python/unicode 'Card': null
+    !!python/unicode 'Com': null
+    !!python/unicode 'ConNeg': null
+    !!python/unicode 'Cond': null
+    !!python/unicode 'Ela': null
+    !!python/unicode 'Emph': null
+    !!python/unicode 'Ess': null
+    !!python/unicode 'Gen': null
+    !!python/unicode 'Ger': null
+    !!python/unicode 'Ill': null
+    !!python/unicode 'Impers': null
+    !!python/unicode 'Imprt': null
+    !!python/unicode 'Ind': null
+    !!python/unicode 'Ine': null
+    !!python/unicode 'Inf': null
+    !!python/unicode 'Interj': null
+    !!python/unicode 'LEFT': null
+    !!python/unicode 'N': null
+    !!python/unicode 'Neg': null
+    !!python/unicode 'Neg#olema': null
+    !!python/unicode 'Nom': null
+    !!python/unicode 'Num': null
+    !!python/unicode 'Ord': null
+    !!python/unicode 'PUNCT': null
+    !!python/unicode 'Par': null
+    !!python/unicode 'Pers': null
+    !!python/unicode 'Pl': null
+    !!python/unicode 'Pl1': null
+    !!python/unicode 'Pl2': null
+    !!python/unicode 'Pl3': null
+    !!python/unicode 'Po': null
+    !!python/unicode 'Pr': null
+    !!python/unicode 'Prc': null
+    !!python/unicode 'Pron': null
+    !!python/unicode 'Prop': null
+    !!python/unicode 'Prs': null
+    !!python/unicode 'Prt': null
+    !!python/unicode 'Quot': null
+    !!python/unicode 'RIGHT': null
+    !!python/unicode 'SC/Abe': null
+    !!python/unicode 'SC/Abl': null
+    !!python/unicode 'SC/Ade': null
+    !!python/unicode 'SC/All': null
+    !!python/unicode 'SC/Com': null
+    !!python/unicode 'SC/Ela': null
+    !!python/unicode 'SC/Gen': null
+    !!python/unicode 'SC/Nom': null
+    !!python/unicode 'SC/Par': null
+    !!python/unicode 'SC/Trm': null
+    !!python/unicode 'Sg': null
+    !!python/unicode 'Sg1': null
+    !!python/unicode 'Sg2': null
+    !!python/unicode 'Sg3': null
+    !!python/unicode 'Sup': null
+    !!python/unicode 'Tra': null
+    !!python/unicode 'Trm': null
+    !!python/unicode 'V': null
