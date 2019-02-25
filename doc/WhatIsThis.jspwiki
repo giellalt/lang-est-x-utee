@@ -2,7 +2,10 @@
 
 This is a test version of a grammatical analyser for Estonian.
 
-It is under development.
+It contains 44600 stems and a morphological component.
+
+This analyser should be compared to another est analyser, 
+kept in experiment-langs/est.
 
 
 ----
