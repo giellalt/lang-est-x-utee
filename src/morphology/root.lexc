@@ -399,6 +399,7 @@ GenAttributes;
 @U.Cap.Opt@ ProperNames;
 Conjunctions;
 Punctuation; !TT
+Symbols     ;
 ! DIGITS; !TT
 NonInflectionals;
 
