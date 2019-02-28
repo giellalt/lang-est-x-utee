@@ -22,6 +22,7 @@ Multichar_Symbols
 +Po	! tagasõna		! postposition		! kaudu
 +Pr	! eessõna		! preposition		! enne
 +Adv	! muu sõna		! other word		! kihku, kihla, minap
++Symbol !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
 
 +Emph ! Long form personal pronouns
 
