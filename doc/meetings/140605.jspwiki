@@ -95,13 +95,13 @@ TODO:
 
 # Take the tags out of root, make a list in langs/est/doc/ (Trond)
 ## tag TAB tag TAB comment
-## [https://victorio.uit.no/langtech/trunk/langs/est/doc/taglist.txt]
+## [https://gtsvn.uit.no/langtech/trunk/langs/est/doc/taglist.txt]
 # Start adding tag candidates to the second column from fin (all)
-## [https://victorio.uit.no/langtech/trunk/langs/fin/src/morphology/root.lexc]
+## [https://gtsvn.uit.no/langtech/trunk/langs/fin/src/morphology/root.lexc]
 
 look at:
-[https://victorio.uit.no/langtech/trunk/langs/fin/doc/fin.jspwiki]
-[https://victorio.uit.no/langtech/trunk/langs/fin/src/morphology/root.lexc]
+[https://gtsvn.uit.no/langtech/trunk/langs/fin/doc/fin.jspwiki]
+[https://gtsvn.uit.no/langtech/trunk/langs/fin/src/morphology/root.lexc]
 
 !!CG
 

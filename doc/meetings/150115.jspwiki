@@ -140,9 +140,9 @@ proceeding, plan for next step.
 
 !!Finnish CG
 $GTHOME/kt/fin/src/fin-dis.cg1
-[https://victorio.uit.no/langtech/trunk/kt/fin/src/fin-dis.cg1]
+[https://gtsvn.uit.no/langtech/trunk/kt/fin/src/fin-dis.cg1]
 $GTHOME/langs/fin/src/syntax/disambiguation.cg3
-[https://victorio.uit.no/langtech/trunk/langs/fin/src/syntax/disambiguation.cg3]
+[https://gtsvn.uit.no/langtech/trunk/langs/fin/src/syntax/disambiguation.cg3]
 
 !Tag issues
 There are still unresolved tag issues in the Finnish cg1/cg3 conversion.
