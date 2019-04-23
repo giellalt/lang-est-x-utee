@@ -204,7 +204,7 @@ To regulate:
 * handle lowercasing of derived names
 ** also handle Genitive Attribute (genitive of place names written in lower
    case and used as a modifier for the following word)
-[/doc/lang/sme/docu-sme-flag-diacritics.html]
+[/lang/sme/docu-sme-flag-diacritics.html]
 
 The proper nouns as genitive attributes are tagged like this right now (no special +G or +Attr or whatever tags):
 

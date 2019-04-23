@@ -339,10 +339,10 @@ H-J and Trond to meet
 
 Links:
 * Presently: [http://giellatekno.uit.no/doc/lang/est/EstonianDocumentation.html]
-* Should be: [/doc/lang/est/EstonianDocumentation.html]
+* Should be: [/lang/est/EstonianDocumentation.html]
 * Can also be a relative link: [../EstonianDocumentation.html]
 
-[/doc/lang/common/MorphologicalTags.html]
+[/lang/common/MorphologicalTags.html]
 
 Võro meetings are here: [http://giellatekno.uit.no/ped/vro-oahpa.html]
 A relative link? [/ped/vro-oahpa.html]
