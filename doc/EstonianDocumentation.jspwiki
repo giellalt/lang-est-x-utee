@@ -82,10 +82,10 @@ tbw.
 !!! Grammatical issues
 
 * [The tags that are in use|https://victorio.uit.no/langtech/trunk/langs/est/src/morphology/root.lexc]   
-* [A list of morphological tags|/doc/lang/common/MorphologicalTags.html]
+* [A list of morphological tags|/lang/common/MorphologicalTags.html]
 
 
 !!!Using the analysers
 
 * In the terminal: analyse words by writing ''uest'', generate with ''dest''
-* For more info, see [How to use the morphological parsers|/doc/tools/docu-sme-manual.html]
+* For more info, see [How to use the morphological parsers|/tools/docu-sme-manual.html]
