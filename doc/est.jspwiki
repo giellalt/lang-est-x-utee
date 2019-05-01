@@ -14,6 +14,7 @@ This is free and open source Estonian morphology.
 
 part of speech
 
+ * +Symbol = independent symbols in the text stream, like £, €, ©
 
 
 derivation suffixes, used to filter out illegal combinations internally
