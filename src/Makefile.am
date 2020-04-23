@@ -65,15 +65,15 @@ endif # CAN_FOMA
 
 
 #### Hfst build rules: ####
-inverted-phonology.hfst: morphology/phonology.compose.hfst
+inverted-phonology.hfst: fst/phonology.compose.hfst
 	$(AM_V_HINV)$(HFST_INVERT) $(VERBOSITY) $(HFST_FLAGS) -i $< -o $@
 
 # generator-raw-gt-desc-simple-with-av.hfst:
 generator-raw-gt-desc-simple-with-av.hfst: \
-			morphology/lexicon.hfst \
+			fst/lexicon.hfst \
 			inverted-phonology.hfst
 	$(AM_V_INTRSCT)$(HFST_COMPOSE_INTERSECT) $(VERBOSITY) $(HFST_FLAGS) \
-		-I -1 morphology/lexicon.hfst -2 inverted-phonology.hfst \
+		-I -1 fst/lexicon.hfst -2 inverted-phonology.hfst \
 		| $(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
 
 # generator-raw-gt-desc-simple-full.hfst: \
@@ -81,13 +81,13 @@ generator-raw-gt-desc-simple-with-av.hfst: \
 generator-raw-gt-desc-simple-full.hfst: \
 				generator-raw-gt-desc-simple-with-av.hfst \
 				filters/deriv_filter.hfst \
-				morphology/overriding-exceptions.all.hfst \
-				morphology/numbers.hfst \
-				morphology/phonology.compose.hfst
-	$(AM_V_RGX2FST)$(PRINTF) '[ @"filters/deriv_filter.hfst" .o. [ @"morphology/overriding-exceptions.all.hfst" .P. @"generator-raw-gt-desc-simple-with-av.hfst" ] .o. ~$$ [ "{" "}" ]]' | \
+				fst/overriding-exceptions.all.hfst \
+				fst/numbers.hfst \
+				fst/phonology.compose.hfst
+	$(AM_V_RGX2FST)$(PRINTF) '[ @"filters/deriv_filter.hfst" .o. [ @"fst/overriding-exceptions.all.hfst" .P. @"generator-raw-gt-desc-simple-with-av.hfst" ] .o. ~$$ [ "{" "}" ]]' | \
 	$(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) $(HFST_FORMAT) -x true -X flag-is-epsilon | \
-	$(HFST_COMPOSE_INTERSECT) $(VERBOSITY) $(HFST_FLAGS) -2 morphology/phonology.compose.hfst | \
-	$(HFST_DISJUNCT) $(VERBOSITY) $(HFST_FLAGS) morphology/numbers.hfst | \
+	$(HFST_COMPOSE_INTERSECT) $(VERBOSITY) $(HFST_FLAGS) -2 fst/phonology.compose.hfst | \
+	$(HFST_DISJUNCT) $(VERBOSITY) $(HFST_FLAGS) fst/numbers.hfst | \
 	$(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
 
 # generator-raw-gt-desc.hfst: generator-raw-gt-desc-full-simple.hfst
@@ -103,11 +103,11 @@ generator-raw-gt-desc.hfst: \
 
 #### Xerox build rules: ####
 analyser-raw-gt-desc-simple-with-av.xfst: \
-			morphology/lexicon.xfst \
-			morphology/phonology.compose.xfst \
+			fst/lexicon.xfst \
+			fst/phonology.compose.xfst \
 			analyser-raw-gt-desc.tmp.xfst
 	$(AM_V_at)$(PRINTF) \
-	"read-source analyser-raw-gt-desc.tmp.xfst\ninvert-source\nread-rules morphology/phonology.compose.xfst\ncompose-result\ninvert-result\nsave-result $@\nquit\n" \
+	"read-source analyser-raw-gt-desc.tmp.xfst\ninvert-source\nread-rules fst/phonology.compose.xfst\ncompose-result\ninvert-result\nsave-result $@\nquit\n" \
 	> $@.script
 	$(AM_V_LEXC)$(LEXC) $(VERBOSITY) < $@.script
 	$(AM_V_at)rm -f $@.script
@@ -115,14 +115,14 @@ analyser-raw-gt-desc-simple-with-av.xfst: \
 analyser-raw-gt-desc-simple-full.xfst: \
 				analyser-raw-gt-desc-simple-with-av.xfst \
 				filters/deriv_filter.xfst \
-				morphology/overriding-exceptions.all.xfst \
-				morphology/numbers.xfst \
-				morphology/phonology.compose.xfst
+				fst/overriding-exceptions.all.xfst \
+				fst/numbers.xfst \
+				fst/phonology.compose.xfst
 	$(AM_V_XFST)$(PRINTF) \
-		'load morphology/phonology.compose.xfst\nintersect net\nsave stack intersected-phonology.tmp.xfst\nquit\n' | \
+		'load fst/phonology.compose.xfst\nintersect net\nsave stack intersected-phonology.tmp.xfst\nquit\n' | \
 		 $(XFST) $(VERBOSITY) $(XFSTFLAGS)
 	$(AM_V_XFST)$(PRINTF) \
-		'read regex [ @"filters/deriv_filter.xfst" .o. [   [@"morphology/overriding-exceptions.all.xfst"] .P. [@"analyser-raw-gt-desc-simple-with-av.xfst"]] .o. ~$$[ "{" "}" ] .o. @"intersected-phonology.tmp.xfst"] | @"morphology/numbers.xfst";\nsave stack $@\nquit\n' | \
+		'read regex [ @"filters/deriv_filter.xfst" .o. [   [@"fst/overriding-exceptions.all.xfst"] .P. [@"analyser-raw-gt-desc-simple-with-av.xfst"]] .o. ~$$[ "{" "}" ] .o. @"intersected-phonology.tmp.xfst"] | @"fst/numbers.xfst";\nsave stack $@\nquit\n' | \
 	        $(XFST) $(VERBOSITY) $(XFSTFLAGS)
 	$(AM_V_at)rm -f intersected-phonology.tmp.xfst
 
