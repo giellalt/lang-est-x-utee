@@ -46,7 +46,7 @@ EXTRA_SRCS=compound_definitions.lexc compound_filter_base.lexc
 ########## Add local build rules below here: ############
 
 # .txt (and not .lexc) to get make clean to remove it. 
-multichars.txt: ../morphology/root.lexc
+multichars.txt: ../fst/root.lexc
 	$(AM_V_GEN)sed -e '/^LEXICON/,$$ d' $^ > $@
 
 compound_filter.lexc: multichars.txt compound_definitions.lexc compound_filter_base.lexc
