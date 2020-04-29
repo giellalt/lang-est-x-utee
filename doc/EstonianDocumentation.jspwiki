@@ -3,8 +3,8 @@
 !!! Dynamic documentation
 
 * [Links to generated source file documentation|Links.html]
-* Source files: [stems|https://gtsvn.uit.no/langtech/trunk/langs/est/src/morphology/stems/]   
-  / [affixes|https://gtsvn.uit.no/langtech/trunk/langs/est/src/morphology/affixes/] 
+* Source files: [stems|https://gtsvn.uit.no/langtech/trunk/langs/est/src/fst/stems/]   
+  / [affixes|https://gtsvn.uit.no/langtech/trunk/langs/est/src/fst/affixes/] 
   / [syntax|https://gtsvn.uit.no/langtech/trunk/langs/est/src/syntax] 
   / [twolc|https://gtsvn.uit.no/langtech/trunk/langs/est/src/phonology/est-phon.twolc]   
   / [yaml|https://gtsvn.uit.no/langtech/trunk/langs/est/test/src/gt-norm-yamls/]
@@ -81,7 +81,7 @@ tbw.
 
 !!! Grammatical issues
 
-* [The tags that are in use|https://gtsvn.uit.no/langtech/trunk/langs/est/src/morphology/root.lexc]   
+* [The tags that are in use|https://gtsvn.uit.no/langtech/trunk/langs/est/src/fst/root.lexc]   
 * [A list of morphological tags|/lang/common/MorphologicalTags.html]
 
 
