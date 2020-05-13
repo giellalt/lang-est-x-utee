@@ -20,11 +20,24 @@
 
 # List any local filter regex files here:
 GIELLA_FILTER_LOCAL_REGEX_SRCS=\
-					downcase_UCletters.regex \
-					deriv_filter.regex
+					downcase_UCletters.regex
 
 # List any local filter xfscript files here:
-GIELLA_FILTER_LOCAL_XFSCRIPT_SRCS=
+GIELLA_FILTER_LOCAL_XFSCRIPT_SRCS=reorder-tags.est.xfscript \
+                                  remove-sg-forms.est.xfscript \
+                                  remove-pl-forms.est.xfscript \
+                                  remove-sg-nom-forms.est.xfscript \
+                                  remove-non-gi-forms.est.xfscript \
+                                  remove-usage-tags.est.xfscript \
+                                  modify-derivations.est.xfscript \
+                                  block-derivations.est.xfscript \
+                                  block-compounds.est.xfscript \
+                                  wordpair-filter.est.xfscript \
+                                  numeral-filter.est.xfscript \
+                                  evaluate-flags.est.xfscript \
+                                  downcase-derived_proper-strings.est.xfscript \
+                                  upcase-guessed_proper-strings.est.xfscript \
+                                  remove-guessed-forms.est.xfscript
 
 # List any local filter lexc files here:
 GIELLA_FILTER_LOCAL_LEXC_SRCS=
@@ -36,24 +49,14 @@ GIELLA_FILTER_LOCAL_GENERATED_REGEX_SRCS=
 GIELLA_FILTER_LOCAL_GENERATED_XFSCRIPT_SRCS=
 
 # List any locally generated lexc source files here:
-GIELLA_FILTER_LOCAL_GENERATED_LEXC_SRCS=compound_filter.lexc compound_mask.lexc
+GIELLA_FILTER_LOCAL_GENERATED_LEXC_SRCS=
 
 # List any additional source files here, so that they are included in the dist.
 # Source files that are not directly compiled to fst's but are instead used as
 # part of a local build step should be listed here.
-EXTRA_SRCS=compound_definitions.lexc compound_filter_base.lexc
+EXTRA_SRCS=
 
 ########## Add local build rules below here: ############
-
-# .txt (and not .lexc) to get make clean to remove it. 
-multichars.txt: ../fst/root.lexc
-	$(AM_V_GEN)sed -e '/^LEXICON/,$$ d' $^ > $@
-
-compound_filter.lexc: multichars.txt compound_definitions.lexc compound_filter_base.lexc
-	$(AM_V_GEN)cat $^ > $@
-
-compound_mask.lexc: multichars.txt compound_definitions.lexc compound_rules.lexc
-	$(AM_V_GEN)cat $^ > $@
 
 ############### END: Local modifications ################
 #########################################################

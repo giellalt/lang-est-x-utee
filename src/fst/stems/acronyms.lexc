@@ -1,0 +1,99 @@
+!! Acronyms
+
+LEXICON Acronyms
+  < [CapCons* CapVow+] & CapLetter^<6 > AcroArmee ;  ! TÜ, TTÜ, A, AI
+  < [CapVow+ CapCons+ CapVow^>1] & CapLetter^<6 > AcroArmee ;  ! ACAI, AEGEE, 
+  < [CapCons* CapConsv] & CapLetter^<6 > AcroArmee ;  ! T, TT, NKVD, 
+  < [CapVow   CapConsv] & CapLetter^<6 > AcroArmee ;  ! AQ, AB, 
+!  < [CapVow^>1 [C|Q]] & CapLetter^<6 > AcroArmee ;  ! AAQ, AAC, ? 
+  < [CapVow^>1 CapConsv] & CapLetter^<6 > AcroArmee ;  ! AAK (+ AcroFiat)
+  < [CapCons* CapVow+ CapNonPairC] & CapLetter^<6 > AcroArmee ;  ! ABC, 
+  < [CapCons* CapVow+ CapPairC] & CapLetter^<6 > AcroArmee ;  ! ARK, ASK, (+ AcroFiat) 
+  < [CapVow+ CapCons^>1 CapConsv] & CapLetter^<6 > AcroArmee ;  ! AADRC, AADRV?
+
+  < [CapCons* CapConsc] & CapLetter^<6 > AcroFiat ;  ! L, XL
+  < [CapVow   CapConsc] & CapLetter^<6 > AcroFiat ;  ! AL, IJ
+  < [CapVow^>1 [CapCons - [C|Q]]] & CapLetter^<6 > AcroFiat ;  ! AAK, (+ AcroArmee)
+  < [CapCons+ CapVow+ CapCons] & CapLetter^<6 > AcroFiat ;  ! MAL, QIJ, MAC
+  < [CapCons* CapVow+ CapPairC] & CapLetter^<6 > AcroFiat ;  ! TASS, AND, IRC?
+  < [CapCons* CapVow+ CapCons+ CapConsc] & CapLetter^<6 > AcroFiat ;  ! AADRL
+  IŽ AcroFiat ;  ! parallel 
+  ACE AcroFiat ; ! parallel
+  ASEAN AcroFiat ; !
+
+  < [CapCons* CapVow+ [CapCons+ | Y] CapVow] & CapLetter^<6 & ~[{CHINA}] > AcroPere ;  ! NATO, EKI, EKRE, IATE
+
+  < [CapCons* CapVow+ [CapCons+ | Y] CapVow [CapCons - S]] & CapLetter^<6 > AcroRedel ;  ! UNIX, BAYER
+  < [CapCons* CapVow+ CapCons+ CapVow CapConsv S] & CapLetter^<6 > AcroRedel ;  ! UNIKS
+  < [CapCons* CapVow+ [CapCons - [L|R]] [L|R]] & CapLetter^<6 > AcroRedel ;  ! TISL
+  < [CapCons* CapVow+ CapPairC [L|R]] & CapLetter^<6 > AcroRedel ;  ! TIMBL
+
+  < [CapCons* CapVow+ CapCons+ CapVow S] & CapLetter^<6 > AcroEtis ;  ! ETIS
+
+LEXICON AcroArmee 
+   +ACR+Sg: NOMINATIVE ;
+   +ACR+Sg: GENITIVE ;
+      +ACR: Acro1V ;
+      +ACR:- Acro1V ;
+
+LEXICON Acro1V 
+          :d SG_PARTITIVE ;            ! KT-d
+       +Sg: ALL_SEM_CASES ;            ! KT etc
+       +Pl:d NOMINATIVE ;          ! KT-d
+          :de N_PL_SUBPARA ;        ! KT-de etc  
+          :sid PL_PARTITIVE ;     ! KT-sid
+
+LEXICON AcroFiat 
+   +ACR+Sg: NOMINATIVE ;
+      +ACR: Acro1C ;
+      +ACR:- Acro1C ;
+
+LEXICON Acro1C 
+              :i N_SG_SUBPARA ;      ! KEKi etc
+              :i SG_PARTITIVE ;               ! KEKi
+              :i SG_ILLATIVE ;                ! KEKi
+      +Use/Hyp:isse SG_ILLATIVE ;     ! KEKisse
+              :ide N_PL_SUBPARA ;     ! KEKide etc
+     +Use/Rare:isid PL_PARTITIVE ;    ! KEKisid
+              :e PL_PARTITIVE ;            ! KEKe
+
+
+LEXICON AcroPere 
+   +ACR+Sg: NOMINATIVE ;
+   +ACR+Sg: GENITIVE ;
+      +ACR: Acro2V ;
+      +ACR:- Acro2V ;
+
+LEXICON Acro2V 
+          :t SG_PARTITIVE ;            ! NATOt
+       +Sg: ALL_SEM_CASES ;            ! NATO etc
+       +Pl:d NOMINATIVE ;            ! NATOd
+          :de N_PL_SUBPARA ;        ! NATO-de etc  
+          :sid PL_PARTITIVE ;     ! NATO-sid
+
+LEXICON AcroRedel 
+   +ACR+Sg: NOMINATIVE ;
+      +ACR: Acro2C ;
+      +ACR:- Acro2C ;
+
+LEXICON Acro2C 
+              :i N_SG_SUBPARA ;      ! UNIXi etc
+              :it SG_PARTITIVE ;               ! UNIXit
+              :isse SG_ILLATIVE ;                ! UNIXisse
+              :ite N_PL_SUBPARA ;     ! UNIXite etc
+              :eid PL_PARTITIVE ;            ! UNIXeid
+
+
+LEXICON AcroEtis 
+   +ACR+Sg: NOMINATIVE ;
+      +ACR: AcroS ;
+      +ACR:- AcroS ;
+
+LEXICON AcroS 
+          :e N_SG_SUBPARA ;      ! ETISe etc
+          :t SG_PARTITIVE ;               ! ETISt
+          :esse SG_ILLATIVE ;     ! ETISesse
+          :te N_PL_SUBPARA ;     ! ETISte etc
+          :eid PL_PARTITIVE ;            ! ETISeid
+
+

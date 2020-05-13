@@ -1,28 +1,24 @@
 LEXICON Conjunctions
- aga+CC:aga GI; ! (41_JD -> +Adv +CC) 
- ega+CC:ega GI; ! (41_JD -> +Adv +CC) 
- ehk+CC:ehk GI; ! (41_JD -> +Adv +CC) 
- ehkki+CS:ehkki GI; ! (41_J -> +CS) 
- elik+CC:elik GI; ! (41_J -> +CC) 
- enge+CC:enge GI; ! (41_J -> +CC) 
- ent+CC:ent GI; ! (41_J -> +CC) 
- et+CS:et GI; ! (41_J -> +CS) 
- ja+CC:ja GI; ! (41_J -> +CC) 
- ja/või+CC:ja/või GI; ! (41_J -> +CC) 
- justkui+CS:justkui GI; ! (41_JD -> +Adv +CS) 
- kuid+CC:kuid GI; ! (41_J -> +CC) 
- kuigi+CS:kuigi GI; ! (41_JD -> +Adv +CS) 
- kui+CS:kui GI; ! (41_JD -> +Adv +CS) 
- kuna+CS:kuna GI; ! (41_JD -> +Adv +CS) 
- kuni+CC:kuni GI; ! (41_JK -> +CC +K) 
- nagu+CS:nagu GI; ! (41_JD -> +Adv +CS) 
- ning+CC:ning GI; ! (41_J -> +CC) 
- olgugi+CS:olgugi GI; ! (41_J -> +CS) 
- otsekui+CS:otsekui GI; ! (41_JD -> +Adv +CS) 
- paitsi+Adv:paitsi GI; ! (41_DK -> +Adv +K) 
- saati+Adv:saati GI; ! (41_DK -> +Adv +K) 
- selmet+CS:selmet GI; ! (41_JD -> +CS) 
- sest+CS:sest GI; ! (41_J -> +CS) 
- vaid+CC:vaid GI; ! (41_JD -> +Adv +CC) 
- või+CC:või GI; ! (41_JD -> +Adv +CC) 
 
+aga+CC:aga #  "weight: 2 " ; 
+ega+CC:ega #  "weight: 4 " ; 
+ehk+CS:ehk #  "weight: 4 " ; 
+ehkki+CS:˘ehkki #  "weight: 5 " ; 
+elik+CC:elik #  "weight: 9 " ; 
+ent+CC:˘ent #  "weight: 5 " ; 
+et+CS:˘et #  "weight: 1 " ; 
+ja+CC:ja #  "weight: 0 " ; 
+justkui+CS:j˘ust%#k˘ui #  "weight: 6 " ; 
+kui+CS:kui #  "weight: 2 " ; 
+kuid+CC:kuid #  "weight: 3 " ; 
+kuigi+CS:kuigi #  "weight: 4 " ; 
+kuna+CS:kuna #  "weight: 4 " ; 
+kuni+CC:kuni #  "weight: 4 " ; 
+nagu+CS:nagu #  "weight: 3 " ; 
+ning+CC:ning #  "weight: 2 " ; 
+olgugi+CS:olgugi #  "weight: 8 " ; 
+otsekui+CS:otse%#k˘ui #  "weight: 6 " ; 
+sest+CS:s˘est #  "weight: 3 " ; 
+siis+CS:s˘iis #  "weight: 2 " ; 
+vaid+CC:v˘aid #  "weight: 3 " ; 
+või+CC:või #  "weight: 2 " ; 

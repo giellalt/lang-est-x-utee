@@ -1,0 +1,57 @@
+! Initial word (e.g. emb) of paired words (e.g. emb-kumb)
+! The flag diacritics must harmonise with those used for simlex words
+! NB! Notice that there is no POS tag (+Num, +N etc)
+
+LEXICON Root
+
+! This lexicon is union-ed with the lexicon of simplex words.
+! They are tied to each other via flag diacritics.
+! Restricting compounds with these paired words.
+! Only two-part compounds allowed (instead of the default 3, thus have to play with Part): 
+
+@D.Part@@P.Part.Two@ PairedWords ;                     ! pair + x
+@R.Part.One@@R.POS.Pref@@P.Part.Three@ PairedWords ;   ! pref + pair
+ 
+LEXICON PairedWords
+
+  @P.POS.N@ PairedNouns ;
+  @P.POS.Pron@ PairedPronouns ;
+  @P.POS.A@ PairedAdjectives ;
+
+LEXICON PairedNouns 
+
+ajalehed:aja#l˘ehT1%>%{pl.i%} EIT ;
+kimpsud:k˘imps%>%{pl.e%} KOON ;
+kopsud:k˘ops%>%{pl.e%}%{rare%} KOON ;
+luud:l˘uu%>%{id%} PUU ;
+istumine:istumine OLULINE ;
+elamine:elamine OLULINE ;
+kibin:kibin MAGUS ;
+kigin:kigin MAGUS ;
+kihin:kihin MAGUS ;
+kilin:kilin MAGUS ;
+kirin:kirin MAGUS ;
+klibin:klibin MAGUS ;
+prigin:prigin MAGUS ;
+rigin:rigin MAGUS ;
+sidin:sidin MAGUS ;
+sigin:sigin MAGUS ;
+sihin:sihin MAGUS ;
+sirin:sirin MAGUS ;
+sisin:sisin MAGUS ;
+viimne:v˘iimne SOOLANE ; ! viimnepäev
+teine:teine TEINE ;      ! teinepool
+
+LEXICON PairedPronouns 
+
+emb:emmB1%>%{pl.i%}%{rare%} PIIM ;  ! emb-kumb
+mitu:m˘ittU2 HAARE ;                ! mitu-setu
+see: SEE ;                          ! seesama, seesamune
+too: TOO ;                          ! toosama, toosamune
+
+LEXICON PairedAdjectives 
+
+tühi:t˘ühJ1%>%{pl.e%} PIIM ;         ! tühi-tähi
+ematu:ematu AASTA ;                  ! ematu-isatu
+üks:˘ü KAKS ;                        ! üksainus, üksainuke
+

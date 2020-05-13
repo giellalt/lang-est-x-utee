@@ -1,0 +1,31 @@
+# blabla-word is a valid guessed word
+# we here define the blabla and Blabla
+
+define Upper [ A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|Š|Z|Ž|T|U|V|W|Õ|Ä|Ö|Ü|X|Y ] ;
+
+# the flags must ensure that that blabla-word is treated like a two-part compound word 
+# e.g. blabla-word#word is impossible
+# and not every POS is suitable for acting as the 'word'
+
+define Flags [ "@D.Part@" "@P.Part.Two@" "@P.NeedPartThree.On@" "@P.POS.Guess@" "@P.Stem.Guessed@" ] ;        
+
+define Smth     [\Upper \Upper \Upper*] ;   # blabla
+define SomeName [Upper \Upper \Upper*] ;    # Blabla
+
+define AddHyphen [[..] -> "-" || _ .#.];
+define AddGuess  [[..] -> "+Guess" || _ .#.]::200 ;
+define AddNameTags  [[..] -> ["+N" "+Prop"] || _ .#.];
+define AddBorder  [[..] -> "#" || _ .#.];
+
+# Blabla+Guess+N+Prop#word:Blabla-word
+define GuessName [AddNameTags.i .o. AddGuess.i .o. [Flags SomeName] .o. AddHyphen] ;
+
+# blabla+Guess#word:blabla-word
+# blabla+Guess#word:blablaword
+
+define GuessWord [AddGuess.i .o. [Flags Smth] .o. AddHyphen] ;
+define GuessWordNoHyphen [AddGuess.i .o. [Flags Smth]]::50 ;
+
+define WordOrName [AddBorder.i .o. [GuessName | GuessWord | GuessWordNoHyphen] ] ;
+
+regex WordOrName ;

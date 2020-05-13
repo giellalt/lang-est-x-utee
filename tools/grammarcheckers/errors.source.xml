@@ -130,4 +130,109 @@
     </body>
   </error>
 
+  <error id="err-agr">
+    <header>
+      <title xml:lang="en">Agreement error</title>
+      <title xml:lang="et">Ühildumisviga</title>
+      <references><ref n=""/></references>
+    </header>
+    <body>
+      <description xml:lang="en">Agreement error</description>
+      <description xml:lang="et">Ühildumisviga</description>
+    </body>
+  </error>
+
+  <error id="err-gov">
+    <header>
+      <title xml:lang="en">Government error</title>
+      <title xml:lang="et">Rektsiooniviga</title>
+      <references><ref n=""/></references>
+    </header>
+    <body>
+      <description xml:lang="en">Government error</description>
+      <description xml:lang="et">Rektsiooniviga</description>
+    </body>
+  </error>
+
+  <error id="err-comma">
+    <header>
+      <title xml:lang="en">Comma error</title>
+      <title xml:lang="et">Komaviga</title>
+      <references><ref n=""/></references>
+    </header>
+    <body>
+      <description xml:lang="en">Missing comma before this word</description>
+      <description xml:lang="et">Puudub koma selle sõna ees</description>
+    <examples>
+      <ex xml:lang="et">Tahaks lennata{,} aga mitte eriti kõrgelt.</ex> 
+    </examples>
+    </body>
+  </error>
+
+  <error id="typo">
+    <header>
+      <title xml:lang="en">Spelling error</title>
+      <title xml:lang="et">Sõnaviga</title>
+    </header>
+    <body>
+      <description xml:lang="en">Not in the dictionary</description>
+      <description xml:lang="et">Puudub sõnastikust</description>
+    </body>
+  </error>
+
+  <error id="double-space-before">
+    <header>
+      <title xml:lang="en">Space error</title>
+      <title xml:lang="et">Tühikuviga</title>
+    </header>
+    <body>
+      <description xml:lang="en">There are two spaces in front of "$1"</description>
+      <description xml:lang="et">Kaks tühikut enne "$1"</description>
+    </body>
+  </error>
+
+  <error id="space-after-paren-beg">
+    <header>
+      <title xml:lang="en">Space error</title>
+      <title xml:lang="et">Tühikuviga</title>
+    </header>
+    <body>
+      <description xml:lang="en">There is a space after the opening parenthesis "$1"</description>
+      <description xml:lang="se">Tühik alustava sulu "$1" järel</description>
+    </body>
+  </error>
+
+  <error id="space-before-paren-end">
+    <header>
+      <title xml:lang="en">Space error</title>
+      <title xml:lang="et">Tühikuviga</title>
+    </header>
+    <body>
+      <description xml:lang="en">There is a space before the closing parenthesis "$1"</description>
+      <description xml:lang="se">Tühik lõpetava sulu "$1" ees</description>
+    </body>
+  </error>
+
+  <error id="space-before-punct-mark">
+    <header>
+      <title xml:lang="en">Space error</title>
+      <title xml:lang="et">Tühikuviga</title>
+    </header>
+    <body>
+      <description xml:lang="en">There is a space in front of the punctuation mark "$1"</description>
+      <description xml:lang="se">Tühik kirjavahemärgi "$1" ees</description>
+    </body>
+  </error>
+
+  <error id="no-space-after-punct-mark">
+    <header>
+      <title xml:lang="en">Space error</title>
+      <title xml:lang="et">Tühikuviga</title>
+    </header>
+    <body>
+      <description xml:lang="en">There is no space after the punctuation mark "$1"</description>
+      <description xml:lang="se">Puudub tühik kirjavahemärgi "$1" järel</description>
+    </body>
+  </error>
+
 </errors>

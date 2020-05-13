@@ -1,0 +1,15 @@
+# decide if the traversed path is actually a valid word,
+# by looking at the values of flag diacritics (that were set while traversing the path)
+
+# at the end of a (compound) word, we should'n be waiting for an adj, noun, Der/ne, or for part three
+define FalseExpectation ["@D.NeedAdj@" "@D.NeedNoun@" "@D.NeedDerNe@" "@D.NeedPartThree@"] ;
+
+# the last word shouldn't be an acronym that ends with minus and thus suits only in compounds
+define BadMinus "@D.POS.ACRMinus@" ;
+
+# a word that cannot participate in compounds must be the first and only part of a word
+define EvaluateSingle ["@R.Part.One@" | ["@D.Part.One@" "@D.Stem.Single@"]] ;
+
+# check all the flags that eliminate paths
+regex EvaluateSingle FalseExpectation BadMinus ;
+

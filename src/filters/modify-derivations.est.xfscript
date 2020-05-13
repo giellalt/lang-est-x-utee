@@ -1,0 +1,60 @@
+# modify stems
+# Sirje Mäearu "Sõnamoodustus" http://keeleabi.eki.ee/pdf/095.pdf
+# i(k)a gets deleted from foreign word ends:
+# onomastika+line -> onomastiline
+# apooria + line -> apooriline
+# Ibeeria + lane = ibeerlane
+
+# kapitalism + ist -> kapitalist
+# -kond + ti -> -konniti
+# -lane + nna -> -lanna
+# ...maalane + nna -> ...maalanna
+
+define WB [ "#" | .#. ] ;
+define MB [ "»" ] ;  # morpheme border
+define LI   [ MB l i ];
+define LA   [ [MB | {maa}] l a ] ;
+define NE   [ [n e] | [s] ] ;
+define LINE [ LI NE ];
+define LANE [ LA NE ] ;
+define IST  [ MB {ist} ] ;
+define TI   [ MB {ti} ] ;
+define NNA  [ MB {nna} ] ;
+
+# vowel may be upper case, so that if a wowel-initial word starts with a capital letter, 
+# the first syllable will get counted; 
+# (the initial consonant is optional when counting syllables)
+define EstW [ a | e | i | o | u | õ | ä | ö | ü | A | E | I | O | U | Õ | Ä | Ö | Ü] ; 
+define WW [ EstW | y | Y];
+define EstC [ b | d | f | g | h | j | k | l | m | n | p | r | s | t | v ] ;
+define CC [ EstC | c | q | w | x] ;
+
+define SS [CC* WW] ;              # short syllable
+define LS [SS [WW | CC] CC*] ;      # long syllable
+define Syll [SS | LS] ;
+
+define Pre1  [ Syll CC LS] & ~[?* [l|s]] ;  # NOT biopsia, meelika
+define Pre2  [ Syll CC LS]  ;  # NOT biopsia, meelika
+
+define IKA [i (k) a] ;
+define IA  [i a] ;
+define ISM [i s m] ;
+define SE  [s e] ;
+
+define shorten1 [ IKA -> i || Pre1 _ LINE ] ;
+define shorten2 [  IA -> 0 || Pre2 _ LANE ] ;
+define shorten3 [ ISM -> 0 || _ IST ] ;
+define konniti  [   a -> i || k o n n (">") _ TI ];  # not sure if > is actually present here...
+define lanna    [  SE -> 0 || LA _ NNA ];
+
+# filter out karl+lik; the only lik-derivation is then karli+lik ???
+# (because they both are generated at first...)
+
+define LIK [ MB {lik} \WB*] ;
+
+define CVl [LS l] ;      # 1C word stem ending in l
+define CVLIK [ \WB* CVl LIK \WB*] ;   # falsely filters out also Tirool+lik and Iisrael+lik
+
+regex [shorten1 .o. shorten2 .o. shorten3 .o. konniti .o. ~CVLIK .o. lanna] ;
+
+

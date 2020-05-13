@@ -1,0 +1,73 @@
+LEXICON CardinalNumerals
+  IntegerNumerals ;
+  NonIntegerNumerals ;
+
+
+LEXICON IntegerNumerals
+
+biljon+Num+Card:b˘ilʲjon REDEL  "weight: 11 " ; 
+kaheksa+Num+Card:kaheksa AASTA  "weight: 6 " ; 
+kaks+Num+Card:k˘a KAKS  "weight: 3 " ; 
+kolm+Num+Card:k˘olm%>%{pl.i%}%{rare%} EIT  "weight: 4 " ; 
+kuus+Num+Card:k˘uuS1%{stemill%} VARS  "weight: 5 " ; 
+kvadriljon+Num+Card:kvadr˘ilʲjon REDEL  "weight: 11 " ; 
+kümmekond+Num+Card:kˈümmek˘onD1%>%{pl.i%} PÄEV  "weight: 7 " ; 
+kümme+Num+Card:kümmE2 SEEME  "weight: 5 " ; 
+miljard+Num+Card:milʲjard REDEL  "weight: 6 " ; 
+miljon+Num+Card:m˘ilʲjon REDEL  "weight: 5 " ; 
+neli+Num+Card:n˘elʲJ1%>%{pl.u%} PIIM  "weight: 5 " ; 
+null+Num+Card:n˘ulʲl TAUD  "weight: 7 " ; 
+paar+Num+Card:p˘aar TAUD  "weight: 5 " ; 
+@P.Stem.Nom@pool+Num+Card:@P.Stem.Nom@p˘ool%{stemill%} KEEL  "weight: 4 " ; 
+sadakond+Num+Card:sˈadak˘onD1%>%{pl.i%} PÄEV  "weight: 8 " ; 
+sada+Num+Card:saJ1D1a%>%{pl.u%} SADA  "weight: 6 " ; 
+seitse+Num+Card:s˘eitsE2 HAARE  "weight: 6 " ; 
+tosin+Num+Card:tosin MAGUS  "weight: 8 " ; 
+triljon+Num+Card:tr˘ilʲjon REDEL  "weight: 10 " ; 
+tuhat+Num+Card:tuha TUHAT  "weight: 6 " ; 
+veerand+Num+Card:veerand REDEL  "weight: 7 " ; 
+viis+Num+Card:v˘iiS1%{stemill%} VARS  "weight: 4 " ; 
+üheksa+Num+Card:üheksa AASTA  "weight: 6 " ; 
+üks+Num+Card:˘ü KAKS  "weight: 3 " ; 
+poolteist+Num+Card:p˘ool POOLTEIST  "weight: 7 " ; 
+
+LEXICON NonIntegerNumerals
+
+aastakuueteistkümnendik+Num+Card:˘aasta%#kuue%#t˘eist%#k˘ümnend˘ik ELANIK  "weight: 11 " ; 
+biljondik+Num+Card:bˈilʲjond˘ik ELANIK  "weight: 11 " ; 
+kaheksandik+Num+Card:kˈaheksand˘ik ELANIK  "weight: 11 " ; 
+kaheksateistkümnendik+Num+Card:kaheksa%#t˘eist%#k˘ümnend˘ik ELANIK  "weight: 11 " ; 
+kahendik+Num+Card:kˈahend˘ik ELANIK  "weight: 11 " ; 
+kaheteistkümnendik+Num+Card:kahe%#t˘eist%#k˘ümnend˘ik ELANIK  "weight: 11 " ; 
+kolmandik+Num+Card:kˈolmand˘ik ELANIK  "weight: 7 " ; 
+kolmeteistkümnendik+Num+Card:kolme%#t˘eist%#k˘ümnend˘ik ELANIK  "weight: 11 " ; 
+kuuendik+Num+Card:kˈuuend˘ik ELANIK  "weight: 10 " ; 
+kuueteistkümnendik+Num+Card:kuue%#t˘eist%#k˘ümnend˘ik ELANIK  "weight: 11 " ; 
+kvadriljondik+Num+Card:kvadrˈilʲjond˘ik ELANIK  "weight: 11 " ; 
+kümnendik+Num+Card:k˘ümnend˘ik ELANIK  "weight: 8 " ; 
+miljardik+Num+Card:mˈilʲjard˘ik ELANIK  "weight: 11 " ; 
+miljondik+Num+Card:mˈilʲjond˘ik ELANIK  "weight: 10 " ; 
+neljandik+Num+Card:nˈelʲjand˘ik ELANIK  "weight: 8 " ; 
+neljateistkümnendik+Num+Card:nelja%#t˘eist%#k˘ümnend˘ik ELANIK  "weight: 11 " ; 
+sajandik+Num+Card:sˈajand˘ik ELANIK  "weight: 10 " ; 
+seitsmendik+Num+Card:s˘eitsmend˘ik ELANIK  "weight: 11 " ; 
+seitsmeteistkümnendik+Num+Card:s˘eitsme%#t˘eist%#k˘ümnend˘ik ELANIK  "weight: 11 " ; 
+triljondik+Num+Card:trˈilʲjond˘ik ELANIK  "weight: 11 " ; 
+tuhandik+Num+Card:tˈuhand˘ik ELANIK  "weight: 11 " ; 
+veerandik+Num+Card:vˈeerand˘ik ELANIK  "weight: 11 " ; 
+viiendik+Num+Card:vˈiiend˘ik ELANIK  "weight: 8 " ; 
+viieteistkümnendik+Num+Card:viie%#t˘eist%#k˘ümnend˘ik ELANIK  "weight: 11 " ; 
+üheksandik+Num+Card:ˈüheksand˘ik ELANIK  "weight: 11 " ; 
+üheksateistkümnendik+Num+Card:üheksa%#t˘eist%#k˘ümnend˘ik ELANIK  "weight: 11 " ; 
+ühendik+Num+Card:ˈühend˘ik ELANIK  "weight: 11 " ; 
+üheteistkümnendik+Num+Card:ühe%#t˘eist%#k˘ümnend˘ik ELANIK  "weight: 11 " ; 
+alguskümme+Num+Card:˘algus%#kümmE2 SEEME  "weight: 11 " ; 
+esikaheksa+Num+Card:esi%#kaheksa AASTA  "weight: 11 " ; 
+kolmveerand+Num+Card:k˘olm%#veerand REDEL  "weight: 8 " ; 
+kolmveerandsada+Num+Card:k˘olm%#veerand%#saJ1D1a SADA  "weight: 11 " ; 
+kuraditosin+Num+Card:kuradi%#tosin MAGUS  "weight: 11 " ; 
+mustmiljon+Num+Card:m˘ust%#m˘ilʲjon REDEL  "weight: 11 " ; 
+null-üheksa+Num+Card:n˘ulʲl-üheksa AASTA  "weight: 11 " ; 
+tonditosin+Num+Card:tonʲdi%#tosin MAGUS  "weight: 11 " ; 
+veerandsada+Num+Card:veerand%#saJ1D1a SADA  "weight: 10 " ; 
+üks-üks+Num+Card:˘üks-˘ü KAKS  "weight: 10 " ; 

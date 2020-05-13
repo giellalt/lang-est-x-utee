@@ -1,0 +1,5 @@
+# remove guessed forms
+ 
+define guessed $[ "+Guess" ] ;
+regex ~[guessed] ;
+

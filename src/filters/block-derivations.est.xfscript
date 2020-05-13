@@ -1,0 +1,205 @@
+# disallow a derivation if:
+# * its base belongs to a wrong word class
+# (this happens because derivation is attached to a case form, 
+# but by that time the word class is not available for the fst)
+# * its base ends with an unsuitable string
+# * the derivations' sequence is not right
+# etc...
+
+# notice that we are NOT concerned about compounds here
+
+define Vow [ a | e | i | o | u | õ | ä | ö | ü ]; 
+define Cons [ b | d | f | g | h | j | k | l | m | n | p | r | s | t | v ] ;
+define ZZ [[Vow Cons+ Vow+ Cons*] | [Vow Vow Vow Cons*]];   # at least 2 syllables (kind of...)
+
+# a BadDer1 is a string +Der/..., preceded by an unsuitable symbol or string, 
+# expressed here as a negation of the suitable one
+
+define BadDer1 [
+    [~[?* ("+Guess") [["+N"] | ["+Num" "+Card"] | ["+N" "+Prop"]]] "+Der/lik"] |
+    [~[?* ("+Guess") [["+N" "+Prop"] | [{kond} ("+Guess") "+N"]]] "+Der/lane"] |
+    [~[?* ("+Guess") [["+N"] | ["+N" "+Prop"] | ["+Num" "+Card"]]] "+Der/line"] |
+    [~[?* ("+Guess") "+N"] "+Der/ne"] |
+    [~[?* ("+Guess") [["+A"] | ["+A" "+Comp"] | ["+A" "+Superl"]]] "+Der/lt"] |
+    [~[?* ("+Guess") "+A"] "+Der/sti"] |
+    [~[?* ("+Guess") "+A" "+Comp"] "+Der/ini"] |
+    [~[?* ("+Guess") "+A"] "+Der/m"] |
+    [~[?* ("+Guess") "+A"] "+Der/im"] |
+    [~[?* [[{ja} ("+Guess") "+N"] | [{maalane} ("+Guess") "+N"] | ["+Der/lane" "+N"]]] "+Der/nna"] |
+    [~[?* ("+Guess") [["+N"] | ["+Num" "+Card"]]] "+Der/kond"] |
+    [~[?* [[ ("+Guess") "+A"] | [("+Guess") "+A" "+Comp"] | [("+Guess") "+A" "+Superl"] | 
+          [ ZZ {tama} ("+Guess") "+V"] | [ ZZ {dama} ("+Guess") "+V"] | 
+          [ {hooldama} ("+Guess") "+V"] | [ {soendama} ("+Guess") "+V"] | [ {tsema} ("+Guess") "+V"] | [ ? ? ? {lema} ("+Guess") "+V"]]] "+Der/us"] |
+    [~[?* [[ ZZ {tama} ("+Guess") "+V"] | [ ZZ {dama} ("+Guess") "+V"]]] "+Der/is"] |
+    [~[?* [{uma} | {tellima}] ("+Guess") "+V"] "+Der/mus"] |             # devalveeruma - devalveerumus
+    [~[?* {eerima} ("+Guess") "+V"] "+Der/ng"] |           # devalveerima - devalveering
+    [~[?* {ism} ("+Guess") "+N"] "+Der/ist"] |             # kapitalism - kapitalist
+    [~[?* ? ? ? ? ("+Guess") "+N"]  "+Der/ti"] |           # should we eliminate pee+N+Der/ti ?
+    [~[?* ("+Guess") "+Num" "+Card"] "+Der/kas"] |
+    [~[?* ("+Guess") [["+N" ("+Prop")] | ["+Num" "+Card"] | ["+A"] | ["+A" "+Comp"] | ["+A" "+Superl"]]] "+Dim/ke"] 
+    ] ;
+
+# stem shortening "suffix"
+#define BadDer5 [~[?+ "+A"] "+Der/sti" ];
+#define BadDer5 [~[?+ "+Der/mine" "+N"] "+Der/minus" ];
+
+define BadDer5 [   
+    ~[?* [["+Der/mine" "+N"] |       # mis-
+          [Vow Cons* {mine} ("+Guess") "+N"] |  # min 2 syll; mis-
+          ["+Der/line" "+A"] |       # lis-
+          [Vow Cons* {line} ("+Guess") "+A"] |  # min 2 syll; lis-
+          [Vow Cons* {line} ("+Guess") "+N"] |  # min 2 syll; lis-
+          ["+Der/lane" "+N"] |       # las-
+          [Vow Cons* {lane} ("+Guess") "+N"] |  # min 2 syll; las-
+          [Vow Cons* [Vow [Vow | Cons]+ Cons {ne}] ("+Guess") "+A"]  # min 2 syll; ...iil-, ...akt-
+         ]
+      ] "+Der/minus"
+   ] ;
+
+# re-applying a similar suffix is not allowed
+define BadDer2 [
+    [["+Der/lik" | "+Der/line"] ?* ["+Der/lik" | "+Der/line"]] |
+    [  ["+Der/m" | "+Der/im"]   ?*   ["+Der/m" | "+Der/im"]  ] |
+    [ ["+Der/us" | "+Der/mus" | "+Der/is"]  ?*  ["+Der/us" | "+Der/mus" | "+Der/is"] ] 
+    ] ;
+
+# some suffix sequences are actually bad
+define BadDer3 [
+    [[ "+Der/nu" | "+Der/us" | "+Der/lane" ] "+N" "+Der/ti"]  
+    ] ;
+
+# some words are not suitable for certain suffixes 
+# although their word class, inflectional type and stem ending would suggest otherwise;
+# in other words, BadDer4 adds exceptions to BadDer1
+
+define BadDer4 [
+    [{valmis} ("+Guess") "+A" "+Der/us"] | 
+    [{audio} ("+Guess") "+A" "+Der/us"] | 
+    [{väeti} ("+Guess") "+A" "+Der/us"] | 
+    [{kirju} ("+Guess") "+A" "+Der/us"] | 
+    [{ja} ("+Guess") "+A" "+Der/us"] | 
+    [{jas} ("+Guess") "+A" "+Der/us"] | 
+    [{ke} ("+Guess") "+A" "+Der/us"] | 
+    [{nud} ("+Guess") "+A" "+Der/us"] | 
+    [{aitama} ("+Guess") "+V" "+Der/us"] |
+    [{harjuma} ("+Guess") "+V" "+Der/tu"] |
+    [{põlema} ("+Guess") "+V" "+Der/tu"] |
+    [{puhkama} ("+Guess") "+V" "+Der/tu"] |
+    [{veenma} ("+Guess") "+V" "+Der/tu"] |
+    [{arg} ("+Guess") "+A" "+Der/m"] |
+    [{hahk} ("+Guess") "+A" "+Der/m"] |
+    [{halb} ("+Guess") "+A" "+Der/m"] |
+    [{harv} ("+Guess") "+A" "+Der/m"] |
+    [{hea} ("+Guess") "+A" "+Der/m"] |
+    [{hell} ("+Guess") "+A" "+Der/m"] |
+    [{julm} ("+Guess") "+A" "+Der/m"] |
+    [{jäik} ("+Guess") "+A" "+Der/m"] |
+    [{kaua} ("+Guess") "+A" "+Der/m"] |
+    [{kehv} ("+Guess") "+A" "+Der/m"] |
+    [{kelp} ("+Guess") "+A" "+Der/m"] |
+    [{koer} ("+Guess") "+A" "+Der/m"] |
+    [{kuiv} ("+Guess") "+A" "+Der/m"] |
+    [{kuri} ("+Guess") "+A" "+Der/m"] |
+    [{kurb} ("+Guess") "+A" "+Der/m"] |
+    [{kuum} ("+Guess") "+A" "+Der/m"] |
+    [{kõhn} ("+Guess") "+A" "+Der/m"] |
+    [{kõva} ("+Guess") "+A" "+Der/m"] |
+    [{külm} ("+Guess") "+A" "+Der/m"] |
+    [{lahja} ("+Guess") "+A" "+Der/m"] |
+    [{lai} ("+Guess") "+A" "+Der/m"] |
+    [{lõtv} ("+Guess") "+A" "+Der/m"] |
+    [{must} ("+Guess") "+A" "+Der/m"] |
+    [{märg} ("+Guess") "+A" "+Der/m"] |
+    [{nõder} ("+Guess") "+A" "+Der/m"] |
+    [{nõrk} ("+Guess") "+A" "+Der/m"] |
+    [{närb} ("+Guess") "+A" "+Der/m"] |
+    [{paha} ("+Guess") "+A" "+Der/m"] |
+    [{pikk} ("+Guess") "+A" "+Der/m"] |
+    [{ramb} ("+Guess") "+A" "+Der/m"] |
+    [{ränk} ("+Guess") "+A" "+Der/m"] |
+    [{sitt} ("+Guess") "+A" "+Der/m"] |
+    [{soe} ("+Guess") "+A" "+Der/m"] |
+    [{sünk} ("+Guess") "+A" "+Der/m"] |
+    [{tark} ("+Guess") "+A" "+Der/m"] |
+    [{tuim} ("+Guess") "+A" "+Der/m"] |
+    [{tumm} ("+Guess") "+A" "+Der/m"] |
+    [{turd} ("+Guess") "+A" "+Der/m"] |
+    [{turb} ("+Guess") "+A" "+Der/m"] |
+    [{tühi} ("+Guess") "+A" "+Der/m"] |
+    [{vana} ("+Guess") "+A" "+Der/m"] |
+    [{vara} ("+Guess") "+A" "+Der/m"] |
+    [{õrn} ("+Guess") "+A" "+Der/m"] |
+    [{vahendama} ("+Guess") "+V" "+Der/is"] |
+    [{asendama} ("+Guess") "+V" "+Der/is"] |
+    [{agatama} ("+Guess") "+V" "+Der/is"] |
+    [{juhendama} ("+Guess") "+V" "+Der/is"] |
+    [{omandama} ("+Guess") "+V" "+Der/is"] |
+    [Vow {ke} ("+Guess") "+A" "+Der/im"] |   # rohke+im is OK, peenike+im not OK
+    [{hea} ("+Guess") "+A" "+Der/im"] |
+    [{asi} ("+Guess") "+N" "+Der/lik"]   # asilik is bad; asjalik is in the lexicon already
+    ] ;
+
+# some words with certain suffixes make bad components in compounds  
+# in other words, BadDer6 adds more exceptions to BadDer1
+
+define BadDer6 [
+    [{ahi} ("+Guess") "+N" "+Der/lik"] | # k_ahju+lik
+    [{ema} ("+Guess") "+N" "+Der/line"] | # te_ema+line
+    [{esi} ("+Guess") "+N" "+Der/line"] | # ee+line => eelised
+    [{erg} ("+Guess") "+N" "+Der/line"] | # _ergiline
+    [{hoog} ("+Guess") "+N" "+Der/lik"] | # _hoo+lik
+    [{imu} ("+Guess") "+N" "+Der/lik"] | # _imu+lik
+    [{ist} ("+Guess") "+N" "+Der/lik"] | # _ist+lik
+    [{kee} ("+Guess") "+N" "+Der/lik"] | # keelik
+    [{kubu} ("+Guess") "+N" "+Der/line"] | # koolist
+    [{logi} ("+Guess") "+N" "+Der/line"] | # mis-spelling of loogiline
+    [{lood} ("+Guess") "+N" "+Der/line"] | # homonym of lugu+line = looline
+    [{loog} ("+Guess") "+N" "+Der/line"] | # homonym of lugu+line = looline
+    [{mett} ("+Guess") "+N" "+Der/lik"] | # a_met+lik
+    [{ott} ("+Guess") "+N" "+Der/line"] | # psühho_oti+line
+    [{suss} ("+Guess") "+N" "+Der/lik"] | # _sus+lik
+    [{tuss} ("+Guess") "+N" "+Der/lik"] | # _tus+lik
+    [{udu} ("+Guess") "+N" "+Der/line"] |  # ru_udu+line
+    [{uss} ("+Guess") "+N" "+Der/lik"] | # _us+lik
+    [{voog} ("+Guess") "+N" "+Der/lik"] | # voo+lik
+    [{kinkima} ("+Guess") "+V" "+Der/tu" "+A" "+Der/us"] | # kingitus
+    [{kasvama} ("+Guess") "+V" "+Der/tu" "+A" "+Der/us"] | # kasvatus
+    [{kuivama} ("+Guess") "+V" "+Der/tu" "+A" "+Der/us"] | # kuivatus
+    [{kukkuma} ("+Guess") "+V" "+Der/tu" "+A" "+Der/us"] | # kukutus
+    [{kusema} ("+Guess") "+V" "+Der/tu" "+A" "+Der/us"] | # kustus
+    [{käärima} ("+Guess") "+V" "+Der/tu" "+A" "+Der/us"] | # kääritus
+    [{looma} ("+Guess") "+V" "+Der/tu" "+A" "+Der/us"]  # loodus
+    ] ;
+
+# guessed lemmas do not further derive because we do not trust them
+
+# copied and customized from lexlang.xfscript
+define DerDeclinable [
+   ["+Der/im"] | ["+Der/m"] | ["+Der/us"] |
+   ["+Der/lane"] | ["+Der/kas"] | 
+   ["+Der/ist"] | ["+Der/kond"] | ["+Der/lik"] | 
+   ["+Der/line"] | ["+Der/ne"] | ["+Der/nna"] | 
+   ["+Der/ja"] | ["+Der/matu"] | ["+Der/mine"] | 
+   ["+Der/mus"] | ["+Der/ng"] | ["+Der/nud"] | 
+   ["+Der/nu"] | ["+Der/tamatu"] | ["+Der/tav"] | 
+   ["+Der/tu"] | ["+Der/tud"] | ["+Der/us"] | ["+Der/v"]
+    ] ;
+
+define DerNonInflecting [
+   ["+Der/lt"] | ["+Der/sti"] | 
+   ["+Der/ti"] | ["+Der/ini"] | ["+Der/mata"] | 
+   ["+Der/nud"] | ["+Der/tud"]
+    ] ;
+
+define DerMinus [ "+Der/minus" ] ;
+define Dimke [ "+Dim/ke" ] ;
+
+define AnyDer [DerDeclinable | DerNonInflecting | DerMinus | Dimke] ;
+
+# smth has been guessed, and now it is further derived into smth (notice the ?+ instead of ?*)
+define GuessAndDer [ "+Guess" ?+ AnyDer ] ;
+
+regex ~[ BadDer1 ?* ] & ~[ BadDer5 ?* ] & ~[ ?* BadDer2 ?* ] & ~[ ?* BadDer3 ?* ] & ~[ ?* BadDer4 ?* ] & ~[ BadDer6 ?* ] & ~[ ?* GuessAndDer ?* ];
+
+#regex ~[ BadDer1 ?* ] & ~[ BadDer5 ?* ] & ~[ ?* BadDer2 ?* ] & ~[ ?* BadDer3 ?* ] & ~[ ?* BadDer4 ?* ] & ~[ BadDer6 ?* ] ;
+

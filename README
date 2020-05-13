@@ -68,6 +68,17 @@ your environment is correctly set up. This is done by doing:
 It is common practice to keep `generated files out of version control
 <http://www.gnu.org/software/automake/manual/automake.html#CVS>`_.
 
+USAGE NOTE Nov 2016
+
+While developing the Estonian morphology and dictionaries, they were tested on Helsingi FST and Xerox FST.
+The commands used were:
+
+./autogen.sh -l
+./configure --with-hfst --with-xfst=xfst-path --disable-transcriptors
+make ; make check
+
+(where xfst-path is the directory where the Xerox tools were installed)
+
 VPATH builds
 ------------
 

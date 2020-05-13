@@ -25,38 +25,33 @@ GT_LEXC_ROOT=$(srcdir)/root.lexc
 
 # Set this to the names of all regular lexc source files:
 GT_LEXC_SRCS_L1_L2=\
-			 stems/adjectives.lexc \
-			 stems/adverbs.lexc \
-			 stems/conjunctions.lexc \
-			 stems/genitive-attributes.lexc \
-			 stems/interjections.lexc \
-			 stems/noninfectionals.lexc \
-			 stems/nouns.lexc \
-			 stems/numerals.lexc \
-			 stems/prepostpos.lexc \
-			 stems/pronouns.lexc \
-			 stems/proper-names.lexc \
-			 stems/verbs.lexc \
-			 stems/lexicalized_temporary.lexc \
-			 affixes/declinations.lexc \
+                         stems/abbreviations.lexc \
+                         stems/adjectives.lexc \
+                         stems/noninflecting_adjectives.lexc \
+                         stems/comparative_adjectives.lexc \
+                         stems/superlative_adjectives.lexc \
+                         stems/adpositions.lexc \
+                         stems/adverbs.lexc \
+                         stems/conjunctions.lexc \
+                         stems/genitive_attributes.lexc \
+                         stems/interjections.lexc \
+                         stems/nouns.lexc \
+                         stems/cardinalnumerals.lexc \
+                         stems/ordinalnumerals.lexc \
+                         stems/pronouns.lexc \
+                         stems/propernouns.lexc \
+                         stems/verbs.lexc \
+                         stems/noninflecting_verbs.lexc \
+                         stems/prefixes.lexc \
+                         stems/final_components.lexc \
+			 stems/numbers.lexc \
+			 stems/acronyms.lexc \
 			 affixes/symbols.lexc     \
+			 affixes/regular_declinations.lexc \
+			 affixes/exceptional_declinations.lexc \
 			 affixes/verbs.lexc \
 			 affixes/gi.lexc
 
-#			 affixes/cmd-rules.lexc \
-#
-#			 affixes/adjectives.lexc \
-#			 affixes/nouns.lexc \
-#			 affixes/propernouns.lexc \
-#			 affixes/verbs.lexc \
-#			 affixes/digits.lexc \
-#			 stems/adjectives.lexc \
-#			 stems/nouns.lexc \
-#			 stems/numerals.lexc \
-#			 stems/prefixes.lexc \
-#			 stems/pronouns.lexc \
-#			 stems/digits.lexc \
-#			 stems/verbs.lexc
 
 # If you are building an error-detecting L2 analyser, specify the lexc files
 # that differ between the regular L1 and the L2 analysers below, in L1 and
@@ -81,7 +76,14 @@ GENERATED_LEXC_SRCS=generated_files/punctuation.lexc \
 GT_XML_SRCS=
 
 # Define any additional lexc sources here (compiled on their own):
-GT_LOCAL_SRCS=overriding-exceptions.all.lexc numbers.lexc
+GT_LOCAL_SRCS=\
+				pair_initial.tmp.lexc \
+				pair_final.tmp.lexc \
+				num_initial.tmp.lexc \
+				num_final.tmp.lexc \
+				guesser.tmp0.lexc
+#				punctuation.tmp.lexc
+#				acronyms.tmp.lexc 
 
 # Define local xfscripts here:
 GT_LOCAL_XFSCRIPT_SRCS=
@@ -90,20 +92,43 @@ GT_LOCAL_XFSCRIPT_SRCS=
 GT_DISTRO_SRCS=
 
 ### BEGIN: Local processing: ###
+EST_AFFIX_FILES=$(srcdir)/affixes/regular_declinations \
+				$(srcdir)/affixes/exceptional_declinations \
+				$(srcdir)/affixes/verbs \
+				$(srcdir)/affixes/gi
 
-### List additional targets in the following variable, for build targets not
-### covered by other means. This comes ***in addition to*** what you can do by
-### just targeting lexicon.*: lexicon.tmp.*, and is useful if you want to build
-### separate fst's that need further treatment in the src/ dir. See the language
-### gle/ for an example of how this is used.
+# make the parts inflect 
+# by re-using root.lexc and affixes, and omitting all the stem lexicons
+# ... and remove the flag diacritics from initial parts (why? because otherwise the filter that 
+# puts the initial and final part together doesn't work ?)
+ 
+pair_initial.tmp.lexc: pair_initial.lexc $(GT_LEXC_ROOT) $(EST_AFFIX_FILES:%=%.lexc)
+	$(AM_V_GEN)cat $(GT_LEXC_ROOT) | sed '/^ *LEXICON  *Root/,$$d' > $@ && \
+			   cat $< >> $@ && \
+			   cat $(EST_AFFIX_FILES:%=%.lexc) | sed 's/@.\.[^@]*@//g' >> $@
 
-GIELLA_LOCAL_TARGETS=
+num_initial.tmp.lexc: num_initial.lexc $(GT_LEXC_ROOT) $(EST_AFFIX_FILES:%=%.lexc)
+	$(AM_V_GEN)cat $(GT_LEXC_ROOT) | sed '/^ *LEXICON  *Root/,$$d' > $@ && \
+			   cat $< >> $@ && \
+			   cat $(EST_AFFIX_FILES:%=%.lexc) | sed 's/@.\.[^@]*@//g' >> $@
 
-multichars.txt:	root.lexc
-	$(AM_V_GEN)sed -e '/^LEXICON/,$$ d' $^ > $@
+pair_final.tmp.lexc: pair_final.lexc $(GT_LEXC_ROOT) $(EST_AFFIX_FILES:%=%.lexc)
+	$(AM_V_GEN)cat $(GT_LEXC_ROOT) | sed '/^ *LEXICON  *Root/,$$d' > $@ && \
+			   cat $< >> $@ && \
+			   cat $(EST_AFFIX_FILES:%=%.lexc) >> $@
 
-overriding-exceptions.all.lexc:	multichars.txt overriding-exceptions.lexc
-	$(AM_V_GEN)cat $^ > $@
+num_final.tmp.lexc: num_final.lexc $(GT_LEXC_ROOT) $(EST_AFFIX_FILES:%=%.lexc)
+	$(AM_V_GEN)cat $(GT_LEXC_ROOT) | sed '/^ *LEXICON  *Root/,$$d' > $@ && \
+			   cat $< >> $@ && \
+			   cat $(EST_AFFIX_FILES:%=%.lexc) >> $@
+
+# guesser:
+# re-using root.lexc and affixes
+guesser.tmp0.lexc: guesser.lexc $(GT_LEXC_ROOT) $(EST_AFFIX_FILES:%=%.lexc)
+	$(AM_V_GEN)cat $(GT_LEXC_ROOT) | sed '/^ *LEXICON  *Root/,$$d' > $@ && \
+			   cat $< >> $@ && \
+			   cat $(EST_AFFIX_FILES:%=%.lexc) >> $@
+
 
 ### END: Local processing: ###
 

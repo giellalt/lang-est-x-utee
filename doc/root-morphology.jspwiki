@@ -1,78 +1,584 @@
 
-!!!Estonian morphological tags
+!!!Morphology
 
-part of speech
-
- * +Symbol = independent symbols in the text stream, like £, €, ©
+!!Multicharacter symbols
 
 
-derivation suffixes, used to filter out illegal combinations internally
+!Sõnaliik / Part of speech
+
+ * {{+N }}: nimisõna		/ substantive		
+ * {{+A }}: omadussõna		/ adjective		
+ * {{+Num }}: arvsõna		/ numeral
+ * {{+Pron }}: asesõna		/ pronoun		
+ * {{+V }}: tegusõna 		/ verb			
+ * {{+Adv }}: määrsõna		/ adverb		
+ * {{+Interj }}: hüüdsõna		/ interjection		
+ * {{+CC }}: rinnastav sidesõna		/ co-ordinating conjunction
+ * {{+CS }}: alistav sidesõna		/ subordinating conjunction		
+ * {{+Adp }}: kaassõna	/ adposition, i.e. pre/postposition	
+ * {{+Pref }}: prefiks         / prefix				
+
+Genitiivatribuut pole eraldi kategooria / No special tag for genitive attribute : ''angoora+N+Sg+Gen''	
+
+!Alamkategooriad / Sub-pos categories
+
+ * {{+Prop }}: pärisnimi	/ proper name		
+ * {{+Card }}: põhiarvsõna	/ cardinal numeral
+ * {{+Ord }}: järgarvsõna	/ ordinal numeral
+
+!Võrdlusastmed / Comparation
+
+ * {{+Comp }}: komparatiiv	/ comparative
+ * {{+Superl }}: superlatiiv	/ superlative
 
 
+__hfstol: examples:__
+* __asi: __ {{asi+N+Sg+Nom }} (Eng. # thing)
+* __Jaan: __ {{Jaan+N+Prop+Sg+Nom }}
+* __asjalik: __ {{asjalik+A+Sg+Nom }} (Eng. # serious)
+* __parem: __ {{parem+A+Comp+Sg+Nom }} (Eng. # better)
+* __parim: __ {{parim+A+Superl+Sg+Nom }} (Eng. # best)
+* __kaks: __ {{kaks+Num+Card+Sg+Nom }} (Eng. # two)
+* __teine: __ {{teine+Num+Ord+Sg+Nom }} (Eng. # second)
+* __see: __ {{see+Pron+Sg+Nom }} (Eng. # that)
+* __asjastama: __ {{asjastama+V+Pers+Sup+Ill }} (Eng. # objectify)
+* __asjatult: __ {{asjatult+Adv }} (Eng. # in vain)
+* __hei: __ {{hei+Interj }} (Eng. # hi)
+* __ja: __ {{ja+CC }} (Eng. # and)
+* __et: __ {{et+CS }} (Eng. # that)
+* __kaudu: __ {{kaudu+Adp }} (Eng. # via)
+* __eba-: __ {{eba+Pref }} (Eng. # un-, non-)
+
+!Sõnamuutus / Inflection
+
+!Käändsõna             / Noun
+
+!Arv 			/ number
+
+ * {{+Sg }}: ainsus	/ singular
+ * {{+Pl }}: mitmus	/ plural
+
+!Kääne	/ Case
+
+ * {{+Nom }}: nimetav			/ nominative	
+* __part: __ {{part+N+Sg+Nom }}
+* __maja: __ {{maja+N+Sg+Nom }}
+* __pardid: __ {{part+N+Pl+Nom }}
+* __majad: __ {{maja+N+Pl+Nom }}
+
+ * {{+Gen }}: omastav 			/ genitive	
+* __pardi: __ {{part+N+Sg+Gen }}
+* __maja: __ {{maja+N+Sg+Gen }}
+* __partide: __ {{part+N+Pl+Gen }}
+* __majade: __ {{maja+N+Pl+Gen }}
+
+ * {{+Par }}: osastav			/ partitive	
+* __parti: __ {{part+N+Sg+Par }}
+* __maja: __ {{maja+N+Sg+Par }}
+* __parte: __ {{part+N+Pl+Par }}
+* __partisid: __ {{part+N+Pl+Par+Use/Rare }}
+* __maju: __ {{maja+N+Pl+Par }}
+* __majasid: __ {{maja+N+Pl+Par+Use/Rare }}
+
+ * {{+Ill }}: sisseütlev			/ illative	
+* __parti: __ {{part+N+Sg+Ill }}
+* __majja: __ {{maja+N+Sg+Ill }}
+* __pardisse: __ {{part+N+Sg+Ill+Use/Hyp }}
+* __majasse: __ {{maja+N+Sg+Ill+Use/Rare }}
+* __partidesse: __ {{part+N+Pl+Ill }}
+* __majadesse: __ {{maja+N+Pl+Ill }}
+Lühike sisseütlev e suunduv pole eraldi kääne (''parti'', ''majja'') / Short illative or additive is not a separate case 
+
+ * {{+Ine }}: seesütlev			/ inessive	
+* __pardis: __ {{part+N+Sg+Ine }}
+* __majas: __ {{maja+N+Sg+Ine }}
+* __partides: __ {{part+N+Pl+Ine }}
+* __majades: __ {{maja+N+Pl+Ine }}
+
+ * {{+Ela }}: seestütlev			/ elative	
+* __pardist: __ {{part+N+Sg+Ela }}
+* __majast: __ {{maja+N+Sg+Ela }}
+* __partidest: __ {{part+N+Pl+Ela }}
+* __majadest: __ {{maja+N+Pl+Ela }}
+
+ * {{+All }}: alaleütlev			/ allative	
+* __pardile: __ {{part+N+Sg+All }}
+* __majale: __ {{maja+N+Sg+All }}
+* __partidele: __ {{part+N+Pl+All }}
+* __majadele: __ {{maja+N+Pl+All }}
+
+ * {{+Ade }}: alalütlev			/ adessive	
+* __pardil: __ {{part+N+Sg+Ade }}
+* __majal: __ {{maja+N+Sg+Ade }}
+* __partidel: __ {{part+N+Pl+Ade }}
+* __majadel: __ {{maja+N+Pl+Ade }}
+
+ * {{+Abl }}: alaltütlev			/ ablative	
+* __pardilt: __ {{part+N+Sg+Abl }}
+* __majalt: __ {{maja+N+Sg+Abl }}
+* __partidelt: __ {{part+N+Pl+Abl }}
+* __majadelt: __ {{maja+N+Pl+Abl }}
+
+ * {{+Tra }}: saav				/ translative	
+* __pardiks: __ {{part+N+Sg+Tra }}
+* __majaks: __ {{maja+N+Sg+Tra }}
+* __partideks: __ {{part+N+Pl+Tra }}
+* __majadeks: __ {{maja+N+Pl+Tra }}
+
+ * {{+Trm }}: rajav				/ terminative	
+* __pardini: __ {{part+N+Sg+Trm }}
+* __majani: __ {{maja+N+Sg+Trm }}
+* __partideni: __ {{part+N+Pl+Trm }}
+* __majadeni: __ {{maja+N+Pl+Trm }}
+
+ * {{+Ess }}: olev				/ essive	
+* __pardina: __ {{part+N+Sg+Ess }}
+* __majana: __ {{maja+N+Sg+Ess }}
+* __partidena: __ {{part+N+Pl+Ess }}
+* __majadena: __ {{maja+N+Pl+Ess }}
+
+ * {{+Abe }}: ilmaütlev			/ abessive	
+* __pardita: __ {{part+N+Sg+Abe }}
+* __majata: __ {{maja+N+Sg+Abe }}
+* __partideta: __ {{part+N+Pl+Abe }}
+* __majadeta: __ {{maja+N+Pl+Abe }}
+
+ * {{+Com }}: kaasaütlev			/ comitative	
+* __pardiga: __ {{part+N+Sg+Com }}
+* __majaga: __ {{maja+N+Sg+Com }}
+* __partidega: __ {{part+N+Pl+Com }}
+* __majadega: __ {{maja+N+Pl+Com }}
+
+!Verb
+
+Verbil on finiitsed (pöördelised) ja infiniitsed (nn käänduvad) vormid. 
+Pöördelistel vormidel on kategooriad: 
+tegumood, aeg, kõneviis, isik, arv, kõneliik
+(tegumood ja aeg on ka mõnedel infiniitsetel vormidel).
+
+Verbs have finite (conjugable) and infinite ("declinable") forms.
+The finite forms have categories: 
+voice, tense, mood, person, number, negation
+(some infinite forms also have voice and tense).
+
+!Pöördelised vormid / Conjugable forms
+
+!Tegumood		/ Voice
+
+ * {{+Impers }}: umbisikuline	/ impersonal
+ * {{+Pers }}: isikuline	/ personal
+
+!Aeg			/ Tense
+
+ * {{+Prs }}: olevik	/ present
+ * {{+Prt }}: minevik	/ past (i.e. not present)
+
+Lihtminevik = minevik / Past imperfect = past
+
+Täisminevik / Past perfect: ''olema'' (pres) + ''nud/tud/dud'' (''olen teinud'')
+
+Enneminevik / Past pluperfect: ''olema'' (impf) + ''nud/tud/dud'' (''olin teinud'')
+
+!Kõneviis		/ Mood
+
+ * {{+Ind }}: kindel	/ indicative
+ * {{+Cond }}: tingiv	/ conditional
+ * {{+Imprt }}: käskiv	/ imperative / jussive
+ * {{+Quot }}: kaudne	/ quotative
+
+!Pööre ja arv	/ Person and number
+
+ * {{+Sg1 }}: ainsuse 1. pööre	/ singular 1st person
+ * {{+Sg2 }}: ainsuse 2. pööre	/ singular 2nd person
+ * {{+Sg3 }}: ainsuse 3. pööre	/ singular 3rd person
+ * {{+Pl1 }}: mitmuse 1. pööre	/ plural   1st person
+ * {{+Pl2 }}: mitmuse 2. pööre	/ plural   2nd person
+ * {{+Pl3 }}: mitmuse 3. pööre	/ plural   3rd person
+
+!Kõneliik		/ Polarity
+
+ * {{+Aff }}: jaatav kõne	/ affirmative
+ * {{+Neg }}: eitav kõne	/ negative
+
+!Infiniitsed (nn käänduvad) verbivormid / Infinite ("declinable") verb forms
+
+ * {{+Sup }}: ma-tegevusnimi / supine (ma-infinitive)
+
+ * {{+Inf }}: da-tegevusnimi / infinitive (da-infinitive)a
+
+ * {{+Ger }}: des-vorm	 / gerund (des-form)	
+
+ * {{+Prc }}: kesksõna	 / participle
 
 
+!Kategooriate võimalikud kombinatsioonid / Possible combinations of categories
+
+allikas / source :
+[Heiki-Jaan Kaalep. Eesti verbi vormistik. Keel ja kirjandus 1/2015 lk 1-15.|http://kjk.eki.ee/ee/issues/2015/1/582] 
+
+The categories are given in the order in which the allomorphs (if they can be
+distinguished) that represent them are attached to the word stem (note that the
+treatment of allomorphs is sloppy here). The justification is that the
+categories are not equal, but form an hierarchy: those closer to the word end 
+tend to be more optional, more often non-specified.   
+
+# __voice:__ personal vs. impersonal (0-morph vs. ''t/d(aiu)''), eg. ''elaks'' vs.
+ ''elataks'', ''elav'' vs. ''elatav''
+# __tense:__ present vs. past (0-morph vs. ''s/si/nu''), e.g. ''elan'' vs. ''elasin'',
+ ''elaks'' vs. ''elanuks''
+# __mood:__ indicative vs. conditional vs imperative vs quotative
+ (0-morph vs. ''ks'' vs. ''k/g(ue)'' vs. ''vat'')
+# __person+number:__ notice that in personal present and past conditional, imperative 
+ and quotative moods one form is underspecified for person+number
+# __negation:__ affirmative vs. negative. It manifests itself via
+ lexical means: it is either present in an exceptional wordform (some forms of
+ ''olema'') or gets adhered to a form, normally used in affirmative,
+ from an immediately preceding word ''ei'', ''ega'' or ''ära'' (e.g. ''ei elaks'').
+ The only case when negation has a dedicated form of its own is impersonal
+ present indicative negative (e.g. ''ei elata'').  
+
+The forms of negative words ''pole'' and ''ära'' are included in order to capture really all 
+ the combinations; 
+also note that for ''olema'', there are some constellations of categories that are the same for
+a wordform beginning with ''ole-'' and ''pole-'' 
+
+!---- Personal finite forms ----
+
+* __elan: __ {{elama+V+Pers+Prs+Ind+Sg1+Aff }}
+* __elad: __ {{elama+V+Pers+Prs+Ind+Sg2+Aff }}
+* __elab: __ {{elama+V+Pers+Prs+Ind+Sg3+Aff }}
+* __elame: __ {{elama+V+Pers+Prs+Ind+Pl1+Aff }}
+* __elate: __ {{elama+V+Pers+Prs+Ind+Pl2+Aff }}
+* __elavad: __ {{elama+V+Pers+Prs+Ind+Pl3+Aff }}
+
+\\
+* __ela: __ {{elama+V+Pers+Prs+Ind+Neg }}
+* __pole: __ {{olema+V+Pers+Prs+Ind+Neg }}
+* __ole: __ {{olema+V+Pers+Prs+Ind+Neg }}
+
+NB! ''ei ole'' = ''pole''
 
 
+* __elaksin: __ {{elama+V+Pers+Prs+Cond+Sg1+Aff }}
+* __elaksid: __ {{elama+V+Pers+Prs+Cond+Sg2+Aff }}
+* __elaks: __ {{elama+V+Pers+Prs+Cond }}
+* __elaksime: __ {{elama+V+Pers+Prs+Cond+Pl1+Aff }}
+* __elaksite: __ {{elama+V+Pers+Prs+Cond+Pl2+Aff }}
+* __elaksid: __ {{elama+V+Pers+Prs+Cond+Pl3+Aff }}
+
+\\
+* __poleksin: __ {{olema+V+Pers+Prs+Cond+Sg1+Neg }}
+* __poleksid: __ {{olema+V+Pers+Prs+Cond+Sg2+Neg }}
+* __poleks: __ {{olema+V+Pers+Prs+Cond+Neg }}
+* __poleksime: __ {{olema+V+Pers+Prs+Cond+Pl1+Neg }}
+* __poleksite: __ {{olema+V+Pers+Prs+Cond+Pl2+Neg }}
+* __poleksid: __ {{olema+V+Pers+Prs+Cond+Pl3+Neg }}
+
+\\
+* __ela: __ {{elama+V+Pers+Prs+Imprt+Sg2 }}
+* __elagu: __ {{elama+V+Pers+Prs+Imprt }}
+* __elagem: __ {{elama+V+Pers+Prs+Imprt+Pl1 }}
+* __elage: __ {{elama+V+Pers+Prs+Imprt+Pl2 }}
+
+\\
+* __ära: __ {{ära+V+Pers+Prs+Imprt+Sg2+Neg }}
+* __ärgu: __ {{ära+V+Pers+Prs+Imprt+Neg }}
+* __ärgem: __ {{ära+V+Pers+Prs+Imprt+Pl1+Neg }}
+* __ärme: __ {{ära+V+Pers+Prs+Imprt+Pl1+Neg+Use/Rare }}
+* __ärge: __ {{ära+V+Pers+Prs+Imprt+Pl2+Neg }}
+
+\\
+* __elavat: __ {{elama+V+Pers+Prs+Quot }}
+* __polevat: __ {{olema+V+Pers+Prs+Quot+Neg }}
+
+\\ 
+* __elasin: __ {{elama+V+Pers+Prt+Ind+Sg1+Aff }}
+* __elasid: __ {{elama+V+Pers+Prt+Ind+Sg2+Aff }}
+* __elas: __ {{elama+V+Pers+Prt+Ind+Sg3+Aff }}
+* __elasime: __ {{elama+V+Pers+Prt+Ind+Pl1+Aff }}
+* __elasite: __ {{elama+V+Pers+Prt+Ind+Pl2+Aff }}
+* __elasid: __ {{elama+V+Pers+Prt+Ind+Pl3+Aff }}
+
+\\
+* __elanud: __ {{elama+V+Pers+Prt+Ind+Neg }}
+* __polnud: __ {{olema+V+Pers+Prt+Ind+Neg }}
+* __olnud: __ {{olema+V+Pers+Prt+Ind+Neg }}
+
+NB! ''ei olnud'' = ''polnud''
 
 
+* __elanuksin: __ {{elama+V+Pers+Prt+Cond+Sg1+Aff }}
+* __elanuksid: __ {{elama+V+Pers+Prt+Cond+Sg2+Aff }}
+* __elanuks: __ {{elama+V+Pers+Prt+Cond }}
+* __elanuksime: __ {{elama+V+Pers+Prt+Cond+Pl1+Aff }}
+* __elanuksite: __ {{elama+V+Pers+Prt+Cond+Pl2+Aff }}
+* __elanuksid: __ {{elama+V+Pers+Prt+Cond+Pl3+Aff }}
+
+\\
+* __polnuksin: __ {{olema+V+Pers+Prt+Cond+Sg1+Neg }}
+* __polnuksid: __ {{olema+V+Pers+Prt+Cond+Sg2+Neg }}
+* __polnuks: __ {{olema+V+Pers+Prt+Cond+Neg }}
+* __polnuksime: __ {{olema+V+Pers+Prt+Cond+Pl1+Neg }}
+* __polnuksite: __ {{olema+V+Pers+Prt+Cond+Pl2+Neg }}
+* __polnuksid: __ {{olema+V+Pers+Prt+Cond+Pl3+Neg }}
+
+\\
+elanud: elama+V+Pers+Prt+Imprt: 1.11.2016 ei genereerita ega tunta ära / not recognized nor generated as of Nov 1, 2016
+* __ärnud: __ {{ära+V+Pers+Prt+Imprt+Neg }}
+
+\\
+* __elanuvat: __ {{elama+V+Pers+Prt+Quot }}
+* __polnuvat: __ {{olema+V+Pers+Prt+Quot+Neg }}
+
+!---- Personal infinite forms ----
+
+* __elav: __ {{elama+V+Pers+Prs+Prc }}
+* __elanud: __ {{elama+V+Pers+Prt+Prc }}
+
+         (on, oli, ...) + V+Pers+Prt+Prc = some analytical personal form 
+
+* __elama: __ {{elama+V+Pers+Sup+Ill }}
+* __elamas: __ {{elama+V+Pers+Sup+Ine }}
+* __elamast: __ {{elama+V+Pers+Sup+Ela }}
+* __elamaks: __ {{elama+V+Pers+Sup+Tra }}
+* __elamata: __ {{elama+V+Pers+Sup+Abe }}
+
+!---- Impersonal finite forms ----
+
+* __elatakse: __ {{elama+V+Impers+Prs+Ind+Aff }}
+* __elata: __ {{elama+V+Impers+Prs+Ind+Neg }}
+
+* __polda: __ {{olema+V+Impers+Prs+Ind+Neg }}
+* __olda: __ {{olema+V+Impers+Prs+Ind+Neg }}
+
+NB! ei olda = polda
+
+* __elataks: __ {{elama+V+Impers+Prs+Cond }}
+* __poldaks: __ {{olema+V+Impers+Prs+Cond+Neg }}
+
+\\
+* __elatagu: __ {{elama+V+Impers+Prs+Imprt }}
+* __ärdagu: __ {{ära+V+Impers+Prs+Imprt+Neg }}
+
+\\
+* __elatavat: __ {{elama+V+Impers+Prs+Quot }}
+* __poldavat: __ {{olema+V+Impers+Prs+Quot+Neg }}
+
+\\
+* __elati: __ {{elama+V+Impers+Prt+Ind+Aff }}
+* __elatud: __ {{elama+V+Impers+Prt+Ind+Neg }}
+
+* __poldud: __ {{olema+V+Impers+Prt+Ind+Neg }}
+* __oldud: __ {{olema+V+Impers+Prt+Ind+Neg }}
+
+NB! ei oldud = poldud
+
+* __elatuks: __ {{elama+V+Impers+Prt+Cond }}
+* __polduks: __ {{olema+V+Impers+Prt+Cond+Neg }}
+
+!---- Impersonal infinite forms ----
+
+* __elatav: __ {{elama+V+Impers+Prs+Prc }}
+* __elatud: __ {{elama+V+Impers+Prt+Prc }}
+
+(''on'', ''oli'', ...) + V+Impers+Prt+Prc = some analytical personal form 
 
 
+* __elatama: __ {{elama+V+Impers+Sup }}
+
+!---- Infinite forms with no voice category ----
+
+* __elada: __ {{elama+V+Inf }}
+* __elades: __ {{elama+V+Ger }}
+
+!Exceptional cases:
+
+personal present (Prs not implemented????), 3 words:  ''kuulukse'', ''tunnukse'', ''näikse''
+
+* __kuulukse: __ {{kuulukse+V }}
+
+!Negation verb 
+
+* __ei: __ {{ei+V+Neg }}
+
+Analytical forms (''olen elanud'', ''olin elanud'', ''oleksin elanud'', ''ei olnud elanud'',
+''ei olnuks elanud'' etc) are not treated here...
+
+!Partikkel -gi/-ki / Particle -gi/-ki
+
+ * {{+Foc/gi }}
+* __pulkki: __ {{pulk+N+Sg+Nom+Foc/gi }}
+
+! Kasutust (sagedust jm) iseloomustavad märgendid / Usage-related tags
+
+ * {{+Emph }}: long inflectional forms of personal pronouns ''mina'', ''sina'', ''tema'', ''meie'', ''teie'', ''nemad''
+* __temale: __ {{tema+Pron+Sg+All+Emph }}
+
+!Paralleelvormide erinevat kasutussagedust iseloomustavad / Usage info for parallel forms (either correct according to the norm, or incorrect)
+
+ * {{+Use/Rare }}: norm, but rare 
+* __puusid: __ {{puu+N+Pl+Par+Use/Rare }}
+
+ * {{+Use/Hyp }}:  norm, but so rare that norm is probaly wrong 
+* __tiivasse: __ {{tiib+N+Sg+Ill+Use/Hyp }}
+
+ * {{+Use/NotNorm }}:  not norm, but sometimes used 
+* __pöidlates: __ {{pöial+N+Pl+Ine+Use/NotNorm }}
+
+ * {{+Use/CommonNotNorm }}:  not norm, and used more than norm 
+* __kööment: __ {{köömen+N+Sg+Par+Use/CommonNotNorm }}
+
+Oletatav analüüs / Guessed analysis
+ * {{+Guess }}: guessed analysis
+
+!Tuletus / Derivation
+
+!Eesliited on harvad, aga ikkagi ... / Prefixes are seldom used, but still...
+
+ * {{+Pref }}
+* __taasriigistama: __ {{taas+Pref#riigistama+V+Pers+Sup+Ill }}
+* __reinvesteerima: __ {{re+Pref#investeerima+V+Pers+Sup+Ill }}
+
+!Järelliited / Suffixes
+
+V --> N
+
+ * {{+Der/mine }}
+* __jahumine: __ {{jahuma+V+Der/mine+N+Sg+Nom }}
+
+ * {{+Der/ja }}
+* __jahuja: __ {{jahuma+V+Der/ja+N+Sg+Nom }}
+
+ * {{+Der/nu }}
+* __elanu: __ {{elama+V+Der/nu+N+Sg+Nom }}
+
+ * {{+Der/mus }}
+* __küllastumus: __ {{küllastuma+V+Der/mus+N+Sg+Nom }}
+
+ * {{+Der/ng }}
+* __devalveering: __ {{devalveerima+V+Der/ng+N+Sg+Nom }}
+
+V --> A
+
+ * {{+Der/v }}
+* __jahuv: __ {{jahuma+V+Der/v+A+Sg+Nom }}
+
+ * {{+Der/tav }}
+* __öeldav: __ {{ütlema+V+Der/tav+A+Sg+Nom }}
+
+ * {{+Der/nud }}
+* __elanud: __ {{elama+V+Der/nud+A+Sg+Nom }}
+
+ * {{+Der/mata }}
+* __elamata: __ {{elama+V+Der/mata+A }}
+
+ * {{+Der/matu }}
+* __segamatu: __ {{segama+V+Der/matu+A+Sg+Nom }}
+
+ * {{+Der/tamatu }}
+* __mõeldamatu: __ {{mõtlema+V+Der/tamatu+A+Sg+Nom }}
+
+ * {{+Der/tu }}
+* __elatu: __ {{elama+V+Der/tu+A+Sg+Nom }}
+
+ * {{+Der/tud }}
+* __elatud: __ {{elama+V+Der/tud+A }}
+
+N --> A
+
+ * {{+Der/lik }}
+* __kotkalik: __ {{kotkas+N+Der/lik+A+Sg+Nom }}
+
+ * {{+Der/line }}
+* __põõsaline: __ {{põõsas+N+Der/line+A+Sg+Nom }}
+* __onomastiline: __ {{onomastika+N+Der/line+A+Sg+Nom }}
+* __apooriline: __ {{apooria+N+Der/line+A+Sg+Nom }}
+
+ * {{+Der/ne }}
+
+A --> Adv
+
+ * {{+Der/lt }}
+* __roosalt: __ {{roosa+A+Der/lt+Adv }}
+
+ * {{+Der/sti }}
+* __valusasti: __ {{valus+A+Der/sti+Adv }}
+
+ * {{+Der/ini }}
+* __paremini: __ {{parem+A+Comp+Der/ini+Adv }}
+
+A --> A
+
+ * {{+Der/m }}
+* __valusam: __ {{valus+A+Der/m+A+Comp+Sg+Nom }}
+
+ * {{+Der/im }}
+* __valusaim: __ {{valus+A+Der/im+A+Superl+Sg+Nom }}
+
+N --> N
+
+ * {{+Der/nna }}
+* __õmblejanna: __ {{õmbleja+N+Der/nna+N+Sg+Nom }}
+
+ * {{+Der/kond }}
+* __vaatajaskond: __ {{vaatama+V+Der/ja+N+Der/kond+N+Sg+Nom }}
+
+ * {{+Der/ist }}
+* __kapitalist: __ {{kapitalism+N+Der/ist+N+Sg+Nom }}
+
+A --> N, V --> N
+
+ * {{+Der/us }}
+* __porisus: __ {{porine+A+Der/us+N+Sg+Nom }}
+* __õpetus: __ {{õpetama+V+Der/us+N+Sg+Nom }}
+
+N --> Adv
+
+ * {{+Der/ti }}
+* __lauati: __ {{laud+N+Der/ti+Adv }}
+
+ * {{+Der/lane }}:  helveetslane:Helveetsia+N+Prop+Der/lane+N+Sg+Nom
+* __firenzelane: __ {{Firenze+N+Prop+Der/lane+N+Sg+Nom }}
+* __helveetslane: __ {{Helveetsia+N+Prop+Der/lane+N+Sg+Nom }}
+
+N --> N, A --> A
+
+ * {{+Dim/ke }}:  diminutive 
+* __põõsake: __ {{põõsas+N+Dim/ke+Sg+Nom }}
+
+ * {{+Der/minus }}:  shortening stem 
+* __vaatamis-: __ {{vaatamine+N+Der/minus }}
+* __astraal-: __ {{astraalne+A+Der/minus }}
+
+Num --> N
+
+ * {{+Der/kas }}
+* __kolmekas: __ {{kolm+Num+Card+Der/kas+N+Sg+Nom }}
 
 
+!Muud / Other tags
+Copied from Sami root.lexc
+
+!Symbols that need to be escaped on the lower side (towards twolc):
+
+* »
+* «
+* > (escaped with square brackets, to avoid collision with > as morpheme boundary)
+* < (escaped with square brackets, to avoid collision with < as morpheme boundary)
 
 
+ * '7  7 is the real apostrophe ?? 
 
+ * {{+Use/Circ }}: for arabic and roman numerals
 
-
-
-
-
-
-
-
-
-
-
-
-
-!!Symbols that need to be escaped on the lower side (towards twolc):
-
-* »7 = literal », as plain » is reserved for use as a derivation morpheme boundary symbol
-* «7 = literal «, as plain « is reserved for use as a derivation morpheme boundary symbol
-* [[>] = literal > escaped with square brackets, to avoid collision with > as morpheme boundary)
-* [[<] = literal < escaped with square brackets, to avoid collision with < as morpheme boundary)
-
-
-
-
-
-
-
-
-
-
+ * {{+ABBR }}: Lühend / Abbreviation
+ * {{+ACR }}: Suurtähtlühend / Acronym
+ * {{+CLB }}: Osalause piir (punkt, koma) / Clause border (full stop, comma..)
+ * {{+PUNCT }}: Kirjavahemärk / Punctuation
+ * {{+LEFT }}: Kirjavahemärgi asetus / Punctuation orientation
+ * {{+RIGHT }}: Kirjavahemärgi asetus / Punctuation orientation
 
 !!Flag diacritics
-We have manually optimised the structure of our lexicon using following
-flag diacritics to restrict morhpological combinatorics - only allow compounds
-with verbs if the verb is further derived into a noun again:
- | @P.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
- | @D.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
- | @C.NeedNoun@ | (Dis)allow compounds with verbs unless nominalised
-
-For languages that allow compounding, the following flag diacritics are needed
-to control position-based compounding restrictions for nominals. Their use is
-handled automatically if combined with +CmpN/xxx tags. If not used, they will
-do no harm.
- | @P.CmpFrst.FALSE@ | Require that words tagged as such only appear first
- | @D.CmpPref.TRUE@ | Block such words from entering ENDLEX
- | @P.CmpPref.FALSE@ | Block these words from making further compounds
- | @D.CmpLast.TRUE@ | Block such words from entering R
- | @D.CmpNone.TRUE@ | Combines with the next tag to prohibit compounding
- | @U.CmpNone.FALSE@ | Combines with the prev tag to prohibit compounding
- | @P.CmpOnly.TRUE@ | Sets a flag to indicate that the word has passed R
- | @D.CmpOnly.FALSE@ | Disallow words coming directly from root.
-
 Use the following flag diacritics to control downcasing of derived proper
 nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 these flags. There exists a ready-made regex that will do the actual down-casing
@@ -80,6 +586,127 @@ given the proper use of these flags.
  | @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
  | @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
 
+These are used for limiting the number of components in a compound word
+(the compound transducer is cyclic, but in reality there is a limit to the length of words)
+ | @D.Part@ | No part of a compound should have been encountered yet
+ | @P.Part.One@ | Indicate that this could be the first part of a compound
+ | @R.Part.One@ | Require that the first part has been encountered 
+ | @D.Part.One@ | Require that the first part has NOT been encountered 
+ | @P.Part.Two@ | Indicate that this could be the second part of a compound
+ | @R.Part.Two@ | Require that the second part has been encountered
+ | @P.Part.Three@ | Indicate that this could be the third part of a compound
+ | @P.Part.Bad@ | Indicate that this cannot be a part of a compound
+
+POS is used for filtering derivations and compounds
+ | @R.POS.NumCardCompound@ | compound numeral (viis+sada - five hundred)
+
+Case is used for filtering derivations and compounds
+
+Remember there has been some derivation from A or N; for filtering compounds
+derivation from V is called paradigmatic and does not result in Der; just a new POS... 
+
+Remember the stem type; for filtering compounds 
+
+
+A special condition that is used for filtering derivations and compounds
+
+Sg Nom is allowed as first part of a compound only for some words
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Legitimate strings that are not words: numbers, acronyms, ...
+
+
+
+
+
+
+
+!!Lexicons  
+
+ * {{LEXICON Root }} is the starting point of everything
+
+This is actually a loop, formed after applying Kleene star 
+concatenation on the simple word transducer with itself.
+When looping, it remembers which paths it has taken in every loop. 
+For remembering it sets up flags on the path:
+1. flag the first 3 loops (thus forbidding any more loops)
+2. in every loop, flag the POS and inflection, to be used in the following loop
+Different paths may result in the same output string, 
+e.g. mootoriõlilik = (mootori+õli)+lik and (mootori)+(õli+lik)
+
+strictly simplex word; cannot be a part of a compound
+a simplex word, or the first part of a compound
+
+
+ * {{@D.Part@@P.Part.Two@@P.NeedPartThree.On@@P.POS.Num@ CardinalNumbersInComp ;   }} 5-autone etc
+
+
+
+strictly simplex words; cannot be a part of a compound
+
+ * {{  Abbreviations ;             }}
+ * {{  Adpositions ;             }}
+ * {{  Conjunctions ;            }}
+ * {{  NoninflectingVerbs ;      }}
+ * {{  CardinalNumbersSingle ;      }}
+ * {{  OrdinalNumbers ;          }}
+ * {{  Punctuation ;          }}
+
+ * {{LEXICON First     }} a simplex word or the first part of a compound 
+
+ * {{  @P.POS.A@ Adjectives ;              }}
+ * {{  @P.POS.A@ NoninflectingAdjectives ; }}
+ * {{  @P.POS.AComp@ ComparativeAdjectives ;   }}
+ * {{  @P.POS.AComp@ SuperlativeAdjectives ;   }}  ! Superl = Comp in compounding
+ * {{  @P.POS.Adv@ Adverbs ;                 }}
+ * {{  @P.POS.N@ Nouns ;                   }}
+ * {{  @P.POS.NProp@@U.Cap.Obl@ ProperNouns ; }}  ! always uppercase
+ * {{  @P.POS.NProp@@U.Cap.Opt@ ProperNouns ; }}  ! downcased for derivations
+ * {{  @P.POS.IntNum@ IntegerNumerals ;                }}
+ * {{  @P.POS.NonIntNum@ NonIntegerNumerals ;                }}
+ * {{  @P.POS.NumOrd@ OrdinalNumerals ;                }}
+ * {{  @P.POS.Pron@ Pronouns ;                }}
+ * {{  @P.POS.V@ Verbs ;                   }}
+ * {{  @P.POS.Interj@ Interjections ;           }}
+ * {{  @P.POS.GA@@P.Case.Gen@ GenitiveAttributes ;      }}
+ * {{  @P.POS.Pref@ Prefixes ;                }}
+ * {{  @P.POS.ACR@ Acronyms ;          }}
+
+
+ * {{LEXICON Latter }} the latter part of a compound
 
 
 
@@ -119,11 +746,30 @@ given the proper use of these flags.
 
 
 
+ * {{  @P.POS.A@@C.Der@@C.Stem@ Adjectives ;              }}
+
+
+ * {{  @P.POS.A@@C.Der@@C.Stem@ Adjectives_ne ;              }}
+järguline	järk+N+Der/line+A  redellik redel+N+Der/lik+A     NOT -autone
+
+
+ * {{  @P.POS.A@@C.Der@@C.Stem@ Adjectives_v ;              }}
+
+
+ * {{  @P.POS.A@@C.Der@@C.Stem@ PlainAdjectives ;              }}
+
+
+ * {{  @P.POS.AComp@@C.Der@@C.Stem@ ComparativeAdjectives ;              }}
+ * {{  @P.POS.AComp@@C.Der@@C.Stem@ SuperlativeAdjectives ;              }}
 
 
 
 
 
 
+ * {{  @P.Case.Gen@ LatterVerb ;                   }}
+
+
+ * {{  @P.POS.V@@C.Der@ Verbs ;                   }}
 
 

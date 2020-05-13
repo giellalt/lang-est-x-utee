@@ -1,0 +1,37 @@
+# remove non-gi forms of some words that *must* have gi
+# and the corresponding gi forms that should *not* have gi
+
+# these words *must* have gi
+define giw [
+        {kumbki} | {keegi} | {miski} | {eikeegi} | {eimiski}] ;
+
+#these words should *not* have gi/ki ever attached
+define nongiw [
+        {kumb} | {kes} | {mis} ] ;
+
+define GI [ "+Foc/gi" ] ;
+define PRON [ "+Pron" ] ;
+
+# e.g. kummagile 
+define NOTNORM [ "+Use/NotNorm" ] ;
+
+# make sure only word-final components are considered
+define WB [ "#" ] ;
+ 
+# giwords are wordforms that should end with gi/ki, 
+# so if they do not have either +Foc/gi or +Use/NotNorm, their surface form is wrong...
+
+define wronggiw [ \[WB]* giw PRON \[GI | NOTNORM | WB]* ] ;
+
+# nongiwords are wordforms that should not end with gi/ki, 
+# so if they have +Foc/gi, their surface form ends with gi and is wrong ...
+
+define wrongnongiw [ nongiw \[g | k | WB] \[i | WB] \[WB]* GI \[WB]* ] ;
+
+define goodwords [~wronggiw & ~wrongnongiw] ;
+
+# remove GI from certain wordforms
+define DelGI [ GI -> 0 || giw \[WB]* _ [ \[NOTNORM] | .#. ] ] ;
+
+regex [goodwords .o. DelGI].i ;
+

@@ -17,7 +17,11 @@ define CmpHyph       "@U.CmpHyph.TRUE@"       ;
 define LexRootFlag   "@P.LEXNAME.Root@"       ;
 define LexProperFlag "@P.LEXNAME.ProperNoun@" ;
 
-read regex [ 
+# The following flag diacritics are used for regulating (proper noun) compounding
+define CmpFlags   ["@D.Part@" | "@P.Part.Bad@" | "@P.Part.One@"
+| "@P.Part.Two@" | "@P.Part.Three@" | "@P.POS.NProp@" ] ;
+
+read regex [
 A -> a,
 B -> b,
 C -> c,
@@ -37,21 +41,22 @@ P -> p,
 Q -> q,
 R -> r,
 S -> s,
-Š -> š,
-Z -> z,
-Ž -> ž,
 T -> t,
 U -> u,
 V -> v,
 W -> w,
 X -> x,
 Y -> y,
-Õ -> õ,
-Ä -> ä,
-Ö -> ö,
-Ü -> ü
- || .#. ( LEXROOTFLAG ) DCASEFLAG ( LEXPROPERFLAG ) ( HYPHFLAG )       ( ? ) _ ,
-                        DCASEFLAG ( LEXPROPERFLAG ) ( HYPHFLAG ) ?* %- ( ? ) _
+Z -> z,
+Á -> á,
+Č -> č,
+Đ -> đ,
+Ŋ -> ŋ,
+Š -> š,
+Ŧ -> ŧ,
+Ž -> ž
+ || .#. ( LEXROOTFLAG ) CMPFLAG* DCASEFLAG ( LEXPROPERFLAG ) ( HYPHFLAG )       ( ? ) _ ,
+                        CMPFLAG* DCASEFLAG ( LEXPROPERFLAG ) ( HYPHFLAG ) ?* %- ( ? ) _
 
 # ---- ends here: ------
 
@@ -81,9 +86,10 @@ Y -> y,
 # underscore character 
 #%_  -> [] || .#. %@U%.Cap%.Opt%@ ?+ _ 
 
-] .o. [ %- (->) [] || FLAG ?* _ ];
+] ;
 
 substitute defined DowncaseFlag  for DCASEFLAG
 substitute defined CmpHyph       for HYPHFLAG
 substitute defined LexRootFlag   for LEXROOTFLAG
 substitute defined LexProperFlag for LEXPROPERFLAG
+substitute defined CmpFlags      for CMPFLAG

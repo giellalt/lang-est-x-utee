@@ -1,798 +1,110 @@
 LEXICON Pronouns
 
- eimiski+Pron+Pl+Abe:%{%} #; ! 00_P,m'iski,#,------1A,-,-,*
- eimiski+Pron+Pl+Abl:%{%} #; ! 00_P,m'iski,#,------16,-,-,*
- eimiski+Pron+Pl+Ade:%{%} #; ! 00_P,m'iski,#,------15,-,-,*
- eimiski+Pron+Pl+All:%{%} #; ! 00_P,m'iski,#,------14,-,-,*
- eimiski+Pron+Pl+Ela:%{%} #; ! 00_P,m'iski,#,------13,-,-,*
- eimiski+Pron+Pl+Ess:%{%} #; ! 00_P,m'iski,#,------1E,-,-,*
- eimiski+Pron+Pl+Gen:%{%} #; ! 00_P,m'iski,#,------1G,-,-,*
- eimiski+Pron+Pl+Ill:%{%} #; ! 00_P,m'iski,#,------11,-,-,*
- eimiski+Pron+Pl+Ine:%{%} #; ! 00_P,m'iski,#,------12,-,-,*
- eimiski+Pron+Pl+Com:%{%} #; ! 00_P,m'iski,#,------1K,-,-,*
- eimiski+Pron+Pl+Nom:%{%} #; ! 00_P,m'iski,#,------1N,-,-,*
- eimiski+Pron+Pl+Par:%{%} #; ! 00_P,m'iski,#,------1P,-,-,*
- eimiski+Pron+Pl+Trm:%{%} #; ! 00_P,m'iski,#,------1R,-,-,*
- eimiski+Pron+Pl+Tra:%{%} #; ! 00_P,m'iski,#,------1T,-,-,*
- eimiski+Pron+Sg+Abe:eimilletagi GI; ! 00_P,m'iski,mille[tagi],------0A,-,-,*
- eimiski+Pron+Sg+Abl:eimilleltki GI; ! 00_P,m'iski,mille[ltki],------06,-,-,*
- eimiski+Pron+Sg+Ade:eimilgi GI; ! 00_P,m'iski,m'i[lgi],------05,-,-,*
- eimiski+Pron+Sg+Ade:eimillelgi GI; ! 00_P,m'iski,mille[lgi],------05,-,-,*
- eimiski+Pron+Sg+All:eimillelegi GI; ! 00_P,m'iski,mille[legi],------04,-,-,*
- eimiski+Pron+Sg+Ela:eimillestki GI; ! 00_P,m'iski,mille[stki],------03,-,-,*
- eimiski+Pron+Sg+Ess:eimillenagi GI; ! 00_P,m'iski,mille[nagi],------0E,-,-,*
- eimiski+Pron+Sg+Gen:eimillegi GI; ! 00_P,m'iski,mille[gi],------0G,-,-,*
- eimiski+Pron+Sg+Ill:eimillessegi GI; ! 00_P,m'iski,mille[ssegi],------01,-,-,*
- eimiski+Pron+Sg+Ine:eimilleski GI; ! 00_P,m'iski,mille[ski],------02,-,-,*
- eimiski+Pron+Sg+Com:eimillegagi GI; ! 00_P,m'iski,mille[gagi],------0K,-,-,*
- eimiski+Pron+Sg+Nom:eimiski GI; ! 00_P,m'iski,m'is[ki],------0N,-,-,*
- eimiski+Pron+Sg+Par:eimidagi GI; ! 00_P,m'iski,mi[dagi],------0P,-,-,*
- eimiski+Pron+Sg+Trm:eimillenigi GI; ! 00_P,m'iski,mille[nigi],------0R,-,-,*
- eimiski+Pron+Sg+Tra:eimikski GI; ! 00_P,m'iski,m'i[kski],------0T,-,-,*
- eimiski+Pron+Sg+Tra:eimillekski GI; ! 00_P,m'iski,mille[kski],------0T,-,-,*
- emb+Pron:emB1 22_A; ! (22_P -> +Pron) at: emb, bt: emba, bn: emma, btv: embi, bnv: emmi
- iga+Pron+Sg+Nom:iga GI;
- iga+Pron+Sg+Gen:iga GI;
- iga+Pron+Sg+Par:iga GI;
- iga+Pron+Sg+Par:igat GI;
- iga+Pron+Sg+Ill:igasse GI;
- iga+Pron+Sg+Ine:igas GI;
- iga+Pron+Sg+Ela:igast GI;
- iga+Pron+Sg+All:igale GI;
- iga+Pron+Sg+Ade:igal GI;
- iga+Pron+Sg+Abl:igalt GI;
- iga+Pron+Sg+Tra:igaks GI;
- iga+Pron+Sg+Trm:igani GI;
- iga+Pron+Sg+Ess:igana GI;
- iga+Pron+Sg+Abe:igata GI;
- iga+Pron+Sg+Com:igaga GI;
- igaüks+Pron+Sg+Par:igaüht GI; ! 22_NP,'üks,'üht[],------0P,-,-,+
- igaüks+Pron:igaü 22_KS-HE; ! (22_NP -> +Pron +Num) at: üks, bt: ühte, bn: ühe, btv: üksi, bnv: üksi
- ise+Pron+Pl+Abe:endita GI; ! 00_P,ise,'end[ita],------1A,-,-,*
- ise+Pron+Pl+Abe:enesteta GI; ! 00_P,ise,enes[teta],------1A,-,-,*
- ise+Pron+Pl+Abl:endilt GI; ! 00_P,ise,'end[ilt],------16,-,-,*
- ise+Pron+Pl+Abl:enestelt GI; ! 00_P,ise,enes[telt],------16,-,-,*
- ise+Pron+Pl+Ade:endil GI; ! 00_P,ise,'end[il],------15,-,-,*
- ise+Pron+Pl+Ade:enestel GI; ! 00_P,ise,enes[tel],------15,-,-,*
- ise+Pron+Pl+All:endile GI; ! 00_P,ise,'end[ile],------14,-,-,*
- ise+Pron+Pl+All:enestele GI; ! 00_P,ise,enes[tele],------14,-,-,*
- ise+Pron+Pl+Ela:endist GI; ! 00_P,ise,'end[ist],------13,-,-,*
- ise+Pron+Pl+Ela:enestest GI; ! 00_P,ise,enes[test],------13,-,-,*
- ise+Pron+Pl+Ess:endina GI; ! 00_P,ise,'end[ina],------1E,-,-,*
- ise+Pron+Pl+Ess:enestena GI; ! 00_P,ise,enes[tena],------1E,-,-,*
- ise+Pron+Pl+Gen:endi GI; ! 00_P,ise,'end[i],------1G,-,-,*
- ise+Pron+Pl+Gen:eneste GI; ! 00_P,ise,enes[te],------1G,-,-,*
- ise+Pron+Pl+Ill:endisse GI; ! 00_P,ise,'end[isse],------11,-,-,*
- ise+Pron+Pl+Ill:enestesse GI; ! 00_P,ise,enes[tesse],------11,-,-,*
- ise+Pron+Pl+Ine:endis GI; ! 00_P,ise,'end[is],------12,-,-,*
- ise+Pron+Pl+Ine:enestes GI; ! 00_P,ise,enes[tes],------12,-,-,*
- ise+Pron+Pl+Com:endiga GI; ! 00_P,ise,'end[iga],------1K,-,-,*
- ise+Pron+Pl+Com:enestega GI; ! 00_P,ise,enes[tega],------1K,-,-,*
- ise+Pron+Pl+Nom:ise GI; ! 00_P,ise,ise[],------1N,-,-,*
- ise+Pron+Pl+Par:endid GI; ! 00_P,ise,'end[id],------1P,-,-,*
- ise+Pron+Pl+Trm:endini GI; ! 00_P,ise,'end[ini],------1R,-,-,*
- ise+Pron+Pl+Trm:enesteni GI; ! 00_P,ise,enes[teni],------1R,-,-,*
- ise+Pron+Pl+Tra:endiks GI; ! 00_P,ise,'end[iks],------1T,-,-,*
- ise+Pron+Pl+Tra:enesteks GI; ! 00_P,ise,enes[teks],------1T,-,-,*
- ise+Pron+Sg+Abe:endata GI; ! 00_P,ise,'enda[ta],------0A,-,-,*
- ise+Pron+Sg+Abe:eneseta GI; ! 00_P,ise,enese[ta],------0A,-,-,*
- ise+Pron+Sg+Abl:endalt GI; ! 00_P,ise,'enda[lt],------06,-,-,*
- ise+Pron+Sg+Abl:eneselt GI; ! 00_P,ise,enese[lt],------06,-,-,*
- ise+Pron+Sg+Ade:endal GI; ! 00_P,ise,'enda[l],------05,-,-,*
- ise+Pron+Sg+Ade:enesel GI; ! 00_P,ise,enese[l],------05,-,-,*
- ise+Pron+Sg+All:endale GI; ! 00_P,ise,'enda[le],------04,-,-,*
- ise+Pron+Sg+All:enesele GI; ! 00_P,ise,enese[le],------04,-,-,*
- ise+Pron+Sg+Ela:endast GI; ! 00_P,ise,'enda[st],------03,-,-,*
- ise+Pron+Sg+Ela:enesest GI; ! 00_P,ise,enese[st],------03,-,-,*
- ise+Pron+Sg+Ess:endana GI; ! 00_P,ise,'enda[na],------0E,-,-,*
- ise+Pron+Sg+Ess:enesena GI; ! 00_P,ise,enese[na],------0E,-,-,*
- ise+Pron+Sg+Gen:enda GI; ! 00_P,ise,'enda[],------0G,-,-,*
- ise+Pron+Sg+Gen:enese GI; ! 00_P,ise,enese[],------0G,-,-,*
- ise+Pron+Sg+Ill:endasse GI; ! 00_P,ise,'enda[sse],------01,-,-,*
- ise+Pron+Sg+Ill:enesesse GI; ! 00_P,ise,enese[sse],------01,-,-,*
- ise+Pron+Sg+Ine:endas GI; ! 00_P,ise,'enda[s],------02,-,-,*
- ise+Pron+Sg+Ine:eneses GI; ! 00_P,ise,enese[s],------02,-,-,*
- ise+Pron+Sg+Com:endaga GI; ! 00_P,ise,'enda[ga],------0K,-,-,*
- ise+Pron+Sg+Com:enesega GI; ! 00_P,ise,enese[ga],------0K,-,-,*
- ise+Pron+Sg+Nom:ise GI; ! 00_P,ise,ise[],------0N,-,-,*
- ise+Pron+Sg+Par:end GI; ! 00_P,ise,'end[],------0P,-,-,*
- ise+Pron+Sg+Par:ennast GI; ! 00_P,ise,ennas[t],------0P,-,-,*
- ise+Pron+Sg+Trm:endani GI; ! 00_P,ise,'enda[ni],------0R,-,-,*
- ise+Pron+Sg+Trm:eneseni GI; ! 00_P,ise,enese[ni],------0R,-,-,*
- ise+Pron+Sg+Tra:endaks GI; ! 00_P,ise,'enda[ks],------0T,-,-,*
- ise+Pron+Sg+Tra:eneseks GI; ! 00_P,ise,enese[ks],------0T,-,-,*
- keegi+Pron+Pl+Abe:%{%} #; ! 00_P,k'eegi,#,------1A,-,-,*
- keegi+Pron+Pl+Abl:%{%} #; ! 00_P,k'eegi,#,------16,-,-,*
- keegi+Pron+Pl+Ade:%{%} #; ! 00_P,k'eegi,#,------15,-,-,*
- keegi+Pron+Pl+All:%{%} #; ! 00_P,k'eegi,#,------14,-,-,*
- keegi+Pron+Pl+Ela:%{%} #; ! 00_P,k'eegi,#,------13,-,-,*
- keegi+Pron+Pl+Ess:%{%} #; ! 00_P,k'eegi,#,------1E,-,-,*
- keegi+Pron+Pl+Gen:%{%} #; ! 00_P,k'eegi,#,------1G,-,-,*
- keegi+Pron+Pl+Ill:%{%} #; ! 00_P,k'eegi,#,------11,-,-,*
- keegi+Pron+Pl+Ine:%{%} #; ! 00_P,k'eegi,#,------12,-,-,*
- keegi+Pron+Pl+Com:%{%} #; ! 00_P,k'eegi,#,------1K,-,-,*
- keegi+Pron+Pl+Nom:%{%} #; ! 00_P,k'eegi,#,------1N,-,-,*
- keegi+Pron+Pl+Par:%{%} #; ! 00_P,k'eegi,#,------1P,-,-,*
- keegi+Pron+Pl+Trm:%{%} #; ! 00_P,k'eegi,#,------1R,-,-,*
- keegi+Pron+Pl+Tra:%{%} #; ! 00_P,k'eegi,#,------1T,-,-,*
- keegi+Pron+Sg+Abe:kelletagi GI; ! 00_P,k'eegi,kelle[tagi],------0A,-,-,*
- keegi+Pron+Sg+Abl:kelleltki GI; ! 00_P,k'eegi,kelle[ltki],------06,-,-,*
-! ?? keegi+Pron+Sg+Ade:kelgi GI; ! 00_P,k'eegi,k'e[lgi],------05,-,-,*
- keegi+Pron+Sg+Ade:kellelgi GI; ! 00_P,k'eegi,kelle[lgi],------05,-,-,*
- keegi+Pron+Sg+All:kellelegi GI; ! 00_P,k'eegi,kelle[legi],------04,-,-,*
- keegi+Pron+Sg+Ela:kellestki GI; ! 00_P,k'eegi,kelle[stki],------03,-,-,*
- keegi+Pron+Sg+Ess:kellenagi GI; ! 00_P,k'eegi,kelle[nagi],------0E,-,-,*
- keegi+Pron+Sg+Gen:kellegi GI; ! 00_P,k'eegi,kelle[gi],------0G,-,-,*
- keegi+Pron+Sg+Ill:kellessegi GI; ! 00_P,k'eegi,kelle[ssegi],------01,-,-,*
- keegi+Pron+Sg+Ine:kelleski GI; ! 00_P,k'eegi,kelle[ski],------02,-,-,*
- keegi+Pron+Sg+Com:kellegagi GI; ! 00_P,k'eegi,kelle[gagi],------0K,-,-,*
- keegi+Pron+Sg+Nom:keegi GI; ! 00_P,k'eegi,k'ee[gi],------0N,-,-,*
- keegi+Pron+Sg+Par:kedagi GI; ! 00_P,k'eegi,ke[dagi],------0P,-,-,*
- keegi+Pron+Sg+Trm:kellenigi GI; ! 00_P,k'eegi,kelle[nigi],------0R,-,-,*
- keegi+Pron+Sg+Tra:kellekski GI; ! 00_P,k'eegi,kelle[kski],------0T,-,-,*
- kes+Pron+Use/NG+Pl+Abe:kelledeta GI; ! 00_P,k'es,kelle[deta],------1A,-,-,*
- kes+Pron+Pl+Abe:kelleta GI; ! 00_P,k'es,kelle[ta],------1A,-,-,*
- kes+Pron+Use/NG+Pl+Abl:kelledelt GI; ! 00_P,k'es,kelle[delt],------16,-,-,*
- kes+Pron+Pl+Abl:kellelt GI; ! 00_P,k'es,kelle[lt],------16,-,-,*
- kes+Pron+Use/NG+Pl+Ade:kelledel GI; ! 00_P,k'es,kelle[del],------15,-,-,*
- kes+Pron+Pl+Ade:kellel GI; ! 00_P,k'es,kelle[l],------15,-,-,*
- kes+Pron+Use/NG+Pl+All:kelledele GI; ! 00_P,k'es,kelle[dele],------14,-,-,*
- kes+Pron+Pl+All:kellele GI; ! 00_P,k'es,kelle[le],------14,-,-,*
- kes+Pron+Use/NG+Pl+Ela:kelledest GI; ! 00_P,k'es,kelle[dest],------13,-,-,*
- kes+Pron+Pl+Ela:kellest GI; ! 00_P,k'es,kelle[st],------13,-,-,*
- kes+Pron+Use/NG+Pl+Ess:kelledena GI; ! 00_P,k'es,kelle[dena],------1E,-,-,*
- kes+Pron+Pl+Ess:kellena GI; ! 00_P,k'es,kelle[na],------1E,-,-,*
- kes+Pron+Pl+Gen:kelle GI; ! 00_P,k'es,kelle[],------1G,-,-,*
- kes+Pron+Use/NG+Pl+Gen:kellede GI; ! 00_P,k'es,kelle[de],------1G,-,-,*
- kes+Pron+Use/NG+Pl+Ill:kelledesse GI; ! 00_P,k'es,kelle[desse],------11,-,-,*
- kes+Pron+Pl+Ill:kellesse GI; ! 00_P,k'es,kelle[sse],------11,-,-,*
- kes+Pron+Use/NG+Pl+Ine:kelledes GI; ! 00_P,k'es,kelle[des],------12,-,-,*
- kes+Pron+Pl+Ine:kelles GI; ! 00_P,k'es,kelle[s],------12,-,-,*
- kes+Pron+Use/NG+Pl+Com:kelledega GI; ! 00_P,k'es,kelle[dega],------1K,-,-,*
- kes+Pron+Pl+Com:kellega GI; ! 00_P,k'es,kelle[ga],------1K,-,-,*
- kes+Pron+Pl+Nom:kes GI; ! 00_P,k'es,k'es[],------1N,-,-,*
- kes+Pron+Pl+Par:keda GI; ! 00_P,k'es,ke[da],------1P,-,-,*
- kes+Pron+Use/NG+Pl+Trm:kelledeni GI; ! 00_P,k'es,kelle[deni],------1R,-,-,*
- kes+Pron+Pl+Trm:kelleni GI; ! 00_P,k'es,kelle[ni],------1R,-,-,*
- kes+Pron+Use/NG+Pl+Tra:kelledeks GI; ! 00_P,k'es,kelle[deks],------1T,-,-,*
- kes+Pron+Pl+Tra:kelleks GI; ! 00_P,k'es,kelle[ks],------1T,-,-,*
- kes+Pron+Sg+Abe:kelleta GI; ! 00_P,k'es,kelle[ta],------0A,-,-,*
- kes+Pron+Sg+Abl:kellelt GI; ! 00_P,k'es,kelle[lt],------06,-,-,*
- kes+Pron+Sg+Ade:kel GI; ! 00_P,k'es,k'e[l],------05,-,-,*
- kes+Pron+Sg+Ade:kellel GI; ! 00_P,k'es,kelle[l],------05,-,-,*
- kes+Pron+Sg+All:kellele GI; ! 00_P,k'es,kelle[le],------04,-,-,*
- kes+Pron+Sg+Ela:kellest GI; ! 00_P,k'es,kelle[st],------03,-,-,*
- kes+Pron+Sg+Ess:kellena GI; ! 00_P,k'es,kelle[na],------0E,-,-,*
- kes+Pron+Sg+Gen:kelle GI; ! 00_P,k'es,kelle[],------0G,-,-,*
- kes+Pron+Sg+Ill:kellesse GI; ! 00_P,k'es,kelle[sse],------01,-,-,*
- kes+Pron+Sg+Ine:kelles GI; ! 00_P,k'es,kelle[s],------02,-,-,*
- kes+Pron+Sg+Com:kellega GI; ! 00_P,k'es,kelle[ga],------0K,-,-,*
- kes+Pron+Sg+Nom:kes GI; ! 00_P,k'es,k'es[],------0N,-,-,*
- kes+Pron+Sg+Par:keda GI; ! 00_P,k'es,ke[da],------0P,-,-,*
- kes+Pron+Sg+Trm:kelleni GI; ! 00_P,k'es,kelle[ni],------0R,-,-,*
- kes+Pron+Sg+Tra:kelleks GI; ! 00_P,k'es,kelle[ks],------0T,-,-,*
- keski+Pron:keski 01; ! (01_P -> +Pron) a0: keski, a0r: keske
- kesse+Pron:kesse # ; ! (41_P -> +Pron) 
- kogu+Pron:kogu # ; ! (41_P -> +Pron) 
- kumb+Pron:kumB1 22_A'; ! (22_P -> +Pron) at: kumb, bt: kumba, bn: kumma, btv: kumbi, bnv: kummi
- kumb+Pron+Pl+Par:kumbi GI;
- kumbki+Pron+Pl+Abe:kumbadetagi GI; ! 00_P,k'umbki,k'umba[detagi],------1A,-,-,*
- kumbki+Pron+Pl+Abl:kumbadeltki GI; ! 00_P,k'umbki,k'umba[deltki],------16,-,-,*
- kumbki+Pron+Pl+Ade:kumbadelgi GI; ! 00_P,k'umbki,k'umba[delgi],------15,-,-,*
- kumbki+Pron+Pl+All:kumbadelegi GI; ! 00_P,k'umbki,k'umba[delegi],------14,-,-,*
- kumbki+Pron+Pl+Ela:kumbadestki GI; ! 00_P,k'umbki,k'umba[destki],------13,-,-,*
- kumbki+Pron+Pl+Ess:kumbadenagi GI; ! 00_P,k'umbki,k'umba[denagi],------1E,-,-,*
- kumbki+Pron+Pl+Gen:kumbadegi GI; ! 00_P,k'umbki,k'umba[degi],------1G,-,-,*
- kumbki+Pron+Pl+Ill:kumbadessegi GI; ! 00_P,k'umbki,k'umba[dessegi],------11,-,-,*
- kumbki+Pron+Pl+Ine:kumbadeski GI; ! 00_P,k'umbki,k'umba[deski],------12,-,-,*
- kumbki+Pron+Pl+Com:kumbadegagi GI; ! 00_P,k'umbki,k'umba[degagi],------1K,-,-,*
- kumbki+Pron+Pl+Nom:kummadki GI; ! 00_P,k'umbki,kumma[dki],------1N,-,-,*
- kumbki+Pron+Pl+Par:kumbigi GI; ! 00_P,k'umbki,k'umbi[gi],------1P,-,-,*
- kumbki+Pron+Pl+Trm:kumbadenigi GI; ! 00_P,k'umbki,k'umba[denigi],------1R,-,-,*
- kumbki+Pron+Pl+Tra:kumbadekski GI; ! 00_P,k'umbki,k'umba[dekski],------1T,-,-,*
- kumbki+Pron+Sg+Abe:kummatagi GI; ! 00_P,k'umbki,kumma[tagi],------0A,-,-,*
- kumbki+Pron+Sg+Abl:kummaltki GI; ! 00_P,k'umbki,kumma[ltki],------06,-,-,*
- kumbki+Pron+Sg+Ade:kummalgi GI; ! 00_P,k'umbki,kumma[lgi],------05,-,-,*
- kumbki+Pron+Sg+Ill:kumbagi GI; ! 00_P,k'umbki,k'umba[gi],------0D,-,-,*
- kumbki+Pron+Sg+All:kummalegi GI; ! 00_P,k'umbki,kumma[legi],------04,-,-,*
- kumbki+Pron+Sg+Ela:kummastki GI; ! 00_P,k'umbki,kumma[stki],------03,-,-,*
- kumbki+Pron+Sg+Ess:kummanagi GI; ! 00_P,k'umbki,kumma[nagi],------0E,-,-,*
- kumbki+Pron+Sg+Gen:kummagi GI; ! 00_P,k'umbki,kumma[gi],------0G,-,-,*
- kumbki+Pron+Sg+Ill:kummassegi GI; ! 00_P,k'umbki,kumma[ssegi],------01,-,-,*
- kumbki+Pron+Sg+Ine:kummaski GI; ! 00_P,k'umbki,kumma[ski],------02,-,-,*
- kumbki+Pron+Sg+Com:kummagagi GI; ! 00_P,k'umbki,kumma[gagi],------0K,-,-,*
- kumbki+Pron+Sg+Nom:kumbki GI; ! 00_P,k'umbki,k'umb[ki],------0N,-,-,*
- kumbki+Pron+Sg+Par:kumbagi GI; ! 00_P,k'umbki,k'umba[gi],------0P,-,-,*
- kumbki+Pron+Sg+Trm:kummanigi GI; ! 00_P,k'umbki,kumma[nigi],------0R,-,-,*
- kumbki+Pron+Sg+Tra:kummakski GI; ! 00_P,k'umbki,kumma[kski],------0T,-,-,*
- kõik+Pron+Pl+Abe:kõigita GI; ! 00_P,k'õik,kõigi[ta],------1A,-,-,*
- kõik+Pron+Pl+Abe:kõikideta GI; ! 00_P,k'õik,k'õiki[deta],------1A,-,-,*
- kõik+Pron+Pl+Abl:kõigilt GI; ! 00_P,k'õik,kõigi[lt],------16,-,-,*
- kõik+Pron+Pl+Abl:kõikidelt GI; ! 00_P,k'õik,k'õiki[delt],------16,-,-,*
- kõik+Pron+Pl+Ade:kõigil GI; ! 00_P,k'õik,kõigi[l],------15,-,-,*
- kõik+Pron+Pl+Ade:kõikidel GI; ! 00_P,k'õik,k'õiki[del],------15,-,-,*
- kõik+Pron+Pl+All:kõigile GI; ! 00_P,k'õik,kõigi[le],------14,-,-,*
- kõik+Pron+Pl+All:kõikidele GI; ! 00_P,k'õik,k'õiki[dele],------14,-,-,*
- kõik+Pron+Pl+Ela:kõigist GI; ! 00_P,k'õik,kõigi[st],------13,-,-,*
- kõik+Pron+Pl+Ela:kõikidest GI; ! 00_P,k'õik,k'õiki[dest],------13,-,-,*
- kõik+Pron+Pl+Ess:kõigina GI; ! 00_P,k'õik,kõigi[na],------1E,-,-,*
- kõik+Pron+Pl+Ess:kõikidena GI; ! 00_P,k'õik,k'õiki[dena],------1E,-,-,*
- kõik+Pron+Pl+Gen:kõigi GI; ! 00_P,k'õik,kõigi[],------1G,-,-,*
- kõik+Pron+Pl+Gen:kõikide GI; ! 00_P,k'õik,k'õiki[de],------1G,-,-,*
- kõik+Pron+Pl+Ill:kõigisse GI; ! 00_P,k'õik,kõigi[sse],------11,-,-,*
- kõik+Pron+Pl+Ill:kõikidesse GI; ! 00_P,k'õik,k'õiki[desse],------11,-,-,*
- kõik+Pron+Pl+Ine:kõigis GI; ! 00_P,k'õik,kõigi[s],------12,-,-,*
- kõik+Pron+Pl+Ine:kõikides GI; ! 00_P,k'õik,k'õiki[des],------12,-,-,*
- kõik+Pron+Pl+Com:kõigiga GI; ! 00_P,k'õik,kõigi[ga],------1K,-,-,*
- kõik+Pron+Pl+Com:kõikidega GI; ! 00_P,k'õik,k'õiki[dega],------1K,-,-,*
- kõik+Pron+Pl+Nom:kõik GI; ! 00_P,k'õik,k'õik[],------1N,-,-,*
- kõik+Pron+Pl+Par:kõiki GI; ! 00_P,k'õik,k'õiki[],------1P,-,-,*
- kõik+Pron+Pl+Trm:kõigini GI; ! 00_P,k'õik,kõigi[ni],------1R,-,-,*
- kõik+Pron+Pl+Trm:kõikideni GI; ! 00_P,k'õik,k'õiki[deni],------1R,-,-,*
- kõik+Pron+Pl+Tra:kõigiks GI; ! 00_P,k'õik,kõigi[ks],------1T,-,-,*
- kõik+Pron+Pl+Tra:kõikideks GI; ! 00_P,k'õik,k'õiki[deks],------1T,-,-,*
- kõik+Pron+Sg+Abe:kõigeta GI; ! 00_P,k'õik,kõige[ta],------0A,-,-,*
- kõik+Pron+Sg+Abl:kõigelt GI; ! 00_P,k'õik,kõige[lt],------06,-,-,*
- kõik+Pron+Sg+Ade:kõigel GI; ! 00_P,k'õik,kõige[l],------05,-,-,*
- kõik+Pron+Sg+Ill:kõike GI; ! 00_P,k'õik,k'õike[],------0D,-,-,*
- kõik+Pron+Sg+All:kõigele GI; ! 00_P,k'õik,kõige[le],------04,-,-,*
- kõik+Pron+Sg+Ela:kõigest GI; ! 00_P,k'õik,kõige[st],------03,-,-,*
- kõik+Pron+Sg+Ess:kõigena GI; ! 00_P,k'õik,kõige[na],------0E,-,-,*
- kõik+Pron+Sg+Gen:kõige GI; ! 00_P,k'õik,kõige[],------0G,-,-,*
- kõik+Pron+Sg+Ill:kõigesse GI; ! 00_P,k'õik,kõige[sse],------01,-,-,*
- kõik+Pron+Sg+Ine:kõiges GI; ! 00_P,k'õik,kõige[s],------02,-,-,*
- kõik+Pron+Sg+Com:kõigega GI; ! 00_P,k'õik,kõige[ga],------0K,-,-,*
- kõik+Pron+Sg+Nom:kõik GI; ! 00_P,k'õik,k'õik[],------0N,-,-,*
- kõik+Pron+Sg+Par:kõike GI; ! 00_P,k'õik,k'õike[],------0P,-,-,*
- kõik+Pron+Sg+Trm:kõigeni GI; ! 00_P,k'õik,kõige[ni],------0R,-,-,*
- kõik+Pron+Sg+Tra:kõigeks GI; ! 00_P,k'õik,kõige[ks],------0T,-,-,*
- meie+Pron+Pers+Pl1+Abe:%{%} #; ! 00_P,m'a,#,------1A,-,-,*
- meie+Pron+Pers+Pl1+Abl:meilt GI; ! 00_P,m'a,m'e[ilt],------16,-,-,*
- meie+Pron+Pers+Pl1+Ade:meil GI; ! 00_P,m'a,m'e[il],------15,-,-,*
- meie+Pron+Pers+Pl1+All:meile GI; ! 00_P,m'a,m'e[ile],------14,-,-,*
- meie+Pron+Pers+Pl1+Ela:meist GI; ! 00_P,m'a,m'e[ist],------13,-,-,*
- meie+Pron+Pers+Pl1+Ess:%{%} #; ! 00_P,m'a,#,------1E,-,-,*
- meie+Pron+Pers+Pl1+Gen:me GI; ! 00_P,m'a,m'e[],------1G,-,-,*
- meie+Pron+Pers+Pl1+Ill:meisse GI; ! 00_P,m'a,m'e[isse],------11,-,-,*
- meie+Pron+Pers+Pl1+Ine:meis GI; ! 00_P,m'a,m'e[is],------12,-,-,*
- meie+Pron+Pers+Pl1+Com:%{%} #; ! 00_P,m'a,#,------1K,-,-,*
- meie+Pron+Pers+Pl1+Nom:me GI; ! 00_P,m'a,m'e[],------1N,-,-,*
- meie+Pron+Pers+Pl1+Par:meid GI; ! 00_P,m'a,m'e[id],------1P,-,-,*
- meie+Pron+Pers+Pl1+Trm:%{%} #; ! 00_P,m'a,#,------1R,-,-,*
- meie+Pron+Pers+Pl1+Tra:meiks GI; ! 00_P,m'a,m'e[iks],------1T,-,-,*
- mina+Pron+Pers+Sg1+Abe:%{%} #; ! 00_P,m'a,#,------0A,-,-,*
- mina+Pron+Pers+Sg1+Abl:mult GI; ! 00_P,m'a,m'u[lt],------06,-,-,*
- mina+Pron+Pers+Sg1+Ade:mul GI; ! 00_P,m'a,m'u[l],------05,-,-,*
- mina+Pron+Pers+Sg1+All:mulle GI; ! 00_P,m'a,m'u[lle],------04,-,-,*
- mina+Pron+Pers+Sg1+Ela:must GI; ! 00_P,m'a,m'u[st],------03,-,-,*
- mina+Pron+Pers+Sg1+Ess:%{%} #; ! 00_P,m'a,#,------0E,-,-,*
- mina+Pron+Pers+Sg1+Gen:mu GI; ! 00_P,m'a,m'u[],------0G,-,-,*
- mina+Pron+Pers+Sg1+Ill:musse GI; ! 00_P,m'a,m'u[sse],------01,-,-,*
- mina+Pron+Pers+Sg1+Ine:mus GI; ! 00_P,m'a,m'u[s],------02,-,-,*
- mina+Pron+Pers+Sg1+Com:muga GI; ! 00_P,m'a,m'u[ga],------0K,-,-,*
- mina+Pron+Pers+Sg1+Nom:ma GI; ! 00_P,m'a,m'a[],------0N,-,-,*
- mina+Pron+Pers+Sg1+Par:mind GI; ! 00_P,m'a,m'in[d],------0P,-,-,*
- mina+Pron+Pers+Sg1+Trm:%{%} #; ! 00_P,m'a,#,------0R,-,-,*
- mina+Pron+Pers+Sg1+Tra:%{%} #; ! 00_P,m'a,#,------0T,-,-,*
- meie+Pron+Pers+Pl1+Abe:meieta GI; ! 00_P,mina,meie[ta],------1A,-,-,*
- meie+Pron+Pers+Pl1+Abl:%{%} #; ! 00_P,mina,#,------16,-,-,*
- meie+Pron+Pers+Pl1+Ade:%{%} #; ! 00_P,mina,#,------15,-,-,*
- meie+Pron+Pers+Pl1+All:%{%} #; ! 00_P,mina,#,------14,-,-,*
- meie+Pron+Pers+Pl1+Ela:%{%} #; ! 00_P,mina,#,------13,-,-,*
- meie+Pron+Pers+Pl1+Ess:meiena GI; ! 00_P,mina,meie[na],------1E,-,-,*
- meie+Pron+Pers+Pl1+Gen:meie GI; ! 00_P,mina,meie[],------1G,-,-,*
- meie+Pron+Pers+Pl1+Ill:%{%} #; ! 00_P,mina,#,------11,-,-,*
- meie+Pron+Pers+Pl1+Ine:%{%} #; ! 00_P,mina,#,------12,-,-,*
- meie+Pron+Pers+Pl1+Com:meiega GI; ! 00_P,mina,meie[ga],------1K,-,-,*
- meie+Pron+Pers+Pl1+Nom:meie GI; ! 00_P,mina,meie[],------1N,-,-,*
- meie+Pron+Pers+Pl1+Par:meid GI; ! 00_P,mina,m'e[id],------1P,-,-,*
- meie+Pron+Pers+Pl1+Trm:meieni GI; ! 00_P,mina,meie[ni],------1R,-,-,*
- meie+Pron+Pers+Pl1+Tra:meieks GI; ! 00_P,mina,meie[ks],------1T,-,-,*
- mina+Pron+Pers+Sg1+Abe:minuta GI; ! 00_P,mina,minu[ta],------0A,-,-,*
- mina+Pron+Pers+Emph+Sg1+Abl:minult GI; ! 00_P,mina,minu[lt],------06,-,-,*
- mina+Pron+Pers+Emph+Sg1+Ade:minul GI; ! 00_P,mina,minu[l],------05,-,-,*
- mina+Pron+Pers+Emph+Sg1+All:minule GI; ! 00_P,mina,minu[le],------04,-,-,*
- mina+Pron+Pers+Emph+Sg1+Ela:minust GI; ! 00_P,mina,minu[st],------03,-,-,*
- mina+Pron+Pers+Sg1+Ess:minuna GI; ! 00_P,mina,minu[na],------0E,-,-,*
- mina+Pron+Pers+Emph+Sg1+Gen:minu GI; ! 00_P,mina,minu[],------0G,-,-,*
- mina+Pron+Pers+Emph+Sg1+Ill:minusse GI; ! 00_P,mina,minu[sse],------01,-,-,*
- mina+Pron+Pers+Emph+Sg1+Ine:minus GI; ! 00_P,mina,minu[s],------02,-,-,*
- mina+Pron+Pers+Sg1+Com:minuga GI; ! 00_P,mina,minu[ga],------0K,-,-,*
- mina+Pron+Pers+Emph+Sg1+Nom:mina GI; ! 00_P,mina,mina[],------0N,-,-,*
- mina+Pron+Pers+Sg1+Par:mind GI; ! 00_P,mina,m'in[d],------0P,-,-,*
- mina+Pron+Pers+Sg1+Trm:minuni GI; ! 00_P,mina,minu[ni],------0R,-,-,*
- mina+Pron+Pers+Sg1+Tra:minuks GI; ! 00_P,mina,minu[ks],------0T,-,-,*
- mingi+Pron:mingi 01; ! (01_P -> +Pron) a0: mingi, a0r: minge
- mis+Pron+Use/NG+Pl+Abe:milledeta #; ! 00_P,m'is,mille[deta],------1A,-,-,*
- mis+Pron+Pl+Abe:milleta #; ! 00_P,m'is,mille[ta],------1A,-,-,*
- mis+Pron+Use/NG+Pl+Abl:milledelt #; ! 00_P,m'is,mille[delt],------16,-,-,*
- mis+Pron+Pl+Abl:millelt #; ! 00_P,m'is,mille[lt],------16,-,-,*
- mis+Pron+Use/NG+Pl+Ade:milledel #; ! 00_P,m'is,mille[del],------15,-,-,*
- mis+Pron+Pl+Ade:millel #; ! 00_P,m'is,mille[l],------15,-,-,*
- mis+Pron+Use/NG+Pl+All:milledele #; ! 00_P,m'is,mille[dele],------14,-,-,*
- mis+Pron+Pl+All:millele #; ! 00_P,m'is,mille[le],------14,-,-,*
- mis+Pron+Use/NG+Pl+Ela:milledest #; ! 00_P,m'is,mille[dest],------13,-,-,*
- mis+Pron+Pl+Ela:millest #; ! 00_P,m'is,mille[st],------13,-,-,*
- mis+Pron+Use/NG+Pl+Ess:milledena #; ! 00_P,m'is,mille[dena],------1E,-,-,*
- mis+Pron+Pl+Ess:millena #; ! 00_P,m'is,mille[na],------1E,-,-,*
- mis+Pron+Pl+Gen:mille #; ! 00_P,m'is,mille[],------1G,-,-,*
- mis+Pron+Use/NG+Pl+Gen:millede #; ! 00_P,m'is,mille[de],------1G,-,-,*
- mis+Pron+Use/NG+Pl+Ill:milledesse #; ! 00_P,m'is,mille[desse],------11,-,-,*
- mis+Pron+Pl+Ill:millesse #; ! 00_P,m'is,mille[sse],------11,-,-,*
- mis+Pron+Use/NG+Pl+Ine:milledes #; ! 00_P,m'is,mille[des],------12,-,-,*
- mis+Pron+Pl+Ine:milles #; ! 00_P,m'is,mille[s],------12,-,-,*
- mis+Pron+Use/NG+Pl+Com:milledega #; ! 00_P,m'is,mille[dega],------1K,-,-,*
- mis+Pron+Pl+Com:millega #; ! 00_P,m'is,mille[ga],------1K,-,-,*
- mis+Pron+Pl+Nom:mis #; ! 00_P,m'is,m'is[],------1N,-,-,*
- mis+Pron+Pl+Par:mida #; ! 00_P,m'is,mi[da],------1P,-,-,*
- mis+Pron+Use/NG+Pl+Trm:milledeni #; ! 00_P,m'is,mille[deni],------1R,-,-,*
- mis+Pron+Pl+Trm:milleni #; ! 00_P,m'is,mille[ni],------1R,-,-,*
- mis+Pron+Use/NG+Pl+Tra:milledeks #; ! 00_P,m'is,mille[deks],------1T,-,-,*
- mis+Pron+Pl+Tra:milleks #; ! 00_P,m'is,mille[ks],------1T,-,-,*
- mis+Pron+Sg+Abe:milleta #; ! 00_P,m'is,mille[ta],------0A,-,-,*
- mis+Pron+Sg+Abl:millelt #; ! 00_P,m'is,mille[lt],------06,-,-,*
- mis+Pron+Sg+Abl:milt #; ! 00_P,m'is,m'i[lt],------06,-,-,*
- mis+Pron+Sg+Ade:mil #; ! 00_P,m'is,m'i[l],------05,-,-,*
- mis+Pron+Sg+Ade:millel #; ! 00_P,m'is,mille[l],------05,-,-,*
- mis+Pron+Sg+All:millele #; ! 00_P,m'is,mille[le],------04,-,-,*
- mis+Pron+Sg+Ela:millest #; ! 00_P,m'is,mille[st],------03,-,-,*
- mis+Pron+Sg+Ess:millena #; ! 00_P,m'is,mille[na],------0E,-,-,*
- mis+Pron+Sg+Gen:mille #; ! 00_P,m'is,mille[],------0G,-,-,*
- mis+Pron+Sg+Ill:millesse #; ! 00_P,m'is,mille[sse],------01,-,-,*
- mis+Pron+Sg+Ine:milles #; ! 00_P,m'is,mille[s],------02,-,-,*
- mis+Pron+Sg+Com:millega #; ! 00_P,m'is,mille[ga],------0K,-,-,*
- mis+Pron+Sg+Nom:mis #; ! 00_P,m'is,m'is[],------0N,-,-,*
- mis+Pron+Sg+Par:mida #; ! 00_P,m'is,mi[da],------0P,-,-,*
- mis+Pron+Sg+Trm:milleni #; ! 00_P,m'is,mille[ni],------0R,-,-,*
- mis+Pron+Sg+Tra:milleks #; ! 00_P,m'is,mille[ks],------0T,-,-,*
- miski+Pron+Pl+Abe:%{%} #; ! 00_P,m'iski,#,------1A,-,-,*
- miski+Pron+Pl+Abl:%{%} #; ! 00_P,m'iski,#,------16,-,-,*
- miski+Pron+Pl+Ade:%{%} #; ! 00_P,m'iski,#,------15,-,-,*
- miski+Pron+Pl+All:%{%} #; ! 00_P,m'iski,#,------14,-,-,*
- miski+Pron+Pl+Ela:%{%} #; ! 00_P,m'iski,#,------13,-,-,*
- miski+Pron+Pl+Ess:%{%} #; ! 00_P,m'iski,#,------1E,-,-,*
- miski+Pron+Pl+Gen:%{%} #; ! 00_P,m'iski,#,------1G,-,-,*
- miski+Pron+Pl+Ill:%{%} #; ! 00_P,m'iski,#,------11,-,-,*
- miski+Pron+Pl+Ine:%{%} #; ! 00_P,m'iski,#,------12,-,-,*
- miski+Pron+Pl+Com:%{%} #; ! 00_P,m'iski,#,------1K,-,-,*
- miski+Pron+Pl+Nom:%{%} #; ! 00_P,m'iski,#,------1N,-,-,*
- miski+Pron+Pl+Par:%{%} #; ! 00_P,m'iski,#,------1P,-,-,*
- miski+Pron+Pl+Trm:%{%} #; ! 00_P,m'iski,#,------1R,-,-,*
- miski+Pron+Pl+Tra:%{%} #; ! 00_P,m'iski,#,------1T,-,-,*
- miski+Pron+Sg+Abe:milletagi GI; ! 00_P,m'iski,mille[tagi],------0A,-,-,*
- miski+Pron+Sg+Abl:milleltki GI; ! 00_P,m'iski,mille[ltki],------06,-,-,*
- miski+Pron+Sg+Ade:milgi GI; ! 00_P,m'iski,m'i[lgi],------05,-,-,*
- miski+Pron+Sg+Ade:millelgi GI; ! 00_P,m'iski,mille[lgi],------05,-,-,*
- miski+Pron+Sg+All:millelegi GI; ! 00_P,m'iski,mille[legi],------04,-,-,*
- miski+Pron+Sg+Ela:millestki GI; ! 00_P,m'iski,mille[stki],------03,-,-,*
- miski+Pron+Sg+Ess:millenagi GI; ! 00_P,m'iski,mille[nagi],------0E,-,-,*
- miski+Pron+Sg+Gen:millegi GI; ! 00_P,m'iski,mille[gi],------0G,-,-,*
- miski+Pron+Sg+Ill:millessegi GI; ! 00_P,m'iski,mille[ssegi],------01,-,-,*
- miski+Pron+Sg+Ine:milleski GI; ! 00_P,m'iski,mille[ski],------02,-,-,*
- miski+Pron+Sg+Com:millegagi GI; ! 00_P,m'iski,mille[gagi],------0K,-,-,*
- miski+Pron+Sg+Nom:miski GI; ! 00_P,m'iski,m'is[ki],------0N,-,-,*
- miski+Pron+Sg+Par:midagi GI; ! 00_P,m'iski,mi[dagi],------0P,-,-,*
- miski+Pron+Sg+Trm:millenigi GI; ! 00_P,m'iski,mille[nigi],------0R,-,-,*
- miski+Pron+Sg+Tra:mikski GI; ! 00_P,m'iski,m'i[kski],------0T,-,-,*
- miski+Pron+Sg+Tra:millekski GI; ! 00_P,m'iski,mille[kski],------0T,-,-,*
- mitmendik+Pron:mitmendikK1 25; ! (25_P -> +Pron) at: mitmendik, bt: mitmendikku, bn: mitmendiku, btv: mitmendikke, bnv: mitmendike
- mitmes+Pron:mitme 02_S-NDA; ! (02_P -> +Pron) a0: mitmes, b0: mitmenda, b0r: 0, c0: 0
- mitu+Pron:mit 05_U-ME; ! (05_P -> +Pron) an: mitu, (at): mittu, bt: mitme, btr: #
- muist+Pron:muist GI; ! (41_P -> +Pron) 
- muu+Pron:mu. 26; ! (26_P -> +Pron) a0: muu, a0r: mu
- muu+Pron+Pl+Abe:muudeta GI; ! 26_P,m'uu,muu[deta],------1A,a0r,m'u,+
- muu+Pron+Pl+Abl:muudelt GI; ! 26_P,m'uu,muu[delt],------16,a0r,m'u,+
- muu+Pron+Pl+Ade:muudel GI; ! 26_P,m'uu,muu[del],------15,a0r,m'u,+
- muu+Pron+Pl+All:muudele GI; ! 26_P,m'uu,muu[dele],------14,a0r,m'u,+
- muu+Pron+Pl+Ela:muudest GI; ! 26_P,m'uu,muu[dest],------13,a0r,m'u,+
- muu+Pron+Pl+Ess:muudena GI; ! 26_P,m'uu,muu[dena],------1E,a0r,m'u,+
- muu+Pron+Pl+Gen:muude GI; ! 26_P,m'uu,muu[de],------1G,a0r,m'u,+
- muu+Pron+Pl+Ill:muudesse GI; ! 26_P,m'uu,muu[desse],------11,a0r,m'u,+
- muu+Pron+Pl+Ine:muudes GI; ! 26_P,m'uu,muu[des],------12,a0r,m'u,+
- muu+Pron+Pl+Com:muudega GI; ! 26_P,m'uu,muu[dega],------1K,a0r,m'u,+
- muu+Pron+Pl+Trm:muudeni GI; ! 26_P,m'uu,muu[deni],------1R,a0r,m'u,+
- muu+Pron+Pl+Tra:muudeks GI; ! 26_P,m'uu,muu[deks],------1T,a0r,m'u,+
- mõlema+Pron:mõlema 02_S-0; ! (02_P -> +Pron) a0: mõlema, b0: mõlema, b0r: 0, c0: 0
- mõlema+Pron+Sg+Nom:%{%} #; ! 02_P,mõlema,#,------0N,-,-,*
- mõningas+Pron:mõning 02_GAS_S-0; ! (02_P -> +Pron) a0: mõningas, b0: mõninga, b0r: 0, c0: 0
- mõni+Pron+Sg+Nom:mõni GI;
- mõni+Pron+Sg+Gen:mõne GI;
- mõni+Pron+Sg+Par:mõnd GI;
- mõni+Pron+Sg+Par:mõnda GI;
- mõni+Pron+Sg+Ill:mõnda GI;
- mõni+Pron+Sg+Ill:mõnesse GI;
- mõni+Pron+Sg+Ine:mõnes GI;
- mõni+Pron+Sg+Ela:mõnest GI;
- mõni+Pron+Sg+All:mõnele GI;
- mõni+Pron+Sg+Ade:mõnel GI;
- mõni+Pron+Sg+Abl:mõnelt GI;
- mõni+Pron+Sg+Tra:mõneks GI;
- mõni+Pron+Sg+Trm:mõneni GI;
- mõni+Pron+Sg+Ess:mõnena GI;
- mõni+Pron+Sg+Abe:mõneta GI;
- mõni+Pron+Sg+Com:mõnega GI;
- mõni+Pron+Pl+Nom:mõned GI;
- mõni+Pron+Pl+Gen:mõnede GI;
- mõni+Pron+Pl+Par:mõnesid GI;
- mõni+Pron+Pl+Ill:mõnedesse GI;
- mõni+Pron+Pl+Ine:mõnedes GI;
- mõni+Pron+Pl+Ela:mõnedest GI;
- mõni+Pron+Pl+All:mõnedele GI;
- mõni+Pron+Pl+Ade:mõnedel GI;
- mõni+Pron+Pl+Abl:mõnedelt GI;
- mõni+Pron+Pl+Tra:mõnedeks GI;
- mõni+Pron+Pl+Trm:mõnedeni GI;
- mõni+Pron+Pl+Ess:mõnedena GI;
- mõni+Pron+Pl+Abe:mõnedeta GI;
- mõni+Pron+Pl+Com:mõnedega GI;
- niimitu+Pron:niimit 05_U-ME; ! (05_P -> +Pron) an: mitu, (at): mittu, bt: mitme, btr: #
- oma+Pron:oma GI; ! (41_P -> +Pron) 
-! ??? palju+Pron:palju 01; ! (01_P -> +Pron) a0: palju, a0r: 0 
- palju+Pron:palju 16; ! (16_P -> +Pron) a0: palju, a0g: #
- teie+Pron+Pers+Pl2+Abe:%{%} #; ! 00_P,s'a,#,------1A,-,-,*
- teie+Pron+Pers+Pl2+Abl:teilt GI; ! 00_P,s'a,t'e[ilt],------16,-,-,*
- teie+Pron+Pers+Pl2+Ade:teil GI; ! 00_P,s'a,t'e[il],------15,-,-,*
- teie+Pron+Pers+Pl2+All:teile GI; ! 00_P,s'a,t'e[ile],------14,-,-,*
- teie+Pron+Pers+Pl2+Ela:teist GI; ! 00_P,s'a,t'e[ist],------13,-,-,*
- teie+Pron+Pers+Pl2+Ess:%{%} #; ! 00_P,s'a,#,------1E,-,-,*
- teie+Pron+Pers+Pl2+Gen:te GI; ! 00_P,s'a,t'e[],------1G,-,-,*
- teie+Pron+Pers+Pl2+Ill:teisse GI; ! 00_P,s'a,t'e[isse],------11,-,-,*
- teie+Pron+Pers+Pl2+Ine:teis GI; ! 00_P,s'a,t'e[is],------12,-,-,*
- teie+Pron+Pers+Pl2+Com:%{%} #; ! 00_P,s'a,#,------1K,-,-,*
- teie+Pron+Pers+Pl2+Nom:te GI; ! 00_P,s'a,t'e[],------1N,-,-,*
- teie+Pron+Pers+Pl2+Par:teid GI; ! 00_P,s'a,t'e[id],------1P,-,-,*
- teie+Pron+Pers+Pl2+Trm:%{%} #; ! 00_P,s'a,#,------1R,-,-,*
- sina+Pron+Pers+Sg2+Abe:%{%} #; ! 00_P,s'a,#,------0A,-,-,*
- sina+Pron+Pers+Sg2+Abl:sult GI; ! 00_P,s'a,s'u[lt],------06,-,-,*
- sina+Pron+Pers+Sg2+Ade:sul GI; ! 00_P,s'a,s'u[l],------05,-,-,*
- sina+Pron+Pers+Sg2+All:sulle GI; ! 00_P,s'a,s'u[lle],------04,-,-,*
- sina+Pron+Pers+Sg2+Ela:sust GI; ! 00_P,s'a,s'u[st],------03,-,-,*
- sina+Pron+Pers+Sg2+Ess:%{%} #; ! 00_P,s'a,#,------0E,-,-,*
- sina+Pron+Pers+Sg2+Gen:su GI; ! 00_P,s'a,s'u[],------0G,-,-,*
- sina+Pron+Pers+Sg2+Ill:susse GI; ! 00_P,s'a,s'u[sse],------01,-,-,*
- sina+Pron+Pers+Sg2+Ine:sus GI; ! 00_P,s'a,s'u[s],------02,-,-,*
- sina+Pron+Pers+Sg2+Com:suga GI; ! 00_P,s'a,s'u[ga],------0K,-,-,*
- sina+Pron+Pers+Sg2+Nom:sa GI; ! 00_P,s'a,s'a[],------0N,-,-,*
- sina+Pron+Pers+Sg2+Par:sind GI; ! 00_P,s'a,s'in[d],------0P,-,-,*
- sina+Pron+Pers+Sg2+Trm:%{%} #; ! 00_P,s'a,#,------0R,-,-,*
- sina+Pron+Pers+Sg2+Tra:%{%} #; ! 00_P,s'a,#,------0T,-,-,*
- sama+Pron+Sg+Nom:sama GI;
- sama+Pron+Sg+Gen:sama GI;
- sama+Pron+Sg+Par:sama GI;
- sama+Pron+Sg+Ill:samasse GI;
- sama+Pron+Sg+Ine:samas GI;
- sama+Pron+Sg+Ela:samast GI;
- sama+Pron+Sg+All:samale GI;
- sama+Pron+Sg+Ade:samal GI;
- sama+Pron+Sg+Abl:samalt GI;
- sama+Pron+Sg+Tra:samaks GI;
- sama+Pron+Sg+Trm:samani GI;
- sama+Pron+Sg+Ess:samana GI;
- sama+Pron+Sg+Abe:samata GI;
- sama+Pron+Sg+Com:samaga GI;
- sama+Pron+Pl+Nom:samad GI;
- sama+Pron+Pl+Gen:samade GI;
- sama+Pron+Pl+Par:samasid GI;
- sama+Pron+Pl+Par:samu GI;
- sama+Pron+Pl+Ill:samadesse GI;
- sama+Pron+Pl+Ine:samades GI;
- sama+Pron+Pl+Ela:samadest GI;
- sama+Pron+Pl+All:samadele GI;
- sama+Pron+Pl+Ade:samadel GI;
- sama+Pron+Pl+Abl:samadelt GI;
- sama+Pron+Pl+Tra:samadeks GI;
- sama+Pron+Pl+Trm:samadeni GI;
- sama+Pron+Pl+Ess:samadena GI;
- sama+Pron+Pl+Abe:samadeta GI;
- sama+Pron+Pl+Com:samadega GI;
- need+Pron+Pl+Abe:nendeta GI; ! 00_P,s'ee,nen[deta],------1A,-,-,*
- need+Pron+Pl+Abl:neilt GI; ! 00_P,s'ee,n'e[ilt],------16,-,-,*
- need+Pron+Pl+Abl:nendelt GI; ! 00_P,s'ee,nen[delt],------16,-,-,*
- need+Pron+Pl+Ade:neil GI; ! 00_P,s'ee,n'e[il],------15,-,-,*
- need+Pron+Pl+Ade:nendel GI; ! 00_P,s'ee,nen[del],------15,-,-,*
- need+Pron+Pl+All:neile GI; ! 00_P,s'ee,n'e[ile],------14,-,-,*
- need+Pron+Pl+All:nendele GI; ! 00_P,s'ee,nen[dele],------14,-,-,*
- need+Pron+Pl+Ela:neist GI; ! 00_P,s'ee,n'e[ist],------13,-,-,*
- need+Pron+Pl+Ela:nendest GI; ! 00_P,s'ee,nen[dest],------13,-,-,*
- need+Pron+Pl+Ess:nendena GI; ! 00_P,s'ee,nen[dena],------1E,-,-,*
- need+Pron+Pl+Gen:nende GI; ! 00_P,s'ee,nen[de],------1G,-,-,*
- need+Pron+Pl+Ill:neisse GI; ! 00_P,s'ee,n'e[isse],------11,-,-,*
- need+Pron+Pl+Ill:nendesse GI; ! 00_P,s'ee,nen[desse],------11,-,-,*
- need+Pron+Pl+Ine:neis GI; ! 00_P,s'ee,n'e[is],------12,-,-,*
- need+Pron+Pl+Ine:nendes GI; ! 00_P,s'ee,nen[des],------12,-,-,*
- need+Pron+Pl+Com:nendega GI; ! 00_P,s'ee,nen[dega],------1K,-,-,*
- need+Pron+Pl+Nom:need GI; ! 00_P,s'ee,n'ee[d],------1N,-,-,*
- need+Pron+Pl+Par:neid GI; ! 00_P,s'ee,n'e[id],------1P,-,-,*
- need+Pron+Pl+Trm:nendeni GI; ! 00_P,s'ee,nen[deni],------1R,-,-,*
- need+Pron+Pl+Tra:neiks GI; ! 00_P,s'ee,n'e[iks],------1T,-,-,*
- need+Pron+Pl+Tra:nendeks GI; ! 00_P,s'ee,nen[deks],------1T,-,-,*
- see+Pron+Sg+Abe:selleta GI; ! 00_P,s'ee,selle[ta],------0A,-,-,*
- see+Pron+Sg+Abl:sellelt GI; ! 00_P,s'ee,selle[lt],------06,-,-,*
- see+Pron+Sg+Abl:selt GI; ! 00_P,s'ee,s'e[lt],------06,-,-,*
- see+Pron+Sg+Ade:sel GI; ! 00_P,s'ee,s'e[l],------05,-,-,*
- see+Pron+Sg+Ade:sellel GI; ! 00_P,s'ee,selle[l],------05,-,-,*
- see+Pron+Sg+All:sellele GI; ! 00_P,s'ee,selle[le],------04,-,-,*
- see+Pron+Sg+Ela:sellest GI; ! 00_P,s'ee,selle[st],------03,-,-,*
- see+Pron+Sg+Ela:sest GI; ! 00_P,s'ee,s'e[st],------03,-,-,*
- see+Pron+Sg+Ess:sellena GI; ! 00_P,s'ee,selle[na],------0E,-,-,*
- see+Pron+Sg+Gen:selle GI; ! 00_P,s'ee,selle[],------0G,-,-,*
- see+Pron+Sg+Ill:sellesse GI; ! 00_P,s'ee,selle[sse],------01,-,-,*
- see+Pron+Sg+Ill:sesse GI; ! 00_P,s'ee,s'e[sse],------01,-,-,*
- see+Pron+Sg+Ine:selles GI; ! 00_P,s'ee,selle[s],------02,-,-,*
- see+Pron+Sg+Ine:ses GI; ! 00_P,s'ee,s'e[s],------02,-,-,*
- see+Pron+Sg+Com:sellega GI; ! 00_P,s'ee,selle[ga],------0K,-,-,*
- see+Pron+Sg+Nom:see GI; ! 00_P,s'ee,s'ee[],------0N,-,-,*
- see+Pron+Sg+Par:seda GI; ! 00_P,s'ee,se[da],------0P,-,-,*
- see+Pron+Sg+Trm:selleni GI; ! 00_P,s'ee,selle[ni],------0R,-,-,*
- see+Pron+Sg+Tra:seks GI; ! 00_P,s'ee,s'e[ks],------0T,-,-,*
- see+Pron+Sg+Tra:selleks GI; ! 00_P,s'ee,selle[ks],------0T,-,-,*
- setmes+Pron:setme 02_S-NDA; ! (02_P -> +Pron) a0: setmes, b0: setmenda, b0r: 0, c0: 0
- setu+Pron:set 05_U-ME; ! (05_P -> +Pron) an: setu, (at): settu, bt: setme, btr: #
- teie+Pron+Pers+Pl2+Abe:teieta GI; ! 00_P,sina,teie[ta],------1A,-,-,*
- teie+Pron+Pers+Pl2+Abl:%{%} #; ! 00_P,sina,#,------16,-,-,*
- teie+Pron+Pers+Pl2+Ade:%{%} #; ! 00_P,sina,#,------15,-,-,*
- teie+Pron+Pers+Pl2+All:%{%} #; ! 00_P,sina,#,------14,-,-,*
- teie+Pron+Pers+Pl2+Ela:%{%} #; ! 00_P,sina,#,------13,-,-,*
- teie+Pron+Pers+Pl2+Ess:teiena GI; ! 00_P,sina,teie[na],------1E,-,-,*
- teie+Pron+Pers+Pl2+Gen:teie GI; ! 00_P,sina,teie[],------1G,-,-,*
- teie+Pron+Pers+Pl2+Ill:%{%} #; ! 00_P,sina,#,------11,-,-,*
- teie+Pron+Pers+Pl2+Ine:%{%} #; ! 00_P,sina,#,------12,-,-,*
- teie+Pron+Pers+Pl2+Com:teiega GI; ! 00_P,sina,teie[ga],------1K,-,-,*
- teie+Pron+Pers+Pl2+Nom:teie GI; ! 00_P,sina,teie[],------1N,-,-,*
- teie+Pron+Pers+Pl2+Par:teid GI; ! 00_P,sina,t'e[id],------1P,-,-,*
- teie+Pron+Pers+Pl2+Trm:teieni GI; ! 00_P,sina,teie[ni],------1R,-,-,*
- teie+Pron+Pers+Pl2+Tra:teieks GI; ! 00_P,sina,teie[ks],------1T,-,-,*
- sina+Pron+Pers+Sg2+Abe:sinuta GI; ! 00_P,sina,sinu[ta],------0A,-,-,*
- sina+Pron+Pers+Emph+Sg2+Abl:sinult GI; ! 00_P,sina,sinu[lt],------06,-,-,*
- sina+Pron+Pers+Emph+Sg2+Ade:sinul GI; ! 00_P,sina,sinu[l],------05,-,-,*
- sina+Pron+Pers+Emph+Sg2+All:sinule GI; ! 00_P,sina,sinu[le],------04,-,-,*
- sina+Pron+Pers+Emph+Sg2+Ela:sinust GI; ! 00_P,sina,sinu[st],------03,-,-,*
- sina+Pron+Pers+Sg2+Ess:sinuna GI; ! 00_P,sina,sinu[na],------0E,-,-,*
- sina+Pron+Pers+Emph+Sg2+Gen:sinu GI; ! 00_P,sina,sinu[],------0G,-,-,*
- sina+Pron+Pers+Emph+Sg2+Ill:sinusse GI; ! 00_P,sina,sinu[sse],------01,-,-,*
- sina+Pron+Pers+Emph+Sg2+Ine:sinus GI; ! 00_P,sina,sinu[s],------02,-,-,*
- sina+Pron+Pers+Emph+Sg2+Com:sinuga GI; ! 00_P,sina,sinu[ga],------0K,-,-,*
- sina+Pron+Pers+Emph+Sg2+Nom:sina GI; ! 00_P,sina,sina[],------0N,-,-,*
- sina+Pron+Pers+Sg2+Par:sind GI; ! 00_P,sina,s'in[d],------0P,-,-,*
- sina+Pron+Pers+Sg2+Trm:sinuni GI; ! 00_P,sina,sinu[ni],------0R,-,-,*
- sina+Pron+Pers+Sg2+Tra:sinuks GI; ! 00_P,sina,sinu[ks],------0T,-,-,*
-! ??? sinane+Pron:sinane 10; ! (10_AP -> +A +Pron) a0: sinane, b0: sinatse, c0: sinas
- nemad+Pron+Pers+Pl3+Abe:%{%} #; ! 00_P,t'a,#,------1A,-,-,*
- nemad+Pron+Pers+Pl3+Abl:neilt GI; ! 00_P,t'a,n'e[ilt],------16,-,-,*
- nemad+Pron+Pers+Pl3+Ade:neil GI; ! 00_P,t'a,n'e[il],------15,-,-,*
- nemad+Pron+Pers+Pl3+All:neile GI; ! 00_P,t'a,n'e[ile],------14,-,-,*
- nemad+Pron+Pers+Pl3+Com:%{%} #; ! 00_P,t'a,#,------1K,-,-,*
- nemad+Pron+Pers+Pl3+Ela:neist GI; ! 00_P,t'a,n'e[ist],------13,-,-,*
- nemad+Pron+Pers+Pl3+Ess:%{%} #; ! 00_P,t'a,#,------1E,-,-,*
- nemad+Pron+Pers+Pl3+Gen:nende GI; ! 00_P,t'a,nen[de],------1G,-,-,*
- nemad+Pron+Pers+Pl3+Ill:neisse GI; ! 00_P,t'a,n'e[isse],------11,-,-,*
- nemad+Pron+Pers+Pl3+Ine:neis GI; ! 00_P,t'a,n'e[is],------12,-,-,*
- nemad+Pron+Pers+Pl3+Nom:nad GI; ! 00_P,t'a,n'a[d],------1N,-,-,*
- nemad+Pron+Pers+Pl3+Par:neid GI; ! 00_P,t'a,n'e[id],------1P,-,-,*
- nemad+Pron+Pers+Pl3+Tra:neiks GI; ! 00_P,t'a,n'e[iks],------1T,-,-,*
- nemad+Pron+Pers+Pl3+Trm:%{%} #; ! 00_P,t'a,#,------1R,-,-,*
- nemad+Pron+Pers+Pl3+Abe:nendeta GI; ! 00_P,tema,nen[deta],------1A,-,-,*
- nemad+Pron+Pers+Emph+Pl3+Abl:nendelt GI; ! 00_P,tema,nen[delt],------16,-,-,*
- nemad+Pron+Pers+Emph+Pl3+Ade:nendel GI; ! 00_P,tema,nen[del],------15,-,-,*
- nemad+Pron+Pers+Emph+Pl3+All:nendele GI; ! 00_P,tema,nen[dele],------14,-,-,*
- nemad+Pron+Pers+Emph+Pl3+Ela:nendest GI; ! 00_P,tema,nen[dest],------13,-,-,*
- nemad+Pron+Pers+Pl3+Ess:nendena GI; ! 00_P,tema,nen[dena],------1E,-,-,*
- nemad+Pron+Pers+Pl3+Gen:nende GI; ! 00_P,tema,nen[de],------1G,-,-,*
- nemad+Pron+Pers+Emph+Pl3+Ill:nendesse GI; ! 00_P,tema,nen[desse],------11,-,-,*
- nemad+Pron+Pers+Emph+Pl3+Ine:nendes GI; ! 00_P,tema,nen[des],------12,-,-,*
- nemad+Pron+Pers+Pl3+Com:nendega GI; ! 00_P,tema,nen[dega],------1K,-,-,*
- nemad+Pron+Pers+Emph+Pl3+Nom:nemad GI; ! 00_P,tema,nema[d],------1N,-,-,*
- nemad+Pron+Pers+Pl3+Par:neid GI; ! 00_P,tema,n'e[id],------1P,-,-,*
- nemad+Pron+Pers+Pl3+Trm:nendeni GI; ! 00_P,tema,nen[deni],------1R,-,-,*
- nemad+Pron+Pers+Pl3+Tra:nendeks GI; ! 00_P,tema,nen[deks],------1T,-,-,*
+ @P.Part.Bad@ PlainPronouns ;
+ CompoundingPronouns ;
 
- tema+Pron+Pers+Sg3+Nom:ta GI; ! 00_P,t'a,t'a[],------0N,-,-,*
- tema+Pron+Pers+Emph+Sg3+Nom:tema GI; ! 00_P,tema,tema[],------0N,-,-,*
- tema+Pron+Pers+Sg3+Gen:ta GI; ! 00_P,t'a,t'a[],------0G,-,-,*
- tema+Pron+Pers+Emph+Sg3+Gen:tema GI; ! 00_P,tema,tema[],------0G,-,-,*
- tema+Pron+Pers+Sg3+Par:teda GI; ! 00_P,tema,te[da],------0P,-,-,*
- tema+Pron+Pers+Emph+Sg3+Par:teda GI; ! 00_P,t'a,te[da],------0P,-,-,*
- tema+Pron+Pers+Sg3+Ill:tasse GI; ! 00_P,t'a,t'a[sse],------01,-,-,*
- tema+Pron+Pers+Emph+Sg3+Ill:temasse GI; ! 00_P,tema,tema[sse],------01,-,-,*
- tema+Pron+Pers+Sg3+Ine:tas GI; ! 00_P,t'a,t'a[s],------02,-,-,*
- tema+Pron+Pers+Emph+Sg3+Ine:temas GI; ! 00_P,tema,tema[s],------02,-,-,*
- tema+Pron+Pers+Sg3+Ela:tast GI; ! 00_P,t'a,t'a[st],------03,-,-,*
- tema+Pron+Pers+Emph+Sg3+Ela:temast GI; ! 00_P,tema,tema[st],------03,-,-,*
- tema+Pron+Pers+Sg3+All:talle GI; ! 00_P,t'a,t'a[lle],------04,-,-,*
- tema+Pron+Pers+Emph+Sg3+All:temale GI; ! 00_P,tema,tema[le],------04,-,-,*
- tema+Pron+Pers+Sg3+Ade:tal GI; ! 00_P,t'a,t'a[l],------05,-,-,*
- tema+Pron+Pers+Emph+Sg3+Ade:temal GI; ! 00_P,tema,tema[l],------05,-,-,*
- tema+Pron+Pers+Sg3+Abl:talt GI; ! 00_P,t'a,t'a[lt],------06,-,-,*
- tema+Pron+Pers+Emph+Sg3+Abl:temalt GI; ! 00_P,tema,tema[lt],------06,-,-,*
- tema+Pron+Pers+Sg3+Trm:temani #; ! 00_P,t'a,#,------0R,-,-,*
- tema+Pron+Pers+Sg3+Trm:temani GI; ! 00_P,tema,tema[ni],------0R,-,-,*
- tema+Pron+Pers+Sg3+Ess:temana #; ! 00_P,t'a,#,------0E,-,-,*
- tema+Pron+Pers+Sg3+Ess:temana GI; ! 00_P,tema,tema[na],------0E,-,-,*
- tema+Pron+Pers+Sg3+Abe:temata #; ! 00_P,t'a,#,------0A,-,-,*
- tema+Pron+Pers+Sg3+Abe:temata GI; ! 00_P,tema,tema[ta],------0A,-,-,*
- tema+Pron+Pers+Sg3+Com:temaga GI; ! 00_P,t'a,t'a[ga],------0K,-,-,*
- tema+Pron+Pers+Sg3+Com:temaga GI; ! 00_P,tema,tema[ga],------0K,-,-,*
- tema+Pron+Pers+Sg3+Tra:temaks #; ! 00_P,t'a,#,------0T,-,-,*
- tema+Pron+Pers+Sg3+Tra:temaks GI; ! 00_P,tema,tema[ks],------0T,-,-,*
+LEXICON PlainPronouns
 
- nood+Pron+Pl+Abe:nondeta GI; ! 00_P,t'oo,non[deta],------1A,-,-,*
- nood+Pron+Pl+Abl:noilt GI; ! 00_P,t'oo,n'o[ilt],------16,-,-,*
- nood+Pron+Pl+Abl:nondelt GI; ! 00_P,t'oo,non[delt],------16,-,-,*
- nood+Pron+Pl+Ade:noil GI; ! 00_P,t'oo,n'o[il],------15,-,-,*
- nood+Pron+Pl+Ade:nondel GI; ! 00_P,t'oo,non[del],------15,-,-,*
- nood+Pron+Pl+All:noile GI; ! 00_P,t'oo,n'o[ile],------14,-,-,*
- nood+Pron+Pl+All:nondele GI; ! 00_P,t'oo,non[dele],------14,-,-,*
- nood+Pron+Pl+Ela:noist GI; ! 00_P,t'oo,n'o[ist],------13,-,-,*
- nood+Pron+Pl+Ela:nondest GI; ! 00_P,t'oo,non[dest],------13,-,-,*
- nood+Pron+Pl+Ess:nondena GI; ! 00_P,t'oo,non[dena],------1E,-,-,*
- nood+Pron+Pl+Gen:nonde GI; ! 00_P,t'oo,non[de],------1G,-,-,*
- nood+Pron+Pl+Ill:noisse GI; ! 00_P,t'oo,n'o[isse],------11,-,-,*
- nood+Pron+Pl+Ill:nondesse GI; ! 00_P,t'oo,non[desse],------11,-,-,*
- nood+Pron+Pl+Ine:nois GI; ! 00_P,t'oo,n'o[is],------12,-,-,*
- nood+Pron+Pl+Ine:nondes GI; ! 00_P,t'oo,non[des],------12,-,-,*
- nood+Pron+Pl+Com:nondega GI; ! 00_P,t'oo,non[dega],------1K,-,-,*
- nood+Pron+Pl+Nom:nood GI; ! 00_P,t'oo,n'oo[d],------1N,-,-,*
- nood+Pron+Pl+Par:noid GI; ! 00_P,t'oo,n'o[id],------1P,-,-,*
- nood+Pron+Pl+Trm:nondeni GI; ! 00_P,t'oo,non[deni],------1R,-,-,*
- nood+Pron+Pl+Tra:noiks GI; ! 00_P,t'oo,n'o[iks],------1T,-,-,*
- nood+Pron+Pl+Tra:nondeks GI; ! 00_P,t'oo,non[deks],------1T,-,-,*
- too+Pron+Sg+Abe:tolleta GI; ! 00_P,t'oo,tolle[ta],------0A,-,-,*
- too+Pron+Sg+Abl:tollelt GI; ! 00_P,t'oo,tolle[lt],------06,-,-,*
- too+Pron+Sg+Abl:tolt GI; ! 00_P,t'oo,t'o[lt],------06,-,-,*
- too+Pron+Sg+Ade:tol GI; ! 00_P,t'oo,t'o[l],------05,-,-,*
- too+Pron+Sg+Ade:tollel GI; ! 00_P,t'oo,tolle[l],------05,-,-,*
- too+Pron+Sg+All:tollele GI; ! 00_P,t'oo,tolle[le],------04,-,-,*
- too+Pron+Sg+Ela:tollest GI; ! 00_P,t'oo,tolle[st],------03,-,-,*
- too+Pron+Sg+Ela:tost GI; ! 00_P,t'oo,t'o[st],------03,-,-,*
- too+Pron+Sg+Ess:tollena GI; ! 00_P,t'oo,tolle[na],------0E,-,-,*
- too+Pron+Sg+Gen:tolle GI; ! 00_P,t'oo,tolle[],------0G,-,-,*
- too+Pron+Sg+Ill:tollesse GI; ! 00_P,t'oo,tolle[sse],------01,-,-,*
- too+Pron+Sg+Ill:tosse GI; ! 00_P,t'oo,t'o[sse],------01,-,-,*
- too+Pron+Sg+Ine:tolles GI; ! 00_P,t'oo,tolle[s],------02,-,-,*
- too+Pron+Sg+Ine:tos GI; ! 00_P,t'oo,t'o[s],------02,-,-,*
- too+Pron+Sg+Com:tollega GI; ! 00_P,t'oo,tolle[ga],------0K,-,-,*
- too+Pron+Sg+Nom:too GI; ! 00_P,t'oo,t'oo[],------0N,-,-,*
- too+Pron+Sg+Par:toda GI; ! 00_P,t'oo,to[da],------0P,-,-,*
- too+Pron+Sg+Trm:tolleni GI; ! 00_P,t'oo,tolle[ni],------0R,-,-,*
- too+Pron+Sg+Tra:tolleks GI; ! 00_P,t'oo,tolle[ks],------0T,-,-,*
- üks+Pron:ü 22_KS-HE; ! (22_NP -> +Pron +Num) at: üks, bt: ühte, bn: ühe, btv: üksi, bnv: üksi
- üks+Pron+Sg+Par:üht GI; ! 22_NP,'üks,'üht[],------0P,-,-,+
- ükski+Pron+Pl+Abe:%{%} #; ! 00_P,'ükski,#,------1A,-,-,*
- ükski+Pron+Pl+Abl:%{%} #; ! 00_P,'ükski,#,------16,-,-,*
- ükski+Pron+Pl+Ade:%{%} #; ! 00_P,'ükski,#,------15,-,-,*
- ükski+Pron+Pl+All:%{%} #; ! 00_P,'ükski,#,------14,-,-,*
- ükski+Pron+Pl+Ela:%{%} #; ! 00_P,'ükski,#,------13,-,-,*
- ükski+Pron+Pl+Ess:%{%} #; ! 00_P,'ükski,#,------1E,-,-,*
- ükski+Pron+Pl+Gen:%{%} #; ! 00_P,'ükski,#,------1G,-,-,*
- ükski+Pron+Pl+Ill:%{%} #; ! 00_P,'ükski,#,------11,-,-,*
- ükski+Pron+Pl+Ine:%{%} #; ! 00_P,'ükski,#,------12,-,-,*
- ükski+Pron+Pl+Com:%{%} #; ! 00_P,'ükski,#,------1K,-,-,*
- ükski+Pron+Pl+Nom:%{%} #; ! 00_P,'ükski,#,------1N,-,-,*
- ükski+Pron+Pl+Par:%{%} #; ! 00_P,'ükski,#,------1P,-,-,*
- ükski+Pron+Pl+Trm:%{%} #; ! 00_P,'ükski,#,------1R,-,-,*
- ükski+Pron+Pl+Tra:%{%} #; ! 00_P,'ükski,#,------1T,-,-,*
- ükski+Pron+Sg+Abe:ühetagi GI; ! 00_P,'ükski,ühe[tagi],------0A,-,-,*
- ükski+Pron+Sg+Abl:üheltki GI; ! 00_P,'ükski,ühe[ltki],------06,-,-,*
- ükski+Pron+Sg+Ade:ühelgi GI; ! 00_P,'ükski,ühe[lgi],------05,-,-,*
- ükski+Pron+Sg+Ill:ühtegi GI; ! 00_P,'ükski,'ühte[gi],------0D,-,-,*
- ükski+Pron+Sg+All:ühelegi GI; ! 00_P,'ükski,ühe[legi],------04,-,-,*
- ükski+Pron+Sg+Ela:ühestki GI; ! 00_P,'ükski,ühe[stki],------03,-,-,*
- ükski+Pron+Sg+Ess:ühenagi GI; ! 00_P,'ükski,ühe[nagi],------0E,-,-,*
- ükski+Pron+Sg+Gen:ühegi GI; ! 00_P,'ükski,ühe[gi],------0G,-,-,*
- ükski+Pron+Sg+Ill:ühessegi GI; ! 00_P,'ükski,ühe[ssegi],------01,-,-,*
- ükski+Pron+Sg+Ine:üheski GI; ! 00_P,'ükski,ühe[ski],------02,-,-,*
- ükski+Pron+Sg+Com:ühegagi GI; ! 00_P,'ükski,ühe[gagi],------0K,-,-,*
- ükski+Pron+Sg+Nom:ükski GI; ! 00_P,'ükski,'üks[ki],------0N,-,-,*
- ükski+Pron+Sg+Par:ühtegi GI; ! 00_P,'ükski,'ühte[gi],------0P,-,-,*
- ükski+Pron+Sg+Par:ühtki GI; ! 00_P,'ükski,'üht[ki],------0P,-,-,*
- ükski+Pron+Sg+Trm:ühenigi GI; ! 00_P,'ükski,ühe[nigi],------0R,-,-,*
- ükski+Pron+Sg+Tra:ühekski GI; ! 00_P,'ükski,ühe[kski],------0T,-,-,*
-!
-! 
- esimene+Pron:esime 12_NE-SE-S; ! (12_OP -> +Pron +Ord) a0: esimene, b0: esimese, c0: esimes, b0v: esimesi
- mihukene+Pron:mihuke 12_NE-SE-S; ! (12_P -> +Pron) a0: mihukene, b0: mihukese, c0: mihukes, b0v: mihukesi
- mihuke+Pron:mihuke 12_0-SE-S; ! (12_P -> +Pron) a0: mihuke, b0: mihukese, c0: mihukes, b0v: mihukesi
- milline+Pron:milli 10_NE-SE-S; ! (10_P -> +Pron) a0: milline, b0: millise, c0: millis
- minakene+Pron:minake 12_NE-SE-S; ! (12_P -> +Pron) a0: minakene, b0: minakese, c0: minakes, b0v: minakesi
- minake+Pron:minake 12_0-SE-S; ! (12_P -> +Pron) a0: minake, b0: minakese, c0: minakes, b0v: minakesi
- misukene+Pron:misuke 12_NE-SE-S; ! (12_P -> +Pron) a0: misukene, b0: misukese, c0: misukes, b0v: misukesi
- misuke+Pron:misuke 12_0-SE-S; ! (12_P -> +Pron) a0: misuke, b0: misukese, c0: misukes, b0v: misukesi
- mõningane+Pron:mõninga 12_NE-SE-S; ! (12_P -> +Pron) a0: mõningane, b0: mõningase, c0: mõningas, b0v: mõningasi
- mäherdune+Pron:mäherdu 12_NE-SE-S; ! (12_P -> +Pron) a0: mäherdune, b0: mäherduse, c0: mäherdus, b0v: mäherdusi
- nihukene+Pron:nihuke 12_NE-SE-S; ! (12_P -> +Pron) a0: nihukene, b0: nihukese, c0: nihukes, b0v: nihukesi
- nihuke+Pron:nihuke 12_0-SE-S; ! (12_P -> +Pron) a0: nihuke, b0: nihukese, c0: nihukes, b0v: nihukesi
- niisuke+Pron:niisuke 12_0-SE-S; ! (12_P -> +Pron) a0: niisuke, b0: niisukese, c0: niisukes, b0v: niisukesi
- nisukene+Pron:nisuke 12_NE-SE-S; ! (12_P -> +Pron) a0: nisukene, b0: nisukese, c0: nisukes, b0v: nisukesi
- nisuke+Pron:nisuke 12_0-SE-S; ! (12_P -> +Pron) a0: nisuke, b0: nisukese, c0: nisukes, b0v: nisukesi
- paljuke+Pron:paljuke 12_0-SE-S; ! (12_P -> +Pron) a0: paljuke, b0: paljukese, c0: paljukes, b0v: paljukesi
- samane+Pron:sama 10_NE-SE-S; ! (10_AP -> +A +Pron) a0: samane, b0: samase, c0: samas
- samune+Pron:samu 10_NE-SE-S; ! (10_P -> +Pron) a0: samune, b0: samuse, c0: samus
- selline+Pron:selli 10_NE-SE-S; ! (10_P -> +Pron) a0: selline, b0: sellise, c0: sellis
- sihukene+Pron:sihuke 12_NE-SE-S; ! (12_P -> +Pron) a0: sihukene, b0: sihukese, c0: sihukes, b0v: sihukesi
- sihuke+Pron:sihuke 12_0-SE-S; ! (12_P -> +Pron) a0: sihuke, b0: sihukese, c0: sihukes, b0v: sihukesi
- sinane+Pron:sina 10_NE-SE-S; ! (10_AP -> +A +Pron) a0: sinane, b0: sinase, c0: sinas
- säherdune+Pron:säherdu 12_NE-SE-S; ! (12_P -> +Pron) a0: säherdune, b0: säherduse, c0: säherdus, b0v: säherdusi
- säärane+Pron:säära 10_NE-SE-S; ! (10_P -> +Pron) a0: säärane, b0: säärase, c0: sääras
- taoline+Pron:taoli 12_NE-SE-S; ! (12_A -> +A) a0: taoline, b0: taolise, c0: taolis, b0v: taolisi
- taoline+Pron+Pl+Par:taoliseid GI;
- üksteise+Pron:ükstei 12_NE-SE-S'; ! (12_P -> +Pron) a0: teise, b0: teise, c0: teis, b0v: teisi ?????
- teineteise+Pron:teinetei 12_NE-SE-S'; ! (12_P -> +Pron) a0: teise, b0: teise, c0: teis, b0v: teisi ?????
- teise+Pron:teise 12_NE-SE-S'; ! (12_P -> +Pron) a0: teise, b0: teise, c0: teis, b0v: teisi ?????
- temakene+Pron:temake 12_NE-SE-S; ! (12_P -> +Pron) a0: temakene, b0: temakese, c0: temakes, b0v: temakesi
- temake+Pron:temake 12_0-SE-S; ! (12_P -> +Pron) a0: temake, b0: temakese, c0: temakes, b0v: temakesi
+muist+Pron:m˘uist #  "weight: 9 " ; 
+esimene+Pron:esimene OLULINE  "weight: 4 " ; 
+igasugune+Pron:iga%#sugune SOOLANE  "weight: 6 " ; 
+isesugune+Pron:ise%#sugune SOOLANE  "weight: 10 " ; 
+kumb+Pron:k˘umB1%>%{pl.i%}%{rare%} PIIM  "weight: 7 " ; 
+meiesugune+Pron:meie%#sugune SOOLANE  "weight: 10 " ; 
+meietaoline+Pron:meie%#t˘aoline SUULINE  "weight: 11 " ; 
+mihukene+Pron:mihukene OLULINE  "weight: 11 " ; 
+mihuke+Pron:mihuke PEENIKE  "weight: 10 " ; 
+milletaoline+Pron:mille%#t˘aoline SUULINE  "weight: 11 " ; 
+milline+Pron:milʲline SOOLANE  "weight: 5 " ; 
+minakene+Pron:minakene OLULINE  "weight: 11 " ; 
+minake+Pron:minake PEENIKE  "weight: 11 " ; 
+mingine+Pron:m˘ingine SOOLANE  "weight: 11 " ; 
+mingi+Pron:m˘ingi AASTA  "weight: 4 " ; 
+mingisugune+Pron:m˘ingi%#sugune SOOLANE  "weight: 7 " ; 
+minusugune+Pron:minu%#sugune SOOLANE  "weight: 8 " ; 
+minutaoline+Pron:minu%#t˘aoline SUULINE  "weight: 10 " ; 
+miskisugune+Pron:m˘iski%#sugune SOOLANE  "weight: 11 " ; 
+missugune+Pron:m˘is%#sugune SOOLANE  "weight: 6 " ; 
+misukene+Pron:misukene OLULINE  "weight: 11 " ; 
+misuke+Pron:misuke PEENIKE  "weight: 10 " ; 
+mitmendik+Pron:m˘itmend˘ik ELANIK  "weight: 11 " ; 
+mitmes+Pron:m˘itmeN1S1 HALE  "weight: 8 " ; 
+mitmesugune+Pron:m˘itme%#sugune SOOLANE  "weight: 6 " ; 
+mitmetaoline+Pron:m˘itme%#t˘aoline SUULINE  "weight: 11 " ; 
+mõnesugune+Pron:mõne%#sugune SOOLANE  "weight: 11 " ; 
+mõningane+Pron:mõningane OLULINE  "weight: 8 " ; 
+mõningas+Pron:mõninga LOHAKAS  "weight: 6 " ; 
+mäherdune+Pron:mäherdune OLULINE  "weight: 10 " ; 
+naasugune+Pron:n˘aa%#sugune SOOLANE  "weight: 11 " ; 
+nendesugune+Pron:nende%#sugune SOOLANE  "weight: 11 " ; 
+nendetaoline+Pron:nende%#t˘aoline SUULINE  "weight: 11 " ; 
+nihukene+Pron:nihukene OLULINE  "weight: 11 " ; 
+nihuke+Pron:nihuke PEENIKE  "weight: 10 " ; 
+niimitu+Pron:n˘ii%#m˘ittU2 HAARE  "weight: 11 " ; 
+niipaljuke+Pron:n˘ii%#palʲjuke PEENIKE  "weight: 10 " ; 
+niisamasugune+Pron:n˘ii%#sama%#sugune SOOLANE  "weight: 11 " ; 
+niisugune+Pron:n˘ii%#sugune SOOLANE  "weight: 5 " ; 
+niisuke+Pron:niisuke PEENIKE  "weight: 11 " ; 
+nisukene+Pron:nisukene OLULINE  "weight: 11 " ; 
+nisuke+Pron:nisuke PEENIKE  "weight: 10 " ; 
+muu+Pron:m˘uu%>%{id%} PUU  "weight: 4 " ; 
+oma+Pron:oma%>%{pl.i%} KAVA  "weight: 2 " ; 
+omasugune+Pron:oma%#sugune SOOLANE  "weight: 9 " ; 
+omataoline+Pron:oma%#t˘aoline SUULINE  "weight: 10 " ; 
+paljuke+Pron:palʲjuke PEENIKE  "weight: 11 " ; 
+samasugune+Pron:sama%#sugune SOOLANE  "weight: 6 " ; 
+samataoline+Pron:sama%#t˘aoline SUULINE  "weight: 11 " ; 
+samune+Pron:samune SOOLANE  "weight: 11 " ; 
+seesugune+Pron:s˘ee%#sugune SOOLANE  "weight: 8 " ; 
+selletaoline+Pron:selle%#t˘aoline SUULINE  "weight: 10 " ; 
+selline+Pron:selʲline SOOLANE  "weight: 4 " ; 
+setu+Pron:s˘ettU2 HAARE  "weight: 8 " ; 
+sihukene+Pron:sihukene OLULINE  "weight: 11 " ; 
+sihuke+Pron:sihuke PEENIKE  "weight: 7 " ; 
+sinusugune+Pron:sinu%#sugune SOOLANE  "weight: 9 " ; 
+sinutaoline+Pron:sinu%#t˘aoline SUULINE  "weight: 11 " ; 
+säherdune+Pron:säherdune OLULINE  "weight: 9 " ; 
+säärane+Pron:säärane SOOLANE  "weight: 7 " ; 
+taoline+Pron:t˘aoline SUULINE  "weight: 6 " ; 
+teiesugune+Pron:teie%#sugune SOOLANE  "weight: 10 " ; 
+teietaoline+Pron:teie%#t˘aoline SUULINE  "weight: 11 " ; 
+teine+Pron:teine TEINE  "weight: 3 " ; 
+teineteise+Pron:teine%#teine OLULINE  "weight: 6 " ; 
+teissugune+Pron:t˘eis%#sugune SOOLANE  "weight: 11 " ; 
+teistsugune+Pron:t˘eist%#sugune SOOLANE  "weight: 6 " ; 
+temakene+Pron:temakene OLULINE  "weight: 11 " ; 
+temake+Pron:temake PEENIKE  "weight: 11 " ; 
+temasugune+Pron:tema%#sugune SOOLANE  "weight: 9 " ; 
+temataoline+Pron:tema%#t˘aoline SUULINE  "weight: 10 " ; 
+üks+Pron:˘ü KAKS  "weight: 3 " ; 
+üksteise+Pron:˘üks%#teine OLULINE  "weight: 6 " ; 
+omaenese+Pron:oma%# OMAENESE  "weight: 7 " ; 
+kumbki+Pron:kumB1%>%{pl.i%}%{rare%} KUMBKI  "weight: 6 " ; 
+miski+Pron:mi MISKI  "weight: 3 " ; 
+keegi+Pron:ke KEEGI  "weight: 4 " ; 
+eimiski+Pron:ei%#mi MISKI  "weight: 9 " ; 
+eikeegi+Pron:ei%#ke KEEGI  "weight: 9 " ; 
 
- teine+Pron+Sg+Nom:teine GI;
- teine+Pron+Sg+Gen:teise GI;
- teine+Pron+Sg+Par:teist GI;
- teine+Pron+Sg+Ill:teisesse GI;
- teine+Pron+Sg+Ill:teise GI;
- teine+Pron+Sg+Ine:teises GI;
- teine+Pron+Sg+Ela:teisest GI;
- teine+Pron+Sg+All:teisele GI;
- teine+Pron+Sg+Ade:teisel GI;
- teine+Pron+Sg+Abl:teiselt GI;
- teine+Pron+Sg+Tra:teiseks GI;
- teine+Pron+Sg+Trm:teiseni GI;
- teine+Pron+Sg+Ess:teisena GI;
- teine+Pron+Sg+Abe:teiseta GI;
- teine+Pron+Sg+Com:teisega GI;
- teine+Pron+Pl+Nom:teised GI;
- teine+Pron+Pl+Gen:teiste GI;
- teine+Pron+Pl+Par:teisi GI;
- teine+Pron+Pl+Ill:teistesse GI;
- teine+Pron+Pl+Ine:teistes GI;
- teine+Pron+Pl+Ela:teistest GI;
- teine+Pron+Pl+All:teistele GI;
- teine+Pron+Pl+Ade:teistel GI;
- teine+Pron+Pl+Abl:teistelt GI;
- teine+Pron+Pl+Tra:teisteks GI;
- teine+Pron+Pl+Trm:teisteni GI;
- teine+Pron+Pl+Ess:teistena GI;
- teine+Pron+Pl+Abe:teisteta GI;
- teine+Pron+Pl+Com:teistega GI;
+LEXICON CompoundingPronouns
 
+mis+Pron:mi KES  "weight: 2 " ; 
+kes+Pron:ke KES  "weight: 3 " ; 
+see+Pron: SEE  "weight: 1 " ; 
+too+Pron: TOO  "weight: 5 " ; 
+mina+Pron:m MASA  "weight: 1 " ; 
+sina+Pron:s MASA  "weight: 2 " ; 
+meie+Pron:me METE  "weight: 11 " ; 
+teie+Pron:te METE  "weight: 11 " ; 
+tema+Pron:t TEMA  "weight: 1 " ; 
+nemad+Pron:n NEMAD  "weight: 11 " ; 
+@P.Stem.ise@ise+Pron:@P.Stem.ise@ ISE  "weight: 3 " ; 
+@P.Stem.ise@iseenese+Pron:@P.Stem.ise@ise%# ISE  "weight: 6 " ; 
+kõik+Pron:kõik KÕIK  "weight: 3 " ; 
 
-! need on suuresti regulaarsed, tegelikult?
-iga _SUGUNE;
-ise _SUGUNE;
-mingi _SUGUNE;
-miski _SUGUNE;
-mis _SUGUNE;
-mõne _SUGUNE;
-naa _SUGUNE;
-nii _SUGUNE;
-see _SUGUNE;
-teis  _SUGUNE; ! ??? ÕS ütleb, et ARGI teistsugune, kas peaks olema deskriptiivses ainult?
-teist _SUGUNE;
-
-mille _TAOLINE;
-sama _TAOLINE;
-selle _TAOLINE;
-
-meie _TAOLINE_SUGUNE;
-minu _TAOLINE_SUGUNE;
-mitme _TAOLINE_SUGUNE;
-nende _TAOLINE_SUGUNE;
-oma _TAOLINE_SUGUNE;
-sinu _TAOLINE_SUGUNE;
-teie _TAOLINE_SUGUNE;
-tema _TAOLINE_SUGUNE;
-
-
- seesamune+Pron:seesamu 10_NE-SE-S;
-
-LEXICON _TAOLINE_SUGUNE
-
- _TAOLINE;
- _SUGUNE;
-
-LEXICON _TAOLINE
-
-taoline+Pron:taoli 12_NE-SE-S;
-taoline+Pron:taoli 10_NE-SE-S;
-
-LEXICON _SUGUNE
-
-sugune+Pron:sugu 10_NE-SE-S;
-
-
+iga+Pron:iga RUBLA  "weight: 4 " ; 
+@P.Stem.ise@igaüks+Pron:@P.Stem.ise@iga%#˘ü KAKS  "weight: 6 " ; 
+mitu+Pron:m˘ittU2 HAARE  "weight: 4 " ; 
+mõlema+Pron:mõlem MAGUS  "weight: 5 " ; 
+mõni+Pron:mõn MÕNI  "weight: 4 " ; 
+palju+Pron:palʲju PERE  "weight: 3 " ; 
+sama+Pron:sama%>%{pl.u%} KAVA  "weight: 4 " ; 

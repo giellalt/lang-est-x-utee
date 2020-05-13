@@ -107,13 +107,13 @@ AM_CONDITIONAL([WANT_ALT_ORTH_SPELLERS], [ true ])
 # upper vs lower case. That is not always true, or the case handling is such
 # that the default system doesn't cut it. In those cases, change the value
 # below from 'true' to 'false':
-AM_CONDITIONAL([DEFAULT_CASE_HANDLING], [ true ])
+AM_CONDITIONAL([DEFAULT_CASE_HANDLING], [ false ])
 
 # Specify the tags for all dialects in this variable, leave it empty if you do
 # NOT support dialectal variant fst's. Use upper case, separate with space.
 # Dialects are presently only used in Oahpa fst's, and only support dialectal
 # variation within the -norm- fst's.
-AC_SUBST([DIALECTS], ["main"])
+AC_SUBST([DIALECTS], [""])
 AM_CONDITIONAL([HAVE_DIALECTS], [test "x$DIALECTS" != "x"])
 
 ########## LANGUAGE SPECIFIC BUILD SETTINGS ##########

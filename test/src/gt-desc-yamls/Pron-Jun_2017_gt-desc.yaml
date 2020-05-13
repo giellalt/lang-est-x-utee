@@ -1,0 +1,99 @@
+Config:
+  hfst:
+      ../../../src/generator-gt-norm.hfstol: Gen
+      ../../../src/analyser-gt-norm.hfstol: Morph
+  xerox:
+      ../../../src/generator-gt-norm.xfst: Gen
+      ../../../src/analyser-gt-norm.xfst: Morph
+      lookup: App
+
+Tests:
+
+# generated in Jun 2017 while converting Filosoft lexicon to 2-level formalism
+# these words were part of the test cases, checked manually
+
+  Pronouns:
+    seesama+Pron+Pl+Ill: nendessesamadesse
+    seesama+Pron+Pl+Ill+Foc/gi: nendessesamadessegi
+    seesama+Pron+Pl+Ela: nendestsamadest
+    seesama+Pron+Pl+Ela+Foc/gi: nendestsamadestki
+    seesama+Pron+Pl+Ine: nendessamades
+    seesama+Pron+Pl+Ine+Foc/gi: nendessamadeski
+    seesama+Pron+Pl+Tra: nendekssamadeks
+    seesama+Pron+Pl+Tra+Foc/gi: nendekssamadekski
+    seesama+Pron+Pl+Abl: nendeltsamadelt
+    seesama+Pron+Pl+Abl+Foc/gi: nendeltsamadeltki
+    seesama+Pron+Pl+All: nendelesamadele
+    seesama+Pron+Pl+All+Foc/gi: nendelesamadelegi
+    seesama+Pron+Pl+Ade: nendelsamadel
+    seesama+Pron+Pl+Ade+Foc/gi: nendelsamadelgi
+    seesama+Pron+Pl+Ess: nendesamadena
+    seesama+Pron+Pl+Ess+Foc/gi: nendesamadenagi
+    seesama+Pron+Pl+Trm: nendesamadeni
+    seesama+Pron+Pl+Trm+Foc/gi: nendesamadenigi
+    seesama+Pron+Pl+Abe: nendesamadeta
+    seesama+Pron+Pl+Abe+Foc/gi: nendesamadetagi
+    seesama+Pron+Pl+Com: nendesamadega
+    seesama+Pron+Pl+Com+Foc/gi: nendesamadegagi
+    seesama+Pron+Pl+Gen: nendesamade
+    seesama+Pron+Pl+Gen+Foc/gi: nendesamadegi
+    seesama+Pron+Pl+Par+Foc/gi+Use/Rare: neidsamasidki
+    seesama+Pron+Pl+Par+Use/Rare: neidsamasid
+    seesama+Pron+Pl+Par: neidsamu
+    seesama+Pron+Pl+Par+Foc/gi: neidsamugi
+    seesama+Pron+Pl+Nom: needsamad
+    seesama+Pron+Pl+Nom+Foc/gi: needsamadki
+    seesama+Pron+Pl+Ill+Foc/gi+Use/Rare: neissesamadessegi
+    seesama+Pron+Pl+Ill+Use/Rare: neissesamadesse
+    seesama+Pron+Pl+Ela+Foc/gi+Use/Rare: neistsamadestki
+    seesama+Pron+Pl+Ela+Use/Rare: neistsamadest
+    seesama+Pron+Pl+Ine+Foc/gi+Use/Rare: neissamadeski
+    seesama+Pron+Pl+Ine+Use/Rare: neissamades
+    seesama+Pron+Pl+Tra+Foc/gi+Use/Rare: neikssamadekski
+    seesama+Pron+Pl+Tra+Use/Rare: neikssamadeks
+    seesama+Pron+Pl+Abl+Foc/gi+Use/Rare: neiltsamadeltki
+    seesama+Pron+Pl+Abl+Use/Rare: neiltsamadelt
+    seesama+Pron+Pl+All+Foc/gi+Use/Rare: neilesamadelegi
+    seesama+Pron+Pl+All+Use/Rare: neilesamadele
+    seesama+Pron+Pl+Ade+Foc/gi+Use/Rare: neilsamadelgi
+    seesama+Pron+Pl+Ade+Use/Rare: neilsamadel
+    seesama+Pron+Sg+Ine+Foc/gi+Use/Rare: sessamaski
+    seesama+Pron+Sg+Ine+Use/Rare: sessamas
+    seesama+Pron+Sg+Ill+Foc/gi+Use/Rare: sessesamassegi
+    seesama+Pron+Sg+Ill+Use/Rare: sessesamasse
+    seesama+Pron+Sg+Ela+Foc/gi+Use/Rare: sestsamastki
+    seesama+Pron+Sg+Ela+Use/Rare: sestsamast
+    seesama+Pron+Sg+Tra+Foc/gi+Use/Rare: sekssamakski
+    seesama+Pron+Sg+Tra+Use/Rare: sekssamaks
+    seesama+Pron+Sg+Abl+Foc/gi+Use/Rare: seltsamaltki
+    seesama+Pron+Sg+Abl+Use/Rare: seltsamalt
+    seesama+Pron+Sg+Ade+Foc/gi+Use/Rare: selsamalgi
+    seesama+Pron+Sg+Ade+Use/Rare: selsamal
+    seesama+Pron+Sg+Par: sedasama
+    seesama+Pron+Sg+Par+Foc/gi: sedasamagi
+    seesama+Pron+Sg+Nom: seesama
+    seesama+Pron+Sg+Nom+Foc/gi: seesamagi
+    seesama+Pron+Sg+Ill: sellessesamasse
+    seesama+Pron+Sg+Ill+Foc/gi: sellessesamassegi
+    seesama+Pron+Sg+Ela: sellestsamast
+    seesama+Pron+Sg+Ela+Foc/gi: sellestsamastki
+    seesama+Pron+Sg+Ine: sellessamas
+    seesama+Pron+Sg+Ine+Foc/gi: sellessamaski
+    seesama+Pron+Sg+Tra: sellekssamaks
+    seesama+Pron+Sg+Tra+Foc/gi: sellekssamakski
+    seesama+Pron+Sg+Abl: selleltsamalt
+    seesama+Pron+Sg+Abl+Foc/gi: selleltsamaltki
+    seesama+Pron+Sg+All: sellelesamale
+    seesama+Pron+Sg+All+Foc/gi: sellelesamalegi
+    seesama+Pron+Sg+Ade: sellelsamal
+    seesama+Pron+Sg+Ade+Foc/gi: sellelsamalgi
+    seesama+Pron+Sg+Ess: sellesamana
+    seesama+Pron+Sg+Ess+Foc/gi: sellesamanagi
+    seesama+Pron+Sg+Trm: sellesamani
+    seesama+Pron+Sg+Trm+Foc/gi: sellesamanigi
+    seesama+Pron+Sg+Abe: sellesamata
+    seesama+Pron+Sg+Abe+Foc/gi: sellesamatagi
+    seesama+Pron+Sg+Com: sellesamaga
+    seesama+Pron+Sg+Com+Foc/gi: sellesamagagi
+    seesama+Pron+Sg+Gen: sellesama
+    seesama+Pron+Sg+Gen+Foc/gi: sellesamagi

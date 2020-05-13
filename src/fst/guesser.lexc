@@ -1,0 +1,608 @@
+
+! Guesser needs these
+Letter = a|e|i|o|u|õ|ä|ö|ü|b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|š|z|ž|t|v|w|x|y; 
+!AnySymbol = Letter | CapLetter | Dig ;  ! punctuation symbols missing from here; is it OK?
+
+! double vowels and diphtongs:
+!
+!   ii    iu         üü üi                                    ui    uu
+!   ei ee eu eo ea   öö öi öe    öa       õõ õi õe õu õo      oi oe ou oo oa
+!                    ää äi äe äu                              ai ae au ao aa
+!
+VowNoDots = i|u|a|e|o;
+VowDots = [ õ|ä|ö|ü ];
+Vowel = [ VowNoDots | VowDots ] | y | w ;
+DoubleVow = i^2 | u^2 | a^2 | e^2 | o^2 | õ^2 | ä^2 | ö^2 | ü^2 ;
+Diphtong = [Vowel VowNoDots] & ~[HighVowel NonHighVowel] & ~DoubleVow & ~[ä a] & ~[ö o] & ~[ü u];  ! y and w in diphtongs is weird... 
+
+JVow = [i [VowNoDots - i]];   ! ia, ie, iu, io; iu=ju; io=jo , v.a. viimases jalas lühikese rõhulise silbi järel (minia, venia)
+EVow = [[e [VowNoDots - i]] & ~[e^2]];   ! eu=e_u; eo=e_o; ea=e_a lühikese? rõhulise silbi järel, s.t. kahe OrdFoot vahel või ... vahel...
+UVow = [[u [VowNoDots - i]] & ~[u^2]];   ! uo, ua, ue - esimeses silbis diftong, mujal kaks eraldi vokaali
+
+StrictDiphtong = [Diphtong & ~[JVow] & ~[UVow] & ~[EVow]] ; ! ei saa olla muud kui diftong, s.t. tema keskel ei saa olla silbipiiri 
+LongV =  [DoubleVow | Diphtong] ;
+
+Ckpt = k|p|t;
+DoubleCkpt = k^2 | p^2 | t^2 ;
+Clmnr = l|m|n|r;
+DoubleClmnr = l^2 | m^2 | n^2 | r^2 ;
+Cgbd = g|b|d;
+Cplosive = [Ckpt | Cgbd] ;
+Cfš = f|š;
+Csibilant = [s|š|z|ž];
+Cnonsonor = [Ckpt | Cgbd | Cfš | h | s ] ;
+Csonor = [ Clmnr | j | v] ;                  ! excluding foreign letters
+Consonant = Cnonsonor | Csonor | c|q|z|ž|w|x|y;
+ShortCons = [Cgbd | Clmnr | h | j | s | v] ;
+Cspirant = [f | h | [h v]];
+DoubleCons = DoubleCkpt | DoubleClmnr | f^2 | h^2 | s^2 | š^2 | v^2   ;
+
+Letter = Vowel | Consonant ;
+
+SomeSyllables = [?* Vowel ?*] ;
+
+! a syllable pair
+! uba, puänt, laua, liaan
+Pair = [[Vowel+ Consonant+ Vowel+] | 
+       [[Vowel Vowel] & ~LongV] |                
+       [[LongV Vowel] & ~[Vowel DoubleVow]] |    
+       [[Vowel DoubleVow] & ~[LongV Vowel]]];     
+
+! Syllables
+ShortVSyll = Vowel ;
+ShortCSyll = [[Vowel | JVow | UVow] [Consonant | [Cgbd Clmnr]]] ;
+LongCSyll =  [[Vowel | JVow | UVow] [[Consonant Consonant+] & ~[Cgbd Clmnr]]] ;
+LCSyll =     [LongCSyll & ~[Letter* [DoubleCons | [Clmnr s s]]]] ;
+XCSyll =     [LongCSyll &  [Letter* [DoubleCons | [Clmnr s s]]]] ;  ! xtra long...
+
+
+! word syllable count starts from the last stressed syllable:
+! it may be the first syllable of the word, or the last one with long vowel
+FirstSyll = [Consonant* [ShortCSyll | ShortVSyll]] | [Letter* LongCSyll] | 
+            [[[Letter* DoubleVow] | [[Letter* Diphtong] & ~[Letter* [DoubleVow | StrictDiphtong] Vowel]]] Consonant*] ;
+
+! longish first syllable
+LFirstSyll = [Consonant* LongCSyll] | [Letter* XCSyll] | 
+             [[[Letter* DoubleVow] | [[Letter* Diphtong] & ~[Letter* [DoubleVow | StrictDiphtong] Vowel]]] Consonant*] ;
+
+! foot is a recurring building block for patterns
+badinfoot = [Consonant* [LongV | JVow | UVow] Consonant*] | [Letter* DoubleVow Consonant*];
+Foot  = [FirstSyll  [ShortVSyll | ShortCSyll | LCSyll]] & ~[badinfoot] ;
+LFoot = [LFirstSyll [ShortVSyll | ShortCSyll | LCSyll]] & ~[badinfoot] ;  ! foot starts with a longish syllable
+
+! three syllable sequence
+ThreeSyllV = [Foot Vowel] & ~[Letter* [DoubleVow | StrictDiphtong]] ;
+
+! lauatu, mitte ideetu, aga ka nimetatu (võiks olla paradigm deriv);  ideetu, aga ka tuutu
+DerTu = [[Letter* Pair t u] |   
+         [Letter* LongV t u] ];                         
+DerJa = [[Letter* Vowel Consonant+ Vowel j a] | [Letter* Vowel Consonant+ t j a]];
+DerNe = [[Letter* Pair (Consonant) n e] | [Letter* Vowel [Vowel | Consonant] Consonant+ n e]];
+DerKe = [Letter* Pair k e] ;
+
+!-----------
+! astmed
+! need on hakkama ja leppima tüüpide sisehäälikud;
+! s.t. need on kolmandas vältes, aga teisendus teise vältesse ei muuda kirjapilti, v.a.
+! [LongV | [Vowel Csonor]]kpt -> gbd, kpt[Csonor] -> gbd, [Vowel]topeltkpt -> kpt, [LongV | [Vowel Csonor]]ss -> s
+! tundub, et need samad sisehäälikud sobivad selleks, et defineerida II välte sisehäälikuid
+! (v.a. [LongV | [Vowel Csonor]]ss)
+! JVow on sõnades nagu siesta, fiasko
+SiseLeppima = [[LongV [Consonant | [s s] | [Cplosive Csibilant] | [Csibilant Cplosive] ]] | 
+                    [Vowel Csonor    [ [s s] | [Cplosive Csibilant] | [Csibilant Cplosive]]] | 
+                    [[Vowel | JVow] [[Consonant Consonant] & ~[Cgbd Csonor] & ~[j Consonant] & ~[\h h] | [h v Ckpt]]]  
+                   ] ;
+
+SiseLeppuma = [Vowel Clmnr Ckpt] | 
+             [LongV Ckpt] | 
+             [Vowel DoubleCkpt]; ! alati ka ELAMA; nähtava orto muutuseta on siit väljas...
+
+! veel II välte sisehäälikuid
+! vedru
+SiseIIGL = [[Vowel | JVow] Cgbd Csonor] ;
+! piko, siena
+SiseIIK = [Vowel [Ckpt | f | š | z | ž]] | [JVow Consonant];
+
+! II välde
+SiseII = [SiseLeppima & ~[[LongV | [Vowel Csonor]] s s]] | SiseIIK | SiseIIGL;
+
+! I välde
+SiseI = [Vowel ShortCons] ;
+
+! Ainult III välde, s.t. pole võimalik hääldada nagu oleks II välde
+! jäta wyq välja
+SiseIIIAinult = [[Vowel | LongV | JVow] Consonant+] & ~[SiseI] & ~[SiseII] & ~$[w|y|q];
+
+
+
+!---------------
+
+! patterns for productive inflectional types
+! prefix Proto denotes ordinary words, Nimi denotes names
+
+! video, rodeo, stereo also like ARMEE
+ProtoARMEE = [FirstSyll & [Letter* Vowel]] | [Consonant* [JVow | UVow]];
+
+NimiARMEE = [Letter* [Vowel]] ;
+
+ProtoKAVA = [[Consonant* Vowel ShortCons [VowNoDots - e]] |
+                  [Foot [t | [s t] | [s k]] e l u]] ;
+!nimiKAVA is unnecessary
+
+SyllAASTA = [[ThreeSyllV & [Letter* VowNoDots]] & ~DerKe] ;
+
+! viimane on ka ThreeSyll, aga EndAASTA on mugav ; tegelinski
+EndAASTA = [[Letter* Vowel Consonant+ i a] |   
+           [Letter* Vowel Consonant+ i k a] | 
+           [Letter* Vowel Consonant+ s k i]] ;                                       
+
+            
+! tüüne, haige, rohke, raske, range,  lükra , kalme, võimla, Brodski, mitte katte ega veski
+! need ei tohiks olla AASTA tüüpi
+BadGradeAASTA = [Consonant* Vowel [Consonant | [Cgbd Clmnr]] VowNoDots] | 
+                     [Consonant* Vowel Consonant Csibilant [VowNoDots - e]] | 
+                     [Letter* Vowel DoubleClmnr  [VowNoDots - e]] ;
+
+GradeAASTA = [Foot & [Letter* Vowel+ Consonant+ VowNoDots] & ~BadGradeAASTA] ;
+
+AASTA = [SyllAASTA | EndAASTA | GradeAASTA] ;  ! DerJa tuleks verbi tuletisena nagunii, eks?
+
+ProtoAASTA = [AASTA & ~DerNe] | DerTu | DerJa ;
+! lihtsustatud versioon
+
+LihtAASTA = [ThreeSyllV & [Letter* VowNoDots]] | EndAASTA | [Foot & [Letter* Vowel+ Consonant+ VowNoDots]] | DerTu | DerJa ;
+
+! kui iganes mahub piisavalt silpe, siis ongi AASTA tüüp...
+NimiAASTA = [Letter* AASTA] ;
+
+! need justkui ei tohiks olla PERE tüüpi (on ainult AASTA tüüpi)
+BadGradePere = [[Letter* LongV Consonant Consonant Consonant+ Vowel] |
+                     [Letter* Csibilant Consonant Consonant+ Vowel] |
+                     [Letter* Consonant+ Cgbd Clmnr Vowel] 
+                    ] ;
+
+GradePERE = [Foot & [[Letter* Vowel+ Consonant+ Vowel] & ~BadGradePere ]] ;
+
+SyllPERE = [[Letter* Vowel] & ~ProtoARMEE & ~AASTA] | [Consonant* JVow];
+
+VoorPERE = [Letter* Letter Consonant Vowel Vowel [k|n] e] ; ! karaoke, lantsaroone
+
+ProtoPERE = [[SyllPERE | [SyllAASTA & ~EndAASTA]] & ~DerJa  & ~DerTu & ~DerKe & ~DerNe] | [GradePERE & ~DerNe] | VoorPERE ;
+! eefeu, panatsea jms kuuluvad ka PERE alla, ehkki tegelt samad vormid saaks ARMEE + AASTA kaudu...
+
+LihtPERE = [Foot & [Letter* Vowel+ Consonant+ Vowel]] | [Consonant* JVow] ;
+
+! almost anything is possible... e.g. Sydney, Maria, Tanganjika
+NimiPERE =  [Letter* Letter Vowel] & ~[FirstSyll & [Letter* Vowel]];
+
+ProtoPEENIKE = DerKe ;
+!NimiPEENIKE is unnecessary ?
+
+DerLine = [l i n e] ;
+DerLane = [l a n e] ;
+DerMine = [m i n e];
+DerLiLaMiNe = DerLine | DerLane | DerMine;
+
+AnyOLULINE = [Letter* Vowel Consonant+ [a|e|i|u] n e] | [[Foot & [Letter* Vowel]] n e] ;  ! ka laiune
+AnyOLULIS =  [Letter* Vowel Consonant+ VowNoDots s] | [[Foot & [Letter* [i|u]]] s] | [[Foot & [Letter* [Vowel - u]]] u s] | [[Letter* Pair Vowel s] & [Letter* [JVow | EVow | UVow] s]];  ! ka laius, avaus; 
+
+! these patterns can never occur for OLULINE
+SyllSOOLANE = [Consonant* [ShortCSyll & [Vowel Consonant+]] VowNoDots n e] ;                 ! tinane, rublane, mitte kiuline
+SyllSOOLAS =  [Consonant* [ShortCSyll & [Vowel Consonant+]] VowNoDots s] | [Consonant* Vowel+ Consonant+ i s];                 ! jänes, Valdis 
+
+EndSOOLANE = [Letter* Vowel [Vowel | Consonant+] n e] & ~[Consonant* Vowel [Consonant - [Ckpt | m]] n e] ;  ! jäine, ...aarne, ...stne, ka akne ja tamne; laiune
+
+! ProtoOLULIS: selle mustriga sõnad võivad olla pl par lõpus -si;
+ProtoOLULIS = [AnyOLULIS & ~SyllSOOLAS] ;
+
+LihtOLULIS = AnyOLULIS ;
+
+NimiOLULIS = [ProtoOLULIS] ;
+NimiOLULIS = [LihtOLULIS] ;
+
+ProtoOLULINE = [ AnyOLULINE & ~[SyllSOOLANE | EndSOOLANE]] ;  ! ei tunne laiune, sest selle tunneb (valesti) EndSOOLANE
+
+LihtOLULINE = AnyOLULINE ;
+
+NimiOLULINE = [ProtoOLULINE] ;
+NimiOLULINE = [LihtOLULINE] ;
+
+! soolane: kõik ne, s lõpulised on siin 
+ProtoSOOLAS = [Letter* Pair s] & ~[Letter* [DoubleVow | StrictDiphtong] s] ; ! ei tunne: päis, teos jts 1-silbilised
+
+NimiSOOLAS = [ProtoSOOLAS] ;
+
+ProtoSOOLANE = [Letter* Letter Letter Letter n e] ; ! ei tunne: upne, öine; 
+
+NimiSOOLANE = [ProtoSOOLANE] ;
+
+SyllMUUSEUM = [Letter* Vowel [Vowel | Consonant+] Consonant [JVow | EVow] Clmnr] |
+                   [Letter* Vowel Cfš [JVow | EVow] Clmnr];        ! kahtlane: liineal (aga ok: ookean)
+ProtoMUUSEUM = SyllMUUSEUM ;
+
+NimiMUUSEUM = [ProtoMUUSEUM] ;
+
+SyllELANIK = [Foot Consonant i k] ;   
+
+! võiks ka nii:
+! need ei tohiks olla ELANIK tüüpi
+! valesti: kümnik; ...eerik, ... aga ka (valesti) nt suumik, soo+lik
+BadGradeELANIK = [Consonant* Vowel [Consonant | [Cgbd Clmnr]] i k] | 
+                      [Consonant* Vowel Consonant Csibilant i k] | 
+                      [(Letter* Consonant) Consonant* Vowel DoubleClmnr i k] |
+                      [Consonant* Vowel ShortCons [ShortCons - [l|m]] i k] |   
+                      [Letter* DoubleVow Consonant i k] |                            
+                      [Letter* Diphtong [Consonant - Clmnr] i k];           
+
+! kaks silpi, kolmas välde
+GradeELANIK = [Foot & [Letter* Vowel+ Consonant+ i k] & ~BadGradeELANIK] ;
+
+EndELANIK =    [Letter* Pair Consonant* l i k] | [Letter* LongV l i k ] ;  ! ...tuslik, ealik, hoolik, dulcinealik...
+
+!ei tunne: kümnik, suumik
+ProtoELANIK = [SyllELANIK | GradeELANIK | EndELANIK];
+
+LihtELANIK = [SyllELANIK | [Foot & [Letter* Vowel+ Consonant+ i k]] | EndELANIK];
+
+NimiELANIK = [ProtoELANIK] ;
+NimiELANIK = [LihtELANIK] ;
+
+SyllVIRSIK = [Foot] & [Letter* [[a | e | i] [k | [n g] | [r g]]]] ;
+
+EndVIRSIK = [Letter* Consonant^2 i k] | [Letter* Vowel t i k] ;
+
+BadVirsik = [Letter* Vowel Consonant+ Vowel (s) l i k] | [Letter* b e r g];
+ProtoVIRSIK = [SyllVIRSIK | EndVIRSIK] & ~BadVirsik; ! ei tunne: kürenaik, paranoik, stoik
+LihtVIRSIK = [SyllVIRSIK | EndVIRSIK] ;
+
+NimiVIRSIK = [ProtoVIRSIK] | [Letter* Vowel Consonant+ i c (k) ] ; ! ka Titanic, Eric
+NimiVIRSIK = [LihtVIRSIK] | [Letter* Vowel Consonant+ i c (k) ] ; ! ka Titanic, Eric
+
+! ka seviot ja patriot
+
+SyllKABINET = [ThreeSyllV Ckpt] & [[Letter* Consonant Vowel Ckpt] | [Letter* [[Vowel Vowel] & ~LongV] Ckpt] ];
+BadEndKABINET = [Letter* i k];
+
+! puuslak, kotlet, s.t. 2-silbilised
+ThirdGradeKABINET = [[[Consonant* [LongV | [Vowel+ Consonant* Ckpt]] Consonant* Vowel Ckpt]] & [?* Consonant Consonant Vowel Ckpt]];
+
+ProtoKABINET = [[SyllKABINET | ThirdGradeKABINET] & ~BadEndKABINET] | [Consonant* Vowel Ckpt];
+! mitte_kabinet hulka kuulub palju valesid, aga kabinet alla ei kuulu nt tuk-tuk...
+
+NimiKABINET = [ProtoKABINET] ;
+
+SyllMAGUS = [Consonant* Vowel ShortCons i n] | [Consonant* Vowel ([Vowel | Consonant]) Consonant i t s];  ! sabin, koorits nagu KAVA ja PERE...
+ProtoMAGUS = [SyllMAGUS] ;
+
+NimiMAGUS = ProtoMAGUS ;
+
+ProtoLOHAKAS = [[Letter* Letter Vowel k a s] | [Letter* Letter Letter j a s]] & ~[Consonant* Vowel [j|k] a s];
+
+! polegi vaja 
+!NimiLOHAKAS = [ProtoLOHAKAS] ;
+
+SyllREDEL = [Letter* Consonant] & [[Letter* Foot] | [Consonant* JVow Consonant+]] & ~BadEndKABINET & ~[Letter* Consonant Vowel s] & ~ProtoMUUSEUM ;
+
+EndREDEL =  [Letter* Vowel Consonant Consonant+ e [l|r]] | [Letter* Vowel Consonant* Cnonsonor [l|r]];  ! minister, Dnestr, Panagl
+AlsoREDEL = [Consonant* Vowel+ [[[Consonant - l] l] | [[Consonant - r] r]]] |
+                 [Consonant* Vowel Vowel [n|r] d]; !  kreml, loend
+
+ProtoREDEL = [SyllREDEL | EndREDEL | AlsoREDEL] ;
+
+NimiREDEL = [ProtoREDEL] | [Letter* Vowel [Vowel | Clmnr] s k];  ! ka Tomsk, Baltiisk; ei tunne Stuart ega Sinead
+
+SyllTAUD = [Letter* Consonant] & ~[Letter* Vowel Consonant+ Vowel s] & ~[Letter* Vowel Consonant+ JVow s] & ~[Letter* Consonant Vowel Ckpt] &
+                ~[Letter* LongV Consonant+ Vowel ShortCons]  & ~ProtoMUUSEUM & ~[Letter* k o n d];
+AlsoTAUD = [Consonant* Vowel+ Consonant Vowel [[l l] | [s s]] Vowel Clmnr] ;  ! emissar, patisson, leveller
+
+ProtoTAUD = [SyllTAUD | AlsoTAUD] ;
+
+NimiTAUD = [ProtoTAUD] | [Letter* Vowel g r a d] ;  ! ka Beograd
+
+!----
+! verbs
+
+RABELEMA = [Consonant* Vowel Consonant+ e l e ] ;
+HAKKLE = [[[Foot & [Letter* Consonant l e]] ] & ~[Foot l e ]] ; 
+HAKKA =  [[[LFoot & [Letter* a]] ] & ~[Foot a ]];
+
+HAKKAMA = [HAKKLE | HAKKA] ;
+
+LEPPI = [[[LFoot & [Letter* i]] ] & ~[Foot i ]] | [[Foot & [Letter* Clmnr Ckpt i]] ] ;
+LEPPU = [Consonant* Vowel Clmnr Ckpt u ] | 
+             [Consonant* LongV Ckpt u ] | 
+             [Consonant* Vowel DoubleCkpt u ]; ! alati ka ELAMA; nähtava orto muutuseta on siit väljas...
+LEPPIMA = [LEPPI | LEPPU] ;
+
+ELAMA = [Letter* Letter Letter Vowel ] & ~[RABELEMA] & ~[LEPPI] & ~[HAKKLE];
+LihtELAMA = [Letter* Letter Letter Vowel ] ;
+
+GL = [Cgbd [Clmnr | j | v]];              ! AGL: vedru, käbla (KAVA, PERE)
+xCL = [Letter Consonant [Clmnr | j | v]];             ! A.CL: eidla, ildna, ustna (AASTA)
+KL = [Ckpt [Clmnr | j | v]];              ! AKL: makro, kokni; kopra, tšakra (PERE, AASTA)
+xCCC = [Letter Consonant^3];            ! A....: oontsa, oostna, orstnu  (AASTA)
+sK = [s Ckpt];              ! AsK: piste, vatse (PERE, AASTA)
+Ksk = [Ckpt s k];             ! AKsk: plotski, rupski (AASTA)
+xsK = [Letter s Ckpt];             ! AxsK: puiste, inste (AASTA)
+
+!----
+ProtoKOND = [Letter* Letter Letter k o n ] ; ! d:"D1"  kond-derivation hack
+ProtoAPO = [Letter* Letter] ; ! word pronunciation is not deducible from its letters (e.g. Braille is brai)
+
+!Word = [Letter+] ;
+!Name = [CapLetter Letter+] ;
+
+
+! This guesser lexicon turned into a transcuder is later union-ed with the lexicon-based transducer
+
+LEXICON Root !!= * {{@CODE@}} is the starting point of everything
+
+!!@D.Part@@P.Part.Bad@@P.POS.NProp@@U.Cap.Obl@   GuessName "weight: 50" ;          !!= * {{@CODE@}}
+!@D.Part@@P.Part.Bad@@P.POS.NProp@@U.Cap.Opt@   GuessName ;          !!= * {{@CODE@}}
+!@D.Part@@P.Part.Bad@   GuessDerivation "weight: 35" ;          !!= * {{@CODE@}}
+!@D.Part@@P.Part.Bad@@P.POS.N@   GuessSimplexWord "weight: 70" ;          !!= * {{@CODE@}}
+
+ GuessSimplexWord "weight: 70" ;
+! notice @P.Part.One@; this is what finite verb form affixes require
+!@D.Part@@P.Part.One@@P.POS.V@   GuessSimplexWord "weight: 70" ;          !!= * {{@CODE@}}
+
+
+! K=kpt, G=gbd, L=lmnrjv, A=aeiouõäöü, C=consonant
+LEXICON GuessSimplexWord
+
+ < [Consonant* ] > ScanWord ;  ! siin saaks paika sättida suurtähelisuse ???
+
+LEXICON ScanWord
+
+! "silp-silbi" haaval vaata edasi
+! on sõna lõpp ainult juhul, kui see ongi ainus silp või see on kindlasti rõhuline silp
+! < [Vowel] >            Vowel ; ! polegi võimalik??? 
+ < [Vowel Consonant] >  VowelConsonant ;
+ < [DoubleVow] >        DoubleVowel ;
+
+! sõna lõpp, s.t. 1 või 2 viimast silpi
+ < [Vowel] >                       EndA ;
+ < [Vowel Ckpt] >                  EndAK ;
+ < [Vowel Clmnr] >                 EndAL ;
+ < [Vowel ShortCons [Vowel - e]] > IsKAVA ;
+ < [Vowel ShortCons e] >           IsPERE ;
+ < [Vowel [Vowel | Consonant] Vowel] >   IsPERE ;  ! pole päris ammendav muster...
+ < [DoubleVow] >                   IsARMEE ;
+
+! verbs
+ < [Vowel Consonant+ e l e ] > IsRABELEMA ;
+ < [[Vowel | LongV] Consonant+ l e] > IsHAKLEMA; 
+ < [SiseLeppima a] > IsHAKKAMA; 
+ < [SiseLeppima i] > IsLEPPIMA; 
+ < [SiseLeppuma u] > IsLEPPUMA; 
+! need elama sõnad on ilmselt liiga lubavad...
+ < [[Vowel+ Consonant+ Vowel] & ~[[Vowel | LongV] Consonant+ l e] & ~[SiseLeppima i]] > IsELAMA; ! tal on mitme tüübiga paralleele 
+ < [Vowel+ Consonant+ Vowel] > EndELAMA; ! follows a stressed syllable; (compare with IsELAMA) 
+
+LEXICON Vowel
+!  @D.Stress@@P.Stress.On@      ScanWord ;  ! <a>-...
+  @R.Stress.On@@P.Stress.Off@  ScanWord ;  ! av-<a>-us
+!  @R.Stress.Off@@P.Stress.On@  ScanWord ;  ! kal-ah-<ü>-o ???
+
+LEXICON EndA
+  @D.Stress@                   GuessARMEE ;  ! <a>
+  @R.Stress.Off@               GuessAASTA ;  ! raad-i-<o>???, var-am-<u>
+
+LEXICON VowelConsonant
+  @D.Stress@@P.Stress.On@@P.Len.I@      ScanWord ;      ! <ag>-...
+  @R.Stress.On@@P.Stress.Off@           ScanWord ;      ! ag-<ar>-us
+  @R.Stress.Off@@P.Stress.On@@P.Len.I@  ScanWord ;      ! kal-ah-<ar>-i
+
+LEXICON EndAK
+  @D.Stress@                   GuessKABINET ;     ! n<et>
+!  @D.Stress@                   GuessFIAT ;       ! n<et> võiks olla
+  @R.Stress.Off@               GuessKABINET ;     ! ka-bin-<et>
+  @R.Stress.On@@D.Len.III@     GuessREDEL ;       ! ag-<at>
+  @R.Stress.On@@R.Len.III@     GuessKABINET ;     !  alksr-at
+
+LEXICON EndAL
+  @D.Stress@                   GuessTAUD ;      ! n<el>
+  @R.Stress.Off@               GuessTAUD ;      ! se-min-<ar>
+  @R.Stress.On@                GuessREDEL ;     ! ag-<am>, aarstl-am
+
+LEXICON DoubleVowel
+  @P.Stress.On@@P.Len.II@     ScanWord ;      ! s<uu>-e
+
+LEXICON IsARMEE
+                               GuessARMEE ;    ! ...<aa>
+
+LEXICON IsKAVA
+  @D.Stress@                   GuessKAVA ;     ! kava
+
+LEXICON IsPERE
+  @D.Stress@                   GuessPERE ;     ! pere
+  @R.Stress.Off@               GuessPERE ;     ! ...pere
+
+LEXICON IsRABELEMA
+  @D.Stress@@P.Part.One@       GuessRABELEMA ;     ! rabelema  @P.Part.One@ vajab lõppude lisamise programm
+
+LEXICON IsHAKLEMA          ! kahtlane...
+  @P.Part.One@                 GuessHAKKAMA ;     ! 
+  @P.Part.One@                 GuessHAKKAMA ;     ! ??? 
+
+LEXICON IsHAKKAMA
+  @D.Stress@@P.Part.One@           GuessHAKKAMA ;     ! 
+  @R.Stress.Off@@P.Part.One@       GuessHAKKAMA ;     ! ??? 
+
+LEXICON IsLEPPIMA
+  @D.Stress@@P.Part.One@           GuessLEPPIMA ;     ! 
+  @R.Stress.Off@@P.Part.One@       GuessLEPPIMA ;     ! 
+
+LEXICON IsLEPPUMA
+  @D.Stress@@P.Part.One@           GuessLEPPIMA ;     ! 
+
+LEXICON IsELAMA
+  @D.Stress@@P.Part.One@           GuessELAMA ;     ! 
+  @R.Stress.Off@@P.Part.One@       GuessELAMA ;     ! 
+
+LEXICON EndELAMA
+  @R.Stress.On@@P.Part.One@        GuessELAMA ;     ! 
+
+
+LEXICON GuessLane   
+    +Guess: LANE_DERIVATION_SUF ;
+
+LEXICON GuessLine   
+    +Guess: LINE_DERIVATION_SUF ;
+
+LEXICON GuessMine   
+    +Guess: MINE_DERIVATION_SUF ;
+
+LEXICON GuessNe   
+    +Guess: NE_DERIVATION_SUF ;
+
+!LEXICON GuessUs   
+!    +Guess: US_DERIVATION_SUF ;
+
+LEXICON GuessOluline
+    +Guess+A: OLULINE ;
+
+LEXICON GuessOlulane   
+    +Guess+N: OLULINE ;
+
+LEXICON GuessARMEE
+   +Guess+N: ARMEE ;
+
+LEXICON GuessNameARMEE
+   +Guess+N+Prop: ARMEE ;
+
+LEXICON GuessKAVA
+   +Guess+N: KAVA ;
+
+LEXICON GuessNameKAVA
+   +Guess+N+Prop: KAVA ;
+
+LEXICON GuessAASTA
+   +Guess+N: AASTA ;
+
+LEXICON GuessNameAASTA
+   +Guess+N+Prop: AASTA ;
+
+LEXICON GuessPERE
+   +Guess+N: PERE ;
+
+LEXICON GuessNamePERE
+   +Guess+N+Prop: PERE ;
+
+LEXICON GuessPEENIKE
+   +Guess+N: PEENIKE ;
+   +Guess+A: PEENIKE ;
+
+LEXICON GuessOLULINE
+   +Guess+A: OLULINE ;
+
+LEXICON GuessNameOLULINE
+   +Guess+N+Prop: OLULINE ;
+
+LEXICON GuessSOOLANE
+   +Guess+A: SOOLANE ;
+
+LEXICON GuessMAALANE
+   +Guess+N: SOOLANE ;
+
+LEXICON GuessNameSOOLANE
+   +Guess+N+Prop: SOOLANE ;
+
+LEXICON GuessOLULIS
+   +Guess+N: OLULINE ;
+
+LEXICON GuessNameOLULIS
+   +Guess+N+Prop: OLULINE ;
+
+LEXICON GuessSOOLAS
+   +Guess+N: SOOLANE ;
+
+LEXICON GuessNameSOOLAS
+   +Guess+N+Prop: SOOLANE ;
+
+LEXICON GuessMUUSEUM
+   +Guess+N: MUUSEUM ;
+
+LEXICON GuessNameMUUSEUM
+   +Guess+N+Prop: MUUSEUM ;
+
+LEXICON GuessELANIK
+   +Guess+N: ELANIK ;
+
+LEXICON GuessLIK
+   +Guess+A: ELANIK ;
+
+LEXICON GuessNameELANIK
+   +Guess+N+Prop: ELANIK ;
+
+LEXICON GuessVIRSIK
+   +Guess+N: VIRSIK ;
+
+LEXICON GuessNameVIRSIK
+   +Guess+N+Prop: VIRSIK ;
+
+LEXICON GuessKABINET
+   +Guess+N: KABINET ;
+
+LEXICON GuessNameKABINET
+   +Guess+N+Prop: KABINET ;
+   +Guess+N+Prop: FIAT ;   ! ?? no change in orthography
+
+LEXICON GuessMAGUS
+   +Guess+N: MAGUS ;
+
+LEXICON GuessNameMAGUS
+   +Guess+N+Prop: MAGUS ;
+
+LEXICON GuessLOHAKAS
+   +Guess+A: LOHAKAS ;
+
+LEXICON GuessREDEL
+   +Guess+N: REDEL ;
+
+LEXICON GuessNameREDEL
+   +Guess+N+Prop: REDEL ;
+
+LEXICON GuessTAUD
+   +Guess+N: TAUD ;
+
+LEXICON GuessNameTAUD
+   +Guess+N+Prop: TAUD ;
+   +Guess+N+Prop: FIAT ;   ! ?? no change in orthography
+
+LEXICON GuessRABELE
+  @R.POS.V@ GuessRABELEMA ;
+
+LEXICON GuessRABELEMA
+ ma+Guess+V: RABELEMA ;
+
+LEXICON GuessHAKKA
+  @R.POS.V@ GuessHAKKAMA ;
+
+LEXICON GuessHAKKAMA
+   ma+Guess+V: HAKKAMA ;
+
+LEXICON GuessLEPPI
+  @R.POS.V@ GuessLEPPIMA ;
+
+LEXICON GuessLEPPIMA
+   ma+Guess+V: LEPPIMA ;
+
+LEXICON GuessELA
+  @R.POS.V@ GuessELAMA ;
+
+LEXICON GuessELAMA
+   ma+Guess+V: ELAMA ;
+
+LEXICON GuessKOND
+   +Guess+N:%>%{pl.i%} PÄEV ;
+
+LEXICON GuessNameKOND
+   +Guess+N+Prop:%>%{pl.i%} PÄEV ;
+
+LEXICON GuessNameAPO
+   +Guess+N+Prop: TAUD ;
+   +Guess+N+Prop: REDEL ;   
+   +Guess+N+Prop: ARMEE ;   
+
+

@@ -19,6 +19,9 @@ if [[ $1 == "-v" ]]; then
 fi
 
 sed -e '1,/LEXICON Root/ d' < ../../../src/fst/lexicon.tmp.lexc \
+    | sed 's/@.\.[^@]*@//g' \
+    | sed 's/Alt+F[0-9][0-9]*//g' \
+    | sed 's/Alt+Enter//g' \
     | cut -d '!' -f1   \
     | grep ' ;'        \
     | cut -d ':' -f1   \
@@ -35,6 +38,9 @@ sed -e '1,/LEXICON Root/ d' < ../../../src/fst/lexicon.tmp.lexc \
     > "${lexctags}"
 
 cut -d '!' -f1 $srcdir/../../../src/fst/root.lexc \
+    | sed 's/@.\.[^@]*@//g' \
+    | sed 's/Alt+F[0-9][0-9]*//g' \
+    | sed 's/Alt+Enter//g' \
     | cut -d ':' -f1                    \
     | sed 's/+/¢+/g'                    \
     | sed 's/@/¢@/g'                    \

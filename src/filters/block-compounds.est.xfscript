@@ -1,0 +1,22 @@
+# block a compound word if:
+# 
+
+#
+define WB [ "#" ];  # word border
+
+define WW [ a | e | i | o | u | õ | ä | ö | ü ]; 
+define CC [ b | d | f | g | h | j | k | l | m | n | p | r | s | t | v ] ;
+
+define Part2 "@R.Part.Two@" ;
+define Nom "@P.Case.Nom@" ;
+define Par "@P.Case.Par@" ;
+define PreNounFlags "@C.Der@" "@C.NomStem@" ;   # flag diacritics before a noun
+
+define Bad [{iste}] ;
+
+regex  ~[ ?* Part2 ?* PreNounFlags [ {iste} Nom ] ?* ] ;
+#regex  ~[ ?* Bad ?* ] ;
+
+
+
+

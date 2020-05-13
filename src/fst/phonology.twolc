@@ -1,360 +1,1542 @@
-! Copyright © 1999-2005 by Heli Uibo.
-! Copyright © 2010 by Jaak Pruulmann-Vengerfeldt.
-! All rights reserved. 
+! Copyright © 2016-2017 
+!! !!Phonology
+
 Alphabet
 
 a b c d e f g h i j k l m n o p q r s š z ž t u v w õ ä ö ü x y 
 A B C D E F G H I J K L M N O P Q R S Š Z Ž T U V W Õ Ä Ö Ü X Y 
+'
 
-G1:g G1:0 B1:b B1:0 B1:m D1:d D1:0 D1:l D1:n D1:r K1:k K1:g K1:0 P1:p P1:b P1:0 T1:t
-T1:d T1:0 S1:s S1:0 S1:r %+:0 %$:0 A1:a A1:0 E1:e E1:0 I1:i I1:0 U1:u U1:0 W1:i W1:e W1:u W1:0
-! %.:a %.:e %.:o %.:u %.:ö %.:ä %.:i 
-%.:0 %=:0 %=:h %=:m %=:n %=:s %=:k %=:p %=:t %=:f %=:š X2:0 %!:0 Q1:k %-:%-
-
+!! Sami GT convention 
 ! Literal quotes and angles must be escaped (cf morpheme boundaries further down):
  »7     ! »
  «7     ! «
  %[%>%] ! >
  %[%<%] ! <
 
-#
+!! !Triggers
+
+ %{W%}:0   !!≈ * __@CODE@__  Weak grade trigger 
+ %{F%}:0   !!≈ * __@CODE@__  Foreign word flag to prevent application of weak grade trigger, 
+           !! so that a rule does not trigger ''Fiadi'' as the weak grade form of ''Fiat''. 
+ %{S%}:0   !!≈ * __@CODE@__ Strong stem trigger (for short illatives only), 
+           !! necessary for words with no stem gradation, having only short illative in a strong grade, 
+           !! e.g. ''Riia'' - ''Riiga'', ''Rannu'' - ''Randu''.
+           !! (But currently used also for words with stem gradation, e.g. ''tuba'' - ''tuppa'')
+ %{E%}:0   !! Schwa trigger (for -el/er words only) never appears on the surface side.
+ %{id%}:0  !!≈ * __@CODE@__ Trigger / lexicon flag for pl part possible ending (esseesid/esseid)
+ %{stemill%}:0 !!≈ * __@CODE@__ Trigger / lexicon flag for short sg ill, formed by stem change (jõgi-jõkke)
+ %{dbl%}:0 !!≈ * __@CODE@__ Trigger to double the previous letter. Sometimes a phonologically long long kk pp tt  
+           !! at the end of a Sg Nom word is written k p t, 
+           !! so it must be doubled  (kabinet - kabinetti). 
+           !! Also, tulema, panema, surema, olema, minema have tulla, tulles etc...
+ %{no.apo%}:0  !!≈ * __@CODE@__ trigger for deleting apostrophe (normally used for foreign word inflections) from Sg Nom
+
+!! Usage tag. It may relate to an individual word in the lexicon, 
+!! or to a set of inflectional forms of some inflectional type, i.e. its sub-paradigm. It never surfaces.
+!! It is used to pair the surface form with the usage tag of the lexical representation.
+
+ %{rare%}:0       !!≈ * __@CODE@__ rare or less used form (norm) ; e.g. kingasid
+
+!! !Special surface side symbols, used in rule contexts
+
+ %>     !!≈ * __@CODE@__ Inflectional suffix boundary
+ »      !!≈ * __@CODE@__ Derivational suffix boundary
+ #      !!≈ * __@CODE@__ Word boundary for both lexicalised and dynamic compounds
+!! Final hyphen for shortened stems:
+!  (The next line's documentation is formatted this way to avoid triggering a
+!  Forrest limitation - the hyphen is a special symbol in the jspwiki format.
+!! {{{
+ %-     !!≈ @CODE@
+!! }}}
+!! !Apostrophe
+
+ %{apo%}:'   !! Apostrophe is used for separating inflectional affix from a foreign word lemma
+
+ %{apo%}:0   !!≈ * __@CODE@__ ... but Sg Nom is without apostrophe
+
+!! !Morphophonemes
+
+!! If the sound change is unproductive and difficult to relate to its immediate context,
+!! we use capital letters with numbers to denote them. 
+!! In stems, they typically result from diachronic processes. 
+!! In affixes, they are typically related to the declination or conjugation and the form of the stem they attach to. 
+
+!! Short stops   
+
+ G1:g !!≈ * __@CODE@__ In strong grade
+ G1:0 !!≈ * __@CODE@__ In weak grade
+ G1:k !!≈ * __@CODE@__ In short illative (lagi lae lakke)
+ B1:b !!≈ * __@CODE@__ In strong grade
+ B1:0 !!≈ * __@CODE@__ In weak grade
+ B1:m !!≈ * __@CODE@__ In weak grade after m
+ B1:p !!≈ * __@CODE@__ In short illative (tuba toa tuppa)
+ D1:d !!≈ * __@CODE@__ In strong grade
+ D1:0 !!≈ * __@CODE@__ In weak grade
+ D1:l !!≈ * __@CODE@__ In weak grade after l
+ D1:n !!≈ * __@CODE@__ In weak grade after n
+ D1:r !!≈ * __@CODE@__ In weak grade after r
+ D1:t !!≈ * __@CODE@__ In short illative (ladu lao lattu)
+ 
+!! Orthographic convention: after voiceless (e.g. s or h, or k p t), gbd is written as kpt
+!! e.g. õhk-õhu, vask-vase
+!! K1 also in: uks, jooksma
+!! P1 also in: laps
+!! T1 also in: jätma, katma, kütma, matma, võtma, mõtlema, ütlema
+
+ K1:k !!≈ * __@CODE@__ In strong grade
+ K1:0 !!≈ * __@CODE@__ In weak grade
+ P1:p !!≈ * __@CODE@__ In strong grade ?? EKK: never happens ??
+ P1:0 !!≈ * __@CODE@__ In weak grade   ?? EKK: never happens ??
+ T1:t !!≈ * __@CODE@__ In strong grade
+ T1:0 !!≈ * __@CODE@__ In weak grade
+
+ B2:b !!≈ * __@CODE@__ In strong grade, e.g. tiib
+ B2:v !!≈ * __@CODE@__ In weak grade, e.g. tiiva
+ B2:p !!≈ * __@CODE@__ In short illative (tõbi tõppe)
+
+ K2:k !!≈ * __@CODE@__ In strong grade
+ K2:g !!≈ * __@CODE@__ In weak grade
+ P2:p !!≈ * __@CODE@__ In strong grade
+ P2:b !!≈ * __@CODE@__ In weak grade
+ T2:t !!≈ * __@CODE@__ In strong grade
+ T2:d !!≈ * __@CODE@__ In weak grade
+
+!! Short stops in stem illatives for words that do not have grade alternation.
+!! They surface (or appear as extra long) in strong grade, expressed by stem illative only. 
+
+ G3:0 !!≈ * __@CODE@__ 
+ G3:g !!≈ * __@CODE@__ Riia Riiga
+ D3:0 !!≈ * __@CODE@__ 
+ D3:d !!≈ * __@CODE@__ Rannu Randu
+ G4:g !!≈ * __@CODE@__ 
+ G4:k !!≈ * __@CODE@__ Türgi Türki
+ D4:d !!≈ * __@CODE@__ 
+ D4:t !!≈ * __@CODE@__ Leedu Leetu
+ B4:b !!≈ * __@CODE@__ 
+ B4:p !!≈ * __@CODE@__ Abja Apja
+
+ S1:s !!≈ * __@CODE@__ In strong grade, S1 is s
+ S1:0 !!≈ * __@CODE@__ In weak grade, S1 is 0; before stop, S1 is 0
+
+!! Unstressed syllable vowels disappear...
+
+ A2:a !!≈ * __@CODE@__ valvas
+ A2:0 !!≈ * __@CODE@__ valv sa
+ E2:e !!≈ * __@CODE@__ laulev
+ E2:0 !!≈ * __@CODE@__ laul va
+ I2:i !!≈ * __@CODE@__ õilis
+ I2:0 !!≈ * __@CODE@__ õil sa
+ U2:u !!≈ * __@CODE@__ hirmus
+ U2:0 !!≈ * __@CODE@__ hirm sa
+
+!! A stem vowel in inflectional forms of ne/s words, to make them formally similar in inflection
+
+ E1:e !!≈ * __@CODE@__ soolase, raudset
+ E1:0 !!≈ * __@CODE@__ soolas t
+
+!! Ad hoc stem vowels for ne/s words
+
+ I1:i !!≈ * __@CODE@__ an ugly trigger for ne/s words katkine - katkisil
+ A1:a !!≈ * __@CODE@__ an ugly trigger for ne/s words pingne - pingsa
+ A1:0 !!≈ * __@CODE@__ pingne - pingsus
+
+!! Few words...
+
+!! j surfacing and changing
+
+ E4:e !!≈ * __@CODE@__ aeg, soe 
+ E4:j !!≈ * __@CODE@__ aja, sooja
+
+ J1:i !!≈ * __@CODE@__ ahi, rohi
+ J1:j !!≈ * __@CODE@__ ahju
+ J1:0 !!≈ * __@CODE@__      rohu
+
+!! 4 words have h-illative: ''sohu'', ''suhu'', ''öhe'', ''pähe''
+
+ H3:h !!≈ * __@CODE@__ sohu, ... 
+ H3:0 !!≈ * __@CODE@__ soo, suu, ...
+ Y3:u !!≈ * __@CODE@__ sohu, suhu
+ Y3:e !!≈ * __@CODE@__ öhe, pähe
+ Y3:0 !!≈ * __@CODE@__ öö, pea
+
+!! only ''hea'' and ''pea''  
+
+ A6:a !!≈ * __@CODE@__ pea - pähe, päid
+ A6:ä !!≈ * __@CODE@__
+ E6:e !!≈ * __@CODE@__ pea - pähe, päid
+ E6:0 !!≈ * __@CODE@__
+
+!! 6 words have õ in indicative past
+
+ Ö6:ü !!≈ * __@CODE@__ söö+a - süüa
+ Ö6:ö !!≈ * __@CODE@__
+ Ö6:õ !!≈ * __@CODE@__ söö+i - sõi
+ Ö6:0 !!≈ * __@CODE@__
+ O6:u !!≈ * __@CODE@__ too+a - tuua
+ O6:o !!≈ * __@CODE@__
+ O6:õ !!≈ * __@CODE@__ too+i - tõi
+ O6:0 !!≈ * __@CODE@__
+
+!! A handful of words...
+
+ M1:m !!≈ * __@CODE@__ lumi
+ M1:n !!≈ * __@CODE@__ lun d
+
+ N1:n !!≈ * __@CODE@__ lään e, kolman da
+ N1:0 !!≈ * __@CODE@__ lää s,  kolma s
+
+ K3:k !!≈ * __@CODE@__ vennakse
+ K3:0 !!≈ * __@CODE@__ venna s
+
+!! Verb affix lexicons are simpler if we introduce these:
+
+!! Stem vowels for verbs of some inflectional types
+ 
+ A7:a !!≈ * __@CODE@__ naerab
+ A7:0 !!≈ * __@CODE@__ naer ma
+ E7:e !!≈ * __@CODE@__ jookseb
+ E7:0 !!≈ * __@CODE@__ jooks ma
+
+!! Verb affixes have k-g and t-d-0 alternations:
+
+!! Imperative mood affixes gu/ku, ge/kem etc
+
+G7:g !!≈ * __@CODE@__
+G7:k !!≈ * __@CODE@__
+
+!! Infinitive affixes ta/da/a, and gerund affixes tes/des/es
+
+D7:d !!≈ * __@CODE@__
+D7:t !!≈ * __@CODE@__
+D7:0 !!≈ * __@CODE@__
+
+!! Impersonal voice affixes tud/tud, takse/dakse etc
+
+T7:d !!≈ * __@CODE@__
+T7:t !!≈ * __@CODE@__
+
+!! To form past indicative forms and make them pronouncable
+
+I7:i !!≈ * __@CODE@__ naeris
+I7:0 !!≈ * __@CODE@__ naer sin
+
+S7:s !!≈ * __@CODE@__ naeris
+S7:0 !!≈ * __@CODE@__ pani
+
+!! Sometimes the choice of an allomorph or allophone is related to the frequency of the word.
+ 
+!! For plural partitive, the form is generated either with sg vowel + sid or plural vowel + 0
+!! So we must allow stem vowels for singular and plural to appear and disappear in certain conditions.
+
+!! Singular stem vowel tag in lexicon
+
+ %{sg.a%}:a !!≈ * __@CODE@__ tüng - tünga
+ %{sg.a%}:0 !!≈ * __@CODE@__ 
+
+ %{sg.e%}:e !!≈ * __@CODE@__ neem - neeme
+ %{sg.e%}:0 !!≈ * __@CODE@__ 
+
+ %{sg.i%}:i !!≈ * __@CODE@__ taud - taudi, default sg stem vowel for most types
+ %{sg.i%}:0 !!≈ * __@CODE@__ 
+
+ %{sg.u%}:u !!≈ * __@CODE@__ koon - koonu 
+ %{sg.u%}:0 !!≈ * __@CODE@__ 
+
+! %{pl.a%}:a  ! e.g. ''poiss'' - ''poissa'', not used in modern Estonian
+
+!! Plural stem vowel tag in lexicon
+
+ %{pl.i%}:i !!≈ * __@CODE@__ king - kingi
+ %{pl.i%}:0 !!≈ * __@CODE@__ king - kingasid
+
+ %{pl.e%}:e !!≈ * __@CODE@__ tõug - tõuge, taud - taude, default pl stem vowel for most types
+ %{pl.e%}:0 !!≈ * __@CODE@__ tõug - tõugusid
+
+ %{pl.u%}:u !!≈ * __@CODE@__ laud - laudu
+ %{pl.u%}:0 !!≈ * __@CODE@__ laud - laudasid
+
+!! Inflectional affixes having the same grammatical meaning:
+!! Pl Par endings sid/0, id/sid, Sg Ill endings sse/0.
+!! Their choice depends on triggers in the lexicon,
+!! have to be defined un-naturally letter by letter, 
+! e.g. sid = %{s%}:s %{i%}:i %{d%}:d and 0 = %{s%}:0 %{i%}:0 %{d%}:0
+
+ %{i%}:i !!≈ * __@CODE@__ i of sid: pl par ending siilisid
+ %{i%}:0 !!≈ * __@CODE@__         : pl par ending siile
+ %{d%}:d !!≈ * __@CODE@__ d of sid: pl par ending siilisid
+ %{d%}:0 !!≈ * __@CODE@__         : pl par ending siile
+
+
+ %{s%}:s !!≈ * __@CODE@__ s of -sse jõesse; -sid siilisid 
+ %{s%}:0 !!≈ * __@CODE@__            jõkke;    siile;   puid
+ %{e%}:e !!≈ * __@CODE@__ e of -sse jõesse;  
+ %{e%}:0 !!≈ * __@CODE@__            jõkke; 
+
+!! If the sound change is productive and/or very regularly determined by context
+!! (e.g. by morpheme border), we do not use special symbols to denote the changing phonemes 
+
+!! ne, s ending words have similar paradigms; only sg nom is different
+
+n:n !!≈ * __@CODE@__ soolane and other ne-words Sg Nom
+n:s !!≈ * __@CODE@__ soolas+e, soolas+t etc  
+e:e !!≈ * __@CODE@__ soolane
+e:0 !!≈ * __@CODE@__ soolas0+e 
+
+!! -le/-el stem alternations also use e:0, in addition to 0:e (sip0lema-sipel0da)
+
+!! high vowel lowering in certain contexts
+
+ i:e  !!≈ * __@CODE@__
+ i:i  !!≈ * __@CODE@__
+ u:o  !!≈ * __@CODE@__
+ u:u  !!≈ * __@CODE@__
+ ü:ö  !!≈ * __@CODE@__
+ ü:ü  !!≈ * __@CODE@__ 
+
+
+! t:d ... if we say that plural affix +te appears as +de for tütar-type words,
+! then the cont. lexicons will be simpler 
+
+;
+
+Diacritics
+
+! Stress, 3rd grade and palatalisation marks 
+! Originally in the Filosoft lexicon; keep them for future 
+ 
+˘    ! kolmas aste ! 3rd grade: l˘aud
+ˈ        ! rõhk        ! stress: semˈantiline
+ʲ        ! peenendus   ! palatalisation: k˘onʲt
 
 ;
 
 Sets
 
-  Kons = b d f g h j k l m n p r s š z ž t v ;
-  KonsKP = b d f g h j l m n r s š z ž t v ;
-  Vok = a e i o u õ ä ö ü ;
-  Alfa = Kons Vok;
-  AV = G1 B1 D1 K1 P1 T1 S1 ;! astmevaheldusele alluvad foneemid
-  AVT = g b d k p t s ;	! AV-tugev aste
-  VaheVok = A1 E1 U1 I1;
-  TyveVok = a e i u ;
-  LyhVok = a e o u õ ä ö ü ;
-  LyhVoka = e o u õ ä ö ü ;
-  LV = B1 G1 D1 S1 T1 ; ! laadivaheldus (assimilatsioon ja häälikukadu)
-  LVTA = b g d s t ; ! laadivahelduse tugev aste
-  Klus = k p t ;
-  AVKlus = K1 P1 T1 ;
-  NorkKlus = g b d G1 B1 D1 ;
-  Liq = l r ;
-  TavaKons = f h j l m n r s š v ;
+! Acronyms are inflected, but ordinary phonological rules do not apply to their 
+! written form, so we must be able to differentiate between normal words
+! and those written in capital letters
 
+UpperCaseVowel = A E I O U Õ Ä Ö Ü Y ;
+LowerCaseVowel = a e i o u õ ä ö ü y ;
+Vowel = UpperCaseVowel LowerCaseVowel ;
+
+LowerCaseConsonant = b c d f g h j k l m n p q r s š z ž t v w x ;
+UpperCaseConsonant = B C D F G H J K L M N P Q R S Š Z Ž T V W X ;
+Consonant = LowerCaseConsonant UpperCaseConsonant ;
+
+ForeignLetter = c C q Q š Š z Z ž Ž w W x X ;
+
+! stops
+gbd = g b d ;
+kpt = k p t ;
+stop = gbd kpt ;
+
+! sonorous consonants that have a special place in Est morph/phon
+lmnr = l m n r ;
+
+sonor = Vowel lmnr ;
+
+! voiceless consonants  
+voiceless = f s š h stop ; 
+
+! possible stem- or ending vowels
+stemV = a e i u ;
+
+HighVowel = i ü u ;
+MidVowel = e ö õ o ;
+LowVowel = ä a ;
+NonHighVowel = MidVowel LowVowel ;
+
+LowerBackVowel = o a ;
+
+! last syllable nonstressed vowels that are not always pronounced 
+! V0 = A2 E2 I2 U2 ;
+
+! stem vowel tags in the lexicon: sg g, pl part 
+! lauda, laudu; kinga, kingi; neeme, neemi etc. ; maja maju
+SgSV = %{sg.a%} %{sg.e%} %{sg.i%} %{sg.u%} ;
+PlSV = %{pl.e%} %{pl.i%} %{pl.u%};
+SV = SgSV PlSV ;
+
+! weak stops in the lexicon plus s; they disappear in weak grade
+WS = G1 B1 D1 K1 P1 T1 G3 D3 S1 ;
+
+! lexical side of consonants that participate in gradation
+! LexGrad = G1 B1 D1 K1 P1 T1 S1 B2 K2 P2 T2 g b d k p t f s š ;
 
 Definitions
-  Algus = [.#. (Kons+) | # (Kons+) ] ;  ! silbi/sõna algus
-  Piir = [.#. | %+: | %#] ;    ! morfeemidevaheline piir
-  SonaPiir = [ .#. | # ];
-  MitteSpr = [ [ ? - %!:0 ] | .#. ];
 
-Rules
-
-! --Astmevahelduse reeglid (astevaihtelun sääntöjä) --------------------
-
-"AV 1-2 - k ja p kadu"!kukk-kuke, lipp-lipu, õhk-õhu, kask-kase
-! parandus: kaduvale klusiilile järgnev vokaal võib ka ise kaduda, nt tüvemitmuse tõttu
- AVKlus:0 <=> Vok (r) [Klus|h|s] _ (Vok:) (S1:|l) %$:;
-               s _  (%$:)(%+:) t ;	!fonotaktika reegel skt->st
-       where AVKlus in (K1 P1)
-                     Klus   in (k p)
-       matched ;
-
-"AV 3 - t kadu"
-! parandus: suhTeldud-vihTeldud, sigaretT 
- T1:0 <=>Vok [t|h] _ (:Vok ([S1: | s: | l |r])) %$:;!tt-t (rott-roti) ja ht-h (ehtima-ehib)
-        Algus Vok: _ e (l) %$:;	!ütlema-öelda, jätma-jäetakse
-
-
-"AV 4-5- assimilatsioonid s-r ja b-m"!vars-varre,tõmbama-tõmmata
-! parandus: kõr[s-kõrr[e-kõr[t viimase tüvevariandi jaoks kaob esimene r (konsonantühend?). lubame seda.
- SB:RM <=> RM: _ ([TyveVok | VaheVok:]) ([S1: | l]) %$: ; where SB  in (S1 B1)
-                                     RM  in (r m)
-                                    matched;
-
-"AV 6 - assimilatsioon d-l"	!kuld-kulla
-! parandus: tüvevokaal võib kaduda (tüvemitmus), saadavad vormid on kahtlased..
-! tõld, tald, kõld, vald, sild, süld saavad puudutatud
- D1:l <=> Algus Vok l _ (TyveVok:) (S1:) %$:;
-
-
-"AV 7 - assimilatsioon d-n"	!hind-hinna, kannel-kandle
-
- D1:n <=> [Algus | Kons] Vok n _ ([Vok: | VaheVok:] ([l | r | s])) (S1:) %$:;
-! D1:n <=> n _ (Vok: l) (S1:) %$:;
-
-"AV 8 - assimilatsioon d-r"	!kord-korra
-
- D1:r <=> Algus Vok r _ (TyveVok) (S1: | l) %$:;
-
-
-"AV 9 -  b kadu"	!tuba-toa
-
- B1:0 <=> Algus Vok: _ (%=:) (Vok:) %$:;
-
-"AV 10 -  d kadu." ! Muuseas siin ka yks morfeemipiiri reegel:
-! morfeemipiiril kaks d-d saavad üheks ning dt saab t-ks"
-
-
-D1:0 <=>  Algus Vok [Vok: | %.:0]  _ (TyveVok:) (l) %$:; !laud-laua, vaidlema-vaielda, loe-loode
-         Algus Vok Vok (Liq | n) _ TyveVok (l) %$:;     !siirdama-siirata
-         Algus [ e | i: | u: | ü: ]  _  (%=:) TyveVok: %$: ;	!vedada-vean, rida-rea
-	 Algus õ  _  (%=:) e %$: ; 		!õde-õe, põdeda-põen
-	 [Kons- [r|s] ] a _ (%=:) u: %$: ;	!ladu-lao, kaduda-kaon
-				_ %+: d ;	!and+da->anda
-        			n _ %+: t ;	!and+tud->antud
-
-"AV 11 - g kadu"
-
-G1:0 <=> Vok _ (%=:) (Vok|h) %$: ;
-        [ a | i | õ | u ] [ l | r ] _ (Vok: (S1:)) %$: ; ! jalg-jala, kirg-kire
-        [ e | ä | ü ]  [ l | r ] _ [ i | u ]  %$: ;  ! pürgima-pürin
-	a %.: _ i: %$: ;     !saagida-saenA
-
-"AV 12-13 - s sise- ja lõpukadu"
-
-! k o P1:b r a S1 $
-
-! .#. ? ü ü ü v ü ü s _ ü $: .#.
-
-S1:0 <=> Algus Vok [Kons+] AV:AVT TyveVok:  _ Piir; !küngas-künka
-        Algus Vok AV:AVT TavaKons Vok  _  Piir;  !kobras-kopra
-        Algus Vok (Vok) _ (Vok) %$:;		!käsi-käe, õis-õie
-        Algus Vok (Vok) (Liq | n) s _ Vok %$:; 	!kauss-kausi, kurss-kursi?
-                where AV in  (G1 B1 D1 K1 P1 T1 )
-                     AVT in  (g b d k p t )
-           matched;
-
-
- "AV 14 k-g"
- K1:g <=> Vok [Liq | n | Vok] _ (Vok | VaheVok:) (S1:|l|s) %$:;	!kook-koogi, pilk-pilgu, küngas-künka
- 	 n u _ r i (S1:) %$:;			!nugris
- 	 Vok _ VaheVok: Liq (Vok) %$:;    	!kogre-kokre
-	 Vok _ (VaheVok:) v %$:;		!õgev
-
- "AV 15 p-b"
- P1:b <=> Vok [Liq | m | Vok] _  [Vok | VaheVok:] ([S1:|s]) %$:0 ;	!karp-karbi, kimp-kimbu, loopida-loobin
-         Vok _ [Liq Vok | j: (Vok) ] (S1:) %$:;	!lupjama-lubjata, kobras-kopra
-         Vok _ VaheVok: Liq (Vok) %$:;    		!sõpra-sõbra
-
- "AV 16 t-d"
- T1:d <=> Vok [Vok|Liq | n ] _ Vok (S1:) %$:;	!paat-paadi, kaart-kaardi, elevant-elevandi
-         Vok Vok _ e l %$:;     		!vaatlema-vaadelda
-         Vok _ (VaheVok:) [Liq | v | j:] (Vok (S1:)) %$:;    	!putru-pudru, patrama-padrata
-	 
-
- "AV 17: g-j"	!märg-märja, hüljes-hülge
- G1:j <=> [ e | ä | ü ]  [ l | r ] _ [ a | e ] (S1: )  %$: ;
-
-"AV 18: d-j"
-
-D1:j <=>  [ a | o | õ ]  _  (%=:) a   %$:;	!sadada-sajab, sõda-sõja
- 	 SonaPiir [ [[ r | s ] a] |s õ ]  _  u  %$: ; !sadu-saju,kodu-koju
-
-
-"AV 19: b-v"
-
- B1:v <=> Vok [Vok|Liq] _ (Vok:) (S1:) %$:;	!kaebama-kaevata, kõlbama-kõlvata, värbama-värvata, varb-varva
-
-!!!! EOF AV
-
-!-----------------Fonotaktika- ja ortograafiareeglid-----------------
-
-
-"Vahevokaali kadu"       ! Kui l,m,n,r,v-lõpulisele sõnale lisandub tüvevokaal, siis vahevokaal kaob, nt. tütar-tütre, suhkur-suhkru.
-
-  VaheVok:0 <=>  _ [Liq | m | n | v | s] (%+:) TyveVok: ;
-
-"Vokaali annihileerumine nõrgas astmes"
-
-  Vok1:0 <=> Vok _ D1: Vok1 %$:; where Vok1 in (a u); ! jõudu-jõuu->jõu
-
-
-"Vokaali madaldumine"   ! Nõrgeneva AV tõttu !tekivad mõnedes 
-			!'rida'-tüüpi sõnades häälikuühendid ua, üi jm, mis on fonotaktiliselt 
-			!lubamatud ning teisenevad vastavalt oa-ks, öe-ksjm.
-			!Seejuures 2 erinevat konteksti, kuna madalduda võib nii sise-
-			!(siga->sea) kui lõppvokaal (kadu->kao)
-
-  KorgeVok:MadalVok <=> Algus  _ LV:0 (%=:) [a|e|i:|u:](l) %$: ;
-			Algus Vok (%.:) LV: (%=:) _ %$: [~[ [:0]* :Vok ] | SonaPiir ];
- where KorgeVok in (u ü i)
-           MadalVok in (o ö e)
- matched ;
-
-"vokaalide teisenemine järgsilbis o->u, ö->e, ä->e"
-
-%.:Vok2 <=> Vok1 %.: h _ Piir;	!soo-sohu, töö-töhe, pea-pähe
-where Vok1 in (a o u ö ä)
-          Vok2 in (a u u e e)
-matched;
-
-
-"Konsonandi kahekordistumine"   !nt. elu-ellu, nime-nimme, tulema-tulla 
-
-  %=:Kons1 <=>  Kons1 _ (TyveVok:) X2:0;	!mitte-klusiilid
-  		k i Kons1 _ o X2:0;			!o polegi tüvevokaalide hulgas?
-                     where Kons1 in TavaKons;
-
-"Konsonandi/klusiili kahekordistumine nimetavas" ! nikkel, kimmel
-
-  %=:KonsKlus <=> KonsKlus _ VaheVok: ? X2:0;
-  		     where KonsKlus in (TavaKons Klus);
-
-"Nõrga klusiili pikendamine III-välteliseks - 1"
- !vagu-vao-vakku, saba-saba-sappa, tuba-toa-tuppa, ladu-lao-lattu
-
-  %=:Klus <=>  NorkKlus: _ (TyveVok:) X2:0; !klusiilid
-              where NorkKlus in (g G1 b B1 d D1)
-      	                Klus in (k k p p t t)
-              matched;
-
-
-"Nõrga klusiili pikendamine III-välteliseks - 2"
-
-NorkKlus:Klus <=> _ %=: (TyveVok:) X2:;
-              where NorkKlus in (g G1 b B1 d D1)
-      	                Klus in (k k p p t t)
-              matched;
-
-
-"pst -> st ja p kaashäälikuühendis" 	!pst -> st (lapst->last)
-
-  p:0 <=> _ s (%$:) %+: t ;
-!  Kons Vok _ :p (%$:)(%+:) [Kons-p+]; 	!kaashäälikuühend; teeb katki rippmenüü
-
-"m -> n  t|d ees" 	!(lumd->lund)
-
-  m:n <=> _ %+: [d | t] ;
-
-"skt -> st, kst -> st ja k kaashäälikuühendis"	!(lasktud->lastud),  (ukst->ust) AGA: maksti, peksti ?
-
-  k:0 <=> _ s %$: %+: t ;
-	! s _  (%$:)(%+:) t ; ! see pole tegelikult probleem?
- Kons Vok _ :k (%$:)(%+:) [Kons-k+];   !kaashäälikuühend
-
-"j -> i sõna lõpus"      !(kirj->kiri, purj->puri)
-
-  j:i <=> _ (%$:) SonaPiir ;
-
-
-! Järgmised kolm on mitmuse vokaali valikureeglid:
-
- "mitmuse vokaal e"
-W1:e <=> [i: | u:] (%$:) %+: _ ;		! i- ja u-tüvelised
-        Algus [u | o] [G1: | B1: | n] (%=:) a: (%$:) %+: _ MitteSpr;	!a-tüvelised,lühikeses  
-						!esisilbis u või o
-        Algus [u | o | ü] Kons j: a: (%$:) %+: _ MitteSpr;	!a-tüvelised, esisilbis uCj, 
-						!oCj, üCj (kuri)
-
- "mitmuse vokaal u"
-W1:u <=> [[[Kons | Algus] 
-		[a | a a | i | i i | õ | õ õ | a e | a i 
-		   | e i | ä i | õ i | a u | i u | õ u ] [:Kons | VaheVok:0 | :0]* ]] (%=:) a:0 (%$:) %+: _ MitteSpr; !"kass kõrtsis ei käi"
-	 [a | ä | e] Kons j: a: (%$:) %+: _ MitteSpr ; !a-tüvelised, esisilbis äCj, eCj (väli, neli) (asjus?)
-
-
- "mitmuse vokaal i"
-W1:i <=> e: (%$:) %+: _ MitteSpr;	! e-tüvelised
-	Algus [[[e | o ([o | e])| u | ä ([e]) | ö| ü] [ :Kons* [ :Kons - :j ]  ] | [ h :t ] ] - 
-		[ [a | ä | e] Kons j: | ! a -> u
-		  [u | o | ü] Kons j: | ! a -> e
-		  [u | o] [G1:|B1:|n]   ! a -> e
-		]] 
-		(%=:) a: (%$:) %+: _ MitteSpr; 
-	k o n D1: a: %+: _ MitteSpr; ! -kond
-	!"eks ämm söö kodus sütt"
-
-
- "ainsuse vokaal kirjutada korstnasse"
-TyveVok:0 <=> (%=:) _ (%$:) %+: [ W1: ~%!: |u s];
-	where TyveVok in (a e i u);  !pesa+i ->pesi, kana+u->kanu
-
-
-"oo+a->uua, öö+a->üüa 1"	!joo+a->juua, söö+a->süüa
-
-Vok1:Vok2 <=> _ %.:Vok2 %+: [a | e s];
-                      where Vok1 in (o ö)
-                            Vok2 in (u ü)
-                      matched;
-
-"oo+a ->uua, öö+a ->üüa 2"
-
-%.:Vok2 <=> Vok1:Vok2 _ %+: [a | e s];
-                      where Vok1 in (o ö)
-                            Vok2 in (u ü)
-                      matched;
-
-
-"oo+i -> õi"	!joo+i->jõi, söö+i->sõi
-o:õ <=> [ j | l | t ] _ %.: %+: i [ SonaPiir | d | n | m e | t e];
-
-"öö+i -> õi"	!joo+i->jõi, söö+i->sõi
-ö:õ <=> [ l | s ] _ %.: %+: i [ SonaPiir | d | n | m e | t e];
-
-
-"Konsonantühendi reegel "    ! Konsonantühendis kirjutatakse kõik häälikud ühekordselt, nt. kukkru->kukru, kristallne->kristalne.
-
-  Kons1:0 <=> Vok _ :Kons1 [:0 - #]+ [Kons - Kons1]; ! vähemalt morfeemipiir võiks vahele jääda. 
-             where Kons1 in KonsKP;
-
-
-! liitsõnad on esialgu niikuinii teisiti tehtud. 
-!"Liitsõnapiirile sidekriips kolme ühesuguse hääliku korral"	!nt. plekk-katus, jää-äär
+WordBorder = [ .#. | # ];  ! word border
+Border = [ WordBorder | %- | » ];   ! "noad-kahvlid" is 2 words; kildkond»liku = strong » weak grade
+Gi = [ [ :g | :k ] i ] ;
+WordEnd = [ [ %> Gi WordBorder ] | Border ];     ! final +gi is optional for almost any word
+
+Null = [[ :0 | %> ] - Border];            ! something on the lexical side, but nothing on the surface 
+Any  = [ : - Border ];             ! anything except word border
+SuffixBorder = [%> | »];           ! for assimilation in verb paradigmatic derivation (tud, tamatu, tav): and+tud=antud  
+
+! these trigger-aware contexts are used in a few rules; kind of ad hoc...
+GradeTrigger = [ %{W%}: | %{S%}: ] ;
+
+NullNoWeakTrigger = [[ Null - %{W%}: ] | » ];   
+AnyNoWeakTrigger  = [[ Any  - %{W%}: ] | » ];   
+NullNoTrigger = [ Null - GradeTrigger ] ;
+AnyNoTrigger  = [ Any  - GradeTrigger ] ;
+
+ShortSyll = [WordBorder | :Consonant] :Vowel ;  ! short syllable
+
+Rules 
+ 
+! -----
+! general 
+"strong and weak gradation triggers cannot co-exist"
+%{S%}:0  /<= _ :* %{W%}: ;
+             %{W%}: :* _ ;
+
+! ----- consonant gradation
+
+! different contexts for declinables and verbs
+! (because declinables may have additional info in the stem lexicon entries)
+! left context has to be sonorous because of orthographic conventions:
+! gbd are written as kpt after voiceless consonants
 ! 
-!  %#:%- <=> :Xx1 (:0) :Xx1 (:0) _ :Xx1; where Xx1 in (a e f h i k l m n o p r s š t u õ ä ö ü);
+"Weak grade for productive kpt:gbd" 
+
+Cx:Cy  <=> :Vowel :sonor _ Null*           :stemV %{W%}: ;  ! kaup-kauba, kurtma-kurdetud
+           :Vowel :sonor _ Null* %{W%}: Null* :stemV     ;  ! paik - paigus
+                  :sonor _ [l | r | j | v] :stemV %{W%}: ;  ! kõblata
+           :Vowel :sonor _ 0:e [l | r]        e:0 %{W%}: ;  ! võidelda
+     where Cx in ( p t k ) 
+           Cy in ( b d g )
+     matched ;
+
+! lexical: k a u p > {pl.u} {sg.a} {W}
+! surface: k a u b >    0      a    0
+! lexical: k r a a p i {W} > n
+! surface: k r a a b i  0  > n
+! lexical: k a t k u {W} > n
+! surface: k a t k u  0  0> n
+! lexical: k õ p l a {W} > t a
+! surface: k õ b l a  0  > t a
+! lexical: v õ i t 0 l {W} > d a
+! surface: v õ i d e l  0  > d a
+! lexical: s i p 0 l e {W} > d a
+! surface: s i p e l 0  0  > d a  ! no visible change
+! lexical: l õ t v e {W}
+! surface: l õ d v e  0        ! Sg Nom
+! lexical: k u r t A7 0 {W} > T7 u d
+! surface: k u r d  0 e  0  >  t u d
+
+
+!!€ kraapi%{W%}>n
+!!€ kraabi0>n
+
+!!$ kraapi%{W%}>n
+!!$ kraapi0>n
+
+
+"Weak grade for productive kk pp tt šš ff : k p t š f"
+
+Cx:0 <=>  :sonor _ Cx Null* :stemV (lmnr) %{W%}:  ;  ! sepa, lepin, aken, tütar, ...
+     where Cx in ( p t k š f) ;
+
+! lexical: k e p p > {pl.e} {sg.i} {W}
+! surface: k e p 0 >    0      i    0 
+! lexical: s e p p > {pl.i} {sg.a} {W}
+! surface: s e p 0 >    0      a    0 
+! lexical: l e p p i {W} > n
+! surface: l e p 0 i  0  > n 
+! lexical: t ü t t A2 r {W}
+! surface: t ü t 0 a  r 0 
+
+! ss is different from kk pp tt šš ff
+! buss Sg Gen (weak grade) is bussi, not busi...
+
+"Weak grade for productive ss:s kauss, jamss"
+
+s:0 <=> :Vowel :sonor :s _ Null* :stemV %{W%}: ;
+
+! lexical: k a u s s > {pl.e} {sg.i} {W}
+! surface: k a u s 0 >    0      i    0
+! lexical: m a r s s i {W} > n
+! surface: m a r s 0 i  0  > n
+
+"Lexically determined weak grade: prohibit the strong phones"
+
+Cx:Cy /<= _ AnyNoTrigger* %{W%}: ;         
+     where Cx in ( B2 G1 G1 K1 B1 B1 P1 D1 D1 T1 S1 K2 P2 T2) 
+           Cy in (  b  g  k  k  b  p  p  d  t  t  s  k  p  t)
+     matched ;
+
+"Lexically determined weak grade: allow the weak phones"
+
+Cx:Cy  => _ AnyNoTrigger* %{W%}: ;
+     where Cx in ( B2 G1 K1 B1 P1 D1 T1 S1 K2 P2 T2) 
+           Cy in (  v  0  0  0  0  0  0  0  g  b  d)
+     matched ;
+
+! lexical: k ä i B2 e {W}
+! surface: k ä i v  e  0
+! lexical: l a G1 {stemill} e {W}
+! surface: l a  0     0     e  0
+! lexical: t u B2 a {W}
+! surface: t o  0 a  0
+! lexical: l a u D1 > {pl.u} {sg.a} {W}
+! surface: l a u  0 >    0      a    0
+! lexical: p a a S1 > {pl.e} {sg.i} {W}
+! surface: p a 0  0 >   0       e    0
+! lexical: e r K2 A2 s {W}
+! surface: e r  g  a s  0
+! lexical: e r K2 A2 s > a
+! surface: e r  k  0 s > a
+
+"Word-final J1: makes sg nom weak grade"
+
+Cx:Cy <=>  J1: _ NullNoTrigger* WordEnd ;         ! rohi ruhi rehi
+           _ J1: NullNoTrigger* WordEnd ;         ! lubi lodi 
+     where Cx in (T1 P2 T2) 
+           Cy in ( 0  b  d)
+     matched ;
+
+! lexical: r o h J1 T1 > {pl.e} {rare} {sg.u} {W}
+! surface: r o h  0  0 >    0      0      u    0
+! lexical: l u P2 J1
+! surface: l u  b  i 
+
+"kpt:gbd; weak sg nom for ader etc"
+
+Cx:Cy <=>  _ E2:e [l | r] NullNoTrigger* WordEnd ;  ! ader sg nom is not %{W%}:; has e2:e
+      where Cx in ( K2 P2 T2 ) 
+            Cy in (  g  b  d )
+      matched ;
+
+! lexical: a T2 E2 r > {pl.u} {rare}
+! surface: a  d  e r >    0     0
+
+"b d and s assimilation after lmnr"
+
+Cx:Cy <=> ShortSyll Cy _ AnyNoTrigger* %{W%}: ;  ! also -kond -konna -konda
+     where Cx in (B1 D1 D1 D1 S1) 
+           Cy in ( m  l  n  r  r)
+     matched ;
+
+! lexical: l a m B1 a s {W}
+! surface: l a m  m a s  0
+! lexical: k u l D1 {pl.u} {sg.a} {W}
+! surface: k u l  l    0      a    0
+! lexical: k a n D1 {pl.u} {sg.a} {W}
+! surface: k a n  n    0      a    0
+! lexical: k o r D1 {pl.u} {sg.a} {W}
+! surface: k o r  r    0      a    0
+! lexical: k õ r S1 e {W}
+! surface: k õ r  r e  0
+! lexical: k ä ä n D1 e {W}   !NB no assimilation !
+! surface: k ä ä n  0 e  0
+
+! the context is too specific; this is just to avoid Xerox twol warning messages about conflicting => contexts
+! ( _ Null* [ :t | :d ]  should be sufficient as context) 
+"s g d disappear in front of dt: only 0 allowed"
+
+Cx:0  =>  _ NullNoWeakTrigger* [ :t | :d ] AnyNoWeakTrigger* WordEnd ;
+     where Cx in (K1 D1 S1 ) ;
+
+"s g d disappear in front of dt: no surface phone allowed"
+
+Cx:Cy /<=  _ NullNoWeakTrigger* [ :t | :d ] AnyNoWeakTrigger* WordEnd ;
+     where Cx in (K1 D1 S1 ) 
+           Cy in ( k  d  s )
+     matched ;
+
+! lexical: a n D1 > T7 u d
+! surface: a n  0 >  t u d
+! lexical: p u s K1 > T7 u d
+! surface: p u s  0 >  t u d
+! lexical: v a r S1 {stemill} {S} > d e > {s} {s} {e}
+! surface: v a r  0      0     0  > d e >  0   0   0
+! lexical: k o l m a N1 S1 d a
+! surface: k o l m a  n  0 d a
+
+! the context is too specific; this is just to avoid Xerox twol warning messages about conflicting => contexts
+! ( _ Null* G7:  should be sufficient as context)
+"g, k disappears in front of gu/ku"
+
+K1:0 <=> _ NullNoTrigger* G7: AnyNoTrigger* WordEnd;  ! only laskma mõskma puskma
+
+! lexical: p u s K1 > G7 u
+! surface: p u s  0 >  k u
+
+!------- short illative stem generation
+! the rules are hard-wired to %{S%}: 
+
+"short illative strong stem generation: consonant doubling"
+
+0:Cy  <=>  ShortSyll NullNoTrigger* Cx:Cy _ NullNoTrigger* :Vowel NullNoTrigger* %{S%}: ; ! majja
+     where Cx in ( l m M1 n r v j h s g b d k p t G1 B1 B2 D1 ) 
+           Cy in ( l m  m n r v j h s k p t k p t  k  p  p  t )
+     matched ;
+
+! lexical: t u B1 0 a > {pl.e} {stemill} {S} > {s} {s} {e}
+! surface: t u  p p a 0    0       0      0  >  0   0   0 
+! s õ J1 D1 0 a
+! s õ  0  t t a
+
+"short illative strong stem generation: g b d to k p t"
+
+Cx:Cy <=> ShortSyll NullNoTrigger* _ :Cy NullNoTrigger* :Vowel NullNoTrigger* %{S%}: ;
+     where Cx in ( g b d ) 
+           Cy in ( k p t )
+     matched ;
+
+! s a b 0 a > {pl.u} {rare} {stemill} {S} > {s} {s} {e}
+! s a p p a >    0     0         0     0  0  0   0   0
+
+! the context is too specific; this is just to avoid twol warning messages about conflicting => contexts
+! (the StrongGrade trigger alone should be sufficient as context)
+"short illative strong stem generation: lexically determined stop"
+
+Cx:Cy <=>  _ (:Cy | j) NullNoTrigger* :Vowel NullNoTrigger* %{S%}: ;
+     where Cx in ( G1 B1 B2 D1 G3 D3 G4 B4 D4) 
+           Cy in (  k  p  p  t  g  d  k  p  t)
+     matched ;
+
+! lexical: l a G1 0 {stemill} e  {S} > {s} {s} {e}
+! surface: l a  k k     0     e   0  >  0   0   0
+! lexical: A B4 j a {stemill} {S} > {s} {s} {e}
+! surface: A  p j a     0      0  >  0   0   0
+! lexical: R a n n D3 u {stemill} {S} > {s} {s} {e}
+! surface: R a n 0  d u     0      0  >  0   0   0
+! lexical: L e e D4 u {stemill} {S} > {s} {s} {e}
+! surface: L e e  t u     0      0  >  0   0   0
+
+!--------- vowels
+
+"nonstressed syllable vowel (a e u i) deletion"
+
+Vx:Vy  <=>    _ Null* [:Consonant - :stop] Null* :stemV  ;
+     where Vx in ( A2 I2 U2 E2 ) 
+           Vy in (  0  0  0  0 )
+     matched ;
+
+! lexical: p e e n A2 r > a
+! surface: p e e n  0 r > a 
+! lexical: t ä h t I2 s > a
+! surface: t ä h t  0 s > a 
+! lexical: s u h k U2 r > u
+! surface: s u h k  0 r > u 
+! lexical: k o o r E2 m > a
+! surface: k o o r 0  m > a 
+! lexical: s e a d E2 m > e    ??
+! surface: s e a d 0  m > e 
+! lexical: a T2 E2 r > a
+! surface: a  d  0 r > a 
+! lexical: s p i k k E2 r > i
+! surface: s p i k 0  0 r > i 
+
+! some older verbs lose the stem final vowel in strong grade forms
+"verb stem final vowel in weak grade (excl. impersonal)"
+
+Vx:Vy  <=> _ %{W%}: %> \[T7:] ;
+     where Vx in ( A7 E7 ) 
+           Vy in (  a  e )
+     matched ;
+
+! lexical: s e i s A7 {W} > b
+! surface: s e i s  a  0  > b 
+
+! vowel lowering; 
+! it is triggered by g b d t s disappearing or morpheme border between i and i
+
+"i lowers to e before inflectional i"
+
+i:e  <=>  [ :Consonant | %{apo%}:' ] Null* _ Null* %> :i ;
+      
+! lexical: v o o d i > i d
+! surface: v o o d e > i d
+! lexical: r u k K1 i > i d
+! surface: r u k  k e > i d
+! lexical: S c h e d u l e {apo} i > i d
+! surface: S c h e d u l e   '   e > i d
+
+"single short high vowel lowers if it obtains a neighboring vowel after stop or s disappears"
+
+Vx:Vy  <=>  ShortSyll (LowerBackVowel:0) WS:0 Null* _  ;
+            [Border | Consonant] _ WS:0 :Vowel ;
+       where Vx in ( i u ü %{sg.i%} %{sg.u%} )
+             Vy in ( e o ö     e        o    )
+       matched;
+
+! lexical: v i G1 a
+! surface: v e  0 a
+! lexical: s ü S1 e {W}
+! surface: s ö  0 e  0
+
+! lexical: s a a G1 {W} > {sg.i}
+! surface: s a 0  0  0  >    e
+! lexical: v o o G1 > {pl.e} {sg.u} {W} 
+! surface: v o 0  0 >    0      o    0
+! lexical: l i u G1 > {pl.e} {sg.u} {W}    
+! surface: l i 0  0 >    0      u    0    NB! no lowering!
+
+! here long vowel shortening is formally equivalent to one vowel deletion
+! hence the need to use several rules instead of one <=> rule:
+! there are other contexts where a vowel gets deleted
+
+"Long vowel shortening 1/2"
+
+Vx:0 =>      Vx _ Null+ :stemV ;            ! puid, suid, soid, sae, soe, nea
+         :Vowel _ Null+ :Vx ;               ! tõu, näub
+            :Vx _ E4:e ;                    ! soe
+      where Vx in ( Vowel ) ;  
+
+"Long vowel shortening 2/2"
+
+Vx:Vx /<=     Vx _ Null+ :i ;            ! puid, suid, soid
+          :Vowel _ Null+ :Vx ;               ! tõu, näub
+             :Vx _ E4:e ;                    ! soe
+      where Vx in ( Vowel ) ;  
+
+"Long high vowel does not shorten before a stem vowel , unless it is i"
+
+Vx:0 /<=  :Vx _ Null+ [:stemV - :i];            ! riiu, luua; puid
+      where Vx in ( HighVowel ) ;  
+
+"Long non-high vowel shortens before a stem vowel"
+
+Vx:Vx /<=  Vx _ Null+ :stemV ;            ! sae, soid
+      where Vx in ( NonHighVowel ) ;  
+
+!      where Vx in ( MidVowel LowVowel ) ;  
+
+! lexical: s a a G1 > {pl.e} {sg.i} {W}
+! surface: s a 0  0 >    0      e    0 
+! lexical: h u u G1 a {W} > n u d      
+! surface: h u u  0 a  0  > n u d     NB! no shortening !
+
+! lexical: p u u             {id} > {s} i d
+! surface: p u 0               0  0  0  i d
+
+! lexical: t õ u G1 > {pl.e} {sg.u} {W}
+! surface: t õ 0  0 >    0      u    0
+! lexical: n ä u G1 u {W} > b 
+! surface: n ä 0  0 u  0  > b
+
+!-----
+! add a vowel to make the wordform pronouncable
+
+"from -v to -ev"
+
+0:e <=> :Consonant Null* SuffixBorder _ v WordEnd ;
+
+! lexical: n ´ a e r > 0 v
+! surface: n ´ a e r > e v
+
+! impersonal voice for söötma, nutma, lõpma: söödetud, nutetud, lõpetud
+"from t+t to te+t"
+
+0:e <=> [t: | T1: | p:] Null* _ %{W%}: SuffixBorder T7:t ;
+
+! lexical: n ´ u t t A7 0 {W} > T7 u d
+! surface: n ´ u t 0  0 e  0  >  t u d
+
+! i is added to make s-ending preteritum form pronouncable,
+! or i is actually the only morpheme indicating preteritum
+
+"i surfaces in preteritum"
+
+I7:i <=> :Consonant Null* %> _ S7: WordEnd ;
+         _ WordEnd ;
+
+! lexical: n ´ a e r > I7 S7
+! surface: n ´ a e r >  i  s
+! lexical: s a a > I7
+! surface: s a 0 >  i
+
+!--------- declinable word stem change ---------
+! schwa (dis)appears or emerges or surfaces...
+! REDEL type
+
+! the -li/-ri form may be common or rare
+" -el/-er is -li/-ri "
+
+e:0 <=>  _ [l | r]           %{E%}:           SuffixBorder i: \%{rare%}: ;   ! toobri
+         _ [l | r]           %{E%}: %{rare%}: SuffixBorder i:  %{rare%}: ;   ! gospli
+         _ [l | r] %{rare%}: %{E%}:           SuffixBorder i: \%{rare%}: ;   ! piksli
+
+! lexical: t o o b e r {E} > i
+! surface: t o o b 0 r  0  > i
+! lexical: g o s p e l {E} {rare} > i {rare}   gospli is rare; gospeli is common
+! surface: g o s p 0 l  0     0   > i    0
+! lexical: p i k s e l {rare} {E} > i \{rare}  piksli is common; pikseli is rare
+! surface: p i k s 0 l    0    0  > i    0
+
+! in the stem lexicon,
+! piksel{rare}{E} means that pikseli is rare, piksli is common
+! gospel{E}{rare} means that gospeli is common, gospli is rare
+! the last {rare} tag comes from a continuation lexicon
+
+"usage tag is here and there"
+%{rare%}:0  =>  _ %{E%}:    ;
+                  %{E%}: _  ;
+               SuffixBorder i: _ ;
+
+! when concatenating the stem lexicon and variants of continuation classes,
+! some paths end up containing unnecessary symbol {rare}; this rule 
+! deletes the paths
+ 
+"block a spurious path"
+%{rare%}:0 /<= # \[%{rare%}:]* SuffixBorder i: _ ;
+
+!%{rare%}:0 /<=  e: [l | r] (%{E%}:) SuffixBorder i: _ ;
+!                           %{apo%}: SuffixBorder i: _ ;
+
+! S c h e d u l e {apo} > i > i > s s e
+! S c h e d u l e   '   > e > i > s s e
+! S c h e d u l e {apo} > i > {rare} t e > s s e   FAIL
+! S c h e d u l e   '   > i >    0   t e > s s e
+
+
+!e:e /<=  _ [l | r] SuffixBorder i:  %{rare%}: ;
+
+
+! --------- verb stem changes -------
+! not really gradation
+! if [l | r] does not border with a vowel, then schwa surfaces (or appears?)
+! schwa surfaces either before or after [l | r]
+
+! siplema-sipelda
+
+"el-le 1/3"
+
+e:0 <=> :e [l | r] _ %{W%}: SuffixBorder :Consonant ;
+
+"el-le 2/3"
+
+0:e <=>  [:Consonant | WS:0] _ [l | r] e:0 %{W%}: SuffixBorder :Consonant ;
+
+! in weak grade, -le- is impossible (has to be -el-)
+"el-le 3/3"
+
+e:e /<=  [:Consonant | WS:0] [l | r] _ %{W%}: SuffixBorder :Consonant ;
+
+! lexical: s i p 0 l e {W} > d a
+! surface: s i p e l 0  0  > d a
+! hüüdlema-hüüelda
+! lexical: h ´ ü ü D1 0 l e {W} > d a
+! surface: h ´ ü ü 0  e l 0  0  > d a
+
+! -------- rules that operate on a small set of different words
+
+"Long vowel shortens before h"
+
+Vx:0 <=> :Vx _ H3:h  :stemV ;            !  sohu, suhu, öhe, pähe
+      where Vx in ( Vowel ) ;  
+
+
+! ------ rules for j
+! ------ they affect a handful of words
+
+! --- j is not in the lexical side
+"e pronounced as j between vowels "
+
+E4:j  <=>  :Vowel Null* _ Null* [:Vowel | :j] ;
+
+! lexical: a E4 G1 
+! surface: a  e  g
+! lexical: a E4 G1 a
+! surface: a  j  0 a
+! lexical: s o o E4  
+! surface: s o 0 e 
+! lexical: s o o E4 a 
+! surface: s o o j  a 
+
+! --- j is in the lexical side, but surfaces only in certain contexts
+
+! j is i only in word final position
+
+"j appears as i"
+
+J1:i  <=>      _ Null* WordEnd ;
+
+! lexical: a h J1 > {pl.e} {rare}
+! surface: a h  i  0    0      0
+
+"j does not surface between consonants 1/2"
+    
+J1:j /<=    h _ T1: ;
+              _ :stop ;
+
+"j does not surface between consonants 2/2"
+
+J1:0  =>   h _ T1: ;
+             _ :stop ;
+
+! lexical: r o h J1 T1 > {pl.e} {rare}
+! surface: r o h  0  t >    e      0
+! lexical: r o h J1 T1 > {pl.e} {rare} {sg.u} {W}
+! surface: r o h  0  0 >    0      0     u     0
+! lexical: h ä r J1 G1 > {pl.i} {sg.a} 
+! surface: h ä r 0  g  >    0      a   
+
+! lexical: h ä r J1 G1 > {pl.i} {sg.a} {W}
+! surface: h ä r j  0  >    0      a    0
+! lexical: a h J1 > {pl.e} {rare} {sg.u} {W}
+! surface: a h j  >   0       0      u    0
+! lexical: s a J1 D1 a > {pl.u} {W}
+! surface: s a j  0  a >    0    0
+
+! --- 
+! juus-juuksed, kälis-käliksed, nõos-nõoksed, omas-omaksed, vennas-vennaksed, ões-õeksed 
+"vennas-vennaksed"
+
+K3:k  <=> _ s E1:e ;
+
+! lexical: v e n n a K3 s E1 > d 
+! surface: v e n n a k  s  e > d
+
+!------
+"laas-laane"
+
+N1:0  <=> \[:Consonant] _ S1:s ;   ! laas-laane, tuhandes-tuhendenda etc
+
+! lexical: l a a N1 S1 
+! surface: l a a 0  s
+!------
+! Only pea, hea 
+"Pea, hea vs häid, päid, pähe 1"
+
+A6:ä  <=> E6: _ :h ;
+          E6: _ Null+ :i ;   
+
+"Pea, hea vs häid, päid, pähe 2"
+
+E6:0  <=> _ A6: :h  ;
+          _ A6: Null+ :i ;
+
+"öhe, pähe"
+Y3:e  <=> [:ä | :ö] Null* H3:h _ ;
+
+"sohu, suhu"
+Y3:u  <=> [:o | :u] Null* H3:h _ ;
+
+"h-illative"
+H3:h  <=> _ :* %{S%}: ;
+
+!------
+"Verb vowel ö o to õ"
+
+Vx:õ  <=> Vx: _ Null+ :i ; 
+     where Vx in ( Ö6 O6 ) ; 
+
+"Verb vowel ö o to 0"
+
+Vx:0  <=> _ Vx:õ Null+ :i ; 
+     where Vx in ( Ö6 O6 ) ; 
+
+! lexical: l O6 O6 > i 
+! surface: l  0  õ > i 
+
+"Verb vowel o ö to u ü"
+
+Vx:Vy  <=>  Vx: _  Null+ [:a | :e] ; 
+             _ :Vy Null+ [:a | :e] ;
+     where Vx in ( Ö6 O6 ) 
+           Vy in ( ü  u )
+     matched ;
+
+! lexical: l O6 O6 {W} > T7 a k s e 
+! surface: l u   u  0  >  0 a k s e 
+!------
+
+! a general rule, but has to be encoded with M1 to allow for komtuur, EMT etc
+"m pronounced as n before t"
+
+M1:n  <=> _ Null* [:t | :d ] ;
+
+! lexical: l e e M1 {stemill} {rare} > t
+! surface: l e e  n      0        0  > t 
+
+! ---------- morphology
+   
+! --------- -ne, -s ending words
+! xxx rules are needed for allowing -ne only for sg nom
+
+"ne-stem shortening"
+n:0  <=> :Consonant _ Null+ » %- ;        ! nais-, vaatamis-, astraal-
+         :Consonant _ Null+ » # ;            ! vaatamistunne, astraaltunne ??? related to compounding somehow ???
+
+! lexical: a s t r a a l n e E1 > -
+! surface: a s t r a a l 0 0  0 > -
+
+! we want to express correspondence: ne -> s in the context of E1, I1 or A1
+"ne to s (1/2)"
+
+n:s  =>       _ e: E1:  ;
+              _ e: Null* (») I1: ;
+              _ e: %> A1:  ;
+
+"ne to s (2/2)"
+
+e:0  /<= n:n _ E1: ;
+         n:n _ %> A1: ;
+
+"e disappearing (ne - s) 1/2"
+
+e:0 <=>       n: _ E1: ;                    ! kodune - kodust, koduse
+              n: _ Null* (») I1: ;          ! katkine - katkisil;  alalisim
+              n: _ %> A1: ;                    ! pingne - pingsa
+
+! we postulate that there is a special stem vowel e that is added both for -ne and -s words
+"add e for inflecting a ne/s word "
+
+E1:e   => n:s e:0 _ ;  ! -ne word
+          s _ ;      ! -s word
+
+! lexical: s o o l a n e E1
+! surface: s o o l a s 0 e
+! lexical: v i s k o o s n e E1 > t
+! surface: v i s k o o s s 0 e  > t
+
+! -ne, -s word e deletion 
+"do not add e for inflecting some forms of ne/s word "
+
+E1:0  <=> :Vowel Null* (») :s Null* _ Null* s e ;          ! olulisse (haplology)
+          :Vowel Null* (») :s Null* _ Null* t WordEnd ;   ! soolast, 3-litist
+          :Vowel Null* (») :s Null* _ Null* t e ;        ! soolaste, 3-litiste
+          :Vowel Null* (») :s Null* _ Null* » l i k ;        ! vaatluslik
+                       (») :s Null* _ Null* » u s ;        ! soolasus
+                                    _ Null* » %- ;        ! nais-, vaatamis-, astraal-
+
+! lexical: o l u l i n e E1 > s e 
+! surface: o l u l i s 0  0 > s e
+! lexical: s o o l a n e E1 > t
+! surface: s o o l a s 0  0 > t
+! lexical: g l o o b u s E1 > t 
+! surface: g l o o b u s  0 > t
+! lexical: g l o o b u s E1 > t e
+! surface: g l o o b u s  0 > t e
+! lexical: g l o o b u s E1 > t a
+! surface: g l o o b u s  e > t a
+! lexical: r a u d n e E1 > t    ! NB! no e deletion
+! surface: r a u d s 0  e > t
+
+! lexical: v i s k o o s n e E1 » u s  
+! surface: v i s k o o s s 0  0 » u s
+! lexical: v i s k o o s n e E1 > t  ! NB! no e deletion
+! surface: v i s k o o s s 0 e  > t
+
+!!€ viskoosneE1>t
+!!€ viskooss0e>t
+
+!!$ viskoosneE1>t
+!!$ viskooss00>t
+
+! i is a vowel that starts Pl Par or vowel plural affixes; or -im derivation Der/im 
+! use I1 as a trigger
+"I1 triggers -ne to be -s"
+
+I1:i   => n:s e:0 Null* (») _ ;   ! -ne word
+          s Null* _ ;       ! -s word
+
+! lexical: k a t k i n e > I1
+! surface: k a t k i s 0 >  i
+! lexical: g l o o b u s > I1
+! surface: g l o o b u s >  i
+
+! ---------
+! affix allomorphs
+
+! noun pl affix te -> de; 
+! thus tütar, kannel, pinge, kotkas appear similar
+
+"+te appears as +de in tütar-type words"
+ t:d <=> [A2:a | E2:e] lmnr %{W%}: %> _ e ; 
+
+! lexical: s ´ õ s t A2 r {W} > t e
+! surface: s 0 õ s t  a r  0  > d e
+
+! similar to imperative mood affixes
+! default: D7:d
+! lexical: s i p 0 l e {W} > D7 a
+! surface: s i p e l 0  0  >  d a
+
+! default for infinitive and gerund affixes is D7:d
+
+"infinitive and gerund affixes may begin in t"
+
+D7:t  <=> :Vowel Null* %{W%}: SuffixBorder _ ;
+          :s Null* SuffixBorder _ ;
+
+! lexical: h ü p p a {W} > D7 a
+! surface: h ü p 0 a {W} >  t a
+! lexical: s e i s > D7 a 
+! surface: s e i s >  t a
+
+"infinitive and gerund affixes may assimilate to 0"
+
+D7:0  <=>  [:p | :t | :d] Null* SuffixBorder _ ; ! tappa, kasta, nutta, anda, niita, nõuda, ... 
+
+! lexical: k ü T1 t > D7 a 
+! surface: k ü  t t >  0 a
+! lexical: k e e T2 > D7 a 
+! surface: k e e  t >  0 a
+! lexical: k ü n D1 > D7 a
+! surface: k ü n  d >  0 a
+
+! d cannot follow a voiceless consonant; 
+! this is a general rule that is repeated here for the D7:d case
+
+!"orthography for da, des"
+
+!D7:d /<= :voiceless Null* _ ;
+
+! lexical: l a s K1 > D7 a 
+! surface: l a s  k 0  d a   <-- FAIL
+
+"impersonal voice affix may begin in d"
+
+T7:d  <=> [l | n | r] e:0 %{W%}: SuffixBorder _ ;
+          [l | n | r] [A7:0 | E7:0] SuffixBorder _ ;
+
+! lexical: s i p 0 l e {W} > T7 u d
+! surface: s i p e l 0  0  >  d u d
+! lexical: n a e r A7 > T7 u d
+! surface: n a e r  0 >  d u d
+
+! default: T7:t
+!
+! lexical: e l a > T7 a k s e
+! surface: e l a >  t a k s e
+! lexical: l e p p i {W} > T7 a k s e
+! surface: l e p 0 i  0  >  t a k s e
+! lexical: s e i s > T7 a k s e
+! surface: s e i s >  t a k s e
+! lexical: a n n D1 > T7 a k s e
+! surface: a n 0  0 >  t a k s e
+! lexical: j o o K1 s {W} > T7 a k s e
+! surface: j o o  0 s  0  >  t a k s e
+
+"imperative mood affix may begin in k"
+
+G7:k  <=> [\:Vowel | :i] a Null* %{W%}: %> _ ;
+          :voiceless Null* %> _ ;
+
+! lexical: h ü p p a {W} > G7 u
+! surface: h ü p 0 a {W} >  k u
+! lexical: l õ u G1 a {W} > G7 u
+! surface: l õ u  0 a {W} >  k u
+! lexical: l a i a {W} > G7 u
+! surface: l a i a {W} >  k u
+! lexical: s e i s > G7 u 
+! surface: s e i s >  k u
+
+"from -is to -i"
+
+S7:0 <=> ShortSyll :Consonant Null* %> I7: _ WordEnd ;  ! lasi
+         :s Null* _ ;    ! to eliminate jookssid, seissid
+
+! lexical: p e s > I7 S7
+! surface: p e s >  i  0
+! lexical: l a s K1 {W} > I7 S7 i n
+! surface: l a s  0  0  >  0  0 i n
+! lexical: l a s K1 {W} > I7 S7      
+! surface: l a s  0  0  >  i  0       
+! lexical: s e i s > I7 S7
+! surface: s e i s >  i  s          NB! S7:s
+! lexical: k ´ ü T1 t > I7 S7 i n
+! surface: k ´ ü  t 0 >  0  s i n   NB! S7:s
+
+! us-suffix and ini-suffix attach to a consonant, so a preceding vowel is deleted
+! in reality, only a u e are the preceding vowels
+
+"delete vowel before -us -is or -ini"
+
+Vx:0 <=> :Consonant Null* _ SuffixBorder u s ;
+         :Consonant Null* _ SuffixBorder i s ;
+         :Consonant Null* _ SuffixBorder i n i ;
+     where Vx in ( a u e A1) ; 
+
+! lexical: a h h e t a » u s
+! surface: a h h e t 0 » u s
+! lexical: p i n g n e > A1 » u s
+! surface: p i n g s 0 >  0 » u s
+! lexical: a r v e l d a » i s
+! surface: a r v e l d 0 » i s
+
+! ---------
+! Rules for selecting 
+! 1. the inflectional affix and 
+! 2. its usage info 
+! for inflectional types where alternative affixes are common, 
+! but depend on the frequency of individual words.
+! The alternatives themselves are encoded in continuation lexicons, but the triggers for
+! selecting the correct variant for the word are encoded in the stem lexicon entries.
+! The affixes concerned are:
+! 1. plural partitive: 1.1. -sid vs stem vowel change; 1.2. -sid vs -id
+! 2. singular illative: -sse vs stem grade strengthening; 
+! ---------
+
+!! 1.1. plural partitive: -sid vs stem vowel change
+!
+! PIIM, KOON, EIT > PL_PAR
+! pl part kingi/kingasid, koone/koonusid etc
+! co-play of several rules with stem lex and contin. lex info for plural partitive:
+! 1. generate correct plural forms
+!    - -sid is always possible
+!    - vowel is possible only when shown in stem lex
+! 2. add usage info (rare, hyp) for the generated forms
+!    - if stem lex shows vowel without usage tag, then -sid form is rare
+!    - if stem lex has usage tag (rare, hyp) after vowel, then this form is rare or hyp
+! note the use of %{rare%} (Lexicon-based usage Tag) in rules
+
+! ---------
+! affixes sid, id and sse have to be unnaturally described symbol-by-symbol
+
+! affixes sid, sse, id
+
+"i for sid"
+%{i%}:i        <=>  :s _ :d ;
+
+"d for sid"
+%{d%}:d        <=>  :s :i _ ;
+
+"s for sse, sid"
+%{s%}:s         =>  :s _ :e ;   ! sse
+                    _ :s :e ;   ! sse
+                    _ :i :d ;   ! sid
+
+"e for sse"
+%{e%}:e        <=>   :s :s _ ;
+
+! rules for choosing the shorter wordform depend on info in the lexical entry
+"choosing short(er) affix: 0 vs sid, 0 vs sse, id vs sid"
+
+%{s%}:0     =>  PlSV:stemV   Any* _ %{i%}:0 %{d%}:0; ! short Pl Par needs its stem vowel indicated in the lexicon
+                %{id%}:      Any* _ i d ;            ! -id needs a trigger in the lexicon
+                %{stemill%}: Any* _ %{s%}:0 %{e%}:0; ! stem (aka short) illative needs a trigger in the lexicon
+                                  %{s%}:0 _ %{e%}:0; ! the middle s is sometimes zero, of course  
+
+! lexical: s a b a > {pl.u} {rare} {stemill} > {s} {i} {d} 
+! surface: s a b 0 >    u      0       0     >  0   0   0 
+! lexical: p u u {id} > {s} i d 
+! surface: p u 0  0   > 0  i d 
+! lexical: s a b . a > {pl.u} {rare} {stemill} {S} > {s} {s} {e} 
+! surface: s a p p a >    0      0       0      0  >  0   0   0 
+
+! the contexts in this rule are fragile, because a word may contain some special characters
+! somewhere in the stem...
+"non-third grade word cannot be stem illative"
+
+%{s%}:0  /<= ShortSyll :Consonant Null* :Vowel SuffixBorder* Null* SuffixBorder _ %{s%}:0 %{e%}:0 ;
+
+! p e r e {stemill} {S} > {s} {s} {e}
+! p e r e     0      0  >  0   0   0   FAIL
+! m a j a > {pl.u} {stemill} {S} > {s} {s} {e}
+! m a j a >    0       0      0  >  0   0   0   FAIL
+
+! this is only for pea, soo, suu, öö
+! ... and for Riia - Riiga, Rannu - Randu etc
+"in stem illative, the lexical morphophoneme cannot be in its weak form"
+
+%{s%}:0  /<= [H3:0 | D3:0 | G3:0 | G4:g | B4:b | D4:d] Any* _ %{s%}:0 %{e%}:0 ;
+             
+! s o o H3 Y3 > {id} {stemill} {S} > {s} {s} {e}
+! s o o  0  0 >   0     0       0  >  0   0   0  FAIL
+! R i i G3 a {stemill} {S} > {s} {s} {e}
+! R i i  0 a    0       0  >  0   0   0  FAIL
+! A b j a {stemill} {S} > {s} {s} {e} 
+! A b j a     0      0  >  0   0   0   FAIL 
+
+"No sg stem vowel if no Pl Par with -sid (choose pl stem vowel instead)"
+
+Vx:0  <=>  %> PlSV:stemV Null* _ Null* %{s%}:0 %{i%}:0 ;
+     where Vx in ( %{sg.a%} %{sg.e%} %{sg.u%} %{sg.i%} ); 
+
+"Choose pl stem vowel for Pl Par (sg stem vowel is 0) "
+
+Vx:Vy  <=>  :Consonant Null* %> _ Null+ %{s%}:0 %{i%}:0 ;     ! puud-puudi, maja - maju
+                     i Null* %> _ Null+ %{s%}:0 %{i%}:0 ;     ! sai - saiu
+     where Vx in ( %{pl.e%} %{pl.i%} %{pl.u%} ) 
+           Vy in (     e        i        u   )
+     matched ;
+
+! lexical: k i n g > {pl.i}       {sg.a} > {s} {i} {d}
+! surface: k i n g >    i            0   >  0   0   0  
+! lexical: p u u d > {pl.i} {hyp} {sg.a} > {s} {i} {d} {rare}
+! surface: p u u d >    i     0      0   >  0   0   0     0 
+! lexical: k a u p > {pl.u}       {sg.a} > {s} {i} {d}  
+! surface: k a u p >    u            0   >  0   0   0
+! lexical: m a j a > {pl.u}        {stemill} > {s} {i} {d} 
+! surface: m a j 0 >    u             0      >  0   0   0    
+! lexical: s a b a > {pl.u} {rare} {stemill} > {s} {i} {d} {rare}
+! surface: s a b 0 >    u     0        0     >  0   0   0     0 
+
+
+! ------------
+
+! maja-maju/majasid, osa-osi/osasid, nuga-nuge/nugasid
+! if vowel plural partitive is possible, then it has to be indicated in stem lexicon
+! concerns only words ending with -a, and huvi, kivi, kruvi 
+
+"vowel deletion before plural vowel"
+
+Vx:0  <=> :Consonant ( J1:0 ) _ %> PlSV:Vy Null* %{s%}:0 %{i%}:0 %{d%}:0 ;
+          :Consonant ( J1:0 ) _ %> PlSV:0 Null* Vy ;                          ! osil
+     where Vx in (a a a i)
+           Vy in (i u e e)
+     matched;
+
+! lexical: m a j a > {pl.u} {stemill} > {s} {i} {d}
+! surface: m a j 0 >    u       0     >  0   0   0
+! lexical: o s a > {pl.i} {stemill} {W} > i > l
+! surface: o s 0 >    0       0      0  > i > l 
+
+! --------------
+! 2. singular illative: -sse vs stem grade strengthening
+!
+! bisyllabic vowel-ending words may have a stem illative (also called as short illative) 
+! but it is exceptional, and actually usable only for frequently occurring words.
+! thus it has to be indicated in a stem lexicon with %{stemill%}
+! (the same applies to exceptional words whose short illative is without stem gradation (põrgu; Kunda) ) 
 ! 
+! lagi-laesse/lakke, keel-keelesse/keelde
+! co-play of xxx rules with stem lex info for lagi, nimi, sõda; Riia, Kunda, ...
+
+! ------
+! general relations between short illative and stem grade
+
+"weak grade is incompatible with exceptional stem (aka short) illative"
+%{W%}:0       /<=  _ Any* %{s%}:0 %{s%}:0 %{e%}:0  ;    
+
+"(extra) strong grade is incompatible with sse-illative"
+%{S%}:0       /<=  _ Any* %{s%}:s %{s%}:s %{e%}:e  ;      
+
+! ------
+! we (mis)use 2-level formalism to prune spurious branches that emerge from continuation lexicons
+!
+! usage tag %{rare%} is used for controlling paths
+! that have the same lexical side, but different surface realisation
+! so that the final lexical side has usage info indicated
+
+! (the first lexical tag %{rare%} comes from the stem lexicon, the second from a continuation class lexicon)
+
+! -sse sg ill cannot be rare, if the stem lexicon tag says that short form is rare;
+! -sse sg ill cannot be common, if there is no lexicon tag that would say that short form is rare;
+! -sse sg ill cannot be rare, if the lexicon contains no tag to indicate that short form exists;
+
+! short sg ill is rare, if the lexicon tag says it is rare;
+! short sg ill is common, if there is no lexicon tag to indicate that it is rare
+! note that {stemill} has to be indicated in lexicon; and weak grade is impossible
+
+! short pl par is rare, if the lexicon tag says it is rare;
+! short pl par is common, if there is no lexicon tag to indicate that it is rare;
+! (short pl par is impossible without a plural stem vowel)
+
+! -sid pl par cannot be rare, if the lexicon tag says that short form is rare;
+! -sid pl par cannot be common, if there is no lexicon tag that would say that short form is rare;
+! -sid pl par cannot be rare, if the lexicon contains no pl vowel to indicate short form ;
+
+"usage tag may be in several places"
+%{rare%}:0  =>  %{stemill%}: _ ;      ! stem illative usage tag in the lexicon follows the trigger
+                       PlSV: _ ;      ! short pl partitive usage tag in the lexicon follows the plural stem vowel 
+                     %{id%}: _ ;      ! -id plural partitive usage tag in the lexicon follows the trigger 
+                %{stemill%}:  %{rare%}: Any* %{s%}:0 %{s%}:0 %{e%}:0  _  ;   ! nimme is rare
+                %{stemill%}: \%{rare%}: Any* %{s%}:s %{s%}:s %{e%}:e  _  ;   ! majasse is rare
+                  PlSV:stemV  %{rare%}: Any* %{s%}:0 %{i%}:0 %{d%}:0  _ ;   ! puudi is rare
+                  PlSV:0     \%{rare%}: Any* %{s%}:s %{i%}:i %{d%}:d  _ ;   ! kaupasid is rare
+                     %{id%}:  %{rare%}: Any* %{s%}:0 i d _  ;   ! esseid is rare
+                     %{id%}: \%{rare%}: Any* %{s%}:s i d _  ;   ! puusid is rare
 
 
+"long plural partitive cannot be common if the word already has a common short plural partitive"
+%{s%}:s    /<= PlSV:0 \%{rare%}: Any* _ %{i%}:i %{d%}:d \%{rare%}: ; 
+
+"short plural partitive cannot be common if the lexicon tag says it is rare"
+%{s%}:0    /<= PlSV:stemV %{rare%}: Any* _ %{i%}:0 %{d%}:0 \%{rare%}: ; 
+
+! lexical: p u u d > {pl.i} {hyp} {sg.a} > {s} {i} {d} {rare}
+! surface: p u u d >    i     0      0   >  0   0   0      0     
+! lexical: p u u d > {pl.i} {hyp} {sg.a} > {s} {i} {d} WordEnd
+! surface: p u u d >    i     0      0   >  0   0   0           FAIL
+! lexical: k a u p > {pl.u}       {sg.a} > {s} {i} {d} {rare}
+! surface: k a u p >    u            0   >  0   0   0      0    FAIL
+! lexical: t ü n g                {sg.a} > {s} {i} {d}
+! surface: t ü n g                   a   >  s   i   d           
+
+! lexical: p u u d > {pl.i} {hyp} {sg.a} > {s} {i} {d} {rare}
+! surface: p u u d >    0     0      a   >  s   i   d     0    FAIL
+! lexical: k a u p > {pl.u}       {sg.a} > {s} {i} {d} WordEnd
+! surface: k a u p >    0            a   >  s   i   d          FAIL
+! lexical: t ü n g                {sg.a} > {s} {i} {d} {rare}
+! surface: t ü n g                   a   >  s   i   d     0    FAIL
+
+"-id plural partitive cannot be common if the lexicon tag says it is rare"
+%{s%}:0  /<=  %{id%}: %{rare%}: Any* _ i d \%{rare%}:  ;
+
+"-sid plural partitive cannot be common if the word has a common -id plural partitive"
+%{s%}:s  /<= %{id%}: \%{rare%}: Any* _ i d \%{rare%}:  ;
+
+! lexical: p u u     {id}        > {s} i d {rare}
+! surface: p u u      0          >  s  i d   0
+! lexical: g n u u               > {s} i d WordEnd
+! surface: g n u u               >  s  i d 
+! lexical: g n u u               > {s} i d {rare}
+! surface: g n u u               >  s  i d    0      FAIL 
+! lexical: e s s e e {id} {rare} > {s} i d {rare}
+! surface: e s s e 0  0      0   >  0  i d   0 
+! lexical: e s s e e {id} {rare} > {s} i d {rare}
+! surface: e s s e 0  0      0   >  s  i d    0      FAIL
+! lexical: e s s e e {id} {rare} > {s} i d WordEnd    
+! surface: e s s e 0  0      0   >  0  i d        FAIL
+! lexical: e s s e e {id} {rare} > {s} i d WordEnd
+! surface: e s s e 0  0      0   >  s  i d      
+! --------------
+
+"long illative cannot be common if the word has a common short illative already"
+%{s%}:s      /<= %{stemill%}: \%{rare%}: Any* _ %{s%}: %{e%}: \%{rare%}:  ;
+
+"short illative cannot be common if the lexicon tag says it is rare"
+%{s%}:0      /<= %{stemill%}: %{rare%}: Any* _ %{s%}: %{e%}: \%{rare%}:  ;
+
+! majja is common, majasse is rare
+! lexical: m a j 0 a > {pl.u} {stemill} {S} > {s} {s} {e}
+! surface: m a j j a >    0       0      0  >  0   0   0
+! lexical: m a j   a > {pl.u} {stemill} {W} > {s} {s} {e} {rare}
+! surface: m a j   a >    0       0      0  >  s   s   s    0
+
+! nimesse is common, nimme is rare
+! lexical: n i m 0 {stemill} {rare} e {S} > {s} {s} {e} {rare} 
+! surface: n i m m     0        0   e  0  >  0   0   0    0
+! lexical: n i m   {stemill} {rare} e {W} > {s} {s} {e}
+! surface: n i m       0        0   e  0  >  s   s   e  
+
+! tuppa is common, toasse is rare
+! lexical: t u B1 0 a > {pl.e} {stemill} {S} > {s} {s} {e}
+! surface: t u  p p a >    0       0      0  >  0   0   0 
+! lexical: t u B1   a > {pl.e} {stemill} {W} > {s} {s} {e} {rare}
+! surface: t o  0   a >    0       0      0  >  s   s   e     0
+
+! loppa is impossible, lobasse is common
+! lexical: l o b a                       {W} > {s} {s} {e}
+! surface: l o b a                        0  >  s   s   e
+
+! --------- orthography
+
+! Orthography: consonant (cluster) writing conventions
+! NB! Foreign names may contain them, e.g. Uppsala, Mannheim
+! Treffner, Gottlieb, Seattle
+! 1) if a vowel is deleted, the resulting consonant cluster may have to be modified
+! (note: no consonant deletion before particle -gi/ki)
+! 2) in this treatment, some consonants have been written as double in the lexicon 
+! because they are pronounced long;
+! this violates Estonian orthography, and this rule sets them right again
+
+"consonant de-doubling in consonant clusters (e.g. after vowel deletion)"
+
+Cx:0 <=> :Cx _ [Null | SuffixBorder]+ [[:LowerCaseConsonant Any* Border] - [Gi Border]];
+         :Cx _ [WS:stop] ;
+      where Cx in (LowerCaseConsonant) ;
+
+! lexical: s p i k k E2 r > i
+! surface: s p i k 0  0 r > i 
+
+! lexical: R a n n D3 u
+! surface: R a n 0 d  u 
+
+! this prohibits vasallik, which is good, but vasalllik is prohibited by the rule above anyway...
+"no deletion in ll+lik"
+
+l:0 /<= :l _ Null* » l ;
+
+! g b d is written as k p t after voiceless consonants
+! this rule is restricted to affixes, because foreign words have conventions
+! that do not follow this rule (lesginka)
+"gbd to kpt after voiceless consonants"
+
+Cx:Cy  <=> :voiceless Null* SuffixBorder _ ;
+       where Cx in (g b d)
+             Cy in (k p t)
+       matched;
+
+! lexical: s e i s > g i
+! surface: s e i s > k i
+
+! Orthographical convention for recent loans (kabinet) and -ik suffix
+
+"double k p t"
+
+%{dbl%}:Cx  <=> :Cx _ AnyNoWeakTrigger* WordEnd ;
+      where Cx in (k p t) ;
+
+! lexical: k a b i n e t . > {pl.e} {sg.i}
+! surface: k a b i n e t t >    0      i
+
+! -----
+! olema, tulema, minema, panema, surema --> 
+! olla, tulla, minna, panna, surra; ollakse etc, olles etc
+! the context is limited to a few inflectional forms
+
+"double l m n r"
+
+%{dbl%}:Cx <=> :Cx _ Null* [ :a | :e ] ;
+      where Cx in (lmnr) ;
+
+! pronounced mässlema, but written mäslema...
+! foreign names Kessler etc have ssl cluster, so cannot use a general rule ssl -> sl
+! have to resort to the following:
+! in weak grade, the true length of a consonant becomes apparent...
+! mäslema - mässelda is the only example, but the process itself is not unique
+
+"mäslema"
+
+0:s <=> Consonant Vowel s _ 0:e l e:0 %{W%}: ;
+
+! lexical: m ä s 0 0 l e {W} > d a
+! surface: m ä s s e l 0  0  > d a     
+
+! If a foreign word is pronounced not according to Estonian writing conventions (Braille - brai)
+! then its inflectional ending is separated with an apostrophe (superscript 9) ’ 
+! This applies even to Sg Gen: Braille’
+! The only form without ’ is Sg Nom, so {no_apo} is a standard trigger in continuation lexicons
+"No apostrophe"
+
+%{apo%}:0  <=> _ %{no.apo%}: ;
+
+! lexical: B r a i l l e {apo} {no_apo}
+! surface: B r a i l l e   0      0     
 
 
-!-----------------morfeemipiiridel kehtivad reeglid-----------
+!----------------
 
-"Pika vokaali lühenemine enne i-d ja h-d"        ! Pikk vokaal lüheneb
-!enne i-ga algavat formatiivi, nt.maa+id->maid, maaha->maha.
-                                    ! Võõrsõnades ainult 'e': idee-ideid, aga miljöö-miljöösid,depoo-depoosid,kanuu-kanuusid
+! for debugging in GT infra:
+! in ~/svn-giellatekno/main/experiment-langs/est/src
 
-  %.:0 <=> [[Vok [Kons+] e] | [Algus LyhVok]] _ [%+: [ i | h ]] ;
-           a _ [D1:|G1:] i: %$:;	!praadida-praeb, saagida-saeb
-	   o _ D1:0 e %$:;		!loe 
+! for looking at all the generated forms (use only if the lexicon is really small):
+! hfst-fst2strings analyser-gt-desc.hfstol > tmp1
 
-"Pikk vokaal vaikimisi"
-  %.:Vok1 <=> Vok1 _ ~[%+: [ a | i | h ] :* ] .#.; where  Vok1 in (e o u õ ä ö ü);
+! echo 'laudu' | hfst-lookup analyser-gt-desc.hfstol
+! > laudu	laud+N+Pl+Par	0,000000
 
-"Pikk vokaal vaikimisi, a"
-  %.:a <=> a _ ~[ [D1: | G1: ] i: %$: :* | %+: [i | h] ?*] .#.;
+! echo 'laud+N+Pl+Par' | hfst-lookup morphology/lexicon.hfst
+! > laud+N+Pl+Par	lauD1>{pl.u}{sg.a}>{sid}	0,000000
 
+! echo 'l a u D1:d +:0 {pl.u}:u {sg.a}:0 +:0 {s}:0' | hfst-pair-test phonology/est-phon.compose.hfst
 
-"morfeemipiiril kaks s-i saavad üheks"
+! hfst & xfst:
+! echo 'raudne+A+Sg+Par' | hfst-lookup morphology/lexicon.hfst 
+! > raudne+A+Sg+Par	r´audneE1>t	0,000000
 
- s:0 <=> _ [:0*] %+: :s :i;	!inimes+sse->inimesse
+!  echo 'r´audneE1>t' | ~/xfst/bin/lookup -flags mbTT morphology/lexicon.xfst 
+! > r´audneE1>t	raudne+A+Sg+Par
+ 
 
+! a minimalistic way:
+! make nets for lexc and twol:
+! hfst-lexc -o tmp.lexc morphology/root.lexc
+! hfst-twolc -o tmp.twol phonology/est-phon.twolc
+! echo 'laud+N+Pl+Par' | hfst-lookup tmp.lexc
 
-"käskiva kõneviisi formatiivi alguse g läheb k-ks helitu konsonandi järel või NA-tüves a järel"
+! echo 'l a u D1:d > {pl.u}:u {sg.a}:0 +:0 {s}:0' | hfst-pair-test tmp.twol
 
- g:k <=> [h | D1:d | T1:t] [:0*] %+: _ [e|u];	!teh+ge->tehke
-        a %$: %+: _ [e|u];	!tõmbama-tõmma+gu->tõmmaku
-
-
-"formatiivi alguse d läheb t-ks helitu konsonandi järel"
-
- d:t <=> s  %+: _ [a | e s];	!seis+des->seistes
-
-"v ->ev konsonanttüvelistel verbidel"
-
- %+:e <=> [Kons | AV: ] _ v [ SonaPiir | a];! naer+v->naerev
-
-
-"i -> e enne i-ga algavat formatiivi"	!kauni+im=kauneim
-
- i:e <=> Kons _ (S1:) %+: i:;
-
-"ki/gi liite valik - kui eelneb heliline häälik, siis gi"
-
- Q1:g <=> [:Vok | :l | :m | :n | :r] [:0]* (%$:) (%+:) _ i;
-
-"vokaalikadu +im eest"
-
- V:0 <=> _ %!: %+: i m; where V in (a e i u W1);
 
 

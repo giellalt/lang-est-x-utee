@@ -1,0 +1,662 @@
+!! inflectional types and analogue rules for nouns, adjectives and other declinables
+!! VVS stands for Ü. Viks "Väike vormisõnastik" for reference purposes
+
+!---------------
+! pronouns
+!---------------
+
+LEXICON KES    ! kes, mis 
+
+           +Sg+Nom:s # ;
+  +Sg+Ade+Use/Rare:%>l # ;    ! kel, mil 
+                  : KEMISETO ;
+                  :lle DE_PL ;    ! kellede etc 
+
+LEXICON SEE    ! see 
+
+                  :see SG_NOMINATIVE ;
+         +Use/Rare:se%>sse SG_ILLATIVE ;    ! sesse
+  +Sg+Ine+Use/Rare:se%>s # ;    ! ses
+      +Sg+Use/Rare:se%>st ELATIVE ;    ! sest
+      +Sg+Use/Rare:se%>l ADESSIVE ;    ! sel
+      +Sg+Use/Rare:se%>lt ABLATIVE ;    ! selt	
+      +Sg+Use/Rare:se%>ks TRANSLATIVE ;    ! seks
+                  :se KEMISETO ;
+               +Pl:nee%>d NOMINATIVE ;    ! need
+                  :ne NENO ;
+
+LEXICON TOO    ! too 
+
+                  :too SG_NOMINATIVE ;
+      +Sg+Use/Rare:to%>sse ILLATIVE ;    ! tosse
+  +Sg+Ine+Use/Rare:to%>s # ;    ! tos
+      +Sg+Use/Rare:to%>st ELATIVE ;    ! tost
+      +Sg+Use/Rare:to%>l ADESSIVE ;    ! tol
+                  :to KEMISETO ;
+               +Pl:noo%>d NOMINATIVE ;    ! nood
+                  :no NENO ;
+
+LEXICON KEMISETO    ! kes, mis, see, too common cont. lexicon
+
+               +Sg:lle STANDARD_GEN_ET_AL ;    ! kelle, tolle etc , excl Pl Nom
+                  :%>da SG_PARTITIVE ;    ! keda, toda etc
+
+! -----
+LEXICON MASA    ! ma & sa 
+
+             +Emph:ina SG_NOMINATIVE ;    ! mina, sina
+           +Sg+Nom:a # ;    ! ma, sa
+             +Emph:inu SG_GENITIVE ;    ! minu, sinu
+           +Sg+Gen:u # ;    ! mu, su
+                  :in%>d SG_PARTITIVE ;    ! mind, sind
+                  :u%>sse SG_ILLATIVE ;    ! musse
+           +Sg+Ine:u%>s # ;    ! mus
+               +Sg:u%>st ELATIVE ;
+               +Sg:ul%>le ALLATIVE ;	! mulle
+               +Sg:u%>l ADESSIVE ;	
+               +Sg:u%>lt ABLATIVE ;	
+           +Sg+Com:u%>ga # ;                  ! muga
+          +Sg+Emph:inu LOCATIVES ;    ! minul, sinul
+               +Sg:inu%>ks TRANSLATIVE ;
+               +Sg:inu%>ni TERMINATIVE ;	  ! minuni
+               +Sg:inu%>na ESSIVE ;	  ! minuna
+               +Sg:inu%>ta ABESSIVE ;	  ! minuta
+          +Sg+Emph:inu%>ga COMITATIVE ;    ! minuga
+                  :ina LIK_DERIVATION ;    ! minulik, sinulik
+
+LEXICON METE    ! me & te 
+
+          +Pl+Emph:ie NOMINATIVE ;    ! meie, teie
+           +Pl+Nom: # ;    ! me, te
+          +Pl+Emph:ie GENITIVE ;    ! meie, teie
+           +Pl+Gen: # ;    ! me, te
+                  :i%>d PL_PARTITIVE ;    ! meid, teid
+               +Pl:i LOCATIVES ;    ! meil, teil etc
+               +Pl:ie%>ks TRANSLATIVE ;
+               +Pl:ie%>ni TERMINATIVE ;	  ! meieni
+               +Pl:ie%>na ESSIVE ;	  ! meiena
+               +Pl:ie%>ta ABESSIVE ;	  ! meieta
+               +Pl:ie%>ga COMITATIVE ;    ! meiega
+
+   +Pl+Use/NotNorm:ite GENITIVE ;    ! meite, teite
+      +Use/NotNorm:ite%>sid PL_PARTITIVE ;    ! meid, teid
+   +Pl+Use/NotNorm:ite LOCATIVES ;    ! meitel, teitel etc
+   +Pl+Use/NotNorm:ite%>ks TRANSLATIVE ;
+   +Pl+Use/NotNorm:ite%>ni TERMINATIVE ;	  ! meiteni
+   +Pl+Use/NotNorm:ite%>na ESSIVE ;	  ! meitena
+   +Pl+Use/NotNorm:ite%>ta ABESSIVE ;	  ! meiteta
+   +Pl+Use/NotNorm:ite%>ga COMITATIVE ;    ! meitega
+
+                  :ie LIK_DERIVATION ;    ! meielik, teielik
+
+LEXICON TEMA    ! ta 
+
+             +Emph:ema SG_NOMINATIVE ;    ! tema
+           +Sg+Nom:a # ;    ! ta
+             +Emph:ema SG_GENITIVE ;    ! tema
+           +Sg+Gen:a # ;    ! ta
+                  :e%>da SG_PARTITIVE ;    ! teda
+          +Sg+Emph:ema LOCATIVES ;    ! temal etc
+               +Sg:ema%>ks TRANSLATIVE ;
+               +Sg:ema%>ni TERMINATIVE ;	  ! temani
+               +Sg:ema%>na ESSIVE ;	  ! temana
+               +Sg:ema%>ta ABESSIVE ;	  ! temata
+               +Sg:ema%>ga COMITATIVE ;    ! temaga
+                  :a%>sse SG_ILLATIVE ;    ! tasse
+           +Sg+Ine:a%>s # ;                ! tas
+               +Sg:a%>st ELATIVE ;
+               +Sg:al%>le ALLATIVE ;	! talle
+               +Sg:a%>l ADESSIVE ;	
+               +Sg:a%>lt ABLATIVE ;	
+                  :ema LIK_DERIVATION ;    ! temalik
+
+LEXICON NEMAD    ! nemad 
+
+          +Pl+Emph:ema%>d NOMINATIVE ;    ! nemad
+               +Pl:a%>d NOMINATIVE ;    ! nad
+                  :e NENO ;
+                  :en%>de LIK_DERIVATION ;    ! nendelik
+
+LEXICON NENO    ! nemad, need & nood common cont. lexicon
+
+                  :n DE_PL ;    ! nende etc 
+                  :%>id PL_PARTITIVE ;    ! neid
+               +Pl:n%>de%>ni TERMINATIVE ;	  ! nendeni
+               +Pl:n%>de%>na ESSIVE ;	  ! nendena
+               +Pl:n%>de%>ta ABESSIVE ;	  ! nendeta
+               +Pl:n%>de%>ga COMITATIVE ;    ! nendega
+      +Use/Rare+Pl:i LOCATIVES_PLUS ;    ! neil etc 
+
+! ----
+LEXICON ISE    ! ise, iseenese NB! the usage info is possibly wrong...
+
+                  :ise SG_NOMINATIVE ;    ! ise
+               +Sg:enese STANDARD_GEN_ET_AL ;    ! enese, enesel etc
+      +Sg+Use/Rare:enda STANDARD_GEN_ET_AL ;    ! enda, endal etc
+                  :ennas%>t SG_PARTITIVE ;                               
+         +Use/Rare:en%>d SG_PARTITIVE ;                               
+               +Pl:enes%>te STANDARD_GEN_ET_AL ;
+      +Pl+Use/Rare:end%>i STANDARD_GEN_ET_AL ;
+                  :enese LIK_DERIVATION ;    ! (ise)eneselik
+
+LEXICON OMAENESE    ! omaenese ; few forms; they could be regarded as parallel forms of 'ise'
+
+         +Use/Rare:enese SG_GENITIVE ;                      
+                  :enda SG_GENITIVE ;                      
+               +Pl:enes%>te GENITIVE ;
+      +Pl+Use/Rare:end%>i GENITIVE ;
+
+! ----
+LEXICON KÕIK
+
+           +Sg+Nom: # ;
+               +Sg:e%{W%} STANDARD_GEN_ET_AL ;    ! kõige etc
+                  :e SG_PARTITIVE ;    ! kõike
+           +Pl+Nom: # ;    ! kõik
+      +Pl+Use/Rare:i%>de STANDARD_GEN_ET_AL ;    ! kõikide etc
+               +Pl:i%{W%} STANDARD_GEN_ET_AL ;    ! kõigi etc
+                  :i PL_PARTITIVE ;              ! kõiki
+
+LEXICON MÕNI    ! only mõni; similar to MERI
+
+                  :i SG_NOMINATIVE ;
+                  :e N_SG_SUBPARA ;    ! mõne etc
+         +Use/Rare:%>d SG_PARTITIVE ;    ! mõnd
+                  :%>da SG_PARTITIVE ;    ! actually, mõnda is the preferred form...
+                  :%>da SG_ILLATIVE ;    ! actually, mõnda is the preferred form...
+         +Use/Rare:e%{W%}%>sse SG_ILLATIVE ;    ! mõnesse 
+                  :e DE_PL ;    ! mõnede etc
+                  :e%>sid PL_PARTITIVE ;    ! mõnesid
+
+! -----
+LEXICON KEEGI    ! only keegi; (kes+gi); nonstandard parallel forms kellegil etc like REDEL
+
+                  :e SG_NOMINATIVE ;
+                  : KEMISETO ;
+   +Sg+Use/NotNorm:llegi ALL_SEM_CASES ;    ! kellegis, 
+
+LEXICON MISKI    ! only miski; mis+gi; nonstandard parallel forms millegil etc; miskid etc like REDEL
+
+                  : KES ;
+   +Sg+Use/NotNorm:llegi ALL_SEM_CASES ;    ! millegis, millegil etc
+      +Use/NotNorm:ski 2C ;    ! miskid, miskite etc 
+
+
+LEXICON KUMBKI    ! only kumbki; kumb like PIIM +gi; nonstandard parallel forms kummagil etc like REDEL
+
+                  : SG_NOMINATIVE ;
+                  :%{sg.a%} 1C ;
+      +Use/NotNorm:agi%{W%} 2C ;    ! kummagis, kummagil etc
+
+!---------------
+! exceptional inflectional types, i.e. covering very few words each
+!---------------
+LEXICON AED       ! only aed; if its orthography was aed - ajja - aeda, it would be in type PIIM
+                  ! but aed - aia - aeda makes it too ugly to model with twol rules
+
+                  :ed SG_NOMINATIVE ;    ! aed
+                  :ia%{W%} N_SG_SUBPARA ;    ! aia etc 
+                  :eda SG_PARTITIVE ;    ! aeda
+          +Use/Hyp:ia%{W%}%>sse SG_ILLATIVE ;    ! aiasse 
+                  :eda SG_ILLATIVE ;    ! aeda
+                  :eda DE_PL ;    ! aedade etc 
+                  :edu PL_PARTITIVE ;    ! aedu
+         +Use/Rare:eda%>sid PL_PARTITIVE ;    ! aedasid
+                  :ia%{W%} LIK_DERIVATION ;    ! aialik
+
+LEXICON ARGPÜKS    ! some compound words ending with püks (argpüks, vesipüks etc)
+                  ! and declined not exactly like püksid (e.g. karupüksid, sukkpüksid) 
+                  ! almost like TAUD, but has some less used pl forms
+                  : TAUD ;
+         +Use/Rare:%{W%} TE_PL ;    ! argpükste etc
+
+LEXICON ASI    ! only asi, paik, tiib, kõrv, mari
+
+                  : PIIM ;
+      +Use/Rare+Pl:%{W%}%>u LOCATIVES_PLUS ;    ! asjus, paigus etc
+
+LEXICON JALG    ! only jalg
+
+                  : RIND ;
+         +Use/Rare:%>e N_VOWEL_PL_SUBPARA ;    ! jalges etc
+
+LEXICON KAEL    ! VVS 23  17 words; almost = PIIM, except pl gen + 
+
+                  : SG_NOMINATIVE ;
+                  :%{sg.a%} 1C_SG ;
+                  : TE_PL ;    ! kaelte etc 
+         +Use/Rare:%{sg.a%} DE_PL ;    ! kaelade etc 
+                               ! pl par stem vowel (u, i, 0) is lexically determined 
+                               ! and usage-wise tagged
+                  :%{sg.a%}%>%{s%}%{i%}%{d%} PL_PAR_VARIANT ;    ! kaelu, kaelasid+Use/Rare
+
+LEXICON KALLIS    !  VVS 7, 5 only kallis, kaunis unstable (closed) type; 
+
+                  :s%{W%} SG_NOMINATIVE ;    ! kallis
+                  :s%{W%}%>t SG_PARTITIVE ;  ! kallist
+                  : 2C_STRONG ;             ! kalli etc, kallite, kalleid, kalleil etc
+                  : TE_PL ;                 ! kallite
+         +Use/Rare:s%{W%} TE_PL ;           ! kalliste etc 
+
+LEXICON KAKS    ! only üks, kaks
+
+                  :ks SG_NOMINATIVE ;    ! kaks
+                  :hT1%{sg.e%} 1C ;   ! like EIT
+         +Use/Rare:h%>t SG_PARTITIVE ;    ! kaht
+
+LEXICON KANNEL    ! only kannel, tütar, kärbes, lemmel; = PIPAR, but stem vowel -e instead of -a
+
+                  :%{W%} SG_NOMINATIVE ;      ! kannel
+                  :%{W%}%>t SG_PARTITIVE ;    ! kannelt
+                  :%{W%} TE_PL ;              ! kannelde
+                  :e 2C_STRONG ;
+      +Use/NotNorm:e TE_PL ;       ! kandlete, tütrete etc 
+                  :e LIK_DERIVATION ;
+
+LEXICON KEEL    !  VVS 13 unstable (closed) type; 27 words
+
+                  : VARS ;
+       +Use/Hyp+Pl:%{W%}%>i LOCATIVES_PLUS ;    ! vowel pl cases  keelil; except for some expressions (suuril silmil)
+
+LEXICON KEVAD    ! only küps, kevad, = REDEL, but stem vowel is e
+
+                  : SG_NOMINATIVE ;    ! kevad
+                  :e 2C ;    ! kevade etc
+
+LEXICON KODU    ! only kodu; stem illative is koju, rare ablative is kodunt
+
+                  :du SG_NOMINATIVE ;
+                  :du N_SG_SUBPARA ;    ! kodu etc; weak grade has no effect here
+                  :du SG_PARTITIVE ;    ! kodu
+                  :ju SG_ILLATIVE ;    ! 
+         +Use/Rare:du%>sse SG_ILLATIVE ;    !  
+      +Sg+Use/Rare:dunt ABLATIVE ;    ! 
+                  :du DE_PL ; 
+                  :du%>sid PL_PARTITIVE ;   
+                  :du LIK_DERIVATION ;
+
+LEXICON KOHUS    ! only kohus-kohtu; like HOOLAS
+
+                  :s%{W%} SG_NOMINATIVE ;    ! kohus
+                  :%{W%}%>t SG_PARTITIVE ;    ! kohut
+         +Use/Rare:%>t SG_PARTITIVE ;    ! kohtut
+                  : 2C_STRONG ;    ! kohtusse etc
+                  : TE_PL ;        ! kohtute
+
+LEXICON KURAT    ! only kurat; like redel
+   
+                  :t SG_NOMINATIVE ;    ! kurat
+                  :di 2C ;    ! kuradi etc
+
+LEXICON KÕRB    ! only kõrb; contains paradigms of 2 words: 
+               ! 1) Sg Gen kõrbe = land without plantlife (=desert)
+               ! 2) Sg Gen kõrve = uninhabitable forest
+               ! meaning (2) is lost today, so kõrve is used as an old wordform for desert...
+
+                  : SG_NOMINATIVE ;    ! kõrb
+
+! type 1C kõrb-kõrve-kõrbe; like EIT
+         +Use/Rare:%{W%}%>e N_SG_SUBPARA ;    ! kõrve etc 
+                  :e SG_PARTITIVE ;    ! kõrbe NB! not rare!
+                  :e SG_ILLATIVE ;    ! kõrbe NB! not rare!
+         +Use/Rare:e%{W%}%>sse SG_ILLATIVE ;    ! kõrvesse 
+         +Use/Rare:e DE_PL ;             ! kõrbede etc 
+         +Use/Rare:i PL_PARTITIVE ;    ! kõrbi
+         +Use/Rare:e%>sid PL_PARTITIVE ;    ! kõrbesid
+
+! type 2C kõrb-kõrbe-kõrbet; like REDEL with stem vowel e
+                  :%>e N_SG_SUBPARA ;    ! kõrbe etc 
+         +Use/Rare:e%>t SG_PARTITIVE ;    ! kõrbet NB! rare!
+         +Use/Rare:e%>sse SG_ILLATIVE ;    ! kõrbesse NB! rare!
+                  :e TE_PL ;    ! kõrbete etc 
+                  :e%>id PL_PARTITIVE ;    ! kõrbeid 
+
+LEXICON KÖÖMEN    ! only köömen; like KEVAD
+
+                  : SG_NOMINATIVE ;    ! köömen
+                  :e 2C ;    ! köömne etc  
++Use/CommonNotNorm:%>t SG_PARTITIVE ;    ! kööment
+
+LEXICON KÜMMEND   ! only kümmend; like KÖÖMEN? SEEME?
+
+                  :nd SG_NOMINATIVE ;    ! kümmend
+                  :%>t SG_PARTITIVE ;    ! (viit)kümmet
+         +Use/Rare:nd SG_PARTITIVE ;     ! (viit)kümmend
+                  :ne 2C_STRONG ;      ! (viie)kümne etc
+                  :ne TE_PL ;        ! (viie)kümnete
+
+LEXICON LAPS    ! only laps, uks; notice the weird (?) use of {W}
+
+                  : SG_NOMINATIVE ;    ! laps
+                  :e N_SG_SUBPARA ;    ! lapse etc 
+                  :%{W%}%>t SG_PARTITIVE ;    ! last
+                  :e%>sse SG_ILLATIVE ;    ! lapsesse 
+                  :%{W%} TE_PL ;    ! laste etc 
+                  :%>i PL_PARTITIVE ;    ! lapsi
+
+LEXICON LAPSELAPS    ! only lapselaps; the N_PL_SUBPARA is different...
+
+                  :lapse%#l˘aP1s SG_NOMINATIVE ;    ! laps
+                  :lapse%#l˘aP1se N_SG_SUBPARA ;    ! lapse etc 
+                  :lapse%#l˘aP1s%{W%}%>t SG_PARTITIVE ;    ! last
+                  :lapse%#l˘aP1se%>sse SG_ILLATIVE ;    ! lapsesse 
+                  :laste%#l˘aP1s%{W%} TE_PL ;    ! laste etc 
+                  :lapse%#l˘aP1s%>i PL_PARTITIVE ;    ! lapsi
+
+LEXICON LAPSELAPSELAPS    ! only lapselapselaps; the N_PL_SUBPARA is different...
+
+                  :lapse%#lapse%#l˘aP1s SG_NOMINATIVE ;    ! laps
+                  :lapse%#lapse%#l˘aP1se N_SG_SUBPARA ;    ! lapse etc 
+                  :lapse%#lapse%#l˘aP1s%{W%}%>t SG_PARTITIVE ;    ! last
+                  :lapse%#lapse%#l˘aP1se%>sse SG_ILLATIVE ;    ! lapsesse 
+                  :laste%#laste%#l˘aP1s%{W%} TE_PL ;    ! laste etc 
+                  :lapse%#lapse%#l˘aP1s%>i PL_PARTITIVE ;    ! lapsi
+
+LEXICON LÕUNA    ! only lõuna; almost like haare
+
+                  :%{W%} SG_NOMINATIVE ;      ! lõuna
+                  :%{W%}%>t SG_PARTITIVE ;    ! lõunat
+                  : 2C_STRONG ;         ! lõuna, lõunasse etc
+                  : TE_PL ;                 ! lõunate
+
+
+LEXICON MANNER    ! VVS 3 only manner, tanner
+                  ! almost = VAHER, but stem vowel is i
+
+                  :%{W%} SG_NOMINATIVE ;    ! manner
+                  :i 2C ;    ! mandri etc
+
+LEXICON MEES    ! only mees
+
+                  :es SG_NOMINATIVE ;    ! mees
+                  :he N_SG_SUBPARA ;    ! mehe etc 
+                  :es%>t SG_PARTITIVE ;    ! meest
+                  :he%>sse SG_ILLATIVE ;    ! mehesse 
+                  :es TE_PL ;    ! meeste etc 
+                  :h%>i PL_PARTITIVE ;    ! mehi
+
+LEXICON MERI    ! VVS 20 unstable type (passiivne muuttüüp) 8 words (lumi, tuli, uni, veri...)
+
+                  :i SG_NOMINATIVE ;
+                  :%>d SG_PARTITIVE ;        ! merd
+                  :e N_SG_SUBPARA ;          ! meres etc
+                  :e%{S%} SG_ILL_VARIANT ;     ! merre
+                  :e SG_ILL_VARIANT ;         ! meresse 
+                  :e DE_PL ;
+                  :e%>sid PL_PARTITIVE ;   
+                  :e LIK_DERIVATION ;
+
+LEXICON MESI     ! VVS 15 unstable type (passiivne muuttüüp) 8 words
+
+                  :i SG_NOMINATIVE ;    ! mesi
+                  :e%{W%} N_SG_SUBPARA ;    ! mee etc 
+                  :%>tt SG_PARTITIVE ;    ! mett
+                  :%{S%}%>tte SG_ILL_VARIANT ;  ! vette, kätte
+                  :e%{W%} SG_ILL_VARIANT ;    ! meesse
+                  :%{W%} TE_PL ;    ! mete etc 
+                  :i PL_PARTITIVE ;    ! mesi ?? meesid ???
+      !   +Use/Hyp: N_VOWEL_PL_SUBPARA ;    ! mesil? etc; except for some expressions (käsil) ?
+
+LEXICON MÕRU     ! only mõru; KAVA & HALE
+
+                   : KAVA ;
+       +Use/NotNorm:da 2C ;    ! haleda, mõruda
+                   :da US_DERIVATION ;
+
+LEXICON NAINE    ! only naine; much like OLULINE
+                  
+                  : SG_NOMINATIVE ;
+                  : NE_S_COMMON ;
+                  :E1%>sse SG_ILLATIVE ;    ! naisesse
+                  :%>I1 PL_PARTITIVE ;    ! naisi
+      +Use/Rare+Pl:%>I1 LOCATIVES_PLUS ;    ! naisil etc
+
+LEXICON NIIN    ! only niin; almost like KEEL, but some forms are more regular
+
+                  : SG_NOMINATIVE ;    ! niin
+                  :e%{W%} N_SG_SUBPARA ;    ! niine etc 
+                  :%>t SG_PARTITIVE ;    ! niint
+                  :e%{W%}%>sse SG_ILLATIVE ;    ! niinesse 
+                  : TE_PL ;    ! niinte etc 
+    !   +N+Use/Hyp:%>i N_VOWEL_PL_SUBPARA ;    ! impossible for rarer words
+                  :e%>sid PL_PARTITIVE ;    ! NB! niinesid (not niini, as the ÕS norm states)
+
+LEXICON NIMI    ! VVS 20, 21 unstable type (passiivne muuttüüp) 17 words; suvi, lagi
+                ! almost = KAVA, but last vowel changes i -> e 
+
+                  :i SG_NOMINATIVE ;
+                  :e%{W%} N_SG_SUBPARA ;     ! nime, lae etc
+                  :e SG_PARTITIVE ;           ! nime, suve, lage
+                  :e%{S%} SG_ILL_VARIANT ;     ! lakke
+                  :e%{W%} SG_ILL_VARIANT ;    ! laesse 
+                  :e DE_PL ;
+                  :e%>sid PL_PARTITIVE ;   
+!                 :e%{W%} LIK_DERIVATION ;
+
+LEXICON OSA    ! only osa
+
+                  : KAVA ;
+         +Use/Rare:%{W%}%>i N_VOWEL_PL_SUBPARA ;    ! osil etc
+
+LEXICON PARAS    ! only paras; like LOHAKAS
+ 
+                  :s SG_NOMINATIVE ;    ! paras
+                  :ja 2C ;    ! paraja etc
+                  :ja US_DERIVATION ;
+
+LEXICON PEEN    ! only peen; almost like KEEL, but some forms are more regular
+
+                  : SG_NOMINATIVE ;       ! peen
+                  :%>e N_SG_SUBPARA ;     ! peene etc 
+                  :%>t SG_PARTITIVE ;     ! peent
+         +Use/Rare:e%>t SG_PARTITIVE ;    ! peenet
+         +Use/Rare:%{S%}%>de SG_ILLATIVE ;     ! peende
+                  :e%{W%}%>sse SG_ILLATIVE ;    ! peenesse 
+                  : TE_PL ;    ! peente etc 
+         +Use/Rare:e TE_PL ;     ! peenete etc 
+                  :e%>id PL_PARTITIVE ;     ! peeneid 
+         +Use/Rare:i PL_PARTITIVE ;         ! peeni
+       +Use/Hyp+Pl:%{W%}%>i LOCATIVES_PLUS ;    ! peenil etc
+                  : US_DERIVATION ;
+
+
+LEXICON PERSE    ! only perse
+
+                  :e%{stemill%} PINGE ;
+         +Use/Rare:se%{stemill%} 2C_STRONG ;
+
+LEXICON POISS    ! only poiss, püks; like KAEL; almost = TAUD, except pl gen + 
+
+                  : SG_NOMINATIVE ;
+                  :%{sg.i%} 1C_SG ;                 ! poisi etc
+                  :%{W%} TE_PL ;  ! poiste etc
+         +Use/Rare:%>%{sg.i%} DE_PL ;    ! poisside etc
+                   :%>%{pl.e%}%{sg.i%}%>%{s%}%{i%}%{d%} PL_PAR_VARIANT ;
+
+
+LEXICON PURI    ! only puri
+
+                  : EIT ;
+         +Use/Rare:e%>id PL_PARTITIVE ;    ! purjeid
+
+LEXICON PUU    ! 11 words (kuu, maa, etc) that have possible vowel plural forms 
+               ! only if the Pl Par with -id is more frequent than -sid (puid vs puusid),
+               ! then the word may have vowel plural forms
+
+                  : ARMEE ;
+         +Use/Rare:%>i N_VOWEL_PL_SUBPARA ;    ! puil etc
+
+LEXICON PÕLV    ! only põlv; similar to talv and rohi
+
+                  :v%>%{pl.i%} EIT ;
+         +Use/Rare:i SG_NOMINATIVE ;               ! põli
+      +Use/Rare+Pl:v%>i LOCATIVES_PLUS ;    ! põlvil etc
+      +Pl+Use/Rare:v%>i%>ni TERMINATIVE ;       ! põlvini
+
+LEXICON PÕRSAS   ! only põrsas
+
+                  :a KOTKAS ;               ! põrsas, põrsa etc
+         +Use/Rare:sa 2C_STRONG ;           ! põrssa etc
+
+LEXICON PÄEV    ! only päev, -kond
+
+                  : PIIM ;
+         +Use/Rare:%{W%}%>i N_VOWEL_PL_SUBPARA ;    ! päevil etc
+
+LEXICON PÄIKE    ! only päike(ne), äike(ne)  VVS 10
+
+                  : XÄIKE ;
+                  :kese%>id PL_PARTITIVE ;    ! päikeseid
+         +Use/Rare:kse%>id PL_PARTITIVE ;     ! päikseid
+
+LEXICON REHI    ! rehi, ruhi; similar to rohi
+
+                  : EIT ;
+         +Use/Rare:%{W%}%>t SG_PARTITIVE ;    ! reht, ruht
+
+LEXICON RIND    ! only rind
+
+                  : PIIM ;
+      +Pl+Use/Rare:%>e GENITIVE;    ! rinde
+      +Use/Rare+Pl:%{W%}%>u LOCATIVES_PLUS ;    ! rinnus etc
+
+LEXICON RUBLA    ! about 20 words 
+
+                  : PERE ;
+         +Use/Rare: SG_PARTITIVE ;    ! (viis) rubla
+
+LEXICON RUUM    ! only ruum, piir
+
+                  : TAUD ;
+      +Use/Rare+Pl:%{W%}%>e LOCATIVES_PLUS ;    ! ruumes etc
+
+LEXICON SADA    ! only sada
+
+                  : KAVA ;
+         +Use/Rare:%>t SG_PARTITIVE ;    ! sadat
+
+LEXICON SEEME    ! only kümme, seeme, kööme; like HAARE
+
+                  :%{W%} SG_NOMINATIVE ;       ! seeme
+                  :%{W%}%>t SG_PARTITIVE ;     ! seemet
+                  :ne 2C_STRONG ;     ! seemne etc, seemnete etc
+                  :ne TE_PL ;                 ! seemnete
+
+LEXICON SILM    ! only silm
+
+                  : PIIM ;
+      +Pl+Use/Rare:%>e GENITIVE;    ! silme
+         +Use/Rare:%{W%}%>i N_VOWEL_PL_SUBPARA ;    ! silmis etc
+
+LEXICON SINANE    ! only (see)sinane; like SOOLANE, but additionally parallel forms sinatse-
+
+                  :sinane SOOLANE ;
+         +Use/Rare:sinats NE_S_COMMON ;
+         +Use/Rare:sinatsE1%>sse SG_ILLATIVE ;            ! soolasesse, katusesse
+         +Use/Rare:sinatsE1%>id PL_PARTITIVE ;            ! soolaseid, katuseid
+         +Use/Rare:sinatsE1%>i N_VOWEL_PL_SUBPARA ;    ! soolaseil, katuseil etc
+
+LEXICON SÜDA    ! only süda; like HAARE
+
+                  : SG_NOMINATIVE ;          ! süda
+                  :n%>t SG_PARTITIVE ;       ! südant NB! Not südat 
+                  :me TE_PL ;  ! südamete etc
+                  :me 2C_STRONG ;         ! südame etc
+
+LEXICON TALV    ! only talv; similar to rohi and põlv (põli)
+
+                  :v%>%{pl.i%}%{rare%} EIT ;
+         +Use/Rare:i SG_NOMINATIVE ;              ! tali
+
+LEXICON TEINE    ! only teine; almost = NAINE; much like OLULINE
+                  
+                  : SG_NOMINATIVE ;
+                  : NE_S_COMMON ;
+                  :E1 SG_ILLATIVE ;                ! teise (should be 3rd grade... )
+                  :%>I1 PL_PARTITIVE ;             ! teisi
+                  : LINE_US_RARE ;              ! teisesse, teisil etc
+
+LEXICON TEIST    ! only -teist(kümmend); much like KÜMMEND
+                  
+                  : SG_NOMINATIVE ;            ! viisteist
+         +Use/Rare:%#kümmend SG_NOMINATIVE ;    ! viisteistkümmend
+                  : SG_PARTITIVE ;             ! viitteist
+         +Use/Rare:%#kümme%>t SG_PARTITIVE ;    ! viitteistkümmet
+         +Use/Rare:%#kümmend SG_PARTITIVE ;     ! viitteistkümmend
+         +Use/Rare: SG_GENITIVE ;              ! viieteist
+                  :%#kümne 2C_STRONG ;          ! viieteistkümne etc
+                  :%#kümne TE_PL ;              ! viieteistkümnete
+
+LEXICON POOLTEIST     ! only (pool)teist; much like TEINE ?
+                  
+                  :%#teist SG_NOMINATIVE ;
+                  :e%#teise N_SG_SUBPARA ;      ! pooleteise etc          
+                  :t%#teis%>t SG_PARTITIVE ;    ! pooltteist
+         +Use/Rare:%#teis NE_S_COMMON ;         ! poolteise etc
+                  :e%#teise%>sse SG_ILLATIVE ;  ! 
+         +Use/Rare:%#teise%>sse SG_ILLATIVE ;   ! 
+
+LEXICON TUHAT    ! only tuhat; like LOHAKAS
+
+                  :t SG_NOMINATIVE ;     ! tuhat
+                  :nde 2C ;           ! tuhande etc
+       ! ????     :%>t SG_PARTITIVE ;    ! tuhat
+
+LEXICON TÕRI    ! only kuulmetõri; similar to talv (tali) and põlv (põli), but even older
+
+                  :i SG_NOMINATIVE ;              ! tõri
+                  :v EIT ;                        ! tõrve etc
+
+LEXICON VAHER    ! VVS 3 unstable (closed) type;  only vaher, aher
+
+                  :%{W%} SG_NOMINATIVE ;    ! vaher
+                  :a 2C ;                ! vahtra etc
+
+LEXICON VARS    !  VVS 14 unstable (closed) type;
+
+! %{W%} here helps to select the right paradigm slots for stem change;
+! it does not really stand for "weak grade"
+
+                  : SG_NOMINATIVE ;               ! vars
+                  :e%{W%} N_SG_SUBPARA ;       ! varre etc 
+                  :%>t SG_PARTITIVE ;             ! vart
+                  :%{S%}%>de SG_ILL_VARIANT ;  ! varde
+                  :e%{W%} SG_ILL_VARIANT ;     ! varresse 
+                  : TE_PL ;    ! varte etc 
+                  :%>i PL_PARTITIVE ;    ! varsi
+      !   +Use/Hyp:%>i N_VOWEL_PL_SUBPARA ;    ! varsil?; except for some expressions (uusil)
+
+LEXICON VÄIKE    ! only väike(ne)  VVS 10
+
+                  : XÄIKE ;
+         +Use/Rare:kese%>id PL_PARTITIVE ;    ! väikeseid
+                  :kse%>id PL_PARTITIVE ;     ! väikseid
+
+LEXICON XÄIKE    ! VVS 10 common part of väike(ne), päike(ne), äike(ne)
+
+                  :ke SG_NOMINATIVE ;
+         +Use/Rare:kene SG_NOMINATIVE ;
+                  :kene NE_S_COMMON ;
+         +Use/Rare:kse N_SG_SUBPARA ;    ! xäikse etc 
+         +Use/Rare:kse%>t SG_PARTITIVE ;    ! xäikset
+                  :kese%>sse SG_ILLATIVE ;    ! xäikesesse
+         +Use/Rare:kse%>sse SG_ILLATIVE ;    ! xäiksesse
+         +Use/Rare:ke%>sse SG_ILLATIVE ;    ! xäikesse (haplology)
+         +Use/Rare:kse TE_PL ;       
+         +Use/Rare:kes%>i PL_PARTITIVE ;      ! xäikesi
+      +Use/Rare+Pl:kes%>i LOCATIVES_PLUS ;    ! xäikesil etc
+         +Use/Rare:kese%>i N_VOWEL_PL_SUBPARA ;    ! xäikeseil etc
+         +Use/Rare:kse%>i N_VOWEL_PL_SUBPARA ;    ! xäikseil etc
+
+LEXICON ÕLU    ! only õlu
+
+                  :u SG_NOMINATIVE ;    ! õlu
+                  :le N_SG_SUBPARA ;    ! õlle etc 
+                  :u%>t SG_PARTITIVE ;    ! õlut
+                  :le%>sse SG_ILLATIVE ;    ! õllesse 
+                  :le DE_PL ;
+                  :le%>sid PL_PARTITIVE ;    ! õllesid
+         +Use/Rare:u%>sid PL_PARTITIVE ;    ! õlusid
+
+
+

@@ -1,31 +1,8 @@
-Parts of PLAMK to be imported into GT infrastructure.
+Filosoft lexicon into GT infra
 
-Files are cloned or generated from stuff on https://github.com/jjpp/plamk, 
-commit b1865e0face87ca00c9731579c30cd83e14732fa.
+source: https://github.com/Filosoft/vabamorf
 
-Files are:
-
-arvud.lexc			- generated lexicon, numerals with inflections
-compound_definitions.lexc	- cloned, part of lexc-file
-compound_filter.lexc		- cloned, filter for disallowed compounds (part of lexc)
-compound_rules.lexc		- cloned, filter that allows only regular compounds (part of lexc)
-deriv_filter.txt		- cloned, filter that filters out irregular derivations
-EKI_litsents.html		- cloned, license for tyvebaas.txt and for exceptions
-exceptions.lexc			- generated, overriding exceptional forms (full lexc file)
-generated_extra.lexc		- generated, additional exceptional forms for main lexicon (partial lexicon)
-generated_overrides.lexc	- generated overriding exceptions (part of exceptions.lexc)
-gi.lexc				- cloned, sublexicon that describes particle -gi/-ki 
-git-commit			- commit that was cloned
-lexicon.lexc			- generated, main lexicon
-liitsonafilter.lexc		- generated, filter for disallowed compounds, full lexc file
-liitsonamask.lexc		- generated, filter of regular compounds, full lexc file
-main.lexc			- cloned, main rules of inflection
-multichar.lexc			- cloned, description of multichar symbols
-overrides.lexc			- cloned, manually described overriding exceptions, partial lexc file
-rules.twolc			- cloned, morphonological rules
-stems.lexc			- generated, main stems lexicon
-tyvebaas-lisa.txt		- cloned, extra dictionary 
-tyvebaas.txt			- cloned, main dictionary from EKI (Institute of Estonian Language)
-xfst.script			- cloned, xfst script that combines various subautomata
+lexicon file:
+https://github.com/Filosoft/vabamorf/tree/master/dct/data/mrf/fs_lex
 
 

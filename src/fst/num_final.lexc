@@ -1,0 +1,12 @@
+! Final word (e.g. sada) of complex numerals (e.g. viissada)
+
+
+LEXICON Root
+
+teist+Num+Card:teist TEIST ;   ! -teist(kümmend)
+kümmend+Num+Card:kümmE2 KÜMMEND ;
+sada+Num+Card:saJ1D1a%>%{pl.u%} SADA ;
+! tuhat+Num+Card:tuha TUHAT ;
+
+
+

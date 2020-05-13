@@ -7,7 +7,13 @@
 #
 # dir/filename.lexc => filename-dir.jspwiki
 
-JSP_PAGES=root-morphology.jspwiki
+JSP_PAGES=root-morphology.jspwiki  \
+		  phonology-morphology.jspwiki
+#		  regular_declinations-affixes.jspwiki \
+#		  exceptional_declinations-affixes.jspwiki \
+#		  gi-affixes.jspwiki      \
+#		  verbs-affixes.jspwiki \
+# pronouns-stems.jspwiki           \
 # clitics-morphology.jspwiki       \
 # compounding-morphology.jspwiki   \
 # abbreviations-stems.jspwiki      \
@@ -29,9 +35,4 @@ JSP_PAGES=root-morphology.jspwiki
 # subjunctions-stems.jspwiki       \
 # verbs-stems.jspwiki              \
 # adjectives-oahpa-affixes.jspwiki \
-# adjectives-affixes.jspwiki       \
-# nouns-affixes.jspwiki            \
-# propernouns-affixes.jspwiki      \
-# verbs-affixes.jspwiki
-
 include $(top_srcdir)/../giella-core/am-shared/doc-dir-include.am

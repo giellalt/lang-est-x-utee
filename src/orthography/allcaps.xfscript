@@ -1,10 +1,21 @@
 # Xerox xfst script file to optionally uppercase all lexical entries.
 # Extend the alphabet as needed by your language.
 
+# kopli -> KOPLI; Kopli -> KOPLI; peaaegu-Kopli -> PEAAEGU-KOPLI; PEAAEGU-Kopli
+
+define WB [ .#. ] ;
 define uppercase [
     A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|X|Y|Z|
-    Á|À|Ã|Ä|Å|Æ|É|È|Ê|Ë|Í|Ì|Î|Ï|Ð|Ñ|Ó|Ò|Ô|Õ|Ö|Ø|Ú|Ù|Û|Ü|Ý|Þ
+    Á|À|Ã|Ä|Å|Æ|É|È|Ê|Ë|Í|Ì|Î|Ï|Ð|Ñ|Ó|Ò|Ô|Õ|Ö|Ø|Ú|Ù|Û|Ü|Ý|Þ|Š|Ž
     ];
+define hyphen [ "-" ];
+define doublehyphen[ %-%- ];
+define endash [ – ];
+define emdash [ — ];
+define horizontalbar [ ― ];
+define minus [ − ];           # from sme allcaps.xfscript
+
+define someminus[ hyphen | doublehyphen | endash | emdash | horizontalbar | minus ];
 
 define allcaps      a (->) A, b (->) B, c (->) C, d (->) D, e (->) E,
 f (->) F, g (->) G, h (->) H, i (->) I, j (->) J, k (->) K, l (->) L,
@@ -14,8 +25,8 @@ t (->) T, u (->) U, v (->) V, w (->) W, x (->) X, y (->) Y, z (->) Z,
 è (->) È, é (->) É, ê (->) Ê, ë (->) Ë, ì (->) Ì, í (->) Í, î (->) Î, 
 ï (->) Ï, ð (->) Ð, ñ (->) Ñ, ò (->) Ò, ó (->) Ó, ô (->) Ô, õ (->) Õ, 
 ö (->) Ö, ø (->) Ø, ù (->) Ù, ú (->) Ú, û (->) Û, ü (->) Ü, ý (->) Ý, 
-þ (->) Þ
+þ (->) Þ, š (->) Š, ž (->) Ž
 \/
-.#. uppercase* _ uppercase* .#. ;
+WB [uppercase | someminus]* _ [uppercase | someminus]* [someminus | WB] ;
 
 push allcaps

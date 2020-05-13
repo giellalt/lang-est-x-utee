@@ -1,0 +1,246 @@
+
+LEXICON FinalComponents
+
+  @R.POS.IntNum@@R.Case.Nom@ AdjAfterNumeralNom ;
+  @R.POS.IntNum@@R.Case.Gen@@P.POS.Adv@ AdvAfterNumeral ;
+  @R.POS.N@@P.POS.N@@C.Der@@C.Stem@ NounFinalComp ;  ! insufficient flag diacritics
+  @R.POS.N@@R.Case.Nom@@P.POS.Adv@@C.Der@@C.Stem@ AdvAfterNounNom ;
+  @R.POS.N@@R.Case.Gen@@P.POS.Adv@@C.Der@@C.Stem@ AdvAfterNounGen ;
+  @R.POS.N@@R.Case.Par@@P.POS.Adv@@C.Der@@C.Stem@ AdvAfterNounPar ;
+  @R.POS.GA@@P.POS.A@ AdjAfterGenAttrib ;
+  @R.POS.A@@R.Case.Gen@@P.POS.A@@C.Der@@C.Stem@ AdjAfterAdjGen ;
+  @R.POS.AComp@@R.Case.Gen@@P.POS.A@@C.Der@@C.Stem@ AdjAfterAdjGen ;
+  @R.POS.AComp@@R.Case.Short@@P.POS.A@@C.Der@@C.Stem@ VäärtFinal ;
+
+LEXICON AdjAfterNumeralNom
+
+keelne+A:k˘eelne SOOLANE  "weight: 10 " ; 
+meelne+A:m˘eelne SOOLANE  "weight: 11 " ; 
+nurkne+A:n˘urkne SOOLANE  "weight: 11 " ; 
+
+LEXICON AdvAfterNumeral
+
+kaupa+Adv:k˘aupa #  "weight: 7 " ; 
+
+LEXICON NounFinalComp
+
+@D.Stem.Guessed@@P.Stem.Nom@aed+N:@D.Stem.Guessed@@P.Stem.Nom@˘a AED  "weight: 6 " ; 
+@D.Stem.Guessed@@P.Stem.Nom@ahi+N:@D.Stem.Guessed@@P.Stem.Nom@˘ahJ1%>%{pl.e%} KOON  "weight: 7 " ; 
+@D.Stem.Guessed@@P.Stem.Nom@auk+N:@D.Stem.Guessed@@P.Stem.Nom@˘auk%>%{pl.e%} KOON  "weight: 6 " ; 
+@D.Stem.Guessed@@P.Stem.Nom@hein+N:@D.Stem.Guessed@@P.Stem.Nom@h˘ein%>%{pl.u%} KAEL  "weight: 7 " ; 
+@D.Stem.Guessed@@P.Stem.Nom@riik+N:@D.Stem.Guessed@@P.Stem.Nom@r˘iik TAUD  "weight: 4 " ; 
+@D.Stem.Guessed@@P.Stem.Nom@ring+N:@D.Stem.Guessed@@P.Stem.Nom@r˘ing TAUD  "weight: 6 " ; 
+@D.Stem.Guessed@ala+N:@D.Stem.Guessed@ala%>%{pl.u%}%{rare%} KAVA  "weight: 5 " ; 
+@D.Stem.Guessed@aste+N:@D.Stem.Guessed@˘astE2 HAARE  "weight: 6 " ; 
+@D.Stem.Guessed@aste+N:@D.Stem.Guessed@˘aste PINGE  "weight: 6 " ; 
+@D.Stem.Guessed@kate+N:@D.Stem.Guessed@k˘atT1e PINGE  "weight: 7 " ; 
+@D.Stem.Guessed@luu+N:@D.Stem.Guessed@l˘uu%>%{id%} PUU  "weight: 7 " ; 
+@D.Stem.Guessed@nõu+N:@D.Stem.Guessed@n˘õu KAVA  "weight: 6 " ; 
+@D.Stem.Guessed@osa+N:@D.Stem.Guessed@osa%>%{pl.i%}%{stemill%} OSA  "weight: 4 " ; 
+@D.Stem.Guessed@pea+N:@D.Stem.Guessed@p˘E6A6H3Y3%>%{id%}%{stemill%} PUU  "weight: 4 " ; 
+@D.Stem.Guessed@puu+N:@D.Stem.Guessed@p˘uu%>%{id%} PUU  "weight: 5 " ; 
+@D.Stem.Guessed@side+N:@D.Stem.Guessed@side HAARE  "weight: 6 " ; 
+@D.Stem.Guessed@side+N:@D.Stem.Guessed@side PERE  "weight: 6 " ; 
+@D.Stem.Guessed@tee+N:@D.Stem.Guessed@t˘ee ARMEE  "weight: 4 " ; 
+@D.Stem.Guessed@tee+N:@D.Stem.Guessed@t˘ee%>%{id%} PUU  "weight: 4 " ; 
+@D.Stem.Guessed@tera+N:@D.Stem.Guessed@tera%>%{pl.i%} KAVA  "weight: 6 " ; 
+@D.Stem.Guessed@õli+N:@D.Stem.Guessed@õli KAVA  "weight: 7 " ; 
+@P.Stem.Nom@aparaat+N:@P.Stem.Nom@ˈapar˘aat TAUD  "weight: 7 " ; 
+@P.Stem.Nom@ehitis+N:@P.Stem.Nom@ehitis OLULINE  "weight: 7 " ; 
+@P.Stem.Nom@film+N:@P.Stem.Nom@f˘ilʲm TAUD  "weight: 5 " ; 
+@P.Stem.Nom@fond+N:@P.Stem.Nom@f˘ond TAUD  "weight: 7 " ; 
+@P.Stem.Nom@haigus+N:@P.Stem.Nom@h˘aigus SUULINE  "weight: 5 " ; 
+@P.Stem.Nom@harjutus+N:@P.Stem.Nom@harjutus OLULINE  "weight: 8 " ; 
+@P.Stem.Nom@jalg+N:@P.Stem.Nom@j˘alG1%>%{pl.u%} JALG  "weight: 5 " ; 
+@P.Stem.Nom@joon+N:@P.Stem.Nom@j˘oon%{stemill%} KEEL  "weight: 6 " ; 
+@P.Stem.Nom@juht+N:@P.Stem.Nom@j˘uhT1 TAUD  "weight: 4 " ; 
+@P.Stem.Nom@jutt+N:@P.Stem.Nom@j˘utt%>%{pl.e%} KOON  "weight: 5 " ; 
+@P.Stem.Nom@juur+N:@P.Stem.Nom@j˘uur KEEL  "weight: 6 " ; 
+@P.Stem.Nom@kaal+N:@P.Stem.Nom@k˘aalʲ TAUD  "weight: 7 " ; 
+@P.Stem.Nom@kaart+N:@P.Stem.Nom@k˘aart TAUD  "weight: 6 " ; 
+@P.Stem.Nom@karp+N:@P.Stem.Nom@k˘arp TAUD  "weight: 8 " ; 
+@P.Stem.Nom@kast+N:@P.Stem.Nom@k˘asʲt TAUD  "weight: 7 " ; 
+@P.Stem.Nom@kasvatus+N:@P.Stem.Nom@kasvatus OLULINE  "weight: 7 " ; 
+@P.Stem.Nom@kauplus+N:@P.Stem.Nom@k˘auplus SUULINE  "weight: 7 " ; 
+@P.Stem.Nom@keel+N:@P.Stem.Nom@k˘eel%{stemill%} KEEL  "weight: 4 " ; 
+@P.Stem.Nom@kell+N:@P.Stem.Nom@k˘ell%>%{pl.i%} PIIM  "weight: 5 " ; 
+@P.Stem.Nom@kiht+N:@P.Stem.Nom@k˘ihT1 TAUD  "weight: 7 " ; 
+@P.Stem.Nom@kindlus+N:@P.Stem.Nom@k˘indlus SUULINE  "weight: 7 " ; 
+@P.Stem.Nom@kiri+N:@P.Stem.Nom@k˘irJ1%>%{pl.u%} PIIM  "weight: 5 " ; 
+@P.Stem.Nom@klaas+N:@P.Stem.Nom@kl˘aasʲ TAUD  "weight: 6 " ; 
+@P.Stem.Nom@koda+N:@P.Stem.Nom@koJ1D1a%{stemill%} KAVA  "weight: 8 " ; 
+@P.Stem.Nom@koht+N:@P.Stem.Nom@k˘ohT1%>%{pl.i%} PIIM  "weight: 4 " ; 
+@P.Stem.Nom@kohus+N:@P.Stem.Nom@kohus SOOLANE  "weight: 5 " ; 
+@P.Stem.Nom@komisjon+N:@P.Stem.Nom@komisjon TAUD  "weight: 6 " ; 
+@P.Stem.Nom@kool+N:@P.Stem.Nom@k˘oolʲ TAUD  "weight: 5 " ; 
+@P.Stem.Nom@koor+N:@P.Stem.Nom@k˘oor TAUD  "weight: 7 " ; 
+@P.Stem.Nom@koor+N:@P.Stem.Nom@k˘oor%{stemill%} KEEL  "weight: 7 " ; 
+@P.Stem.Nom@kord+N:@P.Stem.Nom@k˘orD1%>%{pl.i%} PIIM  "weight: 4 " ; 
+@P.Stem.Nom@kott+N:@P.Stem.Nom@k˘otʲt TAUD  "weight: 6 " ; 
+@P.Stem.Nom@kude+N:@P.Stem.Nom@kuD1e KAVA  "weight: 7 " ; 
+@P.Stem.Nom@kultuur+N:@P.Stem.Nom@kult˘uur TAUD  "weight: 5 " ; 
+@P.Stem.Nom@kunst+N:@P.Stem.Nom@k˘unʲst TAUD  "weight: 6 " ; 
+@P.Stem.Nom@laev+N:@P.Stem.Nom@l˘aev%>%{pl.u%} PIIM  "weight: 6 " ; 
+@P.Stem.Nom@lamp+N:@P.Stem.Nom@l˘amp TAUD  "weight: 7 " ; 
+@P.Stem.Nom@laps+N:@P.Stem.Nom@l˘aP1s LAPS  "weight: 4 " ; 
+@P.Stem.Nom@laud+N:@P.Stem.Nom@l˘auD1%>%{pl.u%} PIIM  "weight: 5 " ; 
+@P.Stem.Nom@laul+N:@P.Stem.Nom@l˘aul%>%{pl.e%} KOON  "weight: 5 " ; 
+@P.Stem.Nom@leht+N:@P.Stem.Nom@l˘ehT1%>%{pl.i%} EIT  "weight: 6 " ; 
+@P.Stem.Nom@lihas+N:@P.Stem.Nom@lihas SOOLANE  "weight: 7 " ; 
+@P.Stem.Nom@liin+N:@P.Stem.Nom@l˘iin TAUD  "weight: 7 " ; 
+@P.Stem.Nom@lill+N:@P.Stem.Nom@l˘ill%>%{pl.i%} EIT  "weight: 7 " ; 
+@P.Stem.Nom@lind+N:@P.Stem.Nom@l˘inD1%>%{pl.e%} KOON  "weight: 6 " ; 
+@P.Stem.Nom@loom+N:@P.Stem.Nom@l˘oom%>%{pl.i%} PIIM  "weight: 5 " ; 
+@P.Stem.Nom@lugu+N:@P.Stem.Nom@luG1u%{stemill%} KAVA  "weight: 5 " ; 
+@P.Stem.Nom@lõng+N:@P.Stem.Nom@l˘õng%>%{pl.u%} PIIM  "weight: 9 " ; 
+@P.Stem.Nom@maks+N:@P.Stem.Nom@m˘aks%>%{pl.e%} KOON  "weight: 6 " ; 
+@P.Stem.Nom@masin+N:@P.Stem.Nom@masin MAGUS  "weight: 6 " ; 
+@P.Stem.Nom@materjal+N:@P.Stem.Nom@materjal TAUD  "weight: 5 " ; 
+@P.Stem.Nom@mees+N:@P.Stem.Nom@me MEES  "weight: 3 " ; 
+@P.Stem.Nom@meeter+N:@P.Stem.Nom@m˘eeter%{E%} REDEL  "weight: 6 " ; 
+@P.Stem.Nom@meetod+N:@P.Stem.Nom@meetod REDEL  "weight: 5 " ; 
+@P.Stem.Nom@meister+N:@P.Stem.Nom@m˘eister%{E%} REDEL  "weight: 7 " ; 
+@P.Stem.Nom@mets+N:@P.Stem.Nom@m˘ets%>%{pl.i%} PIIM  "weight: 5 " ; 
+@P.Stem.Nom@mootor+N:@P.Stem.Nom@m˘ootor REDEL  "weight: 7 " ; 
+@P.Stem.Nom@muld+N:@P.Stem.Nom@m˘ulD1%>%{pl.i%} PIIM  "weight: 6 " ; 
+@P.Stem.Nom@mäng+N:@P.Stem.Nom@m˘äng%>%{pl.e%} KOON  "weight: 5 " ; 
+@P.Stem.Nom@märk+N:@P.Stem.Nom@m˘ärk TAUD  "weight: 6 " ; 
+@P.Stem.Nom@märk+N:@P.Stem.Nom@m˘ärk%>%{pl.e%}%{rare%} KOON  "weight: 6 " ; 
+@P.Stem.Nom@nahk+N:@P.Stem.Nom@n˘ahK1%>%{pl.u%} PIIM  "weight: 6 " ; 
+@P.Stem.Nom@norm+N:@P.Stem.Nom@n˘orm TAUD  "weight: 6 " ; 
+@P.Stem.Nom@nurk+N:@P.Stem.Nom@n˘urk%>%{pl.i%} PIIM  "weight: 6 " ; 
+@P.Stem.Nom@organ+N:@P.Stem.Nom@˘organ REDEL  "weight: 6 " ; 
+@P.Stem.Nom@oskus+N:@P.Stem.Nom@˘oskus SUULINE  "weight: 6 " ; 
+@P.Stem.Nom@paber+N:@P.Stem.Nom@paber REDEL  "weight: 6 " ; 
+@P.Stem.Nom@pakk+N:@P.Stem.Nom@p˘akk TAUD  "weight: 7 " ; 
+@P.Stem.Nom@periood+N:@P.Stem.Nom@pˈeri˘ood TAUD  "weight: 5 " ; 
+@P.Stem.Nom@pind+N:@P.Stem.Nom@p˘inD1%>%{pl.u%} PIIM  "weight: 6 " ; 
+@P.Stem.Nom@pink+N:@P.Stem.Nom@p˘ink TAUD  "weight: 7 " ; 
+@P.Stem.Nom@plaan+N:@P.Stem.Nom@pl˘aanʲ TAUD  "weight: 5 " ; 
+@P.Stem.Nom@plaat+N:@P.Stem.Nom@pl˘aatʲ TAUD  "weight: 7 " ; 
+@P.Stem.Nom@poeg+N:@P.Stem.Nom@p˘oE4G1%>%{pl.i%} PIIM  "weight: 5 " ; 
+@P.Stem.Nom@punkt+N:@P.Stem.Nom@p˘unkt TAUD  "weight: 5 " ; 
+@P.Stem.Nom@päev+N:@P.Stem.Nom@p˘äev%>%{pl.i%} PÄEV  "weight: 4 " ; 
+@P.Stem.Nom@püük+N:@P.Stem.Nom@p˘üük TAUD  "weight: 11 " ; 
+@P.Stem.Nom@raamat+N:@P.Stem.Nom@raamat VIRSIK  "weight: 5 " ; 
+@P.Stem.Nom@rahvas+N:@P.Stem.Nom@r˘ahva KOTKAS  "weight: 5 " ; 
+@P.Stem.Nom@ratas+N:@P.Stem.Nom@r˘atT1a KOTKAS  "weight: 7 " ; 
+@P.Stem.Nom@raud+N:@P.Stem.Nom@r˘auD1%>%{pl.u%} PIIM  "weight: 7 " ; 
+@P.Stem.Nom@riist+N:@P.Stem.Nom@r˘iist%>%{pl.u%} PIIM  "weight: 8 " ; 
+@P.Stem.Nom@rohi+N:@P.Stem.Nom@rohJ1T1%>%{pl.e%}%{rare%} KOON  "weight: 7 " ; 
+@P.Stem.Nom@ruum+N:@P.Stem.Nom@r˘uum RUUM  "weight: 5 " ; 
+@P.Stem.Nom@rühm+N:@P.Stem.Nom@r˘ühm%>%{pl.i%} PIIM  "weight: 6 " ; 
+@P.Stem.Nom@saak+N:@P.Stem.Nom@s˘aak TAUD  "weight: 6 " ; 
+@P.Stem.Nom@samm+N:@P.Stem.Nom@s˘amm%>%{pl.e%} KOON  "weight: 5 " ; 
+@P.Stem.Nom@sepp+N:@P.Stem.Nom@s˘epp%>%{pl.i%} PIIM  "weight: 8 " ; 
+@P.Stem.Nom@silm+N:@P.Stem.Nom@s˘ilm%>%{pl.i%} SILM  "weight: 4 " ; 
+@P.Stem.Nom@sort+N:@P.Stem.Nom@s˘ort TAUD  "weight: 5 " ; 
+@P.Stem.Nom@supp+N:@P.Stem.Nom@s˘upp TAUD  "weight: 8 " ; 
+@P.Stem.Nom@süsteem+N:@P.Stem.Nom@süst˘eem TAUD  "weight: 5 " ; 
+@P.Stem.Nom@taim+N:@P.Stem.Nom@t˘aim%>%{pl.i%} EIT  "weight: 5 " ; 
+@P.Stem.Nom@teadus+N:@P.Stem.Nom@t˘eadus SUULINE  "weight: 6 " ; 
+@P.Stem.Nom@tehas+N:@P.Stem.Nom@tehas SOOLANE  "weight: 7 " ; 
+@P.Stem.Nom@toodang+N:@P.Stem.Nom@toodang VIRSIK  "weight: 7 " ; 
+@P.Stem.Nom@tuli+N:@P.Stem.Nom@tulʲ%{stemill%} MERI  "weight: 6 " ; 
+@P.Stem.Nom@tund+N:@P.Stem.Nom@t˘unD1 TAUD  "weight: 5 " ; 
+@P.Stem.Nom@täht+N:@P.Stem.Nom@t˘ähT1%>%{pl.i%} EIT  "weight: 6 " ; 
+@P.Stem.Nom@tööstus+N:@P.Stem.Nom@t˘ööstus SUULINE  "weight: 7 " ; 
+@P.Stem.Nom@tükk+N:@P.Stem.Nom@t˘ükk TAUD  "weight: 6 " ; 
+@P.Stem.Nom@vabrik+N:@P.Stem.Nom@vabrik VIRSIK  "weight: 8 " ; 
+@P.Stem.Nom@vahend+N:@P.Stem.Nom@vahend REDEL  "weight: 6 " ; 
+@P.Stem.Nom@vesi+N:@P.Stem.Nom@veS1%{stemill%} MESI  "weight: 5 " ; 
+@P.Stem.Nom@vili+N:@P.Stem.Nom@v˘ilʲJ1%>%{pl.u%} PIIM  "weight: 6 " ; 
+@P.Stem.Nom@vool+N:@P.Stem.Nom@v˘ool%>%{pl.e%} KOON  "weight: 7 " ; 
+@P.Stem.Nom@vorm+N:@P.Stem.Nom@v˘orm TAUD  "weight: 5 " ; 
+@P.Stem.Nom@vägi+N:@P.Stem.Nom@väG1%{stemill%} NIMI  "weight: 7 " ; 
+@P.Stem.Nom@väli+N:@P.Stem.Nom@v˘älʲJ1%>%{pl.u%} PIIM  "weight: 7 " ; 
+@P.Stem.Nom@võrk+N:@P.Stem.Nom@v˘õrk%>%{pl.e%} KOON  "weight: 7 " ; 
+@P.Stem.Nom@õigus+N:@P.Stem.Nom@˘õigus SUULINE  "weight: 4 " ; 
+@P.Stem.Nom@õpetus+N:@P.Stem.Nom@õpetus OLULINE  "weight: 7 " ; 
+aasta+N:˘aasta AASTA  "weight: 3 " ; 
+aine+N:˘aine PINGE  "weight: 6 " ; 
+anne+N:˘anD1e PINGE  "weight: 8 " ; 
+elu+N:elu%{stemill%} KAVA  "weight: 4 " ; 
+hape+N:h˘apP1e PINGE  "weight: 8 " ; 
+hind+N:h˘inD1%>%{pl.u%} PIIM  "weight: 5 " ; 
+hoone+N:h˘oone PINGE  "weight: 6 " ; 
+jaam+N:j˘aam%>%{pl.u%} PIIM  "weight: 7 " ; 
+jahu+N:jahu KAVA  "weight: 8 " ; 
+jooks+N:j˘ooks%>%{pl.e%} KOON  "weight: 7 " ; 
+jõud+N:j˘õuD1%>%{pl.e%} KOON  "weight: 5 " ; 
+kaal+N:k˘aal%>%{pl.e%} KOON  "weight: 7 " ; 
+kaitse+N:k˘aitsE2 HAARE  "weight: 6 " ; 
+kaitse+N:k˘aitse PINGE  "weight: 6 " ; 
+kala+N:kala%>%{pl.u%} KAVA  "weight: 6 " ; 
+kivi+N:kivi%>%{pl.e%}%{stemill%}%{rare%} KAVA  "weight: 6 " ; 
+kogu+N:kogu%{stemill%}%{rare%} KAVA  "weight: 4 " ; 
+kulu+N:kulu KAVA  "weight: 6 " ; 
+käik+N:k˘äik%>%{pl.e%} KOON  "weight: 6 " ; 
+luule+N:l˘uule PINGE  "weight: 7 " ; 
+maja+N:maja%>%{pl.u%}%{stemill%} KAVA  "weight: 5 " ; 
+minek+N:minek VIRSIK  "weight: 7 " ; 
+mängija+N:m˘ängija AASTA  "weight: 7 " ; 
+nõue+N:n˘õuD1e PINGE  "weight: 5 " ; 
+osakond+N:ˈosak˘onD1%>%{pl.i%} PÄEV  "weight: 6 " ; 
+panek+N:panek VIRSIK  "weight: 9 " ; 
+pidamine+N:pidamine OLULINE  "weight: 7 " ; 
+pinge+N:p˘inge PINGE  "weight: 6 " ; 
+poliitika+N:poliitika AASTA  "weight: 6 " ; 
+põletik+N:pˈõlet˘ik ELANIK  "weight: 8 " ; 
+raha+N:raha KAVA  "weight: 4 " ; 
+ravi+N:ravi KAVA  "weight: 5 " ; 
+riie+N:r˘iiD1e%{stemill%} PINGE  "weight: 6 " ; 
+salu+N:salu%{stemill%}%{rare%} KAVA  "weight: 10 " ; 
+seade+N:s˘eadE2 HAARE  "weight: 6 " ; 
+seade+N:s˘eade PINGE  "weight: 6 " ; 
+seeme+N:seemE2 SEEME  "weight: 7 " ; 
+sein+N:s˘ein%>%{pl.u%} KAEL  "weight: 6 " ; 
+sõit+N:s˘õit%>%{pl.e%} KOON  "weight: 6 " ; 
+sõna+N:sõna%>%{pl.u%} KAVA  "weight: 4 " ; 
+tarve+N:t˘arB2e PINGE  "weight: 7 " ; 
+tehnika+N:tehnika AASTA  "weight: 7 " ; 
+toode+N:t˘ooT2e PINGE  "weight: 6 " ; 
+toru+N:toru%{stemill%}%{rare%} KAVA  "weight: 7 " ; 
+tunne+N:t˘unD1e PINGE  "weight: 5 " ; 
+tõbi+N:tõB2%{stemill%} NIMI  "weight: 7 " ; 
+töö+N:t˘öö%>%{id%} PUU  "weight: 4 " ; 
+tööline+N:t˘ööline SUULINE  "weight: 7 " ; 
+vedu+N:veD1u KAVA  "weight: 8 " ; 
+võime+N:v˘õime PINGE  "weight: 6 " ; 
+võte+N:v˘õtT1e PINGE  "weight: 7 " ; 
+olek+N:olek VIRSIK  "weight: 7 " ; 
+
+LEXICON AdvAfterNounNom
+
+haaval+Adv:haaval #  "weight: 10 " ; 
+
+LEXICON AdvAfterNounGen
+
+haaval+Adv:haaval #  "weight: 10 " ; 
+kindlalt+Adv:k˘indlalt GI  "weight: 7 " ; 
+pealt+Adv:p˘ealt GI  "weight: 6 " ; 
+rikkalt+Adv:r˘ikkalt GI  "weight: 11 " ; 
+rohkelt+Adv:r˘ohkelt GI  "weight: 9 " ; 
+kaupa+Adv:k˘aupa #  "weight: 7 " ; 
+
+LEXICON AdvAfterNounPar
+
+pidi+Adv:pidi #  "weight: 8 " ; 
+mööda+Adv:m´ööda # ;
+
+LEXICON AdjAfterGenAttrib
+
+poolne+A:p˘oolne SOOLANE  "weight: 8 " ; 
+aegne+A:˘aegne SOOLANE  "weight: 8 " ; 
+
+LEXICON AdjAfterAdjGen
+
+karva+A:k´arva GI ;
+võitu+A:v´õitu GI ;
+värvi+A:v´ärvi GI ;
+moodi+A:m´ood,i GI ;
+kasvu+A:k´asvu GI ;
+
+LEXICON VäärtFinal
+
+väärt+A:v´äärt GI ;

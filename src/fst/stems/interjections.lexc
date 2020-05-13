@@ -1,401 +1,441 @@
 LEXICON Interjections
- aa+Interj:aa GI; ! (41_I -> +I) 
- aamen+Interj:aamen GI; ! (41_I -> +I) 
- adaa+Interj:adaa GI; ! (41_I -> +I) 
- adjöö+Interj:adjöö GI; ! (41_I -> +I) 
- ae+Interj:ae GI; ! (41_I -> +I) 
- ahaa+Interj:ahaa GI; ! (41_I -> +I) 
- ahahaa+Interj:ahahaa GI; ! (41_I -> +I) 
- ahah+Interj:ahah GI; ! (41_I -> +I) 
- ahhaa+Interj:ahhaa GI; ! (41_I -> +I) 
- ah+Interj:ah GI; ! (41_I -> +I) 
- ahoi+Interj:ahoi GI; ! (41_I -> +I) 
- aidaa+Interj:aidaa GI; ! (41_I -> +I) 
- aih+Interj:aih GI; ! (41_I -> +I) 
- ai+Interj:ai GI; ! (41_I -> +I) 
- aijeh+Interj:aijeh GI; ! (41_I -> +I) 
- aituma+Interj:aituma GI; ! (41_I -> +I) 
- aitäh+Interj:aitäh GI; ! (41_I -> +I) 
- aitüma+Interj:aitüma GI; ! (41_I -> +I) 
- ammuu+Interj:ammuu GI; ! (41_I -> +I) 
- appi+Interj:appi GI; ! (41_I -> +I) 
- aptsihh+Interj:aptsihh GI; ! (41_I -> +I) 
- aptsih+Interj:aptsih GI; ! (41_I -> +I) 
- ass+Interj:ass GI; ! (41_I -> +I) 
- ata+Interj:ata GI; ! (41_I -> +I) 
- at+Interj:at GI; ! (41_I -> +I) 
- atsihh+Interj:atsihh GI; ! (41_I -> +I) 
- atsih+Interj:atsih GI; ! (41_I -> +I) 
- auh+Interj:auh GI; ! (41_I -> +I) 
- braavo+Interj:braavo GI; ! (41_I -> +I) 
- edaspidi+Interj:edaspidi GI; ! (41_I -> +I) 
- eeh+Interj:eeh GI; ! (41_I -> +I) 
- ehee+Interj:ehee GI; ! (41_I -> +I) 
- eheh+Interj:eheh GI; ! (41_I -> +I) 
- ehhee+Interj:ehhee GI; ! (41_I -> +I) 
- eh+Interj:eh GI; ! (41_I -> +I) 
- elagu+Interj:elagu GI; ! (41_I -> +I) 
- ena+Interj:ena GI; ! (41_I -> +I) 
- ennäe+Interj:ennäe GI; ! (41_I -> +I) 
- ennäh+Interj:ennäh GI; ! (41_I -> +I) 
- fuih+Interj:fuih GI; ! (41_I -> +I) 
- haa+Interj:haa GI; ! (41_I -> +I) 
- hahaa+Interj:hahaa GI; ! (41_I -> +I) 
- hahahaa+Interj:hahahaa GI; ! (41_I -> +I) 
- halleluuja+Interj:halleluuja GI; ! (41_I -> +I) 
- hallo+Interj:hallo GI; ! (41_I -> +I) 
- halloo+Interj:halloo GI; ! (41_I -> +I) 
- hass+Interj:hass GI; ! (41_I -> +I) 
- hee+Interj:hee GI; ! (41_I -> +I) 
- hehee+Interj:hehee GI; ! (41_I -> +I) 
- hei+Interj:hei GI; ! (41_I -> +I) 
- heldekene+Interj:heldekene GI; ! (41_I -> +I) 
- hihih+Interj:hihih GI; ! (41_I -> +I) 
- hihihii+Interj:hihihii GI; ! (41_I -> +I) 
- hihii+Interj:hihii GI; ! (41_I -> +I) 
- hm+Interj:hm GI; ! (41_I -> +I) 
- hmjaa+Interj:hmjaa GI; ! (41_I -> +I) 
- hmnjaa+Interj:hmnjaa GI; ! (41_I -> +I) 
- hohoo+Interj:hohoo GI; ! (41_I -> +I) 
- hoi+Interj:hoi GI; ! (41_I -> +I) 
- hoo+Interj:hoo GI; ! (41_I -> +I) 
- hoplaa+Interj:hoplaa GI; ! (41_I -> +I) 
- hopp+Interj:hopp GI; ! (41_I -> +I) 
- hopsaa+Interj:hopsaa GI; ! (41_I -> +I) 
- hopsassaa+Interj:hopsassaa GI; ! (41_I -> +I) 
- hops+Interj:hops GI; ! (41_I -> +I) 
- huh+Interj:huh GI; ! (41_I -> +I) 
- huhuu+Interj:huhuu GI; ! (41_I -> +I) 
- huist+Interj:huist GI; ! (41_I -> +I) 
- hurjah+Interj:hurjah GI; ! (41_I -> +I) 
- hurjeh+Interj:hurjeh GI; ! (41_I -> +I) 
- hurjoh+Interj:hurjoh GI; ! (41_I -> +I) 
- hurjuh+Interj:hurjuh GI; ! (41_I -> +I) 
- hurjäh+Interj:hurjäh GI; ! (41_I -> +I) 
- hurraa+Interj:hurraa GI; ! (41_I -> +I) 
- huu+Interj:huu GI; ! (41_I -> +I) 
- hõi+Interj:hõi GI; ! (41_I -> +I) 
- hõissa+Interj:hõissa GI; ! (41_I -> +I) 
- hõissassa+Interj:hõissassa GI; ! (41_I -> +I) 
- hõk+Interj:hõk GI; ! (41_I -> +I) 
- hõkk+Interj:hõkk GI; ! (41_I -> +I) 
- häh+Interj:häh GI; ! (41_I -> +I) 
- hüvasti+Interj:hüvasti GI; ! (41_I -> +I) 
- ihhii+Interj:ihhii GI; ! (41_I -> +I) 
- ih+Interj:ih GI; ! (41_I -> +I) 
- ihii+Interj:ihii GI; ! (41_I -> +I) 
- issake+Interj:issake GI; ! (41_I -> +I) 
- issakene+Interj:issakene GI; ! (41_I -> +I) 
- issand+Interj:issand GI; ! (41_I -> +I) 
- isver+Interj:isver GI; ! (41_I -> +I) 
- jaah+Interj:jaah GI; ! (41_I -> +I) 
- jaa+Interj:jaa GI; ! (41_DI -> +Adv +I) 
- jah+Interj:jah GI; ! (41_I -> +I) 
- jajaa+Interj:jajaa GI; ! (41_I -> +I) 
- jajah+Interj:jajah GI; ! (41_I -> +I) 
- jeerum+Interj:jeerum GI; ! (41_I -> +I) 
- jeever+Interj:jeever GI; ! (41_I -> +I) 
- jessake+Interj:jessake GI; ! (41_I -> +I) 
- jessas+Interj:jessas GI; ! (41_I -> +I) 
- jesseke+Interj:jesseke GI; ! (41_I -> +I) 
- jesses+Interj:jesses GI; ! (41_I -> +I) 
- jessuke+Interj:jessuke GI; ! (41_I -> +I) 
- jestas+Interj:jestas GI; ! (41_I -> +I) 
- juhhei+Interj:juhhei GI; ! (41_I -> +I) 
- jumalaga+Interj:jumalaga GI; ! (41_I -> +I) 
- jumalime+Interj:jumalime GI; ! (41_I -> +I) 
- jumaluke+Interj:jumaluke GI; ! (41_I -> +I) 
- jumalukene+Interj:jumalukene GI; ! (41_I -> +I) 
- jutas+Interj:jutas GI; ! (41_I -> +I) 
- jõnt+Interj:jõnt GI; ! (41_ID -> +Adv +I) 
- jõudu+Interj:jõudu GI; ! (41_I -> +I) 
- jätku+Interj:jätku GI; ! (41_I -> +I) 
- kae+Interj:kae GI; ! (41_I -> +I) 
- kanäe+Interj:kanäe GI; ! (41_I -> +I) 
- karlips+Interj:karlips GI; ! (41_I -> +I) 
- karmauh+Interj:karmauh GI; ! (41_I -> +I) 
- karnaps+Interj:karnaps GI; ! (41_I -> +I) 
- karnauh+Interj:karnauh GI; ! (41_I -> +I) 
- karnäuh+Interj:karnäuh GI; ! (41_I -> +I) 
- karpauh+Interj:karpauh GI; ! (41_I -> +I) 
- karplauh+Interj:karplauh GI; ! (41_I -> +I) 
- karsoss+Interj:karsoss GI; ! (41_I -> +I) 
- karsumm+Interj:karsumm GI; ! (41_I -> +I) 
- karsäuh+Interj:karsäuh GI; ! (41_I -> +I) 
- karviuh+Interj:karviuh GI; ! (41_I -> +I) 
- kauh+Interj:kauh GI; ! (41_I -> +I) 
- keh+Interj:keh GI; ! (41_I -> +I) 
- khm+Interj:khm GI; ! (41_I -> +I) 
- kiiss+Interj:kiiss GI; ! (41_I -> +I) 
- kikerikii+Interj:kikerikii GI; ! (41_I -> +I) 
- kilks+Interj:kilks GI; ! (41_I -> +I) 
- kill+Interj:kill GI; ! (41_I -> +I) 
- kiuks+Interj:kiuks GI; ! (41_I -> +I) 
- klirr+Interj:klirr GI; ! (41_I -> +I) 
- klukluu+Interj:klukluu GI; ! (41_I -> +I) 
- kluu+Interj:kluu GI; ! (41_I -> +I) 
- klõks+Interj:klõks GI; ! (41_I -> +I) 
- klõmm+Interj:klõmm GI; ! (41_I -> +I) 
- klõps+Interj:klõps GI; ! (41_I -> +I) 
- koks+Interj:koks GI; ! (41_I -> +I) 
- kolks+Interj:kolks GI; ! (41_I -> +I) 
- kop+Interj:kop GI; ! (41_I -> +I) 
- kops+Interj:kops GI; ! (41_I -> +I) 
- kraa+Interj:kraa GI; ! (41_I -> +I) 
- kraaks+Interj:kraaks GI; ! (41_I -> +I) 
- kraks+Interj:kraks GI; ! (41_I -> +I) 
- kraps+Interj:kraps GI; ! (41_I -> +I) 
- krauh+Interj:krauh GI; ! (41_I -> +I) 
- kriiks+Interj:kriiks GI; ! (41_I -> +I) 
- kriuh+Interj:kriuh GI; ! (41_I -> +I) 
- kriuks+Interj:kriuks GI; ! (41_I -> +I) 
- kromps+Interj:kromps GI; ! (41_ID -> +Adv +I) 
- krooks+Interj:krooks GI; ! (41_I -> +I) 
- krõks+Interj:krõks GI; ! (41_I -> +I) 
- krõps+Interj:krõps GI; ! (41_I -> +I) 
- kräuks+Interj:kräuks GI; ! (41_I -> +I) 
- kukeleegu+Interj:kukeleegu GI; ! (41_I -> +I) 
- kukku+Interj:kukku GI; ! (41_I -> +I) 
- kuku+Interj:kuku GI; ! (41_I -> +I) 
- kuramus+Interj:kuramus GI; ! (41_I -> +I) 
- kurask+Interj:kurask GI; ! (41_I -> +I) 
- kurat+Interj:kurat GI; ! (41_I -> +I) 
- kurluu+Interj:kurluu GI; ! (41_I -> +I) 
- kurnäu+Interj:kurnäu GI; ! (41_I -> +I) 
- kuss+Interj:kuss GI; ! (41_I -> +I) 
- kussu+Interj:kussu GI; ! (41_I -> +I) 
- kuulmiseni+Interj:kuulmiseni GI; ! (41_I -> +I) 
- kõlks+Interj:kõlks GI; ! (41_I -> +I) 
- kõll+Interj:kõll GI; ! (41_I -> +I) 
- kõmm+Interj:kõmm GI; ! (41_I -> +I) 
- kõps+Interj:kõps GI; ! (41_I -> +I) 
- kõrra+Interj:kõrra GI; ! (41_ID -> +Adv +I) 
- kõss+Interj:kõss GI; ! (41_I -> +I) 
- kõtt+Interj:kõtt GI; ! (41_I -> +I) 
- kõõks+Interj:kõõks GI; ! (41_I -> +I) 
- kärr+Interj:kärr GI; ! (41_I -> +I) 
- kärts+Interj:kärts GI; ! (41_I -> +I) 
- kääga+Interj:kääga GI; ! (41_ID -> +Adv +I) 
- kääks+Interj:kääks GI; ! (41_I -> +I) 
- köh+Interj:köh GI; ! (41_I -> +I) 
- larts+Interj:larts GI; ! (41_I -> +I) 
- lirts+Interj:lirts GI; ! (41_I -> +I) 
- luks+Interj:luks GI; ! (41_I -> +I) 
- lurts+Interj:lurts GI; ! (41_I -> +I) 
- lärts+Interj:lärts GI; ! (41_I -> +I) 
- lööps+Interj:lööps GI; ! (41_ID -> +Adv +I) 
- marss+Interj:marss GI; ! (41_I -> +I) 
- mauh+Interj:mauh GI; ! (41_I -> +I) 
- mhh+Interj:mhh GI; ! (41_I -> +I) 
- mh+Interj:mh GI; ! (41_I -> +I) 
- miau+Interj:miau GI; ! (41_I -> +I) 
- mkm+Interj:mkm GI; ! (41_I -> +I) 
- mnjaa+Interj:mnjaa GI; ! (41_I -> +I) 
- mnjah+Interj:mnjah GI; ! (41_I -> +I) 
- moens+Interj:moens GI; ! (41_I -> +I) 
- mulks+Interj:mulks GI; ! (41_I -> +I) 
- muu+Interj:muu GI; ! (41_I -> +I) 
- mõh+Interj:mõh GI; ! (41_I -> +I) 
- mõmm+Interj:mõmm GI; ! (41_I -> +I) 
- mäts+Interj:mäts GI; ! (41_I -> +I) 
- mäu+Interj:mäu GI; ! (41_I -> +I) 
- mää+Interj:mää GI; ! (41_I -> +I) 
- möh+Interj:möh GI; ! (41_I -> +I) 
- möö+Interj:möö GI; ! (41_I -> +I) 
- mürts+Interj:mürts GI; ! (41_I -> +I) 
- müts+Interj:müts GI; ! (41_I -> +I) 
- naks+Interj:naks GI; ! (41_I -> +I) 
- neh+Interj:neh GI; ! (41_I -> +I) 
- niuks+Interj:niuks GI; ! (41_I -> +I) 
- noh+Interj:noh GI; ! (41_I -> +I) 
- no+Interj:no GI; ! (41_I -> +I) 
- noo+Interj:noo GI; ! (41_I -> +I) 
- norr+Interj:norr GI; ! (41_I -> +I) 
- nurr+Interj:nurr GI; ! (41_I -> +I) 
- nuuks+Interj:nuuks GI; ! (41_I -> +I) 
- nõhh+Interj:nõhh GI; ! (41_I -> +I) 
- nõõ+Interj:nõõ GI; ! (41_I -> +I) 
- nägemiseni+Interj:nägemiseni GI; ! (41_I -> +I) 
- nägemist+Interj:nägemist GI; ! (41_I -> +I) 
- näh+Interj:näh GI; ! (41_I -> +I) 
- näuh+Interj:näuh GI; ! (41_I -> +I) 
- näu+Interj:näu GI; ! (41_I -> +I) 
- oeh+Interj:oeh GI; ! (41_I -> +I) 
- ohh+Interj:ohh GI; ! (41_I -> +I) 
- ohhoi+Interj:ohhoi GI; ! (41_I -> +I) 
- ohhoo+Interj:ohhoo GI; ! (41_I -> +I) 
- oh+Interj:oh GI; ! (41_I -> +I) 
- ohoh+Interj:ohoh GI; ! (41_I -> +I) 
- ohoi+Interj:ohoi GI; ! (41_I -> +I) 
- ohoo+Interj:ohoo GI; ! (41_I -> +I) 
- oih+Interj:oih GI; ! (41_I -> +I) 
- oi+Interj:oi GI; ! (41_I -> +I) 
- oijah+Interj:oijah GI; ! (41_I -> +I) 
- okei+Interj:okei GI; ! (41_DI -> +Adv +I) 
- ooh+Interj:ooh GI; ! (41_I -> +I) 
- oo+Interj:oo GI; ! (41_I -> +I) 
- oolrait+Interj:oolrait GI; ! (41_DI -> +Adv +I) 
- oot+Interj:oot GI; ! (41_I -> +I) 
- ossa+Interj:ossa GI; ! (41_I -> +I) 
- paganas+Interj:paganas GI; ! (41_I -> +I) 
- pagan+Interj:pagan GI; ! (41_I -> +I) 
- pahh+Interj:pahh GI; ! (41_I -> +I) 
- pah+Interj:pah GI; ! (41_I -> +I) 
- pamm+Interj:pamm GI; ! (41_I -> +I) 
- pardonks+Interj:pardonks GI; ! (41_I -> +I) 
- parts+Interj:parts GI; ! (41_I -> +I) 
- pastoi+Interj:pastoi GI; ! (41_I -> +I) 
- pats+Interj:pats GI; ! (41_I -> +I) 
- pauh+Interj:pauh GI; ! (41_I -> +I) 
- pau+Interj:pau GI; ! (41_I -> +I) 
- pele+Interj:pele GI; ! (41_I -> +I) 
- piiks+Interj:piiks GI; ! (41_I -> +I) 
- piip+Interj:piip GI; ! (41_I -> +I) 
- pimm+Interj:pimm GI; ! (41_I -> +I) 
- piuks+Interj:piuks GI; ! (41_I -> +I) 
- plaks+Interj:plaks GI; ! (41_I -> +I) 
- plarts+Interj:plarts GI; ! (41_I -> +I) 
- plats+Interj:plats GI; ! (41_I -> +I) 
- plauh+Interj:plauh GI; ! (41_I -> +I) 
- pliks+Interj:pliks GI; ! (41_I -> +I) 
- plinn+Interj:plinn GI; ! (41_I -> +I) 
- plirts+Interj:plirts GI; ! (41_I -> +I) 
- pliu+Interj:pliu GI; ! (41_I -> +I) 
- plumps+Interj:plumps GI; ! (41_I -> +I) 
- plõks+Interj:plõks GI; ! (41_I -> +I) 
- plõmm+Interj:plõmm GI; ! (41_I -> +I) 
- plõnn+Interj:plõnn GI; ! (41_I -> +I) 
- plärts+Interj:plärts GI; ! (41_I -> +I) 
- plää+Interj:plää GI; ! (41_I -> +I) 
- pomm+Interj:pomm GI; ! (41_I -> +I) 
- pops+Interj:pops GI; ! (41_I -> +I) 
- pots+Interj:pots GI; ! (41_I -> +I) 
- praks+Interj:praks GI; ! (41_I -> +I) 
- prauh+Interj:prauh GI; ! (41_I -> +I) 
- priks+Interj:priks GI; ! (41_I -> +I) 
- priuh+Interj:priuh GI; ! (41_I -> +I) 
- proosit+Interj:proosit GI; ! (41_I -> +I) 
- prr+Interj:prr GI; ! (41_I -> +I) 
- prõks+Interj:prõks GI; ! (41_I -> +I) 
- prõmm+Interj:prõmm GI; ! (41_I -> +I) 
- prääks+Interj:prääks GI; ! (41_I -> +I) 
- psst+Interj:psst GI; ! (41_I -> +I) 
- pst+Interj:pst GI; ! (41_I -> +I) 
- ptrr+Interj:ptrr GI; ! (41_I -> +I) 
- ptruu+Interj:ptruu GI; ! (41_I -> +I) 
- ptüi+Interj:ptüi GI; ! (41_I -> +I) 
- puhh+Interj:puhh GI; ! (41_I -> +I) 
- puh+Interj:puh GI; ! (41_I -> +I) 
- pumm+Interj:pumm GI; ! (41_I -> +I) 
- pumps+Interj:pumps GI; ! (41_I -> +I) 
- põks+Interj:põks GI; ! (41_I -> +I) 
- põmm+Interj:põmm GI; ! (41_I -> +I) 
- põnks+Interj:põnks GI; ! (41_I -> +I) 
- põnts+Interj:põnts GI; ! (41_I -> +I) 
- põrr+Interj:põrr GI; ! (41_I -> +I) 
- päh+Interj:päh GI; ! (41_I -> +I) 
- pöörd+Interj:pöörd GI; ! (41_I -> +I) 
- raidu+Interj:raidu GI; ! (41_I -> +I) 
- raip+Interj:raip GI; ! (41_I -> +I) 
- raisk+Interj:raisk GI; ! (41_I -> +I) 
- raks+Interj:raks GI; ! (41_I -> +I) 
- raps+Interj:raps GI; ! (41_ID -> +Adv +I) 
- ratataa+Interj:ratataa GI; ! (41_I -> +I) 
- ruik+Interj:ruik GI; ! (41_I -> +I) 
- röhh+Interj:röhh GI; ! (41_I -> +I) 
- sauh+Interj:sauh GI; ! (41_I -> +I) 
- seis+Interj:seis GI; ! (41_I -> +I) 
- servus+Interj:servus GI; ! (41_I -> +I) 
- silks+Interj:silks GI; ! (41_I -> +I) 
- sirts+Interj:sirts GI; ! (41_I -> +I) 
- siuh+Interj:siuh GI; ! (41_I -> +I) 
- siu+Interj:siu GI; ! (41_ID -> +Adv +I) 
- siuks+Interj:siuks GI; ! (41_I -> +I) 
- siuts+Interj:siuts GI; ! (41_I -> +I) 
- skool+Interj:skool GI; ! (41_I -> +I) 
- soh+Interj:soh GI; ! (41_I -> +I) 
- soo+Interj:soo GI; ! (41_I -> +I) 
- sops+Interj:sops GI; ! (41_ID -> +Adv +I) 
- sorr+Interj:sorr GI; ! (41_I -> +I) 
- st+Interj:st GI; ! (41_I -> +I) 
- stopp+Interj:stopp GI; ! (41_I -> +I) 
- sulks+Interj:sulks GI; ! (41_I -> +I) 
- sulps+Interj:sulps GI; ! (41_I -> +I) 
- summ+Interj:summ GI; ! (41_I -> +I) 
- sups+Interj:sups GI; ! (41_ID -> +Adv +I) 
- surts+Interj:surts GI; ! (41_I -> +I) 
- suts+Interj:suts GI; ! (41_DI -> +Adv +I) 
- säh+Interj:säh GI; ! (41_I -> +I) 
- sähke+Interj:sähke GI; ! (41_I -> +I) 
- säuh+Interj:säuh GI; ! (41_I -> +I) 
- taevake+Interj:taevake GI; ! (41_I -> +I) 
- taevakene+Interj:taevakene GI; ! (41_I -> +I) 
- takk+Interj:takk GI; ! (41_I -> +I) 
- tere+Interj:tere GI; ! (41_I -> +I) 
- terekest+Interj:terekest GI; ! (41_I -> +I) 
- terviseks+Interj:terviseks GI; ! (41_I -> +I) 
- tervist+Interj:tervist GI; ! (41_I -> +I) 
- tibi+Interj:tibi GI; ! (41_I -> +I) 
- tiks+Interj:tiks GI; ! (41_I -> +I) 
- till+Interj:till GI; ! (41_I -> +I) 
- tinn+Interj:tinn GI; ! (41_I -> +I) 
- tip+Interj:tip GI; ! (41_I -> +I) 
- tiu+Interj:tiu GI; ! (41_I -> +I) 
- tjaa+Interj:tjaa GI; ! (41_I -> +I) 
- tjah+Interj:tjah GI; ! (41_I -> +I) 
- tohoh+Interj:tohoh GI; ! (41_I -> +I) 
- tohoo+Interj:tohoo GI; ! (41_I -> +I) 
- toks+Interj:toks GI; ! (41_I -> +I) 
- tpruu+Interj:tpruu GI; ! (41_I -> +I) 
- trahh+Interj:trahh GI; ! (41_I -> +I) 
- trah+Interj:trah GI; ! (41_I -> +I) 
- trallallaa+Interj:trallallaa GI; ! (41_I -> +I) 
- trillallaa+Interj:trillallaa GI; ! (41_I -> +I) 
- trr+Interj:trr GI; ! (41_I -> +I) 
- tss+Interj:tss GI; ! (41_I -> +I) 
- tst+Interj:tst GI; ! (41_I -> +I) 
- tsurr+Interj:tsurr GI; ! (41_I -> +I) 
- tšao+Interj:tšao GI; ! (41_I -> +I) 
- tuks+Interj:tuks GI; ! (41_I -> +I) 
- tuku+Interj:tuku GI; ! (41_I -> +I) 
- turts+Interj:turts GI; ! (41_I -> +I) 
- tuut+Interj:tuut GI; ! (41_I -> +I) 
- törts+Interj:törts GI; ! (41_I -> +I) 
- tümps+Interj:tümps GI; ! (41_I -> +I) 
- uhhuu+Interj:uhhuu GI; ! (41_I -> +I) 
- uh+Interj:uh GI; ! (41_I -> +I) 
- uhuu+Interj:uhuu GI; ! (41_I -> +I) 
- uih+Interj:uih GI; ! (41_I -> +I) 
- ui+Interj:ui GI; ! (41_I -> +I) 
- uijah+Interj:uijah GI; ! (41_I -> +I) 
- urjah+Interj:urjah GI; ! (41_I -> +I) 
- urjeh+Interj:urjeh GI; ! (41_I -> +I) 
- urjuh+Interj:urjuh GI; ! (41_I -> +I) 
- urra+Interj:urra GI; ! (41_I -> +I) 
- urr+Interj:urr GI; ! (41_I -> +I) 
- ust+Interj:ust GI; ! (41_I -> +I) 
- utu+Interj:utu GI; ! (41_I -> +I) 
- uu+Interj:uu GI; ! (41_I -> +I) 
- vaak+Interj:vaak GI; ! (41_I -> +I) 
- vaat+Interj:vaat GI; ! (41_I -> +I) 
- vabandust+Interj:vabandust GI; ! (41_I -> +I) 
- vait+Interj:vait GI; ! (41_DI -> +Adv +I) 
- viiks+Interj:viiks GI; ! (41_I -> +I) 
- vissi+Interj:vissi GI; ! (41_I -> +I) 
- viuh+Interj:viuh GI; ! (41_I -> +I) 
- viu+Interj:viu GI; ! (41_I -> +I) 
- viuks+Interj:viuks GI; ! (41_I -> +I) 
- voh+Interj:voh GI; ! (41_I -> +I) 
- vuh+Interj:vuh GI; ! (41_I -> +I) 
- vuih+Interj:vuih GI; ! (41_I -> +I) 
- vulks+Interj:vulks GI; ! (41_I -> +I) 
- vurra+Interj:vurra GI; ! (41_ID -> +Adv +I) 
- võeh+Interj:võeh GI; ! (41_I -> +I) 
- vääks+Interj:vääks GI; ! (41_I -> +I) 
- õe+Interj:õe GI; ! (41_I -> +I) 
- õh+Interj:õh GI; ! (41_I -> +I) 
- õits+Interj:õits GI; ! (41_I -> +I) 
- õkk+Interj:õkk GI; ! (41_I -> +I) 
- õrr+Interj:õrr GI; ! (41_I -> +I) 
- äh+Interj:äh GI; ! (41_I -> +I) 
- äiu+Interj:äiu GI; ! (41_I -> +I) 
+
+aa+Interj:˘aa #  "weight: 8 " ; 
+adjöö+Interj:adj˘öö #  "weight: 11 " ; 
+ae+Interj:˘ae #  "weight: 10 " ; 
+ahaa+Interj:ah˘aa #  "weight: 9 " ; 
+ah+Interj:˘ah #  "weight: 6 " ; 
+ahah+Interj:ah˘ah #  "weight: 9 " ; 
+ahhaa+Interj:ahh˘aa #  "weight: 10 " ; 
+ahh+Interj:ahh #  "weight: 10 " ; 
+ahjaa+Interj:ah%#j˘aa #  "weight: 9 " ; 
+ahoi+Interj:ah˘oi #  "weight: 11 " ; 
+aidaa+Interj:aid˘aa #  "weight: 11 " ; 
+aih+Interj:˘aih #  "weight: 11 " ; 
+ai+Interj:˘ai #  "weight: 9 " ; 
+aint+Interj:˘aint #  "weight: 11 " ; 
+aituma+Interj:aitˈuma #  "weight: 11 " ; 
+aitähh+Interj:ait˘ähh #  "weight: 11 " ; 
+aitäh+Interj:ait˘äh #  "weight: 7 " ; 
+aitüma+Interj:aitˈüma #  "weight: 11 " ; 
+ammuu+Interj:amm˘uu #  "weight: 11 " ; 
+andestust+Interj:andestust #  "weight: 11 " ; 
+appi+Interj:˘appi #  "weight: 9 " ; 
+appike+Interj:˘appike #  "weight: 11 " ; 
+appikene+Interj:appikene #  "weight: 11 " ; 
+aptsih+Interj:apts˘ih #  "weight: 11 " ; 
+ass+Interj:˘ass #  "weight: 11 " ; 
+ata+Interj:atʲa #  "weight: 11 " ; 
+atsih+Interj:atʲs˘ih #  "weight: 11 " ; 
+auh+Interj:˘auh #  "weight: 11 " ; 
+auts+Interj:˘auts #  "weight: 11 " ; 
+autš+Interj:˘autš #  "weight: 11 " ; 
+bis+Interj:bis #  "weight: 11 " ; 
+blablabla+Interj:bl˘a%#bl˘a%#bl˘a #  "weight: 11 " ; 
+bljaad+Interj+Use/NotNorm:bljaad #  "weight: 11 " ; 
+braavo+Interj:braavo #  "weight: 11 " ; 
+böö+Interj:böö #  "weight: 11 " ; 
+davai+Interj+Use/NotNorm:dav˘ai #  "weight: 11 " ; 
+eeh+Interj:˘eeh #  "weight: 11 " ; 
+ee+Interj:˘ee #  "weight: 11 " ; 
+ehee+Interj:eh˘ee #  "weight: 11 " ; 
+eheh+Interj:eh˘eh #  "weight: 11 " ; 
+ehhee+Interj:ehhee #  "weight: 11 " ; 
+ehh+Interj:˘ehh #  "weight: 11 " ; 
+eh+Interj:˘eh #  "weight: 9 " ; 
+ei-noh+Interj:˘ei-n˘oh #  "weight: 11 " ; 
+einoh+Interj:ei%#n˘oh #  "weight: 9 " ; 
+eip+Interj:˘eip #  "weight: 11 " ; 
+ena+Interj:ena #  "weight: 11 " ; 
+ennäe+Interj:enn˘äe #  "weight: 9 " ; 
+ennäh+Interj:enn˘äh #  "weight: 11 " ; 
+etskae+Interj:ets%#k˘ae #  "weight: 11 " ; 
+fakk+Interj+Use/NotNorm:f˘akk #  "weight: 11 " ; 
+fui+Interj:f˘ui #  "weight: 11 " ; 
+haa+Interj:h˘aa #  "weight: 10 " ; 
+hahaa+Interj:hah˘aa #  "weight: 11 " ; 
+ha-ha-haa+Interj:h˘a-h˘a-h˘aa #  "weight: 11 " ; 
+ha-ha-ha+Interj:h˘a-h˘a-h˘a #  "weight: 11 " ; 
+ha-ha+Interj:h˘a-h˘a #  "weight: 11 " ; 
+ha+Interj:h˘a #  "weight: 11 " ; 
+hallo+Interj:hallo #  "weight: 10 " ; 
+halloo+Interj:hall˘oo #  "weight: 9 " ; 
+hass+Interj:h˘ass #  "weight: 11 " ; 
+head=aega+Interj:h˘ead=˘aega #  "weight: 11 " ; 
+hee+Interj:h˘ee #  "weight: 11 " ; 
+hehee+Interj:heh˘ee #  "weight: 11 " ; 
+heh+Interj:h˘eh #  "weight: 11 " ; 
+hei+Interj:h˘ei #  "weight: 9 " ; 
+hihii+Interj:hih˘ii #  "weight: 11 " ; 
+hii-haa+Interj:hii-haa #  "weight: 11 " ; 
+hip-hip-hurraa+Interj:hip-hip-hurr˘aa #  "weight: 11 " ; 
+hip+Interj:hip #  "weight: 11 " ; 
+hm+Interj:hm #  "weight: 8 " ; 
+hmm+Interj:hmm #  "weight: 9 " ; 
+hoi+Interj:h˘oi #  "weight: 11 " ; 
+hoo+Interj:h˘oo #  "weight: 11 " ; 
+hoplaa+Interj:h˘opl˘aa #  "weight: 11 " ; 
+hopp+Interj:h˘opp #  "weight: 11 " ; 
+hopsaa+Interj:h˘ops˘aa #  "weight: 11 " ; 
+hopsassaa+Interj:hopsass˘aa #  "weight: 11 " ; 
+hops+Interj:h˘ops #  "weight: 11 " ; 
+hopsti+Interj:h˘opsti #  "weight: 11 " ; 
+huhuu+Interj:huh˘uu #  "weight: 11 " ; 
+hurjah+Interj:hurjah #  "weight: 11 " ; 
+hurjeh+Interj:hurjeh #  "weight: 11 " ; 
+hurjoh+Interj:hurj˘oh #  "weight: 11 " ; 
+hurjuh+Interj:hurjuh #  "weight: 11 " ; 
+hurraa+Interj:hurr˘aa #  "weight: 9 " ; 
+hõi+Interj:h˘õi #  "weight: 11 " ; 
+hõissa+Interj:h˘õissa #  "weight: 11 " ; 
+hõissassa+Interj:h˘õissassa #  "weight: 11 " ; 
+hõk+Interj:h˘õk #  "weight: 11 " ; 
+hõkk+Interj:h˘õkk #  "weight: 11 " ; 
+häh+Interj:h˘äh #  "weight: 10 " ; 
+hüvasti+Interj:hüvasti #  "weight: 8 " ; 
+ihhii+Interj:ihh˘ii #  "weight: 11 " ; 
+ihii+Interj:ih˘ii #  "weight: 11 " ; 
+ih+Interj:˘ih #  "weight: 11 " ; 
+issake+Interj:˘issake #  "weight: 11 " ; 
+issakene+Interj:˘issakene #  "weight: 11 " ; 
+issaristike+Interj:˘issa%#risʲtike #  "weight: 11 " ; 
+jaa+Interj:j˘aa #  "weight: 7 " ; 
+jaa-ah+Interj:j˘aa-˘ah #  "weight: 11 " ; 
+ja-ah+Interj:ja-˘ah #  "weight: 11 " ; 
+jaah+Interj:j˘aah #  "weight: 10 " ; 
+jaa-jaa+Interj:j˘aa-j˘aa #  "weight: 10 " ; 
+jaa-jah+Interj:j˘aa-j˘ah #  "weight: 11 " ; 
+jah+Interj:j˘ah #  "weight: 5 " ; 
+jah-jah+Interj:j˘ah-j˘ah #  "weight: 11 " ; 
+ja-jaa+Interj:ja-j˘aa #  "weight: 10 " ; 
+ja-jah+Interj:ja-j˘ah #  "weight: 10 " ; 
+jajah+Interj:jaj˘ah #  "weight: 10 " ; 
+jee+Interj:j˘ee #  "weight: 10 " ; 
+jeerum+Interj:j˘eerum #  "weight: 11 " ; 
+jeesus+Interj:j˘eesus #  "weight: 11 " ; 
+jehhuu+Interj:jehh˘uu #  "weight: 11 " ; 
+jep+Interj:j˘ep #  "weight: 11 " ; 
+jessas+Interj:j˘essas #  "weight: 11 " ; 
+jesses+Interj:j˘esses #  "weight: 11 " ; 
+jess+Interj:j˘ess #  "weight: 11 " ; 
+jestas+Interj:j˘estas #  "weight: 11 " ; 
+johhaidii+Interj:jˈohhai%#d˘ii #  "weight: 11 " ; 
+juhhei+Interj:juhh˘ei #  "weight: 11 " ; 
+juhhuu+Interj:juhh˘uu #  "weight: 11 " ; 
+juhuu+Interj:juh˘uu #  "weight: 11 " ; 
+jumalaga+Interj:jumalaga #  "weight: 11 " ; 
+jumalime+Interj:jumalˈime #  "weight: 11 " ; 
+jumaluke+Interj:jumaluke #  "weight: 11 " ; 
+jummel+Interj:j˘ummel #  "weight: 11 " ; 
+just+Interj:j˘ust #  "weight: 4 " ; 
+justament+Interj:justam˘enʲt #  "weight: 11 " ; 
+just-just+Interj:j˘ust-j˘ust #  "weight: 11 " ; 
+jutas+Interj:jutas #  "weight: 11 " ; 
+jõudu+Interj:j˘õudu #  "weight: 11 " ; 
+jätku+Interj:j˘ätku #  "weight: 11 " ; 
+kae+Interj:k˘ae #  "weight: 10 " ; 
+kamoon+Interj+Use/NotNorm:kamoon #  "weight: 11 " ; 
+kanäe+Interj:kan˘äe #  "weight: 11 " ; 
+karklõmdi+Interj:karkl˘õmdi #  "weight: 11 " ; 
+karmauh+Interj:karm˘auh #  "weight: 11 " ; 
+karmauhti+Interj:karm˘auhti #  "weight: 11 " ; 
+karnaps+Interj:karn˘aps #  "weight: 11 " ; 
+karnapsti+Interj:karn˘apsti #  "weight: 11 " ; 
+karnauh+Interj:karn˘auh #  "weight: 11 " ; 
+karnauhti+Interj:karn˘auhti #  "weight: 11 " ; 
+karniuhti+Interj:karn˘iuhti #  "weight: 11 " ; 
+karpauh+Interj:karp˘auh #  "weight: 11 " ; 
+karpauhti+Interj:karp˘auhti #  "weight: 11 " ; 
+karplauh+Interj:karpl˘auh #  "weight: 11 " ; 
+karplauhti+Interj:karpl˘auhti #  "weight: 11 " ; 
+karprauhti+Interj:karpr˘auhti #  "weight: 11 " ; 
+karpõmdi+Interj:karp˘õmdi #  "weight: 11 " ; 
+karsoss+Interj:kars˘osʲs #  "weight: 11 " ; 
+karsumdi+Interj:kars˘umdi #  "weight: 11 " ; 
+karsumm+Interj:kars˘umm #  "weight: 11 " ; 
+karsäuh+Interj:kars˘äuh #  "weight: 11 " ; 
+karsäuhti+Interj:kars˘äuhti #  "weight: 11 " ; 
+karviuh+Interj:karv˘iuh #  "weight: 11 " ; 
+karviuhti+Interj:karv˘iuhti #  "weight: 11 " ; 
+khmm+Interj:khmm #  "weight: 11 " ; 
+kiiga-kääga+Interj:kiiga-kääga #  "weight: 11 " ; 
+kiiss+Interj:k˘iiss #  "weight: 11 " ; 
+kikerikii+Interj:kikerik˘ii #  "weight: 11 " ; 
+kill+Interj:k˘ilʲl #  "weight: 11 " ; 
+kill-kõll+Interj:k˘ilʲl-k˘õlʲl #  "weight: 11 " ; 
+klirdi+Interj:kl˘irdi #  "weight: 11 " ; 
+klirr+Interj:kl˘irr #  "weight: 11 " ; 
+klukluu+Interj:klu%#kl˘uu #  "weight: 11 " ; 
+klõksti+Interj:kl˘õksti #  "weight: 11 " ; 
+klõmdi+Interj:kl˘õmdi #  "weight: 11 " ; 
+klõmpsti+Interj:kl˘õmpsti #  "weight: 11 " ; 
+klõnksti+Interj:kl˘õnksti #  "weight: 11 " ; 
+klõpsti+Interj:kl˘õpsti #  "weight: 11 " ; 
+koks+Interj:k˘oks #  "weight: 9 " ; 
+koksti+Interj:k˘oksti #  "weight: 11 " ; 
+kolaki+Interj:kolaki #  "weight: 11 " ; 
+kolksti+Interj:k˘olksti #  "weight: 11 " ; 
+kompsti+Interj:k˘ompsti #  "weight: 11 " ; 
+kops+Interj:k˘ops #  "weight: 7 " ; 
+kopsti+Interj:k˘opsti #  "weight: 11 " ; 
+kraksti+Interj:kr˘aksti #  "weight: 11 " ; 
+krapsti+Interj:kr˘apsti #  "weight: 10 " ; 
+krauh+Interj:kr˘auh #  "weight: 11 " ; 
+krauhti+Interj:kr˘auhti #  "weight: 11 " ; 
+krdi+Interj+Use/NotNorm:krdi #  "weight: 11 " ; 
+kriiksti+Interj:kr˘iiksti #  "weight: 11 " ; 
+kriuh+Interj:kr˘iuh #  "weight: 11 " ; 
+krõksti+Interj:kr˘õksti #  "weight: 11 " ; 
+krõpsti+Interj:kr˘õpsti #  "weight: 11 " ; 
+kräuh+Interj:kr˘äuh #  "weight: 11 " ; 
+kukeleegu+Interj:kukel˘eegu #  "weight: 11 " ; 
+kukku+Interj:k˘ukku #  "weight: 11 " ; 
+kuku+Interj:kuku #  "weight: 11 " ; 
+kuradile+Interj:kuradile #  "weight: 11 " ; 
+kurnäu+Interj:kurn˘äu #  "weight: 11 " ; 
+kuss+Interj:k˘usʲs #  "weight: 10 " ; 
+kussu+Interj:kusʲsu #  "weight: 11 " ; 
+kuulmiseni+Interj:k˘uulmiseni #  "weight: 11 " ; 
+kõhh+Interj:kõhh #  "weight: 11 " ; 
+kõh+Interj:kõh #  "weight: 11 " ; 
+kõldi+Interj:k˘õlʲdi #  "weight: 11 " ; 
+kõlksti+Interj:k˘õlksti #  "weight: 11 " ; 
+kõll+Interj:k˘õlʲl #  "weight: 11 " ; 
+kõmdi+Interj:k˘õmdi #  "weight: 11 " ; 
+kõpsti+Interj:k˘õpsti #  "weight: 11 " ; 
+kõrra+Interj:kõrra #  "weight: 11 " ; 
+kõss+Interj:k˘õsʲs #  "weight: 11 " ; 
+kõtt+Interj:k˘õtʲt #  "weight: 11 " ; 
+kõõksti+Interj:k˘õõksti #  "weight: 11 " ; 
+kärr+Interj:k˘ärr #  "weight: 11 " ; 
+kärtsti+Interj:k˘ärtsti #  "weight: 11 " ; 
+käuhti+Interj:k˘äuhti #  "weight: 11 " ; 
+käuksti+Interj:k˘äuksti #  "weight: 11 " ; 
+kääksti+Interj:k˘ääksti #  "weight: 11 " ; 
+köh+Interj:k˘öh #  "weight: 11 " ; 
+laksaki+Interj:laksaki #  "weight: 11 " ; 
+lartsti+Interj:l˘artsti #  "weight: 11 " ; 
+latsti+Interj:l˘atsti #  "weight: 11 " ; 
+liiri-lõõri+Interj:liiri-lõõri #  "weight: 11 " ; 
+lirtsti+Interj:l˘irtsti #  "weight: 11 " ; 
+luksti+Interj:l˘uksti #  "weight: 11 " ; 
+lurtsti+Interj:l˘urtsti #  "weight: 11 " ; 
+lärtsti+Interj:l˘ärtsti #  "weight: 11 " ; 
+lätsti+Interj:l˘ätsti #  "weight: 11 " ; 
+lörtsti+Interj:l˘örtsti #  "weight: 11 " ; 
+mauh+Interj:m˘auh #  "weight: 11 " ; 
+mauhti+Interj:m˘auhti #  "weight: 11 " ; 
+mh+Interj:mh #  "weight: 9 " ; 
+mhmh+Interj:mhmh #  "weight: 11 " ; 
+mhm+Interj:mhm #  "weight: 10 " ; 
+misasja+Interj:m˘is%#˘asʲja #  "weight: 9 " ; 
+mnjaa+Interj:mnj˘aa #  "weight: 10 " ; 
+mnjah+Interj:mnj˘ah #  "weight: 10 " ; 
+muahaha+Interj+Use/NotNorm:muahaha #  "weight: 11 " ; 
+mulksti+Interj:m˘ulksti #  "weight: 11 " ; 
+mõmõh+Interj:mõmõh #  "weight: 11 " ; 
+mää+Interj:m˘ää #  "weight: 11 " ; 
+möö+Interj:m˘öö #  "weight: 11 " ; 
+müraki+Interj:müraki #  "weight: 11 " ; 
+mürtsti+Interj:m˘ürtsti #  "weight: 11 " ; 
+mütaki+Interj:mütaki #  "weight: 11 " ; 
+mütsti+Interj:m˘ütsti #  "weight: 11 " ; 
+nahhui+Interj+Use/NotNorm:nˈahh˘ui #  "weight: 11 " ; 
+naksti+Interj:n˘aksti #  "weight: 11 " ; 
+neh+Interj:n˘eh #  "weight: 11 " ; 
+niuh+Interj:n˘iuh #  "weight: 11 " ; 
+noh+Interj:n˘oh #  "weight: 6 " ; 
+no+Interj:no #  "weight: 6 " ; 
+nojaa+Interj:no%#j˘aa #  "weight: 9 " ; 
+nojah+Interj:no%#jˈah #  "weight: 7 " ; 
+noneh+Interj:no%#nˈeh #  "weight: 11 " ; 
+nonoh+Interj:no%#nˈoh #  "weight: 11 " ; 
+noo+Interj:n˘oo #  "weight: 9 " ; 
+nuh+Interj:nuh #  "weight: 11 " ; 
+nõõ+Interj:n˘õõ #  "weight: 11 " ; 
+nägemiseni+Interj:nägemiseni #  "weight: 10 " ; 
+nägemist+Interj:nägemist #  "weight: 11 " ; 
+näh+Interj:n˘äh #  "weight: 10 " ; 
+nätaki+Interj:nätaki #  "weight: 11 " ; 
+näuh+Interj:n˘äuh #  "weight: 11 " ; 
+näuhti+Interj:n˘äuhti #  "weight: 11 " ; 
+näu+Interj:n˘äu #  "weight: 11 " ; 
+oeh+Interj:˘oeh #  "weight: 10 " ; 
+ohhoo+Interj:ohh˘oo #  "weight: 10 " ; 
+oh+Interj:˘oh #  "weight: 6 " ; 
+oh-oh-hoo+Interj:˘oh-˘oh-h˘oo #  "weight: 11 " ; 
+ohoh+Interj:oh˘oh #  "weight: 11 " ; 
+oh-oh-ohoo+Interj:˘oh-˘oh-oh˘oo #  "weight: 11 " ; 
+oh-oo+Interj:˘oh-˘oo #  "weight: 11 " ; 
+ohoo+Interj:oh˘oo #  "weight: 10 " ; 
+oi+Interj:˘oi #  "weight: 7 " ; 
+oijah+Interj:oij˘ah #  "weight: 11 " ; 
+oi-oi+Interj:˘oi-˘oi #  "weight: 11 " ; 
+okei+Interj:ok˘ei #  "weight: 8 " ; 
+ok+Interj+Use/NotNorm:˘ok #  "weight: 11 " ; 
+ooh+Interj:˘ooh #  "weight: 10 " ; 
+oo+Interj:˘oo #  "weight: 8 " ; 
+oot+Interj:˘oot #  "weight: 9 " ; 
+padavai+Interj:padav˘ai #  "weight: 11 " ; 
+paganas+Interj:paganas #  "weight: 11 " ; 
+pats+Interj:p˘ats #  "weight: 8 " ; 
+patsti+Interj:p˘atsti #  "weight: 11 " ; 
+pauh+Interj:p˘auh #  "weight: 11 " ; 
+pauhti+Interj:p˘auhti #  "weight: 11 " ; 
+pele+Interj:pele #  "weight: 11 " ; 
+piip+Interj:p˘iip #  "weight: 8 " ; 
+pimm+Interj:p˘imm #  "weight: 11 " ; 
+pimm-pamm+Interj:p˘imm-p˘amm #  "weight: 11 " ; 
+pimm-pomm+Interj:p˘imm-p˘omm #  "weight: 11 " ; 
+pinn-põnn+Interj:p˘inʲn-p˘õnʲn #  "weight: 11 " ; 
+piraki+Interj:piraki #  "weight: 11 " ; 
+piu-pau+Interj:p˘iu-p˘au #  "weight: 11 " ; 
+plaksti+Interj:pl˘aksti #  "weight: 11 " ; 
+plartsti+Interj:pl˘artsti #  "weight: 11 " ; 
+platsti+Interj:pl˘atsti #  "weight: 11 " ; 
+plauhti+Interj:pl˘auhti #  "weight: 11 " ; 
+pliks+Interj:pl˘iks #  "weight: 10 " ; 
+pliksti+Interj:pl˘iksti #  "weight: 11 " ; 
+plirtsti+Interj:pl˘irtsti #  "weight: 11 " ; 
+pliudi+Interj:pl˘iudi #  "weight: 11 " ; 
+pliuh+Interj:pl˘iuh #  "weight: 11 " ; 
+pliu+Interj:pl˘iu #  "weight: 11 " ; 
+plumpsti+Interj:pl˘umpsti #  "weight: 11 " ; 
+plõksti+Interj:pl˘õksti #  "weight: 11 " ; 
+plõmdi+Interj:pl˘õmdi #  "weight: 11 " ; 
+plõmm+Interj:pl˘õmm #  "weight: 11 " ; 
+pläraki+Interj:pläraki #  "weight: 11 " ; 
+plärtsti+Interj:pl˘ärtsti #  "weight: 11 " ; 
+plätsti+Interj:pl˘ätsti #  "weight: 11 " ; 
+pläudi+Interj:pl˘äudi #  "weight: 11 " ; 
+pläuh+Interj:pl˘äuh #  "weight: 11 " ; 
+potilaadale+Interj:potʲi%#laadale #  "weight: 11 " ; 
+potsti+Interj:p˘otsti #  "weight: 11 " ; 
+praksti+Interj:pr˘aksti #  "weight: 11 " ; 
+prauh+Interj:pr˘auh #  "weight: 11 " ; 
+prauhti+Interj:pr˘auhti #  "weight: 11 " ; 
+priks+Interj:pr˘iks #  "weight: 11 " ; 
+prikspraks+Interj:pr˘iks%#pr˘aks #  "weight: 11 " ; 
+priksti+Interj:pr˘iksti #  "weight: 11 " ; 
+priuh+Interj:pr˘iuh #  "weight: 11 " ; 
+proosit+Interj:proosit #  "weight: 11 " ; 
+prr+Interj:prr #  "weight: 11 " ; 
+prõksti+Interj:pr˘õksti #  "weight: 11 " ; 
+prõmdi+Interj:pr˘õmdi #  "weight: 11 " ; 
+prääksti+Interj:pr˘ääksti #  "weight: 11 " ; 
+pst+Interj:pst #  "weight: 11 " ; 
+ptrr+Interj:ptrr #  "weight: 11 " ; 
+ptruu+Interj:ptr˘uu #  "weight: 11 " ; 
+ptüi+Interj:pt˘üi #  "weight: 10 " ; 
+puhh+Interj:p˘uhh #  "weight: 11 " ; 
+puh+Interj:p˘uh #  "weight: 11 " ; 
+pumm+Interj:p˘umm #  "weight: 11 " ; 
+pumpsti+Interj:p˘umpsti #  "weight: 11 " ; 
+põksti+Interj:p˘õksti #  "weight: 11 " ; 
+põmaki+Interj:põmaki #  "weight: 11 " ; 
+põmdi+Interj:p˘õmdi #  "weight: 11 " ; 
+põmm+Interj:p˘õmm #  "weight: 11 " ; 
+põraki+Interj:põraki #  "weight: 11 " ; 
+põrgusse+Interj:p˘õrgusse #  "weight: 11 " ; 
+põrr+Interj:p˘õrr #  "weight: 11 " ; 
+päh+Interj:p˘äh #  "weight: 11 " ; 
+pöörd+Interj:p˘öörd #  "weight: 11 " ; 
+raip+Interj:r˘aip #  "weight: 11 " ; 
+raksti+Interj:r˘aksti #  "weight: 11 " ; 
+robaki+Interj:robaki #  "weight: 11 " ; 
+ruik+Interj:r˘uik #  "weight: 11 " ; 
+sauh+Interj:s˘auh #  "weight: 11 " ; 
+sauhti+Interj:s˘auhti #  "weight: 11 " ; 
+seis+Interj:s˘eis #  "weight: 6 " ; 
+servus+Interj:s˘ervus #  "weight: 11 " ; 
+sic+Interj+Use/NotNorm:s˘ic #  "weight: 11 " ; 
+sirts+Interj:s˘irts #  "weight: 11 " ; 
+siuh+Interj:s˘iuh #  "weight: 11 " ; 
+siuhti+Interj:s˘iuhti #  "weight: 11 " ; 
+skool+Interj:sk˘ool #  "weight: 11 " ; 
+soh+Interj:s˘oh #  "weight: 11 " ; 
+soo+Interj:s˘oo #  "weight: 7 " ; 
+soo-oh+Interj:s˘oo-˘oh #  "weight: 11 " ; 
+sorr+Interj:s˘orr #  "weight: 10 " ; 
+st+Interj:st #  "weight: 10 " ; 
+sulksti+Interj:s˘ulksti #  "weight: 11 " ; 
+sulpsti+Interj:s˘ulpsti #  "weight: 11 " ; 
+sumaki+Interj:sumaki #  "weight: 11 " ; 
+sumdi+Interj:s˘umdi #  "weight: 11 " ; 
+summ+Interj:s˘umm #  "weight: 11 " ; 
+surtsti+Interj:s˘urtsti #  "weight: 11 " ; 
+säh+Interj:s˘äh #  "weight: 9 " ; 
+sähke+Interj:s˘ähke #  "weight: 11 " ; 
+säuh+Interj:s˘äuh #  "weight: 11 " ; 
+säuhti+Interj:s˘äuhti #  "weight: 11 " ; 
+ta-daa+Interj:ta-daa #  "weight: 11 " ; 
+taevake+Interj:t˘aevake #  "weight: 11 " ; 
+tere+Interj:tere #  "weight: 7 " ; 
+terekest+Interj:terekest #  "weight: 11 " ; 
+terviseks+Interj:terviseks #  "weight: 11 " ; 
+tervist+Interj:tervist #  "weight: 10 " ; 
+tibi+Interj:tibi #  "weight: 8 " ; 
+tildi+Interj:t˘ilʲdi #  "weight: 11 " ; 
+till+Interj:t˘ilʲl #  "weight: 9 " ; 
+tjaa+Interj:tj˘aa #  "weight: 11 " ; 
+tjah+Interj:tj˘ah #  "weight: 11 " ; 
+tohoh+Interj:toh˘oh #  "weight: 10 " ; 
+tohoo+Interj:toh˘oo #  "weight: 11 " ; 
+toksti+Interj:t˘oksti #  "weight: 11 " ; 
+tpruu+Interj:tpr˘uu #  "weight: 11 " ; 
+trahh+Interj:tr˘ahh #  "weight: 11 " ; 
+trah+Interj:tr˘ah #  "weight: 11 " ; 
+trallallaa+Interj:trallall˘aa #  "weight: 11 " ; 
+trr+Interj:trr #  "weight: 11 " ; 
+trullallaa+Interj:trulʲlalʲl˘aa #  "weight: 11 " ; 
+tsau+Interj:ts˘au #  "weight: 11 " ; 
+tsauki+Interj:tsauki #  "weight: 11 " ; 
+tss+Interj:tss #  "weight: 11 " ; 
+tst+Interj:tst #  "weight: 11 " ; 
+tsurr+Interj:ts˘urr #  "weight: 11 " ; 
+tšau+Interj:tš˘au #  "weight: 11 " ; 
+tuhknai+Interj:tuhkn˘ai #  "weight: 11 " ; 
+tuku+Interj:tuku #  "weight: 11 " ; 
+turtsti+Interj:t˘urtsti #  "weight: 11 " ; 
+tuut+Interj:t˘uut #  "weight: 11 " ; 
+täh+Interj:täh #  "weight: 11 " ; 
+tänan+Interj:tänan #  "weight: 11 " ; 
+tänks+Interj+Use/NotNorm:t˘änks #  "weight: 11 " ; 
+törtsti+Interj:t˘örtsti #  "weight: 11 " ; 
+tötsti+Interj:t˘ötsti #  "weight: 11 " ; 
+uhhuu+Interj:uhh˘uu #  "weight: 11 " ; 
+uh+Interj:˘uh #  "weight: 10 " ; 
+uhuu+Interj:uh˘uu #  "weight: 11 " ; 
+uih+Interj:˘uih #  "weight: 11 " ; 
+ui+Interj:˘ui #  "weight: 10 " ; 
+uijah+Interj:uij˘ah #  "weight: 11 " ; 
+ups+Interj:˘ups #  "weight: 11 " ; 
+urjah+Interj:urj˘ah #  "weight: 11 " ; 
+urjuh+Interj:urj˘uh #  "weight: 11 " ; 
+ust+Interj:˘ust #  "weight: 11 " ; 
+utu+Interj:utʲu #  "weight: 11 " ; 
+uu+Interj:˘uu #  "weight: 11 " ; 
+vaat+Interj:v˘aat #  "weight: 7 " ; 
+vabandust+Interj:vabandust #  "weight: 8 " ; 
+vait+Interj:v˘ait #  "weight: 7 " ; 
+vau+Interj:v˘au #  "weight: 11 " ; 
+vissi-vissi+Interj:visʲsi-visʲsi #  "weight: 11 " ; 
+viudi+Interj:v˘iudi #  "weight: 11 " ; 
+viuh+Interj:v˘iuh #  "weight: 11 " ; 
+viuhti+Interj:v˘iuhti #  "weight: 11 " ; 
+viu+Interj:v˘iu #  "weight: 11 " ; 
+vohh+Interj:vohh #  "weight: 10 " ; 
+voh+Interj:v˘oh #  "weight: 10 " ; 
+vot+Interj:vot #  "weight: 9 " ; 
+vuih+Interj:v˘uih #  "weight: 11 " ; 
+vulksti+Interj:v˘ulksti #  "weight: 11 " ; 
+vurdi+Interj:v˘urdi #  "weight: 11 " ; 
+võeh+Interj:v˘õeh #  "weight: 11 " ; 
+väkk+Interj+Use/NotNorm:v˘äkk #  "weight: 11 " ; 
+õe+Interj:˘õe #  "weight: 11 " ; 
+õits+Interj:˘õits #  "weight: 11 " ; 
+õua+Interj:õua #  "weight: 11 " ; 
+ähh+Interj:˘ähh #  "weight: 9 " ; 
+äh+Interj:˘äh #  "weight: 10 " ; 
+äiu+Interj:äiu #  "weight: 11 " ; 
+öäkk+Interj:ö˘äkk #  "weight: 11 " ; 

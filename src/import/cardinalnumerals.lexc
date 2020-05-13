@@ -1,0 +1,73 @@
+LEXICON CardinalNumerals
+  IntegerNumerals ;
+  NonIntegerNumerals ;
+
+
+LEXICON IntegerNumerals
+
+biljon+Num+Card:b´il,jon REDEL ;
+kaheksa+Num+Card:kaheksa AASTA ;
+kaks+Num+Card:k´a KAKS ;
+kolm+Num+Card:k´olm%>%{pl.i%}%{rare%} EIT ;
+kuus+Num+Card:k´uuS1%{stemill%} VARS ;
+kvadriljon+Num+Card:kvadr´il,jon REDEL ;
+kümmekond+Num+Card:k`ümmek´onD1%>%{pl.i%} PÄEV ;
+kümme+Num+Card:kümmE2 SEEME ;
+miljard+Num+Card:mil,jard REDEL ;
+miljon+Num+Card:m´il,jon REDEL ;
+neli+Num+Card:n´el,J1%>%{pl.u%} PIIM ;
+null+Num+Card:n´ul,l TAUD ;
+paar+Num+Card:p´aar TAUD ;
+@P.Stem.Nom@pool+Num+Card:@P.Stem.Nom@p´ool%{stemill%} KEEL ;
+sadakond+Num+Card:s`adak´onD1%>%{pl.i%} PÄEV ;
+sada+Num+Card:saJ1D1a%>%{pl.u%} SADA ;
+seitse+Num+Card:s´eitsE2 HAARE ;
+tosin+Num+Card:tosin MAGUS ;
+triljon+Num+Card:tr´il,jon REDEL ;
+tuhat+Num+Card:tuha TUHAT ;
+veerand+Num+Card:veerand REDEL ;
+viis+Num+Card:v´iiS1%{stemill%} VARS ;
+üheksa+Num+Card:üheksa AASTA ;
+üks+Num+Card:´ü KAKS ;
+poolteist+Num+Card:p´ool POOLTEIST ;
+
+LEXICON NonIntegerNumerals
+
+aastakuueteistkümnendik+Num+Card:´aasta#kuue#t´eist#k´ümnend´ik ELANIK ;
+biljondik+Num+Card:b`il,jond´ik ELANIK ;
+kaheksandik+Num+Card:k`aheksand´ik ELANIK ;
+kaheksateistkümnendik+Num+Card:kaheksa#t´eist#k´ümnend´ik ELANIK ;
+kahendik+Num+Card:k`ahend´ik ELANIK ;
+kaheteistkümnendik+Num+Card:kahe#t´eist#k´ümnend´ik ELANIK ;
+kolmandik+Num+Card:k`olmand´ik ELANIK ;
+kolmeteistkümnendik+Num+Card:kolme#t´eist#k´ümnend´ik ELANIK ;
+kuuendik+Num+Card:k`uuend´ik ELANIK ;
+kuueteistkümnendik+Num+Card:kuue#t´eist#k´ümnend´ik ELANIK ;
+kvadriljondik+Num+Card:kvadr`il,jond´ik ELANIK ;
+kümnendik+Num+Card:k´ümnend´ik ELANIK ;
+miljardik+Num+Card:m`il,jard´ik ELANIK ;
+miljondik+Num+Card:m`il,jond´ik ELANIK ;
+neljandik+Num+Card:n`el,jand´ik ELANIK ;
+neljateistkümnendik+Num+Card:nelja#t´eist#k´ümnend´ik ELANIK ;
+sajandik+Num+Card:s`ajand´ik ELANIK ;
+seitsmendik+Num+Card:s´eitsmend´ik ELANIK ;
+seitsmeteistkümnendik+Num+Card:s´eitsme#t´eist#k´ümnend´ik ELANIK ;
+triljondik+Num+Card:tr`il,jond´ik ELANIK ;
+tuhandik+Num+Card:t`uhand´ik ELANIK ;
+veerandik+Num+Card:v`eerand´ik ELANIK ;
+viiendik+Num+Card:v`iiend´ik ELANIK ;
+viieteistkümnendik+Num+Card:viie#t´eist#k´ümnend´ik ELANIK ;
+üheksandik+Num+Card:`üheksand´ik ELANIK ;
+üheksateistkümnendik+Num+Card:üheksa#t´eist#k´ümnend´ik ELANIK ;
+ühendik+Num+Card:`ühend´ik ELANIK ;
+üheteistkümnendik+Num+Card:ühe#t´eist#k´ümnend´ik ELANIK ;
+alguskümme+Num+Card:´algus#kümmE2 SEEME ;
+esikaheksa+Num+Card:esi#kaheksa AASTA ;
+kolmveerand+Num+Card:k´olm#veerand REDEL ;
+kolmveerandsada+Num+Card:k´olm#veerand#saJ1D1a SADA ;
+kuraditosin+Num+Card:kuradi#tosin MAGUS ;
+mustmiljon+Num+Card:m´ust#m´il,jon REDEL ;
+null-üheksa+Num+Card:n´ul,l-üheksa AASTA ;
+tonditosin+Num+Card:ton,di#tosin MAGUS ;
+veerandsada+Num+Card:veerand#saJ1D1a SADA ;
+üks-üks+Num+Card:´üks-´ü KAKS ;

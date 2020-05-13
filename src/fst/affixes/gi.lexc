@@ -1,12 +1,14 @@
-! stressing affix gi/ki can be appended to almost any word form
+!! stressing affix gi/ki can be appended to almost any word form
 
-LEXICON GI  ! liide gi/ki
-@U.Cap.Obl@ GI';
+LEXICON GI  !! liide gi/ki
+@U.Cap.Obl@ GI_CAP ;        !! this ensures that downcasing derivation (helveetslane) works
 
-LEXICON GI'
- +Foc/gi:Q1i #;
+LEXICON GI_CAP
+ +Foc/gi:%>gi #;
  #;
 
-
+!!€gt-norm hfstol:
+!!€ siilgi: siil+N+Sg+Nom+Foc/gi
+!!€ kottki: kott+N+Sg+Nom+Foc/gi
 
 

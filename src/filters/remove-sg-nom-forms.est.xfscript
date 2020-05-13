@@ -1,0 +1,14 @@
+# remove Sg nom forms of some words that don't actually have them
+#
+define words [
+        [ {iseenese} "+Pron"] |
+        [ {ligida} "+A" ] |
+        [ {läheda} "+A" ] |
+        [ {mõlema} "+Pron" ] |
+        [ {üksteise} "+Pron" ] |
+        [ {teineteise} "+Pron" ] |
+        [ {lühida} "+A" ] ] ;
+
+define bad $[ words "+Sg" "+Nom" ] ;
+
+regex ~[bad] ;

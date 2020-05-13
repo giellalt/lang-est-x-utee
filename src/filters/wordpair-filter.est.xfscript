@@ -1,0 +1,81 @@
+#
+
+define Hyphen [ %- ] ;
+define Number ["+Sg" | "+Pl" ];
+define Case10 ["+Nom" | "+Gen" | "+Par" | "+Ill" | "+Ine" | "+Ela" | "+All" | "+Ade" | "+Abl" | "+Tra" ]; 
+define CaseNinaTaga ["+Trm" | "+Ess" | "+Abe" | "+Com"] ;
+define Case [ Case10 | CaseNinaTaga ] ;
+
+# final parts of paired words in plural
+define BadSgWord [{ajakirjad} | {kompsud} | {maksad} | {kondid} | {liikmed} ] ;
+define BadSingular $[ BadSgWord "+N" "+Sg" ] ;
+
+# final parts of paired words in only singular
+define BadPlWord [{päev} | {ainuke} | {ainus}] ;
+define BadPlural $[ BadPlWord ["+N" | "+A"] "+Pl" ] ;
+
+define SameNumber $[["+Sg" \Number* "+Sg"] | ["+Pl" \Number* "+Pl"]] ;
+
+define SameCase10 [["+Nom" \Case* "+Nom"] | 
+                 ["+Gen" \Case* "+Gen"] | 
+                 ["+Par" \Case* "+Par"] | 
+                 ["+Ill" \Case* "+Ill"] | 
+                 ["+Ine" \Case* "+Ine"] | 
+                 ["+Ela" \Case* "+Ela"] | 
+                 ["+All" \Case* "+All"] | 
+                 ["+Ade" \Case* "+Ade"] | 
+                 ["+Abl" \Case* "+Abl"] | 
+                 ["+Tra" \Case* "+Tra"]] ; 
+
+define GenNinaTaga ["+Gen" \Case* CaseNinaTaga] ; 
+
+define PairedCase [ \Case* [SameCase10 | GenNinaTaga] \Case* ];
+
+# between words may be (including a flag diacritic and a usage tag as '?'):
+define NumCas [Number Case (\Hyphen)] ;
+define Middle [NumCas Hyphen] ;
+
+define Pairs [ [{ajalehed} Middle {ajakirjad}]
+| [{kimpsud} Middle {kompsud}]
+| [{kopsud} Middle {maksad}]
+| [{luud} Middle {kondid}]
+| [{luud} Middle {liikmed}]
+| [{emb} Middle {kumb}]
+| [{mitu} Middle {setu}]
+| [{tühi} Middle {tähi}]
+| [{ematu} Middle {isatu}]
+| [{istumine} Middle {astumine}]
+| [{elamine} Middle {olemine}]
+| [{kibin} Middle {kabin}]
+| [{kigin} Middle {kägin}]
+| [{kihin} Middle {kahin}]
+| [{kilin} Middle {kolin}]
+| [{kilin} Middle {kõlin}]
+| [{kirin} Middle {kärin}]
+| [{klibin} Middle {klobin}]
+| [{prigin} Middle {pragin}]
+| [{rigin} Middle {ragin}]
+| [{sidin} Middle {sädin}]
+| [{sigin} Middle {sagin}]
+| [{sihin} Middle {sahin}]
+| [{sirin} Middle {sorin}]
+| [{sisin} Middle {susin}]
+| [{see} NumCas {sama}]
+| [{see} NumCas {samane}]
+| [{see} NumCas {samune}]
+| [{see} NumCas {sinane}]
+| [{too} NumCas {sama}]
+| [{teine} NumCas {pool}]
+| [{viimne} NumCas {päev}]
+| [{üks} NumCas {ainuke}]
+| [{üks} NumCas {ainus}]
+] ;
+
+define WordPairs [?* Pairs ?*] ;
+
+define CleanUp [[..] <- Case || Number _ (?) (Hyphen) \[Number | Case]* Number Case ,, 
+                [..] <- Number || _ Case (?) (Hyphen) \[Number | Case]* Number Case ] ;
+
+regex [ CleanUp .o. [WordPairs & SameNumber & ~BadSingular & ~BadPlural & PairedCase] ] ;
+
+

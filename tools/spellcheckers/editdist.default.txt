@@ -1,17 +1,15 @@
+## Exclusions:
 
 ## Inclusions: this is the real alphabet definition:
 a
 b
 c
-č
 d
 e
 f
 g
 h
 i
-î
-ï
 j
 k
 l
@@ -19,41 +17,164 @@ m
 n
 o
 p
+q
 r
 s
+š
+z
+ž
 t
 u
 v
 w
-x
-y
-z
+õ
 ä
 ö
-õ
--
-.
-0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-:
+ü
+x
+y
 
 ## Transition pairs + weight - section separator:
 @@
 
 ## Transition pair specifications + weight:
-s	š	0.95
+##similar shape
+a	ä	30
+o	ö	30
+o	õ	30
+s	š	30
+š	s	30
+z	ž	30
+ž	z	30
+u	ü	30
+õ	o	30
+õ	ö	30
+ä	a	30
+ö	o	30
+ö	õ	30
+ü	u	30
+##similar sound
+a	e	30
+b	p	30
+d	t	30
+e	a	30
+g	k	30
+g	j	30
+g	ž	30
+i	j	30
+j	i	30
+j	g	30
+j	ž	30
+k	g	30
+o	u	30
+p	b	30
+s	z	30
+š	ž	30
+z	s	30
+ž	š	30
+t	d	30
+u	o	30
+y	ü	30
+##near on keyboard
+a	s	30
+b	n	30
+b	v	30
+b	g	30
+b	h	30
+c	d	30
+c	v	30
+d	e	30
+d	s	30
+d	r	30
+e	s	30
+e	d	30
+e	r	30
+f	t	30
+f	d	30
+f	r	30
+f	v	30
+f	g	30
+g	t	30
+g	v	30
+g	h	30
+g	b	30
+h	u	30
+h	n	30
+h	g	30
+h	j	30
+h	b	30
+i	u	30
+i	k	30
+i	o	30
+j	u	30
+j	n	30
+j	k	30
+j	m	30
+j	h	30
+k	i	30
+k	l	30
+k	m	30
+k	o	30
+l	k	30
+l	o	30
+l	p	30
+l	ö	30
+m	n	30
+m	k	30
+m	j	30
+n	m	30
+n	h	30
+n	j	30
+n	b	30
+o	i	30
+o	l	30
+o	k	30
+o	p	30
+p	l	30
+p	o	30
+p	ü	30
+p	ö	30
+q	a	30
+r	e	30
+r	t	30
+r	d	30
+s	a	30
+s	e	30
+s	d	30
+z	a	30
+t	r	30
+t	g	30
+u	i	30
+u	h	30
+u	j	30
+v	g	30
+v	b	30
+w	a	30
+w	e	30
+w	s	30
+õ	ä	30
+õ	ü	30
+ä	õ	30
+ä	ü	30
+ä	ö	30
+ö	l	30
+ö	p	30
+ö	ä	30
+ö	ü	30
+ü	p	30
+ü	ä	30
+ü	õ	30
+ü	ö	30
+x	s	30
+x	d	30
+y	t	30
+y	u	30
+y	g	30
+y	h	30
 
 ## Swaps. NB! Please note that these depend on the variable
 ## USE_SWAPS in Makefile.am in this directory. Also note that
 ## enabling swaps is computationally expensive. See note in
 ## Makefile.am.
 ## Change dh into hd with the weight 0.5:
-##d,h	h,d	0.5
+d,h	h,d	0.5

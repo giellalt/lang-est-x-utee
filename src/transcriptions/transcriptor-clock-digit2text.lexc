@@ -1,5 +1,5 @@
 ! Divvun & Giellatekno - open source grammars for Sámi and other languages
-! Copyright © 2000-2010 The University of Tromsø & the Norwegian Sámi Parliament
+! Copyright © 2000-2015 The University of Tromsø & the Norwegian Sámi Parliament
 ! http://giellatekno.uit.no & http://divvun.no
 !
 ! This program is free software; you can redistribute and/or modify
@@ -10,13 +10,14 @@
 ! also available in the file $GTHOME/LICENSE.txt.
 !
 ! Other licensing options are available upon request, please contact
-! giellatekno@hum.uit.no or feedback@divvun.no
+! giellatekno@uit.no or divvun@hum.uit.no
 
 ! ==================== !
-! The Estonian clock !
+! The Plains Cree clock !
 ! ==================== !
 
-! Adapted to Estonian by Heli Uibo
+! Note! This is NOT checked with native speakers nor
+! textbooks, just based upon guessing from a dictionary.
 
 Multichar_Symbols
 
@@ -32,267 +33,184 @@ Multichar_Symbols
 @U.TIME.10@ 
 @U.TIME.11@ 
 @U.TIME.12@ 
-
-+Use/NG
 +Use/NA
++Use/NG
+
 
 LEXICON Root
 
 ! Allowing sloppy 2:30 in answer
-1@U.TIME.1@+Use/NA:@U.TIME.1@     AFTpunkt ;    !01:00 - 01:19
-1@U.TIME.2@+Use/NA:@U.TIME.2@     BEFpunkt ;    !01:20 - 01:59
-2@U.TIME.2@+Use/NA:@U.TIME.2@     AFTpunkt ;    !02:00 - 02:19
-2@U.TIME.3@+Use/NA:@U.TIME.3@     BEFpunkt ;    !02:20 - 02:59
-3@U.TIME.3@+Use/NA:@U.TIME.3@     AFTpunkt ;    !03:00 - 03:19
-3@U.TIME.4@+Use/NA:@U.TIME.4@     BEFpunkt ;    !03:20 - 03:59
-4@U.TIME.4@+Use/NA:@U.TIME.4@     AFTpunkt ;    !04:00 - 04:19
-4@U.TIME.5@+Use/NA:@U.TIME.5@     BEFpunkt ;    !04:20 - 04:59
-5@U.TIME.5@+Use/NA:@U.TIME.5@     AFTpunkt ;    !05:00 - 05:19
-5@U.TIME.6@+Use/NA:@U.TIME.6@     BEFpunkt ;    !05:20 - 05:59
-6@U.TIME.6@+Use/NA:@U.TIME.6@     AFTpunkt ;    !06:00 - 06:19
-6@U.TIME.7@+Use/NA:@U.TIME.7@     BEFpunkt ;    !06:20 - 06:59
-7@U.TIME.7@+Use/NA:@U.TIME.7@     AFTpunkt ;    !07:00 - 07:19
-7@U.TIME.8@+Use/NA:@U.TIME.8@     BEFpunkt ;    !07:20 - 07:59
-8@U.TIME.8@+Use/NA:@U.TIME.8@     AFTpunkt ;    !08:00 - 08:19
-8@U.TIME.9@+Use/NA:@U.TIME.9@     BEFpunkt ;    !08:20 - 08:59
-9@U.TIME.9@+Use/NA:@U.TIME.9@     AFTpunkt ;    !09:00 - 09:19
-9@U.TIME.10@+Use/NA:@U.TIME.10@   BEFpunkt ;    !09:20 - 09:59
+@U.TIME.1@1:@U.TIME.1@+Use/NA     AFTpunkt ;    !01:00 - 01:19
+@U.TIME.2@1:@U.TIME.2@+Use/NA     BEFpunkt ;    !01:20 - 01:59
+@U.TIME.2@2:@U.TIME.2@+Use/NA     AFTpunkt ;    !02:00 - 02:19
+@U.TIME.3@2:@U.TIME.3@+Use/NA     BEFpunkt ;    !02:20 - 02:59
+@U.TIME.3@3:@U.TIME.3@+Use/NA     AFTpunkt ;    !03:00 - 03:19
+@U.TIME.4@3:@U.TIME.4@+Use/NA     BEFpunkt ;    !03:20 - 03:59
+@U.TIME.4@4:@U.TIME.4@+Use/NA     AFTpunkt ;    !04:00 - 04:19
+@U.TIME.5@4:@U.TIME.5@+Use/NA     BEFpunkt ;    !04:20 - 04:59
+@U.TIME.5@5:@U.TIME.5@+Use/NA     AFTpunkt ;    !05:00 - 05:19
+@U.TIME.6@5:@U.TIME.6@+Use/NA     BEFpunkt ;    !05:20 - 05:59
+@U.TIME.6@6:@U.TIME.6@+Use/NA     AFTpunkt ;    !06:00 - 06:19
+@U.TIME.7@6:@U.TIME.7@+Use/NA     BEFpunkt ;    !06:20 - 06:59
+@U.TIME.7@7:@U.TIME.7@+Use/NA     AFTpunkt ;    !07:00 - 07:19
+@U.TIME.8@7:@U.TIME.8@+Use/NA     BEFpunkt ;    !07:20 - 07:59
+@U.TIME.8@8:@U.TIME.8@+Use/NA     AFTpunkt ;    !08:00 - 08:19
+@U.TIME.9@8:@U.TIME.9@+Use/NA     BEFpunkt ;    !08:20 - 08:59
+@U.TIME.9@9:@U.TIME.9@+Use/NA     AFTpunkt ;    !09:00 - 09:19
+@U.TIME.10@9:@U.TIME.10@+Use/NA   BEFpunkt ;    !09:20 - 09:59
 
 ! Correct is 02:30
-%01@U.TIME.1@:@U.TIME.1@     AFTpunkt ;    !01:00 - 01:19
-%01@U.TIME.2@:@U.TIME.2@     BEFpunkt ;    !01:20 - 01:59
-%02@U.TIME.2@:@U.TIME.2@     AFTpunkt ;    !02:00 - 02:19
-%02@U.TIME.3@:@U.TIME.3@     BEFpunkt ;    !02:20 - 02:59
-%03@U.TIME.3@:@U.TIME.3@     AFTpunkt ;    !03:00 - 03:19
-%03@U.TIME.4@:@U.TIME.4@     BEFpunkt ;    !03:20 - 03:59
-%04@U.TIME.4@:@U.TIME.4@     AFTpunkt ;    !04:00 - 04:19
-%04@U.TIME.5@:@U.TIME.5@     BEFpunkt ;    !04:20 - 04:59
-%05@U.TIME.5@:@U.TIME.5@     AFTpunkt ;    !05:00 - 05:19
-%05@U.TIME.6@:@U.TIME.6@     BEFpunkt ;    !05:20 - 05:59
-%06@U.TIME.6@:@U.TIME.6@     AFTpunkt ;    !06:00 - 06:19
-%06@U.TIME.7@:@U.TIME.7@     BEFpunkt ;    !06:20 - 06:59
-%07@U.TIME.7@:@U.TIME.7@     AFTpunkt ;    !07:00 - 07:19
-%07@U.TIME.8@:@U.TIME.8@     BEFpunkt ;    !07:20 - 07:59
-%08@U.TIME.8@:@U.TIME.8@     AFTpunkt ;    !08:00 - 08:19
-%08@U.TIME.9@:@U.TIME.9@     BEFpunkt ;    !08:20 - 08:59
-%09@U.TIME.9@:@U.TIME.9@     AFTpunkt ;    !09:00 - 09:19
-%09@U.TIME.10@:@U.TIME.10@   BEFpunkt ;    !09:20 - 09:59
+@U.TIME.1@%01:@U.TIME.1@     AFTpunkt ;    !01:00 - 01:19
+@U.TIME.2@%01:@U.TIME.2@     BEFpunkt ;    !01:20 - 01:59
+@U.TIME.2@%02:@U.TIME.2@     AFTpunkt ;    !02:00 - 02:19
+@U.TIME.3@%02:@U.TIME.3@     BEFpunkt ;    !02:20 - 02:59
+@U.TIME.3@%03:@U.TIME.3@     AFTpunkt ;    !03:00 - 03:19
+@U.TIME.4@%03:@U.TIME.4@    BEFpunkt ;    !03:20 - 03:59
+@U.TIME.4@%04:@U.TIME.4@    AFTpunkt ;    !04:00 - 04:19
+@U.TIME.5@%04:@U.TIME.5@     BEFpunkt ;    !04:20 - 04:59
+@U.TIME.5@%05:@U.TIME.5@    AFTpunkt ;    !05:00 - 05:19
+@U.TIME.6@%05:@U.TIME.6@     BEFpunkt ;    !05:20 - 05:59
+@U.TIME.6@%06:@U.TIME.6@    AFTpunkt ;    !06:00 - 06:19
+@U.TIME.7@%06:@U.TIME.7@     BEFpunkt ;    !06:20 - 06:59
+@U.TIME.7@%07:@U.TIME.7@     AFTpunkt ;    !07:00 - 07:19
+@U.TIME.8@%07:@U.TIME.8@    BEFpunkt ;    !07:20 - 07:59
+@U.TIME.8@%08:@U.TIME.8@     AFTpunkt ;    !08:00 - 08:19
+@U.TIME.9@%08:@U.TIME.9@    BEFpunkt ;    !08:20 - 08:59
+@U.TIME.9@%09:@U.TIME.9@     AFTpunkt ;    !09:00 - 09:19
+@U.TIME.10@%09:@U.TIME.10@   BEFpunkt ;    !09:20 - 09:59
 
-1%0@U.TIME.10@:@U.TIME.10@   AFTpunkt ;     !10:00 - 10:19
-1%0@U.TIME.11@:@U.TIME.11@   BEFpunkt ;     !10:20 - 10:59
-11@U.TIME.11@:@U.TIME.11@    AFTpunkt ;     !11:00 - 11:59
-11@U.TIME.12@:@U.TIME.12@    BEFpunkt ;     !11:19 - 11:59
-12@U.TIME.12@:@U.TIME.12@    AFTpunkt ;     !12:00 - 12:19
-12@U.TIME.1@:@U.TIME.1@      BEFpunkt ;     !12:19 - 12:59
-13@U.TIME.1@:@U.TIME.1@      AFTpunkt ;     !13:00 - 13:19
-13@U.TIME.2@:@U.TIME.2@      BEFpunkt ;     !13:19 - 13:59
-14@U.TIME.2@:@U.TIME.2@      AFTpunkt ;     !14:00 - 114:19
-14@U.TIME.3@:@U.TIME.3@      BEFpunkt ;     !14:19 - 14:59
-15@U.TIME.3@:@U.TIME.3@      AFTpunkt ;     !15:00 - 15:19
-15@U.TIME.4@:@U.TIME.4@      BEFpunkt ;     !15:19 - 15:59
-16@U.TIME.4@:@U.TIME.4@      AFTpunkt ;     !16:00 - 16:19
-16@U.TIME.5@:@U.TIME.5@      BEFpunkt ;     !16:19 - 16:59
-17@U.TIME.5@:@U.TIME.5@      AFTpunkt ;     !17:00 - 17:19
-17@U.TIME.6@:@U.TIME.6@      BEFpunkt ;     !17:19 - 17:59
-18@U.TIME.6@:@U.TIME.6@      AFTpunkt ;     !18:00 - 18:19
-18@U.TIME.7@:@U.TIME.7@      BEFpunkt ;     !18:19 - 18:59
-19@U.TIME.7@:@U.TIME.7@      AFTpunkt ;     !19:00 - 19:19
-19@U.TIME.8@:@U.TIME.8@      BEFpunkt ;     !19:20 - 19:59
-2%0@U.TIME.8@:@U.TIME.8@     AFTpunkt ;     !20:00 - 20:19
-2%0@U.TIME.9@:@U.TIME.9@     BEFpunkt ;     !20:20 - 20:59
-21@U.TIME.9@:@U.TIME.9@      AFTpunkt ;     !21:00 - 21:19
-21@U.TIME.10@:@U.TIME.10@    BEFpunkt ;     !21:20 - 21:59
-22@U.TIME.10@:@U.TIME.10@    AFTpunkt ;     !22:00 - 22:19
-22@U.TIME.11@:@U.TIME.11@    BEFpunkt ;     !22:19 - 22:59
-23@U.TIME.11@:@U.TIME.11@    AFTpunkt ;     !23:00 - 23:19
-23@U.TIME.12@:@U.TIME.12@    BEFpunkt ;     !23:19 - 23:59
-%0%0@U.TIME.12@:@U.TIME.12@  AFTpunkt ;     !00:00 - 00:19
-%0%0@U.TIME.1@:@U.TIME.1@    BEFpunkt ;     !00:19 - 00:59
-24%:%0%0:kaksteist        #        ;     !24:00
+@U.TIME.10@1%0:@U.TIME.10@   AFTpunkt ;     !10:00 - 10:19
+@U.TIME.11@1%0:@U.TIME.11@   BEFpunkt ;     !10:20 - 10:59
+@U.TIME.11@11:@U.TIME.11@    AFTpunkt ;     !11:00 - 11:59
+@U.TIME.12@11:@U.TIME.12@    BEFpunkt ;     !11:19 - 11:59
+@U.TIME.12@12:@U.TIME.12@    BEFpunkt ;     !11:19 - 11:59
+@U.TIME.12@%0%0:@U.TIME.12@    BEFpunkt ;     !11:19 - 11:59
+12%:%0%0:nîsosâp     TIPAHIKAN        ;     !12:00
+12%.%0%0:nîsosâp+Use/NA       TIPAHIKAN        ;     !12.00
+12:nîsosâp+Use/NA       TIPAHIKAN        ;     !12.00
+12%:%0%0:âpihtâkîsikâw+Use/NA        NOON        ;     !12:00
+12%.%0%0:âpihtâkîsikâw+Use/NA        NOON        ;     !12.00
+12:âpihtâkîsikâw+Use/NA       NOON        ;     !12.00
+12%:%0%0:âpihtâtipiskâw+Use/NA        NOON        ;     !12:00
+12%.%0%0:âpihtâtipiskâw+Use/NA        NOON        ;     !12.00
+12:âpihtâtipiskâw+Use/NA       NOON        ;     !12.00
+
 
 
 LEXICON BEFpunkt
- %:+Use/NA: BEF ;
- %.+Use/NA: BEF ;
+%::+Use/NA BEF ;
+%.:+Use/NA BEF ;
 
 LEXICON AFTpunkt
- %:+Use/NA: AFT ;  ! 2:00 = kaks
- %.+Use/NA: AFT ;  ! 2.00 = kaks
- +Use/NA:  HOUR ;  ! 2    = kaks
+%:: AFT ;  ! 2:00 = göökte
+%.: AFT ;  ! 2.00 = göökte
+:  HOUR ;  ! 2    = göökte
 
 LEXICON BEF
- 2%0:kümne%               TOHALF ;
- 21:üheksa%                TOHALF ;
- 22:kaheksa%              TOHALF ;
- 23:seitsme%              TOHALF ;
- 24:kuue%                TOHALF ;
- 25:viie%                TOHALF ;
- 26:nelja%              TOHALF ;
- 26+Use/NG:nelja%        TOHALF ;
- 26+Use/NG:nelja%        TOHALF ;
- 26+Use/NG:nelja%         TOHALF ;
- 27:kolme%                 TOHALF ;
- 28:kahe%                TOHALF ;
- 29:ühe%                  TOHALF ;
- 3%0:pool%               HOUR ;
- 31:üks% minut%                  OVERHALF ;
- 32:kaks% minutit%               OVERHALF ;
- 33:kolm% minutit%                OVERHALF ;
- 34:neli% minutit%             OVERHALF ;
- 34+Use/NG:neli%        OVERHALF ;
- 34+Use/NG:neli%        OVERHALF ;
- 34+Use/NG:neli%         OVERHALF ;
- 35:viis% minutit%               OVERHALF ;
- 36:kuus% minutit%               OVERHALF ;
- 37:seitse% minutit%             OVERHALF ;
- 38:kaheksa% minutit%             OVERHALF ;
- 39:üheksa% minutit%               OVERHALF ;
- 4%0:kümme% minutit%              OVERHALF ;
- 4%0:kahekümne%              TO ;
- 41:üheksateistkümne%          TO ;
- 42:kaheksateistkümne%        TO ;
- 43:seitsmeteistkümne%        TO ;
- 43:kahe%    TOQUARTER ;
- 44:kuueteistkümne%          TO ;
- 44:ühe%    TOQUARTER ;
- 45:viieteistkümne%            TO ;
- 45:kolmveerand%    HOUR ;
- 46:neljateistkümne%        TO ;
- 46:üks% minut% kolmveerand%    HOUR_OVER ;
-! 46+Use/NG:luhkienjielje%  TO ;
-! 46+Use/NG:luhkienieljie%  TO ;
-! 46+Use/NG:luhkienielje%   TO ;
- 47:kolmeteistkümne%           TO ;
- 47:kaks% minutit% kolmveerand%     HOUR_OVER ;
- 48:kaheteistkümne%          TO ;
- 49:üheteistkümne%            TO ;
- 5%0:kümne%               TO ;
- 51:üheksa%                TO ;
- 52:kaheksa%              TO ;
- 53:seitsme%              TO ;
- 54:kuue%                TO ;
- 55:viie%                TO ;
- 56:nelja%              TO ;
-! 56+Use/NG:njielje%        TO ;
-! 56+Use/NG:nieljie%        TO ;
-! 56+Use/NG:nielje%         TO ;
- 57:kolme%                 TO ;
- 58:kahe%                TO ;
- 59:ühe%                  TO ;
+3%0:                      HALFHOUR ;
+31:nîstanaw% kekâmitâtahtosâp%  TO ;
+32:nîstanaw% ayinânewosâp%  TO ;
+33:nîstanaw% tepakohposâp%  TO ;
+34:nîstanaw% nikotwâsosâp%  TO ;
+35:nîstanaw% nîyânanosâp%  TO ;
+36:nîstanaw% newosâp%  TO ;
+37:nîstanaw% nistosâp%  TO ;
+38:nîstanaw% nîsosâp%  TO ; 
+39:nîstanaw% peyakosâp%  TO ;
+4%0:nîstanaw%  TO ;
+41:kîkâmitâtahtosâp%  TO ;
+42:ayinânewosâp%  TO ;
+43:tepakohposâp%  TO ;
+44:nikotwâsiksâp%  TO ;
+45:niyânanosâp%  TO ;
+46:newosâposâp%  TO ;
+47:nistosâp%  TO ;
+48:nîsosâp%  TO ;
+49:peyakosâp%  TO ;
+5%0:mitâtaht%  TO ;
+51:kîkâmitâtaht%  TO ;
+52:ayinânew%  TO ;
+53:tepakohp%  TO ;
+54:nikotwâsik%  TO ;
+55:niyânan%  TO ;  
+56:newo%  TO ;  
+57:nisto%  TO ;
+58:nîso%  TO ; 
+59:peyak%  TO ;
 
 LEXICON AFT
- %0%0:                     HOUR ;
- %01:üks% minut%                 HOUR_OVER ;
- %02:kaks% minutit%               HOUR_OVER ;
- %03:kolm% minutit%                HOUR_OVER ;
- %04:neli% minutit%            HOUR_OVER ;
-! %04+Use/NG:njielje%       HOUR_OVER ;
-! %04+Use/NG:nieljie%       HOUR_OVER ;
-! %04+Use/NG:nielje%        HOUR_OVER ;
- %05:viis% minutit%              HOUR_OVER ;
- %06:kuus% minutit%              HOUR_OVER ;
- %07:seitse% minutit%            HOUR_OVER ;
- %08:kaheksa% minutit%            HOUR_OVER ;
- %09:üheksa% minutit%              HOUR_OVER ;
- 1%0:kümme% minutit%              HOUR_OVER ;
- 11:üksteist% minutit%           HOUR_OVER ;
- 12:kaksteist% minutit%         HOUR_OVER ;
- 13:kolmteist% minutit%          HOUR_OVER ;
- 13:kahe%    TO_QUARTER_OVER ;
- 14:neliteist% minutit%       HOUR_OVER ;
- 14:ühe%    TO_QUARTER_OVER ;
-! 14+Use/NG:luhkienjielje%  HOUR_OVER ;
-! 14+Use/NG:luhkienieljie%  HOUR_OVER ;
-! 14+Use/NG:luhkienielje%   HOUR_OVER ;
- 15:viisteist% minutit%           HOUR_OVER ;
- 15:veerand%    HOUR_PLUS ;
- 16:kuusteist% minutit%         HOUR_OVER ;
- 16:üks% minut% veerand%    HOUR_PLUS ;
- 17:seitseteist% minutit%       HOUR_OVER ;
- 17:kaks% minutit% veerand%     HOUR_PLUS ;
- 18:kaheksateist% minutit%       HOUR_OVER ;
- 19:üheksateist% minutit%         HOUR_OVER ;
- 20:kakskümmend% minutit%         HOUR_OVER ;
-
-LEXICON TOHALF
- :minuti% pärast% pool%         HOUR ;
-
-LEXICON OVERHALF
- :pool%        HOUR_OVER ;
+%0%0:  HOUR ;
+%01:peyak%  OVER ;
+%02:nîso%  OVER ;
+%03:nisto%  OVER ;
+%04:newo%  OVER ;
+%05:nîyânan%  OVER ;
+%06:nikotwâsik%  OVER ;
+%07:tepakohp%  OVER ;
+%08:ayinânew%  OVER ;
+%09:kekâmitâtaht%  OVER ;
+1%0:mitâtaht%  OVER ;
+11:peyakosâp%  OVER ;
+12:nîsosâp%  OVER ;
+13:nistosâp%  OVER ;
+14:newosâposâp%  OVER ;
+15:niyânanosâp%  OVER ; 
+16:nikotwâsiksâp%  OVER ;
+17:tepakohposâp%  OVER ;
+18:ayinânewosâp%  OVER ;
+19:kîkâmitâtahtosâp%  OVER ;
+2%0:nîstanaw%  OVER ;
+21:nîstanaw% peyakosâp%  OVER ;
+22:nîstanaw% nîsosâp%  OVER ;
+23:nîstanaw% nistosâp%  OVER ;
+24:nîstanaw% newosâp%  OVER ;
+25:nîstanaw% nîyânanosâp%  OVER ;  
+26:nîstanaw% nikotwâosâp%  OVER ;  
+27:nîstanaw% tepakohposâp%  OVER ;
+28:nîstanaw% ayinânewosâp%  OVER ; 
+29:nîstanaw% kekâmitâtahtosâp%  OVER ;
 
 LEXICON TO
-        :minuti% pärast%          HOUR ;
+ :cipahikanis% pâmayes%  HOUR ;
 
-LEXICON TOQUARTER
-        :minuti% pärast% kolmveerand%          HOUR ;
+LEXICON OVER
+ :cipahikanis% mîyâskam%  HOUR ;
 
-LEXICON TO_QUARTER_OVER
-        :minuti% pärast% veerand%          HOUR_PLUS_OVER ;
+LEXICON HALFHOUR
+@U.TIME.1@:nîsosâp@U.TIME.1@          HALF ;           
+@U.TIME.2@:peyak@U.TIME.2@         HALF ;         
+@U.TIME.3@:nîso@U.TIME.3@          HALF ;          
+@U.TIME.4@:nisto@U.TIME.4@       HALF ;       
+@U.TIME.5@:newo@U.TIME.5@         HALF ;         
+@U.TIME.6@:nîyânan@U.TIME.6@         HALF ;         
+@U.TIME.7@:nikotwâsik@U.TIME.7@       HALF ;       
+@U.TIME.8@:tepakohp@U.TIME.8@       HALF ;       
+@U.TIME.9@:ayinânew@U.TIME.9@         HALF ;         
+@U.TIME.10@:kekâmitâtaht@U.TIME.10@       HALF ;       
+@U.TIME.11@:mitâtaht@U.TIME.11@   HALF ;   
+@U.TIME.12@:peyakosâp@U.TIME.12@     HALF ; 
+
+LEXICON HALF
+ :% mînâpihtaw # ; !Not obligatory to add tipahikan
+ :% mînâpihtaw TIPAHIKAN ; 
 
 
 LEXICON HOUR
-@U.TIME.1@:üks@U.TIME.1@           # ;
-@U.TIME.2@:kaks@U.TIME.2@         # ;
-@U.TIME.3@:kolm@U.TIME.3@          # ;
-@U.TIME.4@:neli@U.TIME.4@       # ;
-@U.TIME.4@+Use/NG:neli@U.TIME.4@ # ;
-@U.TIME.4@+Use/NG:neli@U.TIME.4@ # ;
-@U.TIME.4@+Use/NG:neli@U.TIME.4@  # ;
-@U.TIME.5@:viis@U.TIME.5@         # ;
-@U.TIME.6@:kuus@U.TIME.6@         # ;
-@U.TIME.7@:seitse@U.TIME.7@       # ;
-@U.TIME.8@:kaheksa@U.TIME.8@       # ;
-@U.TIME.9@:üheksa@U.TIME.9@         # ;
-@U.TIME.10@:kümme@U.TIME.10@       # ;
-@U.TIME.11@:üksteist@U.TIME.11@   # ;
-@U.TIME.12@:kaksteist@U.TIME.12@ # ;
+@U.TIME.1@:peyak@U.TIME.1@          TIPAHIKAN ;           
+@U.TIME.2@:nîso@U.TIME.2@         TIPAHIKAN ;         
+@U.TIME.3@:nisto@U.TIME.3@          TIPAHIKAN ;          
+@U.TIME.4@:newo@U.TIME.4@       TIPAHIKAN ;       
+@U.TIME.5@:nîyânan@U.TIME.5@         TIPAHIKAN ;         
+@U.TIME.6@:nikotwâsik@U.TIME.6@         TIPAHIKAN ;         
+@U.TIME.7@:tepakohp@U.TIME.7@       TIPAHIKAN ;       
+@U.TIME.8@:ayinânew@U.TIME.8@       TIPAHIKAN ;       
+@U.TIME.9@:kekâmitâtaht@U.TIME.9@         TIPAHIKAN ;         
+@U.TIME.10@:mitâtaht@U.TIME.10@       TIPAHIKAN ;       
+@U.TIME.11@:peyakosâp@U.TIME.11@   TIPAHIKAN ;   
+@U.TIME.12@:nîsosâp@U.TIME.12@     TIPAHIKAN ; 
 
-LEXICON HOUR_PLUS
-@U.TIME.1@:kaks@U.TIME.1@           # ;
-@U.TIME.2@:kolm@U.TIME.2@         # ;
-@U.TIME.3@:neli@U.TIME.3@          # ;
-@U.TIME.4@:viis@U.TIME.4@       # ;
-@U.TIME.4@+Use/NG:neli@U.TIME.4@ # ;
-@U.TIME.4@+Use/NG:neli@U.TIME.4@ # ;
-@U.TIME.4@+Use/NG:neli@U.TIME.4@  # ;
-@U.TIME.5@:kuus@U.TIME.5@         # ;
-@U.TIME.6@:seitse@U.TIME.6@         # ;
-@U.TIME.7@:kaheksa@U.TIME.7@       # ;
-@U.TIME.8@:üheksa@U.TIME.8@       # ;
-@U.TIME.9@:kümme@U.TIME.9@         # ;
-@U.TIME.10@:üksteist@U.TIME.10@       # ;
-@U.TIME.11@:kaksteist@U.TIME.11@   # ;
-@U.TIME.12@:üks@U.TIME.12@ # ;
+LEXICON TIPAHIKAN
+ :% tipahikan # ;
 
-LEXICON HOUR_PLUS_OVER
-@U.TIME.1@:kaks% @U.TIME.1@           OVER ;
-@U.TIME.2@:kolm% @U.TIME.2@         OVER ;
-@U.TIME.3@:neli% @U.TIME.3@          OVER ;
-@U.TIME.4@:viis% @U.TIME.4@       OVER ;
-@U.TIME.5@:kuus% @U.TIME.5@         OVER ;
-@U.TIME.6@:seitse% @U.TIME.6@         OVER ;
-@U.TIME.7@:kaheksa% @U.TIME.7@       OVER ;
-@U.TIME.8@:üheksa% @U.TIME.8@       OVER ;
-@U.TIME.9@:kümme% @U.TIME.9@         OVER ;
-@U.TIME.10@:üksteist% @U.TIME.10@       OVER ;
-@U.TIME.11@:kaksteist% @U.TIME.11@   OVER ;
-@U.TIME.12@:üks% @U.TIME.12@ OVER ;
-
-LEXICON HOUR_OVER
-@U.TIME.1@:üks% @U.TIME.1@           OVER ;
-@U.TIME.2@:kaks% @U.TIME.2@         OVER ;
-@U.TIME.3@:kolm% @U.TIME.3@          OVER ;
-@U.TIME.4@:neli% @U.TIME.4@       OVER ;
-@U.TIME.5@:viis% @U.TIME.5@         OVER ;
-@U.TIME.6@:kuus% @U.TIME.6@         OVER ;
-@U.TIME.7@:seitse% @U.TIME.7@       OVER ;
-@U.TIME.8@:kaheksa% @U.TIME.8@       OVER ;
-@U.TIME.9@:üheksa% @U.TIME.9@         OVER ;
-@U.TIME.10@:kümme% @U.TIME.10@       OVER ;
-@U.TIME.11@:üksteist% @U.TIME.11@   OVER ;
-@U.TIME.12@:kaksteist% @U.TIME.12@ OVER ;
-
-LEXICON OVER
-    :läbi%   # ;
-
-
+LEXICON NOON
+ : # ;

@@ -1,0 +1,53 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+  Noun - hobune: # Noun 'horse' - full paradigm
+     # according to Eesti keele käsiraamat
+     # http://www.eki.ee/books/ekk09/
+     # -----------------------------------------
+     #
+     # Singular
+     #
+     hobune+N+Sg+Nom: hobune
+     hobune+N+Sg+Gen: hobuse
+     hobune+N+Sg+Par: hobust
+     hobune+N+Sg+Ill: hobusesse
+     hobune+N+Sg+Ine: hobuses
+     hobune+N+Sg+Ela: hobusest
+     hobune+N+Sg+All: hobusele
+     hobune+N+Sg+Ade: hobusel
+     hobune+N+Sg+Abl: hobuselt
+     hobune+N+Sg+Tra: hobuseks
+     hobune+N+Sg+Trm: hobuseni
+     hobune+N+Sg+Ess: hobusena
+     hobune+N+Sg+Abe: hobuseta
+     hobune+N+Sg+Com: hobusega
+     #
+     # Plural
+     #
+     hobune+N+Pl+Nom: hobused
+     hobune+N+Pl+Gen: hobuste
+     hobune+N+Pl+Par: hobuseid
+     hobune+N+Pl+Ill: hobustesse
+     hobune+N+Pl+Ine: hobustes
+     hobune+N+Pl+Ela: hobustest
+     hobune+N+Pl+All: hobustele
+     hobune+N+Pl+Ade: hobustel
+     hobune+N+Pl+Abl: hobustelt
+     hobune+N+Pl+Tra: hobusteks
+     hobune+N+Pl+Trm: hobusteni
+     hobune+N+Pl+Ess: hobustena
+     hobune+N+Pl+Abe: hobusteta
+     hobune+N+Pl+Com: hobustega   

@@ -1,0 +1,52 @@
+Config:
+  hfst:
+      ../../../src/generator-gt-norm.hfstol: Gen
+      ../../../src/analyser-gt-norm.hfstol: Morph
+  xerox:
+      ../../../src/generator-gt-norm.xfst: Gen
+      ../../../src/analyser-gt-norm.xfst: Morph
+      lookup: App
+
+Tests:
+
+# words where several phonological rules interact
+
+  Nouns:
+    idu+N+Sg+Nom: idu
+    idu+N+Sg+Gen: [eo, idu]
+    ligu+N+Sg+Nom: ligu
+    ligu+N+Sg+Gen: leo
+    ligu+N+Sg+Ill: likku
+    riie+N+Sg+Nom: riie
+    riie+N+Sg+Gen: riide
+    saag+N+Sg+Nom: saag
+    saag+N+Sg+Gen: sae
+    viga+N+Sg+Nom: viga
+    viga+N+Sg+Gen: vea
+    viga+N+Pl+Par: vigu
+    pood+N+Sg+Nom: pood
+    pood+N+Sg+Gen: poe
+    pood+N+Pl+Par: poode
+
+    sai+N+Sg+Nom: sai
+    sai+N+Sg+Gen: saia
+    sai+N+Sg+Par: saia
+    sai+N+Pl+Par: saiu
+
+    foto+N+Sg+Nom: foto
+    foto+N+Sg+Par: fotot
+    foto+N+Sg+Ill: fotosse
+    foto+N+Pl+Par: fotosid
+
+    Saku+N+Prop+Sg+Nom: Saku
+    Saku+N+Prop+Sg+Par: Sakut
+    Saku+N+Prop+Sg+Ill: Sakku
+    Saku+N+Prop+Sg+Ill+Use/Rare: Sakusse
+    Saku+N+Prop+Pl+Par: Sakusid
+
+    Rõngu+N+Prop+Sg+Nom: Rõngu
+    Rõngu+N+Prop+Sg+Par: Rõngut
+    Rõngu+N+Prop+Sg+Ill: Rõngu
+    Rõngu+N+Prop+Sg+Ill+Use/Rare: Rõngusse
+    Rõngu+N+Prop+Pl+Par: Rõngusid
+

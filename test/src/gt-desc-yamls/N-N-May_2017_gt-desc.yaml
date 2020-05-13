@@ -1,0 +1,145 @@
+Config:
+  hfst:
+      ../../../src/generator-gt-norm.hfstol: Gen
+      ../../../src/analyser-gt-norm.hfstol: Morph
+  xerox:
+      ../../../src/generator-gt-norm.xfst: Gen
+      ../../../src/analyser-gt-norm.xfst: Morph
+      lookup: App
+
+Tests:
+
+# generated in May 2017 while converting Filosoft lexicon to 2-level formalism
+# these words were part of the test cases, checked manually
+
+  Nouns:
+    kihin-kahin+N+Pl+Ine+Foc/gi+Use/Rare: [kihinais-kahinaiski, kihinais-kahinateski, kihinates-kahinaiski]
+    kihin-kahin+N+Pl+Ine+Use/Rare: [kihinais-kahinais, kihinais-kahinates, kihinates-kahinais]
+    kihin-kahin+N+Pl+Ill+Foc/gi+Use/Rare: [kihinaisse-kahinaissegi, kihinaisse-kahinatessegi, kihinatesse-kahinaissegi]
+    kihin-kahin+N+Pl+Ill+Use/Rare: [kihinaisse-kahinaisse, kihinaisse-kahinatesse, kihinatesse-kahinaisse]
+    kihin-kahin+N+Pl+Ela+Foc/gi+Use/Rare: [kihinaist-kahinaistki, kihinaist-kahinatestki, kihinatest-kahinaistki]
+    kihin-kahin+N+Pl+Ela+Use/Rare: [kihinaist-kahinaist, kihinaist-kahinatest, kihinatest-kahinaist]
+    kihin-kahin+N+Pl+Tra+Foc/gi+Use/Rare: [kihinaiks-kahinaikski, kihinaiks-kahinatekski, kihinateks-kahinaikski]
+    kihin-kahin+N+Pl+Tra+Use/Rare: [kihinaiks-kahinaiks, kihinaiks-kahinateks, kihinateks-kahinaiks]
+    kihin-kahin+N+Pl+Ade+Foc/gi+Use/Rare: [kihinail-kahinailgi, kihinail-kahinatelgi, kihinatel-kahinailgi]
+    kihin-kahin+N+Pl+Ade+Use/Rare: [kihinail-kahinail, kihinail-kahinatel, kihinatel-kahinail]
+    kihin-kahin+N+Pl+Abl+Foc/gi+Use/Rare: [kihinailt-kahinailtki, kihinailt-kahinateltki, kihinatelt-kahinailtki]
+    kihin-kahin+N+Pl+Abl+Use/Rare: [kihinailt-kahinailt, kihinailt-kahinatelt, kihinatelt-kahinailt]
+    kihin-kahin+N+Pl+All+Foc/gi+Use/Rare: [kihinaile-kahinailegi, kihinaile-kahinatelegi, kihinatele-kahinailegi]
+    kihin-kahin+N+Pl+All+Use/Rare: [kihinaile-kahinaile, kihinaile-kahinatele, kihinatele-kahinaile]
+    kihin-kahin+N+Pl+Par: kihinaid-kahinaid
+    kihin-kahin+N+Pl+Par+Foc/gi: kihinaid-kahinaidki
+    kihin-kahin+N+Sg+Ine: kihinas-kahinas
+    kihin-kahin+N+Sg+Ine+Foc/gi: kihinas-kahinaski
+    kihin-kahin+N+Sg+Ill: kihinasse-kahinasse
+    kihin-kahin+N+Sg+Ill+Foc/gi: kihinasse-kahinassegi
+    kihin-kahin+N+Sg+Ela: kihinast-kahinast
+    kihin-kahin+N+Sg+Ela+Foc/gi: kihinast-kahinastki
+    kihin-kahin+N+Pl+Nom: kihinad-kahinad
+    kihin-kahin+N+Pl+Nom+Foc/gi: kihinad-kahinadki
+    kihin-kahin+N+Sg+Tra: kihinaks-kahinaks
+    kihin-kahin+N+Sg+Tra+Foc/gi: kihinaks-kahinakski
+    kihin-kahin+N+Sg+Ade: kihinal-kahinal
+    kihin-kahin+N+Sg+Ade+Foc/gi: kihinal-kahinalgi
+    kihin-kahin+N+Sg+Abl: kihinalt-kahinalt
+    kihin-kahin+N+Sg+Abl+Foc/gi: kihinalt-kahinaltki
+    kihin-kahin+N+Sg+All: kihinale-kahinale
+    kihin-kahin+N+Sg+All+Foc/gi: kihinale-kahinalegi
+    kihin-kahin+N+Sg+Par: kihinat-kahinat
+    kihin-kahin+N+Sg+Par+Foc/gi: kihinat-kahinatki
+    kihin-kahin+N+Pl+Ine: kihinates-kahinates
+    kihin-kahin+N+Pl+Ine+Foc/gi: kihinates-kahinateski
+    kihin-kahin+N+Pl+Ill: kihinatesse-kahinatesse
+    kihin-kahin+N+Pl+Ill+Foc/gi: kihinatesse-kahinatessegi
+    kihin-kahin+N+Pl+Ela: kihinatest-kahinatest
+    kihin-kahin+N+Pl+Ela+Foc/gi: kihinatest-kahinatestki
+    kihin-kahin+N+Pl+Tra: kihinateks-kahinateks
+    kihin-kahin+N+Pl+Tra+Foc/gi: kihinateks-kahinatekski
+    kihin-kahin+N+Pl+Ade: kihinatel-kahinatel
+    kihin-kahin+N+Pl+Ade+Foc/gi: kihinatel-kahinatelgi
+    kihin-kahin+N+Pl+Abl: kihinatelt-kahinatelt
+    kihin-kahin+N+Pl+Abl+Foc/gi: kihinatelt-kahinateltki
+    kihin-kahin+N+Pl+All: kihinatele-kahinatele
+    kihin-kahin+N+Pl+All+Foc/gi: kihinatele-kahinatelegi
+    kihin-kahin+N+Pl+Abe: kihinate-kahinateta
+    kihin-kahin+N+Pl+Abe+Foc/gi: kihinate-kahinatetagi
+    kihin-kahin+N+Pl+Com: kihinate-kahinatega
+    kihin-kahin+N+Pl+Com+Foc/gi: kihinate-kahinategagi
+    kihin-kahin+N+Pl+Ess: kihinate-kahinatena
+    kihin-kahin+N+Pl+Ess+Foc/gi: kihinate-kahinatenagi
+    kihin-kahin+N+Pl+Trm: kihinate-kahinateni
+    kihin-kahin+N+Pl+Trm+Foc/gi: kihinate-kahinatenigi
+    kihin-kahin+N+Pl+Gen: kihinate-kahinate
+    kihin-kahin+N+Pl+Gen+Foc/gi: kihinate-kahinategi
+    kihin-kahin+N+Sg+Abe: kihina-kahinata
+    kihin-kahin+N+Sg+Abe+Foc/gi: kihina-kahinatagi
+    kihin-kahin+N+Sg+Com: kihina-kahinaga
+    kihin-kahin+N+Sg+Com+Foc/gi: kihina-kahinagagi
+    kihin-kahin+N+Sg+Ess: kihina-kahinana
+    kihin-kahin+N+Sg+Ess+Foc/gi: kihina-kahinanagi
+    kihin-kahin+N+Sg+Trm: kihina-kahinani
+    kihin-kahin+N+Sg+Trm+Foc/gi: kihina-kahinanigi
+    kihin-kahin+N+Sg+Gen: kihina-kahina
+    kihin-kahin+N+Sg+Gen+Foc/gi: kihina-kahinagi
+    kihin-kahin+N+Sg+Nom: kihin-kahin
+    kihin-kahin+N+Sg+Nom+Foc/gi: kihin-kahingi
+    emb-kumb+Pron+Pl+Par: embasid-kumbasid
+    emb-kumb+Pron+Pl+Par+Foc/gi: embasid-kumbasidki
+    emb-kumb+Pron+Pl+Ine: embades-kumbades
+    emb-kumb+Pron+Pl+Ine+Foc/gi: embades-kumbadeski
+    emb-kumb+Pron+Pl+Ill: embadesse-kumbadesse
+    emb-kumb+Pron+Pl+Ill+Foc/gi: embadesse-kumbadessegi
+    emb-kumb+Pron+Pl+Ela: embadest-kumbadest
+    emb-kumb+Pron+Pl+Ela+Foc/gi: embadest-kumbadestki
+    emb-kumb+Pron+Pl+Tra: embadeks-kumbadeks
+    emb-kumb+Pron+Pl+Tra+Foc/gi: embadeks-kumbadekski
+    emb-kumb+Pron+Pl+Ade: embadel-kumbadel
+    emb-kumb+Pron+Pl+Ade+Foc/gi: embadel-kumbadelgi
+    emb-kumb+Pron+Pl+Abl: embadelt-kumbadelt
+    emb-kumb+Pron+Pl+Abl+Foc/gi: embadelt-kumbadeltki
+    emb-kumb+Pron+Pl+All: embadele-kumbadele
+    emb-kumb+Pron+Pl+All+Foc/gi: embadele-kumbadelegi
+    emb-kumb+Pron+Pl+Abe: embade-kumbadeta
+    emb-kumb+Pron+Pl+Abe+Foc/gi: embade-kumbadetagi
+    emb-kumb+Pron+Pl+Com: embade-kumbadega
+    emb-kumb+Pron+Pl+Com+Foc/gi: embade-kumbadegagi
+    emb-kumb+Pron+Pl+Ess: embade-kumbadena
+    emb-kumb+Pron+Pl+Ess+Foc/gi: embade-kumbadenagi
+    emb-kumb+Pron+Pl+Trm: embade-kumbadeni
+    emb-kumb+Pron+Pl+Trm+Foc/gi: embade-kumbadenigi
+    emb-kumb+Pron+Pl+Gen: embade-kumbade
+    emb-kumb+Pron+Pl+Gen+Foc/gi: embade-kumbadegi
+    emb-kumb+Pron+Sg+Par: emba-kumba
+    emb-kumb+Pron+Sg+Par+Foc/gi: emba-kumbagi
+    emb-kumb+Pron+Sg+Ill: emba-kumba
+    emb-kumb+Pron+Sg+Ill+Foc/gi: emba-kumbagi
+    emb-kumb+Pron+Sg+Nom: emb-kumb
+    emb-kumb+Pron+Sg+Nom+Foc/gi: emb-kumbki
+    emb-kumb+Pron+Pl+Par+Foc/gi+Use/Rare: [embi-kumbasidki, embi-kumbigi, embasid-kumbigi]
+    emb-kumb+Pron+Pl+Par+Use/Rare: [embi-kumbasid, embi-kumbi, embasid-kumbi]
+    emb-kumb+Pron+Sg+Ine: emmas-kummas
+    emb-kumb+Pron+Sg+Ine+Foc/gi: emmas-kummaski
+    emb-kumb+Pron+Sg+Ill+Foc/gi+Use/Hyp: [emmasse-kummassegi, emmasse-kumbagi, emba-kummassegi]
+    emb-kumb+Pron+Sg+Ill+Use/Hyp: [emmasse-kummasse, emmasse-kumba, emba-kummasse]
+    emb-kumb+Pron+Sg+Ela: emmast-kummast
+    emb-kumb+Pron+Sg+Ela+Foc/gi: emmast-kummastki
+    emb-kumb+Pron+Pl+Nom: emmad-kummad
+    emb-kumb+Pron+Pl+Nom+Foc/gi: emmad-kummadki
+    emb-kumb+Pron+Sg+Tra: emmaks-kummaks
+    emb-kumb+Pron+Sg+Tra+Foc/gi: emmaks-kummakski
+    emb-kumb+Pron+Sg+Ade: emmal-kummal
+    emb-kumb+Pron+Sg+Ade+Foc/gi: emmal-kummalgi
+    emb-kumb+Pron+Sg+Abl: emmalt-kummalt
+    emb-kumb+Pron+Sg+Abl+Foc/gi: emmalt-kummaltki
+    emb-kumb+Pron+Sg+All: emmale-kummale
+    emb-kumb+Pron+Sg+All+Foc/gi: emmale-kummalegi
+    emb-kumb+Pron+Sg+Abe: emma-kummata
+    emb-kumb+Pron+Sg+Abe+Foc/gi: emma-kummatagi
+    emb-kumb+Pron+Sg+Com: emma-kummaga
+    emb-kumb+Pron+Sg+Com+Foc/gi: emma-kummagagi
+    emb-kumb+Pron+Sg+Ess: emma-kummana
+    emb-kumb+Pron+Sg+Ess+Foc/gi: emma-kummanagi
+    emb-kumb+Pron+Sg+Trm: emma-kummani
+    emb-kumb+Pron+Sg+Trm+Foc/gi: emma-kummanigi
+    emb-kumb+Pron+Sg+Gen: emma-kumma
+    emb-kumb+Pron+Sg+Gen+Foc/gi: emma-kummagi

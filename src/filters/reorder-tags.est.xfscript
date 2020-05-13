@@ -1,0 +1,39 @@
+# move (usage-related) tags to the right end, and 
+# if there are more than one, keep the most informative one
+# moving algorithm from Karttunen, Beesley "2-level rule compiler" 4.3 (via Mans Hulden via Francis Tyers) 
+
+define RTag [ "+Use/Rare" ] ;          # norm, but rare 
+define HTag [ "+Use/Hyp" ] ;           # norm, but so rare that norm is probaly wrong
+define NTag [ "+Use/NotNorm" ] ;       # not norm, but sometimes used
+define CTag [ "+Use/CommonNotNorm" ] ; # not norm, and used more than norm
+define ETag [ "+Emph" ] ;              # emphasized form (mina, sina, tema, meie, teie, nemad) 
+
+define MoveR [  [..] -> RTag || RTag ?* _ .#. .o. RTag -> 0 || _ ?* RTag .#. ];
+define MoveH [  [..] -> HTag || HTag ?* _ .#. .o. HTag -> 0 || _ ?* HTag .#. ];
+define MoveN [  [..] -> NTag || NTag ?* _ .#. .o. NTag -> 0 || _ ?* NTag .#. ];
+define MoveC [  [..] -> CTag || CTag ?* _ .#. .o. CTag -> 0 || _ ?* CTag .#. ];
+define MoveE [  [..] -> ETag || ETag ?* _ .#. .o. ETag -> 0 || _ ?* ETag .#. ];
+
+# move usage-related tag to the right end of the word
+define MoveFirstTag [MoveR .o. MoveH .o. MoveN .o. MoveC] ;
+# ... and the Emph tag to the end...
+define MoveTag [MoveFirstTag .o. MoveE] ;
+
+# if 2 usage-related tags are adjacent, remove one (preferably the less informative one)
+# the order of the tags is determined by the order in MoveFirstTag:
+# RTag HTag NTag CTag ETag
+# two similar tags never co-occur (because MoveFirstTag deletes one of them)
+
+define RemRTag RTag -> 0 || _ [HTag | NTag | CTag] ; # 
+define RemHTag HTag -> 0 || _ [NTag | CTag]  ; # 
+define RemNTag NTag -> 0 || _ [CTag] ; # 
+
+
+define RemTag [RemRTag .o. RemHTag .o. RemNTag] ; 
+
+regex  [MoveTag .o. RemTag].i ;
+
+# this script is also applicable to wordpairs with inflecting parts (emb-kumb, kihin-kahin) that 
+# get usage-related tags initially for both words;
+# but only one tag should be left in the end.
+

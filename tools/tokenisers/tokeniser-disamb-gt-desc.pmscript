@@ -89,8 +89,14 @@ Define urlword          url                          LC([blank | #]) RC([blank |
 !! 1) unknown word-like forms, and
 !! 2) unmatched strings
 !! We want to give 1) a match, but let 2) be treated specially by hfst-tokenise -a
-Define alphabet "a-z"
-               |"A-Z"
+
+Define Letter  a | b | c | d | e | f | g | h | i | j | k
+             | l | m | n | o | p | q | r | s | t | u | v
+             | w | x | y | z | A | B | C | D | E | F | G
+             | H | I | J | K | L | M | N | O | P | Q | R
+             | S | T | U | V | W | X | Y | Z ;
+
+Define alphabet Letter
                |{à}|{á}|{â}|{ã}|{ā}|{ă}|{ȧ}|{ä}|{ả}|{å}|{ǎ}|{ȁ}|{ȃ}|{ą}|{ạ}|{ḁ}
                |{æ}|{ǽ}|{ǣ}|{è}|{é}|{ê}|{ẽ}|{ē}|{ĕ}|{ė}|{ë}|{ẻ}|{ě}|{ȅ}|{ȇ}|{ẹ}
                |{ȩ}|{ę}|{ḙ}|{ḛ}|{ì}|{í}|{î}|{ĩ}|{ī}|{ī}|{ĭ}|{i̇}|{ï}|{ỉ}|{ǐ}|{ị}
@@ -118,6 +124,8 @@ Define alphaword alphabet+ ( alphamiddle alphabet+ );
 ! Define MixCase(X) [OptCap(X) | UpCase(X)];
 ! Define alphaword MixCase(alphabet+);
 
+Define halfword alphaword [{/}|{-}] morphology ;
+Define wordword [morphology [{/}|{-}]]+ morphology ;
 
 !!! Unknown handling:
 Define unknownform [alphaword].u ;
@@ -139,6 +147,6 @@ Define unknownwordEmpty unknownform:0 LC([blank | #]) RC([[blank ] | # ]);
 !! Needs hfst-tokenise to output things differently depending on the tag they get
 
 
-Define token [ morphoword | unknownwordEmpty | incondword | Ins(urlword) ] EndTag(token);
+Define token [ morphoword | wordword | halfword | unknownwordEmpty | incondword | Ins(urlword) ] EndTag(token);
 
 regex token ;

@@ -1,13 +1,10 @@
-\:esne:\:sne	-5
-'esne:\:sne	-5
--esne:\:sne	-5
+si:seid	30
+si:sid	30
+seid:si	30
+seid:sid	30
+sid:si	30
+sid:seid	30
 
-\:en:\:n	-5
-'n:\:n	-5
--n:\:n	-5
-
-esnie:esne	-5
-ese:asse	-5
-htasse:htse	-5
-htse:htese	-5
-htse:hts	-1
+ikuid:ikke	30
+teid:te	30
+uim:em	30

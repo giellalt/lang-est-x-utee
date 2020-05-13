@@ -1,0 +1,245 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+  Verb - olema: # Verb 'to be' - full paradigm
+     # according to Eesti keele käsiraamat
+     # http://www.eki.ee/books/ekk09/
+     # -----------------------------------------
+     # indicative mood
+     # present tense
+     #
+     olema+V+Ind+Prs+Sg1: olen
+     olema+V+Ind+Prs+Sg2: oled
+     olema+V+Ind+Prs+Sg3: 'on'
+     olema+V+Ind+Prs+Pl1: oleme
+     olema+V+Ind+Prs+Pl2: olete
+     olema+V+Ind+Prs+Pl3: 'on'
+     olema+V+Ind+Prs+4: ollakse
+     olema+V+Ind+Prs+Sg1+ConNeg: ole
+     olema+V+Ind+Prs+Sg2+ConNeg: ole
+     olema+V+Ind+Prs+Sg3+ConNeg: ole
+     olema+V+Ind+Prs+Pl1+ConNeg: ole
+     olema+V+Ind+Prs+Pl2+ConNeg: ole
+     olema+V+Ind+Prs+Pl3+ConNeg: ole
+     olema+V+Ind+Prs+4+ConNeg: olda
+     olema+V+Ind+Prs+Sg1+Neg: pole
+     olema+V+Ind+Prs+Sg2+Neg: pole
+     olema+V+Ind+Prs+Sg3+Neg: pole
+     olema+V+Ind+Prs+Pl1+Neg: pole
+     olema+V+Ind+Prs+Pl2+Neg: pole
+     olema+V+Ind+Prs+Pl3+Neg: pole
+     olema+V+Ind+Prs+4+Neg: polda
+     # indicative mood
+     # past tense
+     #
+     olema+V+Ind+Prt+Sg1: olin
+     olema+V+Ind+Prt+Sg2: olid
+     olema+V+Ind+Prt+Sg3: oli
+     olema+V+Ind+Prt+Pl1: olime
+     olema+V+Ind+Prt+Pl2: olite
+     olema+V+Ind+Prt+Pl3: olid
+     olema+V+Ind+Prt+4: oldi
+     olema+V+Ind+Prt+Sg1+ConNeg: olnud
+     olema+V+Ind+Prt+Sg2+ConNeg: olnud
+     olema+V+Ind+Prt+Sg3+ConNeg: olnud
+     olema+V+Ind+Prt+Pl1+ConNeg: olnud
+     olema+V+Ind+Prt+Pl2+ConNeg: olnud
+     olema+V+Ind+Prt+Pl3+ConNeg: olnud
+     olema+V+Ind+Prt+4+ConNeg: oldud
+     olema+V+Ind+Prt+Sg1+Neg: polnud
+     olema+V+Ind+Prt+Sg2+Neg: polnud
+     olema+V+Ind+Prt+Sg3+Neg: polnud
+     olema+V+Ind+Prt+Pl1+Neg: polnud
+     olema+V+Ind+Prt+Pl2+Neg: polnud
+     olema+V+Ind+Prt+Pl3+Neg: polnud
+     olema+V+Ind+Prt+4+Neg: poldud
+     # conditional mood
+     # present tense
+     #
+     olema+V+Cond+Prs+Sg1: oleksin
+     olema+V+Cond+Prs+Sg2: oleksid
+     olema+V+Cond+Prs+Sg3: oleks
+     olema+V+Cond+Prs+Pl1: oleksime
+     olema+V+Cond+Prs+Pl2: oleksite
+     olema+V+Cond+Prs+Pl3: oleksid
+     olema+V+Cond+Prs+4: oldaks
+     olema+V+Cond+Prs+Sg1+ConNeg: oleks
+     olema+V+Cond+Prs+Sg2+ConNeg: oleks
+     olema+V+Cond+Prs+Sg3+ConNeg: oleks
+     olema+V+Cond+Prs+Pl1+ConNeg: oleks
+     olema+V+Cond+Prs+Pl2+ConNeg: oleks
+     olema+V+Cond+Prs+Pl3+ConNeg: oleks
+     olema+V+Cond+Prs+4+ConNeg: oldaks
+     olema+V+Cond+Prs+Sg1+Neg: poleks
+     olema+V+Cond+Prs+Sg2+Neg: poleks
+     olema+V+Cond+Prs+Sg3+Neg: poleks
+     olema+V+Cond+Prs+Pl1+Neg: poleks
+     olema+V+Cond+Prs+Pl2+Neg: poleks
+     olema+V+Cond+Prs+Pl3+Neg: poleks
+     olema+V+Cond+Prs+4+Neg: poldaks
+     # conditional mood
+     # past tense
+     #
+     olema+V+Cond+Prt+Sg1: olnuksin
+     olema+V+Cond+Prt+Sg2: olnuksid
+     olema+V+Cond+Prt+Sg3: olnuks
+     olema+V+Cond+Prt+Pl1: olnuksime
+     olema+V+Cond+Prt+Pl2: olnuksite
+     olema+V+Cond+Prt+Pl3: olnuksid
+     olema+V+Cond+Prt+4: olduks
+     olema+V+Cond+Prt+Sg1+ConNeg: olnuks
+     olema+V+Cond+Prt+Sg2+ConNeg: olnuks
+     olema+V+Cond+Prt+Sg3+ConNeg: olnuks
+     olema+V+Cond+Prt+Pl1+ConNeg: olnuks
+     olema+V+Cond+Prt+Pl2+ConNeg: olnuks
+     olema+V+Cond+Prt+Pl3+ConNeg: olnuks
+     olema+V+Cond+Prt+4+ConNeg: olduks
+     # imperative mood
+     #
+     olema+V+Imprt+Sg2: ole
+     olema+V+Imprt+Sg3: olgu
+     olema+V+Imprt+Pl1: olgem
+     olema+V+Imprt+Pl2: olge
+     olema+V+Imprt+Pl3: olgu
+     olema+V+Imprt+4: oldagu
+     olema+V+Imprt+Sg2+ConNeg: ole
+     olema+V+Imprt+Sg3+ConNeg: olgu
+     olema+V+Imprt+Pl1+ConNeg: olgem
+     olema+V+Imprt+Pl2+ConNeg: olge
+     olema+V+Imprt+Pl3+ConNeg: olgu
+     olema+V+Imprt+4+ConNeg: oldagu
+     olema+V+Imprt+Sg2+Neg: pole
+     olema+V+Imprt+Sg3+Neg: polgu
+     olema+V+Imprt+Pl1+Neg: polgem
+     olema+V+Imprt+Pl2+Neg: polge
+     olema+V+Imprt+Pl3+Neg: polgu
+     olema+V+Imprt+4+Neg: poldagu
+     # oblique mood (quotative)
+     # present tense
+     #
+     olema+V+Quo+Prs+Sg1: olevat
+     olema+V+Quo+Prs+Sg2: olevat
+     olema+V+Quo+Prs+Sg3: olevat
+     olema+V+Quo+Prs+Pl1: olevat
+     olema+V+Quo+Prs+Pl2: olevat
+     olema+V+Quo+Prs+Pl3: olevat
+     olema+V+Quo+Prs+4: oldavat
+     olema+V+Quo+Prs+Sg1+ConNeg: olevat
+     olema+V+Quo+Prs+Sg2+ConNeg: olevat
+     olema+V+Quo+Prs+Sg3+ConNeg: olevat
+     olema+V+Quo+Prs+Pl1+ConNeg: olevat
+     olema+V+Quo+Prs+Pl2+ConNeg: olevat
+     olema+V+Quo+Prs+Pl3+ConNeg: olevat
+     olema+V+Quo+Prs+4+ConNeg: oldavat
+     olema+V+Quo+Prs+Sg1+Neg: polevat
+     olema+V+Quo+Prs+Sg2+Neg: polevat
+     olema+V+Quo+Prs+Sg3+Neg: polevat
+     olema+V+Quo+Prs+Pl1+Neg: polevat
+     olema+V+Quo+Prs+Pl2+Neg: polevat
+     olema+V+Quo+Prs+Pl3+Neg: polevat
+     olema+V+Quo+Prs+4+Neg: poldavat
+     # oblique mood (quotative)
+     # past tense
+     #
+     olema+V+Quo+Prt+Sg1: olnuvat
+     olema+V+Quo+Prt+Sg2: olnuvat
+     olema+V+Quo+Prt+Sg3: olnuvat
+     olema+V+Quo+Prt+Pl1: olnuvat
+     olema+V+Quo+Prt+Pl2: olnuvat
+     olema+V+Quo+Prt+Pl3: olnuvat
+     olema+V+Quo+Prt+4: oldanuvat
+     olema+V+Quo+Prt+Sg1+ConNeg: olnuvat
+     olema+V+Quo+Prt+Sg2+ConNeg: olnuvat
+     olema+V+Quo+Prt+Sg3+ConNeg: olnuvat
+     olema+V+Quo+Prt+Pl1+ConNeg: olnuvat
+     olema+V+Quo+Prt+Pl2+ConNeg: olnuvat
+     olema+V+Quo+Prt+Pl3+ConNeg: olnuvat
+     olema+V+Quo+Prt+4+ConNeg: oldanuvat
+     olema+V+Quo+Prt+Sg1+Neg: polnuvat
+     olema+V+Quo+Prt+Sg2+Neg: polnuvat
+     olema+V+Quo+Prt+Sg3+Neg: polnuvat
+     olema+V+Quo+Prt+Pl1+Neg: polnuvat
+     olema+V+Quo+Prt+Pl2+Neg: polnuvat
+     olema+V+Quo+Prt+Pl3+Neg: polnuvat
+     olema+V+Quo+Prt+4+Neg: poldanuvat
+     # jussive mood
+     # present tense
+     #
+     olema+V+Jus+Prs+Sg1: olgu
+     olema+V+Jus+Prs+Sg2: olgu
+     olema+V+Jus+Prs+Sg3: olgu
+     olema+V+Jus+Prs+Pl1: olgu
+     olema+V+Jus+Prs+Pl2: olgu
+     olema+V+Jus+Prs+Pl3: olgu
+     olema+V+Jus+Prs+4: oldagu
+     olema+V+Jus+Prs+Sg1+ConNeg: olgu
+     olema+V+Jus+Prs+Sg2+ConNeg: olgu
+     olema+V+Jus+Prs+Sg3+ConNeg: olgu
+     olema+V+Jus+Prs+Pl1+ConNeg: olgu
+     olema+V+Jus+Prs+Pl2+ConNeg: olgu
+     olema+V+Jus+Prs+Pl3+ConNeg: olgu
+     olema+V+Jus+Prs+4+ConNeg: oldagu
+     # jussive mood
+     # past tense
+     #
+     olema+V+Jus+Prt+Sg1: olnud
+     olema+V+Jus+Prt+Sg2: olnud
+     olema+V+Jus+Prt+Sg3: olnud
+     olema+V+Jus+Prt+Pl1: olnud
+     olema+V+Jus+Prt+Pl2: olnud
+     olema+V+Jus+Prt+Pl3: olnud
+     olema+V+Jus+Prt+4: oldud
+     olema+V+Jus+Prt+Sg1+ConNeg: olnud
+     olema+V+Jus+Prt+Sg2+ConNeg: olnud
+     olema+V+Jus+Prt+Sg3+ConNeg: olnud
+     olema+V+Jus+Prt+Pl1+ConNeg: olnud
+     olema+V+Jus+Prt+Pl2+ConNeg: olnud
+     olema+V+Jus+Prt+Pl3+ConNeg: olnud
+     olema+V+Jus+Prt+4+ConNeg: oldud
+     olema+V+Jus+Prt+Sg1+Neg: polnud
+     olema+V+Jus+Prt+Sg2+Neg: polnud
+     olema+V+Jus+Prt+Sg3+Neg: polnud
+     olema+V+Jus+Prt+Pl1+Neg: polnud
+     olema+V+Jus+Prt+Pl2+Neg: polnud
+     olema+V+Jus+Prt+Pl3+Neg: polnud
+     olema+V+Jus+Prt+4+Neg: poldud
+     #
+     # Infinitive
+     #
+     olema+V+Inf: olla
+     #
+     # Supine
+     #
+     olema+V+Sup: olema
+     olema+V+Sup+Ill: olema
+     olema+V+Sup+Ine: olemas
+     olema+V+Sup+Ela: olemast
+     olema+V+Sup+Tra: olemaks
+     olema+V+Sup+VAbess: olemata
+     # ? olema+V+Sup+4: oldama     
+     #
+     # Participle
+     #
+     olema+V+PrsPrc: olev
+     olema+V+PrsPrc+4: oldav
+     olema+V+PrfPrc: olnud
+     olema+V+PrfPrc+4: oldud
+     #
+     # Gerund
+     #
+     olema+V+Ger: olles
+
+
+# The verb forms list should be complete now

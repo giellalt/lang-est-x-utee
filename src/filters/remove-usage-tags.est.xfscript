@@ -1,0 +1,25 @@
+# remove:
+#  usage tags from certain words
+
+# list here all the words you want to be without usage tags
+define words [[ {talv} "+N" "+Pl" "+Par"] | 
+              [ {lauk} "+N" "+Pl" "+Par"] ] ;
+
+# possible tags:
+define RTag [ "+Use/Rare" ] ;       # norm, but rare 
+define HTag [ "+Use/Hyp" ] ;         # norm, but so rare that norm is probaly wrong
+define NTag [ "+Use/NotNorm" ] ; # not norm, but sometimes used
+define CNTag [ "+Use/CommonNotNorm" ] ; # not norm, and used more than norm
+
+define UTag [ RTag | HTag | NTag | CNTag | ETag ] ; # usage-related tag
+
+define DelUTag UTag -> 0  ;    # delete tag
+
+# make sure only word-final components are considered
+define WB [ "#" ] ;
+define oldwords [ words [\WB]* UTag [\WB]* ] ;
+
+define otherwords ~oldwords ;
+
+regex [otherwords | [oldwords .o. DelUTag]].i ;
+

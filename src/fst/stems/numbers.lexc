@@ -1,0 +1,41 @@
+
+
+LEXICON CardinalNumbersSingle       ! may only exist as a single token
+  < Number > CardinalWithStandardEnding ;
+  < Number > CardinalWithOrdinalEnding ;
+  < Number > CardinalWithFractionEnding ;
+  < PercentNum > CardinalWithStandardEnding ;
+
+LEXICON CardinalNumbersInComp       ! must be followed by a word (in compounds)
+  < Number > CardinalNoEnd ;
+
+LEXICON CardinalNoEnd
+             +Num+Card:- # ;
+
+LEXICON CardinalWithStandardEnding
+
+             +Num+Card: # ;
+          +Num+Card+Sg: ALL_SEM_CASES ;
+          +Num+Card+Sg:- ALL_SEM_CASES ;
+             +Num+Card: LINE_DERIVATION ;
+             +Num+Card:- LINE_DERIVATION ;
+
+LEXICON CardinalWithOrdinalEnding
+
+             +Num+Ord:nda 2C ;
+             +Num+Ord:-nda 2C ;
+
+LEXICON CardinalWithFractionEnding
+
+             ndik NDIK ;
+             -ndik NDIK ;
+
+LEXICON NDIK
+             +Num+Card: ELANIK ;
+
+LEXICON OrdinalNumbers
+  < OrdinalNum > OrdinalNoEnd ;
+
+LEXICON OrdinalNoEnd
+              +Num+Ord: # ;
+

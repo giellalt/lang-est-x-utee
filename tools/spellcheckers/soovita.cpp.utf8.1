@@ -1,0 +1,651 @@
+/*
+* soovitaja
+* konstrueerib sona alusel stringe, mille korrektsust siis sonastikust
+* chkmin() abil kontrollitakse; kui mo~ni on korrektne so~na, siis
+* pannakse ta SugAhel -sse
+* kogu protsess ka"ib ja"rgmiselt:
+* 1. korda soovitaja poole po"o"rdudes po"o"rdutakse SugFirst() poole;
+* ja"rgmistel kordadel SugNext() poole
+* kui SugAhel == NULL, siis s.t. sobivaid soovitusi pole
+*/
+/*
+#include <string.h>
+#include <stdio.h>
+#include <fcntl.h>
+#include <stdlib.h>
+
+#include "ini_mrf.h"
+#include "soovita.h"
+#include "morf.h"
+#include "chup.h"
+#include "mrflags.h"
+
+extern MRF_FLAGS mrfFlags;
+
+char InsertCharsBeg[]="kpstvlmrahnejioü""dfubõg"; // <=0.37: äšöžz //
+char InsertChars[]="aeistlunkmodrvghjpäõ""büö"; // <= 0.12: fšžcwy //
+char EstAlphas[]="abcdefghijklmnopqrsšzžtuvwõäöüxy";
+
+struct _ChangeArray{
+	char from;
+	char *to;
+}CA[]={	// kujult, ling, klaviatuurilt //
+	{'a',		"ä"		"e"				"s"},
+	{'b',		""			"p"				"nvgh"},
+	{'c',		""			""				"dv"},
+	{'d',		""			"t"				"esr"},
+	{'e',		""			"a"				"sdr"},
+	{'f',		""			""				"tdrvg"},
+	{'g',		""			"kjž"		"tvhb"},
+	{'h',		""			""				"ungjb"},
+	{'i',		""			"j"				"uko"},
+	{'j',		""			"igž"		"unkmh"},
+	{'k',		""			"g"				"ilmo"},
+	{'l',		""			""				"kopö"},
+	{'m',		""			""				"nkj"},
+	{'n',		""			""				"mhjb"},
+	{'o',		"öõ"	"u"				"ilkp"},
+	{'p',		""			"b"				"loüö"},
+	{'q',		""			""				"a"},
+	{'r',		""			""				"etd"},
+	{'s',		"š"		"z"				"aed"},
+	{'š',	"s"			"ž"			""},
+	{'z',		"ž"		"s"				"a"},
+	{'ž',	"z"			"š"			""},
+	{'t',		""			"d"				"rg"},
+	{'u',		"ü"		"o"				"ihj"},
+	{'v',		""			""				"gb"},
+	{'w',		""			""				"aes"},
+	{'õ',	"oö"		""				"äü"},
+	{'ä',	"a"			""				"õüö"},
+	{'ö',	"oõ"		""				"lpäü"},
+	{'ü',	"u"			""				"päõö"},
+	{'x',		""			""				"sd"},
+	{'y',		""			"ü"			"tugh"},
+	{'\xa2',	"õöo"	""				""},	// o`, o', o^ //
+	{'\x95',	"õöo"	""				""},
+	{'\xe4',	"õöo"	""				""},
+	{'\xa0',	"ä""a"	""				""},	// a`, a', a^ //
+	{'\x85',	"ä""a"	""				""},
+	{'\x83',	"ä""a"	""				""},
+	{'\xa3',	"üu"		""				""},	// u`, u', u^ //
+	{'\x97',	"üu"		""				""},
+	{'\x96',	"üu"		""				""},
+	{'\0',	EstAlphas},
+};
+
+struct _ChangeArrayStr{
+	char *from;
+	char *to;
+}CAStr[]={
+	{"sh",			"š"},
+	{"zh",			"ž"},
+	{"x",			"ks"},
+	{"f",			"hv"},
+	{"hv",			"f"},
+	{"ff",			"hv"},
+	{"mb",			"mm"},
+	{"ää",	"ea"},
+	{"g",			"dž"},
+	{"dž",		"g"},
+	{"j",			"dž"},
+	{"dž",		"j"},
+	{"data",		"tada"},
+	{"tada",		"data"},
+	{"o~",			"õ"},
+	{"a\"",			"ä"},
+	{"o\"",			"ö"},
+	{"u\"",			"ü"},
+	{"s^",			"š"},
+	{"z^",			"ž"},
+	{0,	0}
+};
+
+struct _ChangeArrayStr CAEStr[]={
+	{"si",			"seid"},
+	{"si",			"sid"},
+	{"seid",		"si"},
+	{"seid",		"sid"},
+	{"sid",			"si"},
+	{"sid",			"seid"},
+	{0,	0}
+};
+
+char //roomanr,// tasand, tagasitasand;
+
+SUG *SugAhel=0;             // soovituste ahel //
+
+// --------------------------------------------------------- //
+//#include <windows.h>//
+
+//#if defined (SPELLER)
+char IsInUDR(char *sisse);
+char IsInExcUDR(char *sisse);
+char *IsInChangeUDR(char *word);
+//#endif
+
+int SugGroupLevel(int Level){
+	switch (Level){
+		case 0:
+		case 1:
+		case 2:
+		case 3:
+			return 0;
+		case 4:
+		case 5:
+			return 1;
+		case 6:
+			return 2;
+		default:
+			return 3;
+	}
+}
+
+int SugUnGroupLevel(int Level){
+	switch (Level){
+		case 0:
+			return 3;
+		case 1:
+			return 5;
+		case 2:
+			return 6;
+		default:
+			return 100;
+	}
+}
+
+int SugSpell(char *word){	// =0 kui word on oige sona //
+	int nr;
+	char outstr2[STEMLEN*4];
+    int maxtasand, tagasi;
+
+    maxtasand = tasand;
+	if (strlen(word)<=1){
+		outstr2[0]=0;
+	}
+	else{
+		chkmin(word, 0, outstr2, &nr, maxtasand, &tagasi);
+        tagasitasand = tagasi;
+	}
+	if (outstr2[0])
+        {
+//#if defined(SPELLER)
+        if(mrfFlags.Chk(MF_SPELL) && !IsInExcUDR(word))
+//#endif
+		return 0;
+	    }
+//#if defined(SPELLER)
+    if(mrfFlags.Chk(MF_SPELL))
+        {
+	    tagasitasand=0;
+	    if (IsInUDR(word)) return 0;
+        }
+//#endif
+	return 1;
+}
+
+void SugAdd(char *word){
+	SUG *s, *s1;
+	char tasanduus;
+	s=(SUG *)malloc(sizeof(SUG));
+	strcpy(s->tyvi, word);
+	s->sug_next=0;
+	s->tasand=tagasitasand;
+	if (!SugAhel){
+		SugAhel=s;
+		s->sug_prev=0;
+	}
+	else{
+		for (s1=SugAhel; s1->sug_next; s1=s1->sug_next);
+		s1->sug_next=s;
+		s->sug_prev=s1;
+	}
+	tasanduus=SugUnGroupLevel(SugGroupLevel(tagasitasand));
+	if (tasanduus<tasand) tasand=tasanduus;
+}
+
+int SugCheck(char *word){	// =1 kui word lisati ahelasse //
+	int UpRes;
+	char tasand1;
+	word[0]=ChToUpper(word[0]);
+	UpRes=SugSpell(word);
+	tasand1=tagasitasand;
+	word[0]=ChToLower(word[0]);
+	if (UpRes==0){
+		if (!SugSpell(word)){
+			SugAdd(word);
+			return 1;
+		}
+		else{
+			word[0]=ChToUpper(word[0]);
+			tagasitasand=tasand1;
+			SugAdd(word);
+			word[0]=ChToLower(word[0]);
+			return 1;
+		}
+	}
+	return 0;
+}
+
+int SugCheck2(char *word){	// =1 kui word lisati ahelasse //
+	int UpRes1, UpRes2;
+	char tasand1;
+	char *ch;
+	ch=strchr(word, ' ');
+	if (!ch){
+		return SugCheck(word);
+	}
+	*ch=0;
+	ch++;
+	word[0]=ChToUpper(word[0]);
+	UpRes1=SugSpell(word);
+	if (UpRes1!=0) return 0;
+	tasand1=tagasitasand;
+	word[0]=ChToLower(word[0]);
+
+//	ch[0]=ChToUpper(ch[0]);
+	UpRes2=SugSpell(ch);
+	if (UpRes2!=0) return 0;
+	if (tagasitasand>tasand1) tasand1=tagasitasand;
+//	ch[0]=ChToLower(ch[0]);
+
+	if (!SugSpell(word)){
+		if (tagasitasand>tasand1) tasand1=tagasitasand;
+	}
+	else{
+		word[0]=ChToUpper(word[0]);
+	}
+
+//	if (!SugSpell(ch)){
+		if (tagasitasand>tasand1) tasand1=tagasitasand;
+	}
+	else{
+		ch[0]=ChToUpper(ch[0]);
+	}//
+	ch--;
+	(*ch)=' ';
+	tagasitasand=tasand1;
+	SugAdd(word);
+	return 1;
+}
+
+void SugFree(void){
+	SUG *s;
+	for (s=SugAhel; s; ){
+		SugAhel=SugAhel->sug_next;
+		free(s);
+		s=SugAhel;
+	}
+}
+
+int SugCapitalize(char *word){
+	char *ch;
+	int i;
+	SUG *SA;
+	if (!ChIsUpper(*word)){
+		return 0;
+	}
+	for (SA=SugAhel; SA; SA=SA->sug_next){
+		SA->tyvi[0]=ChToUpper(SA->tyvi[0]);
+	}
+
+	i=1;
+	for (ch=word; *ch; ch++){
+		i&=ChIsUpperUP(*ch);
+	}
+	if (!i){
+		return 0;
+	}
+	for (SA=SugAhel; SA; SA=SA->sug_next){
+		for (ch=SA->tyvi; *ch; ch++){
+			(*ch)=ChToUpper(*ch);
+		}
+	}
+	return 0;
+}
+
+int SugSimilar(char *word1, char *word2){
+	int pos;
+	pos=strlen(word1);
+	if (abs(pos-strlen(word2))>1) return 0;
+	if (memcmp(word1, word2, pos)){
+		return 0;
+	}
+	if (word2[pos]){
+		if (strchr(EstAlphas, word2[pos])){
+			return 0;
+		}
+	}
+	return 1;
+}
+
+int SugRemoveCopy(){
+	SUG *SA, *SA1, *SA2;
+	for (SA=SugAhel; SA; SA=SA->sug_next){
+		for (SA2=SugAhel; SA2; ){
+			if (SA==SA2){
+				SA2=SA2->sug_next;
+				continue;
+			}
+			if (SugSimilar(SA->tyvi, SA2->tyvi)){
+				if (SA2->sug_prev) SA2->sug_prev->sug_next=SA2->sug_next;
+				if (SA2->sug_next) SA2->sug_next->sug_prev=SA2->sug_prev;
+				SA1=SA2;
+				SA2=SA2->sug_next;
+				if (SA1==SugAhel){
+					SugAhel=SA2;
+				}
+				free(SA1);
+			}
+			else{
+				SA2=SA2->sug_next;
+			}
+		}
+	}
+	return 0;
+}
+
+int SugRemoveImmoderate(){
+	SUG *SA, *SB;
+	int Useful;
+	if (!SugAhel) return 0;
+	Useful=SugGroupLevel(SugAhel->tasand);
+	for (SA=SugAhel; SA; SA=SA->sug_next){
+		if (SugGroupLevel(SA->tasand)!=Useful){
+			SA->sug_prev->sug_next=0;
+			SB=SugAhel;
+			SugAhel=SA;
+			SugFree();
+			SugAhel=SB;
+			return 0;
+		}
+	}
+	return 0;
+}
+
+int SugOrder(){
+	SUG* SA, *SA1, *SA2;
+	for (SA=SugAhel; SA; SA=SA->sug_next){
+		SA1=SA;
+		for (SA2=SA->sug_next; SA2; SA2=SA2->sug_next){
+			if (SA2->tasand<SA1->tasand){
+				SA1=SA2;
+			}
+		}
+		if (SA1!=SA){
+			if (SA1->sug_prev) SA1->sug_prev->sug_next=SA1->sug_next;
+			if (SA1->sug_next) SA1->sug_next->sug_prev=SA1->sug_prev;
+			SA1->sug_prev=SA->sug_prev;
+			if (SA->sug_prev) SA->sug_prev->sug_next=SA1;
+			SA1->sug_next=SA;
+			SA->sug_prev=SA1;
+			SA=SA1;
+			if (!SA->sug_prev) SugAhel=SA;
+		}
+	}
+	return 0;
+}
+
+int SugNext(const char *word, int len){
+	SugFree();
+	return 0;
+}
+
+int SugFirst(const char *word, int len, int sygavus, int *reserveeritud_tulelvuku_tarbeks){
+	int i, j, len2;
+	char *ch;
+	char *wordlow, *testword;
+	char c, tasand1;
+	struct _ChangeArray *CA1;
+	struct _ChangeArrayStr *CAStr1;
+//	char roomanr1=roomanr;
+//	roomanr=0;
+
+	SugFree();
+
+	wordlow=(char *)malloc(len+1);
+	testword=(char *)malloc(len+20);
+	for (i=0; i<=len; i++){
+		wordlow[i]=ChToLower(word[i]);
+	}
+
+//#if defined(SPELLER)
+    if(mrfFlags.Chk(MF_SPELL))
+        {
+	    tagasitasand=0;
+	    ch=IsInChangeUDR((char *)word);
+	    if (ch){
+		    SugAdd(ch);
+	        }
+        }
+//#endif
+// SUG_CASE: //
+	tasand1=sygavus;
+	tasand=100;
+	SugCheck(wordlow);
+	tasand=tasand1;
+
+// SUG_ABBR: //
+	strcpy(testword, wordlow);
+	strcat(testword, "-");	// sona- //
+	SugCheck(testword);
+
+	ch=strchr(word, '-');
+	if ((ch) && (ch!=word)){
+		if ((ChIsUpper(*(ch-1))) && (!ChIsUpperUP(*(ch+1)))){
+			strcpy(testword, word);			// BNS- //
+			testword[ch-word+1] = 'i';        // BNS-i //
+			strcpy(testword+(ch-word)+2, ch+1);  // BNS-ile //
+			tasand1=tasand;
+			tasand=100;	// Natuke sygavamalt //
+			SugCheck(testword);
+			tasand=tasand1;
+		}
+	}
+	else if (ChIsUpper(*word)){
+		ch=(char *)word;
+		for (i=1; i; ch++, i=ChIsUpper(*ch));
+		if (!ChIsUpperUP(*ch)){
+			strcpy(testword, word);			// BNS //
+			testword[ch-word] = 'i';        // BNSi //
+			strcpy(testword+(ch-word)+1, ch);  // BNSile //
+			tasand1=tasand;
+			tasand=100;	// Natuke sygavamalt //
+			SugCheck(testword);
+			tasand=tasand1;
+		}
+	}
+
+// SUG_ADDSPACE: Renel oli wordlow word asemel HJK 12.05.98 //
+	for (i=1; i<len-1; i++){
+		if (strchr(".:,;!?", word[i])){
+			memcpy(testword, word, i+1);
+			strcpy(testword+i+2, word+i+1);
+			testword[i+1]=' ';
+			SugCheck2(testword);
+		}
+	}
+
+// SUG_DELFOLBLOCKS: //
+	for (i=2; i<=3; i++){
+		for (j=i; j<=len-i; j++){
+			if (memcmp(wordlow+j-i, wordlow+j, i)==0){
+				memcpy(testword, wordlow, j);
+				strcpy(testword+j, wordlow+j+i);
+				SugCheck(testword);
+			}
+		}
+	}
+
+// SUG_CHANGEFOLLETTERS: //
+	for (i=1; i<len-1; i++){
+		if (wordlow[i]==wordlow[i-1]){
+			strcpy(testword, wordlow);
+			testword[i]=testword[i+1];
+			if (strchr(EstAlphas, testword[i])){
+				SugCheck(testword);
+			}
+		}
+		else if (wordlow[i]==wordlow[i+1]){
+			strcpy(testword, wordlow);
+			testword[i]=testword[i-1];
+			if (strchr(EstAlphas, testword[i])){
+				SugCheck(testword);
+			}
+		}
+	}
+
+// SUG_EXCHANGELETTERS: //
+	for (i=1; i<len; i++){
+		if (wordlow[i]!=wordlow[i-1]){
+			strcpy(testword, wordlow);
+			c=testword[i];
+			testword[i]=testword[i-1];
+			testword[i-1]=c;
+			SugCheck(testword);
+		}
+	}
+
+// SUG_CHANGEBLOCKS: //
+	for (i=0; i<len; i++){
+		for (CAStr1=CAStr; CAStr1->from; CAStr1++){
+			if (memcmp(wordlow+i, CAStr1->from, strlen(CAStr1->from))==0){
+				memcpy(testword, wordlow, i);
+				strcpy(testword+i, CAStr1->to);
+				strcat(testword, wordlow+i+strlen(CAStr1->from));
+				SugCheck(testword);
+			}
+		}
+	}
+
+// SUG_CHANGEENDBLOCKS: //
+	for (CAStr1=CAEStr; CAStr1->from; CAStr1++){
+		len2=strlen(CAStr1->from);
+		if (len2<=len){
+			if (strcmp(wordlow+len-len2, CAStr1->from)==0){
+				memcpy(testword, wordlow, len-len2);
+				strcpy(testword+len-len2, CAStr1->to);
+				SugCheck(testword);
+			}
+		}
+	}
+
+// gi* -> *gi //
+	for (i=3; i<=5; i++){
+		if (i>len) break;
+		if (memcmp(wordlow+len-i, "gi", 2)==0){
+			memcpy(testword, wordlow, len-i);
+			strcpy(testword+len-i, wordlow+len-i+2);
+			strcpy(testword+len-2, "gi");
+			SugCheck(testword);
+			strcpy(testword+len-2, "ki");
+			SugCheck(testword);
+		}
+	}
+
+// SUG_DELLETTERS: //
+	if (len>1){
+		for (i=0; i<len; i++){
+			if (wordlow[i]!=wordlow[i+1]){
+				memcpy(testword, wordlow, i);
+				strcpy(testword+i, wordlow+i+1);
+				SugCheck(testword);
+			}
+		}
+	}
+
+// SUG_CHANGELETTERS: //
+	for (i=0; i<len;i++){
+		strcpy(testword, wordlow);
+		c=testword[i];
+		for (CA1=CA; ; CA1++){
+			if ((c==CA1->from)||(!CA1->from)){
+				for (ch=CA1->to; *ch; ch++){
+					testword[i]=*ch;
+					SugCheck(testword);
+				}
+				break;
+			}
+		}
+	}
+
+// SUG_INSERTLETTERS: //
+	for (ch=InsertChars; *ch; ch++){
+		for (i=1; i<len; i++){
+			if (((*ch)!=testword[i])||(!testword[i+1])){
+				memcpy(testword, wordlow, i);
+				strcpy(testword+i+1, wordlow+i);
+				testword[i]=*ch;
+				SugCheck(testword);
+			}
+		}
+	}
+
+// SUG_INSERTLETTERSBEG: //
+	strcpy(testword+1, wordlow);
+	for (ch=InsertCharsBeg; *ch; ch++){
+		if ((*ch)!=testword[1]){
+			testword[0]=*ch;
+			SugCheck(testword);
+		}
+	}
+
+// SUG_INSERTLETTERSMORE: //
+	if ((ChIsUpper(*word))&&(strchr(wordlow, '\'')==0)){
+		for (i=0; i<( len<=5 ? len-1 : 5); i++){
+			memcpy(testword, wordlow, len-i);
+			testword[len-i]='\'';
+			strcpy(testword+len-i+1, wordlow+len-i);
+			SugCheck(testword);
+		}
+	}
+
+// END: //
+	free(testword);
+	free(wordlow);
+
+	SugCapitalize((char *)word);
+	SugRemoveCopy();
+	SugOrder();
+	SugRemoveImmoderate();
+
+//	roomanr=roomanr1;
+	return 0;
+}
+
+int WildCheck0(char *word){
+	char *ch=strchr(word, '?');
+	if (!ch){
+		SugCheck(word);
+		return 0;
+	}
+	for (char *ch2=EstAlphas; *ch2; ch2++){
+		*ch=*ch2;
+		WildCheck0(word);
+	}
+	return 0;
+}
+
+int WildCheck(const char *word){
+//	char roomanr1=roomanr;
+//	roomanr=0;
+	SugFree();
+
+	int len=strlen(word);
+	char *wordlow=(char *)malloc(len+1);
+	for (int i=0; i<=len; i++){
+		wordlow[i]=ChToLower(word[i]);
+	}
+
+	WildCheck0(wordlow);
+
+	free(wordlow);
+	SugCapitalize((char *)word);
+	SugRemoveCopy();
+	SugOrder();
+	SugRemoveImmoderate();
+
+//	roomanr=roomanr1;
+	return 0;
+}
+*/

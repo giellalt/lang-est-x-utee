@@ -1,0 +1,677 @@
+! inflectional types and analogue rules for nouns, adjectives and other declinables
+! VVS stands for types from Ü. Viks "Väike vormisõnastik" for reference purposes
+
+!---------------
+! inflectional types
+!---------------
+
+!---------------
+! not-so-exceptional inflectional types
+!---------------
+
+LEXICON AASTA    ! VVS 1 (productive) for vowel-final; stress on penultimate syllable words
+
+              : SG_NOMINATIVE ;    ! aasta
+              : 2C ;    ! aasta etc
+              : US_DERIVATION ;
+              : LIK_DERIVATION ;
+
+LEXICON REDEL    ! VVS 2 (productive) for consonant-ending, stress on penultimate syllable words
+   
+              : SG_NOMINATIVE ;    ! redel, koppel
+              :%>i 2C_VARIANT ;    ! redeli etc
+              : US_DERIVATION ;
+              : LIK_DERIVATION ;
+     +Use/Rare:%>i LIK_DERIVATION ;
+
+! el/er ending words have various preference patterns; they are currently (dec. 2019) not described 
+! 
+!LEXICON RABARBER ! only rabarber, adapter
+!
+!                  :er REDEL ;   ! rabarberi
+!         +Use/Rare:E2r REDEL ;  ! rabarbri
+!
+!LEXICON PIKSEL    ! VVS 2 (productive) for older or more frequent el/er words and proper names like piksel, Aksel - Aksli/Akseli
+!   
+!              :E2l REDEL ;         ! piksli, Aksli
+!     +Use/Rare:er REDEL ;    ! pikseli, Akseli; {F} makes e-deleting 2-level phon. rules inappliccable
+!
+!LEXICON JOKKER    ! VVS 2 (productive) for newer or less frequent el/er words like jokker
+!   
+!     +Use/Rare:E2r REDEL ;         ! jokri
+!              :er REDEL ;    ! jokkeri, {F} makes e-deleting 2-level phon. rules inappliccable
+!
+!LEXICON KAAMEL    ! VVS 2 (productive) ; like JOKKER, but norm is more strict; 
+!   
+!  +Use/NotNorm:E2l REDEL ;         ! kaamli
+!              :el REDEL ;    ! kaameli, {F} makes e-deleting 2-level phon. rules inappliccable
+
+
+
+LEXICON VIRSIK    ! VVS 2 (productive) for -ik, -ing; stress on penultimate syllable words
+
+              : SG_NOMINATIVE ;    ! virsik
+              :%>u 2C ;    ! virsiku etc
+              : LIK_DERIVATION ;
+     +Use/Rare:%>u LIK_DERIVATION ;
+
+LEXICON LOHAKAS    ! VVS 2 (productive) -kas, -jas etc ending words (incl derivations)
+
+              :s SG_NOMINATIVE ;    ! lohakas
+              : 2C ;    ! lohaka etc
+              : US_DERIVATION ;
+              : LIK_DERIVATION ;   ! kaabakalik ???
+
+LEXICON TUNTUD    ! VVS 2 (productive) -d ending words (incl derivations); only adjectives
+
+              :d SG_NOMINATIVE ;    ! tuntud
+              : 2C ;    ! tuntu etc
+              : US_DERIVATION ;
+ 
+LEXICON MAGUS    ! VVS 2 (productive) for -v, -tav derivations (adjectives)
+                 ! + (unproductive) i.e. unstable (closed) type
+
+              : SG_NOMINATIVE ;    ! magus
+              :%>A1 2C ;    ! magusa; A1 is necessary for pingne - pingsa
+              :%>A1 US_DERIVATION ;
+
+LEXICON HALE    ! VVS 2 (unproductive) i.e. unstable (closed) type
+
+              : SG_NOMINATIVE ;    ! hale, sajas
+              :da 2C ;    ! haleda, sajanda
+              :da US_DERIVATION ;
+
+LEXICON HOOLAS    ! VVS 3 (unproductive) i.e. unstable (closed) type; strengthening gradation
+
+              :%{W%} SG_NOMINATIVE ;        ! hoolas
+              :%>a 2C ;                    ! hoolsa etc
+     +Use/Rare:%{W%}%>t SG_PARTITIVE ;      ! hoolast
+ +Use/NotNorm:%{W%} TE_PL ;  ! hoolaste etc 
+              :%>a US_DERIVATION ;
+
+LEXICON HAARE    ! VVS 4, VVS 5 (unproductive) i.e. unstable (closed) type
+
+              :%{W%} SG_NOMINATIVE ;              ! haare
+              :%{W%}%>t SG_PARTITIVE ;            ! haaret
+              :me 2C_STRONG ;          ! haarme, habeme etc, haarmeid, haarmeil etc
+              :me TE_PL ;        ! asemete, haarmete
+              :me LIK_DERIVATION ;
+
+LEXICON PINGE    ! VVS 6 (productive) i.e. stable 
+                 ! (open to verbal derivations, e.g. kiune from kiunuma)
+                 ! + (unproductive) i.e. unstable (closed) type; 
+
+              :%{W%} SG_NOMINATIVE ;      ! pinge
+              :%{W%}%>t SG_PARTITIVE ;    ! pinget
+              :%{W%} TE_PL ;              ! pingete etc
+              : 2C_STRONG ;               ! pinge etc, pingeid, pingeil etc
+              : US_DERIVATION ;
+              : LIK_DERIVATION ;
+
+LEXICON KOTKAS    !  VVS 7 (unproductive) i.e. unstable (closed) type; 
+
+              :s%{W%} SG_NOMINATIVE ;      ! kotkas
+              :s%{W%}%>t SG_PARTITIVE ;    ! kotkast
+              :s%{W%} TE_PL ;              ! kotkaste
+              : 2C_STRONG ;               ! kotka etc, kotkaid, kotkail etc
+  +Use/NotNorm: TE_PL ;                 ! kotkate etc
+              : US_DERIVATION ;
+              : LIK_DERIVATION ;
+
+LEXICON PIPAR    !  VVS 8 (unproductive) i.e. unstable (closed) type; = HOOLAS
+
+              :%{W%} SG_NOMINATIVE ;      ! pipar
+              :%{W%}%>t SG_PARTITIVE ;    ! pipart
+              :%{W%} TE_PL ;              ! piparde etc
+              :%>a 2C_STRONG ;
+  +Use/NotNorm:%>a TE_PL ;       ! piprate etc 
+              :%>a LIK_DERIVATION ;
+
+LEXICON SOOLANE    ! VVS 9 (productive) simplex words ending with -s (katus), VVS 10 affix -ne; 
+                       
+              : SG_NOMINATIVE ;
+              : NE_S_COMMON ;
+              :E1%>sse SG_ILLATIVE ;            ! soolasesse, katusesse
+              :E1%>id PL_PARTITIVE ;            ! soolaseid, katuseid
+     +Use/Rare:E1%>i N_VOWEL_PL_SUBPARA ;    ! soolaseil, katuseil etc
+              :E1»i IM_DERIVATION ;            ! soolaseim
+
+LEXICON OLULINE    ! VVS 11, 12 (productive)
+                   ! VVS 12: affixes -lane, -line, -mine, -tine, -ke(ne), -stikune (?)
+                   ! VVS 11: derived words ending with -us, -is (?) (harjutus)
+                  
+              : SG_NOMINATIVE ;
+              : NE_S_COMMON ;
+              : LINE_US_SPECIFIC ;
+              :E1 LIK_DERIVATION ;
+
+LEXICON KATKINE    ! VVS 9 & (11), 10 & (12) (productive)
+                   ! VVS 10 & (12): affix -ne, but sg ill, pl part and vocal cases also like -line
+                   ! VVS  9 & (11): simplex -s, but also like -us (gloobus) 
+                 
+              : SOOLANE ;
+     +Use/Rare: LINE_US_NORM ;              ! like OLULINE: katkisse, katkisi
+     +Use/Rare:%>I1 N_VOWEL_PL_SUBPARA ;    ! like OLULINE: katkisil etc; (ever used?)
+              :E1 LIK_DERIVATION ;
+
+LEXICON SUULINE    ! VVS (9) & 11, (10) & 12 (productive)
+                   ! VVS (10) & 12: affix -line, but pl part and vowel cases also like -ne
+                   ! VVS  (9) & 11: derived -us, but pl part and vowel cases (?) also like simplex -s (vaatlus) 
+
+              : OLULINE ;
+     +Use/Rare:E1%>id PL_PARTITIVE ;            ! like SOOLANE: suuliseid, vaatluseid
+     +Use/Rare:E1%>i N_VOWEL_PL_SUBPARA ;    ! like SOOLANE: suuliseil, vaatluseil etc
+     +Use/Rare:E1»i IM_DERIVATION ;            ! like SOOLANE: suuliseim
+              :E1 LIK_DERIVATION ;
+
+LEXICON PEENIKE    ! VVS 12 (productive): affix -ke; almost = OLULINE, except sg nom
+
+              : SG_NOMINATIVE ;
+     +Use/Rare:ne SG_NOMINATIVE ;
+              :ne NE_S_COMMON ;
+              :ne LINE_US_SPECIFIC ;
+              :E1 LIK_DERIVATION ;
+
+LEXICON PERE    ! VVS 16 (productive)
+
+              : SG_NOMINATIVE ;
+              : N_SG_SUBPARA ;          ! pere, baika etc
+              :%>t SG_PARTITIVE ;        ! peret, baikat
+              :%{S%} SG_ILL_VARIANT ;     ! perre
+              : SG_ILL_VARIANT ;         ! peresse, baikasse 
+              : DE_PL ;
+              :%>sid PL_PARTITIVE ;   
+              : LIK_DERIVATION ;
+
+LEXICON KAVA    ! VVS 17, 18 (productive) + (unproductive)
+                ! VVS 17 (productive)
+                ! VVS 18 (unproductive): words with quality gradation
+
+              : SG_NOMINATIVE ;
+              :%{W%} N_SG_SUBPARA ;     ! kava, sõja etc
+              : SG_PARTITIVE ;           ! kava
+              :%{S%} SG_ILL_VARIANT ;     ! kavva
+              :%{W%} SG_ILL_VARIANT ;    ! kavasse 
+              : DE_PL ;
+              :%>%{s%}%{i%}%{d%} PL_PAR_VARIANT ;   ! kingi, kingasid+Use/Rare vs. puudi+Use/Rare,
+                                                    ! puudasid; kavu, kavasid; sõdu, sõdasid
+              : LIK_DERIVATION ;
+
+LEXICON MUUSEUM    ! VVS 2 & 19 (productive)
+                   ! forms may be based on 2 productive, i.e. stable types (aktiivne muuttüüp)
+                   ! if prononunced as 2-syllable word (muus-jum), then like REDEL
+                   ! if prononunced as 3-syllable word (muus-e-um), then like TAUD 
+
+              : SG_NOMINATIVE ;
+              :%>i%{W%} N_SG_SUBPARA ; 
+              :%>i SG_PARTITIVE ;             ! muuseumi
+     +Use/Rare:%>i SG_ILLATIVE ;              ! muuseumi  ! in TAUD, this is the default ill
+              :%>i%{W%}%>sse SG_ILLATIVE ;    ! muuseumisse ! in TAUD, this is the rare ill
+              :%>i DE_PL ;                    ! muuseumide etc 
+              :%>e PL_PARTITIVE ;             ! muuseume
+     +Use/Rare:%>i 2C_ADDED_TO_1C ;   ! REDEL
+              : LIK_DERIVATION ;
+
+LEXICON PIIM    ! VVS 22; (unproductive) i.e. unstable type (passiivne muuttüüp) sepp, kaup, ...
+
+              : SG_NOMINATIVE ;
+              :%{sg.a%} 1C ;
+              :%>a US_DERIVATION ;
+              : LIK_DERIVATION ;          ! NB! not checked on real usage
+              :%>a%{W%} LIK_DERIVATION ;         ! NB! not checked on real usage
+
+LEXICON KOON    ! VVS 22; (unproductive) i.e. unstable type (passiivne muuttüüp) lõpp, laug
+
+              : SG_NOMINATIVE ;
+              :%{sg.u%} 1C ;
+              : LIK_DERIVATION ;          ! NB! not checked on real usage
+              :%>u%{W%} LIK_DERIVATION ;         ! NB! not checked on real usage
+
+LEXICON EIT    ! VVS 22; (unproductive) i.e. unstable type (passiivne muuttüüp) kuusk, kärg
+
+              : SG_NOMINATIVE ;
+              :%{sg.e%} 1C ;
+              : LIK_DERIVATION ;          ! NB! not checked on real usage
+              :%>e%{W%} LIK_DERIVATION ;         ! NB! not checked on real usage
+
+LEXICON TAUD    ! VVS 22; (productive) i.e. stable type (aktiivne muuttüüp) siil, president, ...
+
+              : SG_NOMINATIVE ;
+              :%>%{pl.e%}%{sg.i%} 1C ;    ! {pl.e} is here so it need not be in the stem lexicon
+              : LIK_DERIVATION ;          ! NB! not checked on real usage
+              :%>i%{W%} LIK_DERIVATION ;         ! NB! not checked on real usage
+
+LEXICON FIAT    ! VVS 22; (productive) i.e. stable type (aktiivne muuttüüp) 
+                ! almost == TAUD, but final stop does not change in weak grade (note {F} in front of {W})
+
+              : SG_NOMINATIVE ;
+              :%>%{pl.e%}%{sg.i%}%{F%} 1C ;    ! {pl.e} is here so it need not be in the stem lexicon
+              : LIK_DERIVATION ;          ! ?? lowercasing also ??
+              :%>i%{F%}{W%} LIK_DERIVATION ;          ! ?? lowercasing also ??
+
+LEXICON KABINET    ! VVS 22; (productive) i.e. stable type (aktiivne muuttüüp) 
+                   ! almost == TAUD, but Sg Nom orthography with single final stop instead of 2
+
+              : SG_NOMINATIVE ;    ! kabinet
+                                          ! sg nom has a single final stop instead of double, 
+                                          ! so it has to be doubled to get the forms right
+              :%{dbl%}%>%{pl.e%}%{sg.i%} 1C ;
+              : LIK_DERIVATION ;          ! NB! not checked on real usage
+              :%>i%{W%} LIK_DERIVATION ;         ! NB! not checked on real usage
+
+! VVS 24 is lexical variants under VVS 22 various subtypes
+
+LEXICON ELANIK    ! VVS 25; (productive) i.e. stable type (aktiivne muuttüüp) 
+                  ! almost == KABINET == TAUD
+
+              : SG_NOMINATIVE ;    ! elanik
+                                          ! sg nom has a single final stop instead of double, 
+                                          ! so it has to be doubled to get the forms right
+              :%{dbl%}%>%{sg.u%} 1C_SG ;         ! elaniku etc
+              :%{dbl%}%>e%{W%} N_PL_SUBPARA ;    ! NB! elanike etc
+     +Use/Rare:%{dbl%}%{sg.u%} DE_PL ;         ! elanikkude etc   
+              :%{dbl%}%>%{pl.e%}%{sg.u%}%>%{s%}%{i%}%{d%} PL_PAR_VARIANT ;    ! elanikke; elanikkusid+Use/Rare
+              :%{dbl%} US_DERIVATION ;            ! õnnelikkus
+              :%{dbl%}%>e%{W%}» IM_DERIVATION ;    ! õnnelikem
+              :%>u%{W%} LIK_DERIVATION ;
+
+LEXICON ÜMBRIK     ! VVS 2 & 25; (productive)
+                   ! forms may be based on 2 productive, i.e. stable types (aktiivne muuttüüp)
+                   ! if prononunced as both syllables stressed, then like ELANIK 
+                   ! if prononunced as only first syllable stressed, then like VIRSIK (Use/Rare)
+
+              : ELANIK ;
+     ! VIRSIK
+     +Use/Rare:%>u 2C_ADDED_TO_1C ;   ! VIRSIK
+     +Use/Rare:%>u»i IM_DERIVATION ;         ! ümbrikuim, ...
+
+LEXICON ÄMBLIK     ! VVS 2 & 25; (productive) = ÜMBRIK, but the less used forms are incorrect according to lang. norm
+                   ! forms may be based on 2 productive, i.e. stable types (aktiivne muuttüüp)
+                   ! if prononunced as both syllables stressed, then like ELANIK 
+                   ! if prononunced as only first syllable stressed, then like VIRSIK (Use/NotNorm)
+
+              : ELANIK ;
+  +Use/NotNorm:%>u 2C_ADDED_TO_1C ;   ! VIRSIK
+  +Use/NotNorm:%>u»i IM_DERIVATION ;         ! ämblikuim, ...
+
+LEXICON ARMEE    ! VVS 26 ; (productive) i.e. stable type (aktiivne muuttüüp)
+
+              : 1V ;
+              : LIK_DERIVATION ;
+
+! ---------------
+! sub-paradigms common to several inflectional types
+! ---------------
+
+LEXICON NE_S_COMMON ! VVS 9, 10, 11, 12 common forms for affix -ne, -line, -s, -tus etc 
+
+              :E1 N_SG_SUBPARA ;                
+              :E1%>t SG_PARTITIVE ;         ! soolast, raudset, olulist
+              :E1 TE_PL ;        
+              :E1 US_DERIVATION ;
+              :E1 SHORT_NE_STEM ;           ! nais-, vaatamis-, astraal-
+
+LEXICON LINE_US_SPECIFIC   ! -line, -us ending words
+              : LINE_US_NORM ;
+              : LINE_US_RARE ;
+
+LEXICON LINE_US_RARE  ! part of line_us_specific
+
+     +Use/Rare:E1%>sse SG_ILLATIVE ;          ! olulisesse, harjutusesse
+     +Use/Rare:%>I1 N_VOWEL_PL_SUBPARA ;   ! olulisil, harjutusil etc
+
+LEXICON LINE_US_NORM  ! part of line_us_specific
+
+              :E1%>se SG_ILLATIVE ;           ! olulisse, harjutusse (haplology)
+              :%>I1 PL_PARTITIVE ;            ! olulisi, harjutusi
+              :»I1 IM_DERIVATION ;           ! olulisim
+      
+! ------
+
+LEXICON 2C_VARIANT    ! for REDEL
+
+     +Use/Rare:%{rare%} 2C ;    ! less used paradigm forms for that word
+              : 2C ;            ! default paradigm forms for that word
+
+LEXICON 1C    ! consonant ending, stress NOT on penultimate syllable
+
+                           ! NOMINATIVE is without stem vowel
+              : 1C_SG ;    ! singular forms + pl nom
+              :%>%{s%}%{i%}%{d%} PL_PAR_VARIANT ;   ! kingi, kingasid+Use/Rare vs. puudi+Use/Rare,
+                                                    ! puudasid; kavu, kavasid; sõdu, sõdasid
+              : DE_PL ;
+
+LEXICON 1V    ! vowel ending, stress on the last syllable
+
+              : SG_NOMINATIVE ;    ! armee
+              : N_SG_SUBPARA ;            ! armee etc
+              :%>d SG_PARTITIVE ;            ! armeed
+              :{S%} SG_ILL_VARIANT ;       ! öhe
+              : SG_ILL_VARIANT ;           ! öösse 
+              :%>%{s%}id PL_PAR_VARIANT ; ! armeesid; armeid...
+              : DE_PL ;                   ! armeede etc  
+
+LEXICON 2C    ! stress on penultimate syllable & word ends with a consonant; 
+              ! or stressed penult. syllable extra heavy (e.g. -aania)  
+
+                                          ! NOMINATIVE is without stem vowel; may be in weak grade
+              :%>t SG_PARTITIVE ;            ! redelit, virsikut; may be in weak grade 
+              : 2C_STRONG ;             ! redeleid, redeleil etc
+              : TE_PL ;                 ! redelite, asemete, haarmete; may be in weak grade
+
+LEXICON 2C_STRONG    ! if the word has (strengthening) gradation, then these forms are in non-weak grade 
+
+              : N_SG_SUBPARA ;             ! redeli, kotka etc
+              : SG_ILL_VARIANT ;           ! taskusse or tasku
+              :%>id PL_PARTITIVE ;            ! kotkaid
+     +Use/Rare:%>i N_VOWEL_PL_SUBPARA ;    ! kotkail etc
+              :»i IM_DERIVATION ;         ! magusaim, rentaableim, ...
+
+LEXICON 1C_SG    ! SG subpara of 1C
+
+              :%{W%} N_SG_SUBPARA ;    ! koti etc
+              : SG_PARTITIVE ;            ! kotti
+              : SG_ILLATIVE ;              ! kotti
+      +Use/Hyp:%{W%}%>sse SG_ILLATIVE ;    ! kotisse is very rare
+
+LEXICON DE_PL    ! PL subpara of 1C, 1V, KAVA, PERE, ...
+
+              :%>de N_PL_SUBPARA ;     ! kottide etc
+
+LEXICON TE_PL    ! PL subpara of 2C, ...
+
+              :%>te N_PL_SUBPARA ;     ! redelite etc
+
+LEXICON 2C_ADDED_TO_1C  ! if a word inflects both like 1C and 2C, then it has these forms in addition to 1C
+
+              :%>t SG_PARTITIVE ;            ! muuseumit, ämblikut 
+              :%>id PL_PARTITIVE ;            ! muuseumeid, ämblikuid
+              : TE_PL ;                 ! muuseumite, ämblikute
+     +Use/Rare:%>i N_VOWEL_PL_SUBPARA ;    ! muuseumeil, ämblikuil
+
+! ---------------
+! rules of analogy
+! (cases grouped in various ways, for combining in different paradigms)
+! ---------------
+
+LEXICON N_SG_SUBPARA    ! sg gen + sg cases depending on it + pl nom; excl sg ill
+
+              : SG_GENITIVE ; 
+           +Sg: REGULAR_LOCATIVES ;
+           +Sg:%>ks TRANSLATIVE ;
+           +Sg: NINATAGA ;
+       +Pl+Nom:%>d PL_NOM_GI ;
+
+LEXICON N_PL_SUBPARA    ! pl gen + pl cases depending on it 
+
+           +Pl: STANDARD_GEN_ET_AL ;
+
+LEXICON STANDARD_GEN_ET_AL    ! genitive and cases depending on it (either sg or pl)
+                              ! incl. sse-illative 
+              : GENITIVE ; 
+              : ALL_SEM_CASES ;
+
+LEXICON ALL_SEM_CASES       ! semantic cases, incl sse-illative
+
+              : LOCATIVES_PLUS ;
+              : NINATAGA ;
+
+LEXICON NINATAGA
+
+              :%>ni TERMINATIVE ;	
+              :%>na ESSIVE ;	
+              :%>ta ABESSIVE ;	
+              :%>ga COMITATIVE ;
+
+	
+LEXICON N_VOWEL_PL_SUBPARA    ! pl cases depending on vowel plural gen  
+                              ! incl. ni-na-ta-ga
+           +Pl: ALL_SEM_CASES ;
+
+LEXICON LOCATIVES_PLUS            
+
+              : LOCATIVES ;
+              :%>ks TRANSLATIVE ;
+
+LEXICON LOCATIVES            
+
+              :%>sse ILLATIVE ;
+              : REGULAR_LOCATIVES ;
+
+LEXICON REGULAR_LOCATIVES            
+
+              :%>s INESSIVE ;
+              :%>st ELATIVE ;
+              :%>le ALLATIVE ;	
+              :%>l ADESSIVE ;	
+              :%>lt ABLATIVE ;	
+
+! -----------
+! individual cases
+! -----------
+
+! the preferred form for Pl Par and Sg Ill is indicated in the stem lexicon
+! (not in the continuation lexicon)
+! so these variants allow us to carry the info from stem lex to the final surface form
+
+LEXICON PL_PAR_VARIANT    ! for TAUD, PIIM, KOON etc types
+
+     +Use/Rare:%{rare%} PL_PARTITIVE ;    ! less used pl par form for that word
+              : PL_PARTITIVE ;            ! default pl par form for that word
+
+LEXICON SG_ILL_VARIANT    ! for KEEL etc types
+
+     +Use/Rare:%>%{s%}%{s%}%{e%}%{rare%} SG_ILLATIVE ;  ! less used sg ill form for that word
+              :%>%{s%}%{s%}%{e%} SG_ILLATIVE ;          ! default sg ill form for that word
+
+! -------- these cases are (often) non-predictable from Sg Nom
+
+LEXICON SG_NOMINATIVE
+           +Sg:%{no.apo%} NOMINATIVE ;
+              : LANE_DERIVATION ;
+              : IST_DERIVATION ;
+
+LEXICON SG_GENITIVE
+           +Sg: GENITIVE ;
+              : KE_DERIVATION ;
+              : LINE_DERIVATION ;
+              : M_DERIVATION ;
+              : LT_DERIVATION ;
+              : STI_DERIVATION ;
+              : INI_DERIVATION ;
+              : TI_DERIVATION ;
+              : NNA_DERIVATION ;
+              : KAS_DERIVATION ;
+              : NE_DERIVATION ;
+
+LEXICON SG_PARTITIVE
+           +Sg: PARTITIVE ;
+
+LEXICON SG_ILLATIVE
+           +Sg: ILLATIVE ;
+
+LEXICON PL_PARTITIVE
+           +Pl: PARTITIVE ;
+
+! --------- the 14 individual cases ------------
+!! flag diacritics can be used for remembering the case 
+
+LEXICON NOMINATIVE
+          +Nom: NOM_GI ;
+
+LEXICON GENITIVE
+          +Gen: GEN_GI ;
+
+LEXICON PARTITIVE
+          +Par: PAR_GI ;	
+
+LEXICON ILLATIVE
+          +Ill: SEM_GI ;	
+
+LEXICON INESSIVE
+          +Ine: SEM_GI ;	
+
+LEXICON ELATIVE
+          +Ela: SEM_GI ;	
+
+LEXICON ALLATIVE
+          +All: SEM_GI ;	
+
+LEXICON ADESSIVE
+          +Ade: SEM_GI ;	
+
+LEXICON ABLATIVE
+          +Abl: SEM_GI ;	
+
+LEXICON TRANSLATIVE
+          +Tra: SEM_GI ;	
+
+LEXICON TERMINATIVE
+          +Trm: SEM_GI ;	
+
+LEXICON ESSIVE
+          +Ess: SEM_GI ;	
+
+LEXICON ABESSIVE
+          +Abe: SEM_GI ;	
+
+LEXICON COMITATIVE
+          +Com: SEM_GI ;	
+
+!! flag diacritics are used for remembering the case for compounding; 
+!! not all the cases must be distinguished
+
+LEXICON NOM_GI
+  @P.Case.Nom@ GI ;
+
+LEXICON GEN_GI
+  @P.Case.Gen@ GI ;
+
+LEXICON PAR_GI
+  @P.Case.Par@ GI ;
+
+LEXICON SEM_GI     ! semantic (aka oblique) case
+  @P.Case.Sem@ GI ;
+
+LEXICON PL_NOM_GI       ! in compounding, +Pl is relevant for +Nom only
+  @P.Case.PlNom@ GI ;
+
+! paradigmatic derivation, i.e. very regular
+
+LEXICON M_DERIVATION
+  @P.Der.m@ M_DERIVATION_SUF ;
+
+LEXICON M_DERIVATION_SUF
+          +Der/m+A+Comp:»m MAGUS ;           ! suurem, elanum,  etc
+
+LEXICON IM_DERIVATION
+   @P.Der.im@ IM_DERIVATION_SUF ;
+
+LEXICON IM_DERIVATION_SUF
+      +Der/im+A+Superl:m MAGUS ;         ! suurim, elanuim, õnnelikem etc; NB! notice that » is missing!
+!       +Der/im+A+Superl:m LT_DERIVATION ; ! suurimalt, elanuimalt, õnnelikemalt
+
+LEXICON NNA_DERIVATION
+  @P.Der.N@ NNA_DERIVATION_SUF ;
+
+LEXICON NNA_DERIVATION_SUF
+            +Der/nna+N:»nna PERE ;             ! õpetajanna
+
+LEXICON LANE_DERIVATION
+  @P.Der.N@@C.NeedNoun@ LANE_DERIVATION_SUF ;
+
+LEXICON LANE_DERIVATION_SUF
+@U.Cap.Opt@@C.Cap@ LANE_DERIVATION_CAP ;         ! proper name must be downcased 
+
+LEXICON LANE_DERIVATION_CAP
+            +Der/lane+N:»lane OLULINE ;          ! helveetslane etc
+
+LEXICON LIK_DERIVATION
+  @P.Der.A@@C.NeedAdj@ LIK_DERIVATION_SUF ; ! the compounding algorithm needs a noun to be derived into adj,
+                                            ! and this suffix satisfies its expectation
+
+LEXICON LIK_DERIVATION_SUF
+@U.Cap.Opt@@C.Cap@ LIK_DERIVATION_CAP ;         ! proper name must be downcased
+
+LEXICON LIK_DERIVATION_CAP
+            +Der/lik+A:»l˘ik ELANIK ;           ! elajalik etc
+            +Der/lik+A:»l˘ikk US_DERIVATION ;  ! elajalikkus etc
+
+LEXICON LINE_DERIVATION
+  @P.Der.A@@C.NeedAdj@ LINE_DERI ;          ! the compounding algorithm needs a noun to be derived into adj,
+                                            ! and this suffix satisfies its expectation
+LEXICON LINE_DERI
+  @D.POS.NProp@ LINE_DERIVATION_SUF ;       ! ordinary derivation
+  @R.POS.NProp@@R.Stem.üle@@P.Part.Bad@@U.Cap.Opt@@C.Cap@ LINE_DERIVATION_SUF ;  ! üle + Siberi +Der/line; downcase and finish
+
+LEXICON LINE_DERIVATION_SUF
+            +Der/line+A:»line OLULINE ;          ! põõsaline etc
+
+LEXICON KOND_DERIVATION
+  @P.Der.N@ KOND_DERIVATION_SUF ;
+
+LEXICON KOND_DERIVATION_SUF
+           +Der/kond+N:»k˘onD1%>%{pl.i%} PIIM ;  ! elajaskond etc
+           +Der/kond+N:»konni TI_DERIVATION ;     ! elanikkonniti
+
+LEXICON US_DERIVATION
+  @P.Der.us@@C.NeedNoun@ US_DERIVATION_SUF ;
+
+LEXICON US_DERIVATION_SUF
+             +Der/us+N:»us OLULINE ;         ! elajalikkus, elavus, ...
+
+LEXICON IST_DERIVATION
+  @P.Der.ist@ IST_DERIVATION_SUF ;
+
+LEXICON IST_DERIVATION_SUF
+             +Der/ist+N:»ist TAUD ;         ! kapitalist
+
+LEXICON LT_DERIVATION
+  @P.Der.Adv@ LT_DERIVATION_SUF ;
+
+LEXICON LT_DERIVATION_SUF
+            +Der/lt+Adv:»lt GI ;         ! derivation: suurelt, elanult, ...
+
+LEXICON STI_DERIVATION
+  @P.Der.Adv@ STI_DERIVATION_SUF ;
+
+LEXICON STI_DERIVATION_SUF
+          +Der/sti+Adv:»sti GI ;        ! valusasti, kuuldavasti
+
+LEXICON INI_DERIVATION
+  @P.Der.Adv@ INI_DERIVATION_SUF ;
+
+LEXICON INI_DERIVATION_SUF
+          +Der/ini+Adv:»ini GI ;        ! valusamini
+
+LEXICON TI_DERIVATION
+  @P.Der.Adv@ TI_DERIVATION_SUF ;
+
+LEXICON TI_DERIVATION_SUF
+           +Der/ti+Adv:»ti GI ;        ! maakonniti
+
+LEXICON KE_DERIVATION
+  @P.Der.N@ KE_DERIVATION_SUF ;    ! P.Der.N is not correct always
+
+LEXICON KE_DERIVATION_SUF
+               +Dim/ke:»ke PEENIKE ;         ! suureke, majake, õpetajannake, ...
+
+LEXICON SHORT_NE_STEM
+    @P.Case.Short@ SHORT_NE_STEM_SUF ;
+
+LEXICON SHORT_NE_STEM_SUF
+            +Der/minus:»- # ;                ! vaatamis-, astraal-
+
+LEXICON KAS_DERIVATION
+  @P.Der.kas@@C.NeedNoun@ KAS_DERIVATION_SUF ;    
+
+LEXICON KAS_DERIVATION_SUF
+            +Der/kas+N:»ka LOHAKAS ;         ! kolmekas
+
+LEXICON NE_DERIVATION                        ! last part, currently only in compounds after POS.Num 
+  @P.Der.A@@R.NeedDerNe@@C.NeedDerNe@ NE_DERIVATION_SUF ;    
+
+LEXICON NE_DERIVATION_SUF
+            +Der/ne+A:»ne SOOLANE ;         ! 5-autone
+
+

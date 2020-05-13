@@ -1,9 +1,0 @@
-Build the tagger file like this:
-
-gcc -o tagger tagger15.c
-
-Convertion after loopup2cg and before vislcg3 diambiguation:
-
-tagger addlex.lx  infile  outfile
-pron.pl  < infile  > outfile
-

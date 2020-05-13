@@ -1,0 +1,55 @@
+#
+
+#define Hyphen [ "-" ] ;
+define Number ["+Sg" | "+Pl" ];
+define CaseGram ["+Nom" | "+Gen" | "+Par" ]; 
+define CaseOblique ["+Ill" | "+Ine" | "+Ela" | "+All" | "+Ade" | "+Abl" | "+Tra" | "+Trm" | "+Ess" | "+Abe" | "+Com"] ;
+define Case [ CaseGram | CaseOblique ] ;
+
+#define PairedNumber $[["+Sg" \Number* "+Sg"] | ["+Sg" \Number* "+Pl"]] ;
+#define SameCaseGram [["+Nom" \Case* "+Nom"] | 
+#                 ["+Gen" \Case* "+Gen"] | 
+#                 ["+Par" \Case* "+Par"] ] ; 
+#define GenOblique ["+Gen" \Case* CaseOblique] ; 
+#define PairedCase [ \Case* [SameCaseGram | GenOblique] \Case* ];
+
+define PairedCase [ ["+Sg" "+Nom" \[Number | Case]* "+Sg" "+Nom"] |
+                    ["+Sg" "+Gen" \[Number | Case]* "+Sg" "+Gen"] |
+                    ["+Sg" "+Par" \[Number | Case]* "+Sg" "+Par"] |
+                    ["+Sg" "+Gen" \[Number | Case]* "+Sg" CaseOblique] |
+                    ["+Sg" "+Gen" \[Number | Case]* "+Pl" Case]
+                  ];
+define GoodCase [ \[Number | Case]* PairedCase \[Number | Case]* ];
+
+# between words may be (including a flag diacritic and a usage tag as '?'):
+define Middle [Number Case (?)] ;
+
+define Unit [{kaks} | {kolm} | {neli} | {viis} | {kuus} | {seitse} | {kaheksa} | {üheksa}];
+define Circa [{paar} | {mitu} | {mõni}];
+
+define Pairs [ [Unit   Middle {teist}] |
+               [{üks}  Middle {teist}] |
+               [Circa  Middle {teist}] |
+               [{pool} Middle {teist}] |
+               [Unit   Middle {kümmend}] |
+               [Circa  Middle {kümmend}] |
+               [Unit   Middle {sada}] |
+               [{üks}  Middle {sada}] |
+               [Circa  Middle {sada}] |
+               [{pool} Middle {sada}] |
+               [{poolteist} Middle {sada}]
+             ] ;
+
+define WordPairs [?* Pairs ?*] ;
+
+# first parts of complex numerals that cannot be in plural
+define BadPlWord [Circa | {pool} | {poolteist}] ;
+define BadPlural $[ BadPlWord Number Case \[Number | Case]* "+Pl" ] ;
+
+define CleanUp [[..] <- Case || Number _ (?) \[Number | Case]* Number Case ,, 
+                [..] <- Number || _ Case (?) \[Number | Case]* Number Case ] ;
+
+#regex [ CleanUp .o. [WordPairs & PairedNumber & ~BadPlural & PairedCase] ] ;
+regex [ CleanUp .o. [WordPairs & ~BadPlural & GoodCase] ] ;
+
+

@@ -14,7 +14,7 @@
 # giellatekno@hum.uit.no or divvun@hum.uit.no
 
 # ==================================================================== #
-#!! !!!       E S T O N I A N  G R A M M A R   C H E C K E R
+#!! !!!       [ L A N G U A G E ]  G R A M M A R   C H E C K E R
 # ==================================================================== #
 # ====================================================================
 
@@ -24,7 +24,7 @@
 #   Development setup:   #
 # ---------------------- #
 #
-# cd $GTHOME/langs/est
+# cd $GTHOME/langs/??? # replace ??? with your language code
 # ./autogen.sh
 # ./configure --enable-apertium --with-hfst --enable-syntax --enable-grammarchecker --enable-tokenisers --enable-alignment --enable-reversed-intersect
 # make
@@ -36,7 +36,7 @@
 # ---------------------- #
 #
 # emacs grammarchecker.cg3  # and C-c C-i / C-c C-c if you have cg-mode installed
-# echo "Sun ij puátá." | sh modes/estgram.mode  # from the terminal
+# echo "Sun ij puátá." | sh modes/???gram.mode  # from the terminal, replacing ??? with your language code
 #
 # ---------------------- #
 #   Other debug-pipes:   #
@@ -48,7 +48,7 @@
 
 
 # The pipeline (but use modes, above)
-#  echo "Sun ij puátá." | hfst-tokenise --giella-cg  tools/tokenisers/tokeniser-gramcheck-gt-desc.pmhfst | vislcg3 -g src/cg3/disambiguator.cg3 -t | vislcg3 -g tools/grammarcheckers/grammarchecker.cg3 -t
+#  echo "Sun ij puátá." | hfst-tokenise —giella-cg tools/tokenisers/tokeniser-gramcheck-gt-desc.pmhfst | vislcg3 -g src/syntax/disambiguation.cg3 -t | vislcg3 -g tools/grammarcheckers/grammarchecker.cg3 -t
 
 
 
@@ -144,29 +144,26 @@ LIST Rom = Rom ; #!! Romertall
 #!! !Tags for morphosyntactic properties
 
 LIST Nom = Nom ; #!! Nom
-LIST Acc = Acc ; #!! Acc
 LIST Gen = Gen ; #!! Gen
 LIST Ill = Ill ; #!! Ill
-LIST Loc = Loc ; #!! Loc
+LIST Ine = Ine ;
+LIST Ela = Ela ;
+LIST All = All ;
+LIST Ade = Ade ; 
+LIST Abl = Abl ; 
+LIST Tra = Tra ; 
+LIST Trm = Trm ; 
+LIST Abe = Abe ; 
 LIST Com = Com ; #!! Com
 LIST Ess = Ess ; #!! Ess
 LIST Par = Par ; #!! Ess
+
 LIST Sg = Sg ;   #!! Sg
 LIST Du = Du ;   #!! Du
 LIST Pl = Pl ;   #!! Pl
 LIST Cmp/SplitR = Cmp/SplitR ;	   #!! Cmp/SplitR
 LIST Cmp/SgNom = Cmp/SgNom ; #!! Cmp/SgNom Cmp/SgGen
 LIST Cmp/SgGen = Cmp/SgGen ; #!! Cmp/SgGen
-LIST PxSg1 = PxSg1 ;	   #!! PxSg1
-LIST PxSg2 = PxSg2 ;	   #!! PxSg2
-LIST PxSg3 = PxSg3 ;	   #!! PxSg3
-LIST PxDu1 = PxDu1 ;	   #!! PxDu1
-LIST PxDu2 = PxDu2 ;	   #!! PxDu2
-LIST PxDu3 = PxDu3 ;	   #!! PxDu3
-LIST PxPl1 = PxPl1 ;	   #!! PxPl1
-LIST PxPl2 = PxPl2 ;	   #!! PxPl2
-LIST PxPl3 = PxPl3 ;	   #!! PxPl3
-LIST Px = PxSg1 PxSg2 PxSg3 PxDu1 PxDu2 PxDu3 PxPl1 PxPl2 PxPl3 ; #!! Px
 
 LIST Comp = Comp ;		   #!! Comp
 LIST Superl = Superl ;	   #!! Superl
@@ -181,26 +178,22 @@ LIST Ind = Ind ;			   #!! Ind
 LIST Pot = Pot ;			   #!! Pot
 LIST Cond = Cond ;			   #!! Cond
 LIST Imprt = Imprt ;		   #!! Imprt
-LIST ImprtII = ImprtII ;	   #!! ImprtII
+
 LIST Sg1 = Sg1 (p1 sg) ;			   #!! Sg1
 LIST Sg2 = Sg2 (p2 sg) ;			   #!! Sg2
 LIST Sg3 = Sg3 (p3 sg) ;			   #!! Sg3
-LIST Du1 = Du1 (p1 du) ;			   #!! Du1
-LIST Du2 = Du2 (p2 du) ;			   #!! Du2
-LIST Du3 = Du3 (p3 du) ;			   #!! Du3
 LIST Pl1 = Pl1 (p1 pl) ;			   #!! Pl1
 LIST Pl2 = Pl2 (p2 pl);			   #!! Pl2
 LIST Pl3 = Pl3 (p3 pl);			   #!! Pl3
+
 LIST Inf = Inf ;			   #!! Inf
 LIST ConNeg = ConNeg ;		   #!! ConNeg
 LIST Neg = Neg ;			   #!! Neg
 LIST PrfPrc = PrfPrc ;		   #!! PrfPrc
-LIST VGen = VGen ;			   #!! VGen
 LIST PrsPrc = PrsPrc ;		   #!! PrsPrc
 LIST Ger = Ger ;			   #!! Ger
 LIST Sup = Sup ;			   #!! Sup
-LIST Actio = Actio ;		   #!! Actio
-LIST VAbess = VAbess ;		   #!! VAbess
+
 
 
 
@@ -358,14 +351,14 @@ SET NOT-COMMA = WORD - COMMA ;  #!! NOT-COMMA
 #!! !Case sets
 # ---------
 
-LIST ADVLCASE = Ill Loc Com Ess ; #!! ADLVCASE
+LIST ADVLCASE =  Ill  Ine  Ela  All  Ade  Abl  Tra  Trm  Abe  Com  Ess ; #!! ADLVCASE
 
-LIST CASE-AGREEMENT = Nom Acc Gen (Pl Ill) Loc Com Ess ; #!! CASE-AGREEMENT
-LIST CASE = Nom Acc Gen Ill Loc Com Ess ; #!! CASE
+LIST CASE-AGREEMENT =  Nom  Gen  Ill  Ine  Ela  All  Ade  Abl  Abe  Par  ; #!! CASE-AGREEMENT
+LIST CASE =  Nom  Gen  Ill  Ine  Ela  All  Ade  Abl  Tra  Trm  Abe  Com  Ess  Par  ; #!! CASE
 
 SET NOT-NOM = CASE - Nom ; #!! NOT-NOM
 SET NOT-GEN = CASE - Gen ; #!! NOT-GEN
-SET NOT-ACC = CASE - Acc ; #!! NOT-ACC
+
 
 #!! !Verb sets
 # ---------
@@ -380,7 +373,7 @@ SET NOT-V = WORD - V ; #!! NOT-V
 
 SET REAL-NEG = Neg - Sup ; #!! REAL-NEG
 
-SET MOOD-V = Ind OR Pot OR Imprt OR ImprtII OR Cond OR (Neg Sup) ; #!! MOOD-V
+SET MOOD-V = Ind OR Pot OR Imprt OR Cond OR (Neg Sup) ; #!! MOOD-V
 
 SET NOT-PRFPRC = WORD - PrfPrc ; #!! NOT-PRFPRC
 
@@ -486,7 +479,6 @@ SET NOT-ADV            = NOT-ADV-DE OR CLB ;
 SET NOT-ADV-N          = NOT-ADV - N;
 SET NOT-ADV-PCLE       = NOT-ADV - Pcle ;
 SET NOT-ADV-INDEF      = NOT-ADV - Indef ;
-SET NOT-ADV-PCLE-ILL-LOC-COM = WORD - Adv - Pcle - Ill - Loc - Com;
 SET NOT-A-ADV-PCLE = WORD - Pcle - A - Adv ; #
 
 
@@ -518,7 +510,6 @@ SET NP-HEAD-PL     = PL-PRON OR (N Pl) OR (A Pl) - Cmp/SplitR  ;
 SET NP-HEAD-SG-NOM = SG-PRON + Nom OR (N Sg Nom) OR (A Sg Nom) - Cmp/SplitR ;
 SET NP-HEAD-PL-NOM = PL-PRON + Nom OR (N Pl Nom) OR (N Coll Nom) OR (A Pl Nom) - Cmp/SplitR ;
 SET NP-HEAD-NOM    = NP-HEAD-SG-NOM OR NP-HEAD-PL-NOM ;
-SET NP-HEAD-ACC    = (Pron Acc) OR (N Acc) OR (A Acc) - Cmp/SplitR - (Dem Attr);
 SET NP-HEAD-GEN    = (Pron Gen) OR (N Gen) OR (A Gen) - Cmp/SplitR - (Dem Attr)   ;
 
 #!! !The PRE-NP-HEAD family of sets
@@ -534,7 +525,7 @@ SET PRE-NP-HEAD = (Prop Attr) OR (Prop @>N) OR (A Attr) OR (ABBR Attr)
          (PrfPrc @>N) OR PrsPrc OR (A Ord) ;
          # The strict version of items that can only be premodifiers, not parts of the predicate
 
-SET PRE-A-N     = (Pron Pers Gen) OR (Pron Pers Acc) OR (Pron Indef) OR Num OR (A Ord) OR (Pron Dem) OR (Pron Refl Gen) OR (Pron Refl Acc) ;
+SET PRE-A-N     = (Pron Pers Gen) OR (Pron Indef) OR Num OR (A Ord) OR (Pron Dem) OR (Pron Refl Gen) ;
 
 SET NOT-PRE-A-N = WORD - PRE-A-N ;
 
@@ -547,8 +538,8 @@ SET NOT-NPMOD     = WORD - PRE-NP-HEAD OR ABBR OR @CVP ;
 # This is the previous NPNH (npnh) set.
 # NOT-NPMOD  = "NOT-PRE-NP-HEAD"
 
-SET NOT-NPMOD-ACC     = NOT-NPMOD - Acc OR ABBR ;
-SET NOT-NPMOD-ACC-ADV     = NOT-NPMOD - Acc - Adv OR ABBR ;
+SET NOT-NPMOD-ACC     = NOT-NPMOD OR ABBR ;
+SET NOT-NPMOD-ACC-ADV     = NOT-NPMOD - Adv OR ABBR ;
 
 SET NOT-NPMODADV    = WORD - PRE-NP-HEAD - Adv ;
 SET NOT-NPMODADV-INDEF   = WORD - PRE-NP-HEAD - Adv - Indef ;
@@ -584,12 +575,20 @@ SET BOC = S-BOUNDARY OR BOS ;
 SET BOC-PUNCT = BOC - ("-") - ("–") ;
 SET EOC = S-BOUNDARY OR EOS ;
 
-SET NP-BOUNDARY = BOS OR EOS OR REAL-CLB OR Inf OR VGen OR Sup OR PPRON-NOT-GEN OR Recipr OR Po OR Pr OR Pcle OR Interj OR CS OR CP OR @CVP ;
+SET NP-BOUNDARY = BOS OR EOS OR REAL-CLB OR Inf OR Sup OR PPRON-NOT-GEN OR Recipr OR Po OR Pr OR Pcle OR Interj OR CS OR CP OR @CVP ;
 
 SET SV-BOUNDARY = S-BOUNDARY OR Inf OR Sup OR FMAINV ;
 
 SET CCCOMMA = CC OR COMMA ;
 	# remember that those are potential sentence boundaries, too
+
+
+
+
+
+# ===================================== #
+#!! !!! Grammarchecker rules begin here 
+# ===================================== #
 
 
 
@@ -602,10 +601,18 @@ LIST &err-no-conneg = &err-no-conneg ;
 LIST &err-orrood-inf = &err-orrood-inf ;
 LIST &err-ext-agr = &err-ext-agr ;
 LIST &err-ext-vagr = &err-ext-vagr ;
+LIST &err-conneg-not-3rdsg = &err-conneg-not-3rdsg ;
+LIST &err-comma = &err-comma ;
 
 MAPPING-PREFIX = & ;
 
+
+#!! !!Grammarchecker rules
+
 SECTION
+
+
+#!! !Speller rules
 
 # Speller suggestions rule – add &SUGGESTWF to any spelling suggestion
 # that we actually want to suggest to the user.
@@ -614,12 +621,144 @@ ADD:spell-it-all (&typo &SUGGESTWF) (<spelled>) ;
 # But perhaps you want to only suggest spellings of words that are not inside "quotes":
 ADD:spell-conservatively (&typo &SUGGESTWF) (<spelled>) IF (NEGATE -1 QMARK LINK 2 QMARK);
 
+
+#!! !Agreement rules
+
+
 # A simple grammar checker rule without suggestions: Ensure preceding nominal agrees with the verb
-ADD:err-agr (&err-agr) TARGET V IF (-1C Sg + Nom) (0 V) (NOT 0 Sg3);
-ADD:err-agr (&err-agr) TARGET V IF (-1C Pron + Sg1 + Nom) (0 V) (NOT 0 Sg1);
-ADD:err-agr (&err-agr) TARGET V IF (-1C Pron + Sg2 + Nom) (0 V) (NOT 0 Sg2);
-ADD:err-agr (&err-agr) TARGET V IF (-1C Pron + Pl1 + Nom) (0 V) (NOT 0 Pl1);
-ADD:err-agr (&err-agr) TARGET V IF (-1C Pron + Pl2 + Nom) (0 V) (NOT 0 Pl2);
+#ADD:err-agr (&err-agr) TARGET V IF (-1C Sg + Nom) (0 V) (NOT 0 Sg3)(NOT 0 (Neg));
+#ADD:err-agr (&err-agr) TARGET V IF (-1C Pron + Sg1 + Nom) (0 V) (NOT 0 Sg1);
+#ADD:err-agr (&err-agr) TARGET V IF (-1C Pron + Sg2 + Nom) (0 V) (NOT 0 Sg2);
+#ADD:err-agr (&err-agr) TARGET V IF (-1C Pron + Pl1 + Nom) (0 V) (NOT 0 Pl1);
+#ADD:err-agr (&err-agr) TARGET V IF (-1C Pron + Pl2 + Nom) (0 V) (NOT 0 Pl2);
+
+LIST PersPronSing1 = "mina" ;
+LIST PersPronSing2 = "sina" ;
+LIST PersPronSing3 = "tema" ;
+LIST PersPronPlur1 = "meie" ;
+LIST PersPronPlur2 = "teie"  ;
+LIST PersPronPlur3 = "nemad" ;
+LIST MaSaMeTeNad = "mina" "sina" "meie" "teie" "nemad" ;
+LIST EiEksEga = "ei" "eks" "ega" ;
+LIST JaNingKui = "ja" "ning" "kui" "või" ;
+
+# A simple grammar checker rule without suggestions: Ensure preceding nominal agrees with the verb
+# correct expressions are:
+# 1) mina elan, sina elad, tema elab, meie elame, teie elate, nemad elavad
+# 2) (ega, eks, ei) ma ela, (ega, eks, ei) sa ela,...
+# 3) X (ja, ning, kui, või (ka)) mina elame, X (ja, ...) sina elate, X (ja, ...) tema elavad
+
+# mina elad (NOT eks ma ela), elab, elame (NOT X ja mina elame), elate, elavad
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing1 + Nom)(0 V)(0 Sg2) (NEGATE -2 EiEksEga LINK 0 Imprt);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing1 + Nom)(0 V)(0 Sg3);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing1 + Nom)(0 V)(0 Pl1) (NEGATE -3 Nom LINK 1 JaNingKui) ;
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing1 + Nom)(0 V)(0 Pl2);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing1 + Nom)(0 V)(0 Pl3);
+
+# sina elan, elab, elame, elate, elavad
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing2 + Nom)(0 V)(0 Sg1);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing2 + Nom)(0 V)(0 Sg3);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing2 + Nom)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing2 + Nom)(0 V)(0 Pl2) (NEGATE -3 Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing2 + Nom)(0 V)(0 Pl3);
+
+# tema elan, elad, elame, elate, elavad
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing3 + Nom)(0 V)(0 Sg1);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing3 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 0 Imprt);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing3 + Nom)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing3 + Nom)(0 V)(0 Pl2) (NEGATE -3 PersPronSing2 OR PersPronPlur2 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing3 + Nom)(0 V)(0 Pl3) (NEGATE -3 Nom LINK 1 JaNingKui);
+
+# rebane elan, elad, ...
+ADD:err-agr (&err-agr) TARGET V  (-1C Sg + Nom)(NOT -1 MaSaMeTeNad)(0 V)(0 Sg1);
+ADD:err-agr (&err-agr) TARGET V  (-1C Sg + Nom)(NOT -1 MaSaMeTeNad)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 0 Imprt);
+ADD:err-agr (&err-agr) TARGET V  (-1C Sg + Nom)(NOT -1 MaSaMeTeNad)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V  (-1C Sg + Nom)(NOT -1 MaSaMeTeNad)(0 V)(0 Pl2) (NEGATE -3 PersPronSing2 OR PersPronPlur2 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V  (-1C Sg + Nom)(NOT -1 MaSaMeTeNad)(0 V)(0 Pl3) (NEGATE -3 Nom LINK 1 JaNingKui);
+
+# meie elan, elad, elab, elate, elavad
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur1 + Nom)(0 V)(0 Sg1);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur1 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 0 Imprt);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur1 + Nom)(0 V)(0 Sg3);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur1 + Nom)(0 V)(0 Pl2);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur1 + Nom)(0 V)(0 Pl3);
+
+# teie elan, elad, elab, elame, elavad
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur2 + Nom)(0 V)(0 Sg1);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur2 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 0 Imprt);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur2 + Nom)(0 V)(0 Sg3);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur2 + Nom)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur2 + Nom)(0 V)(0 Pl2) (-3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur2 + Nom)(0 V)(0 Pl3) ;
+
+# nemad elan, elad, elab, elame, elate
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur3 + Nom)(0 V)(0 Sg1);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur3 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 0 Imprt);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur3 + Nom)(0 V)(0 Sg3);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur3 + Nom)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur3 + Nom)(0 V)(0 Pl2) (NEGATE -3 PersPronSing2 OR PersPronPlur2 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur3 + Nom)(0 V)(0 Pl3) (-3 PersPronSing1 OR PersPronPlur1 OR PersPronSing2 OR PersPronPlur2 + Nom LINK 1 JaNingKui);
+
+# modal verb government error
+LIST InfMod = "võima" "saama" "tohtima" ;
+LIST SupMod = "pidama" ;
+LIST Inf = Inf ;
+LIST Sup = Sup ;
+LIST Kvm = "," "." "!" "?" ";" ":" ;
+
+ADD:err-gov (&err-gov) TARGET V IF (0 (Sup)) (*-1C InfMod BARRIER Kvm)(NEGATE *0 Inf);
+ADD:err-gov (&err-gov) TARGET V IF (0 (Inf)) (*-1C SupMod BARRIER Kvm)(NEGATE *0 Sup);
+
+
+#!! !Negation verb rules
+
+ADD:err-conneg-not-3rdsg (&err-conneg-not-3rdsg) TARGET (V Prs Sg3) IF (0 Ind OR Cond)(-1 ("ei") LINK NOT 0 Sup);	
+
+
+LIST Komaga = "vaid" "kuid" "sest" "siis" ;
+LIST PoordV = (V Sg1) (V Sg2) (V Sg3) (V Pl1) (V Pl2) (V Pl3) ;
+
+LIST Sides = CC SC;
+
+LIST Komata = "aga" "vaid" "siis";
+LIST KomataCC = "ja" "ning" "või" "ehk" "ega";
+LIST KomagaCC = "ent" "kuid" ;
+LIST Vordlus = "kui" "nagu" ;
+LIST RelPron = "kes" "mis" ;
+LIST SP = N Pron ;
+
+ADD:err-comma (&err-comma) TARGET Sides IF (*-1C PoordV LINK NEGATE *1 Kvm) (NEGATE *1 PoordV) ;
+ADD:err-comma (&err-comma) TARGET Sides IF (*-1C PoordV LINK NEGATE *1 Kvm) (*1 PoordV LINK NEGATE *-1 Kvm) ;
+
+ADD:err-comma (&err-comma) TARGET Komata (-1 (",")) (-2 ("mina")) (1 (V Sg1));
+ADD:err-comma (&err-comma) TARGET Komata (-1 (",")) (-2 ("sina")) (1 (V Sg2));
+ADD:err-comma (&err-comma) TARGET Komata (-1 (",")) (-2 ("tema")) (1 (V Sg3));
+
+
+ADD:err-comma (&err-comma) TARGET Vordlus IF (*-1C PoordV LINK NEGATE *1 Kvm) (NEGATE *1 PoordV) ;
+ADD:err-comma (&err-comma) TARGET Vordlus IF (1 ("ka")) (NEGATE *1 PoordV) ; 
+
+LIST Kaanded = Nom Gen Par Add Ine Ill Ela All Ade Abl;
+
+ADD:err-comma (&err-comma) TARGET Vordlus IF (1 ("ka"))(-1 (",")) (-2 $$Kaanded) (2 $$Kaanded) ;
+
+
+ADD:err-comma (&err-comma) TARGET KomataCC IF (-1 (",")) (-2 $$Kaanded) (1 $$Kaanded) ;
+ADD:err-comma (&err-comma) TARGET KomagaCC IF (NOT -1 (",")) ;
+
+
+#Ajamäärus
+LIST Nadalapaev = "esmaspäev" "teisipäev" "kolmapäev" "neljapäev" "reede" "laupäev" "pühapäev" ;
+LIST Kuu = "jaanuar" "veebruar" "märts" "aprill" "mai" "juuni" "juuli" "august" "september" "oktoober" "november" "detsember" ;
+
+ADD:err-comma (&err-comma) TARGET Nadalapaev (NOT 1 (","))(1 (Ord))(2 Kuu) ;
+
+#Relatiivlaused
+
+ADD:err-comma (&err-comma) TARGET RelPron IF (NOT -1 Kvm) (-1C SP) (*-1C PoordV LINK NEGATE *1 Kvm); 
+ADD:err-comma (&err-comma) TARGET RelPron IF (NOT -1 Kvm) (-1C SP) (*-1C PoordV BARRIER Kvm); 
+
+#!! !Postposition rules
 
 # And one with a suggestion where we simply change the tag Sg into Attr:
 ADD:attr-not-pred (&attr-not-pred) TARGET (A Sg) IF (NOT 0 Attr OR Gen) (1 CC LINK *1 COMMON-N) ;
@@ -629,6 +768,10 @@ COPY:attr-not-pred (Attr &SUGGEST) EXCEPT (Sg) TARGET (&attr-not-pred) ;
 # tag too – &-prefixed error tags are ignored when generating, but
 # used to create human-readable messages.
 
+
+#!! !Punctuation rules
+
+# NB! This is just for demo; we would NOT want to change " to « or »
 # Simple punctuation rules showing how to change the lemma in the suggestions:
 ADD:use-guillemets (&guillemets) TARGET (""");
 COPY:left-guillemet ("«" &SUGGEST) EXCEPT (""") TARGET (&guillemets) ;
@@ -636,3 +779,99 @@ COPY:right-guillemet ("»" &SUGGEST) EXCEPT (""") TARGET (&guillemets) ;
 
 ADD:use-ellipsis (&ellipsis) TARGET ("...");
 COPY:use-ellipsis ("…" &SUGGEST) EXCEPT ("...") TARGET (&ellipsis) ;
+
+# This is copied from the sme grammarchecker.cg3
+# ----------------------------------------------
+    # Spacing errors
+    # --------------
+
+# Note that some of these rules some times have to span windows – but
+# still go exactly one word – which is a little complicated in
+# CG. Therefore, we define some templates for going exactly one word
+# to the left/right:
+TEMPLATE prevWordCrossSent = (-1 (*)) OR (-1 (>>>) LINK *-2< (<<<) BARRIER (<<<)) ;
+TEMPLATE nextWordCrossSent = (1 (*))  OR (0  (<<<) LINK *1>  (>>>) BARRIER (>>>) LINK 1 (*)) ;
+# In the above template, the first test is the regular, non-spanning
+# case – it just goes exactly one word to the right and matches
+# anything.
+#
+# TODO: vislcg3 1.3.0 has new @< and @> positions to jump to the
+# absolute position in the respectively previous and next window. Once
+# https://github.com/TinoDidriksen/cg3/issues/47 is solved, we can
+# change the above to the simpler
+#   TEMPLATE prevWordCrossSent = (-1 (*)) OR (-1 (>>>) LINK @<-1 (*)) ;
+# where the part after OR means "I am the first word of this window,
+# link the the very last word of the previous window". Similarly,
+#   TEMPLATE nextWordCrossSent = (1 (*))  OR (0  (<<<) LINK @>1  (*)) ;
+# says "I am the last word of this window, link to the very first word
+# of the next window".
+#
+# The second test, if the first one didn't match, will only run from
+# the last cohort of a window, and will link to the first word of the
+# following window. The "0 (<<<)" means "we're the last word", while
+# the (>>>) matches the invisible first cohort of the following window
+# (and the BARRIER ensures we only cross exactly one window
+# boundary). Then we match anything on the following cohort, which is
+# the first real cohort of the window.
+#
+# See http://beta.visl.sdu.dk/cg3/single/#test-spanning for some
+# documentation on the < and > modifiers, and
+# http://beta.visl.sdu.dk/cg3/single/#templates on templates. The
+# below rules use these templates like
+# (T:nextWordCrossSent LINK 0 (<someTag>))
+
+## ( áddejumi
+
+
+ADD:space-after-paren-beg      (&space-after-paren-beg)       TARGET (<spaceAfterParenBeg>) ;
+ADD:space-after-paren-beg-link (&space-after-paren-beg &LINK) TARGET (*) IF (-1 (<spaceAfterParenBeg>) ) ;
+ADDRELATION:space-after-paren-beg-rel (RIGHT) (&space-after-paren-beg) TO (1 (&LINK) LINK 0 (&space-after-paren-beg)) ;
+COPY:space-after-paren-beg-sugg ("<$1$2>"v &SUGGESTWF) TARGET ("<(.*)>"r &space-after-paren-beg) IF (1 ("<(.*)>"r)) (NOT 0 (&LINK)) ;
+	## áddejumi )
+	
+ADD:space-before-paren-end      (&space-before-paren-end)       TARGET (<spaceBeforeParenEnd>);
+ADD:space-before-paren-end-link (&space-before-paren-end &LINK) TARGET (*) IF (1 (<spaceBeforeParenEnd>) );
+ADDRELATION:space-before-paren-end-rel (LEFT) (&space-before-paren-end) TO (-1 (&LINK) LINK 0 (&space-before-paren-end) );
+COPY:space-before-paren-end-sugg ("<$2$1>"v &SUGGESTWF) TARGET ("<(.*)>"r &space-before-paren-end) IF (-1 ("<(.*)>"r)) (NOT 0 (&LINK)) ;
+	## Son gii njeaidá skáluid šaddá eret vuolgit . De galgá fas cegget skáluid ja álgit gaikut.
+		
+ADD:space-before-punct-mark      (&space-before-punct-mark)       TARGET (<SpaceBeforePunctMark>);
+ADD:space-before-punct-mark-link (&space-before-punct-mark &LINK) TARGET (*) IF (1 (<SpaceBeforePunctMark>) );
+ADDRELATION:space-before-punct-mark-rel (LEFT) (&space-before-punct-mark) TO (-1 (&LINK) LINK 0 (&space-before-punct-mark) );
+COPY:space-before-punct-mark-sugg ("<$2$1>"v &SUGGESTWF) TARGET ("<(.*)>"r &space-before-punct-mark) IF (-1 ("<(.*)>"r)) (NOT 0 (&LINK)) ;
+	## vuosttu  ceggejit
+	## álgit gaikut.  Stoagus joatká
+	## maid lea bargu.  – Mun barggan
+
+ADD:double-space-before (&double-space-before)     (<doubleSpaceBefore>);
+ADD:double-space-before-link (&double-space-before &LINK) TARGET (*) IF (T:nextWordCrossSent LINK 0 (<doubleSpaceBefore>)) ;
+ADDRELATION:double-space-before-rel ($2) (*) FROM (T:nextWordCrossSent LINK 0 (<doubleSpaceBefore>)) ;
+ADDRELATION:double-space-before-rel (LEFT) (&LINK) FROM (T:nextWordCrossSent LINK 0 (<doubleSpaceBefore>)) ;
+COPY:double-space-before ("<$2 $1>"v &SUGGESTWF) TARGET ("<(.*)>"r &double-space-before) IF (T:prevWordCrossSent LINK 0 ("<(.*)>"r)) (NOT 0 (&LINK)) ;
+	# Test sentence: 'Sanner,gii ráđđehusas.gii lávvardaga?Bonju dán!Lassin.'
+	## Sanner,gii                       - works
+	## ráđđehusas.Europride-festivála   - does not work
+	## lávvardaga?Bonju                 - does not work
+	## ráidovázzimis!Lassin             - does not work
+	
+LIST no-space-after-punct-OK-before = ")" ; # «jna.)» is OK
+	# 1. Add error tag on punctuation
+	
+ADD:no-space-after-punct      (&no-space-after-punct-mark)       TARGET (<NoSpaceAfterPunctMark>) IF (T:nextWordCrossSent LINK NOT 0 no-space-after-punct-OK-before)(NEGATE 0 (A Arab)) ;
+	#$ ILS árvvoštalai buot geahččalemiid mannan giđa maid {4.}, 7. ja 10. luohkáid ja vuođđokurssa oahppit čađahedje.	
+	
+	# 2. Add error tag + &LINK on the following word (part 1 of extending the blue underline to the following word):
+
+ADD:no-space-after-punct-link (&no-space-after-punct-mark &LINK) TARGET (*) IF (T:prevWordCrossSent LINK 0 (&no-space-after-punct-mark));
+
+	# 3. Add RIGHT relation on the punctuation (part 2 of extending the blue underline to the following word,
+	#    also ensures that the correction will replace the word, not be appended to it):
+	
+ADDRELATION:no-space-after-punct-rel (RIGHT) (&LINK) FROM (T:prevWordCrossSent LINK 0 (<NoSpaceAfterPunctMark>)) ;
+
+	# 4. Add suggestions
+	
+COPY:no-space-after-punct-sugg ("<$1 $2>"v &SUGGESTWF) TARGET ("<(.*)>"r &no-space-after-punct-mark) IF (T:nextWordCrossSent LINK 0 ("<(.*)>"r)) (NOT 0 (&LINK));
+
+# End of copy from sme
+# --------------------

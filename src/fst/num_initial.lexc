@@ -1,0 +1,34 @@
+! Initial word (e.g. viis) of compound numerals (e.g. viissada)
+! The flag diacritics must harmonise with those of LEXICON CardinalNumerals
+! NB! Notice that there is no POS tag (+Num, +N etc)
+
+LEXICON Root
+
+! This lexicon is union-ed with the lexicon of simplex words.
+! They are tied to each other via flag diacritics.
+! Restricting compounds with these compound numerals.
+! Only two-part compounds allowed (instead of the default 3, thus have to play with Part): 
+
+@D.Part@@P.Part.Two@@P.POS.NumCardCompound@ CompoundNumerals ;          ! numeral + adjective (incl. derived adj)
+@R.Part.One@@R.POS.Pref@@P.Part.Three@@P.POS.NumCardCompound@ CompoundNumerals ;   ! pref + numeral
+ 
+LEXICON CompoundNumerals
+
+üks:˘ü KAKS ;
+kaks:k˘a KAKS ;
+kolm:k˘olm%>%{pl.i%}%{rare%} EIT ;
+neli:n˘elʲJ1%>%{pl.u%} PIIM ;
+viis:v˘iiS1%{stemill%} VARS ;
+kuus:k˘uuS1%{stemill%} VARS ;
+seitse:s˘eitsE2 HAARE ;
+kaheksa:kaheksa AASTA ;
+üheksa:üheksa AASTA ;
+! kümme+Num+Card:kümmE2 SEEME ;
+
+paar:p˘aar TAUD ;
+pool:p˘ool%{stemill%} KEEL ;
+! sada:saD1J1a%>%{pl.u%} SADA ;
+
+mitu:m˘ittU2 HAARE ;
+mõni:mõnD3 MÕNI ;
+poolteist:p˘ool POOLTEIST ;

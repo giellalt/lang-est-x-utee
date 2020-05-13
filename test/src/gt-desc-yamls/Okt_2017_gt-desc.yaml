@@ -1,0 +1,19 @@
+Config:
+  hfst:
+      ../../../src/generator-gt-norm.hfstol: Gen
+      ../../../src/analyser-gt-norm.hfstol: Morph
+  xerox:
+      ../../../src/generator-gt-norm.xfst: Gen
+      ../../../src/analyser-gt-norm.xfst: Morph
+      lookup: App
+
+Tests:
+
+# gi/ki 
+
+  Nouns:
+    uss+N+Sg+Nom: uss
+    uss+N+Sg+Nom+Foc/gi: usski
+    usk+N+Sg+Nom: usk
+    usk+N+Sg+Nom+Foc/gi: uskki
+

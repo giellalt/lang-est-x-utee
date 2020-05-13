@@ -1,0 +1,23 @@
+# remove:
+#  Pl forms of some words
+# Pl Nom is not removed
+
+define sgwords [{kumbki} | {keegi} | {miski} | {eikeegi} | {eimiski}] ;
+
+define PL [ "+Pl" ] ;
+define NOM [ "+Nom" ] ;
+define POS ["+Pron" | "+A" | "+N"] ;
+
+# e.g. miskite 
+define NOTNORM [ "+Use/NotNorm" ] ;
+
+# make sure only word-final components are considered
+define WB [ "#" ] ;
+
+# plwords are words in plural, excluding Nominative and those that are out of language norm
+# (we allow the latter because we have a special tag for them which vcan be used for filtering later)
+
+define plwords [ sgwords POS [\WB]* PL [\WB & \NOM & \NOTNORM]+ ] ;
+
+regex ~[plwords] ;
+

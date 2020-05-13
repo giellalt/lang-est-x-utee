@@ -62,21 +62,8 @@ EXTEDITOR=@SEE@
 ##### Extract lemmas - add additional egrep pattern as parameters: #####
 ##### --include "(pattern1|pattern2|...)"                          #####
 ##### --exclude "(pattern1|pattern2|...)"                          #####
-@GTCORE@/scripts/extract-lemmas.sh -k \
-    $source_file | \
-	sed \
-		-e '/^ära	;$/d' \
-		-e 's/	GI;$//' \
-		-e 's/	28_gema;$/gema/' \
-		-e 's/	34_D_TUD;$/dma/' \
-		-e 's/	34_K_TUD;$/kma/' \
-		-e 's/	30;$/lema/' \
-		-e 's/	36_ema;$/ema/' \
-		-e 's/	3[16];$/ema/' \
-		-e 's/	.*;$/ma/' \
-		-e 's/\(.\)[=.]2\?/\1\1/' \
-		-e 's/\([[:upper:]]\)1/\1/' | \
-		tr 'KPTGBD' 'kptgbd' | sort -u > $lemmas
+@GTCORE@/scripts/extract-lemmas.sh --exclude "+Pref" \
+    $source_file > $lemmas
 
 ###### Start testing: #######
 transducer_found=0
@@ -105,7 +92,7 @@ for f in $fsttype; do
     if [ -f "$generator_file.$suffix" ]; then
         let "transducer_found += 1"
 
-###### Test non-compounds: #######
+###### Test non-comopunds: #######
         # generate verbs in infitive, extract the resulting generated lemma,
         # store it:
         sed 's/$/+V+Pers+Sup+Ill/' $lemmas | $lookup_tool $generator_file.$suffix \

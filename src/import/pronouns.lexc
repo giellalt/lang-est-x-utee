@@ -1,0 +1,108 @@
+LEXICON Pronouns
+
+ @P.Part.Bad@ PlainPronouns ;
+ CompoundingPronouns ;
+
+LEXICON PlainPronouns
+
+muist+Pron:m´uist #;
+esimene+Pron:esimene OLULINE ;
+igasugune+Pron:iga#sugune SOOLANE ;
+igaüks+Pron:iga#´ü KAKS ;
+isesugune+Pron:ise#sugune SOOLANE ;
+kumb+Pron:k´umB1%>%{pl.i%}%{rare%} PIIM ;
+meiesugune+Pron:meie#sugune SOOLANE ;
+meietaoline+Pron:meie#t´aoline SUULINE ;
+mihukene+Pron:mihukene OLULINE ;
+mihuke+Pron:mihuke PEENIKE ;
+milletaoline+Pron:mille#t´aoline SUULINE ;
+milline+Pron:mil,line SOOLANE ;
+minakene+Pron:minakene OLULINE ;
+minake+Pron:minake PEENIKE ;
+mingi+Pron:m´ingi AASTA ;
+mingisugune+Pron:m´ingi#sugune SOOLANE ;
+minusugune+Pron:minu#sugune SOOLANE ;
+minutaoline+Pron:minu#t´aoline SUULINE ;
+miskisugune+Pron:m´iski#sugune SOOLANE ;
+missugune+Pron:m´is#sugune SOOLANE ;
+misukene+Pron:misukene OLULINE ;
+misuke+Pron:misuke PEENIKE ;
+mitmendik+Pron:m´itmend´ik ELANIK ;
+mitmes+Pron:m´itmeN1S1 HALE ;
+mitmesugune+Pron:m´itme#sugune SOOLANE ;
+mitmetaoline+Pron:m´itme#t´aoline SUULINE ;
+mõnesugune+Pron:mõne#sugune SOOLANE ;
+mõningane+Pron:mõningane OLULINE ;
+mõningas+Pron:mõninga LOHAKAS ;
+mäherdune+Pron:mäherdune OLULINE ;
+naasugune+Pron:n´aa#sugune SOOLANE ;
+nendesugune+Pron:nende#sugune SOOLANE ;
+nendetaoline+Pron:nende#t´aoline SUULINE ;
+nihukene+Pron:nihukene OLULINE ;
+nihuke+Pron:nihuke PEENIKE ;
+niimitu+Pron:n´ii#m´ittU2 HAARE ;
+niipaljuke+Pron:n´ii#pal,juke PEENIKE ;
+niisamasugune+Pron:n´ii#sama#sugune SOOLANE ;
+niisugune+Pron:n´ii#sugune SOOLANE ;
+nisukene+Pron:nisukene OLULINE ;
+nisuke+Pron:nisuke PEENIKE ;
+muu+Pron:m´uu%>%{id%} PUU ;
+oma+Pron:oma%>%{pl.i%} KAVA ;
+omasugune+Pron:oma#sugune SOOLANE ;
+omataoline+Pron:oma#t´aoline SUULINE ;
+paljuke+Pron:pal,juke PEENIKE ;
+samasugune+Pron:sama#sugune SOOLANE ;
+samataoline+Pron:sama#t´aoline SUULINE ;
+samune+Pron:samune SOOLANE ;
+seesugune+Pron:s´ee#sugune SOOLANE ;
+selletaoline+Pron:selle#t´aoline SUULINE ;
+selline+Pron:sel,line SOOLANE ;
+setu+Pron:s´ettU2 HAARE ;
+sihukene+Pron:sihukene OLULINE ;
+sihuke+Pron:sihuke PEENIKE ;
+sinusugune+Pron:sinu#sugune SOOLANE ;
+sinutaoline+Pron:sinu#t´aoline SUULINE ;
+säherdune+Pron:säherdune OLULINE ;
+säärane+Pron:säärane SOOLANE ;
+taoline+Pron:t´aoline SUULINE ;
+teiesugune+Pron:teie#sugune SOOLANE ;
+teietaoline+Pron:teie#t´aoline SUULINE ;
+teine+Pron:teine TEINE ;
+teineteise+Pron:teine#teine OLULINE ;
+teissugune+Pron:t´eis#sugune SOOLANE ;
+teistsugune+Pron:t´eist#sugune SOOLANE ;
+temakene+Pron:temakene OLULINE ;
+temake+Pron:temake PEENIKE ;
+temasugune+Pron:tema#sugune SOOLANE ;
+temataoline+Pron:tema#t´aoline SUULINE ;
+üks+Pron:´ü KAKS ;
+üksteise+Pron:´üks#teine OLULINE ;
+omaenese+Pron:oma# OMAENESE ;
+kumbki+Pron:kumB1%>%{pl.i%}%{rare%} KUMBKI ;
+miski+Pron:mi MISKI ;
+keegi+Pron:ke KEEGI ;
+eimiski+Pron:ei#mi MISKI ;
+eikeegi+Pron:ei#ke KEEGI ;
+
+LEXICON CompoundingPronouns
+
+mis+Pron:mi KES ;
+kes+Pron:ke KES ;
+see+Pron: SEE ;
+too+Pron: TOO ;
+mina+Pron:m MASA ;
+sina+Pron:s MASA ;
+meie+Pron:me METE ;
+teie+Pron:te METE ;
+tema+Pron:t TEMA ;
+nemad+Pron:n NEMAD ;
+@P.Stem.ise@ise+Pron:@P.Stem.ise@ ISE ;
+@P.Stem.ise@iseenese+Pron:@P.Stem.ise@ise# ISE ;
+kõik+Pron:kõik KÕIK ;
+
+iga+Pron:iga RUBLA ;
+mitu+Pron:m´ittU2 HAARE ;
+mõlema+Pron:mõlem MAGUS ;
+mõni+Pron:mõn MÕNI ;
+palju+Pron:pal,ju PERE ;
+sama+Pron:sama%>%{pl.u%} KAVA ;

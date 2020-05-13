@@ -1,17 +1,14 @@
 
+This is a grammatical analyser for Estonian.
 
-This is a test version of a grammatical analyser for Estonian.
-
-It contains 44600 stems and a morphological component.
-
-This analyser should be compared to another est analyser, 
-kept in experiment-langs/est.
-
+It contains 73000 lemmas, and a full morphological model. The main architect
+behind the analyser is Heiki-Jaan Kaalep.
 
 ----
 
 The structure of the source file catalogue is the same for all
 the languages, it is documented [here|/infra/infraremake/NewinfraCatalogues.html].
+
 
 
 These pages document how to build the parsers. If you want to know
