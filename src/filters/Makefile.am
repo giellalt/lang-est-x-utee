@@ -59,6 +59,6 @@ compound_mask.lexc: multichars.txt compound_definitions.lexc compound_rules.lexc
 #########################################################
 
 # Included build file, where the actual build instructions are:
-include $(top_srcdir)/am-shared/src-filters-dir-include.am
+include $(top_srcdir)/../giella-core/am-shared/src-filters-dir-include.am
 
 # vim: set ft=automake:
