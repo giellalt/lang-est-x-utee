@@ -180,7 +180,7 @@ num_final.tmp1.xfst: fst/num_final.tmp.xfst \
 # upcase names:
 # upcase both the lexical and the surface side
 fst/guesser.tmp.hfst: fst/guesser.tmp0.hfst filters/upcase-guessed_proper-strings.est.hfst
-	$(AM_V_XFST)$(PRINTF) "set flag-is-epsilon OFF\n\
+	$(AM_V_XFST_TOOL)$(PRINTF) "set flag-is-epsilon OFF\n\
 			read regex                         \
 			@\"filters/upcase-guessed_proper-strings.est.hfst\".i       \
 			.o. @\"$<\"   \
@@ -194,7 +194,7 @@ fst/guesser.tmp.hfst: fst/guesser.tmp0.hfst filters/upcase-guessed_proper-string
 # HFST:
 # a transducer for blabla- and Blabla-
 guesser-smth.hfst: fst/guesser-smth.xfscript
-	$(AM_V_XFST)$(PRINTF) "set flag-is-epsilon ON\n\
+	$(AM_V_XFST_TOOL)$(PRINTF) "set flag-is-epsilon ON\n\
 			source $<   \
 			\n\
 		 save stack $@\n\
