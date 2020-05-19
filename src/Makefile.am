@@ -195,8 +195,7 @@ fst/guesser.tmp.hfst: fst/guesser.tmp0.hfst filters/upcase-guessed_proper-string
 # a transducer for blabla- and Blabla-
 guesser-smth.hfst: fst/guesser-smth.xfscript
 	$(AM_V_XFST_TOOL)$(PRINTF) "set flag-is-epsilon ON\n\
-			source $<   \
-			\n\
+			source $<\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
