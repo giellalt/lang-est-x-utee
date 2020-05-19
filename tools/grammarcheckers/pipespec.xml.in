@@ -35,7 +35,11 @@
     </blanktag>
     <cg><grammar n="mwe-dis.bin"/></cg>
     <mwesplit/>
-    <cgspell>
+    <cgspell
+        limit="10"
+        beam="40"
+        max-weight="5000"
+        max-unknown-rate="0.4">
       <lexicon n="acceptor.default.hfst"/>
       <errmodel n="errmodel.default.hfst"/>
     </cgspell>
@@ -55,7 +59,11 @@
     <tokenize><tokenizer n="tokeniser-gramcheck-gt-desc.pmhfst"/></tokenize>
     <cg><grammar n="mwe-dis.bin"/></cg>
     <mwesplit/>
-    <cgspell>
+    <cgspell
+        limit="10"
+        beam="40"
+        max-weight="5000"
+        max-unknown-rate="0.4">
       <lexicon n="acceptor.default.hfst"/>
       <errmodel n="errmodel.default.hfst"/>
     </cgspell>

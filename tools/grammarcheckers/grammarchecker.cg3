@@ -773,14 +773,14 @@ COPY:attr-not-pred (Attr &SUGGEST) EXCEPT (Sg) TARGET (&attr-not-pred) ;
 
 # NB! This is just for demo; we would NOT want to change " to « or »
 # Simple punctuation rules showing how to change the lemma in the suggestions:
-ADD:use-guillemets (&guillemets) TARGET (""");
-COPY:left-guillemet ("«" &SUGGEST) EXCEPT (""") TARGET (&guillemets) ;
-COPY:right-guillemet ("»" &SUGGEST) EXCEPT (""") TARGET (&guillemets) ;
+#ADD:use-guillemets (&guillemets) TARGET (""");
+#COPY:left-guillemet ("«" &SUGGEST) EXCEPT (""") TARGET (&guillemets) ;
+#COPY:right-guillemet ("»" &SUGGEST) EXCEPT (""") TARGET (&guillemets) ;
 
-ADD:use-ellipsis (&ellipsis) TARGET ("...");
-COPY:use-ellipsis ("…" &SUGGEST) EXCEPT ("...") TARGET (&ellipsis) ;
+#ADD:use-ellipsis (&ellipsis) TARGET ("...");
+#COPY:use-ellipsis ("…" &SUGGEST) EXCEPT ("...") TARGET (&ellipsis) ;
 
-# This is copied from the sme grammarchecker.cg3
+# This is essentially copied from the sme grammarchecker.cg3
 # ----------------------------------------------
     # Spacing errors
     # --------------
@@ -820,44 +820,38 @@ TEMPLATE nextWordCrossSent = (1 (*))  OR (0  (<<<) LINK *1>  (>>>) BARRIER (>>>)
 # below rules use these templates like
 # (T:nextWordCrossSent LINK 0 (<someTag>))
 
-## ( áddejumi
-
-
+    ## ( sulujärgne
 ADD:space-after-paren-beg      (&space-after-paren-beg)       TARGET (<spaceAfterParenBeg>) ;
 ADD:space-after-paren-beg-link (&space-after-paren-beg &LINK) TARGET (*) IF (-1 (<spaceAfterParenBeg>) ) ;
 ADDRELATION:space-after-paren-beg-rel (RIGHT) (&space-after-paren-beg) TO (1 (&LINK) LINK 0 (&space-after-paren-beg)) ;
 COPY:space-after-paren-beg-sugg ("<$1$2>"v &SUGGESTWF) TARGET ("<(.*)>"r &space-after-paren-beg) IF (1 ("<(.*)>"r)) (NOT 0 (&LINK)) ;
-	## áddejumi )
-	
+
+    ## sulueelne )
 ADD:space-before-paren-end      (&space-before-paren-end)       TARGET (<spaceBeforeParenEnd>);
 ADD:space-before-paren-end-link (&space-before-paren-end &LINK) TARGET (*) IF (1 (<spaceBeforeParenEnd>) );
 ADDRELATION:space-before-paren-end-rel (LEFT) (&space-before-paren-end) TO (-1 (&LINK) LINK 0 (&space-before-paren-end) );
 COPY:space-before-paren-end-sugg ("<$2$1>"v &SUGGESTWF) TARGET ("<(.*)>"r &space-before-paren-end) IF (-1 ("<(.*)>"r)) (NOT 0 (&LINK)) ;
-	## Son gii njeaidá skáluid šaddá eret vuolgit . De galgá fas cegget skáluid ja álgit gaikut.
-		
+
+    ## Lause lõpp . Ja teise algus.
 ADD:space-before-punct-mark      (&space-before-punct-mark)       TARGET (<SpaceBeforePunctMark>);
 ADD:space-before-punct-mark-link (&space-before-punct-mark &LINK) TARGET (*) IF (1 (<SpaceBeforePunctMark>) );
 ADDRELATION:space-before-punct-mark-rel (LEFT) (&space-before-punct-mark) TO (-1 (&LINK) LINK 0 (&space-before-punct-mark) );
 COPY:space-before-punct-mark-sugg ("<$2$1>"v &SUGGESTWF) TARGET ("<(.*)>"r &space-before-punct-mark) IF (-1 ("<(.*)>"r)) (NOT 0 (&LINK)) ;
-	## vuosttu  ceggejit
-	## álgit gaikut.  Stoagus joatká
-	## maid lea bargu.  – Mun barggan
 
+    ## üks  kaks  
+    ## üks kaks.  Kolm
+    ## üks kaks.  – Veel kolm
 ADD:double-space-before (&double-space-before)     (<doubleSpaceBefore>);
 ADD:double-space-before-link (&double-space-before &LINK) TARGET (*) IF (T:nextWordCrossSent LINK 0 (<doubleSpaceBefore>)) ;
 ADDRELATION:double-space-before-rel ($2) (*) FROM (T:nextWordCrossSent LINK 0 (<doubleSpaceBefore>)) ;
 ADDRELATION:double-space-before-rel (LEFT) (&LINK) FROM (T:nextWordCrossSent LINK 0 (<doubleSpaceBefore>)) ;
 COPY:double-space-before ("<$2 $1>"v &SUGGESTWF) TARGET ("<(.*)>"r &double-space-before) IF (T:prevWordCrossSent LINK 0 ("<(.*)>"r)) (NOT 0 (&LINK)) ;
-	# Test sentence: 'Sanner,gii ráđđehusas.gii lávvardaga?Bonju dán!Lassin.'
-	## Sanner,gii                       - works
-	## ráđđehusas.Europride-festivála   - does not work
-	## lávvardaga?Bonju                 - does not work
-	## ráidovázzimis!Lassin             - does not work
 	
-LIST no-space-after-punct-OK-before = ")" ; # «jna.)» is OK
+LIST no-space-after-punct-OK-before = ")" "]" ">" "}" QMARK ; # «jna.)» is OK
 	# 1. Add error tag on punctuation
 	
-ADD:no-space-after-punct      (&no-space-after-punct-mark)       TARGET (<NoSpaceAfterPunctMark>) IF (T:nextWordCrossSent LINK NOT 0 no-space-after-punct-OK-before)(NEGATE 0 (A Arab)) ;
+ADD:no-space-after-punct      (&no-space-after-punct-mark)       TARGET (<NoSpaceAfterPunctMark>) IF (T:nextWordCrossSent LINK NOT 0 no-space-after-punct-OK-before) ;
+# (NEGATE 0 (A Arab))
 	#$ ILS árvvoštalai buot geahččalemiid mannan giđa maid {4.}, 7. ja 10. luohkáid ja vuođđokurssa oahppit čađahedje.	
 	
 	# 2. Add error tag + &LINK on the following word (part 1 of extending the blue underline to the following word):
