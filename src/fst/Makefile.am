@@ -86,7 +86,7 @@ GT_LOCAL_SRCS=\
 #				acronyms.tmp.lexc 
 
 # Define local xfscripts here:
-GT_LOCAL_XFSCRIPT_SRCS=
+GT_LOCAL_XFSCRIPT_SRCS=guesser-smth.xfscript
 
 # Define here any additional sources just included in the distro:
 GT_DISTRO_SRCS=
@@ -129,6 +129,14 @@ guesser.tmp0.lexc: guesser.lexc $(GT_LEXC_ROOT) $(EST_AFFIX_FILES:%=%.lexc)
 			   cat $< >> $@ && \
 			   cat $(EST_AFFIX_FILES:%=%.lexc) >> $@
 
+# guesser
+# HFST:
+# a transducer for blabla- and Blabla-
+guesser-smth.hfst: guesser-smth.xfscript
+	$(AM_V_XFST_TOOL)$(PRINTF) "set flag-is-epsilon ON\n\
+			source $<\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
 
 ### END: Local processing: ###
 
