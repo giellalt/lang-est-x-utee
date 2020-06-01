@@ -652,7 +652,7 @@ LIST JaNingKui = "ja" "ning" "kui" "või" ;
 # 4) tütar olen, oled, on, olete, on; tütred oleme, olete, on
 
 # mina elad (NOT eks ma ela), elab, elame (NOT X ja mina elame), elate, elavad
-ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing1 + Nom)(0 V)(0 Sg2) (NEGATE -2 EiEksEga LINK 0 Imprt); # excl. eks|ega ma ela
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing1 + Nom)(0 V)(0 Sg2) (NEGATE -2 EiEksEga LINK 2 Imprt); # excl. eks|ega ma ela
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing1 + Nom)(0 V)(0 Sg3);
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing1 + Nom)(0 V)(0 Pl1) (NEGATE -3 Nom LINK 1 JaNingKui) ;
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing1 + Nom)(0 V)(0 Pl2);
@@ -667,7 +667,7 @@ ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing2 + Nom)(0 V)(0 Pl3) (NEGATE 
 
 # tema elan, elad, elame, elate, elavad
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing3 + Nom)(0 V)(0 Sg1);
-ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing3 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 0 Imprt); # excl. eks|ega ta ela
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing3 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 2 Imprt); # excl. eks|ega ta ela
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing3 + Nom)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing3 + Nom)(0 V)(0 Pl2) (NEGATE -3 PersPronSing2 OR PersPronPlur2 + Nom LINK 1 JaNingKui);
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing3 + Nom)(0 V)(0 Pl3) (NOT 0 ("<on>")) (NEGATE -3 Nom LINK 1 JaNingKui);     # ta on is OK
@@ -675,21 +675,21 @@ ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing3 + Nom)(0 V)(0 Pl3) (NOT 0 (
 # rebane elan, elad, ...
 # excl. tütar olen, oled, ...
 ADD:err-agr (&err-agr) TARGET V IF (-1 Sg + Nom)(NOT -1 PersPron)(0 V)(0 Sg1) (NOT 0 ("olema"));
-ADD:err-agr (&err-agr) TARGET V IF (-1 Sg + Nom)(NOT -1 PersPron)(0 V)(0 Sg2) (NOT 0 ("olema")) (NEGATE -2 ("eks") OR ("ega") LINK 0 Imprt); # excl. eks|ega rebane ela
+ADD:err-agr (&err-agr) TARGET V IF (-1 Sg + Nom)(NOT -1 PersPron)(0 V)(0 Sg2) (NOT 0 ("olema")) (NEGATE -2 ("eks") OR ("ega") LINK 2 Imprt) (NEGATE 0 (Prt Ind) OR (Prs Cond) LINK -3 Nom LINK 1 JaNingKui) ; # eks|ega rebane ela is OK; ema ja tütar elasid|elaksid is OK
 ADD:err-agr (&err-agr) TARGET V IF (-1 Sg + Nom)(NOT -1 PersPron)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
 ADD:err-agr (&err-agr) TARGET V IF (-1 Sg + Nom)(NOT -1 PersPron)(0 V)(0 Pl2) (NOT 0 ("olema")) (NEGATE -3 PersPronSing2 OR PersPronPlur2 + Nom LINK 1 JaNingKui);
 ADD:err-agr (&err-agr) TARGET V IF (-1 Sg + Nom)(NOT -1 PersPron)(0 V)(0 Pl3) (NOT 0 ("olema")) (NEGATE -3 Nom LINK 1 JaNingKui);
 
 # meie elan, elad, elab, elate, elavad
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur1 + Nom)(0 V)(0 Sg1);
-ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur1 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 0 Imprt); # eks|ega me ela is OK
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur1 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 2 Imprt); # eks|ega me ela is OK
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur1 + Nom)(0 V)(0 Sg3) ;
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur1 + Nom)(0 V)(0 Pl2);
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur1 + Nom)(0 V)(0 Pl3);
 
 # teie elan, elad, elab, elame, elavad
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur2 + Nom)(0 V)(0 Sg1);
-ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur2 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 0 Imprt); # eks|ega te ela is OK
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur2 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 2 Imprt); # eks|ega te ela is OK
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur2 + Nom)(0 V)(0 Sg3);
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur2 + Nom)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur2 + Nom)(0 V)(0 Pl2) (-3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui); # mina|meie ja teie elate
@@ -697,7 +697,7 @@ ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur2 + Nom)(0 V)(0 Pl3) ;
 
 # nemad elan, elad, elab, elame, elate
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur3 + Nom)(0 V)(0 Sg1);
-ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur3 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 0 Imprt) (NEGATE 0 (Prt Ind) OR (Prs Cond));  # eks|ega nad ela is OK; nad elasid, nad elaksid is OK
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur3 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 2 Imprt) (NEGATE 0 (Prt Ind) OR (Prs Cond));  # eks|ega nad ela is OK; nad elasid, nad elaksid is OK
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur3 + Nom)(0 V)(0 Sg3) (NOT 0 ("<on>"));    # Nad on is OK
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur3 + Nom)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
 ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur3 + Nom)(0 V)(0 Pl2) (NEGATE -3 PersPronSing2 OR PersPronPlur2 + Nom LINK 1 JaNingKui);
@@ -706,7 +706,7 @@ ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur3 + Nom)(0 V)(0 Pl3) (-3 Pers
 # rebased elan, elad, ...
 # excl. tütred oleme, olete, ...
 ADD:err-agr (&err-agr) TARGET V IF (-1 Pl + Nom)(NOT -1 PersPron)(0 V)(0 Sg1) ;
-ADD:err-agr (&err-agr) TARGET V IF (-1 Pl + Nom)(NOT -1 PersPron)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 0 Imprt) (NEGATE 0 (Prt Ind) OR (Prs Cond));  # eks|ega rebased ela is OK; rebased elasid, rebased elaksid is OK
+ADD:err-agr (&err-agr) TARGET V IF (-1 Pl + Nom)(NOT -1 PersPron)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 2 Imprt) (NEGATE 0 (Prt Ind) OR (Prs Cond));  # eks|ega rebased ela is OK; rebased elasid, rebased elaksid is OK
 ADD:err-agr (&err-agr) TARGET V IF (-1 Pl + Nom)(NOT -1 PersPron)(0 V)(0 Sg3) (NOT 0 ("<on>"));    # rebased on is OK
 ADD:err-agr (&err-agr) TARGET V IF (-1 Pl + Nom)(NOT -1 PersPron)(0 V)(0 Pl1) (NOT 0 ("olema")) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
 ADD:err-agr (&err-agr) TARGET V IF (-1 Pl + Nom)(NOT -1 PersPron)(0 V)(0 Pl2) (NOT 0 ("olema")) (NEGATE -3 PersPronSing2 OR PersPronPlur2 + Nom LINK 1 JaNingKui);
