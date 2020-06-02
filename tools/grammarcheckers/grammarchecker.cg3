@@ -14,19 +14,20 @@
 # giellatekno@hum.uit.no or divvun@hum.uit.no
 
 # ==================================================================== #
-#!! !!!       [ L A N G U A G E ]  G R A M M A R   C H E C K E R
+#!! !!!       ESTONIAN  GRAMMAR   CHECKER
 # ==================================================================== #
 # ====================================================================
 
 #  Sámi language technology 2000-2017, UiT The arctic University of Norway #
+#  Estonian language technology 2018-, UT University of Tartu #
 
 # ---------------------- #
 #   Development setup:   #
 # ---------------------- #
 #
-# cd $GTHOME/langs/??? # replace ??? with your language code
+# cd $GTHOME/lang-est-x-utee # 
 # ./autogen.sh
-# ./configure --enable-apertium --with-hfst --enable-syntax --enable-grammarchecker --enable-tokenisers --enable-alignment --enable-reversed-intersect
+# ./configure --with-hfst --without-xfst --enable-tokenisers --enable-spellers --enable-grammarchecker
 # make
 # cd tools/grammarcheckers
 # make dev
@@ -35,8 +36,9 @@
 #   Then edit/test as:   #
 # ---------------------- #
 #
-# emacs grammarchecker.cg3  # and C-c C-i / C-c C-c if you have cg-mode installed
-# echo "Sun ij puátá." | sh modes/???gram.mode  # from the terminal, replacing ??? with your language code
+# gedit grammarchecker.cg3  # change and save
+# make
+# echo "Ta elan siin." | ./modes/trace-estgram.mode  # from the terminal
 #
 # ---------------------- #
 #   Other debug-pipes:   #
@@ -48,7 +50,7 @@
 
 
 # The pipeline (but use modes, above)
-#  echo "Sun ij puátá." | hfst-tokenise —giella-cg tools/tokenisers/tokeniser-gramcheck-gt-desc.pmhfst | vislcg3 -g src/syntax/disambiguation.cg3 -t | vislcg3 -g tools/grammarcheckers/grammarchecker.cg3 -t
+#  echo "Ta elan siin." | hfst-tokenise -g 'tokeniser-gramcheck-gt-desc.pmhfst' | vislcg3 -g 'grammarchecker.bin' -t
 
 
 
@@ -638,7 +640,7 @@ LIST PersPronSing3 = "tema" ;
 LIST PersPronPlur1 = "meie" ;
 LIST PersPronPlur2 = "teie"  ;
 LIST PersPronPlur3 = "nemad" ;
-LIST MaSaMeTeNad = "mina" "sina" "meie" "teie" "nemad" ;
+LIST PersPron = "mina" "sina" "tema" "meie" "teie" "nemad" ;
 LIST EiEksEga = "ei" "eks" "ega" ;
 LIST JaNingKui = "ja" "ning" "kui" "või" ;
 
@@ -647,57 +649,68 @@ LIST JaNingKui = "ja" "ning" "kui" "või" ;
 # 1) mina elan, sina elad, tema elab, meie elame, teie elate, nemad elavad
 # 2) (ega, eks, ei) ma ela, (ega, eks, ei) sa ela,...
 # 3) X (ja, ning, kui, või (ka)) mina elame, X (ja, ...) sina elate, X (ja, ...) tema elavad
+# 4) tütar olen, oled, on, olete, on; tütred oleme, olete, on
 
 # mina elad (NOT eks ma ela), elab, elame (NOT X ja mina elame), elate, elavad
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing1 + Nom)(0 V)(0 Sg2) (NEGATE -2 EiEksEga LINK 0 Imprt);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing1 + Nom)(0 V)(0 Sg3);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing1 + Nom)(0 V)(0 Pl1) (NEGATE -3 Nom LINK 1 JaNingKui) ;
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing1 + Nom)(0 V)(0 Pl2);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing1 + Nom)(0 V)(0 Pl3);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing1 + Nom)(0 V)(0 Sg2) (NEGATE -2 EiEksEga LINK 2 Imprt); # excl. eks|ega ma ela
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing1 + Nom)(0 V)(0 Sg3);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing1 + Nom)(0 V)(0 Pl1) (NEGATE -3 Nom LINK 1 JaNingKui) ;
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing1 + Nom)(0 V)(0 Pl2);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing1 + Nom)(0 V)(0 Pl3);
 
 # sina elan, elab, elame, elate, elavad
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing2 + Nom)(0 V)(0 Sg1);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing2 + Nom)(0 V)(0 Sg3);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing2 + Nom)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing2 + Nom)(0 V)(0 Pl2) (NEGATE -3 Nom LINK 1 JaNingKui);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing2 + Nom)(0 V)(0 Pl3);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing2 + Nom)(0 V)(0 Sg1);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing2 + Nom)(0 V)(0 Sg3);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing2 + Nom)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing2 + Nom)(0 V)(0 Pl2) (NEGATE -3 Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing2 + Nom)(0 V)(0 Pl3) (NEGATE 0 (Prt Ind) OR (Prs Cond));  # sa elasid, sa elaksid is OK
 
 # tema elan, elad, elame, elate, elavad
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing3 + Nom)(0 V)(0 Sg1);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing3 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 0 Imprt);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing3 + Nom)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing3 + Nom)(0 V)(0 Pl2) (NEGATE -3 PersPronSing2 OR PersPronPlur2 + Nom LINK 1 JaNingKui);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronSing3 + Nom)(0 V)(0 Pl3) (NEGATE -3 Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing3 + Nom)(0 V)(0 Sg1);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing3 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 2 Imprt); # excl. eks|ega ta ela
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing3 + Nom)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing3 + Nom)(0 V)(0 Pl2) (NEGATE -3 PersPronSing2 OR PersPronPlur2 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronSing3 + Nom)(0 V)(0 Pl3) (NOT 0 ("<on>")) (NEGATE -3 Nom LINK 1 JaNingKui);     # ta on is OK
 
 # rebane elan, elad, ...
-ADD:err-agr (&err-agr) TARGET V  (-1C Sg + Nom)(NOT -1 MaSaMeTeNad)(0 V)(0 Sg1);
-ADD:err-agr (&err-agr) TARGET V  (-1C Sg + Nom)(NOT -1 MaSaMeTeNad)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 0 Imprt);
-ADD:err-agr (&err-agr) TARGET V  (-1C Sg + Nom)(NOT -1 MaSaMeTeNad)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
-ADD:err-agr (&err-agr) TARGET V  (-1C Sg + Nom)(NOT -1 MaSaMeTeNad)(0 V)(0 Pl2) (NEGATE -3 PersPronSing2 OR PersPronPlur2 + Nom LINK 1 JaNingKui);
-ADD:err-agr (&err-agr) TARGET V  (-1C Sg + Nom)(NOT -1 MaSaMeTeNad)(0 V)(0 Pl3) (NEGATE -3 Nom LINK 1 JaNingKui);
+# excl. tütar olen, oled, ...
+ADD:err-agr (&err-agr) TARGET V IF (-1 Sg + Nom)(NOT -1 PersPron)(0 V)(0 Sg1) (NOT 0 ("olema"));
+ADD:err-agr (&err-agr) TARGET V IF (-1 Sg + Nom)(NOT -1 PersPron)(0 V)(0 Sg2) (NOT 0 ("olema")) (NEGATE -2 ("eks") OR ("ega") LINK 2 Imprt) (NEGATE 0 (Prt Ind) OR (Prs Cond) LINK -3 Nom LINK 1 JaNingKui) ; # eks|ega rebane ela is OK; ema ja tütar elasid|elaksid is OK
+ADD:err-agr (&err-agr) TARGET V IF (-1 Sg + Nom)(NOT -1 PersPron)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1 Sg + Nom)(NOT -1 PersPron)(0 V)(0 Pl2) (NOT 0 ("olema")) (NEGATE -3 PersPronSing2 OR PersPronPlur2 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1 Sg + Nom)(NOT -1 PersPron)(0 V)(0 Pl3) (NOT 0 ("olema")) (NEGATE -3 Nom LINK 1 JaNingKui);
 
 # meie elan, elad, elab, elate, elavad
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur1 + Nom)(0 V)(0 Sg1);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur1 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 0 Imprt);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur1 + Nom)(0 V)(0 Sg3);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur1 + Nom)(0 V)(0 Pl2);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur1 + Nom)(0 V)(0 Pl3);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur1 + Nom)(0 V)(0 Sg1);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur1 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 2 Imprt); # eks|ega me ela is OK
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur1 + Nom)(0 V)(0 Sg3) ;
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur1 + Nom)(0 V)(0 Pl2);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur1 + Nom)(0 V)(0 Pl3);
 
 # teie elan, elad, elab, elame, elavad
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur2 + Nom)(0 V)(0 Sg1);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur2 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 0 Imprt);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur2 + Nom)(0 V)(0 Sg3);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur2 + Nom)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur2 + Nom)(0 V)(0 Pl2) (-3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur2 + Nom)(0 V)(0 Pl3) ;
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur2 + Nom)(0 V)(0 Sg1);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur2 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 2 Imprt); # eks|ega te ela is OK
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur2 + Nom)(0 V)(0 Sg3);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur2 + Nom)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur2 + Nom)(0 V)(0 Pl2) (-3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui); # mina|meie ja teie elate
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur2 + Nom)(0 V)(0 Pl3) ;
 
 # nemad elan, elad, elab, elame, elate
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur3 + Nom)(0 V)(0 Sg1);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur3 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 0 Imprt);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur3 + Nom)(0 V)(0 Sg3);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur3 + Nom)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur3 + Nom)(0 V)(0 Pl2) (NEGATE -3 PersPronSing2 OR PersPronPlur2 + Nom LINK 1 JaNingKui);
-ADD:err-agr (&err-agr) TARGET V IF (-1C PersPronPlur3 + Nom)(0 V)(0 Pl3) (-3 PersPronSing1 OR PersPronPlur1 OR PersPronSing2 OR PersPronPlur2 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur3 + Nom)(0 V)(0 Sg1);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur3 + Nom)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 2 Imprt) (NEGATE 0 (Prt Ind) OR (Prs Cond));  # eks|ega nad ela is OK; nad elasid, nad elaksid is OK
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur3 + Nom)(0 V)(0 Sg3) (NOT 0 ("<on>"));    # Nad on is OK
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur3 + Nom)(0 V)(0 Pl1) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur3 + Nom)(0 V)(0 Pl2) (NEGATE -3 PersPronSing2 OR PersPronPlur2 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1 PersPronPlur3 + Nom)(0 V)(0 Pl3) (-3 PersPronSing1 OR PersPronPlur1 OR PersPronSing2 OR PersPronPlur2 + Nom LINK 1 JaNingKui) ;  # mina|meie|sina|teie ja nemad elavad
+
+# rebased elan, elad, ...
+# excl. tütred oleme, olete, ...
+ADD:err-agr (&err-agr) TARGET V IF (-1 Pl + Nom)(NOT -1 PersPron)(0 V)(0 Sg1) ;
+ADD:err-agr (&err-agr) TARGET V IF (-1 Pl + Nom)(NOT -1 PersPron)(0 V)(0 Sg2) (NEGATE -2 ("eks") OR ("ega") LINK 2 Imprt) (NEGATE 0 (Prt Ind) OR (Prs Cond));  # eks|ega rebased ela is OK; rebased elasid, rebased elaksid is OK
+ADD:err-agr (&err-agr) TARGET V IF (-1 Pl + Nom)(NOT -1 PersPron)(0 V)(0 Sg3) (NOT 0 ("<on>"));    # rebased on is OK
+ADD:err-agr (&err-agr) TARGET V IF (-1 Pl + Nom)(NOT -1 PersPron)(0 V)(0 Pl1) (NOT 0 ("olema")) (NEGATE -3 PersPronSing1 OR PersPronPlur1 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1 Pl + Nom)(NOT -1 PersPron)(0 V)(0 Pl2) (NOT 0 ("olema")) (NEGATE -3 PersPronSing2 OR PersPronPlur2 + Nom LINK 1 JaNingKui);
+ADD:err-agr (&err-agr) TARGET V IF (-1 Pl + Nom)(NOT -1 PersPron)(0 V)(0 Pl3) (-3 PersPronSing1 OR PersPronPlur1 OR PersPronSing2 OR PersPronPlur2 + Nom LINK 1 JaNingKui) ;  # mina|meie|sina|teie ja rebased elavad;
 
 # modal verb government error
 LIST InfMod = "võima" "saama" "tohtima" ;
@@ -790,7 +803,9 @@ COPY:attr-not-pred (Attr &SUGGEST) EXCEPT (Sg) TARGET (&attr-not-pred) ;
 # CG. Therefore, we define some templates for going exactly one word
 # to the left/right:
 TEMPLATE prevWordCrossSent = (-1 (*)) OR (-1 (>>>) LINK *-2< (<<<) BARRIER (<<<)) ;
+# jama ?TEMPLATE prevWordCrossSent = (-1 (*)) ;
 TEMPLATE nextWordCrossSent = (1 (*))  OR (0  (<<<) LINK *1>  (>>>) BARRIER (>>>) LINK 1 (*)) ;
+# jama ?TEMPLATE nextWordCrossSent = (1 (*)) ;
 # In the above template, the first test is the regular, non-spanning
 # case – it just goes exactly one word to the right and matches
 # anything.
@@ -856,7 +871,8 @@ ADD:no-space-after-punct      (&no-space-after-punct-mark)       TARGET (<NoSpac
 	
 	# 2. Add error tag + &LINK on the following word (part 1 of extending the blue underline to the following word):
 
-ADD:no-space-after-punct-link (&no-space-after-punct-mark &LINK) TARGET (*) IF (T:prevWordCrossSent LINK 0 (&no-space-after-punct-mark));
+
+ADD:no-space-after-punct-link (&no-space-after-punct-mark &LINK) TARGET (*) IF (T:prevWordCrossSent LINK 0 (<NoSpaceAfterPunctMark>));
 
 	# 3. Add RIGHT relation on the punctuation (part 2 of extending the blue underline to the following word,
 	#    also ensures that the correction will replace the word, not be appended to it):
