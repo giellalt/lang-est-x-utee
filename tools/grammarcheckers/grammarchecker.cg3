@@ -803,7 +803,9 @@ COPY:attr-not-pred (Attr &SUGGEST) EXCEPT (Sg) TARGET (&attr-not-pred) ;
 # CG. Therefore, we define some templates for going exactly one word
 # to the left/right:
 TEMPLATE prevWordCrossSent = (-1 (*)) OR (-1 (>>>) LINK *-2< (<<<) BARRIER (<<<)) ;
+# jama ?TEMPLATE prevWordCrossSent = (-1 (*)) ;
 TEMPLATE nextWordCrossSent = (1 (*))  OR (0  (<<<) LINK *1>  (>>>) BARRIER (>>>) LINK 1 (*)) ;
+# jama ?TEMPLATE nextWordCrossSent = (1 (*)) ;
 # In the above template, the first test is the regular, non-spanning
 # case – it just goes exactly one word to the right and matches
 # anything.
@@ -869,7 +871,8 @@ ADD:no-space-after-punct      (&no-space-after-punct-mark)       TARGET (<NoSpac
 	
 	# 2. Add error tag + &LINK on the following word (part 1 of extending the blue underline to the following word):
 
-ADD:no-space-after-punct-link (&no-space-after-punct-mark &LINK) TARGET (*) IF (T:prevWordCrossSent LINK 0 (&no-space-after-punct-mark));
+
+ADD:no-space-after-punct-link (&no-space-after-punct-mark &LINK) TARGET (*) IF (T:prevWordCrossSent LINK 0 (<NoSpaceAfterPunctMark>));
 
 	# 3. Add RIGHT relation on the punctuation (part 2 of extending the blue underline to the following word,
 	#    also ensures that the correction will replace the word, not be appended to it):
