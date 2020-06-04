@@ -1,0 +1,9 @@
+name = "Estonian"
+version = "0.1.0"
+
+[macos]
+system_pkg_id = "no.divvun.MacDivvun.et"
+
+[windows]
+system_product_code = "87990427-23D7-4340-96AE-451B1BF37140"
+msoffice_product_code = "6621ACB5-4262-429D-90B0-C791897BD662"
