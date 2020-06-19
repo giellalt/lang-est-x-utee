@@ -737,6 +737,8 @@ Multichar_Symbols
  @D.NeedDerNe@
  @C.NeedDerNe@
 
+ @P.Pmatch.Backtrack@  ! for tokenizer pmhfst-file; it gets converted to pmatch variables in pmhfst compilation process
+
 !! Guesser
 ! Pay attention to the stress
  @P.Stress.On@    ! mark this as a stressed syllable 
@@ -885,11 +887,6 @@ E7   ! e 0  jookseb jooksma
 
 Definitions
 
-Dig = %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
-Number = [[ Dig ]+ [ %. | %, ]]* [ Dig ]+ ;
-PercentNum = Number [ %% | [ %' (%') ] ];
-OrdinalNum  = Number %.;
-
 ! Capital letters are used for making acronyms
 ! An acronym is inflected according to its pronunciation
 ! An acronym can be read as word (e.g. NATO), or letter-by-letter (e.g. ABC)
@@ -935,7 +932,7 @@ LEXICON Root !!= * {{@CODE@}} is the starting point of everything
 
 ! only two components allowed, thus must bypass LEXICON First:
 ! number starting a word is a special case...
-@D.Part@@P.Part.Two@@P.NeedPartThree.On@@P.POS.Num@ CardinalNumbersInComp ;   !!= * {{@CODE@}} 5-autone etc
+@D.Part@@P.Part.Two@@P.NeedPartThree.On@@P.POS.Num@ CardinalNumbersInCompBeg ;   !!= * {{@CODE@}} 5-autone etc
 
 LEXICON Nonfirst
 
@@ -1077,6 +1074,13 @@ LEXICON Latter !!= * {{@CODE@}} the latter part of a compound
   @R.POS.Pref@@P.POS.IntNum@ IntegerNumerals ;  ! esiviisteist, esikolmekas
   @R.POS.N@@R.Case.Gen@@P.POS.IntNum@@C.Der@@C.Stem@@P.NeedNoun.On@ IntegerNumerals ;   ! arvuti + kolmekas
   @R.POS.NumCardCompound@@R.Case.Gen@@P.POS.IntNum@@C.Der@@C.Stem@@P.NeedNoun.On@ IntegerNumerals ;   ! kahekümne + kolmekas
+
+! x + number
+! number should be the final component
+  @R.POS.Pref@@P.POS.Num@@P.Part.Three@ CardinalNumbersInCompFin ;  ! esi-10
+  @R.POS.N@@R.Case.Nom@@P.POS.Num@@P.Part.Three@ CardinalNumbersInCompFinMinus ;  ! uraan-235
+  @R.POS.ACR@@R.Case.Nom@@P.POS.Num@@P.Part.Three@ CardinalNumbersInCompFinMinus ;  ! A-10
+  @R.POS.ACR@@R.Case.Nom@@P.POS.Num@@P.Part.Three@ CardinalNumbersInCompFin ;       ! E10
 
 ! x + adverb
   @R.POS.Pref@@P.POS.Adv@@P.NeedPartThree.On@ CompoundingAdverbs ;  ! era+ratsa+baas, era+järel+valvama+Der/ja 

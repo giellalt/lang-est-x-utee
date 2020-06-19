@@ -63,7 +63,7 @@ Ctrl++ABBR:Ctrl+ AbbrNoCase ;
 Ctrl+ABBR:Ctrl AbbrNoCase ;
 < C t r l %+ A l t %+ D e l %+ABBR:0 > AbbrNoCase ;
 < C t r l %+ A l t ( %+ E n t e r ) %+ABBR:0 > AbbrNoCase ;
-< C t r l %+ F Dig^{1,2} %+ABBR:0 > AbbrNoCase ;
+< C t r l %+ F [%0|1|2|3|4|5|6|7|8|9]^{1,2} %+ABBR:0 > AbbrNoCase ;
 < C t r l ( %+ S h i f t ) ( %+ ( CapLetter ) ) %+ABBR:0 > AbbrNoCase ;
 Dets+ABBR:Dets AbbrCasesDot ;
 dets+ABBR:dets AbbrCasesDot ;
@@ -402,37 +402,5 @@ wc+ABBR:wc AbbrCases ;
 õpil+ABBR:õpil AbbrCasesDot ;
 
 
-LEXICON AbbrCasesDot
-      : AbbrNoCaseDot ;                ! mld, vs, ...
-      : AbbrSomeCase ;
-
-LEXICON AbbrNoCaseDot
-      : AbbrNoCase ;
-      :%. # ;
-
-LEXICON AbbrCases
-      : AbbrNoCase ;                ! Wc ...
-      : AbbrSomeCase ;
-
-LEXICON AbbrNoCase
-      :   # ;
-
-LEXICON AbbrSomeCase
-   +Sg:-i GENITIVE ;                ! mld-i
-      :-d SG_PARTITIVE ;            ! wc-d
-      :-t SG_PARTITIVE ;            ! mld-t
-      :-it SG_PARTITIVE ;           ! mld-it
-      :-i SG_PARTITIVE ;            ! DivX-i
-   +Sg:- ALL_SEM_CASES ;            ! mld-ga
-   +Sg:-i ALL_SEM_CASES ;           ! Gbit-iga
-   +Pl:-d NOMINATIVE ;            ! wc-d
-   +Pl:-id NOMINATIVE ;           ! DivX-id
-      :-de N_PL_SUBPARA ;         ! wc-de etc  
-      :-ide N_PL_SUBPARA ;        ! DivX-ide etc 
-      :-te N_PL_SUBPARA ;         ! mld-te etc 
-      :-ite N_PL_SUBPARA ;        ! mld-ite etc  
-      :-sid PL_PARTITIVE ;        ! wc-sid
-      :-isid PL_PARTITIVE ;       ! DivX-isid
-      :-e PL_PARTITIVE ;          ! DivX-e
 
 

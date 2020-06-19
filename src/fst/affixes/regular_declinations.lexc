@@ -300,6 +300,160 @@ LEXICON ARMEE    ! VVS 26 ; (productive) i.e. stable type (aktiivne muuttüüp)
               : LIK_DERIVATION ;
 
 ! ---------------
+! abbreviations
+! ... inflect like any declinable
+! ... declinational class depends on the pronunciation, but it is ignored here
+! ... so the endings are often wrong...
+! ---------------
+
+LEXICON AbbrCasesDot
+              : AbbrNoCaseDot ;                ! mld, vs, ...
+              : AbbrSomeCase ;
+
+LEXICON AbbrNoCaseDot
+              : AbbrNoCase ;
+              :%. # ;
+
+LEXICON AbbrCases
+              : AbbrNoCase ;                ! Wc ...
+              : AbbrSomeCase ;
+
+LEXICON AbbrNoCase
+              :   # ;
+
+LEXICON AbbrSomeCase
+           +Sg:-i GENITIVE ;                ! mld-i
+              :-d SG_PARTITIVE ;            ! wc-d
+              :-t SG_PARTITIVE ;            ! mld-t
+              :-it SG_PARTITIVE ;           ! mld-it
+              :-i SG_PARTITIVE ;            ! DivX-i
+           +Sg:- ALL_SEM_CASES ;            ! mld-ga
+           +Sg:-i ALL_SEM_CASES ;           ! Gbit-iga
+           +Pl:-d NOMINATIVE ;            ! wc-d
+           +Pl:-id NOMINATIVE ;           ! DivX-id
+              :-de N_PL_SUBPARA ;         ! wc-de etc  
+              :-ide N_PL_SUBPARA ;        ! DivX-ide etc 
+              :-te N_PL_SUBPARA ;         ! mld-te etc 
+              :-ite N_PL_SUBPARA ;        ! mld-ite etc  
+              :-sid PL_PARTITIVE ;        ! wc-sid
+              :-isid PL_PARTITIVE ;       ! DivX-isid
+              :-e PL_PARTITIVE ;          ! DivX-e
+
+! ---------------
+! Symbol affixes
+! ---------------
+
+LEXICON Noun_symbols_possibly_inflected
+     +N+Symbol: AbbrSomeCase ;   ! has the same endings as abbreviations, sometimes wrong
+                             ! (e.g. Pl Gen €-te $-de instead of the correct €-de $-te)
+     +N+Symbol: # ;
+
+LEXICON Noun_symbols_never_inflected
+     +N+Symbol: # ;
+
+! ---------------
+! Acronyms
+! These should be really productive inflectional classes...
+! They should not be different from the ones used for ordinary words
+! ---------------
+
+LEXICON AcroArmee 
+       +ACR+Sg: NOMINATIVE ;
+       +ACR+Sg: GENITIVE ;
+          +ACR: Acro1V ;
+          +ACR:- Acro1V ;
+
+LEXICON Acro1V 
+              :d SG_PARTITIVE ;            ! KT-d
+           +Sg: ALL_SEM_CASES ;            ! KT etc
+           +Pl:d NOMINATIVE ;          ! KT-d
+              :de N_PL_SUBPARA ;        ! KT-de etc  
+              :sid PL_PARTITIVE ;     ! KT-sid
+
+LEXICON AcroFiat 
+       +ACR+Sg: NOMINATIVE ;
+          +ACR: Acro1C ;
+          +ACR:- Acro1C ;
+
+LEXICON Acro1C 
+              :i N_SG_SUBPARA ;      ! KEKi etc
+              :i SG_PARTITIVE ;               ! KEKi
+              :i SG_ILLATIVE ;                ! KEKi
+      +Use/Hyp:isse SG_ILLATIVE ;     ! KEKisse
+              :ide N_PL_SUBPARA ;     ! KEKide etc
+     +Use/Rare:isid PL_PARTITIVE ;    ! KEKisid
+              :e PL_PARTITIVE ;            ! KEKe
+
+
+LEXICON AcroPere 
+       +ACR+Sg: NOMINATIVE ;
+       +ACR+Sg: GENITIVE ;
+          +ACR: Acro2V ;
+          +ACR:- Acro2V ;
+
+LEXICON Acro2V 
+              :t SG_PARTITIVE ;            ! NATOt
+           +Sg: ALL_SEM_CASES ;            ! NATO etc
+           +Pl:d NOMINATIVE ;            ! NATOd
+              :de N_PL_SUBPARA ;        ! NATO-de etc  
+              :sid PL_PARTITIVE ;     ! NATO-sid
+
+LEXICON AcroRedel 
+       +ACR+Sg: NOMINATIVE ;
+          +ACR: Acro2C ;
+          +ACR:- Acro2C ;
+
+LEXICON Acro2C 
+              :i N_SG_SUBPARA ;      ! UNIXi etc
+              :it SG_PARTITIVE ;               ! UNIXit
+              :isse SG_ILLATIVE ;                ! UNIXisse
+              :ite N_PL_SUBPARA ;     ! UNIXite etc
+              :eid PL_PARTITIVE ;            ! UNIXeid
+
+
+LEXICON AcroEtis 
+       +ACR+Sg: NOMINATIVE ;
+          +ACR: AcroS ;
+          +ACR:- AcroS ;
+
+LEXICON AcroS 
+              :e N_SG_SUBPARA ;      ! ETISe etc
+              :t SG_PARTITIVE ;               ! ETISt
+              :esse SG_ILLATIVE ;     ! ETISesse
+              :te N_PL_SUBPARA ;     ! ETISte etc
+              :eid PL_PARTITIVE ;            ! ETISeid
+
+! ---------------
+! numbers
+! ---------------
+
+! 10st, 10line, 10 000-st, 2,5-line, 10 000%st, 10''line, 1'-st
+LEXICON CardinalWithStandardEnding
+
+     +Num+Card: # ;
+  +Num+Card+Sg: ALL_SEM_CASES ;
+  +Num+Card+Sg:- ALL_SEM_CASES ;
+     +Num+Card: LINE_DERIVATION ;
+     +Num+Card:- LINE_DERIVATION ;
+
+LEXICON CardinalWithOrdinalEnding
+
+      +Num+Ord:nda 2C ;
+      +Num+Ord:-nda 2C ;
+
+LEXICON CardinalWithFractionEnding
+
+     +Num+Card:ndik ELANIK ;
+     +Num+Card:-ndik ELANIK ;
+
+LEXICON CardinalNoEnd
+     +Num+Card: # ;
+
+LEXICON OrdinalDotEnd
+      +Num+Ord: MARKDOT ;
+
+
+! ---------------
 ! sub-paradigms common to several inflectional types
 ! ---------------
 
@@ -674,4 +828,19 @@ LEXICON NE_DERIVATION                        ! last part, currently only in comp
 LEXICON NE_DERIVATION_SUF
             +Der/ne+A:»ne SOOLANE ;         ! 5-autone
 
+! ----------------------
+! for tokenization with hfst-tokenize
+! copy from lang-sme
+LEXICON MARKDOT !!≈ * __@CODE@__
+! This should create a new backtrack-point before the dot, but no sub-reading:                                                                                                                          
+! katse ilma selleta   :%. # ;
+< "@P.Pmatch.Backtrack@" 0:%. > # ; ! This creates a split point
+! katse ilma selleta   +CLBfinal: # ; ! This creates an alternative end point for those
+                             ! requiring a full stop, so that when the previous line
+                             ! forces a bactrack and reanalysis, the expression can
+                             ! end up here, and then make the additional PUNCT analysis
+                             ! of the full stop. Without this line, there will never
+                             ! be this extra analysis, and the abbr/date/whatever +
+                             ! end of sentence reading will never be possible.
+!--------------------------
 
