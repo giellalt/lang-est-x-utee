@@ -30,6 +30,18 @@ GENRSRCS:=
 #################################################
 #### Add language-specific build rules here: ####
 
+# regex for emoticons
+emoticon.hfst: $(top_srcdir)/src/fst/emoticon.hfst
+		cp $< $@
+
+# This is the real tokeniser build target:
+tokeniser-%-gt-desc.pmhfst: tokeniser-%-gt-desc.pmscript \
+                    analyser_relabelled-%-gt-desc.hfst \
+                    analyser-url-gt-desc.hfst \
+                    emoticon.hfst
+	$(AM_V_PM2FST)$(HFST_PMATCH2FST) < $< > $@.tmp
+	$(AM_V_at)mv -f $@.tmp $@
+
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
 ##################################################################

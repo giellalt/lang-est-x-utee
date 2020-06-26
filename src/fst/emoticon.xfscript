@@ -1,0 +1,143 @@
+! regex for emoticons
+
+define aboveeyes [d|q|8|{<}|{>}|{*}|o|{|}|{`}|O|"0"|"["|"{"] ;
+define eyes [{:}|{;}|¦|B|R|8|6|{`}|{´}|{!}|{%}|O|{$}|{.}|{,}|{|}|[{:} {'}]] ;
+define nose [{-}|{=}|{@}|o|¤|{^}|»|{~}|{*}|[{-} {~}]] ;
+define happymouth [{)}+|D+|[D+ {)}+]|P+|p+|"]"+] ;
+define sadmouth [{(}+|{\}+|{/}+|C+|S+|"["+] ;
+define somemouth [{&}|I|£|q|{|}|{?}|{*}+|o+|O+|{>}|x+|X+|"{"+|"}"+|{#}+|{@}+] ;
+define belowmouth [»+|{>}+] ;
+
+define emo1 [(aboveeyes) eyes (nose) [happymouth | sadmouth | somemouth] (belowmouth)] ;
+define emo2 [(aboveeyes) (eyes) (nose) [[happymouth | sadmouth | somemouth] & ?^>1] (belowmouth)] ; ! )) 
+
+define revemo [[happymouth | sadmouth | somemouth] nose eyes] ; ! smth like right-to-left emoticon; 
+
+define emoticon [[emo1 | emo2 | revemo] 0:"+N" 0:"+Symbol"] ;
+
+regex emoticon ;
+
+
+! examples from http://www.pm.ee/netikett/emotikonid.html
+!
+!   :) Olen rõõmus 
+!   :| Olen tõsine
+!   :( Olen kurb 
+!   ;) Naeratan kavalalt
+!   ;| Pilgutan tõsiselt silma 
+!   ;( Pilgutan kurvalt silma  
+!   :-)  Olen rõõmus 
+!   :-(  Olen kurb 
+!   :-|  Olen tõsine 
+!   ;-)  Pilgutan silma 
+!   .-)  Olen ühe silmaga 
+!   ,-)  Olen ühe vasakpoolse kõõrdis silmaga 
+!   `-)  Olen ühe parempoolse kõõrdis silmaga 
+!   : - )  Olen piklik 
+!   :-o  Ütlen "oo" 
+!   6-)  Olen ühesilmne ja suure kulmuga 
+!   8-)  Tegin suured silmad 
+!   :->  Tegin kõverat nägu 
+!   :-}  Tegin kõverat nägu 
+!   :-]  Tegin kandilist nägu 
+!   <:-)  Olen mütsiga 
+!   :-C  Olen üli kurb 
+!   :   -   )  Olen üli pikliku näoga 
+!   8-)  Olen prillidega 
+!   8-(  Sain punased prillid 
+!   :-)>  habe kasvas ette 
+!   :-)  Värvisin huuled 
+!   :-x  Suule pandi plaaster peale 
+!   :-)--- Olen teiba otsas 
+!   :-{  Olen vuntsidega 
+!   :~) Olen rõõmus koos pika ja lainelise ninaga 
+!   :~( Olen kurb koos pika ja lainelise ninaga 
+!   =) Olen pikkade silmadega ja rõõmus 
+!   =( Olen pikkade silmadega ja kurb 
+!   ;~) Pilgutan rõõmsalt koos pika ninaga silma 
+!   [:-)] Minu pilt kus olen rõõmus 
+!   [:-(] Minu pilt kus olen kurb 
+!   [;-)] Minu pilt kus pilgutan rõõmsalt silma 
+!   [:-|] Minu pilt kus olen tõsine 
+!   :-D Naeratan laialt 
+!   :-P Naeratan keel suust väljas 
+!   :*) Jõin veidi kalja 
+!   8:-) Olen tutiga 
+!   :-{) Olen vuntsidega 
+!   {:-) Olen parukaga 
+!   :-* Sõin just midagi haput 
+!   :-~) Mul on nohu 
+!   :'-( Ma nutan 
+!   :'-) Ma nutan suurest rõõmust 
+!   :^) Ninaluu on puruks 
+!   :_) Mu nina kipub näo pealt maha libisema 
+!   :-£ Mul on keel sõlmes 
+!   :-q Ma suitsetan 
+!   :-? Ma suitsetan piipu 
+!   <:-) Olen sünnipäeval 
+!   :-(: :) Haigutan 
+!   :-(==)Haigutan pikkade hammastega 
+!   >[:-)] Olen TV diktor 
+!   [ : ] Olen robot 
+!   >[ : ] Olen antennidega robot 
+!   :-I Naeratan 
+!   :o) Olen nöbinina 
+!   :¤) ------"-------- 
+!   !-) Olen suusaprillidega 
+!   :o( Olen kurb nöbinina 
+!   :¤( --------"----------- 
+!   B-) Olen päikeseprillidega
+!   ¦-) Magan 
+!   ¦-( Näen paha unenägu 
+!   :») Olen kahe ninaga  
+!   [:] Olen väike robot 
+!   |:-) Olen peapaelaga 
+!   o:-) Olen kaevurilambiga 
+!   (-: Olen vasakukäeline 
+!   :-() Olen suu lahti 
+!   () Olen teokarbis 
+!   :^) Vaatan vasakule 
+!   :/\) -------"-------- 
+!   :\/) Vaatan paremale 
+!   $-) Nägin raha 
+!   $-( Nägin raha, kuid ei saanud endale 
+!   :@) Olen imeliku ninaga 
+!   [:)] Olen karbis 
+!   :-)= Olen vampiir 
+!   :)=  ------"------- 
+!   :(= Olen kurb vampiir 
+!   :-(= -------"--------- 
+!   :-)>>>>>>>>>>>>>>>>> Olen väga pika habemega 
+!   :-)» Olen põskhabemega
+!   O Olen lumepalli sees 
+!   :-) | (-: Vaatan merest oma peegelpilti 
+!   :) | (: ----------------"----------------- 
+!   :::---))) Olen ufo 
+!   >:-) Olen marslane 
+!   >:) Olen pisike roheline mehike 
+!   :=) Silmad on tundlate otsas 
+!   [:->>] Pilt minu vanaisast 
+!   %-( Liiga kaua ekraani vahtinud 
+!   [:-) Kõrvaklapid peas 
+!   B:-) Prillid on pea peapeal 
+!   R-) Prillid on katki 
+!   O-) Akvalangist 
+!   d:-) Pesapalli müts pea 
+!   q:-) Pesapalli müts tagurpidi peas 
+!   *<:-) Jõuluvana
+!
+! examples from Vikipeedia  
+!   :-) 	☺ 	klassikaline naerunägu koos ninaga 	:'-) 		õnnest nutma
+!   :-( 	🙁 	klassikaline kurb nägu koos ninaga 	|-O 		haigutus
+!   :)		😊 	klassikaline naerunägu          	:-D 	😀 	naermine, suur naeratus
+!   >-) 		kuri irve                       	%-( 		segaduses
+!   :-E 	😬 	väljaulatuvate esihammastega     	B-) 	😎 	naeratus prillidega / Batman
+!   :-# 	😆 	naeratus hambaklambritega       	:-@ 	😲 	Kisama / karjuma
+!   :(  	☹ 	õnnetu ilma ninata              	:@ 	😕 	mis??? (kas tõesti?)
+!   :-< 	😢 	üliõnnetu                       	:-0 		Suu suurelt lahti "Ooo!" / kisama
+!   ;-) 	😉 	silma tegema, ninaga              	:*) 	😖 	purjus
+!   ;)  	😜 	silma tegema                    	(:-D 	😬 	keelepeks
+!   `:-) 	😃 	üht silmakulmu tõstma           	O:-) 	🤗 	olen kui ingel (mees)
+!   :-& 	🤑 	seotud keel                       	O*-) 	😇 	olen kui ingel (naine) 
+!   
+

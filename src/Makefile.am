@@ -212,8 +212,8 @@ guesser.tmp1.hfst: fst/guesser.tmp.hfst \
 # not implemented...
 
 # acronyms
-acronyms.tmp1.%: fst/acronyms.tmp.%
-			   cp $< $@ 
+# acronyms.tmp1.%: fst/acronyms.tmp.%
+# 			   cp $< $@ 
 
 # FOMA
 # not implemented...
@@ -305,21 +305,22 @@ guesser.tmp.%: guesser.tmp1.% \
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
-acronyms.tmp.%: acronyms.tmp1.% \
-					filters/reorder-tags.$(GTLANG).% \
-					filters/reorder-semantic-tags.%       \
-					filters/reorder-subpos-tags.%         \
-					filters/remove-mwe-tags.%
-	$(AM_V_XFST_TOOL)$(PRINTF) "set flag-is-epsilon ON\n\
-			read regex \
-			 @\"filters/reorder-tags.$(GTLANG).$*\"\
-			.o. @\"filters/reorder-subpos-tags.$*\"   \
-			.o. @\"filters/reorder-semantic-tags.$*\" \
-			.o. @\"filters/remove-mwe-tags.$*\"       \
-			.o. @\"$<\" \
-			;\n\
-		 save stack $@\n\
-		 quit\n" | $(XFST_TOOL)
+#acronyms.tmp.%: acronyms.tmp1.% \
+#					filters/reorder-tags.$(GTLANG).% \
+#					filters/reorder-semantic-tags.%       \
+#					filters/reorder-subpos-tags.%         \
+#					filters/remove-mwe-tags.%
+#	$(AM_V_XFST_TOOL)$(PRINTF) "set flag-is-epsilon ON\n\
+#			read regex \
+#			 @\"filters/reorder-tags.$(GTLANG).$*\"\
+#			.o. @\"filters/reorder-subpos-tags.$*\"   \
+#			.o. @\"filters/reorder-semantic-tags.$*\" \
+#			.o. @\"filters/remove-mwe-tags.$*\"       \
+#			.o. @\"$<\" \
+#			;\n\
+#		 save stack $@\n\
+#		 quit\n" | $(XFST_TOOL)
+#
 
 # HFST: generator 
 # Xerox & FOMA: analyser

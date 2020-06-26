@@ -85,7 +85,9 @@ GT_LOCAL_SRCS=\
 #				acronyms.tmp.lexc 
 
 # Define local xfscripts here:
-GT_LOCAL_XFSCRIPT_SRCS=guesser-smth.xfscript
+GT_LOCAL_XFSCRIPT_SRCS=\
+				guesser-smth.xfscript \
+				emoticon.xfscript
 
 # Define here any additional sources just included in the distro:
 GT_DISTRO_SRCS=
