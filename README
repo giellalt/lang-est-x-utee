@@ -13,9 +13,8 @@ file INSTALL.
 
 Documentation is scattered around on the Giellatekno and Divvun pages, e.g.:
 
-* http://giellatekno.uit.no/estdoc/index.html
-* https://giellalt.uit.no/tools/docu-est-manual.html
 * https://giellalt.uit.no/index.html
+* https://giellalt.uit.no/lang/experimentest/Links.html
 
 Requirements
 ------------
@@ -23,9 +22,7 @@ Requirements
 In order to compile and use Estonian language morphology and dictionaries,
 you need:
 
-* Xerox Finite-State Morphology tools, or
-* Helsinki Finite-State Technology library and tools, version 3.8 or newer, or
-* Foma finite-state tool
+* Helsinki Finite-State Technology library and tools, version 3.8 or newer
 
 Optionally:
 
@@ -68,16 +65,14 @@ your environment is correctly set up. This is done by doing:
 It is common practice to keep `generated files out of version control
 <http://www.gnu.org/software/automake/manual/automake.html#CVS>`_.
 
-USAGE NOTE Nov 2016
+USAGE NOTE June 2020
 
-While developing the Estonian morphology and dictionaries, they were tested on Helsingi FST and Xerox FST.
-The commands used were:
+For setting up the environment for grammar checker development, run sea-üles-baas-githubist.sh
+While developing the Estonian morphology and dictionaries, they were tested on Helsingi FST.
+The configuration was:
 
-./autogen.sh -l
-./configure --with-hfst --with-xfst=xfst-path --disable-transcriptors
+./configure --with-hfst --without-xfst --enable-tokenisers --enable-spellers --enable-grammarchecker
 make ; make check
-
-(where xfst-path is the directory where the Xerox tools were installed)
 
 VPATH builds
 ------------
