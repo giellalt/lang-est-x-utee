@@ -89,10 +89,6 @@ Define urlword          url                          LC([blank | #]) RC([blank |
 !! 1) unknown word-like forms, and
 !! 2) unmatched strings
 !! We want to give 1) a match, but let 2) be treated specially by hfst-tokenise -a
-Define digit "0-9";
-Define arab_number [[digit+ [{,}|{.}|{:}]]* digit+] ;  ! number, or time, or fraction, or score
-Define score [digit+ {:} digit+] ;
-!Define price [digit+ {.} digit digit] | [digit+ {.} {
 
 Define alphabet "a-z"
                |"A-Z"
@@ -114,7 +110,7 @@ Define alphabet "a-z"
                |{Ỷ}|{Ƴ}|{Ỵ}|{Ɏ}
                |{š}|{ž}|{č}|{đ}|{í}|{ŋ}|{ň}|{ŧ}|{ň}
                |{Š}|{Ž}|{Č}|{Đ}|{Í}|{Ŋ}|{Ň}|{Ŧ}|{Ň}
-               | digit
+               |"0-9"
                |{_}|{§}|{°}
                ;
 Define alphamiddle {'}|{-} ; ! Treat foo-bar as one big unknown, but -foo (or bar-) as two tokens
@@ -143,16 +139,6 @@ Define unknownwordEmpty unknownform:0 LC([blank | #]) RC([[blank ] | # ]);
 ! Define tokenOrBlank [ token | superblank ];
 !! Needs hfst-tokenise to output things differently depending on the tag they get
 
-! katsetused
-Define nnn [(digit) (digit) digit] [{ } [digit digit digit]]* ;
-!Define longnum [ [any* morphology] & [nnn] ] ;
-! see töötab Define longnum [  nnn {aa}:b ] ;
-! ei jõua ära oodata kompileerimist Define longnum morphology & [digit+ [? ?]:[? ? ? ?]] ;
-! Define longnum [nnn [morphology & [ any* digit:[?*] nonprintable*]]] ; ! sobib nt 1 1230
-! Define longnum [nnn [morphology & [ any* [digit ?*]:[?*] nonprintable*]]] ; ! ei jõua kompil. oodata
-! Define longnum [nnn [morphology & [ [digit [? | flags]* .x. [? | flags]*] nonprintable*]]] ; ! ei jõua kompil. oodata
-
 Define token [ morphoword | unknownwordEmpty | incondword | Ins(urlword) ] EndTag(token);
-!Define token [ longnum] EndTag(token);
 
 regex token ;

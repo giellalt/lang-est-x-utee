@@ -6,7 +6,7 @@
     <description>This is an fst-based speller for Estonian. It is based
     on the normative subset of the morphological analyser for Estonian.
     The source code can be found at:
-    https://victorio.uit.no/langtech/trunk/langs/est/
+    https://github.com/giellalt/lang-est-x-utee
     License: GPL3+.</description>
     <version vcsrev="GT_REVISION">GT_VERSION</version>
     <date>DATE</date>

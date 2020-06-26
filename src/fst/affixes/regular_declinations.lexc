@@ -321,23 +321,12 @@ LEXICON AbbrCases
 LEXICON AbbrNoCase
               :   # ;
 
+! any inflection is possible (this is not correct, of course)
+! actually a subset of inflectional endings that are possible for acronyms
 LEXICON AbbrSomeCase
-           +Sg:-i GENITIVE ;                ! mld-i
-              :-d SG_PARTITIVE ;            ! wc-d
-              :-t SG_PARTITIVE ;            ! mld-t
-              :-it SG_PARTITIVE ;           ! mld-it
-              :-i SG_PARTITIVE ;            ! DivX-i
-           +Sg:- ALL_SEM_CASES ;            ! mld-ga
-           +Sg:-i ALL_SEM_CASES ;           ! Gbit-iga
-           +Pl:-d NOMINATIVE ;            ! wc-d
-           +Pl:-id NOMINATIVE ;           ! DivX-id
-              :-de N_PL_SUBPARA ;         ! wc-de etc  
-              :-ide N_PL_SUBPARA ;        ! DivX-ide etc 
-              :-te N_PL_SUBPARA ;         ! mld-te etc 
-              :-ite N_PL_SUBPARA ;        ! mld-ite etc  
-              :-sid PL_PARTITIVE ;        ! wc-sid
-              :-isid PL_PARTITIVE ;       ! DivX-isid
-              :-e PL_PARTITIVE ;          ! DivX-e
+              :- Acro1V ;                 ! wc, 2.a, 
+              :- Acro1C ;                 ! DivX, Gbit 
+              :- Acro2C ;                 ! mld 
 
 ! ---------------
 ! Symbol affixes
@@ -448,6 +437,9 @@ LEXICON CardinalWithFractionEnding
 
 LEXICON CardinalNoEnd
      +Num+Card: # ;
+
+LEXICON OrdinalNoEnd
+     +Num+Ord: # ;      ! IV, MCM
 
 LEXICON OrdinalDotEnd
       +Num+Ord: MARKDOT ;
