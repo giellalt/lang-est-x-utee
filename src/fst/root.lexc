@@ -575,7 +575,9 @@ Multichar_Symbols
 '  !!≈ * @CODE@  7 is the real apostrophe ?? 
 ! "😱"  !! {{@CODE@}} is used in some languages to prefix # in dynamic compounds
 
-+Use/Circ !!= * {{@CODE@}}: for arabic and roman numerals
++Use/Circ !!= * {{@CODE@}}: for arabic and roman numerals; 
++Use/PMatch !!= * {{@CODE@}}: for tokenisation with pmatch
++Use/-PMatch !!= * {{@CODE@}}: for tokenisation with pmatch
 
 +ABBR !!= * {{@CODE@}}: Lühend / Abbreviation
 +Symbol !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
@@ -738,6 +740,18 @@ Multichar_Symbols
  @C.NeedDerNe@
 
  @P.Pmatch.Backtrack@  ! for tokenizer pmhfst-file; it gets converted to pmatch variables in pmhfst compilation process
+ @P.Pmatch.Loc@  ! for tokenizer pmhfst-file; it gets converted to pmatch variables in pmhfst compilation process
+
+!! Tokeniser 
+! ... may backtrack to give alternative readings to dot-ending stuff
+! 6.   may be: 6. Num Ord or 6. Num Ord . CLB   or 6 Num Card .   CLB
+! 6... may be:               6. Num Ord ... CLB or 6 Num Card ... CLB
+! jne.   may be: jne ABBR or jne ABBR .   CLB
+! jne... may be:             jne ABBR ... CLB
+! so when there is more than one dot, the analysis without CLB is not possible
+! that means that we must remember that a dot has been processed, and block the path if more dots follow
+ @P.Dot.One@   ! there was a dot
+ @D.Dot.One@   ! there should not have been a dot
 
 !! Guesser
 ! Pay attention to the stress
