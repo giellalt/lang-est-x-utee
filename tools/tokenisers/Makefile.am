@@ -34,13 +34,49 @@ GENRSRCS:=
 emoticon.hfst: $(top_srcdir)/src/fst/emoticon.hfst
 		cp $< $@
 
+# abbreviations with a final dot
+# remove the paths with +Use/-PMatch and the tags +Use/PMatch
+abbrevdot.tmp.hfst:  $(top_srcdir)/src/fst/abbrevdot.tmp.hfst \
+			$(top_srcdir)/src/filters/remove-Use_minus_PMatch-strings.hfst \
+			$(top_srcdir)/src/filters/remove-Use_minus_PMatch-tags.hfst
+	$(PRINTF) "read regex \
+			    @\"$(top_srcdir)/src/filters/remove-Use_minus_PMatch-strings.hfst\" \
+			.o. @\"$(top_srcdir)/src/filters/remove-Use_PMatch-tags.hfst\"          \
+			.o. @\"$<\"                                         \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(HFST_XFST) -p $(MORE_VERBOSITY) $(HFST_FORMAT)
+
+# turn it right
+abbrevdot.inv.hfst: abbrevdot.tmp.hfst
+	$(AM_V_INVERT)$(HFST_INVERT) -i $< -o $@
+
+# convert GT tags to CG tags
+abbrdot-%.hfst:  abbrevdot.inv.hfst filters/make-%-CG-tags.hfst
+	$(CMD)
+
+# convert the 2 flag diacritics into pmatch variables
+abbrdot_relabelled-%.hfst: abbrdot-%.hfst \
+						 btrelabeller.hfst \
+						 relabeller.hfst
+	$(AM_V_HSUBST)$(HFST_SUBSTITUTE) \
+		-f '@P.Pmatch.Backtrack@' -T btrelabeller.hfst $< \
+		| $(HFST_SUBSTITUTE) \
+		-f '@P.Pmatch.Loc@'       -T   relabeller.hfst \
+		-o $@
+
 # This is the real tokeniser build target:
-tokeniser-%-gt-desc.pmhfst: tokeniser-%-gt-desc.pmscript \
-                    analyser_relabelled-%-gt-desc.hfst \
+tokeniser-gramcheck-gt-desc.pmhfst: tokeniser-gramcheck-gt-desc.pmscript \
+                    analyser_relabelled-gramcheck-gt-desc.hfst \
                     analyser-url-gt-desc.hfst \
-                    emoticon.hfst
+                    emoticon.hfst \
+                    abbrdot_relabelled-gramcheck.hfst
 	$(AM_V_PM2FST)$(HFST_PMATCH2FST) < $< > $@.tmp
 	$(AM_V_at)mv -f $@.tmp $@
+
+# not sure that gramcheck tokenisation should be different from disamb tokenisation
+tokeniser-disamb-gt-desc.pmhfst: tokeniser-gramcheck-gt-desc.pmhfst
+		cp $< $@
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
