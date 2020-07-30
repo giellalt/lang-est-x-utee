@@ -6,400 +6,401 @@
 
 LEXICON Abbreviations
 
-< ( CapLetter ( %. ) %- ) CapLetter %. "+ABBR":0 > AbbrNoCase ;
-< 1 "0" n d "+ABBR":0 > AbbrNoCase ;
-16nd+ABBR:16nd AbbrNoCase ;
-2nd+ABBR:2nd AbbrNoCase ;
-8nd+ABBR:8nd AbbrNoCase ;
-A3+ABBR:A3 AbbrNoCase ;
-A4+ABBR:A4 AbbrNoCase ;
-A4/Letter+ABBR:A4/Letter AbbrNoCase ;
-A5+ABBR:A5 AbbrNoCase ;
-a+ABBR:a AbbrCasesDot ;
+! < ( CapLetter ( %. ) %- ) CapLetter "+ABBR":0 > DOTABBR ; ! NB! this is copied to another lexc file because of the final dot
+
+< 1 "0" n d "+ABBR":0 > # ;
+16nd+ABBR:16nd # ;
+2nd+ABBR:2nd # ;
+8nd+ABBR:8nd # ;
+A3+ABBR:A3 # ;
+A4+ABBR:A4 # ;
+A4/Letter+ABBR:A4/Letter # ;
+A5+ABBR:A5 # ;
+a+ABBR:a AbbrCases ; ! may also end with a dot
 Abc+ABBR:Abc AbbrCases ;
 abc+ABBR:abc AbbrCases ;
-A.D+ABBR:A.D AbbrNoCaseDot ;
-a.D+ABBR:a.D AbbrNoCaseDot ;
-aj+ABBR:aj AbbrNoCaseDot ;
-Akad+ABBR:Akad AbbrCasesDot ;
-akad+ABBR:akad AbbrCasesDot ;
-AL+ABBR:AL AbbrNoCase ;
-Al+ABBR:Al AbbrNoCase ;
-Alt++ABBR:Alt+ AbbrNoCase ;
-Alt+Enter+ABBR:Alt+Enter AbbrNoCase ;
-Alt+F10+ABBR:Alt+F10 AbbrNoCase ;
-Alt+F11+ABBR:Alt+F11 AbbrNoCase ;
-Alt+F12+ABBR:Alt+F12 AbbrNoCase ;
-Alt+F1+ABBR:Alt+F1 AbbrNoCase ;
-Alt+F2+ABBR:Alt+F2 AbbrNoCase ;
-Alt+F3+ABBR:Alt+F3 AbbrNoCase ;
-Alt+F4+ABBR:Alt+F4 AbbrNoCase ;
-Alt+F5+ABBR:Alt+F5 AbbrNoCase ;
-Alt+F6+ABBR:Alt+F6 AbbrNoCase ;
-Alt+F7+ABBR:Alt+F7 AbbrNoCase ;
-Alt+F8+ABBR:Alt+F8 AbbrNoCase ;
-Alt+F9+ABBR:Alt+F9 AbbrNoCase ;
-AltGr+ABBR:AltGr AbbrNoCase ;
-Apr+ABBR:Apr AbbrCasesDot ;
-apr+ABBR:apr AbbrCasesDot ;
-arh+ABBR:arh AbbrCasesDot ;
-Art+ABBR:Art AbbrCasesDot ;
-art+ABBR:art AbbrCasesDot ;
+A.D+ABBR:A.D # ; ! may also end with a dot
+a.D+ABBR:a.D # ; ! may also end with a dot
+aj+ABBR:aj # ; ! may also end with a dot
+Akad+ABBR:Akad AbbrCases ; ! may also end with a dot
+akad+ABBR:akad AbbrCases ; ! may also end with a dot
+AL+ABBR:AL # ;
+Al+ABBR:Al # ;
+Alt++ABBR:Alt+ # ;
+Alt+Enter+ABBR:Alt+Enter # ;
+Alt+F10+ABBR:Alt+F10 # ;
+Alt+F11+ABBR:Alt+F11 # ;
+Alt+F12+ABBR:Alt+F12 # ;
+Alt+F1+ABBR:Alt+F1 # ;
+Alt+F2+ABBR:Alt+F2 # ;
+Alt+F3+ABBR:Alt+F3 # ;
+Alt+F4+ABBR:Alt+F4 # ;
+Alt+F5+ABBR:Alt+F5 # ;
+Alt+F6+ABBR:Alt+F6 # ;
+Alt+F7+ABBR:Alt+F7 # ;
+Alt+F8+ABBR:Alt+F8 # ;
+Alt+F9+ABBR:Alt+F9 # ;
+AltGr+ABBR:AltGr # ;
+Apr+ABBR:Apr AbbrCases ; ! may also end with a dot
+apr+ABBR:apr AbbrCases ; ! may also end with a dot
+arh+ABBR:arh AbbrCases ; ! may also end with a dot
+Art+ABBR:Art AbbrCases ; ! may also end with a dot
+art+ABBR:art AbbrCases ; ! may also end with a dot
 A/s+ABBR:A/s AbbrCases ;
 a/s+ABBR:a/s AbbrCases ;
-at+ABBR:at AbbrNoCase ;
-Aug+ABBR:Aug AbbrCasesDot ;
-aug+ABBR:aug AbbrCasesDot ;
+at+ABBR:at # ;
+Aug+ABBR:Aug AbbrCases ; ! may also end with a dot
+aug+ABBR:aug AbbrCases ; ! may also end with a dot
 A/ü+ABBR:A/ü AbbrCases ;
 Aü+ABBR:Aü AbbrCases ;
 a/ü+ABBR:a/ü AbbrCases ;
 aü+ABBR:aü AbbrCases ;
-< B 4 %+ABBR:0 > AbbrNoCase ;
-B5+ABBR:B5 AbbrNoCase ;
-ca+ABBR:ca AbbrNoCase ;
-Chr+ABBR:Chr AbbrNoCase ;
+< B 4 %+ABBR:0 > # ;
+B5+ABBR:B5 # ;
+ca+ABBR:ca # ;
+Chr+ABBR:Chr # ;
 cm+ABBR:cm AbbrCases ;
-Ctrl++ABBR:Ctrl+ AbbrNoCase ;
-Ctrl+ABBR:Ctrl AbbrNoCase ;
-< C t r l %+ A l t %+ D e l %+ABBR:0 > AbbrNoCase ;
-< C t r l %+ A l t ( %+ E n t e r ) %+ABBR:0 > AbbrNoCase ;
-< C t r l %+ F [%0|1|2|3|4|5|6|7|8|9]^{1,2} %+ABBR:0 > AbbrNoCase ;
-< C t r l ( %+ S h i f t ) ( %+ ( CapLetter ) ) %+ABBR:0 > AbbrNoCase ;
-Dets+ABBR:Dets AbbrCasesDot ;
-dets+ABBR:dets AbbrCasesDot ;
-dipl+ABBR:dipl AbbrNoCaseDot ;
-Dir+ABBR:Dir AbbrNoCaseDot ;
-dir+ABBR:dir AbbrNoCaseDot ;
+Ctrl++ABBR:Ctrl+ # ;
+Ctrl+ABBR:Ctrl # ;
+< C t r l %+ A l t %+ D e l %+ABBR:0 > # ;
+< C t r l %+ A l t ( %+ E n t e r ) %+ABBR:0 > # ;
+< C t r l %+ F [%0|1|2|3|4|5|6|7|8|9]^{1,2} %+ABBR:0 > # ;
+< C t r l ( %+ S h i f t ) ( %+ ( CapLetter ) ) %+ABBR:0 > # ;
+Dets+ABBR:Dets AbbrCases ; ! may also end with a dot
+dets+ABBR:dets AbbrCases ; ! may also end with a dot
+dipl+ABBR:dipl # ; ! may also end with a dot
+Dir+ABBR:Dir # ; ! may also end with a dot
+dir+ABBR:dir # ; ! may also end with a dot
 DivX+ABBR:DivX AbbrCases ;
 dl+ABBR:dl AbbrCases ;
 dm+ABBR:dm AbbrCases ;
-Dokument1+ABBR:Dokument1 AbbrNoCase ;
-Dots+ABBR:Dots AbbrCasesDot ;
-dots+ABBR:dots AbbrCasesDot ;
-Dr+ABBR:Dr AbbrCasesDot ;
-dr+ABBR:dr AbbrCasesDot ;
-Dr+ABBR:Dr AbbrNoCaseDot ;
-e+ABBR:e AbbrNoCase ;
+Dokument1+ABBR:Dokument1 # ;
+Dots+ABBR:Dots AbbrCases ; ! may also end with a dot
+dots+ABBR:dots AbbrCases ; ! may also end with a dot
+Dr+ABBR:Dr AbbrCases ; ! may also end with a dot
+dr+ABBR:dr AbbrCases ; ! may also end with a dot
+Dr+ABBR:Dr # ; ! may also end with a dot
+e+ABBR:e # ;
 EENet+ABBR:EENet AbbrCases ;
-ehit+ABBR:ehit AbbrCasesDot ;
-e.k+ABBR:e.k AbbrNoCaseDot ;
+ehit+ABBR:ehit AbbrCases ; ! may also end with a dot
+e.k+ABBR:e.k # ; ! may also end with a dot
 EK(b)P+ABBR:EK(b)P AbbrCases ;
-eKr+ABBR:eKr AbbrNoCase ;
-E.KR+ABBR:E.KR AbbrNoCaseDot ;
-e.Kr+ABBR:e.Kr AbbrNoCaseDot ;
-Eluk+ABBR:Eluk AbbrNoCaseDot ;
-eluk+ABBR:eluk AbbrNoCaseDot ;
-e.m.a+ABBR:e.m.a AbbrNoCaseDot ;
-esmasp+ABBR:esmasp AbbrNoCaseDot ;
-F10+ABBR:F10 AbbrNoCase ;
-F11+ABBR:F11 AbbrNoCase ;
-F12+ABBR:F12 AbbrNoCase ;
-F1+ABBR:F1 AbbrNoCase ;
-F2+ABBR:F2 AbbrNoCase ;
-F3+ABBR:F3 AbbrNoCase ;
-F4+ABBR:F4 AbbrNoCase ;
-F5+ABBR:F5 AbbrNoCase ;
-F6+ABBR:F6 AbbrNoCase ;
-F7+ABBR:F7 AbbrNoCase ;
-F8+ABBR:F8 AbbrNoCase ;
-F9+ABBR:F9 AbbrNoCase ;
-Fail0+ABBR:Fail0 AbbrNoCase ;
-Fail10+ABBR:Fail10 AbbrNoCase ;
-Fail1+ABBR:Fail1 AbbrNoCase ;
-Fail2+ABBR:Fail2 AbbrNoCase ;
-Fail3+ABBR:Fail3 AbbrNoCase ;
-Fail4+ABBR:Fail4 AbbrNoCase ;
-Fail5+ABBR:Fail5 AbbrNoCase ;
-Fail6+ABBR:Fail6 AbbrNoCase ;
-Fail7+ABBR:Fail7 AbbrNoCase ;
-Fail8+ABBR:Fail8 AbbrNoCase ;
-Fail9+ABBR:Fail9 AbbrNoCase ;
-Fr+ABBR:Fr AbbrNoCase ;
+eKr+ABBR:eKr # ;
+E.KR+ABBR:E.KR # ; ! may also end with a dot
+e.Kr+ABBR:e.Kr # ; ! may also end with a dot
+Eluk+ABBR:Eluk # ; ! may also end with a dot
+eluk+ABBR:eluk # ; ! may also end with a dot
+e.m.a+ABBR:e.m.a # ; ! may also end with a dot
+esmasp+ABBR:esmasp # ; ! may also end with a dot
+F10+ABBR:F10 # ;
+F11+ABBR:F11 # ;
+F12+ABBR:F12 # ;
+F1+ABBR:F1 # ;
+F2+ABBR:F2 # ;
+F3+ABBR:F3 # ;
+F4+ABBR:F4 # ;
+F5+ABBR:F5 # ;
+F6+ABBR:F6 # ;
+F7+ABBR:F7 # ;
+F8+ABBR:F8 # ;
+F9+ABBR:F9 # ;
+Fail0+ABBR:Fail0 # ;
+Fail10+ABBR:Fail10 # ;
+Fail1+ABBR:Fail1 # ;
+Fail2+ABBR:Fail2 # ;
+Fail3+ABBR:Fail3 # ;
+Fail4+ABBR:Fail4 # ;
+Fail5+ABBR:Fail5 # ;
+Fail6+ABBR:Fail6 # ;
+Fail7+ABBR:Fail7 # ;
+Fail8+ABBR:Fail8 # ;
+Fail9+ABBR:Fail9 # ;
+Fr+ABBR:Fr # ;
 ftp+ABBR:ftp AbbrCases ;
 g+ABBR:g AbbrCases ;
-Gbit+ABBR:Gbit AbbrNoCase ;
+Gbit+ABBR:Gbit # ;
 ha+ABBR:ha AbbrCases ;
-h+ABBR:h AbbrNoCase ;
-haril+ABBR:haril AbbrNoCaseDot ;
-hisp+ABBR:hisp AbbrNoCaseDot ;
+h+ABBR:h # ;
+haril+ABBR:haril # ; ! may also end with a dot
+hisp+ABBR:hisp # ; ! may also end with a dot
 hj+ABBR:hj AbbrCases ;
-Hr+ABBR:Hr AbbrCasesDot ;
-hr+ABBR:hr AbbrCasesDot ;
-hrl+ABBR:hrl AbbrNoCaseDot ;
+Hr+ABBR:Hr AbbrCases ; ! may also end with a dot
+hr+ABBR:hr AbbrCases ; ! may also end with a dot
+hrl+ABBR:hrl # ; ! may also end with a dot
 Hz+ABBR:Hz AbbrCases ;
 http+ABBR:http AbbrCases ;
-id+ABBR:id AbbrNoCase ;
-ill+ABBR:ill AbbrNoCaseDot ;
-ingl+ABBR:ingl AbbrNoCaseDot ;
-Ins+ABBR:Ins AbbrCasesDot ;
-ins+ABBR:ins AbbrCasesDot ;
-j.a+ABBR:j.a AbbrNoCaseDot ;
-j+ABBR:j AbbrNoCase ;
-jj+ABBR:jj AbbrNoCaseDot ;
-jm+ABBR:jm AbbrNoCaseDot ;
-jms+ABBR:jms AbbrNoCaseDot ;
-jmt+ABBR:jmt AbbrNoCaseDot ;
-jn+ABBR:jn AbbrNoCaseDot ;
-Jne+ABBR:Jne AbbrNoCaseDot ;
-jne+ABBR:jne AbbrNoCaseDot ;
-jpm+ABBR:jpm AbbrNoCaseDot ;
-jpt+ABBR:jpt AbbrNoCaseDot ;
-jr+ABBR:jr AbbrNoCaseDot ;
-jrk+ABBR:jrk AbbrNoCaseDot ;
-Jsk+ABBR:Jsk AbbrCasesDot ;
-jsk+ABBR:jsk AbbrCasesDot ;
-j.t+ABBR:j.t AbbrNoCaseDot ;
-jt+ABBR:jt AbbrNoCaseDot ;
-jts+ABBR:jts AbbrNoCaseDot ;
-Juh+ABBR:Juh AbbrCasesDot ;
-juh+ABBR:juh AbbrCasesDot ;
-jun+ABBR:jun AbbrNoCaseDot ;
+id+ABBR:id # ;
+ill+ABBR:ill # ; ! may also end with a dot
+ingl+ABBR:ingl # ; ! may also end with a dot
+Ins+ABBR:Ins AbbrCases ; ! may also end with a dot
+ins+ABBR:ins AbbrCases ; ! may also end with a dot
+j.a+ABBR:j.a # ; ! may also end with a dot
+j+ABBR:j # ;
+jj+ABBR:jj # ; ! may also end with a dot
+jm+ABBR:jm # ; ! may also end with a dot
+jms+ABBR:jms # ; ! may also end with a dot
+jmt+ABBR:jmt # ; ! may also end with a dot
+jn+ABBR:jn # ; ! may also end with a dot
+Jne+ABBR:Jne # ; ! may also end with a dot
+jne+ABBR:jne # ; ! may also end with a dot
+jpm+ABBR:jpm # ; ! may also end with a dot
+jpt+ABBR:jpt # ; ! may also end with a dot
+jr+ABBR:jr # ; ! may also end with a dot
+jrk+ABBR:jrk # ; ! may also end with a dot
+Jsk+ABBR:Jsk AbbrCases ; ! may also end with a dot
+jsk+ABBR:jsk AbbrCases ; ! may also end with a dot
+j.t+ABBR:j.t # ; ! may also end with a dot
+jt+ABBR:jt # ; ! may also end with a dot
+jts+ABBR:jts # ; ! may also end with a dot
+Juh+ABBR:Juh AbbrCases ; ! may also end with a dot
+juh+ABBR:juh AbbrCases ; ! may also end with a dot
+jun+ABBR:jun # ; ! may also end with a dot
 jv+ABBR:jv AbbrCases ;
-k.a+ABBR:k.a AbbrNoCaseDot ;
-k+ABBR:k AbbrCasesDot ;
-kasut+ABBR:kasut AbbrNoCaseDot ;
-kat+ABBR:kat AbbrCasesDot ;
-kB+ABBR:kB AbbrNoCase ;
-Kd+ABBR:Kd AbbrCasesDot ;
-kd+ABBR:kd AbbrCasesDot ;
-keskm+ABBR:keskm AbbrNoCaseDot ;
+k.a+ABBR:k.a # ; ! may also end with a dot
+k+ABBR:k AbbrCases ; ! may also end with a dot
+kasut+ABBR:kasut # ; ! may also end with a dot
+kat+ABBR:kat AbbrCases ; ! may also end with a dot
+kB+ABBR:kB # ;
+Kd+ABBR:Kd AbbrCases ; ! may also end with a dot
+kd+ABBR:kd AbbrCases ; ! may also end with a dot
+keskm+ABBR:keskm # ; ! may also end with a dot
 kg+ABBR:kg AbbrCases ;
-kg/ha+ABBR:kg/ha AbbrNoCase ;
-Khk+ABBR:Khk AbbrCasesDot ;
-khk+ABBR:khk AbbrCasesDot ;
+kg/ha+ABBR:kg/ha # ;
+Khk+ABBR:Khk AbbrCases ; ! may also end with a dot
+khk+ABBR:khk AbbrCases ; ! may also end with a dot
 kHz+ABBR:kHz AbbrCases ;
-kihelk+ABBR:kihelk AbbrCasesDot ;
-ki/ku+ABBR:ki/ku AbbrNoCase ;
-Kk+ABBR:Kk AbbrCasesDot ;
-kk+ABBR:kk AbbrCasesDot ;
-< [ K | k ] o r p "!" %+ABBR:0 > AbbrNoCase ;
-Kl+ABBR:Kl AbbrCasesDot ;
-kl+ABBR:kl AbbrCasesDot ;
-Klh+ABBR:Klh AbbrCasesDot ;
-klh+ABBR:klh AbbrCasesDot ;
+kihelk+ABBR:kihelk AbbrCases ; ! may also end with a dot
+ki/ku+ABBR:ki/ku # ;
+Kk+ABBR:Kk AbbrCases ; ! may also end with a dot
+kk+ABBR:kk AbbrCases ; ! may also end with a dot
+< [ K | k ] o r p "!" %+ABBR:0 > # ;
+Kl+ABBR:Kl AbbrCases ; ! may also end with a dot
+kl+ABBR:kl AbbrCases ; ! may also end with a dot
+Klh+ABBR:Klh AbbrCases ; ! may also end with a dot
+klh+ABBR:klh AbbrCases ; ! may also end with a dot
 km+ABBR:km AbbrCases ;
-km/h+ABBR:km/h AbbrNoCase ;
-km/s+ABBR:km/s AbbrNoCase ;
-knd+ABBR:knd AbbrCasesDot ;
-Kod+ABBR:Kod AbbrCasesDot ;
-kod+ABBR:kod AbbrCasesDot ;
-Kolh+ABBR:Kolh AbbrCasesDot ;
-kolh+ABBR:kolh AbbrCasesDot ;
-kolmap+ABBR:kolmap AbbrNoCaseDot ;
-komb+ABBR:komb AbbrNoCaseDot ;
-kompl+ABBR:kompl AbbrNoCaseDot ;
-koop+ABBR:koop AbbrNoCaseDot ;
-kop+ABBR:kop AbbrNoCaseDot ;
-korresp+ABBR:korresp AbbrNoCaseDot ;
-Kpl+ABBR:Kpl AbbrCasesDot ;
-kpl+ABBR:kpl AbbrCasesDot ;
-kr+ABBR:kr AbbrCasesDot ;
-kr+ABBR:kr AbbrNoCaseDot ;
-kr/g+ABBR:kr/g AbbrNoCase ;
+km/h+ABBR:km/h # ;
+km/s+ABBR:km/s # ;
+knd+ABBR:knd AbbrCases ; ! may also end with a dot
+Kod+ABBR:Kod AbbrCases ; ! may also end with a dot
+kod+ABBR:kod AbbrCases ; ! may also end with a dot
+Kolh+ABBR:Kolh AbbrCases ; ! may also end with a dot
+kolh+ABBR:kolh AbbrCases ; ! may also end with a dot
+kolmap+ABBR:kolmap # ; ! may also end with a dot
+komb+ABBR:komb # ; ! may also end with a dot
+kompl+ABBR:kompl # ; ! may also end with a dot
+koop+ABBR:koop # ; ! may also end with a dot
+kop+ABBR:kop # ; ! may also end with a dot
+korresp+ABBR:korresp # ; ! may also end with a dot
+Kpl+ABBR:Kpl AbbrCases ; ! may also end with a dot
+kpl+ABBR:kpl AbbrCases ; ! may also end with a dot
+kr+ABBR:kr AbbrCases ; ! may also end with a dot
+kr+ABBR:kr # ; ! may also end with a dot
+kr/g+ABBR:kr/g # ;
 KrK+ABBR:KrK AbbrCases ;
 kr/kg+ABBR:kr/kg AbbrCases ;
-kr/kg+ABBR:kr/kg AbbrNoCase ;
-kr/km+ABBR:kr/km AbbrNoCase ;
-kr/l+ABBR:kr/l AbbrNoCase ;
-kr/m+ABBR:kr/m AbbrNoCase ;
+kr/kg+ABBR:kr/kg # ;
+kr/km+ABBR:kr/km # ;
+kr/l+ABBR:kr/l # ;
+kr/m+ABBR:kr/m # ;
 kr/paar+ABBR:kr/paar AbbrCases ;
 kr/tk+ABBR:kr/tk AbbrCases ;
-kr/tk+ABBR:kr/tk AbbrNoCase ;
-kt+ABBR:kt AbbrCasesDot ;
-Kub+ABBR:Kub AbbrCasesDot ;
-kub+ABBR:kub AbbrCasesDot ;
-kv+ABBR:kv AbbrNoCase ;
+kr/tk+ABBR:kr/tk # ;
+kt+ABBR:kt AbbrCases ; ! may also end with a dot
+Kub+ABBR:Kub AbbrCases ; ! may also end with a dot
+kub+ABBR:kub AbbrCases ; ! may also end with a dot
+kv+ABBR:kv # ;
 kW+ABBR:kW AbbrCases ;
 kWh+ABBR:kWh AbbrCases ;
 KübI+ABBR:KübI AbbrCases ;
 l+ABBR:l AbbrCases ;
-lad+ABBR:lad AbbrNoCaseDot ;
-laup+ABBR:laup AbbrCasesDot ;
-lg+ABBR:lg AbbrNoCaseDot ;
-libl+ABBR:libl AbbrNoCaseDot ;
+lad+ABBR:lad # ; ! may also end with a dot
+laup+ABBR:laup AbbrCases ; ! may also end with a dot
+lg+ABBR:lg # ; ! may also end with a dot
+libl+ABBR:libl # ; ! may also end with a dot
 lj+ABBR:lj AbbrCases ;
-Lk+ABBR:Lk AbbrCasesDot ;
-lk+ABBR:lk AbbrCasesDot ;
+Lk+ABBR:Lk AbbrCases ; ! may also end with a dot
+lk+ABBR:lk AbbrCases ; ! may also end with a dot
 lm+ABBR:lm AbbrCases ;
 lo+ABBR:lo AbbrCases ;
-Lp+ABBR:Lp AbbrNoCaseDot ;
-lp+ABBR:lp AbbrNoCaseDot ;
-lüh+ABBR:lüh AbbrNoCaseDot ;
+Lp+ABBR:Lp # ; ! may also end with a dot
+lp+ABBR:lp # ; ! may also end with a dot
+lüh+ABBR:lüh # ; ! may also end with a dot
 m+ABBR:m AbbrCases ;
-Mag+ABBR:Mag AbbrCasesDot ;
-mag+ABBR:mag AbbrCasesDot ;
-maj+ABBR:maj AbbrCasesDot ;
-m.a.j+ABBR:m.a.j AbbrNoCaseDot ;
-Mbit+ABBR:Mbit AbbrNoCase ;
+Mag+ABBR:Mag AbbrCases ; ! may also end with a dot
+mag+ABBR:mag AbbrCases ; ! may also end with a dot
+maj+ABBR:maj AbbrCases ; ! may also end with a dot
+m.a.j+ABBR:m.a.j # ; ! may also end with a dot
+Mbit+ABBR:Mbit # ;
 mg+ABBR:mg AbbrCases ;
 mg/l+ABBR:mg/l AbbrCases ;
 MHz+ABBR:MHz AbbrCases ;
-milj+ABBR:milj AbbrCasesDot ;
-Min+ABBR:Min AbbrCasesDot ;
-min+ABBR:min AbbrCasesDot ;
-mk+ABBR:mk AbbrCasesDot ;
+milj+ABBR:milj AbbrCases ; ! may also end with a dot
+Min+ABBR:Min AbbrCases ; ! may also end with a dot
+min+ABBR:min AbbrCases ; ! may also end with a dot
+mk+ABBR:mk AbbrCases ; ! may also end with a dot
 ml+ABBR:ml AbbrCases ;
-mld+ABBR:mld AbbrCasesDot ;
-mln+ABBR:mln AbbrCasesDot ;
-mlrd+ABBR:mlrd AbbrCasesDot ;
+mld+ABBR:mld AbbrCases ; ! may also end with a dot
+mln+ABBR:mln AbbrCases ; ! may also end with a dot
+mlrd+ABBR:mlrd AbbrCases ; ! may also end with a dot
 mm+ABBR:mm AbbrCases ;
-Mme+ABBR:Mme AbbrNoCaseDot ;
-mnt+ABBR:mnt AbbrCasesDot ;
-MR+ABBR:MR AbbrNoCaseDot ;
-Mr+ABBR:Mr AbbrNoCaseDot ;
-Mrs+ABBR:Mrs AbbrNoCaseDot ;
+Mme+ABBR:Mme # ; ! may also end with a dot
+mnt+ABBR:mnt AbbrCases ; ! may also end with a dot
+MR+ABBR:MR # ; ! may also end with a dot
+Mr+ABBR:Mr # ; ! may also end with a dot
+Mrs+ABBR:Mrs # ; ! may also end with a dot
 m/s+ABBR:m/s AbbrCases ;
-Ms+ABBR:Ms AbbrNoCaseDot ;
-ms+ABBR:ms AbbrNoCaseDot ;
+Ms+ABBR:Ms # ; ! may also end with a dot
+ms+ABBR:ms # ; ! may also end with a dot
 MWh+ABBR:MWh AbbrCases ;
-n+ABBR:n AbbrCasesDot ;
-neljap+ABBR:neljap AbbrCasesDot ;
-nim+ABBR:nim AbbrNoCaseDot ;
-Nn+ABBR:Nn AbbrNoCaseDot ;
-nn+ABBR:nn AbbrNoCaseDot ;
-Nov+ABBR:Nov AbbrCasesDot ;
-nov+ABBR:nov AbbrCasesDot ;
-Nr+ABBR:Nr AbbrCasesDot ;
-nr+ABBR:nr AbbrCasesDot ;
-Nt+ABBR:Nt AbbrCasesDot ;
-nt+ABBR:nt AbbrNoCaseDot ;
-Nõuk+ABBR:Nõuk AbbrNoCaseDot ;
-nõuk+ABBR:nõuk AbbrNoCaseDot ;
-n-ö+ABBR:n-ö AbbrNoCaseDot ;
-n.-ö+ABBR:n.-ö AbbrNoCaseDot ;
-n.ö+ABBR:n.ö AbbrNoCaseDot ;
-nö+ABBR:nö AbbrNoCaseDot ;
-obl+ABBR:obl AbbrCasesDot ;
-Okt+ABBR:Okt AbbrCasesDot ;
-okt+ABBR:okt AbbrCasesDot ;
-op+ABBR:op AbbrNoCaseDot ;
-osk+ABBR:osk AbbrCasesDot ;
+n+ABBR:n AbbrCases ; ! may also end with a dot
+neljap+ABBR:neljap AbbrCases ; ! may also end with a dot
+nim+ABBR:nim # ; ! may also end with a dot
+Nn+ABBR:Nn # ; ! may also end with a dot
+nn+ABBR:nn # ; ! may also end with a dot
+Nov+ABBR:Nov AbbrCases ; ! may also end with a dot
+nov+ABBR:nov AbbrCases ; ! may also end with a dot
+Nr+ABBR:Nr AbbrCases ; ! may also end with a dot
+nr+ABBR:nr AbbrCases ; ! may also end with a dot
+Nt+ABBR:Nt AbbrCases ; ! may also end with a dot
+nt+ABBR:nt # ; ! may also end with a dot
+Nõuk+ABBR:Nõuk # ; ! may also end with a dot
+nõuk+ABBR:nõuk # ; ! may also end with a dot
+n-ö+ABBR:n-ö # ; ! may also end with a dot
+n.-ö+ABBR:n.-ö # ; ! may also end with a dot
+n.ö+ABBR:n.ö # ; ! may also end with a dot
+nö+ABBR:nö # ; ! may also end with a dot
+obl+ABBR:obl AbbrCases ; ! may also end with a dot
+Okt+ABBR:Okt AbbrCases ; ! may also end with a dot
+okt+ABBR:okt AbbrCases ; ! may also end with a dot
+op+ABBR:op # ; ! may also end with a dot
+osk+ABBR:osk AbbrCases ; ! may also end with a dot
 O/ü+ABBR:O/ü AbbrCases ;
 o/ü+ABBR:o/ü AbbrCases ;
-p+ABBR:p AbbrCasesDot ;
-peam+ABBR:peam AbbrCasesDot ;
-perek+ABBR:perek AbbrCasesDot ;
-P.k+ABBR:P.k AbbrCasesDot ;
-Pk+ABBR:Pk AbbrCasesDot ;
-p.k+ABBR:p.k AbbrCasesDot ;
-pk+ABBR:pk AbbrCasesDot ;
-P.KR+ABBR:P.KR AbbrNoCaseDot ;
-p.Kr+ABBR:p.Kr AbbrNoCaseDot ;
-pKr+ABBR:pKr AbbrNoCaseDot ;
-p.l+ABBR:p.l AbbrNoCaseDot ;
-p/min+ABBR:p/min AbbrNoCase ;
-pms+ABBR:pms AbbrNoCaseDot ;
-p.o+ABBR:p.o AbbrNoCaseDot ;
-Pr+ABBR:Pr AbbrCasesDot ;
-pr+ABBR:pr AbbrCasesDot ;
-Prl+ABBR:Prl AbbrCasesDot ;
-prl+ABBR:prl AbbrCasesDot ;
-Prof+ABBR:Prof AbbrCasesDot ;
-prof+ABBR:prof AbbrCasesDot ;
-ps+ABBR:ps AbbrCasesDot ;
-pst+ABBR:pst AbbrCasesDot ;
-Ptk+ABBR:Ptk AbbrCasesDot ;
-ptk+ABBR:ptk AbbrCasesDot ;
-põhil+ABBR:põhil AbbrCasesDot ;
-pühap+ABBR:pühap AbbrCasesDot ;
-raj+ABBR:raj AbbrCasesDot ;
-rbl+ABBR:rbl AbbrCasesDot ;
-rdt+ABBR:rdt AbbrCasesDot ;
-resp+ABBR:resp AbbrNoCaseDot ;
-rin+ABBR:rin AbbrNoCaseDot ;
-rk+ABBR:rk AbbrCasesDot ;
-rkl+ABBR:rkl AbbrCasesDot ;
-rmtk+ABBR:rmtk AbbrCasesDot ;
-rtj+ABBR:rtj AbbrCasesDot ;
-s.a+ABBR:s.a AbbrNoCaseDot ;
-s+ABBR:s AbbrCasesDot ;
-Saj+ABBR:Saj AbbrCasesDot ;
-saj+ABBR:saj AbbrCasesDot ;
-sealh+ABBR:sealh AbbrNoCaseDot ;
-sek+ABBR:sek AbbrCasesDot ;
-Sekts+ABBR:Sekts AbbrNoCaseDot ;
-Sen+ABBR:Sen AbbrCasesDot ;
-sen+ABBR:sen AbbrCasesDot ;
-Sept+ABBR:Sept AbbrCasesDot ;
-sept+ABBR:sept AbbrCasesDot ;
-se/she+ABBR:se/she AbbrNoCase ;
-s/g+ABBR:s/g AbbrNoCase ;
-sh+ABBR:sh AbbrNoCase ;
-S.h+ABBR:S.h AbbrNoCaseDot ;
-s.h+ABBR:s.h AbbrNoCaseDot ;
-sjsk+ABBR:sjsk AbbrCasesDot ;
-s/kg+ABBR:s/kg AbbrNoCase ;
-s/km+ABBR:s/km AbbrNoCase ;
-skp+ABBR:skp AbbrCasesDot ;
-sks+ABBR:sks AbbrNoCaseDot ;
-s/l+ABBR:s/l AbbrNoCase ;
-sl+ABBR:sl AbbrNoCaseDot ;
-Sm+ABBR:Sm AbbrCasesDot ;
-sm+ABBR:sm AbbrCasesDot ;
-s/m+ABBR:s/m AbbrNoCase ;
+p+ABBR:p AbbrCases ; ! may also end with a dot
+peam+ABBR:peam AbbrCases ; ! may also end with a dot
+perek+ABBR:perek AbbrCases ; ! may also end with a dot
+P.k+ABBR:P.k AbbrCases ; ! may also end with a dot
+Pk+ABBR:Pk AbbrCases ; ! may also end with a dot
+p.k+ABBR:p.k AbbrCases ; ! may also end with a dot
+pk+ABBR:pk AbbrCases ; ! may also end with a dot
+P.KR+ABBR:P.KR # ; ! may also end with a dot
+p.Kr+ABBR:p.Kr # ; ! may also end with a dot
+pKr+ABBR:pKr # ; ! may also end with a dot
+p.l+ABBR:p.l # ; ! may also end with a dot
+p/min+ABBR:p/min # ;
+pms+ABBR:pms # ; ! may also end with a dot
+p.o+ABBR:p.o # ; ! may also end with a dot
+Pr+ABBR:Pr AbbrCases ; ! may also end with a dot
+pr+ABBR:pr AbbrCases ; ! may also end with a dot
+Prl+ABBR:Prl AbbrCases ; ! may also end with a dot
+prl+ABBR:prl AbbrCases ; ! may also end with a dot
+Prof+ABBR:Prof AbbrCases ; ! may also end with a dot
+prof+ABBR:prof AbbrCases ; ! may also end with a dot
+ps+ABBR:ps AbbrCases ; ! may also end with a dot
+pst+ABBR:pst AbbrCases ; ! may also end with a dot
+Ptk+ABBR:Ptk AbbrCases ; ! may also end with a dot
+ptk+ABBR:ptk AbbrCases ; ! may also end with a dot
+põhil+ABBR:põhil AbbrCases ; ! may also end with a dot
+pühap+ABBR:pühap AbbrCases ; ! may also end with a dot
+raj+ABBR:raj AbbrCases ; ! may also end with a dot
+rbl+ABBR:rbl AbbrCases ; ! may also end with a dot
+rdt+ABBR:rdt AbbrCases ; ! may also end with a dot
+resp+ABBR:resp # ; ! may also end with a dot
+rin+ABBR:rin # ; ! may also end with a dot
+rk+ABBR:rk AbbrCases ; ! may also end with a dot
+rkl+ABBR:rkl AbbrCases ; ! may also end with a dot
+rmtk+ABBR:rmtk AbbrCases ; ! may also end with a dot
+rtj+ABBR:rtj AbbrCases ; ! may also end with a dot
+s.a+ABBR:s.a # ; ! may also end with a dot
+s+ABBR:s AbbrCases ; ! may also end with a dot
+Saj+ABBR:Saj AbbrCases ; ! may also end with a dot
+saj+ABBR:saj AbbrCases ; ! may also end with a dot
+sealh+ABBR:sealh # ; ! may also end with a dot
+sek+ABBR:sek AbbrCases ; ! may also end with a dot
+Sekts+ABBR:Sekts # ; ! may also end with a dot
+Sen+ABBR:Sen AbbrCases ; ! may also end with a dot
+sen+ABBR:sen AbbrCases ; ! may also end with a dot
+Sept+ABBR:Sept AbbrCases ; ! may also end with a dot
+sept+ABBR:sept AbbrCases ; ! may also end with a dot
+se/she+ABBR:se/she # ;
+s/g+ABBR:s/g # ;
+sh+ABBR:sh # ;
+S.h+ABBR:S.h # ; ! may also end with a dot
+s.h+ABBR:s.h # ; ! may also end with a dot
+sjsk+ABBR:sjsk AbbrCases ; ! may also end with a dot
+s/kg+ABBR:s/kg # ;
+s/km+ABBR:s/km # ;
+skp+ABBR:skp AbbrCases ; ! may also end with a dot
+sks+ABBR:sks # ; ! may also end with a dot
+s/l+ABBR:s/l # ;
+sl+ABBR:sl # ; ! may also end with a dot
+Sm+ABBR:Sm AbbrCases ; ! may also end with a dot
+sm+ABBR:sm AbbrCases ; ! may also end with a dot
+s/m+ABBR:s/m # ;
 S/MIME+ABBR:S/MIME AbbrCases ;
-snd+ABBR:snd AbbrNoCaseDot ;
-S.o+ABBR:S.o AbbrNoCaseDot ;
-s.o+ABBR:s.o AbbrNoCaseDot ;
-so+ABBR:so AbbrNoCaseDot ;
-sol+ABBR:sol AbbrNoCaseDot ;
-Sovh+ABBR:Sovh AbbrCasesDot ;
-sovh+ABBR:sovh AbbrCasesDot ;
-S.t+ABBR:S.t AbbrNoCaseDot ;
-s.t+ABBR:s.t AbbrNoCaseDot ;
-st+ABBR:st AbbrNoCaseDot ;
-stj+ABBR:stj AbbrCasesDot ;
-s/tk+ABBR:s/tk AbbrNoCase ;
-surn+ABBR:surn AbbrNoCaseDot ;
+snd+ABBR:snd # ; ! may also end with a dot
+S.o+ABBR:S.o # ; ! may also end with a dot
+s.o+ABBR:s.o # ; ! may also end with a dot
+so+ABBR:so # ; ! may also end with a dot
+sol+ABBR:sol # ; ! may also end with a dot
+Sovh+ABBR:Sovh AbbrCases ; ! may also end with a dot
+sovh+ABBR:sovh AbbrCases ; ! may also end with a dot
+S.t+ABBR:S.t # ; ! may also end with a dot
+s.t+ABBR:s.t # ; ! may also end with a dot
+st+ABBR:st # ; ! may also end with a dot
+stj+ABBR:stj AbbrCases ; ! may also end with a dot
+s/tk+ABBR:s/tk # ;
+surn+ABBR:surn # ; ! may also end with a dot
 sü+ABBR:sü AbbrCases ;
-t+ABBR:t AbbrCasesDot ;
-teat+ABBR:teat AbbrCasesDot ;
-tehn+ABBR:tehn AbbrNoCaseDot ;
-teisip+ABBR:teisip AbbrCasesDot ;
-Tel+ABBR:Tel AbbrCasesDot ;
-tel+ABBR:tel AbbrCasesDot ;
-t/ha+ABBR:t/ha AbbrNoCase ;
-tk+ABBR:tk AbbrCasesDot ;
-Tk+ABBR:Tk AbbrCasesDot ;
-tl+ABBR:tl AbbrNoCaseDot ;
-tlk+ABBR:tlk AbbrNoCaseDot ;
-Tln+ABBR:Tln AbbrCasesDot ;
+t+ABBR:t AbbrCases ; ! may also end with a dot
+teat+ABBR:teat AbbrCases ; ! may also end with a dot
+tehn+ABBR:tehn # ; ! may also end with a dot
+teisip+ABBR:teisip AbbrCases ; ! may also end with a dot
+Tel+ABBR:Tel AbbrCases ; ! may also end with a dot
+tel+ABBR:tel AbbrCases ; ! may also end with a dot
+t/ha+ABBR:t/ha # ;
+tk+ABBR:tk AbbrCases ; ! may also end with a dot
+Tk+ABBR:Tk AbbrCases ; ! may also end with a dot
+tl+ABBR:tl # ; ! may also end with a dot
+tlk+ABBR:tlk # ; ! may also end with a dot
+Tln+ABBR:Tln AbbrCases ; ! may also end with a dot
 tn+ABBR:tn AbbrCases ;
 TPedI+ABBR:TPedI AbbrCases ;
-tr+ABBR:tr AbbrCasesDot ;
-Trt+ABBR:Trt AbbrCasesDot ;
+tr+ABBR:tr AbbrCases ; ! may also end with a dot
+Trt+ABBR:Trt AbbrCases ; ! may also end with a dot
 ts+ABBR:ts AbbrCases ;
-ts/ha+ABBR:ts/ha AbbrNoCase ;
+ts/ha+ABBR:ts/ha # ;
 TsK+ABBR:TsK AbbrCases ;
-tuh+ABBR:tuh AbbrNoCaseDot ;
+tuh+ABBR:tuh # ; ! may also end with a dot
 tv+ABBR:tv AbbrCases ;
-u+ABBR:u AbbrNoCaseDot ;
-u.k.j+ABBR:u.k.j AbbrNoCaseDot ;
-ukj+ABBR:ukj AbbrNoCaseDot ;
-V.a+ABBR:V.a AbbrNoCaseDot ;
-v.a+ABBR:v.a AbbrNoCaseDot ;
-vab+ABBR:vab AbbrNoCaseDot ;
-v+ABBR:v AbbrCasesDot ;
-van+ABBR:van AbbrNoCaseDot ;
-Veebr+ABBR:Veebr AbbrCasesDot ;
-veebr+ABBR:veebr AbbrCasesDot ;
-v.k.j+ABBR:v.k.j AbbrNoCaseDot ;
-vkj+ABBR:vkj AbbrNoCaseDot ;
-vm+ABBR:vm AbbrNoCaseDot ;
-vms+ABBR:vms AbbrNoCaseDot ;
-Vrd+ABBR:Vrd AbbrNoCaseDot ;
-vrd+ABBR:vrd AbbrNoCaseDot ;
-vrdl+ABBR:vrdl AbbrNoCaseDot ;
-vs+ABBR:vs AbbrNoCaseDot ;
-Vt+ABBR:Vt AbbrNoCaseDot ;
-vt+ABBR:vt AbbrNoCaseDot ;
-< [ V | v ] i l "!" %+ABBR:0 > AbbrNoCase ;
+u+ABBR:u # ; ! may also end with a dot
+u.k.j+ABBR:u.k.j # ; ! may also end with a dot
+ukj+ABBR:ukj # ; ! may also end with a dot
+V.a+ABBR:V.a # ; ! may also end with a dot
+v.a+ABBR:v.a # ; ! may also end with a dot
+vab+ABBR:vab # ; ! may also end with a dot
+v+ABBR:v AbbrCases ; ! may also end with a dot
+van+ABBR:van # ; ! may also end with a dot
+Veebr+ABBR:Veebr AbbrCases ; ! may also end with a dot
+veebr+ABBR:veebr AbbrCases ; ! may also end with a dot
+v.k.j+ABBR:v.k.j # ; ! may also end with a dot
+vkj+ABBR:vkj # ; ! may also end with a dot
+vm+ABBR:vm # ; ! may also end with a dot
+vms+ABBR:vms # ; ! may also end with a dot
+Vrd+ABBR:Vrd # ; ! may also end with a dot
+vrd+ABBR:vrd # ; ! may also end with a dot
+vrdl+ABBR:vrdl # ; ! may also end with a dot
+vs+ABBR:vs # ; ! may also end with a dot
+Vt+ABBR:Vt # ; ! may also end with a dot
+vt+ABBR:vt # ; ! may also end with a dot
+< [ V | v ] i l "!" %+ABBR:0 > # ;
 Wc+ABBR:Wc AbbrCases ;
 wc+ABBR:wc AbbrCases ;
 õa+ABBR:õa AbbrCases ;
-õ.-a+ABBR:õ.-a AbbrNoCaseDot ;
-õp+ABBR:õp AbbrCasesDot ;
-õpil+ABBR:õpil AbbrCasesDot ;
+õ.-a+ABBR:õ.-a # ; ! may also end with a dot
+õp+ABBR:õp AbbrCases ; ! may also end with a dot
+õpil+ABBR:õpil AbbrCases ; ! may also end with a dot
 
 
 

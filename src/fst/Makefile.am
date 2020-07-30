@@ -80,6 +80,7 @@ GT_LOCAL_SRCS=\
 				pair_final.tmp.lexc \
 				num_initial.tmp.lexc \
 				num_final.tmp.lexc \
+				abbrevdot.tmp.lexc \
 				guesser.tmp0.lexc
 #				punctuation.tmp.lexc
 #				acronyms.tmp.lexc 
@@ -122,6 +123,19 @@ num_final.tmp.lexc: num_final.lexc $(GT_LEXC_ROOT) $(EST_AFFIX_FILES:%=%.lexc)
 	$(AM_V_GEN)cat $(GT_LEXC_ROOT) | sed '/^ *LEXICON  *Root/,$$d' > $@ && \
 			   cat $< >> $@ && \
 			   cat $(EST_AFFIX_FILES:%=%.lexc) >> $@
+
+# abbreviations with a dot ...
+# ... should be kept separately because of tokenisation issues
+# copy the abbrevs that can have a final dot and format them appropriately:
+# attach a final dot and continuation lexicon   
+abbrevdot.tmp.lexc: stems/abbreviations.lexc $(GT_LEXC_ROOT) $(EST_AFFIX_FILES:%=%.lexc)
+	$(AM_V_GEN)cat $(GT_LEXC_ROOT) | sed '/^ *LEXICON  *Root/,$$d' > $@ && \
+	echo 'LEXICON Root'  >> $@ && \
+	$(AM_V_GEN)cat $< | grep '^ *!.*DOTABBR' | sed 's/^ *!//' >> $@ && \
+	$(AM_V_GEN)cat $< | grep 'may also end with a dot' | \
+			    sed 's/:\([^ ]*\)  *[^ ]*  *; *! *may also end with a dot/:\1 DOTABBR ;/' >> $@ && \
+			   cat $(EST_AFFIX_FILES:%=%.lexc) >> $@
+
 
 # guesser:
 # re-using root.lexc and affixes

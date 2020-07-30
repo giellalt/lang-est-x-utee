@@ -741,6 +741,130 @@ endif !WITH_OFST_TROPICAL
 generator-raw-gt-desc.hfst: generator-raw-gt-desc.weighted.hfst 
 		cp $< $@
 
+# Tokens ending with a dot (e.g. abbreviations) need a special treament by a tokeniser
+# They cannot be a part of the analyser that the tokeniser uses
+# Therefore, dot-ending stuff must be added separately to the default descriptive analyser 
+
+# This is the default, descriptive analyser:
+# Visible tags (ie do NOT remove):
+#   - variant tags
+#   - the Err/Orth tag
+# Invisible tags (ie to be removed):
+#   - semantic tags
+#   - homonymy tags
+analyser-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%                \
+					fst/abbrevdot.tmp.% \
+					filters/remove-area-tags.%                \
+					filters/remove-dialect-tags.%             \
+					filters/remove-number-string-tags.%       \
+					filters/remove-usage-tags.%               \
+					filters/remove-semantic-tags.%            \
+					filters/remove-hyphenation-marks.%        \
+					filters/remove-infl_deriv-borders.%       \
+					filters/remove-word-boundary.%            \
+					filters/remove-orthography-tags.%         \
+					filters/remove-Orth_IPA-strings.%         \
+					filters/remove-orig_lang-tags.%           \
+					filters/remove-Use_GC-strings.%           \
+					filters/remove-Use_minusGC-tags.%         \
+					filters/remove-Use_minus_PMatch-tags.%    \
+					filters/remove-Use_PMatch-strings.%       \
+					filters/remove-mwe-tags.%                 \
+					orthography/inituppercase.compose.%       \
+					orthography/spellrelax.compose.%          \
+					$(GLT_DOWNCASE_FILTER)
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"filters/remove-area-tags.$*\"                \
+			.o. @\"filters/remove-dialect-tags.$*\"             \
+			.o. @\"filters/remove-number-string-tags.$*\"       \
+			.o. @\"filters/remove-usage-tags.$*\"               \
+			.o. @\"filters/remove-semantic-tags.$*\"            \
+			.o. @\"filters/remove-orig_lang-tags.$*\"           \
+			.o. @\"filters/remove-orthography-tags.$*\"         \
+			.o. @\"filters/remove-Orth_IPA-strings.$*\"         \
+			.o. @\"filters/remove-Use_minus_PMatch-tags.$*\"    \
+			.o. @\"filters/remove-Use_GC-strings.$*\"           \
+			.o. @\"filters/remove-Use_minusGC-tags.$*\"         \
+			.o. @\"filters/remove-Use_PMatch-strings.$*\"       \
+			.o. @\"filters/remove-mwe-tags.$*\"                 \
+			.o. [@\"$<\" | @\"fst/abbrevdot.tmp.$*\"]           \
+			    $(GLT_DOWNCASE_COMPOSE) \
+			.o. @\"filters/remove-hyphenation-marks.$*\"        \
+			.o. @\"filters/remove-infl_deriv-borders.$*\"       \
+			.o. @\"filters/remove-word-boundary.$*\"            \
+			; \n\
+			define fst \n\
+			set flag-is-epsilon ON\n\
+			read regex fst \
+			.o. @\"orthography/inituppercase.compose.$*\"       \
+			.o. @\"orthography/spellrelax.compose.$*\"          \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
+# This is the default, descriptive generating transducer.
+generator-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%            \
+					fst/abbrevdot.tmp.% \
+					filters/make-optional-transitivity-tags.% \
+					filters/make-optional-homonymy-tags.%     \
+					filters/make-optional-hyph-tags.%         \
+					filters/make-optional-variant-tags.%      \
+					filters/make-optional-semantic-tags.%     \
+					filters/make-optional-error-tags.%        \
+					filters/make-optional-adv_comp-tags.%     \
+					filters/make-optional-orig_lang-tags.%    \
+					filters/remove-area-tags.%                \
+					filters/remove-dialect-tags.%             \
+					filters/remove-hyphenation-marks.%        \
+					filters/remove-infl_deriv-borders.%       \
+					filters/remove-word-boundary.%            \
+					filters/remove-number-string-tags.%       \
+					filters/remove-orthography-tags.%         \
+					filters/remove-Orth_IPA-strings.%         \
+					filters/remove-usage-tags.%               \
+					filters/remove-Use_GC-strings.%           \
+					filters/remove-Use_minusGC-tags.%         \
+					filters/remove-Use_minus_PMatch-tags.%    \
+					filters/remove-Use_PMatch-strings.%       \
+					filters/remove-mwe-tags.%                 \
+					$(GLT_DOWNCASE_FILTER)
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"filters/make-optional-transitivity-tags.$*\" \
+			.o. @\"filters/make-optional-homonymy-tags.$*\"     \
+			.o. @\"filters/make-optional-hyph-tags.$*\"         \
+			.o. @\"filters/make-optional-variant-tags.$*\"      \
+			.o. @\"filters/make-optional-semantic-tags.$*\"     \
+			.o. @\"filters/make-optional-error-tags.$*\"        \
+			.o. @\"filters/make-optional-adv_comp-tags.$*\"     \
+			.o. @\"filters/make-optional-orig_lang-tags.$*\"    \
+			.o. @\"filters/remove-area-tags.$*\"                \
+			.o. @\"filters/remove-dialect-tags.$*\"             \
+			.o. @\"filters/remove-number-string-tags.$*\"       \
+			.o. @\"filters/remove-usage-tags.$*\"               \
+			.o. @\"filters/remove-orthography-tags.$*\"         \
+			.o. @\"filters/remove-Orth_IPA-strings.$*\"         \
+			.o. @\"filters/remove-Use_minus_PMatch-tags.$*\"    \
+			.o. @\"filters/remove-Use_GC-strings.$*\"           \
+			.o. @\"filters/remove-Use_minusGC-tags.$*\"         \
+			.o. @\"filters/remove-Use_PMatch-strings.$*\"       \
+			.o. @\"filters/remove-mwe-tags.$*\"                 \
+			.o. [@\"$<\" | @\"fst/abbrevdot.tmp.$*\"]           \
+			    $(GLT_DOWNCASE_COMPOSE) \
+			.o. @\"filters/remove-hyphenation-marks.$*\"        \
+			.o. @\"filters/remove-infl_deriv-borders.$*\"       \
+			.o. @\"filters/remove-word-boundary.$*\"            \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
+# override the default descriptive analyser and generator
+analyser-gt-desc.tmp.hfst: analyser-gt-desc.dot.tmp.hfst 
+		cp $< $@
+
+generator-gt-desc.tmp.hfst: generator-gt-desc.dot.tmp.hfst 
+		cp $< $@
+
+
 # HFST:
 # this is probably the pure guesser;
 generator-raw-gt-guess.hfst: guesser-raw.weighted.hfst \

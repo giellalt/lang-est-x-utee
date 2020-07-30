@@ -306,20 +306,22 @@ LEXICON ARMEE    ! VVS 26 ; (productive) i.e. stable type (aktiivne muuttüüp)
 ! ... so the endings are often wrong...
 ! ---------------
 
-LEXICON AbbrCasesDot
-              : AbbrNoCaseDot ;                ! mld, vs, ...
-              : AbbrSomeCase ;
+!LEXICON AbbrCasesDot
+!              : AbbrNoCaseDot ;                ! mld, vs, ...
+!              : AbbrSomeCase ;
 
-LEXICON AbbrNoCaseDot
-              : AbbrNoCase ;
-              :%. # ;
+!LEXICON AbbrNoCaseDot
+!              : AbbrNoCase ;
+!!              :%. # ;
+!!              : ABBRDOT ;
+!              : DOTABBR ;
 
 LEXICON AbbrCases
-              : AbbrNoCase ;                ! Wc ...
-              : AbbrSomeCase ;
+              : # ;                ! Wc ...
+              : AbbrSomeCase ;     ! Wc-sse, Wc-st, ...
 
-LEXICON AbbrNoCase
-              :   # ;
+!LEXICON AbbrNoCase
+!              :   # ;
 
 ! any inflection is possible (this is not correct, of course)
 ! actually a subset of inflectional endings that are possible for acronyms
@@ -442,7 +444,7 @@ LEXICON OrdinalNoEnd
      +Num+Ord: # ;      ! IV, MCM
 
 LEXICON OrdinalDotEnd
-      +Num+Ord: MARKDOT ;
+      +Num+Ord: DOT ;
 
 
 ! ---------------
@@ -822,17 +824,47 @@ LEXICON NE_DERIVATION_SUF
 
 ! ----------------------
 ! for tokenization with hfst-tokenize
-! copy from lang-sme
-LEXICON MARKDOT !!≈ * __@CODE@__
-! This should create a new backtrack-point before the dot, but no sub-reading:                                                                                                                          
-! katse ilma selleta   :%. # ;
-< "@P.Pmatch.Backtrack@" 0:%. > # ; ! This creates a split point
-! katse ilma selleta   +CLBfinal: # ; ! This creates an alternative end point for those
-                             ! requiring a full stop, so that when the previous line
-                             ! forces a bactrack and reanalysis, the expression can
-                             ! end up here, and then make the additional PUNCT analysis
-                             ! of the full stop. Without this line, there will never
-                             ! be this extra analysis, and the abbr/date/whatever +
-                             ! end of sentence reading will never be possible.
-!--------------------------
+! copied from lang-sme
+
+LEXICON DOT   !!= * __@CODE@__ - number ending with a dot may be ordinal, or ordinal/cardinal followed by a full stop
+
+         +Use/-PMatch:%. # ; ! We need the dot here for regular fsts
+
+! Split the number + full stop in two segments, but only when using pmatch: +Num+Ord +CLB
+ < "@P.Pmatch.Loc@" {.} "+CLB":0 "+Use/PMatch":0 > # ;
+
+! Make a regular number analysis AND backtrack to find alternative analyses: +Num+Ord; +Num+Card +CLB 
+ < "+Use/PMatch":0 "@P.Pmatch.Backtrack@" [0:%.] > # ;
+
+
+! Gives:
+!$ echo '1.' \
+!| hfst-tokenise -g tools/tokenisers/tokeniser-gramcheck-gt-desc.pmhfst 
+! "<1.>"
+!	"." CLB <W:0.0> "<.>"
+!		"1" Num Ord <W:0.0> "<1>"
+!	"1" Num Ord <W:0.0>
+!	"." CLB <W:0.0> "<.>"
+!		"1" Num Card <W:0.0> "<1>"
+!:\n
+!
+! which is exactly what we want.
+
+
+LEXICON DOTABBR
+         +Use/-PMatch:%. # ; ! We need the dot here for regular fsts
+! This one should create a new backtrack-point before the dot, but *no* sub-reading:
+< "+Use/PMatch":0 "@P.Pmatch.Backtrack@" "@P.Pmatch.Loc@" 0:"." > # ;
+
+! Gives:
+!$ echo 'pst.' \
+!| hfst-tokenise -g tools/tokenisers/tokeniser-gramcheck-gt-desc.pmhfst 
+!"<pst.>"
+!	"pst" ABBR <W:0.0>
+!	"." CLB <W:0.0> "<.>"
+!		"pst" Interj <W:11.0> "<pst>"
+!	"." CLB <W:0.0> "<.>"
+!		"pst" ABBR <W:0.0> "<pst>"
+!:\n 
+
 

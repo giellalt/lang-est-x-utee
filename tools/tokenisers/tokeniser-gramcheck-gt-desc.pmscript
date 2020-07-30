@@ -36,6 +36,10 @@ set need-separators off
 
 Define lexmorph @bin"analyser_relabelled-gramcheck-gt-desc.hfst" ;
 
+! abbreviation with a final dot cannot have more dots simply appended;
+! the final dot of the abbreviations is actually included in the dot sequence
+Define abbrdot @bin"abbrdot_relabelled-gramcheck.hfst" ;
+
 Define morphology [ lexmorph | UpCase(lexmorph, U) ] ;
 
 Define url @bin"analyser-url-gt-desc.hfst" ;
@@ -44,7 +48,7 @@ Define emoticon @bin"emoticon.hfst" ;
 
 ! explicit list of flags, since `?` does not match flags; the list is dynamically built, since it is language dep:
 Define flags @bin"filters/gramcheck-tokeniser-flags.hfst" ;
-Define inputmark    [ 0:"@PMATCH_INPUT_MARK@" | 0:"@PMATCH_BACKTRACKING@" ];
+Define inputmark   [ 0:"@PMATCH_INPUT_MARK@" | 0:"@PMATCH_BACKTRACKING@" ];
 
 ! Characters which have analyses in the lexicon, but can appear without spaces
 ! before/after, that is, with no context conditions, and adjacent to words:
@@ -86,6 +90,7 @@ Define incondword       morphology & [ any* incondform:[?*] nonprintable* ] ; ! 
 
 Define morphoword       morphology                   LC([blank | #]) RC([blank | # ]);
 Define urlword          url                          LC([blank | #]) RC([blank | # ]);
+Define abbrdotword      abbrdot                      LC([blank | #]) RC([blank | # ]) NRC(["."]+);
 
 !! Apart from what's in our morphology, there are
 !! 1) unknown word-like forms, and
@@ -141,6 +146,6 @@ Define unknownwordEmpty unknownform:0 LC([blank | #]) RC([[blank ] | # ]);
 ! Define tokenOrBlank [ token | superblank ];
 !! Needs hfst-tokenise to output things differently depending on the tag they get
 
-Define token [ morphoword | unknownwordEmpty | incondword | Ins(urlword) | emoticon ] EndTag(token);
+Define token [ morphoword | unknownwordEmpty | incondword | Ins(urlword) | emoticon | abbrdotword] EndTag(token);
 
 regex token ;
