@@ -1,15 +1,13 @@
 
 !! !!!Verb inflection
 ! VVS stands for Ü. Viks "Väike vormisõnastik" for reference purposes
-! VVS type numbers = type numbers of Õigekeesussõnastik 2013
+! VVS type numbers = type numbers of Õigekeelsussõnastik 2013
 
 LEXICON ELAMA    ! VVS 27
 
                       : IMPERS ;           ! elatud
                       : SUPINE_V ;         ! elama
-                      : INFINITIVE ;       ! elada
-                      : IMPERATIVE ;       ! elagu
-                      : NU ;               ! elanud
+                      : INF_IMP_NU ;       ! elada, elagu, elanud
                       :%>I7S7 IND_PAST ;   ! elas
                       : IND_COND_PRS ;     ! elan, elaksin
                       : US_DERIVATION_VERB ; ! õpetus
@@ -29,9 +27,7 @@ LEXICON LEPPIMA   ! VVS 28
 LEXICON LEPPIMA_STRONG   ! strong grade sub-paradigm
 
                       : SUPINE_V ;        ! leppima
-                      : INFINITIVE ;      ! leppida
-                      : IMPERATIVE ;      ! leppigu
-                      : NU ;              ! leppinud
+                      : INF_IMP_NU ;      ! leppida, leppigu, leppinud
                       :%>I7S7 IND_PAST ;  ! leppis
 
 LEXICON LEPPIMA_WEAK    ! weak grade sub-paradigm
@@ -64,9 +60,7 @@ LEXICON HAKKAMA    ! VVS 29 (hakkama), 30 (riidlema)
 LEXICON HAKKAMA_WEAK    ! weak grade sub-paradigm
 
                       : IMPERS ;          ! hakatud, riieldud etc
-                      : INFINITIVE ;      ! hakata, riielda
-                      : IMPERATIVE ;      ! hakaku, riielgu
-                      : NU ;              ! hakanud, riielnud
+                      : INF_IMP_NU ;      ! hakata, hakaku, hakanud; riielda, riielgu, riielnud
 
 LEXICON ÜTLEMA    ! only ütlema, mõtlema; = HAKKAMA + Rare ELAMA
                   ! parallel forms: either t disappears in weak grade, or not
@@ -124,7 +118,7 @@ LEXICON VAAGIMA    ! only vaagima
 ! ---------------
 LEXICON NAERMA      ! VVS 32, 33  naerma, kuulma, seisma, tõusma etc (31 words)
 
-                      : C_COMMON ;           ! naerda, seista, naergu, seisku, naernud, seisnud
+                      : INF_IMP_NU ;         ! naerda, seista, naergu, seisku, naernud, seisnud
                       : IMPERS ;             ! naerdud, seistud
                       : SUPINE_V ;           ! naerma, seisma
                       :%>I7S7 IND_PAST ;     ! naeris, seisis
@@ -132,7 +126,7 @@ LEXICON NAERMA      ! VVS 32, 33  naerma, kuulma, seisma, tõusma etc (31 words)
 
 LEXICON PESEMA    ! only pesema
 
-                      : C_COMMON ;            ! pesta, pesku, pesnud
+                      : INF_IMP_NU ;          ! pesta, pesku, pesnud
                       : IMPERS ;              ! pestud
                       :e SUPINE_V ;           ! pesema
                       :%>I7S7 IND_PAST ;      ! pesi
@@ -142,15 +136,13 @@ LEXICON KUSEMA    ! only kusema; moving towards ELAMA
 
                       : PESEMA ;    
           +Use/NotNorm:e IMPERS ;             ! kusetud
-          +Use/NotNorm:e INFINITIVE ;         ! kuseda
-          +Use/NotNorm:e IMPERATIVE ;         ! kusegu
-          +Use/NotNorm:e NU ;                 ! kusenud
+          +Use/NotNorm:e INF_IMP_NU ;         ! kuseda, kusegu, kusenud
           +Use/NotNorm:e%>I7S7 IND_PAST ;     ! kuses
 
 LEXICON KAITSMA    ! only  kaitsma, maitsma
 
-                      : C_COMMON ;            ! kaitsta, kaitsku, kaitsnud
-             +Use/Rare:e C_COMMON ;           ! kaitseda, kaitsegu, kaitsenud
+                      : INF_IMP_NU ;          ! kaitsta, kaitsku, kaitsnud
+             +Use/Rare:e INF_IMP_NU ;         ! kaitseda, kaitsegu, kaitsenud
                       : IMPERS ;              ! kaitstud
           +Use/NotNorm:e IMPERS ;             ! kaitseti, (on) kaitsetud
                       : SUPINE_V ;            ! kaitsma
@@ -160,7 +152,7 @@ LEXICON KAITSMA    ! only  kaitsma, maitsma
 
 LEXICON SAATMA      ! VVS 34, 35   söötma, nutma; lõpma
 
-                      : C_COMMON ;            ! sööta, nutta, söötke, nutke, söötnud, nutnud
+                      : INF_IMP_NU ;          ! sööta, nutta, söötke, nutke, söötnud, nutnud
                       :%{W%} IMPERS ;         ! söödetud, nutetud
                       : SUPINE_V ;            ! söötma, nutma
                       :%>I7S7 IND_PAST ;      ! söötis, nuttis
@@ -182,7 +174,7 @@ LEXICON JOOKSMA     ! only jooksma
 LEXICON KATMA      ! VVS 35   katma kütma matma võtma jätma
                    ! almost like SAATMA, but IMPERS are even weaker grade
 
-                      :t C_COMMON ;          ! kütta
+                      :t INF_IMP_NU ;        ! kütta, kütke, kütnud
                       :%{W%} IMPERS ;        ! köetud
           +Use/NotNorm:te%{W%} IMPERS ;      ! kütetud  (võiks olla ka ilma {W}-ta, s.t. :e IMPERS;)
                       :t SUPINE_V ;          ! kütma
@@ -191,7 +183,7 @@ LEXICON KATMA      ! VVS 35   katma kütma matma võtma jätma
 
 LEXICON LASKMA    ! only laskma
 
-                      : C_COMMON ;            ! lasta, lasku, lasknud
+                      : INF_IMP_NU ;          ! lasta, lasku, lasknud
                       : IMPERS ;              ! impersonal forms lastakse, ...
                       : SUPINE_V ;            ! laskma
              +Use/Rare:%>I7S7 IND_PAST ;      ! indicative past laskis, ...
@@ -219,7 +211,8 @@ LEXICON VEENMA     ! only veenma, möönma; norm like NAERMA , but usage moving 
         +Use/NotNorm:a%>I7S7 IND_PAST ;     ! veenas
 
 
-LEXICON C_COMMON  ! common to almost all words of types 32-35 (supine stem ends with C)
+!LEXICON C_COMMON  ! common to almost all words of types 32-35 (supine stem ends with C)
+LEXICON INF_IMP_NU  ! common to almost all words of types 32-35 (supine stem ends with C)
 
                       : INFINITIVE ;        ! naerda, seista, sööta, nutta, kütta
                       : IMPERATIVE ;        ! naergu, seisku, söötku, nutku, kütku
@@ -362,9 +355,7 @@ LEXICON AJAMA      ! only ajama; almost like VEDAMA
 
                       :%{W%} IMPERS ;        ! aetud
                       :a SUPINE_V ;          ! ajama
-                      :a INFINITIVE ;        ! ajada
-                      :a IMPERATIVE ;        ! ajagu
-                      :a NU ;                ! ajanud
+                      :a INF_IMP_NU ;        ! ajada, ajagu, ajanud
                       :a%>I7S7 IND_PAST ;    ! ajas
                       :a IND_COND_PRS ;      ! ajab
 
@@ -372,9 +363,7 @@ LEXICON VEDAMA     ! VVS 28 vedama, pügama, pidama
 
                       :e%{W%} IMPERS ;       ! veetud
                       :a SUPINE_V ;          ! vedama
-                      :a INFINITIVE ;        ! vedada
-                      :a IMPERATIVE ;        ! vedagu
-                      :a NU ;                ! vedanud
+                      :a INF_IMP_NU ;        ! vedada, vedagu, vedanud
                       :a%>I7S7 IND_PAST ;    ! vedas
                       :a%{W%} IND_COND_PRS ; ! veab
 
@@ -382,9 +371,7 @@ LEXICON PIDAMA     ! only pidama-pidi
 
                       ! no impersonal forms
                       :a SUPINE_V ;          ! pidama
-                      :a INFINITIVE ;        ! pidada
-                      :a IMPERATIVE ;        ! pidagu
-                      :a NU ;                ! pidanud
+                      :a INF_IMP_NU ;        ! pidada, pidagu, pidanud
                       :%>I7 IND_PAST ;       ! pidi
                       :a%{W%} IND_COND_PRS ; ! peab
 
