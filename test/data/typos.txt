@@ -31,5 +31,3336 @@
 # Beware of removing sentence delimiters (.!?) in correction, since
 # they may indicate sentence boundaries.
 #
-#
-åvtohke	åvtehke
+# -------------------
+# Test and development corpus used for the speller suggestion module by Filosoft in 1990ies.
+# -------------------
+# Author: Heiki-Jaan Kaalep 1998
+# Typos collected by Heili Orav and Leho Paldre from: 
+#    • CELL (Corpus of Estonian Literary Language) http://www.cl.ut.ee. It contains 1 million words from 1983-1988. 
+#    • BNS news - texts from a news agency, Baltic News Service, from one month in 1996 (about 250,000 words).
+# The errors were gathered by running our Estonian morphological analyzer on the corpus; and then manually picking misspellings from the set of unanalyzed words.
+# 
+# If a word has more than one possible correction, then it is repeated on several lines, every time with a different correction.
+
+# Error type is indicated as a comment; 
+# don't really trust it :
+
+# 1 – Initial capitalization                  4
+# 3 – Diacritics; also ae for ä, õ for ö     22
+# 4 – Adjacent transpositions               125
+# 5 – Double letter, but should be single; or single letter, but should be double 126
+# 6 – Drop/Add/Substitute Letter; also transposits, syllable repetition           710
+# 7 – Repetition of a syllable, e.g. 'mininister' instead of 'minister'          29
+# 8 – Space mising after a dot or other punctuation        169
+# 9 – Mixed capitalized and non-capitalized letters   33
+
+# 10 – space error           8
+# 11 – various...        39
+# 
+"Appelatsioonikaebuse	"Apellatsioonikaebuse	# 5,5
+"Appellatsiooniseaduses	"Apellatsiooniseaduses	# 5
+"Büroo'95"	"Büroo'95"	# 8
+"Koonderkond	"Koonderakond	# 6
+"Koondrekonna	"Koonderakonna	# 6
+"LUKoil"	"Lukoil"	# 9
+"LUKoili"	"Lukoili"	# 9
+"Lendlehtdel	"Lendlehtedel	# 6
+"Mõõdujate	"Mõõdukate	# 6
+"Nordstrom	"Nordström	# 3
+"Parempoolsetsest",	"Parempoolsetest",	# 6
+'rgmistel	järgmistel	# 6,6
+(Stokchomis).	(Stockholmis).	# 6
+1.Köögiviljade	1. Köögiviljade	# 8
+1.juuni-15.august	1. juuni - 15. august	# 8,8,8,8
+10.-13.apr	10.-13. apr	# 8
+10.Liepaja	10. Liepaja	# 8
+10.Saksa-Läti	10. Saksa-Läti	# 8
+10.septembril	10. septembril	# 8
+11.Läänepank	11. Läänepank	# 8
+11.apr	11. apr	# 8
+12.Sidepank	12. Sidepank	# 8
+12.VI	12. VI	# 8
+14.Läti	14. Läti	# 8
+15.Läti	15. Läti	# 8
+16.Ventspilsi	16. Ventspilsi	# 8
+1647.a.	1647. a.	# 8
+1940.a.	1940. a.	# 8
+1941.Nõukogude	1941. Nõukogude	# 8
+1942.a.	1942. a.	# 8
+1961.a.	1961. a.	# 8
+1977.a.	1977. a.	# 8
+1979.Podzemnõi	1979. Podzemnõi	# 8
+1982.a.	1982. a.	# 6
+2....ja	2... ja	# 10
+21-aastselt	21-aastaselt	# 6
+22.aprill-28.oktoober	22. aprill - 28. oktoober	# 8,8,8,8
+22.sept	22. sept	# 8
+229.Töövaidlusorgani	229. Töövaidlusorgani	# 8
+24.aprill	24. aprill	# 8
+24.september-22.oktoober	24. september - 22. oktoober	# 8,8,8,8
+26.märts-25.juuni	26. märts - 25. juuni	# 8,8,8,8
+26.märts-30.mai	26. märts - 30. mai	# 8,8,8,8
+27.-28.nov	27.-28. nov	# 8
+27.juuni-20.august	27. juuni - 20. august	# 8,8,8,8
+27.märts-26.mai	27. märts - 26. mai	# 8,8,8,8
+28.august-27.oktoober	28. august - 27. oktoober	# 8,8,8,8
+29.Maa	29. Maa	# 8
+29.märts,	29. märts,	# 8
+29.märtsist	29. märtsist	# 8
+2ja	ja	# 8
+30.X	30. X	# 8
+31.Riia	31. Riia	# 8
+32.Daugava	32. Daugava	# 8
+34.VEF	34. VEF	# 8
+35.Läti	35. Läti	# 8
+36.Tukums	36. Tukums	# 8
+38.Jelgava	38. Jelgava	# 8
+43.Läti	43. Läti	# 8
+5 v ll	5 - v ll	# ?
+6.1.Kasumi	6.1. Kasumi	# 8
+7.Antud	7. Antud	# 8
+7.Põhjapoolse	7. Põhjapoolse	# 8
+9.Frontooni	9. Frontooni	# 8
+AS-le	AS-ile	# 6
+ATMOSFÄÄRIõHU	ATMOSFÄÄRIÕHU	# 9
+Aafikasse	Aafrikasse	# 6
+Aktiaseltsi	Aktsiaseltsi	# 6
+Aktsiakaipitali	Aktsiakapitali	# 6
+Am.J.	Am. J.	# 8
+Ann.Clin.	Ann. Clin.	# 8
+Arch.Surg.	Arch. Surg.	# 8
+Arvatatavasti	Arvatavasti	# 7
+Aserbaidzaanis	Aserbaidžaanis	# 3
+BNS-le.	BNS-ile.	# 6
+BNS23.17,	BNS 23.17,	# 8
+Babits^eva	Babitševa	# 11
+Baltimere	Balti mere	# 11
+Barliini	Berliini	# 6
+Bd.25	Bd. 25	# 8
+Bd.8.	Bd. 8.	# 8
+Bucuresti,1970	Bucuresti, 1970	# 8
+Bulõts^ov	Bulõtšov	# 11
+Desintegraatorise	Desintegraatorisse	# 5
+Draamatater	Draamateater	# 6
+E.Tubin	E. Tubin	# 8
+ESSR.Him.	ESSR. Him.	# 8
+Eestiti	Eestit	# 6
+Endasmõistetavalt	Endastmõistetavalt	# 6
+Enegreetiliste	Energeetiliste	# 4
+Erastamisagetuuri	Erastamisagentuuri	# 6
+Eskpluatatsiooni	Ekspluatatsiooni	# 4
+Estoni.Tallin	Estoni. Tallin	# 8
+F.296	F. 296	# 8
+F.B.R.	F. B. R.	# 8,8
+Fr.Kreutzwaldi	Fr. Kreutzwaldi	# 8
+Geol.Inst.	Geol. Inst.	# 8
+Hanekasvatusaaduste	Hanekasvatussaaduste	# 5
+Hanspanga	Hansapanga	# 6
+Harjumal	Harjumaal	# 5
+Hedrich	Hedrick	# 11
+Helsinkis.	Helsingis.	# 6
+Herakleitusel	Herakleitosel	# 6
+Hoipangal	Hoiupangal	# 6
+I.A.	I. A.	# 8
+I.B.	I. B.	# 8
+Ida-Vi	Ida-Viru	# 6,6
+Igalühel	Igaühel	# 6
+Imselt	Ilmselt	# 6
+Intstituut.	Instituut.	# 6
+Itar-Tass.	Itar-TASS.	# 11
+Izv.AN	Izv. AN	# 8
+J.W.	J. W.	# 8
+Japanis	Jaapanis	# 5
+Joon.4.8	Joon. 4.8	# 8
+Ju.S.	Ju. S.	# 8
+Jugoslooviat	Jugoslaaviat	# 6
+Juhtkomite	Juhtkomitee	# 5
+Jäägrrkompanii	Jäägerkompanii	# 6
+Kaarel.1974.	Kaarel. 1974.	# 8
+Kaheden	Kahden	# 11
+Kaitesliidule	Kaitseliidule	# 4
+Kanalistatsiooni	Kanalisatsiooni	# 6
+Kannatnud	Kannatanud	# 6
+Kekerakond	Keskerakond	# 6
+Kersti-Kertna	Kersti-Kertna	# 11
+Keskeraskonnale	Keskerakonnale	# 6
+Keskerkonnast	Keskerakonnast	# 6
+Keskfraksioon	Keskfraktsioon	# 6
+Keskriminaalpolitseiga	Keskkriminaalpolitseiga	# 5
+Kirispuu	Kirsipuu	# 4
+Kirminaalasi	Kriminaalasi	# 4
+Koalitsiooniläbirääkimisde	Koalitsiooniläbirääkimiste	# 6
+Kodakondsuseadusest	Kodakondsusseadusest	# 5
+Koduakitse	Kodukaitse	# 6
+Kohtla-NÕmme	Kohtla-Nõmme	# 9
+Kolmadas	Kolmandas	# 6
+Konkurs	Konkurss	# 5
+Konstn.	Kunstn.	# 6
+Konsturktivismis	Konstruktivismis	# 4
+Koonderkonna	Koonderakonna	# 6
+Korrosioonihibiitorite	Korrosiooniinhibiitorite	# 6
+Krk	KrK	# 9
+Kuulmispuuetetga	Kuulmispuuetega	# 6
+KÕige	Kõige	# 9
+KÜmmelilt	Kümmelilt	# 9
+Lad-AmTöötajate	Lad-Am Töötajate	# 8
+Lav.Urmas	Lav. Urmas	# 8
+Lefe`vre	Lef vre	# 11
+Levitskogo.Jurjev	Levitskogo. Jurjev	# 8
+Lihatõõtjate	Lihatootjate	# 3,3
+Lihatõõtjate	Lihatöötajate	# 3,3
+Liidudu	Liidud	# 6
+Liiklukindlustuse	Liikluskindlustuse	# 6
+Litsenseerimise	Litsentseerimise	# 6
+Luksenburgi,	Luksemburgi,	# 6
+M.,1979	M., 1979	# 8
+M.J.	M. J.	# 8
+Maaimapanga	Maailmapanga	# 6
+Majandusministeriumi	Majandusministeeriumi	# 5
+Mis...mis	Mis... mis	# 8
+Moskvase,	Moskvasse,	# 5
+N.D.	N. D.	# 8
+NIkonovile	Nikonovile	# 9
+Noo...noo...noo	Noo... noo... noo	# 8,8
+Noo...nooo	Noo... nooo	# 8,6
+Noo..noo...noo	Noo... noo... noo	# 8,8
+NÕmme	Nõmme	# 9
+NÕukogu	Nõukogu	# 9
+Oktoobrirevolutisooni	Oktoobrirevolutsiooni	# 4
+Oletatatakse,	Oletatakse,	# 7
+Organzation	Organization	# 11
+P.R.	P. R.	# 8
+Pankrotsitunud	Pankrotistunud	# 4
+ParTöök	ParTööK	# 9
+Paraleelselt	Paralleelselt	# 5
+Pedakoogikaülikool	Pedagoogikaülikool	# 6
+Pedakoogikaülikooli	Pedagoogikaülikooli	# 6
+Peremes	Peremees	# 5
+Poliitikassse	Poliitikasse	# 5
+PÄev	PÄEV	# 9
+PÕhjamaade	Põhjamaade	# 9
+Pärnud	Pärnut	# 6
+Pärnud	Pärnus	# 6
+Reforemierakonnaga,	Reformierakonnaga,	# 6
+Rifkindi	Rifkindi	# 11
+Riisipera	Riisipere	# 6
+Risikitegurid	Riskitegurid	# 6
+Rožoko	Rožoki	# 6
+S.S.	S. S.	# 8
+Sa... me	Sa... me	# 11
+Safanja	Sefanja	# 11
+Sedaus	Seadus	# 4
+Serviceu	Service	# 6
+Sillmäel	Sillamäel	# 6
+Socckholm	Stockholm	# 6,6
+Sockholm	Stockholm	# 6
+Sorosi	Sorose	# 6
+Spinelli,L'Europa	Spinelli, L'Europa	# 8
+St.Petersburg	St. Petersburg	# 11
+Standaard".	Standard".	# 5
+Statistiakaameti	Statistikaameti	# 6
+Stokholmis.	Stockholmis.	# 6
+Struve.M.	Struve. M.	# 8
+Suppl.23	Suppl. 23	# 8
+Suurbritaania	Suurbritannia	# 6,6
+Suurbrittanniast.	Suurbritanniast.	# 5
+SÕpruskoguduste	Sõpruskoguduste	# 9
+Sõjajärsel	Sõjajärgsel	# 6
+T^sernenko	Tšernenko	# 11
+Tartuajat	Tartu ajad	# 8,6
+Tartuajat	Tartu ajast	# 8,6
+Teamist,	Teadmist,	# 6
+Teatmiseks	Teatamiseks	# 6
+Teatmiseks	Teadmiseks	# 6
+Teispäevasel	Teisipäevasel	# 6
+Tevishoiuministeeriumi	Tervishoiuministeeriumi	# 6
+Tshehhi	Tšehhi	# 3
+Turimisühendus.	Turismiühendus.	# 6,6
+Täpsne	Täpne	# 6
+Täpsne	Täpse	# 6
+TšernobÕlis	Tšernobõlis	# 9
+V.sb.	V. sb.	# 8
+Vab.Partei	Vab. Partei	# 8
+Vabariikllaste	Vabariiklaste	# 5
+ValimisliiduST	Valimisliidust	# 9
+Valimsiliidu	Valimisliidu	# 4
+Vememaa	Venemaa	# 6
+Ventspil	Ventspils	# 6
+Vladimisr	Vladimir	# 6
+Voprosse	Voprossõ	# 11
+Välisministeeiumi	Välisministeeriumi	# 6
+W.A.	W. A.	# 8
+W.Kayser	W. Kayser	# 8
+Wassser-	Wasser-	# 11
+a.54,9	a. 54,9	# 8
+a3subj	a3:subj	# 10
+aTallinnast	a Tallinnast	# 8
+aTokyos	a Tokyos	# 8
+aastaarunnete	aastaaruannete	# 6
+aastainterssiga	aastaintressiga	# 4
+aastakonverntsil	aastakonverentsil	# 6
+aastapäva	aastapäeva	# 6
+aastokoosolek	aastakoosolek	# 6
+aastpäeva,	aastapäeva,	# 6
+aata	aasta	# 6
+abiporgramm	abiprogramm	# 4
+abonomentosa,	abonementosa,	# 6
+abonomentvõrguga.	abonementvõrguga.	# 6
+adminsitratsiooni	administratsiooni	# 4
+advekaadselt	adekvaatselt	# 6,6
+aeglselt	aeglaselt	# 6
+aga...sellest	aga... sellest	# 8
+agfaani	afgaani	# 4
+agrielust	argielust	# 4
+ainault	ainult	# 6
+ainualt	ainult	# 6
+aistsin	aistisin	# 6
+ajaloolvaldkondadega	ajaloovaldkondadega	# 6
+ajsaajamine	asjaajamine	# 4
+ajst	ajast	# 6
+aksepteerima	aktsepteerima	# 6
+aksepteerinud	aktsepteerinud	# 6
+aktisate	aktsiate	# 4
+aktisionärid	aktsionärid	# 4
+aktisonärid	aktsionärid	# 4
+aktisonäride	aktsionäride	# 4
+aktsepteeinud	aktsepteerinud	# 6
+aktsiakaptial	aktsiakapital	# 4
+aktsikapital	aktsiakapital	# 6
+aktsikapitali	aktsiakapitali	# 6
+aktsioomide	aksioomide	# 6
+aktsioomist	aksioomist	# 6
+aktuaarteenuste,	aktuaalteenuste,	# 11
+alamsüsteemideks:....TÖÖTLUS	alamsüsteemideks: ... TÖÖTLUS	# 8,8
+alandatatud	alandatud	# 7
+algatud	algatatud	# 6,6
+alitsuse	valitsuse	# 6
+allaes	alles	# 6
+allikirjade	allkirjade	# 6
+allmaailmategelese	allmaailmategelase	# 6
+alusatb	alustab	# 4
+aluseka	aluseks	# 6
+alustatab	alustab	# 7
+amdinistratsioon	administratsioon	# 4
+ame	amet	# 6
+ametiiskute	ametiisikute	# 6
+ametiklibike	ametikilbike	# 4
+ametkondadae	ametkondade	# 6
+ametliennuk	ametilennuk	# 4
+anatavad	antavad	# 6
+andemeid	andmeid	# 6
+andemid	andmeid	# 6
+apelatsioonikaebuse	apellatsioonikaebuse	# 5
+apellatsiooniprotsesti	apellatsiooniprotesti	# 6
+appelatsioonikaebuse,	apellatsioonikaebuse,	# 5,5
+appellatsiooni	apellatsiooni	# 5
+appellatsioonikaebuse,	apellatsioonikaebuse,	# 5
+appellatsioonikaebuse.	apellatsioonikaebuse.	# 5
+appellatsioonikaebuses	apellatsioonikaebuses	# 5
+appellatsioonikaebust.	apellatsioonikaebust.	# 5
+appellatsioonikohus	apellatsioonikohus	# 5
+appellatsiooniseadus	apellatsiooniseadus	# 5
+aravatavad	arvatavad	# 6
+arenguse	arengus	# 6
+arenguse	arengusse	# 6
+argumenteeeritud	argumenteeritud	# 5
+arreteerimis.	arreteerimise	# 6
+arreterib	arreteerib	# 5
+arsti-,geograafia-ja	arsti-, geograafia- ja	# 8,8
+aruaande	aruande	# 5
+arvatavsti	arvatavasti	# 6
+arvatest	arvates	# 6
+arvestatab	arvestatav	# 6
+arvestatab	arvestab	# 6
+arvutusöid	arvutustöid	# 6
+aseeesimees	aseesimees	# 5
+asesimeeste	aseesimeeste	# 5
+asjolude	asjaolude	# 6
+asjolusid	asjaolusid	# 6
+assamble	assamblee	# 5
+assotatsiooni	assotsiatsiooni	# 6
+astapäeva,"	aastapäeva,"	# 6
+astesevaks	asetsevaks	# 4
+astustele	asutustele	# 6,6,6,6
+astäitja	asetäitja	# 6
+asututud	astutud	# 6
+atraktiivemaid	atraktiivsemaid	# 6
+augTartu	aug Tartu	# 8
+autoriÕiguse	autoriõiguse	# 9
+avald	vald	# 6
+avlikus	avalikus	# 6
+beensiinijaama	bensiinijaama	# 5
+biokeemiassse	biokeemiasse	# 5
+blianss	bilanss	# 4
+bõrsil.	börsil.	# 3
+delegatsiooon	delegatsioon	# 5
+demogoogia	demagoogia	# 6
+detsemris	detsembris	# 6
+digijaama	digitaaljaama	# 11
+disiplinaarbüroo	distsiplinaarbüroo	# 6,6
+disiplinaarkorras	distsiplinaarkorras	# 6,6
+disptšer	dispetšer	# 6
+distiplinaarkonnas	distsiplinaarkonnas	# 6
+distiplinaarvastutusele.	distsiplinaarvastutusele.	# 6
+distsipliiniriikujate	distsipliinirikkujate	# 5
+dramaturiga	dramaturgia	# 4
+dushiruumis	du¹iruumis	# 3
+džassi	džässi	# 3
+eanam	enam	# 6
+ebakainenena	ebakainena	# 7
+ebakvaliteeetselt	ebakvaliteetselt	# 5
+ebaseduslikke	ebaseaduslikke	# 6
+ebastabiiliselt	ebastabiilselt	# 6
+edasi...ja	edasi... ja	# 8
+edaspidiga	edaspidigi	# 6
+eelistates	eelistades	# 6
+eelitas	eelistas	# 6
+eelkontsultatsioonide	eelkonsultatsioonide	# 6
+eelkÕige	eelkõige	# 9
+eestimaa	Eestimaa	# 1
+eestis	Eestis	# 1
+efektiisemat	efektiivsemat	# 6
+effektiivne	efektiivne	# 5
+ehhki	ehkki	# 6,6
+ehmataad	ehmatad	# 5
+ehmnunud	ehmunud	# 7
+ekisimatult	eksimatult	# 6
+ekisteeri	eksisteeri	# 6
+ekologit^seskogo	ekologitšeskogo	# 11
+eksperiisist.	ekspertiisist.	# 6
+eksploateerinud	ekspluateerinud	# 6
+eksponenet	eksponente	# 4
+eksproditulud	eksporditulud	# 4
+elanikonna	elanikkonna	# 5
+elegantsi...hinge	elegantsi... hinge	# 8
+elektritseeritud	elektriseeritud	# 6
+elektrülekandeliinide	elektriülekandeliinide	# 6
+elmine,	eelmine	# 6
+elmine,	elamine	# 6
+emissioni	emissiooni	# 5
+emotsiaalne	emotsionaalne	# 6
+emotsinaalse	emotsionaalse	# 6
+endasi	edasi	# 6
+endastmõitetav	endastmõistetav	# 6
+enegreetikaminister	energeetikaminister	# 4
+energeetikulele	energeetikutele	# 7
+energipurse	energiapurse	# 6
+ense	enese	# 6
+ensele	enesele	# 6
+epillepsia,	epilepsia,	# 5
+eraaktsiaseltisd,	eraaktsiaseltsid,	# 4
+erastaministri	erastamisministri	# 6,6,6
+erastamisagenguurile	erastamisagentuurile	# 6
+erldati	eraldati	# 6
+esialgestel	esialgsetel	# 4
+esinadaja	esindaja	# 6
+esinadmisele	esindamisele	# 4
+esindjatena	esindajatena	# 6
+esitamis viisis	esitamisviisis	# 10
+esmakaordselt	esmakordselt	# 6
+esmete	esemete	# 6
+ettevÕtete	ettevõtete	# 9
+ettevõääratud	ettevääratud	# 6
+ettpanek	ettepanek	# 6
+factõ	facto	# 11
+figutatsioonidele	figuratsioonidele	# 6
+fikseeritt	fikseeritut	# 6
+finantserib	finantseerib	# 5
+finats-	finants-	# 6
+finatskonto	finantskonto	# 6
+flopit	flopid	# 11
+forseeritud	forsseeritud	# 5
+fraksioon)	fraktsioon)	# 6
+fraksioon,	fraktsioon,	# 6
+fraksiooni."	fraktsiooni."	# 6
+fraksioonide	fraktsioonide	# 6
+fraksioonidest.	fraktsioonidest.	# 6
+füüsikainsituut	füüsikainstituut	# 6
+gripihaigte	gripihaiget	# 4
+habmenoaga	habemenoaga	# 6
+haigetunutest	haigestunutest	# 6
+hakaks	hakkas	# 6,6
+hakatakstsionäridele	kaasaktsionäridele	# 6,6,6
+hakkasd	hakkasid	# 6
+hakkata	hakata	# 5
+hanekasvatusaaduste	hanekasvatussaaduste	# 5
+hariduministeeriumis	haridusministeeriumis	# 6
+haridusmininisteeriumil	haridusministeeriumil	# 7
+haridusministeerumi	haridusministeeriumi	# 6
+harrastjaid	harrastajaid	# 6
+hat.Bd.	hat. Bd.	# 8
+hea...saate	hea... saate	# 8
+heliressižõõri,	helirežissööri,	# 6,6,6,6,6
+hiihdin.Kuvakertomus	hiihdin. Kuvakertomus	# 8
+hiiilida	hiilida	# 6
+hindmine	hindamine	# 6
+hingmisteede	hingamisteede	# 6
+hinnagu	hinnangu	# 6
+hinnagul	hinnangul	# 6
+hinnanalandust	hinnaalandust	# 6
+hkkavad	hakkavad	# 6
+hoised	hoiused	# 6
+holotseenis.ENSV	holotseenis. ENSV	# 8
+hoogse	hoogse	# 11
+hoois	hoopis	# 6
+huivtavast	huvitavast	# 4
+hulkrite	hulkurite	# 6
+huvi."Kudemispaigad	huvi. "Kudemispaigad	# 8
+huvitataud,	huvitatud,	# 7
+hädapaärane	hädapärane	# 6
+hüdraunilised	hüdraulilised	# 6
+ideelis=poliitilisel	ideelis-poliitilisel	# 6
+idenfitseerida,	identifitseerida,	# 6
+idenfitseerimiseks	identifitseerimiseks	# 6
+idenfitseerimist.	identifitseerimist.	# 6
+ikkkagi	ikkagi	# 5
+ilmenud,	ilmnenud,	# 6
+ilut0ulestik.	ilutulestik.	# 6
+imees	mees	# 6
+imees	imedes	# 6
+imp.Jurjevskogo	imp. Jurjevskogo	# 8
+imp.Kazanskogo	imp. Kazanskogo	# 8
+imp.Moskovskogo	imp. Moskovskogo	# 8
+impliitsetest	implitsiitsetest	# 6
+indifirentne	indiferentne	# 6
+indvaliidiks	invaliidiks	# 6
+inertspumapdes	inertspumpades	# 6
+infornatsioon,	informatsioon,	# 6
+ingtegreeruda	integreeruda	# 6
+inimesi...ja	inimesi... ja	# 8
+intrtessimäära	intressimäära	# 6
+invertariseermine.	inventariseerimine.	# 6
+investerringuid	investeeringuid	# 6
+inveteerimisfondidele.	investeerimisfondidele.	# 6
+iseaskalu	isaskalu	# 6
+iseeneseestmõistetatavalt	iseenesestmõistetavalt	# 5
+iseloomilike	iseloomulike	# 6
+isikusega	isiksusega	# 6
+ispolzovanija.M.	ispolzovanija. M.	# 8
+jaanurini	jaanuarini	# 6
+jaanuris	jaanuaris	# 6
+jagunaved	jagunevad	# 6,6
+jalaga...kergelt...ning	jalaga... kergelt... ning	# 8,8
+joatusfunktsioon	jaotusfunktsioon	# 4
+jookul	jooksul	# 6
+joomaruluse	joomarluse	# 6
+joon.4.21	joon. 4.21	# 8
+joonsitest	joonistest	# 4
+juhatajua	juhataja	# 6
+juhatja	juhataja	# 6
+juhitima	juhtima	# 6
+juhtatab	juhatab	# 7
+juhtiav	juhitav	# 4
+jurde	juurde	# 5
+juriidiilised	juriidilised	# 5
+jursidiktsiooni	jurisdiktsiooni	# 4
+jututajamine	jutuajamine	# 6
+juurdekäik,sissekäik	juurdekäik, sissekäik	# 8
+järeleusele	järeldusele	# 6
+järgenenud	järgnenud	# 6
+jätgmisel	järgmisel	# 6
+jõiguslikke	õiguslikke	# 6
+kKoalitsioonivalitsuse	koalitsioonivalitsuse	# 6
+kaadriprobleesimees	kaadriprobleemimees	# 6,6,6
+kaadriprobleesimees	kaadriprobleemides	# 6,6,6
+kaasaagse	kaasaegse	# 6
+kahekas	kaheksas	# 6
+kahekas	kaheksa	# 6
+kahekümnendatel-kolmkümnendatel	kahekümnendatel-kolmekümnendatel	# 6
+kahjusus	kahjustus	# 6
+kahtlusatatavatena	kahtlustatavatena	# 6
+kahtlustuna,	kahtlustatuna	# 6,6
+kaitsejõdude	kaitsejõudude	# 6
+kaitsestrukuuridele	kaitsestruktuuridele	# 6
+kaitsesüstmisi	kaitsesüstimisi	# 6
+kakkaksid	hakkaksid	# 6
+kaksteissõrmikusse	kaksteistsõrmikusse	# 6
+kallasetelt	kallastelt	# 6
+kalleletungi	kallaletungi	# 6
+kanidaati,	kandidaati,	# 6
+kanseleile	kantseleile	# 6
+karmule...aga	karmule... aga	# 8
+kassetmagnetofoni	kassettmagnetofoni	# 5
+kasutamamta	kasutamata	# 6
+kasutatab	kasutatav	# 6
+kasutatab	kasutab	# 6
+kasutatatud,	kasutatud,	# 7
+kasuvajaga	kasvuajaga	# 4
+kasvas...nagu	kasvas... nagu	# 8
+katasroofi	katastroofi	# 6
+kauabavahetuses	kaubavahetuses	# 6
+kauabgrupid	kaubagrupid	# 4
+kaubanduspolitiika	kaubanduspoliitika	# 4
+kavandaminsel	kavandamisel	# 6
+kavataseb	kavatseb	# 6
+kedagi...Võtnud	kedagi... Võtnud	# 8
+keskfraksiooni	keskfraktsiooni	# 6
+keskkonnaminsteerium	keskkonnaministeerium	# 6
+keskkonnaminsteeriumi	keskkonnaministeeriumi	# 6
+keskkõõl	keskööl	# 6,3,3
+keskomisjon	keskkomisjon	# 5
+keskonnaministeeriumi	keskkonnaministeeriumi	# 5
+keskuurimisburoo	keskuurimisbüroo	# 3
+kesmine	keskmine	# 6
+kiirestisti.	kiiresti.	# 6,6,6
+kind	kinod	# 6
+kindle	kindel	# 4
+kindlustustamise	kindlustamise	# 7
+kipunud	kippunud	# 5
+kirjtuanud	kirjutanud	# 6
+kitsas stja	kitsass stja	# 11
+km,...	km, ...	# 8
+kn.:Profilaktika	kn.: Profilaktika	# 8
+koalitsiooniläbirääkmised	koalitsiooniläbirääkimised	# 6
+kodakondsusesta	kodakondsuseta	# 6
+kodakonsusametisse.	kodakondsusametisse.	# 6
+koefitsendi	koefitsiendi	# 6
+kogress	kongress	# 6
+kogumsitöö	kogumistöö	# 4
+koguväätuses	koguväärtuses	# 6
+kohakaaslsele	kohakaaslusele	# 6
+kohatade	kohtade	# 6
+kohlikud	kohalikud	# 6
+kohtueskpertiisi	kohtuekspertiisi	# 4
+kohtuotuse	kohtuotsuse	# 6
+kohtuprotsesseil	kohtuprotsessil	# 6
+kohtustuste	kohustuste	# 6
+kohukunult	kohkunult	# 6
+kohustusetega	kohustustega	# 6
+kokkkukeerutatud	kokkukeerutatud	# 5
+kokkuleppet,	kokkulepped,	# 5
+kokkuluuluvuse	kokkukuuluvuse	# 6
+kokkurentsivõimest	konkurentsivõimest	# 6
+kokkuvõteteon	kokkuvõtete on	# 8
+kokkuvõttega."Kuna	kokkuvõttega. "Kuna	# 8
+kolaitsioonis	koalitsioonis	# 4
+koljuvigatusega	koljuvigastusega	# 6
+kolnurk	kolmnurk	# 6
+kolonelelitnant	kolonelleitnant	# 4
+kolossalseid	kolossaalseid	# 5
+komapnii	kompanii	# 4
+komenteerides	kommenteerides	# 5
+komissaar	komissar	# 5
+kommertpankade	kommertspankade	# 6
+komplekteeerida	komplekteerida	# 5
+kompnaiidele,	kompaniidele,	# 4
+kompostitsiooni-teooria	kompositsiooni-teooria	# 6
+komsolisekrtär	komsomolisekrtär	# 6,6
+komsomilijuht	komsomolijuht	# 6
+komsomoliorghanisatsioonid	komsomoliorganisatsioonid	# 6
+kondralpolkovnik	kindralpolkovnik	# 6
+konkaavsus,nõgusus	konkaavsus, nõgusus	# 8
+konkreetsid	konkreetseid	# 6
+konlfikti	konflikti	# 4
+konseptsiooni.	kontseptsiooni.	# 6
+konseptuaalselt	kontseptuaalselt	# 6
+konsevatooriumi	konservatooriumi	# 6
+konstanteerida	konstateerida	# 6
+konsultiivset	konsultatiivset	# 6,6
+konterni	kontserni	# 6
+konternile	kontsernile	# 6
+kontolli	kontrolli	# 6
+kontollitit,	kontrolliti,	# 6,6
+kontris.	kontoris.	# 6
+kontrsteerub	kontrasteerub	# 6
+kontsepsioonis	kontseptsioonis	# 6
+kontsultatsioone.	konsultatsioone.	# 6
+konventsi	konverentsi	# 6,6
+konvrentsi.	konverentsi.	# 6
+koondprotree	koondportree	# 4
+kooostatud	koostatud	# 5
+koordindaadid	koordinaadid	# 6
+koostatakase	koostatakse	# 6
+kopmenseerimiseks	kompenseerimiseks	# 4
+kora	korra	# 5
+kordiori	koridori	# 4
+kordumatutu	kordumatut	# 6
+koristuseetööliste	koristustööliste	# 11
+korralise,XXVII	korralise, XXVII	# 8
+korrladajad	korraldajad	# 4
+korvalt	kõrvalt	# 3
+kotrollima	kontrollima	# 6
+kresiidiressursse	krediidiressursse	# 6
+kritiseetis	kritiseeris	# 6
+kuivatajatebrigaadidel	kuivatajate brigaadidel	# 11
+kujundakaks	kujundajaks	# 6
+kujunenenud	kujunenud	# 7
+kujununenud	kujunenud	# 7
+kuranti",	kursanti",	# 6
+kuristikku. kalgi	kuristikku, kalgi	# 10
+kuritarvitarvitajatele	kuritarvitajatele	# 7
+kustiinimese	kunstiinimese	# 6
+kutseladele	kutsealadele	# 6
+kutser	kutsar	# 6
+kutsustud	kutsutud	# 6
+kuus kümmend	kuuskümmend	# 10
+kuuulub	kuulub	# 5
+kvaralis	kvartalis	# 6
+kvartlis	kvartalis	# 6
+kÕigi	kõigi	# 9
+kÕik	kõik	# 9
+kÕiki	kõiki	# 9
+kÕnele,	kõnele,	# 9
+käibmaksuta.	käibemaksuta.	# 6
+käitmist	käitumist	# 6
+käivitaamiset	käivitamist	# 5,6
+kälalisena	külalisena	# 6
+käsisid	käisid	# 6
+käskirjale	käsikirjale	# 5
+käskirjale	käskkirjale	# 5
+kõigekülgsemalt	kõigekülgselt	# 11
+küsitlutest	küsitlustest	# 6
+l.1-9	l. 1-9	# 8
+laebimüüki	läbimüüki	# 3,6
+laeimalt	laiemalt	# 4
+laenuprotfell	laenuportfell	# 4
+laenuprotfelli	laenuportfelli	# 4
+laenuprotfellis	laenuportfellis	# 4
+laest...kuid	laest... kuid	# 8
+lahendmise	lahendamise	# 6
+lahkumisvisiididile	lahkumisvisiidile	# 7
+lahunemine	lagunemine	# 6
+laiendmise	laiendamise	# 6
+laienenenud	laienenud	# 7
+lambakasvatusaaduste	lambakasvatussaaduste	# 5
+lammautatud	lammutatud	# 6
+lastiruunis	lastiruumis	# 6
+lavastja	lavastaja	# 6
+lavatusega	lavastusega	# 6
+lavatuses	lavastuses	# 6
+leavaga	laevaga	# 4
+lekitas,"	lekitas,"	# 11
+lennunnujaama	lennujaama	# 7
+libneraaldemokraatliku	liberaaldemokraatliku	# 6
+liguliseks	laiguliseks	# 6
+lihakombiaadi	lihakombinaadi	# 6
+lihsalt	lihtsalt	# 6
+lihtalt	lihtsalt	# 6
+lihtustumise	lihtsustumise	# 6
+liiklusohutusnädat	liiklusohutusnädal	# 6
+liikmeskpankade,	liikmepankade,	# 6
+liilad	lillad	# 6,6
+liimeks	liikmeks	# 6
+liimete	liikmete	# 6
+liimete	liikmete	# 6
+liimete	liikmete	# 6
+liimete	liikmete	# 6
+likviidus	likviidsus	# 6
+linatoseks.	linateoseks.	# 6
+linnukasvatusaadusi	linnukasvatussaadusi	# 5
+lisaressurse	lisaressursse	# 5
+litsenseerimise	litsentseerimise	# 6
+litsenseerimisele	litsentseerimisele	# 6
+litsenseeritavate	litsentseeritavate	# 6
+litsensitaotluse	litsentsitaotluse	# 6
+lituste	laituste	# 6
+lk.434	lk. 434	# 8
+lustusfirmale	alustusfirmale	# 6
+lÕpetab	lõpetab	# 9
+lÜhikese	lühikese	# 9
+läbirääkimisapartner,	läbirääkimispartner,	# 6
+läbirääkimistepartneritele	läbirääkimiste partneritele	# 6
+läbirääkmised	läbirääkimised	# 6
+läänepolsele	läänepoolsele	# 5
+lõpema	lõppema	# 5
+lõpmatas	lõpmatus	# 6
+lõppkokkuvõtes	lõppkokkuvõttes	# 5
+lõpuarvet,227	lõpuarvet, 227	# 8
+lühekese	lühikese	# 6
+lüüdialaste	lüüdilaste	# 11
+m,erakordsete	m, erakordsete	# 8
+maaanoored	maanoored	# 5
+maaerakonade	maaerakondade	# 6
+maaimasõja	maailmasõja	# 6
+maakonaas	maakonnas	# 6,6
+maanteee	maantee	# 5
+maistrivõistluste	meistrivõistluste	# 6
+majandukolledž.	majanduskolledž.	# 6
+majanduliku	majandusliku	# 6
+majandulikult	majanduslikult	# 6
+majandusanktsioonide	majandussanktsioonide	# 5
+majandusminsteeriumi	majandusministeeriumi	# 6
+majandusporgramm.	majandusprogramm.	# 4
+majandussanksioonide	majandussanktsioonide	# 6
+majandussanktsioonie	majandussanktsioone	# 6
+majandussanktsioonie	majandussanktsioonide	# 6
+majandussantksioone.	majandussanktsioone.	# 6
+majapidapidamisesemete	majapidamisesemete	# 7
+makseterminalide	makseterminaalide	# 11
+maksistlik	marksistlik	# 6
+mandaaati.	mandaati.	# 5
+mangtub	mangub	# 6
+marksimi-leninismi	marksismi-leninismi	# 6
+matejali	materjali	# 6
+mauseoleum	mausoleum	# 6
+mdiagi	midagi	# 4
+med.F.	med. F.	# 8
+meedlivat	meeldivat	# 4
+meedodi	meetodi	# 6
+meeleeolu	meeleolu	# 5
+meelevallasd	meelevallas	# 6
+meertit	meetrit	# 4
+metasameti	metsaameti	# 4
+metsaaaluse	metsaaluse	# 5
+midagai	midagi	# 6
+migratisooniamet	migratsiooniamet	# 4
+miipildujaroodu	miinipildujaroodu	# 6,6
+mijonit	miljonit	# 6
+mimimaalset	minimaalset	# 6
+miner.kütused,	miner. kütused,	# 8
+mineraalaväetisi	mineraalväetisi	# 6
+ministriporfelli,	ministriportfelli,	# 6
+minstrikohad	ministrikohad	# 6
+minu...palvega	minu... palvega	# 8
+misnimekirja	mis nimekirja	# 8
+mitmekordel	mitmekordsel	# 6
+mitmesugusete	mitmesuguste	# 6
+mittestandardste	mittestandardsete	# 6
+mittetulundusorganistatsiooni	mittetulundusorganisatsiooni	# 6
+monoment	monument	# 6
+moodutas	moodustas	# 6
+mudiugi	muidugi	# 4
+muhamedlikke	muhameedlikke	# 5
+mustariibuline	mustatriibuline	# 6
+muutas	muutis	# 6
+muuud	muud	# 5
+mäitavad,	näitavad,	# 6
+mälestuskonverets	mälestuskonverents	# 6
+mängujhtidele	mängujuhtidele	# 6
+märkam	märkame	# 6
+märs,	märts	# 6
+märstil,	märtsil,	# 4
+määäruse	määruse	# 5
+mõlemilt	mõlemailt	# 11
+mõneajast	mõneajalist	# 6,6
+mõnikrod	mõnikord	# 4
+mõtleisn	mõtlesin	# 4
+mõtlemapanuv	mõtlemapanev	# 6
+mõÕtmine,	mõõtmine,	# 9
+mõõdapäämatu	möödapääsmatu	# 3,3,6
+mõõdnunud	möödunud	# 3,3,6
+müugisumma	müügisumma	# 3
+naelstirlingit.	naelsterlingit.	# 6
+naelstrilinguga.	naelsterlingiga.	# 6,6
+naerma,nagu	naerma, nagu	# 8
+nahaale	nahhaale	# 5
+nahkkkuube	nahkkuube	# 5
+naisete	naiste	# 6
+naistarahvas	naisterahvas	# 6
+narkologiaposte	narkoloogiaposte	# 5
+nee	need	# 6
+neeed	need	# 5
+nii-ii	nii-nii	# 11
+niiksusest	niiskusest	# 4
+niisugst	niisugust	# 6
+niisugunr	niisugune	# 6
+nisid	nišid	# 3
+nominaalväärtsuses.	nominaalväärtuses.	# 6
+nominaalväätusega	nominaalväärtusega	# 6
+nominaalväätusest	nominaalväärtusest	# 6
+noortelmanahhid	noortealmanahhid	# 6
+normaasete	normaalsete	# 6,6
+normnaalseks".	normaalseks".	# 6
+novmbris	novembris	# 6
+nr.30	nr. 30	# 8
+nr.7	nr. 7	# 8
+numbes	umbes	# 6
+nusuutas	nuusutas	# 4
+näadlalpäevad	nädalapäevad	# 4,6
+näidatatakse	näidatakse	# 7
+näit.Fr.Tuglase	näit. Fr. Tuglase	# 8,8
+näitatud	näidatud	# 6
+näitemänguharrastjaid	näitemänguharrastajaid	# 6
+nõkogule	nõukogule	# 6
+nõukoguge	nõukogude	# 6
+nüü	nüüd	# 6
+ohutuspiirkonnada	ohutuspiirkonda	# 6
+ohutuspiirkonnada	ohutuspiirkonnad	# 6
+ohutussertfikaat	ohutussertifikaat	# 6
+ohvister	ohvitser	# 4
+oli..jube	oli.. jube	# 8
+olmas,"	olemas,"	# 6
+omavalistuste	omavalitsuste	# 4
+omavalitsutele,	omavalitsustele,	# 6
+ootmatus,	ootamatus,	# 6
+orgaanilsite	orgaaniliste	# 4
+organistatsioonide	organisatsioonide	# 6
+osatähtus	osatähtsus	# 6
+osatätmisele	osatäitmisele	# 6
+oskaonnajuhatajad	osakonnajuhatajad	# 4
+oskjonil	oksjonil	# 4
+oslevad	osalevad	# 6
+ossa brevis	ossa brevia	# 11
+ostama	ostma	# 6
+ostetumatemaks,"	ostetuimateks,"	# 6,6,6
+ostetumatemaks,"	ostetumateks,"	# 6,6,6
+ostsuse	otsuse	# 6
+ostsust	otsust	# 6
+ostsustavad	otsustavad	# 6
+otd.2	otd. 2	# 11
+otses	otsas	# 6
+otsusi	otsuseid	# 6
+otsustatab	otsustab	# 7
+otsutasid	otsustasid	# 6
+otustas	otsustas	# 6
+paadiruunis	paadiruumis	# 6
+paigat	paigad	# 6
+paikenb	paikneb	# 4
+paljunduaparaadi,	paljundusaparaadi,	# 6
+pankrotsitunud	pankrotistunud	# 4
+parandamaas	parandamas	# 5
+parandamisek	parandamiseks	# 6
+pareleelläbirääkimisi	paralleelläbirääkimisi	# 5
+paremal...vasakul...siis	paremal... vasakul... siis	# 8,8,8
+paremerkondi	paremerakondi	# 6
+parlamedi	parlamendi	# 6
+parteifunktsionäre	parteifunktsionääre	# 5
+parteikoosolekutle	parteikoosolekutele	# 4
+parteiorganisatsionide	parteiorganisatsioonide	# 5
+parteiorganisatsionil	parteiorganisatsioonil	# 5
+parternitega".	partneritega".	# 6,6
+patendimaeti	patendiameti	# 4
+peairektori	peadirektori	# 6
+pealikaudne	pealiskaudne	# 6
+pearaamtupidaja	pearaamatupidaja	# 6
+peasekrtär	peasekretär	# 6
+peaskeretäri	peasekretäri	# 4
+peatõõettevõtja	peatööettevõtja	# 6,6
+pedirektor	peadirektor	# 6
+pensinäride	pensionäride	# 6
+peremes	peremees	# 5
+permeheks	peremeheks	# 6
+pidalitõbistevarjupaigast	pidalitõbiste varjupaigast	# 8
+pigistma	pigistama	# 6
+piirijärjekorgade	piirijärjekordade	# 6
+piiripunkides	piiripunktides	# 6
+pingeras	pingereas	# 6
+pinn...põnn	pinn... põnn	# 8
+pinsetid	pintsetid	# 6
+pinsetiga	pintsetiga	# 6
+piraatttarkvara	piraattarkvara	# 5
+po	p.o	# 10
+poliititika	poliitika	# 7
+poliitkat	poliitikat	# 6
+poliitlisi	poliitilisi	# 6
+politseprefektuuri	politseiprefektuuri	# 6
+pommiähvrdus	pommiähvardus	# 6
+poole...nüüd...ning	poole... nüüd... ning	# 8,8
+poolfinaaali	poolfinaali	# 5
+populaaruselt	populaarsuselt	# 6
+porjektorite	projektorite	# 4
+porjektsiooniaparaadid	projektsiooniaparaadid	# 4
+porjektsiooniaparaati	projektsiooniaparaati	# 4
+portsendilt	protsendilt	# 4
+positisiooni	positsiooni	# 6
+positsiivseks	positiivseks	# 6
+potensiaalse	potentsiaalse	# 6
+potrfellita	portfellita	# 4
+praegu...praegu	praegu... praegu	# 8
+prageu	praegu	# 4
+preemisaajate	preemiasaajate	# 6
+presidenr	president	# 6
+pressikonvernts	pressikonverents	# 6
+pressikonverntsil,	pressikonverentsil,	# 6
+pressisektretäri	pressisekretäri	# 6
+profašištliku	profašistliku	# 3
+professsor	professor	# 5
+progressivne	progressiivne	# 5
+prokurori	prokuröri	# 3
+protsesti	protesti	# 6
+protsude	portsude	# 4
+psüühhikaga	psüühikaga	# 5
+puhakskasum	puhaskasum	# 6
+puhasturajatiste	puhastusrajatiste	# 6
+puhkeenuseid	puhketeenuseid	# 6,6
+purjuspeaga	purjus peaga	# 11
+puudvad	puuduvad	# 6
+pärastlÕunal	pärastlõunal	# 9
+pärisalajoo	pärisajaloo	# 6,6
+pääasevad	pääsevad	# 6
+päästerõngkas	päästerõngaks	# 6
+põgenda.	põgeneda.	# 6
+põhiaktsionaäri	põhiaktsionäri	# 6
+põhjaplakudes	põhjaplankudes	# 6
+põhjusdeks	põhjusteks	# 6
+põhjusdeks	põhjuseks	# 6
+põhjustanud	põhjustanud	# 11
+põllumajandussaadused..	põllumajandussaadused..	# 11
+põllumehwed	põllumehed	# 6
+pühpäevani	pühapäevani	# 6
+raadio-kassetmagnetofoni	raadio-kassettmagnetofoni	# 5
+raamtuid	raamatuid	# 6
+rahkesti	rohkesti	# 6
+rahuslike	rahvuslike	# 6
+rahuvsvaheliste	rahvusvaheliste	# 4
+rahuvusvaheline	rahvusvaheline	# 6
+rahuvusvahelises	rahvusvahelises	# 6
+rahvasteavahelist	rahvastevahelist	# 6
+rahvusuhteid	rahvussuhteid	# 5
+rajadakahte	rajada kahte	# 8
+rakendadatakse	rakendatakse	# 7
+rakendatnud	rakendanud	# 6
+raldas	eraldas	# 6
+rasketi	raskesti	# 6
+raskutest	raskustest	# 6
+rasvasisaldsega	rasvasisaldusega	# 6
+ratifitserida	ratifitseerida	# 5
+raudte	raudtee	# 5
+raudteeplatovrmi	raudteeplatvormi	# 4
+rauteekonteineritäie	raudteekonteineritäie	# 6
+raviastuste	raviasutuste	# 6
+reformimi	reformini	# 6
+reguleerimne	reguleerimine	# 6
+reguleermispolt	reguleerimispolt	# 6
+reismise	reisimise	# 6
+reservistidesse	reservisidesse	# 11
+restarueerimistööde	restaureerimistööde	# 4
+resultaar	resultaat	# 6
+resulutsiooni	resolutsiooni	# 6
+revisioni	revisjoni	# 6
+revisioniaruande	revisjoniaruande	# 6
+revisionikomisjon	revisjonikomisjon	# 6
+riigikogussse	riigikogusse	# 5
+riigilie	riigile	# 6
+riigkogu	riigikogu	# 6
+ringireismise	ringireisimise	# 6
+ringleda	ringelda	# 4
+roppi	roppe	# 6
+rumaa,	rumala,	# 6
+räägb	räägib	# 6
+rääksin	rääkisin	# 6
+rühimtustele	rühmitustele	# 4
+s ndmsute	s ndmuste	# 6
+s.273-284	s. 273-284	# 8
+saaatsid	saatsid	# 5
+saabuavd	saabuvad	# 4
+saadikukandidadi	saadikukandidaadi	# 5
+saadunud	saabunud	# 6
+sampinjoni	¹ampinjoni	# 3
+sarnenevad	sarnanevad	# 6
+satistikaprogrammiga.	statistikaprogrammiga.	# 6
+sattnud	sattunud	# 6
+sdakond	sadakond	# 6
+se	see	# 5
+see...see	see... see	# 8
+seepärst	seepärast	# 6
+seeriamootriga	seeriamootoriga	# 6
+seiseb	seisab	# 6
+seiseb	seisneb	# 6
+seistme	seitsme	# 4
+seisukihtade	seisukohtade	# 6
+seite	seitse	# 6
+seite	seire	# 6
+seiukohale,	seisukohale,	# 6
+sekrtärid	sekretärid	# 6
+selleks...selleks...millele	selleks... selleks... millele	# 8,8
+sellepärasrt	sellepärast	# 6
+sellepärst	sellepärast	# 6
+senitele	seintele	# 4
+septebris.	septembris.	# 6
+sertfikaat	sertifikaat	# 6
+sihtfondega.	sihtfondidega.	# 6
+sihukuste	sihukeste	# 6
+sillerimistehnoloogia	sileerimistehnoloogia	# 6
+silmaspidades	silmas pidades	# 8
+sisisutatud	sisustatud	# 6,4
+sisladuvale	sisalduvale	# 4
+sisseadmine.	sisseseadmine.	# 6,6
+sissejuhtatus	sissejuhatus	# 6
+sissejuhtuseks	sissejuhatuseks	# 6
+sissesõidviisa,	sissesõiduviisa,	# 6
+sisutada	sisustada	# 6
+skaudiorgnisatsioonidevahelisi	skaudiorganisatsioonidevahelisi	# 6
+skiitva	kiitva	# 6
+skyscaper	skyscraper	# 6
+slovar.M.,1983,s.	slovar. M., 1983, s.	# 8,8,8
+so	s.o	# 10
+sobr.2	sobr. 2	# 8
+soprdihalli	spordihalli	# 4
+sotsalistliku	sotsialistliku	# 6
+sotsialisliku	sotsialistliku	# 6
+spetisialistid	spetsialistid	# 6
+spetsiaaselt	spetsiaalselt	# 6
+sse,	see,	# 4
+stabilseerimistunnel	stabiliseerimistunnel	# 6
+standardeerimisküsimusi.	standardiseerimisküsimusi.	# 6,6
+stateegiliste	strateegiliste	# 6
+statistikamaetite	statistikaametite	# 4
+stiilise	stiilide	# 6
+stlb.1267	stlb. 1267	# 8
+strandarditeni	standarditeni	# 6
+strontsimi	strontsiumi	# 6
+strukuursed	struktuursed	# 6
+suheted.	suhted	# 6
+suheted.	suhete	# 6
+sularahautomaati,	sularahaautomaati,	# 5
+suunnatud	suunatud	# 5
+suurede	suurde	# 6
+suurpankka	suurpanka	# 5
+suuutnud	suutnud	# 5
+sälitades.	säilitades.	# 6
+sõdab	sõidab	# 6
+sõdrulik	sõdurlik	# 4
+sõjajärsetes	sõjajärgsetes	# 6
+sõmiti	sõlmiti	# 6
+sõnadede	sõnade	# 7
+sü1udistused,	süüdistused,	# 6,3
+sügvuses	sügavuses	# 6
+sümfoniaorkestrid	sümfooniaorkestrid	# 5
+sümpoosiumil	sümpoosionil	# 6
+süttitamine	sütitamine	# 5
+süüditas	süüdistas	# 6
+t .1	t . 1	# 10
+t.8	t. 8	# 8
+tabeltti	tabletti	# 4
+tagajärele	tagajärjel	# 6,6
+tagsi	tagasi	# 6
+tagukse	tagaukse	# 6
+tahmist	tahtmist	# 6
+tahtistki	tahtiski	# 6
+talleatud	talletatud	# 6
+tallinnlastelt	tallinlastelt	# 5
+tallinnlastest	tallinlastest	# 5
+tasapidi	tasapisi	# 6
+teabkui	teab kui	# 8
+teadamata	teadmata	# 6
+teadamata	teatamata	# 6
+teatritekside	teatritekstide	# 6
+tedlikus	teadlikus	# 6
+teenidavas	teenindavas	# 6
+tegevlikult	tegelikult	# 6
+tegistreerimata	registreerimata	# 6
+teglikult	tegelikult	# 6
+tehatava	tehtava	# 6
+tehniki.M.	tehniki. M.	# 8
+teisit	teisiti	# 6
+teismetes	teistmetes	# 11
+teispidi	teistpidi	# 6
+teispäevasel	teisipäevasel	# 6
+teistmisküsimuse	testimisküsimuse	# 6,6
+teistmisküsimust,	testimisküsimust,	# 6,6
+tekkkinud	tekkinud	# 5
+televisooni	televisiooni	# 6
+televisooniavalduses	televisiooniavalduses	# 6
+tendets	tendents	# 6
+tendetsi,"	tendentsi,"	# 6
+terpikojast.	trepikojast.	# 4
+tihenedamise	tihendamise	# 6
+tippihetked	tipphetked	# 6
+tn.10	tn. 10	# 8
+tn.21	tn. 21	# 8
+tn.8	tn. 8	# 8
+to=imetusele	toimetusele	# 6
+to=itlustusettevõtete	toitlustusettevõtete	# 6
+toiduainetetõštuse,	toiduainetetööstuse,	# 6,3,6
+toimtuse	toimetuse	# 6
+toiteelemenditesisaldus	toiteelementidesisaldus	# 6,6
+toitlustamisseptsialist	toitlustamisspetsialist	# 4
+tolleaegases	tolleaegses	# 6
+tootmialased	tootmisalased	# 6
+tootmijuhtide	tootmisjuhtide	# 6
+tootmisprotessis	tootmisprotsessis	# 6
+tootmiõpetuse	tootmisõpetuse	# 6
+tootmiõpetusega	tootmisõpetusega	# 6
+topisid	toppisid	# 6
+tradistiooniliselt	traditsiooniliselt	# 4
+tradistsiooniks,	traditsiooniks,	# 6
+transporidvahendid	transpordivahendid	# 4
+trukitud	trükitud	# 3
+trükiväljannetes.	trükiväljaannetes.	# 5
+tsandardi-	standardi-	# 4
+tsentrisliku	tsentristliku	# 6
+tsestoodidega	testoodidega	# 6
+tsit.Me t erski	tsit. Me t erski	# 8
+tsitaadidega!	tsitaatidega!	# 6
+tsuse	otsuse	# 6
+tudmatu	tundmatu	# 6
+tulbli	tubli	# 6
+tulemustestest	tulemustest	# 7
+tuli...kogemata	tuli... kogemata	# 8
+tulitelvi.	tulirelvi.	# 6
+tulnud...ja	tulnud... ja	# 8
+tunnusjooneteks	tunnusjoonteks	# 6
+turismitõtajate	turismitöötajate	# 6,6
+turukonjuktuuri	turukonjunktuuri	# 6
+turvaelemnti	turvaelementi	# 6
+tutuvunud	tutvunud	# 6
+tutuvustab	tutvustab	# 6
+tutuvustas	tutvustas	# 6
+tutuvustavad	tutvustavad	# 6
+tutvusmisteenistusi	tutvumisteenistusi	# 6
+tuvuda,	tutvuda,	# 6
+tuvustavad	tutvustavad	# 6
+täheb	läheb	# 6
+täheladas	täheldas	# 6
+tähtaaeg,	tähtaeg,	# 5
+tähtaaegu	tähtaegu	# 5
+tähtde	tähtede	# 6
+tähtsale...tähendab	tähtsale... tähendab	# 8
+täis...ning	täis... ning	# 8
+täiskoossseisuga	täiskoosseisuga	# 5
+tänseni	tänaseni	# 6
+tõenäline	tõenäoline	# 6
+tõenäolislt	tõenäoliselt	# 6
+tõenäolselt	tõenäoliselt	# 6
+tõetõendid	töötõendid	# 6,6
+tõis	tõsi	# 6
+tõis	õis	# 6
+tõotand	tõotanud	# 6
+tõsti	tõesti	# 6
+tõsud	tõusud	# 6
+tõõdanud	töötanud	# 6,6
+tõõtaja-BNS).	töötaja - BNS).	# 6,6,8,8
+töökohal,192	töökohal, 192	# 8
+tööstili	tööstiili	# 6
+töövaidlussorganil	töövaidlusorganil	# 6
+umaksuvabamiinimumi	maksuvabamiinimumi	# 6
+univeraalkonstant	universaalkonstant	# 6
+univeraalsuse	universaalsuse	# 6
+usaldatavause,	usaldatavuse,	# 6
+uupunud	uppunud	# 6
+vaatede	vaadete	# 6,6
+vaatepuntkist	vaatepunktist	# 6
+vabandandust	vabandust	# 7
+vabandandust	vabandanust	# 7
+vabdusekaotuse.	vabadusekaotuse.	# 6
+vaimsutusest	vaimustusest	# 4
+vajadustestest	vajadustest	# 7
+vajalikuse	vajalikkuse	# 5
+valdkonnaksi	valdkonnaski	# 4
+valdkonnaksi	valdkonnakski	# 4
+valimimiskünnist.	valimiskünnist.	# 7
+valimisliiit	valimisliit	# 5
+valimisllit	valimisliit	# 6
+valimskomisjoni	valimiskomisjoni	# 6
+valistusjuhid	valitsusjuhid	# 4
+valit	valid	# 6
+valit	valitud	# 6
+valitsjuhtidega.	valitsusjuhtidega.	# 6
+valitsusjõudest	valitsusjõududest	# 6,6
+valitsuskoalitasiooni	valitsuskoalitsiooni	# 6
+valituskoalitsiooni	valitsuskoalitsiooni	# 6
+valmsitanud	valmistanud	# 4
+vanaasta	vanaaasta	# 5
+vandetõetuse	vandetõotuse	# 6
+vangals	vanglas	# 4
+vastatikku	vastastikku	# 6
+vastavalitud	vastvalitud	# 6
+vastmängu	vastumängu	# 6
+vastu-BNS),	vastu - BNS),	# 8,8
+vastuolistest	vastuolulistest	# 6,6
+vastvalt	vastavalt	# 6
+vasuvõtmisel	vastuvõtmisel	# 6
+vebruaris	veebruaris	# 5
+vedruijuhtidelt	vedurijuhtidelt	# 4
+veid	vaid	# 6
+vendeadvokaat	vandeadvokaat	# 6
+vevasid	vaevasid	# 6
+vidoemontaažifirmade	videomontaažifirmade	# 4
+vigatuste	vigastuste	# 6
+viiavad	viivad	# 6
+viiavad	viitavad	# 6
+viieteistkümmeaastane	viieteistkümneaastane	# 6
+viit...teemeister	viit... teemeister	# 8
+viivtada	viivitada	# 6
+voliatud	volitatud	# 6
+vormise	vormis	# 6
+vormise	vormisse	# 6
+vt.2.4.	vt. 2.4.	# 8
+vt.lk.	vt. lk.	# 8
+vÕetud	võetud	# 9
+vÕimalikuks	võimalikuks	# 9
+vÕimalusi.	võimalusi	# 9
+vähemharitud	väheharitud	# 11
+vähens	vähenes	# 6
+väiksese	väikese	# 6
+väiksese	väikese	# 6
+väiksese	väikeses	# 6
+väiksese	väikses	# 6
+väiksese	väikeses	# 6
+väiksese	väikses	# 6
+välajkujunenud	väljakujunenud	# 4
+välajkutse	väljakutse	# 4
+välisministreeriumi	välisministeeriumi	# 6
+välismnisteerium	välisministeerium	# 6
+välissaatkonde	välissaatkondade	# 6
+väljaspoolt	väljastpoolt	# 6
+väärisele	väärilisele	# 6,6
+väärtses	väärtuses	# 6
+väätus	väärtus	# 6
+võidlenud	võidelnud	# 4
+võimaline	võimeline	# 6
+võimnaluste	võimaluste	# 6
+võlgenvuste	võlgnevuste	# 4
+võsitlustel	võistlustel	# 4
+vööratud	vöötatud	# 6
+ÖÖsel	Öösel	# 9
+ÜlEMAAILMSELE	ÜLEMAAILMSELE	# 9
+Ülemaailne	Ülemaaline	# 6
+Ülemaailne	Ülemaailmne	# 6
+Üleshitustöö	Ülesehitustöö	# 6
+äitäh	aitäh	# 3
+äkki...kuid	äkki... kuid	# 9
+älja	välja	# 6
+äre	ära	# 6
+ärialseid	ärialaseid	# 6
+ärijutimiste	ärijuhtimiste	# 6
+õhkonnas	õhkkonnas	# 5
+õhtuamises.	õhutamises.	# 4
+õigaaegselt	õigeaegselt	# 6
+õigeagne	õigeaegne	# 6
+õleda,"	öelda,"	# 6,6
+õledakse	öeldakse	# 6,6
+õledud.	öeldud.	# 6,6
+õlmimist	sõlmimist	# 6
+õppeainetaga	õppeainetega	# 6
+õppsisn	õppisin	# 6
+õprotokollile	protokollile	# 6
+öeldes:...eesti	öeldes: ... eesti	# 8
+öeldespoole	öeldes poole	# 8
+ökonomist,majandusteaduse	ökonomist, majandusteaduse	# 8
+ühekskümneaastaseks	üheksakümneaastaseks	# 6
+üksikandidaatide	üksikkandidaatide	# 5
+ülalmanitud	ülalmainitud	# 6
+ülalpidamisekulud	ülalpidamiskulud	# 6
+üldkoosolel	üldkoosolekul	# 6
+üldkoosolel	üldkoosolek	# 6
+üleasastumine	ülesastumine	# 6
+ülekannetete	ülekannete	# 7
+ülekannetete	ülekanneteta	# 7
+ülem-BNS).	ülem - BNS).	# 8,8
+ülessannete	ülesannete	# 5
+üliõplaskonna	üliõpilaskonna	# 6
+üllatuseks."See	üllatuseks. "See	# 8
+ülsuse	üldsuse	# 6
+ümberegistreerimist.	ümberregistreerimist.	# 5
+ümberrringi	ümberringi	# 5
+ümbitseva	ümbritseva	# 6
+ümer	ümber	# 6
+ündinud	sündinud	# 6
+ütels	ütles	# 4
+ütlasi	ühtlasi	# 6
+ütleda	ütelda	# 4
+žirinovski	Žirinovski	# 1
+# ---------------
+# Author: Kairit Sirts 2016
+# These spelling error pairs have been collected in a pretty ad-hoc manner from
+# a newspaper corpus.
+# ---------------
+teadusproleemidega	teadusprobleemidega
+noormes	noormees
+pankrotristununa	pankrotistununa
+rohkm	rohkem
+elektripiliit	elektripliit
+edaspdigi	edaspidigi
+tesehhi	tsehhi
+balalaureusetöö	bakalaureusetöö
+pärst	pärast
+tegevuslitsenti	tegevuslitsentsi
+puhkpilliorekester	puhkpilliorkester
+jumalakodas	jumalakojas
+enekindluse	enesekindluse
+mandliküspsis	mandliküpsis
+produtsentina	produtsendina
+pekontorit	peakontorit
+kuurortite	kuurortide
+naisterahavas	naisterahvas
+mitmu	mitu
+igaljuhul	igal juhul
+minimimaalseks	minimaalseks
+netsade	metsade
+keskonnaprobleeme	keskkonnaprobleeme
+seegaon	seega on
+varajata	varjata
+kudi	kuid
+omandissse	omandisse
+miliseid	milliseid
+justnimelt	just nimelt
+tehunguid	tehinguid
+septmembris	septembris
+minnna	minna
+matkamarsuut	matkamarsruut
+mistri	misteri
+käisis	käisid
+ülestõumispüha	ülestõusmispüha
+katstroofiteadet	katastroofiteadet
+siimaani	siiamaani
+psüühiaater	psühhiaater
+koeramanikud	koeraomanikud
+ettevõttete	ettevõtete
+kolveerand	kolmveerand
+sportist	spordist
+valmistatame	valmistame
+mkirjutises	kirjutises
+äriparneritele	äripartneritele
+iseseivalt	iseseisvalt
+sanud	saanud
+kuuuluvad	kuuluvad
+kinoteateri	kinoteatri
+lagenud	langenud
+horvaaid	horvaadid
+põletushaaavadesse	põletushaavadesse
+uudishimulid	uudishimulikud
+kasvatanaud	kasvatanud
+ellimineerida	elimineerida
+tunnne	tunne
+sildedad	siledad
+tendetnts	tendents
+erastamisvärtpaberiarvete	erastamisväärtpaberiarvete
+näitemänguangentuuri	näitemänguagentuuri
+müned	mõned
+taganjärele	tagantjärele
+käsipallijuhide	käsipallijuhtide
+kohtast	kohast
+kõtvuti	kõrvuti
+hinanngu	hinnangu
+loositalse	loositakse
+tegelikuklt	tegelikult
+pesekretär	peasekretär
+tshempioneid	tshempioneid
+ühiskonnakoraldusega	ühiskonnakorraldusega
+suhtetest	suhetest
+andamata	andmata
+ravikindlustustamata	ravikindlustamata
+tutuvustamist	tutvustamist
+murjenda	morjenda
+edasisese	edasise
+endalesaamiseks	endale saamiseks
+mõneltnii	mõnelt nii
+hinnastrukuur	hinnastruktuur
+listentsist	litsentsist
+vähemine	vähenemine
+sponorite	sponsorite
+parlment	parlament
+mõelmal	mõlemal
+paljulastelistesse	paljulapselistesse
+läbimüüük	läbimüük
+pallingst	pallingust
+perakonna	perekonna
+karikassse	karikasse
+agressiivuse	agressiivsuse
+liikluskindlutusega	liikluskindlustusega
+ummmikseisu	ummikseisu
+maitseelistustest	maitse-eelistustest
+ränadmiseks	rändamiseks
+aatsas	aastas
+toorainee	tooraine
+seitmekümnedate	seitsmekümnedate
+tõlgendda	tõlgendada
+moodutada	moodustada
+ususasjade	usuasjade
+kinldustusteenuste	kindlustusteenuste
+üskikisikud	üksikisikud
+mitumepäevaseid	mitmepäevaseid
+taditsioonide	traditsioonide
+isenergeneetika	insenergeneetika
+tegedirektori	tegevdirektori
+krediidite	krediitide
+hulja	hulka
+tehate	tahate
+ütlem	ütlema
+aaastal	aastal
+elukeskonnast	elukeskkonnast
+emeritus	emeeritus
+alkoholisaldusega	alkoholisisaldusega
+mineraalve	mineraalvee
+kaussija	kaussi ja
+penisonäride	pensionäride
+veeburar	veebruar
+ohvritete	ohvriteta
+vehatanud	vahetanud
+kindlati	kindlasti
+tulvikku	tulevikku
+ülesandeksa	ülesandeks
+küllatki	küllaltki
+süstemi	süsteemi
+väheeffektiivne	väheefektiivne
+restruktrueerimise	restruktureerimise
+mingusugusegi	mingisugusegi
+isklikuks	isiklikuks
+kirede	kirgede
+kõigepeale	kõigepealt
+pedirektori	peadirektori
+tagajärlej	tagajärjel
+mijoni	miljoni
+tõnisamäel	tõnismäel
+mittevatavaks	mittevastavaks
+tagasipöördumisks	tagasipöördumiseks
+helloweeni	halloweeni
+gõmnaasiumi	gümnaasiumi
+mardiakari	mardikari
+mõttestatud	mõtestatud
+ebamäärse	ebamäärase
+manitsemama	manitsema
+järgele	järele
+aktiisitõusu	aktsiisitõusu
+vaatams	vaatamas
+naisportlane	naissportlane
+kolmada	kolmanda
+univesritase	universitase
+kinkus	kinkis
+edetablita	edetabelita
+klaasikalise	klassikalise
+teeninduspiirkod	teeninduspiirkond
+tutavad	tuttavad
+opositsoon	opositsioon
+likmete	liikmete
+võrdustamine	võrdsustamine
+ostustas	otsustas
+õprtajad	õpetajad
+riigieelrvesse	riigieelarvesse
+välisüliüpilaste	välisüliõpilaste
+piirutusetehast	piiritusetehast
+muuutis	muutis
+arendusoskaonna	arendusosakonna
+kinnisid	kinnitasid
+aregutõuke	arengutõuke
+mootosõidukimaksu	mootorsõidukimaksu
+interdistiplinaarsete	interdistsiplinaarsete
+torminiline	tormiline
+puhendatud	põhendatud
+sanaatooriumieluga	sanatooriumieluga
+adekvaatusega	adekvaatsusega
+eraiskud	eraisikud
+mõneki	mõnedki
+onsuhteline	on suhteline
+vajaksi	vajaksid
+investeerimifirma	investeerimisfirma
+astäitja	asetäitja
+relatonsile	relationsile
+põlend	põlenud
+alusatamist	alustamist
+mõttesegi	mõttessegi
+ametiastuste	ametiasutuste
+viikümnekesi	viiekümnekesi
+kolleegimide	kolleegiumide
+süstemaatlisest	süstemaatilisest
+ülelt	ülalt
+humanitarabina	humanitaarabina
+muuesum	muuseum
+noorkollegid	noorkolleegid
+altes	alates
+mõtes	mõttes
+jaanurist	jaanuarist
+patriahri	patriarhi
+seejures	seejuures
+nobembril	novembril
+nobembris	novembris
+resrvuaaripark	reservuaaripark
+kaaasa	kaasa
+tugikekeskuses	tugikeskuses
+grimeering	grimmeering
+pretendendeerija	pretendeerija
+kakskümmned	kakskümmend
+idakonferentsi	idakonverentsi
+pornipiltide	pornopiltide
+ekranisrringuid	ekraniseeringuid
+sotsiaalkindustust	sotsiaalkindlustust
+setõttu	seetõttu
+maksam	maksma
+neuropataloogia	neuropatoloogia
+ekportisid	eksportisid
+kindustatud	kindlustatud
+tõoenäolisemalt	tõenäolisemalt
+võrguväljandes	võrguväljaandes
+samaegselt	samaaegselt
+tõustmisel	tõstmisel
+kordineerib	koordineerib
+elanikonnaga	elanikkonnaga
+tõvesid	tõbesid
+olümpivõitjaks	olümpiavõitjaks
+interrepetatsiooni	interpretatsiooni
+viivõrd	niivõrd
+ariklite	artiklite
+minigl	mingil
+järjekordsal	järjekordsel
+aastarvudel	aastaarvudel
+igalpool	igal pool
+toondangumaht	toodangumaht
+jõhramaks	jõhkramaks
+regulaareid	regulaarseid
+raahne	rahaahne
+sllest	sellest
+ringkondadedele	ringkondadele
+hinnagutel	hinnangutel
+altooniga	alatooniga
+määrdemistri	määrdemeistri
+prespektiivsem	perspektiivsem
+ehhki	ehkki
+novebrist	novembrist
+aasatl	aastal
+olenud	olnud
+potsendi	protsendi
+teekisn	teeksin
+pikamat	pikemat
+nubris	numbris
+populaasreks	populaarseks
+disskussiooni	diskussiooni
+õiglene	õiglane
+kollegidki	kolleegidki
+kuultusemaks	kuulutusemaks
+lateaiapidu	lasteaiapidu
+abimehees	abimees
+söendanud	söandanud
+skupltuur	skulptuur
+ksperimentaalne	eksperimentaalne
+liikmesorganistsioonidega	liikmesorganisatsioonidega
+vliskapitali	väliskapitali
+klienditelt	klientidelt
+puistee	puiestee
+järgeneva	järgneva
+äblikpeen	ämblikpeen
+pikkkamööda	pikkamööda
+kultuurikesuse	kultuurikeskuse
+jõhravõitu	jõhkravõitu
+veendnud	veendunud
+riigieelrve	riigieelarve
+tantismas	tantsimas
+pöhjust	põhjust
+madridlased	madriidlased
+esitatatud	esitatud
+suursaaadiku	suursaadiku
+kommmenteeritud	kommenteeritud
+võrtsustamisega	võrdsustamisega
+hispaanalsed	hispaanlased
+väljaspoolt	väljastpoolt
+poärast	pärast
+takitatud	tekitatud
+solvamavat	solvavamat
+teavasse	taevasse
+põrandada	põranda
+saand	saanud
+esgle	esgle
+ärvardab	ähvardab
+pidab	pidav
+hiljemosapoolte	hiljem osapoolte
+põlevikivi	põlevkivi
+kuivuda	kuivada
+summarne	summaarne
+arvale	arvele
+priroteetidega	prioriteetidega
+terassikohvik	terrassikohvik
+kriipus	kriipsu
+kollaskaspruuni	kollakaspruuni
+aktiisimäärad	aktsiisimäärad
+pühapäevati	pühapäeviti
+esindajvad	esindavad
+niing	ning
+tiigirhüppele	tiigrihüppele
+kritallilise	kristallilise
+õmbeljat	õmblejat
+organistasioon	organisatsioon
+pensionikindlutusseaduse	pensionikindlustusseaduse
+pregu	praegu
+aukratust	aukartust
+arvanusest	arvamusest
+eekõige	eelkõige
+loodusposterite	looduspostrite
+töötranud	töötanud
+treeningsaavutiseks	treeningsaavutuseks
+tolleagsed	tolleaegsed
+põhjustda	põhjustada
+iseseisvusmisprotsessiga	iseseisvumisprotsessiga
+novembil	novembril
+paksume	paksune
+võrdustumise	võrdsustumise
+ajakirjndus	ajakirjandus
+kirjutud	kirjutatud
+viimaset	viimast
+parteifunktsionäriga	parteifunktsionääriga
+vabatahlik	vabatahtlik
+matemaatilisat	matemaatilist
+raudvarvadest	raudvarbadest
+konsert	kontsert
+vailmiseelse	valimiseelse
+otsusti	otsustati
+populaaruse	populaarsuse
+kustimuuseumil	kunstimuuseumil
+pdada	pidada
+klaverikunstikud	klaverikunstnikud
+standariseeritus	standardiseeritus
+prontsenti	protsenti
+pöödumiseks	pöördumiseks
+strutuur	struktuur
+näidandi	näidendi
+turumajandusrefomide	turumajandusreformide
+kassada	kakssada
+kiiremimi	kiiremini
+hambaarvitooli	hambaravitooli
+suurbritaania	suurbritannia
+lühedalt	lühidalt
+mobilltelefoniga	mobiiltelefoniga
+sõmimise	sõlmimise
+finantsressursidest	finantsressurssidest
+prantusse	prantsuse
+kimonotessse	kimonotesse
+tsisteerivad	tsiteerivad
+registreerimistähataja	registreerimistähtaja
+vananeud	vananenud
+korraldatake	korraldatakse
+ebakorrektme	ebakorrektne
+ärrgu	ärgu
+kustustusarvetel	kustutusarvetel
+loomigust	loomingust
+omnikule	omanikule
+vanalinndunud	vanalindunud
+tähtusega	tähtsusega
+annnetavad	annetavad
+koverentsid	konverentsid
+tuelvikus	tulevikus
+rootlased	rootslased
+proleemide	probleemide
+vistitsi	vististi
+õiustest	õigustest
+algpõhipõtetes	algpõhimõtetes
+erastmisel	erastamisel
+kaabelelevisioonivõrgu	kaabeltelevisioonivõrgu
+laupäevati	laupäeviti
+ahvatevana	ahvatlevana
+viiuhti	viuhti
+kaitsesütimisel	kaitsesüstimisel
+päästeament	päästeamet
+majandusminsteeriumi	majandusministeeriumi
+lastekaitseorganisatsioonigsa	lastekaitseorganisatsiooniga
+vöi	või
+omaeette	omaette
+elekroonilised	elektroonilised
+territoriumil	territooriumil
+kiirtusseadmel	kiiritusseadmel
+effektse	efektse
+poeriilulile	poeriiulile
+võrrledes	võrreldes
+eksistensiaalseid	eksistentsiaalseid
+kokkeleppeid	kokkuleppeid
+estitas	esitas
+noorsopolitsei	noorsoopolitsei
+protsest	protest
+läbibiimiseks	läbiviimiseks
+saaniseks	saamiseks
+saaades	saades
+vvahele	vahele
+põlluvijade	põlluviljade
+nähtmatu	nähtamatu
+levinenum	levinum
+kommerstpankadele	kommertspankadele
+põllumajandusmisteeriumile	põllumajandusministeeriumile
+söela	sõela
+jõhrkuse	jõhkruse
+võimaldadab	võimaldab
+koralikud	korralikud
+paeadirektori	peadirektori
+kokkul	kokku
+töömeeoleolu	töömeeleolu
+rezhisöör	rezhissöör
+mootorrratturrottide	mootorratturrottide
+inimsed	inimesed
+muuutus	muutus
+käibemks	käibemaks
+kutsealusete	kutsealuste
+kavadatud	kavandatud
+valmistatatud	valmistatud
+seadusemuuudatuse	seadusemuudatuse
+päevavalguseses	päevavalguses
+hinannguga	hinanguga
+põjamaale	põhjamaale
+artklid	artiklid
+vaavarustust	veevarustust
+kategooroas	kategoorias
+üleshitus	ülesehitus
+vehkind	vehkinud
+resurss	ressurss
+etenudsega	etendusega
+küstitletuist	küsitletuist
+ülejäänd	ülejäänud
+kumbal	kummal
+suurenenenud	suurenenud
+kilogarmmi	kilogrammi
+entsiastide	entusiastide
+seketärina	sekretärina
+tarbjakaitse	tarbijakaitse
+olle	olla
+likviidusprobleemidest	likviidsusprobleemidest
+kuukümnendatest	kuuekümnendatest
+armatusest	armastusest
+üheagselt	üheaegselt
+läbimõetlematult	läbimõtlematult
+suusemägedes	suusamägedes
+aktsiseltsi	aktsiaseltsi
+niisamtui	niisamuti
+turimiskeskusena	turismikeskusena
+maailam	maailma
+käitusmiõpikut	käitumisõpikut
+vastivõtmise	vastuvõtmise
+protenti	protsenti
+majanduskriisit	majanduskriisist
+lõunasasadamast	lõunasadamast
+kehekordistamine	kahekordistamine
+omakstele	omakestele
+pensionaadis	pansionaadis
+vanlgakaristusest	vanglakaristusest
+mõistada	mõistatada
+sälitada	säilitada
+varasemete	varasemate
+turvameetmeted	turvameetmed
+jätge	jätke
+kindlustmaksete	kindlustusmaksete
+kudas	kuidas
+lihtsmalt	lihtsamalt
+kirjusi	kirjusid
+melooodiat	meloodiat
+võmalik	võimalik
+resümeeerib	resümeerib
+keskooli	keskkooli
+naiskollegilt	naiskolleegilt
+linnavaremet	linnavaraamet
+pressiesindja	pressiesindaja
+paarkümmned	paarkümmend
+tueltõrjujat	tuletõrjujat
+infoühikond	infoühiskond
+tudeeerimine	tudeerimine
+vastatata	vastata
+tarbijahinnahindeksi	tarbijahinnaindeksi
+protsenit	protsenti
+madridlasi	madriidlasi
+opositsitsionääride	opositsionääride
+määritluse	määratluse
+raivimitootjad	ravimitootjad
+lpuste	lõpuste
+pöönigud	pööningud
+hoiatusd	hoiatused
+jogurist	jogurtist
+pähliks	pähkliks
+kustudada	kustutada
+vuristaga	vuristage
+sattnud	sattunud
+konkjakit	konjakit
+põidlahoidjate	pöidlahoidjate
+võrdustatud	võrdsustatud
+otsutas	otsustas
+lauli	lauldi
+takitavad	takistavad
+kalenderi	kalendri
+küummekond	kümmekond
+vlaieldud	vaieldud
+koefitsiendite	koefitsientide
+ovalitsuste	omavalitsuste
+lämmastikväitise	lämmastikväetise
+koonevad	koosnevad
+uurimud	uurinud
+koverentsisaal	konverentsisaal
+nemda	nemad
+kõrgs	kõrges
+akoholiaktsiisi	alkoholiaktsiisi
+kirjadust	kirjandust
+intensiivemaid	intensiivsemaid
+avastatatakse	avastatakse
+tööstusettevõtes	tööstusettevõttes
+esikuuiukusse	esikuuikusse
+kommertsdirekori	kommertsdirektori
+tõenäoiselt	tõenäoliselt
+otsustda	otsustada
+enamajaolt	enamjaolt
+magistratuuris	magistrantuuris
+armasad	armsad
+aktsisaselts	aktsiaselts
+elanikkonmast	elanikkonnast
+müümimine	müümine
+tahakse	tehakse
+peaegu	peaaegu
+põmimõttelise	põhimõttelise
+reguleeerib	reguleerib
+jäävustamist	jäädvustamist
+eleketer	elekter
+määratletada	määratleda
+trurumajanduse	turumajanduse
+vestleda	vestelda
+ostueesõigse	ostueesõiguse
+vallandamiskmapaania	vallandamiskamapaania
+finatseerimiseks	finantseerimiseks
+peaagu	peaaegu
+juriididilist	juriidilist
+ekspertisii	ekspertiisi
+vähearenud	vähearenenud
+esmajäriekorras	esmajärjekorras
+karjäar	karjäär
+järgenenud	järgnenud
+naaberrriikide	naaberriikide
+nõuetedega	nõuetega
+stuudist	stuudiost
+okskaks	oskaks
+konurss	konkurss
+kokulepped	kokkulepped
+tegustseva	tegutseva
+penaltidega	penaltitega
+käsisin	käisin
+tekikotit	tekikotid
+koodamisel	koondamisel
+söendaks	söandaks
+ühki	ühtki
+eksistent	eksistents
+veeelgi	veelgi
+akoholijoobes	alkoholijoobes
+uule	uuele
+kaasmaalsed	kaasmaalased
+madalaprotsendilse	madalaprotsendilise
+aaata	aasta
+erastamiotsuse	erastamisotsuse
+kaunemaid	kauneimaid
+peaminitrer	peaminister
+papilloomaviirusel	papilloomviirusel
+pütakse	püütakse
+koordinatsiooonikomitee	koordinatsioonikomitee
+kohustuliku	kohustusliku
+algorütmide	algoritmide
+hakkma	hakkama
+liiklusõnnestust	liiklusõnnetust
+konsorstiumi	konsortsiumi
+koralikku	korralikku
+nõuaandeteenistus	nõuandeteenistus
+vanduspensionär	vanaduspensionär
+riigivisidi	riigivisiidi
+kolmesteprotsent	kolmeste protsent
+teisemlistest	teismelistest
+assümeetrilise	asümmeetrilise
+küjes	küljes
+pikamaajookjate	pikamaajooksjate
+paarkümne	paarikümne
+muisuskaitseameti	muinsuskaitseameti
+kvintessenssi	kvintessentsi
+populaarsmead	populaarsemad
+välisrahallikaile	välisrahaallikaile
+käsolevaks	käesolevaks
+aktsiseltsides	aktsiaseltsides
+pedagooglise	pedagoogilise
+asjaajatel	asjaajajatel
+teispäeval	teisipäeval
+aktiiside	aktsiiside
+sagedami	sagedamini
+katolikku	katoliku
+laerkujutisi	laserkujutisi
+kahtesada	kahtesadat
+hakkanud	hakanud
+remondiorganisatasiooniks	remondiorganisatsiooniks
+osakonnajuhatjate	osakonnajuhatajate
+tihedage	tihendage
+erafirmadale	erafirmadele
+kolmkümmned	kolmkümmend
+tagsilöök	tagasilöök
+tõesati	tõestati
+rpoua	proua
+leinant	leitnant
+aksepteeritud	aktsepteeritud
+treeener	treener
+ingird	ingrid
+leingu	lepingu
+süüdistutest	süüdistustest
+erititi	eriti
+juurs	juures
+teorteetikute	teoreetikute
+ühispressikoverentsil	ühispressikonverentsil
+tallinnlaste	tallinlaste
+taolemisele	taotlemisele
+koraldamisele	korraldamisele
+vaatamiaväärsusi	vaatamisväärsusi
+uuenud	uuenenud
+päkkapikkudest	päkapikkudest
+pärist	päris
+valdusühind	valdusühing
+hinnagul	hinnangul
+eestlsele	eestlasele
+aehg	aeg
+aritektuuribüroos	arhitektuuribüroos
+ivesteerimiseelistused	investeerimiseelistused
+võlausaldajte	võlausaldajate
+amdeid	andmeid
+kaiseliini	kaitseliini
+näidnud	näidanud
+panag	panga
+probeemi	probleemi
+kaubaartkli	kaubaartikli
+kirikivalitsuse	kirikuvalitsuse
+ultuses	ulatuses
+retooorikakeskusesse	retoorikakeskusesse
+jõuidnud	jõudnud
+eeestlase	eestlase
+kohtat	kohta
+opsitsioonis	opositsioonis
+sotsiaakindlustusameti	sotsiaalkindlustusameti
+aktiisi	aktsiisi
+kaitet	kaitset
+jõlulaupäeva	jõululaupäeva
+küige	kõige
+midaig	midagi
+tippmametnikud	tippametnikud
+justiitministeeriumi	justiitsministeeriumi
+keskoolis	keskkoolis
+naistvõrkpalluritest	naisvõrkpalluritest
+appelleerida	apelleerida
+üthlasem	ühtlasem
+suuraktionär	suuraktsionär
+käibemasu	käibemaksu
+liiderid	liidrid
+jõlurahu	jõulurahu
+mämgu	mängu
+aelgaselt	aeglaselt
+senitmeetrit	sentimeetrit
+kohutuasjad	kohtuasjad
+puhkpilliorkesteri	puhkpilliorkestri
+otsutavate	otsustavate
+ristmisel	ristimisel
+individuaaltunriiril	individuaalturniiril
+kultuuriehutise	kultuuriehitise
+asptiliselt	aseptiliselt
+füsikokeemik	füsiokeemik
+investoride	investorite
+jeltin	jeltsin
+laupäval	laupäeval
+tiirlenud	tiirelnud
+ligse	liigse
+terassil	terrassil
+teavat	teavet
+peaegi	peagi
+kavatsetekse	kavatsetakse
+teatrirahava	teatrirahva
+plaaneeritakse	planeeritakse
+numeereeritud	numereeritud
+aravasid	arvasid
+kodakonduseta	kodakondsuseta
+maalikunsniku	maalikunstniku
+tarkavrapiraatide	tarkvarapiraatide
+peasekrtär	peasekretär
+puhakasum	puhaskasum
+aitata	aidata
+üldkooslek	üldkoosolek
+presidndivalimiste	presidendivalimiste
+irivtab	irvitab
+suunades	suundades
+arstikus	arstlikus
+eskami	eksami
+maftavanadel	naftavanadel
+asetätjana	asetäitjana
+tegegelikkusega	tegelikkusega
+minens	minnes
+vahejutum	vahejuhtum
+mõtetut	mõttetut
+mahas	maha
+sekretari	sekretäri
+venetsuelalaste	venetsueelalaste
+inserenitööst	inseneritööst
+odamav	odavam
+viibiavad	viibivad
+kümmnendik	kümnendik
+tendets	tendents
+maratanoniraja	maratoniraja
+isalndlane	islandlane
+eesostas	eesotsas
+võrreles	võrreldes
+demonsteerib	demonstreerib
+ministreerium	ministeerium
+üümaja	öömaja
+turnismisredelitest	turnimisredelitest
+ekport	eksport
+pääsmiseks	pääsemiseks
+positisooone	positsioone
+kunigliku	kuningliku
+nädalt	nädalat
+vortikesi	vorstikesi
+näidatatavatele	näidatavatele
+vaatamaiseks	vaatamiseks
+ükiskalade	üksikalade
+lemmikpildiraaamat	lemmikpildiraamat
+täisksvanud	täiskasvanud
+pakkkumised	pakkumised
+kindlasri	kindlasti
+maantejooksu	maanteejooksu
+mõistuv	mõistus
+loominugulised	loomingulised
+esimesesest	esimesest
+ideealilähedaselt	ideaalilähedaselt
+ministeerumi	ministeeriumi
+liitusmistasud	liitumistasud
+abilu	abielu
+piirivalurid	piirivalvurid
+kaasaegsestest	kaasaegsetest
+poleksi	polekski
+kunigaperega	kuningaperega
+teisipõeval	teisipäeval
+separatisliku	separatistliku
+pesudonüümi	pseudonüümi
+valdvalt	valdavalt
+heaksiitmist	heakskiitmist
+olümpimängudel	olümpiamängudel
+fanstastiline	fantastiline
+möödund	möödunud
+aplesine	apelsine
+produteeris	produtseeris
+maksuahaldur	maksuhaldur
+konsentreeritud	kontsentreeritud
+kaunviljadede	kaunviljade
+laienemiskvad	laienemiskavad
+lümfisõlmedese	lümfisõlmedesse
+lapsevakrit	lapsevankrit
+büroomööblikomlekti	büroomööblikomplekti
+milla	mille
+mehhanik	mehhaanik
+neitsliku	neitsiliku
+otustati	otsustati
+minigil	mingil
+omeaette	omaette
+demokraatiase	demokraatiasse
+sooviad	soovijad
+kaktestasid	katkestasid
+mõlemase	mõlemasse
+vastavalitud	vastvalitud
+läheksud	läheksid
+faktuuuritüüpide	faktuuritüüpide
+aksiaseltsi	aktsiaseltsi
+võtleva	võitleva
+enamsti	enamasti
+küllat	küllalt
+kaubandusparneriks	kaubanduspartneriks
+lugada	lugeda
+maksuvõlgane	maksuvõlglane
+impulssiivse	impulsiivse
+mäistagi	mõistagi
+hoolisev	hoolitsev
+kohtustuseks	kohustuseks
+selgiatatakse	selgitatakse
+tavapärsemaks	tavapärasemaks
+puukborelioosi	puukborrelioosi
+motvatsiooni	motivatsiooni
+tösiseltvõetavuse	tõsiseltvõetavuse
+üleslugematude	üleslugematute
+finatsorganisatsioonides	finantsorganisatsioonides
+kiirrrünnakut	kiirrünnakut
+teaduspotsentsiaali	teaduspotentsiaali
+vaevlab	vaevleb
+prepaaraatidega	preparaatidega
+esmissiooni	emissiooni
+koolitusspetsualisti	koolitusspetsialisti
+natsionaliseertud	natsionaliseeritud
+mälestuesemed	mälestusesemed
+piimashokolad	piimashokolaad
+vaaatad	vaatad
+nimetetud	nimetatud
+tutvustatkse	tutvustatakse
+isenda	iseenda
+lihakombinadi	lihakombinaadi
+keskmiset	keskmisest
+taastamaine	taastamine
+peaaritekt	peaarhitekt
+isikuplakatide	isikuplakatite
+kavliteeti	kvaliteeti
+järgeva	järgneva
+märks	märksa
+kunstiliikidessse	kunstiliikidesse
+hargenevaid	hargnevaid
+päklid	pähklid
+olümpiparki	olümpiaparki
+iseseisevaks	iseseisvaks
+põhjenas	põhjendas
+jälgmiseks	jälgimiseks
+valimisringonna	valimisringkonna
+koodamist	koondamist
+likvideerma	likvideerima
+bilasimaht	bilansimaht
+termostaaat	termostaat
+elanikkonnat	elanikkonnat
+jatkab	jätkab
+tublisi	tublisti
+sisutamiseks	sisustamiseks
+kavliteedipäeva	kvaliteedipäeva
+peamiseteks	peamisteks
+konserdisaali	kontserdisaali
+huraaga	hurraaga
+stabliliseerunud	stabiliseerunud
+märgatest	märgates
+prekonnaliikmetesse	perekonnaliikmetesse
+hästis	hästi
+inimestaga	inimestega
+aasta	astaa
+plaaanilise	plaanilise
+septsialistide	spetsialistide
+medikamet	medikament
+taotlemisks	taotlemiseks
+kümmnes	kümnes
+eesi	eesti
+õmbelmine	õmblemine
+kuurortit	kuurorti
+kõnne	kõne
+komunistliku	kommunistliku
+keskeerakondlastele	keskerakondlastele
+vahetatakase	vahetatakse
+moodustvad	moodustavad
+investeermisotsuseid	investeerimisotsuseid
+lükatas	lükates
+kultuuuri	kultuuri
+miljonii	miljoni
+seepiooperi	seebiooperi
+alakoholipakendi	alkoholipakendi
+väehendamiseks	vähendamiseks
+ballettikleit	balletikleit
+traditsiioone	traditsioone
+energeetikaasektorile	energeetikasektorile
+sohvoosides	sovhoosides
+kaubavbeo	kaubaveo
+kiiits	kiitis
+asendamaine	asendamine
+infrastruuri	infrastruktuuri
+seetõtytu	seetõttu
+müügihi nna	müügihinna
+riigeelarvest	riigieelarvest
+mosaiiike	mosaiike
+kümmenkond	kümmekond
+sidmetele	sidemetele
+liiklusinspetsioon	liiklusinspektsioon
+konktreetselt	konkreetselt
+järeltulja	järeltulija
+piõisav	piisav
+terrasil	terrassil
+edasspidi	edaspidi
+kuluurimiljööd	kultuurimiljööd
+medistiiniteenistuse	meditsiiniteenistuse
+kookõlastada	kooskõlastada
+passlik	paslik
+seksoloog	seksuoloog
+tagasil	tagasi
+uksuma	uskuma
+poliilisele	poliitilisele
+meeskonnna	meeskonna
+noopõlve	noorpõlve
+demokraatik	demokraatlik
+apesinijook	apelsinijook
+polfinaalis	poolfinaalis
+jägis	jälgis
+olümiakoondislane	olümpiakoondislane
+vastasugupoolte	vastassugupoolte
+maksutada	maksustada
+maanöövreid	manöövreid
+selleised	sellised
+nõukgu	nõukogu
+rahastavariante	rahastamisvariante
+seinet	seinte
+staaadiumis	staadiumis
+liimetele	liikmetele
+akstiainvesteeringuteks	aktsiainvesteeringuteks
+rasekmaks	raskemaks
+närdinud	nördinud
+maitsetatud	maitsestatud
+jäämurjat	jäämurdjat
+vabandaga	vabandage
+alammmäär	alammäär
+rahusvaheliste	rahvusvaheliste
+araenenud	arenenud
+vähendes	vähenedes
+pangandukriisid	panganduskriisid
+seelähi	seeläbi
+viskipudelt	viskipudelit
+kustustusveest	kustutusveest
+vandiraiujajate	vandiraiujate
+lühiaajaliselt	lühiajaliselt
+septebris	septembris
+eridatada	eristada
+kitast	kitsast
+tektiilinäitusega	tekstiilinäitusega
+ettvaatlikuks	ettevaatlikuks
+aaasta	aasta
+eraiaikutele	eraisikutele
+lihvõttejänes	lihavõttejänes
+esmaspäeal	esmaspäeval
+turismimimessi	turismimessi
+südmuste	sündmuste
+üka	üks
+spordinternaatkooliga	spordiinternaatkooliga
+isesseisvas	iseseisvas
+villanud	villand
+riigimetsakondade	riigimetskondade
+väljapnekud	väljapanekud
+valimiskampaaniga	valimiskampaaniaga
+mängub	mängib
+hakksin	hakkasin
+kasuteger	kasutegur
+väljatöödatud	väljatöötatud
+tuberkoloosi	tuberkuloosi
+mõteleda	mõtelda
+töötsajate	töötajate
+ehtameeriklalikult	ehtameerikalikult
+ettavaatusega	ettevaatusega
+realpalk	reaalpalk
+möödnud	möödunud
+tõpselt	täpselt
+unkistuste	unistuste
+lahkulööömise	lahkulöömise
+õiguskomsjoni	õiguskomisjoni
+selilis	selili
+missugusse	missuguse
+taasisesisvumisel	taasiseseisvumisel
+otsutama	otsustama
+kondriitritootjad	kondiitritootjad
+abikaaasa	abikaasa
+ühikonnas	ühiskonnas
+majanduministeeriumi	majandusministeeriumi
+eradi	eraldi
+teisipäevel	teisipäeval
+konstrueerind	konstrueerinud
+suurbritaanias	suurbritannias
+patsinte	patsiente
+kühtus	kohtus
+eraspraksisega	erapraksisega
+lühijaliselt	lühiajaliselt
+jägima	jälgima
+aastlaste	eestlaste
+krimiaalpolitsei	kriminaalpolitsei
+kindustusfirma	kindlustusfirma
+korrega	korraga
+reaktiivsüstesaatoransambel	reaktiivsüntesaatoransambel
+kaaastöölistele	kaastöölistele
+tutuvusring	tutvusring
+tähelpanu	tähelepanu
+armatauurlaua	armatuurlaua
+jõuada	jõuda
+tuumaenergeerikat	tuumaenergeetikat
+eeskät	eeskätt
+mediitsiinis	meditsiinis
+kehtestmise	kehtestamise
+tähtusetu	tähtsusetu
+majandupoliitiliste	majanduspoliitiliste
+omaegse	omaaegse
+riputataud	riputatud
+kunstlise	kunstilise
+saaate	saate
+kontektis	kontekstis
+soodupakkumised	sooduspakkumised
+puahastusvahendite	puhastusvahendite
+maailmaorgranisatsiooni	maailmaorganisatsiooni
+teenindusfääris	teenindussfääris
+täelikult	täielikult
+meterjalide	materjalide
+sõimatati	sõimati
+isksus	isiksus
+meeldejävad	meeldejäävad
+protent	protsent
+anuüksi	ainuüksi
+tulemusted	tulemused
+sünarõhud	sõnarõhud
+lingvistlisi	lingvistilisi
+põhjustavatae	põhjustavate
+võistkondikuks	võistkondlikuks
+inervjueerijal	intervjueerijal
+rakendadakse	rakendatakse
+tasmel	tasemel
+kritika	kriitika
+psühhodeelilisi	psühhedeelilisi
+imuunsüsteemi	immuunsüsteemi
+absuluutseks	absoluutseks
+prühimägede	prügimägede
+kutustute	kutsutute
+abilinnapa	abilinnapea
+kua	kuna
+valuuutad	valuutad
+numritega	numbritega
+lere	pere
+terrorimisilmingute	terrorimisiilmingute
+laevakompani	laevakompanii
+hämmastavapaneva	hämmastamapaneva
+taasiseisvumist	taasiseseisvumist
+jäätükide	jäätükkide
+elementaaarne	elementaarne
+maitsetugavdajad	maitsetugevdajad
+peaminstri	peaministri
+tagude	taguda
+psühhiliselt	psüühiliselt
+konsitutsioonikogu	konstitutsioonikogu
+maismaaast	maismaast
+isikupärst	isikupärast
+kompani	kompanii
+kümmnendal	kümnendal
+iseseivatele	iseseisvatele
+erilisti	erilist
+korduvalimised	kordusvalimised
+jutkui	justkui
+päelehtede	päevalehtede
+probeemidega	probleemidega
+kaksümmend	kakskümmend
+üleile	üleeile
+osatähtus	osatähtsus
+järjakorras	järjekorras
+konkurs	konkurss
+kvartet	kvartett
+õoppeaastast	õppeaastast
+tahtunud	tahtnud
+soometumise	soomestumise
+suurejoneliseks	suurejooneliseks
+otsustakase	otsustatakse
+födraalfondimäära	föderaalfondimäära
+ripuvatel	rippuvatel
+mõutamine	mõjutamine
+reisiseltsikond	reisiseltskond
+kahtlustatavd	kahtlustatavad
+jagunub	jaguneb
+ütlsid	ütlesid
+taasühinenemine	taasühinemine
+veenise	veenmise
+medistiinitöötajatele	meditsiinitöötajatele
+kvaliteetidokumentideta	kvaliteedidokumentideta
+täisti	täiesti
+üldeettevalmistuslaagrit	üldettevalmistuslaagrit
+telekoomunikatsioonikontsernile	telekommunikatsioonikontsernile
+nis	mis
+potensiaalset	potentsiaalset
+mobiiltelfoniga	mobiiltelefoniga
+kaasnab	kaasneb
+kindlutusseltsid	kindlustusseltsid
+söenda	söanda
+tunistab	tunnistab
+ülesannest	ülesannetest
+sõitud	sõidud
+elektriliseteks	elektrilisteks
+viduvaid	vinduvaid
+eelarvepobleemid	eelarveprobleemid
+teoreeritiliselt	teoreetiliselt
+tuhadeni	tuhandeni
+olumpiamängud	olümpiamängud
+juhenduda	juhinduda
+metaliteeti	mentaliteeti
+parandmist	parandamist
+elamikud	elanikud
+qtallinna	tallinna
+ettevõluse	ettevõtluse
+lastepaarigaa	lastepaariga
+kohaslt	kohaselt
+riigsekretäri	riigisekretäri
+jalapaaari	jalapaari
+teariprojekt	teatriprojekt
+kokkuklepe	kokkulepe
+nõuaandeid	nõuandeid
+nahaalid	nahhaalid
+preaminister	peaminister
+litsenti	litsentsi
+sügeluset	sügelust
+saaamiseks	saamiseks
+ligimisi	ligimesi
+söendas	söandas
+viipäevane	viiepäevane
+sedusega	seadusega
+erugutamiseks	ergutamiseks
+järgminel	järgmine
+haiglaaarsti	haiglaarsti
+olümpakullani	olümpiakullani
+olümpiküla	olümpiaküla
+süüdistakse	süüdistatakse
+tihtu	tihti
+kordinaatori	koordinaatori
+jäegmisel	järgmisel
+tshetsheenimast	tshetsheeniast
+manualteraapia	manuaalteraapia
+populaarustabelis	populaarsustabelis
+ümbekolimisel	ümberkolimisel
+nüüda	nüüd
+lavatudendgite	lavatudengite
+heeringufileed	heeringafileed
+transendentsust	transtsendentsust
+poolteistaastase	pooleteistaastase
+kompvekites	kompvekides
+starteegilisele	strateegilisele
+tubadese	tubadesse
+hobit	hobi
+omanikuid	omanikud
+tükka	tükke
+merakollektsioonist	merekollektsioonist
+reisnud	reisinud
+koduskeskjaamad	kodukeskjaamad
+jhäänud	jäänud
+kalverikontserdi	klaverikontserdi
+tõlida	tõlkida
+relvajõudel	relvajõududel
+immunsust	immuunsust
+energihindadest	energiahindadest
+pikajaliste	pikaajaliste
+kontsertitel	kontserditel
+sanitaaraamatu	sanitaarraamatu
+ojektiivne	objektiivne
+tulemusetega	tulemustega
+viimapudeli	viinapudeli
+tegelma	tegelema
+võtlejana	võitlejana
+hullumeelseste	hullumeelsete
+üksinus	üksainus
+näitks	näiteks
+otsat	otsast
+autojuhide	autojuhtide
+õstmise	tõstmise
+mõtekas	mõttekas
+krediifiinfo	krediidiinfo
+eskinud	eksinud
+haigussüptomite	haigussümptomite
+tunnisama	tunnistama
+lähenek s	läheneks
+prunidesse	pruunidesse
+mõõdukid	mõõdikud
+laboratoorimides	laboratooriumides
+vaevunund	vaevunud
+auauhne	auahne
+valitusus	valitsus
+milleksi	millekski
+hindamiskonisjoni	hindamiskomisjoni
+plaktilt	plakatilt
+piltikult	piltlikult
+funksioneeri	funktsioneeri
+kontrolllida	kontrollida
+üheagseks	üheaegseks
+selisest	sellisest
+mareformiseaduse	maareformiseaduse
+olukrd	olukord
+sotsalismi	sotsialismi
+keelududa	keelduda
+tagastamis	tagastamist
+emmissiooni	emissiooni
+latinot	latiinot
+aegntuuril	agentuuril
+aforsimi	aforismi
+välisinvesteeeringute	välisinvesteeringute
+toetakajaskonnale	toetajaskonnale
+kujneb	kujuneb
+värksematest	värskematest
+põgenukule	põgenikule
+tagastatavataes	tagastatavates
+hakangi	hakkangi
+osatjate	ostjate
+vadla	valda
+hinnnagul	hinnangul
+politse	politsei
+jtkuma	jätkuma
+ideoogilise	ideoloogilise
+repoterid	reporterid
+kõnunääret	kõhunääret
+nurgataustest	nurgatagustest
+kuntihuviliste	kunstihuviliste
+suurtykid	suurtükid
+peatoimeteja	peatoimetaja
+niisugusse	niisugusesse
+maksunud	maksnud
+relaamimaksu	reklaamimaksu
+soojusõlme	soojussõlme
+konjakupudeleid	konjakipudeleid
+peakonstrukorina	peakonstruktorina
+asutvad	astuvad
+emsitri	meistri
+mitteamtlikult	mitteametlikult
+rotsendil	protsendil
+tagsipöördumine	tagasipöördumine
+taarbijale	tarbijale
+kpolmel	kolmel
+malaria	malaaria
+hukunud	hukkunud
+andestanatu	andestamatu
+tutvude	tutvuda
+psügiveolepigut	prügiveolepigut
+õptajate	õpetajate
+ulkmekirjanikud	ulmekirjanikud
+keskkonastrateegia	keskkonnastrateegia
+puidkiudplaat	puitkiudplaat
+alandmisele	alandamisele
+lepiguid	lepinguid
+järekontroll	järelkontroll
+ränkatest	ränkadest
+alatarit	altarit
+deklratsiooni	deklaratsiooni
+väljamüüghind	väljamüügihind
+ebausal	ebaausal
+infraktiga	infarktiga
+puhastustöst	puhastustööst
+pööruda	pöörduda
+kaarati	kaarti
+demokraatilkust	demokraatlikust
+võimuesindate	võimuesindajate
+kultuuriministreeriumile	kultuuriministeeriumile
+kaabeltelevisoooni	kaabeltelevisooni
+ebastabiiline	ebastabiilne
+ühesugusese	ühesuguse
+semimari	seminari
+keskkonaministeeriumi	keskkonnaministeeriumi
+arveldmise	arveldamise
+otkoobris	oktoobris
+kaheastase	kaheaastase
+aastsal	aastal
+liikumisõpetajanana	liikumisõpetajana
+protokollioskonnast	protokolliosakonnast
+kavalifitseeritud	kvalifitseeritud
+vaream	varem
+ajakas	ajaks
+midagu	midagi
+midaga	midagi
+parkimisautomaarti	parkimisautomaati
+liikuluspolitsei	liikluspolitsei
+joosul	jooksul
+veidid	veidi
+järgise	järgmise
+sälitanud	säilitanud
+tankritel	tankeritel
+asjaasjamise	asjaajamise
+piudamata	pidamata
+asfaltee	asfalttee
+pikune	pikkune
+seadlusandlus	seadusandlus
+ristsubisdeerimise	ristsubsideerimise
+kontolli	kontrolli
+euroopliku	euroopaliku
+täenäoliselt	tõenäoliselt
+koossseisuga	koosseisuga
+lavastja	lavastaja
+laevadusfirma	laevandusfirma
+alhoholiga	alkoholiga
+koolideavahelise	koolidevahelise
+sõidjad	sõudjad
+söögpause	söögipause
+näitelejana	näitlejana
+urgimugrilise	ugrimugrilise
+pandakse	pannakse
+marketinguga	marketingiga
+emissionidest	emissioonidest
+gunnnar	gunnar
+pakubi	pakubki
+liberaarsus	liberaalsus
+väismaiste	välismaiste
+raamataut	raamatut
+ähvarab	ähvardab
+tähendadavad	tähendavad
+v idelda	võidelda
+enma	enam
+juveeelitoodete	juveelitoodete
+haduskohus	halduskohus
+pühandatud	pühendatud
+avldumist	avaldumist
+kätuma	käituma
+tüduk	tüdruk
+üldharaiduskoolidel	üldhariduskoolidel
+hinnatatkse	hinnatakse
+esinama	esindama
+sürralistlik	sürrealistlik
+hulgalisti	hulganisti
+okupatsiooivõimud	okupatsioonivõimud
+jätkuama	jätkuma
+infopunkis	infopunktis
+allaes	alles
+pisult	pisut
+möödundud	möödunud
+septmbris	septembris
+rasestusmisvastastest	rasestumisvastastest
+kutuuriküljel	kutuuriküljel
+inveteeriti	investeeriti
+seksoloogiaalased	seksuoloogiaalased
+nängulisustki	mängulisustki
+entusiamil	entusiasmil
+siseanumga	siseanumaga
+viisteistkünmele	viisteistkümnele
+kunstimuusemile	kunstimuuseumile
+põhustada	põhjustada
+tuleohutsussüteemi	tuleohutussüsteemi
+korapealt	korrapealt
+õetajate	õpetajate
+eksplutatsioonis	ekspluatatsioonis
+vaimunergia	vaimuenergia
+likvideermisega	likvideerimisega
+silamde	silmade
+eelenevalt	eelnevalt
+kadvat	kandvat
+värsekelt	värskelt
+sedusandlusega	seadusandlusega
+artikkle	artikkel
+infoohvister	infoohvitser
+sasjatundjate	asjatundjate
+pikkalt	pikalt
+lõpukss	lõpuks
+dokomentide	dokumentide
+ostam	ostma
+maainimestetelt	maainimestelt
+edasikinldustuse	edasikindlustuse
+positsioonle	positsioonile
+väiksete	väikeste
+tehaks	tehakse
+pöidlahoitjatele	pöidlahoidjatele
+valgutusposti	valgustusposti
+allapooole	allapoole
+ühendriiide	ühendriikide
+muste	musti
+ümbertöötlemsie	ümbertöötlemise
+sälitama	säilitama
+anestesiloogianõuniku	anestesioloogianõuniku
+spetsialiti	spetsialisti
+iseloomustavd	iseloomustavad
+kaiffi	kaifi
+abusrditeater	absurditeater
+keskoolipäevil	keskkoolipäevil
+tshintshiliad	tshintshiljad
+finatsküljest	finantsküljest
+sisenb	siseneb
+smal	samal
+auauhnusest	auahnusest
+vaksineeritakse	vaktsineeritakse
+esimesese	esimese
+mugavalat	mugavalt
+ümbruskaudest	ümbruskaudsest
+akoholitööstuse	alkoholitööstuse
+psühaatriakliinikus	psühhiaatriakliinikus
+globaaseimat	globaalseimat
+kestud	kestnud
+pantsuse	prantsuse
+säilitäme	säilitame
+jõustnud	jõustunud
+nõustusnud	nõustunud
+sisldab	sisaldab
+töhtajaga	tähtajaga
+otsustnud	otsustanud
+taastakse	taastatakse
+resotorani	restorani
+tearikriitikud	teatrikriitikud
+fiantseerimise	finantseerimise
+skpetiliste	skeptiliste
+väjemalt	vähemalt
+stipendumi	stipendiumi
+kaubade	kaupade
+oragniseerib	organiseerib
+sotsoloogiat	sotsioloogiat
+tehikaid	tehnikaid
+maanteeaamet	maanteeamet
+asjatundamtu	asjatundmatu
+ettvõtte	ettevõtte
+järjrest	järjest
+petrooniks	patrooniks
+tasuliset	tasulist
+eraldatavt	eraldatavat
+siseajadesse	siseasjadesse
+tsivliseeritud	tsiviliseeritud
+viieteiskümne	viieteistkümne
+inimete	inimeste
+ebseaduslikult	ebaseaduslikult
+piiruda	piirduda
+sünnitsumaja	sünnitusmaja
+allakirjastama	allkirjastama
+ruhmituse	rühmituse
+sideministeerim	sideministeerium
+isenesestmõistetavalt	iseenesestmõistetavalt
+selgumud	selgunud
+komunikatsioonisüsteemi	kommunikatsioonisüsteemi
+teglenud	tegelenud
+pumabatud	pumbatud
+jaoskonnaaarstid	jaoskonnaarstid
+läheal	lähedal
+ümbereehitamise	ümberehitamise
+iskiliku	isikliku
+külmekümnest	kolmekümnest
+rinapiima	rinnapiima
+füüslistest	füüsilistest
+võttnud	võtnud
+enegiline	energiline
+sisutatud	sisustatud
+aktiivus	aktiivsus
+ligikaugu	ligikaudu
+oraganiseerijate	organiseerijate
+sanal	samal
+haridusoskonna	haridusosakonna
+omavalistuste	omavalitsuste
+konseravtiivid	konseravatiivid
+ettevaamatu	ettevaatamatu
+elanikkonankihtidesse	elanikkonnakihtidesse
+managememt	management
+raamtu	raamatu
+potensiaali	potentsiaali
+tegusenud	tegutsenud
+soovisn	soovisin
+organistasioonil	organisatsioonil
+vastasssugupoole	vastassugupoole
+maffiooso	mafiooso
+kunstmik	kunstnik
+informatsioonipaltvormi	informatsiooniplatvormi
+kolmikhüpes	kolmikhüppes
+perspekiivikust	perspektiivikust
+liimete	liikmete
+tundmatau	tundmatu
+suurejooneliest	suurejoonelisest
+kirjaduse	kirjanduse
+maaealu	maaelu
+toitumistavasi	toitumistavasid
+loomaksvatussaadusi	loomakasvatussaadusi
+nädadal	nädalal
+pöhjused	põhjused
+virkalt	virgalt
+kassettile	kassetile
+küljesseda	küljes seda
+pankrotitmenetluse	pankrotimenetluse
+maksvavad	maksavad
+kavateseb	kavatseb
+arvatavati	arvatavasti
+reegeleid	reegleid
+võiamlust	võimalust
+enensepuhastust	enesepuhastust
+nöoli	näoli
+territoorumil	territooriumil
+ütlasi	ühtlasi
+sõitisime	sõitsime
+olüpiaatleetide	olümpiaatleetide
+immunsüsteem	immuunsüsteem
+montessoripedagagoog	montessoripedagoog
+pommiplahavatustes	pommiplahvatustes
+takojuhtide	taksojuhtide
+omadireformi	omandireformi
+pojekti	projekti
+majaduslike	majanduslike
+parteifunktsionärideks	parteifunktsionäärideks
+keskeagne	keskaegne
+arside	arstide
+aktsiseltsid	aktsiaseltsid
+erastamisjägse	erastamisjärgse
+armamuma	armuma
+maeratab	naeratab
+moodas	moodsas
+turustatkse	turustatakse
+sõbul	sõnul
+intergeerumisel	integreerumisel
+evengeelse	evangeelse
+läsid	läksid
+auauhnuse	auahnuse
+ähvardamalt	ähvardavamalt
+tgevuse	tegevuse
+paraolümüpialased	paraolümpialased
+läb i	läbi
+lihsalt	lihtsalt
+dokumentid	dokumendid
+ekporditõestust	eksporditõestust
+posteri	postri
+konfliktipoolete	konfliktipoolte
+multikultuuursemaks	multikultuursemaks
+olulisemaka	olulisemaks
+käibemakksu	käibemaksu
+maistvamaid	maitsvamaid
+posthuumselt	postuumselt
+politseiprefetuuri	politseiprefektuuri
+sotsiaalministeeeriumi	sotsiaalministeeriumi
+streiliseerida	steriliseerida
+agressivset	agressiivset
+otsimehhanismidega	otsimehanismidega
+ünberstruktureerimisest	ümberstruktureerimisest
+sterotüübile	stereotüübile
+tundengi	tudengi
+pääsnud	pääsenud
+tuhmund	tuhmunud
+kongrssi	kongressi
+jäjestikust	järjestikust
+narkootikumite	narkootikumide
+skluptuuridele	skulptuuridele
+väheprespektiivseks	väheperspektiivseks
+töössse	töösse
+orkesteri	orkestri
+ajalooliliselt	ajalooliselt
+metri	meetri
+etevõtted	ettevõtted
+meespeosa	meespeaosa
+etevõttel	ettevõttel
+vaatlushinnagul	vaatlushinnangul
+distsiplineritud	distsiplineeritud
+täesti	täiesti
+pekendilt	pakendilt
+eemele	eemale
+piraatviedokassetti	piraatvideokassetti
+juhtsid	juhtisid
+aistmismeeltele	haistmismeeltele
+mõnded	mõned
+lapsivaliidi	lapsinvaliidi
+purjeregetilt	purjeregatilt
+neljakümnendetel	neljakümnendatel
+tõpoolest	tõepoolest
+taskustesse	taskutesse
+omanadada	omandada
+elektromagneetilist	elektromagnetilist
+seduse	seaduse
+sis	siis
+kreeholm	kreenholm
+revideeerivad	revideerivad
+lmäärusega	määrusega
+oselda	osaleda
+saaadi	saadi
+märgnud	märganud
+terrirooriumile	territooriumile
+muusikaalsust	musikaalsust
+lahedada	lahendada
+pikselite	pikslite
+lauluansambelis	lauluansamblis
+ulatuseg	ulatusega
+ikebanakuruses	ikebanakursuses
+entsüklopeediformaadis	entsüklopeediaformaadis
+aasatel	aastatel
+vapustaivam	vapustavaim
+agressivselt	agressiivselt
+ingitud	tingitud
+kostariikalanna	kostariiklanna
+karjaääride	karjääride
+sugulsega	sugulasega
+liikluseekirjad	liikluseeskirjad
+esmaspäevl	esmaspäeval
+ettekandajate	ettekandjate
+hääletustusel	hääletustel
+asjosaliste	asjaosaliste
+koalitsooni	koalitsiooni
+esialgsesks	esialgseks
+vaadakam	vaadakem
+valdacvad	valdavad
+meeliv	meeldiv
+annavd	annavad
+kultuurikesuses	kultuurikeskuses
+algatnud	algatanud
+proessorf	professor
+hanbus	hambus
+häsit	hästi
+dokumendite	dokumentide
+omandirefomi	omandireformi
+neljaastase	nelja-aastase
+konfikseeriti	konfiskeeriti
+kõi ge	kõige
+luudadaga	luudadega
+lähab	läheb
+konkteksti	konteksti
+stilis	stiilis
+branditoodete	bränditoodete
+väigikaigast	vägikaigast
+maadunud	maandunud
+vöiksid	võiksid
+valuläviga	valulävega
+vähes	vähenes
+konsevatiive	konservatiive
+ivesteerimise	investeerimise
+parikimispiletid	parkimispiletid
+sagadane	sagedane
+aaastaga	aastaga
+jõuatakse	jõutakse
+kaastundeavlduse	kaastundeavalduse
+rakedada	rakendada
+talumepermees	taluperemees
+lennnundusega	lennundusega
+autootootjas	autotootjas
+suveilmedega	suveilmadega
+latinod	latiinod
+seistmendale	seitsmendale
+jõuluõhtsse	jõuluõhtusse
+müüg il	müügil
+hiljaagu	hiljaaegu
+teisit	teisiti
+arsemali	arsenali
+taastamisprjekt	taastamisprojekt
+summarset	summaarset
+püüatakse	püütakse
+toodeted	tooted
+kirgaäri	kingaäri
+viibimud	viibinud
+vasaktsentrisliku	vasaktsentristliku
+pesident	president
+jooksuvat	jooksvat
+nõuandl a nõuandla	1
+promooterite	promootorite
+otsutatakse	otsustatakse
+tagantjäreletasu	tagantjärele tasu
+järgmisväärsed	järgimisväärsed
+propbleemide	probleemide
+ebaseaduliku	ebaseadusliku
+eeest	eest
+aastakokkuvõtes	aastakokkuvõttes
+ütels	ütles
+tallinlana	tallinlanna
+piirkondadaga	piirkondadega
+lähtudest	lähtudes
+lastekiiniku	lastekliiniku
+hamabahari	hambahari
+vöiksema	väiksema
+abieluvararegisri	abieluvararegistri
+teniseturniiri	tenniseturniiri
+täiskasvnute	täiskasvanute
+groteskesd	grotesksed
+majanduspoliitilika	majanduspoliitika
+paaariliste	paariliste
+üheteistekümne	üheteistkümne
+dumpighindu	dumpinghindu
+seitsmeteiskümnest	seitsmeteistkümnest
+meelede	meelde
+valuvaigististest	valuvaigistitest
+rahuprotsesi	rahuprotsessi
+laenuporfell	laenuportfell
+kukrku	kurku
+otsesid	otseseid
+sõitab	sõidab
+nedi	neid
+tegamist	tegemist
+enuustuse	ennustuse
+kiente	kliente
+kasitöölislik	käsitöölislik
+pnna	panna
+pankratioon	pankratsioon
+töötleda	töödelda
+invesorite	investorite
+elgitada	selgitada
+restruktrueerimisele	restruktureerimisele
+tõmbtuulte	tõmbetuulte
+protseniline	protsendiline
+juuulil	juulil
+tomimuval	toimuval
+võtiluseks	võitluseks
+mite	mitte
+suhur	suhkur
+metsamameti	metsaameti
+süstem	süsteem
+transferbussiga	transfeerbussiga
+kogenunud	kogunenud
+ajakirjandusväljannete	ajakirjandusväljaannete
+videokassettid	videokassetid
+läänealdal	läänekaldal
+konveretsil	konverentsil
+narkootikumideavastases	narkootikumidevastases
+epeemestel	epeemeestel
+kategooriliset	kategooriliselt
+arvelduskeskonnas	arvelduskeskkonnas
+saunapeaol	saunapeol
+infrakstruktuursete	infrastruktuursete
+türkiarv	trükiarv
+luureparaljon	luurepataljon
+omna	oma
+naispeosa	naispeaosa
+intressa	intresse
+retsepuuri	retseptuuri
+teenindusetteavõtte	teenindusettevõtte
+telakanalile	telekanalile
+hommmikul	hommikul
+karikavõistliste	karikavõistluste
+micorsoft	microsoft
+edsestas	edestas
+realsemalt	reaalsemalt
+ebastandartne	ebastandardne
+tuumaohtuse	tuumaohutuse
+veerab	veereb
+öökul	öökull
+taasiseseivumise	taasiseseisvumise
+rahvahulgasr	rahvahulgas
+meediväljaannetes	meediaväljaannetes
+segatatuna	segatuna
+maksuamaksjatega	maksumaksjatega
+ekspertid	eksperdid
+rendiiliinide	rendiliinide
+porjektist	projektist
+vennud	veennud
+euroskeptliliste	euroskeptiliste
+kuulujute	kuulujutte
+väätuse	väärtuse
+permees	peremees
+lenuintressideks	laenuintressideks
+tähtnud	tahtnud
+kavlifikatsioon	kvalifikatsioon
+katoliiklnae	katoliiklane
+poolastal	poolaastal
+kümnekroonisted	kümnekroonised
+sisut	sisust
+õrnemaa	õrnema
+ohtarasti	ohtrasti
+olvat	olevat
+koefitsendi	koefitsiendi
+serblasete	serblaste
+erastamississemakset	erastamisissemakset
+aktiisimäär	aktsiisimäär
+anvendiküünla	advendiküünla
+väikeservuline	väikesearvuline
+kvantitiivselt	kvantitatiivselt
+vuiimase	viimase
+piirkonas	piirkonnas
+jaekaubadusfirma	jaekaubandusfirma
+korvapallivõistkond	korvpallivõistkond
+nadtabarreli	naftabarreli
+ümarguste	ümmarguste
+kaotsin	kaotasin
+kolmadast	kolmandast
+teeva	teevad
+ühiskondlikondlik	ühiskondlik
+meelelahtusfirmaga	meelelahutusfirmaga
+väljdes	väljudes
+imetlena	imetlema
+puljongipulver	puljongipulber
+jookusl	jooksul
+eskponeeritus	eksponeeritus
+populaarus	populaarsus
+praeportjoni	praeportsjoni
+soomeurgilaste	soomeugrilaste
+koku	kokku
+masseeerida	masseerida
+tugevdataud	tugevdatud
+eakatese	eakatesse
+hundite	huntide
+pinsettidega	pintsettidega
+madratsiootja	madratsitootja
+ülldiselt	üldiselt
+digitalliini	digitaalliini
+hiilglaslikust	hiiglaslikust
+hakkati	hakati
+võikisid	võiksid
+anavad	annavad
+tihedamine	tihedamini
+kogupropukt	koguprodukt
+langend	langenud
+iskliku	isikliku
+muudku	muudkui
+tuhendekroonise	tuhandekroonise
+ääärel	äärel
+tasutamise	tasustamise
+idoloogia	ideoloogia
+tiiskuseravi	tiisikuseravi
+rahat	raha
+keskonnakaitsesse	keskkonnakaitsesse
+raskendavaste	raskendavate
+lasteetendusete	lasteetenduste
+suvhooaeg	suvehooaeg
+rikkunuud	rikkunud
+sportast	sportlast
+tiisikuhaiged	tiisikushaiged
+noosoopolitsei	noorsoopolitsei
+postmodernlistliku	postmodernistliku
+näidand	näidanud
+võitljate	võitlejate
+sisalduvateale	sisalduvatele
+puudnud	puudunud
+refomikomisjonid	reformikomisjonid
+auhnete	auahnete
+tefefoniside	telefoniside
+tgasi	tagasi
+rikamaid	rikkamaid
+nõrgedaks	nõrgendaks
+haiglassse	haiglasse
+suuurem	suurem
+etekujutus	ettekujutus
+riigeelarve	riigieelarve
+esimemist	esinemist
+mängide	mändide
+valimistunud	valmistunud
+enesehinnag	enesehinnang
+septemris	septembris
+kihustustööd	kihutustööd
+nõningast	mõningast
+südamkujulisi	südamekujulisi
+esimse	esimese
+potsepakedra	pottsepakedra
+nüiteks	näiteks
+puhatusseadmed	puhastusseadmed
+haridusseptsialistid	haridusspetsialistid
+avaldmiseks	avaldamiseks
+koostamaa	koostama
+kookõlastades	kooskõlastades
+üksikksõidus	üksiksõidus
+tuvustatakse	tutvustatakse
+tegelikut	tegelikult
+jõulukasset	jõulukassett
+maamahel	maamehel
+halevenemine	halvenemine
+ennnast	ennast
+resrvfondis	reservfondis
+komandikku	kolmandikku
+sateliitnavigatsioonisüsteemi	satelliitnavigatsioonisüsteemi
+töötatatakse	töötatakse
+direktri	direktori
+jaotataud	jaotatud
+ametise	ametisse
+televaatjad	televaatajad
+voolma	voolama
+varustasemega	varustustasemega
+värivakamateks	värvikamateks
+üheksakümmnendate	üheksakümnendate
+aasnes	kaasnes
+peosalisena	peaosalisena
+puhkepäevaleei	puhkepäeval ei
+materjaliskesksust	materjalikesksust
+mootorratase	mootorrataste
+ohvredas	ohverdas
+puktid	punktid
+konkrentsivõimet	konkurentsivõimet
+nimiväätus	nimiväärtus
+juriidililiselt	juriidiliselt
+kuuuluva	kuuluva
+mehanismi	mehhanismi
+jatkuks	jätkuks
+võetaksse	võetakse
+aegasti	aegsasti
+jõudi s	jõudis
+sõinud	sõitnud
+naerama	naerma
+tööandajatega	tööandjatega
+hähematus	häbematus
+vaidlsuküsimuste	vaidlusküsimuste
+prosaistlt	prosaistilt
+esisukohast	seisukohast
+skeptitsimi	skeptitsismi
+mneeskond	meeskond
+ettevalmistutesse	ettevalmistustesse
+eeskõtt	eeskätt
+stabiliseermine	stabiliseerimine
+pidagi	midagi
+kauabagrupi	kaubagrupi
+kõite	köite
+lomabardlaenu	lombardlaenu
+aidab	aitab
+diakoonihaigla	diakooniahaigla
+iskuid	isikuid
+saavd	saavad
+peaministeri	peaministri
+puudmisel	puudumisel
+keskkonnanisteeriumi	keskkonnaministeeriumi
+poliitist	poliitilist
+kolonelleinant	kolonelleitnant
+ikebanakuruse	ikebanakursuse
+paralmendikomisjoni	parlmendikomisjoni
+prantuse	prantsuse
+sõbradele	sõpradele
+maaailamturugi	maailmaturugi
+kokuvarisemist	kokkuvarisemist
+edasimineks	edasiminek
+suurtuniiri	suurturniiri
+tahva	rahva
+täielikuklt	täielikult
+kordidorides	koridorides
+õnnetuset	õnnetust
+masserides	masseerides
+andemeil	andmeil
+investeermisotsuse	investeerimisotsuse
+ristisisad	ristiisad
+seltidest	seltsidest
+ajalehetede	ajalehtede
+undegroundis	undergroundis
+emotsioonaalne	emotsionaalne
+puhkusejaja	puhkuseaja
+personalijuhtmise	personalijuhtimise
+maantelõigud	maanteelõigud
+istituutidele	instituutidele
+usalduväärne	usaldusväärne
+järeltulijaidd	järeltulijaid
+huvilistege	huvilistega
+tuvustada	tutvustada
+omdast	omast
+äriparnerite	äripartnerite
+kantselliidist	kantseliidist
+ametkondadadel	ametkondadel
+eeltööodega	eeltöödega
+olümpikoondislane	olümpiakoondislane
+maksuspetturile	maksupetturile
+poliitilikaringkonnad	poliitikaringkonnad
+liikuspolitsei	liikluspolitsei
+ehistusmaterjalide	ehitusmaterjalide
+ärats	äratas
+eskamikomisjoni	eksamikomisjoni
+laienmist	laienemist
+pensinile	pensionile
+aatal	aastal
+munisuskaitseameti	muinsuskaitseameti
+tuntub	tundub
+rahavaküsitlus	rahvaküsitlus
+teravanesid	teravnesid
+halvam	halvem
+ekseprdid	eksperdid
+isklikus	isiklikus
+septsiaalseid	spetsiaalseid
+maksmimaalne	maksimaalne
+televisoonilt	televisioonilt
+segenevat	sagenevat
+tolliinspektisooni	tolliinspektsiooni
+rahanduministrina	rahandusministrina
+shunteerimisoporatsiooni	shunteerimisoperatsiooni
+intgreerumine	integreerumine
+lennundudes	lennunduses
+veneleelseid	venekeelseid
+komiteee	komitee
+tegelene	tegelane
+pürgitate	pürgivate
+skepulatsioonid	spekulatsioonid
+raskutega	raskustega
+täiendataud	täiendatud
+luapäeva	laupäeva
+sagedamigi	sagedaminigi
+tarbijavenulikes	tarbijavaenulikes
+maksavd	maksavad
+läbirääkmiste	läbirääkimiste
+astusega	asetusega
+juurda	juurde
+ootmatult	ootamatult
+parlemendi	parlamendi
+ettvõttel	ettevõttel
+vähnes	vähenes
+iskupära	isikupära
+võtlust	võitlust
+nimetetakse	nimetatakse
+konkeetsemaks	konkreetsemaks
+isksuse	isiksuse
+riiedeesemega	riideesemega
+hollywoodlikult	hollywoodilikult
+läinduki	läinudki
+registreeeritud	registreeritud
+reismine	reisimine
+jõumiseks	jõudmiseks
+psühiaatrilised	psühhiaatrilised
+ekpertiisitasu	ekspertiisitasu
+kandieerijate	kandideerijate
+iskutele	isikutele
+telfonitsi	telefonitsi
+vallasekrtär	vallasekretär
+surnd	surnud
+täidesaatav	täidesaatev
+alagasid	algasid
+anemad	vanemad
+rahava	rahva
+avalikkustamist	avalikustamist
+monertaarpoliitika	monetaarpoliitika
+vabatsiili	vabastiili
+kehtetas	kehtestas
+kriitline	kriitiline
+magentiks	magnetiks
+ebaaseadusliku	ebaseadusliku
+sellili	selili
+püsitatakse	püstitatakse
+lennnufirmaga	lennufirmaga
+tiilile	tiitlile
+viisteistkümnele	viieteistkümnele
+tervilikkuse	terviklikkuse
+nkujutluspildi	kujutluspildi
+sepärast	seepärast
+määäratleb	määratleb
+teatai	teatati
+möötmatut	mõõtmatut
+avaldamaisel	avaldamisel
+likkviidsusprobleemi	likviidsusprobleemi
+tegvdirektor	tegevdirektor
+partullreide	patrullreide
+iseseivusmeelsele	iseseisvusmeelsele
+märstikuine	märtsikuine
+õppisega	õppimisega
+näalavahetuse	nädalavahetuse
+elamistingingused	elamistingimused
+avaldmise	avaldamise
+jaanuril	jaanuaril
+üleriietga	üleriietega
+jaanuris	jaanuaris
+eriale	erialale
+elektrijaamaskatlamajas	elektrijaamakatlamajas
+lias	lisas
+päästamet	päästeamet
+parlamendifraktisooni	parlamendifraktsiooni
+üleminukuajad	üleminekuajad
+abilinnape	abilinnapea
+pretsendenditu	pretsedenditu
+ppopulaarsuse	populaarsuse
+õhkonnas	õhkkonnas
+usukunud	uskunud
+suuremassse	suuremasse
+jõulute	jõulude
+jalgarattur	jalgrattur
+sõidavat	sõidavad
+sõtub	sõltub
+õlleaktiiside	õlleaktsiiside
+aadresseeritud	adresseeritud
+religisoon	religioon
+demonstratisoonesinemised	demonstratsioonesinemised
+asialgu	esialgu
+kaldudakse	kaldutakse
+mudugi	muidugi
+kaitseinistriga	kaitseministriga
+
+
