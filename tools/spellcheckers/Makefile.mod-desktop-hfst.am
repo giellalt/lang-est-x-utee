@@ -69,7 +69,7 @@ WORD_REPLACEMENTS=no
 
 ### BEGIN: Local build rules: *.regex ###
 
-editdist.default.regex: editdist.est.regex 
+editdist.default.regex: editdist-est.regex 
 	cp $< $@
 
 #### END: Local build rules: *.regex ####
