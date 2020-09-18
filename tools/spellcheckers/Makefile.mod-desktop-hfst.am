@@ -69,8 +69,33 @@ WORD_REPLACEMENTS=no
 
 ### BEGIN: Local build rules: *.regex ###
 
-editdist.default.regex: editdist-est.regex 
-	cp $< $@
+#editdist.default.regex: editdist-est.regex 
+#	cp $< $@
+
+# edit distance=1
+# typos related to computer keyboard:
+# substitute, transpose, add, delete
+ 
+editdist-est.hfst: editdist-est.regex
+	$(AM_V_RGX2FST)$(HFST_REGEXP2FST) -S $(HFST_FLAGS) -i $<\
+	   --format=openfst-tropical \
+		-o $@
+
+# any accented letter
+accents-est.hfst: accents-est.regex 
+	$(AM_V_RGX2FST)$(HFST_REGEXP2FST) -S $(HFST_FLAGS) -i $<\
+	   --format=openfst-tropical \
+		-o $@
+
+# any number of accented letters may be substituted
+# in addition to other edits
+editdist.default.hfst: editdist-est.hfst accents-est.hfst
+	$(AM_V_XFST)printf "\
+		read regex \
+		[ @\"accents-est.hfst\" .o. @\"editdist-est.hfst\" ]; \
+		save stack $@\n\
+		quit\n" | $(XFST_TOOL)
+
 
 #### END: Local build rules: *.regex ####
 

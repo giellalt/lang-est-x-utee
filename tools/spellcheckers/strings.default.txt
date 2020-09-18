@@ -1,26 +1,18 @@
 # Add your error:correct string pairs here (not complete words, they have
 # a separate file), followed by TAB and the weight for the edit operation:
-sh:š	30
-zh:ž	30
-x:ks	30
-f:hv	30
-hv:f	30
-ff:hv	30
-mb:mm	30
-ää:ea	30
-g:dž	30
-dž:g	30
-j:dž	30
-dž:j	30
-o~:õ	30
-a":ä	30
-o":ö	30
-u":ü	30
-s^:š	30
-z^:ž	30
+x:ks	1
+f:hv	1
+hv:f	1
+ff:hv	1
+mb:mm	1
+ää:ea	1
+g:dž	1
+dž:g	1
+j:dž	1
+dž:j	1
 
-data:tada	30
-tada:data	30
-dite:tide	30
-tide:dite	30
-ikute:ike	30
+data:tada	1
+tada:data	1
+dite:tide	1
+tide:dite	1
+ikute:ike	1
