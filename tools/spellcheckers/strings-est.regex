@@ -1,0 +1,208 @@
+# edits that are so specific we may allow them to occur any number of times
+# (they will occur only once or twice anyway)
+[
+õ (->) ä::1 , 
+õ (->) ö::1 , 
+õ (->) ü::1 , 
+ä (->) õ::1 , 
+ä (->) ö::1 , 
+ä (->) ü::1 , 
+ö (->) õ::1 , 
+ö (->) ä::1 , 
+ö (->) ü::1 , 
+ü (->) õ::1 , 
+ü (->) ä::1 , 
+ü (->) ö::1 , 
+
+{sh} (->) {š}::1 ,
+{zh} (->) {ž}::1 ,
+{Sh} (->) {Š}::1 ,
+{Zh} (->) {Ž}::1 ,
+
+# accidental uppercase
+Õ (->) õ::1 ,
+Ä (->) ä::1 ,
+Ö (->) ö::1 ,
+Ü (->) ü::1 ,
+
+õ (->) {õõ}::1,
+ä (->) {ää}::1,
+ö (->) {öö}::1,
+ü (->) {üü}::1,
+
+{x} (->) {ks}::1 ,
+{f} (->) {hv}::1 ,
+{hv} (->) {f}::1 ,
+{ff} (->) {hv}::1 ,
+{mb} (->) {mm}::1 ,
+{ää} (->) {ea}::1 ,
+{g} (->) {dž}::1 ,
+{dž} (->) {g}::1 ,
+{j} (->) {dž}::1 ,
+{dž} (->) {j}::1 ,
+
+{tud} (->) {tatud}::1 ,
+
+{data} (->) {tada}::1 ,
+{tada} (->) {data}::1 ,
+{dite} (->) {tide}::1 ,
+{tide} (->) {dite}::1 ,
+{ikute} (->) {ike}::1 
+]
+# aab -> abb, abb -> aab
+|
+[?* [
+[a [ a:b | b:a ] b]::10 | 
+[a [ a:d | d:a ] d]::10 | 
+[a [ a:f | f:a ] f]::10 | 
+[a [ a:g | g:a ] g]::10 | 
+[a [ a:h | h:a ] h]::10 | 
+[a [ a:j | j:a ] j]::10 | 
+[a [ a:k | k:a ] k]::10 | 
+[a [ a:l | l:a ] l]::10 | 
+[a [ a:m | m:a ] m]::10 | 
+[a [ a:n | n:a ] n]::10 | 
+[a [ a:p | p:a ] p]::10 | 
+[a [ a:r | r:a ] r]::10 | 
+[a [ a:s | s:a ] s]::10 | 
+[a [ a:t | t:a ] t]::10 | 
+[a [ a:v | v:a ] v]::10 | 
+[b [ b:a | a:b ] a]::10 | 
+[b [ b:e | e:b ] e]::10 | 
+[b [ b:i | i:b ] i]::10 | 
+[b [ b:o | o:b ] o]::10 | 
+[b [ b:u | u:b ] u]::10 | 
+[d [ d:a | a:d ] a]::10 | 
+[d [ d:e | e:d ] e]::10 | 
+[d [ d:i | i:d ] i]::10 | 
+[d [ d:o | o:d ] o]::10 | 
+[d [ d:u | u:d ] u]::10 | 
+[e [ e:b | b:e ] b]::10 | 
+[e [ e:d | d:e ] d]::10 | 
+[e [ e:f | f:e ] f]::10 | 
+[e [ e:g | g:e ] g]::10 | 
+[e [ e:h | h:e ] h]::10 | 
+[e [ e:j | j:e ] j]::10 | 
+[e [ e:k | k:e ] k]::10 | 
+[e [ e:l | l:e ] l]::10 | 
+[e [ e:m | m:e ] m]::10 | 
+[e [ e:n | n:e ] n]::10 | 
+[e [ e:p | p:e ] p]::10 | 
+[e [ e:r | r:e ] r]::10 | 
+[e [ e:s | s:e ] s]::10 | 
+[e [ e:t | t:e ] t]::10 | 
+[e [ e:v | v:e ] v]::10 | 
+[f [ f:a | a:f ] a]::10 | 
+[f [ f:e | e:f ] e]::10 | 
+[f [ f:i | i:f ] i]::10 | 
+[f [ f:o | o:f ] o]::10 | 
+[f [ f:u | u:f ] u]::10 | 
+[g [ g:a | a:g ] a]::10 | 
+[g [ g:e | e:g ] e]::10 | 
+[g [ g:i | i:g ] i]::10 | 
+[g [ g:o | o:g ] o]::10 | 
+[g [ g:u | u:g ] u]::10 | 
+[h [ h:a | a:h ] a]::10 | 
+[h [ h:e | e:h ] e]::10 | 
+[h [ h:i | i:h ] i]::10 | 
+[h [ h:o | o:h ] o]::10 | 
+[h [ h:u | u:h ] u]::10 | 
+[i [ i:b | b:i ] b]::10 | 
+[i [ i:d | d:i ] d]::10 | 
+[i [ i:f | f:i ] f]::10 | 
+[i [ i:g | g:i ] g]::10 | 
+[i [ i:h | h:i ] h]::10 | 
+[i [ i:j | j:i ] j]::10 | 
+[i [ i:k | k:i ] k]::10 | 
+[i [ i:l | l:i ] l]::10 | 
+[i [ i:m | m:i ] m]::10 | 
+[i [ i:n | n:i ] n]::10 | 
+[i [ i:p | p:i ] p]::10 | 
+[i [ i:r | r:i ] r]::10 | 
+[i [ i:s | s:i ] s]::10 | 
+[i [ i:t | t:i ] t]::10 | 
+[i [ i:v | v:i ] v]::10 | 
+[j [ j:a | a:j ] a]::10 | 
+[j [ j:e | e:j ] e]::10 | 
+[j [ j:i | i:j ] i]::10 | 
+[j [ j:o | o:j ] o]::10 | 
+[j [ j:u | u:j ] u]::10 | 
+[k [ k:a | a:k ] a]::10 | 
+[k [ k:e | e:k ] e]::10 | 
+[k [ k:i | i:k ] i]::10 | 
+[k [ k:o | o:k ] o]::10 | 
+[k [ k:u | u:k ] u]::10 | 
+[l [ l:a | a:l ] a]::10 | 
+[l [ l:e | e:l ] e]::10 | 
+[l [ l:i | i:l ] i]::10 | 
+[l [ l:o | o:l ] o]::10 | 
+[l [ l:u | u:l ] u]::10 | 
+[m [ m:a | a:m ] a]::10 | 
+[m [ m:e | e:m ] e]::10 | 
+[m [ m:i | i:m ] i]::10 | 
+[m [ m:o | o:m ] o]::10 | 
+[m [ m:u | u:m ] u]::10 | 
+[n [ n:a | a:n ] a]::10 | 
+[n [ n:e | e:n ] e]::10 | 
+[n [ n:i | i:n ] i]::10 | 
+[n [ n:o | o:n ] o]::10 | 
+[n [ n:u | u:n ] u]::10 | 
+[o [ o:b | b:o ] b]::10 | 
+[o [ o:d | d:o ] d]::10 | 
+[o [ o:f | f:o ] f]::10 | 
+[o [ o:g | g:o ] g]::10 | 
+[o [ o:h | h:o ] h]::10 | 
+[o [ o:j | j:o ] j]::10 | 
+[o [ o:k | k:o ] k]::10 | 
+[o [ o:l | l:o ] l]::10 | 
+[o [ o:m | m:o ] m]::10 | 
+[o [ o:n | n:o ] n]::10 | 
+[o [ o:p | p:o ] p]::10 | 
+[o [ o:r | r:o ] r]::10 | 
+[o [ o:s | s:o ] s]::10 | 
+[o [ o:t | t:o ] t]::10 | 
+[o [ o:v | v:o ] v]::10 | 
+[p [ p:a | a:p ] a]::10 | 
+[p [ p:e | e:p ] e]::10 | 
+[p [ p:i | i:p ] i]::10 | 
+[p [ p:o | o:p ] o]::10 | 
+[p [ p:u | u:p ] u]::10 | 
+[r [ r:a | a:r ] a]::10 | 
+[r [ r:e | e:r ] e]::10 | 
+[r [ r:i | i:r ] i]::10 | 
+[r [ r:o | o:r ] o]::10 | 
+[r [ r:u | u:r ] u]::10 | 
+[s [ s:a | a:s ] a]::10 | 
+[s [ s:e | e:s ] e]::10 | 
+[s [ s:i | i:s ] i]::10 | 
+[s [ s:o | o:s ] o]::10 | 
+[s [ s:u | u:s ] u]::10 | 
+[t [ t:a | a:t ] a]::10 | 
+[t [ t:e | e:t ] e]::10 | 
+[t [ t:i | i:t ] i]::10 | 
+[t [ t:o | o:t ] o]::10 | 
+[t [ t:u | u:t ] u]::10 | 
+[u [ u:b | b:u ] b]::10 | 
+[u [ u:d | d:u ] d]::10 | 
+[u [ u:f | f:u ] f]::10 | 
+[u [ u:g | g:u ] g]::10 | 
+[u [ u:h | h:u ] h]::10 | 
+[u [ u:j | j:u ] j]::10 | 
+[u [ u:k | k:u ] k]::10 | 
+[u [ u:l | l:u ] l]::10 | 
+[u [ u:m | m:u ] m]::10 | 
+[u [ u:n | n:u ] n]::10 | 
+[u [ u:p | p:u ] p]::10 | 
+[u [ u:r | r:u ] r]::10 | 
+[u [ u:s | s:u ] s]::10 | 
+[u [ u:t | t:u ] t]::10 | 
+[u [ u:v | v:u ] v]::10 | 
+[v [ v:a | a:v ] a]::10 | 
+[v [ v:e | e:v ] e]::10 | 
+[v [ v:i | i:v ] i]::10 | 
+[v [ v:o | o:v ] o]::10 | 
+[v [ v:u | u:v ] u]::10 
+] ?*]
+
+;
+
