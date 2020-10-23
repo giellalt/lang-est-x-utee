@@ -38,6 +38,9 @@ cat fs_gt.inflecting.tmp1 | grep '+A:' \
 | sed 's/\(ühe\)?\(päevane\)/\1#\2/' \
 > adjectives.tmp1
 
+cat fs_gt.inflecting.tmp1 | grep '+A+Use/NotNorm:' \
+>> adjectives.tmp1
+
 # short adjectives are special in that they may compound in sg nom
 
 # adjectives ending in v
@@ -690,42 +693,63 @@ cat fs_gt.inflecting.tmp1 | grep '+V:' | grep '...eer[iu]ma+' \
 ./fs_suf2gt.sh
 
 # NB! this relies on the dir structure being the same as in Giellatekno
-#cp *.lexc ../morphology/stems
+#cp *.lexc ../fst/stems
 
-# ../morphology/stems/abbreviations.lexc
-# ../morphology/stems/acronyms.lexc
+# ../fst/stems/abbreviations.lexc
+# ../fst/stems/acronyms.lexc
 cat adjectives.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - \
-> ../morphology/stems/adjectives.lexc
+> ../fst/stems/adjectives.lexc
 
-cat adpositions.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - -  > ../morphology/stems/adpositions.lexc
-cat adverbs.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../morphology/stems/adverbs.lexc
-cat cardinalnumerals.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../morphology/stems/cardinalnumerals.lexc
-cat comparative_adjectives.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../morphology/stems/comparative_adjectives.lexc
-cat conjunctions.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../morphology/stems/conjunctions.lexc
+cat adpositions.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - -  > ../fst/stems/adpositions.lexc
+cat adverbs.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../fst/stems/adverbs.lexc
+cat cardinalnumerals.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../fst/stems/cardinalnumerals.lexc
+cat comparative_adjectives.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../fst/stems/comparative_adjectives.lexc
+cat conjunctions.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../fst/stems/conjunctions.lexc
 # final_components.lexc was made by ./fs_suf2gt.sh; should contain no weights
-cat final_components.lexc | sed 's/"weight:[^"]*"//' | ./special_chars.sh  > ../morphology/stems/final_components.lexc
+cat final_components.lexc | sed 's/"weight:[^"]*"//' | ./special_chars.sh  > ../fst/stems/final_components.lexc
 
 cat genitive_attributes.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - \
 | sed -f badfinal_N.sed \
-> ../morphology/stems/genitive_attributes.lexc
+> ../fst/stems/genitive_attributes.lexc
 
-cat interjections.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../morphology/stems/interjections.lexc
-cat noninflecting_adjectives.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../morphology/stems/noninflecting_adjectives.lexc
-cat noninflecting_verbs.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../morphology/stems/noninflecting_verbs.lexc
+cat interjections.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../fst/stems/interjections.lexc
+cat noninflecting_adjectives.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../fst/stems/noninflecting_adjectives.lexc
+cat noninflecting_verbs.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../fst/stems/noninflecting_verbs.lexc
 
 cat nouns.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - \
-> ../morphology/stems/nouns.lexc
+> ../fst/stems/nouns.lexc
 
-# ../morphology/stems/numbers.lexc
-cat ordinalnumerals.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../morphology/stems/ordinalnumerals.lexc
+# ../fst/stems/numbers.lexc
+cat ordinalnumerals.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../fst/stems/ordinalnumerals.lexc
 # prefixes.lexc was made by ./fs_pref2gt.sh; no weights
-cat prefixes.lexc | ./special_chars.sh > ../morphology/stems/prefixes.lexc
-cat pronouns.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../morphology/stems/pronouns.lexc
-cat propernouns.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../morphology/stems/propernouns.lexc
-cat superlative_adjectives.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../morphology/stems/superlative_adjectives.lexc
+cat prefixes.lexc | ./special_chars.sh > ../fst/stems/prefixes.lexc
+cat pronouns.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../fst/stems/pronouns.lexc
+cat propernouns.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../fst/stems/propernouns.lexc
+cat superlative_adjectives.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - > ../fst/stems/superlative_adjectives.lexc
 
 cat verbs.protolexc | ./special_chars.sh | ./insert_weights.py 15miljon.astak - - \
 | sed '/Pref+/s/"weight:[^"]*"//' \
-> ../morphology/stems/verbs.lexc
+> ../fst/stems/verbs.lexc
+
+# words that should be filtered out of the speller lexicon
+# make them into a filter
+
+echo '#a filter to eliminate words that should not be a part of a speller' > nosp
+echo '#automatically generated by ....src/import/fsgt2final.sh' >> nosp
+echo '#while transforming fs_lex to lexc files' >> nosp
+echo 'define words [' >> nosp
+cat fs_gt.nosp \
+| sed 's/nnolastpart//' \
+| sed 's/mnocompound//' \
+| sed 's/^nosp[^ ]*| \([^:]*\)+\([^+:]*\):.*$/     [{\1} "+\2" ] |/' \
+| tr '\n' '@' | sed 's/|@$/@/' | tr '@' '\n' \
+>> nosp
+echo '] ;' >> nosp
+echo 'regex ~[words ?*] ;' >> nosp
+
+cp nosp ../filters/remove-nospell-words.est.xfscript
+ 
+
+
 
 

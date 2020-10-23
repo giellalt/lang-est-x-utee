@@ -140,7 +140,6 @@ cat fs_lex.gt1 \
 | ./diacritics.sed \
 | ./eemalda_gi.sed \
 | sort -k 2 \
-| sed '/^nosp/s/\([^:]*:[^:]*[^ ]\):/\1+Use\/NotNorm:/' \
 > fs_gt.noninfl
 
 cat fs_lex.gt1 \
@@ -248,8 +247,16 @@ cat fs_lex.gt1 \
 
 cat fs_gt.pre-inflecting \
 | sed 's/| \([^@]*\)@ /| /g' \
+| sed '/^nosp.*õudne.*MAGUS/s/\([^:]*:[^:]*[^ ]\):/\1+Use\/NotNorm:/' \
 | sort -k 2 \
 > fs_gt.inflecting
+
+# no-speller words
+cat fs_gt.inflecting fs_gt.noninfl \
+| grep '^nosp' \
+| grep -v '^nosp.*õudne.*MAGUS' \
+| sort -k 2 \
+> fs_gt.nosp
 
 cat fs_lex.gt1 \
 | grep -v '^[^@]* !\\[^\\]*\\!$' \

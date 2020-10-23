@@ -14,7 +14,7 @@ cat fs_suf \
 | LC_COLLATE=C sort | sed 's/ :/_/' \
 > suf.tmp1
 
-grep ':' ../morphology/stems/*.lexc \
+grep ':' ../fst/stems/*.lexc \
 | grep -v '\/pref' \
 | grep -v '\/final' \
 | sed 's/^[^:]*://' \
@@ -197,7 +197,7 @@ echo 'vääris+Pref:vääris- #;' >> pref.lexc
 
 cat pref.lexc | sort -u >> prefixes.lexc
 
-cp prefixes.lexc ../morphology/stems
+cp prefixes.lexc ../fst/stems
 
 exit
 

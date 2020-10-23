@@ -3926,7 +3926,6 @@ vürtsine+A:vürtsine SOOLANE  "weight: 11 " ;
 õlgne+A:˘õlgne SOOLANE  "weight: 11 " ; 
 õline+A:õline SOOLANE  "weight: 9 " ; 
 õllene+A:õllene SOOLANE  "weight: 11 " ; 
-õudne+A:˘õudne MAGUS  "weight: 8 " ; 
 õudne+A:˘õudne SOOLANE  "weight: 8 " ; 
 õunane+A:õunane SOOLANE  "weight: 11 " ; 
 ähmane+A:ähmane SOOLANE  "weight: 8 " ; 
@@ -3967,6 +3966,7 @@ vürtsine+A:vürtsine SOOLANE  "weight: 11 " ;
 ümmargune+A:ümmargune OLULINE  "weight: 7 " ; 
 ürdine+A:ürdine SOOLANE  "weight: 11 " ; 
 ürgne+A:˘ürgne SOOLANE  "weight: 9 " ; 
+õudne+A+Use/NotNorm:˘õudne MAGUS  "weight: 8 " ; 
 
 LEXICON PlainAdjectives
 

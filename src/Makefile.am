@@ -865,6 +865,28 @@ generator-gt-desc.tmp.hfst: generator-gt-desc.dot.tmp.hfst
 		cp $< $@
 
 
+# override the default normative analyser and generator
+analyser-gt-norm.tmp.hfst: analyser-gt-desc.tmp.hfst \
+				filters/remove-nospell-words.est.hfst
+	$(AM_V_XFST_TOOL)$(PRINTF) "set flag-is-epsilon ON\n\
+			read regex \
+			@\"filters/remove-nospell-words.est.hfst\" \
+			.o. @\"$<\" \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
+generator-gt-norm.tmp.hfst: generator-gt-desc.tmp.hfst \
+				filters/remove-nospell-words.est.hfst
+	$(AM_V_XFST_TOOL)$(PRINTF) "set flag-is-epsilon ON\n\
+			read regex \
+			@\"filters/remove-nospell-words.est.hfst\" \
+			.o. @\"$<\" \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
+
 # HFST:
 # this is probably the pure guesser;
 generator-raw-gt-guess.hfst: guesser-raw.weighted.hfst \

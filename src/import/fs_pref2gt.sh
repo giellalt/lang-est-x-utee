@@ -84,7 +84,7 @@ echo 'raid+Pref:r´aid- #;' >> pref.lexc
 
 cat pref.lexc | sort -u | sed 's/\- #/»&/' >> prefixes.lexc
 
-cp prefixes.lexc ../morphology/stems
+cp prefixes.lexc ../fst/stems
 
 exit
 
