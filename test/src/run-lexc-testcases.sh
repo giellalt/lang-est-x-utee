@@ -5,7 +5,7 @@
 # the test cases.
 
 ###### Variables: #######
-transducer=gt-norm
+transducer=gt-desc
 Fail=0
 Tests_found=no
 Skipped=no
@@ -15,9 +15,11 @@ concat_lexc_file="lexicon.lexc"
 relpath=.
 testrunner=run-morph-tester.sh
 
+#echo 'run-lexc-testcases.sh:' # debug
+
 while test ! -x $relpath/$testrunner ; do
     relpath="$relpath/.."
-#    echo relpath: $relpath     # debug
+    echo relpath: $relpath     # debug
     if test "$(cd $relpath && pwd)" = "/" ; then
         echo "$0: No test runner found!"
         exit 77
@@ -39,7 +41,7 @@ for file in ${source_files}; do
 	# For each lexc file, extract all fst's specified in it:
 	fsts=$(grep '^\!\!€[^ :]' $file | cut -d':' -f1 \
 		| sed 's/\(.*\)€\(.*\)/\2/g' | sort -u)
-
+        # echo "file=$file; fsts=$fsts" #debug
 	# Check whether there are test cases in the file:
 	tests=$(grep '^\!\!€ ' $file)
 
@@ -59,7 +61,7 @@ for file in ${source_files}; do
 
 	# For each specified fst in the lexc file, run those tests:
 	else
-#		echo "TESTING: found tests in $fileshort" # debug
+		# echo "TESTING: found tests in $fileshort" # debug
 
 		Tests_found=yes
 		Skipped=no
@@ -83,7 +85,7 @@ for file in ${source_files}; do
 		    # Run the actual tests for the given fst:
 			source $relpath/run-morph-tester.sh \
 				$fst $file $relpath $testtype all $leadtext
-#		    echo "The $fst testing is done using $testtype testing."    # debug
+		    # echo "The $fst testing is done using $testtype testing."    # debug
 
 		    # Reset testtype to default:
 		    testtype=full

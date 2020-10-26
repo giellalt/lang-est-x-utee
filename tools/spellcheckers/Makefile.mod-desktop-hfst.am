@@ -67,6 +67,56 @@ FINAL_STRING_EDITS=txt
 # - no
 WORD_REPLACEMENTS=no
 
+### BEGIN: Local build rules for speller transducer: *.hfst ###
+# This is a near-copy of the default ruleset
+# Reasons for a language-specific routine for building a transducer:
+# 1. Tokens ending with a dot (e.g. abbreviations) need special treament by a tokeniser
+# They cannot be a part of the analyser that the tokeniser uses
+# Therefore, dot-ending stuff must be added separately to the default descriptive analyser 
+# 2. Certain paths have to be deleted from the descriptive analyser
+# 3. Derived proper strings have been downcased already when building the raw analyser; 
+# no need to do this again 
+
+generator-speller-gt-norm.hfst: \
+			$(top_builddir)/src/analyser-raw-gt-desc.hfst                     \
+			$(top_builddir)/src/fst/abbrevdot.tmp.hfst \
+			$(top_builddir)/src/filters/remove-CLB-strings.hfst               \
+			$(top_builddir)/src/filters/remove-error-strings.hfst             \
+			$(top_builddir)/src/filters/remove-MinusSpell-strings.hfst        \
+			$(top_builddir)/src/filters/remove-PUNCT-strings.hfst             \
+			$(top_builddir)/src/filters/remove-use_marg-strings.hfst          \
+			$(top_builddir)/src/filters/remove-orig_lang-tags.hfst            \
+			$(top_builddir)/src/filters/remove-usage_except_speller-tags.hfst \
+			$(top_builddir)/src/filters/remove-Use_GC-strings.hfst            \
+			$(top_builddir)/src/filters/remove-Use_minusGC-tags.hfst          \
+			$(top_builddir)/src/filters/remove-Use_minus_PMatch-tags.hfst     \
+			$(top_builddir)/src/filters/remove-Use_PMatch-strings.hfst        \
+			$(top_builddir)/src/filters/remove-mwe-tags.hfst                  \
+			$(top_builddir)/src/filters/remove-nospell-words.est.hfst         \
+			$(top_builddir)/src/filters/remove-NotNorm-wordforms.est.hfst
+	$(AM_V_XFST_TOOL)$(PRINTF) "set flag-is-epsilon ON\n\
+		read regex \
+		    @\"$(top_builddir)/src/filters/remove-usage_except_speller-tags.hfst\" \
+		.o. @\"$(top_builddir)/src/filters/remove-orig_lang-tags.hfst\"        \
+		.o. @\"$(top_builddir)/src/filters/remove-CLB-strings.hfst\"           \
+		.o. @\"$(top_builddir)/src/filters/remove-error-strings.hfst\"         \
+		.o. @\"$(top_builddir)/src/filters/remove-MinusSpell-strings.hfst\"    \
+		.o. @\"$(top_builddir)/src/filters/remove-PUNCT-strings.hfst\"         \
+		.o. @\"$(top_builddir)/src/filters/remove-use_marg-strings.hfst\"      \
+		.o. @\"$(top_builddir)/src/filters/remove-Use_minus_PMatch-tags.hfst\" \
+		.o. @\"$(top_builddir)/src/filters/remove-Use_minusGC-tags.hfst\"      \
+		.o. @\"$(top_builddir)/src/filters/remove-Use_GC-strings.hfst\"        \
+		.o. @\"$(top_builddir)/src/filters/remove-Use_PMatch-strings.hfst\"    \
+		.o. @\"$(top_builddir)/src/filters/remove-mwe-tags.hfst\"              \
+		.o. @\"$(top_builddir)/src/filters/remove-nospell-words.est.hfst\"     \
+		.o. @\"$(top_builddir)/src/filters/remove-NotNorm-wordforms.est.hfst\" \
+		.o. [@\"$<\" | @\"$(top_builddir)/src/fst/abbrevdot.tmp.hfst\"]        \
+		;\n\
+		 save stack $@\n\
+		 quit\n" | $(HFST_XFST) -p $(MORE_VERBOSITY) $(HFST_FORMAT)
+
+#### END: Local build rules for speller transducer: *.hfst ####
+
 ### BEGIN: Local build rules: *.regex ###
 
 #editdist.default.regex: editdist-est.regex 

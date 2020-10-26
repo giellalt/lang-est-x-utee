@@ -741,6 +741,7 @@ echo 'define words [' >> nosp
 cat fs_gt.nosp \
 | sed 's/nnolastpart//' \
 | sed 's/mnocompound//' \
+| sed 's/^nosp[^ ]*| \([^+:]*\)+\([^+:]*\)+\([^+:]*\):.*$/     [{\1} "+\2" "+\3"] |/' \
 | sed 's/^nosp[^ ]*| \([^:]*\)+\([^+:]*\):.*$/     [{\1} "+\2" ] |/' \
 | tr '\n' '@' | sed 's/|@$/@/' | tr '@' '\n' \
 >> nosp

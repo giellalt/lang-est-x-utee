@@ -33,7 +33,7 @@ Multichar_Symbols
 +Comp !!= * {{@CODE@}}: komparatiiv	/ comparative
 +Superl !!= * {{@CODE@}}: superlatiiv	/ superlative
 
-!!€gt-norm hfstol:
+!!€gt-desc hfstol:
 !!€ asi: asi+N+Sg+Nom # thing
 !!€ Jaan: Jaan+N+Prop+Sg+Nom
 !!€ asjalik: asjalik+A+Sg+Nom # serious

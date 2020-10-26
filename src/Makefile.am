@@ -741,7 +741,7 @@ endif !WITH_OFST_TROPICAL
 generator-raw-gt-desc.hfst: generator-raw-gt-desc.weighted.hfst 
 		cp $< $@
 
-# Tokens ending with a dot (e.g. abbreviations) need a special treament by a tokeniser
+# Tokens ending with a dot (e.g. abbreviations) need special treament by a tokeniser
 # They cannot be a part of the analyser that the tokeniser uses
 # Therefore, dot-ending stuff must be added separately to the default descriptive analyser 
 
@@ -866,21 +866,26 @@ generator-gt-desc.tmp.hfst: generator-gt-desc.dot.tmp.hfst
 
 
 # override the default normative analyser and generator
+# (is it necessary actually? where are they used ?)
 analyser-gt-norm.tmp.hfst: analyser-gt-desc.tmp.hfst \
-				filters/remove-nospell-words.est.hfst
+				filters/remove-nospell-words.est.hfst \
+				filters/remove-NotNorm-wordforms.est.hfst
 	$(AM_V_XFST_TOOL)$(PRINTF) "set flag-is-epsilon ON\n\
 			read regex \
 			@\"filters/remove-nospell-words.est.hfst\" \
+			.o. @\"filters/remove-NotNorm-wordforms.est.hfst\" \
 			.o. @\"$<\" \
 			;\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
 generator-gt-norm.tmp.hfst: generator-gt-desc.tmp.hfst \
-				filters/remove-nospell-words.est.hfst
+				filters/remove-nospell-words.est.hfst \
+				filters/remove-NotNorm-wordforms.est.hfst
 	$(AM_V_XFST_TOOL)$(PRINTF) "set flag-is-epsilon ON\n\
 			read regex \
 			@\"filters/remove-nospell-words.est.hfst\" \
+			.o. @\"filters/remove-NotNorm-wordforms.est.hfst\" \
 			.o. @\"$<\" \
 			;\n\
 		 save stack $@\n\

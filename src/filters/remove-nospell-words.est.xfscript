@@ -15,7 +15,7 @@ define words [
      [{dire} "+N" ] |
      [{disklahv} "+N" ] |
      [{eilane} "+A" ] |
-     [{essa+Num} "+Ord" ] |
+     [{essa} "+Num" "+Ord"] |
      [{faking} "+A" ] |
      [{fakk} "+Interj" ] |
      [{feissar} "+N" ] |
@@ -126,7 +126,7 @@ define words [
      [{žigull} "+N" ] |
      [{taadu} "+N" ] |
      [{tegelt} "+Adv" ] |
-     [{tessa+Num} "+Ord" ] |
+     [{tessa} "+Num" "+Ord"] |
      [{tiinekas} "+N" ] |
      [{tolerast} "+N" ] |
      [{trikikas} "+N" ] |

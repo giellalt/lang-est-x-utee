@@ -30,6 +30,7 @@ GIELLA_FILTER_LOCAL_XFSCRIPT_SRCS=reorder-tags.est.xfscript \
                                   remove-non-gi-forms.est.xfscript \
                                   remove-usage-tags.est.xfscript \
                                   remove-nospell-words.est.xfscript \
+                                  remove-NotNorm-wordforms.est.xfscript \
                                   modify-derivations.est.xfscript \
                                   block-derivations.est.xfscript \
                                   block-compounds.est.xfscript \
