@@ -1048,7 +1048,8 @@ LEXICON Latter !!= * {{@CODE@}} the latter part of a compound
 ! x + noun
   @R.POS.ACRMinus@ LatterNoun ;      
   @R.POS.ACRMinus@ LatterProperNoun ;      
-  @R.POS.Pref@@P.Part.One@ LatterNoun ;    ! ebalaud; allow pref + 3-part-compounds
+!  @R.POS.Pref@@P.Part.One@ LatterNoun ;    ! ebalaud; allow pref + 3-part-compounds
+  @R.POS.Pref@ LatterNoun ;    ! ebalaud; allow pref + 3-part-compounds
   @R.POS.Pref@ LatterProperNoun ;          ! ehttartulik
   @R.POS.Pref@ LatterGenitiveAttribute ;   ! ürgkreeka
   @R.Case.Short@ LatterNoun ;              ! astraallaud, ekstrariiul
