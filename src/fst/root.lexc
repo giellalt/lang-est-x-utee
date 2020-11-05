@@ -586,6 +586,7 @@ Multichar_Symbols
 +PUNCT !!= * {{@CODE@}}: Kirjavahemärk / Punctuation
 +LEFT !!= * {{@CODE@}}: Kirjavahemärgi asetus / Punctuation orientation
 +RIGHT !!= * {{@CODE@}}: Kirjavahemärgi asetus / Punctuation orientation
++Err/Orth !!= * {{@CODE@}}: Ortograafiaviga (genereeritud failide sümbol)/ orthography error
 
 !! !!Flag diacritics
 !! Use the following flag diacritics to control downcasing of derived proper
