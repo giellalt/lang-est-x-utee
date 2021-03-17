@@ -1,15 +1,13 @@
 [What is this?|WhatIsThis.html]
 
-!!! Dynamic documentation
 
-* [Links to generated source file documentation|Links.html]
-* Source files: [stems|https://gtsvn.uit.no/langtech/trunk/langs/est/src/fst/stems/]   
-  / [affixes|https://gtsvn.uit.no/langtech/trunk/langs/est/src/fst/affixes/] 
-  / [syntax|https://gtsvn.uit.no/langtech/trunk/langs/est/src/syntax] 
-  / [twolc|https://gtsvn.uit.no/langtech/trunk/langs/est/src/phonology/est-phon.twolc]   
-  / [yaml|https://gtsvn.uit.no/langtech/trunk/langs/est/test/src/fst/]
+
+ 
+ 
+ 
+ 
 * Generation of: [paradigms|http://giellatekno.uit.no/cgi/p-est.fin.html]
-  / [text|http://giellatekno.uit.no/cgi/d-est.fin.html]
+ 
 
 !!! Grammatical issues
 
