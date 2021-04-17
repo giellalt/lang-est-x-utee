@@ -335,7 +335,7 @@ ProtoAPO = [Letter* Letter] ; ! word pronunciation is not deducible from its let
 
 ! This guesser lexicon turned into a transcuder is later union-ed with the lexicon-based transducer
 
-LEXICON Root !!= * {{@CODE@}} is the starting point of everything
+LEXICON Root !!= * `@CODE@` is the starting point of everything
 
 !!@D.Part@@P.Part.Bad@@P.POS.NProp@@U.Cap.Obl@   GuessName "weight: 50" ;          !!= * {{@CODE@}}
 !@D.Part@@P.Part.Bad@@P.POS.NProp@@U.Cap.Opt@   GuessName ;          !!= * {{@CODE@}}

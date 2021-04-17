@@ -1,5 +1,5 @@
 ! Copyright © 2016-2017 
-!! !!Phonology
+!! ## Phonology
 
 Alphabet
 
@@ -14,48 +14,48 @@ A B C D E F G H I J K L M N O P Q R S Š Z Ž T U V W Õ Ä Ö Ü X Y
  %[%>%] ! >
  %[%<%] ! <
 
-!! !Triggers
+!! ### Triggers
 
- %{W%}:0   !!≈ * __@CODE@__  Weak grade trigger 
- %{F%}:0   !!≈ * __@CODE@__  Foreign word flag to prevent application of weak grade trigger, 
-           !! so that a rule does not trigger ''Fiadi'' as the weak grade form of ''Fiat''. 
- %{S%}:0   !!≈ * __@CODE@__ Strong stem trigger (for short illatives only), 
+ %{W%}:0   !!≈ * **@CODE@**  Weak grade trigger 
+ %{F%}:0   !!≈ * **@CODE@**  Foreign word flag to prevent application of weak grade trigger, 
+           !! so that a rule does not trigger *Fiadi* as the weak grade form of *Fiat*. 
+ %{S%}:0   !!≈ * **@CODE@** Strong stem trigger (for short illatives only), 
            !! necessary for words with no stem gradation, having only short illative in a strong grade, 
-           !! e.g. ''Riia'' - ''Riiga'', ''Rannu'' - ''Randu''.
-           !! (But currently used also for words with stem gradation, e.g. ''tuba'' - ''tuppa'')
+           !! e.g. *Riia* - *Riiga*, *Rannu* - *Randu*.
+           !! (But currently used also for words with stem gradation, e.g. *tuba* - *tuppa*)
  %{E%}:0   !! Schwa trigger (for -el/er words only) never appears on the surface side.
- %{id%}:0  !!≈ * __@CODE@__ Trigger / lexicon flag for pl part possible ending (esseesid/esseid)
- %{stemill%}:0 !!≈ * __@CODE@__ Trigger / lexicon flag for short sg ill, formed by stem change (jõgi-jõkke)
- %{dbl%}:0 !!≈ * __@CODE@__ Trigger to double the previous letter. Sometimes a phonologically long long kk pp tt  
+ %{id%}:0  !!≈ * **@CODE@** Trigger / lexicon flag for pl part possible ending (esseesid/esseid)
+ %{stemill%}:0 !!≈ * **@CODE@** Trigger / lexicon flag for short sg ill, formed by stem change (jõgi-jõkke)
+ %{dbl%}:0 !!≈ * **@CODE@** Trigger to double the previous letter. Sometimes a phonologically long long kk pp tt  
            !! at the end of a Sg Nom word is written k p t, 
            !! so it must be doubled  (kabinet - kabinetti). 
            !! Also, tulema, panema, surema, olema, minema have tulla, tulles etc...
- %{no.apo%}:0  !!≈ * __@CODE@__ trigger for deleting apostrophe (normally used for foreign word inflections) from Sg Nom
+ %{no.apo%}:0  !!≈ * **@CODE@** trigger for deleting apostrophe (normally used for foreign word inflections) from Sg Nom
 
 !! Usage tag. It may relate to an individual word in the lexicon, 
 !! or to a set of inflectional forms of some inflectional type, i.e. its sub-paradigm. It never surfaces.
 !! It is used to pair the surface form with the usage tag of the lexical representation.
 
- %{rare%}:0       !!≈ * __@CODE@__ rare or less used form (norm) ; e.g. kingasid
+ %{rare%}:0       !!≈ * **@CODE@** rare or less used form (norm) ; e.g. kingasid
 
-!! !Special surface side symbols, used in rule contexts
+!! ### Special surface side symbols, used in rule contexts
 
- %>     !!≈ * __@CODE@__ Inflectional suffix boundary
- »      !!≈ * __@CODE@__ Derivational suffix boundary
- #      !!≈ * __@CODE@__ Word boundary for both lexicalised and dynamic compounds
+ %>     !!≈ * **@CODE@** Inflectional suffix boundary
+ »      !!≈ * **@CODE@** Derivational suffix boundary
+ #      !!≈ * **@CODE@** Word boundary for both lexicalised and dynamic compounds
 !! Final hyphen for shortened stems:
 !  (The next line's documentation is formatted this way to avoid triggering a
 !  Forrest limitation - the hyphen is a special symbol in the jspwiki format.
-!! {{{
+!! ```
  %-     !!≈ @CODE@
-!! }}}
-!! !Apostrophe
+!! ```
+!! ### Apostrophe
 
  %{apo%}:'   !! Apostrophe is used for separating inflectional affix from a foreign word lemma
 
- %{apo%}:0   !!≈ * __@CODE@__ ... but Sg Nom is without apostrophe
+ %{apo%}:0   !!≈ * **@CODE@** ... but Sg Nom is without apostrophe
 
-!! !Morphophonemes
+!! ### Morphophonemes
 
 !! If the sound change is unproductive and difficult to relate to its immediate context,
 !! we use capital letters with numbers to denote them. 
@@ -64,19 +64,19 @@ A B C D E F G H I J K L M N O P Q R S Š Z Ž T U V W Õ Ä Ö Ü X Y
 
 !! Short stops   
 
- G1:g !!≈ * __@CODE@__ In strong grade
- G1:0 !!≈ * __@CODE@__ In weak grade
- G1:k !!≈ * __@CODE@__ In short illative (lagi lae lakke)
- B1:b !!≈ * __@CODE@__ In strong grade
- B1:0 !!≈ * __@CODE@__ In weak grade
- B1:m !!≈ * __@CODE@__ In weak grade after m
- B1:p !!≈ * __@CODE@__ In short illative (tuba toa tuppa)
- D1:d !!≈ * __@CODE@__ In strong grade
- D1:0 !!≈ * __@CODE@__ In weak grade
- D1:l !!≈ * __@CODE@__ In weak grade after l
- D1:n !!≈ * __@CODE@__ In weak grade after n
- D1:r !!≈ * __@CODE@__ In weak grade after r
- D1:t !!≈ * __@CODE@__ In short illative (ladu lao lattu)
+ G1:g !!≈ * **@CODE@** In strong grade
+ G1:0 !!≈ * **@CODE@** In weak grade
+ G1:k !!≈ * **@CODE@** In short illative (lagi lae lakke)
+ B1:b !!≈ * **@CODE@** In strong grade
+ B1:0 !!≈ * **@CODE@** In weak grade
+ B1:m !!≈ * **@CODE@** In weak grade after m
+ B1:p !!≈ * **@CODE@** In short illative (tuba toa tuppa)
+ D1:d !!≈ * **@CODE@** In strong grade
+ D1:0 !!≈ * **@CODE@** In weak grade
+ D1:l !!≈ * **@CODE@** In weak grade after l
+ D1:n !!≈ * **@CODE@** In weak grade after n
+ D1:r !!≈ * **@CODE@** In weak grade after r
+ D1:t !!≈ * **@CODE@** In short illative (ladu lao lattu)
  
 !! Orthographic convention: after voiceless (e.g. s or h, or k p t), gbd is written as kpt
 !! e.g. õhk-õhu, vask-vase
@@ -84,145 +84,145 @@ A B C D E F G H I J K L M N O P Q R S Š Z Ž T U V W Õ Ä Ö Ü X Y
 !! P1 also in: laps
 !! T1 also in: jätma, katma, kütma, matma, võtma, mõtlema, ütlema
 
- K1:k !!≈ * __@CODE@__ In strong grade
- K1:0 !!≈ * __@CODE@__ In weak grade
- P1:p !!≈ * __@CODE@__ In strong grade ?? EKK: never happens ??
- P1:0 !!≈ * __@CODE@__ In weak grade   ?? EKK: never happens ??
- T1:t !!≈ * __@CODE@__ In strong grade
- T1:0 !!≈ * __@CODE@__ In weak grade
+ K1:k !!≈ * **@CODE@** In strong grade
+ K1:0 !!≈ * **@CODE@** In weak grade
+ P1:p !!≈ * **@CODE@** In strong grade ?? EKK: never happens ??
+ P1:0 !!≈ * **@CODE@** In weak grade   ?? EKK: never happens ??
+ T1:t !!≈ * **@CODE@** In strong grade
+ T1:0 !!≈ * **@CODE@** In weak grade
 
- B2:b !!≈ * __@CODE@__ In strong grade, e.g. tiib
- B2:v !!≈ * __@CODE@__ In weak grade, e.g. tiiva
- B2:p !!≈ * __@CODE@__ In short illative (tõbi tõppe)
+ B2:b !!≈ * **@CODE@** In strong grade, e.g. tiib
+ B2:v !!≈ * **@CODE@** In weak grade, e.g. tiiva
+ B2:p !!≈ * **@CODE@** In short illative (tõbi tõppe)
 
- K2:k !!≈ * __@CODE@__ In strong grade
- K2:g !!≈ * __@CODE@__ In weak grade
- P2:p !!≈ * __@CODE@__ In strong grade
- P2:b !!≈ * __@CODE@__ In weak grade
- T2:t !!≈ * __@CODE@__ In strong grade
- T2:d !!≈ * __@CODE@__ In weak grade
+ K2:k !!≈ * **@CODE@** In strong grade
+ K2:g !!≈ * **@CODE@** In weak grade
+ P2:p !!≈ * **@CODE@** In strong grade
+ P2:b !!≈ * **@CODE@** In weak grade
+ T2:t !!≈ * **@CODE@** In strong grade
+ T2:d !!≈ * **@CODE@** In weak grade
 
 !! Short stops in stem illatives for words that do not have grade alternation.
 !! They surface (or appear as extra long) in strong grade, expressed by stem illative only. 
 
- G3:0 !!≈ * __@CODE@__ 
- G3:g !!≈ * __@CODE@__ Riia Riiga
- D3:0 !!≈ * __@CODE@__ 
- D3:d !!≈ * __@CODE@__ Rannu Randu
- G4:g !!≈ * __@CODE@__ 
- G4:k !!≈ * __@CODE@__ Türgi Türki
- D4:d !!≈ * __@CODE@__ 
- D4:t !!≈ * __@CODE@__ Leedu Leetu
- B4:b !!≈ * __@CODE@__ 
- B4:p !!≈ * __@CODE@__ Abja Apja
+ G3:0 !!≈ * **@CODE@** 
+ G3:g !!≈ * **@CODE@** Riia Riiga
+ D3:0 !!≈ * **@CODE@** 
+ D3:d !!≈ * **@CODE@** Rannu Randu
+ G4:g !!≈ * **@CODE@** 
+ G4:k !!≈ * **@CODE@** Türgi Türki
+ D4:d !!≈ * **@CODE@** 
+ D4:t !!≈ * **@CODE@** Leedu Leetu
+ B4:b !!≈ * **@CODE@** 
+ B4:p !!≈ * **@CODE@** Abja Apja
 
- S1:s !!≈ * __@CODE@__ In strong grade, S1 is s
- S1:0 !!≈ * __@CODE@__ In weak grade, S1 is 0; before stop, S1 is 0
+ S1:s !!≈ * **@CODE@** In strong grade, S1 is s
+ S1:0 !!≈ * **@CODE@** In weak grade, S1 is 0; before stop, S1 is 0
 
 !! Unstressed syllable vowels disappear...
 
- A2:a !!≈ * __@CODE@__ valvas
- A2:0 !!≈ * __@CODE@__ valv sa
- E2:e !!≈ * __@CODE@__ laulev
- E2:0 !!≈ * __@CODE@__ laul va
- I2:i !!≈ * __@CODE@__ õilis
- I2:0 !!≈ * __@CODE@__ õil sa
- U2:u !!≈ * __@CODE@__ hirmus
- U2:0 !!≈ * __@CODE@__ hirm sa
+ A2:a !!≈ * **@CODE@** valvas
+ A2:0 !!≈ * **@CODE@** valv sa
+ E2:e !!≈ * **@CODE@** laulev
+ E2:0 !!≈ * **@CODE@** laul va
+ I2:i !!≈ * **@CODE@** õilis
+ I2:0 !!≈ * **@CODE@** õil sa
+ U2:u !!≈ * **@CODE@** hirmus
+ U2:0 !!≈ * **@CODE@** hirm sa
 
 !! A stem vowel in inflectional forms of ne/s words, to make them formally similar in inflection
 
- E1:e !!≈ * __@CODE@__ soolase, raudset
- E1:0 !!≈ * __@CODE@__ soolas t
+ E1:e !!≈ * **@CODE@** soolase, raudset
+ E1:0 !!≈ * **@CODE@** soolas t
 
 !! Ad hoc stem vowels for ne/s words
 
- I1:i !!≈ * __@CODE@__ an ugly trigger for ne/s words katkine - katkisil
- A1:a !!≈ * __@CODE@__ an ugly trigger for ne/s words pingne - pingsa
- A1:0 !!≈ * __@CODE@__ pingne - pingsus
+ I1:i !!≈ * **@CODE@** an ugly trigger for ne/s words katkine - katkisil
+ A1:a !!≈ * **@CODE@** an ugly trigger for ne/s words pingne - pingsa
+ A1:0 !!≈ * **@CODE@** pingne - pingsus
 
 !! Few words...
 
 !! j surfacing and changing
 
- E4:e !!≈ * __@CODE@__ aeg, soe 
- E4:j !!≈ * __@CODE@__ aja, sooja
+ E4:e !!≈ * **@CODE@** aeg, soe 
+ E4:j !!≈ * **@CODE@** aja, sooja
 
- J1:i !!≈ * __@CODE@__ ahi, rohi
- J1:j !!≈ * __@CODE@__ ahju
- J1:0 !!≈ * __@CODE@__      rohu
+ J1:i !!≈ * **@CODE@** ahi, rohi
+ J1:j !!≈ * **@CODE@** ahju
+ J1:0 !!≈ * **@CODE@**      rohu
 
-!! 4 words have h-illative: ''sohu'', ''suhu'', ''öhe'', ''pähe''
+!! 4 words have h-illative: *sohu*, *suhu*, *öhe*, *pähe*
 
- H3:h !!≈ * __@CODE@__ sohu, ... 
- H3:0 !!≈ * __@CODE@__ soo, suu, ...
- Y3:u !!≈ * __@CODE@__ sohu, suhu
- Y3:e !!≈ * __@CODE@__ öhe, pähe
- Y3:0 !!≈ * __@CODE@__ öö, pea
+ H3:h !!≈ * **@CODE@** sohu, ... 
+ H3:0 !!≈ * **@CODE@** soo, suu, ...
+ Y3:u !!≈ * **@CODE@** sohu, suhu
+ Y3:e !!≈ * **@CODE@** öhe, pähe
+ Y3:0 !!≈ * **@CODE@** öö, pea
 
-!! only ''hea'' and ''pea''  
+!! only *hea* and *pea*  
 
- A6:a !!≈ * __@CODE@__ pea - pähe, päid
- A6:ä !!≈ * __@CODE@__
- E6:e !!≈ * __@CODE@__ pea - pähe, päid
- E6:0 !!≈ * __@CODE@__
+ A6:a !!≈ * **@CODE@** pea - pähe, päid
+ A6:ä !!≈ * **@CODE@**
+ E6:e !!≈ * **@CODE@** pea - pähe, päid
+ E6:0 !!≈ * **@CODE@**
 
 !! 6 words have õ in indicative past
 
- Ö6:ü !!≈ * __@CODE@__ söö+a - süüa
- Ö6:ö !!≈ * __@CODE@__
- Ö6:õ !!≈ * __@CODE@__ söö+i - sõi
- Ö6:0 !!≈ * __@CODE@__
- O6:u !!≈ * __@CODE@__ too+a - tuua
- O6:o !!≈ * __@CODE@__
- O6:õ !!≈ * __@CODE@__ too+i - tõi
- O6:0 !!≈ * __@CODE@__
+ Ö6:ü !!≈ * **@CODE@** söö+a - süüa
+ Ö6:ö !!≈ * **@CODE@**
+ Ö6:õ !!≈ * **@CODE@** söö+i - sõi
+ Ö6:0 !!≈ * **@CODE@**
+ O6:u !!≈ * **@CODE@** too+a - tuua
+ O6:o !!≈ * **@CODE@**
+ O6:õ !!≈ * **@CODE@** too+i - tõi
+ O6:0 !!≈ * **@CODE@**
 
 !! A handful of words...
 
- M1:m !!≈ * __@CODE@__ lumi
- M1:n !!≈ * __@CODE@__ lun d
+ M1:m !!≈ * **@CODE@** lumi
+ M1:n !!≈ * **@CODE@** lun d
 
- N1:n !!≈ * __@CODE@__ lään e, kolman da
- N1:0 !!≈ * __@CODE@__ lää s,  kolma s
+ N1:n !!≈ * **@CODE@** lään e, kolman da
+ N1:0 !!≈ * **@CODE@** lää s,  kolma s
 
- K3:k !!≈ * __@CODE@__ vennakse
- K3:0 !!≈ * __@CODE@__ venna s
+ K3:k !!≈ * **@CODE@** vennakse
+ K3:0 !!≈ * **@CODE@** venna s
 
 !! Verb affix lexicons are simpler if we introduce these:
 
 !! Stem vowels for verbs of some inflectional types
  
- A7:a !!≈ * __@CODE@__ naerab
- A7:0 !!≈ * __@CODE@__ naer ma
- E7:e !!≈ * __@CODE@__ jookseb
- E7:0 !!≈ * __@CODE@__ jooks ma
+ A7:a !!≈ * **@CODE@** naerab
+ A7:0 !!≈ * **@CODE@** naer ma
+ E7:e !!≈ * **@CODE@** jookseb
+ E7:0 !!≈ * **@CODE@** jooks ma
 
 !! Verb affixes have k-g and t-d-0 alternations:
 
 !! Imperative mood affixes gu/ku, ge/kem etc
 
-G7:g !!≈ * __@CODE@__
-G7:k !!≈ * __@CODE@__
+G7:g !!≈ * **@CODE@**
+G7:k !!≈ * **@CODE@**
 
 !! Infinitive affixes ta/da/a, and gerund affixes tes/des/es
 
-D7:d !!≈ * __@CODE@__
-D7:t !!≈ * __@CODE@__
-D7:0 !!≈ * __@CODE@__
+D7:d !!≈ * **@CODE@**
+D7:t !!≈ * **@CODE@**
+D7:0 !!≈ * **@CODE@**
 
 !! Impersonal voice affixes tud/tud, takse/dakse etc
 
-T7:d !!≈ * __@CODE@__
-T7:t !!≈ * __@CODE@__
+T7:d !!≈ * **@CODE@**
+T7:t !!≈ * **@CODE@**
 
 !! To form past indicative forms and make them pronouncable
 
-I7:i !!≈ * __@CODE@__ naeris
-I7:0 !!≈ * __@CODE@__ naer sin
+I7:i !!≈ * **@CODE@** naeris
+I7:0 !!≈ * **@CODE@** naer sin
 
-S7:s !!≈ * __@CODE@__ naeris
-S7:0 !!≈ * __@CODE@__ pani
+S7:s !!≈ * **@CODE@** naeris
+S7:0 !!≈ * **@CODE@** pani
 
 !! Sometimes the choice of an allomorph or allophone is related to the frequency of the word.
  
@@ -231,30 +231,30 @@ S7:0 !!≈ * __@CODE@__ pani
 
 !! Singular stem vowel tag in lexicon
 
- %{sg.a%}:a !!≈ * __@CODE@__ tüng - tünga
- %{sg.a%}:0 !!≈ * __@CODE@__ 
+ %{sg.a%}:a !!≈ * **@CODE@** tüng - tünga
+ %{sg.a%}:0 !!≈ * **@CODE@** 
 
- %{sg.e%}:e !!≈ * __@CODE@__ neem - neeme
- %{sg.e%}:0 !!≈ * __@CODE@__ 
+ %{sg.e%}:e !!≈ * **@CODE@** neem - neeme
+ %{sg.e%}:0 !!≈ * **@CODE@** 
 
- %{sg.i%}:i !!≈ * __@CODE@__ taud - taudi, default sg stem vowel for most types
- %{sg.i%}:0 !!≈ * __@CODE@__ 
+ %{sg.i%}:i !!≈ * **@CODE@** taud - taudi, default sg stem vowel for most types
+ %{sg.i%}:0 !!≈ * **@CODE@** 
 
- %{sg.u%}:u !!≈ * __@CODE@__ koon - koonu 
- %{sg.u%}:0 !!≈ * __@CODE@__ 
+ %{sg.u%}:u !!≈ * **@CODE@** koon - koonu 
+ %{sg.u%}:0 !!≈ * **@CODE@** 
 
 ! %{pl.a%}:a  ! e.g. ''poiss'' - ''poissa'', not used in modern Estonian
 
 !! Plural stem vowel tag in lexicon
 
- %{pl.i%}:i !!≈ * __@CODE@__ king - kingi
- %{pl.i%}:0 !!≈ * __@CODE@__ king - kingasid
+ %{pl.i%}:i !!≈ * **@CODE@** king - kingi
+ %{pl.i%}:0 !!≈ * **@CODE@** king - kingasid
 
- %{pl.e%}:e !!≈ * __@CODE@__ tõug - tõuge, taud - taude, default pl stem vowel for most types
- %{pl.e%}:0 !!≈ * __@CODE@__ tõug - tõugusid
+ %{pl.e%}:e !!≈ * **@CODE@** tõug - tõuge, taud - taude, default pl stem vowel for most types
+ %{pl.e%}:0 !!≈ * **@CODE@** tõug - tõugusid
 
- %{pl.u%}:u !!≈ * __@CODE@__ laud - laudu
- %{pl.u%}:0 !!≈ * __@CODE@__ laud - laudasid
+ %{pl.u%}:u !!≈ * **@CODE@** laud - laudu
+ %{pl.u%}:0 !!≈ * **@CODE@** laud - laudasid
 
 !! Inflectional affixes having the same grammatical meaning:
 !! Pl Par endings sid/0, id/sid, Sg Ill endings sse/0.
@@ -262,37 +262,37 @@ S7:0 !!≈ * __@CODE@__ pani
 !! have to be defined un-naturally letter by letter, 
 ! e.g. sid = %{s%}:s %{i%}:i %{d%}:d and 0 = %{s%}:0 %{i%}:0 %{d%}:0
 
- %{i%}:i !!≈ * __@CODE@__ i of sid: pl par ending siilisid
- %{i%}:0 !!≈ * __@CODE@__         : pl par ending siile
- %{d%}:d !!≈ * __@CODE@__ d of sid: pl par ending siilisid
- %{d%}:0 !!≈ * __@CODE@__         : pl par ending siile
+ %{i%}:i !!≈ * **@CODE@** i of sid: pl par ending siilisid
+ %{i%}:0 !!≈ * **@CODE@**         : pl par ending siile
+ %{d%}:d !!≈ * **@CODE@** d of sid: pl par ending siilisid
+ %{d%}:0 !!≈ * **@CODE@**         : pl par ending siile
 
 
- %{s%}:s !!≈ * __@CODE@__ s of -sse jõesse; -sid siilisid 
- %{s%}:0 !!≈ * __@CODE@__            jõkke;    siile;   puid
- %{e%}:e !!≈ * __@CODE@__ e of -sse jõesse;  
- %{e%}:0 !!≈ * __@CODE@__            jõkke; 
+ %{s%}:s !!≈ * **@CODE@** s of -sse jõesse; -sid siilisid 
+ %{s%}:0 !!≈ * **@CODE@**            jõkke;    siile;   puid
+ %{e%}:e !!≈ * **@CODE@** e of -sse jõesse;  
+ %{e%}:0 !!≈ * **@CODE@**            jõkke; 
 
 !! If the sound change is productive and/or very regularly determined by context
 !! (e.g. by morpheme border), we do not use special symbols to denote the changing phonemes 
 
 !! ne, s ending words have similar paradigms; only sg nom is different
 
-n:n !!≈ * __@CODE@__ soolane and other ne-words Sg Nom
-n:s !!≈ * __@CODE@__ soolas+e, soolas+t etc  
-e:e !!≈ * __@CODE@__ soolane
-e:0 !!≈ * __@CODE@__ soolas0+e 
+n:n !!≈ * **@CODE@** soolane and other ne-words Sg Nom
+n:s !!≈ * **@CODE@** soolas+e, soolas+t etc  
+e:e !!≈ * **@CODE@** soolane
+e:0 !!≈ * **@CODE@** soolas0+e 
 
 !! -le/-el stem alternations also use e:0, in addition to 0:e (sip0lema-sipel0da)
 
 !! high vowel lowering in certain contexts
 
- i:e  !!≈ * __@CODE@__
- i:i  !!≈ * __@CODE@__
- u:o  !!≈ * __@CODE@__
- u:u  !!≈ * __@CODE@__
- ü:ö  !!≈ * __@CODE@__
- ü:ü  !!≈ * __@CODE@__ 
+ i:e  !!≈ * **@CODE@**
+ i:i  !!≈ * **@CODE@**
+ u:o  !!≈ * **@CODE@**
+ u:u  !!≈ * **@CODE@**
+ ü:ö  !!≈ * **@CODE@**
+ ü:ü  !!≈ * **@CODE@** 
 
 
 ! t:d ... if we say that plural affix +te appears as +de for tütar-type words,
