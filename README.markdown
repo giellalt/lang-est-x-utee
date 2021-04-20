@@ -1,15 +1,15 @@
 The Estonian morphology and tools
 =================================
 
+[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-est)](https://github.com/giellalt/lang-est/issues)
+[![Build Status](https://github.com/giellalt/lang-est/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-est/actions)
+[![License](https://img.shields.io/github/license/giellalt/lang-est)](https://raw.githubusercontent.com/giellalt/lang-est/develop/LICENSE)
+
 This directory contains source files for the Estonian language
 morphology and dictionary. The data and implementation are licenced
 under \_\_LICENCE\_\_ licence also detailed in the LICENCE file of this
 directory. The authors named in the AUTHORS file are available to grant
 other licencing choices.
-
-[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-est)](https://github.com/giellalt/lang-est/issues)
-[![Build Status](https://github.com/giellalt/lang-est/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-est/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-est)](https://raw.githubusercontent.com/giellalt/lang-est/develop/LICENSE)
 
 Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-est)
 for the Estonian language by using the [Divvun Installer](http://divvun.no)
