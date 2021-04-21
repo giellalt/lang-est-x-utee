@@ -1,7 +1,7 @@
 # Estonian documentation
 
 [![Maturity: Experiment](https://img.shields.io/badge/Maturity-Experiment-black.svg)](https://giellalt.github.io/MaturityClassification.html)
-[![License](https://img.shields.io/github/license/giellalt/template-lang-est)](https://raw.githubusercontent.com/giellalt/lang-est/develop/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-est)](https://raw.githubusercontent.com/giellalt/lang-est/develop/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-est)](https://github.com/giellalt/lang-est/issues)
 [![Build status](https://github.com/giellalt/lang-est/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-est/actions)
 
