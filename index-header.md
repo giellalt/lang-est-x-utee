@@ -5,11 +5,11 @@
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-est-x-utee)](https://github.com/giellalt/lang-est-x-utee/issues)
 [![Build status](https://github.com/giellalt/lang-est-x-utee/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-est-x-utee/actions)
 
-This page documents the work on the **Estonian language model**. 
+This page documents the work on the [Estonian language model](https://github.com/giellalt/lang-x-utee). There are two language models for Estonian on this site. The main architect behind this one is Heiki-Jaan Kaalep.  
 
 # Project documentation
 
-* Add links to project specific documentation here as needed. Keep the documentation in the `docs/` directory.
+* (Add links to project specific documentation here as needed. Keep the documentation in the `docs/` directory.)
 
 # In-source documentation
 
