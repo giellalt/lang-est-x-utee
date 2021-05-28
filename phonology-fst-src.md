@@ -1,5 +1,7 @@
 ## Phonology
 
+This file documents the [phonology.twolc file](http://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/phonology.twolc) 
+
 
 
 Sami GT convention 
