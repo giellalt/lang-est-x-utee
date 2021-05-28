@@ -1,6 +1,8 @@
 ! Copyright © 2016-2017 
 !! ## Phonology
 
+!! This file documents the [phonology.twolc file](http://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/phonology.twolc) 
+
 Alphabet
 
 a b c d e f g h i j k l m n o p q r s š z ž t u v w õ ä ö ü x y 
