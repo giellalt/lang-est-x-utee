@@ -59,17 +59,17 @@
 # 
 "Appelatsioonikaebuse	"Apellatsioonikaebuse	# 5,5
 "Appellatsiooniseaduses	"Apellatsiooniseaduses	# 5
-"Büroo'95"	"Büroo'95"	# 8
+"Büroo'95	"Büroo'95	# 8
 "Koonderkond	"Koonderakond	# 6
 "Koondrekonna	"Koonderakonna	# 6
-"LUKoil"	"Lukoil"	# 9
-"LUKoili"	"Lukoili"	# 9
+"LUKoil	"Lukoil	# 9
+"LUKoili	"Lukoili	# 9
 "Lendlehtdel	"Lendlehtedel	# 6
 "Mõõdujate	"Mõõdukate	# 6
 "Nordstrom	"Nordström	# 3
-"Parempoolsetsest",	"Parempoolsetest",	# 6
+"Parempoolsetsest	"Parempoolsetest	# 6
 'rgmistel	järgmistel	# 6,6
-(Stokchomis).	(Stockholmis).	# 6
+(Stokchomis)	(Stockholmis)	# 6
 1.Köögiviljade	1. Köögiviljade	# 8
 1.juuni-15.august	1. juuni - 15. august	# 8,8,8,8
 10.-13.apr	10.-13. apr	# 8
@@ -105,7 +105,7 @@
 27.märts-26.mai	27. märts - 26. mai	# 8,8,8,8
 28.august-27.oktoober	28. august - 27. oktoober	# 8,8,8,8
 29.Maa	29. Maa	# 8
-29.märts,	29. märts,	# 8
+29.märts	29. märts	# 8
 29.märtsist	29. märtsist	# 8
 2ja	ja	# 8
 30.X	30. X	# 8
@@ -131,8 +131,8 @@ Ann.Clin.	Ann. Clin.	# 8
 Arch.Surg.	Arch. Surg.	# 8
 Arvatatavasti	Arvatavasti	# 7
 Aserbaidzaanis	Aserbaidžaanis	# 3
-BNS-le.	BNS-ile.	# 6
-BNS23.17,	BNS 23.17,	# 8
+BNS-le	BNS-ile	# 6
+BNS23.17	BNS 23.17	# 8
 Babits^eva	Babitševa	# 11
 Baltimere	Balti mere	# 11
 Barliini	Berliini	# 6
@@ -158,7 +158,7 @@ Hanekasvatusaaduste	Hanekasvatussaaduste	# 5
 Hanspanga	Hansapanga	# 6
 Harjumal	Harjumaal	# 5
 Hedrich	Hedrick	# 11
-Helsinkis.	Helsingis.	# 6
+Helsinkis	Helsingis	# 6
 Herakleitusel	Herakleitosel	# 6
 Hoipangal	Hoiupangal	# 6
 I.A.	I. A.	# 8
@@ -166,8 +166,8 @@ I.B.	I. B.	# 8
 Ida-Vi	Ida-Viru	# 6,6
 Igalühel	Igaühel	# 6
 Imselt	Ilmselt	# 6
-Intstituut.	Instituut.	# 6
-Itar-Tass.	Itar-TASS.	# 11
+Intstituut	Instituut	# 6
+Itar-Tass	Itar-TASS	# 11
 Izv.AN	Izv. AN	# 8
 J.W.	J. W.	# 8
 Japanis	Jaapanis	# 5
@@ -195,7 +195,7 @@ Koduakitse	Kodukaitse	# 6
 Kohtla-NÕmme	Kohtla-Nõmme	# 9
 Kolmadas	Kolmandas	# 6
 Konkurs	Konkurss	# 5
-Konstn.	Kunstn.	# 6
+Konstn	Kunstn	# 6
 Konsturktivismis	Konstruktivismis	# 4
 Koonderkonna	Koonderakonna	# 6
 Korrosioonihibiitorite	Korrosiooniinhibiitorite	# 6
@@ -212,13 +212,13 @@ Lihatõõtjate	Lihatöötajate	# 3,3
 Liidudu	Liidud	# 6
 Liiklukindlustuse	Liikluskindlustuse	# 6
 Litsenseerimise	Litsentseerimise	# 6
-Luksenburgi,	Luksemburgi,	# 6
+Luksenburgi	Luksemburgi	# 6
 M.,1979	M., 1979	# 8
 M.J.	M. J.	# 8
 Maaimapanga	Maailmapanga	# 6
 Majandusministeriumi	Majandusministeeriumi	# 5
 Mis...mis	Mis... mis	# 8
-Moskvase,	Moskvasse,	# 5
+Moskvase	Moskvasse	# 5
 N.D.	N. D.	# 8
 NIkonovile	Nikonovile	# 9
 Noo...noo...noo	Noo... noo... noo	# 8,8
@@ -227,7 +227,7 @@ Noo..noo...noo	Noo... noo... noo	# 8,8
 NÕmme	Nõmme	# 9
 NÕukogu	Nõukogu	# 9
 Oktoobrirevolutisooni	Oktoobrirevolutsiooni	# 4
-Oletatatakse,	Oletatakse,	# 7
+Oletatatakse	Oletatakse	# 7
 Organzation	Organization	# 11
 P.R.	P. R.	# 8
 Pankrotsitunud	Pankrotistunud	# 4
@@ -241,7 +241,7 @@ PÄev	PÄEV	# 9
 PÕhjamaade	Põhjamaade	# 9
 Pärnud	Pärnut	# 6
 Pärnud	Pärnus	# 6
-Reforemierakonnaga,	Reformierakonnaga,	# 6
+Reforemierakonnaga	Reformierakonnaga	# 6
 Rifkindi	Rifkindi	# 11
 Riisipera	Riisipere	# 6
 Risikitegurid	Riskitegurid	# 6
@@ -257,25 +257,25 @@ Sockholm	Stockholm	# 6
 Sorosi	Sorose	# 6
 Spinelli,L'Europa	Spinelli, L'Europa	# 8
 St.Petersburg	St. Petersburg	# 11
-Standaard".	Standard".	# 5
+Standaard	Standard	# 5
 Statistiakaameti	Statistikaameti	# 6
-Stokholmis.	Stockholmis.	# 6
+Stokholmis	Stockholmis	# 6
 Struve.M.	Struve. M.	# 8
 Suppl.23	Suppl. 23	# 8
 Suurbritaania	Suurbritannia	# 6,6
-Suurbrittanniast.	Suurbritanniast.	# 5
+Suurbrittanniast	Suurbritanniast	# 5
 SÕpruskoguduste	Sõpruskoguduste	# 9
 Sõjajärsel	Sõjajärgsel	# 6
 T^sernenko	Tšernenko	# 11
 Tartuajat	Tartu ajad	# 8,6
 Tartuajat	Tartu ajast	# 8,6
-Teamist,	Teadmist,	# 6
+Teamist	Teadmist	# 6
 Teatmiseks	Teatamiseks	# 6
 Teatmiseks	Teadmiseks	# 6
 Teispäevasel	Teisipäevasel	# 6
 Tevishoiuministeeriumi	Tervishoiuministeeriumi	# 6
 Tshehhi	Tšehhi	# 3
-Turimisühendus.	Turismiühendus.	# 6,6
+Turimisühendus	Turismiühendus	# 6,6
 Täpsne	Täpne	# 6
 Täpsne	Täpse	# 6
 TšernobÕlis	Tšernobõlis	# 9
@@ -301,11 +301,11 @@ aastainterssiga	aastaintressiga	# 4
 aastakonverntsil	aastakonverentsil	# 6
 aastapäva	aastapäeva	# 6
 aastokoosolek	aastakoosolek	# 6
-aastpäeva,	aastapäeva,	# 6
+aastpäeva	aastapäeva	# 6
 aata	aasta	# 6
 abiporgramm	abiprogramm	# 4
-abonomentosa,	abonementosa,	# 6
-abonomentvõrguga.	abonementvõrguga.	# 6
+abonomentosa	abonementosa	# 6
+abonomentvõrguga	abonementvõrguga	# 6
 adminsitratsiooni	administratsiooni	# 4
 advekaadselt	adekvaatselt	# 6,6
 aeglselt	aeglaselt	# 6
@@ -330,7 +330,7 @@ aktsikapital	aktsiakapital	# 6
 aktsikapitali	aktsiakapitali	# 6
 aktsioomide	aksioomide	# 6
 aktsioomist	aksioomist	# 6
-aktuaarteenuste,	aktuaalteenuste,	# 11
+aktuaarteenuste	aktuaalteenuste	# 11
 alamsüsteemideks:....TÖÖTLUS	alamsüsteemideks: ... TÖÖTLUS	# 8,8
 alandatatud	alandatud	# 7
 algatud	algatatud	# 6,6
@@ -352,19 +352,19 @@ andemeid	andmeid	# 6
 andemid	andmeid	# 6
 apelatsioonikaebuse	apellatsioonikaebuse	# 5
 apellatsiooniprotsesti	apellatsiooniprotesti	# 6
-appelatsioonikaebuse,	apellatsioonikaebuse,	# 5,5
+appelatsioonikaebuse	apellatsioonikaebuse	# 5,5
 appellatsiooni	apellatsiooni	# 5
-appellatsioonikaebuse,	apellatsioonikaebuse,	# 5
-appellatsioonikaebuse.	apellatsioonikaebuse.	# 5
+appellatsioonikaebuse	apellatsioonikaebuse	# 5
+appellatsioonikaebuse	apellatsioonikaebuse	# 5
 appellatsioonikaebuses	apellatsioonikaebuses	# 5
-appellatsioonikaebust.	apellatsioonikaebust.	# 5
+appellatsioonikaebust	apellatsioonikaebust	# 5
 appellatsioonikohus	apellatsioonikohus	# 5
 appellatsiooniseadus	apellatsiooniseadus	# 5
 aravatavad	arvatavad	# 6
 arenguse	arengus	# 6
 arenguse	arengusse	# 6
 argumenteeeritud	argumenteeritud	# 5
-arreteerimis.	arreteerimise	# 6
+arreteerimis	arreteerimise	# 6
 arreterib	arreteerib	# 5
 arsti-,geograafia-ja	arsti-, geograafia- ja	# 8,8
 aruaande	aruande	# 5
@@ -379,7 +379,7 @@ asjolude	asjaolude	# 6
 asjolusid	asjaolusid	# 6
 assamble	assamblee	# 5
 assotatsiooni	assotsiatsiooni	# 6
-astapäeva,"	aastapäeva,"	# 6
+astapäeva	aastapäeva	# 6
 astesevaks	asetsevaks	# 4
 astustele	asutustele	# 6,6,6,6
 astäitja	asetäitja	# 6
@@ -392,7 +392,7 @@ avlikus	avalikus	# 6
 beensiinijaama	bensiinijaama	# 5
 biokeemiassse	biokeemiasse	# 5
 blianss	bilanss	# 4
-bõrsil.	börsil.	# 3
+bõrsil	börsil	# 3
 delegatsiooon	delegatsioon	# 5
 demogoogia	demagoogia	# 6
 detsemris	detsembris	# 6
@@ -401,10 +401,10 @@ disiplinaarbüroo	distsiplinaarbüroo	# 6,6
 disiplinaarkorras	distsiplinaarkorras	# 6,6
 disptšer	dispetšer	# 6
 distiplinaarkonnas	distsiplinaarkonnas	# 6
-distiplinaarvastutusele.	distsiplinaarvastutusele.	# 6
+distiplinaarvastutusele	distsiplinaarvastutusele	# 6
 distsipliiniriikujate	distsipliinirikkujate	# 5
 dramaturiga	dramaturgia	# 4
-dushiruumis	du¹iruumis	# 3
+dushiruumis	duširuumis	# 3
 džassi	džässi	# 3
 eanam	enam	# 6
 ebakainenena	ebakainena	# 7
@@ -427,7 +427,7 @@ ehmnunud	ehmunud	# 7
 ekisimatult	eksimatult	# 6
 ekisteeri	eksisteeri	# 6
 ekologit^seskogo	ekologitšeskogo	# 11
-eksperiisist.	ekspertiisist.	# 6
+eksperiisist	ekspertiisist	# 6
 eksploateerinud	ekspluateerinud	# 6
 eksponenet	eksponente	# 4
 eksproditulud	eksporditulud	# 4
@@ -435,8 +435,8 @@ elanikonna	elanikkonna	# 5
 elegantsi...hinge	elegantsi... hinge	# 8
 elektritseeritud	elektriseeritud	# 6
 elektrülekandeliinide	elektriülekandeliinide	# 6
-elmine,	eelmine	# 6
-elmine,	elamine	# 6
+elmine	eelmine	# 6
+elmine	elamine	# 6
 emissioni	emissiooni	# 5
 emotsiaalne	emotsionaalne	# 6
 emotsinaalse	emotsionaalse	# 6
@@ -447,8 +447,8 @@ energeetikulele	energeetikutele	# 7
 energipurse	energiapurse	# 6
 ense	enese	# 6
 ensele	enesele	# 6
-epillepsia,	epilepsia,	# 5
-eraaktsiaseltisd,	eraaktsiaseltsid,	# 4
+epillepsia	epilepsia	# 5
+eraaktsiaseltisd	eraaktsiaseltsid	# 4
 erastaministri	erastamisministri	# 6,6,6
 erastamisagenguurile	erastamisagentuurile	# 6
 erldati	eraldati	# 6
@@ -471,10 +471,10 @@ finatskonto	finantskonto	# 6
 flopit	flopid	# 11
 forseeritud	forsseeritud	# 5
 fraksioon)	fraktsioon)	# 6
-fraksioon,	fraktsioon,	# 6
-fraksiooni."	fraktsiooni."	# 6
+fraksioon	fraktsioon	# 6
+fraksiooni	fraktsiooni	# 6
 fraksioonide	fraktsioonide	# 6
-fraksioonidest.	fraktsioonidest.	# 6
+fraksioonidest	fraktsioonidest	# 6
 füüsikainsituut	füüsikainstituut	# 6
 gripihaigte	gripihaiget	# 4
 habmenoaga	habemenoaga	# 6
@@ -490,7 +490,7 @@ haridusministeerumi	haridusministeeriumi	# 6
 harrastjaid	harrastajaid	# 6
 hat.Bd.	hat. Bd.	# 8
 hea...saate	hea... saate	# 8
-heliressižõõri,	helirežissööri,	# 6,6,6,6,6
+heliressižõõri	helirežissööri	# 6,6,6,6,6
 hiihdin.Kuvakertomus	hiihdin. Kuvakertomus	# 8
 hiiilida	hiilida	# 6
 hindmine	hindamine	# 6
@@ -501,21 +501,21 @@ hinnanalandust	hinnaalandust	# 6
 hkkavad	hakkavad	# 6
 hoised	hoiused	# 6
 holotseenis.ENSV	holotseenis. ENSV	# 8
-hoogse	hoogse	# 11
+hoogse	hoogsa	# 11
 hoois	hoopis	# 6
 huivtavast	huvitavast	# 4
 hulkrite	hulkurite	# 6
 huvi."Kudemispaigad	huvi. "Kudemispaigad	# 8
-huvitataud,	huvitatud,	# 7
+huvitataud	huvitatud	# 7
 hädapaärane	hädapärane	# 6
 hüdraunilised	hüdraulilised	# 6
 ideelis=poliitilisel	ideelis-poliitilisel	# 6
-idenfitseerida,	identifitseerida,	# 6
+idenfitseerida	identifitseerida	# 6
 idenfitseerimiseks	identifitseerimiseks	# 6
-idenfitseerimist.	identifitseerimist.	# 6
+idenfitseerimist	identifitseerimist	# 6
 ikkkagi	ikkagi	# 5
-ilmenud,	ilmnenud,	# 6
-ilut0ulestik.	ilutulestik.	# 6
+ilmenud	ilmnenud	# 6
+ilut0ulestik	ilutulestik	# 6
 imees	mees	# 6
 imees	imedes	# 6
 imp.Jurjevskogo	imp. Jurjevskogo	# 8
@@ -525,13 +525,13 @@ impliitsetest	implitsiitsetest	# 6
 indifirentne	indiferentne	# 6
 indvaliidiks	invaliidiks	# 6
 inertspumapdes	inertspumpades	# 6
-infornatsioon,	informatsioon,	# 6
+infornatsioon	informatsioon	# 6
 ingtegreeruda	integreeruda	# 6
 inimesi...ja	inimesi... ja	# 8
 intrtessimäära	intressimäära	# 6
-invertariseermine.	inventariseerimine.	# 6
+invertariseermine	inventariseerimine	# 6
 investerringuid	investeeringuid	# 6
-inveteerimisfondidele.	investeerimisfondidele.	# 6
+inveteerimisfondidele	investeerimisfondidele	# 6
 iseaskalu	isaskalu	# 6
 iseeneseestmõistetatavalt	iseenesestmõistetavalt	# 5
 iseloomilike	iseloomulike	# 6
@@ -569,7 +569,7 @@ kahekas	kaheksa	# 6
 kahekümnendatel-kolmkümnendatel	kahekümnendatel-kolmekümnendatel	# 6
 kahjusus	kahjustus	# 6
 kahtlusatatavatena	kahtlustatavatena	# 6
-kahtlustuna,	kahtlustatuna	# 6,6
+kahtlustuna	kahtlustatuna	# 6,6
 kaitsejõdude	kaitsejõudude	# 6
 kaitsestrukuuridele	kaitsestruktuuridele	# 6
 kaitsesüstmisi	kaitsesüstimisi	# 6
@@ -577,14 +577,14 @@ kakkaksid	hakkaksid	# 6
 kaksteissõrmikusse	kaksteistsõrmikusse	# 6
 kallasetelt	kallastelt	# 6
 kalleletungi	kallaletungi	# 6
-kanidaati,	kandidaati,	# 6
+kanidaati	kandidaati	# 6
 kanseleile	kantseleile	# 6
 karmule...aga	karmule... aga	# 8
 kassetmagnetofoni	kassettmagnetofoni	# 5
 kasutamamta	kasutamata	# 6
 kasutatab	kasutatav	# 6
 kasutatab	kasutab	# 6
-kasutatatud,	kasutatud,	# 7
+kasutatatud	kasutatud	# 7
 kasuvajaga	kasvuajaga	# 4
 kasvas...nagu	kasvas... nagu	# 8
 katasroofi	katastroofi	# 6
@@ -602,7 +602,7 @@ keskomisjon	keskkomisjon	# 5
 keskonnaministeeriumi	keskkonnaministeeriumi	# 5
 keskuurimisburoo	keskuurimisbüroo	# 3
 kesmine	keskmine	# 6
-kiirestisti.	kiiresti.	# 6,6,6
+kiirestisti	kiiresti	# 6,6,6
 kind	kinod	# 6
 kindle	kindel	# 4
 kindlustustamise	kindlustamise	# 7
@@ -613,7 +613,7 @@ km,...	km, ...	# 8
 kn.:Profilaktika	kn.: Profilaktika	# 8
 koalitsiooniläbirääkmised	koalitsiooniläbirääkimised	# 6
 kodakondsusesta	kodakondsuseta	# 6
-kodakonsusametisse.	kodakondsusametisse.	# 6
+kodakonsusametisse	kodakondsusametisse	# 6
 koefitsendi	koefitsiendi	# 6
 kogress	kongress	# 6
 kogumsitöö	kogumistöö	# 4
@@ -628,7 +628,7 @@ kohtustuste	kohustuste	# 6
 kohukunult	kohkunult	# 6
 kohustusetega	kohustustega	# 6
 kokkkukeerutatud	kokkukeerutatud	# 5
-kokkuleppet,	kokkulepped,	# 5
+kokkuleppet	kokkulepped	# 5
 kokkuluuluvuse	kokkukuuluvuse	# 6
 kokkurentsivõimest	konkurentsivõimest	# 6
 kokkuvõteteon	kokkuvõtete on	# 8
@@ -643,7 +643,7 @@ komenteerides	kommenteerides	# 5
 komissaar	komissar	# 5
 kommertpankade	kommertspankade	# 6
 komplekteeerida	komplekteerida	# 5
-kompnaiidele,	kompaniidele,	# 4
+kompnaiidele	kompaniidele	# 4
 kompostitsiooni-teooria	kompositsiooni-teooria	# 6
 komsolisekrtär	komsomolisekrtär	# 6,6
 komsomilijuht	komsomolijuht	# 6
@@ -652,7 +652,7 @@ kondralpolkovnik	kindralpolkovnik	# 6
 konkaavsus,nõgusus	konkaavsus, nõgusus	# 8
 konkreetsid	konkreetseid	# 6
 konlfikti	konflikti	# 4
-konseptsiooni.	kontseptsiooni.	# 6
+konseptsiooni	kontseptsiooni	# 6
 konseptuaalselt	kontseptuaalselt	# 6
 konsevatooriumi	konservatooriumi	# 6
 konstanteerida	konstateerida	# 6
@@ -660,13 +660,13 @@ konsultiivset	konsultatiivset	# 6,6
 konterni	kontserni	# 6
 konternile	kontsernile	# 6
 kontolli	kontrolli	# 6
-kontollitit,	kontrolliti,	# 6,6
-kontris.	kontoris.	# 6
+kontollitit	kontrolliti	# 6,6
+kontris	kontoris	# 6
 kontrsteerub	kontrasteerub	# 6
 kontsepsioonis	kontseptsioonis	# 6
-kontsultatsioone.	konsultatsioone.	# 6
+kontsultatsioone	konsultatsioone	# 6
 konventsi	konverentsi	# 6,6
-konvrentsi.	konverentsi.	# 6
+konvrentsi	konverentsi	# 6
 koondprotree	koondportree	# 4
 kooostatud	koostatud	# 5
 koordindaadid	koordinaadid	# 6
@@ -686,7 +686,7 @@ kuivatajatebrigaadidel	kuivatajate brigaadidel	# 11
 kujundakaks	kujundajaks	# 6
 kujunenenud	kujunenud	# 7
 kujununenud	kujunenud	# 7
-kuranti",	kursanti",	# 6
+kuranti	kursanti	# 6
 kuristikku. kalgi	kuristikku, kalgi	# 10
 kuritarvitarvitajatele	kuritarvitajatele	# 7
 kustiinimese	kunstiinimese	# 6
@@ -700,8 +700,8 @@ kvartlis	kvartalis	# 6
 kÕigi	kõigi	# 9
 kÕik	kõik	# 9
 kÕiki	kõiki	# 9
-kÕnele,	kõnele,	# 9
-käibmaksuta.	käibemaksuta.	# 6
+kÕnele	kõnele	# 9
+käibmaksuta	käibemaksuta	# 6
 käitmist	käitumist	# 6
 käivitaamiset	käivitamist	# 5,6
 kälalisena	külalisena	# 6
@@ -729,7 +729,7 @@ lavastja	lavastaja	# 6
 lavatusega	lavastusega	# 6
 lavatuses	lavastuses	# 6
 leavaga	laevaga	# 4
-lekitas,"	lekitas,"	# 11
+lekitas	lekitas	# 11
 lennunnujaama	lennujaama	# 7
 libneraaldemokraatliku	liberaaldemokraatliku	# 6
 liguliseks	laiguliseks	# 6
@@ -738,7 +738,7 @@ lihsalt	lihtsalt	# 6
 lihtalt	lihtsalt	# 6
 lihtustumise	lihtsustumise	# 6
 liiklusohutusnädat	liiklusohutusnädal	# 6
-liikmeskpankade,	liikmepankade,	# 6
+liikmeskpankade	liikmepankade	# 6
 liilad	lillad	# 6,6
 liimeks	liikmeks	# 6
 liimete	liikmete	# 6
@@ -746,7 +746,7 @@ liimete	liikmete	# 6
 liimete	liikmete	# 6
 liimete	liikmete	# 6
 likviidus	likviidsus	# 6
-linatoseks.	linateoseks.	# 6
+linatoseks	linateoseks	# 6
 linnukasvatusaadusi	linnukasvatussaadusi	# 5
 lisaressurse	lisaressursse	# 5
 litsenseerimise	litsentseerimise	# 6
@@ -758,7 +758,7 @@ lk.434	lk. 434	# 8
 lustusfirmale	alustusfirmale	# 6
 lÕpetab	lõpetab	# 9
 lÜhikese	lühikese	# 9
-läbirääkimisapartner,	läbirääkimispartner,	# 6
+läbirääkimisapartner	läbirääkimispartner	# 6
 läbirääkimistepartneritele	läbirääkimiste partneritele	# 6
 läbirääkmised	läbirääkimised	# 6
 läänepolsele	läänepoolsele	# 5
@@ -775,20 +775,20 @@ maaimasõja	maailmasõja	# 6
 maakonaas	maakonnas	# 6,6
 maanteee	maantee	# 5
 maistrivõistluste	meistrivõistluste	# 6
-majandukolledž.	majanduskolledž.	# 6
+majandukolledž	majanduskolledž	# 6
 majanduliku	majandusliku	# 6
 majandulikult	majanduslikult	# 6
 majandusanktsioonide	majandussanktsioonide	# 5
 majandusminsteeriumi	majandusministeeriumi	# 6
-majandusporgramm.	majandusprogramm.	# 4
+majandusporgramm	majandusprogramm	# 4
 majandussanksioonide	majandussanktsioonide	# 6
 majandussanktsioonie	majandussanktsioone	# 6
 majandussanktsioonie	majandussanktsioonide	# 6
-majandussantksioone.	majandussanktsioone.	# 6
+majandussantksioone	majandussanktsioone	# 6
 majapidapidamisesemete	majapidamisesemete	# 7
 makseterminalide	makseterminaalide	# 11
 maksistlik	marksistlik	# 6
-mandaaati.	mandaati.	# 5
+mandaaati	mandaati	# 5
 mangtub	mangub	# 6
 marksimi-leninismi	marksismi-leninismi	# 6
 matejali	materjali	# 6
@@ -807,9 +807,9 @@ migratisooniamet	migratsiooniamet	# 4
 miipildujaroodu	miinipildujaroodu	# 6,6
 mijonit	miljonit	# 6
 mimimaalset	minimaalset	# 6
-miner.kütused,	miner. kütused,	# 8
+miner.kütused	miner. kütused	# 8
 mineraalaväetisi	mineraalväetisi	# 6
-ministriporfelli,	ministriportfelli,	# 6
+ministriporfelli	ministriportfelli	# 6
 minstrikohad	ministrikohad	# 6
 minu...palvega	minu... palvega	# 8
 misnimekirja	mis nimekirja	# 8
@@ -824,24 +824,24 @@ muhamedlikke	muhameedlikke	# 5
 mustariibuline	mustatriibuline	# 6
 muutas	muutis	# 6
 muuud	muud	# 5
-mäitavad,	näitavad,	# 6
+mäitavad	näitavad	# 6
 mälestuskonverets	mälestuskonverents	# 6
 mängujhtidele	mängujuhtidele	# 6
 märkam	märkame	# 6
-märs,	märts	# 6
-märstil,	märtsil,	# 4
+märs	märts	# 6
+märstil	märtsil	# 4
 määäruse	määruse	# 5
 mõlemilt	mõlemailt	# 11
 mõneajast	mõneajalist	# 6,6
 mõnikrod	mõnikord	# 4
 mõtleisn	mõtlesin	# 4
 mõtlemapanuv	mõtlemapanev	# 6
-mõÕtmine,	mõõtmine,	# 9
+mõÕtmine	mõõtmine	# 9
 mõõdapäämatu	möödapääsmatu	# 3,3,6
 mõõdnunud	möödunud	# 3,3,6
 müugisumma	müügisumma	# 3
-naelstirlingit.	naelsterlingit.	# 6
-naelstrilinguga.	naelsterlingiga.	# 6,6
+naelstirlingit	naelsterlingit	# 6
+naelstrilinguga	naelsterlingiga	# 6,6
 naerma,nagu	naerma, nagu	# 8
 nahaale	nahhaale	# 5
 nahkkkuube	nahkkuube	# 5
@@ -855,12 +855,12 @@ niiksusest	niiskusest	# 4
 niisugst	niisugust	# 6
 niisugunr	niisugune	# 6
 nisid	nišid	# 3
-nominaalväärtsuses.	nominaalväärtuses.	# 6
+nominaalväärtsuses	nominaalväärtuses	# 6
 nominaalväätusega	nominaalväärtusega	# 6
 nominaalväätusest	nominaalväärtusest	# 6
 noortelmanahhid	noortealmanahhid	# 6
 normaasete	normaalsete	# 6,6
-normnaalseks".	normaalseks".	# 6
+normnaalseks	normaalseks	# 6
 novmbris	novembris	# 6
 nr.30	nr. 30	# 8
 nr.7	nr. 7	# 8
@@ -879,10 +879,10 @@ ohutuspiirkonnada	ohutuspiirkonnad	# 6
 ohutussertfikaat	ohutussertifikaat	# 6
 ohvister	ohvitser	# 4
 oli..jube	oli.. jube	# 8
-olmas,"	olemas,"	# 6
+olmas	olemas	# 6
 omavalistuste	omavalitsuste	# 4
-omavalitsutele,	omavalitsustele,	# 6
-ootmatus,	ootamatus,	# 6
+omavalitsutele	omavalitsustele	# 6
+ootmatus	ootamatus	# 6
 orgaanilsite	orgaaniliste	# 4
 organistatsioonide	organisatsioonide	# 6
 osatähtus	osatähtsus	# 6
@@ -892,8 +892,8 @@ oskjonil	oksjonil	# 4
 oslevad	osalevad	# 6
 ossa brevis	ossa brevia	# 11
 ostama	ostma	# 6
-ostetumatemaks,"	ostetuimateks,"	# 6,6,6
-ostetumatemaks,"	ostetumateks,"	# 6,6,6
+ostetumatemaks	ostetuimateks	# 6,6,6
+ostetumatemaks	ostetumateks	# 6,6,6
 ostsuse	otsuse	# 6
 ostsust	otsust	# 6
 ostsustavad	otsustavad	# 6
@@ -906,7 +906,7 @@ otustas	otsustas	# 6
 paadiruunis	paadiruumis	# 6
 paigat	paigad	# 6
 paikenb	paikneb	# 4
-paljunduaparaadi,	paljundusaparaadi,	# 6
+paljunduaparaadi	paljundusaparaadi	# 6
 pankrotsitunud	pankrotistunud	# 4
 parandamaas	parandamas	# 5
 parandamisek	parandamiseks	# 6
@@ -918,7 +918,7 @@ parteifunktsionäre	parteifunktsionääre	# 5
 parteikoosolekutle	parteikoosolekutele	# 4
 parteiorganisatsionide	parteiorganisatsioonide	# 5
 parteiorganisatsionil	parteiorganisatsioonil	# 5
-parternitega".	partneritega".	# 6,6
+parternitega	partneritega	# 6,6
 patendimaeti	patendiameti	# 4
 peairektori	peadirektori	# 6
 pealikaudne	pealiskaudne	# 6
@@ -961,7 +961,7 @@ prageu	praegu	# 4
 preemisaajate	preemiasaajate	# 6
 presidenr	president	# 6
 pressikonvernts	pressikonverents	# 6
-pressikonverntsil,	pressikonverentsil,	# 6
+pressikonverntsil	pressikonverentsil	# 6
 pressisektretäri	pressisekretäri	# 6
 profašištliku	profašistliku	# 3
 professsor	professor	# 5
@@ -979,7 +979,7 @@ pärastlÕunal	pärastlõunal	# 9
 pärisalajoo	pärisajaloo	# 6,6
 pääasevad	pääsevad	# 6
 päästerõngkas	päästerõngaks	# 6
-põgenda.	põgeneda.	# 6
+põgenda	põgeneda	# 6
 põhiaktsionaäri	põhiaktsionäri	# 6
 põhjaplakudes	põhjaplankudes	# 6
 põhjusdeks	põhjusteks	# 6
@@ -1026,7 +1026,7 @@ riigkogu	riigikogu	# 6
 ringireismise	ringireisimise	# 6
 ringleda	ringelda	# 4
 roppi	roppe	# 6
-rumaa,	rumala,	# 6
+rumaa	rumala	# 6
 räägb	räägib	# 6
 rääksin	rääkisin	# 6
 rühimtustele	rühmitustele	# 4
@@ -1036,9 +1036,9 @@ saaatsid	saatsid	# 5
 saabuavd	saabuvad	# 4
 saadikukandidadi	saadikukandidaadi	# 5
 saadunud	saabunud	# 6
-sampinjoni	¹ampinjoni	# 3
+sampinjoni	šampinjoni	# 3
 sarnenevad	sarnanevad	# 6
-satistikaprogrammiga.	statistikaprogrammiga.	# 6
+satistikaprogrammiga	statistikaprogrammiga	# 6
 sattnud	sattunud	# 6
 sdakond	sadakond	# 6
 se	see	# 5
@@ -1051,29 +1051,29 @@ seistme	seitsme	# 4
 seisukihtade	seisukohtade	# 6
 seite	seitse	# 6
 seite	seire	# 6
-seiukohale,	seisukohale,	# 6
+seiukohale	seisukohale	# 6
 sekrtärid	sekretärid	# 6
 selleks...selleks...millele	selleks... selleks... millele	# 8,8
 sellepärasrt	sellepärast	# 6
 sellepärst	sellepärast	# 6
 senitele	seintele	# 4
-septebris.	septembris.	# 6
+septebris	septembris	# 6
 sertfikaat	sertifikaat	# 6
-sihtfondega.	sihtfondidega.	# 6
+sihtfondega	sihtfondidega	# 6
 sihukuste	sihukeste	# 6
 sillerimistehnoloogia	sileerimistehnoloogia	# 6
 silmaspidades	silmas pidades	# 8
 sisisutatud	sisustatud	# 6,4
 sisladuvale	sisalduvale	# 4
-sisseadmine.	sisseseadmine.	# 6,6
+sisseadmine	sisseseadmine	# 6,6
 sissejuhtatus	sissejuhatus	# 6
 sissejuhtuseks	sissejuhatuseks	# 6
-sissesõidviisa,	sissesõiduviisa,	# 6
+sissesõidviisa	sissesõiduviisa	# 6
 sisutada	sisustada	# 6
 skaudiorgnisatsioonidevahelisi	skaudiorganisatsioonidevahelisi	# 6
 skiitva	kiitva	# 6
 skyscaper	skyscraper	# 6
-slovar.M.,1983,s.	slovar. M., 1983, s.	# 8,8,8
+slovar.M.,1983,s	slovar. M., 1983, s	# 8,8,8
 so	s.o	# 10
 sobr.2	sobr. 2	# 8
 soprdihalli	spordihalli	# 4
@@ -1081,9 +1081,9 @@ sotsalistliku	sotsialistliku	# 6
 sotsialisliku	sotsialistliku	# 6
 spetisialistid	spetsialistid	# 6
 spetsiaaselt	spetsiaalselt	# 6
-sse,	see,	# 4
+sse	see	# 4
 stabilseerimistunnel	stabiliseerimistunnel	# 6
-standardeerimisküsimusi.	standardiseerimisküsimusi.	# 6,6
+standardeerimisküsimusi	standardiseerimisküsimusi	# 6,6
 stateegiliste	strateegiliste	# 6
 statistikamaetite	statistikaametite	# 4
 stiilise	stiilide	# 6
@@ -1091,20 +1091,20 @@ stlb.1267	stlb. 1267	# 8
 strandarditeni	standarditeni	# 6
 strontsimi	strontsiumi	# 6
 strukuursed	struktuursed	# 6
-suheted.	suhted	# 6
-suheted.	suhete	# 6
-sularahautomaati,	sularahaautomaati,	# 5
+suheted	suhted	# 6
+suheted	suhete	# 6
+sularahautomaati	sularahaautomaati	# 5
 suunnatud	suunatud	# 5
 suurede	suurde	# 6
 suurpankka	suurpanka	# 5
 suuutnud	suutnud	# 5
-sälitades.	säilitades.	# 6
+sälitades	säilitades	# 6
 sõdab	sõidab	# 6
 sõdrulik	sõdurlik	# 4
 sõjajärsetes	sõjajärgsetes	# 6
 sõmiti	sõlmiti	# 6
 sõnadede	sõnade	# 7
-sü1udistused,	süüdistused,	# 6,3
+sü1udistused	süüdistused	# 6,3
 sügvuses	sügavuses	# 6
 sümfoniaorkestrid	sümfooniaorkestrid	# 5
 sümpoosiumil	sümpoosionil	# 6
@@ -1138,13 +1138,13 @@ teismetes	teistmetes	# 11
 teispidi	teistpidi	# 6
 teispäevasel	teisipäevasel	# 6
 teistmisküsimuse	testimisküsimuse	# 6,6
-teistmisküsimust,	testimisküsimust,	# 6,6
+teistmisküsimust	testimisküsimust	# 6,6
 tekkkinud	tekkinud	# 5
 televisooni	televisiooni	# 6
 televisooniavalduses	televisiooniavalduses	# 6
 tendets	tendents	# 6
-tendetsi,"	tendentsi,"	# 6
-terpikojast.	trepikojast.	# 4
+tendetsi	tendentsi	# 6
+terpikojast	trepikojast	# 4
 tihenedamise	tihendamise	# 6
 tippihetked	tipphetked	# 6
 tn.10	tn. 10	# 8
@@ -1152,7 +1152,7 @@ tn.21	tn. 21	# 8
 tn.8	tn. 8	# 8
 to=imetusele	toimetusele	# 6
 to=itlustusettevõtete	toitlustusettevõtete	# 6
-toiduainetetõštuse,	toiduainetetööstuse,	# 6,3,6
+toiduainetetõštuse	toiduainetetööstuse	# 6,3,6
 toimtuse	toimetuse	# 6
 toiteelemenditesisaldus	toiteelementidesisaldus	# 6,6
 toitlustamisseptsialist	toitlustamisspetsialist	# 4
@@ -1164,10 +1164,10 @@ tootmiõpetuse	tootmisõpetuse	# 6
 tootmiõpetusega	tootmisõpetusega	# 6
 topisid	toppisid	# 6
 tradistiooniliselt	traditsiooniliselt	# 4
-tradistsiooniks,	traditsiooniks,	# 6
+tradistsiooniks	traditsiooniks	# 6
 transporidvahendid	transpordivahendid	# 4
 trukitud	trükitud	# 3
-trükiväljannetes.	trükiväljaannetes.	# 5
+trükiväljannetes	trükiväljaannetes	# 5
 tsandardi-	standardi-	# 4
 tsentrisliku	tsentristliku	# 6
 tsestoodidega	testoodidega	# 6
@@ -1178,7 +1178,7 @@ tudmatu	tundmatu	# 6
 tulbli	tubli	# 6
 tulemustestest	tulemustest	# 7
 tuli...kogemata	tuli... kogemata	# 8
-tulitelvi.	tulirelvi.	# 6
+tulitelvi	tulirelvi	# 6
 tulnud...ja	tulnud... ja	# 8
 tunnusjooneteks	tunnusjoonteks	# 6
 turismitõtajate	turismitöötajate	# 6,6
@@ -1189,11 +1189,11 @@ tutuvustab	tutvustab	# 6
 tutuvustas	tutvustas	# 6
 tutuvustavad	tutvustavad	# 6
 tutvusmisteenistusi	tutvumisteenistusi	# 6
-tuvuda,	tutvuda,	# 6
+tuvuda	tutvuda	# 6
 tuvustavad	tutvustavad	# 6
 täheb	läheb	# 6
 täheladas	täheldas	# 6
-tähtaaeg,	tähtaeg,	# 5
+tähtaaeg	tähtaeg	# 5
 tähtaaegu	tähtaegu	# 5
 tähtde	tähtede	# 6
 tähtsale...tähendab	tähtsale... tähendab	# 8
@@ -1210,33 +1210,33 @@ tõotand	tõotanud	# 6
 tõsti	tõesti	# 6
 tõsud	tõusud	# 6
 tõõdanud	töötanud	# 6,6
-tõõtaja-BNS).	töötaja - BNS).	# 6,6,8,8
+tõõtaja-BNS)	töötaja - BNS)	# 6,6,8,8
 töökohal,192	töökohal, 192	# 8
 tööstili	tööstiili	# 6
 töövaidlussorganil	töövaidlusorganil	# 6
 umaksuvabamiinimumi	maksuvabamiinimumi	# 6
 univeraalkonstant	universaalkonstant	# 6
 univeraalsuse	universaalsuse	# 6
-usaldatavause,	usaldatavuse,	# 6
+usaldatavause	usaldatavuse	# 6
 uupunud	uppunud	# 6
 vaatede	vaadete	# 6,6
 vaatepuntkist	vaatepunktist	# 6
 vabandandust	vabandust	# 7
 vabandandust	vabandanust	# 7
-vabdusekaotuse.	vabadusekaotuse.	# 6
+vabdusekaotuse	vabadusekaotuse	# 6
 vaimsutusest	vaimustusest	# 4
 vajadustestest	vajadustest	# 7
 vajalikuse	vajalikkuse	# 5
 valdkonnaksi	valdkonnaski	# 4
 valdkonnaksi	valdkonnakski	# 4
-valimimiskünnist.	valimiskünnist.	# 7
+valimimiskünnist	valimiskünnist	# 7
 valimisliiit	valimisliit	# 5
 valimisllit	valimisliit	# 6
 valimskomisjoni	valimiskomisjoni	# 6
 valistusjuhid	valitsusjuhid	# 4
 valit	valid	# 6
 valit	valitud	# 6
-valitsjuhtidega.	valitsusjuhtidega.	# 6
+valitsjuhtidega	valitsusjuhtidega	# 6
 valitsusjõudest	valitsusjõududest	# 6,6
 valitsuskoalitasiooni	valitsuskoalitsiooni	# 6
 valituskoalitsiooni	valitsuskoalitsiooni	# 6
@@ -1247,7 +1247,7 @@ vangals	vanglas	# 4
 vastatikku	vastastikku	# 6
 vastavalitud	vastvalitud	# 6
 vastmängu	vastumängu	# 6
-vastu-BNS),	vastu - BNS),	# 8,8
+vastu-BNS)	vastu - BNS)	# 8,8
 vastuolistest	vastuolulistest	# 6,6
 vastvalt	vastavalt	# 6
 vasuvõtmisel	vastuvõtmisel	# 6
@@ -1270,7 +1270,7 @@ vt.2.4.	vt. 2.4.	# 8
 vt.lk.	vt. lk.	# 8
 vÕetud	võetud	# 9
 vÕimalikuks	võimalikuks	# 9
-vÕimalusi.	võimalusi	# 9
+vÕimalusi	võimalusi	# 9
 vähemharitud	väheharitud	# 11
 vähens	vähenes	# 6
 väiksese	väikese	# 6
@@ -1306,12 +1306,12 @@ vööratud	vöötatud	# 6
 ärialseid	ärialaseid	# 6
 ärijutimiste	ärijuhtimiste	# 6
 õhkonnas	õhkkonnas	# 5
-õhtuamises.	õhutamises.	# 4
+õhtuamises	õhutamises	# 4
 õigaaegselt	õigeaegselt	# 6
 õigeagne	õigeaegne	# 6
-õleda,"	öelda,"	# 6,6
+õleda	öelda	# 6,6
 õledakse	öeldakse	# 6,6
-õledud.	öeldud.	# 6,6
+õledud	öeldud	# 6,6
 õlmimist	sõlmimist	# 6
 õppeainetaga	õppeainetega	# 6
 õppsisn	õppisin	# 6
@@ -1328,12 +1328,12 @@ vööratud	vöötatud	# 6
 üleasastumine	ülesastumine	# 6
 ülekannetete	ülekannete	# 7
 ülekannetete	ülekanneteta	# 7
-ülem-BNS).	ülem - BNS).	# 8,8
+ülem-BNS)	ülem - BNS)	# 8,8
 ülessannete	ülesannete	# 5
 üliõplaskonna	üliõpilaskonna	# 6
 üllatuseks."See	üllatuseks. "See	# 8
 ülsuse	üldsuse	# 6
-ümberegistreerimist.	ümberregistreerimist.	# 5
+ümberegistreerimist	ümberregistreerimist	# 5
 ümberrringi	ümberringi	# 5
 ümbitseva	ümbritseva	# 6
 ümer	ümber	# 6
@@ -1417,7 +1417,7 @@ hinanngu	hinnangu
 loositalse	loositakse
 tegelikuklt	tegelikult
 pesekretär	peasekretär
-tshempioneid	tshempioneid
+tshempioneid	tšempioneid
 ühiskonnakoraldusega	ühiskonnakorraldusega
 suhtetest	suhetest
 andamata	andmata
@@ -1518,7 +1518,7 @@ aregutõuke	arengutõuke
 mootosõidukimaksu	mootorsõidukimaksu
 interdistiplinaarsete	interdistsiplinaarsete
 torminiline	tormiline
-puhendatud	põhendatud
+puhendatud	pühendatud
 sanaatooriumieluga	sanatooriumieluga
 adekvaatusega	adekvaatsusega
 eraiskud	eraisikud
@@ -1751,7 +1751,7 @@ koralikud	korralikud
 paeadirektori	peadirektori
 kokkul	kokku
 töömeeoleolu	töömeeleolu
-rezhisöör	rezhissöör
+rezhisöör	režissöör
 mootorrratturrottide	mootorratturrottide
 inimsed	inimesed
 muuutus	muutus
@@ -1761,7 +1761,7 @@ kavadatud	kavandatud
 valmistatatud	valmistatud
 seadusemuuudatuse	seadusemuudatuse
 päevavalguseses	päevavalguses
-hinannguga	hinanguga
+hinannguga	hinnanguga
 põjamaale	põhjamaale
 artklid	artiklid
 vaavarustust	veevarustust
@@ -2140,7 +2140,7 @@ esmissiooni	emissiooni
 koolitusspetsualisti	koolitusspetsialisti
 natsionaliseertud	natsionaliseeritud
 mälestuesemed	mälestusesemed
-piimashokolad	piimashokolaad
+piimashokolad	piimašokolaad
 vaaatad	vaatad
 nimetetud	nimetatud
 tutvustatkse	tutvustatakse
@@ -2165,7 +2165,7 @@ koodamist	koondamist
 likvideerma	likvideerima
 bilasimaht	bilansimaht
 termostaaat	termostaat
-elanikkonnat	elanikkonnat
+elanikkonnat	elanikkonnast
 jatkab	jätkab
 tublisi	tublisti
 sisutamiseks	sisustamiseks
@@ -2360,7 +2360,7 @@ kua	kuna
 valuuutad	valuutad
 numritega	numbritega
 lere	pere
-terrorimisilmingute	terrorimisiilmingute
+terrorimisilmingute	terrorismiilmingute
 laevakompani	laevakompanii
 hämmastavapaneva	hämmastamapaneva
 taasiseisvumist	taasiseseisvumist
@@ -2452,7 +2452,7 @@ süüdistakse	süüdistatakse
 tihtu	tihti
 kordinaatori	koordinaatori
 jäegmisel	järgmisel
-tshetsheenimast	tshetsheeniast
+tshetsheenimast	tšetšeeniast
 manualteraapia	manuaalteraapia
 populaarustabelis	populaarsustabelis
 ümbekolimisel	ümberkolimisel
@@ -2461,7 +2461,7 @@ lavatudendgite	lavatudengite
 heeringufileed	heeringafileed
 transendentsust	transtsendentsust
 poolteistaastase	pooleteistaastase
-kompvekites	kompvekides
+kompvekites	kompvekkides
 starteegilisele	strateegilisele
 tubadese	tubadesse
 hobit	hobi
@@ -2692,7 +2692,7 @@ iseloomustavd	iseloomustavad
 kaiffi	kaifi
 abusrditeater	absurditeater
 keskoolipäevil	keskkoolipäevil
-tshintshiliad	tshintshiljad
+tshintshiliad	tšintšiljad
 finatsküljest	finantsküljest
 sisenb	siseneb
 smal	samal
@@ -2761,7 +2761,7 @@ oraganiseerijate	organiseerijate
 sanal	samal
 haridusoskonna	haridusosakonna
 omavalistuste	omavalitsuste
-konseravtiivid	konseravatiivid
+konseravtiivid	konservatiivid
 ettevaamatu	ettevaatamatu
 elanikkonankihtidesse	elanikkonnakihtidesse
 managememt	management
@@ -3209,7 +3209,7 @@ keskkonnanisteeriumi	keskkonnaministeeriumi
 poliitist	poliitilist
 kolonelleinant	kolonelleitnant
 ikebanakuruse	ikebanakursuse
-paralmendikomisjoni	parlmendikomisjoni
+paralmendikomisjoni	parlamendikomisjoni
 prantuse	prantsuse
 sõbradele	sõpradele
 maaailamturugi	maailmaturugi
@@ -3264,7 +3264,7 @@ televisoonilt	televisioonilt
 segenevat	sagenevat
 tolliinspektisooni	tolliinspektsiooni
 rahanduministrina	rahandusministrina
-shunteerimisoporatsiooni	shunteerimisoperatsiooni
+shunteerimisoporatsiooni	šunteerimisoperatsiooni
 intgreerumine	integreerumine
 lennundudes	lennunduses
 veneleelseid	venekeelseid
