@@ -1,8 +1,6 @@
 ! Copyright © 2016-2017 
 !! ## Phonology
 
-!! This file documents the [phonology.twolc file](http://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/phonology.twolc) 
-
 Alphabet
 
 a b c d e f g h i j k l m n o p q r s š z ž t u v w õ ä ö ü x y 
@@ -728,7 +726,7 @@ Vx:Vx /<=  Vx _ Null+ :stemV ;            ! sae, soid
 
 "from -v to -ev"
 
-0:e <=> :Consonant Null* SuffixBorder _ v WordEnd ;
+0:e <=> :Consonant Null* SuffixBorder _ v Null* WordEnd ;
 
 ! lexical: n ´ a e r > 0 v
 ! surface: n ´ a e r > e v
@@ -1511,34 +1509,37 @@ Cx:Cy  <=> :voiceless Null* SuffixBorder _ ;
 !----------------
 
 ! for debugging in GT infra:
-! in ~/svn-giellatekno/main/experiment-langs/est/src
+! in ~/giella/lang-est-x-utee/src
 
 ! for looking at all the generated forms (use only if the lexicon is really small):
 ! hfst-fst2strings analyser-gt-desc.hfstol > tmp1
 
 ! echo 'laudu' | hfst-lookup analyser-gt-desc.hfstol
-! > laudu	laud+N+Pl+Par	0,000000
+! > laudu	laud+N+Pl+Par	8,000000
 
-! echo 'laud+N+Pl+Par' | hfst-lookup morphology/lexicon.hfst
-! > laud+N+Pl+Par	lauD1>{pl.u}{sg.a}>{sid}	0,000000
 
-! echo 'l a u D1:d +:0 {pl.u}:u {sg.a}:0 +:0 {s}:0' | hfst-pair-test phonology/est-phon.compose.hfst
+! echo 'laud+N+Pl+Par' | hfst-lookup fst/lexicon.hfst
+! > laud+N+Pl+Par	l˘auD1>{pl.u}{sg.a}>{s}{i}{d}	5,000000
+
+! echo 'l a u D1:d > {pl.u}:u {sg.a}:0 > {s}:0 {i}:0 {d}:0' | hfst-pair-test fst/phonology.compose.hfst
+! > Test passed.
 
 ! hfst & xfst:
-! echo 'raudne+A+Sg+Par' | hfst-lookup morphology/lexicon.hfst 
-! > raudne+A+Sg+Par	r´audneE1>t	0,000000
+! echo 'raudne+A+Sg+Par' | hfst-lookup fst/lexicon.hfst 
+! > raudne+A+Sg+Par	r˘audneE1>t	8,000000
 
-!  echo 'r´audneE1>t' | ~/xfst/bin/lookup -flags mbTT morphology/lexicon.xfst 
-! > r´audneE1>t	raudne+A+Sg+Par
+! this has not been tried for a long time...
+!  echo 'r˘audneE1>t' | ~/xfst/bin/lookup -flags mbTT fst/lexicon.xfst 
+! > r˘audneE1>t	raudne+A+Sg+Par
  
 
 ! a minimalistic way:
 ! make nets for lexc and twol:
-! hfst-lexc -o tmp.lexc morphology/root.lexc
-! hfst-twolc -o tmp.twol phonology/est-phon.twolc
+! hfst-lexc -o tmp.lexc fst/root.lexc
+! hfst-twolc -o tmp.twol fst/phonology.twolc
 ! echo 'laud+N+Pl+Par' | hfst-lookup tmp.lexc
 
-! echo 'l a u D1:d > {pl.u}:u {sg.a}:0 +:0 {s}:0' | hfst-pair-test tmp.twol
+! echo 'l a u D1:d > {pl.u}:u {sg.a}:0 > {s}:0 {i}:0 {d}:0' | hfst-pair-test tmp.twol
 
 
 
