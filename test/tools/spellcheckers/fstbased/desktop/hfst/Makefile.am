@@ -11,8 +11,9 @@ YAML_TEST_RUNNERS_IN=
 YAML_TEST_RUNNERS=$(basename $(YAML_TEST_RUNNERS_IN))
 # Specify other shell scripts here to make sure they are included in the distro
 # even though spellers are disabled:
-OTHER_TEST_RUNNERS_IN=test-zhfst-basic-sugg-speed.sh.in \
-                      accept-all-lemmas.sh.in
+OTHER_TEST_RUNNERS_IN=test-zhfst-basic-sugg-speed.sh.in 
+
+#                      accept-all-lemmas.sh.in   # this test assumes too much about conventions in .lexc files   
 OTHER_TEST_RUNNERS=$(basename $(OTHER_TEST_RUNNERS_IN))
 
 # Only test spellers if we build spellers:

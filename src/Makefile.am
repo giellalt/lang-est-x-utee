@@ -787,6 +787,7 @@ analyser-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%                \
 					filters/remove-Use_PMatch-strings.%       \
 					filters/remove-mwe-tags.%                 \
 					orthography/inituppercase.compose.%       \
+					orthography/allcaps.compose.%       \
 					orthography/spellrelax.compose.%          \
 					$(GLT_DOWNCASE_FILTER)
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
@@ -813,6 +814,7 @@ analyser-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%                \
 			set flag-is-epsilon ON\n\
 			read regex fst \
 			.o. @\"orthography/inituppercase.compose.$*\"       \
+			.o. @\"orthography/allcaps.compose.$*\"       \
 			.o. @\"orthography/spellrelax.compose.$*\"          \
 			;\n\
 		 save stack $@\n\

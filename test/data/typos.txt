@@ -57,19 +57,19 @@
 # 10 – space error           8
 # 11 – various...        39
 # 
-"Appelatsioonikaebuse	"Apellatsioonikaebuse	# 5,5
-"Appellatsiooniseaduses	"Apellatsiooniseaduses	# 5
-"Büroo'95	"Büroo'95	# 8
-"Koonderkond	"Koonderakond	# 6
-"Koondrekonna	"Koonderakonna	# 6
-"LUKoil	"Lukoil	# 9
-"LUKoili	"Lukoili	# 9
-"Lendlehtdel	"Lendlehtedel	# 6
-"Mõõdujate	"Mõõdukate	# 6
-"Nordstrom	"Nordström	# 3
-"Parempoolsetsest	"Parempoolsetest	# 6
+Appelatsioonikaebuse	Apellatsioonikaebuse	# 5,5
+Appellatsiooniseaduses	Apellatsiooniseaduses	# 5
+Büroo'95	Büroo'95	# 8
+Koonderkond	Koonderakond	# 6
+Koondrekonna	Koonderakonna	# 6
+LUKoil	Lukoil	# 9
+LUKoili	Lukoili	# 9
+Lendlehtdel	Lendlehtedel	# 6
+Mõõdujate	Mõõdukate	# 6
+Nordstrom	Nordström	# 3
+Parempoolsetsest	Parempoolsetest	# 6
 'rgmistel	järgmistel	# 6,6
-(Stokchomis)	(Stockholmis)	# 6
+Stokchomis	Stockholmis	# 6
 1.Köögiviljade	1. Köögiviljade	# 8
 1.juuni-15.august	1. juuni - 15. august	# 8,8,8,8
 10.-13.apr	10.-13. apr	# 8
@@ -470,7 +470,7 @@ finats-	finants-	# 6
 finatskonto	finantskonto	# 6
 flopit	flopid	# 11
 forseeritud	forsseeritud	# 5
-fraksioon)	fraktsioon)	# 6
+fraksioon	fraktsioon	# 6
 fraksioon	fraktsioon	# 6
 fraksiooni	fraktsiooni	# 6
 fraksioonide	fraktsioonide	# 6
@@ -505,7 +505,7 @@ hoogse	hoogsa	# 11
 hoois	hoopis	# 6
 huivtavast	huvitavast	# 4
 hulkrite	hulkurite	# 6
-huvi."Kudemispaigad	huvi. "Kudemispaigad	# 8
+huvi.Kudemispaigad	huvi. Kudemispaigad	# 8
 huvitataud	huvitatud	# 7
 hädapaärane	hädapärane	# 6
 hüdraunilised	hüdraulilised	# 6
@@ -632,7 +632,7 @@ kokkuleppet	kokkulepped	# 5
 kokkuluuluvuse	kokkukuuluvuse	# 6
 kokkurentsivõimest	konkurentsivõimest	# 6
 kokkuvõteteon	kokkuvõtete on	# 8
-kokkuvõttega."Kuna	kokkuvõttega. "Kuna	# 8
+kokkuvõttega.Kuna	kokkuvõttega. Kuna	# 8
 kolaitsioonis	koalitsioonis	# 4
 koljuvigatusega	koljuvigastusega	# 6
 kolnurk	kolmnurk	# 6
@@ -1210,7 +1210,7 @@ tõotand	tõotanud	# 6
 tõsti	tõesti	# 6
 tõsud	tõusud	# 6
 tõõdanud	töötanud	# 6,6
-tõõtaja-BNS)	töötaja - BNS)	# 6,6,8,8
+tõõtaja-BNS	töötaja - BNS	# 6,6,8,8
 töökohal,192	töökohal, 192	# 8
 tööstili	tööstiili	# 6
 töövaidlussorganil	töövaidlusorganil	# 6
@@ -1247,7 +1247,7 @@ vangals	vanglas	# 4
 vastatikku	vastastikku	# 6
 vastavalitud	vastvalitud	# 6
 vastmängu	vastumängu	# 6
-vastu-BNS)	vastu - BNS)	# 8,8
+vastu-BNS	vastu - BNS	# 8,8
 vastuolistest	vastuolulistest	# 6,6
 vastvalt	vastavalt	# 6
 vasuvõtmisel	vastuvõtmisel	# 6
@@ -1328,10 +1328,10 @@ vööratud	vöötatud	# 6
 üleasastumine	ülesastumine	# 6
 ülekannetete	ülekannete	# 7
 ülekannetete	ülekanneteta	# 7
-ülem-BNS)	ülem - BNS)	# 8,8
+ülem-BNS	ülem - BNS	# 8,8
 ülessannete	ülesannete	# 5
 üliõplaskonna	üliõpilaskonna	# 6
-üllatuseks."See	üllatuseks. "See	# 8
+üllatuseks.See	üllatuseks. See	# 8
 ülsuse	üldsuse	# 6
 ümberegistreerimist	ümberregistreerimist	# 5
 ümberrringi	ümberringi	# 5
