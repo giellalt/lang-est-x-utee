@@ -343,9 +343,9 @@ voiceless = f s š h stop ;
 ! possible stem- or ending vowels
 stemV = a e i u ;
 
-HighVowel = i ü u ;
-MidVowel = e ö õ o ;
-LowVowel = ä a ;
+HighVowel = i ü   u ;
+MidVowel =  e ö õ o ;
+LowVowel =    ä   a ;
 NonHighVowel = MidVowel LowVowel ;
 
 LowerBackVowel = o a ;
@@ -393,6 +393,10 @@ Rules
 "strong and weak gradation triggers cannot co-exist"
 %{S%}:0  /<= _ :* %{W%}: ;
              %{W%}: :* _ ;
+
+! -----
+! ----- stem grade alternation
+! -----
 
 ! ----- consonant gradation
 
@@ -534,129 +538,10 @@ Cx:Cy <=> ShortSyll Cy _ AnyNoTrigger* %{W%}: ;  ! also -kond -konna -konda
 ! lexical: k ä ä n D1 e {W}   !NB no assimilation !
 ! surface: k ä ä n  0 e  0
 
-! the context is too specific; this is just to avoid Xerox twol warning messages about conflicting => contexts
-! ( _ Null* [ :t | :d ]  should be sufficient as context) 
-"s g d disappear in front of dt: only 0 allowed"
-
-Cx:0  =>  _ NullNoWeakTrigger* [ :t | :d ] AnyNoWeakTrigger* WordEnd ;
-     where Cx in (K1 D1 S1 ) ;
-
-"s g d disappear in front of dt: no surface phone allowed"
-
-Cx:Cy /<=  _ NullNoWeakTrigger* [ :t | :d ] AnyNoWeakTrigger* WordEnd ;
-     where Cx in (K1 D1 S1 ) 
-           Cy in ( k  d  s )
-     matched ;
-
-! lexical: a n D1 > T7 u d
-! surface: a n  0 >  t u d
-! lexical: p u s K1 > T7 u d
-! surface: p u s  0 >  t u d
-! lexical: v a r S1 {stemill} {S} > d e > {s} {s} {e}
-! surface: v a r  0      0     0  > d e >  0   0   0
-! lexical: k o l m a N1 S1 d a
-! surface: k o l m a  n  0 d a
-
-! the context is too specific; this is just to avoid Xerox twol warning messages about conflicting => contexts
-! ( _ Null* G7:  should be sufficient as context)
-"g, k disappears in front of gu/ku"
-
-K1:0 <=> _ NullNoTrigger* G7: AnyNoTrigger* WordEnd;  ! only laskma mõskma puskma
-
-! lexical: p u s K1 > G7 u
-! surface: p u s  0 >  k u
-
-!------- short illative stem generation
-! the rules are hard-wired to %{S%}: 
-
-"short illative strong stem generation: consonant doubling"
-
-0:Cy  <=>  ShortSyll NullNoTrigger* Cx:Cy _ NullNoTrigger* :Vowel NullNoTrigger* %{S%}: ; ! majja
-     where Cx in ( l m M1 n r v j h s g b d k p t G1 B1 B2 D1 ) 
-           Cy in ( l m  m n r v j h s k p t k p t  k  p  p  t )
-     matched ;
-
-! lexical: t u B1 0 a > {pl.e} {stemill} {S} > {s} {s} {e}
-! surface: t u  p p a 0    0       0      0  >  0   0   0 
-! s õ J1 D1 0 a
-! s õ  0  t t a
-
-"short illative strong stem generation: g b d to k p t"
-
-Cx:Cy <=> ShortSyll NullNoTrigger* _ :Cy NullNoTrigger* :Vowel NullNoTrigger* %{S%}: ;
-     where Cx in ( g b d ) 
-           Cy in ( k p t )
-     matched ;
-
-! s a b 0 a > {pl.u} {rare} {stemill} {S} > {s} {s} {e}
-! s a p p a >    0     0         0     0  0  0   0   0
-
-! the context is too specific; this is just to avoid twol warning messages about conflicting => contexts
-! (the StrongGrade trigger alone should be sufficient as context)
-"short illative strong stem generation: lexically determined stop"
-
-Cx:Cy <=>  _ (:Cy | j) NullNoTrigger* :Vowel NullNoTrigger* %{S%}: ;
-     where Cx in ( G1 B1 B2 D1 G3 D3 G4 B4 D4) 
-           Cy in (  k  p  p  t  g  d  k  p  t)
-     matched ;
-
-! lexical: l a G1 0 {stemill} e  {S} > {s} {s} {e}
-! surface: l a  k k     0     e   0  >  0   0   0
-! lexical: A B4 j a {stemill} {S} > {s} {s} {e}
-! surface: A  p j a     0      0  >  0   0   0
-! lexical: R a n n D3 u {stemill} {S} > {s} {s} {e}
-! surface: R a n 0  d u     0      0  >  0   0   0
-! lexical: L e e D4 u {stemill} {S} > {s} {s} {e}
-! surface: L e e  t u     0      0  >  0   0   0
-
-!--------- vowels
-
-"nonstressed syllable vowel (a e u i) deletion"
-
-Vx:Vy  <=>    _ Null* [:Consonant - :stop] Null* :stemV  ;
-     where Vx in ( A2 I2 U2 E2 ) 
-           Vy in (  0  0  0  0 )
-     matched ;
-
-! lexical: p e e n A2 r > a
-! surface: p e e n  0 r > a 
-! lexical: t ä h t I2 s > a
-! surface: t ä h t  0 s > a 
-! lexical: s u h k U2 r > u
-! surface: s u h k  0 r > u 
-! lexical: k o o r E2 m > a
-! surface: k o o r 0  m > a 
-! lexical: s e a d E2 m > e    ??
-! surface: s e a d 0  m > e 
-! lexical: a T2 E2 r > a
-! surface: a  d  0 r > a 
-! lexical: s p i k k E2 r > i
-! surface: s p i k 0  0 r > i 
-
-! some older verbs lose the stem final vowel in strong grade forms
-"verb stem final vowel in weak grade (excl. impersonal)"
-
-Vx:Vy  <=> _ %{W%}: %> \[T7:] ;
-     where Vx in ( A7 E7 ) 
-           Vy in (  a  e )
-     matched ;
-
-! lexical: s e i s A7 {W} > b
-! surface: s e i s  a  0  > b 
+! ------- vowel lowering and shortening in grade alternation
 
 ! vowel lowering; 
-! it is triggered by g b d t s disappearing or morpheme border between i and i
-
-"i lowers to e before inflectional i"
-
-i:e  <=>  [ :Consonant | %{apo%}:' ] Null* _ Null* %> :i ;
-      
-! lexical: v o o d i > i d
-! surface: v o o d e > i d
-! lexical: r u k K1 i > i d
-! surface: r u k  k e > i d
-! lexical: S c h e d u l e {apo} i > i d
-! surface: S c h e d u l e   '   e > i d
+! it is triggered by g b d t s disappearing (or morpheme border between i and i - the rule is in other place)
 
 "single short high vowel lowers if it obtains a neighboring vowel after stop or s disappears"
 
@@ -706,7 +591,6 @@ Vx:0 /<=  :Vx _ Null+ [:stemV - :i];            ! riiu, luua; puid
 Vx:Vx /<=  Vx _ Null+ :stemV ;            ! sae, soid
       where Vx in ( NonHighVowel ) ;  
 
-!      where Vx in ( MidVowel LowVowel ) ;  
 
 ! lexical: s a a G1 > {pl.e} {sg.i} {W}
 ! surface: s a 0  0 >    0      e    0 
@@ -722,36 +606,42 @@ Vx:Vx /<=  Vx _ Null+ :stemV ;            ! sae, soid
 ! surface: n ä 0  0 u  0  > b
 
 !-----
-! add a vowel to make the wordform pronouncable
 
-"from -v to -ev"
+! -----
+! ----- stem ending changes
+! -----
 
-0:e <=> :Consonant Null* SuffixBorder _ v Null* WordEnd ;
+"nonstressed syllable vowel (a e u i) deletion"
 
-! lexical: n ´ a e r > 0 v
-! surface: n ´ a e r > e v
+Vx:Vy  <=>    _ Null* [:Consonant - :stop] Null* :stemV  ;
+     where Vx in ( A2 I2 U2 E2 ) 
+           Vy in (  0  0  0  0 )
+     matched ;
 
-! impersonal voice for söötma, nutma, lõpma: söödetud, nutetud, lõpetud
-"from t+t to te+t"
+! lexical: p e e n A2 r > a
+! surface: p e e n  0 r > a 
+! lexical: t ä h t I2 s > a
+! surface: t ä h t  0 s > a 
+! lexical: s u h k U2 r > u
+! surface: s u h k  0 r > u 
+! lexical: k o o r E2 m > a
+! surface: k o o r 0  m > a 
+! lexical: s e a d E2 m > e    ??
+! surface: s e a d 0  m > e 
+! lexical: a T2 E2 r > a
+! surface: a  d  0 r > a 
 
-0:e <=> [t: | T1: | p:] Null* _ %{W%}: SuffixBorder T7:t ;
+! some older verbs lose the stem final vowel in strong grade forms
+"verb stem final vowel in weak grade (excl. impersonal)"
 
-! lexical: n ´ u t t A7 0 {W} > T7 u d
-! surface: n ´ u t 0  0 e  0  >  t u d
+Vx:Vy  <=> _ %{W%}: %> \[T7:] ;
+     where Vx in ( A7 E7 ) 
+           Vy in (  a  e )
+     matched ;
 
-! i is added to make s-ending preteritum form pronouncable,
-! or i is actually the only morpheme indicating preteritum
-
-"i surfaces in preteritum"
-
-I7:i <=> :Consonant Null* %> _ S7: WordEnd ;
-         _ WordEnd ;
-
-! lexical: n ´ a e r > I7 S7
-! surface: n ´ a e r >  i  s
-! lexical: s a a > I7
-! surface: s a 0 >  i
-
+! lexical: s e i s A7 {W} > b
+! surface: s e i s  a  0  > b 
+   
 !--------- declinable word stem change ---------
 ! schwa (dis)appears or emerges or surfaces...
 ! REDEL type
@@ -787,17 +677,6 @@ e:0 <=>  _ [l | r]           %{E%}:           SuffixBorder i: \%{rare%}: ;   ! t
 "block a spurious path"
 %{rare%}:0 /<= # \[%{rare%}:]* SuffixBorder i: _ ;
 
-!%{rare%}:0 /<=  e: [l | r] (%{E%}:) SuffixBorder i: _ ;
-!                           %{apo%}: SuffixBorder i: _ ;
-
-! S c h e d u l e {apo} > i > i > s s e
-! S c h e d u l e   '   > e > i > s s e
-! S c h e d u l e {apo} > i > {rare} t e > s s e   FAIL
-! S c h e d u l e   '   > i >    0   t e > s s e
-
-
-!e:e /<=  _ [l | r] SuffixBorder i:  %{rare%}: ;
-
 
 ! --------- verb stem changes -------
 ! not really gradation
@@ -825,139 +704,6 @@ e:e /<=  [:Consonant | WS:0] [l | r] _ %{W%}: SuffixBorder :Consonant ;
 ! lexical: h ´ ü ü D1 0 l e {W} > d a
 ! surface: h ´ ü ü 0  e l 0  0  > d a
 
-! -------- rules that operate on a small set of different words
-
-"Long vowel shortens before h"
-
-Vx:0 <=> :Vx _ H3:h  :stemV ;            !  sohu, suhu, öhe, pähe
-      where Vx in ( Vowel ) ;  
-
-
-! ------ rules for j
-! ------ they affect a handful of words
-
-! --- j is not in the lexical side
-"e pronounced as j between vowels "
-
-E4:j  <=>  :Vowel Null* _ Null* [:Vowel | :j] ;
-
-! lexical: a E4 G1 
-! surface: a  e  g
-! lexical: a E4 G1 a
-! surface: a  j  0 a
-! lexical: s o o E4  
-! surface: s o 0 e 
-! lexical: s o o E4 a 
-! surface: s o o j  a 
-
-! --- j is in the lexical side, but surfaces only in certain contexts
-
-! j is i only in word final position
-
-"j appears as i"
-
-J1:i  <=>      _ Null* WordEnd ;
-
-! lexical: a h J1 > {pl.e} {rare}
-! surface: a h  i  0    0      0
-
-"j does not surface between consonants 1/2"
-    
-J1:j /<=    h _ T1: ;
-              _ :stop ;
-
-"j does not surface between consonants 2/2"
-
-J1:0  =>   h _ T1: ;
-             _ :stop ;
-
-! lexical: r o h J1 T1 > {pl.e} {rare}
-! surface: r o h  0  t >    e      0
-! lexical: r o h J1 T1 > {pl.e} {rare} {sg.u} {W}
-! surface: r o h  0  0 >    0      0     u     0
-! lexical: h ä r J1 G1 > {pl.i} {sg.a} 
-! surface: h ä r 0  g  >    0      a   
-
-! lexical: h ä r J1 G1 > {pl.i} {sg.a} {W}
-! surface: h ä r j  0  >    0      a    0
-! lexical: a h J1 > {pl.e} {rare} {sg.u} {W}
-! surface: a h j  >   0       0      u    0
-! lexical: s a J1 D1 a > {pl.u} {W}
-! surface: s a j  0  a >    0    0
-
-! --- 
-! juus-juuksed, kälis-käliksed, nõos-nõoksed, omas-omaksed, vennas-vennaksed, ões-õeksed 
-"vennas-vennaksed"
-
-K3:k  <=> _ s E1:e ;
-
-! lexical: v e n n a K3 s E1 > d 
-! surface: v e n n a k  s  e > d
-
-!------
-"laas-laane"
-
-N1:0  <=> \[:Consonant] _ S1:s ;   ! laas-laane, tuhandes-tuhendenda etc
-
-! lexical: l a a N1 S1 
-! surface: l a a 0  s
-!------
-! Only pea, hea 
-"Pea, hea vs häid, päid, pähe 1"
-
-A6:ä  <=> E6: _ :h ;
-          E6: _ Null+ :i ;   
-
-"Pea, hea vs häid, päid, pähe 2"
-
-E6:0  <=> _ A6: :h  ;
-          _ A6: Null+ :i ;
-
-"öhe, pähe"
-Y3:e  <=> [:ä | :ö] Null* H3:h _ ;
-
-"sohu, suhu"
-Y3:u  <=> [:o | :u] Null* H3:h _ ;
-
-"h-illative"
-H3:h  <=> _ :* %{S%}: ;
-
-!------
-"Verb vowel ö o to õ"
-
-Vx:õ  <=> Vx: _ Null+ :i ; 
-     where Vx in ( Ö6 O6 ) ; 
-
-"Verb vowel ö o to 0"
-
-Vx:0  <=> _ Vx:õ Null+ :i ; 
-     where Vx in ( Ö6 O6 ) ; 
-
-! lexical: l O6 O6 > i 
-! surface: l  0  õ > i 
-
-"Verb vowel o ö to u ü"
-
-Vx:Vy  <=>  Vx: _  Null+ [:a | :e] ; 
-             _ :Vy Null+ [:a | :e] ;
-     where Vx in ( Ö6 O6 ) 
-           Vy in ( ü  u )
-     matched ;
-
-! lexical: l O6 O6 {W} > T7 a k s e 
-! surface: l u   u  0  >  0 a k s e 
-!------
-
-! a general rule, but has to be encoded with M1 to allow for komtuur, EMT etc
-"m pronounced as n before t"
-
-M1:n  <=> _ Null* [:t | :d ] ;
-
-! lexical: l e e M1 {stemill} {rare} > t
-! surface: l e e  n      0        0  > t 
-
-! ---------- morphology
-   
 ! --------- -ne, -s ending words
 ! xxx rules are needed for allowing -ne only for sg nom
 
@@ -1031,6 +777,7 @@ E1:0  <=> :Vowel Null* (») :s Null* _ Null* s e ;          ! olulisse (haplolog
 !!$ viskoosneE1>t
 !!$ viskooss00>t
 
+
 ! i is a vowel that starts Pl Par or vowel plural affixes; or -im derivation Der/im 
 ! use I1 as a trigger
 "I1 triggers -ne to be -s"
@@ -1043,8 +790,57 @@ I1:i   => n:s e:0 Null* (») _ ;   ! -ne word
 ! lexical: g l o o b u s > I1
 ! surface: g l o o b u s >  i
 
-! ---------
-! affix allomorphs
+! ----
+! ---- stem + affix consonant cluster  
+! ----
+
+! ---- stem final consonant changes
+
+! a general rule, but has to be encoded with M1 to allow for komtuur, EMT etc
+"m pronounced as n before t"
+
+M1:n  <=> _ Null* [:t | :d ] ;
+
+! lexical: l e e M1 {stemill} {rare} > t
+! surface: l e e  n      0        0  > t 
+
+! ---- stem final consonant disappears 
+
+! (use this to avoid Xerox twol warning messages about conflicting => contexts)
+!  _ NullNoWeakTrigger* [ :t | :d ] AnyNoWeakTrigger* WordEnd ;
+
+"s g d disappear in front of dt: only 0 allowed"
+
+Cx:0  =>  _ Null* [ :t | :d ] ;
+     where Cx in (K1 D1 S1 ) ;
+
+"s g d disappear in front of dt: no surface phone allowed"
+
+Cx:Cy /<=  _ Null* [ :t | :d ] ;
+     where Cx in (K1 D1 S1 ) 
+           Cy in ( k  d  s )
+     matched ;
+
+! lexical: a n D1 > T7 u d
+! surface: a n  0 >  t u d
+! lexical: p u s K1 > T7 u d
+! surface: p u s  0 >  t u d
+! lexical: v a r S1 {stemill} {S} > d e > {s} {s} {e}
+! surface: v a r  0      0     0  > d e >  0   0   0
+! lexical: k o l m a N1 S1 d a
+! surface: k o l m a  n  0 d a
+
+! (use this to avoid Xerox twol warning messages about conflicting => contexts) 
+! _ NullNoTrigger* G7: AnyNoTrigger* WordEnd;
+
+"g, k disappears in front of gu/ku"
+
+K1:0 <=> _ Null* G7: ;  ! only laskma mõskma puskma
+
+! lexical: p u s K1 > G7 u
+! surface: p u s  0 >  k u
+
+! --------- affix allomorph changes because of the final phone of the stem
 
 ! noun pl affix te -> de; 
 ! thus tütar, kannel, pinge, kotkas appear similar
@@ -1083,16 +879,6 @@ D7:0  <=>  [:p | :t | :d] Null* SuffixBorder _ ; ! tappa, kasta, nutta, anda, ni
 ! lexical: k ü n D1 > D7 a
 ! surface: k ü n  d >  0 a
 
-! d cannot follow a voiceless consonant; 
-! this is a general rule that is repeated here for the D7:d case
-
-!"orthography for da, des"
-
-!D7:d /<= :voiceless Null* _ ;
-
-! lexical: l a s K1 > D7 a 
-! surface: l a s  k 0  d a   <-- FAIL
-
 "impersonal voice affix may begin in d"
 
 T7:d  <=> [l | n | r] e:0 %{W%}: SuffixBorder _ ;
@@ -1130,6 +916,39 @@ G7:k  <=> [\:Vowel | :i] a Null* %{W%}: %> _ ;
 ! lexical: s e i s > G7 u 
 ! surface: s e i s >  k u
 
+! ------ add a vowel to make the word form pronouncable 
+
+"from -v to -ev"
+
+0:e <=> :Consonant Null* SuffixBorder _ v Null* WordEnd ;
+
+! lexical: n ´ a e r > 0 v
+! surface: n ´ a e r > e v
+
+! impersonal voice for söötma, nutma, lõpma: söödetud, nutetud, lõpetud
+"from t+t to te+t"
+
+0:e <=> [t: | T1: | p:] Null* _ %{W%}: SuffixBorder T7:t ;
+
+! lexical: n ´ u t t A7 0 {W} > T7 u d
+! surface: n ´ u t 0  0 e  0  >  t u d
+
+! add i to make s-ending preteritum form pronouncable,
+! or i is actually the only morpheme indicating preteritum
+
+"i surfaces in preteritum"
+
+I7:i <=> :Consonant Null* %> _ S7: WordEnd ;
+         _ WordEnd ;
+
+! lexical: n ´ a e r > I7 S7
+! surface: n ´ a e r >  i  s
+! lexical: s a a > I7
+! surface: s a 0 >  i
+
+! this rule is perhaps a bad way to express morphological regularities;
+! one should re-design the continuation lexicons instead ...
+
 "from -is to -i"
 
 S7:0 <=> ShortSyll :Consonant Null* %> I7: _ WordEnd ;  ! lasi
@@ -1146,8 +965,56 @@ S7:0 <=> ShortSyll :Consonant Null* %> I7: _ WordEnd ;  ! lasi
 ! lexical: k ´ ü T1 t > I7 S7 i n
 ! surface: k ´ ü  t 0 >  0  s i n   NB! S7:s
 
+! -----
+! ----- stem + affix vowel cluster
+! -----
+
+! ----- stem final phone changes
+
+"i lowers to e before inflectional i"
+
+i:e  <=>  [ :Consonant | %{apo%}:' ] Null* _ Null* %> :i ;
+      
+! lexical: v o o d i > i d
+! surface: v o o d e > i d
+! lexical: r u k K1 i > i d
+! surface: r u k  k e > i d
+! lexical: S c h e d u l e {apo} i > i d
+! surface: S c h e d u l e   '   e > i d
+
+! stem ends with a long rounded vowel 
+! and the inflectional affix starts with a vowel
+! (6 old words löö, söö, joo, loo, too, poo)
+
+"Verb vowel ö o to õ"
+
+Vx:õ  <=> Vx: _ Null+ :i ; 
+     where Vx in ( Ö6 O6 ) ; 
+
+"Verb vowel ö o to 0"
+
+Vx:0  <=> _ Vx:õ Null+ :i ; 
+     where Vx in ( Ö6 O6 ) ; 
+
+! lexical: l O6 O6 > i 
+! surface: l  0  õ > i 
+
+"Verb vowel o ö to u ü"
+
+Vx:Vy  <=>  Vx: _  Null+ [:a | :e] ; 
+             _ :Vy Null+ [:a | :e] ;
+     where Vx in ( Ö6 O6 ) 
+           Vy in ( ü  u )
+     matched ;
+
+! lexical: l O6 O6 {W} > T7 a k s e 
+! surface: l u   u  0  >  0 a k s e 
+
+
 ! us-suffix and ini-suffix attach to a consonant, so a preceding vowel is deleted
 ! in reality, only a u e are the preceding vowels
+
+! ----- stem final phone disappears
 
 "delete vowel before -us -is or -ini"
 
@@ -1162,6 +1029,10 @@ Vx:0 <=> :Consonant Null* _ SuffixBorder u s ;
 ! surface: p i n g s 0 >  0 » u s
 ! lexical: a r v e l d a » i s
 ! surface: a r v e l d 0 » i s
+
+! -----
+! ----- 
+! -----
 
 ! ---------
 ! Rules for selecting 
@@ -1311,6 +1182,53 @@ Vx:0  <=> :Consonant ( J1:0 ) _ %> PlSV:Vy Null* %{s%}:0 %{i%}:0 %{d%}:0 ;
 "(extra) strong grade is incompatible with sse-illative"
 %{S%}:0       /<=  _ Any* %{s%}:s %{s%}:s %{e%}:e  ;      
 
+
+!------- short illative stem generation
+! the rules are hard-wired to %{S%}: 
+
+"short illative strong stem generation: consonant doubling"
+
+0:Cy  <=>  ShortSyll NullNoTrigger* Cx:Cy _ NullNoTrigger* :Vowel NullNoTrigger* %{S%}: ; ! majja
+     where Cx in ( l m M1 n r v j h s g b d k p t G1 B1 B2 D1 ) 
+           Cy in ( l m  m n r v j h s k p t k p t  k  p  p  t )
+     matched ;
+
+! lexical: t u B1 0 a > {pl.e} {stemill} {S} > {s} {s} {e}
+! surface: t u  p p a 0    0       0      0  >  0   0   0 
+! s õ J1 D1 0 a
+! s õ  0  t t a
+
+"short illative strong stem generation: g b d to k p t"
+
+Cx:Cy <=> ShortSyll NullNoTrigger* _ :Cy NullNoTrigger* :Vowel NullNoTrigger* %{S%}: ;
+     where Cx in ( g b d ) 
+           Cy in ( k p t )
+     matched ;
+
+! s a b 0 a > {pl.u} {rare} {stemill} {S} > {s} {s} {e}
+! s a p p a >    0     0         0     0  0  0   0   0
+
+! the context is too specific; this is just to avoid twol warning messages about conflicting => contexts
+! (the StrongGrade trigger alone should be sufficient as context)
+"short illative strong stem generation: lexically determined stop"
+
+Cx:Cy <=>  _ (:Cy | j) NullNoTrigger* :Vowel NullNoTrigger* %{S%}: ;
+     where Cx in ( G1 B1 B2 D1 G3 D3 G4 B4 D4) 
+           Cy in (  k  p  p  t  g  d  k  p  t)
+     matched ;
+
+! lexical: l a G1 0 {stemill} e  {S} > {s} {s} {e}
+! surface: l a  k k     0     e   0  >  0   0   0
+! lexical: A B4 j a {stemill} {S} > {s} {s} {e}
+! surface: A  p j a     0      0  >  0   0   0
+! lexical: R a n n D3 u {stemill} {S} > {s} {s} {e}
+! surface: R a n 0  d u     0      0  >  0   0   0
+! lexical: L e e D4 u {stemill} {S} > {s} {s} {e}
+! surface: L e e  t u     0      0  >  0   0   0
+
+
+
+
 ! ------
 ! we (mis)use 2-level formalism to prune spurious branches that emerge from continuation lexicons
 !
@@ -1420,7 +1338,9 @@ Vx:0  <=> :Consonant ( J1:0 ) _ %> PlSV:Vy Null* %{s%}:0 %{i%}:0 %{d%}:0 ;
 ! lexical: l o b a                       {W} > {s} {s} {e}
 ! surface: l o b a                        0  >  s   s   e
 
+! ---------
 ! --------- orthography
+! ---------
 
 ! Orthography: consonant (cluster) writing conventions
 ! NB! Foreign names may contain them, e.g. Uppsala, Mannheim
@@ -1471,7 +1391,96 @@ Cx:Cy  <=> :voiceless Null* SuffixBorder _ ;
 ! lexical: k a b i n e t . > {pl.e} {sg.i}
 ! surface: k a b i n e t t >    0      i
 
+! If a foreign word is pronounced not according to Estonian writing conventions (Braille - brai)
+! then its inflectional ending is separated with an apostrophe (superscript 9) ’ 
+! This applies even to Sg Gen: Braille’
+! The only form without ’ is Sg Nom, so {no_apo} is a standard trigger in continuation lexicons
+"No apostrophe"
+
+%{apo%}:0  <=> _ %{no.apo%}: ;
+
+! lexical: B r a i l l e {apo} {no_apo}
+! surface: B r a i l l e   0      0     
+
+! ------
+! ------ historically motivated rules
+! ------
+
+! ------ rules operate on a small set of different words
+! ------ rules for j
+
+! --- j is not in the lexical side
+"e pronounced as j between vowels "
+
+E4:j  <=>  :Vowel Null* _ Null* [:Vowel | :j] ;
+
+! lexical: a E4 G1 
+! surface: a  e  g
+! lexical: a E4 G1 a
+! surface: a  j  0 a
+! lexical: s o o E4  
+! surface: s o 0 e 
+! lexical: s o o E4 a 
+! surface: s o o j  a 
+
+! --- j is in the lexical side, but surfaces only in certain contexts
+
+! j is i only in word final position
+
+"j appears as i"
+
+J1:i  <=>      _ Null* WordEnd ;
+
+! lexical: a h J1 > {pl.e} {rare}
+! surface: a h  i  0    0      0
+
+"j does not surface between consonants 1/2"
+    
+J1:j /<=    h _ T1: ;
+              _ :stop ;
+
+"j does not surface between consonants 2/2"
+
+J1:0  =>   h _ T1: ;
+             _ :stop ;
+
+! lexical: r o h J1 T1 > {pl.e} {rare}
+! surface: r o h  0  t >    e      0
+! lexical: r o h J1 T1 > {pl.e} {rare} {sg.u} {W}
+! surface: r o h  0  0 >    0      0     u     0
+! lexical: h ä r J1 G1 > {pl.i} {sg.a} 
+! surface: h ä r 0  g  >    0      a   
+
+! lexical: h ä r J1 G1 > {pl.i} {sg.a} {W}
+! surface: h ä r j  0  >    0      a    0
+! lexical: a h J1 > {pl.e} {rare} {sg.u} {W}
+! surface: a h j  >   0       0      u    0
+! lexical: s a J1 D1 a > {pl.u} {W}
+! surface: s a j  0  a >    0    0
+
+! --- 
+! juus-juuksed, kälis-käliksed, nõos-nõoksed, omas-omaksed, vennas-vennaksed, ões-õeksed 
+"vennas-vennaksed"
+
+K3:k  <=> _ s E1:e ;
+
+! lexical: v e n n a K3 s E1 > d 
+! surface: v e n n a k  s  e > d
+
+! hypothesis 
+"laas-laane"
+
+N1:0  <=> \[:Consonant] _ S1:s ;   ! laas-laane, tuhandes-tuhendenda etc
+
+! lexical: l a a N1 S1 
+! surface: l a a 0  s
+!------
+
+
 ! -----
+! ----- ad hoc / hard to classify
+! -----
+
 ! olema, tulema, minema, panema, surema --> 
 ! olla, tulla, minna, panna, surra; ollakse etc, olles etc
 ! the context is limited to a few inflectional forms
@@ -1494,16 +1503,32 @@ Cx:Cy  <=> :voiceless Null* SuffixBorder _ ;
 ! lexical: m ä s 0 0 l e {W} > d a
 ! surface: m ä s s e l 0  0  > d a     
 
-! If a foreign word is pronounced not according to Estonian writing conventions (Braille - brai)
-! then its inflectional ending is separated with an apostrophe (superscript 9) ’ 
-! This applies even to Sg Gen: Braille’
-! The only form without ’ is Sg Nom, so {no_apo} is a standard trigger in continuation lexicons
-"No apostrophe"
+!------
+! Only pea, hea 
+"Pea, hea vs häid, päid, pähe 1"
 
-%{apo%}:0  <=> _ %{no.apo%}: ;
+A6:ä  <=> E6: _ :h ;
+          E6: _ Null+ :i ;   
 
-! lexical: B r a i l l e {apo} {no_apo}
-! surface: B r a i l l e   0      0     
+"Pea, hea vs häid, päid, pähe 2"
+
+E6:0  <=> _ A6: :h  ;
+          _ A6: Null+ :i ;
+
+"öhe, pähe"
+Y3:e  <=> [:ä | :ö] Null* H3:h _ ;
+
+"sohu, suhu"
+Y3:u  <=> [:o | :u] Null* H3:h _ ;
+
+"h-illative"
+H3:h  <=> _ :* %{S%}: ;
+
+"Long vowel shortens before h"
+
+Vx:0 <=> :Vx _ H3:h  :stemV ;            !  sohu, suhu, öhe, pähe
+      where Vx in ( Vowel ) ;  
+
 
 
 !----------------
