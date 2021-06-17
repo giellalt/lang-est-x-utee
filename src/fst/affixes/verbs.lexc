@@ -129,7 +129,7 @@ LEXICON PESEMA    ! only pesema
                       : INF_IMP_NU ;          ! pesta, pesku, pesnud
                       : IMPERS ;              ! pestud
                       :e SUPINE_V ;           ! pesema
-                      :%>I7S7 IND_PAST ;      ! pesi
+                      :%> IND_PAST_I ;          ! pesi
                       :%{W%} IND_COND_PRS ;   ! peseb
 
 LEXICON KUSEMA    ! only kusema; moving towards ELAMA
@@ -187,7 +187,7 @@ LEXICON LASKMA    ! only laskma
                       : IMPERS ;              ! impersonal forms lastakse, ...
                       : SUPINE_V ;            ! laskma
              +Use/Rare:%>I7S7 IND_PAST ;      ! indicative past laskis, ...
-                      :%{W%}%>I7S7 IND_PAST ; ! indicative past lasi, ...
+                      :%{W%}%> IND_PAST_I ;     ! indicative past lasi, ...
                       :e%{W%} IND_COND_PRS ;  ! laseb
 
 LEXICON NAASMA     ! only naasma, koolma; norm like NAERMA (tõusma), but usage moving towards ELAMA
@@ -227,7 +227,7 @@ LEXICON TULEMA     ! only tulema, panema, surema
                       :e SUPINE_V ;          ! surema
                       :%{W%} IMPERATIVE ;    ! surgu
                       :%{W%} NU ;            ! surnud
-                      :%>I7 IND_PAST ;       ! suri, surin, ...
+                      :%> IND_PAST_I ;       ! suri, surin, ...
                       :e%{W%} IND_COND_PRS ; ! sureb
 
 LEXICON OLEMA    ! only olema 
@@ -237,7 +237,7 @@ LEXICON OLEMA    ! only olema
                       :ole SUPINE_V ;         ! olema
                       :ol%{W%} IMPERATIVE ;   ! olgu
                       :ol%{W%} NU ;           ! olnud
-                      :ol%>I7 IND_PAST ;      ! oli, olin, ...
+                      :ol%> IND_PAST_I ;      ! oli, olin, ...
              +Pers+Prs:ole%{W%}%> CONDITIONAL ;
    @R.Part.One@@P.Part.Bad@ OLEMA2 ;
 
@@ -296,16 +296,16 @@ LEXICON MINEMA2
 LEXICON KEEMA   ! VVS 37   laama, keema, leema, naima, võima, näima
 
                       : VV_COMMON ;
-                      : INFINITIVE ;        ! keeda
+                      : INFINITIVE ;         ! keeda
                       : IMPERS_DA ;          ! keedakse, keedud
-                      :%>I7S7 IND_PAST ;    ! kees
+                      :%>I7S7 IND_PAST ;     ! kees
 
 LEXICON SAAMA !!= @CODE@ is a lexicon for saama-type words. ! VVS 37   saama, jääma
 
                       : VV_COMMON ;
-                      : INFINITIVE ;        ! saada
+                      : INFINITIVE ;         ! saada
                       : IMPERS_DA ;          ! saadakse, saadud
-                      :%>I7 IND_PAST ;      ! sai
+                      :%> IND_PAST_I ;       ! sai
 
 LEXICON VIIMA     ! VVS 38   viima, käima, pooma, müüma
 
@@ -319,7 +319,7 @@ LEXICON TOOMA     ! VVS 38   jooma, looma, tooma, lööma, sööma
                       : VV_COMMON ;
                       :%> A_INFINITIVE ;     ! surra, süüa
                       : IMPERS_A ;           ! juuakse, joodud
-                      :%>I7 IND_PAST ;       ! jõi
+                      :%> IND_PAST_I ;       ! jõi
  
 LEXICON VV_COMMON  ! common to all 17 words of types 37, 38 (supine stem ends with VV)
 
@@ -337,7 +337,7 @@ LEXICON IMPERS_A     ! if infinitive affix is -a, then ...
 LEXICON IMPERS_A_COMP    ! impersonal forms 
                       :%>d IMPERS_DUD ;        ! surdud, söödud
                       :%{W%}%> IMPERS_AKSE ;   ! surrakse, süüakse
-        +Use/NotNorm:%>d IMPERS_AKSE ;       ! surdakse, söödakse
+        +Use/NotNorm:%>d IMPERS_AKSE ;         ! surdakse, söödakse
 
 LEXICON IMPERS_DA     ! if infinitive affix is -da, then ...
  @R.Part.One@@P.Part.Bad@ IMPERS_DA_COMP ;
@@ -372,7 +372,7 @@ LEXICON PIDAMA     ! only pidama-pidi
                       ! no impersonal forms
                       :a SUPINE_V ;          ! pidama
                       :a INF_IMP_NU ;        ! pidada, pidagu, pidanud
-                      :%>I7 IND_PAST ;       ! pidi
+                      :%> IND_PAST_I ;       ! pidi
                       :a%{W%} IND_COND_PRS ; ! peab
 
 LEXICON TEGEMA     ! only tegema, nägema
@@ -382,7 +382,7 @@ LEXICON TEGEMA     ! only tegema, nägema
                       :ge SUPINE_V ;         ! tegema
                       :h IMPERATIVE ;        ! tehku
                       :i NU ;                ! teinud
-                      :g%>I7 IND_PAST ;      ! tegi
+                      :g%> IND_PAST_I ;      ! tegi
                       :e%{W%} IND_COND_PRS ; ! teeb
 
 ! a verb cannot participate in compounding;
@@ -412,11 +412,18 @@ LEXICON IND_PRS_COMP     ! indicative present
                   +Ind: PL2 ;
                   +Ind: PL3VAD ;
             
-LEXICON IND_PAST    ! indicative past
- @R.Part.One@@P.Part.Bad@ IND_PAST_COMP ;
+LEXICON IND_PAST_I    ! indicative past without -s (tegi, nägi, pidi, tõi, sõi, jõi, lõi, sai, jäi, pesi, kusi, oli, tuli, pani, suri)
+ @R.Part.One@@P.Part.Bad@ IND_PAST_SG3I_COMP ;
          +Pers+Prt+Ind:i MARKED_PERSON ;
 
-LEXICON IND_PAST_COMP    ! indicative past
+LEXICON IND_PAST_SG3I_COMP    ! indicative past sg3
+         +Pers+Prt+Ind:i SG3 ;
+
+LEXICON IND_PAST    ! indicative past
+ @R.Part.One@@P.Part.Bad@ IND_PAST_SG3_COMP ;
+         +Pers+Prt+Ind:i MARKED_PERSON ;
+
+LEXICON IND_PAST_SG3_COMP    ! indicative past sg3
          +Pers+Prt+Ind: SG3 ;
 
 LEXICON NU    !  NU-affixes

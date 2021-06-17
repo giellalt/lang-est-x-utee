@@ -811,12 +811,12 @@ M1:n  <=> _ Null* [:t | :d ] ;
 
 "s g d disappear in front of dt: only 0 allowed"
 
-Cx:0  =>  _ Null* [ :t | :d ] ;
+Cx:0  =>  _ NullNoWeakTrigger* [ :t | :d ] ;
      where Cx in (K1 D1 S1 ) ;
 
 "s g d disappear in front of dt: no surface phone allowed"
 
-Cx:Cy /<=  _ Null* [ :t | :d ] ;
+Cx:Cy /<=  _ NullNoWeakTrigger* [ :t | :d ] ;
      where Cx in (K1 D1 S1 ) 
            Cy in ( k  d  s )
      matched ;
@@ -939,7 +939,7 @@ G7:k  <=> [\:Vowel | :i] a Null* %{W%}: %> _ ;
 "i surfaces in preteritum"
 
 I7:i <=> :Consonant Null* %> _ S7: WordEnd ;
-         _ WordEnd ;
+!         _ WordEnd ;
 
 ! lexical: n ´ a e r > I7 S7
 ! surface: n ´ a e r >  i  s
@@ -949,10 +949,12 @@ I7:i <=> :Consonant Null* %> _ S7: WordEnd ;
 ! this rule is perhaps a bad way to express morphological regularities;
 ! one should re-design the continuation lexicons instead ...
 
-"from -is to -i"
+!"from -is to -i"
 
-S7:0 <=> ShortSyll :Consonant Null* %> I7: _ WordEnd ;  ! lasi
-         :s Null* _ ;    ! to eliminate jookssid, seissid
+!S7:0 <=> ShortSyll :Consonant Null* %> I7: _ WordEnd ;  ! lasi
+!         :s Null* _ ;    ! to eliminate jookssid, seissid
+"from -ssi to -si"
+S7:0 <=>  :s Null* _ ;    ! to eliminate jookssid, seissid
 
 ! lexical: p e s > I7 S7
 ! surface: p e s >  i  0
@@ -1541,7 +1543,6 @@ Vx:0 <=> :Vx _ H3:h  :stemV ;            !  sohu, suhu, öhe, pähe
 
 ! echo 'laudu' | hfst-lookup analyser-gt-desc.hfstol
 ! > laudu	laud+N+Pl+Par	8,000000
-
 
 ! echo 'laud+N+Pl+Par' | hfst-lookup fst/lexicon.hfst
 ! > laud+N+Pl+Par	l˘auD1>{pl.u}{sg.a}>{s}{i}{d}	5,000000
