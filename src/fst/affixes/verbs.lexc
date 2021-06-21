@@ -107,7 +107,7 @@ LEXICON KISKUMA     ! only kiskuma
 LEXICON USKUMA      ! only uskuma 
 
                       :u LEPPIMA ;        ! uskuma, usutud etc
- @R.Part.One@@P.Part.Bad@+Use/Rare:@R.Part.One@@P.Part.Bad@ IMPERS_COMP ;  ! ustud etc; no derivation
+             +Use/Rare: IMPERS_FORMS ;    ! ustud etc; no derivation
 
 LEXICON VAAGIMA    ! only vaagima
                    ! parallel forms: either g disappears in weak grade, or not
@@ -239,40 +239,40 @@ LEXICON OLEMA    ! only olema
                       :ol%{W%} NU ;           ! olnud
                       :ol%> IND_PAST_I ;      ! oli, olin, ...
              +Pers+Prs:ole%{W%}%> CONDITIONAL ;
-   @R.Part.One@@P.Part.Bad@ OLEMA2 ;
+                       OLEMA2 ;
 
 LEXICON OLEMA2
-   +Pers+Prs+Imprt+Sg2:ole%> GI ;
-     +Pers+Prs+Ind+Neg:ole%> GI ;
+   +Pers+Prs+Imprt+Sg2:ole%> NO_COMPOUND ;
+     +Pers+Prs+Ind+Neg:ole%> NO_COMPOUND ;
          +Pers+Prs+Ind:ole SG1 ;
          +Pers+Prs+Ind:ole SG2 ;
- +Pers+Prs+Ind+Sg3+Aff:on GI ;
+ +Pers+Prs+Ind+Sg3+Aff:on NO_COMPOUND ;
          +Pers+Prs+Ind:ole PL1 ;
          +Pers+Prs+Ind:ole PL2 ;
- +Pers+Prs+Ind+Pl3+Aff:on GI ;
+ +Pers+Prs+Ind+Pl3+Aff:on NO_COMPOUND ;
 
 ! + negative forms...
-     +Pers+Prs+Ind+Neg:pole%> GI ;        ! NB! it has the same categories as ole ...
-+Pers+Prs+Cond+Sg1+Neg:pole%>ksin GI ;
-+Pers+Prs+Cond+Sg2+Neg:pole%>ksid GI ;
-    +Pers+Prs+Cond+Neg:pole%>ks GI ;
-+Pers+Prs+Cond+Pl1+Neg:pole%>ksime GI ;
-+Pers+Prs+Cond+Pl2+Neg:pole%>ksite GI ;
-+Pers+Prs+Cond+Pl3+Neg:pole%>ksid GI ;
-    +Pers+Prs+Quot+Neg:pole%>vat GI ;
-     +Pers+Prt+Ind+Neg:pol%>nud GI ;
-+Pers+Prt+Cond+Sg1+Neg:pol%>nuksin GI ;
-+Pers+Prt+Cond+Sg2+Neg:pol%>nuksid GI ;
-    +Pers+Prt+Cond+Neg:pol%>nuks GI ;
-+Pers+Prt+Cond+Pl1+Neg:pol%>nuksime GI ;
-+Pers+Prt+Cond+Pl2+Neg:pol%>nuksite GI ;
-+Pers+Prt+Cond+Pl3+Neg:pol%>nuksid GI ;
-    +Pers+Prt+Quot+Neg:pol%>nuvat GI ;
-   +Impers+Prs+Ind+Neg:pol%>da GI ;  
-  +Impers+Prs+Cond+Neg:pol%>daks GI ;
-  +Impers+Prs+Quot+Neg:pol%>davat GI ;
-   +Impers+Prt+Ind+Neg:pol%>dud GI ;
-  +Impers+Prt+Cond+Neg:pol%>duks GI ;     ! almost non-attested form (by Google search) ... 
+     +Pers+Prs+Ind+Neg:pole%> NO_COMPOUND ;        ! NB! it has the same categories as ole ...
++Pers+Prs+Cond+Sg1+Neg:pole%>ksin NO_COMPOUND ;
++Pers+Prs+Cond+Sg2+Neg:pole%>ksid NO_COMPOUND ;
+    +Pers+Prs+Cond+Neg:pole%>ks NO_COMPOUND ;
++Pers+Prs+Cond+Pl1+Neg:pole%>ksime NO_COMPOUND ;
++Pers+Prs+Cond+Pl2+Neg:pole%>ksite NO_COMPOUND ;
++Pers+Prs+Cond+Pl3+Neg:pole%>ksid NO_COMPOUND ;
+    +Pers+Prs+Quot+Neg:pole%>vat NO_COMPOUND ;
+     +Pers+Prt+Ind+Neg:pol%>nud NO_COMPOUND ;
++Pers+Prt+Cond+Sg1+Neg:pol%>nuksin NO_COMPOUND ;
++Pers+Prt+Cond+Sg2+Neg:pol%>nuksid NO_COMPOUND ;
+    +Pers+Prt+Cond+Neg:pol%>nuks NO_COMPOUND ;
++Pers+Prt+Cond+Pl1+Neg:pol%>nuksime NO_COMPOUND ;
++Pers+Prt+Cond+Pl2+Neg:pol%>nuksite NO_COMPOUND ;
++Pers+Prt+Cond+Pl3+Neg:pol%>nuksid NO_COMPOUND ;
+    +Pers+Prt+Quot+Neg:pol%>nuvat NO_COMPOUND ;
+   +Impers+Prs+Ind+Neg:pol%>da NO_COMPOUND ;  
+  +Impers+Prs+Cond+Neg:pol%>daks NO_COMPOUND ;
+  +Impers+Prs+Quot+Neg:pol%>davat NO_COMPOUND ;
+   +Impers+Prt+Ind+Neg:pol%>dud NO_COMPOUND ;
+  +Impers+Prt+Cond+Neg:pol%>duks NO_COMPOUND ;     ! almost non-attested form (by Google search) ... 
 
 LEXICON MINEMA    ! only minema 
 
@@ -284,11 +284,11 @@ LEXICON MINEMA    ! only minema
                       :läk%>s IND_PAST ;         ! läks, läksin etc
              +Pers+Prs:lähe%{W%} IND_PRS ;       ! lähen, läheb, ...
              +Pers+Prs:lähe%{W%}%> CONDITIONAL ;  ! läheks, ...
-   @R.Part.One@@P.Part.Bad@ MINEMA2 ;
+                       MINEMA2 ;
 
 LEXICON MINEMA2
-   +Pers+Prs+Imprt+Sg2:mine%{W%}%> GI ;          ! mine
-+Pers+Prs+Ind+Pl1+Aff+Use/Rare:läh%{W%}%>me GI ;  ! lähme more colloquial...
+   +Pers+Prs+Imprt+Sg2:mine%{W%}%> NO_COMPOUND ;          ! mine
++Pers+Prs+Ind+Pl1+Aff+Use/Rare:läh%{W%}%>me NO_COMPOUND ;  ! lähme more colloquial...
 
 ! ---------------
 ! 17 exceptional words of types 37, 38, all ending in VV
@@ -329,23 +329,23 @@ LEXICON VV_COMMON  ! common to all 17 words of types 37, 38 (supine stem ends wi
                       :%{W%} IND_COND_PRS ;   ! keeb, saab etc
 
 LEXICON IMPERS_A     ! if infinitive affix is -a, then ...
- @R.Part.One@@P.Part.Bad@ IMPERS_A_COMP ;
+                      IMPERS_A_FORMS ;
                       :»d TAV_DERIVATION ;       ! söödav, söödavalt, ... 
                       :»d TAMATU_DERIVATION ;    ! söödamatu 
                       :»d TU_DERIVATION ;        ! söödu, söödult, sööduim, ... 
 
-LEXICON IMPERS_A_COMP    ! impersonal forms 
+LEXICON IMPERS_A_FORMS    ! impersonal forms 
                       :%>d IMPERS_DUD ;        ! surdud, söödud
                       :%{W%}%> IMPERS_AKSE ;   ! surrakse, süüakse
         +Use/NotNorm:%>d IMPERS_AKSE ;         ! surdakse, söödakse
 
 LEXICON IMPERS_DA     ! if infinitive affix is -da, then ...
- @R.Part.One@@P.Part.Bad@ IMPERS_DA_COMP ;
+                      IMPERS_DA_FORMS ;
                       :»d TAV_DERIVATION ;       ! keedav, keedavalt, ... 
                       :»d TAMATU_DERIVATION ;    ! keedamatu 
                       :»d TU_DERIVATION ;        ! keedu, keedult, keeduim, ... 
 
-LEXICON IMPERS_DA_COMP    ! impersonal forms 
+LEXICON IMPERS_DA_FORMS    ! impersonal forms 
                       :%>d IMPERS_DUD ;     ! keedud
                       :%>d IMPERS_AKSE ;    ! keedakse
 
@@ -392,19 +392,19 @@ LEXICON TEGEMA     ! only tegema, nägema
 ! and then @P.Part.Bad@ ensures that no further parts are possible
 
 LEXICON IND_COND_PRS    ! indicative, conditional present + imp sg2
- @R.Part.One@@P.Part.Bad@ IMPRT2_COMP ;
+                      IMPRT2_FORMS ;
              +Pers+Prs:%> IND_PRS ;
              +Pers+Prs:%> CONDITIONAL ;
                       : NG_DERIVATION ;
 
-LEXICON IMPRT2_COMP    ! 
-   +Pers+Prs+Imprt+Sg2:%> GI ;
+LEXICON IMPRT2_FORMS    ! 
+   +Pers+Prs+Imprt+Sg2:%> NO_COMPOUND ;
 
 LEXICON IND_PRS     ! indicative present 
- @R.Part.One@@P.Part.Bad@ IND_PRS_COMP ;
+                      IND_PRS_FORMS ;
 
-LEXICON IND_PRS_COMP     ! indicative present 
-              +Ind+Neg: GI ;
+LEXICON IND_PRS_FORMS     ! indicative present 
+              +Ind+Neg: NO_COMPOUND ;
                   +Ind: SG1 ;
                   +Ind: SG2 ;
                   +Ind: SG3B ;
@@ -413,43 +413,43 @@ LEXICON IND_PRS_COMP     ! indicative present
                   +Ind: PL3VAD ;
             
 LEXICON IND_PAST_I    ! indicative past without -s (tegi, nägi, pidi, tõi, sõi, jõi, lõi, sai, jäi, pesi, kusi, oli, tuli, pani, suri)
- @R.Part.One@@P.Part.Bad@ IND_PAST_SG3I_COMP ;
-         +Pers+Prt+Ind:i MARKED_PERSON ;
+                      IND_PAST_I_FORMS ;
 
-LEXICON IND_PAST_SG3I_COMP    ! indicative past sg3
+LEXICON IND_PAST_I_FORMS    ! indicative past sg3
          +Pers+Prt+Ind:i SG3 ;
+         +Pers+Prt+Ind:i MARKED_PERSON ;
 
 LEXICON IND_PAST    ! indicative past
- @R.Part.One@@P.Part.Bad@ IND_PAST_SG3_COMP ;
+                      IND_PAST_FORMS ;
+
+LEXICON IND_PAST_FORMS    
+         +Pers+Prt+Ind: SG3 ;
          +Pers+Prt+Ind:i MARKED_PERSON ;
 
-LEXICON IND_PAST_SG3_COMP    ! indicative past sg3
-         +Pers+Prt+Ind: SG3 ;
-
 LEXICON NU    !  NU-affixes
- @R.Part.One@@P.Part.Bad@ NU_COMP ;
+                        NU_FORMS ;
              +Pers+Prt:%>nu CONDITIONAL ; ! conditional past
                       : NU_DERIVATION ;
 
-LEXICON NU_COMP    !  NU-affixes
-             !+Pers+Prt+Imprt:%>nud GI ;         ! omitted for now because it would create homonymy
-            +Pers+Prt+Ind+Neg:%>nud GI ;
-                +Pers+Prt+Prc:%>nud GI ;
-               +Pers+Prt+Quot:%>nuvat GI ;
-+Pers+Prt+Ind+Neg+Use/NotNorm:%>nd GI ;
-    +Pers+Prt+Prc+Use/NotNorm:%>nd GI ;
+LEXICON NU_FORMS    !  NU-affixes
+             !+Pers+Prt+Imprt:%>nud NO_COMPOUND ;         ! omitted for now because it would create homonymy
+            +Pers+Prt+Ind+Neg:%>nud NO_COMPOUND ;
+                +Pers+Prt+Prc:%>nud NO_COMPOUND ;
+               +Pers+Prt+Quot:%>nuvat NO_COMPOUND ;
++Pers+Prt+Ind+Neg+Use/NotNorm:%>nd NO_COMPOUND ;
+    +Pers+Prt+Prc+Use/NotNorm:%>nd NO_COMPOUND ;
 
 LEXICON IMPERATIVE    ! imperative
- @R.Part.One@@P.Part.Bad@ IMPERATIVE_COMP ;
+                       IMPERATIVE_FORMS ;
 
-LEXICON IMPERATIVE_COMP    ! imperative
-       +Pers+Prs+Imprt:%>G7u GI ;         ! elagu
-   +Pers+Prs+Imprt+Pl1:%>G7em GI ;        ! elagem
-   +Pers+Prs+Imprt+Pl2:%>G7e GI ;         ! elage
+LEXICON IMPERATIVE_FORMS    ! imperative
+       +Pers+Prs+Imprt:%>G7u NO_COMPOUND ;         ! elagu
+   +Pers+Prs+Imprt+Pl1:%>G7em NO_COMPOUND ;        ! elagem
+   +Pers+Prs+Imprt+Pl2:%>G7e NO_COMPOUND ;         ! elage
 
 LEXICON SUPINE_V
- @R.Part.One@@P.Part.Bad@ SUPINE_V_COMP ;
-             +Pers+Sup:%>ma SUPINE ;
+                        SUPINE_V_FORMS ;
+ @R.Part.One@           SUPINE_MA_FORMS ;
                       : MINE_DERIVATION ;    ! elamine
                       : JA_DERIVATION ;      ! elaja, õpetaja, õpetajanna, õpetajake, õpetajalik, ...
                       : V_DERIVATION ;       ! õpetav, õpetavalt, õpetavus, õpetavam, ...
@@ -457,14 +457,14 @@ LEXICON SUPINE_V
                       : MATA_DERIVATION ;     ! segamata
                       : MUS_DERIVATION ;     ! küllastumus, promoveerumus etc
 
-LEXICON SUPINE_V_COMP
-         +Pers+Prs+Prc:%>v GI ;
-        +Pers+Prs+Quot:%>vat GI ;
+LEXICON SUPINE_V_FORMS
+         +Pers+Prs+Prc:%>v NO_COMPOUND ;
+        +Pers+Prs+Quot:%>vat NO_COMPOUND ;
 
+LEXICON SUPINE_MA_FORMS
+             +Pers+Sup:%>ma SUPINE ;
+             
 LEXICON SUPINE
- @R.Part.One@ SUPINE_COMP ;     ! Note that these forms can be 1st part of a compound
-
-LEXICON SUPINE_COMP
                       : ILLATIVE ;          ! elama
                       :%>s INESSIVE ;       ! elamas
                       :%>st ELATIVE ;
@@ -472,31 +472,31 @@ LEXICON SUPINE_COMP
                       :%>ta ABESSIVE ;
 
 LEXICON IMPERS    ! impersonal forms for most paradigms
- @R.Part.One@@P.Part.Bad@ IMPERS_COMP ;
+                        IMPERS_FORMS ;
                       :»T7 TAV_DERIVATION ;       ! elatav, elatavalt, elatavam, elatavaim, ... 
                       :»T7 TAMATU_DERIVATION ;       ! elatav, elatavalt, elatavam, elatavaim, ... 
                       :»T7 TU_DERIVATION ;       ! elatu, elatult, elatum, elatuim 
 
-LEXICON IMPERS_COMP    ! impersonal forms for most paradigms
+LEXICON IMPERS_FORMS    ! impersonal forms for most paradigms
                       :%>T7 IMPERS_DUD ;
                       :%>T7 IMPERS_AKSE ;
 
 LEXICON IMPERS_DUD    ! impersonal forms -[td]ud
 
-      +Impers+Prs+Cond:aks GI ;
-     +Impers+Prs+Imprt:agu GI ;
-   +Impers+Prs+Ind+Neg:a GI ;
-       +Impers+Prs+Prc:av GI ;
-      +Impers+Prs+Quot:avat GI ;
-      +Impers+Prt+Cond:uks GI ;
-   +Impers+Prt+Ind+Aff:i GI ;
-   +Impers+Prt+Ind+Neg:ud GI ;
-       +Impers+Prt+Prc:ud GI ;
-           +Impers+Sup:ama GI ;
+      +Impers+Prs+Cond:aks NO_COMPOUND ;
+     +Impers+Prs+Imprt:agu NO_COMPOUND ;
+   +Impers+Prs+Ind+Neg:a NO_COMPOUND ;
+       +Impers+Prs+Prc:av NO_COMPOUND ;
+      +Impers+Prs+Quot:avat NO_COMPOUND ;
+      +Impers+Prt+Cond:uks NO_COMPOUND ;
+   +Impers+Prt+Ind+Aff:i NO_COMPOUND ;
+   +Impers+Prt+Ind+Neg:ud NO_COMPOUND ;
+       +Impers+Prt+Prc:ud NO_COMPOUND ;
+           +Impers+Sup:ama NO_COMPOUND ;
 
 LEXICON IMPERS_AKSE    ! impersonal form -[td0]akse
 
-   +Impers+Prs+Ind+Aff:akse GI ;
+   +Impers+Prs+Ind+Aff:akse NO_COMPOUND ;
 
 LEXICON INFINITIVE    ! infinitive, gerund (des-form)
 
@@ -505,25 +505,22 @@ LEXICON INFINITIVE    ! infinitive, gerund (des-form)
 LEXICON A_INFINITIVE   ! common part of an infinitive, gerund (des-form);
                        ! also alone in a subparadigm of a few old words
 
- @R.Part.One@             INF_COMP ;     ! This can be 1st part of a compound
- @R.Part.One@@P.Part.Bad@ GER_COMP ;
+ @R.Part.One@             INF_FORMS ;     ! This can be 1st part of a compound
+                          GER_FORMS ;
 
-LEXICON INF_COMP
+LEXICON INF_FORMS
                   +Inf:a GI ;
-LEXICON GER_COMP
-                  +Ger:es GI ;
+LEXICON GER_FORMS
+                  +Ger:es NO_COMPOUND ;
 
 LEXICON CONDITIONAL    ! conditional present and past  
- @R.Part.One@@P.Part.Bad@ CONDITIONAL_COMP ;
+                         CONDITIONAL_FORMS ;
+
+LEXICON CONDITIONAL_FORMS
+                 +Cond:ks NO_COMPOUND ;
                  +Cond:ksi MARKED_PERSON ;
 
-LEXICON CONDITIONAL_COMP
-                 +Cond:ks GI ;
-
 LEXICON MARKED_PERSON     ! sg3 ~ underspecified is missing from here 
- @R.Part.One@@P.Part.Bad@ MARKED_PERSON_COMP ;
-
-LEXICON MARKED_PERSON_COMP     ! sg3 ~ underspecified is missing from here 
                       : SG1 ;
                       : SG2 ;
                       : PL1 ;
@@ -531,28 +528,31 @@ LEXICON MARKED_PERSON_COMP     ! sg3 ~ underspecified is missing from here
                       : PL3 ;
 
 LEXICON SG1
-              +Sg1+Aff:n GI ;
+              +Sg1+Aff:n NO_COMPOUND ;
 
 LEXICON SG2
-              +Sg2+Aff:d GI ;
+              +Sg2+Aff:d NO_COMPOUND ;
 
 LEXICON SG3
-              +Sg3+Aff: GI ;
+              +Sg3+Aff: NO_COMPOUND ;
 
 LEXICON SG3B
-              +Sg3+Aff:b GI ;
+              +Sg3+Aff:b NO_COMPOUND ;
 
 LEXICON PL1
-              +Pl1+Aff:me GI ;
+              +Pl1+Aff:me NO_COMPOUND ;
 
 LEXICON PL2
-              +Pl2+Aff:te GI ;
+              +Pl2+Aff:te NO_COMPOUND ;
 
 LEXICON PL3
-              +Pl3+Aff:d GI ;
+              +Pl3+Aff:d NO_COMPOUND ;
 
 LEXICON PL3VAD
-              +Pl3+Aff:vad GI ;
+              +Pl3+Aff:vad NO_COMPOUND ;
+
+LEXICON NO_COMPOUND           ! this form cannot participate in a compound word
+  @R.Part.One@@P.Part.Bad@ GI ;             
 
 ! paradigmatic derivation, i.e. very regular
 ! @R.Part.One@ means that this is not a latter part of a compound 
