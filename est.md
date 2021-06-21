@@ -606,182 +606,6 @@ These were the set types.
 
 
 
-# Verb inflection
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- LEXICON SAAMA  is a lexicon for saama-type words. ! VVS 37   saama, jääma
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-stressing affix gi/ki can be appended to almost any word form
-
-liide gi/ki
-this ensures that downcasing derivation (helveetslane) works
-
-
-
-*hfstol: examples:*
-* *siilgi:* `siil+N+Sg+Nom+Foc/gi`
-* *kottki:* `kott+N+Sg+Nom+Foc/gi`
-
-
-
 
 
 
@@ -1087,6 +911,184 @@ VVS stands for Ü. Viks "Väike vormisõnastik" for reference purposes
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+stressing affix gi/ki can be appended to almost any word form
+
+liide gi/ki
+this ensures that downcasing derivation (helveetslane) works
+
+
+
+*hfstol: examples:*
+* *siilgi:* `siil+N+Sg+Nom+Foc/gi`
+* *kottki:* `kott+N+Sg+Nom+Foc/gi`
+
+
+
+# Verb inflection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON SAAMA  is a lexicon for saama-type words. ! VVS 37   saama, jääma
 
 
 
@@ -1668,7 +1670,6 @@ high vowel lowering in certain contexts
 
 
 1.1. plural partitive: -sid vs stem vowel change
-
 
 
 
@@ -2612,6 +2613,22 @@ järguline	järk+N+Der/line+A  redellik redel+N+Der/lik+A     NOT -autone
 
 
 
+We describe here how abbreviations are in Estonian are read out, e.g.
+for text-to-speech systems.
+
+For example:
+
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
+
+
+
+
+
 
 
 
@@ -2668,22 +2685,6 @@ järguline	järk+N+Der/line+A  redellik redel+N+Der/lik+A     NOT -autone
 
 
 
-
-
-
-
-
-We describe here how abbreviations are in Estonian are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
 
 
 
