@@ -486,8 +486,6 @@ high vowel lowering in certain contexts
 
 
 
-
-
 1.1. plural partitive: -sid vs stem vowel change
 
 

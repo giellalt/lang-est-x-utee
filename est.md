@@ -1070,25 +1070,12 @@ this ensures that downcasing derivation (helveetslane) works
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  LEXICON SAAMA  is a lexicon for saama-type words. ! VVS 37   saama, jääma
+
+
+
+
+
 
 
 
@@ -1592,8 +1579,6 @@ high vowel lowering in certain contexts
 
 * ★*viskoosneE1>t* (is not standard language)
 * ★*viskooss00>t* (is not standard language)
-
-
 
 
 
