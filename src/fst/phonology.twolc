@@ -934,25 +934,16 @@ G7:k  <=> [\:Vowel | :i] a Null* %{W%}: %> _ ;
 ! surface: n ´ u t 0  0 e  0  >  t u d
 
 ! add i to make s-ending preteritum form pronouncable,
-! or i is actually the only morpheme indicating preteritum
 
 "i surfaces in preteritum"
 
 I7:i <=> :Consonant Null* %> _ S7: WordEnd ;
-!         _ WordEnd ;
 
 ! lexical: n ´ a e r > I7 S7
 ! surface: n ´ a e r >  i  s
 ! lexical: s a a > I7
 ! surface: s a 0 >  i
 
-! this rule is perhaps a bad way to express morphological regularities;
-! one should re-design the continuation lexicons instead ...
-
-!"from -is to -i"
-
-!S7:0 <=> ShortSyll :Consonant Null* %> I7: _ WordEnd ;  ! lasi
-!         :s Null* _ ;    ! to eliminate jookssid, seissid
 "from -ssi to -si"
 S7:0 <=>  :s Null* _ ;    ! to eliminate jookssid, seissid
 
