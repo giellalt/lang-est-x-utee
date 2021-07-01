@@ -10,3 +10,5 @@ this ensures that downcasing derivation (helveetslane) works
 * *kottki:* `kott+N+Sg+Nom+Foc/gi`
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/gi.lexc](http://github.com/giellalt/lang-est/blob/main/../src/fst/affixes/gi.lexc)</small>

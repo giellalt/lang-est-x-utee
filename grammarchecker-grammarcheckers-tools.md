@@ -1,5 +1,5 @@
 
-      ESTONIAN  GRAMMAR   CHECKER
+ESTONIAN  GRAMMAR   CHECKER
 
 
 
@@ -464,3 +464,5 @@ Grammarchecker rules begin here
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../tools/grammarcheckers/grammarchecker.cg3](http://github.com/giellalt/lang-est/blob/main/../tools/grammarcheckers/grammarchecker.cg3)</small>

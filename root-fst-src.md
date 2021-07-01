@@ -223,22 +223,22 @@ categories are not equal, but form an hierarchy: those closer to the word end
 tend to be more optional, more often non-specified.   
 
 1. **voice:** personal vs. impersonal (0-morph vs. *t/d(aiu)*), eg. *elaks* vs.
- *elataks*, *elav* vs. *elatav*
+*elataks*, *elav* vs. *elatav*
 1. **tense:** present vs. past (0-morph vs. *s/si/nu*), e.g. *elan* vs. *elasin*,
- *elaks* vs. *elanuks*
+*elaks* vs. *elanuks*
 1. **mood:** indicative vs. conditional vs imperative vs quotative
- (0-morph vs. *ks* vs. *k/g(ue)* vs. *vat*)
+(0-morph vs. *ks* vs. *k/g(ue)* vs. *vat*)
 1. **person+number:** notice that in personal present and past conditional, imperative 
- and quotative moods one form is underspecified for person+number
+and quotative moods one form is underspecified for person+number
 1. **negation:** affirmative vs. negative. It manifests itself via
- lexical means: it is either present in an exceptional wordform (some forms of
- *olema*) or gets adhered to a form, normally used in affirmative,
- from an immediately preceding word *ei*, *ega* or *ära* (e.g. *ei elaks*).
- The only case when negation has a dedicated form of its own is impersonal
- present indicative negative (e.g. *ei elata*).  
+lexical means: it is either present in an exceptional wordform (some forms of
+*olema*) or gets adhered to a form, normally used in affirmative,
+from an immediately preceding word *ei*, *ega* or *ära* (e.g. *ei elaks*).
+The only case when negation has a dedicated form of its own is impersonal
+present indicative negative (e.g. *ei elata*).  
 
 The forms of negative words *pole* and *ära* are included in order to capture really all 
- the combinations; 
+the combinations; 
 also note that for *olema*, there are some constellations of categories that are the same for
 a wordform beginning with *ole-* and *pole-* 
 
@@ -335,7 +335,7 @@ elanud: elama+V+Pers+Prt+Imprt: 1.11.2016 ei genereerita ega tunta ära / not re
 * *elav:* `elama+V+Pers+Prs+Prc`
 * *elanud:* `elama+V+Pers+Prt+Prc`
 
-         (on, oli, ...) + V+Pers+Prt+Prc = some analytical personal form 
+(on, oli, ...) + V+Pers+Prt+Prc = some analytical personal form 
 
 * *elama:* `elama+V+Pers+Sup+Ill`
 * *elamas:* `elama+V+Pers+Sup+Ine`
@@ -790,3 +790,5 @@ järguline	järk+N+Der/line+A  redellik redel+N+Der/lik+A     NOT -autone
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-est/blob/main/../src/fst/root.lexc)</small>
