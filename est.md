@@ -1797,9 +1797,6 @@ this ensures that downcasing derivation (helveetslane) works
 
 
 
-
-
-
 :%. # ;
 : ABBRDOT ;
 
@@ -2168,6 +2165,7 @@ Imperative mood affixes gu/ku, ge/kem etc
 
  * **G7:g**
  * **G7:k**
+ * **G7:0**
 
 Infinitive affixes ta/da/a, and gerund affixes tes/des/es
 
@@ -2185,8 +2183,8 @@ To form past indicative forms and make them pronouncable
  * **I7:i** naeris
  * **I7:0** naer sin
 
- * **S7:s** naeris
- * **S7:0** pani
+ * **S7:s** naersin
+ * **S7:0** seisin
 
 Sometimes the choice of an allomorph or allophone is related to the frequency of the word.
 
@@ -2460,9 +2458,14 @@ high vowel lowering in certain contexts
 
 
 
-
-
 1.1. plural partitive: -sid vs stem vowel change
+
+
+
+
+
+
+
 
 
 
