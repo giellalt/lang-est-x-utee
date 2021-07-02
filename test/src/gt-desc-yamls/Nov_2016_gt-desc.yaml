@@ -50,3 +50,24 @@ Tests:
     Rõngu+N+Prop+Sg+Ill+Use/Rare: Rõngusse
     Rõngu+N+Prop+Pl+Par: Rõngusid
 
+    päev+N+Sg+Nom: päev
+    päev+N+Sg+Gen: päeva
+    päev+N+Sg+Par: päeva
+    päev+N+Sg+Ill: päeva
+    päev+N+Sg+Ill+Use/Hyp: päevasse
+    päev+N+Pl+Par: päevi
+    päev+N+Pl+Par+Use/Rare: päevasid
+    päev+N+Pl+Ade+Use/Rare: päevil
+    
+    valdkond+N+Sg+Nom: valdkond
+    valdkond+N+Sg+Gen: valdkonna
+    valdkond+N+Sg+Par: valdkonda
+    valdkond+N+Sg+Ill: valdkonda
+    valdkond+N+Sg+Ill+Use/Hyp: valdkonnasse
+    valdkond+N+Pl+Par: valdkondi
+    valdkond+N+Pl+Par+Use/Rare: valdkondasid
+    valdkond+N+Pl+Ade+Use/Rare: valdkonnil
+
+    rind+N+Pl+Ade+Use/Rare: rinnul
+    
+

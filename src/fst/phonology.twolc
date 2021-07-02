@@ -204,6 +204,7 @@ A B C D E F G H I J K L M N O P Q R S Š Z Ž T U V W Õ Ä Ö Ü X Y
 
 G7:g !!≈ * **@CODE@**
 G7:k !!≈ * **@CODE@**
+G7:0 !!≈ * **@CODE@**
 
 !! Infinitive affixes ta/da/a, and gerund affixes tes/des/es
 
@@ -221,8 +222,8 @@ T7:t !!≈ * **@CODE@**
 I7:i !!≈ * **@CODE@** naeris
 I7:0 !!≈ * **@CODE@** naer sin
 
-S7:s !!≈ * **@CODE@** naeris
-S7:0 !!≈ * **@CODE@** pani
+S7:s !!≈ * **@CODE@** naersin
+S7:0 !!≈ * **@CODE@** seisin
 
 !! Sometimes the choice of an allomorph or allophone is related to the frequency of the word.
  
@@ -520,7 +521,8 @@ Cx:Cy <=>  _ E2:e [l | r] NullNoTrigger* WordEnd ;  ! ader sg nom is not %{W%}:;
 
 "b d and s assimilation after lmnr"
 
-Cx:Cy <=> ShortSyll Cy _ AnyNoTrigger* %{W%}: ;  ! also -kond -konna -konda
+Cx:Cy <=> ShortSyll Cy _ Null* :Vowel AnyNoTrigger* %{W%}: ;             ! also -kond -konna -konda
+          ShortSyll Cy _ NullNoTrigger* %{W%}: NullNoTrigger* :Vowel ;   ! -konnis, -konnist etc.
      where Cx in (B1 D1 D1 D1 S1) 
            Cy in ( m  l  n  r  r)
      matched ;
@@ -660,6 +662,7 @@ e:0 <=>  _ [l | r]           %{E%}:           SuffixBorder i: \%{rare%}: ;   ! t
 ! lexical: p i k s e l {rare} {E} > i \{rare}  piksli is common; pikseli is rare
 ! surface: p i k s 0 l    0    0  > i    0
 
+! {E} has actually the semantics of 'delete the previous e' 
 ! in the stem lexicon,
 ! piksel{rare}{E} means that pikseli is rare, piksli is common
 ! gospel{E}{rare} means that gospeli is common, gospli is rare
@@ -806,9 +809,6 @@ M1:n  <=> _ Null* [:t | :d ] ;
 
 ! ---- stem final consonant disappears 
 
-! (use this to avoid Xerox twol warning messages about conflicting => contexts)
-!  _ NullNoWeakTrigger* [ :t | :d ] AnyNoWeakTrigger* WordEnd ;
-
 "s g d disappear in front of dt: only 0 allowed"
 
 Cx:0  =>  _ NullNoWeakTrigger* [ :t | :d ] ;
@@ -829,16 +829,6 @@ Cx:Cy /<=  _ NullNoWeakTrigger* [ :t | :d ] ;
 ! surface: v a r  0      0     0  > d e >  0   0   0
 ! lexical: k o l m a N1 S1 d a
 ! surface: k o l m a  n  0 d a
-
-! (use this to avoid Xerox twol warning messages about conflicting => contexts) 
-! _ NullNoTrigger* G7: AnyNoTrigger* WordEnd;
-
-"g, k disappears in front of gu/ku"
-
-K1:0 <=> _ Null* G7: ;  ! only laskma mõskma puskma
-
-! lexical: p u s K1 > G7 u
-! surface: p u s  0 >  k u
 
 ! --------- affix allomorph changes because of the final phone of the stem
 
@@ -861,12 +851,9 @@ K1:0 <=> _ Null* G7: ;  ! only laskma mõskma puskma
 "infinitive and gerund affixes may begin in t"
 
 D7:t  <=> :Vowel Null* %{W%}: SuffixBorder _ ;
-          :s Null* SuffixBorder _ ;
 
 ! lexical: h ü p p a {W} > D7 a
 ! surface: h ü p 0 a {W} >  t a
-! lexical: s e i s > D7 a 
-! surface: s e i s >  t a
 
 "infinitive and gerund affixes may assimilate to 0"
 
@@ -897,15 +884,14 @@ T7:d  <=> [l | n | r] e:0 %{W%}: SuffixBorder _ ;
 ! surface: l e p 0 i  0  >  t a k s e
 ! lexical: s e i s > T7 a k s e
 ! surface: s e i s >  t a k s e
-! lexical: a n n D1 > T7 a k s e
-! surface: a n 0  0 >  t a k s e
+! lexical: a n D1 > T7 a k s e
+! surface: a n  0 >  t a k s e
 ! lexical: j o o K1 s {W} > T7 a k s e
 ! surface: j o o  0 s  0  >  t a k s e
 
 "imperative mood affix may begin in k"
 
 G7:k  <=> [\:Vowel | :i] a Null* %{W%}: %> _ ;
-          :voiceless Null* %> _ ;
 
 ! lexical: h ü p p a {W} > G7 u
 ! surface: h ü p 0 a {W} >  k u
@@ -913,8 +899,22 @@ G7:k  <=> [\:Vowel | :i] a Null* %{W%}: %> _ ;
 ! surface: l õ u  0 a {W} >  k u
 ! lexical: l a i a {W} > G7 u
 ! surface: l a i a {W} >  k u
-! lexical: s e i s > G7 u 
-! surface: s e i s >  k u
+
+"-gu only -u after k: no surface phone allowed"
+G7:Cx  /<=   :k Null* _ ;   ! only laskma mõskma puskma
+     where Cx in (k g) ;
+
+"-gu only -u after k: only 0 allowed"
+G7:0  =>   :k Null* _ ;     ! only laskma mõskma puskma
+
+! lexical: p u s K1 > G7 u
+! surface: p u s  k >  0 u
+
+"from -ssi to -si"
+S7:0 <=>  :s Null* _ ;    ! to eliminate jookssid, seissid
+
+! lexical: j o o K1 s > I7 S7 i d
+! surface: j o o  k s >  0  0 i d
 
 ! ------ add a vowel to make the word form pronouncable 
 
@@ -941,22 +941,8 @@ I7:i <=> :Consonant Null* %> _ S7: WordEnd ;
 
 ! lexical: n ´ a e r > I7 S7
 ! surface: n ´ a e r >  i  s
-! lexical: s a a > I7
-! surface: s a 0 >  i
-
-"from -ssi to -si"
-S7:0 <=>  :s Null* _ ;    ! to eliminate jookssid, seissid
-
-! lexical: p e s > I7 S7
-! surface: p e s >  i  0
-! lexical: l a s K1 {W} > I7 S7 i n
-! surface: l a s  0  0  >  0  0 i n
-! lexical: l a s K1 {W} > I7 S7      
-! surface: l a s  0  0  >  i  0       
 ! lexical: s e i s > I7 S7
 ! surface: s e i s >  i  s          NB! S7:s
-! lexical: k ´ ü T1 t > I7 S7 i n
-! surface: k ´ ü  t 0 >  0  s i n   NB! S7:s
 
 ! -----
 ! ----- stem + affix vowel cluster
@@ -1179,26 +1165,35 @@ Vx:0  <=> :Consonant ( J1:0 ) _ %> PlSV:Vy Null* %{s%}:0 %{i%}:0 %{d%}:0 ;
 !------- short illative stem generation
 ! the rules are hard-wired to %{S%}: 
 
+"short illative strong stem generation: weak stop cannot remain weak"
+Cx:Cy /<=  _ NullNoTrigger* :Vowel NullNoTrigger* %{S%}: ;
+     where Cx in ( g b d G1 B1 B2 D1 ) 
+           Cy in ( g b d  g  b  b  d )
+     matched ;
+
 "short illative strong stem generation: consonant doubling"
 
-0:Cy  <=>  ShortSyll NullNoTrigger* Cx:Cy _ NullNoTrigger* :Vowel NullNoTrigger* %{S%}: ; ! majja
+0:Cy  <=>  ShortSyll NullNoTrigger* _ Cx:Cy NullNoTrigger* :Vowel NullNoTrigger* %{S%}: ; ! majja
      where Cx in ( l m M1 n r v j h s g b d k p t G1 B1 B2 D1 ) 
            Cy in ( l m  m n r v j h s k p t k p t  k  p  p  t )
      matched ;
 
-! lexical: t u B1 0 a > {pl.e} {stemill} {S} > {s} {s} {e}
-! surface: t u  p p a 0    0       0      0  >  0   0   0 
-! s õ J1 D1 0 a
-! s õ  0  t t a
+! lexical: t u 0 B1 a > {pl.e} {stemill} {S} > {s} {s} {e}
+! surface: t u p  p a 0    0       0      0  >  0   0   0 
+! lexical: l a 0 G1 {stemill} e  {S} > {s} {s} {e}
+! surface: l a k  k     0     e   0  >  0   0   0
+! s õ J1 0 D1 a
+! s õ  0 t  t a
 
+! this rule complements the rule for consonant doubling
 "short illative strong stem generation: g b d to k p t"
 
-Cx:Cy <=> ShortSyll NullNoTrigger* _ :Cy NullNoTrigger* :Vowel NullNoTrigger* %{S%}: ;
+Cx:Cy <=>  0:Cy _ ;
      where Cx in ( g b d ) 
            Cy in ( k p t )
      matched ;
 
-! s a b 0 a > {pl.u} {rare} {stemill} {S} > {s} {s} {e}
+! s a 0 b a > {pl.u} {rare} {stemill} {S} > {s} {s} {e}
 ! s a p p a >    0     0         0     0  0  0   0   0
 
 ! the context is too specific; this is just to avoid twol warning messages about conflicting => contexts
@@ -1206,12 +1201,10 @@ Cx:Cy <=> ShortSyll NullNoTrigger* _ :Cy NullNoTrigger* :Vowel NullNoTrigger* %{
 "short illative strong stem generation: lexically determined stop"
 
 Cx:Cy <=>  _ (:Cy | j) NullNoTrigger* :Vowel NullNoTrigger* %{S%}: ;
-     where Cx in ( G1 B1 B2 D1 G3 D3 G4 B4 D4) 
-           Cy in (  k  p  p  t  g  d  k  p  t)
+     where Cx in ( B2 G3 D3 G4 B4 D4) 
+           Cy in (  p  g  d  k  p  t)
      matched ;
 
-! lexical: l a G1 0 {stemill} e  {S} > {s} {s} {e}
-! surface: l a  k k     0     e   0  >  0   0   0
 ! lexical: A B4 j a {stemill} {S} > {s} {s} {e}
 ! surface: A  p j a     0      0  >  0   0   0
 ! lexical: R a n n D3 u {stemill} {S} > {s} {s} {e}
@@ -1229,7 +1222,10 @@ Cx:Cy <=>  _ (:Cy | j) NullNoTrigger* :Vowel NullNoTrigger* %{S%}: ;
 ! that have the same lexical side, but different surface realisation
 ! so that the final lexical side has usage info indicated
 
-! (the first lexical tag %{rare%} comes from the stem lexicon, the second from a continuation class lexicon)
+! (the first lexical tag %{rare%} comes from the stem lexicon, the second from a continuation class lexicon,
+! and it is the latter that is paired with the lexical side tag +Use/Rare)
+! the combination of rules must ensure that the (non)existance of the latter is in harmony with the surface realisation of the affix, 
+! given the semantics of the tags in the stem lexicon 
 
 ! -sse sg ill cannot be rare, if the stem lexicon tag says that short form is rare;
 ! -sse sg ill cannot be common, if there is no lexicon tag that would say that short form is rare;
@@ -1296,11 +1292,11 @@ Cx:Cy <=>  _ (:Cy | j) NullNoTrigger* :Vowel NullNoTrigger* %{S%}: ;
 ! lexical: e s s e e {id} {rare} > {s} i d {rare}
 ! surface: e s s e 0  0      0   >  0  i d   0 
 ! lexical: e s s e e {id} {rare} > {s} i d {rare}
-! surface: e s s e 0  0      0   >  s  i d    0      FAIL
+! surface: e s s e e  0      0   >  s  i d    0      FAIL
 ! lexical: e s s e e {id} {rare} > {s} i d WordEnd    
 ! surface: e s s e 0  0      0   >  0  i d        FAIL
 ! lexical: e s s e e {id} {rare} > {s} i d WordEnd
-! surface: e s s e 0  0      0   >  s  i d      
+! surface: e s s e e  0      0   >  s  i d      
 ! --------------
 
 "long illative cannot be common if the word has a common short illative already"
@@ -1373,6 +1369,26 @@ Cx:Cy  <=> :voiceless Null* SuffixBorder _ ;
 
 ! lexical: s e i s > g i
 ! surface: s e i s > k i
+
+! lexical g b d -> k p t when following a voiceless consonant
+"lexical level gbd to kpt when following a voiceless consonant"
+
+Cx:Cy  <=>  :voiceless Null* _ ;
+       where Cx in (G1 B1 D1)
+             Cy in ( k  p  t)
+       matched;
+
+"-gu to -ku after a voiceless consonant"
+G7:k   <=>  [ :voiceless - :k ] Null* _ ;
+
+! lexical: s e i s > G7 u 
+! surface: s e i s >  k u
+
+"-da to -ta after s"
+D7:t  <=> :s Null* SuffixBorder _ ;
+
+! lexical: s e i s > D7 a 
+! surface: s e i s >  t a
 
 ! Orthographical convention for recent loans (kabinet) and -ik suffix
 

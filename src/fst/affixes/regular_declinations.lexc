@@ -24,30 +24,6 @@ LEXICON REDEL    ! VVS 2 (productive) for consonant-ending, stress on penultimat
               : LIK_DERIVATION ;
      +Use/Rare:%>i LIK_DERIVATION ;
 
-! el/er ending words have various preference patterns; they are currently (dec. 2019) not described 
-! 
-!LEXICON RABARBER ! only rabarber, adapter
-!
-!                  :er REDEL ;   ! rabarberi
-!         +Use/Rare:E2r REDEL ;  ! rabarbri
-!
-!LEXICON PIKSEL    ! VVS 2 (productive) for older or more frequent el/er words and proper names like piksel, Aksel - Aksli/Akseli
-!   
-!              :E2l REDEL ;         ! piksli, Aksli
-!     +Use/Rare:er REDEL ;    ! pikseli, Akseli; {F} makes e-deleting 2-level phon. rules inappliccable
-!
-!LEXICON JOKKER    ! VVS 2 (productive) for newer or less frequent el/er words like jokker
-!   
-!     +Use/Rare:E2r REDEL ;         ! jokri
-!              :er REDEL ;    ! jokkeri, {F} makes e-deleting 2-level phon. rules inappliccable
-!
-!LEXICON KAAMEL    ! VVS 2 (productive) ; like JOKKER, but norm is more strict; 
-!   
-!  +Use/NotNorm:E2l REDEL ;         ! kaamli
-!              :el REDEL ;    ! kaameli, {F} makes e-deleting 2-level phon. rules inappliccable
-
-
-
 LEXICON VIRSIK    ! VVS 2 (productive) for -ik, -ing; stress on penultimate syllable words
 
               : SG_NOMINATIVE ;    ! virsik
