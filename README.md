@@ -3,7 +3,7 @@ The Estonian (Tartu Ülikool) morphology and tools
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-est-x-utee)](https://github.com/giellalt/lang-est-x-utee/issues)
 [![Build Status](https://github.com/giellalt/lang-est-x-utee/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-est-x-utee/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-est-x-utee)](https://raw.githubusercontent.com/giellalt/lang-est-x-utee/main/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-est-x-utee)](https://github.com/giellalt/lang-est-x-utee/blob/main/LICENSE)
 
 This repository contains finite state source files for the Estonian language,
 for building morphological analysers, proofing tools
