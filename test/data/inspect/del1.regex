@@ -1,0 +1,11 @@
+# compile:
+# hfst-regexp2fst --format=openfst-tropical -v -S -i add1-est.regex -o add1-est.hfst
+# use:
+# echo 'ab' | hfst-lookup add1-est.hfst
+#context condition
+[[? - "<CORR>"]*]
+.o.
+[? (->) "" "<CORR>"::30]
+.o.
+[ [? - "<CORR>"]*  "<CORR>":0  [? - "<CORR>"]* ];
+
