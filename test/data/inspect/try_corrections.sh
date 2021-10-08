@@ -11,6 +11,7 @@
 # 
 # paste the result with errors_marked.txt 
 # to inspect how many stupid suggestions the speller accepts...
+# (these need to be sorted before presenting to the user)
 
 cat typos_tmp.txt \
 | hfst-lookup -s add1.hfst \

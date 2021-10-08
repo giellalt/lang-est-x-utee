@@ -145,6 +145,17 @@ cat typos_tmp.txt \
 > suggestions_subst1.txt
 
 cat typos_tmp.txt \
+| hfst-lookup -s subst1_kb_next.hfst \
+| sed '/^@/s/^@.*$/@/' \
+| sed 's/\t[^\t]*$//' \
+| sed 's/^[^\t]*\t//' \
+| tr '\n' ' ' \
+| sed 's/@ /@/g' \
+| tr -s '@' \
+| sed 's/@/\n/g' \
+> suggestions_subst1_kb_next.txt
+
+cat typos_tmp.txt \
 | hfst-lookup -s subst_accents.hfst \
 | sed '/^@/s/^@.*$/@/' \
 | sed 's/\t[^\t]*$//' \
@@ -154,6 +165,17 @@ cat typos_tmp.txt \
 | tr -s '@' \
 | sed 's/@/\n/g' \
 > suggestions_accents.txt
+
+cat typos_tmp.txt \
+| hfst-lookup -s subst_accents_sz.hfst \
+| sed '/^@/s/^@.*$/@/' \
+| sed 's/\t[^\t]*$//' \
+| sed 's/^[^\t]*\t//' \
+| tr '\n' ' ' \
+| sed 's/@ /@/g' \
+| tr -s '@' \
+| sed 's/@/\n/g' \
+> suggestions_accents_sz.txt
 
 cat typos_tmp.txt \
 | hfst-lookup -s insert_space.hfst \
@@ -243,6 +265,14 @@ paste only_corrects.txt suggestions_subst1.txt \
 | sed 's/^[^#]*$//' \
 > success_subst1.txt
 
+paste only_corrects.txt suggestions_subst1_kb_next.txt \
+| sed 's/\t/@ /' \
+| sed 's/$/ /' \
+| sed '/^\([^@]*\)@.* \1 /s/$/#_subst1_kb_next/' \
+| sed 's/^.*#/#/' \
+| sed 's/^[^#]*$//' \
+> success_subst1_kb_next.txt
+
 paste only_corrects.txt suggestions_accents.txt \
 | sed 's/\t/@ /' \
 | sed 's/$/ /' \
@@ -250,6 +280,14 @@ paste only_corrects.txt suggestions_accents.txt \
 | sed 's/^.*#/#/' \
 | sed 's/^[^#]*$//' \
 > success_accents.txt
+
+paste only_corrects.txt suggestions_accents_sz.txt \
+| sed 's/\t/@ /' \
+| sed 's/$/ /' \
+| sed '/^\([^@]*\)@.* \1 /s/$/#_accents_sz/' \
+| sed 's/^.*#/#/' \
+| sed 's/^[^#]*$//' \
+> success_accents_sz.txt
 
 paste only_corrects.txt suggestions_space.txt \
 | sed 's/\t/@ /' \
@@ -273,7 +311,9 @@ paste only_typos.txt only_corrects.txt \
 | paste - success_transpose.txt \
 | paste - success_transpose1.txt \
 | paste - success_subst1.txt \
+| paste - success_subst1_kb_next.txt \
 | paste - success_accents.txt \
+| paste - success_accents_sz.txt \
 | paste - success_aab2abb.txt \
 | paste - success_repetition.txt \
 | paste - success_space.txt \
@@ -286,6 +326,7 @@ paste only_typos.txt only_corrects.txt \
 | sed 's/#_transpose #_transpose1/#_transpose1/' \
 | sed 's/#_add1 #_one2double/#_one2double/' \
 | sed 's/#_del1 #_double2one/#_double2one/' \
+| sed 's/#_subst1 #_subst1_kb_next/#_subst1_kb_next/' \
 | sed 's/#_subst1 #_accents/#_accents/' \
 > errors_marked.txt
 
