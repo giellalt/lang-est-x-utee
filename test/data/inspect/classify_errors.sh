@@ -43,280 +43,55 @@ cat only_typos.txt \
 | sed 's/$/\n@/' \
 > typos_tmp.txt
 
-# for every typo, create all the possible modifications of a certain type:
-# add_one, delete_one etc.
-cat typos_tmp.txt \
-| hfst-lookup -s add1.hfst \
-| sed '/^@/s/^@.*$/@/' \
-| sed 's/\t[^\t]*$//' \
-| sed 's/^[^\t]*\t//' \
-| tr '\n' ' ' \
-| sed 's/@ /@/g' \
-| tr -s '@' \
-| sed 's/@/\n/g' \
-> suggestions_add1.txt
+# start with tmp file for including all the errors (resulting in a table)
+paste only_typos.txt only_corrects.txt \
+| paste - success_no_error.txt \
+> tmp_errors_marked
 
-cat typos_tmp.txt \
-| hfst-lookup -s one2double.hfst \
-| sed '/^@/s/^@.*$/@/' \
-| sed 's/\t[^\t]*$//' \
-| sed 's/^[^\t]*\t//' \
-| tr '\n' ' ' \
-| sed 's/@ /@/g' \
-| tr -s '@' \
-| sed 's/@/\n/g' \
-> suggestions_one2double.txt
+# for every kind of a typo (add_one, delete_one etc.), ... 
 
-cat typos_tmp.txt \
-| hfst-lookup -s del1.hfst \
-| sed '/^@/s/^@.*$/@/' \
-| sed 's/\t[^\t]*$//' \
-| sed 's/^[^\t]*\t//' \
-| tr '\n' ' ' \
-| sed 's/@ /@/g' \
-| tr -s '@' \
-| sed 's/@/\n/g' \
-> suggestions_del1.txt
+for typo in add1 one2double del1 double2one transpose transpose1 aab2abb repetition subst1 subst1_kb_next subst_accents subst_accents_sz insert_space capitalize
+do
 
-cat typos_tmp.txt \
-| hfst-lookup -s double2one.hfst \
-| sed '/^@/s/^@.*$/@/' \
-| sed 's/\t[^\t]*$//' \
-| sed 's/^[^\t]*\t//' \
-| tr '\n' ' ' \
-| sed 's/@ /@/g' \
-| tr -s '@' \
-| sed 's/@/\n/g' \
-> suggestions_double2one.txt
+  # 1) create all the possible modifications of this type
 
-cat typos_tmp.txt \
-| hfst-lookup -s transpose.hfst \
-| sed '/^@/s/^@.*$/@/' \
-| sed 's/\t[^\t]*$//' \
-| sed 's/^[^\t]*\t//' \
-| tr '\n' ' ' \
-| sed 's/@ /@/g' \
-| tr -s '@' \
-| sed 's/@/\n/g' \
-> suggestions_transpose.txt
+  cat typos_tmp.txt \
+  | hfst-lookup -s ${typo}.hfst \
+  | sed '/^@/s/^@.*$/@/' \
+  | sed 's/\t[^\t]*$//' \
+  | sed 's/^[^\t]*\t//' \
+  | tr '\n' ' ' \
+  | sed 's/@ /@/g' \
+  | tr -s '@' \
+  | sed 's/@/\n/g' \
+  > tmp1.txt
 
-cat typos_tmp.txt \
-| hfst-lookup -s transpose1.hfst \
-| sed '/^@/s/^@.*$/@/' \
-| sed 's/\t[^\t]*$//' \
-| sed 's/^[^\t]*\t//' \
-| tr '\n' ' ' \
-| sed 's/@ /@/g' \
-| tr -s '@' \
-| sed 's/@/\n/g' \
-> suggestions_transpose1.txt
+  # 2) check if some of the suggested corrections was indeed the known correct one
+  # ... and mark the file line accordingly, i.e. with the type of the correction
+  # (add1, del1 etc)
+  
+  paste only_corrects.txt tmp1.txt \
+  | sed 's/\t/@ /' \
+  | sed 's/$/ /' \
+  | sed "/^\([^@]*\)@.* \1 /s/$/#_${typo}/" \
+  | sed 's/^.*#/#/' \
+  | sed 's/^[^#]*$//' \
+  > tmp2.txt
 
-cat typos_tmp.txt \
-| hfst-lookup -s aab2abb.hfst \
-| sed '/^@/s/^@.*$/@/' \
-| sed 's/\t[^\t]*$//' \
-| sed 's/^[^\t]*\t//' \
-| tr '\n' ' ' \
-| sed 's/@ /@/g' \
-| tr -s '@' \
-| sed 's/@/\n/g' \
-> suggestions_aab2abb.txt
+  # collect all the classifications
+  paste tmp_errors_marked tmp2.txt \
+  > tmp3
+  cp tmp3 tmp_errors_marked
+done
 
-cat typos_tmp.txt \
-| hfst-lookup -s repetition.hfst \
-| sed '/^@/s/^@.*$/@/' \
-| sed 's/\t[^\t]*$//' \
-| sed 's/^[^\t]*\t//' \
-| tr '\n' ' ' \
-| sed 's/@ /@/g' \
-| tr -s '@' \
-| sed 's/@/\n/g' \
-> suggestions_repetition.txt
-
-cat typos_tmp.txt \
-| hfst-lookup -s subst1.hfst \
-| sed '/^@/s/^@.*$/@/' \
-| sed 's/\t[^\t]*$//' \
-| sed 's/^[^\t]*\t//' \
-| tr '\n' ' ' \
-| sed 's/@ /@/g' \
-| tr -s '@' \
-| sed 's/@/\n/g' \
-> suggestions_subst1.txt
-
-cat typos_tmp.txt \
-| hfst-lookup -s subst1_kb_next.hfst \
-| sed '/^@/s/^@.*$/@/' \
-| sed 's/\t[^\t]*$//' \
-| sed 's/^[^\t]*\t//' \
-| tr '\n' ' ' \
-| sed 's/@ /@/g' \
-| tr -s '@' \
-| sed 's/@/\n/g' \
-> suggestions_subst1_kb_next.txt
-
-cat typos_tmp.txt \
-| hfst-lookup -s subst_accents.hfst \
-| sed '/^@/s/^@.*$/@/' \
-| sed 's/\t[^\t]*$//' \
-| sed 's/^[^\t]*\t//' \
-| tr '\n' ' ' \
-| sed 's/@ /@/g' \
-| tr -s '@' \
-| sed 's/@/\n/g' \
-> suggestions_accents.txt
-
-cat typos_tmp.txt \
-| hfst-lookup -s subst_accents_sz.hfst \
-| sed '/^@/s/^@.*$/@/' \
-| sed 's/\t[^\t]*$//' \
-| sed 's/^[^\t]*\t//' \
-| tr '\n' ' ' \
-| sed 's/@ /@/g' \
-| tr -s '@' \
-| sed 's/@/\n/g' \
-> suggestions_accents_sz.txt
-
-cat typos_tmp.txt \
-| hfst-lookup -s insert_space.hfst \
-| sed '/^@/s/^@.*$/@/' \
-| sed 's/\t[^\t]*$//' \
-| sed 's/^[^\t]*\t//' \
-| tr '\n' ' ' \
-| sed 's/@ /@/g' \
-| tr -s '@' \
-| sed 's/@/\n/g' \
-> suggestions_space.txt
-
-
-# check if some of the suggested corrections was indeed the known correct one
-# ... and mark the file line accordingly, i.e. with the type of the correction
-# (add1, del1 etc)
-
-paste only_corrects.txt suggestions_add1.txt \
-| sed 's/\t/@ /' \
-| sed 's/$/ /' \
-| sed '/^\([^@]*\)@.* \1 /s/$/#_add1/' \
-| sed 's/^.*#/#/' \
-| sed 's/^[^#]*$//' \
-> success_add1.txt
-
-paste only_corrects.txt suggestions_one2double.txt \
-| sed 's/\t/@ /' \
-| sed 's/$/ /' \
-| sed '/^\([^@]*\)@.* \1 /s/$/#_one2double/' \
-| sed 's/^.*#/#/' \
-| sed 's/^[^#]*$//' \
-> success_one2double.txt
-
-paste only_corrects.txt suggestions_del1.txt \
-| sed 's/\t/@ /' \
-| sed 's/$/ /' \
-| sed '/^\([^@]*\)@.* \1 /s/$/#_del1/' \
-| sed 's/^.*#/#/' \
-| sed 's/^[^#]*$//' \
-> success_del1.txt
-
-paste only_corrects.txt suggestions_double2one.txt \
-| sed 's/\t/@ /' \
-| sed 's/$/ /' \
-| sed '/^\([^@]*\)@.* \1 /s/$/#_double2one/' \
-| sed 's/^.*#/#/' \
-| sed 's/^[^#]*$//' \
-> success_double2one.txt
-
-paste only_corrects.txt suggestions_transpose.txt \
-| sed 's/\t/@ /' \
-| sed 's/$/ /' \
-| sed '/^\([^@]*\)@.* \1 /s/$/#_transpose/' \
-| sed 's/^.*#/#/' \
-| sed 's/^[^#]*$//' \
-> success_transpose.txt
-
-paste only_corrects.txt suggestions_transpose1.txt \
-| sed 's/\t/@ /' \
-| sed 's/$/ /' \
-| sed '/^\([^@]*\)@.* \1 /s/$/#_transpose1/' \
-| sed 's/^.*#/#/' \
-| sed 's/^[^#]*$//' \
-> success_transpose1.txt
-
-paste only_corrects.txt suggestions_aab2abb.txt \
-| sed 's/\t/@ /' \
-| sed 's/$/ /' \
-| sed '/^\([^@]*\)@.* \1 /s/$/#_aab2abb/' \
-| sed 's/^.*#/#/' \
-| sed 's/^[^#]*$//' \
-> success_aab2abb.txt
-
-paste only_corrects.txt suggestions_repetition.txt \
-| sed 's/\t/@ /' \
-| sed 's/$/ /' \
-| sed '/^\([^@]*\)@.* \1 /s/$/#_repetition/' \
-| sed 's/^.*#/#/' \
-| sed 's/^[^#]*$//' \
-> success_repetition.txt
-
-paste only_corrects.txt suggestions_subst1.txt \
-| sed 's/\t/@ /' \
-| sed 's/$/ /' \
-| sed '/^\([^@]*\)@.* \1 /s/$/#_subst1/' \
-| sed 's/^.*#/#/' \
-| sed 's/^[^#]*$//' \
-> success_subst1.txt
-
-paste only_corrects.txt suggestions_subst1_kb_next.txt \
-| sed 's/\t/@ /' \
-| sed 's/$/ /' \
-| sed '/^\([^@]*\)@.* \1 /s/$/#_subst1_kb_next/' \
-| sed 's/^.*#/#/' \
-| sed 's/^[^#]*$//' \
-> success_subst1_kb_next.txt
-
-paste only_corrects.txt suggestions_accents.txt \
-| sed 's/\t/@ /' \
-| sed 's/$/ /' \
-| sed '/^\([^@]*\)@.* \1 /s/$/#_accents/' \
-| sed 's/^.*#/#/' \
-| sed 's/^[^#]*$//' \
-> success_accents.txt
-
-paste only_corrects.txt suggestions_accents_sz.txt \
-| sed 's/\t/@ /' \
-| sed 's/$/ /' \
-| sed '/^\([^@]*\)@.* \1 /s/$/#_accents_sz/' \
-| sed 's/^.*#/#/' \
-| sed 's/^[^#]*$//' \
-> success_accents_sz.txt
-
-paste only_corrects.txt suggestions_space.txt \
-| sed 's/\t/@ /' \
-| sed 's/$/ /' \
-| sed '/^\([^@]*\)@.* \1 /s/$/#_space/' \
-| sed 's/^.*#/#/' \
-| sed 's/^[^#]*$//' \
-> success_space.txt
-
-# collect all the classifications
-# and remove some redundant ones
+# remove some redundant classifications
 # (they are here because of the way we made the transducers,
 # while experimenting with different ideas on how to classify)
 
-paste only_typos.txt only_corrects.txt \
-| paste - success_no_error.txt \
-| paste - success_add1.txt \
-| paste - success_one2double.txt \
-| paste - success_del1.txt \
-| paste - success_double2one.txt \
-| paste - success_transpose.txt \
-| paste - success_transpose1.txt \
-| paste - success_subst1.txt \
-| paste - success_subst1_kb_next.txt \
-| paste - success_accents.txt \
-| paste - success_accents_sz.txt \
-| paste - success_aab2abb.txt \
-| paste - success_repetition.txt \
-| paste - success_space.txt \
+# notice that the removal requires you to know how the "columns" of the tmp file were created; 
+# look at the for-cycle 
+
+cat tmp_errors_marked \
 | tr -s '\t' \
 | sed 's/\t#/@#/' \
 | sed 's/\t#/ #/g' \
@@ -327,7 +102,7 @@ paste only_typos.txt only_corrects.txt \
 | sed 's/#_add1 #_one2double/#_one2double/' \
 | sed 's/#_del1 #_double2one/#_double2one/' \
 | sed 's/#_subst1 #_subst1_kb_next/#_subst1_kb_next/' \
-| sed 's/#_subst1 #_accents/#_accents/' \
+| sed 's/#_subst1 #_subst_accents/#_subst_accents/' \
 > errors_marked.txt
 
 exit
