@@ -149,9 +149,8 @@ strings-est.hfst: strings-est.regex
  
 editdist.default.hfst: editdist-est.hfst strings-est.hfst accents-est.hfst
 	$(AM_V_XFST)printf "\
-		read regex @\"anystar.hfst\"\
-		[ @\"accents-est.hfst\"* .o. [@\"strings-est.hfst\" | @\"editdist-est.hfst\" ]] \
-		  @\"anystar.hfst\"\ ; \
+		read regex \
+		[ @\"accents-est.hfst\"* .o. [@\"strings-est.hfst\" | @\"editdist-est.hfst\" ]]; \
 		save stack $@\n\
 		quit\n" | $(XFST_TOOL)
 
