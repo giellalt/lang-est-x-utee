@@ -210,7 +210,7 @@ fst/guesser.tmp.hfst: fst/guesser.tmp0.hfst filters/upcase-guessed_proper-string
 # HFST:
 # a transducer for blabla- and Blabla-
 guesser-smth.hfst: fst/guesser-smth.hfst
-			   cp $< $@ 
+	$(AM_V_CP)cp $< $@ 
 
 
 guesser.tmp1.hfst: fst/guesser.tmp.hfst \
@@ -229,7 +229,7 @@ guesser.tmp1.hfst: fst/guesser.tmp.hfst \
 
 # acronyms
 # acronyms.tmp1.%: fst/acronyms.tmp.%
-# 			   cp $< $@ 
+# 	$(AM_V_CP)cp $< $@ 
 
 # FOMA
 # not implemented...
@@ -639,7 +639,8 @@ generator-raw-gt-desc.weighted.hfst: generator-raw-gt-desc.vocabulary.hfst
 else !WITH_OFST_TROPICAL
 
 generator-raw-gt-desc.weighted.hfst: generator-raw-gt-desc.vocabulary.hfst
-		cp $< $@
+	$(AM_V_CP)cp $< $@
+
 endif !WITH_OFST_TROPICAL
 
 
@@ -747,7 +748,8 @@ guesser-raw.weighted.hfst: guesser-raw.simple.hfst
 else !WITH_OFST_TROPICAL
 
 guesser-raw.weighted.hfst: guesser-raw.simple.hfst 
-		cp $< $@
+	$(AM_V_CP)cp $< $@
+
 endif !WITH_OFST_TROPICAL
 
 # make the raw ones
@@ -755,7 +757,7 @@ endif !WITH_OFST_TROPICAL
 # map the name to GT/Divvun conventions
 
 generator-raw-gt-desc.hfst: generator-raw-gt-desc.weighted.hfst 
-		cp $< $@
+	$(AM_V_CP)cp $< $@
 
 # Tokens ending with a dot (e.g. abbreviations) need special treament by a tokeniser
 # They cannot be a part of the analyser that the tokeniser uses
@@ -877,10 +879,10 @@ generator-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%            \
 
 # override the default descriptive analyser and generator
 analyser-gt-desc.tmp.hfst: analyser-gt-desc.dot.tmp.hfst 
-		cp $< $@
+	$(AM_V_CP)cp $< $@
 
 generator-gt-desc.tmp.hfst: generator-gt-desc.dot.tmp.hfst 
-		cp $< $@
+	$(AM_V_CP)cp $< $@
 
 
 # override the default normative analyser and generator
@@ -947,7 +949,7 @@ analyser-raw-gt-guess.hfst: generator-raw-gt-guess.hfst \
 # XEROX:
 # probably garbage anyway
 analyser-raw-gt-desc.xfst: analyser-raw-gt-desc.vocabulary.xfst 
-		cp $< $@
+	$(AM_V_CP)cp $< $@
 
 # generator with a guesser
 # 
