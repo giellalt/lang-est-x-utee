@@ -79,7 +79,7 @@ WORD_REPLACEMENTS=no
 
 generator-speller-gt-norm.hfst: \
 			$(top_builddir)/src/analyser-raw-gt-desc.hfst                     \
-			$(top_builddir)/src/fst/abbrevdot.tmp.hfst \
+			$(top_builddir)/src/fst/abbrevdot.tmp.hfst                        \
 			$(top_builddir)/src/filters/remove-CLB-strings.hfst               \
 			$(top_builddir)/src/filters/remove-error-strings.hfst             \
 			$(top_builddir)/src/filters/remove-MinusSpell-strings.hfst        \
