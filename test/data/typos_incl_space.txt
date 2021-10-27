@@ -70,26 +70,90 @@ Nordstrom	Nordström	# 3
 Parempoolsetsest	Parempoolsetest	# 6
 'rgmistel	järgmistel	# 6,6
 Stokchomis	Stockholmis	# 6
+1.Köögiviljade	1. Köögiviljade	# 8
+1.juuni-15.august	1. juuni - 15. august	# 8,8,8,8
+10.-13.apr	10.-13. apr	# 8
+10.Liepaja	10. Liepaja	# 8
+10.Saksa-Läti	10. Saksa-Läti	# 8
+10.septembril	10. septembril	# 8
+11.Läänepank	11. Läänepank	# 8
+11.apr	11. apr	# 8
+12.Sidepank	12. Sidepank	# 8
+12.VI	12. VI	# 8
+14.Läti	14. Läti	# 8
+15.Läti	15. Läti	# 8
+16.Ventspilsi	16. Ventspilsi	# 8
+1647.a.	1647. a.	# 8
+1940.a.	1940. a.	# 8
+1941.Nõukogude	1941. Nõukogude	# 8
+1942.a.	1942. a.	# 8
+1961.a.	1961. a.	# 8
+1977.a.	1977. a.	# 8
+1979.Podzemnõi	1979. Podzemnõi	# 8
+1982.a.	1982. a.	# 6
+2....ja	2... ja	# 10
 21-aastselt	21-aastaselt	# 6
+22.aprill-28.oktoober	22. aprill - 28. oktoober	# 8,8,8,8
+22.sept	22. sept	# 8
+229.Töövaidlusorgani	229. Töövaidlusorgani	# 8
+24.aprill	24. aprill	# 8
+24.september-22.oktoober	24. september - 22. oktoober	# 8,8,8,8
+26.märts-25.juuni	26. märts - 25. juuni	# 8,8,8,8
+26.märts-30.mai	26. märts - 30. mai	# 8,8,8,8
+27.-28.nov	27.-28. nov	# 8
+27.juuni-20.august	27. juuni - 20. august	# 8,8,8,8
+27.märts-26.mai	27. märts - 26. mai	# 8,8,8,8
+28.august-27.oktoober	28. august - 27. oktoober	# 8,8,8,8
+29.Maa	29. Maa	# 8
+29.märts	29. märts	# 8
+29.märtsist	29. märtsist	# 8
 2ja	ja	# 8
+30.X	30. X	# 8
+31.Riia	31. Riia	# 8
+32.Daugava	32. Daugava	# 8
+34.VEF	34. VEF	# 8
+35.Läti	35. Läti	# 8
+36.Tukums	36. Tukums	# 8
+38.Jelgava	38. Jelgava	# 8
+43.Läti	43. Läti	# 8
+5 v ll	5 - v ll	# ?
+6.1.Kasumi	6.1. Kasumi	# 8
+7.Antud	7. Antud	# 8
+7.Põhjapoolse	7. Põhjapoolse	# 8
+9.Frontooni	9. Frontooni	# 8
 AS-le	AS-ile	# 6
 ATMOSFÄÄRIõHU	ATMOSFÄÄRIÕHU	# 9
 Aafikasse	Aafrikasse	# 6
 Aktiaseltsi	Aktsiaseltsi	# 6
 Aktsiakaipitali	Aktsiakapitali	# 6
+Am.J.	Am. J.	# 8
+Ann.Clin.	Ann. Clin.	# 8
+Arch.Surg.	Arch. Surg.	# 8
 Arvatatavasti	Arvatavasti	# 7
 Aserbaidzaanis	Aserbaidžaanis	# 3
 BNS-le	BNS-ile	# 6
+BNS23.17	BNS 23.17	# 8
 Babits^eva	Babitševa	# 11
+Baltimere	Balti mere	# 11
 Barliini	Berliini	# 6
+Bd.25	Bd. 25	# 8
+Bd.8.	Bd. 8.	# 8
+Bucuresti,1970	Bucuresti, 1970	# 8
 Bulõts^ov	Bulõtšov	# 11
 Desintegraatorise	Desintegraatorisse	# 5
 Draamatater	Draamateater	# 6
+E.Tubin	E. Tubin	# 8
+ESSR.Him.	ESSR. Him.	# 8
 Eestiti	Eestit	# 6
 Endasmõistetavalt	Endastmõistetavalt	# 6
 Enegreetiliste	Energeetiliste	# 4
 Erastamisagetuuri	Erastamisagentuuri	# 6
 Eskpluatatsiooni	Ekspluatatsiooni	# 4
+Estoni.Tallin	Estoni. Tallin	# 8
+F.296	F. 296	# 8
+F.B.R.	F. B. R.	# 8,8
+Fr.Kreutzwaldi	Fr. Kreutzwaldi	# 8
+Geol.Inst.	Geol. Inst.	# 8
 Hanekasvatusaaduste	Hanekasvatussaaduste	# 5
 Hanspanga	Hansapanga	# 6
 Harjumal	Harjumaal	# 5
@@ -97,15 +161,22 @@ Hedrich	Hedrick	# 11
 Helsinkis	Helsingis	# 6
 Herakleitusel	Herakleitosel	# 6
 Hoipangal	Hoiupangal	# 6
+I.A.	I. A.	# 8
+I.B.	I. B.	# 8
 Ida-Vi	Ida-Viru	# 6,6
 Igalühel	Igaühel	# 6
 Imselt	Ilmselt	# 6
 Intstituut	Instituut	# 6
 Itar-Tass	Itar-TASS	# 11
+Izv.AN	Izv. AN	# 8
+J.W.	J. W.	# 8
 Japanis	Jaapanis	# 5
+Joon.4.8	Joon. 4.8	# 8
+Ju.S.	Ju. S.	# 8
 Jugoslooviat	Jugoslaaviat	# 6
 Juhtkomite	Juhtkomitee	# 5
 Jäägrrkompanii	Jäägerkompanii	# 6
+Kaarel.1974.	Kaarel. 1974.	# 8
 Kaheden	Kahden	# 11
 Kaitesliidule	Kaitseliidule	# 4
 Kanalistatsiooni	Kanalisatsiooni	# 6
@@ -132,22 +203,33 @@ Krk	KrK	# 9
 Kuulmispuuetetga	Kuulmispuuetega	# 6
 KÕige	Kõige	# 9
 KÜmmelilt	Kümmelilt	# 9
+Lad-AmTöötajate	Lad-Am Töötajate	# 8
+Lav.Urmas	Lav. Urmas	# 8
 Lefe`vre	Lefèvre	# 11
+Levitskogo.Jurjev	Levitskogo. Jurjev	# 8
 Lihatõõtjate	Lihatootjate	# 3,3
 Lihatõõtjate	Lihatöötajate	# 3,3
 Liidudu	Liidud	# 6
 Liiklukindlustuse	Liikluskindlustuse	# 6
 Litsenseerimise	Litsentseerimise	# 6
 Luksenburgi	Luksemburgi	# 6
+M.,1979	M., 1979	# 8
+M.J.	M. J.	# 8
 Maaimapanga	Maailmapanga	# 6
 Majandusministeriumi	Majandusministeeriumi	# 5
+Mis...mis	Mis... mis	# 8
 Moskvase	Moskvasse	# 5
+N.D.	N. D.	# 8
 NIkonovile	Nikonovile	# 9
+Noo...noo...noo	Noo... noo... noo	# 8,8
+Noo...nooo	Noo... nooo	# 8,6
+Noo..noo...noo	Noo... noo... noo	# 8,8
 NÕmme	Nõmme	# 9
 NÕukogu	Nõukogu	# 9
 Oktoobrirevolutisooni	Oktoobrirevolutsiooni	# 4
 Oletatatakse	Oletatakse	# 7
 Organzation	Organization	# 11
+P.R.	P. R.	# 8
 Pankrotsitunud	Pankrotistunud	# 4
 ParTöök	ParTööK	# 9
 Paraleelselt	Paralleelselt	# 5
@@ -164,6 +246,7 @@ Rifkindi	Rifkindi	# 11
 Riisipera	Riisipere	# 6
 Risikitegurid	Riskitegurid	# 6
 Rožoko	Rožoki	# 6
+S.S.	S. S.	# 8
 Safanja	Sefanja	# 11
 Sedaus	Seadus	# 4
 Serviceu	Service	# 6
@@ -171,14 +254,20 @@ Sillmäel	Sillamäel	# 6
 Socckholm	Stockholm	# 6,6
 Sockholm	Stockholm	# 6
 Sorosi	Sorose	# 6
+Spinelli,L'Europa	Spinelli, L'Europa	# 8
+St.Petersburg	St. Petersburg	# 11
 Standaard	Standard	# 5
 Statistiakaameti	Statistikaameti	# 6
 Stokholmis	Stockholmis	# 6
+Struve.M.	Struve. M.	# 8
+Suppl.23	Suppl. 23	# 8
 Suurbritaania	Suurbritannia	# 6,6
 Suurbrittanniast	Suurbritanniast	# 5
 SÕpruskoguduste	Sõpruskoguduste	# 9
 Sõjajärsel	Sõjajärgsel	# 6
 T^sernenko	Tšernenko	# 11
+Tartuajat	Tartu ajad	# 8,6
+Tartuajat	Tartu ajast	# 8,6
 Teamist	Teadmist	# 6
 Teatmiseks	Teatamiseks	# 6
 Teatmiseks	Teadmiseks	# 6
@@ -189,6 +278,8 @@ Turimisühendus	Turismiühendus	# 6,6
 Täpsne	Täpne	# 6
 Täpsne	Täpse	# 6
 TšernobÕlis	Tšernobõlis	# 9
+V.sb.	V. sb.	# 8
+Vab.Partei	Vab. Partei	# 8
 Vabariikllaste	Vabariiklaste	# 5
 ValimisliiduST	Valimisliidust	# 9
 Valimsiliidu	Valimisliidu	# 4
@@ -197,7 +288,10 @@ Ventspil	Ventspils	# 6
 Vladimisr	Vladimir	# 6
 Voprosse	Voprossõ	# 11
 Välisministeeiumi	Välisministeeriumi	# 6
+W.A.	W. A.	# 8
+W.Kayser	W. Kayser	# 8
 Wassser-	Wasser-	# 11
+a.54,9	a. 54,9	# 8
 a3subj	a3:subj	# 10
 aTallinnast	Tallinnast	#
 aTokyos	Tokyos	#
@@ -214,6 +308,7 @@ abonomentvõrguga	abonementvõrguga	# 6
 adminsitratsiooni	administratsiooni	# 4
 advekaadselt	adekvaatselt	# 6,6
 aeglselt	aeglaselt	# 6
+aga...sellest	aga... sellest	# 8
 agfaani	afgaani	# 4
 agrielust	argielust	# 4
 ainault	ainult	# 6
@@ -235,6 +330,7 @@ aktsikapitali	aktsiakapitali	# 6
 aktsioomide	aksioomide	# 6
 aktsioomist	aksioomist	# 6
 aktuaarteenuste	aktuaalteenuste	# 11
+alamsüsteemideks:....TÖÖTLUS	alamsüsteemideks: ... TÖÖTLUS	# 8,8
 alandatatud	alandatud	# 7
 algatud	algatatud	# 6,6
 alitsuse	valitsuse	# 6
@@ -269,6 +365,7 @@ arenguse	arengusse	# 6
 argumenteeeritud	argumenteeritud	# 5
 arreteerimis	arreteerimise	# 6
 arreterib	arreteerib	# 5
+arsti-,geograafia-ja	arsti-, geograafia- ja	# 8,8
 aruaande	aruande	# 5
 arvatavsti	arvatavasti	# 6
 arvatest	arvates	# 6
@@ -287,6 +384,7 @@ astustele	asutustele	# 6,6,6,6
 astäitja	asetäitja	# 6
 asututud	astutud	# 6
 atraktiivemaid	atraktiivsemaid	# 6
+augTartu	aug Tartu	# 8
 autoriÕiguse	autoriõiguse	# 9
 avald	vald	# 6
 avlikus	avalikus	# 6
@@ -311,6 +409,7 @@ ebakainenena	ebakainena	# 7
 ebakvaliteeetselt	ebakvaliteetselt	# 5
 ebaseduslikke	ebaseaduslikke	# 6
 ebastabiiliselt	ebastabiilselt	# 6
+edasi...ja	edasi... ja	# 8
 edaspidiga	edaspidigi	# 6
 eelistates	eelistades	# 6
 eelitas	eelistas	# 6
@@ -331,6 +430,7 @@ eksploateerinud	ekspluateerinud	# 6
 eksponenet	eksponente	# 4
 eksproditulud	eksporditulud	# 4
 elanikonna	elanikkonna	# 5
+elegantsi...hinge	elegantsi... hinge	# 8
 elektritseeritud	elektriseeritud	# 6
 elektrülekandeliinide	elektriülekandeliinide	# 6
 elmine	eelmine	# 6
@@ -354,6 +454,7 @@ esialgestel	esialgsetel	# 4
 esinadaja	esindaja	# 6
 esinadmisele	esindamisele	# 4
 esindjatena	esindajatena	# 6
+esitamis viisis	esitamisviisis	# 10
 esmakaordselt	esmakordselt	# 6
 esmete	esemete	# 6
 ettevÕtete	ettevõtete	# 9
@@ -378,6 +479,7 @@ habmenoaga	habemenoaga	# 6
 haigetunutest	haigestunutest	# 6
 hakaks	hakkas	# 6,6
 hakatakstsionäridele	kaasaktsionäridele	# 6,6,6
+hakatakstsionäridele	hakataks aktsionäridele	#
 hakkasd	hakkasid	# 6
 hakkata	hakata	# 5
 hanekasvatusaaduste	hanekasvatussaaduste	# 5
@@ -385,7 +487,10 @@ hariduministeeriumis	haridusministeeriumis	# 6
 haridusmininisteeriumil	haridusministeeriumil	# 7
 haridusministeerumi	haridusministeeriumi	# 6
 harrastjaid	harrastajaid	# 6
+hat.Bd.	hat. Bd.	# 8
+hea...saate	hea... saate	# 8
 heliressižõõri	helirežissööri	# 6,6,6,6,6
+hiihdin.Kuvakertomus	hiihdin. Kuvakertomus	# 8
 hiiilida	hiilida	# 6
 hindmine	hindamine	# 6
 hingmisteede	hingamisteede	# 6
@@ -394,10 +499,12 @@ hinnagul	hinnangul	# 6
 hinnanalandust	hinnaalandust	# 6
 hkkavad	hakkavad	# 6
 hoised	hoiused	# 6
+holotseenis.ENSV	holotseenis. ENSV	# 8
 hoogse	hoogsa	# 11
 hoois	hoopis	# 6
 huivtavast	huvitavast	# 4
 hulkrite	hulkurite	# 6
+huvi.Kudemispaigad	huvi. Kudemispaigad	# 8
 huvitataud	huvitatud	# 7
 hädapaärane	hädapärane	# 6
 hüdraunilised	hüdraulilised	# 6
@@ -410,12 +517,16 @@ ilmenud	ilmnenud	# 6
 ilut0ulestik	ilutulestik	# 6
 imees	mees	# 6
 imees	imedes	# 6
+imp.Jurjevskogo	imp. Jurjevskogo	# 8
+imp.Kazanskogo	imp. Kazanskogo	# 8
+imp.Moskovskogo	imp. Moskovskogo	# 8
 impliitsetest	implitsiitsetest	# 6
 indifirentne	indiferentne	# 6
 indvaliidiks	invaliidiks	# 6
 inertspumapdes	inertspumpades	# 6
 infornatsioon	informatsioon	# 6
 ingtegreeruda	integreeruda	# 6
+inimesi...ja	inimesi... ja	# 8
 intrtessimäära	intressimäära	# 6
 invertariseermine	inventariseerimine	# 6
 investerringuid	investeeringuid	# 6
@@ -424,12 +535,15 @@ iseaskalu	isaskalu	# 6
 iseeneseestmõistetatavalt	iseenesestmõistetavalt	# 5
 iseloomilike	iseloomulike	# 6
 isikusega	isiksusega	# 6
+ispolzovanija.M.	ispolzovanija. M.	# 8
 jaanurini	jaanuarini	# 6
 jaanuris	jaanuaris	# 6
 jagunaved	jagunevad	# 6,6
+jalaga...kergelt...ning	jalaga... kergelt... ning	# 8,8
 joatusfunktsioon	jaotusfunktsioon	# 4
 jookul	jooksul	# 6
 joomaruluse	joomarluse	# 6
+joon.4.21	joon. 4.21	# 8
 joonsitest	joonistest	# 4
 juhatajua	juhataja	# 6
 juhatja	juhataja	# 6
@@ -440,11 +554,13 @@ jurde	juurde	# 5
 juriidiilised	juriidilised	# 5
 jursidiktsiooni	jurisdiktsiooni	# 4
 jututajamine	jutuajamine	# 6
+juurdekäik,sissekäik	juurdekäik, sissekäik	# 8
 järeleusele	järeldusele	# 6
 järgenenud	järgnenud	# 6
 jätgmisel	järgmisel	# 6
 jõiguslikke	õiguslikke	# 6
 kKoalitsioonivalitsuse	koalitsioonivalitsuse	# 6
+kaadriprobleesimees	kaadriprobleem esimees	#
 kaasaagse	kaasaegse	# 6
 kahekas	kaheksas	# 6
 kahekas	kaheksa	# 6
@@ -461,18 +577,21 @@ kallasetelt	kallastelt	# 6
 kalleletungi	kallaletungi	# 6
 kanidaati	kandidaati	# 6
 kanseleile	kantseleile	# 6
+karmule...aga	karmule... aga	# 8
 kassetmagnetofoni	kassettmagnetofoni	# 5
 kasutamamta	kasutamata	# 6
 kasutatab	kasutatav	# 6
 kasutatab	kasutab	# 6
 kasutatatud	kasutatud	# 7
 kasuvajaga	kasvuajaga	# 4
+kasvas...nagu	kasvas... nagu	# 8
 katasroofi	katastroofi	# 6
 kauabavahetuses	kaubavahetuses	# 6
 kauabgrupid	kaubagrupid	# 4
 kaubanduspolitiika	kaubanduspoliitika	# 4
 kavandaminsel	kavandamisel	# 6
 kavataseb	kavatseb	# 6
+kedagi...Võtnud	kedagi... Võtnud	# 8
 keskfraksiooni	keskfraktsiooni	# 6
 keskkonnaminsteerium	keskkonnaministeerium	# 6
 keskkonnaminsteeriumi	keskkonnaministeeriumi	# 6
@@ -487,6 +606,9 @@ kindle	kindel	# 4
 kindlustustamise	kindlustamise	# 7
 kipunud	kippunud	# 5
 kirjtuanud	kirjutanud	# 6
+kitsas stja	kitsass stja	# 11
+km,...	km, ...	# 8
+kn.:Profilaktika	kn.: Profilaktika	# 8
 koalitsiooniläbirääkmised	koalitsiooniläbirääkimised	# 6
 kodakondsusesta	kodakondsuseta	# 6
 kodakonsusametisse	kodakondsusametisse	# 6
@@ -507,6 +629,8 @@ kokkkukeerutatud	kokkukeerutatud	# 5
 kokkuleppet	kokkulepped	# 5
 kokkuluuluvuse	kokkukuuluvuse	# 6
 kokkurentsivõimest	konkurentsivõimest	# 6
+kokkuvõteteon	kokkuvõtete on	# 8
+kokkuvõttega.Kuna	kokkuvõttega. Kuna	# 8
 kolaitsioonis	koalitsioonis	# 4
 koljuvigatusega	koljuvigastusega	# 6
 kolnurk	kolmnurk	# 6
@@ -523,6 +647,7 @@ komsolisekrtär	komsomolisekrtär	# 6,6
 komsomilijuht	komsomolijuht	# 6
 komsomoliorghanisatsioonid	komsomoliorganisatsioonid	# 6
 kondralpolkovnik	kindralpolkovnik	# 6
+konkaavsus,nõgusus	konkaavsus, nõgusus	# 8
 konkreetsid	konkreetseid	# 6
 konlfikti	konflikti	# 4
 konseptsiooni	kontseptsiooni	# 6
@@ -549,20 +674,24 @@ kora	korra	# 5
 kordiori	koridori	# 4
 kordumatutu	kordumatut	# 6
 koristuseetööliste	koristustööliste	# 11
+korralise,XXVII	korralise, XXVII	# 8
 korrladajad	korraldajad	# 4
 korvalt	kõrvalt	# 3
 kotrollima	kontrollima	# 6
 kresiidiressursse	krediidiressursse	# 6
 kritiseetis	kritiseeris	# 6
+kuivatajatebrigaadidel	kuivatajate brigaadidel	# 11
 kujundakaks	kujundajaks	# 6
 kujunenenud	kujunenud	# 7
 kujununenud	kujunenud	# 7
 kuranti	kursanti	# 6
+kuristikku. kalgi	kuristikku, kalgi	# 10
 kuritarvitarvitajatele	kuritarvitajatele	# 7
 kustiinimese	kunstiinimese	# 6
 kutseladele	kutsealadele	# 6
 kutser	kutsar	# 6
 kutsustud	kutsutud	# 6
+kuus kümmend	kuuskümmend	# 10
 kuuulub	kuulub	# 5
 kvaralis	kvartalis	# 6
 kvartlis	kvartalis	# 6
@@ -579,11 +708,13 @@ käskirjale	käsikirjale	# 5
 käskirjale	käskkirjale	# 5
 kõigekülgsemalt	kõigekülgselt	# 11
 küsitlutest	küsitlustest	# 6
+l.1-9	l. 1-9	# 8
 laebimüüki	läbimüüki	# 3,6
 laeimalt	laiemalt	# 4
 laenuprotfell	laenuportfell	# 4
 laenuprotfelli	laenuportfelli	# 4
 laenuprotfellis	laenuportfellis	# 4
+laest...kuid	laest... kuid	# 8
 lahendmise	lahendamise	# 6
 lahkumisvisiididile	lahkumisvisiidile	# 7
 lahunemine	lagunemine	# 6
@@ -620,17 +751,21 @@ litsenseerimisele	litsentseerimisele	# 6
 litsenseeritavate	litsentseeritavate	# 6
 litsensitaotluse	litsentsitaotluse	# 6
 lituste	laituste	# 6
+lk.434	lk. 434	# 8
 lustusfirmale	alustusfirmale	# 6
 lÕpetab	lõpetab	# 9
 lÜhikese	lühikese	# 9
 läbirääkimisapartner	läbirääkimispartner	# 6
+läbirääkimistepartneritele	läbirääkimiste partneritele	# 6
 läbirääkmised	läbirääkimised	# 6
 läänepolsele	läänepoolsele	# 5
 lõpema	lõppema	# 5
 lõpmatas	lõpmatus	# 6
 lõppkokkuvõtes	lõppkokkuvõttes	# 5
+lõpuarvet,227	lõpuarvet, 227	# 8
 lühekese	lühikese	# 6
 lüüdialaste	lüüdilaste	# 11
+m,erakordsete	m, erakordsete	# 8
 maaanoored	maanoored	# 5
 maaerakonade	maaerakondade	# 6
 maaimasõja	maailmasõja	# 6
@@ -656,6 +791,7 @@ marksimi-leninismi	marksismi-leninismi	# 6
 matejali	materjali	# 6
 mauseoleum	mausoleum	# 6
 mdiagi	midagi	# 4
+med.F.	med. F.	# 8
 meedlivat	meeldivat	# 4
 meedodi	meetodi	# 6
 meeleeolu	meeleolu	# 5
@@ -668,9 +804,12 @@ migratisooniamet	migratsiooniamet	# 4
 miipildujaroodu	miinipildujaroodu	# 6,6
 mijonit	miljonit	# 6
 mimimaalset	minimaalset	# 6
+miner.kütused	miner. kütused	# 8
 mineraalaväetisi	mineraalväetisi	# 6
 ministriporfelli	ministriportfelli	# 6
 minstrikohad	ministrikohad	# 6
+minu...palvega	minu... palvega	# 8
+misnimekirja	mis nimekirja	# 8
 mitmekordel	mitmekordsel	# 6
 mitmesugusete	mitmesuguste	# 6
 mittestandardste	mittestandardsete	# 6
@@ -700,6 +839,7 @@ mõõdnunud	möödunud	# 3,3,6
 müugisumma	müügisumma	# 3
 naelstirlingit	naelsterlingit	# 6
 naelstrilinguga	naelsterlingiga	# 6,6
+naerma,nagu	naerma, nagu	# 8
 nahaale	nahhaale	# 5
 nahkkkuube	nahkkuube	# 5
 naisete	naiste	# 6
@@ -719,10 +859,13 @@ noortelmanahhid	noortealmanahhid	# 6
 normaasete	normaalsete	# 6,6
 normnaalseks	normaalseks	# 6
 novmbris	novembris	# 6
+nr.30	nr. 30	# 8
+nr.7	nr. 7	# 8
 numbes	umbes	# 6
 nusuutas	nuusutas	# 4
 näadlalpäevad	nädalapäevad	# 4,6
 näidatatakse	näidatakse	# 7
+näit.Fr.Tuglase	näit. Fr. Tuglase	# 8,8
 näitatud	näidatud	# 6
 näitemänguharrastjaid	näitemänguharrastajaid	# 6
 nõkogule	nõukogule	# 6
@@ -732,6 +875,7 @@ ohutuspiirkonnada	ohutuspiirkonda	# 6
 ohutuspiirkonnada	ohutuspiirkonnad	# 6
 ohutussertfikaat	ohutussertifikaat	# 6
 ohvister	ohvitser	# 4
+oli..jube	oli.. jube	# 8
 olmas	olemas	# 6
 omavalistuste	omavalitsuste	# 4
 omavalitsutele	omavalitsustele	# 6
@@ -743,12 +887,14 @@ osatätmisele	osatäitmisele	# 6
 oskaonnajuhatajad	osakonnajuhatajad	# 4
 oskjonil	oksjonil	# 4
 oslevad	osalevad	# 6
+ossa brevis	ossa brevia	# 11
 ostama	ostma	# 6
 ostetumatemaks	ostetuimateks	# 6,6,6
 ostetumatemaks	ostetumateks	# 6,6,6
 ostsuse	otsuse	# 6
 ostsust	otsust	# 6
 ostsustavad	otsustavad	# 6
+otd.2	otd. 2	# 11
 otses	otsas	# 6
 otsusi	otsuseid	# 6
 otsustatab	otsustab	# 7
@@ -762,6 +908,7 @@ pankrotsitunud	pankrotistunud	# 4
 parandamaas	parandamas	# 5
 parandamisek	parandamiseks	# 6
 pareleelläbirääkimisi	paralleelläbirääkimisi	# 5
+paremal...vasakul...siis	paremal... vasakul... siis	# 8,8,8
 paremerkondi	paremerakondi	# 6
 parlamedi	parlamendi	# 6
 parteifunktsionäre	parteifunktsionääre	# 5
@@ -780,10 +927,12 @@ pedirektor	peadirektor	# 6
 pensinäride	pensionäride	# 6
 peremes	peremees	# 5
 permeheks	peremeheks	# 6
+pidalitõbistevarjupaigast	pidalitõbiste varjupaigast	# 8
 pigistma	pigistama	# 6
 piirijärjekorgade	piirijärjekordade	# 6
 piiripunkides	piiripunktides	# 6
 pingeras	pingereas	# 6
+pinn...põnn	pinn... põnn	# 8
 pinsetid	pintsetid	# 6
 pinsetiga	pintsetiga	# 6
 piraatttarkvara	piraattarkvara	# 5
@@ -793,6 +942,7 @@ poliitkat	poliitikat	# 6
 poliitlisi	poliitilisi	# 6
 politseprefektuuri	politseiprefektuuri	# 6
 pommiähvrdus	pommiähvardus	# 6
+poole...nüüd...ning	poole... nüüd... ning	# 8,8
 poolfinaaali	poolfinaali	# 5
 populaaruselt	populaarsuselt	# 6
 porjektorite	projektorite	# 4
@@ -803,6 +953,7 @@ positisiooni	positsiooni	# 6
 positsiivseks	positiivseks	# 6
 potensiaalse	potentsiaalse	# 6
 potrfellita	portfellita	# 4
+praegu...praegu	praegu... praegu	# 8
 prageu	praegu	# 4
 preemisaajate	preemiasaajate	# 6
 presidenr	president	# 6
@@ -819,6 +970,7 @@ psüühhikaga	psüühikaga	# 5
 puhakskasum	puhaskasum	# 6
 puhasturajatiste	puhastusrajatiste	# 6
 puhkeenuseid	puhketeenuseid	# 6,6
+purjuspeaga	purjus peaga	# 11
 puudvad	puuduvad	# 6
 pärastlÕunal	pärastlõunal	# 9
 pärisalajoo	pärisajaloo	# 6,6
@@ -843,6 +995,7 @@ rahuvusvaheline	rahvusvaheline	# 6
 rahuvusvahelises	rahvusvahelises	# 6
 rahvasteavahelist	rahvastevahelist	# 6
 rahvusuhteid	rahvussuhteid	# 5
+rajadakahte	rajada kahte	# 8
 rakendadatakse	rakendatakse	# 7
 rakendatnud	rakendanud	# 6
 raldas	eraldas	# 6
@@ -875,6 +1028,8 @@ rumaa	rumala	# 6
 räägb	räägib	# 6
 rääksin	rääkisin	# 6
 rühimtustele	rühmitustele	# 4
+s ndmsute	s ndmuste	# 6
+s.273-284	s. 273-284	# 8
 saaatsid	saatsid	# 5
 saabuavd	saabuvad	# 4
 saadikukandidadi	saadikukandidaadi	# 5
@@ -885,6 +1040,7 @@ satistikaprogrammiga	statistikaprogrammiga	# 6
 sattnud	sattunud	# 6
 sdakond	sadakond	# 6
 se	see	# 5
+see...see	see... see	# 8
 seepärst	seepärast	# 6
 seeriamootriga	seeriamootoriga	# 6
 seiseb	seisab	# 6
@@ -895,6 +1051,7 @@ seite	seitse	# 6
 seite	seire	# 6
 seiukohale	seisukohale	# 6
 sekrtärid	sekretärid	# 6
+selleks...selleks...millele	selleks... selleks... millele	# 8,8
 sellepärasrt	sellepärast	# 6
 sellepärst	sellepärast	# 6
 senitele	seintele	# 4
@@ -903,6 +1060,7 @@ sertfikaat	sertifikaat	# 6
 sihtfondega	sihtfondidega	# 6
 sihukuste	sihukeste	# 6
 sillerimistehnoloogia	sileerimistehnoloogia	# 6
+silmaspidades	silmas pidades	# 8
 sisisutatud	sisustatud	# 6,4
 sisladuvale	sisalduvale	# 4
 sisseadmine	sisseseadmine	# 6,6
@@ -913,7 +1071,9 @@ sisutada	sisustada	# 6
 skaudiorgnisatsioonidevahelisi	skaudiorganisatsioonidevahelisi	# 6
 skiitva	kiitva	# 6
 skyscaper	skyscraper	# 6
+slovar.M.,1983,s	slovar. M., 1983, s	# 8,8,8
 so	s.o	# 10
+sobr.2	sobr. 2	# 8
 soprdihalli	spordihalli	# 4
 sotsalistliku	sotsialistliku	# 6
 sotsialisliku	sotsialistliku	# 6
@@ -925,6 +1085,7 @@ standardeerimisküsimusi	standardiseerimisküsimusi	# 6,6
 stateegiliste	strateegiliste	# 6
 statistikamaetite	statistikaametite	# 4
 stiilise	stiilide	# 6
+stlb.1267	stlb. 1267	# 8
 strandarditeni	standarditeni	# 6
 strontsimi	strontsiumi	# 6
 strukuursed	struktuursed	# 6
@@ -947,6 +1108,8 @@ sümfoniaorkestrid	sümfooniaorkestrid	# 5
 sümpoosiumil	sümpoosionil	# 6
 süttitamine	sütitamine	# 5
 süüditas	süüdistas	# 6
+t .1	t . 1	# 10
+t.8	t. 8	# 8
 tabeltti	tabletti	# 4
 tagajärele	tagajärjel	# 6,6
 tagsi	tagasi	# 6
@@ -957,6 +1120,7 @@ talleatud	talletatud	# 6
 tallinnlastelt	tallinlastelt	# 5
 tallinnlastest	tallinlastest	# 5
 tasapidi	tasapisi	# 6
+teabkui	teab kui	# 8
 teadamata	teadmata	# 6
 teadamata	teatamata	# 6
 teatritekside	teatritekstide	# 6
@@ -966,6 +1130,7 @@ tegevlikult	tegelikult	# 6
 tegistreerimata	registreerimata	# 6
 teglikult	tegelikult	# 6
 tehatava	tehtava	# 6
+tehniki.M.	tehniki. M.	# 8
 teisit	teisiti	# 6
 teismetes	teistmetes	# 11
 teispidi	teistpidi	# 6
@@ -980,6 +1145,9 @@ tendetsi	tendentsi	# 6
 terpikojast	trepikojast	# 4
 tihenedamise	tihendamise	# 6
 tippihetked	tipphetked	# 6
+tn.10	tn. 10	# 8
+tn.21	tn. 21	# 8
+tn.8	tn. 8	# 8
 to=imetusele	toimetusele	# 6
 to=itlustusettevõtete	toitlustusettevõtete	# 6
 toiduainetetõštuse	toiduainetetööstuse	# 6,3,6
@@ -1001,12 +1169,15 @@ trükiväljannetes	trükiväljaannetes	# 5
 tsandardi-	standardi-	# 4
 tsentrisliku	tsentristliku	# 6
 tsestoodidega	testoodidega	# 6
+tsit.Me t erski	tsit. Me t erski	# 8
 tsitaadidega!	tsitaatidega!	# 6
 tsuse	otsuse	# 6
 tudmatu	tundmatu	# 6
 tulbli	tubli	# 6
 tulemustestest	tulemustest	# 7
+tuli...kogemata	tuli... kogemata	# 8
 tulitelvi	tulirelvi	# 6
+tulnud...ja	tulnud... ja	# 8
 tunnusjooneteks	tunnusjoonteks	# 6
 turismitõtajate	turismitöötajate	# 6,6
 turukonjuktuuri	turukonjunktuuri	# 6
@@ -1023,6 +1194,8 @@ täheladas	täheldas	# 6
 tähtaaeg	tähtaeg	# 5
 tähtaaegu	tähtaegu	# 5
 tähtde	tähtede	# 6
+tähtsale...tähendab	tähtsale... tähendab	# 8
+täis...ning	täis... ning	# 8
 täiskoossseisuga	täiskoosseisuga	# 5
 tänseni	tänaseni	# 6
 tõenäline	tõenäoline	# 6
@@ -1035,6 +1208,8 @@ tõotand	tõotanud	# 6
 tõsti	tõesti	# 6
 tõsud	tõusud	# 6
 tõõdanud	töötanud	# 6,6
+tõõtaja-BNS	töötaja - BNS	# 6,6,8,8
+töökohal,192	töökohal, 192	# 8
 tööstili	tööstiili	# 6
 töövaidlussorganil	töövaidlusorganil	# 6
 umaksuvabamiinimumi	maksuvabamiinimumi	# 6
@@ -1070,6 +1245,7 @@ vangals	vanglas	# 4
 vastatikku	vastastikku	# 6
 vastavalitud	vastvalitud	# 6
 vastmängu	vastumängu	# 6
+vastu-BNS	vastu - BNS	# 8,8
 vastuolistest	vastuolulistest	# 6,6
 vastvalt	vastavalt	# 6
 vasuvõtmisel	vastuvõtmisel	# 6
@@ -1083,10 +1259,13 @@ vigatuste	vigastuste	# 6
 viiavad	viivad	# 6
 viiavad	viitavad	# 6
 viieteistkümmeaastane	viieteistkümneaastane	# 6
+viit...teemeister	viit... teemeister	# 8
 viivtada	viivitada	# 6
 voliatud	volitatud	# 6
 vormise	vormis	# 6
 vormise	vormisse	# 6
+vt.2.4.	vt. 2.4.	# 8
+vt.lk.	vt. lk.	# 8
 vÕetud	võetud	# 9
 vÕimalikuks	võimalikuks	# 9
 vÕimalusi	võimalusi	# 9
@@ -1116,6 +1295,7 @@ vööratud	vöötatud	# 6
 Ülemaailne	Ülemaailmne	# 6
 Üleshitustöö	Ülesehitustöö	# 6
 äitäh	aitäh	# 3
+äkki...kuid	äkki... kuid	# 9
 älja	välja	# 6
 äre	ära	# 6
 ärialseid	ärialaseid	# 6
@@ -1131,6 +1311,9 @@ vööratud	vöötatud	# 6
 õppeainetaga	õppeainetega	# 6
 õppsisn	õppisin	# 6
 õprotokollile	protokollile	# 6
+öeldes:...eesti	öeldes: ... eesti	# 8
+öeldespoole	öeldes poole	# 8
+ökonomist,majandusteaduse	ökonomist, majandusteaduse	# 8
 ühekskümneaastaseks	üheksakümneaastaseks	# 6
 üksikandidaatide	üksikkandidaatide	# 5
 ülalmanitud	ülalmainitud	# 6
@@ -1140,8 +1323,10 @@ vööratud	vöötatud	# 6
 üleasastumine	ülesastumine	# 6
 ülekannetete	ülekannete	# 7
 ülekannetete	ülekanneteta	# 7
+ülem-BNS	ülem - BNS	# 8,8
 ülessannete	ülesannete	# 5
 üliõplaskonna	üliõpilaskonna	# 6
+üllatuseks.See	üllatuseks. See	# 8
 ülsuse	üldsuse	# 6
 ümberegistreerimist	ümberregistreerimist	# 5
 ümberrringi	ümberringi	# 5
@@ -1176,13 +1361,16 @@ pekontorit	peakontorit
 kuurortite	kuurortide
 naisterahavas	naisterahvas
 mitmu	mitu
+igaljuhul	igal juhul
 minimimaalseks	minimaalseks
 netsade	metsade
 keskonnaprobleeme	keskkonnaprobleeme
+seegaon	seega on
 varajata	varjata
 kudi	kuid
 omandissse	omandisse
 miliseid	milliseid
+justnimelt	just nimelt
 tehunguid	tehinguid
 septmembris	septembris
 minnna	minna
@@ -1232,6 +1420,8 @@ ravikindlustustamata	ravikindlustamata
 tutuvustamist	tutvustamist
 murjenda	morjenda
 edasisese	edasise
+endalesaamiseks	endale saamiseks
+mõneltnii	mõnelt nii
 hinnastrukuur	hinnastruktuur
 listentsist	litsentsist
 vähemine	vähenemine
@@ -1269,6 +1459,7 @@ elukeskonnast	elukeskkonnast
 emeritus	emeeritus
 alkoholisaldusega	alkoholisisaldusega
 mineraalve	mineraalvee
+kaussija	kaussi ja
 penisonäride	pensionäride
 veeburar	veebruar
 ohvritete	ohvriteta
@@ -1327,6 +1518,7 @@ sanaatooriumieluga	sanatooriumieluga
 adekvaatusega	adekvaatsusega
 eraiskud	eraisikud
 mõneki	mõnedki
+onsuhteline	on suhteline
 vajaksi	vajaksid
 investeerimifirma	investeerimisfirma
 astäitja	asetäitja
@@ -1378,6 +1570,7 @@ ariklite	artiklite
 minigl	mingil
 järjekordsal	järjekordsel
 aastarvudel	aastaarvudel
+igalpool	igal pool
 toondangumaht	toodangumaht
 jõhramaks	jõhkramaks
 regulaareid	regulaarseid
@@ -1434,6 +1627,7 @@ põrandada	põranda
 saand	saanud
 ärvardab	ähvardab
 pidab	pidav
+hiljemosapoolte	hiljem osapoolte
 põlevikivi	põlevkivi
 kuivuda	kuivada
 summarne	summaarne
@@ -1719,6 +1913,7 @@ koralikku	korralikku
 nõuaandeteenistus	nõuandeteenistus
 vanduspensionär	vanaduspensionär
 riigivisidi	riigivisiidi
+kolmesteprotsent	kolmeste protsent
 teisemlistest	teismelistest
 assümeetrilise	asümmeetrilise
 küjes	küljes
@@ -2007,6 +2202,7 @@ kiiits	kiitis
 asendamaine	asendamine
 infrastruuri	infrastruktuuri
 seetõtytu	seetõttu
+müügihi nna	müügihinna
 riigeelarvest	riigieelarvest
 mosaiiike	mosaiike
 kümmenkond	kümmekond
@@ -2293,6 +2489,7 @@ krediifiinfo	krediidiinfo
 eskinud	eksinud
 haigussüptomite	haigussümptomite
 tunnisama	tunnistama
+lähenek s	läheneks
 prunidesse	pruunidesse
 mõõdukid	mõõdikud
 laboratoorimides	laboratooriumides
@@ -2423,6 +2620,7 @@ väismaiste	välismaiste
 raamataut	raamatut
 ähvarab	ähvardab
 tähendadavad	tähendavad
+v idelda	võidelda
 enma	enam
 juveeelitoodete	juveelitoodete
 haduskohus	halduskohus
@@ -2583,6 +2781,7 @@ nädadal	nädalal
 pöhjused	põhjused
 virkalt	virgalt
 kassettile	kassetile
+küljesseda	küljes seda
 pankrotitmenetluse	pankrotimenetluse
 maksvavad	maksavad
 kavateseb	kavatseb
@@ -2619,6 +2818,7 @@ auauhnuse	auahnuse
 ähvardamalt	ähvardavamalt
 tgevuse	tegevuse
 paraolümüpialased	paraolümpialased
+läb i	läbi
 lihsalt	lihtsalt
 dokumentid	dokumendid
 ekporditõestust	eksporditõestust
@@ -2710,6 +2910,7 @@ dokumendite	dokumentide
 omandirefomi	omandireformi
 neljaastase	nelja-aastase
 konfikseeriti	konfiskeeriti
+kõi ge	kõige
 luudadaga	luudadega
 lähab	läheb
 konkteksti	konteksti
@@ -2735,6 +2936,7 @@ suveilmedega	suveilmadega
 latinod	latiinod
 seistmendale	seitsmendale
 jõuluõhtsse	jõuluõhtusse
+müüg il	müügil
 hiljaagu	hiljaaegu
 teisit	teisiti
 arsemali	arsenali
@@ -2747,8 +2949,10 @@ viibimud	viibinud
 vasaktsentrisliku	vasaktsentristliku
 pesident	president
 jooksuvat	jooksvat
+nõuandl a nõuandla
 promooterite	promootorite
 otsutatakse	otsustatakse
+tagantjäreletasu	tagantjärele tasu
 järgmisväärsed	järgimisväärsed
 propbleemide	probleemide
 ebaseaduliku	ebaseadusliku
@@ -2959,6 +3163,7 @@ värivakamateks	värvikamateks
 üheksakümmnendate	üheksakümnendate
 aasnes	kaasnes
 peosalisena	peaosalisena
+puhkepäevaleei	puhkepäeval ei
 materjaliskesksust	materjalikesksust
 mootorratase	mootorrataste
 ohvredas	ohverdas
@@ -2971,6 +3176,7 @@ mehanismi	mehhanismi
 jatkuks	jätkuks
 võetaksse	võetakse
 aegasti	aegsasti
+jõudi s	jõudis
 sõinud	sõitnud
 naerama	naerma
 tööandajatega	tööandjatega
