@@ -130,11 +130,11 @@ num_final.tmp.lexc: num_final.lexc $(GT_LEXC_ROOT) $(EST_AFFIX_FILES:%=%.lexc)
 # attach a final dot and continuation lexicon   
 abbrevdot.tmp.lexc: stems/abbreviations.lexc $(GT_LEXC_ROOT) $(EST_AFFIX_FILES:%=%.lexc)
 	$(AM_V_GEN)cat $(GT_LEXC_ROOT) | sed '/^ *LEXICON  *Root/,$$d' > $@ && \
-	echo 'LEXICON Root'  >> $@ && \
-	$(AM_V_GEN)cat $< | grep '^ *!.*DOTABBR' | sed 's/^ *!//' >> $@ && \
-	$(AM_V_GEN)cat $< | grep 'may also end with a dot' | \
-			    sed 's/:\([^ ]*\)  *[^ ]*  *; *! *may also end with a dot/:\1 DOTABBR ;/' >> $@ && \
-			   cat $(EST_AFFIX_FILES:%=%.lexc) >> $@
+		echo 'LEXICON Root'  >> $@ && \
+		cat $< | grep '^ *!.*DOTABBR' | sed 's/^ *!//' >> $@ && \
+		cat $< | grep 'may also end with a dot' | \
+		sed 's/:\([^ ]*\)  *[^ ]*  *; *! *may also end with a dot/:\1 DOTABBR ;/' >> $@ && \
+		cat $(EST_AFFIX_FILES:%=%.lexc) >> $@
 
 
 # guesser:
