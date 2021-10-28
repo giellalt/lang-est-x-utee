@@ -13,36 +13,36 @@
     <div id="header">
       <div id="engine" abbreviation="to">
         <div id="toolversion">n/a</div>
-        <div id="processing" memoryusage="n/a" usertime="1054.945" realtime="1064.278" systime="4.676" words_per_sec="3.08"> </div>
+        <div id="processing" memoryusage="n/a" usertime="578.164" systime="2.278" realtime="583.324" words_per_sec="5.63"> </div>
       </div>
       <div id="lexicon" version="et, desktop, version 0.1.1, 20.10.2021-1352"> </div>
       <div id="document">typos.txt</div>
-      <div id="timestamp">20211027-1157</div>
+      <div id="timestamp">20211028-1425</div>
       <div id="truefalsesummary" wordcount="3282">
         <div id="originals" correct="1" error="3281"> </div>
-        <div id="spellers" correct="99" error="3183"> </div>
-        <div id="positives" true="3182" false="1"> </div>
-        <div id="negatives" true="0" false="99"> </div>
+        <div id="spellers" correct="73" error="3209"> </div>
+        <div id="positives" true="3208" false="1"> </div>
+        <div id="negatives" true="0" false="73"> </div>
         <div id="precisions">1.00</div>
-        <div id="recall">0.97</div>
-        <div id="accuracy">0.97</div>
+        <div id="recall">0.98</div>
+        <div id="accuracy">0.98</div>
       </div>
       <div id="suggestionsummary">
-        <div id="sugg1" editdist1="1803" editdist2="363" editdist3plus="11"> </div>
+        <div id="sugg1" editdist1="1824" editdist2="363" editdist3plus="12"> </div>
         <div id="sugg2" editdist1="360" editdist2="9" editdist3plus="0"> </div>
         <div id="sugg3" editdist1="113" editdist2="1" editdist3plus="0"> </div>
         <div id="sugg4" editdist1="43" editdist2="1" editdist3plus="0"> </div>
         <div id="sugg5" editdist1="16" editdist2="0" editdist3plus="0"> </div>
         <div id="suggbelow5" editdist1="16" editdist2="0" editdist3plus="0"> </div>
-        <div id="nosugg" editdist1="191" editdist2="61" editdist3plus="17"> </div>
-        <div id="badsuggs" editdist1="58" editdist2="85" editdist3plus="13"> </div>
-        <div id="averageposition">1.33</div>
-        <div id="averagesuggs_with_correct">4.22</div>
-        <div id="top1pos_percent">68.45</div>
-        <div id="top5pos_percent">85.51</div>
-        <div id="allpos_percent">86.02</div>
-        <div id="nosugg_percent">8.96</div>
-        <div id="badsugg_percent">5.03</div>
+        <div id="nosugg" editdist1="204" editdist2="62" editdist3plus="29"> </div>
+        <div id="badsuggs" editdist1="48" editdist2="86" editdist3plus="16"> </div>
+        <div id="averageposition">1.32</div>
+        <div id="averagesuggs_with_correct">4.20</div>
+        <div id="top1pos_percent">68.55</div>
+        <div id="top5pos_percent">85.47</div>
+        <div id="allpos_percent">85.97</div>
+        <div id="nosugg_percent">9.32</div>
+        <div id="badsugg_percent">4.71</div>
       </div>
     </div>
     <table id="results">
@@ -146,16 +146,9 @@
         <td class="expected">Lukoil</td>
         <td class="edit_dist">2</td>
         <td class="position">-1</td>
-        <td class="suggestions" count="8">
+        <td class="suggestions" count="1">
           <ul>
             <li class="suggestion">LUKil</li>
-            <li class="suggestion">Elukoil</li>
-            <li class="suggestion">Ilukoil</li>
-            <li class="suggestion">Olukoil</li>
-            <li class="suggestion">Luukoil</li>
-            <li class="suggestion">Laukoil</li>
-            <li class="suggestion">Liukoil</li>
-            <li class="suggestion">Leukoil</li>
           </ul>
         </td>
         <td/>
@@ -875,15 +868,13 @@
         <td class="expected">AS-ile</td>
         <td class="edit_dist">1</td>
         <td class="position">2</td>
-        <td class="suggestions" count="7">
+        <td class="suggestions" count="5">
           <ul>
             <li class="suggestion">AS-e</li>
             <li class="suggestion" expected="yes">AS-ile</li>
             <li class="suggestion">AS-lae</li>
             <li class="suggestion">AS-leo</li>
             <li class="suggestion">AS-loe</li>
-            <li class="suggestion">A-le</li>
-            <li class="suggestion">S-le</li>
           </ul>
         </td>
         <td/>
@@ -891,12 +882,12 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">ATMOSFÄÄRIõHU</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="0">
+        <td class="original" status="error" speller="error">ATMOSFÄÄRIõHU</td>
+        <td>TP</td>
         <td class="expected">ATMOSFÄÄRIÕHU</td>
         <td class="edit_dist">1</td>
-        <td/>
+        <td class="position">0</td>
         <td/>
         <td/>
         <td class="bug">9</td>
@@ -1498,34 +1489,25 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="0">
         <td class="original" status="error" speller="error">I.A.</td>
         <td>TP</td>
         <td class="expected">I. A.</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="2">
-          <ul>
-            <li class="suggestion">J.A.</li>
-            <li class="suggestion">I..</li>
-          </ul>
-        </td>
+        <td class="position">0</td>
+        <td/>
         <td/>
         <td class="bug">8</td>
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="0">
         <td class="original" status="error" speller="error">I.B.</td>
         <td>TP</td>
         <td class="expected">I. B.</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="1">
-          <ul>
-            <li class="suggestion">I..</li>
-          </ul>
-        </td>
+        <td class="position">0</td>
+        <td/>
         <td/>
         <td class="bug">8</td>
         <td/>
@@ -1618,17 +1600,13 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="0">
         <td class="original" status="error" speller="error">J.W.</td>
         <td>TP</td>
         <td class="expected">J. W.</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="1">
-          <ul>
-            <li class="suggestion">J..</li>
-          </ul>
-        </td>
+        <td class="position">0</td>
+        <td/>
         <td/>
         <td class="bug">8</td>
         <td/>
@@ -2196,25 +2174,33 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">KÕige</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">KÕige</td>
+        <td>TP</td>
         <td class="expected">Kõige</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">Kõige</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">KÜmmelilt</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">KÜmmelilt</td>
+        <td>TP</td>
         <td class="expected">Kümmelilt</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">Kümmelilt</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
@@ -2384,18 +2370,13 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="0">
         <td class="original" status="error" speller="error">M.J.</td>
         <td>TP</td>
         <td class="expected">M. J.</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="2">
-          <ul>
-            <li class="suggestion">JM..</li>
-            <li class="suggestion">M..</li>
-          </ul>
-        </td>
+        <td class="position">0</td>
+        <td/>
         <td/>
         <td class="bug">8</td>
         <td/>
@@ -2473,17 +2454,13 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="0">
         <td class="original" status="error" speller="error">N.D.</td>
         <td>TP</td>
         <td class="expected">N. D.</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="1">
-          <ul>
-            <li class="suggestion">N..</li>
-          </ul>
-        </td>
+        <td class="position">0</td>
+        <td/>
         <td/>
         <td class="bug">8</td>
         <td/>
@@ -2537,25 +2514,33 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">NÕmme</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">NÕmme</td>
+        <td>TP</td>
         <td class="expected">Nõmme</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">Nõmme</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">NÕukogu</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">NÕukogu</td>
+        <td>TP</td>
         <td class="expected">Nõukogu</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">Nõukogu</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
@@ -2605,17 +2590,13 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="0">
         <td class="original" status="error" speller="error">P.R.</td>
         <td>TP</td>
         <td class="expected">P. R.</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="1">
-          <ul>
-            <li class="suggestion">P..</li>
-          </ul>
-        </td>
+        <td class="position">0</td>
+        <td/>
         <td/>
         <td class="bug">8</td>
         <td/>
@@ -2637,26 +2618,13 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="0">
         <td class="original" status="error" speller="error">ParTöök</td>
         <td>TP</td>
         <td class="expected">ParTööK</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="10">
-          <ul>
-            <li class="suggestion">Partköök</li>
-            <li class="suggestion">Partöö</li>
-            <li class="suggestion">Partlöök</li>
-            <li class="suggestion">Partsöök</li>
-            <li class="suggestion">Partööks</li>
-            <li class="suggestion">Partööl</li>
-            <li class="suggestion">Partpöök</li>
-            <li class="suggestion">Partröök</li>
-            <li class="suggestion">Partnöök</li>
-            <li class="suggestion">Partööke</li>
-          </ul>
-        </td>
+        <td class="position">0</td>
+        <td/>
         <td/>
         <td class="bug">9</td>
         <td/>
@@ -2757,25 +2725,33 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">PÄev</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="-1">
+        <td class="original" status="error" speller="error">PÄev</td>
+        <td>TP</td>
         <td class="expected">PÄEV</td>
         <td class="edit_dist">2</td>
-        <td/>
-        <td/>
+        <td class="position">-1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion">Päev</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">PÕhjamaade</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">PÕhjamaade</td>
+        <td>TP</td>
         <td class="expected">Põhjamaade</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">Põhjamaade</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
@@ -2881,18 +2857,13 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="0">
         <td class="original" status="error" speller="error">S.S.</td>
         <td>TP</td>
         <td class="expected">S. S.</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="2">
-          <ul>
-            <li class="suggestion">S.A.</li>
-            <li class="suggestion">S..</li>
-          </ul>
-        </td>
+        <td class="position">0</td>
+        <td/>
         <td/>
         <td class="bug">8</td>
         <td/>
@@ -3155,13 +3126,17 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">SÕpruskoguduste</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">SÕpruskoguduste</td>
+        <td>TP</td>
         <td class="expected">Sõpruskoguduste</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">Sõpruskoguduste</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
@@ -3399,13 +3374,17 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">TšernobÕlis</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">TšernobÕlis</td>
+        <td>TP</td>
         <td class="expected">Tšernobõlis</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">Tšernobõlis</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
@@ -3452,12 +3431,12 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">ValimisliiduST</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="0">
+        <td class="original" status="error" speller="error">ValimisliiduST</td>
+        <td>TP</td>
         <td class="expected">Valimisliidust</td>
         <td class="edit_dist">2</td>
-        <td/>
+        <td class="position">0</td>
         <td/>
         <td/>
         <td class="bug">9</td>
@@ -3574,17 +3553,13 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="0">
         <td class="original" status="error" speller="error">W.A.</td>
         <td>TP</td>
         <td class="expected">W. A.</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="1">
-          <ul>
-            <li class="suggestion">W..</li>
-          </ul>
-        </td>
+        <td class="position">0</td>
+        <td/>
         <td/>
         <td class="bug">8</td>
         <td/>
@@ -5342,31 +5317,29 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="0">
         <td class="original" status="error" speller="error">augTartu</td>
         <td>TP</td>
         <td class="expected">aug Tartu</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="3">
-          <ul>
-            <li class="suggestion">kaugtartu</li>
-            <li class="suggestion">augutartu</li>
-            <li class="suggestion">autartu</li>
-          </ul>
-        </td>
+        <td class="position">0</td>
+        <td/>
         <td/>
         <td class="bug">8</td>
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">autoriÕiguse</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">autoriÕiguse</td>
+        <td>TP</td>
         <td class="expected">autoriõiguse</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">autoriõiguse</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
@@ -5877,13 +5850,17 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">eelkÕige</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">eelkÕige</td>
+        <td>TP</td>
         <td class="expected">eelkõige</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">eelkõige</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
@@ -6617,13 +6594,17 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">ettevÕtete</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">ettevÕtete</td>
+        <td>TP</td>
         <td class="expected">ettevõtete</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">ettevõtete</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
@@ -8362,17 +8343,13 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="1">
+      <tr class="word" corrsugg="0">
         <td class="original" status="error" speller="error">kKoalitsioonivalitsuse</td>
         <td>TP</td>
         <td class="expected">koalitsioonivalitsuse</td>
         <td class="edit_dist">1</td>
-        <td class="position">1</td>
-        <td class="suggestions" count="1">
-          <ul>
-            <li class="suggestion" expected="yes">koalitsioonivalitsuse</li>
-          </ul>
-        </td>
+        <td class="position">0</td>
+        <td/>
         <td/>
         <td class="bug">6</td>
         <td/>
@@ -10831,49 +10808,65 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">kÕigi</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">kÕigi</td>
+        <td>TP</td>
         <td class="expected">kõigi</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">kõigi</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">kÕik</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">kÕik</td>
+        <td>TP</td>
         <td class="expected">kõik</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">kõik</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">kÕiki</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">kÕiki</td>
+        <td>TP</td>
         <td class="expected">kõiki</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">kõiki</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">kÕnele</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">kÕnele</td>
+        <td>TP</td>
         <td class="expected">kõnele</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">kõnele</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
@@ -11952,25 +11945,33 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">lÕpetab</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">lÕpetab</td>
+        <td>TP</td>
         <td class="expected">lõpetab</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">lõpetab</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">lÜhikese</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">lÜhikese</td>
+        <td>TP</td>
         <td class="expected">lühikese</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">lühikese</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
@@ -13390,13 +13391,17 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">mõÕtmine</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">mõÕtmine</td>
+        <td>TP</td>
         <td class="expected">mõõtmine</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">mõõtmine</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
@@ -15854,13 +15859,17 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">pärastlÕunal</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">pärastlÕunal</td>
+        <td>TP</td>
         <td class="expected">pärastlõunal</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">pärastlõunal</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
@@ -21137,37 +21146,50 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">vÕetud</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">vÕetud</td>
+        <td>TP</td>
         <td class="expected">võetud</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">võetud</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">vÕimalikuks</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">vÕimalikuks</td>
+        <td>TP</td>
         <td class="expected">võimalikuks</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion" expected="yes">võimalikuks</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">vÕimalusi</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">vÕimalusi</td>
+        <td>TP</td>
         <td class="expected">võimalusi</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="2">
+          <ul>
+            <li class="suggestion" expected="yes">võimalusi</li>
+            <li class="suggestion">võimaluseid</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
@@ -21615,24 +21637,29 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">ÖÖsel</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">ÖÖsel</td>
+        <td>TP</td>
         <td class="expected">Öösel</td>
         <td class="edit_dist">1</td>
-        <td/>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="2">
+          <ul>
+            <li class="suggestion" expected="yes">Öösel</li>
+            <li class="suggestion">ÖÖdel</li>
+          </ul>
+        </td>
         <td/>
         <td class="bug">9</td>
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="badaccept">
-        <td class="original" status="error" speller="correct">ÜlEMAAILMSELE</td>
-        <td>FN</td>
+      <tr class="word" corrsugg="0">
+        <td class="original" status="error" speller="error">ÜlEMAAILMSELE</td>
+        <td>TP</td>
         <td class="expected">ÜLEMAAILMSELE</td>
         <td class="edit_dist">1</td>
-        <td/>
+        <td class="position">0</td>
         <td/>
         <td/>
         <td class="bug">9</td>
