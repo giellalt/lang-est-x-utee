@@ -59,7 +59,6 @@
 # 
 Appelatsioonikaebuse	Apellatsioonikaebuse	# 5,5
 Appellatsiooniseaduses	Apellatsiooniseaduses	# 5
-Büroo'95	Büroo'95	# 8
 Koonderkond	Koonderakond	# 6
 Koondrekonna	Koonderakonna	# 6
 LUKoil	Lukoil	# 9
@@ -94,7 +93,6 @@ Hanekasvatusaaduste	Hanekasvatussaaduste	# 5
 Hanspanga	Hansapanga	# 6
 Harjumal	Harjumaal	# 5
 Hedrich	Hedrick	# 11
-Helsinkis	Helsingis	# 6
 Herakleitusel	Herakleitosel	# 6
 Hoipangal	Hoiupangal	# 6
 Ida-Vi	Ida-Viru	# 6,6
@@ -111,7 +109,6 @@ Kaitesliidule	Kaitseliidule	# 4
 Kanalistatsiooni	Kanalisatsiooni	# 6
 Kannatnud	Kannatanud	# 6
 Kekerakond	Keskerakond	# 6
-Kersti-Kertna	Kersti-Kertna	# 11
 Keskeraskonnale	Keskerakonnale	# 6
 Keskerkonnast	Keskerakonnast	# 6
 Keskfraksioon	Keskfraktsioon	# 6
@@ -160,7 +157,6 @@ PÕhjamaade	Põhjamaade	# 9
 Pärnud	Pärnut	# 6
 Pärnud	Pärnus	# 6
 Reforemierakonnaga	Reformierakonnaga	# 6
-Rifkindi	Rifkindi	# 11
 Riisipera	Riisipere	# 6
 Risikitegurid	Riskitegurid	# 6
 Rožoko	Rožoki	# 6
@@ -234,7 +230,6 @@ aktsikapital	aktsiakapital	# 6
 aktsikapitali	aktsiakapitali	# 6
 aktsioomide	aksioomide	# 6
 aktsioomist	aksioomist	# 6
-aktuaarteenuste	aktuaalteenuste	# 11
 alandatatud	alandatud	# 7
 algatud	algatatud	# 6,6
 alitsuse	valitsuse	# 6
@@ -365,7 +360,6 @@ fikseeritt	fikseeritut	# 6
 finantserib	finantseerib	# 5
 finats-	finants-	# 6
 finatskonto	finantskonto	# 6
-flopit	flopid	# 11
 forseeritud	forsseeritud	# 5
 fraksioon	fraktsioon	# 6
 fraksioon	fraktsioon	# 6
@@ -648,7 +642,6 @@ majandussanktsioonie	majandussanktsioone	# 6
 majandussanktsioonie	majandussanktsioonide	# 6
 majandussantksioone	majandussanktsioone	# 6
 majapidapidamisesemete	majapidamisesemete	# 7
-makseterminalide	makseterminaalide	# 11
 maksistlik	marksistlik	# 6
 mandaaati	mandaati	# 5
 mangtub	mangub	# 6
@@ -678,7 +671,6 @@ mittetulundusorganistatsiooni	mittetulundusorganisatsiooni	# 6
 monoment	monument	# 6
 moodutas	moodustas	# 6
 mudiugi	muidugi	# 4
-muhamedlikke	muhameedlikke	# 5
 mustariibuline	mustatriibuline	# 6
 muutas	muutis	# 6
 muuud	muud	# 5
@@ -690,7 +682,6 @@ märs	märts	# 6
 märstil	märtsil	# 4
 määäruse	määruse	# 5
 mõlemilt	mõlemailt	# 11
-mõneajast	mõneajalist	# 6,6
 mõnikrod	mõnikord	# 4
 mõtleisn	mõtlesin	# 4
 mõtlemapanuv	mõtlemapanev	# 6
@@ -700,7 +691,6 @@ mõõdnunud	möödunud	# 3,3,6
 müugisumma	müügisumma	# 3
 naelstirlingit	naelsterlingit	# 6
 naelstrilinguga	naelsterlingiga	# 6,6
-nahaale	nahhaale	# 5
 nahkkkuube	nahkkuube	# 5
 naisete	naiste	# 6
 naistarahvas	naisterahvas	# 6
@@ -764,7 +754,6 @@ parandamisek	parandamiseks	# 6
 pareleelläbirääkimisi	paralleelläbirääkimisi	# 5
 paremerkondi	paremerakondi	# 6
 parlamedi	parlamendi	# 6
-parteifunktsionäre	parteifunktsionääre	# 5
 parteikoosolekutle	parteikoosolekutele	# 4
 parteiorganisatsionide	parteiorganisatsioonide	# 5
 parteiorganisatsionil	parteiorganisatsioonil	# 5
@@ -829,9 +818,6 @@ põhiaktsionaäri	põhiaktsionäri	# 6
 põhjaplakudes	põhjaplankudes	# 6
 põhjusdeks	põhjusteks	# 6
 põhjusdeks	põhjuseks	# 6
-põhjustanud	põhjustanud	# 11
-põllumajandussaadused..	põllumajandussaadused...	# 11
-põllumajandussaadused..	põllumajandussaadused.	# 11
 põllumehwed	põllumehed	# 6
 pühpäevani	pühapäevani	# 6
 raadio-kassetmagnetofoni	raadio-kassettmagnetofoni	# 5
@@ -858,7 +844,6 @@ reformimi	reformini	# 6
 reguleerimne	reguleerimine	# 6
 reguleermispolt	reguleerimispolt	# 6
 reismise	reisimise	# 6
-reservistidesse	reservisidesse	# 11
 restarueerimistööde	restaureerimistööde	# 4
 resultaar	resultaat	# 6
 resulutsiooni	resolutsiooni	# 6
@@ -967,7 +952,6 @@ tegistreerimata	registreerimata	# 6
 teglikult	tegelikult	# 6
 tehatava	tehtava	# 6
 teisit	teisiti	# 6
-teismetes	teistmetes	# 11
 teispidi	teistpidi	# 6
 teispäevasel	teisipäevasel	# 6
 teistmisküsimuse	testimisküsimuse	# 6,6
@@ -1001,7 +985,7 @@ trükiväljannetes	trükiväljaannetes	# 5
 tsandardi-	standardi-	# 4
 tsentrisliku	tsentristliku	# 6
 tsestoodidega	testoodidega	# 6
-tsitaadidega!	tsitaatidega!	# 6
+tsitaadidega	tsitaatidega	# 6
 tsuse	otsuse	# 6
 tudmatu	tundmatu	# 6
 tulbli	tubli	# 6
@@ -1090,7 +1074,6 @@ vormise	vormisse	# 6
 vÕetud	võetud	# 9
 vÕimalikuks	võimalikuks	# 9
 vÕimalusi	võimalusi	# 9
-vähemharitud	väheharitud	# 11
 vähens	vähenes	# 6
 väiksese	väikese	# 6
 väiksese	väikeses	# 6
@@ -1100,7 +1083,6 @@ välajkutse	väljakutse	# 4
 välisministreeriumi	välisministeeriumi	# 6
 välismnisteerium	välisministeerium	# 6
 välissaatkonde	välissaatkondade	# 6
-väljaspoolt	väljastpoolt	# 6
 väärisele	väärilisele	# 6,6
 väärtses	väärtuses	# 6
 väätus	väärtus	# 6
@@ -1352,7 +1334,7 @@ nobembris	novembris
 resrvuaaripark	reservuaaripark
 kaaasa	kaasa
 tugikekeskuses	tugikeskuses
-grimeering	grimmeering
+grimmeering	grimeering
 pretendendeerija	pretendeerija
 kakskümmned	kakskümmend
 idakonferentsi	idakonverentsi
@@ -1425,7 +1407,6 @@ suursaaadiku	suursaadiku
 kommmenteeritud	kommenteeritud
 võrtsustamisega	võrdsustamisega
 hispaanalsed	hispaanlased
-väljaspoolt	väljastpoolt
 poärast	pärast
 takitatud	tekitatud
 solvamavat	solvavamat
@@ -1467,7 +1448,6 @@ võrdustumise	võrdsustumise
 ajakirjndus	ajakirjandus
 kirjutud	kirjutatud
 viimaset	viimast
-parteifunktsionäriga	parteifunktsionääriga
 vabatahlik	vabatahtlik
 matemaatilisat	matemaatilist
 raudvarvadest	raudvarbadest
@@ -1737,7 +1717,6 @@ aktiiside	aktsiiside
 sagedami	sagedamini
 katolikku	katoliku
 laerkujutisi	laserkujutisi
-kahtesada	kahtesadat
 hakkanud	hakanud
 remondiorganisatasiooniks	remondiorganisatsiooniks
 osakonnajuhatjate	osakonnajuhatajate
@@ -1750,7 +1729,7 @@ rpoua	proua
 leinant	leitnant
 aksepteeritud	aktsepteeritud
 treeener	treener
-ingird	ingrid
+ingird	Ingrid
 leingu	lepingu
 süüdistutest	süüdistustest
 erititi	eriti
@@ -1812,7 +1791,7 @@ kultuuriehutise	kultuuriehitise
 asptiliselt	aseptiliselt
 füsikokeemik	füsiokeemik
 investoride	investorite
-jeltin	jeltsin
+jeltin	Jeltsin
 laupäval	laupäeval
 tiirlenud	tiirelnud
 ligse	liigse
@@ -1977,7 +1956,7 @@ märgatest	märgates
 prekonnaliikmetesse	perekonnaliikmetesse
 hästis	hästi
 inimestaga	inimestega
-aasta	astaa
+astaa	aasta
 plaaanilise	plaanilise
 septsialistide	spetsialistide
 medikamet	medikament
@@ -2232,7 +2211,6 @@ jalapaaari	jalapaari
 teariprojekt	teatriprojekt
 kokkuklepe	kokkulepe
 nõuaandeid	nõuandeid
-nahaalid	nahhaalid
 preaminister	peaminister
 litsenti	litsentsi
 sügeluset	sügelust
@@ -2416,7 +2394,7 @@ urgimugrilise	ugrimugrilise
 pandakse	pannakse
 marketinguga	marketingiga
 emissionidest	emissioonidest
-gunnnar	gunnar
+gunnnar	Gunnar
 pakubi	pakubki
 liberaarsus	liberaalsus
 väismaiste	välismaiste
@@ -2473,7 +2451,6 @@ ostam	ostma
 maainimestetelt	maainimestelt
 edasikinldustuse	edasikindlustuse
 positsioonle	positsioonile
-väiksete	väikeste
 tehaks	tehakse
 pöidlahoitjatele	pöidlahoidjatele
 valgutusposti	valgustusposti
@@ -2602,7 +2579,6 @@ takojuhtide	taksojuhtide
 omadireformi	omandireformi
 pojekti	projekti
 majaduslike	majanduslike
-parteifunktsionärideks	parteifunktsionäärideks
 keskeagne	keskaegne
 arside	arstide
 aktsiseltsid	aktsiaseltsid
@@ -2622,7 +2598,6 @@ paraolümüpialased	paraolümpialased
 lihsalt	lihtsalt
 dokumentid	dokumendid
 ekporditõestust	eksporditõestust
-posteri	postri
 konfliktipoolete	konfliktipoolte
 multikultuuursemaks	multikultuursemaks
 olulisemaka	olulisemaks
@@ -2669,7 +2644,7 @@ omanadada	omandada
 elektromagneetilist	elektromagnetilist
 seduse	seaduse
 sis	siis
-kreeholm	kreenholm
+kreeholm	Kreenholm
 revideeerivad	revideerivad
 lmäärusega	määrusega
 oselda	osaleda
@@ -2687,7 +2662,6 @@ aasatel	aastatel
 vapustaivam	vapustavaim
 agressivselt	agressiivselt
 ingitud	tingitud
-kostariikalanna	kostariiklanna
 karjaääride	karjääride
 sugulsega	sugulasega
 liikluseekirjad	liikluseeskirjad
@@ -2819,7 +2793,7 @@ teenindusetteavõtte	teenindusettevõtte
 telakanalile	telekanalile
 hommmikul	hommikul
 karikavõistliste	karikavõistluste
-micorsoft	microsoft
+micorsoft	Microsoft
 edsestas	edestas
 realsemalt	reaalsemalt
 ebastandartne	ebastandardne
@@ -2851,7 +2825,7 @@ ohtarasti	ohtrasti
 olvat	olevat
 koefitsendi	koefitsiendi
 serblasete	serblaste
-erastamississemakset	erastamisissemakset
+erastamisissemakset	erastamississemakset
 aktiisimäär	aktsiisimäär
 anvendiküünla	advendiküünla
 väikeservuline	väikesearvuline
@@ -3079,7 +3053,6 @@ nimetetakse	nimetatakse
 konkeetsemaks	konkreetsemaks
 isksuse	isiksuse
 riiedeesemega	riideesemega
-hollywoodlikult	hollywoodilikult
 läinduki	läinudki
 registreeeritud	registreeritud
 reismine	reisimine
