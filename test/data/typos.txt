@@ -50,10 +50,11 @@
 # ---------------
 # corpus size:   3059 
 # error types:
-#   1123 # add1
+#   1121 # add1
 #    218 # add1_one2double
 #     57 # add2_adjacent
-#     64 # complex
+#      1 # add2_nonadjacent
+#     65 # complex
 #    470 # del1
 #    222 # del1_double2one
 #     18 # del2_adjacent
@@ -1245,7 +1246,7 @@ maitseelistustest	maitse-eelistustest	# add2_adjacent
 ränadmiseks	rändamiseks	# trans_12-21
 aatsas	aastas	# trans_12-21
 toorainee	tooraine	# del1_double2one
-seitmekümnedate	seitsmekümnedate	# add1
+seitmekümnedate	seitsmekümnendate	# add2_nonadjacent
 tõlgendda	tõlgendada	# add1
 moodutada	moodustada	# add1
 ususasjade	usuasjade	# del1
@@ -1668,7 +1669,7 @@ määratletada	määratleda	# del2_adjacent
 trurumajanduse	turumajanduse	# del1
 vestleda	vestelda	# trans_12-21
 ostueesõigse	ostueesõiguse	# add1
-vallandamiskmapaania	vallandamiskamapaania	# add1
+vallandamiskmapaania	vallandamiskampaania	# trans_12-21
 finatseerimiseks	finantseerimiseks	# add1
 peaagu	peaaegu	# add1
 juriididilist	juriidilist	# del2_repetition
@@ -2266,7 +2267,7 @@ relvajõudel	relvajõududel	# add2_adjacent
 immunsust	immuunsust	# add1_one2double
 energihindadest	energiahindadest	# add1
 pikajaliste	pikaajaliste	# add1_one2double
-kontsertitel	kontserditel	# subst1_gbd
+kontsertitel	kontsertidel	# subst1_gbd
 sanitaaraamatu	sanitaarraamatu	# add1_one2double
 ojektiivne	objektiivne	# add1
 tulemusetega	tulemustega	# del1
@@ -2440,7 +2441,7 @@ seksoloogiaalased	seksuoloogiaalased	# add1
 nängulisustki	mängulisustki	# subst1_kb_next
 entusiamil	entusiasmil	# add1
 siseanumga	siseanumaga	# add1
-viisteistkünmele	viisteistkümnele	# trans_12-21
+viisteistkünmele	viieteistkümnele	# complex
 kunstimuusemile	kunstimuuseumile	# add1
 põhustada	põhjustada	# add1
 tuleohutsussüteemi	tuleohutussüsteemi	# trans_12-21_plus
