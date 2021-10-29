@@ -31,3097 +31,3108 @@
 # Beware of removing sentence delimiters (.!?) in correction, since
 # they may indicate sentence boundaries.
 #
+# Word pairs come from two sources:
 # -------------------
 # Test and development corpus used for the speller suggestion module by Filosoft in 1990ies.
+# 1000 words
 # -------------------
 # Author: Heiki-Jaan Kaalep 1998
 # Typos collected by Heili Orav and Leho Paldre from: 
 #    • CELL (Corpus of Estonian Literary Language) http://www.cl.ut.ee. It contains 1 million words from 1983-1988. 
 #    • BNS news - texts from a news agency, Baltic News Service, from one month in 1996 (about 250,000 words).
 # The errors were gathered by running our Estonian morphological analyzer on the corpus; and then manually picking misspellings from the set of unanalyzed words.
-# 
-# If a word has more than one possible correction, then it is repeated on several lines, every time with a different correction.
 
-# Error type is indicated as a comment; 
-# don't really trust it :
-
-# 1 – Initial capitalization                  4
-# 3 – Diacritics; also ae for ä, õ for ö     22
-# 4 – Adjacent transpositions               125
-# 5 – Double letter, but should be single; or single letter, but should be double 126
-# 6 – Drop/Add/Substitute Letter; also transposits, syllable repetition           710
-# 7 – Repetition of a syllable, e.g. 'mininister' instead of 'minister'          29
-# 8 – Space mising after a dot or other punctuation        169
-# 9 – Mixed capitalized and non-capitalized letters   33
-
-# 10 – space error           8
-# 11 – various...        39
-# 
-Appelatsioonikaebuse	Apellatsioonikaebuse	# 5,5
-Appellatsiooniseaduses	Apellatsiooniseaduses	# 5
-Koonderkond	Koonderakond	# 6
-Koondrekonna	Koonderakonna	# 6
-LUKoil	Lukoil	# 9
-LUKoili	Lukoili	# 9
-Lendlehtdel	Lendlehtedel	# 6
-Mõõdujate	Mõõdukate	# 6
-Nordstrom	Nordström	# 3
-Parempoolsetsest	Parempoolsetest	# 6
-'rgmistel	järgmistel	# 6,6
-Stokchomis	Stockholmis	# 6
-21-aastselt	21-aastaselt	# 6
-2ja	ja	# 8
-AS-le	AS-ile	# 6
-ATMOSFÄÄRIõHU	ATMOSFÄÄRIÕHU	# 9
-Aafikasse	Aafrikasse	# 6
-Aktiaseltsi	Aktsiaseltsi	# 6
-Aktsiakaipitali	Aktsiakapitali	# 6
-Arvatatavasti	Arvatavasti	# 7
-Aserbaidzaanis	Aserbaidžaanis	# 3
-BNS-le	BNS-ile	# 6
-Babits^eva	Babitševa	# 11
-Barliini	Berliini	# 6
-Bulõts^ov	Bulõtšov	# 11
-Desintegraatorise	Desintegraatorisse	# 5
-Draamatater	Draamateater	# 6
-Eestiti	Eestit	# 6
-Endasmõistetavalt	Endastmõistetavalt	# 6
-Enegreetiliste	Energeetiliste	# 4
-Erastamisagetuuri	Erastamisagentuuri	# 6
-Eskpluatatsiooni	Ekspluatatsiooni	# 4
-Hanekasvatusaaduste	Hanekasvatussaaduste	# 5
-Hanspanga	Hansapanga	# 6
-Harjumal	Harjumaal	# 5
-Hedrich	Hedrick	# 11
-Herakleitusel	Herakleitosel	# 6
-Hoipangal	Hoiupangal	# 6
-Ida-Vi	Ida-Viru	# 6,6
-Igalühel	Igaühel	# 6
-Imselt	Ilmselt	# 6
-Intstituut	Instituut	# 6
-Itar-Tass	Itar-TASS	# 11
-Japanis	Jaapanis	# 5
-Jugoslooviat	Jugoslaaviat	# 6
-Juhtkomite	Juhtkomitee	# 5
-Jäägrrkompanii	Jäägerkompanii	# 6
-Kaheden	Kahden	# 11
-Kaitesliidule	Kaitseliidule	# 4
-Kanalistatsiooni	Kanalisatsiooni	# 6
-Kannatnud	Kannatanud	# 6
-Kekerakond	Keskerakond	# 6
-Keskeraskonnale	Keskerakonnale	# 6
-Keskerkonnast	Keskerakonnast	# 6
-Keskfraksioon	Keskfraktsioon	# 6
-Keskriminaalpolitseiga	Keskkriminaalpolitseiga	# 5
-Kirispuu	Kirsipuu	# 4
-Kirminaalasi	Kriminaalasi	# 4
-Koalitsiooniläbirääkimisde	Koalitsiooniläbirääkimiste	# 6
-Kodakondsuseadusest	Kodakondsusseadusest	# 5
-Koduakitse	Kodukaitse	# 6
-Kohtla-NÕmme	Kohtla-Nõmme	# 9
-Kolmadas	Kolmandas	# 6
-Konkurs	Konkurss	# 5
-Konstn	Kunstn	# 6
-Konsturktivismis	Konstruktivismis	# 4
-Koonderkonna	Koonderakonna	# 6
-Korrosioonihibiitorite	Korrosiooniinhibiitorite	# 6
-Krk	KrK	# 9
-Kuulmispuuetetga	Kuulmispuuetega	# 6
-KÕige	Kõige	# 9
-KÜmmelilt	Kümmelilt	# 9
-Lefe`vre	Lefèvre	# 11
-Lihatõõtjate	Lihatootjate	# 3,3
-Lihatõõtjate	Lihatöötajate	# 3,3
-Liidudu	Liidud	# 6
-Liiklukindlustuse	Liikluskindlustuse	# 6
-Litsenseerimise	Litsentseerimise	# 6
-Luksenburgi	Luksemburgi	# 6
-Maaimapanga	Maailmapanga	# 6
-Majandusministeriumi	Majandusministeeriumi	# 5
-Moskvase	Moskvasse	# 5
-NIkonovile	Nikonovile	# 9
-NÕmme	Nõmme	# 9
-NÕukogu	Nõukogu	# 9
-Oktoobrirevolutisooni	Oktoobrirevolutsiooni	# 4
-Oletatatakse	Oletatakse	# 7
-Organzation	Organization	# 11
-Pankrotsitunud	Pankrotistunud	# 4
-ParTöök	ParTööK	# 9
-Paraleelselt	Paralleelselt	# 5
-Pedakoogikaülikool	Pedagoogikaülikool	# 6
-Pedakoogikaülikooli	Pedagoogikaülikooli	# 6
-Peremes	Peremees	# 5
-Poliitikassse	Poliitikasse	# 5
-PÄev	PÄEV	# 9
-PÕhjamaade	Põhjamaade	# 9
-Pärnud	Pärnut	# 6
-Pärnud	Pärnus	# 6
-Reforemierakonnaga	Reformierakonnaga	# 6
-Riisipera	Riisipere	# 6
-Risikitegurid	Riskitegurid	# 6
-Rožoko	Rožoki	# 6
-Safanja	Sefanja	# 11
-Sedaus	Seadus	# 4
-Serviceu	Service	# 6
-Sillmäel	Sillamäel	# 6
-Socckholm	Stockholm	# 6,6
-Sockholm	Stockholm	# 6
-Sorosi	Sorose	# 6
-Standaard	Standard	# 5
-Statistiakaameti	Statistikaameti	# 6
-Stokholmis	Stockholmis	# 6
-Suurbritaania	Suurbritannia	# 6,6
-Suurbrittanniast	Suurbritanniast	# 5
-SÕpruskoguduste	Sõpruskoguduste	# 9
-Sõjajärsel	Sõjajärgsel	# 6
-T^sernenko	Tšernenko	# 11
-Teamist	Teadmist	# 6
-Teatmiseks	Teatamiseks	# 6
-Teatmiseks	Teadmiseks	# 6
-Teispäevasel	Teisipäevasel	# 6
-Tevishoiuministeeriumi	Tervishoiuministeeriumi	# 6
-Tshehhi	Tšehhi	# 3
-Turimisühendus	Turismiühendus	# 6,6
-Täpsne	Täpne	# 6
-Täpsne	Täpse	# 6
-TšernobÕlis	Tšernobõlis	# 9
-Vabariikllaste	Vabariiklaste	# 5
-ValimisliiduST	Valimisliidust	# 9
-Valimsiliidu	Valimisliidu	# 4
-Vememaa	Venemaa	# 6
-Ventspil	Ventspils	# 6
-Vladimisr	Vladimir	# 6
-Voprosse	Voprossõ	# 11
-Välisministeeiumi	Välisministeeriumi	# 6
-Wassser-	Wasser-	# 11
-a3subj	a3:subj	# 10
-aTallinnast	Tallinnast	#
-aTokyos	Tokyos	#
-aastaarunnete	aastaaruannete	# 6
-aastainterssiga	aastaintressiga	# 4
-aastakonverntsil	aastakonverentsil	# 6
-aastapäva	aastapäeva	# 6
-aastokoosolek	aastakoosolek	# 6
-aastpäeva	aastapäeva	# 6
-aata	aasta	# 6
-abiporgramm	abiprogramm	# 4
-abonomentosa	abonementosa	# 6
-abonomentvõrguga	abonementvõrguga	# 6
-adminsitratsiooni	administratsiooni	# 4
-advekaadselt	adekvaatselt	# 6,6
-aeglselt	aeglaselt	# 6
-agfaani	afgaani	# 4
-agrielust	argielust	# 4
-ainault	ainult	# 6
-ainualt	ainult	# 6
-aistsin	aistisin	# 6
-ajaloolvaldkondadega	ajaloovaldkondadega	# 6
-ajsaajamine	asjaajamine	# 4
-ajst	ajast	# 6
-aksepteerima	aktsepteerima	# 6
-aksepteerinud	aktsepteerinud	# 6
-aktisate	aktsiate	# 4
-aktisionärid	aktsionärid	# 4
-aktisonärid	aktsionärid	# 4
-aktisonäride	aktsionäride	# 4
-aktsepteeinud	aktsepteerinud	# 6
-aktsiakaptial	aktsiakapital	# 4
-aktsikapital	aktsiakapital	# 6
-aktsikapitali	aktsiakapitali	# 6
-aktsioomide	aksioomide	# 6
-aktsioomist	aksioomist	# 6
-alandatatud	alandatud	# 7
-algatud	algatatud	# 6,6
-alitsuse	valitsuse	# 6
-allaes	alles	# 6
-allikirjade	allkirjade	# 6
-allmaailmategelese	allmaailmategelase	# 6
-alusatb	alustab	# 4
-aluseka	aluseks	# 6
-alustatab	alustab	# 7
-amdinistratsioon	administratsioon	# 4
-ame	amet	# 6
-ametiiskute	ametiisikute	# 6
-ametiklibike	ametikilbike	# 4
-ametkondadae	ametkondade	# 6
-ametliennuk	ametilennuk	# 4
-anatavad	antavad	# 6
-andemeid	andmeid	# 6
-andemid	andmeid	# 6
-apelatsioonikaebuse	apellatsioonikaebuse	# 5
-apellatsiooniprotsesti	apellatsiooniprotesti	# 6
-appelatsioonikaebuse	apellatsioonikaebuse	# 5,5
-appellatsiooni	apellatsiooni	# 5
-appellatsioonikaebuse	apellatsioonikaebuse	# 5
-appellatsioonikaebuse	apellatsioonikaebuse	# 5
-appellatsioonikaebuses	apellatsioonikaebuses	# 5
-appellatsioonikaebust	apellatsioonikaebust	# 5
-appellatsioonikohus	apellatsioonikohus	# 5
-appellatsiooniseadus	apellatsiooniseadus	# 5
-aravatavad	arvatavad	# 6
-arenguse	arengus	# 6
-arenguse	arengusse	# 6
-argumenteeeritud	argumenteeritud	# 5
-arreteerimis	arreteerimise	# 6
-arreterib	arreteerib	# 5
-aruaande	aruande	# 5
-arvatavsti	arvatavasti	# 6
-arvatest	arvates	# 6
-arvestatab	arvestatav	# 6
-arvestatab	arvestab	# 6
-arvutusöid	arvutustöid	# 6
-aseeesimees	aseesimees	# 5
-asesimeeste	aseesimeeste	# 5
-asjolude	asjaolude	# 6
-asjolusid	asjaolusid	# 6
-assamble	assamblee	# 5
-assotatsiooni	assotsiatsiooni	# 6
-astapäeva	aastapäeva	# 6
-astesevaks	asetsevaks	# 4
-astustele	asutustele	# 6,6,6,6
-astäitja	asetäitja	# 6
-asututud	astutud	# 6
-atraktiivemaid	atraktiivsemaid	# 6
-autoriÕiguse	autoriõiguse	# 9
-avald	vald	# 6
-avlikus	avalikus	# 6
-beensiinijaama	bensiinijaama	# 5
-biokeemiassse	biokeemiasse	# 5
-blianss	bilanss	# 4
-bõrsil	börsil	# 3
-delegatsiooon	delegatsioon	# 5
-demogoogia	demagoogia	# 6
-detsemris	detsembris	# 6
-disiplinaarbüroo	distsiplinaarbüroo	# 6,6
-disiplinaarkorras	distsiplinaarkorras	# 6,6
-disptšer	dispetšer	# 6
-distiplinaarkonnas	distsiplinaarkonnas	# 6
-distiplinaarvastutusele	distsiplinaarvastutusele	# 6
-distsipliiniriikujate	distsipliinirikkujate	# 5
-dramaturiga	dramaturgia	# 4
-dushiruumis	duširuumis	# 3
-džassi	džässi	# 3
-eanam	enam	# 6
-ebakainenena	ebakainena	# 7
-ebakvaliteeetselt	ebakvaliteetselt	# 5
-ebaseduslikke	ebaseaduslikke	# 6
-ebastabiiliselt	ebastabiilselt	# 6
-edaspidiga	edaspidigi	# 6
-eelistates	eelistades	# 6
-eelitas	eelistas	# 6
-eelkontsultatsioonide	eelkonsultatsioonide	# 6
-eelkÕige	eelkõige	# 9
-eestimaa	Eestimaa	# 1
-eestis	Eestis	# 1
-efektiisemat	efektiivsemat	# 6
-effektiivne	efektiivne	# 5
-ehhki	ehkki	# 6,6
-ehmataad	ehmatad	# 5
-ehmnunud	ehmunud	# 7
-ekisimatult	eksimatult	# 6
-ekisteeri	eksisteeri	# 6
-ekologit^seskogo	ekologitšeskogo	# 11
-eksperiisist	ekspertiisist	# 6
-eksploateerinud	ekspluateerinud	# 6
-eksponenet	eksponente	# 4
-eksproditulud	eksporditulud	# 4
-elanikonna	elanikkonna	# 5
-elektritseeritud	elektriseeritud	# 6
-elektrülekandeliinide	elektriülekandeliinide	# 6
-elmine	eelmine	# 6
-elmine	elamine	# 6
-emissioni	emissiooni	# 5
-emotsiaalne	emotsionaalne	# 6
-emotsinaalse	emotsionaalse	# 6
-endasi	edasi	# 6
-endastmõitetav	endastmõistetav	# 6
-enegreetikaminister	energeetikaminister	# 4
-energeetikulele	energeetikutele	# 7
-energipurse	energiapurse	# 6
-ense	enese	# 6
-ensele	enesele	# 6
-epillepsia	epilepsia	# 5
-eraaktsiaseltisd	eraaktsiaseltsid	# 4
-erastaministri	erastamisministri	# 6,6,6
-erastamisagenguurile	erastamisagentuurile	# 6
-erldati	eraldati	# 6
-esialgestel	esialgsetel	# 4
-esinadaja	esindaja	# 6
-esinadmisele	esindamisele	# 4
-esindjatena	esindajatena	# 6
-esmakaordselt	esmakordselt	# 6
-esmete	esemete	# 6
-ettevÕtete	ettevõtete	# 9
-ettevõääratud	ettevääratud	# 6
-ettpanek	ettepanek	# 6
-factõ	facto	# 11
-figutatsioonidele	figuratsioonidele	# 6
-fikseeritt	fikseeritut	# 6
-finantserib	finantseerib	# 5
-finats-	finants-	# 6
-finatskonto	finantskonto	# 6
-forseeritud	forsseeritud	# 5
-fraksioon	fraktsioon	# 6
-fraksioon	fraktsioon	# 6
-fraksiooni	fraktsiooni	# 6
-fraksioonide	fraktsioonide	# 6
-fraksioonidest	fraktsioonidest	# 6
-füüsikainsituut	füüsikainstituut	# 6
-gripihaigte	gripihaiget	# 4
-habmenoaga	habemenoaga	# 6
-haigetunutest	haigestunutest	# 6
-hakaks	hakkas	# 6,6
-hakatakstsionäridele	kaasaktsionäridele	# 6,6,6
-hakkasd	hakkasid	# 6
-hakkata	hakata	# 5
-hanekasvatusaaduste	hanekasvatussaaduste	# 5
-hariduministeeriumis	haridusministeeriumis	# 6
-haridusmininisteeriumil	haridusministeeriumil	# 7
-haridusministeerumi	haridusministeeriumi	# 6
-harrastjaid	harrastajaid	# 6
-heliressižõõri	helirežissööri	# 6,6,6,6,6
-hiiilida	hiilida	# 6
-hindmine	hindamine	# 6
-hingmisteede	hingamisteede	# 6
-hinnagu	hinnangu	# 6
-hinnagul	hinnangul	# 6
-hinnanalandust	hinnaalandust	# 6
-hkkavad	hakkavad	# 6
-hoised	hoiused	# 6
-hoogse	hoogsa	# 11
-hoois	hoopis	# 6
-huivtavast	huvitavast	# 4
-hulkrite	hulkurite	# 6
-huvitataud	huvitatud	# 7
-hädapaärane	hädapärane	# 6
-hüdraunilised	hüdraulilised	# 6
-ideelis=poliitilisel	ideelis-poliitilisel	# 6
-idenfitseerida	identifitseerida	# 6
-idenfitseerimiseks	identifitseerimiseks	# 6
-idenfitseerimist	identifitseerimist	# 6
-ikkkagi	ikkagi	# 5
-ilmenud	ilmnenud	# 6
-ilut0ulestik	ilutulestik	# 6
-imees	mees	# 6
-imees	imedes	# 6
-impliitsetest	implitsiitsetest	# 6
-indifirentne	indiferentne	# 6
-indvaliidiks	invaliidiks	# 6
-inertspumapdes	inertspumpades	# 6
-infornatsioon	informatsioon	# 6
-ingtegreeruda	integreeruda	# 6
-intrtessimäära	intressimäära	# 6
-invertariseermine	inventariseerimine	# 6
-investerringuid	investeeringuid	# 6
-inveteerimisfondidele	investeerimisfondidele	# 6
-iseaskalu	isaskalu	# 6
-iseeneseestmõistetatavalt	iseenesestmõistetavalt	# 5
-iseloomilike	iseloomulike	# 6
-isikusega	isiksusega	# 6
-jaanurini	jaanuarini	# 6
-jaanuris	jaanuaris	# 6
-jagunaved	jagunevad	# 6,6
-joatusfunktsioon	jaotusfunktsioon	# 4
-jookul	jooksul	# 6
-joomaruluse	joomarluse	# 6
-joonsitest	joonistest	# 4
-juhatajua	juhataja	# 6
-juhatja	juhataja	# 6
-juhitima	juhtima	# 6
-juhtatab	juhatab	# 7
-juhtiav	juhitav	# 4
-jurde	juurde	# 5
-juriidiilised	juriidilised	# 5
-jursidiktsiooni	jurisdiktsiooni	# 4
-jututajamine	jutuajamine	# 6
-järeleusele	järeldusele	# 6
-järgenenud	järgnenud	# 6
-jätgmisel	järgmisel	# 6
-jõiguslikke	õiguslikke	# 6
-kKoalitsioonivalitsuse	koalitsioonivalitsuse	# 6
-kaasaagse	kaasaegse	# 6
-kahekas	kaheksas	# 6
-kahekas	kaheksa	# 6
-kahekümnendatel-kolmkümnendatel	kahekümnendatel-kolmekümnendatel	# 6
-kahjusus	kahjustus	# 6
-kahtlusatatavatena	kahtlustatavatena	# 6
-kahtlustuna	kahtlustatuna	# 6,6
-kaitsejõdude	kaitsejõudude	# 6
-kaitsestrukuuridele	kaitsestruktuuridele	# 6
-kaitsesüstmisi	kaitsesüstimisi	# 6
-kakkaksid	hakkaksid	# 6
-kaksteissõrmikusse	kaksteistsõrmikusse	# 6
-kallasetelt	kallastelt	# 6
-kalleletungi	kallaletungi	# 6
-kanidaati	kandidaati	# 6
-kanseleile	kantseleile	# 6
-kassetmagnetofoni	kassettmagnetofoni	# 5
-kasutamamta	kasutamata	# 6
-kasutatab	kasutatav	# 6
-kasutatab	kasutab	# 6
-kasutatatud	kasutatud	# 7
-kasuvajaga	kasvuajaga	# 4
-katasroofi	katastroofi	# 6
-kauabavahetuses	kaubavahetuses	# 6
-kauabgrupid	kaubagrupid	# 4
-kaubanduspolitiika	kaubanduspoliitika	# 4
-kavandaminsel	kavandamisel	# 6
-kavataseb	kavatseb	# 6
-keskfraksiooni	keskfraktsiooni	# 6
-keskkonnaminsteerium	keskkonnaministeerium	# 6
-keskkonnaminsteeriumi	keskkonnaministeeriumi	# 6
-keskkõõl	keskööl	# 6,3,3
-keskomisjon	keskkomisjon	# 5
-keskonnaministeeriumi	keskkonnaministeeriumi	# 5
-keskuurimisburoo	keskuurimisbüroo	# 3
-kesmine	keskmine	# 6
-kiirestisti	kiiresti	# 6,6,6
-kind	kinod	# 6
-kindle	kindel	# 4
-kindlustustamise	kindlustamise	# 7
-kipunud	kippunud	# 5
-kirjtuanud	kirjutanud	# 6
-koalitsiooniläbirääkmised	koalitsiooniläbirääkimised	# 6
-kodakondsusesta	kodakondsuseta	# 6
-kodakonsusametisse	kodakondsusametisse	# 6
-koefitsendi	koefitsiendi	# 6
-kogress	kongress	# 6
-kogumsitöö	kogumistöö	# 4
-koguväätuses	koguväärtuses	# 6
-kohakaaslsele	kohakaaslusele	# 6
-kohatade	kohtade	# 6
-kohlikud	kohalikud	# 6
-kohtueskpertiisi	kohtuekspertiisi	# 4
-kohtuotuse	kohtuotsuse	# 6
-kohtuprotsesseil	kohtuprotsessil	# 6
-kohtustuste	kohustuste	# 6
-kohukunult	kohkunult	# 6
-kohustusetega	kohustustega	# 6
-kokkkukeerutatud	kokkukeerutatud	# 5
-kokkuleppet	kokkulepped	# 5
-kokkuluuluvuse	kokkukuuluvuse	# 6
-kokkurentsivõimest	konkurentsivõimest	# 6
-kolaitsioonis	koalitsioonis	# 4
-koljuvigatusega	koljuvigastusega	# 6
-kolnurk	kolmnurk	# 6
-kolonelelitnant	kolonelleitnant	# 4
-kolossalseid	kolossaalseid	# 5
-komapnii	kompanii	# 4
-komenteerides	kommenteerides	# 5
-komissaar	komissar	# 5
-kommertpankade	kommertspankade	# 6
-komplekteeerida	komplekteerida	# 5
-kompnaiidele	kompaniidele	# 4
-kompostitsiooni-teooria	kompositsiooni-teooria	# 6
-komsolisekrtär	komsomolisekrtär	# 6,6
-komsomilijuht	komsomolijuht	# 6
-komsomoliorghanisatsioonid	komsomoliorganisatsioonid	# 6
-kondralpolkovnik	kindralpolkovnik	# 6
-konkreetsid	konkreetseid	# 6
-konlfikti	konflikti	# 4
-konseptsiooni	kontseptsiooni	# 6
-konseptuaalselt	kontseptuaalselt	# 6
-konsevatooriumi	konservatooriumi	# 6
-konstanteerida	konstateerida	# 6
-konsultiivset	konsultatiivset	# 6,6
-konterni	kontserni	# 6
-konternile	kontsernile	# 6
-kontolli	kontrolli	# 6
-kontollitit	kontrolliti	# 6,6
-kontris	kontoris	# 6
-kontrsteerub	kontrasteerub	# 6
-kontsepsioonis	kontseptsioonis	# 6
-kontsultatsioone	konsultatsioone	# 6
-konventsi	konverentsi	# 6,6
-konvrentsi	konverentsi	# 6
-koondprotree	koondportree	# 4
-kooostatud	koostatud	# 5
-koordindaadid	koordinaadid	# 6
-koostatakase	koostatakse	# 6
-kopmenseerimiseks	kompenseerimiseks	# 4
-kora	korra	# 5
-kordiori	koridori	# 4
-kordumatutu	kordumatut	# 6
-koristuseetööliste	koristustööliste	# 11
-korrladajad	korraldajad	# 4
-korvalt	kõrvalt	# 3
-kotrollima	kontrollima	# 6
-kresiidiressursse	krediidiressursse	# 6
-kritiseetis	kritiseeris	# 6
-kujundakaks	kujundajaks	# 6
-kujunenenud	kujunenud	# 7
-kujununenud	kujunenud	# 7
-kuranti	kursanti	# 6
-kuritarvitarvitajatele	kuritarvitajatele	# 7
-kustiinimese	kunstiinimese	# 6
-kutseladele	kutsealadele	# 6
-kutser	kutsar	# 6
-kutsustud	kutsutud	# 6
-kuuulub	kuulub	# 5
-kvaralis	kvartalis	# 6
-kvartlis	kvartalis	# 6
-kÕigi	kõigi	# 9
-kÕik	kõik	# 9
-kÕiki	kõiki	# 9
-kÕnele	kõnele	# 9
-käibmaksuta	käibemaksuta	# 6
-käitmist	käitumist	# 6
-käivitaamiset	käivitamist	# 5,6
-kälalisena	külalisena	# 6
-käsisid	käisid	# 6
-käskirjale	käsikirjale	# 5
-käskirjale	käskkirjale	# 5
-kõigekülgsemalt	kõigekülgselt	# 11
-küsitlutest	küsitlustest	# 6
-laebimüüki	läbimüüki	# 3,6
-laeimalt	laiemalt	# 4
-laenuprotfell	laenuportfell	# 4
-laenuprotfelli	laenuportfelli	# 4
-laenuprotfellis	laenuportfellis	# 4
-lahendmise	lahendamise	# 6
-lahkumisvisiididile	lahkumisvisiidile	# 7
-lahunemine	lagunemine	# 6
-laiendmise	laiendamise	# 6
-laienenenud	laienenud	# 7
-lambakasvatusaaduste	lambakasvatussaaduste	# 5
-lammautatud	lammutatud	# 6
-lastiruunis	lastiruumis	# 6
-lavastja	lavastaja	# 6
-lavatusega	lavastusega	# 6
-lavatuses	lavastuses	# 6
-leavaga	laevaga	# 4
-lennunnujaama	lennujaama	# 7
-libneraaldemokraatliku	liberaaldemokraatliku	# 6
-liguliseks	laiguliseks	# 6
-lihakombiaadi	lihakombinaadi	# 6
-lihsalt	lihtsalt	# 6
-lihtalt	lihtsalt	# 6
-lihtustumise	lihtsustumise	# 6
-liiklusohutusnädat	liiklusohutusnädal	# 6
-liikmeskpankade	liikmespankade	# 6
-liilad	lillad	# 6,6
-liimeks	liikmeks	# 6
-liimete	liikmete	# 6
-liimete	liikmete	# 6
-liimete	liikmete	# 6
-liimete	liikmete	# 6
-likviidus	likviidsus	# 6
-linatoseks	linateoseks	# 6
-linnukasvatusaadusi	linnukasvatussaadusi	# 5
-lisaressurse	lisaressursse	# 5
-litsenseerimise	litsentseerimise	# 6
-litsenseerimisele	litsentseerimisele	# 6
-litsenseeritavate	litsentseeritavate	# 6
-litsensitaotluse	litsentsitaotluse	# 6
-lituste	laituste	# 6
-lustusfirmale	alustusfirmale	# 6
-lÕpetab	lõpetab	# 9
-lÜhikese	lühikese	# 9
-läbirääkimisapartner	läbirääkimispartner	# 6
-läbirääkmised	läbirääkimised	# 6
-läänepolsele	läänepoolsele	# 5
-lõpema	lõppema	# 5
-lõpmatas	lõpmatus	# 6
-lõppkokkuvõtes	lõppkokkuvõttes	# 5
-lühekese	lühikese	# 6
-lüüdialaste	lüüdilaste	# 11
-maaanoored	maanoored	# 5
-maaerakonade	maaerakondade	# 6
-maaimasõja	maailmasõja	# 6
-maakonaas	maakonnas	# 6,6
-maanteee	maantee	# 5
-maistrivõistluste	meistrivõistluste	# 6
-majandukolledž	majanduskolledž	# 6
-majanduliku	majandusliku	# 6
-majandulikult	majanduslikult	# 6
-majandusanktsioonide	majandussanktsioonide	# 5
-majandusminsteeriumi	majandusministeeriumi	# 6
-majandusporgramm	majandusprogramm	# 4
-majandussanksioonide	majandussanktsioonide	# 6
-majandussanktsioonie	majandussanktsioone	# 6
-majandussanktsioonie	majandussanktsioonide	# 6
-majandussantksioone	majandussanktsioone	# 6
-majapidapidamisesemete	majapidamisesemete	# 7
-maksistlik	marksistlik	# 6
-mandaaati	mandaati	# 5
-mangtub	mangub	# 6
-marksimi-leninismi	marksismi-leninismi	# 6
-matejali	materjali	# 6
-mauseoleum	mausoleum	# 6
-mdiagi	midagi	# 4
-meedlivat	meeldivat	# 4
-meedodi	meetodi	# 6
-meeleeolu	meeleolu	# 5
-meelevallasd	meelevallas	# 6
-meertit	meetrit	# 4
-metasameti	metsaameti	# 4
-metsaaaluse	metsaaluse	# 5
-midagai	midagi	# 6
-migratisooniamet	migratsiooniamet	# 4
-miipildujaroodu	miinipildujaroodu	# 6,6
-mijonit	miljonit	# 6
-mimimaalset	minimaalset	# 6
-mineraalaväetisi	mineraalväetisi	# 6
-ministriporfelli	ministriportfelli	# 6
-minstrikohad	ministrikohad	# 6
-mitmekordel	mitmekordsel	# 6
-mitmesugusete	mitmesuguste	# 6
-mittestandardste	mittestandardsete	# 6
-mittetulundusorganistatsiooni	mittetulundusorganisatsiooni	# 6
-monoment	monument	# 6
-moodutas	moodustas	# 6
-mudiugi	muidugi	# 4
-mustariibuline	mustatriibuline	# 6
-muutas	muutis	# 6
-muuud	muud	# 5
-mäitavad	näitavad	# 6
-mälestuskonverets	mälestuskonverents	# 6
-mängujhtidele	mängujuhtidele	# 6
-märkam	märkame	# 6
-märs	märts	# 6
-märstil	märtsil	# 4
-määäruse	määruse	# 5
-mõlemilt	mõlemailt	# 11
-mõnikrod	mõnikord	# 4
-mõtleisn	mõtlesin	# 4
-mõtlemapanuv	mõtlemapanev	# 6
-mõÕtmine	mõõtmine	# 9
-mõõdapäämatu	möödapääsmatu	# 3,3,6
-mõõdnunud	möödunud	# 3,3,6
-müugisumma	müügisumma	# 3
-naelstirlingit	naelsterlingit	# 6
-naelstrilinguga	naelsterlingiga	# 6,6
-nahkkkuube	nahkkuube	# 5
-naisete	naiste	# 6
-naistarahvas	naisterahvas	# 6
-narkologiaposte	narkoloogiaposte	# 5
-nee	need	# 6
-neeed	need	# 5
-nii-ii	nii-nii	# 11
-niiksusest	niiskusest	# 4
-niisugst	niisugust	# 6
-niisugunr	niisugune	# 6
-nisid	nišid	# 3
-nominaalväärtsuses	nominaalväärtuses	# 6
-nominaalväätusega	nominaalväärtusega	# 6
-nominaalväätusest	nominaalväärtusest	# 6
-noortelmanahhid	noortealmanahhid	# 6
-normaasete	normaalsete	# 6,6
-normnaalseks	normaalseks	# 6
-novmbris	novembris	# 6
-numbes	umbes	# 6
-nusuutas	nuusutas	# 4
-näadlalpäevad	nädalapäevad	# 4,6
-näidatatakse	näidatakse	# 7
-näitatud	näidatud	# 6
-näitemänguharrastjaid	näitemänguharrastajaid	# 6
-nõkogule	nõukogule	# 6
-nõukoguge	nõukogude	# 6
-nüü	nüüd	# 6
-ohutuspiirkonnada	ohutuspiirkonda	# 6
-ohutuspiirkonnada	ohutuspiirkonnad	# 6
-ohutussertfikaat	ohutussertifikaat	# 6
-ohvister	ohvitser	# 4
-olmas	olemas	# 6
-omavalistuste	omavalitsuste	# 4
-omavalitsutele	omavalitsustele	# 6
-ootmatus	ootamatus	# 6
-orgaanilsite	orgaaniliste	# 4
-organistatsioonide	organisatsioonide	# 6
-osatähtus	osatähtsus	# 6
-osatätmisele	osatäitmisele	# 6
-oskaonnajuhatajad	osakonnajuhatajad	# 4
-oskjonil	oksjonil	# 4
-oslevad	osalevad	# 6
-ostama	ostma	# 6
-ostetumatemaks	ostetuimateks	# 6,6,6
-ostetumatemaks	ostetumateks	# 6,6,6
-ostsuse	otsuse	# 6
-ostsust	otsust	# 6
-ostsustavad	otsustavad	# 6
-otses	otsas	# 6
-otsusi	otsuseid	# 6
-otsustatab	otsustab	# 7
-otsutasid	otsustasid	# 6
-otustas	otsustas	# 6
-paadiruunis	paadiruumis	# 6
-paigat	paigad	# 6
-paikenb	paikneb	# 4
-paljunduaparaadi	paljundusaparaadi	# 6
-pankrotsitunud	pankrotistunud	# 4
-parandamaas	parandamas	# 5
-parandamisek	parandamiseks	# 6
-pareleelläbirääkimisi	paralleelläbirääkimisi	# 5
-paremerkondi	paremerakondi	# 6
-parlamedi	parlamendi	# 6
-parteikoosolekutle	parteikoosolekutele	# 4
-parteiorganisatsionide	parteiorganisatsioonide	# 5
-parteiorganisatsionil	parteiorganisatsioonil	# 5
-parternitega	partneritega	# 6,6
-patendimaeti	patendiameti	# 4
-peairektori	peadirektori	# 6
-pealikaudne	pealiskaudne	# 6
-pearaamtupidaja	pearaamatupidaja	# 6
-peasekrtär	peasekretär	# 6
-peaskeretäri	peasekretäri	# 4
-peatõõettevõtja	peatööettevõtja	# 6,6
-pedirektor	peadirektor	# 6
-pensinäride	pensionäride	# 6
-peremes	peremees	# 5
-permeheks	peremeheks	# 6
-pigistma	pigistama	# 6
-piirijärjekorgade	piirijärjekordade	# 6
-piiripunkides	piiripunktides	# 6
-pingeras	pingereas	# 6
-pinsetid	pintsetid	# 6
-pinsetiga	pintsetiga	# 6
-piraatttarkvara	piraattarkvara	# 5
-po	p.o	# 10
-poliititika	poliitika	# 7
-poliitkat	poliitikat	# 6
-poliitlisi	poliitilisi	# 6
-politseprefektuuri	politseiprefektuuri	# 6
-pommiähvrdus	pommiähvardus	# 6
-poolfinaaali	poolfinaali	# 5
-populaaruselt	populaarsuselt	# 6
-porjektorite	projektorite	# 4
-porjektsiooniaparaadid	projektsiooniaparaadid	# 4
-porjektsiooniaparaati	projektsiooniaparaati	# 4
-portsendilt	protsendilt	# 4
-positisiooni	positsiooni	# 6
-positsiivseks	positiivseks	# 6
-potensiaalse	potentsiaalse	# 6
-potrfellita	portfellita	# 4
-prageu	praegu	# 4
-preemisaajate	preemiasaajate	# 6
-presidenr	president	# 6
-pressikonvernts	pressikonverents	# 6
-pressikonverntsil	pressikonverentsil	# 6
-pressisektretäri	pressisekretäri	# 6
-profašištliku	profašistliku	# 3
-professsor	professor	# 5
-progressivne	progressiivne	# 5
-prokurori	prokuröri	# 3
-protsesti	protesti	# 6
-protsude	portsude	# 4
-psüühhikaga	psüühikaga	# 5
-puhakskasum	puhaskasum	# 6
-puhasturajatiste	puhastusrajatiste	# 6
-puhkeenuseid	puhketeenuseid	# 6,6
-puudvad	puuduvad	# 6
-pärastlÕunal	pärastlõunal	# 9
-pärisalajoo	pärisajaloo	# 6,6
-pääasevad	pääsevad	# 6
-päästerõngkas	päästerõngaks	# 6
-põgenda	põgeneda	# 6
-põhiaktsionaäri	põhiaktsionäri	# 6
-põhjaplakudes	põhjaplankudes	# 6
-põhjusdeks	põhjusteks	# 6
-põhjusdeks	põhjuseks	# 6
-põllumehwed	põllumehed	# 6
-pühpäevani	pühapäevani	# 6
-raadio-kassetmagnetofoni	raadio-kassettmagnetofoni	# 5
-raamtuid	raamatuid	# 6
-rahkesti	rohkesti	# 6
-rahuslike	rahvuslike	# 6
-rahuvsvaheliste	rahvusvaheliste	# 4
-rahuvusvaheline	rahvusvaheline	# 6
-rahuvusvahelises	rahvusvahelises	# 6
-rahvasteavahelist	rahvastevahelist	# 6
-rahvusuhteid	rahvussuhteid	# 5
-rakendadatakse	rakendatakse	# 7
-rakendatnud	rakendanud	# 6
-raldas	eraldas	# 6
-rasketi	raskesti	# 6
-raskutest	raskustest	# 6
-rasvasisaldsega	rasvasisaldusega	# 6
-ratifitserida	ratifitseerida	# 5
-raudte	raudtee	# 5
-raudteeplatovrmi	raudteeplatvormi	# 4
-rauteekonteineritäie	raudteekonteineritäie	# 6
-raviastuste	raviasutuste	# 6
-reformimi	reformini	# 6
-reguleerimne	reguleerimine	# 6
-reguleermispolt	reguleerimispolt	# 6
-reismise	reisimise	# 6
-restarueerimistööde	restaureerimistööde	# 4
-resultaar	resultaat	# 6
-resulutsiooni	resolutsiooni	# 6
-revisioni	revisjoni	# 6
-revisioniaruande	revisjoniaruande	# 6
-revisionikomisjon	revisjonikomisjon	# 6
-riigikogussse	riigikogusse	# 5
-riigilie	riigile	# 6
-riigkogu	riigikogu	# 6
-ringireismise	ringireisimise	# 6
-ringleda	ringelda	# 4
-roppi	roppe	# 6
-rumaa	rumala	# 6
-räägb	räägib	# 6
-rääksin	rääkisin	# 6
-rühimtustele	rühmitustele	# 4
-saaatsid	saatsid	# 5
-saabuavd	saabuvad	# 4
-saadikukandidadi	saadikukandidaadi	# 5
-saadunud	saabunud	# 6
-sampinjoni	šampinjoni	# 3
-sarnenevad	sarnanevad	# 6
-satistikaprogrammiga	statistikaprogrammiga	# 6
-sattnud	sattunud	# 6
-sdakond	sadakond	# 6
-se	see	# 5
-seepärst	seepärast	# 6
-seeriamootriga	seeriamootoriga	# 6
-seiseb	seisab	# 6
-seiseb	seisneb	# 6
-seistme	seitsme	# 4
-seisukihtade	seisukohtade	# 6
-seite	seitse	# 6
-seite	seire	# 6
-seiukohale	seisukohale	# 6
-sekrtärid	sekretärid	# 6
-sellepärasrt	sellepärast	# 6
-sellepärst	sellepärast	# 6
-senitele	seintele	# 4
-septebris	septembris	# 6
-sertfikaat	sertifikaat	# 6
-sihtfondega	sihtfondidega	# 6
-sihukuste	sihukeste	# 6
-sillerimistehnoloogia	sileerimistehnoloogia	# 6
-sisisutatud	sisustatud	# 6,4
-sisladuvale	sisalduvale	# 4
-sisseadmine	sisseseadmine	# 6,6
-sissejuhtatus	sissejuhatus	# 6
-sissejuhtuseks	sissejuhatuseks	# 6
-sissesõidviisa	sissesõiduviisa	# 6
-sisutada	sisustada	# 6
-skaudiorgnisatsioonidevahelisi	skaudiorganisatsioonidevahelisi	# 6
-skiitva	kiitva	# 6
-skyscaper	skyscraper	# 6
-so	s.o	# 10
-soprdihalli	spordihalli	# 4
-sotsalistliku	sotsialistliku	# 6
-sotsialisliku	sotsialistliku	# 6
-spetisialistid	spetsialistid	# 6
-spetsiaaselt	spetsiaalselt	# 6
-sse	see	# 4
-stabilseerimistunnel	stabiliseerimistunnel	# 6
-standardeerimisküsimusi	standardiseerimisküsimusi	# 6,6
-stateegiliste	strateegiliste	# 6
-statistikamaetite	statistikaametite	# 4
-stiilise	stiilide	# 6
-strandarditeni	standarditeni	# 6
-strontsimi	strontsiumi	# 6
-strukuursed	struktuursed	# 6
-suheted	suhted	# 6
-suheted	suhete	# 6
-sularahautomaati	sularahaautomaati	# 5
-suunnatud	suunatud	# 5
-suurede	suurde	# 6
-suurpankka	suurpanka	# 5
-suuutnud	suutnud	# 5
-sälitades	säilitades	# 6
-sõdab	sõidab	# 6
-sõdrulik	sõdurlik	# 4
-sõjajärsetes	sõjajärgsetes	# 6
-sõmiti	sõlmiti	# 6
-sõnadede	sõnade	# 7
-sü1udistused	süüdistused	# 6,3
-sügvuses	sügavuses	# 6
-sümfoniaorkestrid	sümfooniaorkestrid	# 5
-sümpoosiumil	sümpoosionil	# 6
-süttitamine	sütitamine	# 5
-süüditas	süüdistas	# 6
-tabeltti	tabletti	# 4
-tagajärele	tagajärjel	# 6,6
-tagsi	tagasi	# 6
-tagukse	tagaukse	# 6
-tahmist	tahtmist	# 6
-tahtistki	tahtiski	# 6
-talleatud	talletatud	# 6
-tallinnlastelt	tallinlastelt	# 5
-tallinnlastest	tallinlastest	# 5
-tasapidi	tasapisi	# 6
-teadamata	teadmata	# 6
-teadamata	teatamata	# 6
-teatritekside	teatritekstide	# 6
-tedlikus	teadlikus	# 6
-teenidavas	teenindavas	# 6
-tegevlikult	tegelikult	# 6
-tegistreerimata	registreerimata	# 6
-teglikult	tegelikult	# 6
-tehatava	tehtava	# 6
-teisit	teisiti	# 6
-teispidi	teistpidi	# 6
-teispäevasel	teisipäevasel	# 6
-teistmisküsimuse	testimisküsimuse	# 6,6
-teistmisküsimust	testimisküsimust	# 6,6
-tekkkinud	tekkinud	# 5
-televisooni	televisiooni	# 6
-televisooniavalduses	televisiooniavalduses	# 6
-tendets	tendents	# 6
-tendetsi	tendentsi	# 6
-terpikojast	trepikojast	# 4
-tihenedamise	tihendamise	# 6
-tippihetked	tipphetked	# 6
-to=imetusele	toimetusele	# 6
-to=itlustusettevõtete	toitlustusettevõtete	# 6
-toiduainetetõštuse	toiduainetetööstuse	# 6,3,6
-toimtuse	toimetuse	# 6
-toiteelemenditesisaldus	toiteelementidesisaldus	# 6,6
-toitlustamisseptsialist	toitlustamisspetsialist	# 4
-tolleaegases	tolleaegses	# 6
-tootmialased	tootmisalased	# 6
-tootmijuhtide	tootmisjuhtide	# 6
-tootmisprotessis	tootmisprotsessis	# 6
-tootmiõpetuse	tootmisõpetuse	# 6
-tootmiõpetusega	tootmisõpetusega	# 6
-topisid	toppisid	# 6
-tradistiooniliselt	traditsiooniliselt	# 4
-tradistsiooniks	traditsiooniks	# 6
-transporidvahendid	transpordivahendid	# 4
-trukitud	trükitud	# 3
-trükiväljannetes	trükiväljaannetes	# 5
-tsandardi-	standardi-	# 4
-tsentrisliku	tsentristliku	# 6
-tsestoodidega	testoodidega	# 6
-tsitaadidega	tsitaatidega	# 6
-tsuse	otsuse	# 6
-tudmatu	tundmatu	# 6
-tulbli	tubli	# 6
-tulemustestest	tulemustest	# 7
-tulitelvi	tulirelvi	# 6
-tunnusjooneteks	tunnusjoonteks	# 6
-turismitõtajate	turismitöötajate	# 6,6
-turukonjuktuuri	turukonjunktuuri	# 6
-turvaelemnti	turvaelementi	# 6
-tutuvunud	tutvunud	# 6
-tutuvustab	tutvustab	# 6
-tutuvustas	tutvustas	# 6
-tutuvustavad	tutvustavad	# 6
-tutvusmisteenistusi	tutvumisteenistusi	# 6
-tuvuda	tutvuda	# 6
-tuvustavad	tutvustavad	# 6
-täheb	läheb	# 6
-täheladas	täheldas	# 6
-tähtaaeg	tähtaeg	# 5
-tähtaaegu	tähtaegu	# 5
-tähtde	tähtede	# 6
-täiskoossseisuga	täiskoosseisuga	# 5
-tänseni	tänaseni	# 6
-tõenäline	tõenäoline	# 6
-tõenäolislt	tõenäoliselt	# 6
-tõenäolselt	tõenäoliselt	# 6
-tõetõendid	töötõendid	# 6,6
-tõis	tõsi	# 6
-tõis	õis	# 6
-tõotand	tõotanud	# 6
-tõsti	tõesti	# 6
-tõsud	tõusud	# 6
-tõõdanud	töötanud	# 6,6
-tööstili	tööstiili	# 6
-töövaidlussorganil	töövaidlusorganil	# 6
-umaksuvabamiinimumi	maksuvabamiinimumi	# 6
-univeraalkonstant	universaalkonstant	# 6
-univeraalsuse	universaalsuse	# 6
-usaldatavause	usaldatavuse	# 6
-uupunud	uppunud	# 6
-vaatede	vaadete	# 6,6
-vaatepuntkist	vaatepunktist	# 6
-vabandandust	vabandust	# 7
-vabandandust	vabandanust	# 7
-vabdusekaotuse	vabadusekaotuse	# 6
-vaimsutusest	vaimustusest	# 4
-vajadustestest	vajadustest	# 7
-vajalikuse	vajalikkuse	# 5
-valdkonnaksi	valdkonnaski	# 4
-valdkonnaksi	valdkonnakski	# 4
-valimimiskünnist	valimiskünnist	# 7
-valimisliiit	valimisliit	# 5
-valimisllit	valimisliit	# 6
-valimskomisjoni	valimiskomisjoni	# 6
-valistusjuhid	valitsusjuhid	# 4
-valit	valid	# 6
-valit	valitud	# 6
-valitsjuhtidega	valitsusjuhtidega	# 6
-valitsusjõudest	valitsusjõududest	# 6,6
-valitsuskoalitasiooni	valitsuskoalitsiooni	# 6
-valituskoalitsiooni	valitsuskoalitsiooni	# 6
-valmsitanud	valmistanud	# 4
-vanaasta	vanaaasta	# 5
-vandetõetuse	vandetõotuse	# 6
-vangals	vanglas	# 4
-vastatikku	vastastikku	# 6
-vastavalitud	vastvalitud	# 6
-vastmängu	vastumängu	# 6
-vastuolistest	vastuolulistest	# 6,6
-vastvalt	vastavalt	# 6
-vasuvõtmisel	vastuvõtmisel	# 6
-vebruaris	veebruaris	# 5
-vedruijuhtidelt	vedurijuhtidelt	# 4
-veid	vaid	# 6
-vendeadvokaat	vandeadvokaat	# 6
-vevasid	vaevasid	# 6
-vidoemontaažifirmade	videomontaažifirmade	# 4
-vigatuste	vigastuste	# 6
-viiavad	viivad	# 6
-viiavad	viitavad	# 6
-viieteistkümmeaastane	viieteistkümneaastane	# 6
-viivtada	viivitada	# 6
-voliatud	volitatud	# 6
-vormise	vormis	# 6
-vormise	vormisse	# 6
-vÕetud	võetud	# 9
-vÕimalikuks	võimalikuks	# 9
-vÕimalusi	võimalusi	# 9
-vähens	vähenes	# 6
-väiksese	väikese	# 6
-väiksese	väikeses	# 6
-väiksese	väikses	# 6
-välajkujunenud	väljakujunenud	# 4
-välajkutse	väljakutse	# 4
-välisministreeriumi	välisministeeriumi	# 6
-välismnisteerium	välisministeerium	# 6
-välissaatkonde	välissaatkondade	# 6
-väärisele	väärilisele	# 6,6
-väärtses	väärtuses	# 6
-väätus	väärtus	# 6
-võidlenud	võidelnud	# 4
-võimaline	võimeline	# 6
-võimnaluste	võimaluste	# 6
-võlgenvuste	võlgnevuste	# 4
-võsitlustel	võistlustel	# 4
-vööratud	vöötatud	# 6
-ÖÖsel	Öösel	# 9
-ÜlEMAAILMSELE	ÜLEMAAILMSELE	# 9
-Ülemaailne	Ülemaaline	# 6
-Ülemaailne	Ülemaailmne	# 6
-Üleshitustöö	Ülesehitustöö	# 6
-äitäh	aitäh	# 3
-älja	välja	# 6
-äre	ära	# 6
-ärialseid	ärialaseid	# 6
-ärijutimiste	ärijuhtimiste	# 6
-õhkonnas	õhkkonnas	# 5
-õhtuamises	õhutamises	# 4
-õigaaegselt	õigeaegselt	# 6
-õigeagne	õigeaegne	# 6
-õleda	öelda	# 6,6
-õledakse	öeldakse	# 6,6
-õledud	öeldud	# 6,6
-õlmimist	sõlmimist	# 6
-õppeainetaga	õppeainetega	# 6
-õppsisn	õppisin	# 6
-õprotokollile	protokollile	# 6
-ühekskümneaastaseks	üheksakümneaastaseks	# 6
-üksikandidaatide	üksikkandidaatide	# 5
-ülalmanitud	ülalmainitud	# 6
-ülalpidamisekulud	ülalpidamiskulud	# 6
-üldkoosolel	üldkoosolekul	# 6
-üldkoosolel	üldkoosolek	# 6
-üleasastumine	ülesastumine	# 6
-ülekannetete	ülekannete	# 7
-ülekannetete	ülekanneteta	# 7
-ülessannete	ülesannete	# 5
-üliõplaskonna	üliõpilaskonna	# 6
-ülsuse	üldsuse	# 6
-ümberegistreerimist	ümberregistreerimist	# 5
-ümberrringi	ümberringi	# 5
-ümbitseva	ümbritseva	# 6
-ümer	ümber	# 6
-ündinud	sündinud	# 6
-ütels	ütles	# 4
-ütlasi	ühtlasi	# 6
-ütleda	ütelda	# 4
-žirinovski	Žirinovski	# 1
 # ---------------
 # Author: Kairit Sirts 2016
 # These spelling error pairs have been collected in a pretty ad-hoc manner from
 # a newspaper corpus.
+# 2000 words
 # ---------------
-teadusproleemidega	teadusprobleemidega
-noormes	noormees
-pankrotristununa	pankrotistununa
-rohkm	rohkem
-elektripiliit	elektripliit
-edaspdigi	edaspidigi
-tesehhi	tsehhi
-balalaureusetöö	bakalaureusetöö
-pärst	pärast
-tegevuslitsenti	tegevuslitsentsi
-puhkpilliorekester	puhkpilliorkester
-jumalakodas	jumalakojas
-enekindluse	enesekindluse
-mandliküspsis	mandliküpsis
-produtsentina	produtsendina
-pekontorit	peakontorit
-kuurortite	kuurortide
-naisterahavas	naisterahvas
-mitmu	mitu
-minimimaalseks	minimaalseks
-netsade	metsade
-keskonnaprobleeme	keskkonnaprobleeme
-varajata	varjata
-kudi	kuid
-omandissse	omandisse
-miliseid	milliseid
-tehunguid	tehinguid
-septmembris	septembris
-minnna	minna
-matkamarsuut	matkamarsruut
-mistri	misteri
-käisis	käisid
-ülestõumispüha	ülestõusmispüha
-katstroofiteadet	katastroofiteadet
-siimaani	siiamaani
-psüühiaater	psühhiaater
-koeramanikud	koeraomanikud
-ettevõttete	ettevõtete
-kolveerand	kolmveerand
-sportist	spordist
-valmistatame	valmistame
-mkirjutises	kirjutises
-äriparneritele	äripartneritele
-iseseivalt	iseseisvalt
-sanud	saanud
-kuuuluvad	kuuluvad
-kinoteateri	kinoteatri
-lagenud	langenud
-horvaaid	horvaadid
-põletushaaavadesse	põletushaavadesse
-uudishimulid	uudishimulikud
-kasvatanaud	kasvatanud
-ellimineerida	elimineerida
-tunnne	tunne
-sildedad	siledad
-tendetnts	tendents
-erastamisvärtpaberiarvete	erastamisväärtpaberiarvete
-näitemänguangentuuri	näitemänguagentuuri
-müned	mõned
-taganjärele	tagantjärele
-käsipallijuhide	käsipallijuhtide
-kohtast	kohast
-kõtvuti	kõrvuti
-hinanngu	hinnangu
-loositalse	loositakse
-tegelikuklt	tegelikult
-pesekretär	peasekretär
-tshempioneid	tšempioneid
-ühiskonnakoraldusega	ühiskonnakorraldusega
-suhtetest	suhetest
-andamata	andmata
-ravikindlustustamata	ravikindlustamata
-tutuvustamist	tutvustamist
-murjenda	morjenda
-edasisese	edasise
-hinnastrukuur	hinnastruktuur
-listentsist	litsentsist
-vähemine	vähenemine
-sponorite	sponsorite
-parlment	parlament
-mõelmal	mõlemal
-paljulastelistesse	paljulapselistesse
-läbimüüük	läbimüük
-pallingst	pallingust
-perakonna	perekonna
-karikassse	karikasse
-agressiivuse	agressiivsuse
-liikluskindlutusega	liikluskindlustusega
-ummmikseisu	ummikseisu
-maitseelistustest	maitse-eelistustest
-ränadmiseks	rändamiseks
-aatsas	aastas
-toorainee	tooraine
-seitmekümnedate	seitsmekümnedate
-tõlgendda	tõlgendada
-moodutada	moodustada
-ususasjade	usuasjade
-kinldustusteenuste	kindlustusteenuste
-üskikisikud	üksikisikud
-mitumepäevaseid	mitmepäevaseid
-taditsioonide	traditsioonide
-isenergeneetika	insenergeneetika
-tegedirektori	tegevdirektori
-krediidite	krediitide
-hulja	hulka
-tehate	tahate
-ütlem	ütlema
-aaastal	aastal
-elukeskonnast	elukeskkonnast
-emeritus	emeeritus
-alkoholisaldusega	alkoholisisaldusega
-mineraalve	mineraalvee
-penisonäride	pensionäride
-veeburar	veebruar
-ohvritete	ohvriteta
-vehatanud	vahetanud
-kindlati	kindlasti
-tulvikku	tulevikku
-ülesandeksa	ülesandeks
-küllatki	küllaltki
-süstemi	süsteemi
-väheeffektiivne	väheefektiivne
-restruktrueerimise	restruktureerimise
-mingusugusegi	mingisugusegi
-isklikuks	isiklikuks
-kirede	kirgede
-kõigepeale	kõigepealt
-pedirektori	peadirektori
-tagajärlej	tagajärjel
-mijoni	miljoni
-tõnisamäel	tõnismäel
-mittevatavaks	mittevastavaks
-tagasipöördumisks	tagasipöördumiseks
-helloweeni	halloweeni
-gõmnaasiumi	gümnaasiumi
-mardiakari	mardikari
-mõttestatud	mõtestatud
-ebamäärse	ebamäärase
-manitsemama	manitsema
-järgele	järele
-aktiisitõusu	aktsiisitõusu
-vaatams	vaatamas
-naisportlane	naissportlane
-kolmada	kolmanda
-univesritase	universitase
-kinkus	kinkis
-edetablita	edetabelita
-klaasikalise	klassikalise
-teeninduspiirkod	teeninduspiirkond
-tutavad	tuttavad
-opositsoon	opositsioon
-likmete	liikmete
-võrdustamine	võrdsustamine
-ostustas	otsustas
-õprtajad	õpetajad
-riigieelrvesse	riigieelarvesse
-välisüliüpilaste	välisüliõpilaste
-piirutusetehast	piiritusetehast
-muuutis	muutis
-arendusoskaonna	arendusosakonna
-kinnisid	kinnitasid
-aregutõuke	arengutõuke
-mootosõidukimaksu	mootorsõidukimaksu
-interdistiplinaarsete	interdistsiplinaarsete
-torminiline	tormiline
-puhendatud	pühendatud
-sanaatooriumieluga	sanatooriumieluga
-adekvaatusega	adekvaatsusega
-eraiskud	eraisikud
-mõneki	mõnedki
-vajaksi	vajaksid
-investeerimifirma	investeerimisfirma
-astäitja	asetäitja
-relatonsile	relationsile
-põlend	põlenud
-alusatamist	alustamist
-mõttesegi	mõttessegi
-ametiastuste	ametiasutuste
-viikümnekesi	viiekümnekesi
-kolleegimide	kolleegiumide
-süstemaatlisest	süstemaatilisest
-ülelt	ülalt
-humanitarabina	humanitaarabina
-muuesum	muuseum
-noorkollegid	noorkolleegid
-altes	alates
-mõtes	mõttes
-jaanurist	jaanuarist
-patriahri	patriarhi
-seejures	seejuures
-nobembril	novembril
-nobembris	novembris
-resrvuaaripark	reservuaaripark
-kaaasa	kaasa
-tugikekeskuses	tugikeskuses
-grimmeering	grimeering
-pretendendeerija	pretendeerija
-kakskümmned	kakskümmend
-idakonferentsi	idakonverentsi
-pornipiltide	pornopiltide
-ekranisrringuid	ekraniseeringuid
-sotsiaalkindustust	sotsiaalkindlustust
-setõttu	seetõttu
-maksam	maksma
-neuropataloogia	neuropatoloogia
-ekportisid	eksportisid
-kindustatud	kindlustatud
-tõoenäolisemalt	tõenäolisemalt
-võrguväljandes	võrguväljaandes
-samaegselt	samaaegselt
-tõustmisel	tõstmisel
-kordineerib	koordineerib
-elanikonnaga	elanikkonnaga
-tõvesid	tõbesid
-olümpivõitjaks	olümpiavõitjaks
-interrepetatsiooni	interpretatsiooni
-viivõrd	niivõrd
-ariklite	artiklite
-minigl	mingil
-järjekordsal	järjekordsel
-aastarvudel	aastaarvudel
-toondangumaht	toodangumaht
-jõhramaks	jõhkramaks
-regulaareid	regulaarseid
-raahne	rahaahne
-sllest	sellest
-ringkondadedele	ringkondadele
-hinnagutel	hinnangutel
-altooniga	alatooniga
-määrdemistri	määrdemeistri
-prespektiivsem	perspektiivsem
-ehhki	ehkki
-novebrist	novembrist
-aasatl	aastal
-olenud	olnud
-potsendi	protsendi
-teekisn	teeksin
-pikamat	pikemat
-nubris	numbris
-populaasreks	populaarseks
-disskussiooni	diskussiooni
-õiglene	õiglane
-kollegidki	kolleegidki
-kuultusemaks	kuulutusemaks
-lateaiapidu	lasteaiapidu
-abimehees	abimees
-söendanud	söandanud
-skupltuur	skulptuur
-ksperimentaalne	eksperimentaalne
-liikmesorganistsioonidega	liikmesorganisatsioonidega
-vliskapitali	väliskapitali
-klienditelt	klientidelt
-puistee	puiestee
-järgeneva	järgneva
-äblikpeen	ämblikpeen
-pikkkamööda	pikkamööda
-kultuurikesuse	kultuurikeskuse
-jõhravõitu	jõhkravõitu
-veendnud	veendunud
-riigieelrve	riigieelarve
-tantismas	tantsimas
-pöhjust	põhjust
-madridlased	madriidlased
-esitatatud	esitatud
-suursaaadiku	suursaadiku
-kommmenteeritud	kommenteeritud
-võrtsustamisega	võrdsustamisega
-hispaanalsed	hispaanlased
-poärast	pärast
-takitatud	tekitatud
-solvamavat	solvavamat
-teavasse	taevasse
-põrandada	põranda
-saand	saanud
-ärvardab	ähvardab
-pidab	pidav
-põlevikivi	põlevkivi
-kuivuda	kuivada
-summarne	summaarne
-arvale	arvele
-priroteetidega	prioriteetidega
-terassikohvik	terrassikohvik
-kriipus	kriipsu
-kollaskaspruuni	kollakaspruuni
-aktiisimäärad	aktsiisimäärad
-pühapäevati	pühapäeviti
-esindajvad	esindavad
-niing	ning
-tiigirhüppele	tiigrihüppele
-kritallilise	kristallilise
-õmbeljat	õmblejat
-organistasioon	organisatsioon
-pensionikindlutusseaduse	pensionikindlustusseaduse
-pregu	praegu
-aukratust	aukartust
-arvanusest	arvamusest
-eekõige	eelkõige
-loodusposterite	looduspostrite
-töötranud	töötanud
-treeningsaavutiseks	treeningsaavutuseks
-tolleagsed	tolleaegsed
-põhjustda	põhjustada
-iseseisvusmisprotsessiga	iseseisvumisprotsessiga
-novembil	novembril
-paksume	paksune
-võrdustumise	võrdsustumise
-ajakirjndus	ajakirjandus
-kirjutud	kirjutatud
-viimaset	viimast
-vabatahlik	vabatahtlik
-matemaatilisat	matemaatilist
-raudvarvadest	raudvarbadest
-konsert	kontsert
-vailmiseelse	valimiseelse
-otsusti	otsustati
-populaaruse	populaarsuse
-kustimuuseumil	kunstimuuseumil
-pdada	pidada
-klaverikunstikud	klaverikunstnikud
-standariseeritus	standardiseeritus
-prontsenti	protsenti
-pöödumiseks	pöördumiseks
-strutuur	struktuur
-näidandi	näidendi
-turumajandusrefomide	turumajandusreformide
-kassada	kakssada
-kiiremimi	kiiremini
-hambaarvitooli	hambaravitooli
-suurbritaania	suurbritannia
-lühedalt	lühidalt
-mobilltelefoniga	mobiiltelefoniga
-sõmimise	sõlmimise
-finantsressursidest	finantsressurssidest
-prantusse	prantsuse
-kimonotessse	kimonotesse
-tsisteerivad	tsiteerivad
-registreerimistähataja	registreerimistähtaja
-vananeud	vananenud
-korraldatake	korraldatakse
-ebakorrektme	ebakorrektne
-ärrgu	ärgu
-kustustusarvetel	kustutusarvetel
-loomigust	loomingust
-omnikule	omanikule
-vanalinndunud	vanalindunud
-tähtusega	tähtsusega
-annnetavad	annetavad
-koverentsid	konverentsid
-tuelvikus	tulevikus
-rootlased	rootslased
-proleemide	probleemide
-vistitsi	vististi
-õiustest	õigustest
-algpõhipõtetes	algpõhimõtetes
-erastmisel	erastamisel
-kaabelelevisioonivõrgu	kaabeltelevisioonivõrgu
-laupäevati	laupäeviti
-ahvatevana	ahvatlevana
-viiuhti	viuhti
-kaitsesütimisel	kaitsesüstimisel
-päästeament	päästeamet
-majandusminsteeriumi	majandusministeeriumi
-lastekaitseorganisatsioonigsa	lastekaitseorganisatsiooniga
-vöi	või
-omaeette	omaette
-elekroonilised	elektroonilised
-territoriumil	territooriumil
-kiirtusseadmel	kiiritusseadmel
-effektse	efektse
-poeriilulile	poeriiulile
-võrrledes	võrreldes
-eksistensiaalseid	eksistentsiaalseid
-kokkeleppeid	kokkuleppeid
-estitas	esitas
-noorsopolitsei	noorsoopolitsei
-protsest	protest
-läbibiimiseks	läbiviimiseks
-saaniseks	saamiseks
-saaades	saades
-vvahele	vahele
-põlluvijade	põlluviljade
-nähtmatu	nähtamatu
-levinenum	levinum
-kommerstpankadele	kommertspankadele
-põllumajandusmisteeriumile	põllumajandusministeeriumile
-söela	sõela
-jõhrkuse	jõhkruse
-võimaldadab	võimaldab
-koralikud	korralikud
-paeadirektori	peadirektori
-kokkul	kokku
-töömeeoleolu	töömeeleolu
-rezhisöör	režissöör
-mootorrratturrottide	mootorratturrottide
-inimsed	inimesed
-muuutus	muutus
-käibemks	käibemaks
-kutsealusete	kutsealuste
-kavadatud	kavandatud
-valmistatatud	valmistatud
-seadusemuuudatuse	seadusemuudatuse
-päevavalguseses	päevavalguses
-hinannguga	hinnanguga
-põjamaale	põhjamaale
-artklid	artiklid
-vaavarustust	veevarustust
-kategooroas	kategoorias
-üleshitus	ülesehitus
-vehkind	vehkinud
-resurss	ressurss
-etenudsega	etendusega
-küstitletuist	küsitletuist
-ülejäänd	ülejäänud
-kumbal	kummal
-suurenenenud	suurenenud
-kilogarmmi	kilogrammi
-entsiastide	entusiastide
-seketärina	sekretärina
-tarbjakaitse	tarbijakaitse
-olle	olla
-likviidusprobleemidest	likviidsusprobleemidest
-kuukümnendatest	kuuekümnendatest
-armatusest	armastusest
-üheagselt	üheaegselt
-läbimõetlematult	läbimõtlematult
-suusemägedes	suusamägedes
-aktsiseltsi	aktsiaseltsi
-niisamtui	niisamuti
-turimiskeskusena	turismikeskusena
-maailam	maailma
-käitusmiõpikut	käitumisõpikut
-vastivõtmise	vastuvõtmise
-protenti	protsenti
-majanduskriisit	majanduskriisist
-lõunasasadamast	lõunasadamast
-kehekordistamine	kahekordistamine
-omakstele	omakestele
-pensionaadis	pansionaadis
-vanlgakaristusest	vanglakaristusest
-mõistada	mõistatada
-sälitada	säilitada
-varasemete	varasemate
-turvameetmeted	turvameetmed
-jätge	jätke
-kindlustmaksete	kindlustusmaksete
-kudas	kuidas
-lihtsmalt	lihtsamalt
-kirjusi	kirjusid
-melooodiat	meloodiat
-võmalik	võimalik
-resümeeerib	resümeerib
-keskooli	keskkooli
-naiskollegilt	naiskolleegilt
-linnavaremet	linnavaraamet
-pressiesindja	pressiesindaja
-paarkümmned	paarkümmend
-tueltõrjujat	tuletõrjujat
-infoühikond	infoühiskond
-tudeeerimine	tudeerimine
-vastatata	vastata
-tarbijahinnahindeksi	tarbijahinnaindeksi
-protsenit	protsenti
-madridlasi	madriidlasi
-opositsitsionääride	opositsionääride
-määritluse	määratluse
-raivimitootjad	ravimitootjad
-lpuste	lõpuste
-pöönigud	pööningud
-hoiatusd	hoiatused
-jogurist	jogurtist
-pähliks	pähkliks
-kustudada	kustutada
-vuristaga	vuristage
-sattnud	sattunud
-konkjakit	konjakit
-põidlahoidjate	pöidlahoidjate
-võrdustatud	võrdsustatud
-otsutas	otsustas
-lauli	lauldi
-takitavad	takistavad
-kalenderi	kalendri
-küummekond	kümmekond
-vlaieldud	vaieldud
-koefitsiendite	koefitsientide
-ovalitsuste	omavalitsuste
-lämmastikväitise	lämmastikväetise
-koonevad	koosnevad
-uurimud	uurinud
-koverentsisaal	konverentsisaal
-nemda	nemad
-kõrgs	kõrges
-akoholiaktsiisi	alkoholiaktsiisi
-kirjadust	kirjandust
-intensiivemaid	intensiivsemaid
-avastatatakse	avastatakse
-tööstusettevõtes	tööstusettevõttes
-esikuuiukusse	esikuuikusse
-kommertsdirekori	kommertsdirektori
-tõenäoiselt	tõenäoliselt
-otsustda	otsustada
-enamajaolt	enamjaolt
-magistratuuris	magistrantuuris
-armasad	armsad
-aktsisaselts	aktsiaselts
-elanikkonmast	elanikkonnast
-müümimine	müümine
-tahakse	tehakse
-peaegu	peaaegu
-põmimõttelise	põhimõttelise
-reguleeerib	reguleerib
-jäävustamist	jäädvustamist
-eleketer	elekter
-määratletada	määratleda
-trurumajanduse	turumajanduse
-vestleda	vestelda
-ostueesõigse	ostueesõiguse
-vallandamiskmapaania	vallandamiskamapaania
-finatseerimiseks	finantseerimiseks
-peaagu	peaaegu
-juriididilist	juriidilist
-ekspertisii	ekspertiisi
-vähearenud	vähearenenud
-esmajäriekorras	esmajärjekorras
-karjäar	karjäär
-järgenenud	järgnenud
-naaberrriikide	naaberriikide
-nõuetedega	nõuetega
-stuudist	stuudiost
-okskaks	oskaks
-konurss	konkurss
-kokulepped	kokkulepped
-tegustseva	tegutseva
-penaltidega	penaltitega
-käsisin	käisin
-tekikotit	tekikotid
-koodamisel	koondamisel
-söendaks	söandaks
-ühki	ühtki
-eksistent	eksistents
-veeelgi	veelgi
-akoholijoobes	alkoholijoobes
-uule	uuele
-kaasmaalsed	kaasmaalased
-madalaprotsendilse	madalaprotsendilise
-aaata	aasta
-erastamiotsuse	erastamisotsuse
-kaunemaid	kauneimaid
-peaminitrer	peaminister
-papilloomaviirusel	papilloomviirusel
-pütakse	püütakse
-koordinatsiooonikomitee	koordinatsioonikomitee
-kohustuliku	kohustusliku
-algorütmide	algoritmide
-hakkma	hakkama
-liiklusõnnestust	liiklusõnnetust
-konsorstiumi	konsortsiumi
-koralikku	korralikku
-nõuaandeteenistus	nõuandeteenistus
-vanduspensionär	vanaduspensionär
-riigivisidi	riigivisiidi
-teisemlistest	teismelistest
-assümeetrilise	asümmeetrilise
-küjes	küljes
-pikamaajookjate	pikamaajooksjate
-paarkümne	paarikümne
-muisuskaitseameti	muinsuskaitseameti
-kvintessenssi	kvintessentsi
-populaarsmead	populaarsemad
-välisrahallikaile	välisrahaallikaile
-käsolevaks	käesolevaks
-aktsiseltsides	aktsiaseltsides
-pedagooglise	pedagoogilise
-asjaajatel	asjaajajatel
-teispäeval	teisipäeval
-aktiiside	aktsiiside
-sagedami	sagedamini
-katolikku	katoliku
-laerkujutisi	laserkujutisi
-hakkanud	hakanud
-remondiorganisatasiooniks	remondiorganisatsiooniks
-osakonnajuhatjate	osakonnajuhatajate
-tihedage	tihendage
-erafirmadale	erafirmadele
-kolmkümmned	kolmkümmend
-tagsilöök	tagasilöök
-tõesati	tõestati
-rpoua	proua
-leinant	leitnant
-aksepteeritud	aktsepteeritud
-treeener	treener
-ingird	Ingrid
-leingu	lepingu
-süüdistutest	süüdistustest
-erititi	eriti
-juurs	juures
-teorteetikute	teoreetikute
-ühispressikoverentsil	ühispressikonverentsil
-tallinnlaste	tallinlaste
-taolemisele	taotlemisele
-koraldamisele	korraldamisele
-vaatamiaväärsusi	vaatamisväärsusi
-uuenud	uuenenud
-päkkapikkudest	päkapikkudest
-pärist	päris
-valdusühind	valdusühing
-hinnagul	hinnangul
-eestlsele	eestlasele
-aehg	aeg
-aritektuuribüroos	arhitektuuribüroos
-ivesteerimiseelistused	investeerimiseelistused
-võlausaldajte	võlausaldajate
-amdeid	andmeid
-kaiseliini	kaitseliini
-näidnud	näidanud
-panag	panga
-probeemi	probleemi
-kaubaartkli	kaubaartikli
-kirikivalitsuse	kirikuvalitsuse
-ultuses	ulatuses
-retooorikakeskusesse	retoorikakeskusesse
-jõuidnud	jõudnud
-eeestlase	eestlase
-kohtat	kohta
-opsitsioonis	opositsioonis
-sotsiaakindlustusameti	sotsiaalkindlustusameti
-aktiisi	aktsiisi
-kaitet	kaitset
-jõlulaupäeva	jõululaupäeva
-küige	kõige
-midaig	midagi
-tippmametnikud	tippametnikud
-justiitministeeriumi	justiitsministeeriumi
-keskoolis	keskkoolis
-naistvõrkpalluritest	naisvõrkpalluritest
-appelleerida	apelleerida
-üthlasem	ühtlasem
-suuraktionär	suuraktsionär
-käibemasu	käibemaksu
-liiderid	liidrid
-jõlurahu	jõulurahu
-mämgu	mängu
-aelgaselt	aeglaselt
-senitmeetrit	sentimeetrit
-kohutuasjad	kohtuasjad
-puhkpilliorkesteri	puhkpilliorkestri
-otsutavate	otsustavate
-ristmisel	ristimisel
-individuaaltunriiril	individuaalturniiril
-kultuuriehutise	kultuuriehitise
-asptiliselt	aseptiliselt
-füsikokeemik	füsiokeemik
-investoride	investorite
-jeltin	Jeltsin
-laupäval	laupäeval
-tiirlenud	tiirelnud
-ligse	liigse
-terassil	terrassil
-teavat	teavet
-peaegi	peagi
-kavatsetekse	kavatsetakse
-teatrirahava	teatrirahva
-plaaneeritakse	planeeritakse
-numeereeritud	numereeritud
-aravasid	arvasid
-kodakonduseta	kodakondsuseta
-maalikunsniku	maalikunstniku
-tarkavrapiraatide	tarkvarapiraatide
-peasekrtär	peasekretär
-puhakasum	puhaskasum
-aitata	aidata
-üldkooslek	üldkoosolek
-presidndivalimiste	presidendivalimiste
-irivtab	irvitab
-suunades	suundades
-arstikus	arstlikus
-eskami	eksami
-maftavanadel	naftavanadel
-asetätjana	asetäitjana
-tegegelikkusega	tegelikkusega
-minens	minnes
-vahejutum	vahejuhtum
-mõtetut	mõttetut
-mahas	maha
-sekretari	sekretäri
-venetsuelalaste	venetsueelalaste
-inserenitööst	inseneritööst
-odamav	odavam
-viibiavad	viibivad
-kümmnendik	kümnendik
-tendets	tendents
-maratanoniraja	maratoniraja
-isalndlane	islandlane
-eesostas	eesotsas
-võrreles	võrreldes
-demonsteerib	demonstreerib
-ministreerium	ministeerium
-üümaja	öömaja
-turnismisredelitest	turnimisredelitest
-ekport	eksport
-pääsmiseks	pääsemiseks
-positisooone	positsioone
-kunigliku	kuningliku
-nädalt	nädalat
-vortikesi	vorstikesi
-näidatatavatele	näidatavatele
-vaatamaiseks	vaatamiseks
-ükiskalade	üksikalade
-lemmikpildiraaamat	lemmikpildiraamat
-täisksvanud	täiskasvanud
-pakkkumised	pakkumised
-kindlasri	kindlasti
-maantejooksu	maanteejooksu
-mõistuv	mõistus
-loominugulised	loomingulised
-esimesesest	esimesest
-ideealilähedaselt	ideaalilähedaselt
-ministeerumi	ministeeriumi
-liitusmistasud	liitumistasud
-abilu	abielu
-piirivalurid	piirivalvurid
-kaasaegsestest	kaasaegsetest
-poleksi	polekski
-kunigaperega	kuningaperega
-teisipõeval	teisipäeval
-separatisliku	separatistliku
-pesudonüümi	pseudonüümi
-valdvalt	valdavalt
-heaksiitmist	heakskiitmist
-olümpimängudel	olümpiamängudel
-fanstastiline	fantastiline
-möödund	möödunud
-aplesine	apelsine
-produteeris	produtseeris
-maksuahaldur	maksuhaldur
-konsentreeritud	kontsentreeritud
-kaunviljadede	kaunviljade
-laienemiskvad	laienemiskavad
-lümfisõlmedese	lümfisõlmedesse
-lapsevakrit	lapsevankrit
-büroomööblikomlekti	büroomööblikomplekti
-milla	mille
-mehhanik	mehhaanik
-neitsliku	neitsiliku
-otustati	otsustati
-minigil	mingil
-omeaette	omaette
-demokraatiase	demokraatiasse
-sooviad	soovijad
-kaktestasid	katkestasid
-mõlemase	mõlemasse
-vastavalitud	vastvalitud
-läheksud	läheksid
-faktuuuritüüpide	faktuuritüüpide
-aksiaseltsi	aktsiaseltsi
-võtleva	võitleva
-enamsti	enamasti
-küllat	küllalt
-kaubandusparneriks	kaubanduspartneriks
-lugada	lugeda
-maksuvõlgane	maksuvõlglane
-impulssiivse	impulsiivse
-mäistagi	mõistagi
-hoolisev	hoolitsev
-kohtustuseks	kohustuseks
-selgiatatakse	selgitatakse
-tavapärsemaks	tavapärasemaks
-puukborelioosi	puukborrelioosi
-motvatsiooni	motivatsiooni
-tösiseltvõetavuse	tõsiseltvõetavuse
-üleslugematude	üleslugematute
-finatsorganisatsioonides	finantsorganisatsioonides
-kiirrrünnakut	kiirrünnakut
-teaduspotsentsiaali	teaduspotentsiaali
-vaevlab	vaevleb
-prepaaraatidega	preparaatidega
-esmissiooni	emissiooni
-koolitusspetsualisti	koolitusspetsialisti
-natsionaliseertud	natsionaliseeritud
-mälestuesemed	mälestusesemed
-piimashokolad	piimašokolaad
-vaaatad	vaatad
-nimetetud	nimetatud
-tutvustatkse	tutvustatakse
-isenda	iseenda
-lihakombinadi	lihakombinaadi
-keskmiset	keskmisest
-taastamaine	taastamine
-peaaritekt	peaarhitekt
-isikuplakatide	isikuplakatite
-kavliteeti	kvaliteeti
-järgeva	järgneva
-märks	märksa
-kunstiliikidessse	kunstiliikidesse
-hargenevaid	hargnevaid
-päklid	pähklid
-olümpiparki	olümpiaparki
-iseseisevaks	iseseisvaks
-põhjenas	põhjendas
-jälgmiseks	jälgimiseks
-valimisringonna	valimisringkonna
-koodamist	koondamist
-likvideerma	likvideerima
-bilasimaht	bilansimaht
-termostaaat	termostaat
-elanikkonnat	elanikkonnast
-jatkab	jätkab
-tublisi	tublisti
-sisutamiseks	sisustamiseks
-kavliteedipäeva	kvaliteedipäeva
-peamiseteks	peamisteks
-konserdisaali	kontserdisaali
-huraaga	hurraaga
-stabliliseerunud	stabiliseerunud
-märgatest	märgates
-prekonnaliikmetesse	perekonnaliikmetesse
-hästis	hästi
-inimestaga	inimestega
-astaa	aasta
-plaaanilise	plaanilise
-septsialistide	spetsialistide
-medikamet	medikament
-taotlemisks	taotlemiseks
-kümmnes	kümnes
-eesi	eesti
-õmbelmine	õmblemine
-kuurortit	kuurorti
-kõnne	kõne
-komunistliku	kommunistliku
-keskeerakondlastele	keskerakondlastele
-vahetatakase	vahetatakse
-moodustvad	moodustavad
-investeermisotsuseid	investeerimisotsuseid
-lükatas	lükates
-kultuuuri	kultuuri
-miljonii	miljoni
-seepiooperi	seebiooperi
-alakoholipakendi	alkoholipakendi
-väehendamiseks	vähendamiseks
-ballettikleit	balletikleit
-traditsiioone	traditsioone
-energeetikaasektorile	energeetikasektorile
-sohvoosides	sovhoosides
-kaubavbeo	kaubaveo
-kiiits	kiitis
-asendamaine	asendamine
-infrastruuri	infrastruktuuri
-seetõtytu	seetõttu
-riigeelarvest	riigieelarvest
-mosaiiike	mosaiike
-kümmenkond	kümmekond
-sidmetele	sidemetele
-liiklusinspetsioon	liiklusinspektsioon
-konktreetselt	konkreetselt
-järeltulja	järeltulija
-piõisav	piisav
-terrasil	terrassil
-edasspidi	edaspidi
-kuluurimiljööd	kultuurimiljööd
-medistiiniteenistuse	meditsiiniteenistuse
-kookõlastada	kooskõlastada
-passlik	paslik
-seksoloog	seksuoloog
-tagasil	tagasi
-uksuma	uskuma
-poliilisele	poliitilisele
-meeskonnna	meeskonna
-noopõlve	noorpõlve
-demokraatik	demokraatlik
-apesinijook	apelsinijook
-polfinaalis	poolfinaalis
-jägis	jälgis
-olümiakoondislane	olümpiakoondislane
-vastasugupoolte	vastassugupoolte
-maksutada	maksustada
-maanöövreid	manöövreid
-selleised	sellised
-nõukgu	nõukogu
-rahastavariante	rahastamisvariante
-seinet	seinte
-staaadiumis	staadiumis
-liimetele	liikmetele
-akstiainvesteeringuteks	aktsiainvesteeringuteks
-rasekmaks	raskemaks
-närdinud	nördinud
-maitsetatud	maitsestatud
-jäämurjat	jäämurdjat
-vabandaga	vabandage
-alammmäär	alammäär
-rahusvaheliste	rahvusvaheliste
-araenenud	arenenud
-vähendes	vähenedes
-pangandukriisid	panganduskriisid
-seelähi	seeläbi
-viskipudelt	viskipudelit
-kustustusveest	kustutusveest
-vandiraiujajate	vandiraiujate
-lühiaajaliselt	lühiajaliselt
-septebris	septembris
-eridatada	eristada
-kitast	kitsast
-tektiilinäitusega	tekstiilinäitusega
-ettvaatlikuks	ettevaatlikuks
-aaasta	aasta
-eraiaikutele	eraisikutele
-lihvõttejänes	lihavõttejänes
-esmaspäeal	esmaspäeval
-turismimimessi	turismimessi
-südmuste	sündmuste
-üka	üks
-spordinternaatkooliga	spordiinternaatkooliga
-isesseisvas	iseseisvas
-villanud	villand
-riigimetsakondade	riigimetskondade
-väljapnekud	väljapanekud
-valimiskampaaniga	valimiskampaaniaga
-mängub	mängib
-hakksin	hakkasin
-kasuteger	kasutegur
-väljatöödatud	väljatöötatud
-tuberkoloosi	tuberkuloosi
-mõteleda	mõtelda
-töötsajate	töötajate
-ehtameeriklalikult	ehtameerikalikult
-ettavaatusega	ettevaatusega
-realpalk	reaalpalk
-möödnud	möödunud
-tõpselt	täpselt
-unkistuste	unistuste
-lahkulööömise	lahkulöömise
-õiguskomsjoni	õiguskomisjoni
-selilis	selili
-missugusse	missuguse
-taasisesisvumisel	taasiseseisvumisel
-otsutama	otsustama
-kondriitritootjad	kondiitritootjad
-abikaaasa	abikaasa
-ühikonnas	ühiskonnas
-majanduministeeriumi	majandusministeeriumi
-eradi	eraldi
-teisipäevel	teisipäeval
-konstrueerind	konstrueerinud
-suurbritaanias	suurbritannias
-patsinte	patsiente
-kühtus	kohtus
-eraspraksisega	erapraksisega
-lühijaliselt	lühiajaliselt
-jägima	jälgima
-aastlaste	eestlaste
-krimiaalpolitsei	kriminaalpolitsei
-kindustusfirma	kindlustusfirma
-korrega	korraga
-reaktiivsüstesaatoransambel	reaktiivsüntesaatoransambel
-kaaastöölistele	kaastöölistele
-tutuvusring	tutvusring
-tähelpanu	tähelepanu
-armatauurlaua	armatuurlaua
-jõuada	jõuda
-tuumaenergeerikat	tuumaenergeetikat
-eeskät	eeskätt
-mediitsiinis	meditsiinis
-kehtestmise	kehtestamise
-tähtusetu	tähtsusetu
-majandupoliitiliste	majanduspoliitiliste
-omaegse	omaaegse
-riputataud	riputatud
-kunstlise	kunstilise
-saaate	saate
-kontektis	kontekstis
-soodupakkumised	sooduspakkumised
-puahastusvahendite	puhastusvahendite
-maailmaorgranisatsiooni	maailmaorganisatsiooni
-teenindusfääris	teenindussfääris
-täelikult	täielikult
-meterjalide	materjalide
-sõimatati	sõimati
-isksus	isiksus
-meeldejävad	meeldejäävad
-protent	protsent
-anuüksi	ainuüksi
-tulemusted	tulemused
-sünarõhud	sõnarõhud
-lingvistlisi	lingvistilisi
-põhjustavatae	põhjustavate
-võistkondikuks	võistkondlikuks
-inervjueerijal	intervjueerijal
-rakendadakse	rakendatakse
-tasmel	tasemel
-kritika	kriitika
-psühhodeelilisi	psühhedeelilisi
-imuunsüsteemi	immuunsüsteemi
-absuluutseks	absoluutseks
-prühimägede	prügimägede
-kutustute	kutsutute
-abilinnapa	abilinnapea
-kua	kuna
-valuuutad	valuutad
-numritega	numbritega
-lere	pere
-terrorimisilmingute	terrorismiilmingute
-laevakompani	laevakompanii
-hämmastavapaneva	hämmastamapaneva
-taasiseisvumist	taasiseseisvumist
-jäätükide	jäätükkide
-elementaaarne	elementaarne
-maitsetugavdajad	maitsetugevdajad
-peaminstri	peaministri
-tagude	taguda
-psühhiliselt	psüühiliselt
-konsitutsioonikogu	konstitutsioonikogu
-maismaaast	maismaast
-isikupärst	isikupärast
-kompani	kompanii
-kümmnendal	kümnendal
-iseseivatele	iseseisvatele
-erilisti	erilist
-korduvalimised	kordusvalimised
-jutkui	justkui
-päelehtede	päevalehtede
-probeemidega	probleemidega
-kaksümmend	kakskümmend
-üleile	üleeile
-osatähtus	osatähtsus
-järjakorras	järjekorras
-konkurs	konkurss
-kvartet	kvartett
-õoppeaastast	õppeaastast
-tahtunud	tahtnud
-soometumise	soomestumise
-suurejoneliseks	suurejooneliseks
-otsustakase	otsustatakse
-födraalfondimäära	föderaalfondimäära
-ripuvatel	rippuvatel
-mõutamine	mõjutamine
-reisiseltsikond	reisiseltskond
-kahtlustatavd	kahtlustatavad
-jagunub	jaguneb
-ütlsid	ütlesid
-taasühinenemine	taasühinemine
-veenise	veenmise
-medistiinitöötajatele	meditsiinitöötajatele
-kvaliteetidokumentideta	kvaliteedidokumentideta
-täisti	täiesti
-üldeettevalmistuslaagrit	üldettevalmistuslaagrit
-telekoomunikatsioonikontsernile	telekommunikatsioonikontsernile
-nis	mis
-potensiaalset	potentsiaalset
-mobiiltelfoniga	mobiiltelefoniga
-kaasnab	kaasneb
-kindlutusseltsid	kindlustusseltsid
-söenda	söanda
-tunistab	tunnistab
-ülesannest	ülesannetest
-sõitud	sõidud
-elektriliseteks	elektrilisteks
-viduvaid	vinduvaid
-eelarvepobleemid	eelarveprobleemid
-teoreeritiliselt	teoreetiliselt
-tuhadeni	tuhandeni
-olumpiamängud	olümpiamängud
-juhenduda	juhinduda
-metaliteeti	mentaliteeti
-parandmist	parandamist
-elamikud	elanikud
-qtallinna	tallinna
-ettevõluse	ettevõtluse
-lastepaarigaa	lastepaariga
-kohaslt	kohaselt
-riigsekretäri	riigisekretäri
-jalapaaari	jalapaari
-teariprojekt	teatriprojekt
-kokkuklepe	kokkulepe
-nõuaandeid	nõuandeid
-preaminister	peaminister
-litsenti	litsentsi
-sügeluset	sügelust
-saaamiseks	saamiseks
-ligimisi	ligimesi
-söendas	söandas
-viipäevane	viiepäevane
-sedusega	seadusega
-erugutamiseks	ergutamiseks
-järgminel	järgmine
-haiglaaarsti	haiglaarsti
-olümpakullani	olümpiakullani
-olümpiküla	olümpiaküla
-süüdistakse	süüdistatakse
-tihtu	tihti
-kordinaatori	koordinaatori
-jäegmisel	järgmisel
-tshetsheenimast	tšetšeeniast
-manualteraapia	manuaalteraapia
-populaarustabelis	populaarsustabelis
-ümbekolimisel	ümberkolimisel
-nüüda	nüüd
-lavatudendgite	lavatudengite
-heeringufileed	heeringafileed
-transendentsust	transtsendentsust
-poolteistaastase	pooleteistaastase
-kompvekites	kompvekkides
-starteegilisele	strateegilisele
-tubadese	tubadesse
-hobit	hobi
-omanikuid	omanikud
-tükka	tükke
-merakollektsioonist	merekollektsioonist
-reisnud	reisinud
-koduskeskjaamad	kodukeskjaamad
-jhäänud	jäänud
-kalverikontserdi	klaverikontserdi
-tõlida	tõlkida
-relvajõudel	relvajõududel
-immunsust	immuunsust
-energihindadest	energiahindadest
-pikajaliste	pikaajaliste
-kontsertitel	kontserditel
-sanitaaraamatu	sanitaarraamatu
-ojektiivne	objektiivne
-tulemusetega	tulemustega
-viimapudeli	viinapudeli
-tegelma	tegelema
-võtlejana	võitlejana
-hullumeelseste	hullumeelsete
-üksinus	üksainus
-näitks	näiteks
-otsat	otsast
-autojuhide	autojuhtide
-õstmise	tõstmise
-mõtekas	mõttekas
-krediifiinfo	krediidiinfo
-eskinud	eksinud
-haigussüptomite	haigussümptomite
-tunnisama	tunnistama
-prunidesse	pruunidesse
-mõõdukid	mõõdikud
-laboratoorimides	laboratooriumides
-vaevunund	vaevunud
-auauhne	auahne
-valitusus	valitsus
-milleksi	millekski
-hindamiskonisjoni	hindamiskomisjoni
-plaktilt	plakatilt
-piltikult	piltlikult
-funksioneeri	funktsioneeri
-kontrolllida	kontrollida
-üheagseks	üheaegseks
-selisest	sellisest
-mareformiseaduse	maareformiseaduse
-olukrd	olukord
-sotsalismi	sotsialismi
-keelududa	keelduda
-tagastamis	tagastamist
-emmissiooni	emissiooni
-latinot	latiinot
-aegntuuril	agentuuril
-aforsimi	aforismi
-välisinvesteeeringute	välisinvesteeringute
-toetakajaskonnale	toetajaskonnale
-kujneb	kujuneb
-värksematest	värskematest
-põgenukule	põgenikule
-tagastatavataes	tagastatavates
-hakangi	hakkangi
-osatjate	ostjate
-vadla	valda
-hinnnagul	hinnangul
-politse	politsei
-jtkuma	jätkuma
-ideoogilise	ideoloogilise
-repoterid	reporterid
-kõnunääret	kõhunääret
-nurgataustest	nurgatagustest
-kuntihuviliste	kunstihuviliste
-suurtykid	suurtükid
-peatoimeteja	peatoimetaja
-niisugusse	niisugusesse
-maksunud	maksnud
-relaamimaksu	reklaamimaksu
-soojusõlme	soojussõlme
-konjakupudeleid	konjakipudeleid
-peakonstrukorina	peakonstruktorina
-asutvad	astuvad
-emsitri	meistri
-mitteamtlikult	mitteametlikult
-rotsendil	protsendil
-tagsipöördumine	tagasipöördumine
-taarbijale	tarbijale
-kpolmel	kolmel
-malaria	malaaria
-hukunud	hukkunud
-andestanatu	andestamatu
-tutvude	tutvuda
-psügiveolepigut	prügiveolepigut
-õptajate	õpetajate
-ulkmekirjanikud	ulmekirjanikud
-keskkonastrateegia	keskkonnastrateegia
-puidkiudplaat	puitkiudplaat
-alandmisele	alandamisele
-lepiguid	lepinguid
-järekontroll	järelkontroll
-ränkatest	ränkadest
-alatarit	altarit
-deklratsiooni	deklaratsiooni
-väljamüüghind	väljamüügihind
-ebausal	ebaausal
-infraktiga	infarktiga
-puhastustöst	puhastustööst
-pööruda	pöörduda
-kaarati	kaarti
-demokraatilkust	demokraatlikust
-võimuesindate	võimuesindajate
-kultuuriministreeriumile	kultuuriministeeriumile
-kaabeltelevisoooni	kaabeltelevisooni
-ebastabiiline	ebastabiilne
-ühesugusese	ühesuguse
-semimari	seminari
-keskkonaministeeriumi	keskkonnaministeeriumi
-arveldmise	arveldamise
-otkoobris	oktoobris
-kaheastase	kaheaastase
-aastsal	aastal
-liikumisõpetajanana	liikumisõpetajana
-protokollioskonnast	protokolliosakonnast
-kavalifitseeritud	kvalifitseeritud
-vaream	varem
-ajakas	ajaks
-midagu	midagi
-midaga	midagi
-parkimisautomaarti	parkimisautomaati
-liikuluspolitsei	liikluspolitsei
-joosul	jooksul
-veidid	veidi
-järgise	järgmise
-sälitanud	säilitanud
-tankritel	tankeritel
-asjaasjamise	asjaajamise
-piudamata	pidamata
-asfaltee	asfalttee
-pikune	pikkune
-seadlusandlus	seadusandlus
-ristsubisdeerimise	ristsubsideerimise
-kontolli	kontrolli
-euroopliku	euroopaliku
-täenäoliselt	tõenäoliselt
-koossseisuga	koosseisuga
-lavastja	lavastaja
-laevadusfirma	laevandusfirma
-alhoholiga	alkoholiga
-koolideavahelise	koolidevahelise
-sõidjad	sõudjad
-söögpause	söögipause
-näitelejana	näitlejana
-urgimugrilise	ugrimugrilise
-pandakse	pannakse
-marketinguga	marketingiga
-emissionidest	emissioonidest
-gunnnar	Gunnar
-pakubi	pakubki
-liberaarsus	liberaalsus
-väismaiste	välismaiste
-raamataut	raamatut
-ähvarab	ähvardab
-tähendadavad	tähendavad
-enma	enam
-juveeelitoodete	juveelitoodete
-haduskohus	halduskohus
-pühandatud	pühendatud
-avldumist	avaldumist
-kätuma	käituma
-tüduk	tüdruk
-üldharaiduskoolidel	üldhariduskoolidel
-hinnatatkse	hinnatakse
-esinama	esindama
-sürralistlik	sürrealistlik
-hulgalisti	hulganisti
-okupatsiooivõimud	okupatsioonivõimud
-jätkuama	jätkuma
-infopunkis	infopunktis
-allaes	alles
-pisult	pisut
-möödundud	möödunud
-septmbris	septembris
-rasestusmisvastastest	rasestumisvastastest
-kutuuriküljel	kultuuriküljel
-inveteeriti	investeeriti
-seksoloogiaalased	seksuoloogiaalased
-nängulisustki	mängulisustki
-entusiamil	entusiasmil
-siseanumga	siseanumaga
-viisteistkünmele	viisteistkümnele
-kunstimuusemile	kunstimuuseumile
-põhustada	põhjustada
-tuleohutsussüteemi	tuleohutussüsteemi
-korapealt	korrapealt
-õetajate	õpetajate
-eksplutatsioonis	ekspluatatsioonis
-vaimunergia	vaimuenergia
-likvideermisega	likvideerimisega
-silamde	silmade
-eelenevalt	eelnevalt
-kadvat	kandvat
-värsekelt	värskelt
-sedusandlusega	seadusandlusega
-artikkle	artikkel
-infoohvister	infoohvitser
-sasjatundjate	asjatundjate
-pikkalt	pikalt
-lõpukss	lõpuks
-dokomentide	dokumentide
-ostam	ostma
-maainimestetelt	maainimestelt
-edasikinldustuse	edasikindlustuse
-positsioonle	positsioonile
-tehaks	tehakse
-pöidlahoitjatele	pöidlahoidjatele
-valgutusposti	valgustusposti
-allapooole	allapoole
-ühendriiide	ühendriikide
-muste	musti
-ümbertöötlemsie	ümbertöötlemise
-sälitama	säilitama
-anestesiloogianõuniku	anestesioloogianõuniku
-spetsialiti	spetsialisti
-iseloomustavd	iseloomustavad
-kaiffi	kaifi
-abusrditeater	absurditeater
-keskoolipäevil	keskkoolipäevil
-tshintshiliad	tšintšiljad
-finatsküljest	finantsküljest
-sisenb	siseneb
-smal	samal
-auauhnusest	auahnusest
-vaksineeritakse	vaktsineeritakse
-esimesese	esimese
-mugavalat	mugavalt
-ümbruskaudest	ümbruskaudsest
-akoholitööstuse	alkoholitööstuse
-psühaatriakliinikus	psühhiaatriakliinikus
-globaaseimat	globaalseimat
-kestud	kestnud
-pantsuse	prantsuse
-säilitäme	säilitame
-jõustnud	jõustunud
-nõustusnud	nõustunud
-sisldab	sisaldab
-töhtajaga	tähtajaga
-otsustnud	otsustanud
-taastakse	taastatakse
-resotorani	restorani
-tearikriitikud	teatrikriitikud
-fiantseerimise	finantseerimise
-skpetiliste	skeptiliste
-väjemalt	vähemalt
-stipendumi	stipendiumi
-kaubade	kaupade
-oragniseerib	organiseerib
-sotsoloogiat	sotsioloogiat
-tehikaid	tehnikaid
-maanteeaamet	maanteeamet
-asjatundamtu	asjatundmatu
-ettvõtte	ettevõtte
-järjrest	järjest
-petrooniks	patrooniks
-tasuliset	tasulist
-eraldatavt	eraldatavat
-siseajadesse	siseasjadesse
-tsivliseeritud	tsiviliseeritud
-viieteiskümne	viieteistkümne
-inimete	inimeste
-ebseaduslikult	ebaseaduslikult
-piiruda	piirduda
-sünnitsumaja	sünnitusmaja
-allakirjastama	allkirjastama
-ruhmituse	rühmituse
-sideministeerim	sideministeerium
-isenesestmõistetavalt	iseenesestmõistetavalt
-selgumud	selgunud
-komunikatsioonisüsteemi	kommunikatsioonisüsteemi
-teglenud	tegelenud
-pumabatud	pumbatud
-jaoskonnaaarstid	jaoskonnaarstid
-läheal	lähedal
-ümbereehitamise	ümberehitamise
-iskiliku	isikliku
-külmekümnest	kolmekümnest
-rinapiima	rinnapiima
-füüslistest	füüsilistest
-võttnud	võtnud
-enegiline	energiline
-sisutatud	sisustatud
-aktiivus	aktiivsus
-ligikaugu	ligikaudu
-oraganiseerijate	organiseerijate
-sanal	samal
-haridusoskonna	haridusosakonna
-omavalistuste	omavalitsuste
-konseravtiivid	konservatiivid
-ettevaamatu	ettevaatamatu
-elanikkonankihtidesse	elanikkonnakihtidesse
-managememt	management
-raamtu	raamatu
-potensiaali	potentsiaali
-tegusenud	tegutsenud
-soovisn	soovisin
-organistasioonil	organisatsioonil
-vastasssugupoole	vastassugupoole
-maffiooso	mafiooso
-kunstmik	kunstnik
-informatsioonipaltvormi	informatsiooniplatvormi
-kolmikhüpes	kolmikhüppes
-perspekiivikust	perspektiivikust
-liimete	liikmete
-tundmatau	tundmatu
-suurejooneliest	suurejoonelisest
-kirjaduse	kirjanduse
-maaealu	maaelu
-toitumistavasi	toitumistavasid
-loomaksvatussaadusi	loomakasvatussaadusi
-nädadal	nädalal
-pöhjused	põhjused
-virkalt	virgalt
-kassettile	kassetile
-pankrotitmenetluse	pankrotimenetluse
-maksvavad	maksavad
-kavateseb	kavatseb
-arvatavati	arvatavasti
-reegeleid	reegleid
-võiamlust	võimalust
-enensepuhastust	enesepuhastust
-nöoli	näoli
-territoorumil	territooriumil
-ütlasi	ühtlasi
-sõitisime	sõitsime
-olüpiaatleetide	olümpiaatleetide
-immunsüsteem	immuunsüsteem
-montessoripedagagoog	montessoripedagoog
-pommiplahavatustes	pommiplahvatustes
-takojuhtide	taksojuhtide
-omadireformi	omandireformi
-pojekti	projekti
-majaduslike	majanduslike
-keskeagne	keskaegne
-arside	arstide
-aktsiseltsid	aktsiaseltsid
-erastamisjägse	erastamisjärgse
-armamuma	armuma
-maeratab	naeratab
-moodas	moodsas
-turustatkse	turustatakse
-sõbul	sõnul
-intergeerumisel	integreerumisel
-evengeelse	evangeelse
-läsid	läksid
-auauhnuse	auahnuse
-ähvardamalt	ähvardavamalt
-tgevuse	tegevuse
-paraolümüpialased	paraolümpialased
-lihsalt	lihtsalt
-dokumentid	dokumendid
-ekporditõestust	eksporditõestust
-konfliktipoolete	konfliktipoolte
-multikultuuursemaks	multikultuursemaks
-olulisemaka	olulisemaks
-käibemakksu	käibemaksu
-maistvamaid	maitsvamaid
-posthuumselt	postuumselt
-politseiprefetuuri	politseiprefektuuri
-sotsiaalministeeeriumi	sotsiaalministeeriumi
-streiliseerida	steriliseerida
-agressivset	agressiivset
-otsimehhanismidega	otsimehanismidega
-ünberstruktureerimisest	ümberstruktureerimisest
-sterotüübile	stereotüübile
-tundengi	tudengi
-pääsnud	pääsenud
-tuhmund	tuhmunud
-kongrssi	kongressi
-jäjestikust	järjestikust
-narkootikumite	narkootikumide
-skluptuuridele	skulptuuridele
-väheprespektiivseks	väheperspektiivseks
-töössse	töösse
-orkesteri	orkestri
-ajalooliliselt	ajalooliselt
-metri	meetri
-etevõtted	ettevõtted
-meespeosa	meespeaosa
-etevõttel	ettevõttel
-vaatlushinnagul	vaatlushinnangul
-distsiplineritud	distsiplineeritud
-täesti	täiesti
-pekendilt	pakendilt
-eemele	eemale
-piraatviedokassetti	piraatvideokassetti
-juhtsid	juhtisid
-aistmismeeltele	haistmismeeltele
-mõnded	mõned
-lapsivaliidi	lapsinvaliidi
-purjeregetilt	purjeregatilt
-neljakümnendetel	neljakümnendatel
-tõpoolest	tõepoolest
-taskustesse	taskutesse
-omanadada	omandada
-elektromagneetilist	elektromagnetilist
-seduse	seaduse
-sis	siis
-kreeholm	Kreenholm
-revideeerivad	revideerivad
-lmäärusega	määrusega
-oselda	osaleda
-saaadi	saadi
-märgnud	märganud
-terrirooriumile	territooriumile
-muusikaalsust	musikaalsust
-lahedada	lahendada
-pikselite	pikslite
-lauluansambelis	lauluansamblis
-ulatuseg	ulatusega
-ikebanakuruses	ikebanakursuses
-entsüklopeediformaadis	entsüklopeediaformaadis
-aasatel	aastatel
-vapustaivam	vapustavaim
-agressivselt	agressiivselt
-ingitud	tingitud
-karjaääride	karjääride
-sugulsega	sugulasega
-liikluseekirjad	liikluseeskirjad
-esmaspäevl	esmaspäeval
-ettekandajate	ettekandjate
-hääletustusel	hääletustel
-asjosaliste	asjaosaliste
-koalitsooni	koalitsiooni
-esialgsesks	esialgseks
-vaadakam	vaadakem
-valdacvad	valdavad
-meeliv	meeldiv
-annavd	annavad
-kultuurikesuses	kultuurikeskuses
-algatnud	algatanud
-proessorf	professor
-hanbus	hambus
-häsit	hästi
-dokumendite	dokumentide
-omandirefomi	omandireformi
-neljaastase	nelja-aastase
-konfikseeriti	konfiskeeriti
-luudadaga	luudadega
-lähab	läheb
-konkteksti	konteksti
-stilis	stiilis
-branditoodete	bränditoodete
-väigikaigast	vägikaigast
-maadunud	maandunud
-vöiksid	võiksid
-valuläviga	valulävega
-vähes	vähenes
-konsevatiive	konservatiive
-ivesteerimise	investeerimise
-parikimispiletid	parkimispiletid
-sagadane	sagedane
-aaastaga	aastaga
-jõuatakse	jõutakse
-kaastundeavlduse	kaastundeavalduse
-rakedada	rakendada
-talumepermees	taluperemees
-lennnundusega	lennundusega
-autootootjas	autotootjas
-suveilmedega	suveilmadega
-latinod	latiinod
-seistmendale	seitsmendale
-jõuluõhtsse	jõuluõhtusse
-hiljaagu	hiljaaegu
-teisit	teisiti
-arsemali	arsenali
-taastamisprjekt	taastamisprojekt
-summarset	summaarset
-püüatakse	püütakse
-toodeted	tooted
-kirgaäri	kingaäri
-viibimud	viibinud
-vasaktsentrisliku	vasaktsentristliku
-pesident	president
-jooksuvat	jooksvat
-promooterite	promootorite
-otsutatakse	otsustatakse
-järgmisväärsed	järgimisväärsed
-propbleemide	probleemide
-ebaseaduliku	ebaseadusliku
-eeest	eest
-aastakokkuvõtes	aastakokkuvõttes
-ütels	ütles
-tallinlana	tallinlanna
-piirkondadaga	piirkondadega
-lähtudest	lähtudes
-lastekiiniku	lastekliiniku
-hamabahari	hambahari
-vöiksema	väiksema
-abieluvararegisri	abieluvararegistri
-teniseturniiri	tenniseturniiri
-täiskasvnute	täiskasvanute
-groteskesd	grotesksed
-majanduspoliitilika	majanduspoliitika
-paaariliste	paariliste
-üheteistekümne	üheteistkümne
-dumpighindu	dumpinghindu
-seitsmeteiskümnest	seitsmeteistkümnest
-meelede	meelde
-valuvaigististest	valuvaigistitest
-rahuprotsesi	rahuprotsessi
-laenuporfell	laenuportfell
-kukrku	kurku
-otsesid	otseseid
-sõitab	sõidab
-nedi	neid
-tegamist	tegemist
-enuustuse	ennustuse
-kiente	kliente
-kasitöölislik	käsitöölislik
-pnna	panna
-pankratioon	pankratsioon
-töötleda	töödelda
-invesorite	investorite
-elgitada	selgitada
-restruktrueerimisele	restruktureerimisele
-tõmbtuulte	tõmbetuulte
-protseniline	protsendiline
-juuulil	juulil
-tomimuval	toimuval
-võtiluseks	võitluseks
-mite	mitte
-suhur	suhkur
-metsamameti	metsaameti
-süstem	süsteem
-transferbussiga	transfeerbussiga
-kogenunud	kogunenud
-ajakirjandusväljannete	ajakirjandusväljaannete
-videokassettid	videokassetid
-läänealdal	läänekaldal
-konveretsil	konverentsil
-narkootikumideavastases	narkootikumidevastases
-epeemestel	epeemeestel
-kategooriliset	kategooriliselt
-arvelduskeskonnas	arvelduskeskkonnas
-saunapeaol	saunapeol
-infrakstruktuursete	infrastruktuursete
-türkiarv	trükiarv
-luureparaljon	luurepataljon
-omna	oma
-naispeosa	naispeaosa
-intressa	intresse
-retsepuuri	retseptuuri
-teenindusetteavõtte	teenindusettevõtte
-telakanalile	telekanalile
-hommmikul	hommikul
-karikavõistliste	karikavõistluste
-micorsoft	Microsoft
-edsestas	edestas
-realsemalt	reaalsemalt
-ebastandartne	ebastandardne
-tuumaohtuse	tuumaohutuse
-veerab	veereb
-öökul	öökull
-taasiseseivumise	taasiseseisvumise
-rahvahulgasr	rahvahulgas
-meediväljaannetes	meediaväljaannetes
-segatatuna	segatuna
-maksuamaksjatega	maksumaksjatega
-ekspertid	eksperdid
-rendiiliinide	rendiliinide
-porjektist	projektist
-vennud	veennud
-euroskeptliliste	euroskeptiliste
-kuulujute	kuulujutte
-väätuse	väärtuse
-permees	peremees
-lenuintressideks	laenuintressideks
-tähtnud	tahtnud
-kavlifikatsioon	kvalifikatsioon
-katoliiklnae	katoliiklane
-poolastal	poolaastal
-kümnekroonisted	kümnekroonised
-sisut	sisust
-õrnemaa	õrnema
-ohtarasti	ohtrasti
-olvat	olevat
-koefitsendi	koefitsiendi
-serblasete	serblaste
-erastamisissemakset	erastamississemakset
-aktiisimäär	aktsiisimäär
-anvendiküünla	advendiküünla
-väikeservuline	väikesearvuline
-kvantitiivselt	kvantitatiivselt
-vuiimase	viimase
-piirkonas	piirkonnas
-jaekaubadusfirma	jaekaubandusfirma
-korvapallivõistkond	korvpallivõistkond
-nadtabarreli	naftabarreli
-ümarguste	ümmarguste
-kaotsin	kaotasin
-kolmadast	kolmandast
-teeva	teevad
-ühiskondlikondlik	ühiskondlik
-meelelahtusfirmaga	meelelahutusfirmaga
-väljdes	väljudes
-imetlena	imetlema
-puljongipulver	puljongipulber
-jookusl	jooksul
-eskponeeritus	eksponeeritus
-populaarus	populaarsus
-praeportjoni	praeportsjoni
-soomeurgilaste	soomeugrilaste
-koku	kokku
-masseeerida	masseerida
-tugevdataud	tugevdatud
-eakatese	eakatesse
-hundite	huntide
-pinsettidega	pintsettidega
-madratsiootja	madratsitootja
-ülldiselt	üldiselt
-digitalliini	digitaalliini
-hiilglaslikust	hiiglaslikust
-hakkati	hakati
-võikisid	võiksid
-anavad	annavad
-tihedamine	tihedamini
-kogupropukt	koguprodukt
-langend	langenud
-iskliku	isikliku
-muudku	muudkui
-tuhendekroonise	tuhandekroonise
-ääärel	äärel
-tasutamise	tasustamise
-idoloogia	ideoloogia
-tiiskuseravi	tiisikuseravi
-rahat	raha
-keskonnakaitsesse	keskkonnakaitsesse
-raskendavaste	raskendavate
-lasteetendusete	lasteetenduste
-suvhooaeg	suvehooaeg
-rikkunuud	rikkunud
-sportast	sportlast
-tiisikuhaiged	tiisikushaiged
-noosoopolitsei	noorsoopolitsei
-postmodernlistliku	postmodernistliku
-näidand	näidanud
-võitljate	võitlejate
-sisalduvateale	sisalduvatele
-puudnud	puudunud
-refomikomisjonid	reformikomisjonid
-auhnete	auahnete
-tefefoniside	telefoniside
-tgasi	tagasi
-rikamaid	rikkamaid
-nõrgedaks	nõrgendaks
-haiglassse	haiglasse
-suuurem	suurem
-etekujutus	ettekujutus
-riigeelarve	riigieelarve
-esimemist	esinemist
-mängide	mändide
-valimistunud	valmistunud
-enesehinnag	enesehinnang
-septemris	septembris
-kihustustööd	kihutustööd
-nõningast	mõningast
-südamkujulisi	südamekujulisi
-esimse	esimese
-potsepakedra	pottsepakedra
-nüiteks	näiteks
-puhatusseadmed	puhastusseadmed
-haridusseptsialistid	haridusspetsialistid
-avaldmiseks	avaldamiseks
-koostamaa	koostama
-kookõlastades	kooskõlastades
-üksikksõidus	üksiksõidus
-tuvustatakse	tutvustatakse
-tegelikut	tegelikult
-jõulukasset	jõulukassett
-maamahel	maamehel
-halevenemine	halvenemine
-ennnast	ennast
-resrvfondis	reservfondis
-komandikku	kolmandikku
-sateliitnavigatsioonisüsteemi	satelliitnavigatsioonisüsteemi
-töötatatakse	töötatakse
-direktri	direktori
-jaotataud	jaotatud
-ametise	ametisse
-televaatjad	televaatajad
-voolma	voolama
-varustasemega	varustustasemega
-värivakamateks	värvikamateks
-üheksakümmnendate	üheksakümnendate
-aasnes	kaasnes
-peosalisena	peaosalisena
-materjaliskesksust	materjalikesksust
-mootorratase	mootorrataste
-ohvredas	ohverdas
-puktid	punktid
-konkrentsivõimet	konkurentsivõimet
-nimiväätus	nimiväärtus
-juriidililiselt	juriidiliselt
-kuuuluva	kuuluva
-mehanismi	mehhanismi
-jatkuks	jätkuks
-võetaksse	võetakse
-aegasti	aegsasti
-sõinud	sõitnud
-naerama	naerma
-tööandajatega	tööandjatega
-hähematus	häbematus
-vaidlsuküsimuste	vaidlusküsimuste
-prosaistlt	prosaistilt
-esisukohast	seisukohast
-skeptitsimi	skeptitsismi
-mneeskond	meeskond
-ettevalmistutesse	ettevalmistustesse
-eeskõtt	eeskätt
-stabiliseermine	stabiliseerimine
-pidagi	midagi
-kauabagrupi	kaubagrupi
-kõite	köite
-lomabardlaenu	lombardlaenu
-aidab	aitab
-diakoonihaigla	diakooniahaigla
-iskuid	isikuid
-saavd	saavad
-peaministeri	peaministri
-puudmisel	puudumisel
-keskkonnanisteeriumi	keskkonnaministeeriumi
-poliitist	poliitilist
-kolonelleinant	kolonelleitnant
-ikebanakuruse	ikebanakursuse
-paralmendikomisjoni	parlamendikomisjoni
-prantuse	prantsuse
-sõbradele	sõpradele
-maaailamturugi	maailmaturugi
-kokuvarisemist	kokkuvarisemist
-edasimineks	edasiminek
-suurtuniiri	suurturniiri
-tahva	rahva
-täielikuklt	täielikult
-kordidorides	koridorides
-õnnetuset	õnnetust
-masserides	masseerides
-andemeil	andmeil
-investeermisotsuse	investeerimisotsuse
-ristisisad	ristiisad
-seltidest	seltsidest
-ajalehetede	ajalehtede
-undegroundis	undergroundis
-emotsioonaalne	emotsionaalne
-puhkusejaja	puhkuseaja
-personalijuhtmise	personalijuhtimise
-maantelõigud	maanteelõigud
-istituutidele	instituutidele
-usalduväärne	usaldusväärne
-järeltulijaidd	järeltulijaid
-huvilistege	huvilistega
-tuvustada	tutvustada
-omdast	omast
-äriparnerite	äripartnerite
-kantselliidist	kantseliidist
-ametkondadadel	ametkondadel
-eeltööodega	eeltöödega
-olümpikoondislane	olümpiakoondislane
-maksuspetturile	maksupetturile
-poliitilikaringkonnad	poliitikaringkonnad
-liikuspolitsei	liikluspolitsei
-ehistusmaterjalide	ehitusmaterjalide
-ärats	äratas
-eskamikomisjoni	eksamikomisjoni
-laienmist	laienemist
-pensinile	pensionile
-aatal	aastal
-munisuskaitseameti	muinsuskaitseameti
-tuntub	tundub
-rahavaküsitlus	rahvaküsitlus
-teravanesid	teravnesid
-halvam	halvem
-ekseprdid	eksperdid
-isklikus	isiklikus
-septsiaalseid	spetsiaalseid
-maksmimaalne	maksimaalne
-televisoonilt	televisioonilt
-segenevat	sagenevat
-tolliinspektisooni	tolliinspektsiooni
-rahanduministrina	rahandusministrina
-shunteerimisoporatsiooni	šunteerimisoperatsiooni
-intgreerumine	integreerumine
-lennundudes	lennunduses
-veneleelseid	venekeelseid
-komiteee	komitee
-tegelene	tegelane
-pürgitate	pürgivate
-skepulatsioonid	spekulatsioonid
-raskutega	raskustega
-täiendataud	täiendatud
-luapäeva	laupäeva
-sagedamigi	sagedaminigi
-tarbijavenulikes	tarbijavaenulikes
-maksavd	maksavad
-läbirääkmiste	läbirääkimiste
-astusega	asetusega
-juurda	juurde
-ootmatult	ootamatult
-parlemendi	parlamendi
-ettvõttel	ettevõttel
-vähnes	vähenes
-iskupära	isikupära
-võtlust	võitlust
-nimetetakse	nimetatakse
-konkeetsemaks	konkreetsemaks
-isksuse	isiksuse
-riiedeesemega	riideesemega
-läinduki	läinudki
-registreeeritud	registreeritud
-reismine	reisimine
-jõumiseks	jõudmiseks
-psühiaatrilised	psühhiaatrilised
-ekpertiisitasu	ekspertiisitasu
-kandieerijate	kandideerijate
-iskutele	isikutele
-telfonitsi	telefonitsi
-vallasekrtär	vallasekretär
-surnd	surnud
-täidesaatav	täidesaatev
-alagasid	algasid
-anemad	vanemad
-rahava	rahva
-avalikkustamist	avalikustamist
-monertaarpoliitika	monetaarpoliitika
-vabatsiili	vabastiili
-kehtetas	kehtestas
-kriitline	kriitiline
-magentiks	magnetiks
-ebaaseadusliku	ebaseadusliku
-sellili	selili
-püsitatakse	püstitatakse
-lennnufirmaga	lennufirmaga
-tiilile	tiitlile
-viisteistkümnele	viieteistkümnele
-tervilikkuse	terviklikkuse
-nkujutluspildi	kujutluspildi
-sepärast	seepärast
-määäratleb	määratleb
-teatai	teatati
-möötmatut	mõõtmatut
-avaldamaisel	avaldamisel
-likkviidsusprobleemi	likviidsusprobleemi
-tegvdirektor	tegevdirektor
-partullreide	patrullreide
-iseseivusmeelsele	iseseisvusmeelsele
-märstikuine	märtsikuine
-õppisega	õppimisega
-näalavahetuse	nädalavahetuse
-elamistingingused	elamistingimused
-avaldmise	avaldamise
-jaanuril	jaanuaril
-üleriietga	üleriietega
-jaanuris	jaanuaris
-eriale	erialale
-elektrijaamaskatlamajas	elektrijaamakatlamajas
-lias	lisas
-päästamet	päästeamet
-parlamendifraktisooni	parlamendifraktsiooni
-üleminukuajad	üleminekuajad
-abilinnape	abilinnapea
-pretsendenditu	pretsedenditu
-ppopulaarsuse	populaarsuse
-õhkonnas	õhkkonnas
-usukunud	uskunud
-suuremassse	suuremasse
-jõulute	jõulude
-jalgarattur	jalgrattur
-sõidavat	sõidavad
-sõtub	sõltub
-õlleaktiiside	õlleaktsiiside
-aadresseeritud	adresseeritud
-religisoon	religioon
-demonstratisoonesinemised	demonstratsioonesinemised
-asialgu	esialgu
-kaldudakse	kaldutakse
-mudugi	muidugi
-kaitseinistriga	kaitseministriga
-
+# corpus size:   3059 
+# error types:
+#   1123 # add1
+#    218 # add1_one2double
+#     57 # add2_adjacent
+#     64 # complex
+#    470 # del1
+#    222 # del1_double2one
+#     18 # del2_adjacent
+#      1 # del2_nonadjacent
+#     57 # del2_repetition
+#      9 # del3_repetition
+#     14 # strings
+#     61 # subst1
+#    137 # subst1_aeiou2aeiou
+#     26 # subst1_aeiou2aeiou_kb_next
+#      3 # subst1_capitalize
+#     48 # subst1_gbd
+#     92 # subst1_kb_next
+#     19 # subst2_aab2abb
+#     12 # subst2_adjacent
+#      1 # subst2_nonadjacent
+#     67 # subst_accents
+#      7 # subst_accents_plus
+#     10 # subst_accents_sz
+#     26 # trans
+#    292 # trans_12-21
+#      5 # trans_12-21_plus
+Appelatsioonikaebuse	Apellatsioonikaebuse	# complex
+Appellatsiooniseaduses	Apellatsiooniseaduses	# del1_double2one
+Koonderkond	Koonderakond	# add1
+Koondrekonna	Koonderakonna	# complex
+LUKoil	Lukoil	# subst2_adjacent
+LUKoili	Lukoili	# subst2_adjacent
+Lendlehtdel	Lendlehtedel	# add1
+Mõõdujate	Mõõdukate	# subst1_kb_next
+Nordstrom	Nordström	# subst_accents
+Parempoolsetsest	Parempoolsetest	# del1
+'rgmistel	järgmistel	# complex
+Stokchomis	Stockholmis	# complex
+21-aastselt	21-aastaselt	# add1
+2ja	ja	# del1
+AS-le	AS-ile	# add1
+ATMOSFÄÄRIõHU	ATMOSFÄÄRIÕHU	# subst1
+Aafikasse	Aafrikasse	# add1
+Aktiaseltsi	Aktsiaseltsi	# add1
+Aktsiakaipitali	Aktsiakapitali	# del1
+Arvatatavasti	Arvatavasti	# del2_repetition
+Aserbaidzaanis	Aserbaidžaanis	# subst_accents_sz
+BNS-le	BNS-ile	# add1
+Babits^eva	Babitševa	# subst_accents_sz
+Barliini	Berliini	# subst1_aeiou2aeiou
+Bulõts^ov	Bulõtšov	# subst_accents_sz
+Desintegraatorise	Desintegraatorisse	# add1_one2double
+Draamatater	Draamateater	# add1
+Eestiti	Eestit	# del1
+Endasmõistetavalt	Endastmõistetavalt	# add1
+Enegreetiliste	Energeetiliste	# trans_12-21
+Erastamisagetuuri	Erastamisagentuuri	# add1
+Eskpluatatsiooni	Ekspluatatsiooni	# trans_12-21
+Hanekasvatusaaduste	Hanekasvatussaaduste	# add1_one2double
+Hanspanga	Hansapanga	# add1
+Harjumal	Harjumaal	# add1_one2double
+Hedrich	Hedrick	# subst1
+Herakleitusel	Herakleitosel	# subst1_aeiou2aeiou
+Hoipangal	Hoiupangal	# add1
+Ida-Vi	Ida-Viru	# add2_adjacent
+Igalühel	Igaühel	# del1
+Imselt	Ilmselt	# add1
+Intstituut	Instituut	# del1
+Itar-Tass	Itar-TASS	# complex
+Japanis	Jaapanis	# add1_one2double
+Jugoslooviat	Jugoslaaviat	# subst2_adjacent
+Juhtkomite	Juhtkomitee	# add1_one2double
+Jäägrrkompanii	Jäägerkompanii	# subst1_kb_next
+Kaheden	Kahden	# del1
+Kaitesliidule	Kaitseliidule	# trans_12-21
+Kanalistatsiooni	Kanalisatsiooni	# del1
+Kannatnud	Kannatanud	# add1
+Kekerakond	Keskerakond	# add1
+Keskeraskonnale	Keskerakonnale	# del1
+Keskerkonnast	Keskerakonnast	# add1
+Keskfraksioon	Keskfraktsioon	# add1
+Keskriminaalpolitseiga	Keskkriminaalpolitseiga	# add1_one2double
+Kirispuu	Kirsipuu	# trans_12-21
+Kirminaalasi	Kriminaalasi	# trans_12-21
+Koalitsiooniläbirääkimisde	Koalitsiooniläbirääkimiste	# subst1_gbd
+Kodakondsuseadusest	Kodakondsusseadusest	# add1_one2double
+Koduakitse	Kodukaitse	# trans_12-21
+Kohtla-NÕmme	Kohtla-Nõmme	# subst_accents
+Kolmadas	Kolmandas	# add1
+Konkurs	Konkurss	# add1_one2double
+Konstn	Kunstn	# subst1_aeiou2aeiou
+Konsturktivismis	Konstruktivismis	# trans_12-21
+Koonderkonna	Koonderakonna	# add1
+Korrosioonihibiitorite	Korrosiooniinhibiitorite	# add2_adjacent
+Krk	KrK	# subst1
+Kuulmispuuetetga	Kuulmispuuetega	# del1
+KÕige	Kõige	# subst_accents
+KÜmmelilt	Kümmelilt	# subst_accents
+Lefe`vre	Lefèvre	# complex
+Lihatõõtjate	Lihatootjate	# subst2_adjacent
+Lihatõõtjate	Lihatöötajate	# complex
+Liidudu	Liidud	# del1
+Liiklukindlustuse	Liikluskindlustuse	# add1
+Litsenseerimise	Litsentseerimise	# add1
+Luksenburgi	Luksemburgi	# subst1_kb_next
+Maaimapanga	Maailmapanga	# add1
+Majandusministeriumi	Majandusministeeriumi	# add1_one2double
+Moskvase	Moskvasse	# add1_one2double
+NIkonovile	Nikonovile	# subst1
+NÕmme	Nõmme	# subst_accents
+NÕukogu	Nõukogu	# subst_accents
+Oktoobrirevolutisooni	Oktoobrirevolutsiooni	# trans_12-21
+Oletatatakse	Oletatakse	# del2_repetition
+Organzation	Organization	# add1
+Pankrotsitunud	Pankrotistunud	# trans_12-21
+ParTöök	ParTööK	# subst1
+Paraleelselt	Paralleelselt	# add1_one2double
+Pedakoogikaülikool	Pedagoogikaülikool	# subst1_gbd
+Pedakoogikaülikooli	Pedagoogikaülikooli	# subst1_gbd
+Peremes	Peremees	# add1_one2double
+Poliitikassse	Poliitikasse	# del1_double2one
+PÄev	PÄEV	# subst2_adjacent
+PÕhjamaade	Põhjamaade	# subst_accents
+Pärnud	Pärnut	# subst1_gbd
+Pärnud	Pärnus	# subst1_kb_next
+Reforemierakonnaga	Reformierakonnaga	# del1
+Riisipera	Riisipere	# subst1_aeiou2aeiou
+Risikitegurid	Riskitegurid	# del1
+Rožoko	Rožoki	# subst1_aeiou2aeiou_kb_next
+Safanja	Sefanja	# subst1_aeiou2aeiou
+Sedaus	Seadus	# trans_12-21
+Serviceu	Service	# del1
+Sillmäel	Sillamäel	# add1
+Socckholm	Stockholm	# subst2_adjacent
+Sockholm	Stockholm	# add1
+Sorosi	Sorose	# subst1_aeiou2aeiou
+Standaard	Standard	# del1_double2one
+Statistiakaameti	Statistikaameti	# del1
+Stokholmis	Stockholmis	# add1
+Suurbritaania	Suurbritannia	# subst2_aab2abb
+Suurbrittanniast	Suurbritanniast	# del1_double2one
+SÕpruskoguduste	Sõpruskoguduste	# subst_accents
+Sõjajärsel	Sõjajärgsel	# add1
+T^sernenko	Tšernenko	# subst_accents_sz
+Teamist	Teadmist	# add1
+Teatmiseks	Teatamiseks	# add1
+Teatmiseks	Teadmiseks	# subst1_gbd
+Teispäevasel	Teisipäevasel	# add1
+Tevishoiuministeeriumi	Tervishoiuministeeriumi	# add1
+Tshehhi	Tšehhi	# subst_accents_sz
+Turimisühendus	Turismiühendus	# trans
+Täpsne	Täpne	# del1
+Täpsne	Täpse	# del1
+TšernobÕlis	Tšernobõlis	# subst_accents
+Vabariikllaste	Vabariiklaste	# del1_double2one
+ValimisliiduST	Valimisliidust	# subst2_adjacent
+Valimsiliidu	Valimisliidu	# trans_12-21
+Vememaa	Venemaa	# subst1_kb_next
+Ventspil	Ventspils	# add1
+Vladimisr	Vladimir	# del1
+Voprosse	Voprossõ	# subst1
+Välisministeeiumi	Välisministeeriumi	# add1
+Wassser-	Wasser-	# del1_double2one
+a3subj	a3:subj	# complex
+aTallinnast	Tallinnast	# del1
+aTokyos	Tokyos	# del1
+aastaarunnete	aastaaruannete	# add1
+aastainterssiga	aastaintressiga	# trans_12-21
+aastakonverntsil	aastakonverentsil	# add1
+aastapäva	aastapäeva	# add1
+aastokoosolek	aastakoosolek	# subst1_aeiou2aeiou
+aastpäeva	aastapäeva	# add1
+aata	aasta	# add1
+abiporgramm	abiprogramm	# trans_12-21
+abonomentosa	abonementosa	# subst1_aeiou2aeiou
+abonomentvõrguga	abonementvõrguga	# subst1_aeiou2aeiou
+adminsitratsiooni	administratsiooni	# trans_12-21
+advekaadselt	adekvaatselt	# complex
+aeglselt	aeglaselt	# add1
+agfaani	afgaani	# trans_12-21
+agrielust	argielust	# trans_12-21
+ainault	ainult	# del1
+ainualt	ainult	# del1
+aistsin	aistisin	# add1
+ajaloolvaldkondadega	ajaloovaldkondadega	# del1
+ajsaajamine	asjaajamine	# trans_12-21
+ajst	ajast	# add1
+aksepteerima	aktsepteerima	# add1
+aksepteerinud	aktsepteerinud	# add1
+aktisate	aktsiate	# trans_12-21
+aktisionärid	aktsionärid	# del1
+aktisonärid	aktsionärid	# trans_12-21
+aktisonäride	aktsionäride	# trans_12-21
+aktsepteeinud	aktsepteerinud	# add1
+aktsiakaptial	aktsiakapital	# trans_12-21
+aktsikapital	aktsiakapital	# add1
+aktsikapitali	aktsiakapitali	# add1
+aktsioomide	aksioomide	# del1
+aktsioomist	aksioomist	# del1
+alandatatud	alandatud	# del2_repetition
+algatud	algatatud	# strings
+alitsuse	valitsuse	# add1
+allaes	alles	# del1
+allikirjade	allkirjade	# del1
+allmaailmategelese	allmaailmategelase	# subst1_aeiou2aeiou
+alusatb	alustab	# trans_12-21
+aluseka	aluseks	# subst1_kb_next
+alustatab	alustab	# del2_repetition
+amdinistratsioon	administratsioon	# trans_12-21
+ame	amet	# add1
+ametiiskute	ametiisikute	# add1
+ametiklibike	ametikilbike	# trans_12-21
+ametkondadae	ametkondade	# del1
+ametliennuk	ametilennuk	# trans_12-21
+anatavad	antavad	# del1
+andemeid	andmeid	# del1
+andemid	andmeid	# trans_12-21
+apelatsioonikaebuse	apellatsioonikaebuse	# add1_one2double
+apellatsiooniprotsesti	apellatsiooniprotesti	# del1
+appelatsioonikaebuse	apellatsioonikaebuse	# complex
+appellatsiooni	apellatsiooni	# del1_double2one
+appellatsioonikaebuse	apellatsioonikaebuse	# del1_double2one
+appellatsioonikaebuse	apellatsioonikaebuse	# del1_double2one
+appellatsioonikaebuses	apellatsioonikaebuses	# del1_double2one
+appellatsioonikaebust	apellatsioonikaebust	# del1_double2one
+appellatsioonikohus	apellatsioonikohus	# del1_double2one
+appellatsiooniseadus	apellatsiooniseadus	# del1_double2one
+aravatavad	arvatavad	# del1
+arenguse	arengus	# del1
+arenguse	arengusse	# add1_one2double
+argumenteeeritud	argumenteeritud	# del1_double2one
+arreteerimis	arreteerimise	# add1
+arreterib	arreteerib	# add1_one2double
+aruaande	aruande	# del1_double2one
+arvatavsti	arvatavasti	# add1
+arvatest	arvates	# del1
+arvestatab	arvestatav	# subst1_kb_next
+arvestatab	arvestab	# del2_repetition
+arvutusöid	arvutustöid	# add1
+aseeesimees	aseesimees	# del1_double2one
+asesimeeste	aseesimeeste	# add1_one2double
+asjolude	asjaolude	# add1
+asjolusid	asjaolusid	# add1
+assamble	assamblee	# add1_one2double
+assotatsiooni	assotsiatsiooni	# add2_adjacent
+astapäeva	aastapäeva	# add1_one2double
+astesevaks	asetsevaks	# trans_12-21
+astustele	asutustele	# add1
+astäitja	asetäitja	# add1
+asututud	astutud	# del1
+atraktiivemaid	atraktiivsemaid	# add1
+autoriÕiguse	autoriõiguse	# subst_accents
+avald	vald	# del1
+avlikus	avalikus	# add1
+beensiinijaama	bensiinijaama	# del1_double2one
+biokeemiassse	biokeemiasse	# del1_double2one
+blianss	bilanss	# trans_12-21
+bõrsil	börsil	# subst_accents
+delegatsiooon	delegatsioon	# del1_double2one
+demogoogia	demagoogia	# subst1_aeiou2aeiou
+detsemris	detsembris	# add1
+disiplinaarbüroo	distsiplinaarbüroo	# add2_adjacent
+disiplinaarkorras	distsiplinaarkorras	# add2_adjacent
+disptšer	dispetšer	# add1
+distiplinaarkonnas	distsiplinaarkonnas	# add1
+distiplinaarvastutusele	distsiplinaarvastutusele	# add1
+distsipliiniriikujate	distsipliinirikkujate	# subst2_aab2abb
+dramaturiga	dramaturgia	# trans_12-21
+dushiruumis	duširuumis	# subst_accents_sz
+džassi	džässi	# subst_accents
+eanam	enam	# del1
+ebakainenena	ebakainena	# del2_repetition
+ebakvaliteeetselt	ebakvaliteetselt	# del1_double2one
+ebaseduslikke	ebaseaduslikke	# add1
+ebastabiiliselt	ebastabiilselt	# del1
+edaspidiga	edaspidigi	# subst1_aeiou2aeiou
+eelistates	eelistades	# subst1_gbd
+eelitas	eelistas	# add1
+eelkontsultatsioonide	eelkonsultatsioonide	# del1
+eelkÕige	eelkõige	# subst_accents
+eestimaa	Eestimaa	# subst1_capitalize
+eestis	Eestis	# subst1_capitalize
+efektiisemat	efektiivsemat	# add1
+effektiivne	efektiivne	# del1_double2one
+ehhki	ehkki	# subst2_aab2abb
+ehmataad	ehmatad	# del1_double2one
+ehmnunud	ehmunud	# del1
+ekisimatult	eksimatult	# del1
+ekisteeri	eksisteeri	# add1
+ekologit^seskogo	ekologitšeskogo	# subst_accents_sz
+eksperiisist	ekspertiisist	# add1
+eksploateerinud	ekspluateerinud	# subst1_aeiou2aeiou
+eksponenet	eksponente	# trans_12-21
+eksproditulud	eksporditulud	# trans_12-21
+elanikonna	elanikkonna	# add1_one2double
+elektritseeritud	elektriseeritud	# del1
+elektrülekandeliinide	elektriülekandeliinide	# add1
+elmine	eelmine	# add1_one2double
+elmine	elamine	# add1
+emissioni	emissiooni	# add1_one2double
+emotsiaalne	emotsionaalne	# add2_adjacent
+emotsinaalse	emotsionaalse	# add1
+endasi	edasi	# del1
+endastmõitetav	endastmõistetav	# add1
+enegreetikaminister	energeetikaminister	# trans_12-21
+energeetikulele	energeetikutele	# subst1
+energipurse	energiapurse	# add1
+ense	enese	# add1
+ensele	enesele	# add1
+epillepsia	epilepsia	# del1_double2one
+eraaktsiaseltisd	eraaktsiaseltsid	# trans_12-21
+erastaministri	erastamisministri	# complex
+erastamisagenguurile	erastamisagentuurile	# subst1
+erldati	eraldati	# add1
+esialgestel	esialgsetel	# trans_12-21
+esinadaja	esindaja	# del1
+esinadmisele	esindamisele	# trans_12-21
+esindjatena	esindajatena	# add1
+esmakaordselt	esmakordselt	# del1
+esmete	esemete	# add1
+ettevÕtete	ettevõtete	# subst_accents
+ettevõääratud	ettevääratud	# del1
+ettpanek	ettepanek	# add1
+factõ	facto	# subst1
+figutatsioonidele	figuratsioonidele	# subst1_kb_next
+fikseeritt	fikseeritut	# add1
+finantserib	finantseerib	# add1_one2double
+finats-	finants-	# add1
+finatskonto	finantskonto	# add1
+forseeritud	forsseeritud	# add1_one2double
+fraksioon	fraktsioon	# add1
+fraksioon	fraktsioon	# add1
+fraksiooni	fraktsiooni	# add1
+fraksioonide	fraktsioonide	# add1
+fraksioonidest	fraktsioonidest	# add1
+füüsikainsituut	füüsikainstituut	# add1
+gripihaigte	gripihaiget	# trans_12-21
+habmenoaga	habemenoaga	# add1
+haigetunutest	haigestunutest	# add1
+hakaks	hakkas	# trans_12-21
+hakatakstsionäridele	kaasaktsionäridele	# complex
+hakkasd	hakkasid	# add1
+hakkata	hakata	# del1_double2one
+hanekasvatusaaduste	hanekasvatussaaduste	# add1_one2double
+hariduministeeriumis	haridusministeeriumis	# add1
+haridusmininisteeriumil	haridusministeeriumil	# del2_repetition
+haridusministeerumi	haridusministeeriumi	# add1
+harrastjaid	harrastajaid	# add1
+heliressižõõri	helirežissööri	# complex
+hiiilida	hiilida	# del1_double2one
+hindmine	hindamine	# add1
+hingmisteede	hingamisteede	# add1
+hinnagu	hinnangu	# add1
+hinnagul	hinnangul	# add1
+hinnanalandust	hinnaalandust	# del1
+hkkavad	hakkavad	# add1
+hoised	hoiused	# add1
+hoogse	hoogsa	# subst1_aeiou2aeiou
+hoois	hoopis	# add1
+huivtavast	huvitavast	# trans_12-21
+hulkrite	hulkurite	# add1
+huvitataud	huvitatud	# del1
+hädapaärane	hädapärane	# del1
+hüdraunilised	hüdraulilised	# subst1
+ideelis=poliitilisel	ideelis-poliitilisel	# subst1
+idenfitseerida	identifitseerida	# add2_adjacent
+idenfitseerimiseks	identifitseerimiseks	# add2_adjacent
+idenfitseerimist	identifitseerimist	# add2_adjacent
+ikkkagi	ikkagi	# del1_double2one
+ilmenud	ilmnenud	# add1
+ilut0ulestik	ilutulestik	# del1
+imees	mees	# del1
+imees	imedes	# add1
+impliitsetest	implitsiitsetest	# complex
+indifirentne	indiferentne	# subst1_aeiou2aeiou
+indvaliidiks	invaliidiks	# del1
+inertspumapdes	inertspumpades	# trans_12-21
+infornatsioon	informatsioon	# subst1_kb_next
+ingtegreeruda	integreeruda	# del1
+intrtessimäära	intressimäära	# del1
+invertariseermine	inventariseerimine	# complex
+investerringuid	investeeringuid	# subst2_aab2abb 
+inveteerimisfondidele	investeerimisfondidele	# add1
+iseaskalu	isaskalu	# del1
+iseeneseestmõistetatavalt	iseenesestmõistetavalt	# complex
+iseloomilike	iseloomulike	# subst1_aeiou2aeiou_kb_next
+isikusega	isiksusega	# add1
+jaanurini	jaanuarini	# add1
+jaanuris	jaanuaris	# add1
+jagunaved	jagunevad	# trans
+joatusfunktsioon	jaotusfunktsioon	# trans_12-21
+jookul	jooksul	# add1
+joomaruluse	joomarluse	# del1
+joonsitest	joonistest	# trans_12-21
+juhatajua	juhataja	# del1
+juhatja	juhataja	# add1
+juhitima	juhtima	# del1
+juhtatab	juhatab	# del1
+juhtiav	juhitav	# trans_12-21
+jurde	juurde	# add1_one2double
+juriidiilised	juriidilised	# del1_double2one
+jursidiktsiooni	jurisdiktsiooni	# trans_12-21
+jututajamine	jutuajamine	# del1
+järeleusele	järeldusele	# subst1
+järgenenud	järgnenud	# del1
+jätgmisel	järgmisel	# subst1_kb_next
+jõiguslikke	õiguslikke	# del1
+kKoalitsioonivalitsuse	koalitsioonivalitsuse	# del1
+kaasaagse	kaasaegse	# subst1_aeiou2aeiou
+kahekas	kaheksas	# add1
+kahekas	kaheksa	# trans_12-21
+kahekümnendatel-kolmkümnendatel	kahekümnendatel-kolmekümnendatel	# add1
+kahjusus	kahjustus	# add1
+kahtlusatatavatena	kahtlustatavatena	# del1
+kahtlustuna	kahtlustatuna	# strings
+kaitsejõdude	kaitsejõudude	# add1
+kaitsestrukuuridele	kaitsestruktuuridele	# add1
+kaitsesüstmisi	kaitsesüstimisi	# add1
+kakkaksid	hakkaksid	# subst1
+kaksteissõrmikusse	kaksteistsõrmikusse	# add1
+kallasetelt	kallastelt	# del1
+kalleletungi	kallaletungi	# subst1_aeiou2aeiou
+kanidaati	kandidaati	# add1
+kanseleile	kantseleile	# add1
+kassetmagnetofoni	kassettmagnetofoni	# add1_one2double
+kasutamamta	kasutamata	# del1
+kasutatab	kasutatav	# subst1_kb_next
+kasutatab	kasutab	# del2_repetition
+kasutatatud	kasutatud	# del2_repetition
+kasuvajaga	kasvuajaga	# trans_12-21
+katasroofi	katastroofi	# add1
+kauabavahetuses	kaubavahetuses	# del1
+kauabgrupid	kaubagrupid	# trans_12-21
+kaubanduspolitiika	kaubanduspoliitika	# trans_12-21
+kavandaminsel	kavandamisel	# del1
+kavataseb	kavatseb	# del1
+keskfraksiooni	keskfraktsiooni	# add1
+keskkonnaminsteerium	keskkonnaministeerium	# add1
+keskkonnaminsteeriumi	keskkonnaministeeriumi	# add1
+keskkõõl	keskööl	# subst_accents_plus
+keskomisjon	keskkomisjon	# add1_one2double
+keskonnaministeeriumi	keskkonnaministeeriumi	# add1_one2double
+keskuurimisburoo	keskuurimisbüroo	# subst_accents
+kesmine	keskmine	# add1
+kiirestisti	kiiresti	# del3_repetition
+kind	kinod	# add1
+kindle	kindel	# trans_12-21
+kindlustustamise	kindlustamise	# del3_repetition
+kipunud	kippunud	# add1_one2double
+kirjtuanud	kirjutanud	# trans_12-21
+koalitsiooniläbirääkmised	koalitsiooniläbirääkimised	# add1
+kodakondsusesta	kodakondsuseta	# del1
+kodakonsusametisse	kodakondsusametisse	# add1
+koefitsendi	koefitsiendi	# add1
+kogress	kongress	# add1
+kogumsitöö	kogumistöö	# trans_12-21
+koguväätuses	koguväärtuses	# add1
+kohakaaslsele	kohakaaslusele	# add1
+kohatade	kohtade	# del1
+kohlikud	kohalikud	# add1
+kohtueskpertiisi	kohtuekspertiisi	# trans_12-21
+kohtuotuse	kohtuotsuse	# add1
+kohtuprotsesseil	kohtuprotsessil	# del1
+kohtustuste	kohustuste	# del1
+kohukunult	kohkunult	# del1
+kohustusetega	kohustustega	# del1
+kokkkukeerutatud	kokkukeerutatud	# del1_double2one
+kokkuleppet	kokkulepped	# subst1_gbd
+kokkuluuluvuse	kokkukuuluvuse	# subst1_kb_next
+kokkurentsivõimest	konkurentsivõimest	# subst1
+kolaitsioonis	koalitsioonis	# trans_12-21
+koljuvigatusega	koljuvigastusega	# add1
+kolnurk	kolmnurk	# add1
+kolonelelitnant	kolonelleitnant	# trans_12-21
+kolossalseid	kolossaalseid	# add1_one2double
+komapnii	kompanii	# trans_12-21
+komenteerides	kommenteerides	# add1_one2double
+komissaar	komissar	# del1_double2one
+kommertpankade	kommertspankade	# add1
+komplekteeerida	komplekteerida	# del1_double2one
+kompnaiidele	kompaniidele	# trans_12-21
+kompostitsiooni-teooria	kompositsiooni-teooria	# del1
+komsolisekrtär	komsomolisekrtär	# add2_adjacent
+komsomilijuht	komsomolijuht	# subst1_aeiou2aeiou_kb_next
+komsomoliorghanisatsioonid	komsomoliorganisatsioonid	# del1
+kondralpolkovnik	kindralpolkovnik	# subst1_aeiou2aeiou_kb_next
+konkreetsid	konkreetseid	# add1
+konlfikti	konflikti	# trans_12-21
+konseptsiooni	kontseptsiooni	# add1
+konseptuaalselt	kontseptuaalselt	# add1
+konsevatooriumi	konservatooriumi	# add1
+konstanteerida	konstateerida	# del1
+konsultiivset	konsultatiivset	# strings
+konterni	kontserni	# add1
+konternile	kontsernile	# add1
+kontolli	kontrolli	# add1
+kontollitit	kontrolliti	# complex
+kontris	kontoris	# add1
+kontrsteerub	kontrasteerub	# add1
+kontsepsioonis	kontseptsioonis	# add1
+kontsultatsioone	konsultatsioone	# del1
+konventsi	konverentsi	# add2_adjacent
+konvrentsi	konverentsi	# add1
+koondprotree	koondportree	# trans_12-21
+kooostatud	koostatud	# del1_double2one
+koordindaadid	koordinaadid	# del1
+koostatakase	koostatakse	# del1
+kopmenseerimiseks	kompenseerimiseks	# trans_12-21
+kora	korra	# add1_one2double
+kordiori	koridori	# trans_12-21
+kordumatutu	kordumatut	# del1
+koristuseetööliste	koristustööliste	# del2_adjacent
+korrladajad	korraldajad	# trans_12-21
+korvalt	kõrvalt	# subst_accents
+kotrollima	kontrollima	# add1
+kresiidiressursse	krediidiressursse	# subst1_kb_next
+kritiseetis	kritiseeris	# subst1_kb_next
+kujundakaks	kujundajaks	# subst1_kb_next
+kujunenenud	kujunenud	# del2_repetition
+kujununenud	kujunenud	# del2_repetition
+kuranti	kursanti	# add1
+kuritarvitarvitajatele	kuritarvitajatele	# complex
+kustiinimese	kunstiinimese	# add1
+kutseladele	kutsealadele	# add1
+kutser	kutsar	# subst1_aeiou2aeiou
+kutsustud	kutsutud	# del1
+kuuulub	kuulub	# del1_double2one
+kvaralis	kvartalis	# add1
+kvartlis	kvartalis	# add1
+kÕigi	kõigi	# subst_accents
+kÕik	kõik	# subst_accents
+kÕiki	kõiki	# subst_accents
+kÕnele	kõnele	# subst_accents
+käibmaksuta	käibemaksuta	# add1
+käitmist	käitumist	# add1
+käivitaamiset	käivitamist	# del2_nonadjacent
+kälalisena	külalisena	# subst_accents
+käsisid	käisid	# del1
+käskirjale	käsikirjale	# add1
+käskirjale	käskkirjale	# add1_one2double
+kõigekülgsemalt	kõigekülgselt	# del2_adjacent
+küsitlutest	küsitlustest	# add1
+laebimüüki	läbimüüki	# complex
+laeimalt	laiemalt	# trans_12-21
+laenuprotfell	laenuportfell	# trans_12-21
+laenuprotfelli	laenuportfelli	# trans_12-21
+laenuprotfellis	laenuportfellis	# trans_12-21
+lahendmise	lahendamise	# add1
+lahkumisvisiididile	lahkumisvisiidile	# del2_repetition
+lahunemine	lagunemine	# subst1_kb_next
+laiendmise	laiendamise	# add1
+laienenenud	laienenud	# del2_repetition
+lambakasvatusaaduste	lambakasvatussaaduste	# add1_one2double
+lammautatud	lammutatud	# del1
+lastiruunis	lastiruumis	# subst1_kb_next
+lavastja	lavastaja	# add1
+lavatusega	lavastusega	# add1
+lavatuses	lavastuses	# add1
+leavaga	laevaga	# trans_12-21
+lennunnujaama	lennujaama	# del3_repetition
+libneraaldemokraatliku	liberaaldemokraatliku	# del1
+liguliseks	laiguliseks	# add1
+lihakombiaadi	lihakombinaadi	# add1
+lihsalt	lihtsalt	# add1
+lihtalt	lihtsalt	# add1
+lihtustumise	lihtsustumise	# add1
+liiklusohutusnädat	liiklusohutusnädal	# subst1
+liikmeskpankade	liikmespankade	# del1
+liilad	lillad	# subst2_aab2abb
+liimeks	liikmeks	# add1
+liimete	liikmete	# add1
+liimete	liikmete	# add1
+liimete	liikmete	# add1
+liimete	liikmete	# add1
+likviidus	likviidsus	# add1
+linatoseks	linateoseks	# add1
+linnukasvatusaadusi	linnukasvatussaadusi	# add1_one2double
+lisaressurse	lisaressursse	# add1_one2double
+litsenseerimise	litsentseerimise	# add1
+litsenseerimisele	litsentseerimisele	# add1
+litsenseeritavate	litsentseeritavate	# add1
+litsensitaotluse	litsentsitaotluse	# add1
+lituste	laituste	# add1
+lustusfirmale	alustusfirmale	# add1
+lÕpetab	lõpetab	# subst_accents
+lÜhikese	lühikese	# subst_accents
+läbirääkimisapartner	läbirääkimispartner	# del1
+läbirääkmised	läbirääkimised	# add1
+läänepolsele	läänepoolsele	# add1_one2double
+lõpema	lõppema	# add1_one2double
+lõpmatas	lõpmatus	# subst1_aeiou2aeiou
+lõppkokkuvõtes	lõppkokkuvõttes	# add1_one2double
+lühekese	lühikese	# subst1_aeiou2aeiou
+maaanoored	maanoored	# del1_double2one
+maaerakonade	maaerakondade	# add1
+maaimasõja	maailmasõja	# add1
+maakonaas	maakonnas	# subst2_aab2abb
+maanteee	maantee	# del1_double2one
+maistrivõistluste	meistrivõistluste	# subst1_aeiou2aeiou
+majandukolledž	majanduskolledž	# add1
+majanduliku	majandusliku	# add1
+majandulikult	majanduslikult	# add1
+majandusanktsioonide	majandussanktsioonide	# add1_one2double
+majandusminsteeriumi	majandusministeeriumi	# add1
+majandusporgramm	majandusprogramm	# trans_12-21
+majandussanksioonide	majandussanktsioonide	# add1
+majandussanktsioonie	majandussanktsioone	# del1
+majandussanktsioonie	majandussanktsioonide	# add1
+majandussantksioone	majandussanktsioone	# trans_12-21
+majapidapidamisesemete	majapidamisesemete	# complex
+maksistlik	marksistlik	# add1
+mandaaati	mandaati	# del1_double2one
+mangtub	mangub	# del1
+marksimi-leninismi	marksismi-leninismi	# add1
+matejali	materjali	# add1
+mauseoleum	mausoleum	# del1
+mdiagi	midagi	# trans_12-21
+meedlivat	meeldivat	# trans_12-21
+meedodi	meetodi	# subst1_gbd
+meeleeolu	meeleolu	# del1_double2one
+meelevallasd	meelevallas	# del1
+meertit	meetrit	# trans_12-21
+metasameti	metsaameti	# trans_12-21
+metsaaaluse	metsaaluse	# del1_double2one
+midagai	midagi	# del1
+migratisooniamet	migratsiooniamet	# trans_12-21
+miipildujaroodu	miinipildujaroodu	# add2_adjacent
+mijonit	miljonit	# add1
+mimimaalset	minimaalset	# subst1_kb_next
+mineraalaväetisi	mineraalväetisi	# del1
+ministriporfelli	ministriportfelli	# add1
+minstrikohad	ministrikohad	# add1
+mitmekordel	mitmekordsel	# add1
+mitmesugusete	mitmesuguste	# del1
+mittestandardste	mittestandardsete	# add1
+mittetulundusorganistatsiooni	mittetulundusorganisatsiooni	# del1
+monoment	monument	# subst1_aeiou2aeiou
+moodutas	moodustas	# add1
+mudiugi	muidugi	# trans_12-21
+mustariibuline	mustatriibuline	# add1
+muutas	muutis	# subst1_aeiou2aeiou
+muuud	muud	# del1_double2one
+mäitavad	näitavad	# subst1_kb_next
+mälestuskonverets	mälestuskonverents	# add1
+mängujhtidele	mängujuhtidele	# add1
+märkam	märkame	# add1
+märs	märts	# add1
+märstil	märtsil	# trans_12-21
+määäruse	määruse	# del1_double2one
+mõlemilt	mõlemailt	# add1
+mõnikrod	mõnikord	# trans_12-21
+mõtleisn	mõtlesin	# trans_12-21
+mõtlemapanuv	mõtlemapanev	# subst1_aeiou2aeiou
+mõÕtmine	mõõtmine	# subst_accents
+mõõdapäämatu	möödapääsmatu	# complex
+mõõdnunud	möödunud	# complex
+müugisumma	müügisumma	# subst_accents
+naelstirlingit	naelsterlingit	# subst1_aeiou2aeiou
+naelstrilinguga	naelsterlingiga	# complex
+nahkkkuube	nahkkuube	# del1_double2one
+naisete	naiste	# del1
+naistarahvas	naisterahvas	# subst1_aeiou2aeiou
+narkologiaposte	narkoloogiaposte	# add1_one2double
+nee	need	# add1
+neeed	need	# del1_double2one
+nii-ii	nii-nii	# add1
+niiksusest	niiskusest	# trans_12-21
+niisugst	niisugust	# add1
+niisugunr	niisugune	# subst1_kb_next
+nisid	nišid	# subst_accents_sz
+nominaalväärtsuses	nominaalväärtuses	# del1
+nominaalväätusega	nominaalväärtusega	# add1
+nominaalväätusest	nominaalväärtusest	# add1
+noortelmanahhid	noortealmanahhid	# add1
+normaasete	normaalsete	# add1
+normnaalseks	normaalseks	# del1
+novmbris	novembris	# add1
+numbes	umbes	# del1
+nusuutas	nuusutas	# trans_12-21
+näadlalpäevad	nädalapäevad	# complex
+näidatatakse	näidatakse	# del2_repetition
+näitatud	näidatud	# subst1_gbd
+näitemänguharrastjaid	näitemänguharrastajaid	# add1
+nõkogule	nõukogule	# add1
+nõukoguge	nõukogude	# subst1
+nüü	nüüd	# add1
+ohutuspiirkonnada	ohutuspiirkonda	# del2_adjacent
+ohutuspiirkonnada	ohutuspiirkonnad	# del1
+ohutussertfikaat	ohutussertifikaat	# add1
+ohvister	ohvitser	# trans_12-21
+olmas	olemas	# add1
+omavalistuste	omavalitsuste	# trans_12-21
+omavalitsutele	omavalitsustele	# add1
+ootmatus	ootamatus	# add1
+orgaanilsite	orgaaniliste	# trans_12-21
+organistatsioonide	organisatsioonide	# del1
+osatähtus	osatähtsus	# add1
+osatätmisele	osatäitmisele	# add1
+oskaonnajuhatajad	osakonnajuhatajad	# trans_12-21
+oskjonil	oksjonil	# trans_12-21
+oslevad	osalevad	# add1
+ostama	ostma	# del1
+ostetumatemaks	ostetuimateks	# complex
+ostetumatemaks	ostetumateks	# del2_adjacent
+ostsuse	otsuse	# del1
+ostsust	otsust	# del1
+ostsustavad	otsustavad	# del1
+otses	otsas	# subst1_aeiou2aeiou
+otsusi	otsuseid	# strings
+otsustatab	otsustab	# del2_repetition
+otsutasid	otsustasid	# add1
+otustas	otsustas	# add1
+paadiruunis	paadiruumis	# subst1_kb_next
+paigat	paigad	# subst1_gbd
+paikenb	paikneb	# trans_12-21
+paljunduaparaadi	paljundusaparaadi	# add1
+pankrotsitunud	pankrotistunud	# trans_12-21
+parandamaas	parandamas	# del1_double2one
+parandamisek	parandamiseks	# add1
+pareleelläbirääkimisi	paralleelläbirääkimisi	# complex
+paremerkondi	paremerakondi	# add1
+parlamedi	parlamendi	# add1
+parteikoosolekutle	parteikoosolekutele	# add1
+parteiorganisatsionide	parteiorganisatsioonide	# add1_one2double
+parteiorganisatsionil	parteiorganisatsioonil	# add1_one2double
+parternitega	partneritega	# trans
+patendimaeti	patendiameti	# trans_12-21
+peairektori	peadirektori	# add1
+pealikaudne	pealiskaudne	# add1
+pearaamtupidaja	pearaamatupidaja	# add1
+peasekrtär	peasekretär	# add1
+peaskeretäri	peasekretäri	# trans_12-21
+peatõõettevõtja	peatööettevõtja	# subst_accents
+pedirektor	peadirektor	# add1
+pensinäride	pensionäride	# add1
+peremes	peremees	# add1_one2double
+permeheks	peremeheks	# add1
+pigistma	pigistama	# add1
+piirijärjekorgade	piirijärjekordade	# subst1
+piiripunkides	piiripunktides	# add1
+pingeras	pingereas	# add1
+pinsetid	pintsetid	# add1
+pinsetiga	pintsetiga	# add1
+piraatttarkvara	piraattarkvara	# del1_double2one
+po	p.o	# complex
+poliititika	poliitika	# del2_repetition
+poliitkat	poliitikat	# add1
+poliitlisi	poliitilisi	# add1
+politseprefektuuri	politseiprefektuuri	# add1
+pommiähvrdus	pommiähvardus	# add1
+poolfinaaali	poolfinaali	# del1_double2one
+populaaruselt	populaarsuselt	# add1
+porjektorite	projektorite	# trans_12-21
+porjektsiooniaparaadid	projektsiooniaparaadid	# trans_12-21
+porjektsiooniaparaati	projektsiooniaparaati	# trans_12-21
+portsendilt	protsendilt	# trans_12-21
+positisiooni	positsiooni	# del1
+positsiivseks	positiivseks	# del1
+potensiaalse	potentsiaalse	# add1
+potrfellita	portfellita	# trans_12-21
+prageu	praegu	# trans_12-21
+preemisaajate	preemiasaajate	# add1
+presidenr	president	# subst1_kb_next
+pressikonvernts	pressikonverents	# add1
+pressikonverntsil	pressikonverentsil	# add1
+pressisektretäri	pressisekretäri	# del1
+profašištliku	profašistliku	# subst1
+professsor	professor	# del1_double2one
+progressivne	progressiivne	# add1_one2double
+prokurori	prokuröri	# subst_accents
+protsesti	protesti	# del1
+protsude	portsude	# trans_12-21
+psüühhikaga	psüühikaga	# del1_double2one
+puhakskasum	puhaskasum	# del1
+puhasturajatiste	puhastusrajatiste	# add1
+puhkeenuseid	puhketeenuseid	# add2_adjacent
+puudvad	puuduvad	# add1
+pärastlÕunal	pärastlõunal	# subst_accents
+pärisalajoo	pärisajaloo	# trans
+pääasevad	pääsevad	# del1
+päästerõngkas	päästerõngaks	# trans_12-21
+põgenda	põgeneda	# add1
+põhiaktsionaäri	põhiaktsionäri	# del1
+põhjaplakudes	põhjaplankudes	# add1
+põhjusdeks	põhjusteks	# subst1_gbd
+põhjusdeks	põhjuseks	# del1
+põllumehwed	põllumehed	# del1
+pühpäevani	pühapäevani	# add1
+raadio-kassetmagnetofoni	raadio-kassettmagnetofoni	# add1_one2double
+raamtuid	raamatuid	# add1
+rahkesti	rohkesti	# subst1_aeiou2aeiou
+rahuslike	rahvuslike	# add1
+rahuvsvaheliste	rahvusvaheliste	# trans_12-21
+rahuvusvaheline	rahvusvaheline	# del1
+rahuvusvahelises	rahvusvahelises	# del1
+rahvasteavahelist	rahvastevahelist	# del1
+rahvusuhteid	rahvussuhteid	# add1_one2double
+rakendadatakse	rakendatakse	# del2_repetition
+rakendatnud	rakendanud	# del1
+raldas	eraldas	# add1
+rasketi	raskesti	# add1
+raskutest	raskustest	# add1
+rasvasisaldsega	rasvasisaldusega	# add1
+ratifitserida	ratifitseerida	# add1_one2double
+raudte	raudtee	# add1_one2double
+raudteeplatovrmi	raudteeplatvormi	# trans_12-21
+rauteekonteineritäie	raudteekonteineritäie	# add1
+raviastuste	raviasutuste	# add1
+reformimi	reformini	# subst1_kb_next
+reguleerimne	reguleerimine	# add1
+reguleermispolt	reguleerimispolt	# add1
+reismise	reisimise	# add1
+restarueerimistööde	restaureerimistööde	# trans_12-21
+resultaar	resultaat	# subst1_kb_next
+resulutsiooni	resolutsiooni	# subst1_aeiou2aeiou
+revisioni	revisjoni	# subst1
+revisioniaruande	revisjoniaruande	# subst1
+revisionikomisjon	revisjonikomisjon	# subst1
+riigikogussse	riigikogusse	# del1_double2one
+riigilie	riigile	# del1
+riigkogu	riigikogu	# add1
+ringireismise	ringireisimise	# add1
+ringleda	ringelda	# trans_12-21
+roppi	roppe	# subst1_aeiou2aeiou
+rumaa	rumala	# add1
+räägb	räägib	# add1
+rääksin	rääkisin	# add1
+rühimtustele	rühmitustele	# trans_12-21
+saaatsid	saatsid	# del1_double2one
+saabuavd	saabuvad	# trans_12-21
+saadikukandidadi	saadikukandidaadi	# add1_one2double
+saadunud	saabunud	# subst1
+sampinjoni	šampinjoni	# subst_accents_sz
+sarnenevad	sarnanevad	# subst1_aeiou2aeiou
+satistikaprogrammiga	statistikaprogrammiga	# add1
+sattnud	sattunud	# add1
+sdakond	sadakond	# add1
+se	see	# add1_one2double
+seepärst	seepärast	# add1
+seeriamootriga	seeriamootoriga	# add1
+seiseb	seisab	# subst1_aeiou2aeiou
+seiseb	seisneb	# add1
+seistme	seitsme	# trans_12-21
+seisukihtade	seisukohtade	# subst1_aeiou2aeiou_kb_next
+seite	seitse	# add1
+seite	seire	# subst1_kb_next
+seiukohale	seisukohale	# add1
+sekrtärid	sekretärid	# add1
+sellepärasrt	sellepärast	# del1
+sellepärst	sellepärast	# add1
+senitele	seintele	# trans_12-21
+septebris	septembris	# add1
+sertfikaat	sertifikaat	# add1
+sihtfondega	sihtfondidega	# add2_adjacent
+sihukuste	sihukeste	# subst1_aeiou2aeiou
+sillerimistehnoloogia	sileerimistehnoloogia	# subst2_aab2abb
+sisisutatud	sisustatud	# complex
+sisladuvale	sisalduvale	# trans_12-21
+sisseadmine	sisseseadmine	# add2_adjacent
+sissejuhtatus	sissejuhatus	# del1
+sissejuhtuseks	sissejuhatuseks	# add1
+sissesõidviisa	sissesõiduviisa	# add1
+sisutada	sisustada	# add1
+skaudiorgnisatsioonidevahelisi	skaudiorganisatsioonidevahelisi	# add1
+skiitva	kiitva	# del1
+skyscaper	skyscraper	# add1
+so	s.o	# complex
+soprdihalli	spordihalli	# trans_12-21
+sotsalistliku	sotsialistliku	# add1
+sotsialisliku	sotsialistliku	# add1
+spetisialistid	spetsialistid	# del1
+spetsiaaselt	spetsiaalselt	# add1
+sse	see	# subst2_aab2abb
+stabilseerimistunnel	stabiliseerimistunnel	# add1
+standardeerimisküsimusi	standardiseerimisküsimusi	# add2_adjacent
+stateegiliste	strateegiliste	# add1
+statistikamaetite	statistikaametite	# trans_12-21
+stiilise	stiilide	# subst1_kb_next
+strandarditeni	standarditeni	# del1
+strontsimi	strontsiumi	# add1
+strukuursed	struktuursed	# add1
+suheted	suhted	# del1
+suheted	suhete	# del1
+sularahautomaati	sularahaautomaati	# add1_one2double
+suunnatud	suunatud	# del1_double2one
+suurede	suurde	# del1
+suurpankka	suurpanka	# del1_double2one
+suuutnud	suutnud	# del1_double2one
+sälitades	säilitades	# add1
+sõdab	sõidab	# add1
+sõdrulik	sõdurlik	# trans_12-21
+sõjajärsetes	sõjajärgsetes	# add1
+sõmiti	sõlmiti	# add1
+sõnadede	sõnade	# del2_repetition
+sü1udistused	süüdistused	# complex
+sügvuses	sügavuses	# add1
+sümfoniaorkestrid	sümfooniaorkestrid	# add1_one2double
+sümpoosiumil	sümpoosionil	# strings
+süttitamine	sütitamine	# del1_double2one
+süüditas	süüdistas	# add1
+tabeltti	tabletti	# trans_12-21
+tagajärele	tagajärjel	# complex
+tagsi	tagasi	# add1
+tagukse	tagaukse	# add1
+tahmist	tahtmist	# add1
+tahtistki	tahtiski	# del1
+talleatud	talletatud	# add1
+tallinnlastelt	tallinlastelt	# del1_double2one
+tallinnlastest	tallinlastest	# del1_double2one
+tasapidi	tasapisi	# subst1_kb_next
+teadamata	teadmata	# del1
+teadamata	teatamata	# subst1_gbd
+teatritekside	teatritekstide	# add1
+tedlikus	teadlikus	# add1
+teenidavas	teenindavas	# add1
+tegevlikult	tegelikult	# del1
+tegistreerimata	registreerimata	# subst1_kb_next
+teglikult	tegelikult	# add1
+tehatava	tehtava	# del1
+teisit	teisiti	# add1
+teispidi	teistpidi	# add1
+teispäevasel	teisipäevasel	# add1
+teistmisküsimuse	testimisküsimuse	# trans
+teistmisküsimust	testimisküsimust	# trans
+tekkkinud	tekkinud	# del1_double2one
+televisooni	televisiooni	# add1
+televisooniavalduses	televisiooniavalduses	# add1
+tendets	tendents	# add1
+tendetsi	tendentsi	# add1
+terpikojast	trepikojast	# trans_12-21
+tihenedamise	tihendamise	# del1
+tippihetked	tipphetked	# del1
+to=imetusele	toimetusele	# del1
+to=itlustusettevõtete	toitlustusettevõtete	# del1
+toiduainetetõštuse	toiduainetetööstuse	# complex
+toimtuse	toimetuse	# add1
+toiteelemenditesisaldus	toiteelementidesisaldus	# trans
+toitlustamisseptsialist	toitlustamisspetsialist	# trans_12-21
+tolleaegases	tolleaegses	# del1
+tootmialased	tootmisalased	# add1
+tootmijuhtide	tootmisjuhtide	# add1
+tootmisprotessis	tootmisprotsessis	# add1
+tootmiõpetuse	tootmisõpetuse	# add1
+tootmiõpetusega	tootmisõpetusega	# add1
+topisid	toppisid	# add1_one2double
+tradistiooniliselt	traditsiooniliselt	# trans_12-21
+tradistsiooniks	traditsiooniks	# del1
+transporidvahendid	transpordivahendid	# trans_12-21
+trukitud	trükitud	# subst_accents
+trükiväljannetes	trükiväljaannetes	# add1_one2double
+tsandardi-	standardi-	# trans_12-21
+tsentrisliku	tsentristliku	# add1
+tsestoodidega	testoodidega	# del1
+tsitaadidega	tsitaatidega	# subst1_gbd
+tsuse	otsuse	# add1
+tudmatu	tundmatu	# add1
+tulbli	tubli	# del1
+tulemustestest	tulemustest	# del3_repetition
+tulitelvi	tulirelvi	# subst1_kb_next
+tunnusjooneteks	tunnusjoonteks	# del1
+turismitõtajate	turismitöötajate	# subst_accents_plus
+turukonjuktuuri	turukonjunktuuri	# add1
+turvaelemnti	turvaelementi	# add1
+tutuvunud	tutvunud	# del1
+tutuvustab	tutvustab	# del1
+tutuvustas	tutvustas	# del1
+tutuvustavad	tutvustavad	# del1
+tutvusmisteenistusi	tutvumisteenistusi	# del1
+tuvuda	tutvuda	# add1
+tuvustavad	tutvustavad	# add1
+täheb	läheb	# subst1
+täheladas	täheldas	# del1
+tähtaaeg	tähtaeg	# del1_double2one
+tähtaaegu	tähtaegu	# del1_double2one
+tähtde	tähtede	# add1
+täiskoossseisuga	täiskoosseisuga	# del1_double2one
+tänseni	tänaseni	# add1
+tõenäline	tõenäoline	# add1
+tõenäolislt	tõenäoliselt	# add1
+tõenäolselt	tõenäoliselt	# add1
+tõetõendid	töötõendid	# subst2_adjacent
+tõis	tõsi	# trans_12-21
+tõis	õis	# del1
+tõotand	tõotanud	# add1
+tõsti	tõesti	# add1
+tõsud	tõusud	# add1
+tõõdanud	töötanud	# complex
+tööstili	tööstiili	# add1_one2double
+töövaidlussorganil	töövaidlusorganil	# del1_double2one
+umaksuvabamiinimumi	maksuvabamiinimumi	# del1
+univeraalkonstant	universaalkonstant	# add1
+univeraalsuse	universaalsuse	# add1
+usaldatavause	usaldatavuse	# del1
+uupunud	uppunud	# subst2_aab2abb
+vaatede	vaadete	# trans
+vaatepuntkist	vaatepunktist	# trans_12-21
+vabandandust	vabandust	# del3_repetition
+vabandandust	vabandanust	# del1
+vabdusekaotuse	vabadusekaotuse	# add1
+vaimsutusest	vaimustusest	# trans_12-21
+vajadustestest	vajadustest	# del3_repetition
+vajalikuse	vajalikkuse	# add1_one2double
+valdkonnaksi	valdkonnaski	# trans_12-21
+valdkonnaksi	valdkonnakski	# add1
+valimimiskünnist	valimiskünnist	# del2_repetition
+valimisliiit	valimisliit	# del1_double2one
+valimisllit	valimisliit	# subst2_aab2abb
+valimskomisjoni	valimiskomisjoni	# add1
+valistusjuhid	valitsusjuhid	# trans_12-21
+valit	valid	# subst1_gbd
+valit	valitud	# add2_adjacent
+valitsjuhtidega	valitsusjuhtidega	# add2_adjacent
+valitsusjõudest	valitsusjõududest	# add2_adjacent
+valitsuskoalitasiooni	valitsuskoalitsiooni	# del1
+valituskoalitsiooni	valitsuskoalitsiooni	# add1
+valmsitanud	valmistanud	# trans_12-21
+vanaasta	vanaaasta	# add1_one2double
+vandetõetuse	vandetõotuse	# subst1_aeiou2aeiou
+vangals	vanglas	# trans_12-21
+vastatikku	vastastikku	# add1
+vastavalitud	vastvalitud	# del1
+vastmängu	vastumängu	# add1
+vastuolistest	vastuolulistest	# add2_adjacent
+vastvalt	vastavalt	# add1
+vasuvõtmisel	vastuvõtmisel	# add1
+vebruaris	veebruaris	# add1_one2double
+vedruijuhtidelt	vedurijuhtidelt	# trans_12-21
+veid	vaid	# subst1_aeiou2aeiou
+vendeadvokaat	vandeadvokaat	# subst1_aeiou2aeiou
+vevasid	vaevasid	# add1
+vidoemontaažifirmade	videomontaažifirmade	# trans_12-21
+vigatuste	vigastuste	# add1
+viiavad	viivad	# del1
+viiavad	viitavad	# add1
+viieteistkümmeaastane	viieteistkümneaastane	# subst1_kb_next
+viivtada	viivitada	# add1
+voliatud	volitatud	# add1
+vormise	vormis	# del1
+vormise	vormisse	# add1_one2double
+vÕetud	võetud	# subst_accents
+vÕimalikuks	võimalikuks	# subst_accents
+vÕimalusi	võimalusi	# subst_accents
+vähens	vähenes	# add1
+väiksese	väikese	# del1
+väiksese	väikeses	# trans_12-21_plus
+väiksese	väikses	# del1
+välajkujunenud	väljakujunenud	# trans_12-21
+välajkutse	väljakutse	# trans_12-21
+välisministreeriumi	välisministeeriumi	# del1
+välismnisteerium	välisministeerium	# add1
+välissaatkonde	välissaatkondade	# add2_adjacent
+väärisele	väärilisele	# add2_adjacent
+väärtses	väärtuses	# add1
+väätus	väärtus	# add1
+võidlenud	võidelnud	# trans_12-21
+võimaline	võimeline	# subst1_aeiou2aeiou
+võimnaluste	võimaluste	# del1
+võlgenvuste	võlgnevuste	# trans_12-21
+võsitlustel	võistlustel	# trans_12-21
+vööratud	vöötatud	# subst1_kb_next
+ÖÖsel	Öösel	# subst_accents
+ÜlEMAAILMSELE	ÜLEMAAILMSELE	# subst1
+Ülemaailne	Ülemaaline	# trans_12-21
+Ülemaailne	Ülemaailmne	# add1
+Üleshitustöö	Ülesehitustöö	# add1
+äitäh	aitäh	# subst1
+älja	välja	# add1
+äre	ära	# subst1_aeiou2aeiou
+ärialseid	ärialaseid	# add1
+ärijutimiste	ärijuhtimiste	# add1
+õhkonnas	õhkkonnas	# add1_one2double
+õhtuamises	õhutamises	# trans_12-21
+õigaaegselt	õigeaegselt	# subst1_aeiou2aeiou
+õigeagne	õigeaegne	# add1
+õleda	öelda	# subst_accents_plus
+õledakse	öeldakse	# subst_accents_plus
+õledud	öeldud	# subst_accents_plus
+õlmimist	sõlmimist	# add1
+õppeainetaga	õppeainetega	# subst1_aeiou2aeiou
+õppsisn	õppisin	# complex
+õprotokollile	protokollile	# del1
+ühekskümneaastaseks	üheksakümneaastaseks	# add1
+üksikandidaatide	üksikkandidaatide	# add1_one2double
+ülalmanitud	ülalmainitud	# add1
+ülalpidamisekulud	ülalpidamiskulud	# del1
+üldkoosolel	üldkoosolekul	# add2_adjacent
+üldkoosolel	üldkoosolek	# subst1_kb_next
+üleasastumine	ülesastumine	# del1
+ülekannetete	ülekannete	# del2_repetition
+ülekannetete	ülekanneteta	# subst1_aeiou2aeiou
+ülessannete	ülesannete	# del1_double2one
+üliõplaskonna	üliõpilaskonna	# add1
+ülsuse	üldsuse	# add1
+ümberegistreerimist	ümberregistreerimist	# add1_one2double
+ümberrringi	ümberringi	# del1_double2one
+ümbitseva	ümbritseva	# add1
+ümer	ümber	# add1
+ündinud	sündinud	# add1
+ütels	ütles	# trans_12-21
+ütlasi	ühtlasi	# add1
+ütleda	ütelda	# trans_12-21
+žirinovski	Žirinovski	# subst1_capitalize
+teadusproleemidega	teadusprobleemidega	# add1
+noormes	noormees	# add1_one2double
+pankrotristununa	pankrotistununa	# del1
+rohkm	rohkem	# add1
+elektripiliit	elektripliit	# del1
+edaspdigi	edaspidigi	# add1
+tesehhi	tsehhi	# del1
+balalaureusetöö	bakalaureusetöö	# subst1_kb_next
+pärst	pärast	# add1
+tegevuslitsenti	tegevuslitsentsi	# add1
+puhkpilliorekester	puhkpilliorkester	# del1
+jumalakodas	jumalakojas	# subst1
+enekindluse	enesekindluse	# add2_adjacent
+mandliküspsis	mandliküpsis	# del1
+produtsentina	produtsendina	# subst1_gbd
+pekontorit	peakontorit	# add1
+kuurortite	kuurortide	# subst1_gbd
+naisterahavas	naisterahvas	# del1
+mitmu	mitu	# del1
+minimimaalseks	minimaalseks	# del2_repetition
+netsade	metsade	# subst1_kb_next
+keskonnaprobleeme	keskkonnaprobleeme	# add1_one2double
+varajata	varjata	# del1
+kudi	kuid	# trans_12-21
+omandissse	omandisse	# del1_double2one
+miliseid	milliseid	# add1_one2double
+tehunguid	tehinguid	# subst1_aeiou2aeiou_kb_next
+septmembris	septembris	# del1
+minnna	minna	# del1_double2one
+matkamarsuut	matkamarsruut	# add1
+mistri	misteri	# add1
+käisis	käisid	# subst1_kb_next
+ülestõumispüha	ülestõusmispüha	# add1
+katstroofiteadet	katastroofiteadet	# add1
+siimaani	siiamaani	# add1
+psüühiaater	psühhiaater	# subst2_aab2abb
+koeramanikud	koeraomanikud	# add1
+ettevõttete	ettevõtete	# del1_double2one
+kolveerand	kolmveerand	# add1
+sportist	spordist	# subst1_gbd
+valmistatame	valmistame	# del2_repetition
+mkirjutises	kirjutises	# del1
+äriparneritele	äripartneritele	# add1
+iseseivalt	iseseisvalt	# add1
+sanud	saanud	# add1_one2double
+kuuuluvad	kuuluvad	# del1_double2one
+kinoteateri	kinoteatri	# del1
+lagenud	langenud	# add1
+horvaaid	horvaadid	# add1
+põletushaaavadesse	põletushaavadesse	# del1_double2one
+uudishimulid	uudishimulikud	# add2_adjacent
+kasvatanaud	kasvatanud	# del1
+ellimineerida	elimineerida	# del1_double2one
+tunnne	tunne	# del1_double2one
+sildedad	siledad	# del1
+tendetnts	tendents	# del1
+erastamisvärtpaberiarvete	erastamisväärtpaberiarvete	# add1_one2double
+näitemänguangentuuri	näitemänguagentuuri	# del1
+müned	mõned	# subst_accents
+taganjärele	tagantjärele	# add1
+käsipallijuhide	käsipallijuhtide	# add1
+kohtast	kohast	# del1
+kõtvuti	kõrvuti	# subst1_kb_next
+hinanngu	hinnangu	# trans_12-21
+loositalse	loositakse	# subst1_kb_next
+tegelikuklt	tegelikult	# del1
+pesekretär	peasekretär	# add1
+tshempioneid	tšempioneid	# subst_accents_sz
+ühiskonnakoraldusega	ühiskonnakorraldusega	# add1_one2double
+suhtetest	suhetest	# del1
+andamata	andmata	# del1
+ravikindlustustamata	ravikindlustamata	# del3_repetition
+tutuvustamist	tutvustamist	# del1
+murjenda	morjenda	# subst1_aeiou2aeiou
+edasisese	edasise	# del2_repetition
+hinnastrukuur	hinnastruktuur	# add1
+listentsist	litsentsist	# trans_12-21
+vähemine	vähenemine	# add2_adjacent
+sponorite	sponsorite	# add1
+parlment	parlament	# add1
+mõelmal	mõlemal	# trans_12-21
+paljulastelistesse	paljulapselistesse	# subst2_adjacent
+läbimüüük	läbimüük	# del1_double2one
+pallingst	pallingust	# add1
+perakonna	perekonna	# subst1_aeiou2aeiou
+karikassse	karikasse	# del1_double2one
+agressiivuse	agressiivsuse	# add1
+liikluskindlutusega	liikluskindlustusega	# add1
+ummmikseisu	ummikseisu	# del1_double2one
+maitseelistustest	maitse-eelistustest	# add2_adjacent
+ränadmiseks	rändamiseks	# trans_12-21
+aatsas	aastas	# trans_12-21
+toorainee	tooraine	# del1_double2one
+seitmekümnedate	seitsmekümnedate	# add1
+tõlgendda	tõlgendada	# add1
+moodutada	moodustada	# add1
+ususasjade	usuasjade	# del1
+kinldustusteenuste	kindlustusteenuste	# trans_12-21
+üskikisikud	üksikisikud	# trans_12-21
+mitumepäevaseid	mitmepäevaseid	# del1
+taditsioonide	traditsioonide	# add1
+isenergeneetika	insenergeneetika	# add1
+tegedirektori	tegevdirektori	# add1
+krediidite	krediitide	# trans
+hulja	hulka	# subst1_kb_next
+tehate	tahate	# subst1_aeiou2aeiou
+ütlem	ütlema	# add1
+aaastal	aastal	# del1_double2one
+elukeskonnast	elukeskkonnast	# add1_one2double
+emeritus	emeeritus	# add1_one2double
+alkoholisaldusega	alkoholisisaldusega	# add2_adjacent
+mineraalve	mineraalvee	# add1_one2double
+penisonäride	pensionäride	# trans_12-21
+veeburar	veebruar	# trans_12-21
+ohvritete	ohvriteta	# subst1_aeiou2aeiou
+vehatanud	vahetanud	# trans
+kindlati	kindlasti	# add1
+tulvikku	tulevikku	# add1
+ülesandeksa	ülesandeks	# del1
+küllatki	küllaltki	# add1
+süstemi	süsteemi	# add1_one2double
+väheeffektiivne	väheefektiivne	# del1_double2one
+restruktrueerimise	restruktureerimise	# trans_12-21
+mingusugusegi	mingisugusegi	# subst1_aeiou2aeiou_kb_next
+isklikuks	isiklikuks	# add1
+kirede	kirgede	# add1
+kõigepeale	kõigepealt	# subst1
+pedirektori	peadirektori	# add1
+tagajärlej	tagajärjel	# trans
+mijoni	miljoni	# add1
+tõnisamäel	Tõnismäel	# complex
+mittevatavaks	mittevastavaks	# add1
+tagasipöördumisks	tagasipöördumiseks	# add1
+helloweeni	halloweeni	# subst1_aeiou2aeiou
+gõmnaasiumi	gümnaasiumi	# subst_accents
+mardiakari	mardikari	# del1
+mõttestatud	mõtestatud	# del1_double2one
+ebamäärse	ebamäärase	# add1
+manitsemama	manitsema	# del2_repetition
+järgele	järele	# del1
+aktiisitõusu	aktsiisitõusu	# add1
+vaatams	vaatamas	# add1
+naisportlane	naissportlane	# add1_one2double
+kolmada	kolmanda	# add1
+univesritase	universitase	# trans_12-21
+kinkus	kinkis	# subst1_aeiou2aeiou_kb_next
+edetablita	edetabelita	# add1
+klaasikalise	klassikalise	# subst2_aab2abb 
+teeninduspiirkod	teeninduspiirkond	# add1
+tutavad	tuttavad	# add1_one2double
+opositsoon	opositsioon	# add1
+likmete	liikmete	# add1_one2double
+võrdustamine	võrdsustamine	# add1
+ostustas	otsustas	# trans_12-21
+õprtajad	õpetajad	# subst1_kb_next
+riigieelrvesse	riigieelarvesse	# add1
+välisüliüpilaste	välisüliõpilaste	# subst_accents
+piirutusetehast	piiritusetehast	# subst1_aeiou2aeiou_kb_next
+muuutis	muutis	# del1_double2one
+arendusoskaonna	arendusosakonna	# trans_12-21
+kinnisid	kinnitasid	# add2_adjacent
+aregutõuke	arengutõuke	# add1
+mootosõidukimaksu	mootorsõidukimaksu	# add1
+interdistiplinaarsete	interdistsiplinaarsete	# add1
+torminiline	tormiline	# del2_adjacent
+puhendatud	pühendatud	# subst_accents
+sanaatooriumieluga	sanatooriumieluga	# del1_double2one
+adekvaatusega	adekvaatsusega	# add1
+eraiskud	eraisikud	# add1
+mõneki	mõnedki	# add1
+vajaksi	vajaksid	# add1
+investeerimifirma	investeerimisfirma	# add1
+astäitja	asetäitja	# add1
+relatonsile	relationsile	# add1
+põlend	põlenud	# add1
+alusatamist	alustamist	# del1
+mõttesegi	mõttessegi	# add1_one2double
+ametiastuste	ametiasutuste	# add1
+viikümnekesi	viiekümnekesi	# add1
+kolleegimide	kolleegiumide	# add1
+süstemaatlisest	süstemaatilisest	# add1
+ülelt	ülalt	# subst1_aeiou2aeiou
+humanitarabina	humanitaarabina	# add1_one2double
+muuesum	muuseum	# trans_12-21
+noorkollegid	noorkolleegid	# add1_one2double
+altes	alates	# add1
+mõtes	mõttes	# add1_one2double
+jaanurist	jaanuarist	# add1
+patriahri	patriarhi	# trans_12-21
+seejures	seejuures	# add1_one2double
+nobembril	novembril	# subst1_kb_next
+nobembris	novembris	# subst1_kb_next
+resrvuaaripark	reservuaaripark	# add1
+kaaasa	kaasa	# del1_double2one
+tugikekeskuses	tugikeskuses	# del2_repetition
+grimmeering	grimeering	# del1_double2one
+pretendendeerija	pretendeerija	# del3_repetition
+kakskümmned	kakskümmend	# trans_12-21
+idakonferentsi	idakonverentsi	# subst1
+pornipiltide	pornopiltide	# subst1_aeiou2aeiou_kb_next
+ekranisrringuid	ekraniseeringuid	# complex
+sotsiaalkindustust	sotsiaalkindlustust	# add1
+setõttu	seetõttu	# add1_one2double
+maksam	maksma	# trans_12-21
+neuropataloogia	neuropatoloogia	# subst1_aeiou2aeiou
+ekportisid	eksportisid	# add1
+kindustatud	kindlustatud	# add1
+tõoenäolisemalt	tõenäolisemalt	# del1
+võrguväljandes	võrguväljaandes	# add1_one2double
+samaegselt	samaaegselt	# add1_one2double
+tõustmisel	tõstmisel	# del1
+kordineerib	koordineerib	# add1_one2double
+elanikonnaga	elanikkonnaga	# add1_one2double
+tõvesid	tõbesid	# subst1_kb_next
+olümpivõitjaks	olümpiavõitjaks	# add1
+interrepetatsiooni	interpretatsiooni	# complex
+viivõrd	niivõrd	# subst1
+ariklite	artiklite	# add1
+minigl	mingil	# trans_12-21
+järjekordsal	järjekordsel	# subst1_aeiou2aeiou
+aastarvudel	aastaarvudel	# add1_one2double
+toondangumaht	toodangumaht	# del1
+jõhramaks	jõhkramaks	# add1
+regulaareid	regulaarseid	# add1
+raahne	rahaahne	# add2_adjacent
+sllest	sellest	# add1
+ringkondadedele	ringkondadele	# del2_repetition
+hinnagutel	hinnangutel	# add1
+altooniga	alatooniga	# add1
+määrdemistri	määrdemeistri	# add1
+prespektiivsem	perspektiivsem	# trans_12-21
+ehhki	ehkki	# subst2_aab2abb
+novebrist	novembrist	# add1
+aasatl	aastal	# trans_12-21
+olenud	olnud	# del1
+potsendi	protsendi	# add1
+teekisn	teeksin	# trans_12-21
+pikamat	pikemat	# subst1_aeiou2aeiou
+nubris	numbris	# add1
+populaasreks	populaarseks	# trans_12-21
+disskussiooni	diskussiooni	# del1_double2one
+õiglene	õiglane	# subst1_aeiou2aeiou
+kollegidki	kolleegidki	# add1_one2double
+kuultusemaks	kuulutusemaks	# add1
+lateaiapidu	lasteaiapidu	# add1
+abimehees	abimees	# del2_adjacent
+söendanud	söandanud	# subst1_aeiou2aeiou
+skupltuur	skulptuur	# trans_12-21
+ksperimentaalne	eksperimentaalne	# add1
+liikmesorganistsioonidega	liikmesorganisatsioonidega	# add1
+vliskapitali	väliskapitali	# complex
+klienditelt	klientidelt	# trans
+puistee	puiestee	# add1
+järgeneva	järgneva	# del1
+äblikpeen	ämblikpeen	# add1
+pikkkamööda	pikkamööda	# del1_double2one
+kultuurikesuse	kultuurikeskuse	# add1
+jõhravõitu	jõhkravõitu	# add1
+veendnud	veendunud	# add1
+riigieelrve	riigieelarve	# add1
+tantismas	tantsimas	# trans_12-21
+pöhjust	põhjust	# subst_accents
+madridlased	madriidlased	# add1_one2double
+esitatatud	esitatud	# del2_repetition
+suursaaadiku	suursaadiku	# del1_double2one
+kommmenteeritud	kommenteeritud	# del1_double2one
+võrtsustamisega	võrdsustamisega	# subst1_gbd
+hispaanalsed	hispaanlased	# trans_12-21
+poärast	pärast	# del1
+takitatud	tekitatud	# subst1_aeiou2aeiou
+solvamavat	solvavamat	# trans
+teavasse	taevasse	# trans_12-21
+põrandada	põranda	# del2_repetition
+saand	saanud	# add1
+ärvardab	ähvardab	# subst1
+pidab	pidav	# subst1_kb_next
+põlevikivi	põlevkivi	# del1
+kuivuda	kuivada	# subst1_aeiou2aeiou
+summarne	summaarne	# add1_one2double
+arvale	arvele	# subst1_aeiou2aeiou
+priroteetidega	prioriteetidega	# complex
+terassikohvik	terrassikohvik	# add1_one2double
+kriipus	kriipsu	# trans_12-21
+kollaskaspruuni	kollakaspruuni	# del1
+aktiisimäärad	aktsiisimäärad	# add1
+pühapäevati	pühapäeviti	# subst1_aeiou2aeiou
+esindajvad	esindavad	# del1
+niing	ning	# del1_double2one
+tiigirhüppele	tiigrihüppele	# trans_12-21
+kritallilise	kristallilise	# add1
+õmbeljat	õmblejat	# trans_12-21
+organistasioon	organisatsioon	# trans_12-21
+pensionikindlutusseaduse	pensionikindlustusseaduse	# add1
+pregu	praegu	# add1
+aukratust	aukartust	# trans_12-21
+arvanusest	arvamusest	# subst1_kb_next
+eekõige	eelkõige	# add1
+loodusposterite	looduspostrite	# del1
+töötranud	töötanud	# del1
+treeningsaavutiseks	treeningsaavutuseks	# subst1_aeiou2aeiou_kb_next
+tolleagsed	tolleaegsed	# add1
+põhjustda	põhjustada	# add1
+iseseisvusmisprotsessiga	iseseisvumisprotsessiga	# del1
+novembil	novembril	# add1
+paksume	paksune	# subst1_kb_next
+võrdustumise	võrdsustumise	# add1
+ajakirjndus	ajakirjandus	# add1
+kirjutud	kirjutatud	# strings
+viimaset	viimast	# del1
+vabatahlik	vabatahtlik	# add1
+matemaatilisat	matemaatilist	# del1
+raudvarvadest	raudvarbadest	# subst1_kb_next
+konsert	kontsert	# add1
+vailmiseelse	valimiseelse	# trans_12-21
+otsusti	otsustati	# strings
+populaaruse	populaarsuse	# add1
+kustimuuseumil	kunstimuuseumil	# add1
+pdada	pidada	# add1
+klaverikunstikud	klaverikunstnikud	# add1
+standariseeritus	standardiseeritus	# add1
+prontsenti	protsenti	# del1
+pöödumiseks	pöördumiseks	# add1
+strutuur	struktuur	# add1
+näidandi	näidendi	# subst1_aeiou2aeiou
+turumajandusrefomide	turumajandusreformide	# add1
+kassada	kakssada	# add1
+kiiremimi	kiiremini	# subst1_kb_next
+hambaarvitooli	hambaravitooli	# trans_12-21
+suurbritaania	suurbritannia	# subst2_aab2abb
+lühedalt	lühidalt	# subst1_aeiou2aeiou
+mobilltelefoniga	mobiiltelefoniga	# subst2_aab2abb
+sõmimise	sõlmimise	# add1
+finantsressursidest	finantsressurssidest	# add1_one2double
+prantusse	prantsuse	# trans_12-21
+kimonotessse	kimonotesse	# del1_double2one
+tsisteerivad	tsiteerivad	# del1
+registreerimistähataja	registreerimistähtaja	# del1
+vananeud	vananenud	# add1
+korraldatake	korraldatakse	# add1
+ebakorrektme	ebakorrektne	# subst1_kb_next
+ärrgu	ärgu	# del1_double2one
+kustustusarvetel	kustutusarvetel	# del1
+loomigust	loomingust	# add1
+omnikule	omanikule	# add1
+vanalinndunud	vanalindunud	# del1_double2one
+tähtusega	tähtsusega	# add1
+annnetavad	annetavad	# del1_double2one
+koverentsid	konverentsid	# add1
+tuelvikus	tulevikus	# trans_12-21
+rootlased	rootslased	# add1
+proleemide	probleemide	# add1
+vistitsi	vististi	# trans_12-21
+õiustest	õigustest	# add1
+algpõhipõtetes	algpõhimõtetes	# subst1
+erastmisel	erastamisel	# add1
+kaabelelevisioonivõrgu	kaabeltelevisioonivõrgu	# add1
+laupäevati	laupäeviti	# subst1_aeiou2aeiou
+ahvatevana	ahvatlevana	# add1
+viiuhti	viuhti	# del1_double2one
+kaitsesütimisel	kaitsesüstimisel	# add1
+päästeament	päästeamet	# del1
+majandusminsteeriumi	majandusministeeriumi	# add1
+lastekaitseorganisatsioonigsa	lastekaitseorganisatsiooniga	# del1
+vöi	või	# subst_accents
+omaeette	omaette	# del1_double2one
+elekroonilised	elektroonilised	# add1
+territoriumil	territooriumil	# add1_one2double
+kiirtusseadmel	kiiritusseadmel	# add1
+effektse	efektse	# del1_double2one
+poeriilulile	poeriiulile	# del1
+võrrledes	võrreldes	# trans_12-21
+eksistensiaalseid	eksistentsiaalseid	# add1
+kokkeleppeid	kokkuleppeid	# subst1_aeiou2aeiou
+estitas	esitas	# del1
+noorsopolitsei	noorsoopolitsei	# add1_one2double
+protsest	protest	# del1
+läbibiimiseks	läbiviimiseks	# subst1_kb_next
+saaniseks	saamiseks	# subst1_kb_next
+saaades	saades	# del1_double2one
+vvahele	vahele	# del1_double2one
+põlluvijade	põlluviljade	# add1
+nähtmatu	nähtamatu	# add1
+levinenum	levinum	# del2_adjacent
+kommerstpankadele	kommertspankadele	# trans_12-21
+põllumajandusmisteeriumile	põllumajandusministeeriumile	# add2_adjacent
+söela	sõela	# subst_accents
+jõhrkuse	jõhkruse	# trans_12-21
+võimaldadab	võimaldab	# del2_repetition
+koralikud	korralikud	# add1_one2double
+paeadirektori	peadirektori	# del1
+kokkul	kokku	# del1
+töömeeoleolu	töömeeleolu	# del1
+rezhisöör	režissöör	# subst_accents_plus
+mootorrratturrottide	mootorratturrottide	# del1_double2one
+inimsed	inimesed	# add1
+muuutus	muutus	# del1_double2one
+käibemks	käibemaks	# add1
+kutsealusete	kutsealuste	# del1
+kavadatud	kavandatud	# add1
+valmistatatud	valmistatud	# del2_repetition
+seadusemuuudatuse	seadusemuudatuse	# del1_double2one
+päevavalguseses	päevavalguses	# del2_repetition
+hinannguga	hinnanguga	# trans_12-21
+põjamaale	põhjamaale	# add1
+artklid	artiklid	# add1
+vaavarustust	veevarustust	# subst2_adjacent
+kategooroas	kategoorias	# subst1_aeiou2aeiou_kb_next
+üleshitus	ülesehitus	# add1
+vehkind	vehkinud	# add1
+resurss	ressurss	# add1_one2double
+etenudsega	etendusega	# trans_12-21
+küstitletuist	küsitletuist	# del1
+ülejäänd	ülejäänud	# add1
+kumbal	kummal	# strings
+suurenenenud	suurenenud	# del2_repetition
+kilogarmmi	kilogrammi	# trans_12-21
+entsiastide	entusiastide	# add1
+seketärina	sekretärina	# add1
+tarbjakaitse	tarbijakaitse	# add1
+olle	olla	# subst1_aeiou2aeiou
+likviidusprobleemidest	likviidsusprobleemidest	# add1
+kuukümnendatest	kuuekümnendatest	# add1
+armatusest	armastusest	# add1
+üheagselt	üheaegselt	# add1
+läbimõetlematult	läbimõtlematult	# del1
+suusemägedes	suusamägedes	# subst1_aeiou2aeiou
+aktsiseltsi	aktsiaseltsi	# add1
+niisamtui	niisamuti	# trans_12-21
+turimiskeskusena	turismikeskusena	# trans
+maailam	maailma	# trans_12-21
+käitusmiõpikut	käitumisõpikut	# trans
+vastivõtmise	vastuvõtmise	# subst1_aeiou2aeiou_kb_next
+protenti	protsenti	# add1
+majanduskriisit	majanduskriisist	# add1
+lõunasasadamast	lõunasadamast	# del2_repetition
+kehekordistamine	kahekordistamine	# subst1_aeiou2aeiou
+omakstele	omakestele	# add1
+pensionaadis	pansionaadis	# subst1_aeiou2aeiou
+vanlgakaristusest	vanglakaristusest	# trans_12-21
+mõistada	mõistatada	# add2_adjacent
+sälitada	säilitada	# add1
+varasemete	varasemate	# subst1_aeiou2aeiou
+turvameetmeted	turvameetmed	# del2_adjacent
+jätge	jätke	# subst1_gbd
+kindlustmaksete	kindlustusmaksete	# add2_adjacent
+kudas	kuidas	# add1
+lihtsmalt	lihtsamalt	# add1
+kirjusi	kirjusid	# add1
+melooodiat	meloodiat	# del1_double2one
+võmalik	võimalik	# add1
+resümeeerib	resümeerib	# del1_double2one
+keskooli	keskkooli	# add1_one2double
+naiskollegilt	naiskolleegilt	# add1_one2double
+linnavaremet	linnavaraamet	# complex
+pressiesindja	pressiesindaja	# add1
+paarkümmned	paarkümmend	# trans_12-21
+tueltõrjujat	tuletõrjujat	# trans_12-21
+infoühikond	infoühiskond	# add1
+tudeeerimine	tudeerimine	# del1_double2one
+vastatata	vastata	# del2_repetition
+tarbijahinnahindeksi	tarbijahinnaindeksi	# del1
+protsenit	protsenti	# trans_12-21
+madridlasi	madriidlasi	# add1_one2double
+opositsitsionääride	opositsionääride	# del3_repetition
+määritluse	määratluse	# subst1_aeiou2aeiou
+raivimitootjad	ravimitootjad	# del1
+lpuste	lõpuste	# complex
+pöönigud	pööningud	# add1
+hoiatusd	hoiatused	# add1
+jogurist	jogurtist	# add1
+pähliks	pähkliks	# add1
+kustudada	kustutada	# subst1_gbd
+vuristaga	vuristage	# subst1_aeiou2aeiou
+sattnud	sattunud	# add1
+konkjakit	konjakit	# del1
+põidlahoidjate	pöidlahoidjate	# subst_accents
+võrdustatud	võrdsustatud	# add1
+otsutas	otsustas	# add1
+lauli	lauldi	# add1
+takitavad	takistavad	# add1
+kalenderi	kalendri	# del1
+küummekond	kümmekond	# del1
+vlaieldud	vaieldud	# del1
+koefitsiendite	koefitsientide	# trans
+ovalitsuste	omavalitsuste	# add2_adjacent
+lämmastikväitise	lämmastikväetise	# subst1_aeiou2aeiou
+koonevad	koosnevad	# add1
+uurimud	uurinud	# subst1_kb_next
+koverentsisaal	konverentsisaal	# add1
+nemda	nemad	# trans_12-21
+kõrgs	kõrges	# add1
+akoholiaktsiisi	alkoholiaktsiisi	# add1
+kirjadust	kirjandust	# add1
+intensiivemaid	intensiivsemaid	# add1
+avastatatakse	avastatakse	# del2_repetition
+tööstusettevõtes	tööstusettevõttes	# add1_one2double
+esikuuiukusse	esikuuikusse	# del1
+kommertsdirekori	kommertsdirektori	# add1
+tõenäoiselt	tõenäoliselt	# add1
+otsustda	otsustada	# add1
+enamajaolt	enamjaolt	# del1
+magistratuuris	magistrantuuris	# add1
+armasad	armsad	# del1
+aktsisaselts	aktsiaselts	# del1
+elanikkonmast	elanikkonnast	# subst1_kb_next
+müümimine	müümine	# del2_repetition
+tahakse	tehakse	# subst1_aeiou2aeiou
+peaegu	peaaegu	# add1_one2double
+põmimõttelise	põhimõttelise	# subst1
+reguleeerib	reguleerib	# del1_double2one
+jäävustamist	jäädvustamist	# add1
+eleketer	elekter	# del1
+määratletada	määratleda	# del2_adjacent
+trurumajanduse	turumajanduse	# del1
+vestleda	vestelda	# trans_12-21
+ostueesõigse	ostueesõiguse	# add1
+vallandamiskmapaania	vallandamiskamapaania	# add1
+finatseerimiseks	finantseerimiseks	# add1
+peaagu	peaaegu	# add1
+juriididilist	juriidilist	# del2_repetition
+ekspertisii	ekspertiisi	# trans_12-21
+vähearenud	vähearenenud	# add2_adjacent
+esmajäriekorras	esmajärjekorras	# subst1
+karjäar	karjäär	# subst_accents
+järgenenud	järgnenud	# del1
+naaberrriikide	naaberriikide	# del1_double2one
+nõuetedega	nõuetega	# del2_adjacent
+stuudist	stuudiost	# add1
+okskaks	oskaks	# del1
+konurss	konkurss	# add1
+kokulepped	kokkulepped	# add1_one2double
+tegustseva	tegutseva	# del1
+penaltidega	penaltitega	# subst1_gbd
+käsisin	käisin	# del1
+tekikotit	tekikotid	# subst1_gbd
+koodamisel	koondamisel	# add1
+söendaks	söandaks	# subst1_aeiou2aeiou
+ühki	ühtki	# add1
+eksistent	eksistents	# add1
+veeelgi	veelgi	# del1_double2one
+akoholijoobes	alkoholijoobes	# add1
+uule	uuele	# add1
+kaasmaalsed	kaasmaalased	# add1
+madalaprotsendilse	madalaprotsendilise	# add1
+aaata	aasta	# subst1_kb_next
+erastamiotsuse	erastamisotsuse	# add1
+kaunemaid	kauneimaid	# add1
+peaminitrer	peaminister	# subst2_adjacent
+papilloomaviirusel	papilloomviirusel	# del1
+pütakse	püütakse	# add1_one2double
+koordinatsiooonikomitee	koordinatsioonikomitee	# del1_double2one
+kohustuliku	kohustusliku	# add1
+algorütmide	algoritmide	# subst1
+hakkma	hakkama	# add1
+liiklusõnnestust	liiklusõnnetust	# del1
+konsorstiumi	konsortsiumi	# trans_12-21
+koralikku	korralikku	# add1_one2double
+nõuaandeteenistus	nõuandeteenistus	# del1_double2one
+vanduspensionär	vanaduspensionär	# add1
+riigivisidi	riigivisiidi	# add1_one2double
+teisemlistest	teismelistest	# trans_12-21
+assümeetrilise	asümmeetrilise	# complex
+küjes	küljes	# add1
+pikamaajookjate	pikamaajooksjate	# add1
+paarkümne	paarikümne	# add1
+muisuskaitseameti	muinsuskaitseameti	# add1
+kvintessenssi	kvintessentsi	# strings
+populaarsmead	populaarsemad	# trans_12-21
+välisrahallikaile	välisrahaallikaile	# add1_one2double
+käsolevaks	käesolevaks	# add1
+aktsiseltsides	aktsiaseltsides	# add1
+pedagooglise	pedagoogilise	# add1
+asjaajatel	asjaajajatel	# add2_adjacent
+teispäeval	teisipäeval	# add1
+aktiiside	aktsiiside	# add1
+sagedami	sagedamini	# add2_adjacent
+katolikku	katoliku	# del1_double2one
+laerkujutisi	laserkujutisi	# add1
+hakkanud	hakanud	# del1_double2one
+remondiorganisatasiooniks	remondiorganisatsiooniks	# del1
+osakonnajuhatjate	osakonnajuhatajate	# add1
+tihedage	tihendage	# add1
+erafirmadale	erafirmadele	# subst1_aeiou2aeiou
+kolmkümmned	kolmkümmend	# trans_12-21
+tagsilöök	tagasilöök	# add1
+tõesati	tõestati	# add1
+rpoua	proua	# trans_12-21
+leinant	leitnant	# add1
+aksepteeritud	aktsepteeritud	# add1
+treeener	treener	# del1_double2one
+ingird	Ingrid	# complex
+leingu	lepingu	# add1
+süüdistutest	süüdistustest	# add1
+erititi	eriti	# del2_repetition
+juurs	juures	# add1
+teorteetikute	teoreetikute	# del1
+ühispressikoverentsil	ühispressikonverentsil	# add1
+tallinnlaste	tallinlaste	# del1_double2one
+taolemisele	taotlemisele	# add1
+koraldamisele	korraldamisele	# add1_one2double
+vaatamiaväärsusi	vaatamisväärsusi	# subst1_kb_next
+uuenud	uuenenud	# add2_adjacent
+päkkapikkudest	päkapikkudest	# del1_double2one
+pärist	päris	# del1
+valdusühind	valdusühing	# subst1
+hinnagul	hinnangul	# add1
+eestlsele	eestlasele	# add1
+aehg	aeg	# del1
+aritektuuribüroos	arhitektuuribüroos	# add1
+ivesteerimiseelistused	investeerimiseelistused	# add1
+võlausaldajte	võlausaldajate	# add1
+amdeid	andmeid	# complex
+kaiseliini	kaitseliini	# add1
+näidnud	näidanud	# add1
+panag	panga	# trans_12-21
+probeemi	probleemi	# add1
+kaubaartkli	kaubaartikli	# add1
+kirikivalitsuse	kirikuvalitsuse	# subst1_aeiou2aeiou_kb_next
+ultuses	ulatuses	# add1
+retooorikakeskusesse	retoorikakeskusesse	# del1_double2one
+jõuidnud	jõudnud	# del1
+eeestlase	eestlase	# del1_double2one
+kohtat	kohta	# del1
+opsitsioonis	opositsioonis	# add1
+sotsiaakindlustusameti	sotsiaalkindlustusameti	# add1
+aktiisi	aktsiisi	# add1
+kaitet	kaitset	# add1
+jõlulaupäeva	jõululaupäeva	# add1
+küige	kõige	# subst_accents
+midaig	midagi	# trans_12-21
+tippmametnikud	tippametnikud	# del1
+justiitministeeriumi	justiitsministeeriumi	# add1
+keskoolis	keskkoolis	# add1_one2double
+naistvõrkpalluritest	naisvõrkpalluritest	# del1
+appelleerida	apelleerida	# del1_double2one
+üthlasem	ühtlasem	# trans_12-21
+suuraktionär	suuraktsionär	# add1
+käibemasu	käibemaksu	# add1
+liiderid	liidrid	# del1
+jõlurahu	jõulurahu	# add1
+mämgu	mängu	# subst1_kb_next
+aelgaselt	aeglaselt	# trans_12-21
+senitmeetrit	sentimeetrit	# trans_12-21
+kohutuasjad	kohtuasjad	# del1
+puhkpilliorkesteri	puhkpilliorkestri	# del1
+otsutavate	otsustavate	# add1
+ristmisel	ristimisel	# add1
+individuaaltunriiril	individuaalturniiril	# trans_12-21
+kultuuriehutise	kultuuriehitise	# subst1_aeiou2aeiou_kb_next
+asptiliselt	aseptiliselt	# add1
+füsikokeemik	füsiokeemik	# del1
+investoride	investorite	# subst1_gbd
+jeltin	Jeltsin	# complex
+laupäval	laupäeval	# add1
+tiirlenud	tiirelnud	# trans_12-21
+ligse	liigse	# add1_one2double
+terassil	terrassil	# add1_one2double
+teavat	teavet	# subst1_aeiou2aeiou
+peaegi	peagi	# del1
+kavatsetekse	kavatsetakse	# subst1_aeiou2aeiou
+teatrirahava	teatrirahva	# del1
+plaaneeritakse	planeeritakse	# del1_double2one
+numeereeritud	numereeritud	# del1_double2one
+aravasid	arvasid	# del1
+kodakonduseta	kodakondsuseta	# add1
+maalikunsniku	maalikunstniku	# add1
+tarkavrapiraatide	tarkvarapiraatide	# trans_12-21
+peasekrtär	peasekretär	# add1
+puhakasum	puhaskasum	# add1
+aitata	aidata	# subst1_gbd
+üldkooslek	üldkoosolek	# add1
+presidndivalimiste	presidendivalimiste	# add1
+irivtab	irvitab	# trans_12-21
+suunades	suundades	# add1
+arstikus	arstlikus	# add1
+eskami	eksami	# trans_12-21
+maftavanadel	naftavanadel	# subst1_kb_next
+asetätjana	asetäitjana	# add1
+tegegelikkusega	tegelikkusega	# del2_repetition
+minens	minnes	# trans_12-21
+vahejutum	vahejuhtum	# add1
+mõtetut	mõttetut	# add1_one2double
+mahas	maha	# del1
+sekretari	sekretäri	# subst_accents
+venetsuelalaste	venetsueelalaste	# add1_one2double
+inserenitööst	inseneritööst	# trans
+odamav	odavam	# trans
+viibiavad	viibivad	# del1
+kümmnendik	kümnendik	# del1_double2one
+tendets	tendents	# add1
+maratanoniraja	maratoniraja	# del2_adjacent
+isalndlane	islandlane	# trans_12-21
+eesostas	eesotsas	# trans_12-21
+võrreles	võrreldes	# add1
+demonsteerib	demonstreerib	# add1
+ministreerium	ministeerium	# del1
+üümaja	öömaja	# subst_accents
+turnismisredelitest	turnimisredelitest	# del1
+ekport	eksport	# add1
+pääsmiseks	pääsemiseks	# add1
+positisooone	positsioone	# trans_12-21_plus
+kunigliku	kuningliku	# add1
+nädalt	nädalat	# add1
+vortikesi	vorstikesi	# add1
+näidatatavatele	näidatavatele	# del2_repetition
+vaatamaiseks	vaatamiseks	# del1
+ükiskalade	üksikalade	# trans_12-21
+lemmikpildiraaamat	lemmikpildiraamat	# del1_double2one
+täisksvanud	täiskasvanud	# add1
+pakkkumised	pakkumised	# del1_double2one
+kindlasri	kindlasti	# subst1_kb_next
+maantejooksu	maanteejooksu	# add1_one2double
+mõistuv	mõistus	# subst1
+loominugulised	loomingulised	# del1
+esimesesest	esimesest	# del2_repetition
+ideealilähedaselt	ideaalilähedaselt	# subst2_aab2abb 
+ministeerumi	ministeeriumi	# add1
+liitusmistasud	liitumistasud	# del1
+abilu	abielu	# add1
+piirivalurid	piirivalvurid	# add1
+kaasaegsestest	kaasaegsetest	# del1
+poleksi	polekski	# add1
+kunigaperega	kuningaperega	# add1
+teisipõeval	teisipäeval	# subst_accents
+separatisliku	separatistliku	# add1
+pesudonüümi	pseudonüümi	# trans_12-21
+valdvalt	valdavalt	# add1
+heaksiitmist	heakskiitmist	# add1
+olümpimängudel	olümpiamängudel	# add1
+fanstastiline	fantastiline	# del1
+möödund	möödunud	# add1
+aplesine	apelsine	# trans_12-21
+produteeris	produtseeris	# add1
+maksuahaldur	maksuhaldur	# del1
+konsentreeritud	kontsentreeritud	# add1
+kaunviljadede	kaunviljade	# del2_repetition
+laienemiskvad	laienemiskavad	# add1
+lümfisõlmedese	lümfisõlmedesse	# add1_one2double
+lapsevakrit	lapsevankrit	# add1
+büroomööblikomlekti	büroomööblikomplekti	# add1
+milla	mille	# subst1_aeiou2aeiou
+mehhanik	mehhaanik	# add1_one2double
+neitsliku	neitsiliku	# add1
+otustati	otsustati	# add1
+minigil	mingil	# del1
+omeaette	omaette	# del1
+demokraatiase	demokraatiasse	# add1_one2double
+sooviad	soovijad	# add1
+kaktestasid	katkestasid	# trans_12-21
+mõlemase	mõlemasse	# add1_one2double
+vastavalitud	vastvalitud	# del1
+läheksud	läheksid	# subst1_aeiou2aeiou_kb_next
+faktuuuritüüpide	faktuuritüüpide	# del1_double2one
+aksiaseltsi	aktsiaseltsi	# add1
+võtleva	võitleva	# add1
+enamsti	enamasti	# add1
+küllat	küllalt	# add1
+kaubandusparneriks	kaubanduspartneriks	# add1
+lugada	lugeda	# subst1_aeiou2aeiou
+maksuvõlgane	maksuvõlglane	# add1
+impulssiivse	impulsiivse	# del1_double2one
+mäistagi	mõistagi	# subst_accents
+hoolisev	hoolitsev	# add1
+kohtustuseks	kohustuseks	# del1
+selgiatatakse	selgitatakse	# del1
+tavapärsemaks	tavapärasemaks	# add1
+puukborelioosi	puukborrelioosi	# add1_one2double
+motvatsiooni	motivatsiooni	# add1
+tösiseltvõetavuse	tõsiseltvõetavuse	# subst_accents
+üleslugematude	üleslugematute	# subst1_gbd
+finatsorganisatsioonides	finantsorganisatsioonides	# add1
+kiirrrünnakut	kiirrünnakut	# del1_double2one
+teaduspotsentsiaali	teaduspotentsiaali	# del1
+vaevlab	vaevleb	# subst1_aeiou2aeiou
+prepaaraatidega	preparaatidega	# del1_double2one
+esmissiooni	emissiooni	# del1
+koolitusspetsualisti	koolitusspetsialisti	# subst1_aeiou2aeiou_kb_next
+natsionaliseertud	natsionaliseeritud	# add1
+mälestuesemed	mälestusesemed	# add1
+piimashokolad	piimašokolaad	# subst_accents_plus
+vaaatad	vaatad	# del1_double2one
+nimetetud	nimetatud	# subst1_aeiou2aeiou
+tutvustatkse	tutvustatakse	# add1
+isenda	iseenda	# add1_one2double
+lihakombinadi	lihakombinaadi	# add1_one2double
+keskmiset	keskmisest	# add1
+taastamaine	taastamine	# del1
+peaaritekt	peaarhitekt	# add1
+isikuplakatide	isikuplakatite	# subst1_gbd
+kavliteeti	kvaliteeti	# trans_12-21
+järgeva	järgneva	# add1
+märks	märksa	# add1
+kunstiliikidessse	kunstiliikidesse	# del1_double2one
+hargenevaid	hargnevaid	# del1
+päklid	pähklid	# add1
+olümpiparki	olümpiaparki	# add1
+iseseisevaks	iseseisvaks	# del1
+põhjenas	põhjendas	# add1
+jälgmiseks	jälgimiseks	# add1
+valimisringonna	valimisringkonna	# add1
+koodamist	koondamist	# add1
+likvideerma	likvideerima	# add1
+bilasimaht	bilansimaht	# add1
+termostaaat	termostaat	# del1_double2one
+elanikkonnat	elanikkonnast	# add1
+jatkab	jätkab	# subst_accents
+tublisi	tublisti	# add1
+sisutamiseks	sisustamiseks	# add1
+kavliteedipäeva	kvaliteedipäeva	# trans_12-21
+peamiseteks	peamisteks	# del1
+konserdisaali	kontserdisaali	# add1
+huraaga	hurraaga	# add1_one2double
+stabliliseerunud	stabiliseerunud	# del1
+märgatest	märgates	# del1
+prekonnaliikmetesse	perekonnaliikmetesse	# add1
+hästis	hästi	# del1
+inimestaga	inimestega	# subst1_aeiou2aeiou
+astaa	aasta	# trans
+plaaanilise	plaanilise	# del1_double2one
+septsialistide	spetsialistide	# trans_12-21
+medikamet	medikament	# add1
+taotlemisks	taotlemiseks	# add1
+kümmnes	kümnes	# del1_double2one
+eesi	eesti	# add1
+õmbelmine	õmblemine	# trans_12-21
+kuurortit	kuurorti	# del1
+kõnne	kõne	# del1_double2one
+komunistliku	kommunistliku	# add1_one2double
+keskeerakondlastele	keskerakondlastele	# del1_double2one
+vahetatakase	vahetatakse	# del1
+moodustvad	moodustavad	# add1
+investeermisotsuseid	investeerimisotsuseid	# add1
+lükatas	lükates	# subst1_aeiou2aeiou
+kultuuuri	kultuuri	# del1_double2one
+miljonii	miljoni	# del1_double2one
+seepiooperi	seebiooperi	# subst1_gbd
+alakoholipakendi	alkoholipakendi	# del1
+väehendamiseks	vähendamiseks	# del1
+ballettikleit	balletikleit	# del1_double2one
+traditsiioone	traditsioone	# del1_double2one
+energeetikaasektorile	energeetikasektorile	# del1_double2one
+sohvoosides	sovhoosides	# trans_12-21
+kaubavbeo	kaubaveo	# del1
+kiiits	kiitis	# trans_12-21
+asendamaine	asendamine	# del1
+infrastruuri	infrastruktuuri	# complex
+seetõtytu	seetõttu	# del1
+riigeelarvest	riigieelarvest	# add1
+mosaiiike	mosaiike	# del1_double2one
+kümmenkond	kümmekond	# del1
+sidmetele	sidemetele	# add1
+liiklusinspetsioon	liiklusinspektsioon	# add1
+konktreetselt	konkreetselt	# del1
+järeltulja	järeltulija	# add1
+piõisav	piisav	# del1
+terrasil	terrassil	# add1_one2double
+edasspidi	edaspidi	# del1_double2one
+kuluurimiljööd	kultuurimiljööd	# add1
+medistiiniteenistuse	meditsiiniteenistuse	# trans_12-21
+kookõlastada	kooskõlastada	# add1
+passlik	paslik	# del1_double2one
+seksoloog	seksuoloog	# add1
+tagasil	tagasi	# del1
+uksuma	uskuma	# trans_12-21
+poliilisele	poliitilisele	# add2_adjacent
+meeskonnna	meeskonna	# del1_double2one
+noopõlve	noorpõlve	# add1
+demokraatik	demokraatlik	# add1
+apesinijook	apelsinijook	# add1
+polfinaalis	poolfinaalis	# add1_one2double
+jägis	jälgis	# add1
+olümiakoondislane	olümpiakoondislane	# add1
+vastasugupoolte	vastassugupoolte	# add1_one2double
+maksutada	maksustada	# add1
+maanöövreid	manöövreid	# del1_double2one
+selleised	sellised	# del1
+nõukgu	nõukogu	# add1
+rahastavariante	rahastamisvariante	# complex
+seinet	seinte	# trans_12-21
+staaadiumis	staadiumis	# del1_double2one
+liimetele	liikmetele	# add1
+akstiainvesteeringuteks	aktsiainvesteeringuteks	# trans_12-21
+rasekmaks	raskemaks	# trans_12-21
+närdinud	nördinud	# subst_accents
+maitsetatud	maitsestatud	# add1
+jäämurjat	jäämurdjat	# add1
+vabandaga	vabandage	# subst1_aeiou2aeiou
+alammmäär	alammäär	# del1_double2one
+rahusvaheliste	rahvusvaheliste	# add1
+araenenud	arenenud	# del1
+vähendes	vähenedes	# add1
+pangandukriisid	panganduskriisid	# add1
+seelähi	seeläbi	# subst1
+viskipudelt	viskipudelit	# add1
+kustustusveest	kustutusveest	# del1
+vandiraiujajate	vandiraiujate	# del2_repetition
+lühiaajaliselt	lühiajaliselt	# del1_double2one
+septebris	septembris	# add1
+eridatada	eristada	# complex
+kitast	kitsast	# add1
+tektiilinäitusega	tekstiilinäitusega	# add1
+ettvaatlikuks	ettevaatlikuks	# add1
+aaasta	aasta	# del1_double2one
+eraiaikutele	eraisikutele	# subst1_kb_next
+lihvõttejänes	lihavõttejänes	# add1
+esmaspäeal	esmaspäeval	# add1
+turismimimessi	turismimessi	# del2_repetition
+südmuste	sündmuste	# add1
+üka	üks	# subst1_kb_next
+spordinternaatkooliga	spordiinternaatkooliga	# add1_one2double
+isesseisvas	iseseisvas	# del1_double2one
+villanud	villand	# del1
+riigimetsakondade	riigimetskondade	# del1
+väljapnekud	väljapanekud	# add1
+valimiskampaaniga	valimiskampaaniaga	# add1
+mängub	mängib	# subst1_aeiou2aeiou_kb_next
+hakksin	hakkasin	# add1
+kasuteger	kasutegur	# subst1_aeiou2aeiou
+väljatöödatud	väljatöötatud	# subst1_gbd
+tuberkoloosi	tuberkuloosi	# subst1_aeiou2aeiou
+mõteleda	mõtelda	# del1
+töötsajate	töötajate	# del1
+ehtameeriklalikult	ehtameerikalikult	# del1
+ettavaatusega	ettevaatusega	# subst1_aeiou2aeiou
+realpalk	reaalpalk	# add1_one2double
+möödnud	möödunud	# add1
+tõpselt	täpselt	# subst_accents
+unkistuste	unistuste	# del1
+lahkulööömise	lahkulöömise	# del1_double2one
+õiguskomsjoni	õiguskomisjoni	# add1
+selilis	selili	# del1
+missugusse	missuguse	# del1_double2one
+taasisesisvumisel	taasiseseisvumisel	# add1
+otsutama	otsustama	# add1
+kondriitritootjad	kondiitritootjad	# del1
+abikaaasa	abikaasa	# del1_double2one
+ühikonnas	ühiskonnas	# add1
+majanduministeeriumi	majandusministeeriumi	# add1
+eradi	eraldi	# add1
+teisipäevel	teisipäeval	# subst1_aeiou2aeiou
+konstrueerind	konstrueerinud	# add1
+suurbritaanias	Suurbritannias	# subst2_nonadjacent
+patsinte	patsiente	# add1
+kühtus	kohtus	# subst1
+eraspraksisega	erapraksisega	# del1
+lühijaliselt	lühiajaliselt	# add1
+jägima	jälgima	# add1
+aastlaste	eestlaste	# subst2_adjacent
+krimiaalpolitsei	kriminaalpolitsei	# add1
+kindustusfirma	kindlustusfirma	# add1
+korrega	korraga	# subst1_aeiou2aeiou
+reaktiivsüstesaatoransambel	reaktiivsüntesaatoransambel	# subst1
+kaaastöölistele	kaastöölistele	# del1_double2one
+tutuvusring	tutvusring	# del1
+tähelpanu	tähelepanu	# add1
+armatauurlaua	armatuurlaua	# del1
+jõuada	jõuda	# del1
+tuumaenergeerikat	tuumaenergeetikat	# subst1_kb_next
+eeskät	eeskätt	# add1_one2double
+mediitsiinis	meditsiinis	# del1_double2one
+kehtestmise	kehtestamise	# add1
+tähtusetu	tähtsusetu	# add1
+majandupoliitiliste	majanduspoliitiliste	# add1
+omaegse	omaaegse	# add1_one2double
+riputataud	riputatud	# del1
+kunstlise	kunstilise	# add1
+saaate	saate	# del1_double2one
+kontektis	kontekstis	# add1
+soodupakkumised	sooduspakkumised	# add1
+puahastusvahendite	puhastusvahendite	# del1
+maailmaorgranisatsiooni	maailmaorganisatsiooni	# del1
+teenindusfääris	teenindussfääris	# add1_one2double
+täelikult	täielikult	# add1
+meterjalide	materjalide	# subst1_aeiou2aeiou
+sõimatati	sõimati	# del2_repetition
+isksus	isiksus	# add1
+meeldejävad	meeldejäävad	# add1_one2double
+protent	protsent	# add1
+anuüksi	ainuüksi	# add1
+tulemusted	tulemused	# del1
+sünarõhud	sõnarõhud	# subst_accents
+lingvistlisi	lingvistilisi	# add1
+põhjustavatae	põhjustavate	# del1
+võistkondikuks	võistkondlikuks	# add1
+inervjueerijal	intervjueerijal	# add1
+rakendadakse	rakendatakse	# subst1_gbd
+tasmel	tasemel	# add1
+kritika	kriitika	# add1_one2double
+psühhodeelilisi	psühhedeelilisi	# subst1_aeiou2aeiou
+imuunsüsteemi	immuunsüsteemi	# add1_one2double
+absuluutseks	absoluutseks	# subst1_aeiou2aeiou
+prühimägede	prügimägede	# subst1_kb_next
+kutustute	kutsutute	# trans_12-21
+abilinnapa	abilinnapea	# add1
+kua	kuna	# add1
+valuuutad	valuutad	# del1_double2one
+numritega	numbritega	# add1
+lere	pere	# subst1
+terrorimisilmingute	terrorismiilmingute	# trans
+laevakompani	laevakompanii	# add1_one2double
+hämmastavapaneva	hämmastamapaneva	# subst1
+taasiseisvumist	taasiseseisvumist	# add2_adjacent
+jäätükide	jäätükkide	# add1_one2double
+elementaaarne	elementaarne	# del1_double2one
+maitsetugavdajad	maitsetugevdajad	# subst1_aeiou2aeiou
+peaminstri	peaministri	# add1
+tagude	taguda	# subst1_aeiou2aeiou
+psühhiliselt	psüühiliselt	# subst2_aab2abb
+konsitutsioonikogu	konstitutsioonikogu	# add1
+maismaaast	maismaast	# del1_double2one
+isikupärst	isikupärast	# add1
+kompani	kompanii	# add1_one2double
+kümmnendal	kümnendal	# del1_double2one
+iseseivatele	iseseisvatele	# add1
+erilisti	erilist	# del1
+korduvalimised	kordusvalimised	# add1
+jutkui	justkui	# add1
+päelehtede	päevalehtede	# add2_adjacent
+probeemidega	probleemidega	# add1
+kaksümmend	kakskümmend	# add1
+üleile	üleeile	# add1_one2double
+osatähtus	osatähtsus	# add1
+järjakorras	järjekorras	# subst1_aeiou2aeiou
+konkurs	konkurss	# add1_one2double
+kvartet	kvartett	# add1_one2double
+õoppeaastast	õppeaastast	# del1
+tahtunud	tahtnud	# del1
+soometumise	soomestumise	# add1
+suurejoneliseks	suurejooneliseks	# add1_one2double
+otsustakase	otsustatakse	# complex
+födraalfondimäära	föderaalfondimäära	# add1
+ripuvatel	rippuvatel	# add1_one2double
+mõutamine	mõjutamine	# add1
+reisiseltsikond	reisiseltskond	# del1
+kahtlustatavd	kahtlustatavad	# add1
+jagunub	jaguneb	# subst1_aeiou2aeiou
+ütlsid	ütlesid	# add1
+taasühinenemine	taasühinemine	# del2_repetition
+veenise	veenmise	# add1
+medistiinitöötajatele	meditsiinitöötajatele	# trans_12-21
+kvaliteetidokumentideta	kvaliteedidokumentideta	# subst1_gbd
+täisti	täiesti	# add1
+üldeettevalmistuslaagrit	üldettevalmistuslaagrit	# del1_double2one
+telekoomunikatsioonikontsernile	telekommunikatsioonikontsernile	# subst2_aab2abb
+nis	mis	# subst1_kb_next
+potensiaalset	potentsiaalset	# add1
+mobiiltelfoniga	mobiiltelefoniga	# add1
+kaasnab	kaasneb	# subst1_aeiou2aeiou
+kindlutusseltsid	kindlustusseltsid	# add1
+söenda	söanda	# subst1_aeiou2aeiou
+tunistab	tunnistab	# add1_one2double
+ülesannest	ülesannetest	# add2_adjacent
+sõitud	sõidud	# subst1_gbd
+elektriliseteks	elektrilisteks	# del1
+viduvaid	vinduvaid	# add1
+eelarvepobleemid	eelarveprobleemid	# add1
+teoreeritiliselt	teoreetiliselt	# del2_adjacent
+tuhadeni	tuhandeni	# add1
+olumpiamängud	olümpiamängud	# subst_accents
+juhenduda	juhinduda	# subst1_aeiou2aeiou
+metaliteeti	mentaliteeti	# add1
+parandmist	parandamist	# add1
+elamikud	elanikud	# subst1_kb_next
+qtallinna	tallinna	# del1
+ettevõluse	ettevõtluse	# add1
+lastepaarigaa	lastepaariga	# del1_double2one
+kohaslt	kohaselt	# add1
+riigsekretäri	riigisekretäri	# add1
+jalapaaari	jalapaari	# del1_double2one
+teariprojekt	teatriprojekt	# add1
+kokkuklepe	kokkulepe	# del1
+nõuaandeid	nõuandeid	# del1_double2one
+preaminister	peaminister	# del1
+litsenti	litsentsi	# add1
+sügeluset	sügelust	# del1
+saaamiseks	saamiseks	# del1_double2one
+ligimisi	ligimesi	# subst1_aeiou2aeiou
+söendas	söandas	# subst1_aeiou2aeiou
+viipäevane	viiepäevane	# add1
+sedusega	seadusega	# add1
+erugutamiseks	ergutamiseks	# del1
+järgminel	järgmine	# del1
+haiglaaarsti	haiglaarsti	# del1_double2one
+olümpakullani	olümpiakullani	# add1
+olümpiküla	olümpiaküla	# add1
+süüdistakse	süüdistatakse	# strings
+tihtu	tihti	# subst1_aeiou2aeiou_kb_next
+kordinaatori	koordinaatori	# add1_one2double
+jäegmisel	järgmisel	# subst1_kb_next
+tshetsheenimast	tšetšeeniast	# complex
+manualteraapia	manuaalteraapia	# add1_one2double
+populaarustabelis	populaarsustabelis	# add1
+ümbekolimisel	ümberkolimisel	# add1
+nüüda	nüüd	# del1
+lavatudendgite	lavatudengite	# del1
+heeringufileed	heeringafileed	# subst1_aeiou2aeiou
+transendentsust	transtsendentsust	# add2_adjacent
+poolteistaastase	pooleteistaastase	# add1
+kompvekites	kompvekkides	# complex
+starteegilisele	strateegilisele	# trans_12-21
+tubadese	tubadesse	# add1_one2double
+hobit	hobi	# del1
+omanikuid	omanikud	# del1
+tükka	tükke	# subst1_aeiou2aeiou
+merakollektsioonist	merekollektsioonist	# subst1_aeiou2aeiou
+reisnud	reisinud	# add1
+koduskeskjaamad	kodukeskjaamad	# del1
+jhäänud	jäänud	# del1
+kalverikontserdi	klaverikontserdi	# trans_12-21
+tõlida	tõlkida	# add1
+relvajõudel	relvajõududel	# add2_adjacent
+immunsust	immuunsust	# add1_one2double
+energihindadest	energiahindadest	# add1
+pikajaliste	pikaajaliste	# add1_one2double
+kontsertitel	kontserditel	# subst1_gbd
+sanitaaraamatu	sanitaarraamatu	# add1_one2double
+ojektiivne	objektiivne	# add1
+tulemusetega	tulemustega	# del1
+viimapudeli	viinapudeli	# subst1_kb_next
+tegelma	tegelema	# add1
+võtlejana	võitlejana	# add1
+hullumeelseste	hullumeelsete	# del1
+üksinus	üksainus	# add1
+näitks	näiteks	# add1
+otsat	otsast	# add1
+autojuhide	autojuhtide	# add1
+õstmise	tõstmise	# add1
+mõtekas	mõttekas	# add1_one2double
+krediifiinfo	krediidiinfo	# subst1_kb_next
+eskinud	eksinud	# trans_12-21
+haigussüptomite	haigussümptomite	# add1
+tunnisama	tunnistama	# add1
+prunidesse	pruunidesse	# add1_one2double
+mõõdukid	mõõdikud	# trans
+laboratoorimides	laboratooriumides	# add1
+vaevunund	vaevunud	# del1
+auauhne	auahne	# del1
+valitusus	valitsus	# del1
+milleksi	millekski	# add1
+hindamiskonisjoni	hindamiskomisjoni	# subst1_kb_next
+plaktilt	plakatilt	# add1
+piltikult	piltlikult	# add1
+funksioneeri	funktsioneeri	# add1
+kontrolllida	kontrollida	# del1_double2one
+üheagseks	üheaegseks	# add1
+selisest	sellisest	# add1_one2double
+mareformiseaduse	maareformiseaduse	# add1_one2double
+olukrd	olukord	# add1
+sotsalismi	sotsialismi	# add1
+keelududa	keelduda	# del1
+tagastamis	tagastamist	# add1
+emmissiooni	emissiooni	# del1_double2one
+latinot	latiinot	# add1_one2double
+aegntuuril	agentuuril	# trans_12-21
+aforsimi	aforismi	# trans_12-21
+välisinvesteeeringute	välisinvesteeringute	# del1_double2one
+toetakajaskonnale	toetajaskonnale	# del2_adjacent
+kujneb	kujuneb	# add1
+värksematest	värskematest	# trans_12-21
+põgenukule	põgenikule	# subst1_aeiou2aeiou_kb_next
+tagastatavataes	tagastatavates	# del1
+hakangi	hakkangi	# add1_one2double
+osatjate	ostjate	# del1
+vadla	valda	# trans_12-21
+hinnnagul	hinnangul	# trans_12-21
+politse	politsei	# add1
+jtkuma	jätkuma	# complex
+ideoogilise	ideoloogilise	# add2_adjacent
+repoterid	reporterid	# add1
+kõnunääret	kõhunääret	# subst1
+nurgataustest	nurgatagustest	# add1
+kuntihuviliste	kunstihuviliste	# add1
+suurtykid	suurtükid	# subst1
+peatoimeteja	peatoimetaja	# subst1_aeiou2aeiou
+niisugusse	niisugusesse	# add2_adjacent
+maksunud	maksnud	# del1
+relaamimaksu	reklaamimaksu	# add1
+soojusõlme	soojussõlme	# add1_one2double
+konjakupudeleid	konjakipudeleid	# subst1_aeiou2aeiou_kb_next
+peakonstrukorina	peakonstruktorina	# add1
+asutvad	astuvad	# trans_12-21
+emsitri	meistri	# trans_12-21_plus
+mitteamtlikult	mitteametlikult	# add1
+rotsendil	protsendil	# add1
+tagsipöördumine	tagasipöördumine	# add1
+taarbijale	tarbijale	# del1_double2one
+kpolmel	kolmel	# del1
+malaria	malaaria	# add1_one2double
+hukunud	hukkunud	# add1_one2double
+andestanatu	andestamatu	# subst1_kb_next
+tutvude	tutvuda	# subst1_aeiou2aeiou
+psügiveolepigut	prügiveolepigut	# subst1
+õptajate	õpetajate	# add1
+ulkmekirjanikud	ulmekirjanikud	# del1
+keskkonastrateegia	keskkonnastrateegia	# add1_one2double
+puidkiudplaat	puitkiudplaat	# subst1_gbd
+alandmisele	alandamisele	# add1
+lepiguid	lepinguid	# add1
+järekontroll	järelkontroll	# add1
+ränkatest	ränkadest	# subst1_gbd
+alatarit	altarit	# del1
+deklratsiooni	deklaratsiooni	# add1
+väljamüüghind	väljamüügihind	# add1
+ebausal	ebaausal	# add1_one2double
+infraktiga	infarktiga	# trans_12-21
+puhastustöst	puhastustööst	# add1_one2double
+pööruda	pöörduda	# add1
+kaarati	kaarti	# del1
+demokraatilkust	demokraatlikust	# trans_12-21
+võimuesindate	võimuesindajate	# add2_adjacent
+kultuuriministreeriumile	kultuuriministeeriumile	# del1
+kaabeltelevisoooni	kaabeltelevisiooni	# subst1_aeiou2aeiou_kb_next
+ebastabiiline	ebastabiilne	# del1
+ühesugusese	ühesuguse	# del2_repetition
+semimari	seminari	# subst1_kb_next
+keskkonaministeeriumi	keskkonnaministeeriumi	# add1_one2double
+arveldmise	arveldamise	# add1
+otkoobris	oktoobris	# trans_12-21
+kaheastase	kaheaastase	# add1_one2double
+aastsal	aastal	# del1
+liikumisõpetajanana	liikumisõpetajana	# del2_repetition
+protokollioskonnast	protokolliosakonnast	# add1
+kavalifitseeritud	kvalifitseeritud	# del1
+vaream	varem	# del1
+ajakas	ajaks	# del1
+midagu	midagi	# subst1_aeiou2aeiou_kb_next
+midaga	midagi	# subst1_aeiou2aeiou
+parkimisautomaarti	parkimisautomaati	# del1
+liikuluspolitsei	liikluspolitsei	# del1
+joosul	jooksul	# add1
+veidid	veidi	# del1
+järgise	järgmise	# add1
+sälitanud	säilitanud	# add1
+tankritel	tankeritel	# add1
+asjaasjamise	asjaajamise	# del1
+piudamata	pidamata	# del1
+asfaltee	asfalttee	# add1_one2double
+pikune	pikkune	# add1_one2double
+seadlusandlus	seadusandlus	# del1
+ristsubisdeerimise	ristsubsideerimise	# trans_12-21
+kontolli	kontrolli	# add1
+euroopliku	euroopaliku	# add1
+täenäoliselt	tõenäoliselt	# subst_accents
+koossseisuga	koosseisuga	# del1_double2one
+lavastja	lavastaja	# add1
+laevadusfirma	laevandusfirma	# add1
+alhoholiga	alkoholiga	# subst1
+koolideavahelise	koolidevahelise	# del1
+sõidjad	sõudjad	# subst1_aeiou2aeiou_kb_next
+söögpause	söögipause	# add1
+näitelejana	näitlejana	# del1
+urgimugrilise	ugrimugrilise	# trans_12-21
+pandakse	pannakse	# strings
+marketinguga	marketingiga	# subst1_aeiou2aeiou_kb_next
+emissionidest	emissioonidest	# add1_one2double
+gunnnar	Gunnar	# complex
+pakubi	pakubki	# add1
+liberaarsus	liberaalsus	# subst1
+väismaiste	välismaiste	# add1
+raamataut	raamatut	# del1
+ähvarab	ähvardab	# add1
+tähendadavad	tähendavad	# del2_repetition
+enma	enam	# trans_12-21
+juveeelitoodete	juveelitoodete	# del1_double2one
+haduskohus	halduskohus	# add1
+pühandatud	pühendatud	# subst1_aeiou2aeiou
+avldumist	avaldumist	# add1
+kätuma	käituma	# add1
+tüduk	tüdruk	# add1
+üldharaiduskoolidel	üldhariduskoolidel	# del1
+hinnatatkse	hinnatakse	# del1
+esinama	esindama	# add1
+sürralistlik	sürrealistlik	# add1
+hulgalisti	hulganisti	# subst1
+okupatsiooivõimud	okupatsioonivõimud	# add1
+jätkuama	jätkuma	# del1
+infopunkis	infopunktis	# add1
+allaes	alles	# del1
+pisult	pisut	# del1
+möödundud	möödunud	# del1
+septmbris	septembris	# add1
+rasestusmisvastastest	rasestumisvastastest	# del1
+kutuuriküljel	kultuuriküljel	# add1
+inveteeriti	investeeriti	# add1
+seksoloogiaalased	seksuoloogiaalased	# add1
+nängulisustki	mängulisustki	# subst1_kb_next
+entusiamil	entusiasmil	# add1
+siseanumga	siseanumaga	# add1
+viisteistkünmele	viisteistkümnele	# trans_12-21
+kunstimuusemile	kunstimuuseumile	# add1
+põhustada	põhjustada	# add1
+tuleohutsussüteemi	tuleohutussüsteemi	# trans_12-21_plus
+korapealt	korrapealt	# add1_one2double
+õetajate	õpetajate	# add1
+eksplutatsioonis	ekspluatatsioonis	# add1
+vaimunergia	vaimuenergia	# add1
+likvideermisega	likvideerimisega	# add1
+silamde	silmade	# trans_12-21
+eelenevalt	eelnevalt	# del1
+kadvat	kandvat	# add1
+värsekelt	värskelt	# del1
+sedusandlusega	seadusandlusega	# add1
+artikkle	artikkel	# trans_12-21
+infoohvister	infoohvitser	# trans_12-21
+sasjatundjate	asjatundjate	# del1
+pikkalt	pikalt	# del1_double2one
+lõpukss	lõpuks	# del1_double2one
+dokomentide	dokumentide	# subst1_aeiou2aeiou
+ostam	ostma	# trans_12-21
+maainimestetelt	maainimestelt	# del2_repetition
+edasikinldustuse	edasikindlustuse	# trans_12-21
+positsioonle	positsioonile	# add1
+tehaks	tehakse	# add1
+pöidlahoitjatele	pöidlahoidjatele	# subst1_gbd
+valgutusposti	valgustusposti	# add1
+allapooole	allapoole	# del1_double2one
+ühendriiide	ühendriikide	# add1
+muste	musti	# subst1_aeiou2aeiou
+ümbertöötlemsie	ümbertöötlemise	# trans_12-21
+sälitama	säilitama	# add1
+anestesiloogianõuniku	anestesioloogianõuniku	# add1
+spetsialiti	spetsialisti	# add1
+iseloomustavd	iseloomustavad	# add1
+kaiffi	kaifi	# del1_double2one
+abusrditeater	absurditeater	# trans_12-21
+keskoolipäevil	keskkoolipäevil	# add1_one2double
+tshintshiliad	tšintšiljad	# complex
+finatsküljest	finantsküljest	# add1
+sisenb	siseneb	# add1
+smal	samal	# add1
+auauhnusest	auahnusest	# del1
+vaksineeritakse	vaktsineeritakse	# add1
+esimesese	esimese	# del2_repetition
+mugavalat	mugavalt	# del1
+ümbruskaudest	ümbruskaudsest	# add1
+akoholitööstuse	alkoholitööstuse	# add1
+psühaatriakliinikus	psühhiaatriakliinikus	# add2_adjacent
+globaaseimat	globaalseimat	# add1
+kestud	kestnud	# add1
+pantsuse	prantsuse	# add1
+säilitäme	säilitame	# subst1
+jõustnud	jõustunud	# add1
+nõustusnud	nõustunud	# del1
+sisldab	sisaldab	# add1
+töhtajaga	tähtajaga	# subst_accents
+otsustnud	otsustanud	# add1
+taastakse	taastatakse	# strings
+resotorani	restorani	# del1
+tearikriitikud	teatrikriitikud	# add1
+fiantseerimise	finantseerimise	# add1
+skpetiliste	skeptiliste	# trans_12-21
+väjemalt	vähemalt	# subst1_kb_next
+stipendumi	stipendiumi	# add1
+kaubade	kaupade	# subst1_gbd
+oragniseerib	organiseerib	# trans_12-21
+sotsoloogiat	sotsioloogiat	# add1
+tehikaid	tehnikaid	# add1
+maanteeaamet	maanteeamet	# del1_double2one
+asjatundamtu	asjatundmatu	# trans_12-21
+ettvõtte	ettevõtte	# add1
+järjrest	järjest	# del1
+petrooniks	patrooniks	# subst1_aeiou2aeiou
+tasuliset	tasulist	# del1
+eraldatavt	eraldatavat	# add1
+siseajadesse	siseasjadesse	# add1
+tsivliseeritud	tsiviliseeritud	# add1
+viieteiskümne	viieteistkümne	# add1
+inimete	inimeste	# add1
+ebseaduslikult	ebaseaduslikult	# add1
+piiruda	piirduda	# add1
+sünnitsumaja	sünnitusmaja	# trans_12-21
+allakirjastama	allkirjastama	# del1
+ruhmituse	rühmituse	# subst_accents
+sideministeerim	sideministeerium	# add1
+isenesestmõistetavalt	iseenesestmõistetavalt	# add1_one2double
+selgumud	selgunud	# subst1_kb_next
+komunikatsioonisüsteemi	kommunikatsioonisüsteemi	# add1_one2double
+teglenud	tegelenud	# add1
+pumabatud	pumbatud	# del1
+jaoskonnaaarstid	jaoskonnaarstid	# del1_double2one
+läheal	lähedal	# add1
+ümbereehitamise	ümberehitamise	# del1_double2one
+iskiliku	isikliku	# trans_12-21
+külmekümnest	kolmekümnest	# subst1
+rinapiima	rinnapiima	# add1_one2double
+füüslistest	füüsilistest	# add1
+võttnud	võtnud	# del1_double2one
+enegiline	energiline	# add1
+sisutatud	sisustatud	# add1
+aktiivus	aktiivsus	# add1
+ligikaugu	ligikaudu	# subst1
+oraganiseerijate	organiseerijate	# del1
+sanal	samal	# subst1_kb_next
+haridusoskonna	haridusosakonna	# add1
+omavalistuste	omavalitsuste	# trans_12-21
+konseravtiivid	konservatiivid	# trans_12-21
+ettevaamatu	ettevaatamatu	# add2_adjacent
+elanikkonankihtidesse	elanikkonnakihtidesse	# trans_12-21
+managememt	management	# subst1_kb_next
+raamtu	raamatu	# add1
+potensiaali	potentsiaali	# add1
+tegusenud	tegutsenud	# add1
+soovisn	soovisin	# add1
+organistasioonil	organisatsioonil	# trans_12-21
+vastasssugupoole	vastassugupoole	# del1_double2one
+maffiooso	mafiooso	# del1_double2one
+kunstmik	kunstnik	# subst1_kb_next
+informatsioonipaltvormi	informatsiooniplatvormi	# trans_12-21
+kolmikhüpes	kolmikhüppes	# add1_one2double
+perspekiivikust	perspektiivikust	# add1
+liimete	liikmete	# add1
+tundmatau	tundmatu	# del1
+suurejooneliest	suurejoonelisest	# add1
+kirjaduse	kirjanduse	# add1
+maaealu	maaelu	# del1
+toitumistavasi	toitumistavasid	# add1
+loomaksvatussaadusi	loomakasvatussaadusi	# add1
+nädadal	nädalal	# subst1
+pöhjused	põhjused	# subst_accents
+virkalt	virgalt	# subst1_gbd
+kassettile	kassetile	# del1_double2one
+pankrotitmenetluse	pankrotimenetluse	# del1
+maksvavad	maksavad	# del1
+kavateseb	kavatseb	# del1
+arvatavati	arvatavasti	# add1
+reegeleid	reegleid	# del1
+võiamlust	võimalust	# trans_12-21
+enensepuhastust	enesepuhastust	# del1
+nöoli	näoli	# subst_accents
+territoorumil	territooriumil	# add1
+ütlasi	ühtlasi	# add1
+sõitisime	sõitsime	# del1
+olüpiaatleetide	olümpiaatleetide	# add1
+immunsüsteem	immuunsüsteem	# add1_one2double
+montessoripedagagoog	montessoripedagoog	# del2_repetition
+pommiplahavatustes	pommiplahvatustes	# del1
+takojuhtide	taksojuhtide	# add1
+omadireformi	omandireformi	# add1
+pojekti	projekti	# add1
+majaduslike	majanduslike	# add1
+keskeagne	keskaegne	# trans_12-21
+arside	arstide	# add1
+aktsiseltsid	aktsiaseltsid	# add1
+erastamisjägse	erastamisjärgse	# add1
+armamuma	armuma	# del2_adjacent
+maeratab	naeratab	# subst1_kb_next
+moodas	moodsas	# add1
+turustatkse	turustatakse	# add1
+sõbul	sõnul	# subst1_kb_next
+intergeerumisel	integreerumisel	# trans_12-21
+evengeelse	evangeelse	# subst1_aeiou2aeiou
+läsid	läksid	# add1
+auauhnuse	auahnuse	# del1
+ähvardamalt	ähvardavamalt	# add2_adjacent
+tgevuse	tegevuse	# add1
+paraolümüpialased	paraolümpialased	# del1
+lihsalt	lihtsalt	# add1
+dokumentid	dokumendid	# subst1_gbd
+ekporditõestust	eksporditõestust	# add1
+konfliktipoolete	konfliktipoolte	# del1
+multikultuuursemaks	multikultuursemaks	# del1_double2one
+olulisemaka	olulisemaks	# subst1_kb_next
+käibemakksu	käibemaksu	# del1_double2one
+maistvamaid	maitsvamaid	# trans_12-21
+posthuumselt	postuumselt	# del1
+politseiprefetuuri	politseiprefektuuri	# add1
+sotsiaalministeeeriumi	sotsiaalministeeriumi	# del1_double2one
+streiliseerida	steriliseerida	# trans_12-21
+agressivset	agressiivset	# add1_one2double
+ünberstruktureerimisest	ümberstruktureerimisest	# subst1_kb_next
+sterotüübile	stereotüübile	# add1
+tundengi	tudengi	# del1
+pääsnud	pääsenud	# add1
+tuhmund	tuhmunud	# add1
+kongrssi	kongressi	# add1
+jäjestikust	järjestikust	# add1
+narkootikumite	narkootikumide	# subst1_gbd
+skluptuuridele	skulptuuridele	# trans_12-21
+väheprespektiivseks	väheperspektiivseks	# trans_12-21
+töössse	töösse	# del1_double2one
+orkesteri	orkestri	# del1
+ajalooliliselt	ajalooliselt	# del2_repetition
+metri	meetri	# add1_one2double
+etevõtted	ettevõtted	# add1_one2double
+meespeosa	meespeaosa	# add1
+etevõttel	ettevõttel	# add1_one2double
+vaatlushinnagul	vaatlushinnangul	# add1
+distsiplineritud	distsiplineeritud	# add1_one2double
+täesti	täiesti	# add1
+pekendilt	pakendilt	# subst1_aeiou2aeiou
+eemele	eemale	# subst1_aeiou2aeiou
+piraatviedokassetti	piraatvideokassetti	# trans_12-21
+juhtsid	juhtisid	# add1
+aistmismeeltele	haistmismeeltele	# add1
+mõnded	mõned	# del1
+lapsivaliidi	lapsinvaliidi	# add1
+purjeregetilt	purjeregatilt	# subst1_aeiou2aeiou
+neljakümnendetel	neljakümnendatel	# subst1_aeiou2aeiou
+tõpoolest	tõepoolest	# add1
+taskustesse	taskutesse	# del1
+omanadada	omandada	# del1
+elektromagneetilist	elektromagnetilist	# del1_double2one
+seduse	seaduse	# add1
+sis	siis	# add1_one2double
+kreeholm	Kreenholm	# complex
+revideeerivad	revideerivad	# del1_double2one
+lmäärusega	määrusega	# del1
+oselda	osaleda	# complex
+saaadi	saadi	# del1_double2one
+märgnud	märganud	# add1
+terrirooriumile	territooriumile	# subst1_kb_next
+muusikaalsust	musikaalsust	# del1_double2one
+lahedada	lahendada	# add1
+pikselite	pikslite	# del1
+lauluansambelis	lauluansamblis	# del1
+ulatuseg	ulatusega	# add1
+ikebanakuruses	ikebanakursuses	# add1
+entsüklopeediformaadis	entsüklopeediaformaadis	# add1
+aasatel	aastatel	# add1
+vapustaivam	vapustavaim	# trans
+agressivselt	agressiivselt	# add1_one2double
+ingitud	tingitud	# add1
+karjaääride	karjääride	# del1
+sugulsega	sugulasega	# add1
+liikluseekirjad	liikluseeskirjad	# add1
+esmaspäevl	esmaspäeval	# add1
+ettekandajate	ettekandjate	# del1
+hääletustusel	hääletustel	# del2_adjacent
+asjosaliste	asjaosaliste	# add1
+koalitsooni	koalitsiooni	# add1
+esialgsesks	esialgseks	# del1
+vaadakam	vaadakem	# subst1_aeiou2aeiou
+valdacvad	valdavad	# del1
+meeliv	meeldiv	# add1
+annavd	annavad	# add1
+kultuurikesuses	kultuurikeskuses	# add1
+algatnud	algatanud	# add1
+proessorf	professor	# complex
+hanbus	hambus	# subst1_kb_next
+häsit	hästi	# trans_12-21
+dokumendite	dokumentide	# trans
+omandirefomi	omandireformi	# add1
+neljaastase	nelja-aastase	# add2_adjacent
+konfikseeriti	konfiskeeriti	# trans_12-21
+luudadaga	luudadega	# subst1_aeiou2aeiou
+lähab	läheb	# subst1_aeiou2aeiou
+konkteksti	konteksti	# del1
+stilis	stiilis	# add1_one2double
+branditoodete	bränditoodete	# subst_accents
+väigikaigast	vägikaigast	# del1
+maadunud	maandunud	# add1
+vöiksid	võiksid	# subst_accents
+valuläviga	valulävega	# subst1_aeiou2aeiou
+vähes	vähenes	# add2_adjacent
+konsevatiive	konservatiive	# add1
+ivesteerimise	investeerimise	# add1
+parikimispiletid	parkimispiletid	# del1
+sagadane	sagedane	# subst1_aeiou2aeiou
+aaastaga	aastaga	# del1_double2one
+jõuatakse	jõutakse	# del1
+kaastundeavlduse	kaastundeavalduse	# add1
+rakedada	rakendada	# add1
+talumepermees	taluperemees	# complex
+lennnundusega	lennundusega	# del1_double2one
+autootootjas	autotootjas	# del1_double2one
+suveilmedega	suveilmadega	# subst1_aeiou2aeiou
+latinod	latiinod	# add1_one2double
+seistmendale	seitsmendale	# trans_12-21
+jõuluõhtsse	jõuluõhtusse	# add1
+hiljaagu	hiljaaegu	# add1
+teisit	teisiti	# add1
+arsemali	arsenali	# subst1_kb_next
+taastamisprjekt	taastamisprojekt	# add1
+summarset	summaarset	# add1_one2double
+püüatakse	püütakse	# del1
+toodeted	tooted	# del2_adjacent
+kirgaäri	kingaäri	# subst1
+viibimud	viibinud	# subst1_kb_next
+vasaktsentrisliku	vasaktsentristliku	# add1
+pesident	president	# add1
+jooksuvat	jooksvat	# del1
+promooterite	promootorite	# subst1_aeiou2aeiou
+otsutatakse	otsustatakse	# add1
+järgmisväärsed	järgimisväärsed	# add1
+propbleemide	probleemide	# del1
+ebaseaduliku	ebaseadusliku	# add1
+eeest	eest	# del1_double2one
+aastakokkuvõtes	aastakokkuvõttes	# add1_one2double
+ütels	ütles	# trans_12-21
+tallinlana	tallinlanna	# add1_one2double
+piirkondadaga	piirkondadega	# subst1_aeiou2aeiou
+lähtudest	lähtudes	# del1
+lastekiiniku	lastekliiniku	# add1
+hamabahari	hambahari	# del1
+vöiksema	väiksema	# subst_accents
+abieluvararegisri	abieluvararegistri	# add1
+teniseturniiri	tenniseturniiri	# add1_one2double
+täiskasvnute	täiskasvanute	# add1
+groteskesd	grotesksed	# trans_12-21
+majanduspoliitilika	majanduspoliitika	# del2_adjacent
+paaariliste	paariliste	# del1_double2one
+üheteistekümne	üheteistkümne	# del1
+dumpighindu	dumpinghindu	# add1
+seitsmeteiskümnest	seitsmeteistkümnest	# add1
+meelede	meelde	# del1
+valuvaigististest	valuvaigistitest	# del1
+rahuprotsesi	rahuprotsessi	# add1_one2double
+laenuporfell	laenuportfell	# add1
+kukrku	kurku	# del1
+otsesid	otseseid	# add1
+sõitab	sõidab	# subst1_gbd
+nedi	neid	# trans_12-21
+tegamist	tegemist	# subst1_aeiou2aeiou
+enuustuse	ennustuse	# subst2_aab2abb
+kiente	kliente	# add1
+kasitöölislik	käsitöölislik	# subst_accents
+pnna	panna	# add1
+pankratioon	pankratsioon	# add1
+töötleda	töödelda	# strings
+invesorite	investorite	# add1
+elgitada	selgitada	# add1
+restruktrueerimisele	restruktureerimisele	# trans_12-21
+tõmbtuulte	tõmbetuulte	# add1
+protseniline	protsendiline	# add1
+juuulil	juulil	# del1_double2one
+tomimuval	toimuval	# del1
+võtiluseks	võitluseks	# trans_12-21
+mite	mitte	# add1_one2double
+suhur	suhkur	# add1
+metsamameti	metsaameti	# del1
+süstem	süsteem	# add1_one2double
+transferbussiga	transfeerbussiga	# add1_one2double
+kogenunud	kogunenud	# trans
+ajakirjandusväljannete	ajakirjandusväljaannete	# add1_one2double
+videokassettid	videokassetid	# del1_double2one
+läänealdal	läänekaldal	# add1
+konveretsil	konverentsil	# add1
+narkootikumideavastases	narkootikumidevastases	# del1
+epeemestel	epeemeestel	# add1_one2double
+kategooriliset	kategooriliselt	# add1
+arvelduskeskonnas	arvelduskeskkonnas	# add1_one2double
+saunapeaol	saunapeol	# del1
+infrakstruktuursete	infrastruktuursete	# del1
+türkiarv	trükiarv	# trans_12-21
+luureparaljon	luurepataljon	# subst1_kb_next
+omna	oma	# del1
+naispeosa	naispeaosa	# add1
+intressa	intresse	# subst1_aeiou2aeiou
+retsepuuri	retseptuuri	# add1
+teenindusetteavõtte	teenindusettevõtte	# del1
+telakanalile	telekanalile	# subst1_aeiou2aeiou
+hommmikul	hommikul	# del1_double2one
+karikavõistliste	karikavõistluste	# subst1_aeiou2aeiou_kb_next
+micorsoft	Microsoft	# complex
+edsestas	edestas	# del1
+realsemalt	reaalsemalt	# add1_one2double
+ebastandartne	ebastandardne	# subst1_gbd
+tuumaohtuse	tuumaohutuse	# add1
+veerab	veereb	# subst1_aeiou2aeiou
+öökul	öökull	# add1_one2double
+taasiseseivumise	taasiseseisvumise	# add1
+rahvahulgasr	rahvahulgas	# del1
+meediväljaannetes	meediaväljaannetes	# add1
+segatatuna	segatuna	# del2_repetition
+maksuamaksjatega	maksumaksjatega	# del1
+ekspertid	eksperdid	# subst1_gbd
+rendiiliinide	rendiliinide	# del1_double2one
+porjektist	projektist	# trans_12-21
+vennud	veennud	# add1_one2double
+euroskeptliliste	euroskeptiliste	# del1
+kuulujute	kuulujutte	# add1_one2double
+väätuse	väärtuse	# add1
+permees	peremees	# add1
+lenuintressideks	laenuintressideks	# add1
+tähtnud	tahtnud	# subst1
+kavlifikatsioon	kvalifikatsioon	# trans_12-21
+katoliiklnae	katoliiklane	# trans_12-21
+poolastal	poolaastal	# add1_one2double
+kümnekroonisted	kümnekroonised	# del1
+sisut	sisust	# add1
+õrnemaa	õrnema	# del1_double2one
+ohtarasti	ohtrasti	# del1
+olvat	olevat	# add1
+koefitsendi	koefitsiendi	# add1
+serblasete	serblaste	# del1
+erastamisissemakset	erastamississemakset	# add1_one2double
+aktiisimäär	aktsiisimäär	# add1
+anvendiküünla	advendiküünla	# subst1
+väikeservuline	väikesearvuline	# add1
+kvantitiivselt	kvantitatiivselt	# strings
+vuiimase	viimase	# del1
+piirkonas	piirkonnas	# add1_one2double
+jaekaubadusfirma	jaekaubandusfirma	# add1
+korvapallivõistkond	korvpallivõistkond	# del1
+nadtabarreli	naftabarreli	# subst1_kb_next
+ümarguste	ümmarguste	# add1_one2double
+kaotsin	kaotasin	# add1
+kolmadast	kolmandast	# add1
+teeva	teevad	# add1
+ühiskondlikondlik	ühiskondlik	# complex
+meelelahtusfirmaga	meelelahutusfirmaga	# add1
+väljdes	väljudes	# add1
+imetlena	imetlema	# subst1_kb_next
+puljongipulver	puljongipulber	# subst1_kb_next
+jookusl	jooksul	# trans_12-21
+eskponeeritus	eksponeeritus	# trans_12-21
+populaarus	populaarsus	# add1
+praeportjoni	praeportsjoni	# add1
+soomeurgilaste	soomeugrilaste	# trans_12-21
+koku	kokku	# add1_one2double
+masseeerida	masseerida	# del1_double2one
+tugevdataud	tugevdatud	# del1
+eakatese	eakatesse	# add1_one2double
+hundite	huntide	# trans
+pinsettidega	pintsettidega	# add1
+madratsiootja	madratsitootja	# add1
+ülldiselt	üldiselt	# del1_double2one
+digitalliini	digitaalliini	# add1_one2double
+hiilglaslikust	hiiglaslikust	# del1
+hakkati	hakati	# del1_double2one
+võikisid	võiksid	# del1
+anavad	annavad	# add1_one2double
+tihedamine	tihedamini	# subst1_aeiou2aeiou
+kogupropukt	koguprodukt	# subst1
+langend	langenud	# add1
+iskliku	isikliku	# add1
+muudku	muudkui	# add1
+tuhendekroonise	tuhandekroonise	# subst1_aeiou2aeiou
+ääärel	äärel	# del1_double2one
+tasutamise	tasustamise	# add1
+idoloogia	ideoloogia	# add1
+tiiskuseravi	tiisikuseravi	# add1
+rahat	raha	# del1
+keskonnakaitsesse	keskkonnakaitsesse	# add1_one2double
+raskendavaste	raskendavate	# del1
+lasteetendusete	lasteetenduste	# del1
+suvhooaeg	suvehooaeg	# add1
+rikkunuud	rikkunud	# del1_double2one
+sportast	sportlast	# add1
+tiisikuhaiged	tiisikushaiged	# add1
+noosoopolitsei	noorsoopolitsei	# add1
+postmodernlistliku	postmodernistliku	# del1
+näidand	näidanud	# add1
+võitljate	võitlejate	# add1
+sisalduvateale	sisalduvatele	# del1
+puudnud	puudunud	# add1
+refomikomisjonid	reformikomisjonid	# add1
+auhnete	auahnete	# add1
+tefefoniside	telefoniside	# subst1
+tgasi	tagasi	# add1
+rikamaid	rikkamaid	# add1_one2double
+nõrgedaks	nõrgendaks	# add1
+haiglassse	haiglasse	# del1_double2one
+suuurem	suurem	# del1_double2one
+etekujutus	ettekujutus	# add1_one2double
+riigeelarve	riigieelarve	# add1
+esimemist	esinemist	# subst1_kb_next
+mängide	mändide	# subst1
+valimistunud	valmistunud	# del1
+enesehinnag	enesehinnang	# add1
+septemris	septembris	# add1
+kihustustööd	kihutustööd	# del1
+nõningast	mõningast	# subst1_kb_next
+südamkujulisi	südamekujulisi	# add1
+esimse	esimese	# add1
+potsepakedra	pottsepakedra	# add1_one2double
+nüiteks	näiteks	# subst_accents
+puhatusseadmed	puhastusseadmed	# add1
+haridusseptsialistid	haridusspetsialistid	# trans_12-21
+avaldmiseks	avaldamiseks	# add1
+koostamaa	koostama	# del1_double2one
+kookõlastades	kooskõlastades	# add1
+üksikksõidus	üksiksõidus	# del1_double2one
+tuvustatakse	tutvustatakse	# add1
+tegelikut	tegelikult	# add1
+jõulukasset	jõulukassett	# add1_one2double
+maamahel	maamehel	# subst1_aeiou2aeiou
+halevenemine	halvenemine	# del1
+ennnast	ennast	# del1_double2one
+resrvfondis	reservfondis	# add1
+komandikku	kolmandikku	# add1
+sateliitnavigatsioonisüsteemi	satelliitnavigatsioonisüsteemi	# add1_one2double
+töötatatakse	töötatakse	# del2_repetition
+direktri	direktori	# add1
+jaotataud	jaotatud	# del1
+ametise	ametisse	# add1_one2double
+televaatjad	televaatajad	# add1
+voolma	voolama	# add1
+varustasemega	varustustasemega	# complex
+värivakamateks	värvikamateks	# complex
+üheksakümmnendate	üheksakümnendate	# del1_double2one
+aasnes	kaasnes	# add1
+peosalisena	peaosalisena	# add1
+materjaliskesksust	materjalikesksust	# del1
+mootorratase	mootorrataste	# add1
+ohvredas	ohverdas	# trans_12-21
+puktid	punktid	# add1
+konkrentsivõimet	konkurentsivõimet	# add1
+nimiväätus	nimiväärtus	# add1
+juriidililiselt	juriidiliselt	# del2_repetition
+kuuuluva	kuuluva	# del1_double2one
+mehanismi	mehhanismi	# add1_one2double
+jatkuks	jätkuks	# subst_accents
+võetaksse	võetakse	# del1_double2one
+aegasti	aegsasti	# add1
+sõinud	sõitnud	# add1
+naerama	naerma	# del1
+tööandajatega	tööandjatega	# del1
+hähematus	häbematus	# subst1
+vaidlsuküsimuste	vaidlusküsimuste	# trans_12-21
+prosaistlt	prosaistilt	# add1
+esisukohast	seisukohast	# trans_12-21
+skeptitsimi	skeptitsismi	# add1
+mneeskond	meeskond	# del1
+ettevalmistutesse	ettevalmistustesse	# add1
+eeskõtt	eeskätt	# subst_accents
+stabiliseermine	stabiliseerimine	# add1
+pidagi	midagi	# subst1
+kauabagrupi	kaubagrupi	# del1
+kõite	köite	# subst_accents
+lomabardlaenu	lombardlaenu	# del1
+aidab	aitab	# subst1_gbd
+diakoonihaigla	diakooniahaigla	# add1
+iskuid	isikuid	# add1
+saavd	saavad	# add1
+peaministeri	peaministri	# del1
+puudmisel	puudumisel	# add1
+keskkonnanisteeriumi	keskkonnaministeeriumi	# add2_adjacent
+poliitist	poliitilist	# add2_adjacent
+kolonelleinant	kolonelleitnant	# add1
+ikebanakuruse	ikebanakursuse	# add1
+paralmendikomisjoni	parlamendikomisjoni	# trans_12-21
+prantuse	prantsuse	# add1
+sõbradele	sõpradele	# subst1_gbd
+maaailamturugi	maailmaturugi	# trans_12-21_plus
+kokuvarisemist	kokkuvarisemist	# add1_one2double
+edasimineks	edasiminek	# del1
+suurtuniiri	suurturniiri	# add1
+tahva	rahva	# subst1_kb_next
+täielikuklt	täielikult	# del1
+kordidorides	koridorides	# del1
+õnnetuset	õnnetust	# del1
+masserides	masseerides	# add1_one2double
+andemeil	andmeil	# del1
+investeermisotsuse	investeerimisotsuse	# add1
+ristisisad	ristiisad	# del1
+seltidest	seltsidest	# add1
+ajalehetede	ajalehtede	# del1
+undegroundis	undergroundis	# add1
+emotsioonaalne	emotsionaalne	# del1_double2one
+puhkusejaja	puhkuseaja	# del1
+personalijuhtmise	personalijuhtimise	# add1
+maantelõigud	maanteelõigud	# add1_one2double
+istituutidele	instituutidele	# add1
+usalduväärne	usaldusväärne	# add1
+järeltulijaidd	järeltulijaid	# del1_double2one
+huvilistege	huvilistega	# subst1_aeiou2aeiou
+tuvustada	tutvustada	# add1
+omdast	omast	# del1
+äriparnerite	äripartnerite	# add1
+kantselliidist	kantseliidist	# del1_double2one
+ametkondadadel	ametkondadel	# del2_repetition
+eeltööodega	eeltöödega	# del1
+olümpikoondislane	olümpiakoondislane	# add1
+maksuspetturile	maksupetturile	# del1
+poliitilikaringkonnad	poliitikaringkonnad	# del2_adjacent
+liikuspolitsei	liikluspolitsei	# add1
+ehistusmaterjalide	ehitusmaterjalide	# del1
+ärats	äratas	# add1
+eskamikomisjoni	eksamikomisjoni	# trans_12-21
+laienmist	laienemist	# add1
+pensinile	pensionile	# add1
+aatal	aastal	# add1
+munisuskaitseameti	muinsuskaitseameti	# trans_12-21
+tuntub	tundub	# subst1_gbd
+rahavaküsitlus	rahvaküsitlus	# del1
+teravanesid	teravnesid	# del1
+halvam	halvem	# subst1_aeiou2aeiou
+ekseprdid	eksperdid	# trans_12-21
+isklikus	isiklikus	# add1
+septsiaalseid	spetsiaalseid	# trans_12-21
+maksmimaalne	maksimaalne	# del1
+televisoonilt	televisioonilt	# add1
+segenevat	sagenevat	# subst1_aeiou2aeiou
+tolliinspektisooni	tolliinspektsiooni	# trans_12-21
+rahanduministrina	rahandusministrina	# add1
+shunteerimisoporatsiooni	šunteerimisoperatsiooni	# complex
+intgreerumine	integreerumine	# add1
+lennundudes	lennunduses	# subst1_kb_next
+veneleelseid	venekeelseid	# subst1_kb_next
+komiteee	komitee	# del1_double2one
+tegelene	tegelane	# subst1_aeiou2aeiou
+pürgitate	pürgivate	# subst1
+skepulatsioonid	spekulatsioonid	# trans
+raskutega	raskustega	# add1
+täiendataud	täiendatud	# del1
+luapäeva	laupäeva	# trans_12-21
+sagedamigi	sagedaminigi	# add2_adjacent
+tarbijavenulikes	tarbijavaenulikes	# add1
+maksavd	maksavad	# add1
+läbirääkmiste	läbirääkimiste	# add1
+astusega	asetusega	# add1
+juurda	juurde	# subst1_aeiou2aeiou
+ootmatult	ootamatult	# add1
+parlemendi	parlamendi	# subst1_aeiou2aeiou
+ettvõttel	ettevõttel	# add1
+vähnes	vähenes	# add1
+iskupära	isikupära	# add1
+võtlust	võitlust	# add1
+nimetetakse	nimetatakse	# subst1_aeiou2aeiou
+konkeetsemaks	konkreetsemaks	# add1
+isksuse	isiksuse	# add1
+riiedeesemega	riideesemega	# del1
+läinduki	läinudki	# trans_12-21
+registreeeritud	registreeritud	# del1_double2one
+reismine	reisimine	# add1
+jõumiseks	jõudmiseks	# add1
+psühiaatrilised	psühhiaatrilised	# add1_one2double
+ekpertiisitasu	ekspertiisitasu	# add1
+kandieerijate	kandideerijate	# add1
+iskutele	isikutele	# add1
+telfonitsi	telefonitsi	# add1
+vallasekrtär	vallasekretär	# add1
+surnd	surnud	# add1
+täidesaatav	täidesaatev	# subst1_aeiou2aeiou
+alagasid	algasid	# del1
+anemad	vanemad	# add1
+rahava	rahva	# del1
+avalikkustamist	avalikustamist	# del1_double2one
+monertaarpoliitika	monetaarpoliitika	# del1
+vabatsiili	vabastiili	# trans_12-21
+kehtetas	kehtestas	# add1
+kriitline	kriitiline	# add1
+magentiks	magnetiks	# trans_12-21
+ebaaseadusliku	ebaseadusliku	# del1_double2one
+sellili	selili	# del1_double2one
+püsitatakse	püstitatakse	# add1
+lennnufirmaga	lennufirmaga	# del1_double2one
+tiilile	tiitlile	# add1
+viisteistkümnele	viieteistkümnele	# subst1
+tervilikkuse	terviklikkuse	# add1
+nkujutluspildi	kujutluspildi	# del1
+sepärast	seepärast	# add1_one2double
+määäratleb	määratleb	# del1_double2one
+teatai	teatati	# add1
+möötmatut	mõõtmatut	# subst_accents
+avaldamaisel	avaldamisel	# del1
+likkviidsusprobleemi	likviidsusprobleemi	# del1_double2one
+tegvdirektor	tegevdirektor	# add1
+partullreide	patrullreide	# trans_12-21
+iseseivusmeelsele	iseseisvusmeelsele	# add1
+märstikuine	märtsikuine	# trans_12-21
+õppisega	õppimisega	# add2_adjacent
+näalavahetuse	nädalavahetuse	# add1
+elamistingingused	elamistingimused	# complex
+avaldmise	avaldamise	# add1
+jaanuril	jaanuaril	# add1
+üleriietga	üleriietega	# add1
+jaanuris	jaanuaris	# add1
+eriale	erialale	# add2_adjacent
+elektrijaamaskatlamajas	elektrijaamakatlamajas	# del1
+lias	lisas	# add1
+päästamet	päästeamet	# add1
+parlamendifraktisooni	parlamendifraktsiooni	# trans_12-21
+üleminukuajad	üleminekuajad	# subst1_aeiou2aeiou
+abilinnape	abilinnapea	# add1
+pretsendenditu	pretsedenditu	# del1
+ppopulaarsuse	populaarsuse	# del1_double2one
+õhkonnas	õhkkonnas	# add1_one2double
+usukunud	uskunud	# del1
+suuremassse	suuremasse	# del1_double2one
+jõulute	jõulude	# subst1_gbd
+jalgarattur	jalgrattur	# del1
+sõidavat	sõidavad	# subst1_gbd
+sõtub	sõltub	# add1
+õlleaktiiside	õlleaktsiiside	# add1
+aadresseeritud	adresseeritud	# del1_double2one
+religisoon	religioon	# del1
+demonstratisoonesinemised	demonstratsioonesinemised	# trans_12-21
+asialgu	esialgu	# subst1_aeiou2aeiou
+kaldudakse	kaldutakse	# subst1_gbd
+mudugi	muidugi	# add1
+kaitseinistriga	kaitseministriga	# add1
 
