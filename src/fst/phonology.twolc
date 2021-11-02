@@ -690,7 +690,7 @@ e:0 <=>  _ [l | r]           %{E%}:           SuffixBorder i: \%{rare%}: ;   ! t
 
 "el-le 1/3"
 
-e:0 <=> :e [l | r] _ %{W%}: SuffixBorder :Consonant ;
+e:0 <=> [:Consonant | WS:0] :e [l | r] _ %{W%}: SuffixBorder :Consonant ;
 
 "el-le 2/3"
 
