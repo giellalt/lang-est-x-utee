@@ -48,21 +48,21 @@
 # a newspaper corpus.
 # 2000 words
 # ---------------
-# corpus size:   3059 
+# corpus size:   3058 
 # error types:
 #   1121 # add1
 #    218 # add1_one2double
 #     57 # add2_adjacent
 #      1 # add2_nonadjacent
-#     65 # complex
-#    470 # del1
+#     66 # complex
+#    469 # del1
 #    222 # del1_double2one
 #     18 # del2_adjacent
 #      1 # del2_nonadjacent
 #     57 # del2_repetition
 #      9 # del3_repetition
 #     14 # strings
-#     61 # subst1
+#     60 # subst1
 #    137 # subst1_aeiou2aeiou
 #     26 # subst1_aeiou2aeiou_kb_next
 #      3 # subst1_capitalize
@@ -1903,7 +1903,6 @@ demokraatiase	demokraatiasse	# add1_one2double
 sooviad	soovijad	# add1
 kaktestasid	katkestasid	# trans_12-21
 mõlemase	mõlemasse	# add1_one2double
-vastavalitud	vastvalitud	# del1
 läheksud	läheksid	# subst1_aeiou2aeiou_kb_next
 faktuuuritüüpide	faktuuritüüpide	# del1_double2one
 aksiaseltsi	aktsiaseltsi	# add1
@@ -2344,7 +2343,7 @@ malaria	malaaria	# add1_one2double
 hukunud	hukkunud	# add1_one2double
 andestanatu	andestamatu	# subst1_kb_next
 tutvude	tutvuda	# subst1_aeiou2aeiou
-psügiveolepigut	prügiveolepigut	# subst1
+psügiveolepigut	prügiveolepingut	# complex
 õptajate	õpetajate	# add1
 ulkmekirjanikud	ulmekirjanikud	# del1
 keskkonastrateegia	keskkonnastrateegia	# add1_one2double

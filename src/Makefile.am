@@ -775,7 +775,6 @@ analyser-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%                \
 					filters/remove-area-tags.%                \
 					filters/remove-dialect-tags.%             \
 					filters/remove-number-string-tags.%       \
-					filters/remove-usage-tags.%               \
 					filters/remove-semantic-tags.%            \
 					filters/remove-hyphenation-marks.%        \
 					filters/remove-infl_deriv-borders.%       \
@@ -796,7 +795,6 @@ analyser-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%                \
 				@\"filters/remove-area-tags.$*\"                \
 			.o. @\"filters/remove-dialect-tags.$*\"             \
 			.o. @\"filters/remove-number-string-tags.$*\"       \
-			.o. @\"filters/remove-usage-tags.$*\"               \
 			.o. @\"filters/remove-semantic-tags.$*\"            \
 			.o. @\"filters/remove-orig_lang-tags.$*\"           \
 			.o. @\"filters/remove-orthography-tags.$*\"         \
@@ -841,7 +839,6 @@ generator-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%            \
 					filters/remove-number-string-tags.%       \
 					filters/remove-orthography-tags.%         \
 					filters/remove-Orth_IPA-strings.%         \
-					filters/remove-usage-tags.%               \
 					filters/remove-Use_GC-strings.%           \
 					filters/remove-Use_minusGC-tags.%         \
 					filters/remove-Use_minus_PMatch-tags.%    \
@@ -860,7 +857,6 @@ generator-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%            \
 			.o. @\"filters/remove-area-tags.$*\"                \
 			.o. @\"filters/remove-dialect-tags.$*\"             \
 			.o. @\"filters/remove-number-string-tags.$*\"       \
-			.o. @\"filters/remove-usage-tags.$*\"               \
 			.o. @\"filters/remove-orthography-tags.$*\"         \
 			.o. @\"filters/remove-Orth_IPA-strings.$*\"         \
 			.o. @\"filters/remove-Use_minus_PMatch-tags.$*\"    \
@@ -882,6 +878,18 @@ analyser-gt-desc.tmp.hfst: analyser-gt-desc.dot.tmp.hfst
 	$(AM_V_CP)cp $< $@
 
 generator-gt-desc.tmp.hfst: generator-gt-desc.dot.tmp.hfst 
+	$(AM_V_CP)cp $< $@
+
+# make sure to override the default fall-back targets
+# because the default messes with tags...
+analyser-gt-desc.hfst: analyser-gt-desc.tmp.hfst
+	$(AM_V_XFST_TOOL)$(PRINTF) "\
+		 load stack $<\n\
+		 $(INVERT_HFST)\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
+generator-gt-desc.hfst: generator-gt-desc.tmp.hfst
 	$(AM_V_CP)cp $< $@
 
 

@@ -1,29 +1,6 @@
 # edits that are so specific we may allow them to occur any number of times
 # (they will occur only once or twice anyway)
 [
-õ (->) ä::1 , 
-õ (->) ö::1 , 
-õ (->) ü::1 , 
-ä (->) õ::1 , 
-ä (->) ö::1 , 
-ä (->) ü::1 , 
-ö (->) õ::1 , 
-ö (->) ä::1 , 
-ö (->) ü::1 , 
-ü (->) õ::1 , 
-ü (->) ä::1 , 
-ü (->) ö::1 , 
-
-# accidental uppercase
-Õ (->) õ::1 ,
-Ä (->) ä::1 ,
-Ö (->) ö::1 ,
-Ü (->) ü::1 ,
-
-õ (->) {õõ}::1,
-ä (->) {ää}::1,
-ö (->) {öö}::1,
-ü (->) {üü}::1,
 
 {x} (->) {ks}::1 ,
 {f} (->) {hv}::1 ,
@@ -37,13 +14,43 @@
 {j} (->) {dž}::1 ,
 {dž} (->) {j}::1 ,
 
-{tud} (->) {tatud}::1 ,
 
-{data} (->) {tada}::1 ,
-{tada} (->) {data}::1 ,
-{dite} (->) {tide}::1 ,
-{tide} (->) {dite}::1 ,
-{ikute} (->) {ike}::1 
+{ium} (->) {ion}::1 ,
+{ium} (->) {jon}::1 ,
+{ion} (->) {ium}::1 ,
+{jon} (->) {ium}::1 ,
+
+{nss} (->) {nts}::1,
+{nts} (->) {nss}::1,
+
+{tu} (->) {tatu}::1 ,
+{taks} (->) {tataks}::1 ,
+{ti} (->) {tati}::1 ,
+
+# ämblikut jne -> ämblikku jne
+{ikut} (->) {ikku}::1,
+{ikuid} (->) {ikke}::1,
+{ikute} (->) {ike}::1,
+{ikute} (->) {ikkude}::1,
+
+# pl par si <-> seid 
+{si} (->) {seid}::1,
+{seid} (->) {si}::1,
+
+# gradation in verbs (mindakse -> minnakse)
+{mb} (->) {mm}::1 ,
+{nd} (->) {nn}::1 ,
+{ld} (->) {ll}::1 ,
+{rd} (->) {rr}::1 ,
+
+# gradation plus le <-> el
+{kle} (->) {gel}::1,
+{ple} (->) {bel}::1,
+{tle} (->) {del}::1,
+{gel} (->) {kle}::1,
+{bel} (->) {ple}::1,
+{del} (->) {tle}::1
+
 ]
 ;
 
