@@ -1,0 +1,53 @@
+# edits that are so specific we may allow them to occur any number of times
+# (they will occur only once or twice anyway)
+[
+{x} (->) {ks}::1 ,
+{f} (->) {hv}::1 ,
+{ff} (->) {hv}::1 ,
+{hv} (->) {f}::1 ,
+{hv} (->) {ff}::1 ,
+{ää} (->) {ea}::1 ,
+{g} (->) {dž}::1 ,
+{dž} (->) {g}::1 ,
+{j} (->) {dž}::1 ,
+{dž} (->) {j}::1 ,
+
+{ium} (->) {ion}::1 ,
+{ium} (->) {jon}::1 ,
+{ion} (->) {ium}::1 ,
+{jon} (->) {ium}::1 ,
+
+{nss} (->) {nts}::1,
+{nts} (->) {nss}::1,
+
+{tu} (->) {tatu}::1 ,
+{taks} (->) {tataks}::1 ,
+{ti} (->) {tati}::1 ,
+
+# ämblikut jne -> ämblikku jne
+{ikut} (->) {ikku}::1,
+{ikuid} (->) {ikke}::1,
+{ikute} (->) {ike}::1,
+{ikute} (->) {ikkude}::1,
+
+# pl par si <-> seid 
+{si} (->) {seid}::1,
+{seid} (->) {si}::1,
+
+# gradation in verbs (mindakse -> minnakse)
+{mb} (->) {mm}::1 ,
+{nd} (->) {nn}::1 ,
+{ld} (->) {ll}::1 ,
+{rd} (->) {rr}::1 ,
+
+# gradation plus le <-> el
+{kle} (->) {gel}::1,
+{ple} (->) {bel}::1,
+{tle} (->) {del}::1,
+{gel} (->) {kle}::1,
+{bel} (->) {ple}::1,
+{del} (->) {tle}::1
+]
+;
+
+

@@ -1,0 +1,16 @@
+#context condition
+[[? - "<CORR>"]*]
+.o.
+[
+# substitution gbd <-> kpt
+b (->) [ [p "<CORR>"]::30 ] ,
+d (->) [ [t "<CORR>"]::30 ] ,
+g (->) [ [k "<CORR>"]::30 ] ,
+k (->) [ [g "<CORR>"]::30 ] ,
+p (->) [ [b "<CORR>"]::30 ] ,
+t (->) [ [d "<CORR>"]::30 ] 
+]
+#context condition and "<CORR>" deletion
+.o.
+[ [? - "<CORR>"]* "<CORR>":0  [? - "<CORR>"]* ];
+
