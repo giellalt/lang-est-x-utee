@@ -3889,8 +3889,9 @@ SELECT:ONCLB particV (1 D)(NEGATE *1 FinV BARRIER CLBC)(NEGATE *-1 FinV BARRIER 
 
 REMOVE:noaux particV (NEGATE 1 LLZ OR Dsh OR CLB OR Col OR Konj)(NEGATE 0 OleSaa)
 	(NEGATE *1 OleSaa BARRIER CLB)(NEGATE *-1 OleSaa BARRIER CLB); 
-REMOVE:noaux particV (1 Konj)(NEGATE 0 OleSaa)
-	(NEGATE *1 OleSaa BARRIER CLB)(NEGATE *-1 OleSaa BARRIER)(NEGATE *1 particV LINK 1 Kvm); 
+# mingi viga siin
+#REMOVE:noaux particV (1 Konj)(NEGATE 0 OleSaa)
+#	(NEGATE *1 OleSaa BARRIER CLB)(NEGATE *-1 OleSaa BARRIER)(NEGATE *1 particV LINK 1 Kvm); 
 				
 
 SELECT:K27A ANom (NEGATE 0 NudTud OR VPs3)(1 PropCap) (1C Nom); 
