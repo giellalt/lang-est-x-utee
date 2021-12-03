@@ -14,312 +14,312 @@ Tests:
 
   Pronouns:
     eikeegi+Pron+Sg+Abe: eikelletagi
-    eikeegi+Pron+Sg+Abe+Foc/gi+Use/NotNorm: eikellegitagi
-    eikeegi+Pron+Sg+Abe+Use/NotNorm: eikellegita
+    eikeegi+Pron+Sg+Abe+Foc/gi+Usage/NotNorm: eikellegitagi
+    eikeegi+Pron+Sg+Abe+Usage/NotNorm: eikellegita
     eikeegi+Pron+Sg+Abl: eikelleltki
-    eikeegi+Pron+Sg+Abl+Foc/gi+Use/NotNorm: eikellegiltki
-    eikeegi+Pron+Sg+Abl+Use/NotNorm: eikellegilt
+    eikeegi+Pron+Sg+Abl+Foc/gi+Usage/NotNorm: eikellegiltki
+    eikeegi+Pron+Sg+Abl+Usage/NotNorm: eikellegilt
     eikeegi+Pron+Sg+Ade: eikellelgi
-    eikeegi+Pron+Sg+Ade+Foc/gi+Use/NotNorm: eikellegilgi
-    eikeegi+Pron+Sg+Ade+Use/NotNorm: eikellegil
+    eikeegi+Pron+Sg+Ade+Foc/gi+Usage/NotNorm: eikellegilgi
+    eikeegi+Pron+Sg+Ade+Usage/NotNorm: eikellegil
     eikeegi+Pron+Sg+All: eikellelegi
-    eikeegi+Pron+Sg+All+Foc/gi+Use/NotNorm: eikellegilegi
-    eikeegi+Pron+Sg+All+Use/NotNorm: eikellegile
+    eikeegi+Pron+Sg+All+Foc/gi+Usage/NotNorm: eikellegilegi
+    eikeegi+Pron+Sg+All+Usage/NotNorm: eikellegile
     eikeegi+Pron+Sg+Com: eikellegagi
-    eikeegi+Pron+Sg+Com+Foc/gi+Use/NotNorm: eikellegigagi
-    eikeegi+Pron+Sg+Com+Use/NotNorm: eikellegiga
+    eikeegi+Pron+Sg+Com+Foc/gi+Usage/NotNorm: eikellegigagi
+    eikeegi+Pron+Sg+Com+Usage/NotNorm: eikellegiga
     eikeegi+Pron+Sg+Ela: eikellestki
-    eikeegi+Pron+Sg+Ela+Foc/gi+Use/NotNorm: eikellegistki
-    eikeegi+Pron+Sg+Ela+Use/NotNorm: eikellegist
+    eikeegi+Pron+Sg+Ela+Foc/gi+Usage/NotNorm: eikellegistki
+    eikeegi+Pron+Sg+Ela+Usage/NotNorm: eikellegist
     eikeegi+Pron+Sg+Ess: eikellenagi
-    eikeegi+Pron+Sg+Ess+Foc/gi+Use/NotNorm: eikelleginagi
-    eikeegi+Pron+Sg+Ess+Use/NotNorm: eikellegina
+    eikeegi+Pron+Sg+Ess+Foc/gi+Usage/NotNorm: eikelleginagi
+    eikeegi+Pron+Sg+Ess+Usage/NotNorm: eikellegina
     eikeegi+Pron+Sg+Gen: eikellegi
     eikeegi+Pron+Sg+Ill: eikellessegi
-    eikeegi+Pron+Sg+Ill+Foc/gi+Use/NotNorm: eikellegissegi
-    eikeegi+Pron+Sg+Ill+Use/NotNorm: eikellegisse
+    eikeegi+Pron+Sg+Ill+Foc/gi+Usage/NotNorm: eikellegissegi
+    eikeegi+Pron+Sg+Ill+Usage/NotNorm: eikellegisse
     eikeegi+Pron+Sg+Ine: eikelleski
-    eikeegi+Pron+Sg+Ine+Foc/gi+Use/NotNorm: eikellegiski
-    eikeegi+Pron+Sg+Ine+Use/NotNorm: eikellegis
+    eikeegi+Pron+Sg+Ine+Foc/gi+Usage/NotNorm: eikellegiski
+    eikeegi+Pron+Sg+Ine+Usage/NotNorm: eikellegis
     eikeegi+Pron+Sg+Nom: eikeegi
     eikeegi+Pron+Sg+Par: eikedagi
     eikeegi+Pron+Sg+Tra: eikellekski
-    eikeegi+Pron+Sg+Tra+Foc/gi+Use/NotNorm: eikellegikski
-    eikeegi+Pron+Sg+Tra+Use/NotNorm: eikellegiks
+    eikeegi+Pron+Sg+Tra+Foc/gi+Usage/NotNorm: eikellegikski
+    eikeegi+Pron+Sg+Tra+Usage/NotNorm: eikellegiks
     eikeegi+Pron+Sg+Trm: eikellenigi
-    eikeegi+Pron+Sg+Trm+Foc/gi+Use/NotNorm: eikelleginigi
-    eikeegi+Pron+Sg+Trm+Use/NotNorm: eikellegini
-    eimiski+Pron+Pl+Nom+Foc/gi+Use/NotNorm: eimiskidki
-    eimiski+Pron+Pl+Nom+Use/NotNorm: eimiskid
+    eikeegi+Pron+Sg+Trm+Foc/gi+Usage/NotNorm: eikelleginigi
+    eikeegi+Pron+Sg+Trm+Usage/NotNorm: eikellegini
+    eimiski+Pron+Pl+Nom+Foc/gi+Usage/NotNorm: eimiskidki
+    eimiski+Pron+Pl+Nom+Usage/NotNorm: eimiskid
     eimiski+Pron+Sg+Abe: eimilletagi
-    eimiski+Pron+Sg+Abe+Foc/gi+Use/NotNorm: [eimillegitagi, eimiskitagi]
-    eimiski+Pron+Sg+Abe+Use/NotNorm: [eimillegita, eimiskita]
+    eimiski+Pron+Sg+Abe+Foc/gi+Usage/NotNorm: [eimillegitagi, eimiskitagi]
+    eimiski+Pron+Sg+Abe+Usage/NotNorm: [eimillegita, eimiskita]
     eimiski+Pron+Sg+Abl: eimilleltki
-    eimiski+Pron+Sg+Abl+Foc/gi+Use/NotNorm: [eimillegiltki, eimiskiltki]
-    eimiski+Pron+Sg+Abl+Use/NotNorm: [eimillegilt, eimiskilt]
+    eimiski+Pron+Sg+Abl+Foc/gi+Usage/NotNorm: [eimillegiltki, eimiskiltki]
+    eimiski+Pron+Sg+Abl+Usage/NotNorm: [eimillegilt, eimiskilt]
     eimiski+Pron+Sg+Ade: eimillelgi
-    eimiski+Pron+Sg+Ade+Foc/gi+Use/NotNorm: [eimillegilgi, eimiskilgi]
-    eimiski+Pron+Sg+Ade+Use/NotNorm: [eimillegil, eimiskil]
+    eimiski+Pron+Sg+Ade+Foc/gi+Usage/NotNorm: [eimillegilgi, eimiskilgi]
+    eimiski+Pron+Sg+Ade+Usage/NotNorm: [eimillegil, eimiskil]
     eimiski+Pron+Sg+All: eimillelegi
-    eimiski+Pron+Sg+All+Foc/gi+Use/NotNorm: [eimillegilegi, eimiskilegi]
-    eimiski+Pron+Sg+All+Use/NotNorm: [eimillegile, eimiskile]
+    eimiski+Pron+Sg+All+Foc/gi+Usage/NotNorm: [eimillegilegi, eimiskilegi]
+    eimiski+Pron+Sg+All+Usage/NotNorm: [eimillegile, eimiskile]
     eimiski+Pron+Sg+Com: eimillegagi
-    eimiski+Pron+Sg+Com+Foc/gi+Use/NotNorm: [eimillegigagi, eimiskigagi]
-    eimiski+Pron+Sg+Com+Use/NotNorm: [eimillegiga, eimiskiga]
+    eimiski+Pron+Sg+Com+Foc/gi+Usage/NotNorm: [eimillegigagi, eimiskigagi]
+    eimiski+Pron+Sg+Com+Usage/NotNorm: [eimillegiga, eimiskiga]
     eimiski+Pron+Sg+Ela: eimillestki
-    eimiski+Pron+Sg+Ela+Foc/gi+Use/NotNorm: [eimillegistki, eimiskistki]
-    eimiski+Pron+Sg+Ela+Use/NotNorm: [eimillegist, eimiskist]
+    eimiski+Pron+Sg+Ela+Foc/gi+Usage/NotNorm: [eimillegistki, eimiskistki]
+    eimiski+Pron+Sg+Ela+Usage/NotNorm: [eimillegist, eimiskist]
     eimiski+Pron+Sg+Ess: eimillenagi
-    eimiski+Pron+Sg+Ess+Foc/gi+Use/NotNorm: [eimilleginagi, eimiskinagi]
-    eimiski+Pron+Sg+Ess+Use/NotNorm: [eimillegina, eimiskina]
+    eimiski+Pron+Sg+Ess+Foc/gi+Usage/NotNorm: [eimilleginagi, eimiskinagi]
+    eimiski+Pron+Sg+Ess+Usage/NotNorm: [eimillegina, eimiskina]
     eimiski+Pron+Sg+Gen: eimillegi
-    eimiski+Pron+Sg+Gen+Foc/gi+Use/NotNorm: eimiskigi
-    eimiski+Pron+Sg+Gen+Use/NotNorm: eimiski
+    eimiski+Pron+Sg+Gen+Foc/gi+Usage/NotNorm: eimiskigi
+    eimiski+Pron+Sg+Gen+Usage/NotNorm: eimiski
     eimiski+Pron+Sg+Ill: eimillessegi
-    eimiski+Pron+Sg+Ill+Foc/gi+Use/NotNorm: [eimillegissegi, eimiskissegi]
-    eimiski+Pron+Sg+Ill+Use/NotNorm: [eimillegisse, eimiskisse]
+    eimiski+Pron+Sg+Ill+Foc/gi+Usage/NotNorm: [eimillegissegi, eimiskissegi]
+    eimiski+Pron+Sg+Ill+Usage/NotNorm: [eimillegisse, eimiskisse]
     eimiski+Pron+Sg+Ine: eimilleski
-    eimiski+Pron+Sg+Ine+Foc/gi+Use/NotNorm: [eimillegiski, eimiskiski]
-    eimiski+Pron+Sg+Ine+Use/NotNorm: [eimillegis, eimiskis]
+    eimiski+Pron+Sg+Ine+Foc/gi+Usage/NotNorm: [eimillegiski, eimiskiski]
+    eimiski+Pron+Sg+Ine+Usage/NotNorm: [eimillegis, eimiskis]
     eimiski+Pron+Sg+Par: eimidagi
-    eimiski+Pron+Sg+Par+Foc/gi+Use/NotNorm: eimiskitki
-    eimiski+Pron+Sg+Par+Use/NotNorm: eimiskit
+    eimiski+Pron+Sg+Par+Foc/gi+Usage/NotNorm: eimiskitki
+    eimiski+Pron+Sg+Par+Usage/NotNorm: eimiskit
     eimiski+Pron+Sg+Tra: eimillekski
-    eimiski+Pron+Sg+Tra+Foc/gi+Use/NotNorm: [eimillegikski, eimiskikski]
-    eimiski+Pron+Sg+Tra+Use/NotNorm: [eimillegiks, eimiskiks]
+    eimiski+Pron+Sg+Tra+Foc/gi+Usage/NotNorm: [eimillegikski, eimiskikski]
+    eimiski+Pron+Sg+Tra+Usage/NotNorm: [eimillegiks, eimiskiks]
     eimiski+Pron+Sg+Trm: eimillenigi
-    eimiski+Pron+Sg+Trm+Foc/gi+Use/NotNorm: [eimilleginigi, eimiskinigi]
-    eimiski+Pron+Sg+Trm+Use/NotNorm: [eimillegini, eimiskini]
+    eimiski+Pron+Sg+Trm+Foc/gi+Usage/NotNorm: [eimilleginigi, eimiskinigi]
+    eimiski+Pron+Sg+Trm+Usage/NotNorm: [eimillegini, eimiskini]
     iseenese+Pron+Pl+Abe+Foc/gi: iseenestetagi
-    iseenese+Pron+Pl+Abe+Foc/gi+Use/Rare: iseenditagi
+    iseenese+Pron+Pl+Abe+Foc/gi+Usage/Rare: iseenditagi
     iseenese+Pron+Pl+Abe: iseenesteta
-    iseenese+Pron+Pl+Abe+Use/Rare: iseendita
+    iseenese+Pron+Pl+Abe+Usage/Rare: iseendita
     iseenese+Pron+Pl+Abl+Foc/gi: iseenesteltki
-    iseenese+Pron+Pl+Abl+Foc/gi+Use/Rare: iseendiltki
+    iseenese+Pron+Pl+Abl+Foc/gi+Usage/Rare: iseendiltki
     iseenese+Pron+Pl+Abl: iseenestelt
-    iseenese+Pron+Pl+Abl+Use/Rare: iseendilt
+    iseenese+Pron+Pl+Abl+Usage/Rare: iseendilt
     iseenese+Pron+Pl+Ade+Foc/gi: iseenestelgi
-    iseenese+Pron+Pl+Ade+Foc/gi+Use/Rare: iseendilgi
+    iseenese+Pron+Pl+Ade+Foc/gi+Usage/Rare: iseendilgi
     iseenese+Pron+Pl+Ade: iseenestel
-    iseenese+Pron+Pl+Ade+Use/Rare: iseendil
+    iseenese+Pron+Pl+Ade+Usage/Rare: iseendil
     iseenese+Pron+Pl+All+Foc/gi: iseenestelegi
-    iseenese+Pron+Pl+All+Foc/gi+Use/Rare: iseendilegi
+    iseenese+Pron+Pl+All+Foc/gi+Usage/Rare: iseendilegi
     iseenese+Pron+Pl+All: iseenestele
-    iseenese+Pron+Pl+All+Use/Rare: iseendile
+    iseenese+Pron+Pl+All+Usage/Rare: iseendile
     iseenese+Pron+Pl+Com+Foc/gi: iseenestegagi
-    iseenese+Pron+Pl+Com+Foc/gi+Use/Rare: iseendigagi
+    iseenese+Pron+Pl+Com+Foc/gi+Usage/Rare: iseendigagi
     iseenese+Pron+Pl+Com: iseenestega
-    iseenese+Pron+Pl+Com+Use/Rare: iseendiga
+    iseenese+Pron+Pl+Com+Usage/Rare: iseendiga
     iseenese+Pron+Pl+Ela+Foc/gi: iseenestestki
-    iseenese+Pron+Pl+Ela+Foc/gi+Use/Rare: iseendistki
+    iseenese+Pron+Pl+Ela+Foc/gi+Usage/Rare: iseendistki
     iseenese+Pron+Pl+Ela: iseenestest
-    iseenese+Pron+Pl+Ela+Use/Rare: iseendist
+    iseenese+Pron+Pl+Ela+Usage/Rare: iseendist
     iseenese+Pron+Pl+Ess+Foc/gi: iseenestenagi
-    iseenese+Pron+Pl+Ess+Foc/gi+Use/Rare: iseendinagi
+    iseenese+Pron+Pl+Ess+Foc/gi+Usage/Rare: iseendinagi
     iseenese+Pron+Pl+Ess: iseenestena
-    iseenese+Pron+Pl+Ess+Use/Rare: iseendina
+    iseenese+Pron+Pl+Ess+Usage/Rare: iseendina
     iseenese+Pron+Pl+Gen+Foc/gi: iseenestegi
-    iseenese+Pron+Pl+Gen+Foc/gi+Use/Rare: iseendigi
+    iseenese+Pron+Pl+Gen+Foc/gi+Usage/Rare: iseendigi
     iseenese+Pron+Pl+Gen: iseeneste
-    iseenese+Pron+Pl+Gen+Use/Rare: iseendi
+    iseenese+Pron+Pl+Gen+Usage/Rare: iseendi
     iseenese+Pron+Pl+Ine+Foc/gi: iseenesteski
-    iseenese+Pron+Pl+Ine+Foc/gi+Use/Rare: iseendiski
+    iseenese+Pron+Pl+Ine+Foc/gi+Usage/Rare: iseendiski
     iseenese+Pron+Pl+Ine: iseenestes
-    iseenese+Pron+Pl+Ine+Use/Rare: iseendis
+    iseenese+Pron+Pl+Ine+Usage/Rare: iseendis
     iseenese+Pron+Pl+Tra+Foc/gi: iseenestekski
-    iseenese+Pron+Pl+Tra+Foc/gi+Use/Rare: iseendikski
+    iseenese+Pron+Pl+Tra+Foc/gi+Usage/Rare: iseendikski
     iseenese+Pron+Pl+Tra: iseenesteks
-    iseenese+Pron+Pl+Tra+Use/Rare: iseendiks
+    iseenese+Pron+Pl+Tra+Usage/Rare: iseendiks
     iseenese+Pron+Pl+Trm+Foc/gi: iseenestenigi
-    iseenese+Pron+Pl+Trm+Foc/gi+Use/Rare: iseendinigi
+    iseenese+Pron+Pl+Trm+Foc/gi+Usage/Rare: iseendinigi
     iseenese+Pron+Pl+Trm: iseenesteni
-    iseenese+Pron+Pl+Trm+Use/Rare: iseendini
+    iseenese+Pron+Pl+Trm+Usage/Rare: iseendini
     iseenese+Pron+Sg+Abe+Foc/gi: iseenesetagi
-    iseenese+Pron+Sg+Abe+Foc/gi+Use/Rare: iseendatagi
+    iseenese+Pron+Sg+Abe+Foc/gi+Usage/Rare: iseendatagi
     iseenese+Pron+Sg+Abe: iseeneseta
-    iseenese+Pron+Sg+Abe+Use/Rare: iseendata
+    iseenese+Pron+Sg+Abe+Usage/Rare: iseendata
     iseenese+Pron+Sg+Abl+Foc/gi: iseeneseltki
-    iseenese+Pron+Sg+Abl+Foc/gi+Use/Rare: iseendaltki
+    iseenese+Pron+Sg+Abl+Foc/gi+Usage/Rare: iseendaltki
     iseenese+Pron+Sg+Abl: iseeneselt
-    iseenese+Pron+Sg+Abl+Use/Rare: iseendalt
+    iseenese+Pron+Sg+Abl+Usage/Rare: iseendalt
     iseenese+Pron+Sg+Ade+Foc/gi: iseeneselgi
-    iseenese+Pron+Sg+Ade+Foc/gi+Use/Rare: iseendalgi
+    iseenese+Pron+Sg+Ade+Foc/gi+Usage/Rare: iseendalgi
     iseenese+Pron+Sg+Ade: iseenesel
-    iseenese+Pron+Sg+Ade+Use/Rare: iseendal
+    iseenese+Pron+Sg+Ade+Usage/Rare: iseendal
     iseenese+Pron+Sg+All+Foc/gi: iseeneselegi
-    iseenese+Pron+Sg+All+Foc/gi+Use/Rare: iseendalegi
+    iseenese+Pron+Sg+All+Foc/gi+Usage/Rare: iseendalegi
     iseenese+Pron+Sg+All: iseenesele
-    iseenese+Pron+Sg+All+Use/Rare: iseendale
+    iseenese+Pron+Sg+All+Usage/Rare: iseendale
     iseenese+Pron+Sg+Com+Foc/gi: iseenesegagi
-    iseenese+Pron+Sg+Com+Foc/gi+Use/Rare: iseendagagi
+    iseenese+Pron+Sg+Com+Foc/gi+Usage/Rare: iseendagagi
     iseenese+Pron+Sg+Com: iseenesega
-    iseenese+Pron+Sg+Com+Use/Rare: iseendaga
+    iseenese+Pron+Sg+Com+Usage/Rare: iseendaga
     iseenese+Pron+Sg+Ela+Foc/gi: iseenesestki
-    iseenese+Pron+Sg+Ela+Foc/gi+Use/Rare: iseendastki
+    iseenese+Pron+Sg+Ela+Foc/gi+Usage/Rare: iseendastki
     iseenese+Pron+Sg+Ela: iseenesest
-    iseenese+Pron+Sg+Ela+Use/Rare: iseendast
+    iseenese+Pron+Sg+Ela+Usage/Rare: iseendast
     iseenese+Pron+Sg+Ess+Foc/gi: iseenesenagi
-    iseenese+Pron+Sg+Ess+Foc/gi+Use/Rare: iseendanagi
+    iseenese+Pron+Sg+Ess+Foc/gi+Usage/Rare: iseendanagi
     iseenese+Pron+Sg+Ess: iseenesena
-    iseenese+Pron+Sg+Ess+Use/Rare: iseendana
+    iseenese+Pron+Sg+Ess+Usage/Rare: iseendana
     iseenese+Pron+Sg+Gen+Foc/gi: iseenesegi
-    iseenese+Pron+Sg+Gen+Foc/gi+Use/Rare: iseendagi
+    iseenese+Pron+Sg+Gen+Foc/gi+Usage/Rare: iseendagi
     iseenese+Pron+Sg+Gen: iseenese
-    iseenese+Pron+Sg+Gen+Use/Rare: iseenda
+    iseenese+Pron+Sg+Gen+Usage/Rare: iseenda
     iseenese+Pron+Sg+Ill+Foc/gi: iseenesessegi
-    iseenese+Pron+Sg+Ill+Foc/gi+Use/Rare: iseendassegi
+    iseenese+Pron+Sg+Ill+Foc/gi+Usage/Rare: iseendassegi
     iseenese+Pron+Sg+Ill: iseenesesse
-    iseenese+Pron+Sg+Ill+Use/Rare: iseendasse
+    iseenese+Pron+Sg+Ill+Usage/Rare: iseendasse
     iseenese+Pron+Sg+Ine+Foc/gi: iseeneseski
-    iseenese+Pron+Sg+Ine+Foc/gi+Use/Rare: iseendaski
+    iseenese+Pron+Sg+Ine+Foc/gi+Usage/Rare: iseendaski
     iseenese+Pron+Sg+Ine: iseeneses
-    iseenese+Pron+Sg+Ine+Use/Rare: iseendas
+    iseenese+Pron+Sg+Ine+Usage/Rare: iseendas
     iseenese+Pron+Sg+Par+Foc/gi: iseennastki
-    iseenese+Pron+Sg+Par+Foc/gi+Use/Rare: iseendki
+    iseenese+Pron+Sg+Par+Foc/gi+Usage/Rare: iseendki
     iseenese+Pron+Sg+Par: iseennast
-    iseenese+Pron+Sg+Par+Use/Rare: iseend
+    iseenese+Pron+Sg+Par+Usage/Rare: iseend
     iseenese+Pron+Sg+Tra+Foc/gi: iseenesekski
-    iseenese+Pron+Sg+Tra+Foc/gi+Use/Rare: iseendakski
+    iseenese+Pron+Sg+Tra+Foc/gi+Usage/Rare: iseendakski
     iseenese+Pron+Sg+Tra: iseeneseks
-    iseenese+Pron+Sg+Tra+Use/Rare: iseendaks
+    iseenese+Pron+Sg+Tra+Usage/Rare: iseendaks
     iseenese+Pron+Sg+Trm+Foc/gi: iseenesenigi
-    iseenese+Pron+Sg+Trm+Foc/gi+Use/Rare: iseendanigi
+    iseenese+Pron+Sg+Trm+Foc/gi+Usage/Rare: iseendanigi
     iseenese+Pron+Sg+Trm: iseeneseni
-    iseenese+Pron+Sg+Trm+Use/Rare: iseendani
+    iseenese+Pron+Sg+Trm+Usage/Rare: iseendani
     ise+Pron+Pl+Abe: enesteta
     ise+Pron+Pl+Abe+Foc/gi: enestetagi
-    ise+Pron+Pl+Abe+Foc/gi+Use/Rare: enditagi
-    ise+Pron+Pl+Abe+Use/Rare: endita
+    ise+Pron+Pl+Abe+Foc/gi+Usage/Rare: enditagi
+    ise+Pron+Pl+Abe+Usage/Rare: endita
     ise+Pron+Pl+Abl: enestelt
     ise+Pron+Pl+Abl+Foc/gi: enesteltki
-    ise+Pron+Pl+Abl+Foc/gi+Use/Rare: endiltki
-    ise+Pron+Pl+Abl+Use/Rare: endilt
+    ise+Pron+Pl+Abl+Foc/gi+Usage/Rare: endiltki
+    ise+Pron+Pl+Abl+Usage/Rare: endilt
     ise+Pron+Pl+Ade: enestel
     ise+Pron+Pl+Ade+Foc/gi: enestelgi
-    ise+Pron+Pl+Ade+Foc/gi+Use/Rare: endilgi
-    ise+Pron+Pl+Ade+Use/Rare: endil
+    ise+Pron+Pl+Ade+Foc/gi+Usage/Rare: endilgi
+    ise+Pron+Pl+Ade+Usage/Rare: endil
     ise+Pron+Pl+All: enestele
     ise+Pron+Pl+All+Foc/gi: enestelegi
-    ise+Pron+Pl+All+Foc/gi+Use/Rare: endilegi
-    ise+Pron+Pl+All+Use/Rare: endile
+    ise+Pron+Pl+All+Foc/gi+Usage/Rare: endilegi
+    ise+Pron+Pl+All+Usage/Rare: endile
     ise+Pron+Pl+Com: enestega
     ise+Pron+Pl+Com+Foc/gi: enestegagi
-    ise+Pron+Pl+Com+Foc/gi+Use/Rare: endigagi
-    ise+Pron+Pl+Com+Use/Rare: endiga
+    ise+Pron+Pl+Com+Foc/gi+Usage/Rare: endigagi
+    ise+Pron+Pl+Com+Usage/Rare: endiga
     ise+Pron+Pl+Ela: enestest
     ise+Pron+Pl+Ela+Foc/gi: enestestki
-    ise+Pron+Pl+Ela+Foc/gi+Use/Rare: endistki
-    ise+Pron+Pl+Ela+Use/Rare: endist
+    ise+Pron+Pl+Ela+Foc/gi+Usage/Rare: endistki
+    ise+Pron+Pl+Ela+Usage/Rare: endist
     ise+Pron+Pl+Ess: enestena
     ise+Pron+Pl+Ess+Foc/gi: enestenagi
-    ise+Pron+Pl+Ess+Foc/gi+Use/Rare: endinagi
-    ise+Pron+Pl+Ess+Use/Rare: endina
+    ise+Pron+Pl+Ess+Foc/gi+Usage/Rare: endinagi
+    ise+Pron+Pl+Ess+Usage/Rare: endina
     ise+Pron+Pl+Gen: eneste
     ise+Pron+Pl+Gen+Foc/gi: enestegi
-    ise+Pron+Pl+Gen+Foc/gi+Use/Rare: endigi
-    ise+Pron+Pl+Gen+Use/Rare: endi
+    ise+Pron+Pl+Gen+Foc/gi+Usage/Rare: endigi
+    ise+Pron+Pl+Gen+Usage/Rare: endi
     ise+Pron+Pl+Ine: enestes
     ise+Pron+Pl+Ine+Foc/gi: enesteski
-    ise+Pron+Pl+Ine+Foc/gi+Use/Rare: endiski
-    ise+Pron+Pl+Ine+Use/Rare: endis
+    ise+Pron+Pl+Ine+Foc/gi+Usage/Rare: endiski
+    ise+Pron+Pl+Ine+Usage/Rare: endis
     ise+Pron+Pl+Tra: enesteks
     ise+Pron+Pl+Tra+Foc/gi: enestekski
-    ise+Pron+Pl+Tra+Foc/gi+Use/Rare: endikski
-    ise+Pron+Pl+Tra+Use/Rare: endiks
+    ise+Pron+Pl+Tra+Foc/gi+Usage/Rare: endikski
+    ise+Pron+Pl+Tra+Usage/Rare: endiks
     ise+Pron+Pl+Trm: enesteni
     ise+Pron+Pl+Trm+Foc/gi: enestenigi
-    ise+Pron+Pl+Trm+Foc/gi+Use/Rare: endinigi
-    ise+Pron+Pl+Trm+Use/Rare: endini
+    ise+Pron+Pl+Trm+Foc/gi+Usage/Rare: endinigi
+    ise+Pron+Pl+Trm+Usage/Rare: endini
     ise+Pron+Sg+Abe: eneseta
     ise+Pron+Sg+Abe+Foc/gi: enesetagi
-    ise+Pron+Sg+Abe+Foc/gi+Use/Rare: endatagi
-    ise+Pron+Sg+Abe+Use/Rare: endata
+    ise+Pron+Sg+Abe+Foc/gi+Usage/Rare: endatagi
+    ise+Pron+Sg+Abe+Usage/Rare: endata
     ise+Pron+Sg+Abl: eneselt
     ise+Pron+Sg+Abl+Foc/gi: eneseltki
-    ise+Pron+Sg+Abl+Foc/gi+Use/Rare: endaltki
-    ise+Pron+Sg+Abl+Use/Rare: endalt
+    ise+Pron+Sg+Abl+Foc/gi+Usage/Rare: endaltki
+    ise+Pron+Sg+Abl+Usage/Rare: endalt
     ise+Pron+Sg+Ade: enesel
     ise+Pron+Sg+Ade+Foc/gi: eneselgi
-    ise+Pron+Sg+Ade+Foc/gi+Use/Rare: endalgi
-    ise+Pron+Sg+Ade+Use/Rare: endal
+    ise+Pron+Sg+Ade+Foc/gi+Usage/Rare: endalgi
+    ise+Pron+Sg+Ade+Usage/Rare: endal
     ise+Pron+Sg+All: enesele
     ise+Pron+Sg+All+Foc/gi: eneselegi
-    ise+Pron+Sg+All+Foc/gi+Use/Rare: endalegi
-    ise+Pron+Sg+All+Use/Rare: endale
+    ise+Pron+Sg+All+Foc/gi+Usage/Rare: endalegi
+    ise+Pron+Sg+All+Usage/Rare: endale
     ise+Pron+Sg+Com: enesega
     ise+Pron+Sg+Com+Foc/gi: enesegagi
-    ise+Pron+Sg+Com+Foc/gi+Use/Rare: endagagi
-    ise+Pron+Sg+Com+Use/Rare: endaga
+    ise+Pron+Sg+Com+Foc/gi+Usage/Rare: endagagi
+    ise+Pron+Sg+Com+Usage/Rare: endaga
     ise+Pron+Sg+Ela: enesest
     ise+Pron+Sg+Ela+Foc/gi: enesestki
-    ise+Pron+Sg+Ela+Foc/gi+Use/Rare: endastki
-    ise+Pron+Sg+Ela+Use/Rare: endast
+    ise+Pron+Sg+Ela+Foc/gi+Usage/Rare: endastki
+    ise+Pron+Sg+Ela+Usage/Rare: endast
     ise+Pron+Sg+Ess: enesena
     ise+Pron+Sg+Ess+Foc/gi: enesenagi
-    ise+Pron+Sg+Ess+Foc/gi+Use/Rare: endanagi
-    ise+Pron+Sg+Ess+Use/Rare: endana
+    ise+Pron+Sg+Ess+Foc/gi+Usage/Rare: endanagi
+    ise+Pron+Sg+Ess+Usage/Rare: endana
     ise+Pron+Sg+Gen: enese
     ise+Pron+Sg+Gen+Foc/gi: enesegi
-    ise+Pron+Sg+Gen+Foc/gi+Use/Rare: endagi
-    ise+Pron+Sg+Gen+Use/Rare: enda
+    ise+Pron+Sg+Gen+Foc/gi+Usage/Rare: endagi
+    ise+Pron+Sg+Gen+Usage/Rare: enda
     ise+Pron+Sg+Ill: enesesse
     ise+Pron+Sg+Ill+Foc/gi: enesessegi
-    ise+Pron+Sg+Ill+Foc/gi+Use/Rare: endassegi
-    ise+Pron+Sg+Ill+Use/Rare: endasse
+    ise+Pron+Sg+Ill+Foc/gi+Usage/Rare: endassegi
+    ise+Pron+Sg+Ill+Usage/Rare: endasse
     ise+Pron+Sg+Ine: eneses
     ise+Pron+Sg+Ine+Foc/gi: eneseski
-    ise+Pron+Sg+Ine+Foc/gi+Use/Rare: endaski
-    ise+Pron+Sg+Ine+Use/Rare: endas
+    ise+Pron+Sg+Ine+Foc/gi+Usage/Rare: endaski
+    ise+Pron+Sg+Ine+Usage/Rare: endas
     ise+Pron+Sg+Nom+Foc/gi: isegi
     ise+Pron+Sg+Nom: ise
     ise+Pron+Sg+Par: ennast
     ise+Pron+Sg+Par+Foc/gi: ennastki
-    ise+Pron+Sg+Par+Foc/gi+Use/Rare: endki
-    ise+Pron+Sg+Par+Use/Rare: end
+    ise+Pron+Sg+Par+Foc/gi+Usage/Rare: endki
+    ise+Pron+Sg+Par+Usage/Rare: end
     ise+Pron+Sg+Tra: eneseks
     ise+Pron+Sg+Tra+Foc/gi: enesekski
-    ise+Pron+Sg+Tra+Foc/gi+Use/Rare: endakski
-    ise+Pron+Sg+Tra+Use/Rare: endaks
+    ise+Pron+Sg+Tra+Foc/gi+Usage/Rare: endakski
+    ise+Pron+Sg+Tra+Usage/Rare: endaks
     ise+Pron+Sg+Trm: eneseni
     ise+Pron+Sg+Trm+Foc/gi: enesenigi
-    ise+Pron+Sg+Trm+Foc/gi+Use/Rare: endanigi
-    ise+Pron+Sg+Trm+Use/Rare: endani
-    keegi+Pron+Sg+Abe+Foc/gi+Use/NotNorm: kellegitagi
+    ise+Pron+Sg+Trm+Foc/gi+Usage/Rare: endanigi
+    ise+Pron+Sg+Trm+Usage/Rare: endani
+    keegi+Pron+Sg+Abe+Foc/gi+Usage/NotNorm: kellegitagi
     keegi+Pron+Sg+Abe: kelletagi
-    keegi+Pron+Sg+Abe+Use/NotNorm: kellegita
-    keegi+Pron+Sg+Abl+Foc/gi+Use/NotNorm: kellegiltki
+    keegi+Pron+Sg+Abe+Usage/NotNorm: kellegita
+    keegi+Pron+Sg+Abl+Foc/gi+Usage/NotNorm: kellegiltki
     keegi+Pron+Sg+Abl: kelleltki
-    keegi+Pron+Sg+Abl+Use/NotNorm: kellegilt
-    keegi+Pron+Sg+Ade+Foc/gi+Use/NotNorm: kellegilgi
+    keegi+Pron+Sg+Abl+Usage/NotNorm: kellegilt
+    keegi+Pron+Sg+Ade+Foc/gi+Usage/NotNorm: kellegilgi
     keegi+Pron+Sg+Ade: kellelgi
-    keegi+Pron+Sg+Ade+Use/NotNorm: kellegil
-    keegi+Pron+Sg+All+Foc/gi+Use/NotNorm: kellegilegi
+    keegi+Pron+Sg+Ade+Usage/NotNorm: kellegil
+    keegi+Pron+Sg+All+Foc/gi+Usage/NotNorm: kellegilegi
     keegi+Pron+Sg+All: kellelegi
-    keegi+Pron+Sg+All+Use/NotNorm: kellegile
-    keegi+Pron+Sg+Com+Foc/gi+Use/NotNorm: kellegigagi
+    keegi+Pron+Sg+All+Usage/NotNorm: kellegile
+    keegi+Pron+Sg+Com+Foc/gi+Usage/NotNorm: kellegigagi
     keegi+Pron+Sg+Com: kellegagi
-    keegi+Pron+Sg+Com+Use/NotNorm: kellegiga
-    keegi+Pron+Sg+Ela+Foc/gi+Use/NotNorm: kellegistki
+    keegi+Pron+Sg+Com+Usage/NotNorm: kellegiga
+    keegi+Pron+Sg+Ela+Foc/gi+Usage/NotNorm: kellegistki
     keegi+Pron+Sg+Ela: kellestki
-    keegi+Pron+Sg+Ela+Use/NotNorm: kellegist
-    keegi+Pron+Sg+Ess+Foc/gi+Use/NotNorm: kelleginagi
+    keegi+Pron+Sg+Ela+Usage/NotNorm: kellegist
+    keegi+Pron+Sg+Ess+Foc/gi+Usage/NotNorm: kelleginagi
     keegi+Pron+Sg+Ess: kellenagi
-    keegi+Pron+Sg+Ess+Use/NotNorm: kellegina
+    keegi+Pron+Sg+Ess+Usage/NotNorm: kellegina
     keegi+Pron+Sg+Gen: kellegi
-    keegi+Pron+Sg+Ill+Foc/gi+Use/NotNorm: kellegissegi
+    keegi+Pron+Sg+Ill+Foc/gi+Usage/NotNorm: kellegissegi
     keegi+Pron+Sg+Ill: kellessegi
-    keegi+Pron+Sg+Ill+Use/NotNorm: kellegisse
-    keegi+Pron+Sg+Ine+Foc/gi+Use/NotNorm: kellegiski
+    keegi+Pron+Sg+Ill+Usage/NotNorm: kellegisse
+    keegi+Pron+Sg+Ine+Foc/gi+Usage/NotNorm: kellegiski
     keegi+Pron+Sg+Ine: kelleski
-    keegi+Pron+Sg+Ine+Use/NotNorm: kellegis
+    keegi+Pron+Sg+Ine+Usage/NotNorm: kellegis
     keegi+Pron+Sg+Nom: keegi
     keegi+Pron+Sg+Par: kedagi
-    keegi+Pron+Sg+Tra+Foc/gi+Use/NotNorm: kellegikski
+    keegi+Pron+Sg+Tra+Foc/gi+Usage/NotNorm: kellegikski
     keegi+Pron+Sg+Tra: kellekski
-    keegi+Pron+Sg+Tra+Use/NotNorm: kellegiks
-    keegi+Pron+Sg+Trm+Foc/gi+Use/NotNorm: kelleginigi
+    keegi+Pron+Sg+Tra+Usage/NotNorm: kellegiks
+    keegi+Pron+Sg+Trm+Foc/gi+Usage/NotNorm: kelleginigi
     keegi+Pron+Sg+Trm: kellenigi
-    keegi+Pron+Sg+Trm+Use/NotNorm: kellegini
+    keegi+Pron+Sg+Trm+Usage/NotNorm: kellegini
     kes+Pron+Pl+Abe: kelledeta
     kes+Pron+Pl+Abl: kelledelt
     kes+Pron+Pl+Ade: kelledel
@@ -335,7 +335,7 @@ Tests:
     kes+Pron+Sg+Abe: kelleta
     kes+Pron+Sg+Abl: kellelt
     kes+Pron+Sg+Ade: kellel
-    kes+Pron+Sg+Ade+Use/Rare: kel
+    kes+Pron+Sg+Ade+Usage/Rare: kel
     kes+Pron+Sg+All: kellele
     kes+Pron+Sg+Com: kellega
     kes+Pron+Sg+Ela: kellest
@@ -347,50 +347,50 @@ Tests:
     kes+Pron+Sg+Par: keda
     kes+Pron+Sg+Tra: kelleks
     kes+Pron+Sg+Trm: kelleni
-    kumbki+Pron+Pl+Nom+Foc/gi+Use/NotNorm: kummagidki
+    kumbki+Pron+Pl+Nom+Foc/gi+Usage/NotNorm: kummagidki
     kumbki+Pron+Pl+Nom: kummadki
-    kumbki+Pron+Pl+Nom+Use/NotNorm: kummagid
-    kumbki+Pron+Sg+Abe+Foc/gi+Use/NotNorm: kummagitagi
+    kumbki+Pron+Pl+Nom+Usage/NotNorm: kummagid
+    kumbki+Pron+Sg+Abe+Foc/gi+Usage/NotNorm: kummagitagi
     kumbki+Pron+Sg+Abe: kummatagi
-    kumbki+Pron+Sg+Abe+Use/NotNorm: kummagita
-    kumbki+Pron+Sg+Abl+Foc/gi+Use/NotNorm: kummagiltki
+    kumbki+Pron+Sg+Abe+Usage/NotNorm: kummagita
+    kumbki+Pron+Sg+Abl+Foc/gi+Usage/NotNorm: kummagiltki
     kumbki+Pron+Sg+Abl: kummaltki
-    kumbki+Pron+Sg+Abl+Use/NotNorm: kummagilt
-    kumbki+Pron+Sg+Ade+Foc/gi+Use/NotNorm: kummagilgi
+    kumbki+Pron+Sg+Abl+Usage/NotNorm: kummagilt
+    kumbki+Pron+Sg+Ade+Foc/gi+Usage/NotNorm: kummagilgi
     kumbki+Pron+Sg+Ade: kummalgi
-    kumbki+Pron+Sg+Ade+Use/NotNorm: kummagil
-    kumbki+Pron+Sg+All+Foc/gi+Use/NotNorm: kummagilegi
+    kumbki+Pron+Sg+Ade+Usage/NotNorm: kummagil
+    kumbki+Pron+Sg+All+Foc/gi+Usage/NotNorm: kummagilegi
     kumbki+Pron+Sg+All: kummalegi
-    kumbki+Pron+Sg+All+Use/NotNorm: kummagile
-    kumbki+Pron+Sg+Com+Foc/gi+Use/NotNorm: kummagigagi
+    kumbki+Pron+Sg+All+Usage/NotNorm: kummagile
+    kumbki+Pron+Sg+Com+Foc/gi+Usage/NotNorm: kummagigagi
     kumbki+Pron+Sg+Com: kummagagi
-    kumbki+Pron+Sg+Com+Use/NotNorm: kummagiga
-    kumbki+Pron+Sg+Ela+Foc/gi+Use/NotNorm: kummagistki
+    kumbki+Pron+Sg+Com+Usage/NotNorm: kummagiga
+    kumbki+Pron+Sg+Ela+Foc/gi+Usage/NotNorm: kummagistki
     kumbki+Pron+Sg+Ela: kummastki
-    kumbki+Pron+Sg+Ela+Use/NotNorm: kummagist
-    kumbki+Pron+Sg+Ess+Foc/gi+Use/NotNorm: kummaginagi
+    kumbki+Pron+Sg+Ela+Usage/NotNorm: kummagist
+    kumbki+Pron+Sg+Ess+Foc/gi+Usage/NotNorm: kummaginagi
     kumbki+Pron+Sg+Ess: kummanagi
-    kumbki+Pron+Sg+Ess+Use/NotNorm: kummagina
-    kumbki+Pron+Sg+Gen+Foc/gi+Use/NotNorm: kummagigi
+    kumbki+Pron+Sg+Ess+Usage/NotNorm: kummagina
+    kumbki+Pron+Sg+Gen+Foc/gi+Usage/NotNorm: kummagigi
     kumbki+Pron+Sg+Gen: kummagi
-    kumbki+Pron+Sg+Gen+Use/NotNorm: kummagi
-    kumbki+Pron+Sg+Ill+Foc/gi+Use/NotNorm: kummagissegi
+    kumbki+Pron+Sg+Gen+Usage/NotNorm: kummagi
+    kumbki+Pron+Sg+Ill+Foc/gi+Usage/NotNorm: kummagissegi
     kumbki+Pron+Sg+Ill: kumbagi
-    kumbki+Pron+Sg+Ill+Use/Hyp: kummassegi
-    kumbki+Pron+Sg+Ill+Use/NotNorm: kummagisse
-    kumbki+Pron+Sg+Ine+Foc/gi+Use/NotNorm: kummagiski
+    kumbki+Pron+Sg+Ill+Usage/Hyp: kummassegi
+    kumbki+Pron+Sg+Ill+Usage/NotNorm: kummagisse
+    kumbki+Pron+Sg+Ine+Foc/gi+Usage/NotNorm: kummagiski
     kumbki+Pron+Sg+Ine: kummaski
-    kumbki+Pron+Sg+Ine+Use/NotNorm: kummagis
+    kumbki+Pron+Sg+Ine+Usage/NotNorm: kummagis
     kumbki+Pron+Sg+Nom: kumbki
-    kumbki+Pron+Sg+Par+Foc/gi+Use/NotNorm: kummagitki
+    kumbki+Pron+Sg+Par+Foc/gi+Usage/NotNorm: kummagitki
     kumbki+Pron+Sg+Par: kumbagi
-    kumbki+Pron+Sg+Par+Use/NotNorm: kummagit
-    kumbki+Pron+Sg+Tra+Foc/gi+Use/NotNorm: kummagikski
+    kumbki+Pron+Sg+Par+Usage/NotNorm: kummagit
+    kumbki+Pron+Sg+Tra+Foc/gi+Usage/NotNorm: kummagikski
     kumbki+Pron+Sg+Tra: kummakski
-    kumbki+Pron+Sg+Tra+Use/NotNorm: kummagiks
-    kumbki+Pron+Sg+Trm+Foc/gi+Use/NotNorm: kummaginigi
+    kumbki+Pron+Sg+Tra+Usage/NotNorm: kummagiks
+    kumbki+Pron+Sg+Trm+Foc/gi+Usage/NotNorm: kummaginigi
     kumbki+Pron+Sg+Trm: kummanigi
-    kumbki+Pron+Sg+Trm+Use/NotNorm: kummagini
+    kumbki+Pron+Sg+Trm+Usage/NotNorm: kummagini
     kumb+Pron+Pl+Abe: kumbadeta
     kumb+Pron+Pl+Abl: kumbadelt
     kumb+Pron+Pl+Ade: kumbadel
@@ -403,7 +403,7 @@ Tests:
     kumb+Pron+Pl+Ine: kumbades
     kumb+Pron+Pl+Nom: kummad
     kumb+Pron+Pl+Par: kumbasid
-    kumb+Pron+Pl+Par+Use/Rare: kumbi
+    kumb+Pron+Pl+Par+Usage/Rare: kumbi
     kumb+Pron+Pl+Tra: kumbadeks
     kumb+Pron+Pl+Trm: kumbadeni
     kumb+Pron+Sg+Abe: kummata
@@ -415,61 +415,61 @@ Tests:
     kumb+Pron+Sg+Ess: kummana
     kumb+Pron+Sg+Gen: kumma
     kumb+Pron+Sg+Ill: kumba
-    kumb+Pron+Sg+Ill+Use/Hyp: kummasse
+    kumb+Pron+Sg+Ill+Usage/Hyp: kummasse
     kumb+Pron+Sg+Ine: kummas
     kumb+Pron+Sg+Nom: kumb
     kumb+Pron+Sg+Par: kumba
     kumb+Pron+Sg+Tra: kummaks
     kumb+Pron+Sg+Trm: kummani
     kõik+Pron+Pl+Abe+Foc/gi: kõigitagi
-    kõik+Pron+Pl+Abe+Foc/gi+Use/Rare: kõikidetagi
+    kõik+Pron+Pl+Abe+Foc/gi+Usage/Rare: kõikidetagi
     kõik+Pron+Pl+Abe: kõigita
-    kõik+Pron+Pl+Abe+Use/Rare: kõikideta
+    kõik+Pron+Pl+Abe+Usage/Rare: kõikideta
     kõik+Pron+Pl+Abl+Foc/gi: kõigiltki
-    kõik+Pron+Pl+Abl+Foc/gi+Use/Rare: kõikideltki
+    kõik+Pron+Pl+Abl+Foc/gi+Usage/Rare: kõikideltki
     kõik+Pron+Pl+Abl: kõigilt
-    kõik+Pron+Pl+Abl+Use/Rare: kõikidelt
+    kõik+Pron+Pl+Abl+Usage/Rare: kõikidelt
     kõik+Pron+Pl+Ade+Foc/gi: kõigilgi
-    kõik+Pron+Pl+Ade+Foc/gi+Use/Rare: kõikidelgi
+    kõik+Pron+Pl+Ade+Foc/gi+Usage/Rare: kõikidelgi
     kõik+Pron+Pl+Ade: kõigil
-    kõik+Pron+Pl+Ade+Use/Rare: kõikidel
+    kõik+Pron+Pl+Ade+Usage/Rare: kõikidel
     kõik+Pron+Pl+All+Foc/gi: kõigilegi
-    kõik+Pron+Pl+All+Foc/gi+Use/Rare: kõikidelegi
+    kõik+Pron+Pl+All+Foc/gi+Usage/Rare: kõikidelegi
     kõik+Pron+Pl+All: kõigile
-    kõik+Pron+Pl+All+Use/Rare: kõikidele
+    kõik+Pron+Pl+All+Usage/Rare: kõikidele
     kõik+Pron+Pl+Com+Foc/gi: kõigigagi
-    kõik+Pron+Pl+Com+Foc/gi+Use/Rare: kõikidegagi
+    kõik+Pron+Pl+Com+Foc/gi+Usage/Rare: kõikidegagi
     kõik+Pron+Pl+Com: kõigiga
-    kõik+Pron+Pl+Com+Use/Rare: kõikidega
+    kõik+Pron+Pl+Com+Usage/Rare: kõikidega
     kõik+Pron+Pl+Ela+Foc/gi: kõigistki
-    kõik+Pron+Pl+Ela+Foc/gi+Use/Rare: kõikidestki
+    kõik+Pron+Pl+Ela+Foc/gi+Usage/Rare: kõikidestki
     kõik+Pron+Pl+Ela: kõigist
-    kõik+Pron+Pl+Ela+Use/Rare: kõikidest
+    kõik+Pron+Pl+Ela+Usage/Rare: kõikidest
     kõik+Pron+Pl+Ess+Foc/gi: kõiginagi
-    kõik+Pron+Pl+Ess+Foc/gi+Use/Rare: kõikidenagi
+    kõik+Pron+Pl+Ess+Foc/gi+Usage/Rare: kõikidenagi
     kõik+Pron+Pl+Ess: kõigina
-    kõik+Pron+Pl+Ess+Use/Rare: kõikidena
+    kõik+Pron+Pl+Ess+Usage/Rare: kõikidena
     kõik+Pron+Pl+Gen+Foc/gi: kõigigi
-    kõik+Pron+Pl+Gen+Foc/gi+Use/Rare: kõikidegi
+    kõik+Pron+Pl+Gen+Foc/gi+Usage/Rare: kõikidegi
     kõik+Pron+Pl+Gen: kõigi
-    kõik+Pron+Pl+Gen+Use/Rare: kõikide
+    kõik+Pron+Pl+Gen+Usage/Rare: kõikide
     kõik+Pron+Pl+Ill+Foc/gi: kõigissegi
-    kõik+Pron+Pl+Ill+Foc/gi+Use/Rare: kõikidessegi
+    kõik+Pron+Pl+Ill+Foc/gi+Usage/Rare: kõikidessegi
     kõik+Pron+Pl+Ill: kõigisse
-    kõik+Pron+Pl+Ill+Use/Rare: kõikidesse
+    kõik+Pron+Pl+Ill+Usage/Rare: kõikidesse
     kõik+Pron+Pl+Ine+Foc/gi: kõigiski
-    kõik+Pron+Pl+Ine+Foc/gi+Use/Rare: kõikideski
+    kõik+Pron+Pl+Ine+Foc/gi+Usage/Rare: kõikideski
     kõik+Pron+Pl+Ine: kõigis
-    kõik+Pron+Pl+Ine+Use/Rare: kõikides
+    kõik+Pron+Pl+Ine+Usage/Rare: kõikides
     kõik+Pron+Pl+Nom: kõik
     kõik+Pron+Pl+Tra+Foc/gi: kõigikski
-    kõik+Pron+Pl+Tra+Foc/gi+Use/Rare: kõikidekski
+    kõik+Pron+Pl+Tra+Foc/gi+Usage/Rare: kõikidekski
     kõik+Pron+Pl+Tra: kõigiks
-    kõik+Pron+Pl+Tra+Use/Rare: kõikideks
+    kõik+Pron+Pl+Tra+Usage/Rare: kõikideks
     kõik+Pron+Pl+Trm+Foc/gi: kõiginigi
-    kõik+Pron+Pl+Trm+Foc/gi+Use/Rare: kõikidenigi
+    kõik+Pron+Pl+Trm+Foc/gi+Usage/Rare: kõikidenigi
     kõik+Pron+Pl+Trm: kõigini
-    kõik+Pron+Pl+Trm+Use/Rare: kõikideni
+    kõik+Pron+Pl+Trm+Usage/Rare: kõikideni
     kõik+Pron+Sg+Abe+Foc/gi: kõigetagi
     kõik+Pron+Sg+Abe: kõigeta
     kõik+Pron+Sg+Abl+Foc/gi: kõigeltki
@@ -569,47 +569,47 @@ Tests:
     mina+Pron+Sg+Tra: minuks
     mina+Pron+Sg+Trm+Foc/gi: minunigi
     mina+Pron+Sg+Trm: minuni
-    miski+Pron+Pl+Nom+Foc/gi+Use/NotNorm: miskidki
-    miski+Pron+Pl+Nom+Use/NotNorm: miskid
-    miski+Pron+Sg+Abe+Foc/gi+Use/NotNorm: [millegitagi, miskitagi]
+    miski+Pron+Pl+Nom+Foc/gi+Usage/NotNorm: miskidki
+    miski+Pron+Pl+Nom+Usage/NotNorm: miskid
+    miski+Pron+Sg+Abe+Foc/gi+Usage/NotNorm: [millegitagi, miskitagi]
     miski+Pron+Sg+Abe: milletagi
-    miski+Pron+Sg+Abe+Use/NotNorm: [millegita, miskita]
-    miski+Pron+Sg+Abl+Foc/gi+Use/NotNorm: [millegiltki, miskiltki]
+    miski+Pron+Sg+Abe+Usage/NotNorm: [millegita, miskita]
+    miski+Pron+Sg+Abl+Foc/gi+Usage/NotNorm: [millegiltki, miskiltki]
     miski+Pron+Sg+Abl: milleltki
-    miski+Pron+Sg+Abl+Use/NotNorm: [millegilt, miskilt]
-    miski+Pron+Sg+Ade+Foc/gi+Use/NotNorm: [millegilgi, miskilgi]
+    miski+Pron+Sg+Abl+Usage/NotNorm: [millegilt, miskilt]
+    miski+Pron+Sg+Ade+Foc/gi+Usage/NotNorm: [millegilgi, miskilgi]
     miski+Pron+Sg+Ade: millelgi
-    miski+Pron+Sg+Ade+Use/NotNorm: [millegil, miskil]
-    miski+Pron+Sg+All+Foc/gi+Use/NotNorm: [millegilegi, miskilegi]
+    miski+Pron+Sg+Ade+Usage/NotNorm: [millegil, miskil]
+    miski+Pron+Sg+All+Foc/gi+Usage/NotNorm: [millegilegi, miskilegi]
     miski+Pron+Sg+All: millelegi
-    miski+Pron+Sg+All+Use/NotNorm: [millegile, miskile]
-    miski+Pron+Sg+Com+Foc/gi+Use/NotNorm: [millegigagi, miskigagi]
+    miski+Pron+Sg+All+Usage/NotNorm: [millegile, miskile]
+    miski+Pron+Sg+Com+Foc/gi+Usage/NotNorm: [millegigagi, miskigagi]
     miski+Pron+Sg+Com: millegagi
-    miski+Pron+Sg+Com+Use/NotNorm: [millegiga, miskiga]
-    miski+Pron+Sg+Ela+Foc/gi+Use/NotNorm: [millegistki, miskistki]
+    miski+Pron+Sg+Com+Usage/NotNorm: [millegiga, miskiga]
+    miski+Pron+Sg+Ela+Foc/gi+Usage/NotNorm: [millegistki, miskistki]
     miski+Pron+Sg+Ela: millestki
-    miski+Pron+Sg+Ela+Use/NotNorm: [millegist, miskist]
-    miski+Pron+Sg+Ess+Foc/gi+Use/NotNorm: [milleginagi, miskinagi]
+    miski+Pron+Sg+Ela+Usage/NotNorm: [millegist, miskist]
+    miski+Pron+Sg+Ess+Foc/gi+Usage/NotNorm: [milleginagi, miskinagi]
     miski+Pron+Sg+Ess: millenagi
-    miski+Pron+Sg+Ess+Use/NotNorm: [millegina, miskina]
-    miski+Pron+Sg+Gen+Foc/gi+Use/NotNorm: miskigi
+    miski+Pron+Sg+Ess+Usage/NotNorm: [millegina, miskina]
+    miski+Pron+Sg+Gen+Foc/gi+Usage/NotNorm: miskigi
     miski+Pron+Sg+Gen: millegi
-    miski+Pron+Sg+Gen+Use/NotNorm: miski
-    miski+Pron+Sg+Ill+Foc/gi+Use/NotNorm: [millegissegi, miskissegi]
+    miski+Pron+Sg+Gen+Usage/NotNorm: miski
+    miski+Pron+Sg+Ill+Foc/gi+Usage/NotNorm: [millegissegi, miskissegi]
     miski+Pron+Sg+Ill: millessegi
-    miski+Pron+Sg+Ill+Use/NotNorm: [millegisse, miskisse]
-    miski+Pron+Sg+Ine+Foc/gi+Use/NotNorm: [millegiski, miskiski] 
+    miski+Pron+Sg+Ill+Usage/NotNorm: [millegisse, miskisse]
+    miski+Pron+Sg+Ine+Foc/gi+Usage/NotNorm: [millegiski, miskiski] 
     miski+Pron+Sg+Ine: milleski
-    miski+Pron+Sg+Ine+Use/NotNorm: [millegis, miskis]
-    miski+Pron+Sg+Par+Foc/gi+Use/NotNorm: miskitki
+    miski+Pron+Sg+Ine+Usage/NotNorm: [millegis, miskis]
+    miski+Pron+Sg+Par+Foc/gi+Usage/NotNorm: miskitki
     miski+Pron+Sg+Par: midagi
-    miski+Pron+Sg+Par+Use/NotNorm: miskit
-    miski+Pron+Sg+Tra+Foc/gi+Use/NotNorm: [millegikski, miskikski]
+    miski+Pron+Sg+Par+Usage/NotNorm: miskit
+    miski+Pron+Sg+Tra+Foc/gi+Usage/NotNorm: [millegikski, miskikski]
     miski+Pron+Sg+Tra: millekski
-    miski+Pron+Sg+Tra+Use/NotNorm: [millegiks, miskiks]
-    miski+Pron+Sg+Trm+Foc/gi+Use/NotNorm: [milleginigi, miskinigi]
+    miski+Pron+Sg+Tra+Usage/NotNorm: [millegiks, miskiks]
+    miski+Pron+Sg+Trm+Foc/gi+Usage/NotNorm: [milleginigi, miskinigi]
     miski+Pron+Sg+Trm: millenigi
-    miski+Pron+Sg+Trm+Use/NotNorm: [millegini, miskini]
+    miski+Pron+Sg+Trm+Usage/NotNorm: [millegini, miskini]
     mis+Pron+Pl+Abe: milledeta
     mis+Pron+Pl+Abl: milledelt
     mis+Pron+Pl+Ade: milledel
@@ -625,7 +625,7 @@ Tests:
     mis+Pron+Sg+Abe: milleta
     mis+Pron+Sg+Abl: millelt
     mis+Pron+Sg+Ade: millel
-    mis+Pron+Sg+Ade+Use/Rare: mil
+    mis+Pron+Sg+Ade+Usage/Rare: mil
     mis+Pron+Sg+All: millele
     mis+Pron+Sg+Com: millega
     mis+Pron+Sg+Ela: millest
@@ -682,17 +682,17 @@ Tests:
     mõni+Pron+Sg+Gen+Foc/gi: mõnegi
     mõni+Pron+Sg+Gen: mõne
     mõni+Pron+Sg+Ill+Foc/gi: mõndagi
-    mõni+Pron+Sg+Ill+Foc/gi+Use/Rare: mõnessegi
+    mõni+Pron+Sg+Ill+Foc/gi+Usage/Rare: mõnessegi
     mõni+Pron+Sg+Ill: mõnda
-    mõni+Pron+Sg+Ill+Use/Rare: mõnesse
+    mõni+Pron+Sg+Ill+Usage/Rare: mõnesse
     mõni+Pron+Sg+Ine+Foc/gi: mõneski
     mõni+Pron+Sg+Ine: mõnes
     mõni+Pron+Sg+Nom+Foc/gi: mõnigi
     mõni+Pron+Sg+Nom: mõni
     mõni+Pron+Sg+Par+Foc/gi: mõndagi
-    mõni+Pron+Sg+Par+Foc/gi+Use/Rare: mõndki
+    mõni+Pron+Sg+Par+Foc/gi+Usage/Rare: mõndki
     mõni+Pron+Sg+Par: mõnda
-    mõni+Pron+Sg+Par+Use/Rare: mõnd
+    mõni+Pron+Sg+Par+Usage/Rare: mõnd
     mõni+Pron+Sg+Tra+Foc/gi: mõnekski
     mõni+Pron+Sg+Tra: mõneks
     mõni+Pron+Sg+Trm+Foc/gi: mõnenigi
@@ -702,25 +702,25 @@ Tests:
     see+Pron+Pl+Abe: nendeta
     see+Pron+Pl+Abe: nendeta
     see+Pron+Pl+Abl+Foc/gi: nendeltki
-    see+Pron+Pl+Abl+Foc/gi+Use/Rare: neiltki
+    see+Pron+Pl+Abl+Foc/gi+Usage/Rare: neiltki
     see+Pron+Pl+Abl: nendelt
-    see+Pron+Pl+Abl+Use/Rare: neilt
+    see+Pron+Pl+Abl+Usage/Rare: neilt
     see+Pron+Pl+Ade+Foc/gi: nendelgi
-    see+Pron+Pl+Ade+Foc/gi+Use/Rare: neilgi
+    see+Pron+Pl+Ade+Foc/gi+Usage/Rare: neilgi
     see+Pron+Pl+Ade: nendel
-    see+Pron+Pl+Ade+Use/Rare: neil
+    see+Pron+Pl+Ade+Usage/Rare: neil
     see+Pron+Pl+All+Foc/gi: nendelegi
-    see+Pron+Pl+All+Foc/gi+Use/Rare: neilegi
+    see+Pron+Pl+All+Foc/gi+Usage/Rare: neilegi
     see+Pron+Pl+All: nendele
-    see+Pron+Pl+All+Use/Rare: neile
+    see+Pron+Pl+All+Usage/Rare: neile
     see+Pron+Pl+Com+Foc/gi: nendegagi
     see+Pron+Pl+Com+Foc/gi: nendegagi
     see+Pron+Pl+Com: nendega
     see+Pron+Pl+Com: nendega
     see+Pron+Pl+Ela+Foc/gi: nendestki
-    see+Pron+Pl+Ela+Foc/gi+Use/Rare: neistki
+    see+Pron+Pl+Ela+Foc/gi+Usage/Rare: neistki
     see+Pron+Pl+Ela: nendest
-    see+Pron+Pl+Ela+Use/Rare: neist
+    see+Pron+Pl+Ela+Usage/Rare: neist
     see+Pron+Pl+Ess+Foc/gi: nendenagi
     see+Pron+Pl+Ess+Foc/gi: nendenagi
     see+Pron+Pl+Ess: nendena
@@ -728,21 +728,21 @@ Tests:
     see+Pron+Pl+Gen+Foc/gi: nendegi
     see+Pron+Pl+Gen: nende
     see+Pron+Pl+Ill+Foc/gi: nendessegi
-    see+Pron+Pl+Ill+Foc/gi+Use/Rare: neissegi
+    see+Pron+Pl+Ill+Foc/gi+Usage/Rare: neissegi
     see+Pron+Pl+Ill: nendesse
-    see+Pron+Pl+Ill+Use/Rare: neisse
+    see+Pron+Pl+Ill+Usage/Rare: neisse
     see+Pron+Pl+Ine+Foc/gi: nendeski
-    see+Pron+Pl+Ine+Foc/gi+Use/Rare: neiski
+    see+Pron+Pl+Ine+Foc/gi+Usage/Rare: neiski
     see+Pron+Pl+Ine: nendes
-    see+Pron+Pl+Ine+Use/Rare: neis
+    see+Pron+Pl+Ine+Usage/Rare: neis
     see+Pron+Pl+Nom+Foc/gi: needki
     see+Pron+Pl+Nom: need
     see+Pron+Pl+Par+Foc/gi: neidki
     see+Pron+Pl+Par: neid
     see+Pron+Pl+Tra+Foc/gi: nendekski
-    see+Pron+Pl+Tra+Foc/gi+Use/Rare: neikski
+    see+Pron+Pl+Tra+Foc/gi+Usage/Rare: neikski
     see+Pron+Pl+Tra: nendeks
-    see+Pron+Pl+Tra+Use/Rare: neiks
+    see+Pron+Pl+Tra+Usage/Rare: neiks
     see+Pron+Pl+Trm+Foc/gi: nendenigi
     see+Pron+Pl+Trm+Foc/gi: nendenigi
     see+Pron+Pl+Trm: nendeni
@@ -752,25 +752,25 @@ Tests:
     nemad+Pron+Pl+Abe: nendeta
     nemad+Pron+Pl+Abe: nendeta
     nemad+Pron+Pl+Abl+Foc/gi: nendeltki
-    nemad+Pron+Pl+Abl+Foc/gi+Use/Rare: neiltki
+    nemad+Pron+Pl+Abl+Foc/gi+Usage/Rare: neiltki
     nemad+Pron+Pl+Abl: nendelt
-    nemad+Pron+Pl+Abl+Use/Rare: neilt
+    nemad+Pron+Pl+Abl+Usage/Rare: neilt
     nemad+Pron+Pl+Ade+Foc/gi: nendelgi
-    nemad+Pron+Pl+Ade+Foc/gi+Use/Rare: neilgi
+    nemad+Pron+Pl+Ade+Foc/gi+Usage/Rare: neilgi
     nemad+Pron+Pl+Ade: nendel
-    nemad+Pron+Pl+Ade+Use/Rare: neil
+    nemad+Pron+Pl+Ade+Usage/Rare: neil
     nemad+Pron+Pl+All+Foc/gi: nendelegi
-    nemad+Pron+Pl+All+Foc/gi+Use/Rare: neilegi
+    nemad+Pron+Pl+All+Foc/gi+Usage/Rare: neilegi
     nemad+Pron+Pl+All: nendele
-    nemad+Pron+Pl+All+Use/Rare: neile
+    nemad+Pron+Pl+All+Usage/Rare: neile
     nemad+Pron+Pl+Com+Foc/gi: nendegagi
     nemad+Pron+Pl+Com+Foc/gi: nendegagi
     nemad+Pron+Pl+Com: nendega
     nemad+Pron+Pl+Com: nendega
     nemad+Pron+Pl+Ela+Foc/gi: nendestki
-    nemad+Pron+Pl+Ela+Foc/gi+Use/Rare: neistki
+    nemad+Pron+Pl+Ela+Foc/gi+Usage/Rare: neistki
     nemad+Pron+Pl+Ela: nendest
-    nemad+Pron+Pl+Ela+Use/Rare: neist
+    nemad+Pron+Pl+Ela+Usage/Rare: neist
     nemad+Pron+Pl+Ess+Foc/gi: nendenagi
     nemad+Pron+Pl+Ess+Foc/gi: nendenagi
     nemad+Pron+Pl+Ess: nendena
@@ -778,13 +778,13 @@ Tests:
     nemad+Pron+Pl+Gen+Foc/gi: nendegi
     nemad+Pron+Pl+Gen: nende
     nemad+Pron+Pl+Ill+Foc/gi: nendessegi
-    nemad+Pron+Pl+Ill+Foc/gi+Use/Rare: neissegi
+    nemad+Pron+Pl+Ill+Foc/gi+Usage/Rare: neissegi
     nemad+Pron+Pl+Ill: nendesse
-    nemad+Pron+Pl+Ill+Use/Rare: neisse
+    nemad+Pron+Pl+Ill+Usage/Rare: neisse
     nemad+Pron+Pl+Ine+Foc/gi: nendeski
-    nemad+Pron+Pl+Ine+Foc/gi+Use/Rare: neiski
+    nemad+Pron+Pl+Ine+Foc/gi+Usage/Rare: neiski
     nemad+Pron+Pl+Ine: nendes
-    nemad+Pron+Pl+Ine+Use/Rare: neis
+    nemad+Pron+Pl+Ine+Usage/Rare: neis
     nemad+Pron+Pl+Nom+Emph: nemad
     nemad+Pron+Pl+Nom+Foc/gi+Emph: nemadki
     nemad+Pron+Pl+Nom+Foc/gi: nadki
@@ -792,9 +792,9 @@ Tests:
     nemad+Pron+Pl+Par+Foc/gi: neidki
     nemad+Pron+Pl+Par: neid
     nemad+Pron+Pl+Tra+Foc/gi: nendekski
-    nemad+Pron+Pl+Tra+Foc/gi+Use/Rare: neikski
+    nemad+Pron+Pl+Tra+Foc/gi+Usage/Rare: neikski
     nemad+Pron+Pl+Tra: nendeks
-    nemad+Pron+Pl+Tra+Use/Rare: neiks
+    nemad+Pron+Pl+Tra+Usage/Rare: neiks
     nemad+Pron+Pl+Trm+Foc/gi: nendenigi
     nemad+Pron+Pl+Trm+Foc/gi: nendenigi
     nemad+Pron+Pl+Trm: nendeni
@@ -804,25 +804,25 @@ Tests:
     too+Pron+Pl+Abe: nondeta
     too+Pron+Pl+Abe: nondeta
     too+Pron+Pl+Abl+Foc/gi: nondeltki
-    too+Pron+Pl+Abl+Foc/gi+Use/Rare: noiltki
+    too+Pron+Pl+Abl+Foc/gi+Usage/Rare: noiltki
     too+Pron+Pl+Abl: nondelt
-    too+Pron+Pl+Abl+Use/Rare: noilt
+    too+Pron+Pl+Abl+Usage/Rare: noilt
     too+Pron+Pl+Ade+Foc/gi: nondelgi
-    too+Pron+Pl+Ade+Foc/gi+Use/Rare: noilgi
+    too+Pron+Pl+Ade+Foc/gi+Usage/Rare: noilgi
     too+Pron+Pl+Ade: nondel
-    too+Pron+Pl+Ade+Use/Rare: noil
+    too+Pron+Pl+Ade+Usage/Rare: noil
     too+Pron+Pl+All+Foc/gi: nondelegi
-    too+Pron+Pl+All+Foc/gi+Use/Rare: noilegi
+    too+Pron+Pl+All+Foc/gi+Usage/Rare: noilegi
     too+Pron+Pl+All: nondele
-    too+Pron+Pl+All+Use/Rare: noile
+    too+Pron+Pl+All+Usage/Rare: noile
     too+Pron+Pl+Com+Foc/gi: nondegagi
     too+Pron+Pl+Com+Foc/gi: nondegagi
     too+Pron+Pl+Com: nondega
     too+Pron+Pl+Com: nondega
     too+Pron+Pl+Ela+Foc/gi: nondestki
-    too+Pron+Pl+Ela+Foc/gi+Use/Rare: noistki
+    too+Pron+Pl+Ela+Foc/gi+Usage/Rare: noistki
     too+Pron+Pl+Ela: nondest
-    too+Pron+Pl+Ela+Use/Rare: noist
+    too+Pron+Pl+Ela+Usage/Rare: noist
     too+Pron+Pl+Ess+Foc/gi: nondenagi
     too+Pron+Pl+Ess+Foc/gi: nondenagi
     too+Pron+Pl+Ess: nondena
@@ -830,70 +830,70 @@ Tests:
     too+Pron+Pl+Gen+Foc/gi: nondegi
     too+Pron+Pl+Gen: nonde
     too+Pron+Pl+Ill+Foc/gi: nondessegi
-    too+Pron+Pl+Ill+Foc/gi+Use/Rare: noissegi
+    too+Pron+Pl+Ill+Foc/gi+Usage/Rare: noissegi
     too+Pron+Pl+Ill: nondesse
-    too+Pron+Pl+Ill+Use/Rare: noisse
+    too+Pron+Pl+Ill+Usage/Rare: noisse
     too+Pron+Pl+Ine+Foc/gi: nondeski
-    too+Pron+Pl+Ine+Foc/gi+Use/Rare: noiski
+    too+Pron+Pl+Ine+Foc/gi+Usage/Rare: noiski
     too+Pron+Pl+Ine: nondes
-    too+Pron+Pl+Ine+Use/Rare: nois
+    too+Pron+Pl+Ine+Usage/Rare: nois
     too+Pron+Pl+Nom+Foc/gi: noodki
     too+Pron+Pl+Nom: nood
     too+Pron+Pl+Par+Foc/gi: noidki
     too+Pron+Pl+Par: noid
     too+Pron+Pl+Tra+Foc/gi: nondekski
-    too+Pron+Pl+Tra+Foc/gi+Use/Rare: noikski
+    too+Pron+Pl+Tra+Foc/gi+Usage/Rare: noikski
     too+Pron+Pl+Tra: nondeks
-    too+Pron+Pl+Tra+Use/Rare: noiks
+    too+Pron+Pl+Tra+Usage/Rare: noiks
     too+Pron+Pl+Trm+Foc/gi: nondenigi
     too+Pron+Pl+Trm+Foc/gi: nondenigi
     too+Pron+Pl+Trm: nondeni
     too+Pron+Pl+Trm: nondeni
     omaenese+Pron+Pl+Gen+Foc/gi: omaenestegi
-    omaenese+Pron+Pl+Gen+Foc/gi+Use/Rare: omaendigi
+    omaenese+Pron+Pl+Gen+Foc/gi+Usage/Rare: omaendigi
     omaenese+Pron+Pl+Gen: omaeneste
-    omaenese+Pron+Pl+Gen+Use/Rare: omaendi
+    omaenese+Pron+Pl+Gen+Usage/Rare: omaendi
     omaenese+Pron+Sg+Gen+Foc/gi: omaendagi
-    omaenese+Pron+Sg+Gen+Foc/gi+Use/Rare: omaenesegi
+    omaenese+Pron+Sg+Gen+Foc/gi+Usage/Rare: omaenesegi
     omaenese+Pron+Sg+Gen: omaenda
-    omaenese+Pron+Sg+Gen+Use/Rare: omaenese
+    omaenese+Pron+Sg+Gen+Usage/Rare: omaenese
     see+Pron+Sg+Abe+Foc/gi: selletagi
     see+Pron+Sg+Abe: selleta
     see+Pron+Sg+Abl+Foc/gi: selleltki
-    see+Pron+Sg+Abl+Foc/gi+Use/Rare: seltki
+    see+Pron+Sg+Abl+Foc/gi+Usage/Rare: seltki
     see+Pron+Sg+Abl: sellelt
-    see+Pron+Sg+Abl+Use/Rare: selt
+    see+Pron+Sg+Abl+Usage/Rare: selt
     see+Pron+Sg+Ade+Foc/gi: sellelgi
-    see+Pron+Sg+Ade+Foc/gi+Use/Rare: selgi
+    see+Pron+Sg+Ade+Foc/gi+Usage/Rare: selgi
     see+Pron+Sg+Ade: sellel
-    see+Pron+Sg+Ade+Use/Rare: sel
+    see+Pron+Sg+Ade+Usage/Rare: sel
     see+Pron+Sg+All+Foc/gi: sellelegi
     see+Pron+Sg+All: sellele
     see+Pron+Sg+Com+Foc/gi: sellegagi
     see+Pron+Sg+Com: sellega
     see+Pron+Sg+Ela+Foc/gi: sellestki
-    see+Pron+Sg+Ela+Foc/gi+Use/Rare: sestki
+    see+Pron+Sg+Ela+Foc/gi+Usage/Rare: sestki
     see+Pron+Sg+Ela: sellest
-    see+Pron+Sg+Ela+Use/Rare: sest
+    see+Pron+Sg+Ela+Usage/Rare: sest
     see+Pron+Sg+Ess+Foc/gi: sellenagi
     see+Pron+Sg+Ess: sellena
     see+Pron+Sg+Gen+Foc/gi: sellegi
     see+Pron+Sg+Gen: selle
     see+Pron+Sg+Ill+Foc/gi: sellessegi
-    see+Pron+Sg+Ill+Foc/gi+Use/Rare: sessegi
+    see+Pron+Sg+Ill+Foc/gi+Usage/Rare: sessegi
     see+Pron+Sg+Ill: sellesse
-    see+Pron+Sg+Ill+Use/Rare: sesse
+    see+Pron+Sg+Ill+Usage/Rare: sesse
     see+Pron+Sg+Ine+Foc/gi: selleski
     see+Pron+Sg+Ine: selles
-    see+Pron+Sg+Ine+Use/Rare: ses
+    see+Pron+Sg+Ine+Usage/Rare: ses
     see+Pron+Sg+Nom+Foc/gi: seegi
     see+Pron+Sg+Nom: see
     see+Pron+Sg+Par+Foc/gi: sedagi
     see+Pron+Sg+Par: seda
     see+Pron+Sg+Tra+Foc/gi: sellekski
-    see+Pron+Sg+Tra+Foc/gi+Use/Rare: sekski
+    see+Pron+Sg+Tra+Foc/gi+Usage/Rare: sekski
     see+Pron+Sg+Tra: selleks
-    see+Pron+Sg+Tra+Use/Rare: seks
+    see+Pron+Sg+Tra+Usage/Rare: seks
     see+Pron+Sg+Trm+Foc/gi: sellenigi
     see+Pron+Sg+Trm: selleni
     sina+Pron+Sg+Com+Emph: sinuga
@@ -1014,28 +1014,28 @@ Tests:
     too+Pron+Sg+Abl+Foc/gi: tolleltki
     too+Pron+Sg+Abl: tollelt
     too+Pron+Sg+Ade+Foc/gi: tollelgi
-    too+Pron+Sg+Ade+Foc/gi+Use/Rare: tolgi
+    too+Pron+Sg+Ade+Foc/gi+Usage/Rare: tolgi
     too+Pron+Sg+Ade: tollel
-    too+Pron+Sg+Ade+Use/Rare: tol
+    too+Pron+Sg+Ade+Usage/Rare: tol
     too+Pron+Sg+All+Foc/gi: tollelegi
     too+Pron+Sg+All: tollele
     too+Pron+Sg+Com+Foc/gi: tollegagi
     too+Pron+Sg+Com: tollega
     too+Pron+Sg+Ela+Foc/gi: tollestki
-    too+Pron+Sg+Ela+Foc/gi+Use/Rare: tostki
+    too+Pron+Sg+Ela+Foc/gi+Usage/Rare: tostki
     too+Pron+Sg+Ela: tollest
-    too+Pron+Sg+Ela+Use/Rare: tost
+    too+Pron+Sg+Ela+Usage/Rare: tost
     too+Pron+Sg+Ess+Foc/gi: tollenagi
     too+Pron+Sg+Ess: tollena
     too+Pron+Sg+Gen+Foc/gi: tollegi
     too+Pron+Sg+Gen: tolle
     too+Pron+Sg+Ill+Foc/gi: tollessegi
-    too+Pron+Sg+Ill+Foc/gi+Use/Rare: tossegi
+    too+Pron+Sg+Ill+Foc/gi+Usage/Rare: tossegi
     too+Pron+Sg+Ill: tollesse
-    too+Pron+Sg+Ill+Use/Rare: tosse
+    too+Pron+Sg+Ill+Usage/Rare: tosse
     too+Pron+Sg+Ine+Foc/gi: tolleski
     too+Pron+Sg+Ine: tolles
-    too+Pron+Sg+Ine+Use/Rare: tos
+    too+Pron+Sg+Ine+Usage/Rare: tos
     too+Pron+Sg+Nom+Foc/gi: toogi
     too+Pron+Sg+Nom: too
     too+Pron+Sg+Par+Foc/gi: todagi

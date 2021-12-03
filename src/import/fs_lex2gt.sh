@@ -122,7 +122,7 @@ paste fs_lex tmp1twol \
 
 # create the nearly final lexicons
 # ja see rida võiks ära märkida (mingil moel) sõnad, mis pole spellerile sobivad:
-# | sed '/^nosp/s/\([^:]*:[^:]*[^ ]\):/\1+Use\/NotNorm:/' \
+# | sed '/^nosp/s/\([^:]*:[^:]*[^ ]\):/\1+Usage\/NotNorm:/' \
 
 cat fs_lex.gt1 \
 | grep '^[^@]* !\\[^\\]*\\!$' \
@@ -183,24 +183,24 @@ cat fs_lex.gt1 \
 | sed '/perse+/s/erse PINGE/ers PERSE/' \
 | sed '/põrsas+/s/õrsa KOTKAS/õrs PÕRSAS/' \
 \
-| sed '/Aksel+.*REDEL/s/E2\([lr]\)\( REDEL\)/e\1%{rare%}%{E%}\2/' \
-| sed '/piksel+.*REDEL/s/E2\([lr]\)\( REDEL\)/e\1%{rare%}%{E%}\2/' \
-| sed '/vesper+.*REDEL/s/e\([lr]\)\( REDEL\)/e\1%{rare%}%{E%}\2/' \
-| sed '/snuuker+.*REDEL/s/e\([lr]\)\( REDEL\)/e\1%{rare%}%{E%}\2/' \
-| sed '/snaiper+.*REDEL/s/E2\([lr]\)\( REDEL\)/e\1%{rare%}%{E%}\2/' \
+| sed '/Aksel+.*REDEL/s/E2\([lr]\)\( REDEL\)/e\1 PIKSEL/' \
+| sed '/piksel+.*REDEL/s/E2\([lr]\)\( REDEL\)/e\1 PIKSEL/' \
+| sed '/vesper+.*REDEL/s/e\([lr]\)\( REDEL\)/e\1 PIKSEL/' \
+| sed '/snuuker+.*REDEL/s/e\([lr]\)\( REDEL\)/e\1 PIKSEL/' \
+| sed '/snaiper+.*REDEL/s/E2\([lr]\)\( REDEL\)/e\1 PIKSEL/' \
 \
-| sed '/Valter+.*REDEL/s/e\([lr]\)\( REDEL\)/e\1%{E%}%{rare%}\2/' \
-| sed '/gospel+.*REDEL/s/e\([lr]\)\( REDEL\)/e\1%{E%}%{rare%}\2/' \
-| sed '/paabel+.*REDEL/s/e\([lr]\)\( REDEL\)/e\1%{E%}%{rare%}\2/' \
-| sed '/kaamel+.*REDEL/s/e\([lr]\)\( REDEL\)/e\1%{E%}%{rare%}\2/' \
-| sed '/transponder+.*REDEL/s/e\([lr]\)\( REDEL\)/e\1%{E%}%{rare%}\2/' \
-| sed '/stopper+.*REDEL/s/E2\([lr]\)/e\1%{E%}%{rare%}/' \
-| sed '/jokker+.*REDEL/s/E2\([lr]\)/e\1%{E%}%{rare%}/' \
-| sed '/džokker+.*REDEL/s/E2\([lr]\)/e\1%{E%}%{rare%}/' \
-| sed '/röster+.*REDEL/s/E2\([lr]\)/e\1%{E%}%{rare%}/' \
-| sed '/rabarber+.*REDEL/s/E2\([lr]\)/e\1%{E%}%{rare%}/' \
+| sed '/Valter+.*REDEL/s/e\([lr]\)\( REDEL\)/e\1 GOSPEL/' \
+| sed '/gospel+.*REDEL/s/e\([lr]\)\( REDEL\)/e\1 GOSPEL/' \
+| sed '/paabel+.*REDEL/s/e\([lr]\)\( REDEL\)/e\1 GOSPEL/' \
+| sed '/kaamel+.*REDEL/s/e\([lr]\)\( REDEL\)/e\1 GOSPEL/' \
+| sed '/transponder+.*REDEL/s/e\([lr]\)\( REDEL\)/e\1 GOSPEL/' \
+| sed '/stopper+.*REDEL/s/E2\([lr]\)\( REDEL\)/e\1 GOSPEL/' \
+| sed '/jokker+.*REDEL/s/E2\([lr]\)\( REDEL\)/e\1 GOSPEL/' \
+| sed '/džokker+.*REDEL/s/E2\([lr]\)\( REDEL\)/e\1 GOSPEL/' \
+| sed '/röster+.*REDEL/s/E2\([lr]\)\( REDEL\)/e\1 GOSPEL/' \
+| sed '/rabarber+.*REDEL/s/E2\([lr]\)\( REDEL\)/e\1 GOSPEL/' \
 \
-| sed '/E2.*REDEL/s/E2\([lr]\)/e\1%{E%}/' \
+| sed '/E2.*REDEL/s/E2\([lr]\)\( REDEL\)/e\1 TOOBER/' \
 \
 | sed '/mõru+A/s/KAVA/MÕRU/' \
 | sed '/vaagima+V/s/LEPPIMA/VAAGIMA/' \
@@ -243,11 +243,11 @@ cat fs_lex.gt1 \
 # 
 #
 # ja see rida võiks ära märkida (mingil moel) sõnad, mis pole spellerile sobivad:
-# | sed '/^nosp/s/\([^:]*:[^:]*[^ ]\):/\1+Use\/NotNorm:/' \
+# | sed '/^nosp/s/\([^:]*:[^:]*[^ ]\):/\1+Usage\/NotNorm:/' \
 
 cat fs_gt.pre-inflecting \
 | sed 's/| \([^@]*\)@ /| /g' \
-| sed '/^nosp.*õudne.*MAGUS/s/\([^:]*:[^:]*[^ ]\):/\1+Use\/NotNorm:/' \
+| sed '/^nosp.*õudne.*MAGUS/s/\([^:]*:[^:]*[^ ]\):/\1+Usage\/NotNorm:/' \
 | sort -k 2 \
 > fs_gt.inflecting
 

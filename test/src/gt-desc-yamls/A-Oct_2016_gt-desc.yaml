@@ -15,70 +15,70 @@ Tests:
   Adjectives:
       ergas+A+Pl+Abe: erksateta
       ergas+A+Pl+Abe+Foc/gi: erksatetagi
-      ergas+A+Pl+Abe+Foc/gi+Use/NotNorm: ergastetagi
-      ergas+A+Pl+Abe+Use/NotNorm: ergasteta
+      ergas+A+Pl+Abe+Foc/gi+Usage/NotNorm: ergastetagi
+      ergas+A+Pl+Abe+Usage/NotNorm: ergasteta
       ergas+A+Pl+Abl: erksatelt
       ergas+A+Pl+Abl+Foc/gi: erksateltki
-      ergas+A+Pl+Abl+Foc/gi+Use/NotNorm: ergasteltki
-      ergas+A+Pl+Abl+Foc/gi+Use/Rare: erksailtki
-      ergas+A+Pl+Abl+Use/NotNorm: ergastelt
-      ergas+A+Pl+Abl+Use/Rare: erksailt
+      ergas+A+Pl+Abl+Foc/gi+Usage/NotNorm: ergasteltki
+      ergas+A+Pl+Abl+Foc/gi+Usage/Rare: erksailtki
+      ergas+A+Pl+Abl+Usage/NotNorm: ergastelt
+      ergas+A+Pl+Abl+Usage/Rare: erksailt
       ergas+A+Pl+Ade: erksatel
       ergas+A+Pl+Ade+Foc/gi: erksatelgi
-      ergas+A+Pl+Ade+Foc/gi+Use/NotNorm: ergastelgi
-      ergas+A+Pl+Ade+Foc/gi+Use/Rare: erksailgi
-      ergas+A+Pl+Ade+Use/NotNorm: ergastel
-      ergas+A+Pl+Ade+Use/Rare: erksail
+      ergas+A+Pl+Ade+Foc/gi+Usage/NotNorm: ergastelgi
+      ergas+A+Pl+Ade+Foc/gi+Usage/Rare: erksailgi
+      ergas+A+Pl+Ade+Usage/NotNorm: ergastel
+      ergas+A+Pl+Ade+Usage/Rare: erksail
       ergas+A+Pl+All: erksatele
       ergas+A+Pl+All+Foc/gi: erksatelegi
-      ergas+A+Pl+All+Foc/gi+Use/NotNorm: ergastelegi
-      ergas+A+Pl+All+Foc/gi+Use/Rare: erksailegi
-      ergas+A+Pl+All+Use/NotNorm: ergastele
-      ergas+A+Pl+All+Use/Rare: erksaile
+      ergas+A+Pl+All+Foc/gi+Usage/NotNorm: ergastelegi
+      ergas+A+Pl+All+Foc/gi+Usage/Rare: erksailegi
+      ergas+A+Pl+All+Usage/NotNorm: ergastele
+      ergas+A+Pl+All+Usage/Rare: erksaile
       ergas+A+Pl+Com: erksatega
       ergas+A+Pl+Com+Foc/gi: erksategagi
-      ergas+A+Pl+Com+Foc/gi+Use/NotNorm: ergastegagi
-      ergas+A+Pl+Com+Use/NotNorm: ergastega
+      ergas+A+Pl+Com+Foc/gi+Usage/NotNorm: ergastegagi
+      ergas+A+Pl+Com+Usage/NotNorm: ergastega
       ergas+A+Pl+Ela: erksatest
       ergas+A+Pl+Ela+Foc/gi: erksatestki
-      ergas+A+Pl+Ela+Foc/gi+Use/NotNorm: ergastestki
-      ergas+A+Pl+Ela+Foc/gi+Use/Rare: erksaistki
-      ergas+A+Pl+Ela+Use/NotNorm: ergastest
-      ergas+A+Pl+Ela+Use/Rare: erksaist
+      ergas+A+Pl+Ela+Foc/gi+Usage/NotNorm: ergastestki
+      ergas+A+Pl+Ela+Foc/gi+Usage/Rare: erksaistki
+      ergas+A+Pl+Ela+Usage/NotNorm: ergastest
+      ergas+A+Pl+Ela+Usage/Rare: erksaist
       ergas+A+Pl+Ess: erksatena
       ergas+A+Pl+Ess+Foc/gi: erksatenagi
-      ergas+A+Pl+Ess+Foc/gi+Use/NotNorm: ergastenagi
-      ergas+A+Pl+Ess+Use/NotNorm: ergastena
+      ergas+A+Pl+Ess+Foc/gi+Usage/NotNorm: ergastenagi
+      ergas+A+Pl+Ess+Usage/NotNorm: ergastena
       ergas+A+Pl+Gen: erksate
       ergas+A+Pl+Gen+Foc/gi: erksategi
-      ergas+A+Pl+Gen+Foc/gi+Use/NotNorm: ergastegi
-      ergas+A+Pl+Gen+Use/NotNorm: ergaste
+      ergas+A+Pl+Gen+Foc/gi+Usage/NotNorm: ergastegi
+      ergas+A+Pl+Gen+Usage/NotNorm: ergaste
       ergas+A+Pl+Ill: erksatesse
       ergas+A+Pl+Ill+Foc/gi: erksatessegi
-      ergas+A+Pl+Ill+Foc/gi+Use/NotNorm: ergastessegi
-      ergas+A+Pl+Ill+Foc/gi+Use/Rare: erksaissegi
-      ergas+A+Pl+Ill+Use/NotNorm: ergastesse
-      ergas+A+Pl+Ill+Use/Rare: erksaisse
+      ergas+A+Pl+Ill+Foc/gi+Usage/NotNorm: ergastessegi
+      ergas+A+Pl+Ill+Foc/gi+Usage/Rare: erksaissegi
+      ergas+A+Pl+Ill+Usage/NotNorm: ergastesse
+      ergas+A+Pl+Ill+Usage/Rare: erksaisse
       ergas+A+Pl+Ine: erksates
       ergas+A+Pl+Ine+Foc/gi: erksateski
-      ergas+A+Pl+Ine+Foc/gi+Use/NotNorm: ergasteski
-      ergas+A+Pl+Ine+Foc/gi+Use/Rare: erksaiski
-      ergas+A+Pl+Ine+Use/NotNorm: ergastes
-      ergas+A+Pl+Ine+Use/Rare: erksais
+      ergas+A+Pl+Ine+Foc/gi+Usage/NotNorm: ergasteski
+      ergas+A+Pl+Ine+Foc/gi+Usage/Rare: erksaiski
+      ergas+A+Pl+Ine+Usage/NotNorm: ergastes
+      ergas+A+Pl+Ine+Usage/Rare: erksais
       ergas+A+Pl+Nom: erksad
       ergas+A+Pl+Nom+Foc/gi: erksadki
       ergas+A+Pl+Par: erksaid
       ergas+A+Pl+Par+Foc/gi: erksaidki
       ergas+A+Pl+Tra: erksateks
       ergas+A+Pl+Tra+Foc/gi: erksatekski
-      ergas+A+Pl+Tra+Foc/gi+Use/NotNorm: ergastekski
-      ergas+A+Pl+Tra+Foc/gi+Use/Rare: erksaikski
-      ergas+A+Pl+Tra+Use/NotNorm: ergasteks
-      ergas+A+Pl+Tra+Use/Rare: erksaiks
+      ergas+A+Pl+Tra+Foc/gi+Usage/NotNorm: ergastekski
+      ergas+A+Pl+Tra+Foc/gi+Usage/Rare: erksaikski
+      ergas+A+Pl+Tra+Usage/NotNorm: ergasteks
+      ergas+A+Pl+Tra+Usage/Rare: erksaiks
       ergas+A+Pl+Trm: erksateni
       ergas+A+Pl+Trm+Foc/gi: erksatenigi
-      ergas+A+Pl+Trm+Foc/gi+Use/NotNorm: ergastenigi
-      ergas+A+Pl+Trm+Use/NotNorm: ergasteni
+      ergas+A+Pl+Trm+Foc/gi+Usage/NotNorm: ergastenigi
+      ergas+A+Pl+Trm+Usage/NotNorm: ergasteni
       ergas+A+Sg+Abe: erksata
       ergas+A+Sg+Abe+Foc/gi: erksatagi
       ergas+A+Sg+Abl: erksalt
@@ -103,8 +103,8 @@ Tests:
       ergas+A+Sg+Nom+Foc/gi: ergaski
       ergas+A+Sg+Par: erksat
       ergas+A+Sg+Par+Foc/gi: erksatki
-      ergas+A+Sg+Par+Foc/gi+Use/Rare: ergastki
-      ergas+A+Sg+Par+Use/Rare: ergast
+      ergas+A+Sg+Par+Foc/gi+Usage/Rare: ergastki
+      ergas+A+Sg+Par+Usage/Rare: ergast
       ergas+A+Sg+Tra: erksaks
       ergas+A+Sg+Tra+Foc/gi: erksakski
       ergas+A+Sg+Trm: erksani
@@ -112,43 +112,43 @@ Tests:
       hale+A+Pl+Abe+Foc/gi: haledatetagi
       hale+A+Pl+Abe: haledateta
       hale+A+Pl+Abl+Foc/gi: haledateltki
-      hale+A+Pl+Abl+Foc/gi+Use/Rare: haledailtki
+      hale+A+Pl+Abl+Foc/gi+Usage/Rare: haledailtki
       hale+A+Pl+Abl: haledatelt
-      hale+A+Pl+Abl+Use/Rare: haledailt
+      hale+A+Pl+Abl+Usage/Rare: haledailt
       hale+A+Pl+Ade+Foc/gi: haledatelgi
-      hale+A+Pl+Ade+Foc/gi+Use/Rare: haledailgi
+      hale+A+Pl+Ade+Foc/gi+Usage/Rare: haledailgi
       hale+A+Pl+Ade: haledatel
-      hale+A+Pl+Ade+Use/Rare: haledail
+      hale+A+Pl+Ade+Usage/Rare: haledail
       hale+A+Pl+All+Foc/gi: haledatelegi
-      hale+A+Pl+All+Foc/gi+Use/Rare: haledailegi
+      hale+A+Pl+All+Foc/gi+Usage/Rare: haledailegi
       hale+A+Pl+All: haledatele
-      hale+A+Pl+All+Use/Rare: haledaile
+      hale+A+Pl+All+Usage/Rare: haledaile
       hale+A+Pl+Com+Foc/gi: haledategagi
       hale+A+Pl+Com: haledatega
       hale+A+Pl+Ela+Foc/gi: haledatestki
-      hale+A+Pl+Ela+Foc/gi+Use/Rare: haledaistki
+      hale+A+Pl+Ela+Foc/gi+Usage/Rare: haledaistki
       hale+A+Pl+Ela: haledatest
-      hale+A+Pl+Ela+Use/Rare: haledaist
+      hale+A+Pl+Ela+Usage/Rare: haledaist
       hale+A+Pl+Ess+Foc/gi: haledatenagi
       hale+A+Pl+Ess: haledatena
       hale+A+Pl+Gen+Foc/gi: haledategi
       hale+A+Pl+Gen: haledate
       hale+A+Pl+Ill+Foc/gi: haledatessegi
-      hale+A+Pl+Ill+Foc/gi+Use/Rare: haledaissegi
+      hale+A+Pl+Ill+Foc/gi+Usage/Rare: haledaissegi
       hale+A+Pl+Ill: haledatesse
-      hale+A+Pl+Ill+Use/Rare: haledaisse
+      hale+A+Pl+Ill+Usage/Rare: haledaisse
       hale+A+Pl+Ine+Foc/gi: haledateski
-      hale+A+Pl+Ine+Foc/gi+Use/Rare: haledaiski
+      hale+A+Pl+Ine+Foc/gi+Usage/Rare: haledaiski
       hale+A+Pl+Ine: haledates
-      hale+A+Pl+Ine+Use/Rare: haledais
+      hale+A+Pl+Ine+Usage/Rare: haledais
       hale+A+Pl+Nom+Foc/gi: haledadki
       hale+A+Pl+Nom: haledad
       hale+A+Pl+Par+Foc/gi: haledaidki
       hale+A+Pl+Par: haledaid
       hale+A+Pl+Tra+Foc/gi: haledatekski
-      hale+A+Pl+Tra+Foc/gi+Use/Rare: haledaikski
+      hale+A+Pl+Tra+Foc/gi+Usage/Rare: haledaikski
       hale+A+Pl+Tra: haledateks
-      hale+A+Pl+Tra+Use/Rare: haledaiks
+      hale+A+Pl+Tra+Usage/Rare: haledaiks
       hale+A+Pl+Trm+Foc/gi: haledatenigi
       hale+A+Pl+Trm: haledateni
       hale+A+Sg+Abe+Foc/gi: haledatagi
@@ -182,45 +182,45 @@ Tests:
       hea+A+Pl+Abe+Foc/gi: headetagi
       hea+A+Pl+Abe: headeta
       hea+A+Pl+Abl+Foc/gi: headeltki
-      hea+A+Pl+Abl+Foc/gi+Use/Rare: häiltki
+      hea+A+Pl+Abl+Foc/gi+Usage/Rare: häiltki
       hea+A+Pl+Abl: headelt
-      hea+A+Pl+Abl+Use/Rare: häilt
+      hea+A+Pl+Abl+Usage/Rare: häilt
       hea+A+Pl+Ade+Foc/gi: headelgi
-      hea+A+Pl+Ade+Foc/gi+Use/Rare: häilgi
+      hea+A+Pl+Ade+Foc/gi+Usage/Rare: häilgi
       hea+A+Pl+Ade: headel
-      hea+A+Pl+Ade+Use/Rare: häil
+      hea+A+Pl+Ade+Usage/Rare: häil
       hea+A+Pl+All+Foc/gi: headelegi
-      hea+A+Pl+All+Foc/gi+Use/Rare: häilegi
+      hea+A+Pl+All+Foc/gi+Usage/Rare: häilegi
       hea+A+Pl+All: headele
-      hea+A+Pl+All+Use/Rare: häile
+      hea+A+Pl+All+Usage/Rare: häile
       hea+A+Pl+Com+Foc/gi: headegagi
       hea+A+Pl+Com: headega
       hea+A+Pl+Ela+Foc/gi: headestki
-      hea+A+Pl+Ela+Foc/gi+Use/Rare: häistki
+      hea+A+Pl+Ela+Foc/gi+Usage/Rare: häistki
       hea+A+Pl+Ela: headest
-      hea+A+Pl+Ela+Use/Rare: häist
+      hea+A+Pl+Ela+Usage/Rare: häist
       hea+A+Pl+Ess+Foc/gi: headenagi
       hea+A+Pl+Ess: headena
       hea+A+Pl+Gen+Foc/gi: headegi
       hea+A+Pl+Gen: heade
       hea+A+Pl+Ill+Foc/gi: headessegi
-      hea+A+Pl+Ill+Foc/gi+Use/Rare: häissegi
+      hea+A+Pl+Ill+Foc/gi+Usage/Rare: häissegi
       hea+A+Pl+Ill: headesse
-      hea+A+Pl+Ill+Use/Rare: häisse
+      hea+A+Pl+Ill+Usage/Rare: häisse
       hea+A+Pl+Ine+Foc/gi: headeski
-      hea+A+Pl+Ine+Foc/gi+Use/Rare: häiski
+      hea+A+Pl+Ine+Foc/gi+Usage/Rare: häiski
       hea+A+Pl+Ine: heades
-      hea+A+Pl+Ine+Use/Rare: häis
+      hea+A+Pl+Ine+Usage/Rare: häis
       hea+A+Pl+Nom+Foc/gi: headki
       hea+A+Pl+Nom: head
       hea+A+Pl+Par+Foc/gi: häidki
-      hea+A+Pl+Par+Foc/gi+Use/Rare: heasidki
+      hea+A+Pl+Par+Foc/gi+Usage/Rare: heasidki
       hea+A+Pl+Par: häid
-      hea+A+Pl+Par+Use/Rare: heasid
+      hea+A+Pl+Par+Usage/Rare: heasid
       hea+A+Pl+Tra+Foc/gi: headekski
-      hea+A+Pl+Tra+Foc/gi+Use/Rare: häikski
+      hea+A+Pl+Tra+Foc/gi+Usage/Rare: häikski
       hea+A+Pl+Tra: headeks
-      hea+A+Pl+Tra+Use/Rare: häiks
+      hea+A+Pl+Tra+Usage/Rare: häiks
       hea+A+Pl+Trm+Foc/gi: headenigi
       hea+A+Pl+Trm: headeni
       hea+A+Sg+Abe+Foc/gi: heatagi
@@ -254,43 +254,43 @@ Tests:
       hirmus+A+Pl+Abe+Foc/gi: hirmsatetagi
       hirmus+A+Pl+Abe: hirmsateta
       hirmus+A+Pl+Abl+Foc/gi: hirmsateltki
-      hirmus+A+Pl+Abl+Foc/gi+Use/Rare: hirmsailtki
+      hirmus+A+Pl+Abl+Foc/gi+Usage/Rare: hirmsailtki
       hirmus+A+Pl+Abl: hirmsatelt
-      hirmus+A+Pl+Abl+Use/Rare: hirmsailt
+      hirmus+A+Pl+Abl+Usage/Rare: hirmsailt
       hirmus+A+Pl+Ade+Foc/gi: hirmsatelgi
-      hirmus+A+Pl+Ade+Foc/gi+Use/Rare: hirmsailgi
+      hirmus+A+Pl+Ade+Foc/gi+Usage/Rare: hirmsailgi
       hirmus+A+Pl+Ade: hirmsatel
-      hirmus+A+Pl+Ade+Use/Rare: hirmsail
+      hirmus+A+Pl+Ade+Usage/Rare: hirmsail
       hirmus+A+Pl+All+Foc/gi: hirmsatelegi
-      hirmus+A+Pl+All+Foc/gi+Use/Rare: hirmsailegi
+      hirmus+A+Pl+All+Foc/gi+Usage/Rare: hirmsailegi
       hirmus+A+Pl+All: hirmsatele
-      hirmus+A+Pl+All+Use/Rare: hirmsaile
+      hirmus+A+Pl+All+Usage/Rare: hirmsaile
       hirmus+A+Pl+Com+Foc/gi: hirmsategagi
       hirmus+A+Pl+Com: hirmsatega
       hirmus+A+Pl+Ela+Foc/gi: hirmsatestki
-      hirmus+A+Pl+Ela+Foc/gi+Use/Rare: hirmsaistki
+      hirmus+A+Pl+Ela+Foc/gi+Usage/Rare: hirmsaistki
       hirmus+A+Pl+Ela: hirmsatest
-      hirmus+A+Pl+Ela+Use/Rare: hirmsaist
+      hirmus+A+Pl+Ela+Usage/Rare: hirmsaist
       hirmus+A+Pl+Ess+Foc/gi: hirmsatenagi
       hirmus+A+Pl+Ess: hirmsatena
       hirmus+A+Pl+Gen+Foc/gi: hirmsategi
       hirmus+A+Pl+Gen: hirmsate
       hirmus+A+Pl+Ill+Foc/gi: hirmsatessegi
-      hirmus+A+Pl+Ill+Foc/gi+Use/Rare: hirmsaissegi
+      hirmus+A+Pl+Ill+Foc/gi+Usage/Rare: hirmsaissegi
       hirmus+A+Pl+Ill: hirmsatesse
-      hirmus+A+Pl+Ill+Use/Rare: hirmsaisse
+      hirmus+A+Pl+Ill+Usage/Rare: hirmsaisse
       hirmus+A+Pl+Ine+Foc/gi: hirmsateski
-      hirmus+A+Pl+Ine+Foc/gi+Use/Rare: hirmsaiski
+      hirmus+A+Pl+Ine+Foc/gi+Usage/Rare: hirmsaiski
       hirmus+A+Pl+Ine: hirmsates
-      hirmus+A+Pl+Ine+Use/Rare: hirmsais
+      hirmus+A+Pl+Ine+Usage/Rare: hirmsais
       hirmus+A+Pl+Nom+Foc/gi: hirmsadki
       hirmus+A+Pl+Nom: hirmsad
       hirmus+A+Pl+Par+Foc/gi: hirmsaidki
       hirmus+A+Pl+Par: hirmsaid
       hirmus+A+Pl+Tra+Foc/gi: hirmsatekski
-      hirmus+A+Pl+Tra+Foc/gi+Use/Rare: hirmsaikski
+      hirmus+A+Pl+Tra+Foc/gi+Usage/Rare: hirmsaikski
       hirmus+A+Pl+Tra: hirmsateks
-      hirmus+A+Pl+Tra+Use/Rare: hirmsaiks
+      hirmus+A+Pl+Tra+Usage/Rare: hirmsaiks
       hirmus+A+Pl+Trm+Foc/gi: hirmsatenigi
       hirmus+A+Pl+Trm: hirmsateni
       hirmus+A+Sg+Abe+Foc/gi: hirmsatagi
@@ -322,71 +322,71 @@ Tests:
       hirmus+A+Sg+Trm+Foc/gi: hirmsanigi
       hirmus+A+Sg+Trm: hirmsani
       hoolas+A+Pl+Abe+Foc/gi: hoolsatetagi
-      hoolas+A+Pl+Abe+Foc/gi+Use/NotNorm: hoolastetagi
+      hoolas+A+Pl+Abe+Foc/gi+Usage/NotNorm: hoolastetagi
       hoolas+A+Pl+Abe: hoolsateta
-      hoolas+A+Pl+Abe+Use/NotNorm: hoolasteta
+      hoolas+A+Pl+Abe+Usage/NotNorm: hoolasteta
       hoolas+A+Pl+Abl+Foc/gi: hoolsateltki
-      hoolas+A+Pl+Abl+Foc/gi+Use/NotNorm: hoolasteltki
-      hoolas+A+Pl+Abl+Foc/gi+Use/Rare: hoolsailtki
+      hoolas+A+Pl+Abl+Foc/gi+Usage/NotNorm: hoolasteltki
+      hoolas+A+Pl+Abl+Foc/gi+Usage/Rare: hoolsailtki
       hoolas+A+Pl+Abl: hoolsatelt
-      hoolas+A+Pl+Abl+Use/NotNorm: hoolastelt
-      hoolas+A+Pl+Abl+Use/Rare: hoolsailt
+      hoolas+A+Pl+Abl+Usage/NotNorm: hoolastelt
+      hoolas+A+Pl+Abl+Usage/Rare: hoolsailt
       hoolas+A+Pl+Ade+Foc/gi: hoolsatelgi
-      hoolas+A+Pl+Ade+Foc/gi+Use/NotNorm: hoolastelgi
-      hoolas+A+Pl+Ade+Foc/gi+Use/Rare: hoolsailgi
+      hoolas+A+Pl+Ade+Foc/gi+Usage/NotNorm: hoolastelgi
+      hoolas+A+Pl+Ade+Foc/gi+Usage/Rare: hoolsailgi
       hoolas+A+Pl+Ade: hoolsatel
-      hoolas+A+Pl+Ade+Use/NotNorm: hoolastel
-      hoolas+A+Pl+Ade+Use/Rare: hoolsail
+      hoolas+A+Pl+Ade+Usage/NotNorm: hoolastel
+      hoolas+A+Pl+Ade+Usage/Rare: hoolsail
       hoolas+A+Pl+All+Foc/gi: hoolsatelegi
-      hoolas+A+Pl+All+Foc/gi+Use/NotNorm: hoolastelegi
-      hoolas+A+Pl+All+Foc/gi+Use/Rare: hoolsailegi
+      hoolas+A+Pl+All+Foc/gi+Usage/NotNorm: hoolastelegi
+      hoolas+A+Pl+All+Foc/gi+Usage/Rare: hoolsailegi
       hoolas+A+Pl+All: hoolsatele
-      hoolas+A+Pl+All+Use/NotNorm: hoolastele
-      hoolas+A+Pl+All+Use/Rare: hoolsaile
+      hoolas+A+Pl+All+Usage/NotNorm: hoolastele
+      hoolas+A+Pl+All+Usage/Rare: hoolsaile
       hoolas+A+Pl+Com+Foc/gi: hoolsategagi
-      hoolas+A+Pl+Com+Foc/gi+Use/NotNorm: hoolastegagi
+      hoolas+A+Pl+Com+Foc/gi+Usage/NotNorm: hoolastegagi
       hoolas+A+Pl+Com: hoolsatega
-      hoolas+A+Pl+Com+Use/NotNorm: hoolastega
+      hoolas+A+Pl+Com+Usage/NotNorm: hoolastega
       hoolas+A+Pl+Ela+Foc/gi: hoolsatestki
-      hoolas+A+Pl+Ela+Foc/gi+Use/NotNorm: hoolastestki
-      hoolas+A+Pl+Ela+Foc/gi+Use/Rare: hoolsaistki
+      hoolas+A+Pl+Ela+Foc/gi+Usage/NotNorm: hoolastestki
+      hoolas+A+Pl+Ela+Foc/gi+Usage/Rare: hoolsaistki
       hoolas+A+Pl+Ela: hoolsatest
-      hoolas+A+Pl+Ela+Use/NotNorm: hoolastest
-      hoolas+A+Pl+Ela+Use/Rare: hoolsaist
+      hoolas+A+Pl+Ela+Usage/NotNorm: hoolastest
+      hoolas+A+Pl+Ela+Usage/Rare: hoolsaist
       hoolas+A+Pl+Ess+Foc/gi: hoolsatenagi
-      hoolas+A+Pl+Ess+Foc/gi+Use/NotNorm: hoolastenagi
+      hoolas+A+Pl+Ess+Foc/gi+Usage/NotNorm: hoolastenagi
       hoolas+A+Pl+Ess: hoolsatena
-      hoolas+A+Pl+Ess+Use/NotNorm: hoolastena
+      hoolas+A+Pl+Ess+Usage/NotNorm: hoolastena
       hoolas+A+Pl+Gen+Foc/gi: hoolsategi
-      hoolas+A+Pl+Gen+Foc/gi+Use/NotNorm: hoolastegi
+      hoolas+A+Pl+Gen+Foc/gi+Usage/NotNorm: hoolastegi
       hoolas+A+Pl+Gen: hoolsate
-      hoolas+A+Pl+Gen+Use/NotNorm: hoolaste
+      hoolas+A+Pl+Gen+Usage/NotNorm: hoolaste
       hoolas+A+Pl+Ill+Foc/gi: hoolsatessegi
-      hoolas+A+Pl+Ill+Foc/gi+Use/NotNorm: hoolastessegi
-      hoolas+A+Pl+Ill+Foc/gi+Use/Rare: hoolsaissegi
+      hoolas+A+Pl+Ill+Foc/gi+Usage/NotNorm: hoolastessegi
+      hoolas+A+Pl+Ill+Foc/gi+Usage/Rare: hoolsaissegi
       hoolas+A+Pl+Ill: hoolsatesse
-      hoolas+A+Pl+Ill+Use/NotNorm: hoolastesse
-      hoolas+A+Pl+Ill+Use/Rare: hoolsaisse
+      hoolas+A+Pl+Ill+Usage/NotNorm: hoolastesse
+      hoolas+A+Pl+Ill+Usage/Rare: hoolsaisse
       hoolas+A+Pl+Ine+Foc/gi: hoolsateski
-      hoolas+A+Pl+Ine+Foc/gi+Use/NotNorm: hoolasteski
-      hoolas+A+Pl+Ine+Foc/gi+Use/Rare: hoolsaiski
+      hoolas+A+Pl+Ine+Foc/gi+Usage/NotNorm: hoolasteski
+      hoolas+A+Pl+Ine+Foc/gi+Usage/Rare: hoolsaiski
       hoolas+A+Pl+Ine: hoolsates
-      hoolas+A+Pl+Ine+Use/NotNorm: hoolastes
-      hoolas+A+Pl+Ine+Use/Rare: hoolsais
+      hoolas+A+Pl+Ine+Usage/NotNorm: hoolastes
+      hoolas+A+Pl+Ine+Usage/Rare: hoolsais
       hoolas+A+Pl+Nom+Foc/gi: hoolsadki
       hoolas+A+Pl+Nom: hoolsad
       hoolas+A+Pl+Par+Foc/gi: hoolsaidki
       hoolas+A+Pl+Par: hoolsaid
       hoolas+A+Pl+Tra+Foc/gi: hoolsatekski
-      hoolas+A+Pl+Tra+Foc/gi+Use/NotNorm: hoolastekski
-      hoolas+A+Pl+Tra+Foc/gi+Use/Rare: hoolsaikski
+      hoolas+A+Pl+Tra+Foc/gi+Usage/NotNorm: hoolastekski
+      hoolas+A+Pl+Tra+Foc/gi+Usage/Rare: hoolsaikski
       hoolas+A+Pl+Tra: hoolsateks
-      hoolas+A+Pl+Tra+Use/NotNorm: hoolasteks
-      hoolas+A+Pl+Tra+Use/Rare: hoolsaiks
+      hoolas+A+Pl+Tra+Usage/NotNorm: hoolasteks
+      hoolas+A+Pl+Tra+Usage/Rare: hoolsaiks
       hoolas+A+Pl+Trm+Foc/gi: hoolsatenigi
-      hoolas+A+Pl+Trm+Foc/gi+Use/NotNorm: hoolastenigi
+      hoolas+A+Pl+Trm+Foc/gi+Usage/NotNorm: hoolastenigi
       hoolas+A+Pl+Trm: hoolsateni
-      hoolas+A+Pl+Trm+Use/NotNorm: hoolasteni
+      hoolas+A+Pl+Trm+Usage/NotNorm: hoolasteni
       hoolas+A+Sg+Abe+Foc/gi: hoolsatagi
       hoolas+A+Sg+Abe: hoolsata
       hoolas+A+Sg+Abl+Foc/gi: hoolsaltki
@@ -410,9 +410,9 @@ Tests:
       hoolas+A+Sg+Nom+Foc/gi: hoolaski
       hoolas+A+Sg+Nom: hoolas
       hoolas+A+Sg+Par+Foc/gi: hoolsatki
-      hoolas+A+Sg+Par+Foc/gi+Use/Rare: hoolastki
+      hoolas+A+Sg+Par+Foc/gi+Usage/Rare: hoolastki
       hoolas+A+Sg+Par: hoolsat
-      hoolas+A+Sg+Par+Use/Rare: hoolast
+      hoolas+A+Sg+Par+Usage/Rare: hoolast
       hoolas+A+Sg+Tra+Foc/gi: hoolsakski
       hoolas+A+Sg+Tra: hoolsaks
       hoolas+A+Sg+Trm+Foc/gi: hoolsanigi
@@ -420,43 +420,43 @@ Tests:
       joobnud+A+Pl+Abe+Foc/gi: joobnutetagi
       joobnud+A+Pl+Abe: joobnuteta
       joobnud+A+Pl+Abl+Foc/gi: joobnuteltki
-      joobnud+A+Pl+Abl+Foc/gi+Use/Rare: joobnuiltki
+      joobnud+A+Pl+Abl+Foc/gi+Usage/Rare: joobnuiltki
       joobnud+A+Pl+Abl: joobnutelt
-      joobnud+A+Pl+Abl+Use/Rare: joobnuilt
+      joobnud+A+Pl+Abl+Usage/Rare: joobnuilt
       joobnud+A+Pl+Ade+Foc/gi: joobnutelgi
-      joobnud+A+Pl+Ade+Foc/gi+Use/Rare: joobnuilgi
+      joobnud+A+Pl+Ade+Foc/gi+Usage/Rare: joobnuilgi
       joobnud+A+Pl+Ade: joobnutel
-      joobnud+A+Pl+Ade+Use/Rare: joobnuil
+      joobnud+A+Pl+Ade+Usage/Rare: joobnuil
       joobnud+A+Pl+All+Foc/gi: joobnutelegi
-      joobnud+A+Pl+All+Foc/gi+Use/Rare: joobnuilegi
+      joobnud+A+Pl+All+Foc/gi+Usage/Rare: joobnuilegi
       joobnud+A+Pl+All: joobnutele
-      joobnud+A+Pl+All+Use/Rare: joobnuile
+      joobnud+A+Pl+All+Usage/Rare: joobnuile
       joobnud+A+Pl+Com+Foc/gi: joobnutegagi
       joobnud+A+Pl+Com: joobnutega
       joobnud+A+Pl+Ela+Foc/gi: joobnutestki
-      joobnud+A+Pl+Ela+Foc/gi+Use/Rare: joobnuistki
+      joobnud+A+Pl+Ela+Foc/gi+Usage/Rare: joobnuistki
       joobnud+A+Pl+Ela: joobnutest
-      joobnud+A+Pl+Ela+Use/Rare: joobnuist
+      joobnud+A+Pl+Ela+Usage/Rare: joobnuist
       joobnud+A+Pl+Ess+Foc/gi: joobnutenagi
       joobnud+A+Pl+Ess: joobnutena
       joobnud+A+Pl+Gen+Foc/gi: joobnutegi
       joobnud+A+Pl+Gen: joobnute
       joobnud+A+Pl+Ill+Foc/gi: joobnutessegi
-      joobnud+A+Pl+Ill+Foc/gi+Use/Rare: joobnuissegi
+      joobnud+A+Pl+Ill+Foc/gi+Usage/Rare: joobnuissegi
       joobnud+A+Pl+Ill: joobnutesse
-      joobnud+A+Pl+Ill+Use/Rare: joobnuisse
+      joobnud+A+Pl+Ill+Usage/Rare: joobnuisse
       joobnud+A+Pl+Ine+Foc/gi: joobnuteski
-      joobnud+A+Pl+Ine+Foc/gi+Use/Rare: joobnuiski
+      joobnud+A+Pl+Ine+Foc/gi+Usage/Rare: joobnuiski
       joobnud+A+Pl+Ine: joobnutes
-      joobnud+A+Pl+Ine+Use/Rare: joobnuis
+      joobnud+A+Pl+Ine+Usage/Rare: joobnuis
       joobnud+A+Pl+Nom+Foc/gi: joobnudki
       joobnud+A+Pl+Nom: joobnud
       joobnud+A+Pl+Par+Foc/gi: joobnuidki
       joobnud+A+Pl+Par: joobnuid
       joobnud+A+Pl+Tra+Foc/gi: joobnutekski
-      joobnud+A+Pl+Tra+Foc/gi+Use/Rare: joobnuikski
+      joobnud+A+Pl+Tra+Foc/gi+Usage/Rare: joobnuikski
       joobnud+A+Pl+Tra: joobnuteks
-      joobnud+A+Pl+Tra+Use/Rare: joobnuiks
+      joobnud+A+Pl+Tra+Usage/Rare: joobnuiks
       joobnud+A+Pl+Trm+Foc/gi: joobnutenigi
       joobnud+A+Pl+Trm: joobnuteni
       joobnud+A+Sg+Abe+Foc/gi: joobnutagi
@@ -488,57 +488,57 @@ Tests:
       joobnud+A+Sg+Trm+Foc/gi: joobnunigi
       joobnud+A+Sg+Trm: joobnuni
       kallis+A+Pl+Abe+Foc/gi: kallitetagi
-      kallis+A+Pl+Abe+Foc/gi+Use/Rare: [kalleitagi, kallistetagi]
+      kallis+A+Pl+Abe+Foc/gi+Usage/Rare: [kalleitagi, kallistetagi]
       kallis+A+Pl+Abe: kalliteta
-      kallis+A+Pl+Abe+Use/Rare: [kalleita, kallisteta]
+      kallis+A+Pl+Abe+Usage/Rare: [kalleita, kallisteta]
       kallis+A+Pl+Abl+Foc/gi: kalliteltki
-      kallis+A+Pl+Abl+Foc/gi+Use/Rare: [kalleiltki, kallisteltki]
+      kallis+A+Pl+Abl+Foc/gi+Usage/Rare: [kalleiltki, kallisteltki]
       kallis+A+Pl+Abl: kallitelt
-      kallis+A+Pl+Abl+Use/Rare: [kalleilt, kallistelt]
+      kallis+A+Pl+Abl+Usage/Rare: [kalleilt, kallistelt]
       kallis+A+Pl+Ade+Foc/gi: kallitelgi
-      kallis+A+Pl+Ade+Foc/gi+Use/Rare: [kalleilgi, kallistelgi]
+      kallis+A+Pl+Ade+Foc/gi+Usage/Rare: [kalleilgi, kallistelgi]
       kallis+A+Pl+Ade: kallitel
-      kallis+A+Pl+Ade+Use/Rare: [kalleil, kallistel]
+      kallis+A+Pl+Ade+Usage/Rare: [kalleil, kallistel]
       kallis+A+Pl+All+Foc/gi: kallitelegi
-      kallis+A+Pl+All+Foc/gi+Use/Rare: [kalleilegi, kallistelegi]
+      kallis+A+Pl+All+Foc/gi+Usage/Rare: [kalleilegi, kallistelegi]
       kallis+A+Pl+All: kallitele
-      kallis+A+Pl+All+Use/Rare: [kalleile, kallistele]
+      kallis+A+Pl+All+Usage/Rare: [kalleile, kallistele]
       kallis+A+Pl+Com+Foc/gi: kallitegagi
-      kallis+A+Pl+Com+Foc/gi+Use/Rare: [kalleigagi, kallistegagi]
+      kallis+A+Pl+Com+Foc/gi+Usage/Rare: [kalleigagi, kallistegagi]
       kallis+A+Pl+Com: kallitega
-      kallis+A+Pl+Com+Use/Rare: [kalleiga, kallistega]
+      kallis+A+Pl+Com+Usage/Rare: [kalleiga, kallistega]
       kallis+A+Pl+Ela+Foc/gi: kallitestki
-      kallis+A+Pl+Ela+Foc/gi+Use/Rare: [kalleistki, kallistestki]
+      kallis+A+Pl+Ela+Foc/gi+Usage/Rare: [kalleistki, kallistestki]
       kallis+A+Pl+Ela: kallitest
-      kallis+A+Pl+Ela+Use/Rare: [kalleist, kallistest]
+      kallis+A+Pl+Ela+Usage/Rare: [kalleist, kallistest]
       kallis+A+Pl+Ess+Foc/gi: kallitenagi
-      kallis+A+Pl+Ess+Foc/gi+Use/Rare: [kalleinagi, kallistenagi]
+      kallis+A+Pl+Ess+Foc/gi+Usage/Rare: [kalleinagi, kallistenagi]
       kallis+A+Pl+Ess: kallitena
-      kallis+A+Pl+Ess+Use/Rare: [kalleina, kallistena]
+      kallis+A+Pl+Ess+Usage/Rare: [kalleina, kallistena]
       kallis+A+Pl+Gen+Foc/gi: kallitegi
-      kallis+A+Pl+Gen+Foc/gi+Use/Rare: kallistegi
+      kallis+A+Pl+Gen+Foc/gi+Usage/Rare: kallistegi
       kallis+A+Pl+Gen: kallite
-      kallis+A+Pl+Gen+Use/Rare: kalliste
+      kallis+A+Pl+Gen+Usage/Rare: kalliste
       kallis+A+Pl+Ill+Foc/gi: kallitessegi
-      kallis+A+Pl+Ill+Foc/gi+Use/Rare: [kalleissegi, kallistessegi]
+      kallis+A+Pl+Ill+Foc/gi+Usage/Rare: [kalleissegi, kallistessegi]
       kallis+A+Pl+Ill: kallitesse
-      kallis+A+Pl+Ill+Use/Rare: [kalleisse, kallistesse]
+      kallis+A+Pl+Ill+Usage/Rare: [kalleisse, kallistesse]
       kallis+A+Pl+Ine+Foc/gi: kalliteski
-      kallis+A+Pl+Ine+Foc/gi+Use/Rare: [kalleiski, kallisteski]
+      kallis+A+Pl+Ine+Foc/gi+Usage/Rare: [kalleiski, kallisteski]
       kallis+A+Pl+Ine: kallites
-      kallis+A+Pl+Ine+Use/Rare: [kalleis, kallistes]
+      kallis+A+Pl+Ine+Usage/Rare: [kalleis, kallistes]
       kallis+A+Pl+Nom+Foc/gi: kallidki
       kallis+A+Pl+Nom: kallid
       kallis+A+Pl+Par+Foc/gi: kalleidki
       kallis+A+Pl+Par: kalleid
       kallis+A+Pl+Tra+Foc/gi: kallitekski
-      kallis+A+Pl+Tra+Foc/gi+Use/Rare: [kalleikski, kallistekski]
+      kallis+A+Pl+Tra+Foc/gi+Usage/Rare: [kalleikski, kallistekski]
       kallis+A+Pl+Tra: kalliteks
-      kallis+A+Pl+Tra+Use/Rare: [kalleiks, kallisteks]
+      kallis+A+Pl+Tra+Usage/Rare: [kalleiks, kallisteks]
       kallis+A+Pl+Trm+Foc/gi: kallitenigi
-      kallis+A+Pl+Trm+Foc/gi+Use/Rare: [kalleinigi, kallistenigi]
+      kallis+A+Pl+Trm+Foc/gi+Usage/Rare: [kalleinigi, kallistenigi]
       kallis+A+Pl+Trm: kalliteni
-      kallis+A+Pl+Trm+Use/Rare: [kalleini, kallisteni]
+      kallis+A+Pl+Trm+Usage/Rare: [kalleini, kallisteni]
       kallis+A+Sg+Abe+Foc/gi: kallitagi
       kallis+A+Sg+Abe: kallita
       kallis+A+Sg+Abl+Foc/gi: kalliltki
@@ -570,45 +570,45 @@ Tests:
       katkine+A+Pl+Abe+Foc/gi: katkistetagi
       katkine+A+Pl+Abe: katkisteta
       katkine+A+Pl+Abl+Foc/gi: katkisteltki
-      katkine+A+Pl+Abl+Foc/gi+Use/Rare: [katkiseiltki, katkisiltki]
+      katkine+A+Pl+Abl+Foc/gi+Usage/Rare: [katkiseiltki, katkisiltki]
       katkine+A+Pl+Abl: katkistelt
-      katkine+A+Pl+Abl+Use/Rare: [katkiseilt, katkisilt]
+      katkine+A+Pl+Abl+Usage/Rare: [katkiseilt, katkisilt]
       katkine+A+Pl+Ade+Foc/gi: katkistelgi
-      katkine+A+Pl+Ade+Foc/gi+Use/Rare: [katkiseilgi, katkisilgi]
+      katkine+A+Pl+Ade+Foc/gi+Usage/Rare: [katkiseilgi, katkisilgi]
       katkine+A+Pl+Ade: katkistel
-      katkine+A+Pl+Ade+Use/Rare: [katkiseil, katkisil]
+      katkine+A+Pl+Ade+Usage/Rare: [katkiseil, katkisil]
       katkine+A+Pl+All+Foc/gi: katkistelegi
-      katkine+A+Pl+All+Foc/gi+Use/Rare: [katkiseilegi, katkisilegi]
+      katkine+A+Pl+All+Foc/gi+Usage/Rare: [katkiseilegi, katkisilegi]
       katkine+A+Pl+All: katkistele
-      katkine+A+Pl+All+Use/Rare: [katkiseile, katkisile]
+      katkine+A+Pl+All+Usage/Rare: [katkiseile, katkisile]
       katkine+A+Pl+Com+Foc/gi: katkistegagi
       katkine+A+Pl+Com: katkistega
       katkine+A+Pl+Ela+Foc/gi: katkistestki
-      katkine+A+Pl+Ela+Foc/gi+Use/Rare: [katkiseistki, katkisistki]
+      katkine+A+Pl+Ela+Foc/gi+Usage/Rare: [katkiseistki, katkisistki]
       katkine+A+Pl+Ela: katkistest
-      katkine+A+Pl+Ela+Use/Rare: [katkiseist, katkisist]
+      katkine+A+Pl+Ela+Usage/Rare: [katkiseist, katkisist]
       katkine+A+Pl+Ess+Foc/gi: katkistenagi
       katkine+A+Pl+Ess: katkistena
       katkine+A+Pl+Gen+Foc/gi: katkistegi
       katkine+A+Pl+Gen: katkiste
       katkine+A+Pl+Ill+Foc/gi: katkistessegi
-      katkine+A+Pl+Ill+Foc/gi+Use/Rare: [katkiseissegi, katkisissegi]
+      katkine+A+Pl+Ill+Foc/gi+Usage/Rare: [katkiseissegi, katkisissegi]
       katkine+A+Pl+Ill: katkistesse
-      katkine+A+Pl+Ill+Use/Rare: [katkiseisse, katkisisse]
+      katkine+A+Pl+Ill+Usage/Rare: [katkiseisse, katkisisse]
       katkine+A+Pl+Ine+Foc/gi: katkisteski
-      katkine+A+Pl+Ine+Foc/gi+Use/Rare: [katkiseiski, katkisiski]
+      katkine+A+Pl+Ine+Foc/gi+Usage/Rare: [katkiseiski, katkisiski]
       katkine+A+Pl+Ine: katkistes
-      katkine+A+Pl+Ine+Use/Rare: [katkiseis, katkisis]
+      katkine+A+Pl+Ine+Usage/Rare: [katkiseis, katkisis]
       katkine+A+Pl+Nom+Foc/gi: katkisedki
       katkine+A+Pl+Nom: katkised
       katkine+A+Pl+Par+Foc/gi: katkiseidki
-      katkine+A+Pl+Par+Foc/gi+Use/Rare: katkisigi
+      katkine+A+Pl+Par+Foc/gi+Usage/Rare: katkisigi
       katkine+A+Pl+Par: katkiseid
-      katkine+A+Pl+Par+Use/Rare: katkisi
+      katkine+A+Pl+Par+Usage/Rare: katkisi
       katkine+A+Pl+Tra+Foc/gi: katkistekski
-      katkine+A+Pl+Tra+Foc/gi+Use/Rare: [katkiseikski, katkisikski]
+      katkine+A+Pl+Tra+Foc/gi+Usage/Rare: [katkiseikski, katkisikski]
       katkine+A+Pl+Tra: katkisteks
-      katkine+A+Pl+Tra+Use/Rare: [katkiseiks, katkisiks]
+      katkine+A+Pl+Tra+Usage/Rare: [katkiseiks, katkisiks]
       katkine+A+Pl+Trm+Foc/gi: katkistenigi
       katkine+A+Pl+Trm: katkisteni
       katkine+A+Sg+Abe+Foc/gi: katkisetagi
@@ -628,9 +628,9 @@ Tests:
       katkine+A+Sg+Gen+Foc/gi: katkisegi
       katkine+A+Sg+Gen: katkise
       katkine+A+Sg+Ill+Foc/gi: katkisessegi
-      katkine+A+Sg+Ill+Foc/gi+Use/Rare: katkissegi
+      katkine+A+Sg+Ill+Foc/gi+Usage/Rare: katkissegi
       katkine+A+Sg+Ill: katkisesse
-      katkine+A+Sg+Ill+Use/Rare: katkisse
+      katkine+A+Sg+Ill+Usage/Rare: katkisse
       katkine+A+Sg+Ine+Foc/gi: katkiseski
       katkine+A+Sg+Ine: katkises
       katkine+A+Sg+Nom+Foc/gi: katkinegi
@@ -642,57 +642,57 @@ Tests:
       katkine+A+Sg+Trm+Foc/gi: katkisenigi
       katkine+A+Sg+Trm: katkiseni
       kaunis+A+Pl+Abe+Foc/gi: kaunitetagi
-      kaunis+A+Pl+Abe+Foc/gi+Use/Rare: [kauneitagi, kaunistetagi]
+      kaunis+A+Pl+Abe+Foc/gi+Usage/Rare: [kauneitagi, kaunistetagi]
       kaunis+A+Pl+Abe: kauniteta
-      kaunis+A+Pl+Abe+Use/Rare: [kauneita, kaunisteta]
+      kaunis+A+Pl+Abe+Usage/Rare: [kauneita, kaunisteta]
       kaunis+A+Pl+Abl+Foc/gi: kauniteltki
-      kaunis+A+Pl+Abl+Foc/gi+Use/Rare: [kauneiltki, kaunisteltki]
+      kaunis+A+Pl+Abl+Foc/gi+Usage/Rare: [kauneiltki, kaunisteltki]
       kaunis+A+Pl+Abl: kaunitelt
-      kaunis+A+Pl+Abl+Use/Rare: [kauneilt, kaunistelt]
+      kaunis+A+Pl+Abl+Usage/Rare: [kauneilt, kaunistelt]
       kaunis+A+Pl+Ade+Foc/gi: kaunitelgi
-      kaunis+A+Pl+Ade+Foc/gi+Use/Rare: [kauneilgi, kaunistelgi]
+      kaunis+A+Pl+Ade+Foc/gi+Usage/Rare: [kauneilgi, kaunistelgi]
       kaunis+A+Pl+Ade: kaunitel
-      kaunis+A+Pl+Ade+Use/Rare: [kauneil, kaunistel]
+      kaunis+A+Pl+Ade+Usage/Rare: [kauneil, kaunistel]
       kaunis+A+Pl+All+Foc/gi: kaunitelegi
-      kaunis+A+Pl+All+Foc/gi+Use/Rare: [kauneilegi, kaunistelegi]
+      kaunis+A+Pl+All+Foc/gi+Usage/Rare: [kauneilegi, kaunistelegi]
       kaunis+A+Pl+All: kaunitele
-      kaunis+A+Pl+All+Use/Rare: [kauneile, kaunistele]
+      kaunis+A+Pl+All+Usage/Rare: [kauneile, kaunistele]
       kaunis+A+Pl+Com+Foc/gi: kaunitegagi
-      kaunis+A+Pl+Com+Foc/gi+Use/Rare: [kauneigagi, kaunistegagi]
+      kaunis+A+Pl+Com+Foc/gi+Usage/Rare: [kauneigagi, kaunistegagi]
       kaunis+A+Pl+Com: kaunitega
-      kaunis+A+Pl+Com+Use/Rare: [kauneiga, kaunistega]
+      kaunis+A+Pl+Com+Usage/Rare: [kauneiga, kaunistega]
       kaunis+A+Pl+Ela+Foc/gi: kaunitestki
-      kaunis+A+Pl+Ela+Foc/gi+Use/Rare: [kauneistki, kaunistestki]
+      kaunis+A+Pl+Ela+Foc/gi+Usage/Rare: [kauneistki, kaunistestki]
       kaunis+A+Pl+Ela: kaunitest
-      kaunis+A+Pl+Ela+Use/Rare: [kauneist, kaunistest]
+      kaunis+A+Pl+Ela+Usage/Rare: [kauneist, kaunistest]
       kaunis+A+Pl+Ess+Foc/gi: kaunitenagi
-      kaunis+A+Pl+Ess+Foc/gi+Use/Rare: [kauneinagi, kaunistenagi]
+      kaunis+A+Pl+Ess+Foc/gi+Usage/Rare: [kauneinagi, kaunistenagi]
       kaunis+A+Pl+Ess: kaunitena
-      kaunis+A+Pl+Ess+Use/Rare: [kauneina, kaunistena]
+      kaunis+A+Pl+Ess+Usage/Rare: [kauneina, kaunistena]
       kaunis+A+Pl+Gen+Foc/gi: kaunitegi
-      kaunis+A+Pl+Gen+Foc/gi+Use/Rare: kaunistegi
+      kaunis+A+Pl+Gen+Foc/gi+Usage/Rare: kaunistegi
       kaunis+A+Pl+Gen: kaunite
-      kaunis+A+Pl+Gen+Use/Rare: kauniste
+      kaunis+A+Pl+Gen+Usage/Rare: kauniste
       kaunis+A+Pl+Ill+Foc/gi: kaunitessegi
-      kaunis+A+Pl+Ill+Foc/gi+Use/Rare: [kauneissegi, kaunistessegi]
+      kaunis+A+Pl+Ill+Foc/gi+Usage/Rare: [kauneissegi, kaunistessegi]
       kaunis+A+Pl+Ill: kaunitesse
-      kaunis+A+Pl+Ill+Use/Rare: [kauneisse, kaunistesse]
+      kaunis+A+Pl+Ill+Usage/Rare: [kauneisse, kaunistesse]
       kaunis+A+Pl+Ine+Foc/gi: kauniteski
-      kaunis+A+Pl+Ine+Foc/gi+Use/Rare: [kauneiski, kaunisteski]
+      kaunis+A+Pl+Ine+Foc/gi+Usage/Rare: [kauneiski, kaunisteski]
       kaunis+A+Pl+Ine: kaunites
-      kaunis+A+Pl+Ine+Use/Rare: [kauneis, kaunistes]
+      kaunis+A+Pl+Ine+Usage/Rare: [kauneis, kaunistes]
       kaunis+A+Pl+Nom+Foc/gi: kaunidki
       kaunis+A+Pl+Nom: kaunid
       kaunis+A+Pl+Par+Foc/gi: kauneidki
       kaunis+A+Pl+Par: kauneid
       kaunis+A+Pl+Tra+Foc/gi: kaunitekski
-      kaunis+A+Pl+Tra+Foc/gi+Use/Rare: [kauneikski, kaunistekski]
+      kaunis+A+Pl+Tra+Foc/gi+Usage/Rare: [kauneikski, kaunistekski]
       kaunis+A+Pl+Tra: kauniteks
-      kaunis+A+Pl+Tra+Use/Rare: [kauneiks, kaunisteks]
+      kaunis+A+Pl+Tra+Usage/Rare: [kauneiks, kaunisteks]
       kaunis+A+Pl+Trm+Foc/gi: kaunitenigi
-      kaunis+A+Pl+Trm+Foc/gi+Use/Rare: [kauneinigi, kaunistenigi]
+      kaunis+A+Pl+Trm+Foc/gi+Usage/Rare: [kauneinigi, kaunistenigi]
       kaunis+A+Pl+Trm: kauniteni
-      kaunis+A+Pl+Trm+Use/Rare: [kauneini, kaunisteni]
+      kaunis+A+Pl+Trm+Usage/Rare: [kauneini, kaunisteni]
       kaunis+A+Sg+Abe+Foc/gi: kaunitagi
       kaunis+A+Sg+Abe: kaunita
       kaunis+A+Sg+Abl+Foc/gi: kauniltki
@@ -744,9 +744,9 @@ Tests:
       kihvt+A+Pl+Nom+Foc/gi: kihvtidki
       kihvt+A+Pl+Nom: kihvtid
       kihvt+A+Pl+Par+Foc/gi: kihvtegi
-      kihvt+A+Pl+Par+Foc/gi+Use/Rare: kihvtisidki
+      kihvt+A+Pl+Par+Foc/gi+Usage/Rare: kihvtisidki
       kihvt+A+Pl+Par: kihvte
-      kihvt+A+Pl+Par+Use/Rare: kihvtisid
+      kihvt+A+Pl+Par+Usage/Rare: kihvtisid
       kihvt+A+Pl+Tra+Foc/gi: kihvtidekski
       kihvt+A+Pl+Tra: kihvtideks
       kihvt+A+Pl+Trm+Foc/gi: kihvtidenigi
@@ -768,9 +768,9 @@ Tests:
       kihvt+A+Sg+Gen+Foc/gi: kihvtigi
       kihvt+A+Sg+Gen: kihvti
       kihvt+A+Sg+Ill+Foc/gi: kihvtigi
-      kihvt+A+Sg+Ill+Foc/gi+Use/Hyp: kihvtissegi
+      kihvt+A+Sg+Ill+Foc/gi+Usage/Hyp: kihvtissegi
       kihvt+A+Sg+Ill: kihvti
-      kihvt+A+Sg+Ill+Use/Hyp: kihvtisse
+      kihvt+A+Sg+Ill+Usage/Hyp: kihvtisse
       kihvt+A+Sg+Ine+Foc/gi: kihvtiski
       kihvt+A+Sg+Ine: kihvtis
       kihvt+A+Sg+Nom+Foc/gi: kihvtki
@@ -784,43 +784,43 @@ Tests:
       laulev+A+Pl+Abe+Foc/gi: laulvatetagi
       laulev+A+Pl+Abe: laulvateta
       laulev+A+Pl+Abl+Foc/gi: laulvateltki
-      laulev+A+Pl+Abl+Foc/gi+Use/Rare: laulvailtki
+      laulev+A+Pl+Abl+Foc/gi+Usage/Rare: laulvailtki
       laulev+A+Pl+Abl: laulvatelt
-      laulev+A+Pl+Abl+Use/Rare: laulvailt
+      laulev+A+Pl+Abl+Usage/Rare: laulvailt
       laulev+A+Pl+Ade+Foc/gi: laulvatelgi
-      laulev+A+Pl+Ade+Foc/gi+Use/Rare: laulvailgi
+      laulev+A+Pl+Ade+Foc/gi+Usage/Rare: laulvailgi
       laulev+A+Pl+Ade: laulvatel
-      laulev+A+Pl+Ade+Use/Rare: laulvail
+      laulev+A+Pl+Ade+Usage/Rare: laulvail
       laulev+A+Pl+All+Foc/gi: laulvatelegi
-      laulev+A+Pl+All+Foc/gi+Use/Rare: laulvailegi
+      laulev+A+Pl+All+Foc/gi+Usage/Rare: laulvailegi
       laulev+A+Pl+All: laulvatele
-      laulev+A+Pl+All+Use/Rare: laulvaile
+      laulev+A+Pl+All+Usage/Rare: laulvaile
       laulev+A+Pl+Com+Foc/gi: laulvategagi
       laulev+A+Pl+Com: laulvatega
       laulev+A+Pl+Ela+Foc/gi: laulvatestki
-      laulev+A+Pl+Ela+Foc/gi+Use/Rare: laulvaistki
+      laulev+A+Pl+Ela+Foc/gi+Usage/Rare: laulvaistki
       laulev+A+Pl+Ela: laulvatest
-      laulev+A+Pl+Ela+Use/Rare: laulvaist
+      laulev+A+Pl+Ela+Usage/Rare: laulvaist
       laulev+A+Pl+Ess+Foc/gi: laulvatenagi
       laulev+A+Pl+Ess: laulvatena
       laulev+A+Pl+Gen+Foc/gi: laulvategi
       laulev+A+Pl+Gen: laulvate
       laulev+A+Pl+Ill+Foc/gi: laulvatessegi
-      laulev+A+Pl+Ill+Foc/gi+Use/Rare: laulvaissegi
+      laulev+A+Pl+Ill+Foc/gi+Usage/Rare: laulvaissegi
       laulev+A+Pl+Ill: laulvatesse
-      laulev+A+Pl+Ill+Use/Rare: laulvaisse
+      laulev+A+Pl+Ill+Usage/Rare: laulvaisse
       laulev+A+Pl+Ine+Foc/gi: laulvateski
-      laulev+A+Pl+Ine+Foc/gi+Use/Rare: laulvaiski
+      laulev+A+Pl+Ine+Foc/gi+Usage/Rare: laulvaiski
       laulev+A+Pl+Ine: laulvates
-      laulev+A+Pl+Ine+Use/Rare: laulvais
+      laulev+A+Pl+Ine+Usage/Rare: laulvais
       laulev+A+Pl+Nom+Foc/gi: laulvadki
       laulev+A+Pl+Nom: laulvad
       laulev+A+Pl+Par+Foc/gi: laulvaidki
       laulev+A+Pl+Par: laulvaid
       laulev+A+Pl+Tra+Foc/gi: laulvatekski
-      laulev+A+Pl+Tra+Foc/gi+Use/Rare: laulvaikski
+      laulev+A+Pl+Tra+Foc/gi+Usage/Rare: laulvaikski
       laulev+A+Pl+Tra: laulvateks
-      laulev+A+Pl+Tra+Use/Rare: laulvaiks
+      laulev+A+Pl+Tra+Usage/Rare: laulvaiks
       laulev+A+Pl+Trm+Foc/gi: laulvatenigi
       laulev+A+Pl+Trm: laulvateni
       laulev+A+Sg+Abe+Foc/gi: laulvatagi
@@ -854,43 +854,43 @@ Tests:
       ligida+A+Pl+Abe+Foc/gi: ligidatetagi
       ligida+A+Pl+Abe: ligidateta
       ligida+A+Pl+Abl+Foc/gi: ligidateltki
-      ligida+A+Pl+Abl+Foc/gi+Use/Rare: ligidailtki
+      ligida+A+Pl+Abl+Foc/gi+Usage/Rare: ligidailtki
       ligida+A+Pl+Abl: ligidatelt
-      ligida+A+Pl+Abl+Use/Rare: ligidailt
+      ligida+A+Pl+Abl+Usage/Rare: ligidailt
       ligida+A+Pl+Ade+Foc/gi: ligidatelgi
-      ligida+A+Pl+Ade+Foc/gi+Use/Rare: ligidailgi
+      ligida+A+Pl+Ade+Foc/gi+Usage/Rare: ligidailgi
       ligida+A+Pl+Ade: ligidatel
-      ligida+A+Pl+Ade+Use/Rare: ligidail
+      ligida+A+Pl+Ade+Usage/Rare: ligidail
       ligida+A+Pl+All+Foc/gi: ligidatelegi
-      ligida+A+Pl+All+Foc/gi+Use/Rare: ligidailegi
+      ligida+A+Pl+All+Foc/gi+Usage/Rare: ligidailegi
       ligida+A+Pl+All: ligidatele
-      ligida+A+Pl+All+Use/Rare: ligidaile
+      ligida+A+Pl+All+Usage/Rare: ligidaile
       ligida+A+Pl+Com+Foc/gi: ligidategagi
       ligida+A+Pl+Com: ligidatega
       ligida+A+Pl+Ela+Foc/gi: ligidatestki
-      ligida+A+Pl+Ela+Foc/gi+Use/Rare: ligidaistki
+      ligida+A+Pl+Ela+Foc/gi+Usage/Rare: ligidaistki
       ligida+A+Pl+Ela: ligidatest
-      ligida+A+Pl+Ela+Use/Rare: ligidaist
+      ligida+A+Pl+Ela+Usage/Rare: ligidaist
       ligida+A+Pl+Ess+Foc/gi: ligidatenagi
       ligida+A+Pl+Ess: ligidatena
       ligida+A+Pl+Gen+Foc/gi: ligidategi
       ligida+A+Pl+Gen: ligidate
       ligida+A+Pl+Ill+Foc/gi: ligidatessegi
-      ligida+A+Pl+Ill+Foc/gi+Use/Rare: ligidaissegi
+      ligida+A+Pl+Ill+Foc/gi+Usage/Rare: ligidaissegi
       ligida+A+Pl+Ill: ligidatesse
-      ligida+A+Pl+Ill+Use/Rare: ligidaisse
+      ligida+A+Pl+Ill+Usage/Rare: ligidaisse
       ligida+A+Pl+Ine+Foc/gi: ligidateski
-      ligida+A+Pl+Ine+Foc/gi+Use/Rare: ligidaiski
+      ligida+A+Pl+Ine+Foc/gi+Usage/Rare: ligidaiski
       ligida+A+Pl+Ine: ligidates
-      ligida+A+Pl+Ine+Use/Rare: ligidais
+      ligida+A+Pl+Ine+Usage/Rare: ligidais
       ligida+A+Pl+Nom+Foc/gi: ligidadki
       ligida+A+Pl+Nom: ligidad
       ligida+A+Pl+Par+Foc/gi: ligidaidki
       ligida+A+Pl+Par: ligidaid
       ligida+A+Pl+Tra+Foc/gi: ligidatekski
-      ligida+A+Pl+Tra+Foc/gi+Use/Rare: ligidaikski
+      ligida+A+Pl+Tra+Foc/gi+Usage/Rare: ligidaikski
       ligida+A+Pl+Tra: ligidateks
-      ligida+A+Pl+Tra+Use/Rare: ligidaiks
+      ligida+A+Pl+Tra+Usage/Rare: ligidaiks
       ligida+A+Pl+Trm+Foc/gi: ligidatenigi
       ligida+A+Pl+Trm: ligidateni
       ligida+A+Sg+Abe+Foc/gi: ligidatagi
@@ -922,43 +922,43 @@ Tests:
       lohakas+A+Pl+Abe+Foc/gi: lohakatetagi
       lohakas+A+Pl+Abe: lohakateta
       lohakas+A+Pl+Abl+Foc/gi: lohakateltki
-      lohakas+A+Pl+Abl+Foc/gi+Use/Rare: lohakailtki
+      lohakas+A+Pl+Abl+Foc/gi+Usage/Rare: lohakailtki
       lohakas+A+Pl+Abl: lohakatelt
-      lohakas+A+Pl+Abl+Use/Rare: lohakailt
+      lohakas+A+Pl+Abl+Usage/Rare: lohakailt
       lohakas+A+Pl+Ade+Foc/gi: lohakatelgi
-      lohakas+A+Pl+Ade+Foc/gi+Use/Rare: lohakailgi
+      lohakas+A+Pl+Ade+Foc/gi+Usage/Rare: lohakailgi
       lohakas+A+Pl+Ade: lohakatel
-      lohakas+A+Pl+Ade+Use/Rare: lohakail
+      lohakas+A+Pl+Ade+Usage/Rare: lohakail
       lohakas+A+Pl+All+Foc/gi: lohakatelegi
-      lohakas+A+Pl+All+Foc/gi+Use/Rare: lohakailegi
+      lohakas+A+Pl+All+Foc/gi+Usage/Rare: lohakailegi
       lohakas+A+Pl+All: lohakatele
-      lohakas+A+Pl+All+Use/Rare: lohakaile
+      lohakas+A+Pl+All+Usage/Rare: lohakaile
       lohakas+A+Pl+Com+Foc/gi: lohakategagi
       lohakas+A+Pl+Com: lohakatega
       lohakas+A+Pl+Ela+Foc/gi: lohakatestki
-      lohakas+A+Pl+Ela+Foc/gi+Use/Rare: lohakaistki
+      lohakas+A+Pl+Ela+Foc/gi+Usage/Rare: lohakaistki
       lohakas+A+Pl+Ela: lohakatest
-      lohakas+A+Pl+Ela+Use/Rare: lohakaist
+      lohakas+A+Pl+Ela+Usage/Rare: lohakaist
       lohakas+A+Pl+Ess+Foc/gi: lohakatenagi
       lohakas+A+Pl+Ess: lohakatena
       lohakas+A+Pl+Gen+Foc/gi: lohakategi
       lohakas+A+Pl+Gen: lohakate
       lohakas+A+Pl+Ill+Foc/gi: lohakatessegi
-      lohakas+A+Pl+Ill+Foc/gi+Use/Rare: lohakaissegi
+      lohakas+A+Pl+Ill+Foc/gi+Usage/Rare: lohakaissegi
       lohakas+A+Pl+Ill: lohakatesse
-      lohakas+A+Pl+Ill+Use/Rare: lohakaisse
+      lohakas+A+Pl+Ill+Usage/Rare: lohakaisse
       lohakas+A+Pl+Ine+Foc/gi: lohakateski
-      lohakas+A+Pl+Ine+Foc/gi+Use/Rare: lohakaiski
+      lohakas+A+Pl+Ine+Foc/gi+Usage/Rare: lohakaiski
       lohakas+A+Pl+Ine: lohakates
-      lohakas+A+Pl+Ine+Use/Rare: lohakais
+      lohakas+A+Pl+Ine+Usage/Rare: lohakais
       lohakas+A+Pl+Nom+Foc/gi: lohakadki
       lohakas+A+Pl+Nom: lohakad
       lohakas+A+Pl+Par+Foc/gi: lohakaidki
       lohakas+A+Pl+Par: lohakaid
       lohakas+A+Pl+Tra+Foc/gi: lohakatekski
-      lohakas+A+Pl+Tra+Foc/gi+Use/Rare: lohakaikski
+      lohakas+A+Pl+Tra+Foc/gi+Usage/Rare: lohakaikski
       lohakas+A+Pl+Tra: lohakateks
-      lohakas+A+Pl+Tra+Use/Rare: lohakaiks
+      lohakas+A+Pl+Tra+Usage/Rare: lohakaiks
       lohakas+A+Pl+Trm+Foc/gi: lohakatenigi
       lohakas+A+Pl+Trm: lohakateni
       lohakas+A+Sg+Abe+Foc/gi: lohakatagi
@@ -992,43 +992,43 @@ Tests:
       oluline+A+Pl+Abe+Foc/gi: olulistetagi
       oluline+A+Pl+Abe: olulisteta
       oluline+A+Pl+Abl+Foc/gi: olulisteltki
-      oluline+A+Pl+Abl+Foc/gi+Use/Rare: olulisiltki
+      oluline+A+Pl+Abl+Foc/gi+Usage/Rare: olulisiltki
       oluline+A+Pl+Abl: olulistelt
-      oluline+A+Pl+Abl+Use/Rare: olulisilt
+      oluline+A+Pl+Abl+Usage/Rare: olulisilt
       oluline+A+Pl+Ade+Foc/gi: olulistelgi
-      oluline+A+Pl+Ade+Foc/gi+Use/Rare: olulisilgi
+      oluline+A+Pl+Ade+Foc/gi+Usage/Rare: olulisilgi
       oluline+A+Pl+Ade: olulistel
-      oluline+A+Pl+Ade+Use/Rare: olulisil
+      oluline+A+Pl+Ade+Usage/Rare: olulisil
       oluline+A+Pl+All+Foc/gi: olulistelegi
-      oluline+A+Pl+All+Foc/gi+Use/Rare: olulisilegi
+      oluline+A+Pl+All+Foc/gi+Usage/Rare: olulisilegi
       oluline+A+Pl+All: olulistele
-      oluline+A+Pl+All+Use/Rare: olulisile
+      oluline+A+Pl+All+Usage/Rare: olulisile
       oluline+A+Pl+Com+Foc/gi: olulistegagi
       oluline+A+Pl+Com: olulistega
       oluline+A+Pl+Ela+Foc/gi: olulistestki
-      oluline+A+Pl+Ela+Foc/gi+Use/Rare: olulisistki
+      oluline+A+Pl+Ela+Foc/gi+Usage/Rare: olulisistki
       oluline+A+Pl+Ela: olulistest
-      oluline+A+Pl+Ela+Use/Rare: olulisist
+      oluline+A+Pl+Ela+Usage/Rare: olulisist
       oluline+A+Pl+Ess+Foc/gi: olulistenagi
       oluline+A+Pl+Ess: olulistena
       oluline+A+Pl+Gen+Foc/gi: olulistegi
       oluline+A+Pl+Gen: oluliste
       oluline+A+Pl+Ill+Foc/gi: olulistessegi
-      oluline+A+Pl+Ill+Foc/gi+Use/Rare: olulisissegi
+      oluline+A+Pl+Ill+Foc/gi+Usage/Rare: olulisissegi
       oluline+A+Pl+Ill: olulistesse
-      oluline+A+Pl+Ill+Use/Rare: olulisisse
+      oluline+A+Pl+Ill+Usage/Rare: olulisisse
       oluline+A+Pl+Ine+Foc/gi: olulisteski
-      oluline+A+Pl+Ine+Foc/gi+Use/Rare: olulisiski
+      oluline+A+Pl+Ine+Foc/gi+Usage/Rare: olulisiski
       oluline+A+Pl+Ine: olulistes
-      oluline+A+Pl+Ine+Use/Rare: olulisis
+      oluline+A+Pl+Ine+Usage/Rare: olulisis
       oluline+A+Pl+Nom+Foc/gi: olulisedki
       oluline+A+Pl+Nom: olulised
       oluline+A+Pl+Par+Foc/gi: olulisigi
       oluline+A+Pl+Par: olulisi
       oluline+A+Pl+Tra+Foc/gi: olulistekski
-      oluline+A+Pl+Tra+Foc/gi+Use/Rare: olulisikski
+      oluline+A+Pl+Tra+Foc/gi+Usage/Rare: olulisikski
       oluline+A+Pl+Tra: olulisteks
-      oluline+A+Pl+Tra+Use/Rare: olulisiks
+      oluline+A+Pl+Tra+Usage/Rare: olulisiks
       oluline+A+Pl+Trm+Foc/gi: olulistenigi
       oluline+A+Pl+Trm: olulisteni
       oluline+A+Sg+Abe+Foc/gi: olulisetagi
@@ -1048,9 +1048,9 @@ Tests:
       oluline+A+Sg+Gen+Foc/gi: olulisegi
       oluline+A+Sg+Gen: olulise
       oluline+A+Sg+Ill+Foc/gi: olulissegi
-      oluline+A+Sg+Ill+Foc/gi+Use/Rare: olulisessegi
+      oluline+A+Sg+Ill+Foc/gi+Usage/Rare: olulisessegi
       oluline+A+Sg+Ill: olulisse
-      oluline+A+Sg+Ill+Use/Rare: olulisesse
+      oluline+A+Sg+Ill+Usage/Rare: olulisesse
       oluline+A+Sg+Ine+Foc/gi: oluliseski
       oluline+A+Sg+Ine: olulises
       oluline+A+Sg+Nom+Foc/gi: olulinegi
@@ -1084,9 +1084,9 @@ Tests:
       paks+A+Pl+Nom+Foc/gi: paksudki
       paks+A+Pl+Nom: paksud
       paks+A+Pl+Par+Foc/gi: paksegi
-      paks+A+Pl+Par+Foc/gi+Use/Rare: paksusidki
+      paks+A+Pl+Par+Foc/gi+Usage/Rare: paksusidki
       paks+A+Pl+Par: pakse
-      paks+A+Pl+Par+Use/Rare: paksusid
+      paks+A+Pl+Par+Usage/Rare: paksusid
       paks+A+Pl+Tra+Foc/gi: paksudekski
       paks+A+Pl+Tra: paksudeks
       paks+A+Pl+Trm+Foc/gi: paksudenigi
@@ -1108,9 +1108,9 @@ Tests:
       paks+A+Sg+Gen+Foc/gi: paksugi
       paks+A+Sg+Gen: paksu
       paks+A+Sg+Ill+Foc/gi: paksugi
-      paks+A+Sg+Ill+Foc/gi+Use/Hyp: paksussegi
+      paks+A+Sg+Ill+Foc/gi+Usage/Hyp: paksussegi
       paks+A+Sg+Ill: paksu
-      paks+A+Sg+Ill+Use/Hyp: paksusse
+      paks+A+Sg+Ill+Usage/Hyp: paksusse
       paks+A+Sg+Ine+Foc/gi: paksuski
       paks+A+Sg+Ine: paksus
       paks+A+Sg+Nom+Foc/gi: pakski
@@ -1124,43 +1124,43 @@ Tests:
       paras+A+Pl+Abe+Foc/gi: parajatetagi
       paras+A+Pl+Abe: parajateta
       paras+A+Pl+Abl+Foc/gi: parajateltki
-      paras+A+Pl+Abl+Foc/gi+Use/Rare: parajailtki
+      paras+A+Pl+Abl+Foc/gi+Usage/Rare: parajailtki
       paras+A+Pl+Abl: parajatelt
-      paras+A+Pl+Abl+Use/Rare: parajailt
+      paras+A+Pl+Abl+Usage/Rare: parajailt
       paras+A+Pl+Ade+Foc/gi: parajatelgi
-      paras+A+Pl+Ade+Foc/gi+Use/Rare: parajailgi
+      paras+A+Pl+Ade+Foc/gi+Usage/Rare: parajailgi
       paras+A+Pl+Ade: parajatel
-      paras+A+Pl+Ade+Use/Rare: parajail
+      paras+A+Pl+Ade+Usage/Rare: parajail
       paras+A+Pl+All+Foc/gi: parajatelegi
-      paras+A+Pl+All+Foc/gi+Use/Rare: parajailegi
+      paras+A+Pl+All+Foc/gi+Usage/Rare: parajailegi
       paras+A+Pl+All: parajatele
-      paras+A+Pl+All+Use/Rare: parajaile
+      paras+A+Pl+All+Usage/Rare: parajaile
       paras+A+Pl+Com+Foc/gi: parajategagi
       paras+A+Pl+Com: parajatega
       paras+A+Pl+Ela+Foc/gi: parajatestki
-      paras+A+Pl+Ela+Foc/gi+Use/Rare: parajaistki
+      paras+A+Pl+Ela+Foc/gi+Usage/Rare: parajaistki
       paras+A+Pl+Ela: parajatest
-      paras+A+Pl+Ela+Use/Rare: parajaist
+      paras+A+Pl+Ela+Usage/Rare: parajaist
       paras+A+Pl+Ess+Foc/gi: parajatenagi
       paras+A+Pl+Ess: parajatena
       paras+A+Pl+Gen+Foc/gi: parajategi
       paras+A+Pl+Gen: parajate
       paras+A+Pl+Ill+Foc/gi: parajatessegi
-      paras+A+Pl+Ill+Foc/gi+Use/Rare: parajaissegi
+      paras+A+Pl+Ill+Foc/gi+Usage/Rare: parajaissegi
       paras+A+Pl+Ill: parajatesse
-      paras+A+Pl+Ill+Use/Rare: parajaisse
+      paras+A+Pl+Ill+Usage/Rare: parajaisse
       paras+A+Pl+Ine+Foc/gi: parajateski
-      paras+A+Pl+Ine+Foc/gi+Use/Rare: parajaiski
+      paras+A+Pl+Ine+Foc/gi+Usage/Rare: parajaiski
       paras+A+Pl+Ine: parajates
-      paras+A+Pl+Ine+Use/Rare: parajais
+      paras+A+Pl+Ine+Usage/Rare: parajais
       paras+A+Pl+Nom+Foc/gi: parajadki
       paras+A+Pl+Nom: parajad
       paras+A+Pl+Par+Foc/gi: parajaidki
       paras+A+Pl+Par: parajaid
       paras+A+Pl+Tra+Foc/gi: parajatekski
-      paras+A+Pl+Tra+Foc/gi+Use/Rare: parajaikski
+      paras+A+Pl+Tra+Foc/gi+Usage/Rare: parajaikski
       paras+A+Pl+Tra: parajateks
-      paras+A+Pl+Tra+Use/Rare: parajaiks
+      paras+A+Pl+Tra+Usage/Rare: parajaiks
       paras+A+Pl+Trm+Foc/gi: parajatenigi
       paras+A+Pl+Trm: parajateni
       paras+A+Sg+Abe+Foc/gi: parajatagi
@@ -1192,73 +1192,73 @@ Tests:
       paras+A+Sg+Trm+Foc/gi: parajanigi
       paras+A+Sg+Trm: parajani
       peen+A+Pl+Abe+Foc/gi: peentetagi
-      peen+A+Pl+Abe+Foc/gi+Use/Rare: peenetetagi
+      peen+A+Pl+Abe+Foc/gi+Usage/Rare: peenetetagi
       peen+A+Pl+Abe: peenteta
-      peen+A+Pl+Abe+Use/Rare: peeneteta
+      peen+A+Pl+Abe+Usage/Rare: peeneteta
       peen+A+Pl+Abl+Foc/gi: peenteltki
-      peen+A+Pl+Abl+Foc/gi+Use/Hyp: peeniltki
-      peen+A+Pl+Abl+Foc/gi+Use/Rare: peeneteltki
+      peen+A+Pl+Abl+Foc/gi+Usage/Hyp: peeniltki
+      peen+A+Pl+Abl+Foc/gi+Usage/Rare: peeneteltki
       peen+A+Pl+Abl: peentelt
-      peen+A+Pl+Abl+Use/Hyp: peenilt
-      peen+A+Pl+Abl+Use/Rare: peenetelt
+      peen+A+Pl+Abl+Usage/Hyp: peenilt
+      peen+A+Pl+Abl+Usage/Rare: peenetelt
       peen+A+Pl+Ade+Foc/gi: peentelgi
-      peen+A+Pl+Ade+Foc/gi+Use/Hyp: peenilgi
-      peen+A+Pl+Ade+Foc/gi+Use/Rare: peenetelgi
+      peen+A+Pl+Ade+Foc/gi+Usage/Hyp: peenilgi
+      peen+A+Pl+Ade+Foc/gi+Usage/Rare: peenetelgi
       peen+A+Pl+Ade: peentel
-      peen+A+Pl+Ade+Use/Hyp: peenil
-      peen+A+Pl+Ade+Use/Rare: peenetel
+      peen+A+Pl+Ade+Usage/Hyp: peenil
+      peen+A+Pl+Ade+Usage/Rare: peenetel
       peen+A+Pl+All+Foc/gi: peentelegi
-      peen+A+Pl+All+Foc/gi+Use/Hyp: peenilegi
-      peen+A+Pl+All+Foc/gi+Use/Rare: peenetelegi
+      peen+A+Pl+All+Foc/gi+Usage/Hyp: peenilegi
+      peen+A+Pl+All+Foc/gi+Usage/Rare: peenetelegi
       peen+A+Pl+All: peentele
-      peen+A+Pl+All+Use/Hyp: peenile
-      peen+A+Pl+All+Use/Rare: peenetele
+      peen+A+Pl+All+Usage/Hyp: peenile
+      peen+A+Pl+All+Usage/Rare: peenetele
       peen+A+Pl+Com+Foc/gi: peentegagi
-      peen+A+Pl+Com+Foc/gi+Use/Rare: peenetegagi
+      peen+A+Pl+Com+Foc/gi+Usage/Rare: peenetegagi
       peen+A+Pl+Com: peentega
-      peen+A+Pl+Com+Use/Rare: peenetega
+      peen+A+Pl+Com+Usage/Rare: peenetega
       peen+A+Pl+Ela+Foc/gi: peentestki
-      peen+A+Pl+Ela+Foc/gi+Use/Hyp: peenistki
-      peen+A+Pl+Ela+Foc/gi+Use/Rare: peenetestki
+      peen+A+Pl+Ela+Foc/gi+Usage/Hyp: peenistki
+      peen+A+Pl+Ela+Foc/gi+Usage/Rare: peenetestki
       peen+A+Pl+Ela: peentest
-      peen+A+Pl+Ela+Use/Hyp: peenist
-      peen+A+Pl+Ela+Use/Rare: peenetest
+      peen+A+Pl+Ela+Usage/Hyp: peenist
+      peen+A+Pl+Ela+Usage/Rare: peenetest
       peen+A+Pl+Ess+Foc/gi: peentenagi
-      peen+A+Pl+Ess+Foc/gi+Use/Rare: peenetenagi
+      peen+A+Pl+Ess+Foc/gi+Usage/Rare: peenetenagi
       peen+A+Pl+Ess: peentena
-      peen+A+Pl+Ess+Use/Rare: peenetena
+      peen+A+Pl+Ess+Usage/Rare: peenetena
       peen+A+Pl+Gen+Foc/gi: peentegi
-      peen+A+Pl+Gen+Foc/gi+Use/Rare: peenetegi
+      peen+A+Pl+Gen+Foc/gi+Usage/Rare: peenetegi
       peen+A+Pl+Gen: peente
-      peen+A+Pl+Gen+Use/Rare: peenete
+      peen+A+Pl+Gen+Usage/Rare: peenete
       peen+A+Pl+Ill+Foc/gi: peentessegi
-      peen+A+Pl+Ill+Foc/gi+Use/Hyp: peenissegi
-      peen+A+Pl+Ill+Foc/gi+Use/Rare: peenetessegi
+      peen+A+Pl+Ill+Foc/gi+Usage/Hyp: peenissegi
+      peen+A+Pl+Ill+Foc/gi+Usage/Rare: peenetessegi
       peen+A+Pl+Ill: peentesse
-      peen+A+Pl+Ill+Use/Hyp: peenisse
-      peen+A+Pl+Ill+Use/Rare: peenetesse
+      peen+A+Pl+Ill+Usage/Hyp: peenisse
+      peen+A+Pl+Ill+Usage/Rare: peenetesse
       peen+A+Pl+Ine+Foc/gi: peenteski
-      peen+A+Pl+Ine+Foc/gi+Use/Hyp: peeniski
-      peen+A+Pl+Ine+Foc/gi+Use/Rare: peeneteski
+      peen+A+Pl+Ine+Foc/gi+Usage/Hyp: peeniski
+      peen+A+Pl+Ine+Foc/gi+Usage/Rare: peeneteski
       peen+A+Pl+Ine: peentes
-      peen+A+Pl+Ine+Use/Hyp: peenis
-      peen+A+Pl+Ine+Use/Rare: peenetes
+      peen+A+Pl+Ine+Usage/Hyp: peenis
+      peen+A+Pl+Ine+Usage/Rare: peenetes
       peen+A+Pl+Nom+Foc/gi: peenedki
       peen+A+Pl+Nom: peened
-      peen+A+Pl+Par+Foc/gi+Use/Rare: peenigi
+      peen+A+Pl+Par+Foc/gi+Usage/Rare: peenigi
       peen+A+Pl+Par+Foc/gi: peeneidki
-      peen+A+Pl+Par+Use/Rare: peeni
+      peen+A+Pl+Par+Usage/Rare: peeni
       peen+A+Pl+Par: peeneid
       peen+A+Pl+Tra+Foc/gi: peentekski
-      peen+A+Pl+Tra+Foc/gi+Use/Hyp: peenikski
-      peen+A+Pl+Tra+Foc/gi+Use/Rare: peenetekski
+      peen+A+Pl+Tra+Foc/gi+Usage/Hyp: peenikski
+      peen+A+Pl+Tra+Foc/gi+Usage/Rare: peenetekski
       peen+A+Pl+Tra: peenteks
-      peen+A+Pl+Tra+Use/Hyp: peeniks
-      peen+A+Pl+Tra+Use/Rare: peeneteks
+      peen+A+Pl+Tra+Usage/Hyp: peeniks
+      peen+A+Pl+Tra+Usage/Rare: peeneteks
       peen+A+Pl+Trm+Foc/gi: peentenigi
-      peen+A+Pl+Trm+Foc/gi+Use/Rare: peenetenigi
+      peen+A+Pl+Trm+Foc/gi+Usage/Rare: peenetenigi
       peen+A+Pl+Trm: peenteni
-      peen+A+Pl+Trm+Use/Rare: peeneteni
+      peen+A+Pl+Trm+Usage/Rare: peeneteni
       peen+A+Sg+Abe+Foc/gi: peenetagi
       peen+A+Sg+Abe: peeneta
       peen+A+Sg+Abl+Foc/gi: peeneltki
@@ -1276,17 +1276,17 @@ Tests:
       peen+A+Sg+Gen+Foc/gi: peenegi
       peen+A+Sg+Gen: peene
       peen+A+Sg+Ill+Foc/gi: peenessegi
-      peen+A+Sg+Ill+Foc/gi+Use/Rare: peendegi
+      peen+A+Sg+Ill+Foc/gi+Usage/Rare: peendegi
       peen+A+Sg+Ill: peenesse
-      peen+A+Sg+Ill+Use/Rare: peende
+      peen+A+Sg+Ill+Usage/Rare: peende
       peen+A+Sg+Ine+Foc/gi: peeneski
       peen+A+Sg+Ine: peenes
       peen+A+Sg+Nom+Foc/gi: peengi
       peen+A+Sg+Nom: peen
       peen+A+Sg+Par+Foc/gi: peentki
-      peen+A+Sg+Par+Foc/gi+Use/Rare: peenetki
+      peen+A+Sg+Par+Foc/gi+Usage/Rare: peenetki
       peen+A+Sg+Par: peent
-      peen+A+Sg+Par+Use/Rare: peenet
+      peen+A+Sg+Par+Usage/Rare: peenet
       peen+A+Sg+Tra+Foc/gi: peenekski
       peen+A+Sg+Tra: peeneks
       peen+A+Sg+Trm+Foc/gi: peenenigi
@@ -1294,43 +1294,43 @@ Tests:
       peenike+A+Pl+Abe+Foc/gi: peenikestetagi
       peenike+A+Pl+Abe: peenikesteta
       peenike+A+Pl+Abl+Foc/gi: peenikesteltki
-      peenike+A+Pl+Abl+Foc/gi+Use/Rare: peenikesiltki
+      peenike+A+Pl+Abl+Foc/gi+Usage/Rare: peenikesiltki
       peenike+A+Pl+Abl: peenikestelt
-      peenike+A+Pl+Abl+Use/Rare: peenikesilt
+      peenike+A+Pl+Abl+Usage/Rare: peenikesilt
       peenike+A+Pl+Ade+Foc/gi: peenikestelgi
-      peenike+A+Pl+Ade+Foc/gi+Use/Rare: peenikesilgi
+      peenike+A+Pl+Ade+Foc/gi+Usage/Rare: peenikesilgi
       peenike+A+Pl+Ade: peenikestel
-      peenike+A+Pl+Ade+Use/Rare: peenikesil
+      peenike+A+Pl+Ade+Usage/Rare: peenikesil
       peenike+A+Pl+All+Foc/gi: peenikestelegi
-      peenike+A+Pl+All+Foc/gi+Use/Rare: peenikesilegi
+      peenike+A+Pl+All+Foc/gi+Usage/Rare: peenikesilegi
       peenike+A+Pl+All: peenikestele
-      peenike+A+Pl+All+Use/Rare: peenikesile
+      peenike+A+Pl+All+Usage/Rare: peenikesile
       peenike+A+Pl+Com+Foc/gi: peenikestegagi
       peenike+A+Pl+Com: peenikestega
       peenike+A+Pl+Ela+Foc/gi: peenikestestki
-      peenike+A+Pl+Ela+Foc/gi+Use/Rare: peenikesistki
+      peenike+A+Pl+Ela+Foc/gi+Usage/Rare: peenikesistki
       peenike+A+Pl+Ela: peenikestest
-      peenike+A+Pl+Ela+Use/Rare: peenikesist
+      peenike+A+Pl+Ela+Usage/Rare: peenikesist
       peenike+A+Pl+Ess+Foc/gi: peenikestenagi
       peenike+A+Pl+Ess: peenikestena
       peenike+A+Pl+Gen+Foc/gi: peenikestegi
       peenike+A+Pl+Gen: peenikeste
       peenike+A+Pl+Ill+Foc/gi: peenikestessegi
-      peenike+A+Pl+Ill+Foc/gi+Use/Rare: peenikesissegi
+      peenike+A+Pl+Ill+Foc/gi+Usage/Rare: peenikesissegi
       peenike+A+Pl+Ill: peenikestesse
-      peenike+A+Pl+Ill+Use/Rare: peenikesisse
+      peenike+A+Pl+Ill+Usage/Rare: peenikesisse
       peenike+A+Pl+Ine+Foc/gi: peenikesteski
-      peenike+A+Pl+Ine+Foc/gi+Use/Rare: peenikesiski
+      peenike+A+Pl+Ine+Foc/gi+Usage/Rare: peenikesiski
       peenike+A+Pl+Ine: peenikestes
-      peenike+A+Pl+Ine+Use/Rare: peenikesis
+      peenike+A+Pl+Ine+Usage/Rare: peenikesis
       peenike+A+Pl+Nom+Foc/gi: peenikesedki
       peenike+A+Pl+Nom: peenikesed
       peenike+A+Pl+Par+Foc/gi: peenikesigi
       peenike+A+Pl+Par: peenikesi
       peenike+A+Pl+Tra+Foc/gi: peenikestekski
-      peenike+A+Pl+Tra+Foc/gi+Use/Rare: peenikesikski
+      peenike+A+Pl+Tra+Foc/gi+Usage/Rare: peenikesikski
       peenike+A+Pl+Tra: peenikesteks
-      peenike+A+Pl+Tra+Use/Rare: peenikesiks
+      peenike+A+Pl+Tra+Usage/Rare: peenikesiks
       peenike+A+Pl+Trm+Foc/gi: peenikestenigi
       peenike+A+Pl+Trm: peenikesteni
       peenike+A+Sg+Abe+Foc/gi: peenikesetagi
@@ -1350,15 +1350,15 @@ Tests:
       peenike+A+Sg+Gen+Foc/gi: peenikesegi
       peenike+A+Sg+Gen: peenikese
       peenike+A+Sg+Ill+Foc/gi: peenikessegi
-      peenike+A+Sg+Ill+Foc/gi+Use/Rare: peenikesessegi
+      peenike+A+Sg+Ill+Foc/gi+Usage/Rare: peenikesessegi
       peenike+A+Sg+Ill: peenikesse
-      peenike+A+Sg+Ill+Use/Rare: peenikesesse
+      peenike+A+Sg+Ill+Usage/Rare: peenikesesse
       peenike+A+Sg+Ine+Foc/gi: peenikeseski
       peenike+A+Sg+Ine: peenikeses
       peenike+A+Sg+Nom+Foc/gi: peenikegi
-      peenike+A+Sg+Nom+Foc/gi+Use/Rare: peenikenegi
+      peenike+A+Sg+Nom+Foc/gi+Usage/Rare: peenikenegi
       peenike+A+Sg+Nom: peenike
-      peenike+A+Sg+Nom+Use/Rare: peenikene
+      peenike+A+Sg+Nom+Usage/Rare: peenikene
       peenike+A+Sg+Par+Foc/gi: peenikestki
       peenike+A+Sg+Par: peenikest
       peenike+A+Sg+Tra+Foc/gi: peenikesekski
@@ -1368,43 +1368,43 @@ Tests:
       pingne+A+Pl+Abe+Foc/gi: pingsatetagi
       pingne+A+Pl+Abe: pingsateta
       pingne+A+Pl+Abl+Foc/gi: pingsateltki
-      pingne+A+Pl+Abl+Foc/gi+Use/Rare: pingsailtki
+      pingne+A+Pl+Abl+Foc/gi+Usage/Rare: pingsailtki
       pingne+A+Pl+Abl: pingsatelt
-      pingne+A+Pl+Abl+Use/Rare: pingsailt
+      pingne+A+Pl+Abl+Usage/Rare: pingsailt
       pingne+A+Pl+Ade+Foc/gi: pingsatelgi
-      pingne+A+Pl+Ade+Foc/gi+Use/Rare: pingsailgi
+      pingne+A+Pl+Ade+Foc/gi+Usage/Rare: pingsailgi
       pingne+A+Pl+Ade: pingsatel
-      pingne+A+Pl+Ade+Use/Rare: pingsail
+      pingne+A+Pl+Ade+Usage/Rare: pingsail
       pingne+A+Pl+All+Foc/gi: pingsatelegi
-      pingne+A+Pl+All+Foc/gi+Use/Rare: pingsailegi
+      pingne+A+Pl+All+Foc/gi+Usage/Rare: pingsailegi
       pingne+A+Pl+All: pingsatele
-      pingne+A+Pl+All+Use/Rare: pingsaile
+      pingne+A+Pl+All+Usage/Rare: pingsaile
       pingne+A+Pl+Com+Foc/gi: pingsategagi
       pingne+A+Pl+Com: pingsatega
       pingne+A+Pl+Ela+Foc/gi: pingsatestki
-      pingne+A+Pl+Ela+Foc/gi+Use/Rare: pingsaistki
+      pingne+A+Pl+Ela+Foc/gi+Usage/Rare: pingsaistki
       pingne+A+Pl+Ela: pingsatest
-      pingne+A+Pl+Ela+Use/Rare: pingsaist
+      pingne+A+Pl+Ela+Usage/Rare: pingsaist
       pingne+A+Pl+Ess+Foc/gi: pingsatenagi
       pingne+A+Pl+Ess: pingsatena
       pingne+A+Pl+Gen+Foc/gi: pingsategi
       pingne+A+Pl+Gen: pingsate
       pingne+A+Pl+Ill+Foc/gi: pingsatessegi
-      pingne+A+Pl+Ill+Foc/gi+Use/Rare: pingsaissegi
+      pingne+A+Pl+Ill+Foc/gi+Usage/Rare: pingsaissegi
       pingne+A+Pl+Ill: pingsatesse
-      pingne+A+Pl+Ill+Use/Rare: pingsaisse
+      pingne+A+Pl+Ill+Usage/Rare: pingsaisse
       pingne+A+Pl+Ine+Foc/gi: pingsateski
-      pingne+A+Pl+Ine+Foc/gi+Use/Rare: pingsaiski
+      pingne+A+Pl+Ine+Foc/gi+Usage/Rare: pingsaiski
       pingne+A+Pl+Ine: pingsates
-      pingne+A+Pl+Ine+Use/Rare: pingsais
+      pingne+A+Pl+Ine+Usage/Rare: pingsais
       pingne+A+Pl+Nom+Foc/gi: pingsadki
       pingne+A+Pl+Nom: pingsad
       pingne+A+Pl+Par+Foc/gi: pingsaidki
       pingne+A+Pl+Par: pingsaid
       pingne+A+Pl+Tra+Foc/gi: pingsatekski
-      pingne+A+Pl+Tra+Foc/gi+Use/Rare: pingsaikski
+      pingne+A+Pl+Tra+Foc/gi+Usage/Rare: pingsaikski
       pingne+A+Pl+Tra: pingsateks
-      pingne+A+Pl+Tra+Use/Rare: pingsaiks
+      pingne+A+Pl+Tra+Usage/Rare: pingsaiks
       pingne+A+Pl+Trm+Foc/gi: pingsatenigi
       pingne+A+Pl+Trm: pingsateni
       pingne+A+Sg+Abe+Foc/gi: pingsatagi
@@ -1438,43 +1438,43 @@ Tests:
       raudne+A+Pl+Abe+Foc/gi: raudsetetagi
       raudne+A+Pl+Abe: raudseteta
       raudne+A+Pl+Abl+Foc/gi: raudseteltki
-      raudne+A+Pl+Abl+Foc/gi+Use/Rare: raudseiltki
+      raudne+A+Pl+Abl+Foc/gi+Usage/Rare: raudseiltki
       raudne+A+Pl+Abl: raudsetelt
-      raudne+A+Pl+Abl+Use/Rare: raudseilt
+      raudne+A+Pl+Abl+Usage/Rare: raudseilt
       raudne+A+Pl+Ade+Foc/gi: raudsetelgi
-      raudne+A+Pl+Ade+Foc/gi+Use/Rare: raudseilgi
+      raudne+A+Pl+Ade+Foc/gi+Usage/Rare: raudseilgi
       raudne+A+Pl+Ade: raudsetel
-      raudne+A+Pl+Ade+Use/Rare: raudseil
+      raudne+A+Pl+Ade+Usage/Rare: raudseil
       raudne+A+Pl+All+Foc/gi: raudsetelegi
-      raudne+A+Pl+All+Foc/gi+Use/Rare: raudseilegi
+      raudne+A+Pl+All+Foc/gi+Usage/Rare: raudseilegi
       raudne+A+Pl+All: raudsetele
-      raudne+A+Pl+All+Use/Rare: raudseile
+      raudne+A+Pl+All+Usage/Rare: raudseile
       raudne+A+Pl+Com+Foc/gi: raudsetegagi
       raudne+A+Pl+Com: raudsetega
       raudne+A+Pl+Ela+Foc/gi: raudsetestki
-      raudne+A+Pl+Ela+Foc/gi+Use/Rare: raudseistki
+      raudne+A+Pl+Ela+Foc/gi+Usage/Rare: raudseistki
       raudne+A+Pl+Ela: raudsetest
-      raudne+A+Pl+Ela+Use/Rare: raudseist
+      raudne+A+Pl+Ela+Usage/Rare: raudseist
       raudne+A+Pl+Ess+Foc/gi: raudsetenagi
       raudne+A+Pl+Ess: raudsetena
       raudne+A+Pl+Gen+Foc/gi: raudsetegi
       raudne+A+Pl+Gen: raudsete
       raudne+A+Pl+Ill+Foc/gi: raudsetessegi
-      raudne+A+Pl+Ill+Foc/gi+Use/Rare: raudseissegi
+      raudne+A+Pl+Ill+Foc/gi+Usage/Rare: raudseissegi
       raudne+A+Pl+Ill: raudsetesse
-      raudne+A+Pl+Ill+Use/Rare: raudseisse
+      raudne+A+Pl+Ill+Usage/Rare: raudseisse
       raudne+A+Pl+Ine+Foc/gi: raudseteski
-      raudne+A+Pl+Ine+Foc/gi+Use/Rare: raudseiski
+      raudne+A+Pl+Ine+Foc/gi+Usage/Rare: raudseiski
       raudne+A+Pl+Ine: raudsetes
-      raudne+A+Pl+Ine+Use/Rare: raudseis
+      raudne+A+Pl+Ine+Usage/Rare: raudseis
       raudne+A+Pl+Nom+Foc/gi: raudsedki
       raudne+A+Pl+Nom: raudsed
       raudne+A+Pl+Par+Foc/gi: raudseidki
       raudne+A+Pl+Par: raudseid
       raudne+A+Pl+Tra+Foc/gi: raudsetekski
-      raudne+A+Pl+Tra+Foc/gi+Use/Rare: raudseikski
+      raudne+A+Pl+Tra+Foc/gi+Usage/Rare: raudseikski
       raudne+A+Pl+Tra: raudseteks
-      raudne+A+Pl+Tra+Use/Rare: raudseiks
+      raudne+A+Pl+Tra+Usage/Rare: raudseiks
       raudne+A+Pl+Trm+Foc/gi: raudsetenigi
       raudne+A+Pl+Trm: raudseteni
       raudne+A+Sg+Abe+Foc/gi: raudsetagi
@@ -1528,9 +1528,9 @@ Tests:
       soe+A+Pl+Nom+Foc/gi: soojadki
       soe+A+Pl+Nom: soojad
       soe+A+Pl+Par+Foc/gi: soojegi
-      soe+A+Pl+Par+Foc/gi+Use/Rare: soojasidki
+      soe+A+Pl+Par+Foc/gi+Usage/Rare: soojasidki
       soe+A+Pl+Par: sooje
-      soe+A+Pl+Par+Use/Rare: soojasid
+      soe+A+Pl+Par+Usage/Rare: soojasid
       soe+A+Pl+Tra+Foc/gi: soojadekski
       soe+A+Pl+Tra: soojadeks
       soe+A+Pl+Trm+Foc/gi: soojadenigi
@@ -1552,9 +1552,9 @@ Tests:
       soe+A+Sg+Gen+Foc/gi: soojagi
       soe+A+Sg+Gen: sooja
       soe+A+Sg+Ill+Foc/gi: soojagi
-      soe+A+Sg+Ill+Foc/gi+Use/Hyp: soojassegi
+      soe+A+Sg+Ill+Foc/gi+Usage/Hyp: soojassegi
       soe+A+Sg+Ill: sooja
-      soe+A+Sg+Ill+Use/Hyp: soojasse
+      soe+A+Sg+Ill+Usage/Hyp: soojasse
       soe+A+Sg+Ine+Foc/gi: soojaski
       soe+A+Sg+Ine: soojas
       soe+A+Sg+Nom+Foc/gi: soegi
@@ -1568,43 +1568,43 @@ Tests:
       soolane+A+Pl+Abe+Foc/gi: soolastetagi
       soolane+A+Pl+Abe: soolasteta
       soolane+A+Pl+Abl+Foc/gi: soolasteltki
-      soolane+A+Pl+Abl+Foc/gi+Use/Rare: soolaseiltki
+      soolane+A+Pl+Abl+Foc/gi+Usage/Rare: soolaseiltki
       soolane+A+Pl+Abl: soolastelt
-      soolane+A+Pl+Abl+Use/Rare: soolaseilt
+      soolane+A+Pl+Abl+Usage/Rare: soolaseilt
       soolane+A+Pl+Ade+Foc/gi: soolastelgi
-      soolane+A+Pl+Ade+Foc/gi+Use/Rare: soolaseilgi
+      soolane+A+Pl+Ade+Foc/gi+Usage/Rare: soolaseilgi
       soolane+A+Pl+Ade: soolastel
-      soolane+A+Pl+Ade+Use/Rare: soolaseil
+      soolane+A+Pl+Ade+Usage/Rare: soolaseil
       soolane+A+Pl+All+Foc/gi: soolastelegi
-      soolane+A+Pl+All+Foc/gi+Use/Rare: soolaseilegi
+      soolane+A+Pl+All+Foc/gi+Usage/Rare: soolaseilegi
       soolane+A+Pl+All: soolastele
-      soolane+A+Pl+All+Use/Rare: soolaseile
+      soolane+A+Pl+All+Usage/Rare: soolaseile
       soolane+A+Pl+Com+Foc/gi: soolastegagi
       soolane+A+Pl+Com: soolastega
       soolane+A+Pl+Ela+Foc/gi: soolastestki
-      soolane+A+Pl+Ela+Foc/gi+Use/Rare: soolaseistki
+      soolane+A+Pl+Ela+Foc/gi+Usage/Rare: soolaseistki
       soolane+A+Pl+Ela: soolastest
-      soolane+A+Pl+Ela+Use/Rare: soolaseist
+      soolane+A+Pl+Ela+Usage/Rare: soolaseist
       soolane+A+Pl+Ess+Foc/gi: soolastenagi
       soolane+A+Pl+Ess: soolastena
       soolane+A+Pl+Gen+Foc/gi: soolastegi
       soolane+A+Pl+Gen: soolaste
       soolane+A+Pl+Ill+Foc/gi: soolastessegi
-      soolane+A+Pl+Ill+Foc/gi+Use/Rare: soolaseissegi
+      soolane+A+Pl+Ill+Foc/gi+Usage/Rare: soolaseissegi
       soolane+A+Pl+Ill: soolastesse
-      soolane+A+Pl+Ill+Use/Rare: soolaseisse
+      soolane+A+Pl+Ill+Usage/Rare: soolaseisse
       soolane+A+Pl+Ine+Foc/gi: soolasteski
-      soolane+A+Pl+Ine+Foc/gi+Use/Rare: soolaseiski
+      soolane+A+Pl+Ine+Foc/gi+Usage/Rare: soolaseiski
       soolane+A+Pl+Ine: soolastes
-      soolane+A+Pl+Ine+Use/Rare: soolaseis
+      soolane+A+Pl+Ine+Usage/Rare: soolaseis
       soolane+A+Pl+Nom+Foc/gi: soolasedki
       soolane+A+Pl+Nom: soolased
       soolane+A+Pl+Par+Foc/gi: soolaseidki
       soolane+A+Pl+Par: soolaseid
       soolane+A+Pl+Tra+Foc/gi: soolastekski
-      soolane+A+Pl+Tra+Foc/gi+Use/Rare: soolaseikski
+      soolane+A+Pl+Tra+Foc/gi+Usage/Rare: soolaseikski
       soolane+A+Pl+Tra: soolasteks
-      soolane+A+Pl+Tra+Use/Rare: soolaseiks
+      soolane+A+Pl+Tra+Usage/Rare: soolaseiks
       soolane+A+Pl+Trm+Foc/gi: soolastenigi
       soolane+A+Pl+Trm: soolasteni
       soolane+A+Sg+Abe+Foc/gi: soolasetagi
@@ -1638,45 +1638,45 @@ Tests:
       suuline+A+Pl+Abe+Foc/gi: suulistetagi
       suuline+A+Pl+Abe: suulisteta
       suuline+A+Pl+Abl+Foc/gi: suulisteltki
-      suuline+A+Pl+Abl+Foc/gi+Use/Rare: [suuliseiltki, suulisiltki]
+      suuline+A+Pl+Abl+Foc/gi+Usage/Rare: [suuliseiltki, suulisiltki]
       suuline+A+Pl+Abl: suulistelt
-      suuline+A+Pl+Abl+Use/Rare: [suuliseilt, suulisilt]
+      suuline+A+Pl+Abl+Usage/Rare: [suuliseilt, suulisilt]
       suuline+A+Pl+Ade+Foc/gi: suulistelgi
-      suuline+A+Pl+Ade+Foc/gi+Use/Rare: [suuliseilgi, suulisilgi]
+      suuline+A+Pl+Ade+Foc/gi+Usage/Rare: [suuliseilgi, suulisilgi]
       suuline+A+Pl+Ade: suulistel
-      suuline+A+Pl+Ade+Use/Rare: [suuliseil, suulisil]
+      suuline+A+Pl+Ade+Usage/Rare: [suuliseil, suulisil]
       suuline+A+Pl+All+Foc/gi: suulistelegi
-      suuline+A+Pl+All+Foc/gi+Use/Rare: [suuliseilegi, suulisilegi]
+      suuline+A+Pl+All+Foc/gi+Usage/Rare: [suuliseilegi, suulisilegi]
       suuline+A+Pl+All: suulistele
-      suuline+A+Pl+All+Use/Rare: [suuliseile, suulisile]
+      suuline+A+Pl+All+Usage/Rare: [suuliseile, suulisile]
       suuline+A+Pl+Com+Foc/gi: suulistegagi
       suuline+A+Pl+Com: suulistega
       suuline+A+Pl+Ela+Foc/gi: suulistestki
-      suuline+A+Pl+Ela+Foc/gi+Use/Rare: [suuliseistki, suulisistki]
+      suuline+A+Pl+Ela+Foc/gi+Usage/Rare: [suuliseistki, suulisistki]
       suuline+A+Pl+Ela: suulistest
-      suuline+A+Pl+Ela+Use/Rare: [suuliseist, suulisist]
+      suuline+A+Pl+Ela+Usage/Rare: [suuliseist, suulisist]
       suuline+A+Pl+Ess+Foc/gi: suulistenagi
       suuline+A+Pl+Ess: suulistena
       suuline+A+Pl+Gen+Foc/gi: suulistegi
       suuline+A+Pl+Gen: suuliste
       suuline+A+Pl+Ill+Foc/gi: suulistessegi
-      suuline+A+Pl+Ill+Foc/gi+Use/Rare: [suuliseissegi, suulisissegi]
+      suuline+A+Pl+Ill+Foc/gi+Usage/Rare: [suuliseissegi, suulisissegi]
       suuline+A+Pl+Ill: suulistesse
-      suuline+A+Pl+Ill+Use/Rare: [suuliseisse, suulisisse]
+      suuline+A+Pl+Ill+Usage/Rare: [suuliseisse, suulisisse]
       suuline+A+Pl+Ine+Foc/gi: suulisteski
-      suuline+A+Pl+Ine+Foc/gi+Use/Rare: [suuliseiski, suulisiski]
+      suuline+A+Pl+Ine+Foc/gi+Usage/Rare: [suuliseiski, suulisiski]
       suuline+A+Pl+Ine: suulistes
-      suuline+A+Pl+Ine+Use/Rare: [suuliseis, suulisis]
+      suuline+A+Pl+Ine+Usage/Rare: [suuliseis, suulisis]
       suuline+A+Pl+Nom+Foc/gi: suulisedki
       suuline+A+Pl+Nom: suulised
       suuline+A+Pl+Par+Foc/gi: suulisigi
-      suuline+A+Pl+Par+Foc/gi+Use/Rare: suuliseidki
+      suuline+A+Pl+Par+Foc/gi+Usage/Rare: suuliseidki
       suuline+A+Pl+Par: suulisi
-      suuline+A+Pl+Par+Use/Rare: suuliseid
+      suuline+A+Pl+Par+Usage/Rare: suuliseid
       suuline+A+Pl+Tra+Foc/gi: suulistekski
-      suuline+A+Pl+Tra+Foc/gi+Use/Rare: [suuliseikski, suulisikski]
+      suuline+A+Pl+Tra+Foc/gi+Usage/Rare: [suuliseikski, suulisikski]
       suuline+A+Pl+Tra: suulisteks
-      suuline+A+Pl+Tra+Use/Rare: [suuliseiks, suulisiks]
+      suuline+A+Pl+Tra+Usage/Rare: [suuliseiks, suulisiks]
       suuline+A+Pl+Trm+Foc/gi: suulistenigi
       suuline+A+Pl+Trm: suulisteni
       suuline+A+Sg+Abe+Foc/gi: suulisetagi
@@ -1696,9 +1696,9 @@ Tests:
       suuline+A+Sg+Gen+Foc/gi: suulisegi
       suuline+A+Sg+Gen: suulise
       suuline+A+Sg+Ill+Foc/gi: suulissegi
-      suuline+A+Sg+Ill+Foc/gi+Use/Rare: suulisessegi
+      suuline+A+Sg+Ill+Foc/gi+Usage/Rare: suulisessegi
       suuline+A+Sg+Ill: suulisse
-      suuline+A+Sg+Ill+Use/Rare: suulisesse
+      suuline+A+Sg+Ill+Usage/Rare: suulisesse
       suuline+A+Sg+Ine+Foc/gi: suuliseski
       suuline+A+Sg+Ine: suulises
       suuline+A+Sg+Nom+Foc/gi: suulinegi
@@ -1711,43 +1711,43 @@ Tests:
       suuline+A+Sg+Trm: suuliseni
       valmis+A+Pl+Abe+Foc/gi: valmitetagi
       valmis+A+Pl+Abe: valmiteta
-      valmis+A+Pl+Abl+Foc/gi+Use/Rare: valmeiltki
+      valmis+A+Pl+Abl+Foc/gi+Usage/Rare: valmeiltki
       valmis+A+Pl+Abl+Foc/gi: valmiteltki
-      valmis+A+Pl+Abl+Use/Rare: valmeilt
+      valmis+A+Pl+Abl+Usage/Rare: valmeilt
       valmis+A+Pl+Abl: valmitelt
-      valmis+A+Pl+Ade+Foc/gi+Use/Rare: valmeilgi
+      valmis+A+Pl+Ade+Foc/gi+Usage/Rare: valmeilgi
       valmis+A+Pl+Ade+Foc/gi: valmitelgi
-      valmis+A+Pl+Ade+Use/Rare: valmeil
+      valmis+A+Pl+Ade+Usage/Rare: valmeil
       valmis+A+Pl+Ade: valmitel
-      valmis+A+Pl+All+Foc/gi+Use/Rare: valmeilegi
+      valmis+A+Pl+All+Foc/gi+Usage/Rare: valmeilegi
       valmis+A+Pl+All+Foc/gi: valmitelegi
-      valmis+A+Pl+All+Use/Rare: valmeile
+      valmis+A+Pl+All+Usage/Rare: valmeile
       valmis+A+Pl+All: valmitele
       valmis+A+Pl+Com+Foc/gi: valmitegagi
       valmis+A+Pl+Com: valmitega
-      valmis+A+Pl+Ela+Foc/gi+Use/Rare: valmeistki
+      valmis+A+Pl+Ela+Foc/gi+Usage/Rare: valmeistki
       valmis+A+Pl+Ela+Foc/gi: valmitestki
-      valmis+A+Pl+Ela+Use/Rare: valmeist
+      valmis+A+Pl+Ela+Usage/Rare: valmeist
       valmis+A+Pl+Ela: valmitest
       valmis+A+Pl+Ess+Foc/gi: valmitenagi
       valmis+A+Pl+Ess: valmitena
       valmis+A+Pl+Gen+Foc/gi: valmitegi
       valmis+A+Pl+Gen: valmite
-      valmis+A+Pl+Ill+Foc/gi+Use/Rare: valmeissegi
+      valmis+A+Pl+Ill+Foc/gi+Usage/Rare: valmeissegi
       valmis+A+Pl+Ill+Foc/gi: valmitessegi
-      valmis+A+Pl+Ill+Use/Rare: valmeisse
+      valmis+A+Pl+Ill+Usage/Rare: valmeisse
       valmis+A+Pl+Ill: valmitesse
-      valmis+A+Pl+Ine+Foc/gi+Use/Rare: valmeiski
+      valmis+A+Pl+Ine+Foc/gi+Usage/Rare: valmeiski
       valmis+A+Pl+Ine+Foc/gi: valmiteski
-      valmis+A+Pl+Ine+Use/Rare: valmeis
+      valmis+A+Pl+Ine+Usage/Rare: valmeis
       valmis+A+Pl+Ine: valmites
       valmis+A+Pl+Nom+Foc/gi: valmidki
       valmis+A+Pl+Nom: valmid
       valmis+A+Pl+Par+Foc/gi: valmeidki
       valmis+A+Pl+Par: valmeid
-      valmis+A+Pl+Tra+Foc/gi+Use/Rare: valmeikski
+      valmis+A+Pl+Tra+Foc/gi+Usage/Rare: valmeikski
       valmis+A+Pl+Tra+Foc/gi: valmitekski
-      valmis+A+Pl+Tra+Use/Rare: valmeiks
+      valmis+A+Pl+Tra+Usage/Rare: valmeiks
       valmis+A+Pl+Tra: valmiteks
       valmis+A+Pl+Trm+Foc/gi: valmitenigi
       valmis+A+Pl+Trm: valmiteni
@@ -1781,43 +1781,43 @@ Tests:
       valmis+A+Sg+Trm: valmini
       veider+A+Pl+Abe+Foc/gi: veidratetagi
       veider+A+Pl+Abe: veidrateta
-      veider+A+Pl+Abl+Foc/gi+Use/Rare: veidrailtki
+      veider+A+Pl+Abl+Foc/gi+Usage/Rare: veidrailtki
       veider+A+Pl+Abl+Foc/gi: veidrateltki
-      veider+A+Pl+Abl+Use/Rare: veidrailt
+      veider+A+Pl+Abl+Usage/Rare: veidrailt
       veider+A+Pl+Abl: veidratelt
-      veider+A+Pl+Ade+Foc/gi+Use/Rare: veidrailgi
+      veider+A+Pl+Ade+Foc/gi+Usage/Rare: veidrailgi
       veider+A+Pl+Ade+Foc/gi: veidratelgi
-      veider+A+Pl+Ade+Use/Rare: veidrail
+      veider+A+Pl+Ade+Usage/Rare: veidrail
       veider+A+Pl+Ade: veidratel
-      veider+A+Pl+All+Foc/gi+Use/Rare: veidrailegi
+      veider+A+Pl+All+Foc/gi+Usage/Rare: veidrailegi
       veider+A+Pl+All+Foc/gi: veidratelegi
-      veider+A+Pl+All+Use/Rare: veidraile
+      veider+A+Pl+All+Usage/Rare: veidraile
       veider+A+Pl+All: veidratele
       veider+A+Pl+Com+Foc/gi: veidrategagi
       veider+A+Pl+Com: veidratega
-      veider+A+Pl+Ela+Foc/gi+Use/Rare: veidraistki
+      veider+A+Pl+Ela+Foc/gi+Usage/Rare: veidraistki
       veider+A+Pl+Ela+Foc/gi: veidratestki
-      veider+A+Pl+Ela+Use/Rare: veidraist
+      veider+A+Pl+Ela+Usage/Rare: veidraist
       veider+A+Pl+Ela: veidratest
       veider+A+Pl+Ess+Foc/gi: veidratenagi
       veider+A+Pl+Ess: veidratena
       veider+A+Pl+Gen+Foc/gi: veidrategi
       veider+A+Pl+Gen: veidrate
-      veider+A+Pl+Ill+Foc/gi+Use/Rare: veidraissegi
+      veider+A+Pl+Ill+Foc/gi+Usage/Rare: veidraissegi
       veider+A+Pl+Ill+Foc/gi: veidratessegi
-      veider+A+Pl+Ill+Use/Rare: veidraisse
+      veider+A+Pl+Ill+Usage/Rare: veidraisse
       veider+A+Pl+Ill: veidratesse
-      veider+A+Pl+Ine+Foc/gi+Use/Rare: veidraiski
+      veider+A+Pl+Ine+Foc/gi+Usage/Rare: veidraiski
       veider+A+Pl+Ine+Foc/gi: veidrateski
-      veider+A+Pl+Ine+Use/Rare: veidrais
+      veider+A+Pl+Ine+Usage/Rare: veidrais
       veider+A+Pl+Ine: veidrates
       veider+A+Pl+Nom+Foc/gi: veidradki
       veider+A+Pl+Nom: veidrad
       veider+A+Pl+Par+Foc/gi: veidraidki
       veider+A+Pl+Par: veidraid
-      veider+A+Pl+Tra+Foc/gi+Use/Rare: veidraikski
+      veider+A+Pl+Tra+Foc/gi+Usage/Rare: veidraikski
       veider+A+Pl+Tra+Foc/gi: veidratekski
-      veider+A+Pl+Tra+Use/Rare: veidraiks
+      veider+A+Pl+Tra+Usage/Rare: veidraiks
       veider+A+Pl+Tra: veidrateks
       veider+A+Pl+Trm+Foc/gi: veidratenigi
       veider+A+Pl+Trm: veidrateni
@@ -1851,43 +1851,43 @@ Tests:
       veider+A+Sg+Trm: veidrani
       viskoosne+A+Pl+Abe+Foc/gi: viskoossetetagi
       viskoosne+A+Pl+Abe: viskoosseteta
-      viskoosne+A+Pl+Abl+Foc/gi+Use/Rare: viskoosseiltki
+      viskoosne+A+Pl+Abl+Foc/gi+Usage/Rare: viskoosseiltki
       viskoosne+A+Pl+Abl+Foc/gi: viskoosseteltki
-      viskoosne+A+Pl+Abl+Use/Rare: viskoosseilt
+      viskoosne+A+Pl+Abl+Usage/Rare: viskoosseilt
       viskoosne+A+Pl+Abl: viskoossetelt
-      viskoosne+A+Pl+Ade+Foc/gi+Use/Rare: viskoosseilgi
+      viskoosne+A+Pl+Ade+Foc/gi+Usage/Rare: viskoosseilgi
       viskoosne+A+Pl+Ade+Foc/gi: viskoossetelgi
-      viskoosne+A+Pl+Ade+Use/Rare: viskoosseil
+      viskoosne+A+Pl+Ade+Usage/Rare: viskoosseil
       viskoosne+A+Pl+Ade: viskoossetel
-      viskoosne+A+Pl+All+Foc/gi+Use/Rare: viskoosseilegi
+      viskoosne+A+Pl+All+Foc/gi+Usage/Rare: viskoosseilegi
       viskoosne+A+Pl+All+Foc/gi: viskoossetelegi
-      viskoosne+A+Pl+All+Use/Rare: viskoosseile
+      viskoosne+A+Pl+All+Usage/Rare: viskoosseile
       viskoosne+A+Pl+All: viskoossetele
       viskoosne+A+Pl+Com+Foc/gi: viskoossetegagi
       viskoosne+A+Pl+Com: viskoossetega
-      viskoosne+A+Pl+Ela+Foc/gi+Use/Rare: viskoosseistki
+      viskoosne+A+Pl+Ela+Foc/gi+Usage/Rare: viskoosseistki
       viskoosne+A+Pl+Ela+Foc/gi: viskoossetestki
-      viskoosne+A+Pl+Ela+Use/Rare: viskoosseist
+      viskoosne+A+Pl+Ela+Usage/Rare: viskoosseist
       viskoosne+A+Pl+Ela: viskoossetest
       viskoosne+A+Pl+Ess+Foc/gi: viskoossetenagi
       viskoosne+A+Pl+Ess: viskoossetena
       viskoosne+A+Pl+Gen+Foc/gi: viskoossetegi
       viskoosne+A+Pl+Gen: viskoossete
-      viskoosne+A+Pl+Ill+Foc/gi+Use/Rare: viskoosseissegi
+      viskoosne+A+Pl+Ill+Foc/gi+Usage/Rare: viskoosseissegi
       viskoosne+A+Pl+Ill+Foc/gi: viskoossetessegi
-      viskoosne+A+Pl+Ill+Use/Rare: viskoosseisse
+      viskoosne+A+Pl+Ill+Usage/Rare: viskoosseisse
       viskoosne+A+Pl+Ill: viskoossetesse
-      viskoosne+A+Pl+Ine+Foc/gi+Use/Rare: viskoosseiski
+      viskoosne+A+Pl+Ine+Foc/gi+Usage/Rare: viskoosseiski
       viskoosne+A+Pl+Ine+Foc/gi: viskoosseteski
-      viskoosne+A+Pl+Ine+Use/Rare: viskoosseis
+      viskoosne+A+Pl+Ine+Usage/Rare: viskoosseis
       viskoosne+A+Pl+Ine: viskoossetes
       viskoosne+A+Pl+Nom+Foc/gi: viskoossedki
       viskoosne+A+Pl+Nom: viskoossed
       viskoosne+A+Pl+Par+Foc/gi: viskoosseidki
       viskoosne+A+Pl+Par: viskoosseid
-      viskoosne+A+Pl+Tra+Foc/gi+Use/Rare: viskoosseikski
+      viskoosne+A+Pl+Tra+Foc/gi+Usage/Rare: viskoosseikski
       viskoosne+A+Pl+Tra+Foc/gi: viskoossetekski
-      viskoosne+A+Pl+Tra+Use/Rare: viskoosseiks
+      viskoosne+A+Pl+Tra+Usage/Rare: viskoosseiks
       viskoosne+A+Pl+Tra: viskoosseteks
       viskoosne+A+Pl+Trm+Foc/gi: viskoossetenigi
       viskoosne+A+Pl+Trm: viskoosseteni
@@ -1919,157 +1919,157 @@ Tests:
       viskoosne+A+Sg+Tra: viskoosseks
       viskoosne+A+Sg+Trm+Foc/gi: viskoossenigi
       viskoosne+A+Sg+Trm: viskoosseni
-      väike+A+Pl+Abe+Foc/gi+Use/Rare: [väikeseitagi, väikseitagi, väiksetetagi]
+      väike+A+Pl+Abe+Foc/gi+Usage/Rare: [väikeseitagi, väikseitagi, väiksetetagi]
       väike+A+Pl+Abe+Foc/gi: väikestetagi
-      väike+A+Pl+Abe+Use/Rare: [väikeseita, väikseita, väikseteta]
+      väike+A+Pl+Abe+Usage/Rare: [väikeseita, väikseita, väikseteta]
       väike+A+Pl+Abe: väikesteta
-      väike+A+Pl+Abl+Foc/gi+Use/Rare: [väikeseiltki, väikesiltki, väikseiltki, väikseteltki]
+      väike+A+Pl+Abl+Foc/gi+Usage/Rare: [väikeseiltki, väikesiltki, väikseiltki, väikseteltki]
       väike+A+Pl+Abl+Foc/gi: väikesteltki
-      väike+A+Pl+Abl+Use/Rare: [väikeseilt, väikesilt, väikseilt, väiksetelt]
+      väike+A+Pl+Abl+Usage/Rare: [väikeseilt, väikesilt, väikseilt, väiksetelt]
       väike+A+Pl+Abl: väikestelt
-      väike+A+Pl+Ade+Foc/gi+Use/Rare: [väikeseilgi, väikesilgi, väikseilgi, väiksetelgi]
+      väike+A+Pl+Ade+Foc/gi+Usage/Rare: [väikeseilgi, väikesilgi, väikseilgi, väiksetelgi]
       väike+A+Pl+Ade+Foc/gi: väikestelgi
-      väike+A+Pl+Ade+Use/Rare: [väikeseil, väikesil, väikseil, väiksetel]
+      väike+A+Pl+Ade+Usage/Rare: [väikeseil, väikesil, väikseil, väiksetel]
       väike+A+Pl+Ade: väikestel
-      väike+A+Pl+All+Foc/gi+Use/Rare: [väikeseilegi, väikesilegi, väikseilegi, väiksetelegi]
+      väike+A+Pl+All+Foc/gi+Usage/Rare: [väikeseilegi, väikesilegi, väikseilegi, väiksetelegi]
       väike+A+Pl+All+Foc/gi: väikestelegi
-      väike+A+Pl+All+Use/Rare: [väikeseile, väikesile, väikseile, väiksetele]
+      väike+A+Pl+All+Usage/Rare: [väikeseile, väikesile, väikseile, väiksetele]
       väike+A+Pl+All: väikestele
-      väike+A+Pl+Com+Foc/gi+Use/Rare: [väikeseigagi, väikseigagi, väiksetegagi]
+      väike+A+Pl+Com+Foc/gi+Usage/Rare: [väikeseigagi, väikseigagi, väiksetegagi]
       väike+A+Pl+Com+Foc/gi: väikestegagi
-      väike+A+Pl+Com+Use/Rare: [väikeseiga, väikseiga, väiksetega]
+      väike+A+Pl+Com+Usage/Rare: [väikeseiga, väikseiga, väiksetega]
       väike+A+Pl+Com: väikestega
-      väike+A+Pl+Ela+Foc/gi+Use/Rare: [väikeseistki, väikesistki, väikseistki, väiksetestki]
+      väike+A+Pl+Ela+Foc/gi+Usage/Rare: [väikeseistki, väikesistki, väikseistki, väiksetestki]
       väike+A+Pl+Ela+Foc/gi: väikestestki
-      väike+A+Pl+Ela+Use/Rare: [väikeseist, väikesist, väikseist, väiksetest]
+      väike+A+Pl+Ela+Usage/Rare: [väikeseist, väikesist, väikseist, väiksetest]
       väike+A+Pl+Ela: väikestest
-      väike+A+Pl+Ess+Foc/gi+Use/Rare: [väikeseinagi, väikseinagi, väiksetenagi]
+      väike+A+Pl+Ess+Foc/gi+Usage/Rare: [väikeseinagi, väikseinagi, väiksetenagi]
       väike+A+Pl+Ess+Foc/gi: väikestenagi
-      väike+A+Pl+Ess+Use/Rare: [väikeseina, väikseina, väiksetena]
+      väike+A+Pl+Ess+Usage/Rare: [väikeseina, väikseina, väiksetena]
       väike+A+Pl+Ess: väikestena
-      väike+A+Pl+Gen+Foc/gi+Use/Rare: väiksetegi
+      väike+A+Pl+Gen+Foc/gi+Usage/Rare: väiksetegi
       väike+A+Pl+Gen+Foc/gi: väikestegi
-      väike+A+Pl+Gen+Use/Rare: väiksete
+      väike+A+Pl+Gen+Usage/Rare: väiksete
       väike+A+Pl+Gen: väikeste
-      väike+A+Pl+Ill+Foc/gi+Use/Rare: [väikeseissegi, väikesissegi, väikseissegi, väiksetessegi]
+      väike+A+Pl+Ill+Foc/gi+Usage/Rare: [väikeseissegi, väikesissegi, väikseissegi, väiksetessegi]
       väike+A+Pl+Ill+Foc/gi: väikestessegi
-      väike+A+Pl+Ill+Use/Rare: [väikeseisse, väikesisse, väikseisse, väiksetesse]
+      väike+A+Pl+Ill+Usage/Rare: [väikeseisse, väikesisse, väikseisse, väiksetesse]
       väike+A+Pl+Ill: väikestesse
-      väike+A+Pl+Ine+Foc/gi+Use/Rare: [väikeseiski, väikesiski, väikseiski, väikseteski]
+      väike+A+Pl+Ine+Foc/gi+Usage/Rare: [väikeseiski, väikesiski, väikseiski, väikseteski]
       väike+A+Pl+Ine+Foc/gi: väikesteski
-      väike+A+Pl+Ine+Use/Rare: [väikeseis, väikesis, väikseis, väiksetes]
+      väike+A+Pl+Ine+Usage/Rare: [väikeseis, väikesis, väikseis, väiksetes]
       väike+A+Pl+Ine: väikestes
-      väike+A+Pl+Nom+Foc/gi+Use/Rare: väiksedki
+      väike+A+Pl+Nom+Foc/gi+Usage/Rare: väiksedki
       väike+A+Pl+Nom+Foc/gi: väikesedki
-      väike+A+Pl+Nom+Use/Rare: väiksed
+      väike+A+Pl+Nom+Usage/Rare: väiksed
       väike+A+Pl+Nom: väikesed
-      väike+A+Pl+Par+Foc/gi+Use/Rare: [väikeseidki, väikesigi]
+      väike+A+Pl+Par+Foc/gi+Usage/Rare: [väikeseidki, väikesigi]
       väike+A+Pl+Par+Foc/gi: väikseidki
-      väike+A+Pl+Par+Use/Rare: [väikeseid, väikesi]
+      väike+A+Pl+Par+Usage/Rare: [väikeseid, väikesi]
       väike+A+Pl+Par: väikseid
-      väike+A+Pl+Tra+Foc/gi+Use/Rare: [väikeseikski, väikesikski, väikseikski, väiksetekski]
+      väike+A+Pl+Tra+Foc/gi+Usage/Rare: [väikeseikski, väikesikski, väikseikski, väiksetekski]
       väike+A+Pl+Tra+Foc/gi: väikestekski
-      väike+A+Pl+Tra+Use/Rare: [väikeseiks, väikesiks, väikseiks, väikseteks]
+      väike+A+Pl+Tra+Usage/Rare: [väikeseiks, väikesiks, väikseiks, väikseteks]
       väike+A+Pl+Tra: väikesteks
-      väike+A+Pl+Trm+Foc/gi+Use/Rare: [väikeseinigi, väikseinigi, väiksetenigi]
+      väike+A+Pl+Trm+Foc/gi+Usage/Rare: [väikeseinigi, väikseinigi, väiksetenigi]
       väike+A+Pl+Trm+Foc/gi: väikestenigi
-      väike+A+Pl+Trm+Use/Rare: [väikeseini, väikseini, väikseteni]
+      väike+A+Pl+Trm+Usage/Rare: [väikeseini, väikseini, väikseteni]
       väike+A+Pl+Trm: väikesteni
-      väike+A+Sg+Abe+Foc/gi+Use/Rare: väiksetagi
+      väike+A+Sg+Abe+Foc/gi+Usage/Rare: väiksetagi
       väike+A+Sg+Abe+Foc/gi: väikesetagi
-      väike+A+Sg+Abe+Use/Rare: väikseta
+      väike+A+Sg+Abe+Usage/Rare: väikseta
       väike+A+Sg+Abe: väikeseta
-      väike+A+Sg+Abl+Foc/gi+Use/Rare: väikseltki
+      väike+A+Sg+Abl+Foc/gi+Usage/Rare: väikseltki
       väike+A+Sg+Abl+Foc/gi: väikeseltki
-      väike+A+Sg+Abl+Use/Rare: väikselt
+      väike+A+Sg+Abl+Usage/Rare: väikselt
       väike+A+Sg+Abl: väikeselt
-      väike+A+Sg+Ade+Foc/gi+Use/Rare: väikselgi
+      väike+A+Sg+Ade+Foc/gi+Usage/Rare: väikselgi
       väike+A+Sg+Ade+Foc/gi: väikeselgi
-      väike+A+Sg+Ade+Use/Rare: väiksel
+      väike+A+Sg+Ade+Usage/Rare: väiksel
       väike+A+Sg+Ade: väikesel
-      väike+A+Sg+All+Foc/gi+Use/Rare: väikselegi
+      väike+A+Sg+All+Foc/gi+Usage/Rare: väikselegi
       väike+A+Sg+All+Foc/gi: väikeselegi
-      väike+A+Sg+All+Use/Rare: väiksele
+      väike+A+Sg+All+Usage/Rare: väiksele
       väike+A+Sg+All: väikesele
-      väike+A+Sg+Com+Foc/gi+Use/Rare: väiksegagi
+      väike+A+Sg+Com+Foc/gi+Usage/Rare: väiksegagi
       väike+A+Sg+Com+Foc/gi: väikesegagi
-      väike+A+Sg+Com+Use/Rare: väiksega
+      väike+A+Sg+Com+Usage/Rare: väiksega
       väike+A+Sg+Com: väikesega
-      väike+A+Sg+Ela+Foc/gi+Use/Rare: väiksestki
+      väike+A+Sg+Ela+Foc/gi+Usage/Rare: väiksestki
       väike+A+Sg+Ela+Foc/gi: väikesestki
-      väike+A+Sg+Ela+Use/Rare: väiksest
+      väike+A+Sg+Ela+Usage/Rare: väiksest
       väike+A+Sg+Ela: väikesest
-      väike+A+Sg+Ess+Foc/gi+Use/Rare: väiksenagi
+      väike+A+Sg+Ess+Foc/gi+Usage/Rare: väiksenagi
       väike+A+Sg+Ess+Foc/gi: väikesenagi
-      väike+A+Sg+Ess+Use/Rare: väiksena
+      väike+A+Sg+Ess+Usage/Rare: väiksena
       väike+A+Sg+Ess: väikesena
-      väike+A+Sg+Gen+Foc/gi+Use/Rare: väiksegi
+      väike+A+Sg+Gen+Foc/gi+Usage/Rare: väiksegi
       väike+A+Sg+Gen+Foc/gi: väikesegi
-      väike+A+Sg+Gen+Use/Rare: väikse
+      väike+A+Sg+Gen+Usage/Rare: väikse
       väike+A+Sg+Gen: väikese
-      väike+A+Sg+Ill+Foc/gi+Use/Rare: [väikessegi, väiksessegi]
+      väike+A+Sg+Ill+Foc/gi+Usage/Rare: [väikessegi, väiksessegi]
       väike+A+Sg+Ill+Foc/gi: väikesessegi
-      väike+A+Sg+Ill+Use/Rare: [väikesse, väiksesse]
+      väike+A+Sg+Ill+Usage/Rare: [väikesse, väiksesse]
       väike+A+Sg+Ill: väikesesse
-      väike+A+Sg+Ine+Foc/gi+Use/Rare: väikseski
+      väike+A+Sg+Ine+Foc/gi+Usage/Rare: väikseski
       väike+A+Sg+Ine+Foc/gi: väikeseski
-      väike+A+Sg+Ine+Use/Rare: väikses
+      väike+A+Sg+Ine+Usage/Rare: väikses
       väike+A+Sg+Ine: väikeses
-      väike+A+Sg+Nom+Foc/gi+Use/Rare: väikenegi
+      väike+A+Sg+Nom+Foc/gi+Usage/Rare: väikenegi
       väike+A+Sg+Nom+Foc/gi: väikegi
-      väike+A+Sg+Nom+Use/Rare: väikene
+      väike+A+Sg+Nom+Usage/Rare: väikene
       väike+A+Sg+Nom: väike
-      väike+A+Sg+Par+Foc/gi+Use/Rare: väiksetki
+      väike+A+Sg+Par+Foc/gi+Usage/Rare: väiksetki
       väike+A+Sg+Par+Foc/gi: väikestki
-      väike+A+Sg+Par+Use/Rare: väikset
+      väike+A+Sg+Par+Usage/Rare: väikset
       väike+A+Sg+Par: väikest
-      väike+A+Sg+Tra+Foc/gi+Use/Rare: väiksekski
+      väike+A+Sg+Tra+Foc/gi+Usage/Rare: väiksekski
       väike+A+Sg+Tra+Foc/gi: väikesekski
-      väike+A+Sg+Tra+Use/Rare: väikseks
+      väike+A+Sg+Tra+Usage/Rare: väikseks
       väike+A+Sg+Tra: väikeseks
-      väike+A+Sg+Trm+Foc/gi+Use/Rare: väiksenigi
+      väike+A+Sg+Trm+Foc/gi+Usage/Rare: väiksenigi
       väike+A+Sg+Trm+Foc/gi: väikesenigi
-      väike+A+Sg+Trm+Use/Rare: väikseni
+      väike+A+Sg+Trm+Usage/Rare: väikseni
       väike+A+Sg+Trm: väikeseni
       õilis+A+Pl+Abe+Foc/gi: õilsatetagi
       õilis+A+Pl+Abe: õilsateta
-      õilis+A+Pl+Abl+Foc/gi+Use/Rare: õilsailtki
+      õilis+A+Pl+Abl+Foc/gi+Usage/Rare: õilsailtki
       õilis+A+Pl+Abl+Foc/gi: õilsateltki
-      õilis+A+Pl+Abl+Use/Rare: õilsailt
+      õilis+A+Pl+Abl+Usage/Rare: õilsailt
       õilis+A+Pl+Abl: õilsatelt
-      õilis+A+Pl+Ade+Foc/gi+Use/Rare: õilsailgi
+      õilis+A+Pl+Ade+Foc/gi+Usage/Rare: õilsailgi
       õilis+A+Pl+Ade+Foc/gi: õilsatelgi
-      õilis+A+Pl+Ade+Use/Rare: õilsail
+      õilis+A+Pl+Ade+Usage/Rare: õilsail
       õilis+A+Pl+Ade: õilsatel
-      õilis+A+Pl+All+Foc/gi+Use/Rare: õilsailegi
+      õilis+A+Pl+All+Foc/gi+Usage/Rare: õilsailegi
       õilis+A+Pl+All+Foc/gi: õilsatelegi
-      õilis+A+Pl+All+Use/Rare: õilsaile
+      õilis+A+Pl+All+Usage/Rare: õilsaile
       õilis+A+Pl+All: õilsatele
       õilis+A+Pl+Com+Foc/gi: õilsategagi
       õilis+A+Pl+Com: õilsatega
-      õilis+A+Pl+Ela+Foc/gi+Use/Rare: õilsaistki
+      õilis+A+Pl+Ela+Foc/gi+Usage/Rare: õilsaistki
       õilis+A+Pl+Ela+Foc/gi: õilsatestki
-      õilis+A+Pl+Ela+Use/Rare: õilsaist
+      õilis+A+Pl+Ela+Usage/Rare: õilsaist
       õilis+A+Pl+Ela: õilsatest
       õilis+A+Pl+Ess+Foc/gi: õilsatenagi
       õilis+A+Pl+Ess: õilsatena
       õilis+A+Pl+Gen+Foc/gi: õilsategi
       õilis+A+Pl+Gen: õilsate
-      õilis+A+Pl+Ill+Foc/gi+Use/Rare: õilsaissegi
+      õilis+A+Pl+Ill+Foc/gi+Usage/Rare: õilsaissegi
       õilis+A+Pl+Ill+Foc/gi: õilsatessegi
-      õilis+A+Pl+Ill+Use/Rare: õilsaisse
+      õilis+A+Pl+Ill+Usage/Rare: õilsaisse
       õilis+A+Pl+Ill: õilsatesse
-      õilis+A+Pl+Ine+Foc/gi+Use/Rare: õilsaiski
+      õilis+A+Pl+Ine+Foc/gi+Usage/Rare: õilsaiski
       õilis+A+Pl+Ine+Foc/gi: õilsateski
-      õilis+A+Pl+Ine+Use/Rare: õilsais
+      õilis+A+Pl+Ine+Usage/Rare: õilsais
       õilis+A+Pl+Ine: õilsates
       õilis+A+Pl+Nom+Foc/gi: õilsadki
       õilis+A+Pl+Nom: õilsad
       õilis+A+Pl+Par+Foc/gi: õilsaidki
       õilis+A+Pl+Par: õilsaid
-      õilis+A+Pl+Tra+Foc/gi+Use/Rare: õilsaikski
+      õilis+A+Pl+Tra+Foc/gi+Usage/Rare: õilsaikski
       õilis+A+Pl+Tra+Foc/gi: õilsatekski
-      õilis+A+Pl+Tra+Use/Rare: õilsaiks
+      õilis+A+Pl+Tra+Usage/Rare: õilsaiks
       õilis+A+Pl+Tra: õilsateks
       õilis+A+Pl+Trm+Foc/gi: õilsatenigi
       õilis+A+Pl+Trm: õilsateni
@@ -2101,71 +2101,71 @@ Tests:
       õilis+A+Sg+Tra: õilsaks
       õilis+A+Sg+Trm+Foc/gi: õilsanigi
       õilis+A+Sg+Trm: õilsani
-      õnnis+A+Pl+Abe+Foc/gi+Use/NotNorm: õnnistetagi
+      õnnis+A+Pl+Abe+Foc/gi+Usage/NotNorm: õnnistetagi
       õnnis+A+Pl+Abe+Foc/gi: õndsatetagi
-      õnnis+A+Pl+Abe+Use/NotNorm: õnnisteta
+      õnnis+A+Pl+Abe+Usage/NotNorm: õnnisteta
       õnnis+A+Pl+Abe: õndsateta
-      õnnis+A+Pl+Abl+Foc/gi+Use/NotNorm: õnnisteltki
-      õnnis+A+Pl+Abl+Foc/gi+Use/Rare: õndsailtki
+      õnnis+A+Pl+Abl+Foc/gi+Usage/NotNorm: õnnisteltki
+      õnnis+A+Pl+Abl+Foc/gi+Usage/Rare: õndsailtki
       õnnis+A+Pl+Abl+Foc/gi: õndsateltki
-      õnnis+A+Pl+Abl+Use/NotNorm: õnnistelt
-      õnnis+A+Pl+Abl+Use/Rare: õndsailt
+      õnnis+A+Pl+Abl+Usage/NotNorm: õnnistelt
+      õnnis+A+Pl+Abl+Usage/Rare: õndsailt
       õnnis+A+Pl+Abl: õndsatelt
-      õnnis+A+Pl+Ade+Foc/gi+Use/NotNorm: õnnistelgi
-      õnnis+A+Pl+Ade+Foc/gi+Use/Rare: õndsailgi
+      õnnis+A+Pl+Ade+Foc/gi+Usage/NotNorm: õnnistelgi
+      õnnis+A+Pl+Ade+Foc/gi+Usage/Rare: õndsailgi
       õnnis+A+Pl+Ade+Foc/gi: õndsatelgi
-      õnnis+A+Pl+Ade+Use/NotNorm: õnnistel
-      õnnis+A+Pl+Ade+Use/Rare: õndsail
+      õnnis+A+Pl+Ade+Usage/NotNorm: õnnistel
+      õnnis+A+Pl+Ade+Usage/Rare: õndsail
       õnnis+A+Pl+Ade: õndsatel
-      õnnis+A+Pl+All+Foc/gi+Use/NotNorm: õnnistelegi
-      õnnis+A+Pl+All+Foc/gi+Use/Rare: õndsailegi
+      õnnis+A+Pl+All+Foc/gi+Usage/NotNorm: õnnistelegi
+      õnnis+A+Pl+All+Foc/gi+Usage/Rare: õndsailegi
       õnnis+A+Pl+All+Foc/gi: õndsatelegi
-      õnnis+A+Pl+All+Use/NotNorm: õnnistele
-      õnnis+A+Pl+All+Use/Rare: õndsaile
+      õnnis+A+Pl+All+Usage/NotNorm: õnnistele
+      õnnis+A+Pl+All+Usage/Rare: õndsaile
       õnnis+A+Pl+All: õndsatele
-      õnnis+A+Pl+Com+Foc/gi+Use/NotNorm: õnnistegagi
+      õnnis+A+Pl+Com+Foc/gi+Usage/NotNorm: õnnistegagi
       õnnis+A+Pl+Com+Foc/gi: õndsategagi
-      õnnis+A+Pl+Com+Use/NotNorm: õnnistega
+      õnnis+A+Pl+Com+Usage/NotNorm: õnnistega
       õnnis+A+Pl+Com: õndsatega
-      õnnis+A+Pl+Ela+Foc/gi+Use/NotNorm: õnnistestki
-      õnnis+A+Pl+Ela+Foc/gi+Use/Rare: õndsaistki
+      õnnis+A+Pl+Ela+Foc/gi+Usage/NotNorm: õnnistestki
+      õnnis+A+Pl+Ela+Foc/gi+Usage/Rare: õndsaistki
       õnnis+A+Pl+Ela+Foc/gi: õndsatestki
-      õnnis+A+Pl+Ela+Use/NotNorm: õnnistest
-      õnnis+A+Pl+Ela+Use/Rare: õndsaist
+      õnnis+A+Pl+Ela+Usage/NotNorm: õnnistest
+      õnnis+A+Pl+Ela+Usage/Rare: õndsaist
       õnnis+A+Pl+Ela: õndsatest
-      õnnis+A+Pl+Ess+Foc/gi+Use/NotNorm: õnnistenagi
+      õnnis+A+Pl+Ess+Foc/gi+Usage/NotNorm: õnnistenagi
       õnnis+A+Pl+Ess+Foc/gi: õndsatenagi
-      õnnis+A+Pl+Ess+Use/NotNorm: õnnistena
+      õnnis+A+Pl+Ess+Usage/NotNorm: õnnistena
       õnnis+A+Pl+Ess: õndsatena
-      õnnis+A+Pl+Gen+Foc/gi+Use/NotNorm: õnnistegi
+      õnnis+A+Pl+Gen+Foc/gi+Usage/NotNorm: õnnistegi
       õnnis+A+Pl+Gen+Foc/gi: õndsategi
-      õnnis+A+Pl+Gen+Use/NotNorm: õnniste
+      õnnis+A+Pl+Gen+Usage/NotNorm: õnniste
       õnnis+A+Pl+Gen: õndsate
-      õnnis+A+Pl+Ill+Foc/gi+Use/NotNorm: õnnistessegi
-      õnnis+A+Pl+Ill+Foc/gi+Use/Rare: õndsaissegi
+      õnnis+A+Pl+Ill+Foc/gi+Usage/NotNorm: õnnistessegi
+      õnnis+A+Pl+Ill+Foc/gi+Usage/Rare: õndsaissegi
       õnnis+A+Pl+Ill+Foc/gi: õndsatessegi
-      õnnis+A+Pl+Ill+Use/NotNorm: õnnistesse
-      õnnis+A+Pl+Ill+Use/Rare: õndsaisse
+      õnnis+A+Pl+Ill+Usage/NotNorm: õnnistesse
+      õnnis+A+Pl+Ill+Usage/Rare: õndsaisse
       õnnis+A+Pl+Ill: õndsatesse
-      õnnis+A+Pl+Ine+Foc/gi+Use/NotNorm: õnnisteski
-      õnnis+A+Pl+Ine+Foc/gi+Use/Rare: õndsaiski
+      õnnis+A+Pl+Ine+Foc/gi+Usage/NotNorm: õnnisteski
+      õnnis+A+Pl+Ine+Foc/gi+Usage/Rare: õndsaiski
       õnnis+A+Pl+Ine+Foc/gi: õndsateski
-      õnnis+A+Pl+Ine+Use/NotNorm: õnnistes
-      õnnis+A+Pl+Ine+Use/Rare: õndsais
+      õnnis+A+Pl+Ine+Usage/NotNorm: õnnistes
+      õnnis+A+Pl+Ine+Usage/Rare: õndsais
       õnnis+A+Pl+Ine: õndsates
       õnnis+A+Pl+Nom+Foc/gi: õndsadki
       õnnis+A+Pl+Nom: õndsad
       õnnis+A+Pl+Par+Foc/gi: õndsaidki
       õnnis+A+Pl+Par: õndsaid
-      õnnis+A+Pl+Tra+Foc/gi+Use/NotNorm: õnnistekski
-      õnnis+A+Pl+Tra+Foc/gi+Use/Rare: õndsaikski
+      õnnis+A+Pl+Tra+Foc/gi+Usage/NotNorm: õnnistekski
+      õnnis+A+Pl+Tra+Foc/gi+Usage/Rare: õndsaikski
       õnnis+A+Pl+Tra+Foc/gi: õndsatekski
-      õnnis+A+Pl+Tra+Use/NotNorm: õnnisteks
-      õnnis+A+Pl+Tra+Use/Rare: õndsaiks
+      õnnis+A+Pl+Tra+Usage/NotNorm: õnnisteks
+      õnnis+A+Pl+Tra+Usage/Rare: õndsaiks
       õnnis+A+Pl+Tra: õndsateks
-      õnnis+A+Pl+Trm+Foc/gi+Use/NotNorm: õnnistenigi
+      õnnis+A+Pl+Trm+Foc/gi+Usage/NotNorm: õnnistenigi
       õnnis+A+Pl+Trm+Foc/gi: õndsatenigi
-      õnnis+A+Pl+Trm+Use/NotNorm: õnnisteni
+      õnnis+A+Pl+Trm+Usage/NotNorm: õnnisteni
       õnnis+A+Pl+Trm: õndsateni
       õnnis+A+Sg+Abe+Foc/gi: õndsatagi
       õnnis+A+Sg+Abe: õndsata
@@ -2189,9 +2189,9 @@ Tests:
       õnnis+A+Sg+Ine: õndsas
       õnnis+A+Sg+Nom+Foc/gi: õnniski
       õnnis+A+Sg+Nom: õnnis
-      õnnis+A+Sg+Par+Foc/gi+Use/Rare: õnnistki
+      õnnis+A+Sg+Par+Foc/gi+Usage/Rare: õnnistki
       õnnis+A+Sg+Par+Foc/gi: õndsatki
-      õnnis+A+Sg+Par+Use/Rare: õnnist
+      õnnis+A+Sg+Par+Usage/Rare: õnnist
       õnnis+A+Sg+Par: õndsat
       õnnis+A+Sg+Tra+Foc/gi: õndsakski
       õnnis+A+Sg+Tra: õndsaks

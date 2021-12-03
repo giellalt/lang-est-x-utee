@@ -6,7 +6,7 @@ tunnukse+V:tunnukse #  "weight: 11 " ;
  ära+V+Pers+Prs+Imprt+Sg2+Neg:ära #  "weight: 4 " ; 
  ära+V+Pers+Prs+Imprt+Neg:ärgu #  "weight: 4 " ; 
  ära+V+Pers+Prs+Imprt+Pl1+Neg:ärgem #  "weight: 4 " ; 
- ära+V+Pers+Prs+Imprt+Pl1+Neg+Use/Rare:ärme #  "weight: 4 " ; 
+ ära+V+Pers+Prs+Imprt+Pl1+Neg+Usage/Rare:ärme #  "weight: 4 " ; 
  ära+V+Pers+Prs+Imprt+Pl2+Neg:ärge #  "weight: 4 " ; 
  ära+V+Pers+Prt+Imprt+Neg:ärnud #  "weight: 4 " ; 
  ära+V+Impers+Prs+Imprt+Neg:ärdagu #  "weight: 4 " ; 

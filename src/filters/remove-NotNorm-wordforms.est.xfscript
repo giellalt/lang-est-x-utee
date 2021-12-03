@@ -1,8 +1,8 @@
 # remove paths that have some NotNorm tag
 
 # possible tags:
-define NTag [ "+Use/NotNorm" ] ; # not norm, but sometimes used
-define CNTag [ "+Use/CommonNotNorm" ] ; # not norm, and used more than norm
+define NTag [ "+Usage/NotNorm" ] ; # not norm, but sometimes used
+define CNTag [ "+Usage/CommonNotNorm" ] ; # not norm, and used more than norm
 
 define UTag [ NTag | CNTag ] ; # NotNorm-related tag
 

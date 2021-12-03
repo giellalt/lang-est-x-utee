@@ -38,7 +38,7 @@ cat fs_gt.inflecting.tmp1 | grep '+A:' \
 | sed 's/\(ühe\)?\(päevane\)/\1#\2/' \
 > adjectives.tmp1
 
-cat fs_gt.inflecting.tmp1 | grep '+A+Use/NotNorm:' \
+cat fs_gt.inflecting.tmp1 | grep '+A+Usage/NotNorm:' \
 >> adjectives.tmp1
 
 # short adjectives are special in that they may compound in sg nom
@@ -234,7 +234,7 @@ cat fs_gt.noninfl.tmp1 | grep '+C[CS]' >> conjunctions.protolexc
 # ja eering-lõpulised
 # ... ja palju PINGE tüüpi sõnu polegi deverbaalideks märgitud...
 # (ja siin all olevad lisandused pole kõik, mis võimalik...)
-cat fs_gt.inflecting.tmp1 | grep '\(+N:\)\|\(+N+Use\)' \
+cat fs_gt.inflecting.tmp1 | grep '\(+N:\)\|\(+N+Usage\)' \
 | sed 's/^\(WDEVERBAL\)\(.*\)$/\2\1/' \
 | sed 's/^\(mnocompound\)\(.*\)$/\2\1/' \
 | sed 's/^\(nnolastpart\)\(.*\)$/\2\1/' \
@@ -320,7 +320,7 @@ cat fs_gt.inflecting.tmp1 | grep '\(+N:\)\|\(+N+Use\)' \
 | sed '/^kandlus+/s/$/WDEVERBAL/' \
 | sed '/^leplus+/s/$/WDEVERBAL/' \
 | sed '/^mäng+/s/$/WDEVERBAL/' \
-| sed 's/+N+Use/+N_Use/' \
+| sed 's/+N+Usage/+N_Usage/' \
 | LC_COLLATE=C sort > fs_gt.inflecting.tmp1.srt
 
 # ja lisa siia märge nende lühikeste nimisõnade kohta, mis ei osale liitsõnades
@@ -329,7 +329,7 @@ LC_COLLATE=C join -t+ -a 1 -a 2 -o 1.1 2.1 2.2 head_esiosad fs_gt.inflecting.tmp
 | sed '/^õpe+/s/heaesi//' \
 | sed '/^anne+/s/heaesi//' \
 | sed 's/^[^+]*+//' \
-| sed 's/+N_Use/+N+Use/' > fs_gt.inflecting.tmp1.tagged
+| sed 's/+N_Usage/+N+Usage/' > fs_gt.inflecting.tmp1.tagged
 #----
 
 echo 'LEXICON Nouns\n\n DeverbalNouns ;\n PlainNouns ;\n' > nouns.protolexc
@@ -346,7 +346,7 @@ cat fs_gt.inflecting.tmp1.tagged | grep '+N:' \
 echo '\nLEXICON PlainNouns\n\n' >> nouns.protolexc
 
 # add flags for limiting compounding
-cat fs_gt.inflecting.tmp1.tagged | grep '\(+N:\)\|\(+N+Use\)' \
+cat fs_gt.inflecting.tmp1.tagged | grep '\(+N:\)\|\(+N+Usage\)' \
 | grep -v 'WDEVERBAL' \
 | sed 's/:de#/:de?/' \
 | sed 's/:in#/:in?/' \

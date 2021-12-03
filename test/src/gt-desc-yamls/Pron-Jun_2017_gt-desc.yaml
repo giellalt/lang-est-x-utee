@@ -37,38 +37,38 @@ Tests:
     seesama+Pron+Pl+Com+Foc/gi: nendesamadegagi
     seesama+Pron+Pl+Gen: nendesamade
     seesama+Pron+Pl+Gen+Foc/gi: nendesamadegi
-    seesama+Pron+Pl+Par+Foc/gi+Use/Rare: neidsamasidki
-    seesama+Pron+Pl+Par+Use/Rare: neidsamasid
+    seesama+Pron+Pl+Par+Foc/gi+Usage/Rare: neidsamasidki
+    seesama+Pron+Pl+Par+Usage/Rare: neidsamasid
     seesama+Pron+Pl+Par: neidsamu
     seesama+Pron+Pl+Par+Foc/gi: neidsamugi
     seesama+Pron+Pl+Nom: needsamad
     seesama+Pron+Pl+Nom+Foc/gi: needsamadki
-    seesama+Pron+Pl+Ill+Foc/gi+Use/Rare: neissesamadessegi
-    seesama+Pron+Pl+Ill+Use/Rare: neissesamadesse
-    seesama+Pron+Pl+Ela+Foc/gi+Use/Rare: neistsamadestki
-    seesama+Pron+Pl+Ela+Use/Rare: neistsamadest
-    seesama+Pron+Pl+Ine+Foc/gi+Use/Rare: neissamadeski
-    seesama+Pron+Pl+Ine+Use/Rare: neissamades
-    seesama+Pron+Pl+Tra+Foc/gi+Use/Rare: neikssamadekski
-    seesama+Pron+Pl+Tra+Use/Rare: neikssamadeks
-    seesama+Pron+Pl+Abl+Foc/gi+Use/Rare: neiltsamadeltki
-    seesama+Pron+Pl+Abl+Use/Rare: neiltsamadelt
-    seesama+Pron+Pl+All+Foc/gi+Use/Rare: neilesamadelegi
-    seesama+Pron+Pl+All+Use/Rare: neilesamadele
-    seesama+Pron+Pl+Ade+Foc/gi+Use/Rare: neilsamadelgi
-    seesama+Pron+Pl+Ade+Use/Rare: neilsamadel
-    seesama+Pron+Sg+Ine+Foc/gi+Use/Rare: sessamaski
-    seesama+Pron+Sg+Ine+Use/Rare: sessamas
-    seesama+Pron+Sg+Ill+Foc/gi+Use/Rare: sessesamassegi
-    seesama+Pron+Sg+Ill+Use/Rare: sessesamasse
-    seesama+Pron+Sg+Ela+Foc/gi+Use/Rare: sestsamastki
-    seesama+Pron+Sg+Ela+Use/Rare: sestsamast
-    seesama+Pron+Sg+Tra+Foc/gi+Use/Rare: sekssamakski
-    seesama+Pron+Sg+Tra+Use/Rare: sekssamaks
-    seesama+Pron+Sg+Abl+Foc/gi+Use/Rare: seltsamaltki
-    seesama+Pron+Sg+Abl+Use/Rare: seltsamalt
-    seesama+Pron+Sg+Ade+Foc/gi+Use/Rare: selsamalgi
-    seesama+Pron+Sg+Ade+Use/Rare: selsamal
+    seesama+Pron+Pl+Ill+Foc/gi+Usage/Rare: neissesamadessegi
+    seesama+Pron+Pl+Ill+Usage/Rare: neissesamadesse
+    seesama+Pron+Pl+Ela+Foc/gi+Usage/Rare: neistsamadestki
+    seesama+Pron+Pl+Ela+Usage/Rare: neistsamadest
+    seesama+Pron+Pl+Ine+Foc/gi+Usage/Rare: neissamadeski
+    seesama+Pron+Pl+Ine+Usage/Rare: neissamades
+    seesama+Pron+Pl+Tra+Foc/gi+Usage/Rare: neikssamadekski
+    seesama+Pron+Pl+Tra+Usage/Rare: neikssamadeks
+    seesama+Pron+Pl+Abl+Foc/gi+Usage/Rare: neiltsamadeltki
+    seesama+Pron+Pl+Abl+Usage/Rare: neiltsamadelt
+    seesama+Pron+Pl+All+Foc/gi+Usage/Rare: neilesamadelegi
+    seesama+Pron+Pl+All+Usage/Rare: neilesamadele
+    seesama+Pron+Pl+Ade+Foc/gi+Usage/Rare: neilsamadelgi
+    seesama+Pron+Pl+Ade+Usage/Rare: neilsamadel
+    seesama+Pron+Sg+Ine+Foc/gi+Usage/Rare: sessamaski
+    seesama+Pron+Sg+Ine+Usage/Rare: sessamas
+    seesama+Pron+Sg+Ill+Foc/gi+Usage/Rare: sessesamassegi
+    seesama+Pron+Sg+Ill+Usage/Rare: sessesamasse
+    seesama+Pron+Sg+Ela+Foc/gi+Usage/Rare: sestsamastki
+    seesama+Pron+Sg+Ela+Usage/Rare: sestsamast
+    seesama+Pron+Sg+Tra+Foc/gi+Usage/Rare: sekssamakski
+    seesama+Pron+Sg+Tra+Usage/Rare: sekssamaks
+    seesama+Pron+Sg+Abl+Foc/gi+Usage/Rare: seltsamaltki
+    seesama+Pron+Sg+Abl+Usage/Rare: seltsamalt
+    seesama+Pron+Sg+Ade+Foc/gi+Usage/Rare: selsamalgi
+    seesama+Pron+Sg+Ade+Usage/Rare: selsamal
     seesama+Pron+Sg+Par: sedasama
     seesama+Pron+Sg+Par+Foc/gi: sedasamagi
     seesama+Pron+Sg+Nom: seesama

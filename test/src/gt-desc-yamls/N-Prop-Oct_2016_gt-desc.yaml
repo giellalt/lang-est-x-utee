@@ -15,8 +15,8 @@ Tests:
   Propernouns:
       Abja+N+Prop+Sg+Nom: Abja
       Abja+N+Prop+Sg+Nom+Foc/gi: Abjagi
-      Abja+N+Prop+Sg+Ill+Use/Rare: Abjasse
-      Abja+N+Prop+Sg+Ill+Foc/gi+Use/Rare: Abjassegi
+      Abja+N+Prop+Sg+Ill+Usage/Rare: Abjasse
+      Abja+N+Prop+Sg+Ill+Foc/gi+Usage/Rare: Abjassegi
       Abja+N+Prop+Sg+Com: Abjaga
       Abja+N+Prop+Sg+Com+Foc/gi: Abjagagi
       Abja+N+Prop+Sg+Abe: Abjata
@@ -130,8 +130,8 @@ Tests:
       Kunda+N+Prop+Sg+Nom+Foc/gi: Kundagi
       Kunda+N+Prop+Sg+Ill: Kunda
       Kunda+N+Prop+Sg+Ill+Foc/gi: Kundagi
-      Kunda+N+Prop+Sg+Ill+Use/Rare: Kundasse
-      Kunda+N+Prop+Sg+Ill+Foc/gi+Use/Rare: Kundassegi
+      Kunda+N+Prop+Sg+Ill+Usage/Rare: Kundasse
+      Kunda+N+Prop+Sg+Ill+Foc/gi+Usage/Rare: Kundassegi
       Kunda+N+Prop+Sg+Com: Kundaga
       Kunda+N+Prop+Sg+Com+Foc/gi: Kundagagi
       Kunda+N+Prop+Sg+Abe: Kundata
@@ -160,20 +160,20 @@ Tests:
       Kunda+N+Prop+Pl+Nom+Foc/gi: Kundadki
       Kunda+N+Prop+Pl+Par: Kundaid
       Kunda+N+Prop+Pl+Par+Foc/gi: Kundaidki
-      Kunda+N+Prop+Pl+Ill+Use/Rare: Kundaisse
-      Kunda+N+Prop+Pl+Ill+Foc/gi+Use/Rare: Kundaissegi
-      Kunda+N+Prop+Pl+Tra+Use/Rare: Kundaiks
-      Kunda+N+Prop+Pl+Tra+Foc/gi+Use/Rare: Kundaikski
-      Kunda+N+Prop+Pl+Abl+Use/Rare: Kundailt
-      Kunda+N+Prop+Pl+Abl+Foc/gi+Use/Rare: Kundailtki
-      Kunda+N+Prop+Pl+Ade+Use/Rare: Kundail
-      Kunda+N+Prop+Pl+Ade+Foc/gi+Use/Rare: Kundailgi
-      Kunda+N+Prop+Pl+All+Use/Rare: Kundaile
-      Kunda+N+Prop+Pl+All+Foc/gi+Use/Rare: Kundailegi
-      Kunda+N+Prop+Pl+Ela+Use/Rare: Kundaist
-      Kunda+N+Prop+Pl+Ela+Foc/gi+Use/Rare: Kundaistki
-      Kunda+N+Prop+Pl+Ine+Use/Rare: Kundais
-      Kunda+N+Prop+Pl+Ine+Foc/gi+Use/Rare: Kundaiski
+      Kunda+N+Prop+Pl+Ill+Usage/Rare: Kundaisse
+      Kunda+N+Prop+Pl+Ill+Foc/gi+Usage/Rare: Kundaissegi
+      Kunda+N+Prop+Pl+Tra+Usage/Rare: Kundaiks
+      Kunda+N+Prop+Pl+Tra+Foc/gi+Usage/Rare: Kundaikski
+      Kunda+N+Prop+Pl+Abl+Usage/Rare: Kundailt
+      Kunda+N+Prop+Pl+Abl+Foc/gi+Usage/Rare: Kundailtki
+      Kunda+N+Prop+Pl+Ade+Usage/Rare: Kundail
+      Kunda+N+Prop+Pl+Ade+Foc/gi+Usage/Rare: Kundailgi
+      Kunda+N+Prop+Pl+All+Usage/Rare: Kundaile
+      Kunda+N+Prop+Pl+All+Foc/gi+Usage/Rare: Kundailegi
+      Kunda+N+Prop+Pl+Ela+Usage/Rare: Kundaist
+      Kunda+N+Prop+Pl+Ela+Foc/gi+Usage/Rare: Kundaistki
+      Kunda+N+Prop+Pl+Ine+Usage/Rare: Kundais
+      Kunda+N+Prop+Pl+Ine+Foc/gi+Usage/Rare: Kundaiski
       Kunda+N+Prop+Pl+Ill: Kundatesse
       Kunda+N+Prop+Pl+Ill+Foc/gi: Kundatessegi
       Kunda+N+Prop+Pl+Com: Kundatega
@@ -200,8 +200,8 @@ Tests:
       Kunda+N+Prop+Pl+Gen+Foc/gi: Kundategi
       Leedu+N+Prop+Sg+Nom: Leedu
       Leedu+N+Prop+Sg+Nom+Foc/gi: Leedugi
-      Leedu+N+Prop+Sg+Ill+Use/Rare: Leedusse
-      Leedu+N+Prop+Sg+Ill+Foc/gi+Use/Rare: Leedussegi
+      Leedu+N+Prop+Sg+Ill+Usage/Rare: Leedusse
+      Leedu+N+Prop+Sg+Ill+Foc/gi+Usage/Rare: Leedussegi
       Leedu+N+Prop+Sg+Com: Leeduga
       Leedu+N+Prop+Sg+Com+Foc/gi: Leedugagi
       Leedu+N+Prop+Sg+Abe: Leeduta
@@ -257,8 +257,8 @@ Tests:
       Leedu+N+Prop+Sg+Ill+Foc/gi: Leetugi
       Läti+N+Prop+Sg+Nom: Läti
       Läti+N+Prop+Sg+Nom+Foc/gi: Lätigi
-      Läti+N+Prop+Sg+Ill+Use/Rare: Lätisse
-      Läti+N+Prop+Sg+Ill+Foc/gi+Use/Rare: Lätissegi
+      Läti+N+Prop+Sg+Ill+Usage/Rare: Lätisse
+      Läti+N+Prop+Sg+Ill+Foc/gi+Usage/Rare: Lätissegi
       Läti+N+Prop+Sg+Com: Lätiga
       Läti+N+Prop+Sg+Com+Foc/gi: Lätigagi
       Läti+N+Prop+Sg+Abe: Lätita
@@ -316,8 +316,8 @@ Tests:
       Rannu+N+Prop+Sg+Ill+Foc/gi: Randugi
       Rannu+N+Prop+Sg+Nom: Rannu
       Rannu+N+Prop+Sg+Nom+Foc/gi: Rannugi
-      Rannu+N+Prop+Sg+Ill+Use/Rare: Rannusse
-      Rannu+N+Prop+Sg+Ill+Foc/gi+Use/Rare: Rannussegi
+      Rannu+N+Prop+Sg+Ill+Usage/Rare: Rannusse
+      Rannu+N+Prop+Sg+Ill+Foc/gi+Usage/Rare: Rannussegi
       Rannu+N+Prop+Sg+Com: Rannuga
       Rannu+N+Prop+Sg+Com+Foc/gi: Rannugagi
       Rannu+N+Prop+Sg+Abe: Rannuta
@@ -371,8 +371,8 @@ Tests:
       Rannu+N+Prop+Pl+Gen+Foc/gi: Rannudegi
       Riia+N+Prop+Sg+Nom: Riia
       Riia+N+Prop+Sg+Nom+Foc/gi: Riiagi
-      Riia+N+Prop+Sg+Ill+Use/Rare: Riiasse
-      Riia+N+Prop+Sg+Ill+Foc/gi+Use/Rare: Riiassegi
+      Riia+N+Prop+Sg+Ill+Usage/Rare: Riiasse
+      Riia+N+Prop+Sg+Ill+Foc/gi+Usage/Rare: Riiassegi
       Riia+N+Prop+Sg+Com: Riiaga
       Riia+N+Prop+Sg+Com+Foc/gi: Riiagagi
       Riia+N+Prop+Sg+Abe: Riiata
@@ -430,20 +430,20 @@ Tests:
       Schedule+N+Prop+Sg+Nom+Foc/gi: Schedulegi
       Schedule+N+Prop+Pl+Par: Schedule'eid
       Schedule+N+Prop+Pl+Par+Foc/gi: Schedule'eidki
-      Schedule+N+Prop+Pl+Ill+Use/Rare: Schedule'eisse
-      Schedule+N+Prop+Pl+Ill+Foc/gi+Use/Rare: Schedule'eissegi
-      Schedule+N+Prop+Pl+Tra+Use/Rare: Schedule'eiks
-      Schedule+N+Prop+Pl+Tra+Foc/gi+Use/Rare: Schedule'eikski
-      Schedule+N+Prop+Pl+Abl+Use/Rare: Schedule'eilt
-      Schedule+N+Prop+Pl+Abl+Foc/gi+Use/Rare: Schedule'eiltki
-      Schedule+N+Prop+Pl+Ade+Use/Rare: Schedule'eil
-      Schedule+N+Prop+Pl+Ade+Foc/gi+Use/Rare: Schedule'eilgi
-      Schedule+N+Prop+Pl+All+Use/Rare: Schedule'eile
-      Schedule+N+Prop+Pl+All+Foc/gi+Use/Rare: Schedule'eilegi
-      Schedule+N+Prop+Pl+Ela+Use/Rare: Schedule'eist
-      Schedule+N+Prop+Pl+Ela+Foc/gi+Use/Rare: Schedule'eistki
-      Schedule+N+Prop+Pl+Ine+Use/Rare: Schedule'eis
-      Schedule+N+Prop+Pl+Ine+Foc/gi+Use/Rare: Schedule'eiski
+      Schedule+N+Prop+Pl+Ill+Usage/Rare: Schedule'eisse
+      Schedule+N+Prop+Pl+Ill+Foc/gi+Usage/Rare: Schedule'eissegi
+      Schedule+N+Prop+Pl+Tra+Usage/Rare: Schedule'eiks
+      Schedule+N+Prop+Pl+Tra+Foc/gi+Usage/Rare: Schedule'eikski
+      Schedule+N+Prop+Pl+Abl+Usage/Rare: Schedule'eilt
+      Schedule+N+Prop+Pl+Abl+Foc/gi+Usage/Rare: Schedule'eiltki
+      Schedule+N+Prop+Pl+Ade+Usage/Rare: Schedule'eil
+      Schedule+N+Prop+Pl+Ade+Foc/gi+Usage/Rare: Schedule'eilgi
+      Schedule+N+Prop+Pl+All+Usage/Rare: Schedule'eile
+      Schedule+N+Prop+Pl+All+Foc/gi+Usage/Rare: Schedule'eilegi
+      Schedule+N+Prop+Pl+Ela+Usage/Rare: Schedule'eist
+      Schedule+N+Prop+Pl+Ela+Foc/gi+Usage/Rare: Schedule'eistki
+      Schedule+N+Prop+Pl+Ine+Usage/Rare: Schedule'eis
+      Schedule+N+Prop+Pl+Ine+Foc/gi+Usage/Rare: Schedule'eiski
       Schedule+N+Prop+Sg+Ill: Schedule'isse
       Schedule+N+Prop+Sg+Ill+Foc/gi: Schedule'issegi
       Schedule+N+Prop+Sg+Com: Schedule'iga
@@ -500,8 +500,8 @@ Tests:
       Taani+N+Prop+Sg+Nom+Foc/gi: Taanigi
       Taani+N+Prop+Sg+Ill: Taani
       Taani+N+Prop+Sg+Ill+Foc/gi: Taanigi
-      Taani+N+Prop+Sg+Ill+Use/Rare: Taanisse
-      Taani+N+Prop+Sg+Ill+Foc/gi+Use/Rare: Taanissegi
+      Taani+N+Prop+Sg+Ill+Usage/Rare: Taanisse
+      Taani+N+Prop+Sg+Ill+Foc/gi+Usage/Rare: Taanissegi
       Taani+N+Prop+Sg+Com: Taaniga
       Taani+N+Prop+Sg+Com+Foc/gi: Taanigagi
       Taani+N+Prop+Sg+Abe: Taanita
@@ -561,8 +561,8 @@ Tests:
       Fiat+N+Prop+Sg+Par+Foc/gi: Fiatigi
       Fiat+N+Prop+Sg+Ill: Fiati
       Fiat+N+Prop+Sg+Ill+Foc/gi: Fiatigi
-      Fiat+N+Prop+Sg+Ill+Use/Hyp: Fiatisse
-      Fiat+N+Prop+Sg+Ill+Foc/gi+Use/Hyp: Fiatissegi
+      Fiat+N+Prop+Sg+Ill+Usage/Hyp: Fiatisse
+      Fiat+N+Prop+Sg+Ill+Foc/gi+Usage/Hyp: Fiatissegi
       Fiat+N+Prop+Sg+Com: Fiatiga
       Fiat+N+Prop+Sg+Com+Foc/gi: Fiatigagi
       Fiat+N+Prop+Sg+Abe: Fiatita
@@ -587,8 +587,8 @@ Tests:
       Fiat+N+Prop+Sg+Gen+Foc/gi: Fiatigi
       Fiat+N+Prop+Pl+Nom: Fiatid
       Fiat+N+Prop+Pl+Nom+Foc/gi: Fiatidki
-      Fiat+N+Prop+Pl+Par+Foc/gi+Use/Rare: Fiatisidki
-      Fiat+N+Prop+Pl+Par+Use/Rare: Fiatisid
+      Fiat+N+Prop+Pl+Par+Foc/gi+Usage/Rare: Fiatisidki
+      Fiat+N+Prop+Pl+Par+Usage/Rare: Fiatisid
       Fiat+N+Prop+Pl+Ill: Fiatidesse
       Fiat+N+Prop+Pl+Ill+Foc/gi: Fiatidessegi
       Fiat+N+Prop+Pl+Com: Fiatidega

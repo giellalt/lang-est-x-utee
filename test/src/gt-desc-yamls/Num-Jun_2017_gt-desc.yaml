@@ -15,8 +15,8 @@ Tests:
   Numerals:
     viissada+Num+Card+Sg+Nom: viissada
     viissada+Num+Card+Sg+Nom+Foc/gi: viissadagi
-    viissada+Num+Card+Pl+Par+Foc/gi+Use/Rare: viiesadasidki
-    viissada+Num+Card+Pl+Par+Use/Rare: viiesadasid
+    viissada+Num+Card+Pl+Par+Foc/gi+Usage/Rare: viiesadasidki
+    viissada+Num+Card+Pl+Par+Usage/Rare: viiesadasid
     viissada+Num+Card+Pl+Tra: viiesadadeks
     viissada+Num+Card+Pl+Tra+Foc/gi: viiesadadekski
     viissada+Num+Card+Pl+Ill: viiesadadesse
@@ -69,28 +69,28 @@ Tests:
     viissada+Num+Card+Sg+Com+Foc/gi: viiesajagagi
     viissada+Num+Card+Sg+Gen: viiesaja
     viissada+Num+Card+Sg+Gen+Foc/gi: viiesajagi
-    viissada+Num+Card+Sg+Par+Foc/gi+Use/Rare: viitsadatki
-    viissada+Num+Card+Sg+Par+Use/Rare: viitsadat
+    viissada+Num+Card+Sg+Par+Foc/gi+Usage/Rare: viitsadatki
+    viissada+Num+Card+Sg+Par+Usage/Rare: viitsadat
     viissada+Num+Card+Sg+Par: viitsada
     viissada+Num+Card+Sg+Par+Foc/gi: viitsadagi
     kaksteist+Num+Card+Sg+Ill: kaheteistkümnesse
     kaksteist+Num+Card+Sg+Ill+Foc/gi: kaheteistkümnessegi
     kaksteist+Num+Card+Pl+Par: kaheteistkümneid
     kaksteist+Num+Card+Pl+Par+Foc/gi: kaheteistkümneidki
-    kaksteist+Num+Card+Pl+Tra+Foc/gi+Use/Rare: kaheteistkümneikski
-    kaksteist+Num+Card+Pl+Tra+Use/Rare: kaheteistkümneiks
-    kaksteist+Num+Card+Pl+Ill+Foc/gi+Use/Rare: kaheteistkümneissegi
-    kaksteist+Num+Card+Pl+Ill+Use/Rare: kaheteistkümneisse
-    kaksteist+Num+Card+Pl+Ela+Foc/gi+Use/Rare: kaheteistkümneistki
-    kaksteist+Num+Card+Pl+Ela+Use/Rare: kaheteistkümneist
-    kaksteist+Num+Card+Pl+Ine+Foc/gi+Use/Rare: kaheteistkümneiski
-    kaksteist+Num+Card+Pl+Ine+Use/Rare: kaheteistkümneis
-    kaksteist+Num+Card+Pl+All+Foc/gi+Use/Rare: kaheteistkümneilegi
-    kaksteist+Num+Card+Pl+All+Use/Rare: kaheteistkümneile
-    kaksteist+Num+Card+Pl+Abl+Foc/gi+Use/Rare: kaheteistkümneiltki
-    kaksteist+Num+Card+Pl+Abl+Use/Rare: kaheteistkümneilt
-    kaksteist+Num+Card+Pl+Ade+Foc/gi+Use/Rare: kaheteistkümneilgi
-    kaksteist+Num+Card+Pl+Ade+Use/Rare: kaheteistkümneil
+    kaksteist+Num+Card+Pl+Tra+Foc/gi+Usage/Rare: kaheteistkümneikski
+    kaksteist+Num+Card+Pl+Tra+Usage/Rare: kaheteistkümneiks
+    kaksteist+Num+Card+Pl+Ill+Foc/gi+Usage/Rare: kaheteistkümneissegi
+    kaksteist+Num+Card+Pl+Ill+Usage/Rare: kaheteistkümneisse
+    kaksteist+Num+Card+Pl+Ela+Foc/gi+Usage/Rare: kaheteistkümneistki
+    kaksteist+Num+Card+Pl+Ela+Usage/Rare: kaheteistkümneist
+    kaksteist+Num+Card+Pl+Ine+Foc/gi+Usage/Rare: kaheteistkümneiski
+    kaksteist+Num+Card+Pl+Ine+Usage/Rare: kaheteistkümneis
+    kaksteist+Num+Card+Pl+All+Foc/gi+Usage/Rare: kaheteistkümneilegi
+    kaksteist+Num+Card+Pl+All+Usage/Rare: kaheteistkümneile
+    kaksteist+Num+Card+Pl+Abl+Foc/gi+Usage/Rare: kaheteistkümneiltki
+    kaksteist+Num+Card+Pl+Abl+Usage/Rare: kaheteistkümneilt
+    kaksteist+Num+Card+Pl+Ade+Foc/gi+Usage/Rare: kaheteistkümneilgi
+    kaksteist+Num+Card+Pl+Ade+Usage/Rare: kaheteistkümneil
     kaksteist+Num+Card+Pl+Tra: kaheteistkümneteks
     kaksteist+Num+Card+Pl+Tra+Foc/gi: kaheteistkümnetekski
     kaksteist+Num+Card+Pl+Ill: kaheteistkümnetesse
@@ -139,13 +139,13 @@ Tests:
     kaksteist+Num+Card+Sg+Com+Foc/gi: kaheteistkümnegagi
     kaksteist+Num+Card+Sg+Gen: kaheteistkümne
     kaksteist+Num+Card+Sg+Gen+Foc/gi: kaheteistkümnegi
-    kaksteist+Num+Card+Sg+Gen+Foc/gi+Use/Rare: kaheteistki
-    kaksteist+Num+Card+Sg+Gen+Use/Rare: kaheteist
-    kaksteist+Num+Card+Sg+Par+Foc/gi+Use/Rare: [kahtteistkümmendki, kahtteistki, kahteteistkümmetki, kahteteistkümmendki, kahtteistkümmetki]
-    kaksteist+Num+Card+Sg+Par+Use/Rare: [kahtteistkümmend, kahtteist, kahteteistkümmet, kahteteistkümmend, kahtteistkümmet]
+    kaksteist+Num+Card+Sg+Gen+Foc/gi+Usage/Rare: kaheteistki
+    kaksteist+Num+Card+Sg+Gen+Usage/Rare: kaheteist
+    kaksteist+Num+Card+Sg+Par+Foc/gi+Usage/Rare: [kahtteistkümmendki, kahtteistki, kahteteistkümmetki, kahteteistkümmendki, kahtteistkümmetki]
+    kaksteist+Num+Card+Sg+Par+Usage/Rare: [kahtteistkümmend, kahtteist, kahteteistkümmet, kahteteistkümmend, kahtteistkümmet]
     kaksteist+Num+Card+Sg+Par: kahteteist
     kaksteist+Num+Card+Sg+Par+Foc/gi: kahteteistki
-    kaksteist+Num+Card+Sg+Nom+Foc/gi+Use/Rare: kaksteistkümmendki
-    kaksteist+Num+Card+Sg+Nom+Use/Rare: kaksteistkümmend
+    kaksteist+Num+Card+Sg+Nom+Foc/gi+Usage/Rare: kaksteistkümmendki
+    kaksteist+Num+Card+Sg+Nom+Usage/Rare: kaksteistkümmend
     kaksteist+Num+Card+Sg+Nom: kaksteist
     kaksteist+Num+Card+Sg+Nom+Foc/gi: kaksteistki

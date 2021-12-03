@@ -13,20 +13,20 @@ Tests:
 # these words were part of the test cases, checked manually
 
   Nouns:
-    kihin-kahin+N+Pl+Ine+Foc/gi+Use/Rare: [kihinais-kahinaiski, kihinais-kahinateski, kihinates-kahinaiski]
-    kihin-kahin+N+Pl+Ine+Use/Rare: [kihinais-kahinais, kihinais-kahinates, kihinates-kahinais]
-    kihin-kahin+N+Pl+Ill+Foc/gi+Use/Rare: [kihinaisse-kahinaissegi, kihinaisse-kahinatessegi, kihinatesse-kahinaissegi]
-    kihin-kahin+N+Pl+Ill+Use/Rare: [kihinaisse-kahinaisse, kihinaisse-kahinatesse, kihinatesse-kahinaisse]
-    kihin-kahin+N+Pl+Ela+Foc/gi+Use/Rare: [kihinaist-kahinaistki, kihinaist-kahinatestki, kihinatest-kahinaistki]
-    kihin-kahin+N+Pl+Ela+Use/Rare: [kihinaist-kahinaist, kihinaist-kahinatest, kihinatest-kahinaist]
-    kihin-kahin+N+Pl+Tra+Foc/gi+Use/Rare: [kihinaiks-kahinaikski, kihinaiks-kahinatekski, kihinateks-kahinaikski]
-    kihin-kahin+N+Pl+Tra+Use/Rare: [kihinaiks-kahinaiks, kihinaiks-kahinateks, kihinateks-kahinaiks]
-    kihin-kahin+N+Pl+Ade+Foc/gi+Use/Rare: [kihinail-kahinailgi, kihinail-kahinatelgi, kihinatel-kahinailgi]
-    kihin-kahin+N+Pl+Ade+Use/Rare: [kihinail-kahinail, kihinail-kahinatel, kihinatel-kahinail]
-    kihin-kahin+N+Pl+Abl+Foc/gi+Use/Rare: [kihinailt-kahinailtki, kihinailt-kahinateltki, kihinatelt-kahinailtki]
-    kihin-kahin+N+Pl+Abl+Use/Rare: [kihinailt-kahinailt, kihinailt-kahinatelt, kihinatelt-kahinailt]
-    kihin-kahin+N+Pl+All+Foc/gi+Use/Rare: [kihinaile-kahinailegi, kihinaile-kahinatelegi, kihinatele-kahinailegi]
-    kihin-kahin+N+Pl+All+Use/Rare: [kihinaile-kahinaile, kihinaile-kahinatele, kihinatele-kahinaile]
+    kihin-kahin+N+Pl+Ine+Foc/gi+Usage/Rare: [kihinais-kahinaiski, kihinais-kahinateski, kihinates-kahinaiski]
+    kihin-kahin+N+Pl+Ine+Usage/Rare: [kihinais-kahinais, kihinais-kahinates, kihinates-kahinais]
+    kihin-kahin+N+Pl+Ill+Foc/gi+Usage/Rare: [kihinaisse-kahinaissegi, kihinaisse-kahinatessegi, kihinatesse-kahinaissegi]
+    kihin-kahin+N+Pl+Ill+Usage/Rare: [kihinaisse-kahinaisse, kihinaisse-kahinatesse, kihinatesse-kahinaisse]
+    kihin-kahin+N+Pl+Ela+Foc/gi+Usage/Rare: [kihinaist-kahinaistki, kihinaist-kahinatestki, kihinatest-kahinaistki]
+    kihin-kahin+N+Pl+Ela+Usage/Rare: [kihinaist-kahinaist, kihinaist-kahinatest, kihinatest-kahinaist]
+    kihin-kahin+N+Pl+Tra+Foc/gi+Usage/Rare: [kihinaiks-kahinaikski, kihinaiks-kahinatekski, kihinateks-kahinaikski]
+    kihin-kahin+N+Pl+Tra+Usage/Rare: [kihinaiks-kahinaiks, kihinaiks-kahinateks, kihinateks-kahinaiks]
+    kihin-kahin+N+Pl+Ade+Foc/gi+Usage/Rare: [kihinail-kahinailgi, kihinail-kahinatelgi, kihinatel-kahinailgi]
+    kihin-kahin+N+Pl+Ade+Usage/Rare: [kihinail-kahinail, kihinail-kahinatel, kihinatel-kahinail]
+    kihin-kahin+N+Pl+Abl+Foc/gi+Usage/Rare: [kihinailt-kahinailtki, kihinailt-kahinateltki, kihinatelt-kahinailtki]
+    kihin-kahin+N+Pl+Abl+Usage/Rare: [kihinailt-kahinailt, kihinailt-kahinatelt, kihinatelt-kahinailt]
+    kihin-kahin+N+Pl+All+Foc/gi+Usage/Rare: [kihinaile-kahinailegi, kihinaile-kahinatelegi, kihinatele-kahinailegi]
+    kihin-kahin+N+Pl+All+Usage/Rare: [kihinaile-kahinaile, kihinaile-kahinatele, kihinatele-kahinaile]
     kihin-kahin+N+Pl+Par: kihinaid-kahinaid
     kihin-kahin+N+Pl+Par+Foc/gi: kihinaid-kahinaidki
     kihin-kahin+N+Sg+Ine: kihinas-kahinas
@@ -115,12 +115,12 @@ Tests:
     emb-kumb+Pron+Sg+Ill+Foc/gi: emba-kumbagi
     emb-kumb+Pron+Sg+Nom: emb-kumb
     emb-kumb+Pron+Sg+Nom+Foc/gi: emb-kumbki
-    emb-kumb+Pron+Pl+Par+Foc/gi+Use/Rare: [embi-kumbasidki, embi-kumbigi, embasid-kumbigi]
-    emb-kumb+Pron+Pl+Par+Use/Rare: [embi-kumbasid, embi-kumbi, embasid-kumbi]
+    emb-kumb+Pron+Pl+Par+Foc/gi+Usage/Rare: [embi-kumbasidki, embi-kumbigi, embasid-kumbigi]
+    emb-kumb+Pron+Pl+Par+Usage/Rare: [embi-kumbasid, embi-kumbi, embasid-kumbi]
     emb-kumb+Pron+Sg+Ine: emmas-kummas
     emb-kumb+Pron+Sg+Ine+Foc/gi: emmas-kummaski
-    emb-kumb+Pron+Sg+Ill+Foc/gi+Use/Hyp: [emmasse-kummassegi, emmasse-kumbagi, emba-kummassegi]
-    emb-kumb+Pron+Sg+Ill+Use/Hyp: [emmasse-kummasse, emmasse-kumba, emba-kummasse]
+    emb-kumb+Pron+Sg+Ill+Foc/gi+Usage/Hyp: [emmasse-kummassegi, emmasse-kumbagi, emba-kummassegi]
+    emb-kumb+Pron+Sg+Ill+Usage/Hyp: [emmasse-kummasse, emmasse-kumba, emba-kummasse]
     emb-kumb+Pron+Sg+Ela: emmast-kummast
     emb-kumb+Pron+Sg+Ela+Foc/gi: emmast-kummastki
     emb-kumb+Pron+Pl+Nom: emmad-kummad

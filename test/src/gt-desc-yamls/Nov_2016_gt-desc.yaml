@@ -41,33 +41,33 @@ Tests:
     Saku+N+Prop+Sg+Nom: Saku
     Saku+N+Prop+Sg+Par: Sakut
     Saku+N+Prop+Sg+Ill: Sakku
-    Saku+N+Prop+Sg+Ill+Use/Rare: Sakusse
+    Saku+N+Prop+Sg+Ill+Usage/Rare: Sakusse
     Saku+N+Prop+Pl+Par: Sakusid
 
     Rõngu+N+Prop+Sg+Nom: Rõngu
     Rõngu+N+Prop+Sg+Par: Rõngut
     Rõngu+N+Prop+Sg+Ill: Rõngu
-    Rõngu+N+Prop+Sg+Ill+Use/Rare: Rõngusse
+    Rõngu+N+Prop+Sg+Ill+Usage/Rare: Rõngusse
     Rõngu+N+Prop+Pl+Par: Rõngusid
 
     päev+N+Sg+Nom: päev
     päev+N+Sg+Gen: päeva
     päev+N+Sg+Par: päeva
     päev+N+Sg+Ill: päeva
-    päev+N+Sg+Ill+Use/Hyp: päevasse
+    päev+N+Sg+Ill+Usage/Hyp: päevasse
     päev+N+Pl+Par: päevi
-    päev+N+Pl+Par+Use/Rare: päevasid
-    päev+N+Pl+Ade+Use/Rare: päevil
+    päev+N+Pl+Par+Usage/Rare: päevasid
+    päev+N+Pl+Ade+Usage/Rare: päevil
     
     valdkond+N+Sg+Nom: valdkond
     valdkond+N+Sg+Gen: valdkonna
     valdkond+N+Sg+Par: valdkonda
     valdkond+N+Sg+Ill: valdkonda
-    valdkond+N+Sg+Ill+Use/Hyp: valdkonnasse
+    valdkond+N+Sg+Ill+Usage/Hyp: valdkonnasse
     valdkond+N+Pl+Par: valdkondi
-    valdkond+N+Pl+Par+Use/Rare: valdkondasid
-    valdkond+N+Pl+Ade+Use/Rare: valdkonnil
+    valdkond+N+Pl+Par+Usage/Rare: valdkondasid
+    valdkond+N+Pl+Ade+Usage/Rare: valdkonnil
 
-    rind+N+Pl+Ade+Use/Rare: rinnul
+    rind+N+Pl+Ade+Usage/Rare: rinnul
     
 

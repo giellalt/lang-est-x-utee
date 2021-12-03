@@ -77,15 +77,15 @@ Multichar_Symbols
 !!€ parti: part+N+Sg+Par
 !!€ maja: maja+N+Sg+Par
 !!€ parte: part+N+Pl+Par
-!!€ partisid: part+N+Pl+Par+Use/Rare
+!!€ partisid: part+N+Pl+Par+Usage/Rare
 !!€ maju: maja+N+Pl+Par
-!!€ majasid: maja+N+Pl+Par+Use/Rare
+!!€ majasid: maja+N+Pl+Par+Usage/Rare
 
 +Ill !!= * `@CODE@`: sisseütlev			/ illative	
 !!€ parti: part+N+Sg+Ill
 !!€ majja: maja+N+Sg+Ill
-!!€ pardisse: part+N+Sg+Ill+Use/Hyp
-!!€ majasse: maja+N+Sg+Ill+Use/Rare
+!!€ pardisse: part+N+Sg+Ill+Usage/Hyp
+!!€ majasse: maja+N+Sg+Ill+Usage/Rare
 !!€ partidesse: part+N+Pl+Ill
 !!€ majadesse: maja+N+Pl+Ill
 !! Lühike sisseütlev e suunduv pole eraldi kääne (*parti*, *majja*) / Short illative or additive is not a separate case 
@@ -285,7 +285,7 @@ Multichar_Symbols
 !!€ ära: ära+V+Pers+Prs+Imprt+Sg2+Neg
 !!€ ärgu: ära+V+Pers+Prs+Imprt+Neg
 !!€ ärgem: ära+V+Pers+Prs+Imprt+Pl1+Neg
-!!€ ärme: ära+V+Pers+Prs+Imprt+Pl1+Neg+Use/Rare
+!!€ ärme: ära+V+Pers+Prs+Imprt+Pl1+Neg+Usage/Rare
 !!€ ärge: ära+V+Pers+Prs+Imprt+Pl2+Neg
 
 !! \\
@@ -417,17 +417,17 @@ Multichar_Symbols
 
 !! ### Paralleelvormide erinevat kasutussagedust iseloomustavad / Usage info for parallel forms (either correct according to the norm, or incorrect)
 
-+Use/Rare !!= * `@CODE@`: norm, but rare 
-!!€ puusid: puu+N+Pl+Par+Use/Rare
++Usage/Rare !!= * `@CODE@`: norm, but rare 
+!!€ puusid: puu+N+Pl+Par+Usage/Rare
 
-+Use/Hyp !!= * `@CODE@`:  norm, but so rare that norm is probaly wrong 
-!!€ tiivasse: tiib+N+Sg+Ill+Use/Hyp
++Usage/Hyp !!= * `@CODE@`:  norm, but so rare that norm is probaly wrong 
+!!€ tiivasse: tiib+N+Sg+Ill+Usage/Hyp
 
-+Use/NotNorm !!= * `@CODE@`:  not norm, but sometimes used 
-!!€ pöidlates: pöial+N+Pl+Ine+Use/NotNorm
++Usage/NotNorm !!= * `@CODE@`:  not norm, but sometimes used 
+!!€ pöidlates: pöial+N+Pl+Ine+Usage/NotNorm
 
-+Use/CommonNotNorm !!= * `@CODE@`:  not norm, and used more than norm 
-!!€ kööment: köömen+N+Sg+Par+Use/CommonNotNorm
++Usage/CommonNotNorm !!= * `@CODE@`:  not norm, and used more than norm 
+!!€ kööment: köömen+N+Sg+Par+Usage/CommonNotNorm
 
 !! Oletatav analüüs / Guessed analysis
 +Guess !!= * `@CODE@`: guessed analysis
@@ -786,7 +786,7 @@ Multichar_Symbols
  %{W%} ! The weak grade trigger never appears on the surface side.
  %{F%} ! The foreign words flag never appears on the surface side.
  %{S%}  ! Strong stem trigger (for short illatives only) never appears on the surface side.
- %{E%}  ! Schwa trigger (for -el/er words only) never appears on the surface side.
+ %{no.e%}  ! Schwa trigger (for -el/er words only) never appears on the surface side.
  %{id%}   ! lexicon flag for pl part possible ending (esseesid/esseid)
  %{stemill%} ! lexicon flag for short sg ill, formed by stem change (jõgi-jõkke)
  %{dbl%}     ! double the previous letter (kabinet - kabinetti)
