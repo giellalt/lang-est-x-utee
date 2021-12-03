@@ -404,9 +404,6 @@ high vowel lowering in certain contexts
 
 
 
-
-
-
 * *viskoosneE1>t*
 * *viskooss0e>t*
 

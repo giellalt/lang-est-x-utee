@@ -76,15 +76,15 @@ Genitiivatribuut pole eraldi kategooria / No special tag for genitive attribute 
 * *parti:* `part+N+Sg+Par`
 * *maja:* `maja+N+Sg+Par`
 * *parte:* `part+N+Pl+Par`
-* *partisid:* `part+N+Pl+Par+Use/Rare`
+* *partisid:* `part+N+Pl+Par+Usage/Rare`
 * *maju:* `maja+N+Pl+Par`
-* *majasid:* `maja+N+Pl+Par+Use/Rare`
+* *majasid:* `maja+N+Pl+Par+Usage/Rare`
 
  * `+Ill `: sisseütlev			/ illative	
 * *parti:* `part+N+Sg+Ill`
 * *majja:* `maja+N+Sg+Ill`
-* *pardisse:* `part+N+Sg+Ill+Use/Hyp`
-* *majasse:* `maja+N+Sg+Ill+Use/Rare`
+* *pardisse:* `part+N+Sg+Ill+Usage/Hyp`
+* *majasse:* `maja+N+Sg+Ill+Usage/Rare`
 * *partidesse:* `part+N+Pl+Ill`
 * *majadesse:* `maja+N+Pl+Ill`
 Lühike sisseütlev e suunduv pole eraldi kääne (*parti*, *majja*) / Short illative or additive is not a separate case 
@@ -284,7 +284,7 @@ NB! *ei ole* = *pole*
 * *ära:* `ära+V+Pers+Prs+Imprt+Sg2+Neg`
 * *ärgu:* `ära+V+Pers+Prs+Imprt+Neg`
 * *ärgem:* `ära+V+Pers+Prs+Imprt+Pl1+Neg`
-* *ärme:* `ära+V+Pers+Prs+Imprt+Pl1+Neg+Use/Rare`
+* *ärme:* `ära+V+Pers+Prs+Imprt+Pl1+Neg+Usage/Rare`
 * *ärge:* `ära+V+Pers+Prs+Imprt+Pl2+Neg`
 
 \\
@@ -416,17 +416,17 @@ Analytical forms (*olen elanud*, *olin elanud*, *oleksin elanud*, *ei olnud elan
 
 ### Paralleelvormide erinevat kasutussagedust iseloomustavad / Usage info for parallel forms (either correct according to the norm, or incorrect)
 
- * `+Use/Rare `: norm, but rare 
-* *puusid:* `puu+N+Pl+Par+Use/Rare`
+ * `+Usage/Rare `: norm, but rare 
+* *puusid:* `puu+N+Pl+Par+Usage/Rare`
 
- * `+Use/Hyp `:  norm, but so rare that norm is probaly wrong 
-* *tiivasse:* `tiib+N+Sg+Ill+Use/Hyp`
+ * `+Usage/Hyp `:  norm, but so rare that norm is probaly wrong 
+* *tiivasse:* `tiib+N+Sg+Ill+Usage/Hyp`
 
- * `+Use/NotNorm `:  not norm, but sometimes used 
-* *pöidlates:* `pöial+N+Pl+Ine+Use/NotNorm`
+ * `+Usage/NotNorm `:  not norm, but sometimes used 
+* *pöidlates:* `pöial+N+Pl+Ine+Usage/NotNorm`
 
- * `+Use/CommonNotNorm `:  not norm, and used more than norm 
-* *kööment:* `köömen+N+Sg+Par+Use/CommonNotNorm`
+ * `+Usage/CommonNotNorm `:  not norm, and used more than norm 
+* *kööment:* `köömen+N+Sg+Par+Usage/CommonNotNorm`
 
 Oletatav analüüs / Guessed analysis
  * `+Guess `: guessed analysis
