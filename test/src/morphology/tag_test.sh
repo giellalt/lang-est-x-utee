@@ -28,6 +28,7 @@ sed -e '1,/LEXICON Root/ d' < ../../../src/fst/lexicon.tmp.lexc \
     | tr -s ' '        \
     | sed 's/^ //'     \
     | cut -d ' ' -f1   \
+    | grep -v '^%@$' \
     | sed 's/+/¢+/g'   \
     | sed 's/@/¢@/g'   \
     | tr '¢' '\n'      \

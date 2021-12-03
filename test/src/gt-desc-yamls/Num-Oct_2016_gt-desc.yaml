@@ -17,12 +17,12 @@ Tests:
       kaks+Num+Card+Pl+Par+Foc/gi: kahtesidki
       kaks+Num+Card+Sg+Par: kahte
       kaks+Num+Card+Sg+Par+Foc/gi: kahtegi
-      kaks+Num+Card+Sg+Par+Foc/gi+Use/Rare: kahtki
-      kaks+Num+Card+Sg+Par+Use/Rare: kaht
+      kaks+Num+Card+Sg+Par+Foc/gi+Usage/Rare: kahtki
+      kaks+Num+Card+Sg+Par+Usage/Rare: kaht
       kaks+Num+Card+Sg+Ill: kahte
       kaks+Num+Card+Sg+Ill+Foc/gi: kahtegi
-      kaks+Num+Card+Sg+Ill+Use/Hyp: kahesse
-      kaks+Num+Card+Sg+Ill+Foc/gi+Use/Hyp: kahessegi
+      kaks+Num+Card+Sg+Ill+Usage/Hyp: kahesse
+      kaks+Num+Card+Sg+Ill+Foc/gi+Usage/Hyp: kahessegi
       kaks+Num+Card+Pl+Nom: kahed
       kaks+Num+Card+Pl+Nom+Foc/gi: kahedki
       kaks+Num+Card+Sg+Com: kahega
@@ -99,14 +99,14 @@ Tests:
       sada+Num+Card+Sg+Ine+Foc/gi: sajaski
       sada+Num+Card+Sg+Gen: saja
       sada+Num+Card+Sg+Gen+Foc/gi: sajagi
-      sada+Num+Card+Pl+Par+Foc/gi+Use/Rare: sadasidki
-      sada+Num+Card+Pl+Par+Use/Rare: sadasid
+      sada+Num+Card+Pl+Par+Foc/gi+Usage/Rare: sadasidki
+      sada+Num+Card+Pl+Par+Usage/Rare: sadasid
       sada+Num+Card+Sg+Par: sada
       sada+Num+Card+Sg+Par+Foc/gi: sadagi
       sada+Num+Card+Sg+Nom: sada
       sada+Num+Card+Sg+Nom+Foc/gi: sadagi
-      sada+Num+Card+Sg+Par+Foc/gi+Use/Rare: sadatki
-      sada+Num+Card+Sg+Par+Use/Rare: sadat
+      sada+Num+Card+Sg+Par+Foc/gi+Usage/Rare: sadatki
+      sada+Num+Card+Sg+Par+Usage/Rare: sadat
       sada+Num+Card+Pl+Ill: sadadesse
       sada+Num+Card+Pl+Ill+Foc/gi: sadadessegi
       sada+Num+Card+Pl+Com: sadadega
@@ -163,20 +163,20 @@ Tests:
       sajas+Num+Ord+Sg+Gen+Foc/gi: sajandagi
       sajas+Num+Ord+Sg+Par: sajandat
       sajas+Num+Ord+Sg+Par+Foc/gi: sajandatki
-      sajas+Num+Ord+Pl+Ill+Use/Rare: sajandaisse
-      sajas+Num+Ord+Pl+Ill+Foc/gi+Use/Rare: sajandaissegi
-      sajas+Num+Ord+Pl+Tra+Use/Rare: sajandaiks
-      sajas+Num+Ord+Pl+Tra+Foc/gi+Use/Rare: sajandaikski
-      sajas+Num+Ord+Pl+Abl+Use/Rare: sajandailt
-      sajas+Num+Ord+Pl+Abl+Foc/gi+Use/Rare: sajandailtki
-      sajas+Num+Ord+Pl+Ade+Use/Rare: sajandail
-      sajas+Num+Ord+Pl+Ade+Foc/gi+Use/Rare: sajandailgi
-      sajas+Num+Ord+Pl+All+Use/Rare: sajandaile
-      sajas+Num+Ord+Pl+All+Foc/gi+Use/Rare: sajandailegi
-      sajas+Num+Ord+Pl+Ela+Use/Rare: sajandaist
-      sajas+Num+Ord+Pl+Ela+Foc/gi+Use/Rare: sajandaistki
-      sajas+Num+Ord+Pl+Ine+Use/Rare: sajandais
-      sajas+Num+Ord+Pl+Ine+Foc/gi+Use/Rare: sajandaiski
+      sajas+Num+Ord+Pl+Ill+Usage/Rare: sajandaisse
+      sajas+Num+Ord+Pl+Ill+Foc/gi+Usage/Rare: sajandaissegi
+      sajas+Num+Ord+Pl+Tra+Usage/Rare: sajandaiks
+      sajas+Num+Ord+Pl+Tra+Foc/gi+Usage/Rare: sajandaikski
+      sajas+Num+Ord+Pl+Abl+Usage/Rare: sajandailt
+      sajas+Num+Ord+Pl+Abl+Foc/gi+Usage/Rare: sajandailtki
+      sajas+Num+Ord+Pl+Ade+Usage/Rare: sajandail
+      sajas+Num+Ord+Pl+Ade+Foc/gi+Usage/Rare: sajandailgi
+      sajas+Num+Ord+Pl+All+Usage/Rare: sajandaile
+      sajas+Num+Ord+Pl+All+Foc/gi+Usage/Rare: sajandailegi
+      sajas+Num+Ord+Pl+Ela+Usage/Rare: sajandaist
+      sajas+Num+Ord+Pl+Ela+Foc/gi+Usage/Rare: sajandaistki
+      sajas+Num+Ord+Pl+Ine+Usage/Rare: sajandais
+      sajas+Num+Ord+Pl+Ine+Foc/gi+Usage/Rare: sajandaiski
       sajas+Num+Ord+Pl+Ill: sajandatesse
       sajas+Num+Ord+Pl+Ill+Foc/gi: sajandatessegi
       sajas+Num+Ord+Pl+Com: sajandatega
@@ -211,8 +211,8 @@ Tests:
       teine+Num+Ord+Sg+Par+Foc/gi: teistki
       teine+Num+Ord+Sg+Ill: teise
       teine+Num+Ord+Sg+Ill+Foc/gi: teisegi
-      teine+Num+Ord+Sg+Ill+Foc/gi+Use/Rare: teisessegi
-      teine+Num+Ord+Sg+Ill+Use/Rare: teisesse
+      teine+Num+Ord+Sg+Ill+Foc/gi+Usage/Rare: teisessegi
+      teine+Num+Ord+Sg+Ill+Usage/Rare: teisesse
       teine+Num+Ord+Pl+Nom: teised
       teine+Num+Ord+Pl+Nom+Foc/gi: teisedki
       teine+Num+Ord+Sg+Com: teisega
@@ -237,20 +237,20 @@ Tests:
       teine+Num+Ord+Sg+Ine+Foc/gi: teiseski
       teine+Num+Ord+Sg+Gen: teise
       teine+Num+Ord+Sg+Gen+Foc/gi: teisegi
-      teine+Num+Ord+Pl+Ill+Use/Rare: teisisse
-      teine+Num+Ord+Pl+Ill+Foc/gi+Use/Rare: teisissegi
-      teine+Num+Ord+Pl+Tra+Use/Rare: teisiks
-      teine+Num+Ord+Pl+Tra+Foc/gi+Use/Rare: teisikski
-      teine+Num+Ord+Pl+Abl+Use/Rare: teisilt
-      teine+Num+Ord+Pl+Abl+Foc/gi+Use/Rare: teisiltki
-      teine+Num+Ord+Pl+Ade+Use/Rare: teisil
-      teine+Num+Ord+Pl+Ade+Foc/gi+Use/Rare: teisilgi
-      teine+Num+Ord+Pl+All+Use/Rare: teisile
-      teine+Num+Ord+Pl+All+Foc/gi+Use/Rare: teisilegi
-      teine+Num+Ord+Pl+Ela+Use/Rare: teisist
-      teine+Num+Ord+Pl+Ela+Foc/gi+Use/Rare: teisistki
-      teine+Num+Ord+Pl+Ine+Use/Rare: teisis
-      teine+Num+Ord+Pl+Ine+Foc/gi+Use/Rare: teisiski
+      teine+Num+Ord+Pl+Ill+Usage/Rare: teisisse
+      teine+Num+Ord+Pl+Ill+Foc/gi+Usage/Rare: teisissegi
+      teine+Num+Ord+Pl+Tra+Usage/Rare: teisiks
+      teine+Num+Ord+Pl+Tra+Foc/gi+Usage/Rare: teisikski
+      teine+Num+Ord+Pl+Abl+Usage/Rare: teisilt
+      teine+Num+Ord+Pl+Abl+Foc/gi+Usage/Rare: teisiltki
+      teine+Num+Ord+Pl+Ade+Usage/Rare: teisil
+      teine+Num+Ord+Pl+Ade+Foc/gi+Usage/Rare: teisilgi
+      teine+Num+Ord+Pl+All+Usage/Rare: teisile
+      teine+Num+Ord+Pl+All+Foc/gi+Usage/Rare: teisilegi
+      teine+Num+Ord+Pl+Ela+Usage/Rare: teisist
+      teine+Num+Ord+Pl+Ela+Foc/gi+Usage/Rare: teisistki
+      teine+Num+Ord+Pl+Ine+Usage/Rare: teisis
+      teine+Num+Ord+Pl+Ine+Foc/gi+Usage/Rare: teisiski
       teine+Num+Ord+Pl+Ill: teistesse
       teine+Num+Ord+Pl+Ill+Foc/gi: teistessegi
       teine+Num+Ord+Pl+Com: teistega
@@ -305,20 +305,20 @@ Tests:
       tuhat+Num+Card+Sg+Gen+Foc/gi: tuhandegi
       tuhat+Num+Card+Sg+Par: tuhandet
       tuhat+Num+Card+Sg+Par+Foc/gi: tuhandetki
-      tuhat+Num+Card+Pl+Ill+Use/Rare: tuhandeisse
-      tuhat+Num+Card+Pl+Ill+Foc/gi+Use/Rare: tuhandeissegi
-      tuhat+Num+Card+Pl+Tra+Use/Rare: tuhandeiks
-      tuhat+Num+Card+Pl+Tra+Foc/gi+Use/Rare: tuhandeikski
-      tuhat+Num+Card+Pl+Abl+Use/Rare: tuhandeilt
-      tuhat+Num+Card+Pl+Abl+Foc/gi+Use/Rare: tuhandeiltki
-      tuhat+Num+Card+Pl+Ade+Use/Rare: tuhandeil
-      tuhat+Num+Card+Pl+Ade+Foc/gi+Use/Rare: tuhandeilgi
-      tuhat+Num+Card+Pl+All+Use/Rare: tuhandeile
-      tuhat+Num+Card+Pl+All+Foc/gi+Use/Rare: tuhandeilegi
-      tuhat+Num+Card+Pl+Ela+Use/Rare: tuhandeist
-      tuhat+Num+Card+Pl+Ela+Foc/gi+Use/Rare: tuhandeistki
-      tuhat+Num+Card+Pl+Ine+Use/Rare: tuhandeis
-      tuhat+Num+Card+Pl+Ine+Foc/gi+Use/Rare: tuhandeiski
+      tuhat+Num+Card+Pl+Ill+Usage/Rare: tuhandeisse
+      tuhat+Num+Card+Pl+Ill+Foc/gi+Usage/Rare: tuhandeissegi
+      tuhat+Num+Card+Pl+Tra+Usage/Rare: tuhandeiks
+      tuhat+Num+Card+Pl+Tra+Foc/gi+Usage/Rare: tuhandeikski
+      tuhat+Num+Card+Pl+Abl+Usage/Rare: tuhandeilt
+      tuhat+Num+Card+Pl+Abl+Foc/gi+Usage/Rare: tuhandeiltki
+      tuhat+Num+Card+Pl+Ade+Usage/Rare: tuhandeil
+      tuhat+Num+Card+Pl+Ade+Foc/gi+Usage/Rare: tuhandeilgi
+      tuhat+Num+Card+Pl+All+Usage/Rare: tuhandeile
+      tuhat+Num+Card+Pl+All+Foc/gi+Usage/Rare: tuhandeilegi
+      tuhat+Num+Card+Pl+Ela+Usage/Rare: tuhandeist
+      tuhat+Num+Card+Pl+Ela+Foc/gi+Usage/Rare: tuhandeistki
+      tuhat+Num+Card+Pl+Ine+Usage/Rare: tuhandeis
+      tuhat+Num+Card+Pl+Ine+Foc/gi+Usage/Rare: tuhandeiski
       tuhat+Num+Card+Pl+Ill: tuhandetesse
       tuhat+Num+Card+Pl+Ill+Foc/gi: tuhandetessegi
       tuhat+Num+Card+Pl+Com: tuhandetega

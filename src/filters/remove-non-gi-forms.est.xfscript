@@ -13,13 +13,13 @@ define GI [ "+Foc/gi" ] ;
 define PRON [ "+Pron" ] ;
 
 # e.g. kummagile 
-define NOTNORM [ "+Use/NotNorm" ] ;
+define NOTNORM [ "+Usage/NotNorm" ] ;
 
 # make sure only word-final components are considered
 define WB [ "#" ] ;
  
 # giwords are wordforms that should end with gi/ki, 
-# so if they do not have either +Foc/gi or +Use/NotNorm, their surface form is wrong...
+# so if they do not have either +Foc/gi or +Usage/NotNorm, their surface form is wrong...
 
 define wronggiw [ \[WB]* giw PRON \[GI | NOTNORM | WB]* ] ;
 

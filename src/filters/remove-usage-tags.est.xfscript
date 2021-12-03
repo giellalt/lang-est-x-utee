@@ -6,10 +6,10 @@ define words [[ {talv} "+N" "+Pl" "+Par"] |
               [ {lauk} "+N" "+Pl" "+Par"] ] ;
 
 # possible tags:
-define RTag [ "+Use/Rare" ] ;       # norm, but rare 
-define HTag [ "+Use/Hyp" ] ;         # norm, but so rare that norm is probaly wrong
-define NTag [ "+Use/NotNorm" ] ; # not norm, but sometimes used
-define CNTag [ "+Use/CommonNotNorm" ] ; # not norm, and used more than norm
+define RTag [ "+Usage/Rare" ] ;       # norm, but rare 
+define HTag [ "+Usage/Hyp" ] ;         # norm, but so rare that norm is probaly wrong
+define NTag [ "+Usage/NotNorm" ] ; # not norm, but sometimes used
+define CNTag [ "+Usage/CommonNotNorm" ] ; # not norm, and used more than norm
 
 define UTag [ RTag | HTag | NTag | CNTag | ETag ] ; # usage-related tag
 

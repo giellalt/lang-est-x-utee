@@ -34,7 +34,7 @@ Tests:
      minema+V+Pers+Prs+Cond+Pl1+Aff: läheksime
      minema+V+Pers+Prs+Cond+Sg2+Aff: läheksid
      minema+V+Pers+Prs+Cond+Sg1+Aff: läheksin
-     minema+V+Pers+Prs+Ind+Pl1+Aff+Use/Rare: lähme
+     minema+V+Pers+Prs+Ind+Pl1+Aff+Usage/Rare: lähme
      minema+V+Pers+Prs+Ind+Neg: lähe
      minema+V+Pers+Prs+Ind+Sg2+Aff: lähed
      minema+V+Pers+Prs+Ind+Sg3+Aff: läheb
@@ -66,7 +66,7 @@ Tests:
      minema+V+Impers+Sup: mindama
      minema+V+Impers+Prt+Ind+Aff: mindi
      minema+V+Impers+Prs+Ind+Aff: minnakse
-     minema+V+Impers+Prs+Ind+Aff+Use/NotNorm: mindakse
+     minema+V+Impers+Prs+Ind+Aff+Usage/NotNorm: mindakse
      olema+V+Inf: olla
      olema+V+Ger: olles
      olema+V+Pers+Prs+Ind+Sg3+Aff: 'on'
@@ -118,7 +118,7 @@ Tests:
      olema+V+Impers+Prs+Imprt: oldagu
      olema+V+Impers+Sup: oldama
      olema+V+Impers+Prt+Ind+Aff: oldi
-     olema+V+Impers+Prs+Ind+Aff+Use/NotNorm: oldakse
+     olema+V+Impers+Prs+Ind+Aff+Usage/NotNorm: oldakse
      olema+V+Impers+Prs+Ind+Aff: ollakse
      olema+V+Pers+Prt+Cond+Neg: polnuks
      olema+V+Pers+Prt+Cond+Pl3+Neg: polnuksid
@@ -612,9 +612,9 @@ Tests:
      looma+V+Pers+Prt+Ind+Sg1+Aff: lõin
      looma+V+Pers+Prt+Ind+Sg3+Aff: lõi
      laastama+V+Inf: laastada
-     laastama+V+Inf+Use/Rare: laastata
+     laastama+V+Inf+Usage/Rare: laastata
      laastama+V+Ger: laastades
-     laastama+V+Ger+Use/Rare: laastates
+     laastama+V+Ger+Usage/Rare: laastates
      laastama+V+Impers+Prt+Prc: laastatud
      laastama+V+Impers+Prt+Ind+Neg: laastatud
      laastama+V+Impers+Prt+Cond: laastatuks
@@ -654,11 +654,11 @@ Tests:
      laastama+V+Pers+Prs+Imprt+Sg2: laasta
      laastama+V+Pers+Prs+Ind+Neg: laasta
      laastama+V+Pers+Prs+Imprt: laastagu
-     laastama+V+Pers+Prs+Imprt+Use/Rare: laastaku
+     laastama+V+Pers+Prs+Imprt+Usage/Rare: laastaku
      laastama+V+Pers+Prs+Imprt+Pl2: laastage
-     laastama+V+Pers+Prs+Imprt+Pl2+Use/Rare: laastake
+     laastama+V+Pers+Prs+Imprt+Pl2+Usage/Rare: laastake
      laastama+V+Pers+Prs+Imprt+Pl1: laastagem
-     laastama+V+Pers+Prs+Imprt+Pl1+Use/Rare: laastakem
+     laastama+V+Pers+Prs+Imprt+Pl1+Usage/Rare: laastakem
      laastama+V+Pers+Prt+Quot: laastanuvat
      laastama+V+Pers+Prt+Prc: laastanud
      laastama+V+Pers+Prt+Ind+Neg: laastanud
@@ -674,11 +674,11 @@ Tests:
      laskma+V+Pers+Sup+Tra: laskmaks
      laskma+V+Pers+Sup+Abe: laskmata
      laskma+V+Pers+Prs+Quot: laskvat
-     laskma+V+Pers+Prt+Ind+Pl3+Aff+Use/Rare: lasksid
-     laskma+V+Pers+Prt+Ind+Pl2+Aff+Use/Rare: lasksite
-     laskma+V+Pers+Prt+Ind+Pl1+Aff+Use/Rare: lasksime
-     laskma+V+Pers+Prt+Ind+Sg2+Aff+Use/Rare: lasksid
-     laskma+V+Pers+Prt+Ind+Sg1+Aff+Use/Rare: lasksin
+     laskma+V+Pers+Prt+Ind+Pl3+Aff+Usage/Rare: lasksid
+     laskma+V+Pers+Prt+Ind+Pl2+Aff+Usage/Rare: lasksite
+     laskma+V+Pers+Prt+Ind+Pl1+Aff+Usage/Rare: lasksime
+     laskma+V+Pers+Prt+Ind+Sg2+Aff+Usage/Rare: lasksid
+     laskma+V+Pers+Prt+Ind+Sg1+Aff+Usage/Rare: lasksin
      laskma+V+Pers+Prt+Quot: lasknuvat
      laskma+V+Pers+Prt+Prc: lasknud
      laskma+V+Pers+Prt+Ind+Neg: lasknud
@@ -689,7 +689,7 @@ Tests:
      laskma+V+Pers+Prt+Cond+Sg2+Aff: lasknuksid
      laskma+V+Pers+Prt+Cond+Sg1+Aff: lasknuksin
      laskma+V+Pers+Prs+Prc: laskev
-     laskma+V+Pers+Prt+Ind+Sg3+Aff+Use/Rare: laskis
+     laskma+V+Pers+Prt+Ind+Sg3+Aff+Usage/Rare: laskis
      laskma+V+Inf: lasta
      laskma+V+Ger: lastes
      laskma+V+Impers+Prt+Prc: lastud
@@ -741,20 +741,20 @@ Tests:
      lekkima+V+Pers+Sup+Abe: lekkimata
      lekkima+V+Pers+Prs+Prc: lekkiv
      lekkima+V+Pers+Prs+Quot: lekkivat
-     lekkima+V+Pers+Prs+Ind+Sg2+Aff+Use/Rare: lekkid
-     lekkima+V+Pers+Prs+Cond+Use/Rare: lekkiks
-     lekkima+V+Pers+Prs+Cond+Pl3+Aff+Use/Rare: lekkiksid
-     lekkima+V+Pers+Prs+Cond+Pl2+Aff+Use/Rare: lekkiksite
-     lekkima+V+Pers+Prs+Cond+Pl1+Aff+Use/Rare: lekkiksime
-     lekkima+V+Pers+Prs+Cond+Sg2+Aff+Use/Rare: lekkiksid
-     lekkima+V+Pers+Prs+Cond+Sg1+Aff+Use/Rare: lekkiksin
-     lekkima+V+Pers+Prs+Ind+Sg1+Aff+Use/Rare: lekkin
-     lekkima+V+Pers+Prs+Ind+Pl1+Aff+Use/Rare: lekkime
-     lekkima+V+Pers+Prs+Ind+Pl2+Aff+Use/Rare: lekkite
-     lekkima+V+Pers+Prs+Ind+Pl3+Aff+Use/Rare: lekkivad
-     lekkima+V+Pers+Prs+Ind+Sg3+Aff+Use/Rare: lekkib
-     lekkima+V+Pers+Prs+Imprt+Sg2+Use/Rare: lekki
-     lekkima+V+Pers+Prs+Ind+Neg+Use/Rare: lekki
+     lekkima+V+Pers+Prs+Ind+Sg2+Aff+Usage/Rare: lekkid
+     lekkima+V+Pers+Prs+Cond+Usage/Rare: lekkiks
+     lekkima+V+Pers+Prs+Cond+Pl3+Aff+Usage/Rare: lekkiksid
+     lekkima+V+Pers+Prs+Cond+Pl2+Aff+Usage/Rare: lekkiksite
+     lekkima+V+Pers+Prs+Cond+Pl1+Aff+Usage/Rare: lekkiksime
+     lekkima+V+Pers+Prs+Cond+Sg2+Aff+Usage/Rare: lekkiksid
+     lekkima+V+Pers+Prs+Cond+Sg1+Aff+Usage/Rare: lekkiksin
+     lekkima+V+Pers+Prs+Ind+Sg1+Aff+Usage/Rare: lekkin
+     lekkima+V+Pers+Prs+Ind+Pl1+Aff+Usage/Rare: lekkime
+     lekkima+V+Pers+Prs+Ind+Pl2+Aff+Usage/Rare: lekkite
+     lekkima+V+Pers+Prs+Ind+Pl3+Aff+Usage/Rare: lekkivad
+     lekkima+V+Pers+Prs+Ind+Sg3+Aff+Usage/Rare: lekkib
+     lekkima+V+Pers+Prs+Imprt+Sg2+Usage/Rare: lekki
+     lekkima+V+Pers+Prs+Ind+Neg+Usage/Rare: lekki
      lekkima+V+Pers+Prt+Quot: lekkinuvat
      lekkima+V+Pers+Prt+Prc: lekkinud
      lekkima+V+Pers+Prt+Ind+Neg: lekkinud
@@ -767,17 +767,17 @@ Tests:
      lekkima+V+Pers+Prs+Imprt: lekkigu
      lekkima+V+Pers+Prs+Imprt+Pl2: lekkige
      lekkima+V+Pers+Prs+Imprt+Pl1: lekkigem
-     lekkima+V+Impers+Prt+Prc+Use/Rare: lekkitud
-     lekkima+V+Impers+Prt+Ind+Neg+Use/Rare: lekkitud
-     lekkima+V+Impers+Prt+Cond+Use/Rare: lekkituks
-     lekkima+V+Impers+Prs+Prc+Use/Rare: lekkitav
-     lekkima+V+Impers+Prs+Quot+Use/Rare: lekkitavat
-     lekkima+V+Impers+Prs+Cond+Use/Rare: lekkitaks
-     lekkima+V+Impers+Prs+Ind+Neg+Use/Rare: lekkita
-     lekkima+V+Impers+Prs+Ind+Aff+Use/Rare: lekkitakse
-     lekkima+V+Impers+Prs+Imprt+Use/Rare: lekkitagu
-     lekkima+V+Impers+Sup+Use/Rare: lekkitama
-     lekkima+V+Impers+Prt+Ind+Aff+Use/Rare: lekkiti
+     lekkima+V+Impers+Prt+Prc+Usage/Rare: lekkitud
+     lekkima+V+Impers+Prt+Ind+Neg+Usage/Rare: lekkitud
+     lekkima+V+Impers+Prt+Cond+Usage/Rare: lekkituks
+     lekkima+V+Impers+Prs+Prc+Usage/Rare: lekkitav
+     lekkima+V+Impers+Prs+Quot+Usage/Rare: lekkitavat
+     lekkima+V+Impers+Prs+Cond+Usage/Rare: lekkitaks
+     lekkima+V+Impers+Prs+Ind+Neg+Usage/Rare: lekkita
+     lekkima+V+Impers+Prs+Ind+Aff+Usage/Rare: lekkitakse
+     lekkima+V+Impers+Prs+Imprt+Usage/Rare: lekkitagu
+     lekkima+V+Impers+Sup+Usage/Rare: lekkitama
+     lekkima+V+Impers+Prt+Ind+Aff+Usage/Rare: lekkiti
      lekkima+V+Impers+Prt+Prc: lekitud
      lekkima+V+Impers+Prt+Ind+Neg: lekitud
      lekkima+V+Impers+Prt+Cond: lekituks
@@ -944,7 +944,7 @@ Tests:
      looma+V+Impers+Prs+Imprt: loodagu
      looma+V+Impers+Sup: loodama
      looma+V+Impers+Prt+Ind+Aff: loodi
-     looma+V+Impers+Prs+Ind+Aff+Use/NotNorm: loodakse
+     looma+V+Impers+Prs+Ind+Aff+Usage/NotNorm: loodakse
      looma+V+Pers+Prs+Imprt: loogu
      looma+V+Pers+Prs+Imprt+Pl2: looge
      looma+V+Pers+Prs+Imprt+Pl1: loogem
@@ -1092,7 +1092,7 @@ Tests:
      lööma+V+Impers+Prs+Imprt: löödagu
      lööma+V+Impers+Sup: löödama
      lööma+V+Impers+Prt+Ind+Aff: löödi
-     lööma+V+Impers+Prs+Ind+Aff+Use/NotNorm: löödakse
+     lööma+V+Impers+Prs+Ind+Aff+Usage/NotNorm: löödakse
      lööma+V+Pers+Prs+Imprt: löögu
      lööma+V+Pers+Prs+Imprt+Pl2: lööge
      lööma+V+Pers+Prs+Imprt+Pl1: löögem
@@ -1242,17 +1242,17 @@ Tests:
      uskuma+V+Pers+Prt+Cond+Pl1+Aff: uskunuksime
      uskuma+V+Pers+Prt+Cond+Sg2+Aff: uskunuksid
      uskuma+V+Pers+Prt+Cond+Sg1+Aff: uskunuksin
-     uskuma+V+Impers+Prt+Prc+Use/Rare: ustud
-     uskuma+V+Impers+Prt+Ind+Neg+Use/Rare: ustud
-     uskuma+V+Impers+Prt+Cond+Use/Rare: ustuks
-     uskuma+V+Impers+Prs+Prc+Use/Rare: ustav
-     uskuma+V+Impers+Prs+Quot+Use/Rare: ustavat
-     uskuma+V+Impers+Prs+Cond+Use/Rare: ustaks
-     uskuma+V+Impers+Prs+Ind+Neg+Use/Rare: usta
-     uskuma+V+Impers+Prs+Ind+Aff+Use/Rare: ustakse
-     uskuma+V+Impers+Prs+Imprt+Use/Rare: ustagu
-     uskuma+V+Impers+Sup+Use/Rare: ustama
-     uskuma+V+Impers+Prt+Ind+Aff+Use/Rare: usti
+     uskuma+V+Impers+Prt+Prc+Usage/Rare: ustud
+     uskuma+V+Impers+Prt+Ind+Neg+Usage/Rare: ustud
+     uskuma+V+Impers+Prt+Cond+Usage/Rare: ustuks
+     uskuma+V+Impers+Prs+Prc+Usage/Rare: ustav
+     uskuma+V+Impers+Prs+Quot+Usage/Rare: ustavat
+     uskuma+V+Impers+Prs+Cond+Usage/Rare: ustaks
+     uskuma+V+Impers+Prs+Ind+Neg+Usage/Rare: usta
+     uskuma+V+Impers+Prs+Ind+Aff+Usage/Rare: ustakse
+     uskuma+V+Impers+Prs+Imprt+Usage/Rare: ustagu
+     uskuma+V+Impers+Sup+Usage/Rare: ustama
+     uskuma+V+Impers+Prt+Ind+Aff+Usage/Rare: usti
      uskuma+V+Impers+Prt+Prc: usutud
      uskuma+V+Impers+Prt+Ind+Neg: usutud
      uskuma+V+Impers+Prt+Cond: usutuks
@@ -1383,26 +1383,26 @@ Tests:
      kaitsma+V+Pers+Prt+Ind+Sg2+Aff: kaitsesid
      kaitsma+V+Pers+Prt+Ind+Sg1+Aff: kaitsesin
 
-     kaitsma+V+Inf+Use/Rare: kaitseda
-     kaitsma+V+Ger+Use/Rare: kaitsedes
-     kaitsma+V+Pers+Sup+Ill+Use/Rare: kaitsema
-     kaitsma+V+Pers+Sup+Ela+Use/Rare: kaitsemast
-     kaitsma+V+Pers+Sup+Ine+Use/Rare: kaitsemas
-     kaitsma+V+Pers+Sup+Tra+Use/Rare: kaitsemaks
-     kaitsma+V+Pers+Sup+Abe+Use/Rare: kaitsemata
-     kaitsma+V+Pers+Prs+Quot+Use/Rare: kaitsevat
-     kaitsma+V+Pers+Prt+Quot+Use/Rare: kaitsenuvat
-     kaitsma+V+Pers+Prt+Prc+Use/Rare: kaitsenud
-     kaitsma+V+Pers+Prt+Ind+Neg+Use/Rare: kaitsenud
-     kaitsma+V+Pers+Prt+Cond+Use/Rare: kaitsenuks
-     kaitsma+V+Pers+Prt+Cond+Pl3+Aff+Use/Rare: kaitsenuksid
-     kaitsma+V+Pers+Prt+Cond+Pl2+Aff+Use/Rare: kaitsenuksite
-     kaitsma+V+Pers+Prt+Cond+Pl1+Aff+Use/Rare: kaitsenuksime
-     kaitsma+V+Pers+Prt+Cond+Sg2+Aff+Use/Rare: kaitsenuksid
-     kaitsma+V+Pers+Prt+Cond+Sg1+Aff+Use/Rare: kaitsenuksin
-     kaitsma+V+Pers+Prs+Imprt+Use/Rare: kaitsegu
-     kaitsma+V+Pers+Prs+Imprt+Pl2+Use/Rare: kaitsege
-     kaitsma+V+Pers+Prs+Imprt+Pl1+Use/Rare: kaitsegem
+     kaitsma+V+Inf+Usage/Rare: kaitseda
+     kaitsma+V+Ger+Usage/Rare: kaitsedes
+     kaitsma+V+Pers+Sup+Ill+Usage/Rare: kaitsema
+     kaitsma+V+Pers+Sup+Ela+Usage/Rare: kaitsemast
+     kaitsma+V+Pers+Sup+Ine+Usage/Rare: kaitsemas
+     kaitsma+V+Pers+Sup+Tra+Usage/Rare: kaitsemaks
+     kaitsma+V+Pers+Sup+Abe+Usage/Rare: kaitsemata
+     kaitsma+V+Pers+Prs+Quot+Usage/Rare: kaitsevat
+     kaitsma+V+Pers+Prt+Quot+Usage/Rare: kaitsenuvat
+     kaitsma+V+Pers+Prt+Prc+Usage/Rare: kaitsenud
+     kaitsma+V+Pers+Prt+Ind+Neg+Usage/Rare: kaitsenud
+     kaitsma+V+Pers+Prt+Cond+Usage/Rare: kaitsenuks
+     kaitsma+V+Pers+Prt+Cond+Pl3+Aff+Usage/Rare: kaitsenuksid
+     kaitsma+V+Pers+Prt+Cond+Pl2+Aff+Usage/Rare: kaitsenuksite
+     kaitsma+V+Pers+Prt+Cond+Pl1+Aff+Usage/Rare: kaitsenuksime
+     kaitsma+V+Pers+Prt+Cond+Sg2+Aff+Usage/Rare: kaitsenuksid
+     kaitsma+V+Pers+Prt+Cond+Sg1+Aff+Usage/Rare: kaitsenuksin
+     kaitsma+V+Pers+Prs+Imprt+Usage/Rare: kaitsegu
+     kaitsma+V+Pers+Prs+Imprt+Pl2+Usage/Rare: kaitsege
+     kaitsma+V+Pers+Prs+Imprt+Pl1+Usage/Rare: kaitsegem
 
      kastma+V+Pers+Sup+Ill: kastma
      kastma+V+Pers+Sup+Ela: kastmast
@@ -1695,11 +1695,11 @@ Tests:
      kusema+V+Impers+Prs+Imprt: kustagu
      kusema+V+Impers+Sup: kustama
      kusema+V+Impers+Prt+Ind+Aff: kusti
-     kusema+V+Inf+Use/NotNorm: kuseda
-     kusema+V+Ger+Use/NotNorm: kusedes
-     kusema+V+Pers+Prs+Imprt+Use/NotNorm: kusegu
-     kusema+V+Pers+Prs+Imprt+Pl2+Use/NotNorm: kusege
-     kusema+V+Pers+Prs+Imprt+Pl1+Use/NotNorm: kusegem
+     kusema+V+Inf+Usage/NotNorm: kuseda
+     kusema+V+Ger+Usage/NotNorm: kusedes
+     kusema+V+Pers+Prs+Imprt+Usage/NotNorm: kusegu
+     kusema+V+Pers+Prs+Imprt+Pl2+Usage/NotNorm: kusege
+     kusema+V+Pers+Prs+Imprt+Pl1+Usage/NotNorm: kusegem
      kusema+V+Pers+Sup+Ill: kusema
      kusema+V+Pers+Sup+Ela: kusemast
      kusema+V+Pers+Sup+Ine: kusemas
@@ -1721,12 +1721,12 @@ Tests:
      kusema+V+Pers+Prs+Ind+Sg3+Aff: kuseb
      kusema+V+Pers+Prs+Imprt+Sg2: kuse
      kusema+V+Pers+Prs+Ind+Neg: kuse
-     kusema+V+Pers+Prt+Ind+Sg3+Aff+Use/NotNorm: kuses
-     kusema+V+Pers+Prt+Ind+Pl3+Aff+Use/NotNorm: kusesid
-     kusema+V+Pers+Prt+Ind+Pl2+Aff+Use/NotNorm: kusesite
-     kusema+V+Pers+Prt+Ind+Pl1+Aff+Use/NotNorm: kusesime
-     kusema+V+Pers+Prt+Ind+Sg2+Aff+Use/NotNorm: kusesid
-     kusema+V+Pers+Prt+Ind+Sg1+Aff+Use/NotNorm: kusesin
+     kusema+V+Pers+Prt+Ind+Sg3+Aff+Usage/NotNorm: kuses
+     kusema+V+Pers+Prt+Ind+Pl3+Aff+Usage/NotNorm: kusesid
+     kusema+V+Pers+Prt+Ind+Pl2+Aff+Usage/NotNorm: kusesite
+     kusema+V+Pers+Prt+Ind+Pl1+Aff+Usage/NotNorm: kusesime
+     kusema+V+Pers+Prt+Ind+Sg2+Aff+Usage/NotNorm: kusesid
+     kusema+V+Pers+Prt+Ind+Sg1+Aff+Usage/NotNorm: kusesin
      kurtma+V+Pers+Sup+Ill: kurtma
      kurtma+V+Pers+Sup+Ela: kurtmast
      kurtma+V+Pers+Sup+Ine: kurtmas
@@ -2090,7 +2090,7 @@ Tests:
      käima+V+Impers+Prs+Imprt: käidagu
      käima+V+Impers+Sup: käidama
      käima+V+Impers+Prt+Ind+Aff: käidi
-     käima+V+Impers+Prs+Ind+Aff+Use/NotNorm: käidakse
+     käima+V+Impers+Prs+Ind+Aff+Usage/NotNorm: käidakse
      käima+V+Impers+Prs+Ind+Aff: käiakse
      käima+V+Pers+Prt+Ind+Sg3+Aff: käis
      käima+V+Pers+Prt+Ind+Pl3+Aff: käisid
@@ -2414,7 +2414,7 @@ Tests:
      müüma+V+Impers+Prs+Imprt: müüdagu
      müüma+V+Impers+Sup: müüdama
      müüma+V+Impers+Prt+Ind+Aff: müüdi
-     müüma+V+Impers+Prs+Ind+Aff+Use/NotNorm: müüdakse
+     müüma+V+Impers+Prs+Ind+Aff+Usage/NotNorm: müüdakse
      müüma+V+Impers+Prs+Ind+Aff: müüakse
      müüma+V+Pers+Prt+Ind+Sg3+Aff: müüs
      müüma+V+Pers+Prt+Ind+Pl3+Aff: müüsid

@@ -9,7 +9,7 @@ define NOM [ "+Nom" ] ;
 define POS ["+Pron" | "+A" | "+N"] ;
 
 # e.g. miskite 
-define NOTNORM [ "+Use/NotNorm" ] ;
+define NOTNORM [ "+Usage/NotNorm" ] ;
 
 # make sure only word-final components are considered
 define WB [ "#" ] ;

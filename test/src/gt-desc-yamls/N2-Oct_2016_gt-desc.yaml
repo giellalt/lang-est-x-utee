@@ -36,7 +36,7 @@ Tests:
     meri+N+Sg+Ess: merena
     meri+N+Sg+Gen: mere
     meri+N+Sg+Ill: merre
-    meri+N+Sg+Ill+Use/Rare: meresse
+    meri+N+Sg+Ill+Usage/Rare: meresse
     meri+N+Sg+Ine: meres
     meri+N+Sg+Nom: meri
     meri+N+Sg+Par: merd
@@ -72,24 +72,24 @@ Tests:
     mesi+N+Sg+Trm: meeni
     muie+N+Pl+Abe: muieteta
     muie+N+Pl+Abl: muietelt
-    muie+N+Pl+Abl+Use/Rare: muigeilt
+    muie+N+Pl+Abl+Usage/Rare: muigeilt
     muie+N+Pl+Ade: muietel
-    muie+N+Pl+Ade+Use/Rare: muigeil
+    muie+N+Pl+Ade+Usage/Rare: muigeil
     muie+N+Pl+All: muietele
-    muie+N+Pl+All+Use/Rare: muigeile
+    muie+N+Pl+All+Usage/Rare: muigeile
     muie+N+Pl+Com: muietega
     muie+N+Pl+Ela: muietest
-    muie+N+Pl+Ela+Use/Rare: muigeist
+    muie+N+Pl+Ela+Usage/Rare: muigeist
     muie+N+Pl+Ess: muietena
     muie+N+Pl+Gen: muiete
     muie+N+Pl+Ill: muietesse
-    muie+N+Pl+Ill+Use/Rare: muigeisse
+    muie+N+Pl+Ill+Usage/Rare: muigeisse
     muie+N+Pl+Ine: muietes
-    muie+N+Pl+Ine+Use/Rare: muigeis
+    muie+N+Pl+Ine+Usage/Rare: muigeis
     muie+N+Pl+Nom: muiged
     muie+N+Pl+Par: muigeid
     muie+N+Pl+Tra: muieteks
-    muie+N+Pl+Tra+Use/Rare: muigeiks
+    muie+N+Pl+Tra+Usage/Rare: muigeiks
     muie+N+Pl+Trm: muieteni
     muie+N+Sg+Abe: muigeta
     muie+N+Sg+Abl: muigelt
@@ -107,24 +107,24 @@ Tests:
     muie+N+Sg+Trm: muigeni
     mulle+N+Pl+Abe: mulleteta
     mulle+N+Pl+Abl: mulletelt
-    mulle+N+Pl+Abl+Use/Rare: muldeilt
+    mulle+N+Pl+Abl+Usage/Rare: muldeilt
     mulle+N+Pl+Ade: mulletel
-    mulle+N+Pl+Ade+Use/Rare: muldeil
+    mulle+N+Pl+Ade+Usage/Rare: muldeil
     mulle+N+Pl+All: mulletele
-    mulle+N+Pl+All+Use/Rare: muldeile
+    mulle+N+Pl+All+Usage/Rare: muldeile
     mulle+N+Pl+Com: mulletega
     mulle+N+Pl+Ela: mulletest
-    mulle+N+Pl+Ela+Use/Rare: muldeist
+    mulle+N+Pl+Ela+Usage/Rare: muldeist
     mulle+N+Pl+Ess: mulletena
     mulle+N+Pl+Gen: mullete
     mulle+N+Pl+Ill: mulletesse
-    mulle+N+Pl+Ill+Use/Rare: muldeisse
+    mulle+N+Pl+Ill+Usage/Rare: muldeisse
     mulle+N+Pl+Ine: mulletes
-    mulle+N+Pl+Ine+Use/Rare: muldeis
+    mulle+N+Pl+Ine+Usage/Rare: muldeis
     mulle+N+Pl+Nom: mulded
     mulle+N+Pl+Par: muldeid
     mulle+N+Pl+Tra: mulleteks
-    mulle+N+Pl+Tra+Use/Rare: muldeiks
+    mulle+N+Pl+Tra+Usage/Rare: muldeiks
     mulle+N+Pl+Trm: mulleteni
     mulle+N+Sg+Abe: muldeta
     mulle+N+Sg+Abl: muldelt
@@ -141,32 +141,32 @@ Tests:
     mulle+N+Sg+Tra: muldeks
     mulle+N+Sg+Trm: muldeni
     muuseum+N+Pl+Abe: muuseumideta
-    muuseum+N+Pl+Abe+Use/Rare: [muuseumeita, muuseumiteta]
+    muuseum+N+Pl+Abe+Usage/Rare: [muuseumeita, muuseumiteta]
     muuseum+N+Pl+Abl: muuseumidelt
-    muuseum+N+Pl+Abl+Use/Rare: [muuseumeilt, muuseumitelt]
+    muuseum+N+Pl+Abl+Usage/Rare: [muuseumeilt, muuseumitelt]
     muuseum+N+Pl+Ade: muuseumidel
-    muuseum+N+Pl+Ade+Use/Rare: [muuseumeil, muuseumitel]
+    muuseum+N+Pl+Ade+Usage/Rare: [muuseumeil, muuseumitel]
     muuseum+N+Pl+All: muuseumidele
-    muuseum+N+Pl+All+Use/Rare: [muuseumeile, muuseumitele]
+    muuseum+N+Pl+All+Usage/Rare: [muuseumeile, muuseumitele]
     muuseum+N+Pl+Com: muuseumidega
-    muuseum+N+Pl+Com+Use/Rare: [muuseumeiga, muuseumitega]
+    muuseum+N+Pl+Com+Usage/Rare: [muuseumeiga, muuseumitega]
     muuseum+N+Pl+Ela: muuseumidest
-    muuseum+N+Pl+Ela+Use/Rare: [muuseumeist, muuseumitest]
+    muuseum+N+Pl+Ela+Usage/Rare: [muuseumeist, muuseumitest]
     muuseum+N+Pl+Ess: muuseumidena
-    muuseum+N+Pl+Ess+Use/Rare: [muuseumeina, muuseumitena]
+    muuseum+N+Pl+Ess+Usage/Rare: [muuseumeina, muuseumitena]
     muuseum+N+Pl+Gen: muuseumide
-    muuseum+N+Pl+Gen+Use/Rare: muuseumite
+    muuseum+N+Pl+Gen+Usage/Rare: muuseumite
     muuseum+N+Pl+Ill: muuseumidesse
-    muuseum+N+Pl+Ill+Use/Rare: [muuseumeisse, muuseumitesse]
+    muuseum+N+Pl+Ill+Usage/Rare: [muuseumeisse, muuseumitesse]
     muuseum+N+Pl+Ine: muuseumides
-    muuseum+N+Pl+Ine+Use/Rare: [muuseumeis, muuseumites]
+    muuseum+N+Pl+Ine+Usage/Rare: [muuseumeis, muuseumites]
     muuseum+N+Pl+Nom: muuseumid
     muuseum+N+Pl+Par: muuseume
-    muuseum+N+Pl+Par+Use/Rare: muuseumeid
+    muuseum+N+Pl+Par+Usage/Rare: muuseumeid
     muuseum+N+Pl+Tra: muuseumideks
-    muuseum+N+Pl+Tra+Use/Rare: [muuseumeiks, muuseumiteks]
+    muuseum+N+Pl+Tra+Usage/Rare: [muuseumeiks, muuseumiteks]
     muuseum+N+Pl+Trm: muuseumideni
-    muuseum+N+Pl+Trm+Use/Rare: [muuseumeini, muuseumiteni]
+    muuseum+N+Pl+Trm+Usage/Rare: [muuseumeini, muuseumiteni]
     muuseum+N+Sg+Abe: muuseumita
     muuseum+N+Sg+Abl: muuseumilt
     muuseum+N+Sg+Ade: muuseumil
@@ -176,33 +176,33 @@ Tests:
     muuseum+N+Sg+Ess: muuseumina
     muuseum+N+Sg+Gen: muuseumi
     muuseum+N+Sg+Ill: muuseumisse
-    muuseum+N+Sg+Ill+Use/Rare: muuseumi
+    muuseum+N+Sg+Ill+Usage/Rare: muuseumi
     muuseum+N+Sg+Ine: muuseumis
     muuseum+N+Sg+Nom: muuseum
     muuseum+N+Sg+Par: muuseumi
-    muuseum+N+Sg+Par+Use/Rare: muuseumit
+    muuseum+N+Sg+Par+Usage/Rare: muuseumit
     muuseum+N+Sg+Tra: muuseumiks
     muuseum+N+Sg+Trm: muuseumini
     mähe+N+Pl+Abe: mähkmeteta
     mähe+N+Pl+Abl: mähkmetelt
-    mähe+N+Pl+Abl+Use/Rare: mähkmeilt
+    mähe+N+Pl+Abl+Usage/Rare: mähkmeilt
     mähe+N+Pl+Ade: mähkmetel
-    mähe+N+Pl+Ade+Use/Rare: mähkmeil
+    mähe+N+Pl+Ade+Usage/Rare: mähkmeil
     mähe+N+Pl+All: mähkmetele
-    mähe+N+Pl+All+Use/Rare: mähkmeile
+    mähe+N+Pl+All+Usage/Rare: mähkmeile
     mähe+N+Pl+Com: mähkmetega
     mähe+N+Pl+Ela: mähkmetest
-    mähe+N+Pl+Ela+Use/Rare: mähkmeist
+    mähe+N+Pl+Ela+Usage/Rare: mähkmeist
     mähe+N+Pl+Ess: mähkmetena
     mähe+N+Pl+Gen: mähkmete
     mähe+N+Pl+Ill: mähkmetesse
-    mähe+N+Pl+Ill+Use/Rare: mähkmeisse
+    mähe+N+Pl+Ill+Usage/Rare: mähkmeisse
     mähe+N+Pl+Ine: mähkmetes
-    mähe+N+Pl+Ine+Use/Rare: mähkmeis
+    mähe+N+Pl+Ine+Usage/Rare: mähkmeis
     mähe+N+Pl+Nom: mähkmed
     mähe+N+Pl+Par: mähkmeid
     mähe+N+Pl+Tra: mähkmeteks
-    mähe+N+Pl+Tra+Use/Rare: mähkmeiks
+    mähe+N+Pl+Tra+Usage/Rare: mähkmeiks
     mähe+N+Pl+Trm: mähkmeteni
     mähe+N+Sg+Abe: mähkmeta
     mähe+N+Sg+Abl: mähkmelt
@@ -220,24 +220,24 @@ Tests:
     mähe+N+Sg+Trm: mähkmeni
     naine+N+Pl+Abe: naisteta
     naine+N+Pl+Abl: naistelt
-    naine+N+Pl+Abl+Use/Rare: naisilt
+    naine+N+Pl+Abl+Usage/Rare: naisilt
     naine+N+Pl+Ade: naistel
-    naine+N+Pl+Ade+Use/Rare: naisil
+    naine+N+Pl+Ade+Usage/Rare: naisil
     naine+N+Pl+All: naistele
-    naine+N+Pl+All+Use/Rare: naisile
+    naine+N+Pl+All+Usage/Rare: naisile
     naine+N+Pl+Com: naistega
     naine+N+Pl+Ela: naistest
-    naine+N+Pl+Ela+Use/Rare: naisist
+    naine+N+Pl+Ela+Usage/Rare: naisist
     naine+N+Pl+Ess: naistena
     naine+N+Pl+Gen: naiste
     naine+N+Pl+Ill: naistesse
-    naine+N+Pl+Ill+Use/Rare: naisisse
+    naine+N+Pl+Ill+Usage/Rare: naisisse
     naine+N+Pl+Ine: naistes
-    naine+N+Pl+Ine+Use/Rare: naisis
+    naine+N+Pl+Ine+Usage/Rare: naisis
     naine+N+Pl+Nom: naised
     naine+N+Pl+Par: naisi
     naine+N+Pl+Tra: naisteks
-    naine+N+Pl+Tra+Use/Rare: naisiks
+    naine+N+Pl+Tra+Usage/Rare: naisiks
     naine+N+Pl+Trm: naisteni
     naine+N+Sg+Abe: naiseta
     naine+N+Sg+Abl: naiselt
@@ -311,24 +311,24 @@ Tests:
     nimi+N+Sg+Trm: nimeni
     norse+N+Pl+Abe: norseteta
     norse+N+Pl+Abl: norsetelt
-    norse+N+Pl+Abl+Use/Rare: norskeilt
+    norse+N+Pl+Abl+Usage/Rare: norskeilt
     norse+N+Pl+Ade: norsetel
-    norse+N+Pl+Ade+Use/Rare: norskeil
+    norse+N+Pl+Ade+Usage/Rare: norskeil
     norse+N+Pl+All: norsetele
-    norse+N+Pl+All+Use/Rare: norskeile
+    norse+N+Pl+All+Usage/Rare: norskeile
     norse+N+Pl+Com: norsetega
     norse+N+Pl+Ela: norsetest
-    norse+N+Pl+Ela+Use/Rare: norskeist
+    norse+N+Pl+Ela+Usage/Rare: norskeist
     norse+N+Pl+Ess: norsetena
     norse+N+Pl+Gen: norsete
     norse+N+Pl+Ill: norsetesse
-    norse+N+Pl+Ill+Use/Rare: norskeisse
+    norse+N+Pl+Ill+Usage/Rare: norskeisse
     norse+N+Pl+Ine: norsetes
-    norse+N+Pl+Ine+Use/Rare: norskeis
+    norse+N+Pl+Ine+Usage/Rare: norskeis
     norse+N+Pl+Nom: norsked
     norse+N+Pl+Par: norskeid
     norse+N+Pl+Tra: norseteks
-    norse+N+Pl+Tra+Use/Rare: norskeiks
+    norse+N+Pl+Tra+Usage/Rare: norskeiks
     norse+N+Pl+Trm: norseteni
     norse+N+Sg+Abe: norsketa
     norse+N+Sg+Abl: norskelt
@@ -356,7 +356,7 @@ Tests:
     paas+N+Pl+Ine: paasides
     paas+N+Pl+Nom: paed
     paas+N+Pl+Par: paase
-    paas+N+Pl+Par+Use/Rare: paasisid
+    paas+N+Pl+Par+Usage/Rare: paasisid
     paas+N+Pl+Tra: paasideks
     paas+N+Pl+Trm: paasideni
     paas+N+Sg+Abe: paeta
@@ -368,7 +368,7 @@ Tests:
     paas+N+Sg+Ess: paena
     paas+N+Sg+Gen: pae
     paas+N+Sg+Ill: paasi
-    paas+N+Sg+Ill+Use/Hyp: paesse
+    paas+N+Sg+Ill+Usage/Hyp: paesse
     paas+N+Sg+Ine: paes
     paas+N+Sg+Nom: paas
     paas+N+Sg+Par: paasi
@@ -376,25 +376,25 @@ Tests:
     paas+N+Sg+Trm: paeni
     pea+N+Pl+Abe: peadeta
     pea+N+Pl+Abl: peadelt
-    pea+N+Pl+Abl+Use/Rare: päilt
+    pea+N+Pl+Abl+Usage/Rare: päilt
     pea+N+Pl+Ade: peadel
-    pea+N+Pl+Ade+Use/Rare: päil
+    pea+N+Pl+Ade+Usage/Rare: päil
     pea+N+Pl+All: peadele
-    pea+N+Pl+All+Use/Rare: päile
+    pea+N+Pl+All+Usage/Rare: päile
     pea+N+Pl+Com: peadega
     pea+N+Pl+Ela: peadest
-    pea+N+Pl+Ela+Use/Rare: päist
+    pea+N+Pl+Ela+Usage/Rare: päist
     pea+N+Pl+Ess: peadena
     pea+N+Pl+Gen: peade
     pea+N+Pl+Ill: peadesse
-    pea+N+Pl+Ill+Use/Rare: päisse
+    pea+N+Pl+Ill+Usage/Rare: päisse
     pea+N+Pl+Ine: peades
-    pea+N+Pl+Ine+Use/Rare: päis
+    pea+N+Pl+Ine+Usage/Rare: päis
     pea+N+Pl+Nom: pead
     pea+N+Pl+Par: päid
-    pea+N+Pl+Par+Use/Rare: peasid
+    pea+N+Pl+Par+Usage/Rare: peasid
     pea+N+Pl+Tra: peadeks
-    pea+N+Pl+Tra+Use/Rare: päiks
+    pea+N+Pl+Tra+Usage/Rare: päiks
     pea+N+Pl+Trm: peadeni
     pea+N+Sg+Abe: peata
     pea+N+Sg+Abl: pealt
@@ -405,7 +405,7 @@ Tests:
     pea+N+Sg+Ess: peana
     pea+N+Sg+Gen: pea
     pea+N+Sg+Ill: pähe
-    pea+N+Sg+Ill+Use/Rare: peasse
+    pea+N+Sg+Ill+Usage/Rare: peasse
     pea+N+Sg+Ine: peas
     pea+N+Sg+Nom: pea
     pea+N+Sg+Par: pead
@@ -423,7 +423,7 @@ Tests:
     pelg+N+Pl+Ine: pelgudes
     pelg+N+Pl+Nom: peljud
     pelg+N+Pl+Par: pelgusid
-    pelg+N+Pl+Par+Use/Rare: pelge
+    pelg+N+Pl+Par+Usage/Rare: pelge
     pelg+N+Pl+Tra: pelgudeks
     pelg+N+Pl+Trm: pelgudeni
     pelg+N+Sg+Abe: peljuta
@@ -435,7 +435,7 @@ Tests:
     pelg+N+Sg+Ess: peljuna
     pelg+N+Sg+Gen: pelju
     pelg+N+Sg+Ill: pelgu
-    pelg+N+Sg+Ill+Use/Hyp: peljusse
+    pelg+N+Sg+Ill+Usage/Hyp: peljusse
     pelg+N+Sg+Ine: peljus
     pelg+N+Sg+Nom: pelg
     pelg+N+Sg+Par: pelgu
@@ -464,7 +464,7 @@ Tests:
     pere+N+Sg+Ess: perena
     pere+N+Sg+Gen: pere
     pere+N+Sg+Ill: perre
-    pere+N+Sg+Ill+Use/Rare: peresse
+    pere+N+Sg+Ill+Usage/Rare: peresse
     pere+N+Sg+Ine: peres
     pere+N+Sg+Nom: pere
     pere+N+Sg+Par: peret
@@ -472,24 +472,24 @@ Tests:
     pere+N+Sg+Trm: pereni
     pinge+N+Pl+Abe: pingeteta
     pinge+N+Pl+Abl: pingetelt
-    pinge+N+Pl+Abl+Use/Rare: pingeilt
+    pinge+N+Pl+Abl+Usage/Rare: pingeilt
     pinge+N+Pl+Ade: pingetel
-    pinge+N+Pl+Ade+Use/Rare: pingeil
+    pinge+N+Pl+Ade+Usage/Rare: pingeil
     pinge+N+Pl+All: pingetele
-    pinge+N+Pl+All+Use/Rare: pingeile
+    pinge+N+Pl+All+Usage/Rare: pingeile
     pinge+N+Pl+Com: pingetega
     pinge+N+Pl+Ela: pingetest
-    pinge+N+Pl+Ela+Use/Rare: pingeist
+    pinge+N+Pl+Ela+Usage/Rare: pingeist
     pinge+N+Pl+Ess: pingetena
     pinge+N+Pl+Gen: pingete
     pinge+N+Pl+Ill: pingetesse
-    pinge+N+Pl+Ill+Use/Rare: pingeisse
+    pinge+N+Pl+Ill+Usage/Rare: pingeisse
     pinge+N+Pl+Ine: pingetes
-    pinge+N+Pl+Ine+Use/Rare: pingeis
+    pinge+N+Pl+Ine+Usage/Rare: pingeis
     pinge+N+Pl+Nom: pinged
     pinge+N+Pl+Par: pingeid
     pinge+N+Pl+Tra: pingeteks
-    pinge+N+Pl+Tra+Use/Rare: pingeiks
+    pinge+N+Pl+Tra+Usage/Rare: pingeiks
     pinge+N+Pl+Trm: pingeteni
     pinge+N+Sg+Abe: pingeta
     pinge+N+Sg+Abl: pingelt
@@ -506,38 +506,38 @@ Tests:
     pinge+N+Sg+Tra: pingeks
     pinge+N+Sg+Trm: pingeni
     pipar+N+Pl+Abe: pipardeta
-    pipar+N+Pl+Abe+Use/NotNorm: piprateta
+    pipar+N+Pl+Abe+Usage/NotNorm: piprateta
     pipar+N+Pl+Abl: pipardelt
-    pipar+N+Pl+Abl+Use/NotNorm: pipratelt
-    pipar+N+Pl+Abl+Use/Rare: piprailt
+    pipar+N+Pl+Abl+Usage/NotNorm: pipratelt
+    pipar+N+Pl+Abl+Usage/Rare: piprailt
     pipar+N+Pl+Ade: pipardel
-    pipar+N+Pl+Ade+Use/NotNorm: pipratel
-    pipar+N+Pl+Ade+Use/Rare: piprail
+    pipar+N+Pl+Ade+Usage/NotNorm: pipratel
+    pipar+N+Pl+Ade+Usage/Rare: piprail
     pipar+N+Pl+All: pipardele
-    pipar+N+Pl+All+Use/NotNorm: pipratele
-    pipar+N+Pl+All+Use/Rare: pipraile
+    pipar+N+Pl+All+Usage/NotNorm: pipratele
+    pipar+N+Pl+All+Usage/Rare: pipraile
     pipar+N+Pl+Com: pipardega
-    pipar+N+Pl+Com+Use/NotNorm: pipratega
+    pipar+N+Pl+Com+Usage/NotNorm: pipratega
     pipar+N+Pl+Ela: pipardest
-    pipar+N+Pl+Ela+Use/NotNorm: pipratest
-    pipar+N+Pl+Ela+Use/Rare: pipraist
+    pipar+N+Pl+Ela+Usage/NotNorm: pipratest
+    pipar+N+Pl+Ela+Usage/Rare: pipraist
     pipar+N+Pl+Ess: pipardena
-    pipar+N+Pl+Ess+Use/NotNorm: pipratena
+    pipar+N+Pl+Ess+Usage/NotNorm: pipratena
     pipar+N+Pl+Gen: piparde
-    pipar+N+Pl+Gen+Use/NotNorm: piprate
+    pipar+N+Pl+Gen+Usage/NotNorm: piprate
     pipar+N+Pl+Ill: pipardesse
-    pipar+N+Pl+Ill+Use/NotNorm: pipratesse
-    pipar+N+Pl+Ill+Use/Rare: pipraisse
+    pipar+N+Pl+Ill+Usage/NotNorm: pipratesse
+    pipar+N+Pl+Ill+Usage/Rare: pipraisse
     pipar+N+Pl+Ine: pipardes
-    pipar+N+Pl+Ine+Use/NotNorm: piprates
-    pipar+N+Pl+Ine+Use/Rare: piprais
+    pipar+N+Pl+Ine+Usage/NotNorm: piprates
+    pipar+N+Pl+Ine+Usage/Rare: piprais
     pipar+N+Pl+Nom: piprad
     pipar+N+Pl+Par: pipraid
     pipar+N+Pl+Tra: pipardeks
-    pipar+N+Pl+Tra+Use/NotNorm: piprateks
-    pipar+N+Pl+Tra+Use/Rare: pipraiks
+    pipar+N+Pl+Tra+Usage/NotNorm: piprateks
+    pipar+N+Pl+Tra+Usage/Rare: pipraiks
     pipar+N+Pl+Trm: pipardeni
-    pipar+N+Pl+Trm+Use/NotNorm: piprateni
+    pipar+N+Pl+Trm+Usage/NotNorm: piprateni
     pipar+N+Sg+Abe: piprata
     pipar+N+Sg+Abl: pipralt
     pipar+N+Sg+Ade: pipral
@@ -553,32 +553,32 @@ Tests:
     pipar+N+Sg+Tra: pipraks
     pipar+N+Sg+Trm: piprani
     poiss+N+Pl+Abe: poisteta
-    poiss+N+Pl+Abe+Use/Rare: poissideta
+    poiss+N+Pl+Abe+Usage/Rare: poissideta
     poiss+N+Pl+Abl: poistelt
-    poiss+N+Pl+Abl+Use/Rare: poissidelt
+    poiss+N+Pl+Abl+Usage/Rare: poissidelt
     poiss+N+Pl+Ade: poistel
-    poiss+N+Pl+Ade+Use/Rare: poissidel
+    poiss+N+Pl+Ade+Usage/Rare: poissidel
     poiss+N+Pl+All: poistele
-    poiss+N+Pl+All+Use/Rare: poissidele
+    poiss+N+Pl+All+Usage/Rare: poissidele
     poiss+N+Pl+Com: poistega
-    poiss+N+Pl+Com+Use/Rare: poissidega
+    poiss+N+Pl+Com+Usage/Rare: poissidega
     poiss+N+Pl+Ela: poistest
-    poiss+N+Pl+Ela+Use/Rare: poissidest
+    poiss+N+Pl+Ela+Usage/Rare: poissidest
     poiss+N+Pl+Ess: poistena
-    poiss+N+Pl+Ess+Use/Rare: poissidena
+    poiss+N+Pl+Ess+Usage/Rare: poissidena
     poiss+N+Pl+Gen: poiste
-    poiss+N+Pl+Gen+Use/Rare: poisside
+    poiss+N+Pl+Gen+Usage/Rare: poisside
     poiss+N+Pl+Ill: poistesse
-    poiss+N+Pl+Ill+Use/Rare: poissidesse
+    poiss+N+Pl+Ill+Usage/Rare: poissidesse
     poiss+N+Pl+Ine: poistes
-    poiss+N+Pl+Ine+Use/Rare: poissides
+    poiss+N+Pl+Ine+Usage/Rare: poissides
     poiss+N+Pl+Nom: poisid
     poiss+N+Pl+Par: poisse
-    poiss+N+Pl+Par+Use/Rare: poissisid
+    poiss+N+Pl+Par+Usage/Rare: poissisid
     poiss+N+Pl+Tra: poisteks
-    poiss+N+Pl+Tra+Use/Rare: poissideks
+    poiss+N+Pl+Tra+Usage/Rare: poissideks
     poiss+N+Pl+Trm: poisteni
-    poiss+N+Pl+Trm+Use/Rare: poissideni
+    poiss+N+Pl+Trm+Usage/Rare: poissideni
     poiss+N+Sg+Abe: poisita
     poiss+N+Sg+Abl: poisilt
     poiss+N+Sg+Ade: poisil
@@ -588,7 +588,7 @@ Tests:
     poiss+N+Sg+Ess: poisina
     poiss+N+Sg+Gen: poisi
     poiss+N+Sg+Ill: poissi
-    poiss+N+Sg+Ill+Use/Hyp: poisisse
+    poiss+N+Sg+Ill+Usage/Hyp: poisisse
     poiss+N+Sg+Ine: poisis
     poiss+N+Sg+Nom: poiss
     poiss+N+Sg+Par: poissi
@@ -606,7 +606,7 @@ Tests:
     post+N+Pl+Ine: postides
     post+N+Pl+Nom: postid
     post+N+Pl+Par: poste
-    post+N+Pl+Par+Use/Rare: postisid
+    post+N+Pl+Par+Usage/Rare: postisid
     post+N+Pl+Tra: postideks
     post+N+Pl+Trm: postideni
     post+N+Sg+Abe: postita
@@ -618,7 +618,7 @@ Tests:
     post+N+Sg+Ess: postina
     post+N+Sg+Gen: posti
     post+N+Sg+Ill: posti
-    post+N+Sg+Ill+Use/Hyp: postisse
+    post+N+Sg+Ill+Usage/Hyp: postisse
     post+N+Sg+Ine: postis
     post+N+Sg+Nom: post
     post+N+Sg+Par: posti
@@ -636,7 +636,7 @@ Tests:
     proff+N+Pl+Ine: proffides
     proff+N+Pl+Nom: profid
     proff+N+Pl+Par: proffe
-    proff+N+Pl+Par+Use/Rare: proffisid
+    proff+N+Pl+Par+Usage/Rare: proffisid
     proff+N+Pl+Tra: proffideks
     proff+N+Pl+Trm: proffideni
     proff+N+Sg+Abe: profita
@@ -648,7 +648,7 @@ Tests:
     proff+N+Sg+Ess: profina
     proff+N+Sg+Gen: profi
     proff+N+Sg+Ill: proffi
-    proff+N+Sg+Ill+Use/Hyp: profisse
+    proff+N+Sg+Ill+Usage/Hyp: profisse
     proff+N+Sg+Ine: profis
     proff+N+Sg+Nom: proff
     proff+N+Sg+Par: proffi
@@ -666,7 +666,7 @@ Tests:
     puder+N+Pl+Ine: putrudes
     puder+N+Pl+Nom: pudrud
     puder+N+Pl+Par: putrusid
-    puder+N+Pl+Par+Use/Rare: putre
+    puder+N+Pl+Par+Usage/Rare: putre
     puder+N+Pl+Tra: putrudeks
     puder+N+Pl+Trm: putrudeni
     puder+N+Sg+Abe: pudruta
@@ -678,7 +678,7 @@ Tests:
     puder+N+Sg+Ess: pudruna
     puder+N+Sg+Gen: pudru
     puder+N+Sg+Ill: putru
-    puder+N+Sg+Ill+Use/Hyp: pudrusse
+    puder+N+Sg+Ill+Usage/Hyp: pudrusse
     puder+N+Sg+Ine: pudrus
     puder+N+Sg+Nom: puder
     puder+N+Sg+Par: putru
@@ -696,7 +696,7 @@ Tests:
     puri+N+Pl+Ine: purjedes
     puri+N+Pl+Nom: purjed
     puri+N+Pl+Par: purjesid
-    puri+N+Pl+Par+Use/Rare: purjeid
+    puri+N+Pl+Par+Usage/Rare: purjeid
     puri+N+Pl+Tra: purjedeks
     puri+N+Pl+Trm: purjedeni
     puri+N+Sg+Abe: purjeta
@@ -708,7 +708,7 @@ Tests:
     puri+N+Sg+Ess: purjena
     puri+N+Sg+Gen: purje
     puri+N+Sg+Ill: purje
-    puri+N+Sg+Ill+Use/Hyp: purjesse
+    puri+N+Sg+Ill+Usage/Hyp: purjesse
     puri+N+Sg+Ine: purjes
     puri+N+Sg+Nom: puri
     puri+N+Sg+Par: purje
@@ -726,7 +726,7 @@ Tests:
     puud+N+Pl+Ine: puudades
     puud+N+Pl+Nom: puudad
     puud+N+Pl+Par: puudasid
-    puud+N+Pl+Par+Use/Rare: puudi
+    puud+N+Pl+Par+Usage/Rare: puudi
     puud+N+Pl+Tra: puudadeks
     puud+N+Pl+Trm: puudadeni
     puud+N+Sg+Abe: puudata
@@ -738,7 +738,7 @@ Tests:
     puud+N+Sg+Ess: puudana
     puud+N+Sg+Gen: puuda
     puud+N+Sg+Ill: puuda
-    puud+N+Sg+Ill+Use/Hyp: puudasse
+    puud+N+Sg+Ill+Usage/Hyp: puudasse
     puud+N+Sg+Ine: puudas
     puud+N+Sg+Nom: puud
     puud+N+Sg+Par: puuda
@@ -756,7 +756,7 @@ Tests:
     puu+N+Pl+Ine: puudes
     puu+N+Pl+Nom: puud
     puu+N+Pl+Par: puid
-    puu+N+Pl+Par+Use/Rare: puusid
+    puu+N+Pl+Par+Usage/Rare: puusid
     puu+N+Pl+Tra: puudeks
     puu+N+Pl+Trm: puudeni
     puu+N+Sg+Abe: puuta
@@ -775,27 +775,27 @@ Tests:
     puu+N+Sg+Trm: puuni
     põlv+N+Pl+Abe: põlvedeta
     põlv+N+Pl+Abl: põlvedelt
-    põlv+N+Pl+Abl+Use/Rare: põlvilt
+    põlv+N+Pl+Abl+Usage/Rare: põlvilt
     põlv+N+Pl+Ade: põlvedel
-    põlv+N+Pl+Ade+Use/Rare: põlvil
+    põlv+N+Pl+Ade+Usage/Rare: põlvil
     põlv+N+Pl+All: põlvedele
-    põlv+N+Pl+All+Use/Rare: põlvile
+    põlv+N+Pl+All+Usage/Rare: põlvile
     põlv+N+Pl+Com: põlvedega
     põlv+N+Pl+Ela: põlvedest
-    põlv+N+Pl+Ela+Use/Rare: põlvist
+    põlv+N+Pl+Ela+Usage/Rare: põlvist
     põlv+N+Pl+Ess: põlvedena
     põlv+N+Pl+Gen: põlvede
     põlv+N+Pl+Ill: põlvedesse
-    põlv+N+Pl+Ill+Use/Rare: põlvisse
+    põlv+N+Pl+Ill+Usage/Rare: põlvisse
     põlv+N+Pl+Ine: põlvedes
-    põlv+N+Pl+Ine+Use/Rare: põlvis
+    põlv+N+Pl+Ine+Usage/Rare: põlvis
     põlv+N+Pl+Nom: põlved
     põlv+N+Pl+Par: põlvi
-    põlv+N+Pl+Par+Use/Rare: põlvesid
+    põlv+N+Pl+Par+Usage/Rare: põlvesid
     põlv+N+Pl+Tra: põlvedeks
-    põlv+N+Pl+Tra+Use/Rare: põlviks
+    põlv+N+Pl+Tra+Usage/Rare: põlviks
     põlv+N+Pl+Trm: põlvedeni
-    põlv+N+Pl+Trm+Use/Rare: põlvini
+    põlv+N+Pl+Trm+Usage/Rare: põlvini
     põlv+N+Sg+Abe: põlveta
     põlv+N+Sg+Abl: põlvelt
     põlv+N+Sg+Ade: põlvel
@@ -805,102 +805,102 @@ Tests:
     põlv+N+Sg+Ess: põlvena
     põlv+N+Sg+Gen: põlve
     põlv+N+Sg+Ill: põlve
-    põlv+N+Sg+Ill+Use/Hyp: põlvesse
+    põlv+N+Sg+Ill+Usage/Hyp: põlvesse
     põlv+N+Sg+Ine: põlves
     põlv+N+Sg+Nom: põlv
-    põlv+N+Sg+Nom+Use/Rare: põli
+    põlv+N+Sg+Nom+Usage/Rare: põli
     põlv+N+Sg+Par: põlve
     põlv+N+Sg+Tra: põlveks
     põlv+N+Sg+Trm: põlveni
     päike+N+Pl+Abe: päikesteta
-    päike+N+Pl+Abe+Use/Rare: [päikeseita, päikseita, päikseteta]
+    päike+N+Pl+Abe+Usage/Rare: [päikeseita, päikseita, päikseteta]
     päike+N+Pl+Abl: päikestelt
-    päike+N+Pl+Abl+Use/Rare: [päikeseilt, päikesilt, päikseilt, päiksetelt]
+    päike+N+Pl+Abl+Usage/Rare: [päikeseilt, päikesilt, päikseilt, päiksetelt]
     päike+N+Pl+Ade: päikestel
-    päike+N+Pl+Ade+Use/Rare: [päikeseil, päikesil, päikseil, päiksetel]
+    päike+N+Pl+Ade+Usage/Rare: [päikeseil, päikesil, päikseil, päiksetel]
     päike+N+Pl+All: päikestele
-    päike+N+Pl+All+Use/Rare: [päikeseile, päikesile, päikseile, päiksetele]
+    päike+N+Pl+All+Usage/Rare: [päikeseile, päikesile, päikseile, päiksetele]
     päike+N+Pl+Com: päikestega
-    päike+N+Pl+Com+Use/Rare: [päikeseiga, päikseiga, päiksetega]
+    päike+N+Pl+Com+Usage/Rare: [päikeseiga, päikseiga, päiksetega]
     päike+N+Pl+Ela: päikestest
-    päike+N+Pl+Ela+Use/Rare: [päikeseist, päikesist, päikseist, päiksetest]
+    päike+N+Pl+Ela+Usage/Rare: [päikeseist, päikesist, päikseist, päiksetest]
     päike+N+Pl+Ess: päikestena
-    päike+N+Pl+Ess+Use/Rare: [päikeseina, päikseina, päiksetena]
+    päike+N+Pl+Ess+Usage/Rare: [päikeseina, päikseina, päiksetena]
     päike+N+Pl+Gen: päikeste
-    päike+N+Pl+Gen+Use/Rare: päiksete
+    päike+N+Pl+Gen+Usage/Rare: päiksete
     päike+N+Pl+Ill: päikestesse
-    päike+N+Pl+Ill+Use/Rare: [päikeseisse, päikesisse, päikseisse, päiksetesse]
+    päike+N+Pl+Ill+Usage/Rare: [päikeseisse, päikesisse, päikseisse, päiksetesse]
     päike+N+Pl+Ine: päikestes
-    päike+N+Pl+Ine+Use/Rare: [päikeseis, päikesis, päikseis, päiksetes]
+    päike+N+Pl+Ine+Usage/Rare: [päikeseis, päikesis, päikseis, päiksetes]
     päike+N+Pl+Nom: päikesed
-    päike+N+Pl+Nom+Use/Rare: päiksed
+    päike+N+Pl+Nom+Usage/Rare: päiksed
     päike+N+Pl+Par: päikeseid
-    päike+N+Pl+Par+Use/Rare: [päikesi, päikseid]
+    päike+N+Pl+Par+Usage/Rare: [päikesi, päikseid]
     päike+N+Pl+Tra: päikesteks
-    päike+N+Pl+Tra+Use/Rare: [päikeseiks, päikesiks, päikseiks, päikseteks]
+    päike+N+Pl+Tra+Usage/Rare: [päikeseiks, päikesiks, päikseiks, päikseteks]
     päike+N+Pl+Trm: päikesteni
-    päike+N+Pl+Trm+Use/Rare: [päikeseini, päikseini, päikseteni]
+    päike+N+Pl+Trm+Usage/Rare: [päikeseini, päikseini, päikseteni]
     päike+N+Sg+Abe: päikeseta
-    päike+N+Sg+Abe+Use/Rare: päikseta
+    päike+N+Sg+Abe+Usage/Rare: päikseta
     päike+N+Sg+Abl: päikeselt
-    päike+N+Sg+Abl+Use/Rare: päikselt
+    päike+N+Sg+Abl+Usage/Rare: päikselt
     päike+N+Sg+Ade: päikesel
-    päike+N+Sg+Ade+Use/Rare: päiksel
+    päike+N+Sg+Ade+Usage/Rare: päiksel
     päike+N+Sg+All: päikesele
-    päike+N+Sg+All+Use/Rare: päiksele
+    päike+N+Sg+All+Usage/Rare: päiksele
     päike+N+Sg+Com: päikesega
-    päike+N+Sg+Com+Use/Rare: päiksega
+    päike+N+Sg+Com+Usage/Rare: päiksega
     päike+N+Sg+Ela: päikesest
-    päike+N+Sg+Ela+Use/Rare: päiksest
+    päike+N+Sg+Ela+Usage/Rare: päiksest
     päike+N+Sg+Ess: päikesena
-    päike+N+Sg+Ess+Use/Rare: päiksena
+    päike+N+Sg+Ess+Usage/Rare: päiksena
     päike+N+Sg+Gen: päikese
-    päike+N+Sg+Gen+Use/Rare: päikse
+    päike+N+Sg+Gen+Usage/Rare: päikse
     päike+N+Sg+Ill: päikesesse
-    päike+N+Sg+Ill+Use/Rare: [päikesse, päiksesse]
+    päike+N+Sg+Ill+Usage/Rare: [päikesse, päiksesse]
     päike+N+Sg+Ine: päikeses
-    päike+N+Sg+Ine+Use/Rare: päikses
+    päike+N+Sg+Ine+Usage/Rare: päikses
     päike+N+Sg+Nom: päike
-    päike+N+Sg+Nom+Use/Rare: päikene
+    päike+N+Sg+Nom+Usage/Rare: päikene
     päike+N+Sg+Par: päikest
-    päike+N+Sg+Par+Use/Rare: päikset
+    päike+N+Sg+Par+Usage/Rare: päikset
     päike+N+Sg+Tra: päikeseks
-    päike+N+Sg+Tra+Use/Rare: päikseks
+    päike+N+Sg+Tra+Usage/Rare: päikseks
     päike+N+Sg+Trm: päikeseni
-    päike+N+Sg+Trm+Use/Rare: päikseni
+    päike+N+Sg+Trm+Usage/Rare: päikseni
     pöial+N+Pl+Abe: pöialdeta
-    pöial+N+Pl+Abe+Use/NotNorm: pöidlateta
+    pöial+N+Pl+Abe+Usage/NotNorm: pöidlateta
     pöial+N+Pl+Abl: pöialdelt
-    pöial+N+Pl+Abl+Use/NotNorm: pöidlatelt
-    pöial+N+Pl+Abl+Use/Rare: pöidlailt
+    pöial+N+Pl+Abl+Usage/NotNorm: pöidlatelt
+    pöial+N+Pl+Abl+Usage/Rare: pöidlailt
     pöial+N+Pl+Ade: pöialdel
-    pöial+N+Pl+Ade+Use/NotNorm: pöidlatel
-    pöial+N+Pl+Ade+Use/Rare: pöidlail
+    pöial+N+Pl+Ade+Usage/NotNorm: pöidlatel
+    pöial+N+Pl+Ade+Usage/Rare: pöidlail
     pöial+N+Pl+All: pöialdele
-    pöial+N+Pl+All+Use/NotNorm: pöidlatele
-    pöial+N+Pl+All+Use/Rare: pöidlaile
+    pöial+N+Pl+All+Usage/NotNorm: pöidlatele
+    pöial+N+Pl+All+Usage/Rare: pöidlaile
     pöial+N+Pl+Com: pöialdega
-    pöial+N+Pl+Com+Use/NotNorm: pöidlatega
+    pöial+N+Pl+Com+Usage/NotNorm: pöidlatega
     pöial+N+Pl+Ela: pöialdest
-    pöial+N+Pl+Ela+Use/NotNorm: pöidlatest
-    pöial+N+Pl+Ela+Use/Rare: pöidlaist
+    pöial+N+Pl+Ela+Usage/NotNorm: pöidlatest
+    pöial+N+Pl+Ela+Usage/Rare: pöidlaist
     pöial+N+Pl+Ess: pöialdena
-    pöial+N+Pl+Ess+Use/NotNorm: pöidlatena
+    pöial+N+Pl+Ess+Usage/NotNorm: pöidlatena
     pöial+N+Pl+Gen: pöialde
-    pöial+N+Pl+Gen+Use/NotNorm: pöidlate
+    pöial+N+Pl+Gen+Usage/NotNorm: pöidlate
     pöial+N+Pl+Ill: pöialdesse
-    pöial+N+Pl+Ill+Use/NotNorm: pöidlatesse
-    pöial+N+Pl+Ill+Use/Rare: pöidlaisse
+    pöial+N+Pl+Ill+Usage/NotNorm: pöidlatesse
+    pöial+N+Pl+Ill+Usage/Rare: pöidlaisse
     pöial+N+Pl+Ine: pöialdes
-    pöial+N+Pl+Ine+Use/NotNorm: pöidlates
-    pöial+N+Pl+Ine+Use/Rare: pöidlais
+    pöial+N+Pl+Ine+Usage/NotNorm: pöidlates
+    pöial+N+Pl+Ine+Usage/Rare: pöidlais
     pöial+N+Pl+Nom: pöidlad
     pöial+N+Pl+Par: pöidlaid
     pöial+N+Pl+Tra: pöialdeks
-    pöial+N+Pl+Tra+Use/NotNorm: pöidlateks
-    pöial+N+Pl+Tra+Use/Rare: pöidlaiks
+    pöial+N+Pl+Tra+Usage/NotNorm: pöidlateks
+    pöial+N+Pl+Tra+Usage/Rare: pöidlaiks
     pöial+N+Pl+Trm: pöialdeni
-    pöial+N+Pl+Trm+Use/NotNorm: pöidlateni
+    pöial+N+Pl+Trm+Usage/NotNorm: pöidlateni
     pöial+N+Sg+Abe: pöidlata
     pöial+N+Sg+Abl: pöidlalt
     pöial+N+Sg+Ade: pöidlal
@@ -917,24 +917,24 @@ Tests:
     pöial+N+Sg+Trm: pöidlani
     rake+N+Pl+Abe: raketeta
     rake+N+Pl+Abl: raketelt
-    rake+N+Pl+Abl+Use/Rare: rakkeilt
+    rake+N+Pl+Abl+Usage/Rare: rakkeilt
     rake+N+Pl+Ade: raketel
-    rake+N+Pl+Ade+Use/Rare: rakkeil
+    rake+N+Pl+Ade+Usage/Rare: rakkeil
     rake+N+Pl+All: raketele
-    rake+N+Pl+All+Use/Rare: rakkeile
+    rake+N+Pl+All+Usage/Rare: rakkeile
     rake+N+Pl+Com: raketega
     rake+N+Pl+Ela: raketest
-    rake+N+Pl+Ela+Use/Rare: rakkeist
+    rake+N+Pl+Ela+Usage/Rare: rakkeist
     rake+N+Pl+Ess: raketena
     rake+N+Pl+Gen: rakete
     rake+N+Pl+Ill: raketesse
-    rake+N+Pl+Ill+Use/Rare: rakkeisse
+    rake+N+Pl+Ill+Usage/Rare: rakkeisse
     rake+N+Pl+Ine: raketes
-    rake+N+Pl+Ine+Use/Rare: rakkeis
+    rake+N+Pl+Ine+Usage/Rare: rakkeis
     rake+N+Pl+Nom: rakked
     rake+N+Pl+Par: rakkeid
     rake+N+Pl+Tra: raketeks
-    rake+N+Pl+Tra+Use/Rare: rakkeiks
+    rake+N+Pl+Tra+Usage/Rare: rakkeiks
     rake+N+Pl+Trm: raketeni
     rake+N+Sg+Abe: rakketa
     rake+N+Sg+Abl: rakkelt
@@ -944,7 +944,7 @@ Tests:
     rake+N+Sg+Ela: rakkest
     rake+N+Sg+Ess: rakkena
     rake+N+Sg+Gen: rakke
-    rake+N+Sg+Ill+Use/Rare: rakke
+    rake+N+Sg+Ill+Usage/Rare: rakke
     rake+N+Sg+Ill: rakkesse
     rake+N+Sg+Ine: rakkes
     rake+N+Sg+Nom: rake
@@ -953,24 +953,24 @@ Tests:
     rake+N+Sg+Trm: rakkeni
     ranne+N+Pl+Abe: randmeteta
     ranne+N+Pl+Abl: randmetelt
-    ranne+N+Pl+Abl+Use/Rare: randmeilt
+    ranne+N+Pl+Abl+Usage/Rare: randmeilt
     ranne+N+Pl+Ade: randmetel
-    ranne+N+Pl+Ade+Use/Rare: randmeil
+    ranne+N+Pl+Ade+Usage/Rare: randmeil
     ranne+N+Pl+All: randmetele
-    ranne+N+Pl+All+Use/Rare: randmeile
+    ranne+N+Pl+All+Usage/Rare: randmeile
     ranne+N+Pl+Com: randmetega
     ranne+N+Pl+Ela: randmetest
-    ranne+N+Pl+Ela+Use/Rare: randmeist
+    ranne+N+Pl+Ela+Usage/Rare: randmeist
     ranne+N+Pl+Ess: randmetena
     ranne+N+Pl+Gen: randmete
     ranne+N+Pl+Ill: randmetesse
-    ranne+N+Pl+Ill+Use/Rare: randmeisse
+    ranne+N+Pl+Ill+Usage/Rare: randmeisse
     ranne+N+Pl+Ine: randmetes
-    ranne+N+Pl+Ine+Use/Rare: randmeis
+    ranne+N+Pl+Ine+Usage/Rare: randmeis
     ranne+N+Pl+Nom: randmed
     ranne+N+Pl+Par: randmeid
     ranne+N+Pl+Tra: randmeteks
-    ranne+N+Pl+Tra+Use/Rare: randmeiks
+    ranne+N+Pl+Tra+Usage/Rare: randmeiks
     ranne+N+Pl+Trm: randmeteni
     ranne+N+Sg+Abe: randmeta
     ranne+N+Sg+Abl: randmelt
@@ -1009,11 +1009,11 @@ Tests:
     rehi+N+Sg+Ess: rehena
     rehi+N+Sg+Gen: rehe
     rehi+N+Sg+Ill: rehte
-    rehi+N+Sg+Ill+Use/Hyp: rehesse
+    rehi+N+Sg+Ill+Usage/Hyp: rehesse
     rehi+N+Sg+Ine: rehes
     rehi+N+Sg+Nom: rehi
     rehi+N+Sg+Par: rehte
-    rehi+N+Sg+Par+Use/Rare: reht
+    rehi+N+Sg+Par+Usage/Rare: reht
     rehi+N+Sg+Tra: reheks
     rehi+N+Sg+Trm: reheni
     rohi+N+Pl+Abe: rohtudeta
@@ -1028,7 +1028,7 @@ Tests:
     rohi+N+Pl+Ine: rohtudes
     rohi+N+Pl+Nom: rohud
     rohi+N+Pl+Par: rohtusid
-    rohi+N+Pl+Par+Use/Rare: rohte
+    rohi+N+Pl+Par+Usage/Rare: rohte
     rohi+N+Pl+Tra: rohtudeks
     rohi+N+Pl+Trm: rohtudeni
     rohi+N+Sg+Abe: rohuta
@@ -1040,7 +1040,7 @@ Tests:
     rohi+N+Sg+Ess: rohuna
     rohi+N+Sg+Gen: rohu
     rohi+N+Sg+Ill: rohtu
-    rohi+N+Sg+Ill+Use/Hyp: rohusse
+    rohi+N+Sg+Ill+Usage/Hyp: rohusse
     rohi+N+Sg+Ine: rohus
     rohi+N+Sg+Nom: rohi
     rohi+N+Sg+Par: rohtu
@@ -1048,24 +1048,24 @@ Tests:
     rohi+N+Sg+Trm: rohuni
     rukis+N+Pl+Abe: rukisteta
     rukis+N+Pl+Abl: rukistelt
-    rukis+N+Pl+Abl+Use/Rare: rukkeilt
+    rukis+N+Pl+Abl+Usage/Rare: rukkeilt
     rukis+N+Pl+Ade: rukistel
-    rukis+N+Pl+Ade+Use/Rare: rukkeil
+    rukis+N+Pl+Ade+Usage/Rare: rukkeil
     rukis+N+Pl+All: rukistele
-    rukis+N+Pl+All+Use/Rare: rukkeile
+    rukis+N+Pl+All+Usage/Rare: rukkeile
     rukis+N+Pl+Com: rukistega
     rukis+N+Pl+Ela: rukistest
-    rukis+N+Pl+Ela+Use/Rare: rukkeist
+    rukis+N+Pl+Ela+Usage/Rare: rukkeist
     rukis+N+Pl+Ess: rukistena
     rukis+N+Pl+Gen: rukiste
     rukis+N+Pl+Ill: rukistesse
-    rukis+N+Pl+Ill+Use/Rare: rukkeisse
+    rukis+N+Pl+Ill+Usage/Rare: rukkeisse
     rukis+N+Pl+Ine: rukistes
-    rukis+N+Pl+Ine+Use/Rare: rukkeis
+    rukis+N+Pl+Ine+Usage/Rare: rukkeis
     rukis+N+Pl+Nom: rukkid
     rukis+N+Pl+Par: rukkeid
     rukis+N+Pl+Tra: rukisteks
-    rukis+N+Pl+Tra+Use/Rare: rukkeiks
+    rukis+N+Pl+Tra+Usage/Rare: rukkeiks
     rukis+N+Pl+Trm: rukisteni
     rukis+N+Sg+Abe: rukkita
     rukis+N+Sg+Abl: rukkilt
@@ -1093,7 +1093,7 @@ Tests:
     saag+N+Pl+Ine: saagides
     saag+N+Pl+Nom: saed
     saag+N+Pl+Par: saage
-    saag+N+Pl+Par+Use/Rare: saagisid
+    saag+N+Pl+Par+Usage/Rare: saagisid
     saag+N+Pl+Tra: saagideks
     saag+N+Pl+Trm: saagideni
     saag+N+Sg+Abe: saeta
@@ -1105,7 +1105,7 @@ Tests:
     saag+N+Sg+Ess: saena
     saag+N+Sg+Gen: sae
     saag+N+Sg+Ill: saagi
-    saag+N+Sg+Ill+Use/Hyp: saesse
+    saag+N+Sg+Ill+Usage/Hyp: saesse
     saag+N+Sg+Ine: saes
     saag+N+Sg+Nom: saag
     saag+N+Sg+Par: saagi
@@ -1123,7 +1123,7 @@ Tests:
     saba+N+Pl+Ine: sabades
     saba+N+Pl+Nom: sabad
     saba+N+Pl+Par: sabasid
-    saba+N+Pl+Par+Use/Rare: sabu
+    saba+N+Pl+Par+Usage/Rare: sabu
     saba+N+Pl+Tra: sabadeks
     saba+N+Pl+Trm: sabadeni
     saba+N+Sg+Abe: sabata
@@ -1135,7 +1135,7 @@ Tests:
     saba+N+Sg+Ess: sabana
     saba+N+Sg+Gen: saba
     saba+N+Sg+Ill: sappa
-    saba+N+Sg+Ill+Use/Rare: sabasse
+    saba+N+Sg+Ill+Usage/Rare: sabasse
     saba+N+Sg+Ine: sabas
     saba+N+Sg+Nom: saba
     saba+N+Sg+Par: saba
@@ -1143,24 +1143,24 @@ Tests:
     saba+N+Sg+Trm: sabani
     tõuse+N+Pl+Abe: tõusmeteta
     tõuse+N+Pl+Abl: tõusmetelt
-    tõuse+N+Pl+Abl+Use/Rare: tõusmeilt
+    tõuse+N+Pl+Abl+Usage/Rare: tõusmeilt
     tõuse+N+Pl+Ade: tõusmetel
-    tõuse+N+Pl+Ade+Use/Rare: tõusmeil
+    tõuse+N+Pl+Ade+Usage/Rare: tõusmeil
     tõuse+N+Pl+All: tõusmetele
-    tõuse+N+Pl+All+Use/Rare: tõusmeile
+    tõuse+N+Pl+All+Usage/Rare: tõusmeile
     tõuse+N+Pl+Com: tõusmetega
     tõuse+N+Pl+Ela: tõusmetest
-    tõuse+N+Pl+Ela+Use/Rare: tõusmeist
+    tõuse+N+Pl+Ela+Usage/Rare: tõusmeist
     tõuse+N+Pl+Ess: tõusmetena
     tõuse+N+Pl+Gen: tõusmete
     tõuse+N+Pl+Ill: tõusmetesse
-    tõuse+N+Pl+Ill+Use/Rare: tõusmeisse
+    tõuse+N+Pl+Ill+Usage/Rare: tõusmeisse
     tõuse+N+Pl+Ine: tõusmetes
-    tõuse+N+Pl+Ine+Use/Rare: tõusmeis
+    tõuse+N+Pl+Ine+Usage/Rare: tõusmeis
     tõuse+N+Pl+Nom: tõusmed
     tõuse+N+Pl+Par: tõusmeid
     tõuse+N+Pl+Tra: tõusmeteks
-    tõuse+N+Pl+Tra+Use/Rare: tõusmeiks
+    tõuse+N+Pl+Tra+Usage/Rare: tõusmeiks
     tõuse+N+Pl+Trm: tõusmeteni
     tõuse+N+Sg+Abe: tõusmeta
     tõuse+N+Sg+Abl: tõusmelt
@@ -1188,7 +1188,7 @@ Tests:
     seminar+N+Pl+Ine: seminarides
     seminar+N+Pl+Nom: seminarid
     seminar+N+Pl+Par: seminare
-    seminar+N+Pl+Par+Use/Rare: seminarisid
+    seminar+N+Pl+Par+Usage/Rare: seminarisid
     seminar+N+Pl+Tra: seminarideks
     seminar+N+Pl+Trm: seminarideni
     seminar+N+Sg+Abe: seminarita
@@ -1200,7 +1200,7 @@ Tests:
     seminar+N+Sg+Ess: seminarina
     seminar+N+Sg+Gen: seminari
     seminar+N+Sg+Ill: seminari
-    seminar+N+Sg+Ill+Use/Hyp: seminarisse
+    seminar+N+Sg+Ill+Usage/Hyp: seminarisse
     seminar+N+Sg+Ine: seminaris
     seminar+N+Sg+Nom: seminar
     seminar+N+Sg+Par: seminari
@@ -1218,7 +1218,7 @@ Tests:
     sepp+N+Pl+Ine: seppades
     sepp+N+Pl+Nom: sepad
     sepp+N+Pl+Par: seppi
-    sepp+N+Pl+Par+Use/Rare: seppasid
+    sepp+N+Pl+Par+Usage/Rare: seppasid
     sepp+N+Pl+Tra: seppadeks
     sepp+N+Pl+Trm: seppadeni
     sepp+N+Sg+Abe: sepata
@@ -1230,7 +1230,7 @@ Tests:
     sepp+N+Sg+Ess: sepana
     sepp+N+Sg+Gen: sepa
     sepp+N+Sg+Ill: seppa
-    sepp+N+Sg+Ill+Use/Hyp: sepasse
+    sepp+N+Sg+Ill+Usage/Hyp: sepasse
     sepp+N+Sg+Ine: sepas
     sepp+N+Sg+Nom: sepp
     sepp+N+Sg+Par: seppa
@@ -1259,7 +1259,7 @@ Tests:
     siig+N+Sg+Ess: siiana
     siig+N+Sg+Gen: siia
     siig+N+Sg+Ill: siiga
-    siig+N+Sg+Ill+Use/Hyp: siiasse
+    siig+N+Sg+Ill+Usage/Hyp: siiasse
     siig+N+Sg+Ine: siias
     siig+N+Sg+Nom: siig
     siig+N+Sg+Par: siiga
@@ -1273,12 +1273,12 @@ Tests:
     rind+N+Pl+Ela: rindadest
     rind+N+Pl+Ess: rindadena
     rind+N+Pl+Gen: rindade
-    rind+N+Pl+Gen+Use/Rare: rinde
+    rind+N+Pl+Gen+Usage/Rare: rinde
     rind+N+Pl+Ill: rindadesse
     rind+N+Pl+Ine: rindades
     rind+N+Pl+Nom: rinnad
     rind+N+Pl+Par: rindu
-    rind+N+Pl+Par+Use/Rare: rindasid
+    rind+N+Pl+Par+Usage/Rare: rindasid
     rind+N+Pl+Tra: rindadeks
     rind+N+Pl+Trm: rindadeni
     rind+N+Sg+Abe: rinnata
@@ -1290,7 +1290,7 @@ Tests:
     rind+N+Sg+Ess: rinnana
     rind+N+Sg+Gen: rinna
     rind+N+Sg+Ill: rinda
-    rind+N+Sg+Ill+Use/Hyp: rinnasse
+    rind+N+Sg+Ill+Usage/Hyp: rinnasse
     rind+N+Sg+Ine: rinnas
     rind+N+Sg+Nom: rind
     rind+N+Sg+Par: rinda
@@ -1298,25 +1298,25 @@ Tests:
     rind+N+Sg+Trm: rinnani
     soo+N+Pl+Abe: soodeta
     soo+N+Pl+Abl: soodelt
-    soo+N+Pl+Abl+Use/Rare: soilt
+    soo+N+Pl+Abl+Usage/Rare: soilt
     soo+N+Pl+Ade: soodel
-    soo+N+Pl+Ade+Use/Rare: soil
+    soo+N+Pl+Ade+Usage/Rare: soil
     soo+N+Pl+All: soodele
-    soo+N+Pl+All+Use/Rare: soile
+    soo+N+Pl+All+Usage/Rare: soile
     soo+N+Pl+Com: soodega
     soo+N+Pl+Ela: soodest
-    soo+N+Pl+Ela+Use/Rare: soist
+    soo+N+Pl+Ela+Usage/Rare: soist
     soo+N+Pl+Ess: soodena
     soo+N+Pl+Gen: soode
     soo+N+Pl+Ill: soodesse
-    soo+N+Pl+Ill+Use/Rare: soisse
+    soo+N+Pl+Ill+Usage/Rare: soisse
     soo+N+Pl+Ine: soodes
-    soo+N+Pl+Ine+Use/Rare: sois
+    soo+N+Pl+Ine+Usage/Rare: sois
     soo+N+Pl+Nom: sood
     soo+N+Pl+Par: soid
-    soo+N+Pl+Par+Use/Rare: soosid
+    soo+N+Pl+Par+Usage/Rare: soosid
     soo+N+Pl+Tra: soodeks
-    soo+N+Pl+Tra+Use/Rare: soiks
+    soo+N+Pl+Tra+Usage/Rare: soiks
     soo+N+Pl+Trm: soodeni
     soo+N+Sg+Abe: soota
     soo+N+Sg+Abl: soolt
@@ -1327,7 +1327,7 @@ Tests:
     soo+N+Sg+Ess: soona
     soo+N+Sg+Gen: soo
     soo+N+Sg+Ill: sohu
-    soo+N+Sg+Ill+Use/Rare: soosse
+    soo+N+Sg+Ill+Usage/Rare: soosse
     soo+N+Sg+Ine: soos
     soo+N+Sg+Nom: soo
     soo+N+Sg+Par: sood
@@ -1335,24 +1335,24 @@ Tests:
     soo+N+Sg+Trm: sooni
     spiiker+N+Pl+Abe: spiikriteta
     spiiker+N+Pl+Abl: spiikritelt
-    spiiker+N+Pl+Abl+Use/Rare: spiikreilt
+    spiiker+N+Pl+Abl+Usage/Rare: spiikreilt
     spiiker+N+Pl+Ade: spiikritel
-    spiiker+N+Pl+Ade+Use/Rare: spiikreil
+    spiiker+N+Pl+Ade+Usage/Rare: spiikreil
     spiiker+N+Pl+All: spiikritele
-    spiiker+N+Pl+All+Use/Rare: spiikreile
+    spiiker+N+Pl+All+Usage/Rare: spiikreile
     spiiker+N+Pl+Com: spiikritega
     spiiker+N+Pl+Ela: spiikritest
-    spiiker+N+Pl+Ela+Use/Rare: spiikreist
+    spiiker+N+Pl+Ela+Usage/Rare: spiikreist
     spiiker+N+Pl+Ess: spiikritena
     spiiker+N+Pl+Gen: spiikrite
     spiiker+N+Pl+Ill: spiikritesse
-    spiiker+N+Pl+Ill+Use/Rare: spiikreisse
+    spiiker+N+Pl+Ill+Usage/Rare: spiikreisse
     spiiker+N+Pl+Ine: spiikrites
-    spiiker+N+Pl+Ine+Use/Rare: spiikreis
+    spiiker+N+Pl+Ine+Usage/Rare: spiikreis
     spiiker+N+Pl+Nom: spiikrid
     spiiker+N+Pl+Par: spiikreid
     spiiker+N+Pl+Tra: spiikriteks
-    spiiker+N+Pl+Tra+Use/Rare: spiikreiks
+    spiiker+N+Pl+Tra+Usage/Rare: spiikreiks
     spiiker+N+Pl+Trm: spiikriteni
     spiiker+N+Sg+Abe: spiikrita
     spiiker+N+Sg+Abl: spiikrilt
@@ -1370,24 +1370,24 @@ Tests:
     spiiker+N+Sg+Trm: spiikrini
     spikker+N+Pl+Abe: spikriteta
     spikker+N+Pl+Abl: spikritelt
-    spikker+N+Pl+Abl+Use/Rare: spikreilt
+    spikker+N+Pl+Abl+Usage/Rare: spikreilt
     spikker+N+Pl+Ade: spikritel
-    spikker+N+Pl+Ade+Use/Rare: spikreil
+    spikker+N+Pl+Ade+Usage/Rare: spikreil
     spikker+N+Pl+All: spikritele
-    spikker+N+Pl+All+Use/Rare: spikreile
+    spikker+N+Pl+All+Usage/Rare: spikreile
     spikker+N+Pl+Com: spikritega
     spikker+N+Pl+Ela: spikritest
-    spikker+N+Pl+Ela+Use/Rare: spikreist
+    spikker+N+Pl+Ela+Usage/Rare: spikreist
     spikker+N+Pl+Ess: spikritena
     spikker+N+Pl+Gen: spikrite
     spikker+N+Pl+Ill: spikritesse
-    spikker+N+Pl+Ill+Use/Rare: spikreisse
+    spikker+N+Pl+Ill+Usage/Rare: spikreisse
     spikker+N+Pl+Ine: spikrites
-    spikker+N+Pl+Ine+Use/Rare: spikreis
+    spikker+N+Pl+Ine+Usage/Rare: spikreis
     spikker+N+Pl+Nom: spikrid
     spikker+N+Pl+Par: spikreid
     spikker+N+Pl+Tra: spikriteks
-    spikker+N+Pl+Tra+Use/Rare: spikreiks
+    spikker+N+Pl+Tra+Usage/Rare: spikreiks
     spikker+N+Pl+Trm: spikriteni
     spikker+N+Sg+Abe: spikrita
     spikker+N+Sg+Abl: spikrilt
@@ -1405,24 +1405,24 @@ Tests:
     spikker+N+Sg+Trm: spikrini
     staier+N+Pl+Abe: staieriteta
     staier+N+Pl+Abl: staieritelt
-    staier+N+Pl+Abl+Use/Rare: staiereilt
+    staier+N+Pl+Abl+Usage/Rare: staiereilt
     staier+N+Pl+Ade: staieritel
-    staier+N+Pl+Ade+Use/Rare: staiereil
+    staier+N+Pl+Ade+Usage/Rare: staiereil
     staier+N+Pl+All: staieritele
-    staier+N+Pl+All+Use/Rare: staiereile
+    staier+N+Pl+All+Usage/Rare: staiereile
     staier+N+Pl+Com: staieritega
     staier+N+Pl+Ela: staieritest
-    staier+N+Pl+Ela+Use/Rare: staiereist
+    staier+N+Pl+Ela+Usage/Rare: staiereist
     staier+N+Pl+Ess: staieritena
     staier+N+Pl+Gen: staierite
     staier+N+Pl+Ill: staieritesse
-    staier+N+Pl+Ill+Use/Rare: staiereisse
+    staier+N+Pl+Ill+Usage/Rare: staiereisse
     staier+N+Pl+Ine: staierites
-    staier+N+Pl+Ine+Use/Rare: staiereis
+    staier+N+Pl+Ine+Usage/Rare: staiereis
     staier+N+Pl+Nom: staierid
     staier+N+Pl+Par: staiereid
     staier+N+Pl+Tra: staieriteks
-    staier+N+Pl+Tra+Use/Rare: staiereiks
+    staier+N+Pl+Tra+Usage/Rare: staiereiks
     staier+N+Pl+Trm: staieriteni
     staier+N+Sg+Abe: staierita
     staier+N+Sg+Abl: staierilt
@@ -1440,24 +1440,24 @@ Tests:
     staier+N+Sg+Trm: staierini
     suhkur+N+Pl+Abe: suhkruteta
     suhkur+N+Pl+Abl: suhkrutelt
-    suhkur+N+Pl+Abl+Use/Rare: suhkruilt
+    suhkur+N+Pl+Abl+Usage/Rare: suhkruilt
     suhkur+N+Pl+Ade: suhkrutel
-    suhkur+N+Pl+Ade+Use/Rare: suhkruil
+    suhkur+N+Pl+Ade+Usage/Rare: suhkruil
     suhkur+N+Pl+All: suhkrutele
-    suhkur+N+Pl+All+Use/Rare: suhkruile
+    suhkur+N+Pl+All+Usage/Rare: suhkruile
     suhkur+N+Pl+Com: suhkrutega
     suhkur+N+Pl+Ela: suhkrutest
-    suhkur+N+Pl+Ela+Use/Rare: suhkruist
+    suhkur+N+Pl+Ela+Usage/Rare: suhkruist
     suhkur+N+Pl+Ess: suhkrutena
     suhkur+N+Pl+Gen: suhkrute
     suhkur+N+Pl+Ill: suhkrutesse
-    suhkur+N+Pl+Ill+Use/Rare: suhkruisse
+    suhkur+N+Pl+Ill+Usage/Rare: suhkruisse
     suhkur+N+Pl+Ine: suhkrutes
-    suhkur+N+Pl+Ine+Use/Rare: suhkruis
+    suhkur+N+Pl+Ine+Usage/Rare: suhkruis
     suhkur+N+Pl+Nom: suhkrud
     suhkur+N+Pl+Par: suhkruid
     suhkur+N+Pl+Tra: suhkruteks
-    suhkur+N+Pl+Tra+Use/Rare: suhkruiks
+    suhkur+N+Pl+Tra+Usage/Rare: suhkruiks
     suhkur+N+Pl+Trm: suhkruteni
     suhkur+N+Sg+Abe: suhkruta
     suhkur+N+Sg+Abl: suhkrult
@@ -1503,25 +1503,25 @@ Tests:
     susi+N+Sg+Trm: soeni
     suu+N+Pl+Abe: suudeta
     suu+N+Pl+Abl: suudelt
-    suu+N+Pl+Abl+Use/Rare: suilt
+    suu+N+Pl+Abl+Usage/Rare: suilt
     suu+N+Pl+Ade: suudel
-    suu+N+Pl+Ade+Use/Rare: suil
+    suu+N+Pl+Ade+Usage/Rare: suil
     suu+N+Pl+All: suudele
-    suu+N+Pl+All+Use/Rare: suile
+    suu+N+Pl+All+Usage/Rare: suile
     suu+N+Pl+Com: suudega
     suu+N+Pl+Ela: suudest
-    suu+N+Pl+Ela+Use/Rare: suist
+    suu+N+Pl+Ela+Usage/Rare: suist
     suu+N+Pl+Ess: suudena
     suu+N+Pl+Gen: suude
     suu+N+Pl+Ill: suudesse
-    suu+N+Pl+Ill+Use/Rare: suisse
+    suu+N+Pl+Ill+Usage/Rare: suisse
     suu+N+Pl+Ine: suudes
-    suu+N+Pl+Ine+Use/Rare: suis
+    suu+N+Pl+Ine+Usage/Rare: suis
     suu+N+Pl+Nom: suud
     suu+N+Pl+Par: suid
-    suu+N+Pl+Par+Use/Rare: suusid
+    suu+N+Pl+Par+Usage/Rare: suusid
     suu+N+Pl+Tra: suudeks
-    suu+N+Pl+Tra+Use/Rare: suiks
+    suu+N+Pl+Tra+Usage/Rare: suiks
     suu+N+Pl+Trm: suudeni
     suu+N+Sg+Abe: suuta
     suu+N+Sg+Abl: suult
@@ -1532,7 +1532,7 @@ Tests:
     suu+N+Sg+Ess: suuna
     suu+N+Sg+Gen: suu
     suu+N+Sg+Ill: suhu
-    suu+N+Sg+Ill+Use/Rare: suusse
+    suu+N+Sg+Ill+Usage/Rare: suusse
     suu+N+Sg+Ine: suus
     suu+N+Sg+Nom: suu
     suu+N+Sg+Par: suud
@@ -1550,7 +1550,7 @@ Tests:
     sõda+N+Pl+Ine: sõdades
     sõda+N+Pl+Nom: sõjad
     sõda+N+Pl+Par: sõdu
-    sõda+N+Pl+Par+Use/Rare: sõdasid
+    sõda+N+Pl+Par+Usage/Rare: sõdasid
     sõda+N+Pl+Tra: sõdadeks
     sõda+N+Pl+Trm: sõdadeni
     sõda+N+Sg+Abe: sõjata
@@ -1562,7 +1562,7 @@ Tests:
     sõda+N+Sg+Ess: sõjana
     sõda+N+Sg+Gen: sõja
     sõda+N+Sg+Ill: sõtta
-    sõda+N+Sg+Ill+Use/Rare: sõjasse
+    sõda+N+Sg+Ill+Usage/Rare: sõjasse
     sõda+N+Sg+Ine: sõjas
     sõda+N+Sg+Nom: sõda
     sõda+N+Sg+Par: sõda
@@ -1570,24 +1570,24 @@ Tests:
     sõda+N+Sg+Trm: sõjani
     süda+N+Pl+Abe: südameteta
     süda+N+Pl+Abl: südametelt
-    süda+N+Pl+Abl+Use/Rare: südameilt
+    süda+N+Pl+Abl+Usage/Rare: südameilt
     süda+N+Pl+Ade: südametel
-    süda+N+Pl+Ade+Use/Rare: südameil
+    süda+N+Pl+Ade+Usage/Rare: südameil
     süda+N+Pl+All: südametele
-    süda+N+Pl+All+Use/Rare: südameile
+    süda+N+Pl+All+Usage/Rare: südameile
     süda+N+Pl+Com: südametega
     süda+N+Pl+Ela: südametest
-    süda+N+Pl+Ela+Use/Rare: südameist
+    süda+N+Pl+Ela+Usage/Rare: südameist
     süda+N+Pl+Ess: südametena
     süda+N+Pl+Gen: südamete
     süda+N+Pl+Ill: südametesse
-    süda+N+Pl+Ill+Use/Rare: südameisse
+    süda+N+Pl+Ill+Usage/Rare: südameisse
     süda+N+Pl+Ine: südametes
-    süda+N+Pl+Ine+Use/Rare: südameis
+    süda+N+Pl+Ine+Usage/Rare: südameis
     süda+N+Pl+Nom: südamed
     süda+N+Pl+Par: südameid
     süda+N+Pl+Tra: südameteks
-    süda+N+Pl+Tra+Use/Rare: südameiks
+    süda+N+Pl+Tra+Usage/Rare: südameiks
     süda+N+Pl+Trm: südameteni
     süda+N+Sg+Abe: südameta
     süda+N+Sg+Abl: südamelt
@@ -1598,7 +1598,7 @@ Tests:
     süda+N+Sg+Ess: südamena
     süda+N+Sg+Gen: südame
     süda+N+Sg+Ill: südamesse
-    süda+N+Sg+Ill+Use/Rare: südame
+    süda+N+Sg+Ill+Usage/Rare: südame
     süda+N+Sg+Ine: südames
     süda+N+Sg+Nom: süda
     süda+N+Sg+Par: südant
@@ -1634,24 +1634,24 @@ Tests:
     süsi+N+Sg+Trm: söeni
     tahe+N+Pl+Abe: taheteta
     tahe+N+Pl+Abl: tahetelt
-    tahe+N+Pl+Abl+Use/Rare: tahteilt
+    tahe+N+Pl+Abl+Usage/Rare: tahteilt
     tahe+N+Pl+Ade: tahetel
-    tahe+N+Pl+Ade+Use/Rare: tahteil
+    tahe+N+Pl+Ade+Usage/Rare: tahteil
     tahe+N+Pl+All: tahetele
-    tahe+N+Pl+All+Use/Rare: tahteile
+    tahe+N+Pl+All+Usage/Rare: tahteile
     tahe+N+Pl+Com: tahetega
     tahe+N+Pl+Ela: tahetest
-    tahe+N+Pl+Ela+Use/Rare: tahteist
+    tahe+N+Pl+Ela+Usage/Rare: tahteist
     tahe+N+Pl+Ess: tahetena
     tahe+N+Pl+Gen: tahete
     tahe+N+Pl+Ill: tahetesse
-    tahe+N+Pl+Ill+Use/Rare: tahteisse
+    tahe+N+Pl+Ill+Usage/Rare: tahteisse
     tahe+N+Pl+Ine: tahetes
-    tahe+N+Pl+Ine+Use/Rare: tahteis
+    tahe+N+Pl+Ine+Usage/Rare: tahteis
     tahe+N+Pl+Nom: tahted
     tahe+N+Pl+Par: tahteid
     tahe+N+Pl+Tra: taheteks
-    tahe+N+Pl+Tra+Use/Rare: tahteiks
+    tahe+N+Pl+Tra+Usage/Rare: tahteiks
     tahe+N+Pl+Trm: taheteni
     tahe+N+Sg+Abe: tahteta
     tahe+N+Sg+Abl: tahtelt
@@ -1679,7 +1679,7 @@ Tests:
     talv+N+Pl+Ine: talvedes
     talv+N+Pl+Nom: talved
     talv+N+Pl+Par: talvesid
-    talv+N+Pl+Par+Use/Rare: talvi
+    talv+N+Pl+Par+Usage/Rare: talvi
     talv+N+Pl+Tra: talvedeks
     talv+N+Pl+Trm: talvedeni
     talv+N+Sg+Abe: talveta
@@ -1691,33 +1691,33 @@ Tests:
     talv+N+Sg+Ess: talvena
     talv+N+Sg+Gen: talve
     talv+N+Sg+Ill: talve
-    talv+N+Sg+Ill+Use/Hyp: talvesse
+    talv+N+Sg+Ill+Usage/Hyp: talvesse
     talv+N+Sg+Ine: talves
     talv+N+Sg+Nom: talv
-    talv+N+Sg+Nom+Use/Rare: tali
+    talv+N+Sg+Nom+Usage/Rare: tali
     talv+N+Sg+Par: talve
     talv+N+Sg+Tra: talveks
     talv+N+Sg+Trm: talveni
     tanner+N+Pl+Abe: tandriteta
     tanner+N+Pl+Abl: tandritelt
-    tanner+N+Pl+Abl+Use/Rare: tandreilt
+    tanner+N+Pl+Abl+Usage/Rare: tandreilt
     tanner+N+Pl+Ade: tandritel
-    tanner+N+Pl+Ade+Use/Rare: tandreil
+    tanner+N+Pl+Ade+Usage/Rare: tandreil
     tanner+N+Pl+All: tandritele
-    tanner+N+Pl+All+Use/Rare: tandreile
+    tanner+N+Pl+All+Usage/Rare: tandreile
     tanner+N+Pl+Com: tandritega
     tanner+N+Pl+Ela: tandritest
-    tanner+N+Pl+Ela+Use/Rare: tandreist
+    tanner+N+Pl+Ela+Usage/Rare: tandreist
     tanner+N+Pl+Ess: tandritena
     tanner+N+Pl+Gen: tandrite
     tanner+N+Pl+Ill: tandritesse
-    tanner+N+Pl+Ill+Use/Rare: tandreisse
+    tanner+N+Pl+Ill+Usage/Rare: tandreisse
     tanner+N+Pl+Ine: tandrites
-    tanner+N+Pl+Ine+Use/Rare: tandreis
+    tanner+N+Pl+Ine+Usage/Rare: tandreis
     tanner+N+Pl+Nom: tandrid
     tanner+N+Pl+Par: tandreid
     tanner+N+Pl+Tra: tandriteks
-    tanner+N+Pl+Tra+Use/Rare: tandreiks
+    tanner+N+Pl+Tra+Usage/Rare: tandreiks
     tanner+N+Pl+Trm: tandriteni
     tanner+N+Sg+Abe: tandrita
     tanner+N+Sg+Abl: tandrilt
@@ -1745,7 +1745,7 @@ Tests:
     taud+N+Pl+Ine: taudides
     taud+N+Pl+Nom: taudid
     taud+N+Pl+Par: taude
-    taud+N+Pl+Par+Use/Rare: taudisid
+    taud+N+Pl+Par+Usage/Rare: taudisid
     taud+N+Pl+Tra: taudideks
     taud+N+Pl+Trm: taudideni
     taud+N+Sg+Abe: taudita
@@ -1757,7 +1757,7 @@ Tests:
     taud+N+Sg+Ess: taudina
     taud+N+Sg+Gen: taudi
     taud+N+Sg+Ill: taudi
-    taud+N+Sg+Ill+Use/Hyp: taudisse
+    taud+N+Sg+Ill+Usage/Hyp: taudisse
     taud+N+Sg+Ine: taudis
     taud+N+Sg+Nom: taud
     taud+N+Sg+Par: taudi
@@ -1765,24 +1765,24 @@ Tests:
     taud+N+Sg+Trm: taudini
     teivas+N+Pl+Abe: teivasteta
     teivas+N+Pl+Abl: teivastelt
-    teivas+N+Pl+Abl+Use/Rare: teibailt
+    teivas+N+Pl+Abl+Usage/Rare: teibailt
     teivas+N+Pl+Ade: teivastel
-    teivas+N+Pl+Ade+Use/Rare: teibail
+    teivas+N+Pl+Ade+Usage/Rare: teibail
     teivas+N+Pl+All: teivastele
-    teivas+N+Pl+All+Use/Rare: teibaile
+    teivas+N+Pl+All+Usage/Rare: teibaile
     teivas+N+Pl+Com: teivastega
     teivas+N+Pl+Ela: teivastest
-    teivas+N+Pl+Ela+Use/Rare: teibaist
+    teivas+N+Pl+Ela+Usage/Rare: teibaist
     teivas+N+Pl+Ess: teivastena
     teivas+N+Pl+Gen: teivaste
     teivas+N+Pl+Ill: teivastesse
-    teivas+N+Pl+Ill+Use/Rare: teibaisse
+    teivas+N+Pl+Ill+Usage/Rare: teibaisse
     teivas+N+Pl+Ine: teivastes
-    teivas+N+Pl+Ine+Use/Rare: teibais
+    teivas+N+Pl+Ine+Usage/Rare: teibais
     teivas+N+Pl+Nom: teibad
     teivas+N+Pl+Par: teibaid
     teivas+N+Pl+Tra: teivasteks
-    teivas+N+Pl+Tra+Use/Rare: teibaiks
+    teivas+N+Pl+Tra+Usage/Rare: teibaiks
     teivas+N+Pl+Trm: teivasteni
     teivas+N+Sg+Abe: teibata
     teivas+N+Sg+Abl: teibalt
@@ -1800,24 +1800,24 @@ Tests:
     teivas+N+Sg+Trm: teibani
     teler+N+Pl+Abe: teleriteta
     teler+N+Pl+Abl: teleritelt
-    teler+N+Pl+Abl+Use/Rare: telereilt
+    teler+N+Pl+Abl+Usage/Rare: telereilt
     teler+N+Pl+Ade: teleritel
-    teler+N+Pl+Ade+Use/Rare: telereil
+    teler+N+Pl+Ade+Usage/Rare: telereil
     teler+N+Pl+All: teleritele
-    teler+N+Pl+All+Use/Rare: telereile
+    teler+N+Pl+All+Usage/Rare: telereile
     teler+N+Pl+Com: teleritega
     teler+N+Pl+Ela: teleritest
-    teler+N+Pl+Ela+Use/Rare: telereist
+    teler+N+Pl+Ela+Usage/Rare: telereist
     teler+N+Pl+Ess: teleritena
     teler+N+Pl+Gen: telerite
     teler+N+Pl+Ill: teleritesse
-    teler+N+Pl+Ill+Use/Rare: telereisse
+    teler+N+Pl+Ill+Usage/Rare: telereisse
     teler+N+Pl+Ine: telerites
-    teler+N+Pl+Ine+Use/Rare: telereis
+    teler+N+Pl+Ine+Usage/Rare: telereis
     teler+N+Pl+Nom: telerid
     teler+N+Pl+Par: telereid
     teler+N+Pl+Tra: teleriteks
-    teler+N+Pl+Tra+Use/Rare: telereiks
+    teler+N+Pl+Tra+Usage/Rare: telereiks
     teler+N+Pl+Trm: teleriteni
     teler+N+Sg+Abe: telerita
     teler+N+Sg+Abl: telerilt
@@ -1845,7 +1845,7 @@ Tests:
     tiib+N+Pl+Ine: tiibades
     tiib+N+Pl+Nom: tiivad
     tiib+N+Pl+Par: tiibu
-    tiib+N+Pl+Par+Use/Rare: tiibasid
+    tiib+N+Pl+Par+Usage/Rare: tiibasid
     tiib+N+Pl+Tra: tiibadeks
     tiib+N+Pl+Trm: tiibadeni
     tiib+N+Sg+Abe: tiivata
@@ -1857,7 +1857,7 @@ Tests:
     tiib+N+Sg+Ess: tiivana
     tiib+N+Sg+Gen: tiiva
     tiib+N+Sg+Ill: tiiba
-    tiib+N+Sg+Ill+Use/Hyp: tiivasse
+    tiib+N+Sg+Ill+Usage/Hyp: tiivasse
     tiib+N+Sg+Ine: tiivas
     tiib+N+Sg+Nom: tiib
     tiib+N+Sg+Par: tiiba
@@ -1875,7 +1875,7 @@ Tests:
     tuba+N+Pl+Ine: tubades
     tuba+N+Pl+Nom: toad
     tuba+N+Pl+Par: tube
-    tuba+N+Pl+Par+Use/Rare: tubasid
+    tuba+N+Pl+Par+Usage/Rare: tubasid
     tuba+N+Pl+Tra: tubadeks
     tuba+N+Pl+Trm: tubadeni
     tuba+N+Sg+Abe: toata
@@ -1887,7 +1887,7 @@ Tests:
     tuba+N+Sg+Ess: toana
     tuba+N+Sg+Gen: toa
     tuba+N+Sg+Ill: tuppa
-    tuba+N+Sg+Ill+Use/Rare: toasse
+    tuba+N+Sg+Ill+Usage/Rare: toasse
     tuba+N+Sg+Ine: toas
     tuba+N+Sg+Nom: tuba
     tuba+N+Sg+Par: tuba
@@ -1944,7 +1944,7 @@ Tests:
     tõbi+N+Sg+Ess: tõvena
     tõbi+N+Sg+Gen: tõve
     tõbi+N+Sg+Ill: tõppe
-    tõbi+N+Sg+Ill+Use/Rare: tõvesse
+    tõbi+N+Sg+Ill+Usage/Rare: tõvesse
     tõbi+N+Sg+Ine: tõves
     tõbi+N+Sg+Nom: tõbi
     tõbi+N+Sg+Par: tõbe
@@ -1962,7 +1962,7 @@ Tests:
     tõug+N+Pl+Ine: tõugudes
     tõug+N+Pl+Nom: tõud
     tõug+N+Pl+Par: tõuge
-    tõug+N+Pl+Par+Use/Rare: tõugusid
+    tõug+N+Pl+Par+Usage/Rare: tõugusid
     tõug+N+Pl+Tra: tõugudeks
     tõug+N+Pl+Trm: tõugudeni
     tõug+N+Sg+Abe: tõuta
@@ -1974,7 +1974,7 @@ Tests:
     tõug+N+Sg+Ess: tõuna
     tõug+N+Sg+Gen: tõu
     tõug+N+Sg+Ill: tõugu
-    tõug+N+Sg+Ill+Use/Hyp: tõusse
+    tõug+N+Sg+Ill+Usage/Hyp: tõusse
     tõug+N+Sg+Ine: tõus
     tõug+N+Sg+Nom: tõug
     tõug+N+Sg+Par: tõugu
@@ -2003,7 +2003,7 @@ Tests:
     tüng+N+Sg+Ess: tüngana
     tüng+N+Sg+Gen: tünga
     tüng+N+Sg+Ill: tünga
-    tüng+N+Sg+Ill+Use/Hyp: tüngasse
+    tüng+N+Sg+Ill+Usage/Hyp: tüngasse
     tüng+N+Sg+Ine: tüngas
     tüng+N+Sg+Nom: tüng
     tüng+N+Sg+Par: tünga
@@ -2032,7 +2032,7 @@ Tests:
     tüvi+N+Sg+Ess: tüvena
     tüvi+N+Sg+Gen: tüve
     tüvi+N+Sg+Ill: tüvesse
-    tüvi+N+Sg+Ill+Use/Rare: tüvve
+    tüvi+N+Sg+Ill+Usage/Rare: tüvve
     tüvi+N+Sg+Ine: tüves
     tüvi+N+Sg+Nom: tüvi
     tüvi+N+Sg+Par: tüve
@@ -2040,24 +2040,24 @@ Tests:
     tüvi+N+Sg+Trm: tüveni
     uhmer+N+Pl+Abe: uhmriteta
     uhmer+N+Pl+Abl: uhmritelt
-    uhmer+N+Pl+Abl+Use/Rare: uhmreilt
+    uhmer+N+Pl+Abl+Usage/Rare: uhmreilt
     uhmer+N+Pl+Ade: uhmritel
-    uhmer+N+Pl+Ade+Use/Rare: uhmreil
+    uhmer+N+Pl+Ade+Usage/Rare: uhmreil
     uhmer+N+Pl+All: uhmritele
-    uhmer+N+Pl+All+Use/Rare: uhmreile
+    uhmer+N+Pl+All+Usage/Rare: uhmreile
     uhmer+N+Pl+Com: uhmritega
     uhmer+N+Pl+Ela: uhmritest
-    uhmer+N+Pl+Ela+Use/Rare: uhmreist
+    uhmer+N+Pl+Ela+Usage/Rare: uhmreist
     uhmer+N+Pl+Ess: uhmritena
     uhmer+N+Pl+Gen: uhmrite
     uhmer+N+Pl+Ill: uhmritesse
-    uhmer+N+Pl+Ill+Use/Rare: uhmreisse
+    uhmer+N+Pl+Ill+Usage/Rare: uhmreisse
     uhmer+N+Pl+Ine: uhmrites
-    uhmer+N+Pl+Ine+Use/Rare: uhmreis
+    uhmer+N+Pl+Ine+Usage/Rare: uhmreis
     uhmer+N+Pl+Nom: uhmrid
     uhmer+N+Pl+Par: uhmreid
     uhmer+N+Pl+Tra: uhmriteks
-    uhmer+N+Pl+Tra+Use/Rare: uhmreiks
+    uhmer+N+Pl+Tra+Usage/Rare: uhmreiks
     uhmer+N+Pl+Trm: uhmriteni
     uhmer+N+Sg+Abe: uhmrita
     uhmer+N+Sg+Abl: uhmrilt
@@ -2102,24 +2102,24 @@ Tests:
     uks+N+Sg+Tra: ukseks
     uks+N+Sg+Trm: ukseni
     vaher+N+Pl+Abe: vahtrateta
-    vaher+N+Pl+Abl+Use/Rare: vahtrailt
+    vaher+N+Pl+Abl+Usage/Rare: vahtrailt
     vaher+N+Pl+Abl: vahtratelt
-    vaher+N+Pl+Ade+Use/Rare: vahtrail
+    vaher+N+Pl+Ade+Usage/Rare: vahtrail
     vaher+N+Pl+Ade: vahtratel
-    vaher+N+Pl+All+Use/Rare: vahtraile
+    vaher+N+Pl+All+Usage/Rare: vahtraile
     vaher+N+Pl+All: vahtratele
     vaher+N+Pl+Com: vahtratega
-    vaher+N+Pl+Ela+Use/Rare: vahtraist
+    vaher+N+Pl+Ela+Usage/Rare: vahtraist
     vaher+N+Pl+Ela: vahtratest
     vaher+N+Pl+Ess: vahtratena
     vaher+N+Pl+Gen: vahtrate
-    vaher+N+Pl+Ill+Use/Rare: vahtraisse
+    vaher+N+Pl+Ill+Usage/Rare: vahtraisse
     vaher+N+Pl+Ill: vahtratesse
-    vaher+N+Pl+Ine+Use/Rare: vahtrais
+    vaher+N+Pl+Ine+Usage/Rare: vahtrais
     vaher+N+Pl+Ine: vahtrates
     vaher+N+Pl+Nom: vahtrad
     vaher+N+Pl+Par: vahtraid
-    vaher+N+Pl+Tra+Use/Rare: vahtraiks
+    vaher+N+Pl+Tra+Usage/Rare: vahtraiks
     vaher+N+Pl+Tra: vahtrateks
     vaher+N+Pl+Trm: vahtrateni
     vaher+N+Sg+Abe: vahtrata
@@ -2159,7 +2159,7 @@ Tests:
     vars+N+Sg+Ess: varrena
     vars+N+Sg+Gen: varre
     vars+N+Sg+Ill: varresse
-    vars+N+Sg+Ill+Use/Rare: varde
+    vars+N+Sg+Ill+Usage/Rare: varde
     vars+N+Sg+Ine: varres
     vars+N+Sg+Nom: vars
     vars+N+Sg+Par: vart
@@ -2176,29 +2176,29 @@ Tests:
     veimed+N+Pl+Ill: veimedesse
     veimed+N+Pl+Ine: veimedes
     veimed+N+Pl+Nom: veimed
-    veimed+N+Pl+Par+Use/Rare: veimi
+    veimed+N+Pl+Par+Usage/Rare: veimi
     veimed+N+Pl+Par: veimesid
     veimed+N+Pl+Tra: veimedeks
     veimed+N+Pl+Trm: veimedeni
     veksel+N+Pl+Abe: veksliteta
-    veksel+N+Pl+Abl+Use/Rare: veksleilt
+    veksel+N+Pl+Abl+Usage/Rare: veksleilt
     veksel+N+Pl+Abl: vekslitelt
-    veksel+N+Pl+Ade+Use/Rare: veksleil
+    veksel+N+Pl+Ade+Usage/Rare: veksleil
     veksel+N+Pl+Ade: vekslitel
-    veksel+N+Pl+All+Use/Rare: veksleile
+    veksel+N+Pl+All+Usage/Rare: veksleile
     veksel+N+Pl+All: vekslitele
     veksel+N+Pl+Com: vekslitega
-    veksel+N+Pl+Ela+Use/Rare: veksleist
+    veksel+N+Pl+Ela+Usage/Rare: veksleist
     veksel+N+Pl+Ela: vekslitest
     veksel+N+Pl+Ess: vekslitena
     veksel+N+Pl+Gen: vekslite
-    veksel+N+Pl+Ill+Use/Rare: veksleisse
+    veksel+N+Pl+Ill+Usage/Rare: veksleisse
     veksel+N+Pl+Ill: vekslitesse
-    veksel+N+Pl+Ine+Use/Rare: veksleis
+    veksel+N+Pl+Ine+Usage/Rare: veksleis
     veksel+N+Pl+Ine: vekslites
     veksel+N+Pl+Nom: vekslid
     veksel+N+Pl+Par: veksleid
-    veksel+N+Pl+Tra+Use/Rare: veksleiks
+    veksel+N+Pl+Tra+Usage/Rare: veksleiks
     veksel+N+Pl+Tra: veksliteks
     veksel+N+Pl+Trm: veksliteni
     veksel+N+Sg+Abe: vekslita
@@ -2216,24 +2216,24 @@ Tests:
     veksel+N+Sg+Tra: veksliks
     veksel+N+Sg+Trm: vekslini
     virsik+N+Pl+Abe: virsikuteta
-    virsik+N+Pl+Abl+Use/Rare: virsikuilt
+    virsik+N+Pl+Abl+Usage/Rare: virsikuilt
     virsik+N+Pl+Abl: virsikutelt
-    virsik+N+Pl+Ade+Use/Rare: virsikuil
+    virsik+N+Pl+Ade+Usage/Rare: virsikuil
     virsik+N+Pl+Ade: virsikutel
-    virsik+N+Pl+All+Use/Rare: virsikuile
+    virsik+N+Pl+All+Usage/Rare: virsikuile
     virsik+N+Pl+All: virsikutele
     virsik+N+Pl+Com: virsikutega
-    virsik+N+Pl+Ela+Use/Rare: virsikuist
+    virsik+N+Pl+Ela+Usage/Rare: virsikuist
     virsik+N+Pl+Ela: virsikutest
     virsik+N+Pl+Ess: virsikutena
     virsik+N+Pl+Gen: virsikute
-    virsik+N+Pl+Ill+Use/Rare: virsikuisse
+    virsik+N+Pl+Ill+Usage/Rare: virsikuisse
     virsik+N+Pl+Ill: virsikutesse
-    virsik+N+Pl+Ine+Use/Rare: virsikuis
+    virsik+N+Pl+Ine+Usage/Rare: virsikuis
     virsik+N+Pl+Ine: virsikutes
     virsik+N+Pl+Nom: virsikud
     virsik+N+Pl+Par: virsikuid
-    virsik+N+Pl+Tra+Use/Rare: virsikuiks
+    virsik+N+Pl+Tra+Usage/Rare: virsikuiks
     virsik+N+Pl+Tra: virsikuteks
     virsik+N+Pl+Trm: virsikuteni
     virsik+N+Sg+Abe: virsikuta
@@ -2262,7 +2262,7 @@ Tests:
     voog+N+Pl+Ine: voogudes
     voog+N+Pl+Nom: vood
     voog+N+Pl+Par: vooge
-    voog+N+Pl+Par+Use/Rare: voogusid
+    voog+N+Pl+Par+Usage/Rare: voogusid
     voog+N+Pl+Tra: voogudeks
     voog+N+Pl+Trm: voogudeni
     voog+N+Sg+Abe: voota
@@ -2273,7 +2273,7 @@ Tests:
     voog+N+Sg+Ela: voost
     voog+N+Sg+Ess: voona
     voog+N+Sg+Gen: voo
-    voog+N+Sg+Ill+Use/Hyp: voosse
+    voog+N+Sg+Ill+Usage/Hyp: voosse
     voog+N+Sg+Ill: voogu
     voog+N+Sg+Ine: voos
     voog+N+Sg+Nom: voog
@@ -2292,28 +2292,28 @@ Tests:
     vurrud+N+Pl+Ine: vurrudes
     vurrud+N+Pl+Nom: vurrud
     vurrud+N+Pl+Par: vurrusid
-    vurrud+N+Pl+Par+Use/Rare: vurre
+    vurrud+N+Pl+Par+Usage/Rare: vurre
     vurrud+N+Pl+Tra: vurrudeks
     vurrud+N+Pl+Trm: vurrudeni
     võti+N+Pl+Abe: võtmeteta
-    võti+N+Pl+Abl+Use/Rare: võtmeilt
+    võti+N+Pl+Abl+Usage/Rare: võtmeilt
     võti+N+Pl+Abl: võtmetelt
-    võti+N+Pl+Ade+Use/Rare: võtmeil
+    võti+N+Pl+Ade+Usage/Rare: võtmeil
     võti+N+Pl+Ade: võtmetel
-    võti+N+Pl+All+Use/Rare: võtmeile
+    võti+N+Pl+All+Usage/Rare: võtmeile
     võti+N+Pl+All: võtmetele
     võti+N+Pl+Com: võtmetega
-    võti+N+Pl+Ela+Use/Rare: võtmeist
+    võti+N+Pl+Ela+Usage/Rare: võtmeist
     võti+N+Pl+Ela: võtmetest
     võti+N+Pl+Ess: võtmetena
     võti+N+Pl+Gen: võtmete
-    võti+N+Pl+Ill+Use/Rare: võtmeisse
+    võti+N+Pl+Ill+Usage/Rare: võtmeisse
     võti+N+Pl+Ill: võtmetesse
-    võti+N+Pl+Ine+Use/Rare: võtmeis
+    võti+N+Pl+Ine+Usage/Rare: võtmeis
     võti+N+Pl+Ine: võtmetes
     võti+N+Pl+Nom: võtmed
     võti+N+Pl+Par: võtmeid
-    võti+N+Pl+Tra+Use/Rare: võtmeiks
+    võti+N+Pl+Tra+Usage/Rare: võtmeiks
     võti+N+Pl+Tra: võtmeteks
     võti+N+Pl+Trm: võtmeteni
     võti+N+Sg+Abe: võtmeta
@@ -2352,7 +2352,7 @@ Tests:
     õhk+N+Sg+Ela: õhust
     õhk+N+Sg+Ess: õhuna
     õhk+N+Sg+Gen: õhu
-    õhk+N+Sg+Ill+Use/Hyp: õhusse
+    õhk+N+Sg+Ill+Usage/Hyp: õhusse
     õhk+N+Sg+Ill: õhku
     õhk+N+Sg+Ine: õhus
     õhk+N+Sg+Nom: õhk
@@ -2370,7 +2370,7 @@ Tests:
     õlu+N+Pl+Ill: õlledesse
     õlu+N+Pl+Ine: õlledes
     õlu+N+Pl+Nom: õlled
-    õlu+N+Pl+Par+Use/Rare: õlusid
+    õlu+N+Pl+Par+Usage/Rare: õlusid
     õlu+N+Pl+Par: õllesid
     õlu+N+Pl+Tra: õlledeks
     õlu+N+Pl+Trm: õlledeni
@@ -2399,7 +2399,7 @@ Tests:
     õukond+N+Pl+Ill: õukondadesse
     õukond+N+Pl+Ine: õukondades
     õukond+N+Pl+Nom: õukonnad
-    õukond+N+Pl+Par+Use/Rare: õukondasid
+    õukond+N+Pl+Par+Usage/Rare: õukondasid
     õukond+N+Pl+Par: õukondi
     õukond+N+Pl+Tra: õukondadeks
     õukond+N+Pl+Trm: õukondadeni
@@ -2411,89 +2411,89 @@ Tests:
     õukond+N+Sg+Ela: õukonnast
     õukond+N+Sg+Ess: õukonnana
     õukond+N+Sg+Gen: õukonna
-    õukond+N+Sg+Ill+Use/Hyp: õukonnasse
+    õukond+N+Sg+Ill+Usage/Hyp: õukonnasse
     õukond+N+Sg+Ill: õukonda
     õukond+N+Sg+Ine: õukonnas
     õukond+N+Sg+Nom: õukond
     õukond+N+Sg+Par: õukonda
     õukond+N+Sg+Tra: õukonnaks
     õukond+N+Sg+Trm: õukonnani
-    äike+N+Pl+Abe+Use/Rare: [äikeseita, äikseita, äikseteta]
+    äike+N+Pl+Abe+Usage/Rare: [äikeseita, äikseita, äikseteta]
     äike+N+Pl+Abe: äikesteta
-    äike+N+Pl+Abl+Use/Rare: [äikeseilt, äikesilt, äikseilt, äiksetelt]
+    äike+N+Pl+Abl+Usage/Rare: [äikeseilt, äikesilt, äikseilt, äiksetelt]
     äike+N+Pl+Abl: äikestelt
-    äike+N+Pl+Ade+Use/Rare: [äikeseil, äikesil, äikseil, äiksetel]
+    äike+N+Pl+Ade+Usage/Rare: [äikeseil, äikesil, äikseil, äiksetel]
     äike+N+Pl+Ade: äikestel
-    äike+N+Pl+All+Use/Rare: [äikeseile, äikesile, äikseile, äiksetele]
+    äike+N+Pl+All+Usage/Rare: [äikeseile, äikesile, äikseile, äiksetele]
     äike+N+Pl+All: äikestele
-    äike+N+Pl+Com+Use/Rare: [äikeseiga, äikseiga, äiksetega]
+    äike+N+Pl+Com+Usage/Rare: [äikeseiga, äikseiga, äiksetega]
     äike+N+Pl+Com: äikestega
-    äike+N+Pl+Ela+Use/Rare: [äikeseist, äikesist, äikseist, äiksetest]
+    äike+N+Pl+Ela+Usage/Rare: [äikeseist, äikesist, äikseist, äiksetest]
     äike+N+Pl+Ela: äikestest
-    äike+N+Pl+Ess+Use/Rare: [äikeseina, äikseina, äiksetena]
+    äike+N+Pl+Ess+Usage/Rare: [äikeseina, äikseina, äiksetena]
     äike+N+Pl+Ess: äikestena
-    äike+N+Pl+Gen+Use/Rare: äiksete
+    äike+N+Pl+Gen+Usage/Rare: äiksete
     äike+N+Pl+Gen: äikeste
-    äike+N+Pl+Ill+Use/Rare: [äikeseisse, äikesisse, äikseisse, äiksetesse]
+    äike+N+Pl+Ill+Usage/Rare: [äikeseisse, äikesisse, äikseisse, äiksetesse]
     äike+N+Pl+Ill: äikestesse
-    äike+N+Pl+Ine+Use/Rare: [äikeseis, äikesis, äikseis, äiksetes]
+    äike+N+Pl+Ine+Usage/Rare: [äikeseis, äikesis, äikseis, äiksetes]
     äike+N+Pl+Ine: äikestes
-    äike+N+Pl+Nom+Use/Rare: äiksed
+    äike+N+Pl+Nom+Usage/Rare: äiksed
     äike+N+Pl+Nom: äikesed
-    äike+N+Pl+Par+Use/Rare: [äikesi, äikseid]
+    äike+N+Pl+Par+Usage/Rare: [äikesi, äikseid]
     äike+N+Pl+Par: äikeseid
-    äike+N+Pl+Tra+Use/Rare: [äikeseiks, äikesiks, äikseiks, äikseteks]
+    äike+N+Pl+Tra+Usage/Rare: [äikeseiks, äikesiks, äikseiks, äikseteks]
     äike+N+Pl+Tra: äikesteks
-    äike+N+Pl+Trm+Use/Rare: [äikeseini, äikseini, äikseteni]
+    äike+N+Pl+Trm+Usage/Rare: [äikeseini, äikseini, äikseteni]
     äike+N+Pl+Trm: äikesteni
-    äike+N+Sg+Abe+Use/Rare: äikseta
+    äike+N+Sg+Abe+Usage/Rare: äikseta
     äike+N+Sg+Abe: äikeseta
-    äike+N+Sg+Abl+Use/Rare: äikselt
+    äike+N+Sg+Abl+Usage/Rare: äikselt
     äike+N+Sg+Abl: äikeselt
-    äike+N+Sg+Ade+Use/Rare: äiksel
+    äike+N+Sg+Ade+Usage/Rare: äiksel
     äike+N+Sg+Ade: äikesel
-    äike+N+Sg+All+Use/Rare: äiksele
+    äike+N+Sg+All+Usage/Rare: äiksele
     äike+N+Sg+All: äikesele
-    äike+N+Sg+Com+Use/Rare: äiksega
+    äike+N+Sg+Com+Usage/Rare: äiksega
     äike+N+Sg+Com: äikesega
-    äike+N+Sg+Ela+Use/Rare: äiksest
+    äike+N+Sg+Ela+Usage/Rare: äiksest
     äike+N+Sg+Ela: äikesest
-    äike+N+Sg+Ess+Use/Rare: äiksena
+    äike+N+Sg+Ess+Usage/Rare: äiksena
     äike+N+Sg+Ess: äikesena
-    äike+N+Sg+Gen+Use/Rare: äikse
+    äike+N+Sg+Gen+Usage/Rare: äikse
     äike+N+Sg+Gen: äikese
-    äike+N+Sg+Ill+Use/Rare: [äikesse, äiksesse]
+    äike+N+Sg+Ill+Usage/Rare: [äikesse, äiksesse]
     äike+N+Sg+Ill: äikesesse
-    äike+N+Sg+Ine+Use/Rare: äikses
+    äike+N+Sg+Ine+Usage/Rare: äikses
     äike+N+Sg+Ine: äikeses
-    äike+N+Sg+Nom+Use/Rare: äikene
+    äike+N+Sg+Nom+Usage/Rare: äikene
     äike+N+Sg+Nom: äike
-    äike+N+Sg+Par+Use/Rare: äikset
+    äike+N+Sg+Par+Usage/Rare: äikset
     äike+N+Sg+Par: äikest
-    äike+N+Sg+Tra+Use/Rare: äikseks
+    äike+N+Sg+Tra+Usage/Rare: äikseks
     äike+N+Sg+Tra: äikeseks
-    äike+N+Sg+Trm+Use/Rare: äikseni
+    äike+N+Sg+Trm+Usage/Rare: äikseni
     äike+N+Sg+Trm: äikeseni
     öö+N+Pl+Abe: öödeta
-    öö+N+Pl+Abl+Use/Rare: öilt
+    öö+N+Pl+Abl+Usage/Rare: öilt
     öö+N+Pl+Abl: öödelt
-    öö+N+Pl+Ade+Use/Rare: öil
+    öö+N+Pl+Ade+Usage/Rare: öil
     öö+N+Pl+Ade: öödel
-    öö+N+Pl+All+Use/Rare: öile
+    öö+N+Pl+All+Usage/Rare: öile
     öö+N+Pl+All: öödele
     öö+N+Pl+Com: öödega
-    öö+N+Pl+Ela+Use/Rare: öist
+    öö+N+Pl+Ela+Usage/Rare: öist
     öö+N+Pl+Ela: öödest
     öö+N+Pl+Ess: öödena
     öö+N+Pl+Gen: ööde
-    öö+N+Pl+Ill+Use/Rare: öisse
+    öö+N+Pl+Ill+Usage/Rare: öisse
     öö+N+Pl+Ill: öödesse
-    öö+N+Pl+Ine+Use/Rare: öis
+    öö+N+Pl+Ine+Usage/Rare: öis
     öö+N+Pl+Ine: öödes
     öö+N+Pl+Nom: ööd
-    öö+N+Pl+Par+Use/Rare: öösid
+    öö+N+Pl+Par+Usage/Rare: öösid
     öö+N+Pl+Par: öid
-    öö+N+Pl+Tra+Use/Rare: öiks
+    öö+N+Pl+Tra+Usage/Rare: öiks
     öö+N+Pl+Tra: öödeks
     öö+N+Pl+Trm: öödeni
     öö+N+Sg+Abe: ööta
@@ -2504,7 +2504,7 @@ Tests:
     öö+N+Sg+Ela: ööst
     öö+N+Sg+Ess: ööna
     öö+N+Sg+Gen: öö
-    öö+N+Sg+Ill+Use/Rare: öhe
+    öö+N+Sg+Ill+Usage/Rare: öhe
     öö+N+Sg+Ill: öösse
     öö+N+Sg+Ine: öös
     öö+N+Sg+Nom: öö

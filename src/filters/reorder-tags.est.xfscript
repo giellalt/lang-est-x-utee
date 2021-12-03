@@ -2,10 +2,10 @@
 # if there are more than one, keep the most informative one
 # moving algorithm from Karttunen, Beesley "2-level rule compiler" 4.3 (via Mans Hulden via Francis Tyers) 
 
-define RTag [ "+Use/Rare" ] ;          # norm, but rare 
-define HTag [ "+Use/Hyp" ] ;           # norm, but so rare that norm is probaly wrong
-define NTag [ "+Use/NotNorm" ] ;       # not norm, but sometimes used
-define CTag [ "+Use/CommonNotNorm" ] ; # not norm, and used more than norm
+define RTag [ "+Usage/Rare" ] ;          # norm, but rare 
+define HTag [ "+Usage/Hyp" ] ;           # norm, but so rare that norm is probaly wrong
+define NTag [ "+Usage/NotNorm" ] ;       # not norm, but sometimes used
+define CTag [ "+Usage/CommonNotNorm" ] ; # not norm, and used more than norm
 define ETag [ "+Emph" ] ;              # emphasized form (mina, sina, tema, meie, teie, nemad) 
 
 define MoveR [  [..] -> RTag || RTag ?* _ .#. .o. RTag -> 0 || _ ?* RTag .#. ];

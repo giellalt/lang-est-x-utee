@@ -38,7 +38,7 @@ Tests:
      panema+V+Impers+Prs+Quot: pandavat
      panema+V+Impers+Prs+Cond: pandaks
      panema+V+Impers+Prs+Ind+Neg: panda
-     panema+V+Impers+Prs+Ind+Aff+Use/NotNorm: pandakse
+     panema+V+Impers+Prs+Ind+Aff+Usage/NotNorm: pandakse
      panema+V+Impers+Prs+Imprt: pandagu
      panema+V+Impers+Sup: pandama
      panema+V+Impers+Prt+Ind+Aff: pandi
@@ -207,7 +207,7 @@ Tests:
      pooma+V+Impers+Prs+Imprt: poodagu
      pooma+V+Impers+Sup: poodama
      pooma+V+Impers+Prt+Ind+Aff: poodi
-     pooma+V+Impers+Prs+Ind+Aff+Use/NotNorm: poodakse
+     pooma+V+Impers+Prs+Ind+Aff+Usage/NotNorm: poodakse
      pooma+V+Pers+Prt+Ind+Sg3+Aff: poos
      pooma+V+Pers+Prt+Ind+Pl3+Aff: poosid
      pooma+V+Pers+Prt+Ind+Pl2+Aff: poosite
@@ -456,7 +456,7 @@ Tests:
      surema+V+Impers+Prs+Quot: surdavat
      surema+V+Impers+Prs+Cond: surdaks
      surema+V+Impers+Prs+Ind+Neg: surda
-     surema+V+Impers+Prs+Ind+Aff+Use/NotNorm: surdakse
+     surema+V+Impers+Prs+Ind+Aff+Usage/NotNorm: surdakse
      surema+V+Impers+Prs+Imprt: surdagu
      surema+V+Impers+Sup: surdama
      surema+V+Impers+Prt+Ind+Aff: surdi
@@ -640,31 +640,31 @@ Tests:
      süttima+V+Impers+Prs+Imprt: süttitagu
      süttima+V+Impers+Sup: süttitama
      süttima+V+Impers+Prt+Ind+Aff: süttiti
-     süttima+V+Impers+Prt+Prc+Use/Rare: sütitud
-     süttima+V+Impers+Prt+Ind+Neg+Use/Rare: sütitud
-     süttima+V+Impers+Prt+Cond+Use/Rare: sütituks
-     süttima+V+Impers+Prs+Prc+Use/Rare: sütitav
-     süttima+V+Impers+Prs+Quot+Use/Rare: sütitavat
-     süttima+V+Impers+Prs+Cond+Use/Rare: sütitaks
-     süttima+V+Impers+Prs+Ind+Neg+Use/Rare: sütita
-     süttima+V+Impers+Prs+Ind+Aff+Use/Rare: sütitakse
-     süttima+V+Impers+Prs+Imprt+Use/Rare: sütitagu
-     süttima+V+Impers+Sup+Use/Rare: sütitama
-     süttima+V+Impers+Prt+Ind+Aff+Use/Rare: sütiti
-     süttima+V+Pers+Prs+Ind+Sg2+Aff+Use/Rare: sütid
-     süttima+V+Pers+Prs+Cond+Use/Rare: sütiks
-     süttima+V+Pers+Prs+Cond+Pl3+Aff+Use/Rare: sütiksid
-     süttima+V+Pers+Prs+Cond+Pl2+Aff+Use/Rare: sütiksite
-     süttima+V+Pers+Prs+Cond+Pl1+Aff+Use/Rare: sütiksime
-     süttima+V+Pers+Prs+Cond+Sg2+Aff+Use/Rare: sütiksid
-     süttima+V+Pers+Prs+Cond+Sg1+Aff+Use/Rare: sütiksin
-     süttima+V+Pers+Prs+Ind+Sg1+Aff+Use/Rare: sütin
-     süttima+V+Pers+Prs+Ind+Pl1+Aff+Use/Rare: sütime
-     süttima+V+Pers+Prs+Ind+Pl2+Aff+Use/Rare: sütite
-     süttima+V+Pers+Prs+Ind+Pl3+Aff+Use/Rare: sütivad
-     süttima+V+Pers+Prs+Ind+Sg3+Aff+Use/Rare: sütib
-     süttima+V+Pers+Prs+Imprt+Sg2+Use/Rare: süti
-     süttima+V+Pers+Prs+Ind+Neg+Use/Rare: süti
+     süttima+V+Impers+Prt+Prc+Usage/Rare: sütitud
+     süttima+V+Impers+Prt+Ind+Neg+Usage/Rare: sütitud
+     süttima+V+Impers+Prt+Cond+Usage/Rare: sütituks
+     süttima+V+Impers+Prs+Prc+Usage/Rare: sütitav
+     süttima+V+Impers+Prs+Quot+Usage/Rare: sütitavat
+     süttima+V+Impers+Prs+Cond+Usage/Rare: sütitaks
+     süttima+V+Impers+Prs+Ind+Neg+Usage/Rare: sütita
+     süttima+V+Impers+Prs+Ind+Aff+Usage/Rare: sütitakse
+     süttima+V+Impers+Prs+Imprt+Usage/Rare: sütitagu
+     süttima+V+Impers+Sup+Usage/Rare: sütitama
+     süttima+V+Impers+Prt+Ind+Aff+Usage/Rare: sütiti
+     süttima+V+Pers+Prs+Ind+Sg2+Aff+Usage/Rare: sütid
+     süttima+V+Pers+Prs+Cond+Usage/Rare: sütiks
+     süttima+V+Pers+Prs+Cond+Pl3+Aff+Usage/Rare: sütiksid
+     süttima+V+Pers+Prs+Cond+Pl2+Aff+Usage/Rare: sütiksite
+     süttima+V+Pers+Prs+Cond+Pl1+Aff+Usage/Rare: sütiksime
+     süttima+V+Pers+Prs+Cond+Sg2+Aff+Usage/Rare: sütiksid
+     süttima+V+Pers+Prs+Cond+Sg1+Aff+Usage/Rare: sütiksin
+     süttima+V+Pers+Prs+Ind+Sg1+Aff+Usage/Rare: sütin
+     süttima+V+Pers+Prs+Ind+Pl1+Aff+Usage/Rare: sütime
+     süttima+V+Pers+Prs+Ind+Pl2+Aff+Usage/Rare: sütite
+     süttima+V+Pers+Prs+Ind+Pl3+Aff+Usage/Rare: sütivad
+     süttima+V+Pers+Prs+Ind+Sg3+Aff+Usage/Rare: sütib
+     süttima+V+Pers+Prs+Imprt+Sg2+Usage/Rare: süti
+     süttima+V+Pers+Prs+Ind+Neg+Usage/Rare: süti
      sööma+V+Impers+Prt+Prc: söödud
      sööma+V+Impers+Prt+Ind+Neg: söödud
      sööma+V+Impers+Prt+Cond: sööduks
@@ -675,7 +675,7 @@ Tests:
      sööma+V+Impers+Prs+Imprt: söödagu
      sööma+V+Impers+Sup: söödama
      sööma+V+Impers+Prt+Ind+Aff: söödi
-     sööma+V+Impers+Prs+Ind+Aff+Use/NotNorm: söödakse
+     sööma+V+Impers+Prs+Ind+Aff+Usage/NotNorm: söödakse
      sööma+V+Pers+Prs+Imprt: söögu
      sööma+V+Pers+Prs+Imprt+Pl2: sööge
      sööma+V+Pers+Prs+Imprt+Pl1: söögem
@@ -797,31 +797,31 @@ Tests:
      ütlema+V+Pers+Prt+Ind+Pl1+Aff: ütlesime
      ütlema+V+Pers+Prt+Ind+Sg2+Aff: ütlesid
      ütlema+V+Pers+Prt+Ind+Sg1+Aff: ütlesin
-     ütlema+V+Inf+Use/Rare: ütelda
-     ütlema+V+Ger+Use/Rare: üteldes
-     ütlema+V+Pers+Prt+Quot+Use/Rare: ütelnuvat
-     ütlema+V+Pers+Prt+Prc+Use/Rare: ütelnud
-     ütlema+V+Pers+Prt+Ind+Neg+Use/Rare: ütelnud
-     ütlema+V+Pers+Prt+Cond+Use/Rare: ütelnuks
-     ütlema+V+Pers+Prt+Cond+Pl3+Aff+Use/Rare: ütelnuksid
-     ütlema+V+Pers+Prt+Cond+Pl2+Aff+Use/Rare: ütelnuksite
-     ütlema+V+Pers+Prt+Cond+Pl1+Aff+Use/Rare: ütelnuksime
-     ütlema+V+Pers+Prt+Cond+Sg2+Aff+Use/Rare: ütelnuksid
-     ütlema+V+Pers+Prt+Cond+Sg1+Aff+Use/Rare: ütelnuksin
-     ütlema+V+Pers+Prs+Imprt+Pl2+Use/Rare: ütelge
-     ütlema+V+Pers+Prs+Imprt+Pl1+Use/Rare: ütelgem
-     ütlema+V+Pers+Prs+Imprt+Use/Rare: ütelgu
-     ütlema+V+Impers+Prt+Prc+Use/Rare: üteldud
-     ütlema+V+Impers+Prt+Ind+Neg+Use/Rare: üteldud
-     ütlema+V+Impers+Prt+Cond+Use/Rare: ütelduks
-     ütlema+V+Impers+Prs+Prc+Use/Rare: üteldav
-     ütlema+V+Impers+Prs+Quot+Use/Rare: üteldavat
-     ütlema+V+Impers+Prs+Cond+Use/Rare: üteldaks
-     ütlema+V+Impers+Prs+Ind+Neg+Use/Rare: ütelda
-     ütlema+V+Impers+Prs+Ind+Aff+Use/Rare: üteldakse
-     ütlema+V+Impers+Prs+Imprt+Use/Rare: üteldagu
-     ütlema+V+Impers+Sup+Use/Rare: üteldama
-     ütlema+V+Impers+Prt+Ind+Aff+Use/Rare: üteldi
+     ütlema+V+Inf+Usage/Rare: ütelda
+     ütlema+V+Ger+Usage/Rare: üteldes
+     ütlema+V+Pers+Prt+Quot+Usage/Rare: ütelnuvat
+     ütlema+V+Pers+Prt+Prc+Usage/Rare: ütelnud
+     ütlema+V+Pers+Prt+Ind+Neg+Usage/Rare: ütelnud
+     ütlema+V+Pers+Prt+Cond+Usage/Rare: ütelnuks
+     ütlema+V+Pers+Prt+Cond+Pl3+Aff+Usage/Rare: ütelnuksid
+     ütlema+V+Pers+Prt+Cond+Pl2+Aff+Usage/Rare: ütelnuksite
+     ütlema+V+Pers+Prt+Cond+Pl1+Aff+Usage/Rare: ütelnuksime
+     ütlema+V+Pers+Prt+Cond+Sg2+Aff+Usage/Rare: ütelnuksid
+     ütlema+V+Pers+Prt+Cond+Sg1+Aff+Usage/Rare: ütelnuksin
+     ütlema+V+Pers+Prs+Imprt+Pl2+Usage/Rare: ütelge
+     ütlema+V+Pers+Prs+Imprt+Pl1+Usage/Rare: ütelgem
+     ütlema+V+Pers+Prs+Imprt+Usage/Rare: ütelgu
+     ütlema+V+Impers+Prt+Prc+Usage/Rare: üteldud
+     ütlema+V+Impers+Prt+Ind+Neg+Usage/Rare: üteldud
+     ütlema+V+Impers+Prt+Cond+Usage/Rare: ütelduks
+     ütlema+V+Impers+Prs+Prc+Usage/Rare: üteldav
+     ütlema+V+Impers+Prs+Quot+Usage/Rare: üteldavat
+     ütlema+V+Impers+Prs+Cond+Usage/Rare: üteldaks
+     ütlema+V+Impers+Prs+Ind+Neg+Usage/Rare: ütelda
+     ütlema+V+Impers+Prs+Ind+Aff+Usage/Rare: üteldakse
+     ütlema+V+Impers+Prs+Imprt+Usage/Rare: üteldagu
+     ütlema+V+Impers+Sup+Usage/Rare: üteldama
+     ütlema+V+Impers+Prt+Ind+Aff+Usage/Rare: üteldi
      tooma+V+Pers+Prt+Ind+Pl3+Aff: tõid
      tooma+V+Pers+Prt+Ind+Pl2+Aff: tõite
      tooma+V+Pers+Prt+Ind+Pl1+Aff: tõime
@@ -1009,7 +1009,7 @@ Tests:
      tulema+V+Impers+Prs+Quot: tuldavat
      tulema+V+Impers+Prs+Cond: tuldaks
      tulema+V+Impers+Prs+Ind+Neg: tulda
-     tulema+V+Impers+Prs+Ind+Aff+Use/NotNorm: tuldakse
+     tulema+V+Impers+Prs+Ind+Aff+Usage/NotNorm: tuldakse
      tulema+V+Impers+Prs+Imprt: tuldagu
      tulema+V+Impers+Sup: tuldama
      tulema+V+Impers+Prt+Ind+Aff: tuldi
@@ -1047,7 +1047,7 @@ Tests:
      tooma+V+Impers+Prs+Imprt: toodagu
      tooma+V+Impers+Sup: toodama
      tooma+V+Impers+Prt+Ind+Aff: toodi
-     tooma+V+Impers+Prs+Ind+Aff+Use/NotNorm: toodakse
+     tooma+V+Impers+Prs+Ind+Aff+Usage/NotNorm: toodakse
      tooma+V+Pers+Prs+Imprt: toogu
      tooma+V+Pers+Prs+Imprt+Pl2: tooge
      tooma+V+Pers+Prs+Imprt+Pl1: toogem
@@ -1136,31 +1136,31 @@ Tests:
      tooma+V+Impers+Prs+Ind+Aff: tuuakse
      tooma+V+Inf: tuua
      tooma+V+Ger: tuues
-     rabelema+V+Inf+Use/Rare: rabelda
-     rabelema+V+Ger+Use/Rare: rabeldes
-     rabelema+V+Pers+Prt+Quot+Use/Rare: rabelnuvat
-     rabelema+V+Pers+Prt+Prc+Use/Rare: rabelnud
-     rabelema+V+Pers+Prt+Ind+Neg+Use/Rare: rabelnud
-     rabelema+V+Pers+Prt+Cond+Use/Rare: rabelnuks
-     rabelema+V+Pers+Prt+Cond+Pl3+Aff+Use/Rare: rabelnuksid
-     rabelema+V+Pers+Prt+Cond+Pl2+Aff+Use/Rare: rabelnuksite
-     rabelema+V+Pers+Prt+Cond+Pl1+Aff+Use/Rare: rabelnuksime
-     rabelema+V+Pers+Prt+Cond+Sg2+Aff+Use/Rare: rabelnuksid
-     rabelema+V+Pers+Prt+Cond+Sg1+Aff+Use/Rare: rabelnuksin
-     rabelema+V+Pers+Prs+Imprt+Use/Rare: rabelgu
-     rabelema+V+Pers+Prs+Imprt+Pl2+Use/Rare: rabelge
-     rabelema+V+Pers+Prs+Imprt+Pl1+Use/Rare: rabelgem
-     rabelema+V+Impers+Prt+Prc+Use/Rare: rabeldud
-     rabelema+V+Impers+Prt+Ind+Neg+Use/Rare: rabeldud
-     rabelema+V+Impers+Prt+Cond+Use/Rare: rabelduks
-     rabelema+V+Impers+Prs+Prc+Use/Rare: rabeldav
-     rabelema+V+Impers+Prs+Quot+Use/Rare: rabeldavat
-     rabelema+V+Impers+Prs+Cond+Use/Rare: rabeldaks
-     rabelema+V+Impers+Prs+Ind+Neg+Use/Rare: rabelda
-     rabelema+V+Impers+Prs+Ind+Aff+Use/Rare: rabeldakse
-     rabelema+V+Impers+Prs+Imprt+Use/Rare: rabeldagu
-     rabelema+V+Impers+Sup+Use/Rare: rabeldama
-     rabelema+V+Impers+Prt+Ind+Aff+Use/Rare: rabeldi
+     rabelema+V+Inf+Usage/Rare: rabelda
+     rabelema+V+Ger+Usage/Rare: rabeldes
+     rabelema+V+Pers+Prt+Quot+Usage/Rare: rabelnuvat
+     rabelema+V+Pers+Prt+Prc+Usage/Rare: rabelnud
+     rabelema+V+Pers+Prt+Ind+Neg+Usage/Rare: rabelnud
+     rabelema+V+Pers+Prt+Cond+Usage/Rare: rabelnuks
+     rabelema+V+Pers+Prt+Cond+Pl3+Aff+Usage/Rare: rabelnuksid
+     rabelema+V+Pers+Prt+Cond+Pl2+Aff+Usage/Rare: rabelnuksite
+     rabelema+V+Pers+Prt+Cond+Pl1+Aff+Usage/Rare: rabelnuksime
+     rabelema+V+Pers+Prt+Cond+Sg2+Aff+Usage/Rare: rabelnuksid
+     rabelema+V+Pers+Prt+Cond+Sg1+Aff+Usage/Rare: rabelnuksin
+     rabelema+V+Pers+Prs+Imprt+Usage/Rare: rabelgu
+     rabelema+V+Pers+Prs+Imprt+Pl2+Usage/Rare: rabelge
+     rabelema+V+Pers+Prs+Imprt+Pl1+Usage/Rare: rabelgem
+     rabelema+V+Impers+Prt+Prc+Usage/Rare: rabeldud
+     rabelema+V+Impers+Prt+Ind+Neg+Usage/Rare: rabeldud
+     rabelema+V+Impers+Prt+Cond+Usage/Rare: rabelduks
+     rabelema+V+Impers+Prs+Prc+Usage/Rare: rabeldav
+     rabelema+V+Impers+Prs+Quot+Usage/Rare: rabeldavat
+     rabelema+V+Impers+Prs+Cond+Usage/Rare: rabeldaks
+     rabelema+V+Impers+Prs+Ind+Neg+Usage/Rare: rabelda
+     rabelema+V+Impers+Prs+Ind+Aff+Usage/Rare: rabeldakse
+     rabelema+V+Impers+Prs+Imprt+Usage/Rare: rabeldagu
+     rabelema+V+Impers+Sup+Usage/Rare: rabeldama
+     rabelema+V+Impers+Prt+Ind+Aff+Usage/Rare: rabeldi
      rabelema+V+Inf: rabeleda
      rabelema+V+Ger: rabeledes
      rabelema+V+Impers+Prt+Prc: rabeletud
@@ -1327,7 +1327,7 @@ Tests:
      viima+V+Impers+Prs+Imprt: viidagu
      viima+V+Impers+Sup: viidama
      viima+V+Impers+Prt+Ind+Aff: viidi
-     viima+V+Impers+Prs+Ind+Aff+Use/NotNorm: viidakse
+     viima+V+Impers+Prs+Ind+Aff+Usage/NotNorm: viidakse
      viima+V+Impers+Prs+Ind+Aff: viiakse
      viima+V+Pers+Prt+Ind+Sg3+Aff: viis
      viima+V+Pers+Prt+Ind+Pl3+Aff: viisid
@@ -1688,26 +1688,26 @@ Tests:
      julgema+V+Impers+Prs+Imprt: julgetagu
      julgema+V+Impers+Sup: julgetama
      julgema+V+Impers+Prt+Ind+Aff: julgeti
-     julgema+V+Impers+Prt+Prc+Use/Rare: juletud
-     julgema+V+Impers+Prt+Ind+Neg+Use/Rare: juletud
-     julgema+V+Impers+Prt+Cond+Use/Rare: juletuks
-     julgema+V+Impers+Prs+Prc+Use/Rare: juletav
-     julgema+V+Impers+Prs+Quot+Use/Rare: juletavat
-     julgema+V+Impers+Prs+Cond+Use/Rare: juletaks
-     julgema+V+Impers+Prs+Ind+Neg+Use/Rare: juleta
-     julgema+V+Impers+Prs+Ind+Aff+Use/Rare: juletakse
-     julgema+V+Impers+Prs+Imprt+Use/Rare: juletagu
-     julgema+V+Impers+Sup+Use/Rare: juletama
-     julgema+V+Impers+Prt+Ind+Aff+Use/Rare: juleti
-     julgema+V+Pers+Prt+Quot+Use/Rare: julenuvat
-     julgema+V+Pers+Prt+Prc+Use/Rare: julenud
-     julgema+V+Pers+Prt+Ind+Neg+Use/Rare: julenud
-     julgema+V+Pers+Prt+Cond+Use/Rare: julenuks
-     julgema+V+Pers+Prt+Cond+Pl3+Aff+Use/Rare: julenuksid
-     julgema+V+Pers+Prt+Cond+Pl2+Aff+Use/Rare: julenuksite
-     julgema+V+Pers+Prt+Cond+Pl1+Aff+Use/Rare: julenuksime
-     julgema+V+Pers+Prt+Cond+Sg2+Aff+Use/Rare: julenuksid
-     julgema+V+Pers+Prt+Cond+Sg1+Aff+Use/Rare: julenuksin
+     julgema+V+Impers+Prt+Prc+Usage/Rare: juletud
+     julgema+V+Impers+Prt+Ind+Neg+Usage/Rare: juletud
+     julgema+V+Impers+Prt+Cond+Usage/Rare: juletuks
+     julgema+V+Impers+Prs+Prc+Usage/Rare: juletav
+     julgema+V+Impers+Prs+Quot+Usage/Rare: juletavat
+     julgema+V+Impers+Prs+Cond+Usage/Rare: juletaks
+     julgema+V+Impers+Prs+Ind+Neg+Usage/Rare: juleta
+     julgema+V+Impers+Prs+Ind+Aff+Usage/Rare: juletakse
+     julgema+V+Impers+Prs+Imprt+Usage/Rare: juletagu
+     julgema+V+Impers+Sup+Usage/Rare: juletama
+     julgema+V+Impers+Prt+Ind+Aff+Usage/Rare: juleti
+     julgema+V+Pers+Prt+Quot+Usage/Rare: julenuvat
+     julgema+V+Pers+Prt+Prc+Usage/Rare: julenud
+     julgema+V+Pers+Prt+Ind+Neg+Usage/Rare: julenud
+     julgema+V+Pers+Prt+Cond+Usage/Rare: julenuks
+     julgema+V+Pers+Prt+Cond+Pl3+Aff+Usage/Rare: julenuksid
+     julgema+V+Pers+Prt+Cond+Pl2+Aff+Usage/Rare: julenuksite
+     julgema+V+Pers+Prt+Cond+Pl1+Aff+Usage/Rare: julenuksime
+     julgema+V+Pers+Prt+Cond+Sg2+Aff+Usage/Rare: julenuksid
+     julgema+V+Pers+Prt+Cond+Sg1+Aff+Usage/Rare: julenuksin
      jooma+V+Impers+Prt+Prc: joodud
      jooma+V+Impers+Prt+Ind+Neg: joodud
      jooma+V+Impers+Prt+Cond: jooduks
@@ -1718,7 +1718,7 @@ Tests:
      jooma+V+Impers+Prs+Imprt: joodagu
      jooma+V+Impers+Sup: joodama
      jooma+V+Impers+Prt+Ind+Aff: joodi
-     jooma+V+Impers+Prs+Ind+Aff+Use/NotNorm: joodakse
+     jooma+V+Impers+Prs+Ind+Aff+Usage/NotNorm: joodakse
      jooma+V+Pers+Prs+Imprt: joogu
      jooma+V+Pers+Prs+Imprt+Pl2: jooge
      jooma+V+Pers+Prs+Imprt+Pl1: joogem
@@ -1752,8 +1752,8 @@ Tests:
      jooma+V+Pers+Prt+Cond+Pl1+Aff: joonuksime
      jooma+V+Pers+Prt+Cond+Sg2+Aff: joonuksid
      jooma+V+Pers+Prt+Cond+Sg1+Aff: joonuksin
-     jooksma+V+Inf+Use/Rare: jooksta
-     jooksma+V+Ger+Use/Rare: jookstes
+     jooksma+V+Inf+Usage/Rare: jooksta
+     jooksma+V+Ger+Usage/Rare: jookstes
      jooksma+V+Pers+Sup+Ill: jooksma
      jooksma+V+Pers+Sup+Ela: jooksmast
      jooksma+V+Pers+Sup+Ine: jooksmas
@@ -1778,17 +1778,17 @@ Tests:
      jooksma+V+Pers+Prs+Imprt+Pl2: jookske
      jooksma+V+Pers+Prs+Imprt+Pl1: jookskem
      jooksma+V+Pers+Prt+Ind+Sg3+Aff: jooksis
-     jooksma+V+Impers+Prt+Prc+Use/Rare: jookstud
-     jooksma+V+Impers+Prt+Ind+Neg+Use/Rare: jookstud
-     jooksma+V+Impers+Prt+Cond+Use/Rare: jookstuks
-     jooksma+V+Impers+Prs+Prc+Use/Rare: jookstav
-     jooksma+V+Impers+Prs+Quot+Use/Rare: jookstavat
-     jooksma+V+Impers+Prs+Cond+Use/Rare: jookstaks
-     jooksma+V+Impers+Prs+Ind+Neg+Use/Rare: jooksta
-     jooksma+V+Impers+Prs+Ind+Aff+Use/Rare: jookstakse
-     jooksma+V+Impers+Prs+Imprt+Use/Rare: jookstagu
-     jooksma+V+Impers+Sup+Use/Rare: jookstama
-     jooksma+V+Impers+Prt+Ind+Aff+Use/Rare: jooksti
+     jooksma+V+Impers+Prt+Prc+Usage/Rare: jookstud
+     jooksma+V+Impers+Prt+Ind+Neg+Usage/Rare: jookstud
+     jooksma+V+Impers+Prt+Cond+Usage/Rare: jookstuks
+     jooksma+V+Impers+Prs+Prc+Usage/Rare: jookstav
+     jooksma+V+Impers+Prs+Quot+Usage/Rare: jookstavat
+     jooksma+V+Impers+Prs+Cond+Usage/Rare: jookstaks
+     jooksma+V+Impers+Prs+Ind+Neg+Usage/Rare: jooksta
+     jooksma+V+Impers+Prs+Ind+Aff+Usage/Rare: jookstakse
+     jooksma+V+Impers+Prs+Imprt+Usage/Rare: jookstagu
+     jooksma+V+Impers+Sup+Usage/Rare: jookstama
+     jooksma+V+Impers+Prt+Ind+Aff+Usage/Rare: jooksti
      jooksma+V+Pers+Prs+Prc: jooksev
      jooksma+V+Pers+Prs+Ind+Sg2+Aff: jooksed
      jooksma+V+Pers+Prs+Cond: jookseks
@@ -1817,9 +1817,9 @@ Tests:
      jooksma+V+Impers+Prs+Imprt: joostagu
      jooksma+V+Impers+Sup: joostama
      jooksma+V+Impers+Prt+Ind+Aff: joosti
-     jooksma+V+Pers+Prs+Imprt+Use/Rare: joosku
-     jooksma+V+Pers+Prs+Imprt+Pl2+Use/Rare: jooske
-     jooksma+V+Pers+Prs+Imprt+Pl1+Use/Rare: jooskem
+     jooksma+V+Pers+Prs+Imprt+Usage/Rare: joosku
+     jooksma+V+Pers+Prs+Imprt+Pl2+Usage/Rare: jooske
+     jooksma+V+Pers+Prs+Imprt+Pl1+Usage/Rare: jooskem
      jääma+V+Inf: jääda
      jääma+V+Ger: jäädes
      jääma+V+Impers+Prt+Prc: jäädud

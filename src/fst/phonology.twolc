@@ -23,7 +23,7 @@ A B C D E F G H I J K L M N O P Q R S Š Z Ž T U V W Õ Ä Ö Ü X Y
            !! necessary for words with no stem gradation, having only short illative in a strong grade, 
            !! e.g. *Riia* - *Riiga*, *Rannu* - *Randu*.
            !! (But currently used also for words with stem gradation, e.g. *tuba* - *tuppa*)
- %{E%}:0   !! Schwa trigger (for -el/er words only) never appears on the surface side.
+ %{no.e%}:0   !! Schwa trigger (for -el/er words only) never appears on the surface side.
  %{id%}:0  !!≈ * **@CODE@** Trigger / lexicon flag for pl part possible ending (esseesid/esseid)
  %{stemill%}:0 !!≈ * **@CODE@** Trigger / lexicon flag for short sg ill, formed by stem change (jõgi-jõkke)
  %{dbl%}:0 !!≈ * **@CODE@** Trigger to double the previous letter. Sometimes a phonologically long long kk pp tt  
@@ -646,39 +646,15 @@ Vx:Vy  <=> _ %{W%}: %> \[T7:] ;
    
 !--------- declinable word stem change ---------
 ! schwa (dis)appears or emerges or surfaces...
-! REDEL type
+! TOOBER, PIKSEL, GOSPEL 
 
-! the -li/-ri form may be common or rare
 " -el/-er is -li/-ri "
 
-e:0 <=>  _ [l | r]           %{E%}:           SuffixBorder i: \%{rare%}: ;   ! toobri
-         _ [l | r]           %{E%}: %{rare%}: SuffixBorder i:  %{rare%}: ;   ! gospli
-         _ [l | r] %{rare%}: %{E%}:           SuffixBorder i: \%{rare%}: ;   ! piksli
+e:0 <=> _ [l | r] %{no.e%}: ;
 
-! lexical: t o o b e r {E} > i
-! surface: t o o b 0 r  0  > i
-! lexical: g o s p e l {E} {rare} > i {rare}   gospli is rare; gospeli is common
-! surface: g o s p 0 l  0     0   > i    0
-! lexical: p i k s e l {rare} {E} > i \{rare}  piksli is common; pikseli is rare
-! surface: p i k s 0 l    0    0  > i    0
 
-! {E} has actually the semantics of 'delete the previous e' 
-! in the stem lexicon,
-! piksel{rare}{E} means that pikseli is rare, piksli is common
-! gospel{E}{rare} means that gospeli is common, gospli is rare
-! the last {rare} tag comes from a continuation lexicon
-
-"usage tag is here and there"
-%{rare%}:0  =>  _ %{E%}:    ;
-                  %{E%}: _  ;
-               SuffixBorder i: _ ;
-
-! when concatenating the stem lexicon and variants of continuation classes,
-! some paths end up containing unnecessary symbol {rare}; this rule 
-! deletes the paths
- 
-"block a spurious path"
-%{rare%}:0 /<= # \[%{rare%}:]* SuffixBorder i: _ ;
+! lexical: t o o b e r {no.e} > i
+! surface: t o o b 0 r    0   > i
 
 
 ! --------- verb stem changes -------
@@ -1223,7 +1199,7 @@ Cx:Cy <=>  _ (:Cy | j) NullNoTrigger* :Vowel NullNoTrigger* %{S%}: ;
 ! so that the final lexical side has usage info indicated
 
 ! (the first lexical tag %{rare%} comes from the stem lexicon, the second from a continuation class lexicon,
-! and it is the latter that is paired with the lexical side tag +Use/Rare)
+! and it is the latter that is paired with the lexical side tag +Usage/Rare)
 ! the combination of rules must ensure that the (non)existance of the latter is in harmony with the surface realisation of the affix, 
 ! given the semantics of the tags in the stem lexicon 
 
