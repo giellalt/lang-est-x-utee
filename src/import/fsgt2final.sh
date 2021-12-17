@@ -391,6 +391,9 @@ cat fs_gt.inflecting.tmp1.tagged | grep '\(+N:\)\|\(+N+Usage\)' \
 | sed '/^[^@]...*s+N[^:]*:[^#]* KATKINE/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^[^@]...*s+N[^:]*:[^#]* SOOLANE/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^[^@]....*+[^#]* REDEL/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
+| sed '/^[^@]....*+[^#]* TOOBER/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
+| sed '/^[^@]....*+[^#]* PIKSEL/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
+| sed '/^[^@]....*+[^#]* GOSPEL/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^[^@]....*+[^#]* VIRSIK/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^[^@]....*+[^#]* ÄMBLIK/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^käsi+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
