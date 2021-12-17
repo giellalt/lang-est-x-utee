@@ -30,7 +30,7 @@ LEXICON TOOBER    ! VVS 2 (productive) for consonant-ending, stress on penultima
               :%{no.e%}%>i 2C ;    ! kopli etc
               : US_DERIVATION ;
               : LIK_DERIVATION ;
-   +Usage/Rare:%>i LIK_DERIVATION ;
+   +Usage/Rare:%{no.e%}%>i LIK_DERIVATION ;
 
 LEXICON PIKSEL    ! VVS 2 (productive) for consonant-ending, stress on penultimate syllable words
    
@@ -39,7 +39,7 @@ LEXICON PIKSEL    ! VVS 2 (productive) for consonant-ending, stress on penultima
    +Usage/Rare:%>i 2C ;    ! pikseli etc
               : US_DERIVATION ;
               : LIK_DERIVATION ;
-   +Usage/Rare:%>i LIK_DERIVATION ;
+   +Usage/Rare:%{no.e%}%>i LIK_DERIVATION ;
 
 LEXICON GOSPEL    ! VVS 2 (productive) for consonant-ending, stress on penultimate syllable words
    
@@ -48,7 +48,7 @@ LEXICON GOSPEL    ! VVS 2 (productive) for consonant-ending, stress on penultima
               :%>i 2C ;    ! gospeli etc
               : US_DERIVATION ;
               : LIK_DERIVATION ;
-   +Usage/Rare:%>i LIK_DERIVATION ;
+   +Usage/Rare:%{no.e%}%>i LIK_DERIVATION ;
 
 
 LEXICON VIRSIK    ! VVS 2 (productive) for -ik, -ing; stress on penultimate syllable words
