@@ -6,42 +6,42 @@ Sami GT convention
 
 ### Triggers
 
- * **%{W%}:0**  Weak grade trigger 
- * **%{F%}:0**  Foreign word flag to prevent application of weak grade trigger, 
+* **%{W%}:0**  Weak grade trigger 
+* **%{F%}:0**  Foreign word flag to prevent application of weak grade trigger, 
 so that a rule does not trigger *Fiadi* as the weak grade form of *Fiat*. 
- * **%{S%}:0** Strong stem trigger (for short illatives only), 
+* **%{S%}:0** Strong stem trigger (for short illatives only), 
 necessary for words with no stem gradation, having only short illative in a strong grade, 
 e.g. *Riia* - *Riiga*, *Rannu* - *Randu*.
 (But currently used also for words with stem gradation, e.g. *tuba* - *tuppa*)
 Schwa trigger (for -el/er words only) never appears on the surface side.
- * **%{id%}:0** Trigger / lexicon flag for pl part possible ending (esseesid/esseid)
- * **%{stemill%}:0** Trigger / lexicon flag for short sg ill, formed by stem change (jõgi-jõkke)
- * **%{dbl%}:0** Trigger to double the previous letter. Sometimes a phonologically long long kk pp tt  
+* **%{id%}:0(esseesid/esseid)** Trigger / lexicon flag for pl part possible ending (esseesid/esseid)
+* **%{stemill%}:0(jõgi-jõkke)** Trigger / lexicon flag for short sg ill, formed by stem change (jõgi-jõkke)
+* **%{dbl%}:0** Trigger to double the previous letter. Sometimes a phonologically long long kk pp tt  
 at the end of a Sg Nom word is written k p t, 
 so it must be doubled  (kabinet - kabinetti). 
 Also, tulema, panema, surema, olema, minema have tulla, tulles etc...
- * **%{no.apo%}:0** trigger for deleting apostrophe (normally used for foreign word inflections) from Sg Nom
+* **%{no.apo%}:0Nom** trigger for deleting apostrophe (normally used for foreign word inflections) from Sg Nom
 
 Usage tag. It may relate to an individual word in the lexicon, 
 or to a set of inflectional forms of some inflectional type, i.e. its sub-paradigm. It never surfaces.
 It is used to pair the surface form with the usage tag of the lexical representation.
 
- * **%{rare%}:0** rare or less used form (norm) ; e.g. kingasid
+* **%{rare%}:0kingasid** rare or less used form (norm) ; e.g. kingasid
 
 ### Special surface side symbols, used in rule contexts
 
- * **%>** Inflectional suffix boundary
- * **»** Derivational suffix boundary
- * **#** Word boundary for both lexicalised and dynamic compounds
+* **%>boundary** Inflectional suffix boundary
+* **»boundary** Derivational suffix boundary
+* **#compounds** Word boundary for both lexicalised and dynamic compounds
 Final hyphen for shortened stems:
 ```
- %-
+%-@CODE@
 ```
 ### Apostrophe
 
 Apostrophe is used for separating inflectional affix from a foreign word lemma
 
- * **%{apo%}:0** ... but Sg Nom is without apostrophe
+* **%{apo%}:0apostrophe** ... but Sg Nom is without apostrophe
 
 ### Morphophonemes
 
@@ -52,19 +52,19 @@ In affixes, they are typically related to the declination or conjugation and the
 
 Short stops   
 
- * **G1:g** In strong grade
- * **G1:0** In weak grade
- * **G1:k** In short illative (lagi lae lakke)
- * **B1:b** In strong grade
- * **B1:0** In weak grade
- * **B1:m** In weak grade after m
- * **B1:p** In short illative (tuba toa tuppa)
- * **D1:d** In strong grade
- * **D1:0** In weak grade
- * **D1:l** In weak grade after l
- * **D1:n** In weak grade after n
- * **D1:r** In weak grade after r
- * **D1:t** In short illative (ladu lao lattu)
+* **G1:ggrade** In strong grade
+* **G1:0grade** In weak grade
+* **G1:klakke)** In short illative (lagi lae lakke)
+* **B1:bgrade** In strong grade
+* **B1:0grade** In weak grade
+* **B1:mm** In weak grade after m
+* **B1:ptuppa)** In short illative (tuba toa tuppa)
+* **D1:dgrade** In strong grade
+* **D1:0grade** In weak grade
+* **D1:ll** In weak grade after l
+* **D1:nn** In weak grade after n
+* **D1:rr** In weak grade after r
+* **D1:tlattu)** In short illative (ladu lao lattu)
 
 Orthographic convention: after voiceless (e.g. s or h, or k p t), gbd is written as kpt
 e.g. õhk-õhu, vask-vase
@@ -72,146 +72,146 @@ K1 also in: uks, jooksma
 P1 also in: laps
 T1 also in: jätma, katma, kütma, matma, võtma, mõtlema, ütlema
 
- * **K1:k** In strong grade
- * **K1:0** In weak grade
- * **P1:p** In strong grade ?? EKK: never happens ??
- * **P1:0** In weak grade   ?? EKK: never happens ??
- * **T1:t** In strong grade
- * **T1:0** In weak grade
+* **K1:kgrade** In strong grade
+* **K1:0grade** In weak grade
+* **P1:p??** In strong grade ?? EKK: never happens ??
+* **P1:0??** In weak grade   ?? EKK: never happens ??
+* **T1:tgrade** In strong grade
+* **T1:0grade** In weak grade
 
- * **B2:b** In strong grade, e.g. tiib
- * **B2:v** In weak grade, e.g. tiiva
- * **B2:p** In short illative (tõbi tõppe)
+* **B2:btiib** In strong grade, e.g. tiib
+* **B2:vtiiva** In weak grade, e.g. tiiva
+* **B2:ptõppe)** In short illative (tõbi tõppe)
 
- * **K2:k** In strong grade
- * **K2:g** In weak grade
- * **P2:p** In strong grade
- * **P2:b** In weak grade
- * **T2:t** In strong grade
- * **T2:d** In weak grade
+* **K2:kgrade** In strong grade
+* **K2:ggrade** In weak grade
+* **P2:pgrade** In strong grade
+* **P2:bgrade** In weak grade
+* **T2:tgrade** In strong grade
+* **T2:dgrade** In weak grade
 
 Short stops in stem illatives for words that do not have grade alternation.
 They surface (or appear as extra long) in strong grade, expressed by stem illative only. 
 
- * **G3:0** 
- * **G3:g** Riia Riiga
- * **D3:0** 
- * **D3:d** Rannu Randu
- * **G4:g** 
- * **G4:k** Türgi Türki
- * **D4:d** 
- * **D4:t** Leedu Leetu
- * **B4:b** 
- * **B4:p** Abja Apja
+* **G3:0** 
+* **G3:gRiiga** Riia Riiga
+* **D3:0** 
+* **D3:dRandu** Rannu Randu
+* **G4:g** 
+* **G4:kTürki** Türgi Türki
+* **D4:d** 
+* **D4:tLeetu** Leedu Leetu
+* **B4:b** 
+* **B4:pApja** Abja Apja
 
- * **S1:s** In strong grade, S1 is s
- * **S1:0** In weak grade, S1 is 0; before stop, S1 is 0
+* **S1:ss** In strong grade, S1 is s
+* **S1:00** In weak grade, S1 is 0; before stop, S1 is 0
 
 Unstressed syllable vowels disappear...
 
- * **A2:a** valvas
- * **A2:0** valv sa
- * **E2:e** laulev
- * **E2:0** laul va
- * **I2:i** õilis
- * **I2:0** õil sa
- * **U2:u** hirmus
- * **U2:0** hirm sa
+* **A2:avalvas** valvas
+* **A2:0sa** valv sa
+* **E2:elaulev** laulev
+* **E2:0va** laul va
+* **I2:iõilis** õilis
+* **I2:0sa** õil sa
+* **U2:uhirmus** hirmus
+* **U2:0sa** hirm sa
 
 A stem vowel in inflectional forms of ne/s words, to make them formally similar in inflection
 
- * **E1:e** soolase, raudset
- * **E1:0** soolas t
+* **E1:eraudset** soolase, raudset
+* **E1:0t** soolas t
 
 Ad hoc stem vowels for ne/s words
 
- * **I1:i** an ugly trigger for ne/s words katkine - katkisil
- * **A1:a** an ugly trigger for ne/s words pingne - pingsa
- * **A1:0** pingne - pingsus
+* **I1:ikatkisil** an ugly trigger for ne/s words katkine - katkisil
+* **A1:apingsa** an ugly trigger for ne/s words pingne - pingsa
+* **A1:0pingsus** pingne - pingsus
 
 Few words...
 
 j surfacing and changing
 
- * **E4:e** aeg, soe 
- * **E4:j** aja, sooja
+* **E4:e** aeg, soe 
+* **E4:jsooja** aja, sooja
 
- * **J1:i** ahi, rohi
- * **J1:j** ahju
- * **J1:0**      rohu
+* **J1:irohi** ahi, rohi
+* **J1:jahju** ahju
+* **J1:0rohu**      rohu
 
 4 words have h-illative: *sohu*, *suhu*, *öhe*, *pähe*
 
- * **H3:h** sohu, ... 
- * **H3:0** soo, suu, ...
- * **Y3:u** sohu, suhu
- * **Y3:e** öhe, pähe
- * **Y3:0** öö, pea
+* **H3:h** sohu, ... 
+* **H3:0...** soo, suu, ...
+* **Y3:usuhu** sohu, suhu
+* **Y3:epähe** öhe, pähe
+* **Y3:0pea** öö, pea
 
 only *hea* and *pea*  
 
- * **A6:a** pea - pähe, päid
- * **A6:ä**
- * **E6:e** pea - pähe, päid
- * **E6:0**
+* **A6:apäid** pea - pähe, päid
+* **A6:ä**@CODE@****
+* **E6:epäid** pea - pähe, päid
+* **E6:0**@CODE@****
 
 6 words have õ in indicative past
 
- * **Ö6:ü** söö+a - süüa
- * **Ö6:ö**
- * **Ö6:õ** söö+i - sõi
- * **Ö6:0**
- * **O6:u** too+a - tuua
- * **O6:o**
- * **O6:õ** too+i - tõi
- * **O6:0**
+* **Ö6:üsüüa** söö+a - süüa
+* **Ö6:ö**@CODE@****
+* **Ö6:õsõi** söö+i - sõi
+* **Ö6:0**@CODE@****
+* **O6:utuua** too+a - tuua
+* **O6:o**@CODE@****
+* **O6:õtõi** too+i - tõi
+* **O6:0**@CODE@****
 
 A handful of words...
 
- * **M1:m** lumi
- * **M1:n** lun d
+* **M1:mlumi** lumi
+* **M1:nd** lun d
 
- * **N1:n** lään e, kolman da
- * **N1:0** lää s,  kolma s
+* **N1:nda** lään e, kolman da
+* **N1:0s** lää s,  kolma s
 
- * **K3:k** vennakse
- * **K3:0** venna s
+* **K3:kvennakse** vennakse
+* **K3:0s** venna s
 
 Verb affix lexicons are simpler if we introduce these:
 
 Stem vowels for verbs of some inflectional types
 
- * **A7:a** naerab
- * **A7:0** naer ma
- * **E7:e** jookseb
- * **E7:0** jooks ma
+* **A7:anaerab** naerab
+* **A7:0ma** naer ma
+* **E7:ejookseb** jookseb
+* **E7:0ma** jooks ma
 
 Verb affixes have k-g and t-d-0 alternations:
 
 Imperative mood affixes gu/ku, ge/kem etc
 
- * **G7:g**
- * **G7:k**
- * **G7:0**
+* **G7:g**@CODE@****
+* **G7:k**@CODE@****
+* **G7:0**@CODE@****
 
 Infinitive affixes ta/da/a, and gerund affixes tes/des/es
 
- * **D7:d**
- * **D7:t**
- * **D7:0**
+* **D7:d**@CODE@****
+* **D7:t**@CODE@****
+* **D7:0**@CODE@****
 
 Impersonal voice affixes tud/tud, takse/dakse etc
 
- * **T7:d**
- * **T7:t**
+* **T7:d**@CODE@****
+* **T7:t**@CODE@****
 
 To form past indicative forms and make them pronouncable
 
- * **I7:i** naeris
- * **I7:0** naer sin
+* **I7:inaeris** naeris
+* **I7:0sin** naer sin
 
- * **S7:s** naersin
- * **S7:0** seisin
+* **S7:snaersin** naersin
+* **S7:0seisin** seisin
 
 Sometimes the choice of an allomorph or allophone is related to the frequency of the word.
 
@@ -220,66 +220,66 @@ So we must allow stem vowels for singular and plural to appear and disappear in 
 
 Singular stem vowel tag in lexicon
 
- * **%{sg.a%}:a** tüng - tünga
- * **%{sg.a%}:0** 
+* **%{sg.a%}:atünga** tüng - tünga
+* **%{sg.a%}:0** 
 
- * **%{sg.e%}:e** neem - neeme
- * **%{sg.e%}:0** 
+* **%{sg.e%}:eneeme** neem - neeme
+* **%{sg.e%}:0** 
 
- * **%{sg.i%}:i** taud - taudi, default sg stem vowel for most types
- * **%{sg.i%}:0** 
+* **%{sg.i%}:itypes** taud - taudi, default sg stem vowel for most types
+* **%{sg.i%}:0** 
 
- * **%{sg.u%}:u** koon - koonu 
- * **%{sg.u%}:0** 
+* **%{sg.u%}:u** koon - koonu 
+* **%{sg.u%}:0** 
 
 
 Plural stem vowel tag in lexicon
 
- * **%{pl.i%}:i** king - kingi
- * **%{pl.i%}:0** king - kingasid
+* **%{pl.i%}:ikingi** king - kingi
+* **%{pl.i%}:0kingasid** king - kingasid
 
- * **%{pl.e%}:e** tõug - tõuge, taud - taude, default pl stem vowel for most types
- * **%{pl.e%}:0** tõug - tõugusid
+* **%{pl.e%}:etypes** tõug - tõuge, taud - taude, default pl stem vowel for most types
+* **%{pl.e%}:0tõugusid** tõug - tõugusid
 
- * **%{pl.u%}:u** laud - laudu
- * **%{pl.u%}:0** laud - laudasid
+* **%{pl.u%}:ulaudu** laud - laudu
+* **%{pl.u%}:0laudasid** laud - laudasid
 
 Inflectional affixes having the same grammatical meaning:
 Pl Par endings sid/0, id/sid, Sg Ill endings sse/0.
 Their choice depends on triggers in the lexicon,
 have to be defined un-naturally letter by letter, 
 
- * **%{i%}:i** i of sid: pl par ending siilisid
- * **%{i%}:0**         : pl par ending siile
- * **%{d%}:d** d of sid: pl par ending siilisid
- * **%{d%}:0**         : pl par ending siile
+* **%{i%}:isiilisid** i of sid: pl par ending siilisid
+* **%{i%}:0siile**         : pl par ending siile
+* **%{d%}:dsiilisid** d of sid: pl par ending siilisid
+* **%{d%}:0siile**         : pl par ending siile
 
 
- * **%{s%}:s** s of -sse jõesse; -sid siilisid 
- * **%{s%}:0**            jõkke;    siile;   puid
- * **%{e%}:e** e of -sse jõesse;  
- * **%{e%}:0**            jõkke; 
+* **%{s%}:s** s of -sse jõesse; -sid siilisid 
+* **%{s%}:0puid**            jõkke;    siile;   puid
+* **%{e%}:e** e of -sse jõesse;  
+* **%{e%}:0**            jõkke; 
 
 If the sound change is productive and/or very regularly determined by context
 (e.g. by morpheme border), we do not use special symbols to denote the changing phonemes 
 
 ne, s ending words have similar paradigms; only sg nom is different
 
- * **n:n** soolane and other ne-words Sg Nom
- * **n:s** soolas+e, soolas+t etc  
- * **e:e** soolane
- * **e:0** soolas0+e 
+* **n:nNom** soolane and other ne-words Sg Nom
+* **n:s** soolas+e, soolas+t etc  
+* **e:esoolane** soolane
+* **e:0** soolas0+e 
 
 -le/-el stem alternations also use e:0, in addition to 0:e (sip0lema-sipel0da)
 
 high vowel lowering in certain contexts
 
- * **i:e**
- * **i:i**
- * **u:o**
- * **u:u**
- * **ü:ö**
- * **ü:ü** 
+* **i:e**@CODE@****
+* **i:i**@CODE@****
+* **u:o**@CODE@****
+* **u:u**@CODE@****
+* **ü:ö**@CODE@****
+* **ü:ü** 
 
 
 

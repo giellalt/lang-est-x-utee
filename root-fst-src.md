@@ -570,14 +570,14 @@ Copied from Sami root.lexc
 * < (escaped with square brackets, to avoid collision with < as morpheme boundary)
 
 
- * '  7 is the real apostrophe ?? 
+* '  7 is the real apostrophe ?? 
 
  * `+Use/Circ `: for arabic and roman numerals; 
  * `+Use/PMatch `: for tokenisation with pmatch
  * `+Use/-PMatch `: for tokenisation with pmatch
 
  * `+ABBR `: Lühend / Abbreviation
- * +Symbol = independent symbols in the text stream, like £, €, ©
+* +Symbol© = independent symbols in the text stream, like £, €, ©
  * `+ACR `: Suurtähtlühend / Acronym
  * `+CLB `: Osalause piir (punkt, koma) / Clause border (full stop, comma..)
  * `+PUNCT `: Kirjavahemärk / Punctuation
@@ -590,22 +590,22 @@ Use the following flag diacritics to control downcasing of derived proper
 nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 these flags. There exists a ready-made regex that will do the actual down-casing
 given the proper use of these flags.
- |  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
- |  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
+|  @U.Cap.Obl@deatnulasj. | Allowing downcasing of derived names: deatnulasj.
+|  @U.Cap.Opt@deatnulasj. | Allowing downcasing of derived names: deatnulasj.
 
 These are used for limiting the number of components in a compound word
 (the compound transducer is cyclic, but in reality there is a limit to the length of words)
- |  @D.Part@ | No part of a compound should have been encountered yet
- |  @P.Part.One@ | Indicate that this could be the first part of a compound
- |  @R.Part.One@ | Require that the first part has been encountered; if a lemma has it, it means that the lemma cannot be part2 or part3 of a compound
- |  @D.Part.One@ | Require that the first part has NOT been encountered 
- |  @P.Part.Two@ | Indicate that this could be the second part of a compound
- |  @R.Part.Two@ | Require that the second part has been encountered
- |  @P.Part.Three@ | Indicate that this could be the third part of a compound
- |  @P.Part.Bad@ | Indicate that this cannot be a part of a compound
+|  @D.Part@yet | No part of a compound should have been encountered yet
+|  @P.Part.One@compound | Indicate that this could be the first part of a compound
+|  @R.Part.One@compound | Require that the first part has been encountered; if a lemma has it, it means that the lemma cannot be part2 or part3 of a compound
+|  @D.Part.One@ | Require that the first part has NOT been encountered 
+|  @P.Part.Two@compound | Indicate that this could be the second part of a compound
+|  @R.Part.Two@encountered | Require that the second part has been encountered
+|  @P.Part.Three@compound | Indicate that this could be the third part of a compound
+|  @P.Part.Bad@compound | Indicate that this cannot be a part of a compound
 
 POS is used for filtering derivations and compounds
- |  @R.POS.NumCardCompound@ | compound numeral (viis+sada - five hundred)
+|  @R.POS.NumCardCompound@hundred) | compound numeral (viis+sada - five hundred)
 
 Case is used for filtering derivations and compounds
 
