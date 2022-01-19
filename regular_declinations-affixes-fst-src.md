@@ -221,7 +221,7 @@ not all the cases must be distinguished
 
 
 
- * **LEXICON DOT   ** - number ending with a dot may be ordinal, or ordinal/cardinal followed by a full stop
+* **LEXICON DOT   ** - number ending with a dot may be ordinal, or ordinal/cardinal followed by a full stop
 
 
 

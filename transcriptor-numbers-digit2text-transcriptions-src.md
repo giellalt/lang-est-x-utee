@@ -8,7 +8,7 @@
 
 
 
- :kümmend+Use/NG  LOHKAIM ;  Analyzed but not generated
+:kümmend+Use/NG  LOHKAIM ;  Analyzed but not generated
 
 
 

@@ -6,30 +6,30 @@
 
 ### Sõnaliik / Part of speech
 
- * `+N `: nimisõna		/ substantive		
- * `+A `: omadussõna		/ adjective		
- * `+Num `: arvsõna		/ numeral
- * `+Pron `: asesõna		/ pronoun		
- * `+V `: tegusõna 		/ verb			
- * `+Adv `: määrsõna		/ adverb		
- * `+Interj `: hüüdsõna		/ interjection		
- * `+CC `: rinnastav sidesõna		/ co-ordinating conjunction
- * `+CS `: alistav sidesõna		/ subordinating conjunction		
- * `+Adp `: kaassõna	/ adposition, i.e. pre/postposition	
- * `+Pref `: prefiks         / prefix				
+* `+N `: nimisõna		/ substantive		
+* `+A `: omadussõna		/ adjective		
+* `+Num `: arvsõna		/ numeral
+* `+Pron `: asesõna		/ pronoun		
+* `+V `: tegusõna 		/ verb			
+* `+Adv `: määrsõna		/ adverb		
+* `+Interj `: hüüdsõna		/ interjection		
+* `+CC `: rinnastav sidesõna		/ co-ordinating conjunction
+* `+CS `: alistav sidesõna		/ subordinating conjunction		
+* `+Adp `: kaassõna	/ adposition, i.e. pre/postposition	
+* `+Pref `: prefiks         / prefix				
 
 Genitiivatribuut pole eraldi kategooria / No special tag for genitive attribute : *angoora+N+Sg+Gen*	
 
 ### Alamkategooriad / Sub-pos categories
 
- * `+Prop `: pärisnimi	/ proper name		
- * `+Card `: põhiarvsõna	/ cardinal numeral
- * `+Ord `: järgarvsõna	/ ordinal numeral
+* `+Prop `: pärisnimi	/ proper name		
+* `+Card `: põhiarvsõna	/ cardinal numeral
+* `+Ord `: järgarvsõna	/ ordinal numeral
 
 ### Võrdlusastmed / Comparation
 
- * `+Comp `: komparatiiv	/ comparative
- * `+Superl `: superlatiiv	/ superlative
+* `+Comp `: komparatiiv	/ comparative
+* `+Superl `: superlatiiv	/ superlative
 
 
 *hfstol: examples:*
@@ -55,24 +55,24 @@ Genitiivatribuut pole eraldi kategooria / No special tag for genitive attribute 
 
 ### Arv 			/ number
 
- * `+Sg `: ainsus	/ singular
- * `+Pl `: mitmus	/ plural
+* `+Sg `: ainsus	/ singular
+* `+Pl `: mitmus	/ plural
 
 ### Kääne	/ Case
 
- * `+Nom `: nimetav			/ nominative	
+* `+Nom `: nimetav			/ nominative	
 * *part:* `part+N+Sg+Nom`
 * *maja:* `maja+N+Sg+Nom`
 * *pardid:* `part+N+Pl+Nom`
 * *majad:* `maja+N+Pl+Nom`
 
- * `+Gen `: omastav 			/ genitive	
+* `+Gen `: omastav 			/ genitive	
 * *pardi:* `part+N+Sg+Gen`
 * *maja:* `maja+N+Sg+Gen`
 * *partide:* `part+N+Pl+Gen`
 * *majade:* `maja+N+Pl+Gen`
 
- * `+Par `: osastav			/ partitive	
+* `+Par `: osastav			/ partitive	
 * *parti:* `part+N+Sg+Par`
 * *maja:* `maja+N+Sg+Par`
 * *parte:* `part+N+Pl+Par`
@@ -80,7 +80,7 @@ Genitiivatribuut pole eraldi kategooria / No special tag for genitive attribute 
 * *maju:* `maja+N+Pl+Par`
 * *majasid:* `maja+N+Pl+Par+Usage/Rare`
 
- * `+Ill `: sisseütlev			/ illative	
+* `+Ill `: sisseütlev			/ illative	
 * *parti:* `part+N+Sg+Ill`
 * *majja:* `maja+N+Sg+Ill`
 * *pardisse:* `part+N+Sg+Ill+Usage/Hyp`
@@ -89,61 +89,61 @@ Genitiivatribuut pole eraldi kategooria / No special tag for genitive attribute 
 * *majadesse:* `maja+N+Pl+Ill`
 Lühike sisseütlev e suunduv pole eraldi kääne (*parti*, *majja*) / Short illative or additive is not a separate case 
 
- * `+Ine `: seesütlev			/ inessive	
+* `+Ine `: seesütlev			/ inessive	
 * *pardis:* `part+N+Sg+Ine`
 * *majas:* `maja+N+Sg+Ine`
 * *partides:* `part+N+Pl+Ine`
 * *majades:* `maja+N+Pl+Ine`
 
- * `+Ela `: seestütlev			/ elative	
+* `+Ela `: seestütlev			/ elative	
 * *pardist:* `part+N+Sg+Ela`
 * *majast:* `maja+N+Sg+Ela`
 * *partidest:* `part+N+Pl+Ela`
 * *majadest:* `maja+N+Pl+Ela`
 
- * `+All `: alaleütlev			/ allative	
+* `+All `: alaleütlev			/ allative	
 * *pardile:* `part+N+Sg+All`
 * *majale:* `maja+N+Sg+All`
 * *partidele:* `part+N+Pl+All`
 * *majadele:* `maja+N+Pl+All`
 
- * `+Ade `: alalütlev			/ adessive	
+* `+Ade `: alalütlev			/ adessive	
 * *pardil:* `part+N+Sg+Ade`
 * *majal:* `maja+N+Sg+Ade`
 * *partidel:* `part+N+Pl+Ade`
 * *majadel:* `maja+N+Pl+Ade`
 
- * `+Abl `: alaltütlev			/ ablative	
+* `+Abl `: alaltütlev			/ ablative	
 * *pardilt:* `part+N+Sg+Abl`
 * *majalt:* `maja+N+Sg+Abl`
 * *partidelt:* `part+N+Pl+Abl`
 * *majadelt:* `maja+N+Pl+Abl`
 
- * `+Tra `: saav				/ translative	
+* `+Tra `: saav				/ translative	
 * *pardiks:* `part+N+Sg+Tra`
 * *majaks:* `maja+N+Sg+Tra`
 * *partideks:* `part+N+Pl+Tra`
 * *majadeks:* `maja+N+Pl+Tra`
 
- * `+Trm `: rajav				/ terminative	
+* `+Trm `: rajav				/ terminative	
 * *pardini:* `part+N+Sg+Trm`
 * *majani:* `maja+N+Sg+Trm`
 * *partideni:* `part+N+Pl+Trm`
 * *majadeni:* `maja+N+Pl+Trm`
 
- * `+Ess `: olev				/ essive	
+* `+Ess `: olev				/ essive	
 * *pardina:* `part+N+Sg+Ess`
 * *majana:* `maja+N+Sg+Ess`
 * *partidena:* `part+N+Pl+Ess`
 * *majadena:* `maja+N+Pl+Ess`
 
- * `+Abe `: ilmaütlev			/ abessive	
+* `+Abe `: ilmaütlev			/ abessive	
 * *pardita:* `part+N+Sg+Abe`
 * *majata:* `maja+N+Sg+Abe`
 * *partideta:* `part+N+Pl+Abe`
 * *majadeta:* `maja+N+Pl+Abe`
 
- * `+Com `: kaasaütlev			/ comitative	
+* `+Com `: kaasaütlev			/ comitative	
 * *pardiga:* `part+N+Sg+Com`
 * *majaga:* `maja+N+Sg+Com`
 * *partidega:* `part+N+Pl+Com`
@@ -165,13 +165,13 @@ voice, tense, mood, person, number, negation
 
 ### Tegumood		/ Voice
 
- * `+Impers `: umbisikuline	/ impersonal
- * `+Pers `: isikuline	/ personal
+* `+Impers `: umbisikuline	/ impersonal
+* `+Pers `: isikuline	/ personal
 
 ### Aeg			/ Tense
 
- * `+Prs `: olevik	/ present
- * `+Prt `: minevik	/ past (i.e. not present)
+* `+Prs `: olevik	/ present
+* `+Prt `: minevik	/ past (i.e. not present)
 
 Lihtminevik = minevik / Past imperfect = past
 
@@ -181,34 +181,34 @@ Enneminevik / Past pluperfect: *olema* (impf) + *nud/tud/dud* (*olin teinud*)
 
 ### Kõneviis		/ Mood
 
- * `+Ind `: kindel	/ indicative
- * `+Cond `: tingiv	/ conditional
- * `+Imprt `: käskiv	/ imperative / jussive
- * `+Quot `: kaudne	/ quotative
+* `+Ind `: kindel	/ indicative
+* `+Cond `: tingiv	/ conditional
+* `+Imprt `: käskiv	/ imperative / jussive
+* `+Quot `: kaudne	/ quotative
 
 ### Pööre ja arv	/ Person and number
 
- * `+Sg1 `: ainsuse 1. pööre	/ singular 1st person
- * `+Sg2 `: ainsuse 2. pööre	/ singular 2nd person
- * `+Sg3 `: ainsuse 3. pööre	/ singular 3rd person
- * `+Pl1 `: mitmuse 1. pööre	/ plural   1st person
- * `+Pl2 `: mitmuse 2. pööre	/ plural   2nd person
- * `+Pl3 `: mitmuse 3. pööre	/ plural   3rd person
+* `+Sg1 `: ainsuse 1. pööre	/ singular 1st person
+* `+Sg2 `: ainsuse 2. pööre	/ singular 2nd person
+* `+Sg3 `: ainsuse 3. pööre	/ singular 3rd person
+* `+Pl1 `: mitmuse 1. pööre	/ plural   1st person
+* `+Pl2 `: mitmuse 2. pööre	/ plural   2nd person
+* `+Pl3 `: mitmuse 3. pööre	/ plural   3rd person
 
 ### Kõneliik		/ Polarity
 
- * `+Aff `: jaatav kõne	/ affirmative
- * `+Neg `: eitav kõne	/ negative
+* `+Aff `: jaatav kõne	/ affirmative
+* `+Neg `: eitav kõne	/ negative
 
 ### Infiniitsed (nn käänduvad) verbivormid / Infinite ("declinable") verb forms
 
- * `+Sup `: ma-tegevusnimi / supine (ma-infinitive)
+* `+Sup `: ma-tegevusnimi / supine (ma-infinitive)
 
- * `+Inf `: da-tegevusnimi / infinitive (da-infinitive)a
+* `+Inf `: da-tegevusnimi / infinitive (da-infinitive)a
 
- * `+Ger `: des-vorm	 / gerund (des-form)	
+* `+Ger `: des-vorm	 / gerund (des-form)	
 
- * `+Prc `: kesksõna	 / participle
+* `+Prc `: kesksõna	 / participle
 
 
 ### Kategooriate võimalikud kombinatsioonid / Possible combinations of categories
@@ -406,36 +406,36 @@ Analytical forms (*olen elanud*, *olin elanud*, *oleksin elanud*, *ei olnud elan
 
 ### Partikkel -gi/-ki / Particle -gi/-ki
 
- * `+Foc/gi `
+* `+Foc/gi `
 * *pulkki:* `pulk+N+Sg+Nom+Foc/gi`
 
 ###  Kasutust (sagedust jm) iseloomustavad märgendid / Usage-related tags
 
- * `+Emph `: long inflectional forms of personal pronouns *mina*, *sina*, *tema*, *meie*, *teie*, *nemad*
+* `+Emph `: long inflectional forms of personal pronouns *mina*, *sina*, *tema*, *meie*, *teie*, *nemad*
 * *temale:* `tema+Pron+Sg+All+Emph`
 
 ### Paralleelvormide erinevat kasutussagedust iseloomustavad / Usage info for parallel forms (either correct according to the norm, or incorrect)
 
- * `+Usage/Rare `: norm, but rare 
+* `+Usage/Rare `: norm, but rare 
 * *puusid:* `puu+N+Pl+Par+Usage/Rare`
 
- * `+Usage/Hyp `:  norm, but so rare that norm is probaly wrong 
+* `+Usage/Hyp `:  norm, but so rare that norm is probaly wrong 
 * *tiivasse:* `tiib+N+Sg+Ill+Usage/Hyp`
 
- * `+Usage/NotNorm `:  not norm, but sometimes used 
+* `+Usage/NotNorm `:  not norm, but sometimes used 
 * *pöidlates:* `pöial+N+Pl+Ine+Usage/NotNorm`
 
- * `+Usage/CommonNotNorm `:  not norm, and used more than norm 
+* `+Usage/CommonNotNorm `:  not norm, and used more than norm 
 * *kööment:* `köömen+N+Sg+Par+Usage/CommonNotNorm`
 
 Oletatav analüüs / Guessed analysis
- * `+Guess `: guessed analysis
+* `+Guess `: guessed analysis
 
 ### Tuletus / Derivation
 
 ### Eesliited on harvad, aga ikkagi ... / Prefixes are seldom used, but still...
 
- * `+Pref `
+* `+Pref `
 * *taasriigistama:* `taas+Pref#riigistama+V+Pers+Sup+Ill`
 * *reinvesteerima:* `re+Pref#investeerima+V+Pers+Sup+Ill`
 
@@ -443,119 +443,119 @@ Oletatav analüüs / Guessed analysis
 
 V --> N
 
- * `+Der/mine `
+* `+Der/mine `
 * *jahumine:* `jahuma+V+Der/mine+N+Sg+Nom`
 
- * `+Der/ja `
+* `+Der/ja `
 * *jahuja:* `jahuma+V+Der/ja+N+Sg+Nom`
 
- * `+Der/nu `
+* `+Der/nu `
 * *elanu:* `elama+V+Der/nu+N+Sg+Nom`
 
- * `+Der/mus `
+* `+Der/mus `
 * *küllastumus:* `küllastuma+V+Der/mus+N+Sg+Nom`
 
- * `+Der/ng `
+* `+Der/ng `
 * *devalveering:* `devalveerima+V+Der/ng+N+Sg+Nom`
 
- * `+Der/is `
+* `+Der/is `
 * *arveldis:* `arveldama+V+Der/is+N+Sg+Nom`
 
 V --> A
 
- * `+Der/v `
+* `+Der/v `
 * *jahuv:* `jahuma+V+Der/v+A+Sg+Nom`
 
- * `+Der/tav `
+* `+Der/tav `
 * *öeldav:* `ütlema+V+Der/tav+A+Sg+Nom`
 
- * `+Der/nud `
+* `+Der/nud `
 * *elanud:* `elama+V+Der/nud+A+Sg+Nom`
 
- * `+Der/mata `
+* `+Der/mata `
 * *elamata:* `elama+V+Der/mata+A`
 
- * `+Der/matu `
+* `+Der/matu `
 * *segamatu:* `segama+V+Der/matu+A+Sg+Nom`
 
- * `+Der/tamatu `
+* `+Der/tamatu `
 * *mõeldamatu:* `mõtlema+V+Der/tamatu+A+Sg+Nom`
 
- * `+Der/tu `
+* `+Der/tu `
 * *elatu:* `elama+V+Der/tu+A+Sg+Nom`
 
- * `+Der/tud `
+* `+Der/tud `
 * *elatud:* `elama+V+Der/tud+A`
 
 N --> A
 
- * `+Der/lik `
+* `+Der/lik `
 * *kotkalik:* `kotkas+N+Der/lik+A+Sg+Nom`
 
- * `+Der/line `
+* `+Der/line `
 * *põõsaline:* `põõsas+N+Der/line+A+Sg+Nom`
 * *onomastiline:* `onomastika+N+Der/line+A+Sg+Nom`
 * *apooriline:* `apooria+N+Der/line+A+Sg+Nom`
 
- * `+Der/ne `
+* `+Der/ne `
 
 A --> Adv
 
- * `+Der/lt `
+* `+Der/lt `
 * *roosalt:* `roosa+A+Der/lt+Adv`
 
- * `+Der/sti `
+* `+Der/sti `
 * *valusasti:* `valus+A+Der/sti+Adv`
 
- * `+Der/ini `
+* `+Der/ini `
 * *paremini:* `parem+A+Comp+Der/ini+Adv`
 
 A --> A
 
- * `+Der/m `
+* `+Der/m `
 * *valusam:* `valus+A+Der/m+A+Comp+Sg+Nom`
 
- * `+Der/im `
+* `+Der/im `
 * *valusaim:* `valus+A+Der/im+A+Superl+Sg+Nom`
 
 N --> N
 
- * `+Der/nna `
+* `+Der/nna `
 * *õmblejanna:* `õmbleja+N+Der/nna+N+Sg+Nom`
 
- * `+Der/kond `
+* `+Der/kond `
 * *vaatajaskond:* `vaatama+V+Der/ja+N+Der/kond+N+Sg+Nom`
 
- * `+Der/ist `
+* `+Der/ist `
 * *kapitalist:* `kapitalism+N+Der/ist+N+Sg+Nom`
 
 A --> N, V --> N
 
- * `+Der/us `
+* `+Der/us `
 * *porisus:* `porine+A+Der/us+N+Sg+Nom`
 * *õpetus:* `õpetama+V+Der/us+N+Sg+Nom`
 
 N --> Adv
 
- * `+Der/ti `
+* `+Der/ti `
 * *lauati:* `laud+N+Der/ti+Adv`
 
- * `+Der/lane `:  helveetslane:Helveetsia+N+Prop+Der/lane+N+Sg+Nom
+* `+Der/lane `:  helveetslane:Helveetsia+N+Prop+Der/lane+N+Sg+Nom
 * *firenzelane:* `Firenze+N+Prop+Der/lane+N+Sg+Nom`
 * *helveetslane:* `Helveetsia+N+Prop+Der/lane+N+Sg+Nom`
 
 N --> N, A --> A
 
- * `+Dim/ke `:  diminutive 
+* `+Dim/ke `:  diminutive 
 * *põõsake:* `põõsas+N+Dim/ke+Sg+Nom`
 
- * `+Der/minus `:  shortening stem 
+* `+Der/minus `:  shortening stem 
 * *vaatamis-:* `vaatamine+N+Der/minus`
 * *astraal-:* `astraalne+A+Der/minus`
 
 Num --> N
 
- * `+Der/kas `
+* `+Der/kas `
 * *kolmekas:* `kolm+Num+Card+Der/kas+N+Sg+Nom`
 
 
@@ -572,40 +572,40 @@ Copied from Sami root.lexc
 
 * '  7 is the real apostrophe ?? 
 
- * `+Use/Circ `: for arabic and roman numerals; 
- * `+Use/PMatch `: for tokenisation with pmatch
- * `+Use/-PMatch `: for tokenisation with pmatch
+* `+Use/Circ `: for arabic and roman numerals; 
+* `+Use/PMatch `: for tokenisation with pmatch
+* `+Use/-PMatch `: for tokenisation with pmatch
 
- * `+ABBR `: Lühend / Abbreviation
-* +Symbol© = independent symbols in the text stream, like £, €, ©
- * `+ACR `: Suurtähtlühend / Acronym
- * `+CLB `: Osalause piir (punkt, koma) / Clause border (full stop, comma..)
- * `+PUNCT `: Kirjavahemärk / Punctuation
- * `+LEFT `: Kirjavahemärgi asetus / Punctuation orientation
- * `+RIGHT `: Kirjavahemärgi asetus / Punctuation orientation
- * `+Err/Orth `: Ortograafiaviga (genereeritud failide sümbol)/ orthography error
+* `+ABBR `: Lühend / Abbreviation
+* +Symbol = independent symbols in the text stream, like £, €, ©
+* `+ACR `: Suurtähtlühend / Acronym
+* `+CLB `: Osalause piir (punkt, koma) / Clause border (full stop, comma..)
+* `+PUNCT `: Kirjavahemärk / Punctuation
+* `+LEFT `: Kirjavahemärgi asetus / Punctuation orientation
+* `+RIGHT `: Kirjavahemärgi asetus / Punctuation orientation
+* `+Err/Orth `: Ortograafiaviga (genereeritud failide sümbol)/ orthography error
 
 ## Flag diacritics
 Use the following flag diacritics to control downcasing of derived proper
 nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 these flags. There exists a ready-made regex that will do the actual down-casing
 given the proper use of these flags.
-|  @U.Cap.Obl@deatnulasj. | Allowing downcasing of derived names: deatnulasj.
-|  @U.Cap.Opt@deatnulasj. | Allowing downcasing of derived names: deatnulasj.
+|  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
+|  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
 
 These are used for limiting the number of components in a compound word
 (the compound transducer is cyclic, but in reality there is a limit to the length of words)
-|  @D.Part@yet | No part of a compound should have been encountered yet
-|  @P.Part.One@compound | Indicate that this could be the first part of a compound
-|  @R.Part.One@compound | Require that the first part has been encountered; if a lemma has it, it means that the lemma cannot be part2 or part3 of a compound
+|  @D.Part@ | No part of a compound should have been encountered yet
+|  @P.Part.One@ | Indicate that this could be the first part of a compound
+|  @R.Part.One@ | Require that the first part has been encountered; if a lemma has it, it means that the lemma cannot be part2 or part3 of a compound
 |  @D.Part.One@ | Require that the first part has NOT been encountered 
-|  @P.Part.Two@compound | Indicate that this could be the second part of a compound
-|  @R.Part.Two@encountered | Require that the second part has been encountered
-|  @P.Part.Three@compound | Indicate that this could be the third part of a compound
-|  @P.Part.Bad@compound | Indicate that this cannot be a part of a compound
+|  @P.Part.Two@ | Indicate that this could be the second part of a compound
+|  @R.Part.Two@ | Require that the second part has been encountered
+|  @P.Part.Three@ | Indicate that this could be the third part of a compound
+|  @P.Part.Bad@ | Indicate that this cannot be a part of a compound
 
 POS is used for filtering derivations and compounds
-|  @R.POS.NumCardCompound@hundred) | compound numeral (viis+sada - five hundred)
+|  @R.POS.NumCardCompound@ | compound numeral (viis+sada - five hundred)
 
 Case is used for filtering derivations and compounds
 
@@ -666,7 +666,7 @@ Legitimate strings that are not words: numbers, acronyms, ...
 
 ## Lexicons  
 
- * `LEXICON Root ` is the starting point of everything
+* `LEXICON Root ` is the starting point of everything
 
 This is actually a loop, formed after applying Kleene star 
 concatenation on the simple word transducer with itself.
@@ -681,46 +681,44 @@ strictly simplex word; cannot be a part of a compound
 a simplex word, or the first part of a compound
 
 
- * `@D.Part@@P.Part.Two@@P.NeedPartThree.On@@P.POS.Num@ CardinalNumbersInCompBeg ;   ` 5-autone etc
+* `@D.Part@@P.Part.Two@@P.NeedPartThree.On@@P.POS.Num@ CardinalNumbersInCompBeg ;   ` 5-autone etc
 
 
 
 strictly simplex words; cannot be a part of a compound
 
- * `  Abbreviations ;             `
- * `  Adpositions ;             `
- * `  Conjunctions ;            `
- * `  NoninflectingVerbs ;      `
- * `  CardinalNumbersSingle ;      `
- * `  OrdinalNumbers ;          `
- * `  Punctuation ;          `
- * `  Symbols     ;          `
+* `  Abbreviations ;             `
+* `  Adpositions ;             `
+* `  Conjunctions ;            `
+* `  NoninflectingVerbs ;      `
+* `  CardinalNumbersSingle ;      `
+* `  OrdinalNumbers ;          `
+* `  Punctuation ;          `
+* `  Symbols     ;          `
 
- * `LEXICON First     ` a simplex word or the first part of a compound 
+* `LEXICON First     ` a simplex word or the first part of a compound 
 
- * `  @P.POS.A@ Adjectives ;              `
- * `  @P.POS.A@ NoninflectingAdjectives ; `
- * `  @P.POS.AComp@ ComparativeAdjectives ;   `
- * `  @P.POS.AComp@ SuperlativeAdjectives ;   `  ! Superl = Comp in compounding
- * `  @P.POS.Adv@ Adverbs ;                 `
- * `  @P.POS.N@ Nouns ;                   `
- * `  @P.POS.NProp@@U.Cap.Obl@ ProperNouns ; `  ! always uppercase
- * `  @P.POS.NProp@@U.Cap.Opt@ ProperNouns ; `  ! downcased for derivations
- * `  @P.POS.IntNum@ IntegerNumerals ;                `
- * `  @P.POS.NonIntNum@ NonIntegerNumerals ;                `
- * `  @P.POS.NumOrd@ OrdinalNumerals ;                `
- * `  @P.POS.Pron@ Pronouns ;                `
- * `  @P.POS.V@ Verbs ;                   `
- * `  @P.POS.Interj@ Interjections ;           `
- * `  @P.POS.GA@@P.Case.Gen@ GenitiveAttributes ;      `
- * `  @P.POS.Pref@ Prefixes ;                `
- * `  @P.POS.ACR@ Acronyms ;          `
- * `  @P.POS.ACRMinus@ Acrominus ;          `
-
-
- * `LEXICON Latter ` the latter part of a compound
+* `  @P.POS.A@ Adjectives ;              `
+* `  @P.POS.A@ NoninflectingAdjectives ; `
+* `  @P.POS.AComp@ ComparativeAdjectives ;   `
+* `  @P.POS.AComp@ SuperlativeAdjectives ;   `  ! Superl = Comp in compounding
+* `  @P.POS.Adv@ Adverbs ;                 `
+* `  @P.POS.N@ Nouns ;                   `
+* `  @P.POS.NProp@@U.Cap.Obl@ ProperNouns ; `  ! always uppercase
+* `  @P.POS.NProp@@U.Cap.Opt@ ProperNouns ; `  ! downcased for derivations
+* `  @P.POS.IntNum@ IntegerNumerals ;                `
+* `  @P.POS.NonIntNum@ NonIntegerNumerals ;                `
+* `  @P.POS.NumOrd@ OrdinalNumerals ;                `
+* `  @P.POS.Pron@ Pronouns ;                `
+* `  @P.POS.V@ Verbs ;                   `
+* `  @P.POS.Interj@ Interjections ;           `
+* `  @P.POS.GA@@P.Case.Gen@ GenitiveAttributes ;      `
+* `  @P.POS.Pref@ Prefixes ;                `
+* `  @P.POS.ACR@ Acronyms ;          `
+* `  @P.POS.ACRMinus@ Acrominus ;          `
 
 
+* `LEXICON Latter ` the latter part of a compound
 
 
 
@@ -760,32 +758,34 @@ strictly simplex words; cannot be a part of a compound
 
 
 
- * `  @P.POS.A@@C.Der@@C.Stem@ Adjectives ;              `
 
 
- * `  @P.POS.A@@C.Der@@C.Stem@ Adjectives_ne ;              `
+* `  @P.POS.A@@C.Der@@C.Stem@ Adjectives ;              `
+
+
+* `  @P.POS.A@@C.Der@@C.Stem@ Adjectives_ne ;              `
 järguline	järk+N+Der/line+A  redellik redel+N+Der/lik+A     NOT -autone
 
 
- * `  @P.POS.A@@C.Der@@C.Stem@ Adjectives_v ;              `
+* `  @P.POS.A@@C.Der@@C.Stem@ Adjectives_v ;              `
 
 
- * `  @P.POS.A@@C.Der@@C.Stem@ PlainAdjectives ;              `
+* `  @P.POS.A@@C.Der@@C.Stem@ PlainAdjectives ;              `
 
 
- * `  @P.POS.AComp@@C.Der@@C.Stem@ ComparativeAdjectives ;              `
- * `  @P.POS.AComp@@C.Der@@C.Stem@ SuperlativeAdjectives ;              `
-
-
-
+* `  @P.POS.AComp@@C.Der@@C.Stem@ ComparativeAdjectives ;              `
+* `  @P.POS.AComp@@C.Der@@C.Stem@ SuperlativeAdjectives ;              `
 
 
 
 
- * `  @P.Case.Gen@ LatterVerb ;                   `
 
 
- * `  @P.POS.V@@C.Der@@P.Stem.Verb@ Verbs ;                   `
+
+* `  @P.Case.Gen@ LatterVerb ;                   `
+
+
+* `  @P.POS.V@@C.Der@@P.Stem.Verb@ Verbs ;                   `
 
 
 

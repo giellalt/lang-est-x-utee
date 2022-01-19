@@ -55,7 +55,7 @@
 
 
 
- LEXICON SAAMA  is a lexicon for saama-type words. ! VVS 37   saama, jääma
+LEXICON SAAMA  is a lexicon for saama-type words. ! VVS 37   saama, jääma
 
 
 
