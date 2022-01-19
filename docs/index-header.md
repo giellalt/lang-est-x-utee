@@ -8,7 +8,7 @@
 This page documents the work on the [UTEE Estonian language model](https://github.com/giellalt/lang-x-utee). There are two language models for Estonian in the GiellaLT infrastructure. The main architect behind this one is Heiki-Jaan Kaalep, at the University of Tartu, Estonia.
 It contains 73000 lemmas, and a full morphological model.
 
-* Generation of [paradigms|http://giellatekno.uit.no/cgi/p-est.fin.html]
+* Generation of [paradigms](http://giellatekno.uit.no/cgi/p-est.fin.html)
 
 # Project documentation
 
