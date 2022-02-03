@@ -779,6 +779,14 @@ Multichar_Symbols
 
 !! 
 
+! Usage tags paired with +Usage/Rare ; 
+
+ %{rare%}       ! rare or less used form (norm) ; e.g. kingasid
+ %{rare.illative%}       ! rare or less used illative form (norm) ; e.g. kingasse
+ %{rare.pl.partitive%}       ! rare or less used plural partitive form (norm) ; e.g. kingasid
+ %{rare.pl.genitive%}       ! rare or less used plural genitive form (norm) ; e.g. heinade
+ %{rare.pl.forms%}       ! rare or less used plural forms based on the genitive, but excluding it (norm) ; e.g. heinadesse
+
 ! Morphophonology
 
 ! Triggers
@@ -791,10 +799,6 @@ Multichar_Symbols
  %{stemill%} ! lexicon flag for short sg ill, formed by stem change (jõgi-jõkke)
  %{dbl%}     ! double the previous letter (kabinet - kabinetti)
  %{no.apo%}  ! trigger for deleting apostrofy (used for foreign word inflections) from sg nom
-
-! usage tag; never on the surface side
-
- %{rare%}       ! rare or less used form (norm) ; e.g. kingasid
 
  %>     ! Inflectional suffix boundary
  »      ! Derivational suffix boundary
@@ -891,10 +895,11 @@ E7   ! e 0  jookseb jooksma
 ! Inflectional affixes sid/id/vowel sse/0 having the same grammatical meaning
 ! defined un-naturally letter by letter
 
+ %{s%}  ! s 0
  %{i%}  ! i 0
  %{d%}  ! d 0
  
- %{s%}  ! s 0
+ %{ss%}  ! s 0
  %{e%}  ! s 0
 
 !! Legitimate strings that are not words: numbers, acronyms, ...
