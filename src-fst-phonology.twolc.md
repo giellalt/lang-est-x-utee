@@ -28,6 +28,8 @@ It is used to pair the surface form with the usage tag of the lexical representa
 
 * **%{rare%}:0** rare or less used form (norm) ; e.g. kingasid
 
+
+
 ### Special surface side symbols, used in rule contexts
 
 * **%>** Inflectional suffix boundary
@@ -249,14 +251,16 @@ Pl Par endings sid/0, id/sid, Sg Ill endings sse/0.
 Their choice depends on triggers in the lexicon,
 have to be defined un-naturally letter by letter, 
 
+* **%{s%}:s** s of sid: pl par ending siilisid 
+* **%{s%}:0**         : pl par ending siile;  
 * **%{i%}:i** i of sid: pl par ending siilisid
 * **%{i%}:0**         : pl par ending siile
 * **%{d%}:d** d of sid: pl par ending siilisid
 * **%{d%}:0**         : pl par ending siile
 
 
-* **%{s%}:s** s of -sse jõesse; -sid siilisid 
-* **%{s%}:0**            jõkke;    siile;   puid
+* **%{ss%}:s** s of -sse jõesse; 
+* **%{ss%}:0**            jõkke;
 * **%{e%}:e** e of -sse jõesse;  
 * **%{e%}:0**            jõkke; 
 
@@ -483,6 +487,10 @@ high vowel lowering in certain contexts
 
 
 1.1. plural partitive: -sid vs stem vowel change
+
+
+
+
 
 
 
