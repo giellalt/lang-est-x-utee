@@ -602,13 +602,13 @@ LEXICON REGULAR_LOCATIVES
 
 LEXICON PL_PAR_VARIANT    ! for TAUD, PIIM, KOON etc types
 
-     +Usage/Rare:%{rare%} PL_PARTITIVE ;    ! less used pl par form for that word
+     +Usage/Rare:%{rare.pl.partitive%} PL_PARTITIVE ;    ! less used pl par form for that word
               : PL_PARTITIVE ;            ! default pl par form for that word
 
 LEXICON SG_ILL_VARIANT    ! for KEEL etc types
 
-     +Usage/Rare:%>%{s%}%{s%}%{e%}%{rare%} SG_ILLATIVE ;  ! less used sg ill form for that word
-              :%>%{s%}%{s%}%{e%} SG_ILLATIVE ;          ! default sg ill form for that word
+     +Usage/Rare:%>%{ss%}%{ss%}%{e%}%{rare.illative%} SG_ILLATIVE ;  ! less used sg ill form for that word
+              :%>%{ss%}%{ss%}%{e%} SG_ILLATIVE ;          ! default sg ill form for that word
 
 ! -------- these cases are (often) non-predictable from Sg Nom
 
