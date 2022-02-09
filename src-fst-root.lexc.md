@@ -3,7 +3,6 @@
 
 ## Multicharacter symbols
 
-
 ### Sõnaliik / Part of speech
 
 * `+N `: nimisõna		/ substantive		
@@ -30,7 +29,6 @@ Genitiivatribuut pole eraldi kategooria / No special tag for genitive attribute 
 
 * `+Comp `: komparatiiv	/ comparative
 * `+Superl `: superlatiiv	/ superlative
-
 
 *hfstol: examples:*
 * *asi:* `asi+N+Sg+Nom` (Eng. # thing)
@@ -210,7 +208,6 @@ Enneminevik / Past pluperfect: *olema* (impf) + *nud/tud/dud* (*olin teinud*)
 
 * `+Prc `: kesksõna	 / participle
 
-
 ### Kategooriate võimalikud kombinatsioonid / Possible combinations of categories
 
 allikas / source :
@@ -258,7 +255,6 @@ a wordform beginning with *ole-* and *pole-*
 
 NB! *ei ole* = *pole*
 
-
 * *elaksin:* `elama+V+Pers+Prs+Cond+Sg1+Aff`
 * *elaksid:* `elama+V+Pers+Prs+Cond+Sg2+Aff`
 * *elaks:* `elama+V+Pers+Prs+Cond`
@@ -305,7 +301,6 @@ NB! *ei ole* = *pole*
 * *olnud:* `olema+V+Pers+Prt+Ind+Neg`
 
 NB! *ei olnud* = *polnud*
-
 
 * *elanuksin:* `elama+V+Pers+Prt+Cond+Sg1+Aff`
 * *elanuksid:* `elama+V+Pers+Prt+Cond+Sg2+Aff`
@@ -382,7 +377,6 @@ NB! ei oldud = poldud
 * *elatud:* `elama+V+Impers+Prt+Prc`
 
 (*on*, *oli*, ...) + V+Impers+Prt+Prc = some analytical personal form 
-
 
 * *elatama:* `elama+V+Impers+Sup`
 
@@ -558,7 +552,6 @@ Num --> N
 * `+Der/kas `
 * *kolmekas:* `kolm+Num+Card+Der/kas+N+Sg+Nom`
 
-
 ### Muud / Other tags
 Copied from Sami root.lexc
 
@@ -568,7 +561,6 @@ Copied from Sami root.lexc
 * «
 * > (escaped with square brackets, to avoid collision with > as morpheme boundary)
 * < (escaped with square brackets, to avoid collision with < as morpheme boundary)
-
 
 * '  7 is the real apostrophe ?? 
 
@@ -614,55 +606,13 @@ derivation from V is called paradigmatic and does not result in Der; just a new 
 
 Remember the stem type; for filtering compounds 
 
-
 A special condition that is used for filtering derivations and compounds
-
 
 Tokeniser 
 
 Guesser
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Legitimate strings that are not words: numbers, acronyms, ...
-
-
-
 
 ## Lexicons  
 
@@ -680,10 +630,7 @@ e.g. mootoriõlilik = (mootori+õli)+lik and (mootori)+(õli+lik)
 strictly simplex word; cannot be a part of a compound
 a simplex word, or the first part of a compound
 
-
 * `@D.Part@@P.Part.Two@@P.NeedPartThree.On@@P.POS.Num@ CardinalNumbersInCompBeg ;   ` 5-autone etc
-
-
 
 strictly simplex words; cannot be a part of a compound
 
@@ -717,78 +664,27 @@ strictly simplex words; cannot be a part of a compound
 * `  @P.POS.ACR@ Acronyms ;          `
 * `  @P.POS.ACRMinus@ Acrominus ;          `
 
-
 * `LEXICON Latter ` the latter part of a compound
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * `  @P.POS.A@@C.Der@@C.Stem@ Adjectives ;              `
-
 
 * `  @P.POS.A@@C.Der@@C.Stem@ Adjectives_ne ;              `
 järguline	järk+N+Der/line+A  redellik redel+N+Der/lik+A     NOT -autone
 
-
 * `  @P.POS.A@@C.Der@@C.Stem@ Adjectives_v ;              `
 
-
 * `  @P.POS.A@@C.Der@@C.Stem@ PlainAdjectives ;              `
-
 
 * `  @P.POS.AComp@@C.Der@@C.Stem@ ComparativeAdjectives ;              `
 * `  @P.POS.AComp@@C.Der@@C.Stem@ SuperlativeAdjectives ;              `
 
-
-
-
-
-
-
 * `  @P.Case.Gen@ LatterVerb ;                   `
-
 
 * `  @P.POS.V@@C.Der@@P.Stem.Verb@ Verbs ;                   `
 
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-est/blob/main/../src/fst/root.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/root.lexc)</small>
+
+---
+

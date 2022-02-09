@@ -1,7 +1,5 @@
 ## Phonology
 
-
-
 Sami GT convention 
 
 ### Triggers
@@ -27,8 +25,6 @@ or to a set of inflectional forms of some inflectional type, i.e. its sub-paradi
 It is used to pair the surface form with the usage tag of the lexical representation.
 
 * **%{rare%}:0** rare or less used form (norm) ; e.g. kingasid
-
-
 
 ### Special surface side symbols, used in rule contexts
 
@@ -234,7 +230,6 @@ Singular stem vowel tag in lexicon
 * **%{sg.u%}:u** koon - koonu 
 * **%{sg.u%}:0** 
 
-
 Plural stem vowel tag in lexicon
 
 * **%{pl.i%}:i** king - kingi
@@ -257,7 +252,6 @@ have to be defined un-naturally letter by letter,
 * **%{i%}:0**         : pl par ending siile
 * **%{d%}:d** d of sid: pl par ending siilisid
 * **%{d%}:0**         : pl par ending siile
-
 
 * **%{ss%}:s** s of -sse jõesse; 
 * **%{ss%}:0**            jõkke;
@@ -285,128 +279,11 @@ high vowel lowering in certain contexts
 * **ü:ö**
 * **ü:ü** 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * *kraapi%{W%}>n*
 * *kraabi0>n*
 
 * ★*kraapi%{W%}>n* (is not standard language)
 * ★*kraapi0>n* (is not standard language)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * *viskoosneE1>t*
 * *viskooss0e>t*
@@ -414,228 +291,11 @@ high vowel lowering in certain contexts
 * ★*viskoosneE1>t* (is not standard language)
 * ★*viskooss00>t* (is not standard language)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 1.1. plural partitive: -sid vs stem vowel change
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-est/blob/main/../src/fst/phonology.twolc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/phonology.twolc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/phonology.twolc)</small>
+
+---
+
