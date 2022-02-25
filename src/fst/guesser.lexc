@@ -4,23 +4,27 @@ Letter = a|e|i|o|u|õ|ä|ö|ü|b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|š|z|ž|t|v|w|x|y;
 !AnySymbol = Letter | CapLetter | Dig ;  ! punctuation symbols missing from here; is it OK?
 
 ! double vowels and diphtongs:
-!
-!   ii    iu         üü üi                                    ui    uu
-!   ei ee eu eo ea   öö öi öe    öa       õõ õi õe õu õo      oi oe ou oo oa
-!                    ää äi äe äu                              ai ae au ao aa
+! bracketed ones appear as diphtongs only in the first (i.e. stressed) syllable
+! high     ii (ie) (iu) (io) (ia)   üü üi (üe)    (üo) (üa)                          ui (ue) uu (uo) (ua)
+! middle   ei  ee   eu  (eo) (ea)   öö öi  öe           öa     õõ õi õe õu õo õa     oi  oe  ou  oo   oa
+! low                               ää äi  äe  äu  äo                                ai  ae  au  ao   aa
 !
 VowNoDots = i|u|a|e|o;
 VowDots = [ õ|ä|ö|ü ];
-Vowel = [ VowNoDots | VowDots ] | y | w ;
+Vowel = [ VowNoDots | VowDots ] ;
+Semiwowel =  y | w ;
 DoubleVow = i^2 | u^2 | a^2 | e^2 | o^2 | õ^2 | ä^2 | ö^2 | ü^2 ;
-Diphtong = [Vowel VowNoDots] & ~[HighVowel NonHighVowel] & ~DoubleVow & ~[ä a] & ~[ö o] & ~[ü u];  ! y and w in diphtongs is weird... 
+HighVowel = i | ü | u ;
+FrontVowel = i | e ;
 
-JVow = [i [VowNoDots - i]];   ! ia, ie, iu, io; iu=ju; io=jo , v.a. viimases jalas lühikese rõhulise silbi järel (minia, venia)
-EVow = [[e [VowNoDots - i]] & ~[e^2]];   ! eu=e_u; eo=e_o; ea=e_a lühikese? rõhulise silbi järel, s.t. kahe OrdFoot vahel või ... vahel...
-UVow = [[u [VowNoDots - i]] & ~[u^2]];   ! uo, ua, ue - esimeses silbis diftong, mujal kaks eraldi vokaali
+Diphtong = [Vowel VowNoDots] & ~DoubleVow & ~[ä a] & ~[ö o] & ~[ö u] & ~[ü u];  ! including bracketed ones 
+SemiDiphtong = Diphtong & [[HighVowel ~i] | [FrontVowel ~HighVowel]] ;          ! only the bracketed diphtongs
+StrictDiphtong = Diphtong & ~SemiDiphtong ;        ! excluding bracketed ones
+iDiphtong = SemiDiphtong & [i Vowel] ;             ! ie iu io ia
 
-StrictDiphtong = [Diphtong & ~[JVow] & ~[UVow] & ~[EVow]] ; ! ei saa olla muud kui diftong, s.t. tema keskel ei saa olla silbipiiri 
+
 LongV =  [DoubleVow | Diphtong] ;
+StrictLongV = [DoubleVow | StrictDiphtong] ; ! = LongV - SemiDiphtong
 
 Ckpt = k|p|t;
 DoubleCkpt = k^2 | p^2 | t^2 ;
@@ -28,50 +32,24 @@ Clmnr = l|m|n|r;
 DoubleClmnr = l^2 | m^2 | n^2 | r^2 ;
 Cgbd = g|b|d;
 Cplosive = [Ckpt | Cgbd] ;
-Cfš = f|š;
+!Cfš = f|š;
+Cspirant = [f | h | [h v]];
 Csibilant = [s|š|z|ž];
-Cnonsonor = [Ckpt | Cgbd | Cfš | h | s ] ;
-Csonor = [ Clmnr | j | v] ;                  ! excluding foreign letters
+Cnonsonor = [Cplosive | Cspirant | Csibilant ] ;  ! z, ž also classified as nonsonorous...
+Csonor = [ Clmnr | j | v] ;                       ! excluding foreign letters y w
 Consonant = Cnonsonor | Csonor | c|q|z|ž|w|x|y;
 ShortCons = [Cgbd | Clmnr | h | j | s | v] ;
-Cspirant = [f | h | [h v]];
-DoubleCons = DoubleCkpt | DoubleClmnr | f^2 | h^2 | s^2 | š^2 | v^2   ;
+DoubleCons = DoubleCkpt | DoubleClmnr | f^2 | h^2 | s^2 | š^2 | v^2   ;  ! only some consonants may be doubled
+TwoCons = [Consonant Consonant] & ~DoubleCons ;
 
 Letter = Vowel | Consonant ;
 
+! lihtsalt ad hoc 
+ManyCons = Consonant Consonant Consonant+ ;
+
+
 SomeSyllables = [?* Vowel ?*] ;
 
-! a syllable pair
-! uba, puänt, laua, liaan
-Pair = [[Vowel+ Consonant+ Vowel+] | 
-       [[Vowel Vowel] & ~LongV] |                
-       [[LongV Vowel] & ~[Vowel DoubleVow]] |    
-       [[Vowel DoubleVow] & ~[LongV Vowel]]];     
-
-! Syllables
-ShortVSyll = Vowel ;
-ShortCSyll = [[Vowel | JVow | UVow] [Consonant | [Cgbd Clmnr]]] ;
-LongCSyll =  [[Vowel | JVow | UVow] [[Consonant Consonant+] & ~[Cgbd Clmnr]]] ;
-LCSyll =     [LongCSyll & ~[Letter* [DoubleCons | [Clmnr s s]]]] ;
-XCSyll =     [LongCSyll &  [Letter* [DoubleCons | [Clmnr s s]]]] ;  ! xtra long...
-
-
-! word syllable count starts from the last stressed syllable:
-! it may be the first syllable of the word, or the last one with long vowel
-FirstSyll = [Consonant* [ShortCSyll | ShortVSyll]] | [Letter* LongCSyll] | 
-            [[[Letter* DoubleVow] | [[Letter* Diphtong] & ~[Letter* [DoubleVow | StrictDiphtong] Vowel]]] Consonant*] ;
-
-! longish first syllable
-LFirstSyll = [Consonant* LongCSyll] | [Letter* XCSyll] | 
-             [[[Letter* DoubleVow] | [[Letter* Diphtong] & ~[Letter* [DoubleVow | StrictDiphtong] Vowel]]] Consonant*] ;
-
-! foot is a recurring building block for patterns
-badinfoot = [Consonant* [LongV | JVow | UVow] Consonant*] | [Letter* DoubleVow Consonant*];
-Foot  = [FirstSyll  [ShortVSyll | ShortCSyll | LCSyll]] & ~[badinfoot] ;
-LFoot = [LFirstSyll [ShortVSyll | ShortCSyll | LCSyll]] & ~[badinfoot] ;  ! foot starts with a longish syllable
-
-! three syllable sequence
-ThreeSyllV = [Foot Vowel] & ~[Letter* [DoubleVow | StrictDiphtong]] ;
 
 ! lauatu, mitte ideetu, aga ka nimetatu (võiks olla paradigm deriv);  ideetu, aga ka tuutu
 DerTu = [[Letter* Pair t u] |   
@@ -355,19 +333,134 @@ LEXICON GuessSimplexWord
 LEXICON ScanWord
 
 ! "silp-silbi" haaval vaata edasi
-! on sõna lõpp ainult juhul, kui see ongi ainus silp või see on kindlasti rõhuline silp
 ! < [Vowel] >            Vowel ; ! polegi võimalik??? 
- < [Vowel Consonant] >  VowelConsonant ;
- < [DoubleVow] >        DoubleVowel ;
 
-! sõna lõpp, s.t. 1 või 2 viimast silpi
+! Vowel Vowel Vowel+ possible variants :
+! < [[[DoubleVow Vowel] & ~[Vowel DoubleVow]] Consonant] >        LongVVowelCons ;   ! (1)
+ < [[[Vowel DoubleVow] & ~[DoubleVow Vowel]] Consonant] >        LongVCons ;
+ < [[[Vowel DoubleVow] & ~[DoubleVow Vowel]] Consonant Consonant+] >        LongVConsPlus ;
+! < [[[LongV Vowel] & ~[Vowel DoubleVow] & ~[DoubleVow Vowel]] Consonant] >        LongVVowelCons ; ! (2) võib-olla (1) on mittevajalik?
+ < [[[LongV Vowel] & ~[Vowel DoubleVow] ] Consonant] >        LongVVowelCons ; ! (2) 
+ < [[[LongV Vowel] & ~[Vowel DoubleVow] ] Consonant Consonant+] >        LongVVowelConsPlus ; ! (2) 
+ < [[[Vowel Vowel Vowel+] & ~[LongV Vowel] & ~[Vowel DoubleVow]] Consonant+] > LongVConsPlus ; ! elsewhere condition...
+
+! Vowel Vowel possible variants 
+ < [LongV Consonant] >        LongVCons ;
+ < [LongV Consonant Consonant+] >        LongVConsPlus ;
+! pole diftong, s.t. siin on kindlasti 2 silbi vahel piir
+ < [[[Vowel Vowel] & ~LongV] Consonant] >     VowelVowelCons ;
+ < [[[Vowel Vowel] & ~LongV] Consonant Consonant+] >     VowelVowelConsPlus ;
+
+! Vowel possible variants
+ < [Vowel Consonant] >  VowelConsonant ;
+ < [Vowel DoubleCons] >  VowelDoubleCons ;
+ < [Vowel TwoCons] >  VowelTwoCons ;
+ < [Vowel ManyCons] >  VowelManyCons ;
+
+ FinalSyllables ;   ! final 1 or 2 syllables; here the inflectional type gets finally defined
+
+! --- sequences before arriving at the final syllables
+LEXICON LongVVowelCons
+  @P.Stress.Off@@C.Len@           ScanWord ;      ! lii-<am>-u
+
+LEXICON LongVVowelConsPlus
+  @P.Stress.Off@@C.Len@           ScanWord ;      ! lii-<am>-u
+  @P.Stress.On@@P.Len.III@          ScanWord ;      ! lii-<amstr>-u
+
+! ei ole aimugi, kus sellises kohas tavaliselt rõhk on
+LEXICON VowelVowelCons
+  @P.Stress.On@@P.Len.I@       ScanWord ;      ! a-äs
+
+LEXICON VowelVowelConsPlus
+  @P.Stress.On@@P.Len.III@       ScanWord ;      ! a-äst
+
+LEXICON LongVCons
+  @P.Stress.On@@P.Len.II@      ScanWord ;      ! <aal>-...
+
+LEXICON LongVConsPlus
+  @P.Stress.On@@P.Len.III@      ScanWord ;      ! <aakl>-...
+
+LEXICON VowelConsonant
+  @D.Stress@@P.Stress.On@@P.Len.I@      ScanWord ;      ! <ag>-...
+  @R.Stress.On@@P.Stress.Off@@C.Len@           ScanWord ;      ! ag-<ar>-us
+  @R.Stress.Off@@P.Stress.On@@P.Len.I@  ScanWord ;      ! kal-ah-<ar>-i
+
+LEXICON VowelDoubleCons
+  @P.Stress.On@@P.Len.II@      ScanWord ;      ! <all>-...
+
+LEXICON VowelTwoCons
+  @D.Stress@@P.Stress.On@@P.Len.II@      ScanWord ;      ! <ast>-...
+  @R.Stress.On@@P.Stress.Off@@C.Len@             ScanWord ;      ! av-<ast>-us
+  @R.Stress.On@@D.Len.III@@P.Stress.On@@P.Len.II@   ScanWord ;      ! ag-<ast>-us
+  @R.Stress.Off@@P.Stress.On@@P.Len.II@  ScanWord ;      ! kal-ah-<ast>-i
+
+
+LEXICON VowelManyCons
+  @P.Stress.On@@P.Len.III@      ScanWord ;      ! <all>-...
+
+! --- here the inflectional type gets defined
+! -------------------------------------------
+LEXICON FinalSyllables
+
+! --- sõna lõpp, s.t. 1 või 2 viimast silpi
+! varasem rõhumuster ei loe
+ < [[Vowel DoubleVow] & ~[DoubleVow Vowel]] >        GuessARMEE ;
+ < [[LongV Vowel]     & ~[Vowel DoubleVow]] >        GuessPERE ; ! Luua, Saue
+! < [[Vowel Vowel Vowel+] & ~[LongV Vowel] & ~[Vowel DoubleVow]] > GuessSound ; ! mingi häälitsus?
+
+!----------
+! Vowel Vowel Vowel+ possible variants :
+ < [[[Vowel DoubleVow] & ~[DoubleVow Vowel]] Consonant+] >        GuessTAUD ;
+ < [[[LongV Vowel] & ~[Vowel DoubleVow] ] s] >        GuessSUULINE ;  
+ < [[[LongV Vowel] & ~[Vowel DoubleVow] ] [Consonant - s]] >        GuessREDEL ; ! (?) vaja kontrollida! 
+ < [[[LongV Vowel] & ~[Vowel DoubleVow] ] DoubleCons] >        GuessTAUD ;  
+ < [[[[LongV Vowel] & ~[Vowel DoubleVow] ] TwoCons] &  [?* i n g]] >        GuessVIRSIK ; !  
+ < [[[[LongV Vowel] & ~[Vowel DoubleVow] ] TwoCons] & ~[?* i n g]] >        GuessREDEL ; ! (?) vaja kontrollida! 
+ < [[[LongV Vowel] & ~[Vowel DoubleVow] ] ManyCons] >        GuessTAUD ;  
+ < [[[Vowel Vowel Vowel+] & ~[?* LongV Vowel] & ~[?* Vowel DoubleVow]] Consonant+] > GuessTAUD ; ! elsewhere condition... (?) vaja kontrollida!
+
+! ?? puudu lõpus ak VIRSIK ?
+
+!-------------
+! StrictLongV = [LongV - SemiDiphtong]
+
+ < [StrictLongV] >                  GuessARMEE ;
+ < [[StrictLongV Consonant] &  [e u m]] >              EndEUM ;  ! possibly muuseum ?
+ < [[StrictLongV Consonant] &  [Diphtong s]] >         EndEUS ;  ! possibly odüsseus ?
+ < [[StrictLongV Consonant] & ~[Diphtong s] & ~[e u m]] >     GuessTAUD ;  ! not odüsseus 
+ < [LongV Consonant Consonant+] >    GuessTAUD ;    
+ 
+ < [SemiDiphtong] >   EndIA ;
+ < [SemiDiphtong s] >   EndIAS ;
+ < [SemiDiphtong Clmnr] >   EndIAL ;  ! = EndEUM...
+ < [SemiDiphtong Ckpt] >   EndIAK ;  ! KABINET? FIAT?
+ < [SemiDiphtong [Consonant & ~s & ~Clmnr & ~Ckpt]] >   EndIACons ;  ! jms
+! [SemiDiphtong Consonant Consonant+] are covered by [LongV Consonant Consonant+]
+ 
+!?? Vowel j a > LOHAKAS
+!?? Vowel k a > LOHAKAS
+!?? Vowel t u > TUNTUD
+!?? v, tav MAGUS
+!?? PINGE
+!?? ne (mine, line, lane, ...)
+!?? us
+!?? Vowel ke
+
+ < [e] >                       Ende ;
  < [Vowel] >                       EndA ;
- < [Vowel Ckpt] >                  EndAK ;
- < [Vowel Clmnr] >                 EndAL ;
  < [Vowel ShortCons [Vowel - e]] > IsKAVA ;
- < [Vowel ShortCons e] >           IsPERE ;
- < [Vowel [Vowel | Consonant] Vowel] >   IsPERE ;  ! pole päris ammendav muster...
- < [DoubleVow] >                   IsARMEE ;
+ < [i k] > Endik ;                               ! ik iku ikku; ik iku ikut
+ < [e l] > Endel ;
+ < [e r] > Ender ;
+ < [Vowel DoubleCons] > GuessTAUD ;
+ < [i n g] > Ending;                              ! ing ingi ingi; ing ingu ingut
+ < [[Vowel TwoCons] & ~[i n g]] > EndTwoCons ;
+ < [Vowel ManyCons] > GuessTAUD ;
+ 
+
+ < [Vowel Ckpt] >                  EndAK ;
+ < [[Vowel Consonant] & ~[i k] & ~[e l] & ~[e r] & ~[Vowel Ckpt]] >                 EndAL ; ! Elsewhere
+
 
 ! verbs
  < [Vowel Consonant+ e l e ] > IsRABELEMA ;
@@ -379,19 +472,60 @@ LEXICON ScanWord
  < [[Vowel+ Consonant+ Vowel] & ~[[Vowel | LongV] Consonant+ l e] & ~[SiseLeppima i]] > IsELAMA; ! tal on mitme tüübiga paralleele 
  < [Vowel+ Consonant+ Vowel] > EndELAMA; ! follows a stressed syllable; (compare with IsELAMA) 
 
-LEXICON Vowel
-!  @D.Stress@@P.Stress.On@      ScanWord ;  ! <a>-...
-  @R.Stress.On@@P.Stress.Off@  ScanWord ;  ! av-<a>-us
-!  @R.Stress.Off@@P.Stress.On@  ScanWord ;  ! kal-ah-<ü>-o ???
+
+LEXICON EndEUM
+  @D.Stress@                   GuessTAUD ;     ! z<eum>
+  @R.Stress.Off@               GuessTAUD ;     ! raad-ik-<eum>
+  @R.Stress.On@@R.Len.I@       GuessTAUD ;     !  rad-<eum
+  @R.Stress.On@@D.Len.I@       GuessMUUSEUM ;  ! raad-<eum> 
+
+LEXICON EndEUS
+  @D.Stress@                   GuessTAUD ;     ! z<eus>
+  @R.Stress.Off@               GuessOLULINE ;  ! raad-ik-<eos>
+  @R.Stress.Off@               GuessTAUD ;     ! raad-ik-<eos>
+  @R.Stress.On@                GuessOLULINE ;  ! rad-<eus>, raad-<eus>
+
+LEXICON EndIA
+  @D.Stress@                   GuessARMEE ;  ! M<ia>
+  @D.Stress@                   GuessPERE ;   ! M<ia>
+  @R.Stress.Off@               GuessAASTA ;  ! raad-ik-<ia>,
+  @R.Stress.On@                GuessAASTA ;  ! rad-<ia>, raad-<ia>
+  @R.Stress.On@@R.Len.I@       GuessPERE ;  ! ksen-<ia>,
+
+LEXICON EndIAS
+  @D.Stress@                   GuessTAUD ;     ! z<ius>
+  @R.Stress.Off@               GuessOLULINE ;  ! raad-ik-<ios>
+  @R.Stress.Off@               GuessTAUD ;     ! raad-ik-<ios>
+  @R.Stress.On@                GuessOLULINE ;  ! rad-<ius>, raad-<ius>
+
+LEXICON EndIAL
+  @D.Stress@                   GuessTAUD ;     ! z<iul>
+  @R.Stress.Off@               GuessTAUD ;     ! raad-ik-<ion>
+  @R.Stress.On@@R.Len.I@       GuessTAUD ;     ! rad-<iun> 
+  @R.Stress.On@@D.Len.I@       GuessMUUSEUM ;  ! raad-<iun> 
+
+LEXICON EndIAK
+  @D.Stress@                   GuessTAUD ;     ! z<iuk>
+  @R.Stress.Off@               GuessKABINET ;     ! raad-ik-<iop>
+  @R.Stress.Off@               GuessFIAT ;     ! raad-ik-<iop>
+  @R.Stress.On@                GuessKABINET ;     ! rad-<iuk>, rants-<iuk> 
+  @R.Stress.On@                GuessFIAT ;     ! rad-<iuk>, rants-<iuk> 
+  @R.Stress.On@@D.Len.III@       GuessREDEL ;    ! rad-<iuk> 
+
+LEXICON EndIACons
+  @D.Stress@                   GuessTAUD ;     ! z<iuk>
+  @R.Stress.Off@               GuessTAUD ;     ! raad-ik-<iob>
+  @R.Stress.On@                GuessTAUD ;     ! rad-<iub>, rants-<iub> 
+  @R.Stress.On@@D.Len.III@       GuessREDEL ;    ! rad-<iub> 
+
+LEXICON Ende
+  @R.Stress.On@@D.Len.I@     GuessPINGE ;   ! akr-<e>
 
 LEXICON EndA
   @D.Stress@                   GuessARMEE ;  ! <a>
-  @R.Stress.Off@               GuessAASTA ;  ! raad-i-<o>???, var-am-<u>
-
-LEXICON VowelConsonant
-  @D.Stress@@P.Stress.On@@P.Len.I@      ScanWord ;      ! <ag>-...
-  @R.Stress.On@@P.Stress.Off@           ScanWord ;      ! ag-<ar>-us
-  @R.Stress.Off@@P.Stress.On@@P.Len.I@  ScanWord ;      ! kal-ah-<ar>-i
+  @R.Stress.Off@               GuessAASTA ;  ! raad-ik-<o>, var-am-<u>
+  @R.Stress.On@@R.Len.III@     GuessAASTA ;  ! aakr-<a>
+  @R.Stress.On@@D.Len.III@     GuessPERE ;   ! all-<a>
 
 LEXICON EndAK
   @D.Stress@                   GuessKABINET ;     ! n<et>
@@ -405,18 +539,37 @@ LEXICON EndAL
   @R.Stress.Off@               GuessTAUD ;      ! se-min-<ar>
   @R.Stress.On@                GuessREDEL ;     ! ag-<am>, aarstl-am
 
-LEXICON DoubleVowel
-  @P.Stress.On@@P.Len.II@     ScanWord ;      ! s<uu>-e
-
-LEXICON IsARMEE
-                               GuessARMEE ;    ! ...<aa>
-
 LEXICON IsKAVA
   @D.Stress@                   GuessKAVA ;     ! kava
 
-LEXICON IsPERE
-  @D.Stress@                   GuessPERE ;     ! pere
-  @R.Stress.Off@               GuessPERE ;     ! ...pere
+LEXICON Endik
+  @D.Stress@                   GuessKABINET ;     ! n<ik>
+  @D.Stress@                   GuessFIAT ;       ! n<ik> 
+  @R.Stress.Off@               GuessELANIK ;     ! ka-bin-<ik>
+  @R.Stress.On@@D.Len.III@     GuessVIRSIK ;       ! ab-<ik>
+  @R.Stress.On@@R.Len.III@     GuessELANIK ;     !  alksr-ik
+
+LEXICON Endel
+  @D.Stress@                   GuessTAUD ;     ! n<el>
+  @R.Stress.Off@               GuessTAUD ;     ! ka-bin-<el>
+  @R.Stress.On@@D.Len.I@       GuessGOSPEL ;       ! ab-<el>
+  @R.Stress.On@@R.Len.I@       GuessREDEL ;     !  al-el
+
+LEXICON Ender
+  Endel ;
+
+LEXICON Ending
+  @D.Stress@                   GuessTAUD ;     ! p<ing>
+  @R.Stress.Off@               GuessTAUD ;     ! ka-bin-<ing>
+  @R.Stress.On@@D.Len.III@     GuessVIRSIK ;       ! ab-<ing>
+  @R.Stress.On@@R.Len.III@     GuessTAUD ;     !  alksr-ing
+
+LEXICON EndTwoCons
+  @D.Stress@                   GuessTAUD ;     ! p<ist>
+  @R.Stress.Off@               GuessTAUD ;     ! ka-bin-<its>
+  @R.Stress.On@@D.Len.III@     GuessREDEL ;       ! ab-<irt>
+  @R.Stress.On@@R.Len.III@     GuessTAUD ;     !  alksr-its
+
 
 LEXICON IsRABELEMA
   @D.Stress@@P.Part.One@       GuessRABELEMA ;     ! rabelema  @P.Part.One@ vajab lõppude lisamise programm
@@ -562,6 +715,18 @@ LEXICON GuessREDEL
 
 LEXICON GuessNameREDEL
    +Guess+N+Prop: REDEL ;
+
+LEXICON GuessGOSPEL
+   +Guess+N: GOSPEL ;
+
+LEXICON GuessPINGE
+   +Guess+N: PINGE ;
+
+LEXICON GuessSUULINE
+   +Guess+N: SUULINE ;
+
+LEXICON GuessFIAT
+   +Guess+N: FIAT ;
 
 LEXICON GuessTAUD
    +Guess+N: TAUD ;

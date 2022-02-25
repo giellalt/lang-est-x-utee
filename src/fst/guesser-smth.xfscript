@@ -2,30 +2,52 @@
 # we here define the blabla and Blabla
 
 define Upper [ A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|Š|Z|Ž|T|U|V|W|Õ|Ä|Ö|Ü|X|Y ] ;
+define Lower [ a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|š|z|ž|t|u|v|w|õ|ä|ö|ü|x|y ] ;
+define Letter [Upper | Lower] ;
 
 # the flags must ensure that that blabla-word is treated like a two-part compound word 
 # e.g. blabla-word#word is impossible
 # and not every POS is suitable for acting as the 'word'
 
-define Flags [ "@D.Part@" "@P.Part.Two@" "@P.NeedPartThree.On@" "@P.POS.Guess@" "@P.Stem.Guessed@" ] ;        
+#define Flags [ "@D.Part@" "@P.Part.Two@" "@P.NeedPartThree.On@" "@P.POS.Guess@" "@P.Stem.Guessed@" ] ;        
 
-define Smth     [\Upper \Upper \Upper*] ;   # blabla
-define SomeName [Upper \Upper \Upper*] ;    # Blabla
+#define Smth     [? ?+ \["-"]] ;   # blabla
+#define SomeName [Upper \Upper \Upper*] ;    # Blabla
 
-define AddHyphen [[..] -> "-" || _ .#.];
-define AddGuess  [[..] -> "+Guess" || _ .#.]::200 ;
-define AddNameTags  [[..] -> ["+N" "+Prop"] || _ .#.];
-define AddBorder  [[..] -> "#" || _ .#.];
+#define AddHyphen [[..] -> "-" || _ .#.];
+#define AddGuess  [[..] -> "+Guess" || _ .#.]::200 ;
+#define AddNameTags  [[..] -> ["+N" "+Prop"] || _ .#.];
+#define AddBorder  [[..] -> "#" || _ .#.];
 
 # Blabla+Guess+N+Prop#word:Blabla-word
-define GuessName [AddNameTags.i .o. AddGuess.i .o. [Flags SomeName] .o. AddHyphen] ;
+#define GuessName [AddNameTags.i .o. AddGuess.i .o. [Flags SomeName] .o. AddHyphen] ;
 
 # blabla+Guess#word:blabla-word
 # blabla+Guess#word:blablaword
 
-define GuessWord [AddGuess.i .o. [Flags Smth] .o. AddHyphen] ;
-define GuessWordNoHyphen [AddGuess.i .o. [Flags Smth]]::50 ;
+#define GuessWord [AddGuess.i .o. [Flags Smth] .o. AddHyphen] ;
+#define GuessWordNoHyphen [AddGuess.i .o. [Flags Smth]]::50 ;
 
-define WordOrName [AddBorder.i .o. [GuessName | GuessWord | GuessWordNoHyphen] ] ;
+#define WordOrName [AddBorder.i .o. [GuessName | GuessWord | GuessWordNoHyphen] ] ;
 
-regex WordOrName ;
+#define AnyThingGoes  [Smth "+Guess":"-" "#":0]::200 ;
+#define SomeThingGoes [Flags Smth "+Guess":0 "#":0]::250 ;
+
+#regex [];
+#regex [AnyThingGoes | SomeThingGoes] ;
+#regex WordOrName ;
+# -------------
+
+define Flags ["@D.Part@" "@P.Part.Bad@" "@P.POS.Guess@" "@P.Stem.Guessed@"] ; !! it has to be the first part; and it is guessed 
+# turn some symbols temporarily into an inner representation
+# (because the same symbols are used while building the generating transducer; in the end they are removed from the surface side ;
+# and this would make the analysing transducer infinitely ambiguous...  
+#
+define EscapeStuff ["#" -> "#7", ">" -> "»7", "»" -> "»7" ] ;
+
+#define Anything  [Flags "@P.NeedPart.One@"  ? ?+ \["-"]   "+Guess":"-"] ;  ! any symbol + hyphen
+define Anything  [Flags "@P.NeedPart.One@"  ? ?+    "+Guess":"-"] ;  ! any symbol + hyphen
+define Something [Flags "@P.NeedPart.Two@" Letter Letter+ "+Guess":0  ] ;  ! wordlike string + no hyphen
+
+regex  [Anything | Something] .o. EscapeStuff ;
+

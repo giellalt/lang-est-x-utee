@@ -1,0 +1,227 @@
+
+! Guesser needs these
+Letter = a|e|i|o|u|õ|ä|ö|ü|b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|š|z|ž|t|v|w|x|y; 
+!AnySymbol = Letter | CapLetter | Dig ;  ! punctuation symbols missing from here; is it OK?
+
+! double vowels and diphtongs:
+! bracketed ones appear as diphtongs only in the first (i.e. stressed) syllable
+! high     ii (ie) (iu) (io) (ia)   üü üi (üe)    (üo) (üa)                          ui (ue) uu (uo) (ua)
+! middle   ei  ee   eu  (eo) (ea)   öö öi  öe           öa     õõ õi õe õu õo õa     oi  oe  ou  oo   oa
+! low                               ää äi  äe  äu  äo                                ai  ae  au  ao   aa
+!
+VowNoDots = i|u|a|e|o;
+VowDots = [ õ|ä|ö|ü ];
+Vowel = [ VowNoDots | VowDots ] ;
+Semiwowel =  y | w ;
+DoubleVow = i^2 | u^2 | a^2 | e^2 | o^2 | õ^2 | ä^2 | ö^2 | ü^2 ;
+HighVowel = i | ü | u ;
+FrontVowel = i | e ;
+
+Diphtong = [Vowel VowNoDots] & ~DoubleVow & ~[ä a] & ~[ö o] & ~[ö u] & ~[ü u];  ! including bracketed ones 
+SemiDiphtong = Diphtong & [[HighVowel ~i] | [FrontVowel ~HighVowel]] ;          ! only the bracketed diphtongs
+StrictDiphtong = Diphtong & ~SemiDiphtong ;        ! excluding bracketed ones
+iDiphtong = SemiDiphtong & [i Vowel] ;             ! ie iu io ia
+
+
+LongV =  [DoubleVow | Diphtong] ;
+StrictLongV = [DoubleVow | StrictDiphtong] ; ! = LongV - SemiDiphtong
+
+Ckpt = k|p|t;
+DoubleCkpt = k^2 | p^2 | t^2 ;
+Clmnr = l|m|n|r;
+DoubleClmnr = l^2 | m^2 | n^2 | r^2 ;
+Cgbd = g|b|d;
+Cplosive = [Ckpt | Cgbd] ;
+!Cfš = f|š;
+Cspirant = [f | h | [h v]];
+Csibilant = [s|š|z|ž];
+Cnonsonor = [Cplosive | Cspirant | Csibilant ] ;  ! z, ž also classified as nonsonorous...
+Csonor = [ Clmnr | j | v] ;                       ! excluding foreign letters y w
+Consonant = Cnonsonor | Csonor | c|q|z|ž|w|x|y;
+ShortCons = [Cgbd | Clmnr | h | j | s | v] ;
+DoubleCons = DoubleCkpt | DoubleClmnr | f^2 | h^2 | s^2 | š^2 | v^2   ;  ! only some consonants may be doubled
+TwoCons = [Consonant Consonant] & ~DoubleCons ;
+
+Letter = Vowel | Consonant ;
+
+! lihtsalt ad hoc 
+ManyCons = Consonant Consonant Consonant+ ;
+
+! a syllable pair
+! u.ba, pu.änt, lau.a, li.aan
+Pair = [[Vowel+ Consonant+ Vowel+] | 
+       [[Vowel Vowel] & ~LongV] |                
+       [[LongV Vowel] & ~[Vowel DoubleVow]] |    
+       [[Vowel DoubleVow] & ~[LongV Vowel]]];     
+
+
+! lauatu, mitte ideetu, aga ka nimetatu (võiks olla paradigm deriv);  ideetu, aga ka tuutu
+DerTu = [[Letter* Pair t u] |   
+         [Letter* LongV t u] ];                         
+DerJa = [[Letter* Vowel Consonant+ Vowel j a] | [Letter* Vowel Consonant+ t j a]];
+DerNe = [[Letter* Pair (Consonant) n e] | [Letter* Vowel [Vowel | Consonant] Consonant+ n e]];
+DerKe = [Letter* Pair k e] ;
+
+
+!---------------
+
+DerLine = [l i n e] ;
+DerLane = [l a n e] ;
+DerMine = [m i n e];
+DerLiLaMiNe = DerLine | DerLane | DerMine;
+
+AnyOLULINE = [Letter* Vowel Consonant+ [a|e|i|u] n e] | [[Foot & [Letter* Vowel]] n e] ;  ! ka laiune
+AnyOLULIS =  [Letter* Vowel Consonant+ VowNoDots s] | [[Foot & [Letter* [i|u]]] s] | [[Foot & [Letter* [Vowel - u]]] u s] | [[Letter* Pair Vowel s] & [Letter* [JVow | EVow | UVow] s]];  ! ka laius, avaus; 
+
+! these patterns can never occur for OLULINE
+SyllSOOLANE = [Consonant* [ShortCSyll & [Vowel Consonant+]] VowNoDots n e] ;                 ! tinane, rublane, mitte kiuline
+SyllSOOLAS =  [Consonant* [ShortCSyll & [Vowel Consonant+]] VowNoDots s] | [Consonant* Vowel+ Consonant+ i s];                 ! jänes, Valdis 
+
+EndSOOLANE = [Letter* Vowel [Vowel | Consonant+] n e] & ~[Consonant* Vowel [Consonant - [Ckpt | m]] n e] ;  ! jäine, ...aarne, ...stne, ka akne ja tamne; laiune
+
+! ProtoOLULIS: selle mustriga sõnad võivad olla pl par lõpus -si;
+ProtoOLULIS = [AnyOLULIS & ~SyllSOOLAS] ;
+
+LihtOLULIS = AnyOLULIS ;
+
+NimiOLULIS = [ProtoOLULIS] ;
+NimiOLULIS = [LihtOLULIS] ;
+
+ProtoOLULINE = [ AnyOLULINE & ~[SyllSOOLANE | EndSOOLANE]] ;  ! ei tunne laiune, sest selle tunneb (valesti) EndSOOLANE
+
+LihtOLULINE = AnyOLULINE ;
+
+NimiOLULINE = [ProtoOLULINE] ;
+NimiOLULINE = [LihtOLULINE] ;
+
+! soolane: kõik ne, s lõpulised on siin 
+ProtoSOOLAS = [Letter* Pair s] & ~[Letter* [DoubleVow | StrictDiphtong] s] ; ! ei tunne: päis, teos jts 1-silbilised
+
+NimiSOOLAS = [ProtoSOOLAS] ;
+
+ProtoSOOLANE = [Letter* Letter Letter Letter n e] ; ! ei tunne: upne, öine; 
+
+NimiSOOLANE = [ProtoSOOLANE] ;
+
+
+SyllELANIK = [Foot Consonant i k] ;   
+
+! võiks ka nii:
+! need ei tohiks olla ELANIK tüüpi
+! valesti: kümnik; ...eerik, ... aga ka (valesti) nt suumik, soo+lik
+BadGradeELANIK = [Consonant* Vowel [Consonant | [Cgbd Clmnr]] i k] | 
+                      [Consonant* Vowel Consonant Csibilant i k] | 
+                      [(Letter* Consonant) Consonant* Vowel DoubleClmnr i k] |
+                      [Consonant* Vowel ShortCons [ShortCons - [l|m]] i k] |   
+                      [Letter* DoubleVow Consonant i k] |                            
+                      [Letter* Diphtong [Consonant - Clmnr] i k];           
+
+! kaks silpi, kolmas välde
+GradeELANIK = [Foot & [Letter* Vowel+ Consonant+ i k] & ~BadGradeELANIK] ;
+
+EndELANIK =    [Letter* Pair Consonant* l i k] | [Letter* LongV l i k ] ;  ! ...tuslik, ealik, hoolik, dulcinealik...
+
+!ei tunne: kümnik, suumik
+ProtoELANIK = [SyllELANIK | GradeELANIK | EndELANIK];
+
+LihtELANIK = [SyllELANIK | [Foot & [Letter* Vowel+ Consonant+ i k]] | EndELANIK];
+
+NimiELANIK = [ProtoELANIK] ;
+NimiELANIK = [LihtELANIK] ;
+
+SyllVIRSIK = [Foot] & [Letter* [[a | e | i] [k | [n g] | [r g]]]] ;
+
+EndVIRSIK = [Letter* Consonant^2 i k] | [Letter* Vowel t i k] ;
+
+BadVirsik = [Letter* Vowel Consonant+ Vowel (s) l i k] | [Letter* b e r g];
+ProtoVIRSIK = [SyllVIRSIK | EndVIRSIK] & ~BadVirsik; ! ei tunne: kürenaik, paranoik, stoik
+LihtVIRSIK = [SyllVIRSIK | EndVIRSIK] ;
+
+NimiVIRSIK = [ProtoVIRSIK] | [Letter* Vowel Consonant+ i c (k) ] ; ! ka Titanic, Eric
+NimiVIRSIK = [LihtVIRSIK] | [Letter* Vowel Consonant+ i c (k) ] ; ! ka Titanic, Eric
+
+
+ProtoLOHAKAS = [[Letter* Letter Vowel k a s] | [Letter* Letter Letter j a s]] & ~[Consonant* Vowel [j|k] a s];
+
+GL = [Cgbd [Clmnr | j | v]];              ! AGL: vedru, käbla (KAVA, PERE)
+xCL = [Letter Consonant [Clmnr | j | v]];             ! A.CL: eidla, ildna, ustna (AASTA)
+KL = [Ckpt [Clmnr | j | v]];              ! AKL: makro, kokni; kopra, tšakra (PERE, AASTA)
+xCCC = [Letter Consonant^3];            ! A....: oontsa, oostna, orstnu  (AASTA)
+sK = [s Ckpt];              ! AsK: piste, vatse (PERE, AASTA)
+Ksk = [Ckpt s k];             ! AKsk: plotski, rupski (AASTA)
+xsK = [Letter s Ckpt];             ! AxsK: puiste, inste (AASTA)
+
+!----
+ProtoKOND = [Letter* Letter Letter k o n ] ; ! d:"D1"  kond-derivation hack
+
+
+! This guesser lexicon turned into a transcuder is later union-ed with the lexicon-based transducer
+
+LEXICON Root !!= * `@CODE@` is the starting point of everything
+
+ GuessDerivation "weight: 50" ;
+
+
+! K=kpt, G=gbd, L=lmnrjv, A=aeiouõäöü, C=consonant
+LEXICON GuessDerivation
+
+ < [ Letter+ Consonant] > EndConsonant ;
+ < [ Letter+ Vowel] > EndVowel ;
+
+LEXICON  EndConsonant
+  +Guess: DeriveFromConsonant ;
+ 
+LEXICON  EndVowel
+  +Guess: DeriveFromVowel ;
+ 
+
+LEXICON DeriveFromConsonant
+            +N: LANE_DERIVATION ; ! kond või +N+Prop
+            +N: IST_DERIVATION ;  ! ism ?
+            +N: LIK_DERIVATION ;
+
+LEXICON DeriveFromVowel
+
+            +N: LANE_DERIVATION ; ! kond või +N+Prop
+            +N: LIK_DERIVATION ;
+            +N: KE_DERIVATION ;
+            +N: LINE_DERIVATION ;
+            +A: M_DERIVATION ;
+            +A: LT_DERIVATION ;
+            +A: STI_DERIVATION ;
+            +A: INI_DERIVATION ; ! ???
+            +N: TI_DERIVATION ;
+            +N: NNA_DERIVATION ;
+            +N: KAS_DERIVATION ;  ! +Num+Card
+            +N: NE_DERIVATION ;
+
+! :»i IM_DERIVATION ;
+! tar
+! kond
+! us
+! is
+! mus
+! ng
+
+! verbi tuletised nagu ja mine tud tu jne
+
+LEXICON GuessLane   
+    +Guess: LANE_DERIVATION_SUF ;
+
+LEXICON GuessLine   
+    +Guess: LINE_DERIVATION_SUF ;
+
+LEXICON GuessMine   
+    +Guess: MINE_DERIVATION_SUF ;
+
+LEXICON GuessNe   
+    +Guess: NE_DERIVATION_SUF ;
+
+!LEXICON GuessUs   
+!    +Guess: US_DERIVATION_SUF ;
+
+LEXICON GuessKOND
+   +Guess+N:%>%{pl.i%} PÄEV ;
+
+
+

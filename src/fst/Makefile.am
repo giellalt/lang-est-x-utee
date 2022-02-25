@@ -81,7 +81,10 @@ GT_LOCAL_SRCS=\
 				num_initial.tmp.lexc \
 				num_final.tmp.lexc \
 				abbrevdot.tmp.lexc \
-				guesser.tmp0.lexc
+				guesser-simplex-nouns.tmp.lexc \
+				guesser-names.tmp0.lexc \
+				guesser-verbs.tmp.lexc \
+				guesser-derivations.tmp.lexc
 #				punctuation.tmp.lexc
 #				acronyms.tmp.lexc 
 
@@ -127,10 +130,14 @@ num_final.tmp.lexc: num_final.lexc $(GT_LEXC_ROOT) $(EST_AFFIX_FILES:%=%.lexc)
 # abbreviations with a dot ...
 # ... should be kept separately because of tokenisation issues
 # copy the abbrevs that can have a final dot and format them appropriately:
-# attach a final dot and continuation lexicon   
+# attach a final dot and continuation lexicon ;
+# and add flag diacritics to prevent these abbreviations to be part of some compound word
+
 abbrevdot.tmp.lexc: stems/abbreviations.lexc $(GT_LEXC_ROOT) $(EST_AFFIX_FILES:%=%.lexc)
 	$(AM_V_GEN)cat $(GT_LEXC_ROOT) | sed '/^ *LEXICON  *Root/,$$d' > $@ && \
 	echo 'LEXICON Root'  >> $@ && \
+	echo '  @D.Part@@P.Part.Bad@ DABBR ;'  >> $@ && \
+	echo 'LEXICON DABBR'  >> $@ && \
 	$(AM_V_GEN)cat $< | grep '^ *!.*DOTABBR' | sed 's/^ *!//' >> $@ && \
 	$(AM_V_GEN)cat $< | grep 'may also end with a dot' | \
 			    sed 's/:\([^ ]*\)  *[^ ]*  *; *! *may also end with a dot/:\1 DOTABBR ;/' >> $@ && \
@@ -139,7 +146,12 @@ abbrevdot.tmp.lexc: stems/abbreviations.lexc $(GT_LEXC_ROOT) $(EST_AFFIX_FILES:%
 
 # guesser:
 # re-using root.lexc and affixes
-guesser.tmp0.lexc: guesser.lexc $(GT_LEXC_ROOT) $(EST_AFFIX_FILES:%=%.lexc)
+guesser-simplex-nouns.tmp.lexc: guesser-simplex-nouns.lexc $(GT_LEXC_ROOT) $(EST_AFFIX_FILES:%=%.lexc)
+	$(AM_V_GEN)cat $(GT_LEXC_ROOT) | sed '/^ *LEXICON  *Root/,$$d' > $@ && \
+			   cat $< >> $@ && \
+			   cat $(EST_AFFIX_FILES:%=%.lexc) >> $@
+
+guesser-names.tmp0.lexc: guesser-simplex-nouns.lexc $(GT_LEXC_ROOT) $(EST_AFFIX_FILES:%=%.lexc)
 	$(AM_V_GEN)cat $(GT_LEXC_ROOT) | sed '/^ *LEXICON  *Root/,$$d' > $@ && \
 			   cat $< >> $@ && \
 			   cat $(EST_AFFIX_FILES:%=%.lexc) >> $@

@@ -31,4 +31,10 @@ LEXICON Acronyms
   < [CapCons* CapVow+ CapCons+ CapVow S] & CapLetter^<6 > AcroEtis ;  ! ETIS
 
 
+! An acronym that may be first part of a compound:
+! a sequence of capital letters; max length 5 and a trailing hyphen
+LEXICON Acrominus
+
+  < CapLetter^{1,5} "+ACR":"-" > # ;
+
 

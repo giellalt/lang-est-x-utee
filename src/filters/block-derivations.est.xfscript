@@ -171,35 +171,6 @@ define BadDer6 [
     [{looma} ("+Guess") "+V" "+Der/tu" "+A" "+Der/us"]  # loodus
     ] ;
 
-# guessed lemmas do not further derive because we do not trust them
 
-# copied and customized from lexlang.xfscript
-define DerDeclinable [
-   ["+Der/im"] | ["+Der/m"] | ["+Der/us"] |
-   ["+Der/lane"] | ["+Der/kas"] | 
-   ["+Der/ist"] | ["+Der/kond"] | ["+Der/lik"] | 
-   ["+Der/line"] | ["+Der/ne"] | ["+Der/nna"] | 
-   ["+Der/ja"] | ["+Der/matu"] | ["+Der/mine"] | 
-   ["+Der/mus"] | ["+Der/ng"] | ["+Der/nud"] | 
-   ["+Der/nu"] | ["+Der/tamatu"] | ["+Der/tav"] | 
-   ["+Der/tu"] | ["+Der/tud"] | ["+Der/us"] | ["+Der/v"]
-    ] ;
-
-define DerNonInflecting [
-   ["+Der/lt"] | ["+Der/sti"] | 
-   ["+Der/ti"] | ["+Der/ini"] | ["+Der/mata"] | 
-   ["+Der/nud"] | ["+Der/tud"]
-    ] ;
-
-define DerMinus [ "+Der/minus" ] ;
-define Dimke [ "+Dim/ke" ] ;
-
-define AnyDer [DerDeclinable | DerNonInflecting | DerMinus | Dimke] ;
-
-# smth has been guessed, and now it is further derived into smth (notice the ?+ instead of ?*)
-define GuessAndDer [ "+Guess" ?+ AnyDer ] ;
-
-regex ~[ BadDer1 ?* ] & ~[ BadDer5 ?* ] & ~[ ?* BadDer2 ?* ] & ~[ ?* BadDer3 ?* ] & ~[ ?* BadDer4 ?* ] & ~[ BadDer6 ?* ] & ~[ ?* GuessAndDer ?* ];
-
-#regex ~[ BadDer1 ?* ] & ~[ BadDer5 ?* ] & ~[ ?* BadDer2 ?* ] & ~[ ?* BadDer3 ?* ] & ~[ ?* BadDer4 ?* ] & ~[ BadDer6 ?* ] ;
+regex ~[ BadDer1 ?* ] & ~[ BadDer5 ?* ] & ~[ ?* BadDer2 ?* ] & ~[ ?* BadDer3 ?* ] & ~[ ?* BadDer4 ?* ] & ~[ BadDer6 ?* ] ;
 

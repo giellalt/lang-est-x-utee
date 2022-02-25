@@ -606,6 +606,7 @@ Multichar_Symbols
  @R.Part.Two@        !!≈ |  @CODE@ | Require that the second part has been encountered
  @P.Part.Three@      !!≈ |  @CODE@ | Indicate that this could be the third part of a compound
  @P.Part.Bad@        !!≈ |  @CODE@ | Indicate that this cannot be a part of a compound
+ @R.Part.Bad@        !!≈ |  @CODE@ | Require that the first part has been encountered; if a lemma has it, it means that the lemma cannot be part2  
  @C.Part@
 
 !! POS is used for filtering derivations and compounds
@@ -651,6 +652,7 @@ Multichar_Symbols
  @C.POS@
  @R.POS.Guess@
  @P.POS.Guess@
+ @D.POS.Guess@
 
 !! Case is used for filtering derivations and compounds
  @R.Case.Nom@
@@ -730,10 +732,19 @@ Multichar_Symbols
  @R.NeedNoun@
  @D.NeedNoun@
  @C.NeedNoun@
- @P.NeedPartThree.On@   ! Pref + Adv needs + x
- @R.NeedPartThree@
- @D.NeedPartThree@
- @C.NeedPartThree@
+ @P.NeedPart.One@   ! 
+ @R.NeedPart.One@   ! 
+ @N.NeedPart.One@
+ @D.NeedPart.One@   
+ @P.NeedPart.Two@   ! 
+ @R.NeedPart.Two@   ! 
+ @N.NeedPart.Two@
+ @D.NeedPart.Two@   
+ @P.NeedPart.Three@   ! Pref + Adv needs + x
+ @R.NeedPart.Three@   ! never used ?
+ @N.NeedPart.Three@
+ @D.NeedPart.Three@
+ @C.NeedPart@           ! never used ?
  @P.NeedDerNe.On@         ! +Der/ne 5-autone
  @R.NeedDerNe@
  @D.NeedDerNe@
@@ -943,15 +954,25 @@ LEXICON Root !!= * `@CODE@` is the starting point of everything
 !! Different paths may result in the same output string, 
 !! e.g. mootoriõlilik = (mootori+õli)+lik and (mootori)+(õli+lik)
 
+!! Guesser
+! ???@P.POS.Guess@@P.Stem.Guessed@ on Anything puhul vist asjatud???
+
+!#@D.Part@@P.Part.Bad@@P.NeedPart.One@@P.POS.Guess@@P.Stem.Guessed@ Anything ;          !! the blahblah- part of a blahblah-word 
+!#@D.Part@@P.Part.Bad@@P.NeedPart.Two@@P.POS.Guess@@P.Stem.Guessed@ Something ;         !! the blahblah part of a blahblahword 
+
+@R.Part.Bad@@R.NeedPart.One@@P.Part.One@@N.NeedPart.One@ First ;         !! the word part of the blahblah-word 
+@R.Part.Bad@@R.NeedPart.Two@@P.Part.Two@@N.NeedPart.Two@ Nonfirst ;         !! the word part of the blahblahword 
+
+!! Lexicon-based
 @D.Part@@P.Part.Bad@ Single ;      !! strictly simplex word; cannot be a part of a compound
 @D.Part@@P.Part.One@ First ;       !! a simplex word, or the first part of a compound
 
-@R.Part.One@@P.Part.Two@ Nonfirst "weight: 10" ;                      ! second loop; 
-@R.Part.Two@@P.Part.Three@@C.NeedPartThree@ Nonfirst "weight: 10" ;   ! third loop; 
+@R.Part.One@@P.Part.Two@@N.NeedPart.Two@ Nonfirst "weight: 10" ;                      ! second loop; 
+@R.Part.Two@@P.Part.Three@@N.NeedPart.Three@ Nonfirst "weight: 10" ;   ! third loop; 
 
 ! only two components allowed, thus must bypass LEXICON First:
 ! number starting a word is a special case...
-@D.Part@@P.Part.Two@@P.NeedPartThree.On@@P.POS.Num@ CardinalNumbersInCompBeg ;   !!= * `@CODE@` 5-autone etc
+@D.Part@@P.Part.Two@@P.NeedPart.Three@@P.POS.Num@ CardinalNumbersInCompBeg ;   !!= * `@CODE@` 5-autone etc
 
 LEXICON Nonfirst
 
@@ -990,7 +1011,7 @@ LEXICON First     !!= * `@CODE@` a simplex word or the first part of a compound
   @P.POS.GA@@P.Case.Gen@ GenitiveAttributes ;      !!= * `@CODE@`
   @P.POS.Pref@ Prefixes ;                !!= * `@CODE@`
   @P.POS.ACR@ Acronyms ;          !!= * `@CODE@`
-  @P.POS.ACRMinus@ Acrominus ;          !!= * `@CODE@`
+  @P.POS.ACRMinus@@P.NeedPart.Two@ Acrominus ;          !!= * `@CODE@`
 
 ! the nature of the previous word is reflected by flag diacritics that were set back then
 ! (possibly when passing through a continuation lexicon);
@@ -1103,9 +1124,9 @@ LEXICON Latter !!= * `@CODE@` the latter part of a compound
   @R.POS.ACR@@R.Case.Nom@@P.POS.Num@@P.Part.Three@ CardinalNumbersInCompFin ;       ! E10
 
 ! x + adverb
-  @R.POS.Pref@@P.POS.Adv@@P.NeedPartThree.On@ CompoundingAdverbs ;  ! era+ratsa+baas, era+järel+valvama+Der/ja 
-  @R.POS.N@@R.Case.Nom@@R.Stem.Nom@@P.POS.Adv@@C.Case@@P.NeedPartThree.On@ CompoundingAdverbs ;  ! ehitus+järel+valvama+Der/ja 
-  @R.POS.N@@R.Case.Gen@@P.POS.Adv@@C.Case@@P.NeedPartThree.On@ CompoundingAdverbs ;  ! ehitus+järel+valvama+Der/ja 
+  @R.POS.Pref@@P.POS.Adv@@P.NeedPart.Three@ CompoundingAdverbs ;  ! era+ratsa+baas, era+järel+valvama+Der/ja 
+  @R.POS.N@@R.Case.Nom@@R.Stem.Nom@@P.POS.Adv@@C.Case@@P.NeedPart.Three@ CompoundingAdverbs ;  ! ehitus+järel+valvama+Der/ja 
+  @R.POS.N@@R.Case.Gen@@P.POS.Adv@@C.Case@@P.NeedPart.Three@ CompoundingAdverbs ;  ! ehitus+järel+valvama+Der/ja 
 
 ! x + verb derivation
 ! verb derivations expect previous word to be either in Gen or Par
@@ -1211,11 +1232,5 @@ LEXICON AnyLatterVerb     ! any verb derivation is allowed; set the case accordi
 LEXICON LatterVerb       ! a verb derivation
               
   @P.POS.V@@C.Der@@P.Stem.Verb@ Verbs ;                   !!= * `@CODE@`
-
-! An acronym that may be first part of a compound:
-! a sequence of capital letters; max length 5 and a trailing hyphen
-LEXICON Acrominus
-
-  < CapLetter^{1,5} "+ACR":"-" > # ;
 
 
