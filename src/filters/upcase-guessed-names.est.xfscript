@@ -1,0 +1,47 @@
+# Make initial upcasing for guessed names 
+# This is because the guesser uses patterns of lower case letters only,
+# but orthography requires names to have initial letter upper case
+
+define up [ 
+a -> A,
+b -> B,
+c -> C,
+d -> D,
+e -> E,
+f -> F,
+g -> G,
+h -> H,
+i -> I,
+j -> J,
+k -> K,
+l -> L,
+m -> M,
+n -> N,
+o -> O,
+p -> P,
+q -> Q,
+r -> R,
+s -> S,
+t -> T,
+u -> U,
+v -> V,
+w -> W,
+x -> X,
+y -> Y,
+z -> Z,
+á -> Á,
+č -> Č,
+đ -> Đ,
+ŋ -> Ŋ,
+š -> Š,
+ŧ -> Ŧ,
+ž -> Ž,
+õ -> Õ,
+ä -> Ä,
+ö -> Ö,
+ü -> Ü
+|| .#. _  ] ;
+
+regex up ;
+
+

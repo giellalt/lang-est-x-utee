@@ -38,7 +38,7 @@ GIELLA_FILTER_LOCAL_XFSCRIPT_SRCS=reorder-tags.est.xfscript \
                                   numeral-filter.est.xfscript \
                                   evaluate-flags.est.xfscript \
                                   downcase-derived_proper-strings.est.xfscript \
-                                  upcase-guessed_proper-strings.est.xfscript \
+                                  upcase-guessed-names.est.xfscript \
                                   remove-guessed-forms.est.xfscript
 
 # List any local filter lexc files here:
