@@ -90,7 +90,6 @@ GT_LOCAL_SRCS=\
 
 # Define local xfscripts here:
 GT_LOCAL_XFSCRIPT_SRCS=\
-				guesser-smth.xfscript \
 				emoticon.xfscript
 
 # Define here any additional sources just included in the distro:
