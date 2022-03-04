@@ -1,7 +1,7 @@
 # Xerox xfst script file to optionally uppercase all lexical entries.
 # Extend the alphabet as needed by your language.
 
-# kopli -> KOPLI; Kopli -> KOPLI; peaaegu-Kopli -> PEAAEGU-KOPLI; PEAAEGU-Kopli
+# kopli -> KOPLI; Kopli -> KOPLI; kopli-äärne -> KOPLI-ÄÄRNE kopli-ÄÄRNE, KOPLI-äärne 
 
 define WB [ .#. ] ;
 define uppercase [
@@ -17,6 +17,10 @@ define minus [ − ];           # from sme allcaps.xfscript
 
 define someminus[ hyphen | doublehyphen | endash | emdash | horizontalbar | minus ];
 
+# placeholders; they are defined elsewhere
+
+define PlaceHolder ["^Unknowns" | "^Letters"] ;
+
 define allcaps      a (->) A, b (->) B, c (->) C, d (->) D, e (->) E,
 f (->) F, g (->) G, h (->) H, i (->) I, j (->) J, k (->) K, l (->) L,
 m (->) M, n (->) N, o (->) O, p (->) P, q (->) Q, r (->) R, s (->) S,
@@ -27,6 +31,11 @@ t (->) T, u (->) U, v (->) V, w (->) W, x (->) X, y (->) Y, z (->) Z,
 ö (->) Ö, ø (->) Ø, ù (->) Ù, ú (->) Ú, û (->) Û, ü (->) Ü, ý (->) Ý, 
 þ (->) Þ, š (->) Š, ž (->) Ž
 \/
-WB [uppercase | someminus]* _ [uppercase | someminus]* [someminus | WB] ;
+WB [?* someminus]* [uppercase | someminus | PlaceHolder]* _ [uppercase | someminus]* [someminus ?*]* [someminus | WB] ;
 
 push allcaps
+
+# this context condition would result in:
+# kopli -> KOPLI; Kopli -> KOPLI; kopli-äärne -> KOPLI-ÄÄRNE  
+# WB [uppercase | someminus]* _ [uppercase | someminus]*  [someminus | WB] ;
+

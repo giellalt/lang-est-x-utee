@@ -564,15 +564,6 @@ Multichar_Symbols
 !! Copied from Sami root.lexc
 
 ! +Der  !!≈ * @CODE@: Keelest sõltumatutes filtrites? / In language-independent filters ?
-!! ### Symbols that need to be escaped on the lower side (towards twolc):
-
- »7     !! * »
- «7     !! * «
- %[%>%] !! * > (escaped with square brackets, to avoid collision with > as morpheme boundary)
- %[%<%] !! * < (escaped with square brackets, to avoid collision with < as morpheme boundary)
-
-
-'  !!≈ * @CODE@  7 is the real apostrophe ?? 
 
 +Use/Circ !!= * `@CODE@`: for arabic and roman numerals; 
 +Use/PMatch !!= * `@CODE@`: for tokenisation with pmatch
@@ -798,6 +789,23 @@ Multichar_Symbols
  %{rare.pl.genitive%}       ! rare or less used plural genitive form (norm) ; e.g. heinade
  %{rare.pl.forms%}       ! rare or less used plural forms based on the genitive, but excluding it (norm) ; e.g. heinadesse
 
+! Placeholders for later 'substitute defined'
+
+^Unknowns  ! smth like [? ?+ "+Guess":-]
+^Letters   ! smth like [Letter Letter+ ("-") "+Guess":0]
+
+!! ### Symbols that need to be escaped on the lower side (towards twolc):
+!! Sami GT convention 
+! Literal quotes and angles must be escaped (cf morpheme boundaries further down):
+
+ »7     !! * »
+ «7     !! * «
+ %[%>%] !! * > (escaped with square brackets, to avoid collision with > as morpheme boundary)
+ %[%<%] !! * < (escaped with square brackets, to avoid collision with < as morpheme boundary)
+
+
+'  !!≈ * @CODE@  7 is the real apostrophe ?? 
+
 ! Morphophonology
 
 ! Triggers
@@ -955,24 +963,33 @@ LEXICON Root !!= * `@CODE@` is the starting point of everything
 !! e.g. mootoriõlilik = (mootori+õli)+lik and (mootori)+(õli+lik)
 
 !! Guesser
-! ???@P.POS.Guess@@P.Stem.Guessed@ on Anything puhul vist asjatud???
 
 !#@D.Part@@P.Part.Bad@@P.NeedPart.One@@P.POS.Guess@@P.Stem.Guessed@ Anything ;          !! the blahblah- part of a blahblah-word 
 !#@D.Part@@P.Part.Bad@@P.NeedPart.Two@@P.POS.Guess@@P.Stem.Guessed@ Something ;         !! the blahblah part of a blahblahword 
 
-@R.Part.Bad@@R.NeedPart.One@@P.Part.One@@N.NeedPart.One@ First ;         !! the word part of the blahblah-word 
-@R.Part.Bad@@R.NeedPart.Two@@P.Part.Two@@N.NeedPart.Two@ Nonfirst ;         !! the word part of the blahblahword 
+! korraks @R.Part.Bad@@R.NeedPart.One@@P.Part.One@@N.NeedPart.One@ First ;         !! the word part of the blahblah-word 
+! korraks @R.Part.Bad@@R.NeedPart.Two@@P.Part.Two@@N.NeedPart.Two@ Nonfirst ;         !! the word part of the blahblahword 
+
+  @D.Part@@P.Part.Bad@ GuessEtc ;
 
 !! Lexicon-based
-@D.Part@@P.Part.Bad@ Single ;      !! strictly simplex word; cannot be a part of a compound
-@D.Part@@P.Part.One@ First ;       !! a simplex word, or the first part of a compound
+  @D.Part@@P.Part.Bad@ Single ;      !! strictly simplex word; cannot be a part of a compound
+  @D.Part@@P.Part.One@ First ;       !! a simplex word, or the first part of a compound
 
-@R.Part.One@@P.Part.Two@@N.NeedPart.Two@ Nonfirst "weight: 10" ;                      ! second loop; 
-@R.Part.Two@@P.Part.Three@@N.NeedPart.Three@ Nonfirst "weight: 10" ;   ! third loop; 
+  @R.Part.One@@P.Part.Two@@N.NeedPart.Two@ Nonfirst "weight: 10" ;                      ! second loop; 
+  @R.Part.Two@@P.Part.Three@@N.NeedPart.Three@ Nonfirst "weight: 10" ;   ! third loop; 
 
 ! only two components allowed, thus must bypass LEXICON First:
 ! number starting a word is a special case...
-@D.Part@@P.Part.Two@@P.NeedPart.Three@@P.POS.Num@ CardinalNumbersInCompBeg ;   !!= * `@CODE@` 5-autone etc
+  @D.Part@@P.Part.Two@@P.NeedPart.Three@@P.POS.Num@ CardinalNumbersInCompBeg ;   !!= * `@CODE@` 5-autone etc
+
+LEXICON GuessEtc 
+  ^Unknowns  FinalNormalWord ;
+  ^Letters   FinalNormalWord ;
+! add more placeholders here (like numbers, symbols, ...) 
+
+LEXICON FinalNormalWord
+   +Guess# : First ;
 
 LEXICON Nonfirst
 
@@ -1020,9 +1037,9 @@ LEXICON First     !!= * `@CODE@` a simplex word or the first part of a compound
 LEXICON Latter !!= * `@CODE@` the latter part of a compound
 
 ! guesser: blahblah + word:
-  @R.POS.Guess@ Nouns ;
-  @R.POS.Guess@@P.POS.A@ Adjectives ;
-  @R.POS.Guess@ AnyLatterVerb ;
+!  @R.POS.Guess@ Nouns ;
+!  @R.POS.Guess@@P.POS.A@ Adjectives ;
+!  @R.POS.Guess@ AnyLatterVerb ;
 
 ! x + prefix
   @R.POS.ACRMinus@ Prefixes ;      
