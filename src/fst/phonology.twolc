@@ -7,6 +7,12 @@ a b c d e f g h i j k l m n o p q r s š z ž t u v w õ ä ö ü x y
 A B C D E F G H I J K L M N O P Q R S Š Z Ž T U V W Õ Ä Ö Ü X Y 
 '
 
+!! Placeholders
+! they are substituted by symbol sequences sometime later in the FST-building process
+
+ %^Unknowns
+ %^Letters
+ 
 !! Sami GT convention 
 ! Literal quotes and angles must be escaped (cf morpheme boundaries further down):
  »7     ! »

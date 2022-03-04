@@ -154,15 +154,6 @@ guesser-names.tmp0.lexc: guesser-simplex-nouns.lexc $(GT_LEXC_ROOT) $(EST_AFFIX_
 			   cat $< >> $@ && \
 			   cat $(EST_AFFIX_FILES:%=%.lexc) >> $@
 
-# guesser
-# HFST:
-# a transducer for blabla- and Blabla-
-guesser-smth.hfst: guesser-smth.xfscript
-	$(AM_V_XFST_TOOL)$(PRINTF) "set flag-is-epsilon ON\n\
-			source $<\n\
-		 save stack $@\n\
-		 quit\n" | $(XFST_TOOL)
-
 ### END: Local processing: ###
 
 ####### Other targets: ###########
