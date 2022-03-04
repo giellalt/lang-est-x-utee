@@ -1,5 +1,7 @@
 ## Phonology
 
+Placeholders
+
 Sami GT convention 
 
 ### Triggers

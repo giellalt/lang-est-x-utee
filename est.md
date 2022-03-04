@@ -225,6 +225,8 @@ LEXICON SAAMA  is a lexicon for saama-type words. ! VVS 37   saama, jääma
 
 ## Phonology
 
+Placeholders
+
 Sami GT convention 
 
 ### Triggers
@@ -1081,15 +1083,6 @@ Num --> N
 ### Muud / Other tags
 Copied from Sami root.lexc
 
-### Symbols that need to be escaped on the lower side (towards twolc):
-
-* »
-* «
-* > (escaped with square brackets, to avoid collision with > as morpheme boundary)
-* < (escaped with square brackets, to avoid collision with < as morpheme boundary)
-
-* '  7 is the real apostrophe ?? 
-
 * `+Use/Circ `: for arabic and roman numerals; 
 * `+Use/PMatch `: for tokenisation with pmatch
 * `+Use/-PMatch `: for tokenisation with pmatch
@@ -1121,6 +1114,7 @@ These are used for limiting the number of components in a compound word
 |  @R.Part.Two@ | Require that the second part has been encountered
 |  @P.Part.Three@ | Indicate that this could be the third part of a compound
 |  @P.Part.Bad@ | Indicate that this cannot be a part of a compound
+|  @R.Part.Bad@ | Require that the first part has been encountered; if a lemma has it, it means that the lemma cannot be part2  
 
 POS is used for filtering derivations and compounds
 |  @R.POS.NumCardCompound@ | compound numeral (viis+sada - five hundred)
@@ -1138,6 +1132,16 @@ Tokeniser
 
 Guesser
 
+### Symbols that need to be escaped on the lower side (towards twolc):
+Sami GT convention 
+
+* »
+* «
+* > (escaped with square brackets, to avoid collision with > as morpheme boundary)
+* < (escaped with square brackets, to avoid collision with < as morpheme boundary)
+
+* '  7 is the real apostrophe ?? 
+
 Legitimate strings that are not words: numbers, acronyms, ...
 
 ## Lexicons  
@@ -1153,10 +1157,13 @@ For remembering it sets up flags on the path:
 Different paths may result in the same output string, 
 e.g. mootoriõlilik = (mootori+õli)+lik and (mootori)+(õli+lik)
 
+Guesser
+
+Lexicon-based
 strictly simplex word; cannot be a part of a compound
 a simplex word, or the first part of a compound
 
-* `@D.Part@@P.Part.Two@@P.NeedPartThree.On@@P.POS.Num@ CardinalNumbersInCompBeg ;   ` 5-autone etc
+* `  @D.Part@@P.Part.Two@@P.NeedPart.Three@@P.POS.Num@ CardinalNumbersInCompBeg ;   ` 5-autone etc
 
 strictly simplex words; cannot be a part of a compound
 
@@ -1188,7 +1195,7 @@ strictly simplex words; cannot be a part of a compound
 * `  @P.POS.GA@@P.Case.Gen@ GenitiveAttributes ;      `
 * `  @P.POS.Pref@ Prefixes ;                `
 * `  @P.POS.ACR@ Acronyms ;          `
-* `  @P.POS.ACRMinus@ Acrominus ;          `
+* `  @P.POS.ACRMinus@@P.NeedPart.Two@ Acrominus ;          `
 
 * `LEXICON Latter ` the latter part of a compound
 
