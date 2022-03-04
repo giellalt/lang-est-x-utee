@@ -82,9 +82,9 @@ GT_LOCAL_SRCS=\
 				num_final.tmp.lexc \
 				abbrevdot.tmp.lexc \
 				guesser-simplex-nouns.tmp.lexc \
-				guesser-names.tmp0.lexc \
-				guesser-verbs.tmp.lexc \
-				guesser-derivations.tmp.lexc
+				guesser-names.tmp0.lexc
+
+#				guesser-derivations.tmp.lexc
 #				punctuation.tmp.lexc
 #				acronyms.tmp.lexc 
 
