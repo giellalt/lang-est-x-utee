@@ -205,9 +205,9 @@ fst/guesser-names.tmp.hfst: fst/guesser-names.tmp0.hfst filters/upcase-guessed-n
 			read regex                                                 \
 			[ \"+Guess\" \"+N\" \"+Prop\" <- \"+Guess\" \"+N\" ]        \
 			.o. \$$[\"+Guess\" \"+N\"]                                   \
-			.o. @\"filters/upcase-guessed_proper-strings.est.hfst\".i  \
+			.o. @\"filters/upcase-guessed-names.est.hfst\".i  \
 			.o. @\"$<\"                                                \
-			.o. @\"filters/upcase-guessed_proper-strings.est.hfst\"    \
+			.o. @\"filters/upcase-guessed-names.est.hfst\"    \
 			;\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
