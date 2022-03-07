@@ -984,12 +984,19 @@ LEXICON Root !!= * `@CODE@` is the starting point of everything
   @D.Part@@P.Part.Two@@P.NeedPart.Three@@P.POS.Num@ CardinalNumbersInCompBeg ;   !!= * `@CODE@` 5-autone etc
 
 LEXICON GuessEtc 
-  ^Unknowns  FinalNormalWord ;
-  ^Letters   FinalNormalWord ;
+  ^Unknowns  AfterUnkknowns ;
+  ^Letters   AfterLetters ;
+  ^Letters   AfterLettersMinus ;
 ! add more placeholders here (like numbers, symbols, ...) 
 
-LEXICON FinalNormalWord
-   +Guess# : First ;
+LEXICON AfterUnkknowns
+   +Guess# : %# First ;
+
+LEXICON AfterLetters
+   +Guess# : %# FirstOpenClass ;
+
+LEXICON AfterLettersMinus
+   +Guess# : -%# First ;
 
 LEXICON Nonfirst
 
@@ -1010,7 +1017,11 @@ LEXICON Single     !! strictly simplex words; cannot be a part of a compound
   Symbols     ;          !!= * `@CODE@`
 
 LEXICON First     !!= * `@CODE@` a simplex word or the first part of a compound 
-
+  FirstOpenClass ;
+  FirstClosedClass ;
+  FirstAcro ;
+  
+LEXICON FirstOpenClass     !!= * `@CODE@` a simplex word or the first part of a compound 
   @P.POS.A@ Adjectives ;              !!= * `@CODE@`
   @P.POS.A@ NoninflectingAdjectives ; !!= * `@CODE@`
   @P.POS.AComp@ ComparativeAdjectives ;   !!= * `@CODE@`
@@ -1022,11 +1033,15 @@ LEXICON First     !!= * `@CODE@` a simplex word or the first part of a compound
   @P.POS.IntNum@ IntegerNumerals ;                !!= * `@CODE@`
   @P.POS.NonIntNum@ NonIntegerNumerals ;                !!= * `@CODE@`
   @P.POS.NumOrd@ OrdinalNumerals ;                !!= * `@CODE@`
-  @P.POS.Pron@ Pronouns ;                !!= * `@CODE@`
   @P.POS.V@ Verbs ;                   !!= * `@CODE@`
   @P.POS.Interj@ Interjections ;           !!= * `@CODE@`
   @P.POS.GA@@P.Case.Gen@ GenitiveAttributes ;      !!= * `@CODE@`
   @P.POS.Pref@ Prefixes ;                !!= * `@CODE@`
+
+LEXICON FirstClosedClass     !!= * `@CODE@` a simplex word or the first part of a compound 
+  @P.POS.Pron@ Pronouns ;                !!= * `@CODE@`
+
+LEXICON FirstAcro  !!= * `@CODE@` a word-like string that may (or must) be the first part of a compound
   @P.POS.ACR@ Acronyms ;          !!= * `@CODE@`
   @P.POS.ACRMinus@@P.NeedPart.Two@ Acrominus ;          !!= * `@CODE@`
 
