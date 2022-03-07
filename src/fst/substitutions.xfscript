@@ -10,7 +10,7 @@ define Lower [ a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|š|z|ž|t|u|v|w|õ|ä|ö|ü
 define Letter [Upper | Lower] ;
 
 
-define Letters [Letter^>2 ("-") ] ; 
+define Letters [Letter^>2 ] ; 
 
 substitute defined Unknowns for ^Unknowns
 substitute defined Letters for ^Letters
