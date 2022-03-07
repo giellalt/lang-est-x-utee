@@ -1178,6 +1178,7 @@ strictly simplex words; cannot be a part of a compound
 
 * `LEXICON First     ` a simplex word or the first part of a compound 
 
+* `LEXICON FirstOpenClass     ` a simplex word or the first part of a compound 
 * `  @P.POS.A@ Adjectives ;              `
 * `  @P.POS.A@ NoninflectingAdjectives ; `
 * `  @P.POS.AComp@ ComparativeAdjectives ;   `
@@ -1189,11 +1190,15 @@ strictly simplex words; cannot be a part of a compound
 * `  @P.POS.IntNum@ IntegerNumerals ;                `
 * `  @P.POS.NonIntNum@ NonIntegerNumerals ;                `
 * `  @P.POS.NumOrd@ OrdinalNumerals ;                `
-* `  @P.POS.Pron@ Pronouns ;                `
 * `  @P.POS.V@ Verbs ;                   `
 * `  @P.POS.Interj@ Interjections ;           `
 * `  @P.POS.GA@@P.Case.Gen@ GenitiveAttributes ;      `
 * `  @P.POS.Pref@ Prefixes ;                `
+
+* `LEXICON FirstClosedClass     ` a simplex word or the first part of a compound 
+* `  @P.POS.Pron@ Pronouns ;                `
+
+* `LEXICON FirstAcro  ` a word-like string that may (or must) be the first part of a compound
 * `  @P.POS.ACR@ Acronyms ;          `
 * `  @P.POS.ACRMinus@@P.NeedPart.Two@ Acrominus ;          `
 
