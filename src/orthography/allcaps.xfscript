@@ -19,7 +19,7 @@ define someminus[ hyphen | doublehyphen | endash | emdash | horizontalbar | minu
 
 # placeholders; they are defined elsewhere
 
-define PlaceHolder ["^Unknowns" | "^Letters"] ;
+define PlaceHolder ["^Unknowns" | "^Letters" | "^Punctuation"] ;
 
 define allcaps      a (->) A, b (->) B, c (->) C, d (->) D, e (->) E,
 f (->) F, g (->) G, h (->) H, i (->) I, j (->) J, k (->) K, l (->) L,
