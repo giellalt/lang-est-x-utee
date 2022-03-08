@@ -793,6 +793,7 @@ Multichar_Symbols
 
 ^Unknowns  ! smth like [? ?+ "+Guess":-]
 ^Letters   ! smth like [Letter Letter+ ("-") "+Guess":0]
+^Punctuation
 
 !! ### Symbols that need to be escaped on the lower side (towards twolc):
 !! Sami GT convention 
@@ -970,9 +971,10 @@ LEXICON Root !!= * `@CODE@` is the starting point of everything
 ! korraks @R.Part.Bad@@R.NeedPart.One@@P.Part.One@@N.NeedPart.One@ First ;         !! the word part of the blahblah-word 
 ! korraks @R.Part.Bad@@R.NeedPart.Two@@P.Part.Two@@N.NeedPart.Two@ Nonfirst ;         !! the word part of the blahblahword 
 
-  @D.Part@@P.Part.Bad@ GuessEtc ;
+  @D.Part@ GuessSmthWord ;
 
 !! Lexicon-based
+
   @D.Part@@P.Part.Bad@ Single ;      !! strictly simplex word; cannot be a part of a compound
   @D.Part@@P.Part.One@ First ;       !! a simplex word, or the first part of a compound
 
@@ -983,34 +985,55 @@ LEXICON Root !!= * `@CODE@` is the starting point of everything
 ! number starting a word is a special case...
   @D.Part@@P.Part.Two@@P.NeedPart.Three@@P.POS.Num@ CardinalNumbersInCompBeg ;   !!= * `@CODE@` 5-autone etc
 
-LEXICON GuessEtc 
+! --- Guesser: blablaword, i.e. final part is a word
+
+LEXICON GuessSmthWord 
   ^Unknowns  AfterUnkknowns ;
-  ^Letters   AfterLetters ;
+  ^Letters^Letters^Letters   AfterLetters ;
   ^Letters   AfterLettersMinus ;
+  ^Letters^Punctuation   AfterLettersPunct ;
+
 ! add more placeholders here (like numbers, symbols, ...) 
 
-LEXICON AfterUnkknowns
-   +Guess# : %# First ;
+! The #-sign on the surface side marks the compound component border;
+! the twol rules need this while checking grade alternation and vowel lowering contexts  
 
-LEXICON AfterLetters
-   +Guess# : %# FirstOpenClass ;
+LEXICON AfterUnkknowns             ! 杨蔓-word
+   +Guess# : %# FirstForGuess ;
 
-LEXICON AfterLettersMinus
-   +Guess# : -%# First ;
+LEXICON AfterLetters               ! woddrword
+   +Guess# : %# AfterLettersForGuess ;
 
-LEXICON Nonfirst
+LEXICON AfterLettersMinus          ! woddr-word
+   +Guess# : -%# FirstForGuess ;
 
-! D.Der means that the previous word should not be a derived one;
-! it may be too restrictive here...
-! previous word should not be allowed only single, nor one that can be only final
-  @D.Stem.Single@@D.Stem.Final@@C.Cap@@D.Case.PlNom@@D.Der.N@@D.Der.A@@D.Der.Adv@ Latter ;   ! a latter part
+LEXICON AfterLettersPunct          ! word.Word
+   +Guess+PUNCT# : %# SingleForGuess ;
+   +Guess+PUNCT# : %# FirstForGuess ;
 
+LEXICON AfterLettersForGuess       ! only the final component of a very permissible compound; open-class word only
+  @P.Part.Bad@  FirstOpenClass ;
+
+LEXICON SingleForGuess
+  @P.Part.Bad@  SingleWords ;
+
+LEXICON FirstForGuess
+  @P.Part.One@ First ;
+   
+! --- end guesser
+
+! lexicon-based
 LEXICON Single     !! strictly simplex words; cannot be a part of a compound
+  SingleWords ;        
+  SingleNonWords ;     
 
-  Abbreviations ;             !!= * `@CODE@`
+LEXICON SingleWords
   Adpositions ;             !!= * `@CODE@`
   Conjunctions ;            !!= * `@CODE@`
   NoninflectingVerbs ;      !!= * `@CODE@`
+  
+LEXICON SingleNonWords
+  Abbreviations ;             !!= * `@CODE@`
   CardinalNumbersSingle ;      !!= * `@CODE@`
   OrdinalNumbers ;          !!= * `@CODE@`
   Punctuation ;          !!= * `@CODE@`
@@ -1044,6 +1067,14 @@ LEXICON FirstClosedClass     !!= * `@CODE@` a simplex word or the first part of 
 LEXICON FirstAcro  !!= * `@CODE@` a word-like string that may (or must) be the first part of a compound
   @P.POS.ACR@ Acronyms ;          !!= * `@CODE@`
   @P.POS.ACRMinus@@P.NeedPart.Two@ Acrominus ;          !!= * `@CODE@`
+
+LEXICON Nonfirst
+
+! D.Der means that the previous word should not be a derived one;
+! it may be too restrictive here...
+! previous word should not be allowed only single, nor one that can be only final
+  @D.Stem.Single@@D.Stem.Final@@C.Cap@@D.Case.PlNom@@D.Der.N@@D.Der.A@@D.Der.Adv@ Latter ;   ! a latter part
+
 
 ! the nature of the previous word is reflected by flag diacritics that were set back then
 ! (possibly when passing through a continuation lexicon);

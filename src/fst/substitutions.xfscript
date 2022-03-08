@@ -4,14 +4,18 @@
 # ^Letters
 
 # example containing Unknowns: 杨蔓-maaniale
-define Unknowns [? ?+ 0:"-"] ; 
+define Unknowns [ ?+ 0:"-"] ; 
+
 define Upper [ A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|Š|Z|Ž|T|U|V|W|Õ|Ä|Ö|Ü|X|Y ] ;
 define Lower [ a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|š|z|ž|t|u|v|w|õ|ä|ö|ü|x|y ] ;
 define Letter [Upper | Lower] ;
+define Letters [Letter+] ; 
 
-
-define Letters [Letter^>2 ] ; 
+define Brackets [ "(" | ")" | "{" | "}" | "[" | "]" ]+ ;
+define Puncts [ "." | "," | ";" | ":" | "!" | "?" | "…" ]+ ;
+define Punctuation [Brackets | Puncts]+ ;
 
 substitute defined Unknowns for ^Unknowns
 substitute defined Letters for ^Letters
+substitute defined Punctuation for ^Punctuation
 
