@@ -632,6 +632,7 @@ e.g. mootoriõlilik = (mootori+õli)+lik and (mootori)+(õli+lik)
 Guesser
 
 Lexicon-based
+
 strictly simplex word; cannot be a part of a compound
 a simplex word, or the first part of a compound
 
@@ -639,10 +640,11 @@ a simplex word, or the first part of a compound
 
 strictly simplex words; cannot be a part of a compound
 
-* `  Abbreviations ;             `
 * `  Adpositions ;             `
 * `  Conjunctions ;            `
 * `  NoninflectingVerbs ;      `
+
+* `  Abbreviations ;             `
 * `  CardinalNumbersSingle ;      `
 * `  OrdinalNumbers ;          `
 * `  Punctuation ;          `
