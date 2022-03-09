@@ -22,17 +22,17 @@ Documentation
 Documentation can be found at:
 
 - [In source documentation generated with github
-   pages](https://gilellalt.github.io/lang-est-x-utee/)
+   pages](https://giellalt.github.io/lang-est-x-utee/)
 -   <https://giellalt.uit.no/index.html>
 -   <https://giellalt.uit.no/lang/experimentest/Links.html>
 
 Core dependencies
 -----------------
 
-In order to compile and use Estonian (Tartu Ülikool language morphology and
+In order to compile and use Estonian (Tartu Ülikool) language morphology and
 dictionaries, you need:
 
-- an FST compiler: [HFST](https://github.com/hfst/hfst), [Foma](https://github.com/mhulden/foma) or [Xerox Xfst](https://web.stanford.edu/~laurik/fsmbook/home.html)
+- an FST compiler: [HFST](https://github.com/hfst/hfst)
 - [VislCG3](https://visl.sdu.dk/svn/visl/tools/vislcg3/trunk) Constraint Grammar tools
 
 To install VislCG3 and HFST, just copy/paste this into your Terminal on **Mac OS X**:

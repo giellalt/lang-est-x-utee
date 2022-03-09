@@ -794,6 +794,7 @@ Multichar_Symbols
 ^Unknowns  ! smth like [? ?+ "+Guess":-]
 ^Letters   ! smth like [Letter Letter+ ("-") "+Guess":0]
 ^Punctuation
+^BlockCap  ! ad hoc for blocking inflectional ending capitalisation for acronyms
 
 !! ### Symbols that need to be escaped on the lower side (towards twolc):
 !! Sami GT convention 
@@ -1033,11 +1034,12 @@ LEXICON SingleWords
   NoninflectingVerbs ;      !!= * `@CODE@`
   
 LEXICON SingleNonWords
-  Abbreviations ;             !!= * `@CODE@`
+  Abbreviations ;              !!= * `@CODE@`
   CardinalNumbersSingle ;      !!= * `@CODE@`
-  OrdinalNumbers ;          !!= * `@CODE@`
-  Punctuation ;          !!= * `@CODE@`
-  Symbols     ;          !!= * `@CODE@`
+  OrdinalNumbers ;             !!= * `@CODE@`
+  Punctuation ;                !!= * `@CODE@`
+  Symbols     ;                !!= * `@CODE@`
+  SymbolStrings     ;          !!= * `@CODE@`
 
 LEXICON First     !!= * `@CODE@` a simplex word or the first part of a compound 
   FirstOpenClass ;

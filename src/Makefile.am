@@ -808,6 +808,8 @@ analyser-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%                \
 					orthography/inituppercase.compose.%       \
 					orthography/allcaps.compose.%       \
 					orthography/spellrelax.compose.%          \
+					fst/substitute_blockcap.xfscript \
+					fst/substitutions.xfscript \
 					$(GLT_DOWNCASE_FILTER)
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"filters/remove-area-tags.$*\"                \
@@ -835,6 +837,8 @@ analyser-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%                \
 			.o. @\"orthography/allcaps.compose.$*\"       \
 			.o. @\"orthography/spellrelax.compose.$*\"          \
 			;\n\
+			source fst/substitute_blockcap.xfscript\n\
+			source fst/substitutions.xfscript\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
@@ -862,6 +866,8 @@ generator-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%            \
 					filters/remove-Use_minus_PMatch-tags.%    \
 					filters/remove-Use_PMatch-strings.%       \
 					filters/remove-mwe-tags.%                 \
+					fst/substitute_blockcap.xfscript \
+					fst/substitutions.xfscript \
 					$(GLT_DOWNCASE_FILTER)
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"filters/make-optional-transitivity-tags.$*\" \
@@ -888,6 +894,8 @@ generator-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%            \
 			.o. @\"filters/remove-infl_deriv-borders.$*\"       \
 			.o. @\"filters/remove-word-boundary.$*\"            \
 			;\n\
+			source fst/substitute_blockcap.xfscript\n\
+			source fst/substitutions.xfscript\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
@@ -915,23 +923,19 @@ generator-gt-desc.hfst: generator-gt-desc.tmp.hfst
 
 # insert defined regexes in place of placeholders 
 # 
-analyser-gt-descguess.hfst: analyser-gt-desc.tmp.hfst \
-					fst/substitutions.xfscript 
+analyser-gt-descguess.hfst: analyser-gt-desc.dot.tmp.hfst 
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"$<\" \
 			;\n\
-			source fst/substitutions.xfscript\n\
 		 $(INVERT_HFST)\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
 # ... and generators:
-generator-gt-descguess.hfst: generator-gt-desc.tmp.hfst \
-					fst/substitutions.xfscript 
+generator-gt-descguess.hfst: generator-gt-desc.dot.tmp.hfst 
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"$<\" \
 			;\n\
-			source fst/substitutions.xfscript\n\
 		 $(INVERT_XFST)$(INVERT_FOMA)\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)

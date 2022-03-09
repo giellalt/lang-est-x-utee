@@ -351,12 +351,19 @@ LEXICON Noun_symbols_never_inflected
 ! They should not be different from the ones used for ordinary words
 ! ---------------
 
-LEXICON AcroArmee 
-       +ACR+Sg: NOMINATIVE ;
-       +ACR+Sg: GENITIVE ;
-          +ACR: Acro1V ;
-          +ACR:- Acro1V ;
+! inflecting acronyms: KEK-is, KEKis, KEK-IS are OK, but KEKIS is not
+! to block optional capitalisation of the inflectional ending "-is" (written without "-"), 
+! use the placeholder ^BlockCap which will be eliminated from the final net
 
+LEXICON AcroArmee 
+                 TypicalAcroArmee ;
+       ^BlockCap Acro1V ;
+            
+LEXICON TypicalAcroArmee
+           +Sg: NOMINATIVE ;
+           +Sg: GENITIVE ;
+              :- Acro1V ;
+              
 LEXICON Acro1V 
               :d SG_PARTITIVE ;            ! KT-d
            +Sg: ALL_SEM_CASES ;            ! KT etc
@@ -365,9 +372,12 @@ LEXICON Acro1V
               :sid PL_PARTITIVE ;     ! KT-sid
 
 LEXICON AcroFiat 
-       +ACR+Sg: NOMINATIVE ;
-          +ACR: Acro1C ;
-          +ACR:- Acro1C ;
+                 TypicalAcroFiat ;
+       ^BlockCap Acro1C ;
+
+LEXICON TypicalAcroFiat
+           +Sg: NOMINATIVE ;
+              :- Acro1C ;
 
 LEXICON Acro1C 
               :i N_SG_SUBPARA ;      ! KEKi etc
@@ -380,10 +390,13 @@ LEXICON Acro1C
 
 
 LEXICON AcroPere 
-       +ACR+Sg: NOMINATIVE ;
-       +ACR+Sg: GENITIVE ;
-          +ACR: Acro2V ;
-          +ACR:- Acro2V ;
+                 TypicalAcroPere ;
+       ^BlockCap Acro2V ;
+
+LEXICON TypicalAcroPere
+           +Sg: NOMINATIVE ;
+           +Sg: GENITIVE ;
+              :- Acro2V ;
 
 LEXICON Acro2V 
               :t SG_PARTITIVE ;            ! NATOt
@@ -393,9 +406,12 @@ LEXICON Acro2V
               :sid PL_PARTITIVE ;     ! NATO-sid
 
 LEXICON AcroRedel 
-       +ACR+Sg: NOMINATIVE ;
-          +ACR: Acro2C ;
-          +ACR:- Acro2C ;
+                 TypicalAcroRedel ;
+       ^BlockCap Acro2C ;
+
+LEXICON TypicalAcroRedel
+           +Sg: NOMINATIVE ;
+              :- Acro2C ;
 
 LEXICON Acro2C 
               :i N_SG_SUBPARA ;      ! UNIXi etc
@@ -406,9 +422,12 @@ LEXICON Acro2C
 
 
 LEXICON AcroEtis 
-       +ACR+Sg: NOMINATIVE ;
-          +ACR: AcroS ;
-          +ACR:- AcroS ;
+                 TypicalAcroEtis ;
+       ^BlockCap AcroS ;
+
+LEXICON TypicalAcroEtis
+           +Sg: NOMINATIVE ;
+              :- AcroS ;
 
 LEXICON AcroS 
               :e N_SG_SUBPARA ;      ! ETISe etc
