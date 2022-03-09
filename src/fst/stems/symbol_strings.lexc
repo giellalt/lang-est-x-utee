@@ -1,0 +1,17 @@
+! strings that are not words, but in some ways act like they were
+! weights are arbitrary; assuming these stems are rare and thus 11 is the max weight for a stem
+
+LEXICON SymbolStrings
+  ^Letters^Letters DotSmth ;
+  
+LEXICON DotSmth
+   %.com+Symbol:%.com TypicalAcroFiat "weight: 11 " ;  
+   %.ee+Symbol:%.ee TypicalAcroArmee "weight: 11 " ;
+   %.fi+Symbol:%.fi TypicalAcroArmee "weight: 11 " ;
+   %.fm+Symbol:%.fm TypicalAcroFiat "weight: 11 " ;
+   %.net+Symbol:%.net TypicalAcroFiat "weight: 11 " ;
+   %.org+Symbol:%.org TypicalAcroFiat "weight: 11 " ;
+   %.ru+Symbol:%.ru TypicalAcroArmee "weight: 11 " ;
+   %.ua+Symbol:%.ua TypicalAcroArmee "weight: 11 " ;
+   
+

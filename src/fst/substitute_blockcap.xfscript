@@ -1,0 +1,8 @@
+# inflecting acronyms: KEK-ist, KEKist, KEK-IST are OK, but KEKIST is not
+# to block optional capitalisation of the inflectional ending "ist", 
+# use the placeholder ^BlockCap which will be eliminated from the final net
+
+define BlockCap 0 ;   
+
+substitute defined BlockCap for ^BlockCap
+

@@ -1,34 +1,34 @@
 !! Acronyms
 
 LEXICON Acronyms
-  < [CapCons* CapVow+] & CapLetter^<6 > AcroArmee ;  ! TÜ, TTÜ, A, AI
-  < [CapVow+ CapCons+ CapVow^>1] & CapLetter^<6 > AcroArmee ;  ! ACAI, AEGEE, 
-  < [CapCons* CapConsv] & CapLetter^<6 > AcroArmee ;  ! T, TT, NKVD, 
-  < [CapVow   CapConsv] & CapLetter^<6 > AcroArmee ;  ! AQ, AB, 
-!  < [CapVow^>1 [C|Q]] & CapLetter^<6 > AcroArmee ;  ! AAQ, AAC, ? 
-  < [CapVow^>1 CapConsv] & CapLetter^<6 > AcroArmee ;  ! AAK (+ AcroFiat)
-  < [CapCons* CapVow+ CapNonPairC] & CapLetter^<6 > AcroArmee ;  ! ABC, 
-  < [CapCons* CapVow+ CapPairC] & CapLetter^<6 > AcroArmee ;  ! ARK, ASK, (+ AcroFiat) 
-  < [CapVow+ CapCons^>1 CapConsv] & CapLetter^<6 > AcroArmee ;  ! AADRC, AADRV?
+  < [[CapCons* CapVow+] & CapLetter^<6 ] "+ACR":0 > AcroArmee ;  ! TÜ, TTÜ, A, AI
+  < [[CapVow+ CapCons+ CapVow^>1] & CapLetter^<6 ] "+ACR":0 > AcroArmee ;  ! ACAI, AEGEE, 
+  < [[CapCons* CapConsv] & CapLetter^<6 ] "+ACR":0 > AcroArmee ;  ! T, TT, NKVD, 
+  < [[CapVow   CapConsv] & CapLetter^<6 ] "+ACR":0 > AcroArmee ;  ! AQ, AB, 
+!  < [CapVow^>1 [C|Q]] & CapLetter^<6 ] "+ACR":0 > AcroArmee ;  ! AAQ, AAC, ? 
+  < [[CapVow^>1 CapConsv] & CapLetter^<6 ] "+ACR":0 > AcroArmee ;  ! AAK (+ AcroFiat)
+  < [[CapCons* CapVow+ CapNonPairC] & CapLetter^<6 ] "+ACR":0 > AcroArmee ;  ! ABC, 
+  < [[CapCons* CapVow+ CapPairC] & CapLetter^<6 ] "+ACR":0 > AcroArmee ;  ! ARK, ASK, (+ AcroFiat) 
+  < [[CapVow+ CapCons^>1 CapConsv] & CapLetter^<6 ] "+ACR":0 > AcroArmee ;  ! AADRC, AADRV?
 
-  < [CapCons* CapConsc] & CapLetter^<6 > AcroFiat ;  ! L, XL
-  < [CapVow   CapConsc] & CapLetter^<6 > AcroFiat ;  ! AL, IJ
-  < [CapVow^>1 [CapCons - [C|Q]]] & CapLetter^<6 > AcroFiat ;  ! AAK, (+ AcroArmee)
-  < [CapCons+ CapVow+ CapCons] & CapLetter^<6 > AcroFiat ;  ! MAL, QIJ, MAC
-  < [CapCons* CapVow+ CapPairC] & CapLetter^<6 > AcroFiat ;  ! TASS, AND, IRC?
-  < [CapCons* CapVow+ CapCons+ CapConsc] & CapLetter^<6 > AcroFiat ;  ! AADRL
+  < [[CapCons* CapConsc] & CapLetter^<6 ] "+ACR":0 > AcroFiat ;  ! L, XL
+  < [[CapVow   CapConsc] & CapLetter^<6 ] "+ACR":0 > AcroFiat ;  ! AL, IJ
+  < [[CapVow^>1 [CapCons - [C|Q]]] & CapLetter^<6 ] "+ACR":0 > AcroFiat ;  ! AAK, (+ AcroArmee)
+  < [[CapCons+ CapVow+ CapCons] & CapLetter^<6 ] "+ACR":0 > AcroFiat ;  ! MAL, QIJ, MAC
+  < [[CapCons* CapVow+ CapPairC] & CapLetter^<6 ] "+ACR":0 > AcroFiat ;  ! TASS, AND, IRC?
+  < [[CapCons* CapVow+ CapCons+ CapConsc] & CapLetter^<6 ] "+ACR":0 > AcroFiat ;  ! AADRL
   IŽ AcroFiat ;  ! parallel 
   ACE AcroFiat ; ! parallel
   ASEAN AcroFiat ; !
 
-  < [CapCons* CapVow+ [CapCons+ | Y] CapVow] & CapLetter^<6 & ~[{CHINA}] > AcroPere ;  ! NATO, EKI, EKRE, IATE
+  < [[CapCons* CapVow+ [CapCons+ | Y] CapVow] & CapLetter^<6 & ~[{CHINA}] ] "+ACR":0 > AcroPere ;  ! NATO, EKI, EKRE, IATE
 
-  < [CapCons* CapVow+ [CapCons+ | Y] CapVow [CapCons - S]] & CapLetter^<6 > AcroRedel ;  ! UNIX, BAYER
-  < [CapCons* CapVow+ CapCons+ CapVow CapConsv S] & CapLetter^<6 > AcroRedel ;  ! UNIKS
-  < [CapCons* CapVow+ [CapCons - [L|R]] [L|R]] & CapLetter^<6 > AcroRedel ;  ! TISL
-  < [CapCons* CapVow+ CapPairC [L|R]] & CapLetter^<6 > AcroRedel ;  ! TIMBL
+  < [[CapCons* CapVow+ [CapCons+ | Y] CapVow [CapCons - S]] & CapLetter^<6 ] "+ACR":0 > AcroRedel ;  ! UNIX, BAYER
+  < [[CapCons* CapVow+ CapCons+ CapVow CapConsv S] & CapLetter^<6 ] "+ACR":0 > AcroRedel ;  ! UNIKS
+  < [[CapCons* CapVow+ [CapCons - [L|R]] [L|R]] & CapLetter^<6 ] "+ACR":0 > AcroRedel ;  ! TISL
+  < [[CapCons* CapVow+ CapPairC [L|R]] & CapLetter^<6 ] "+ACR":0 > AcroRedel ;  ! TIMBL
 
-  < [CapCons* CapVow+ CapCons+ CapVow S] & CapLetter^<6 > AcroEtis ;  ! ETIS
+  < [[CapCons* CapVow+ CapCons+ CapVow S] & CapLetter^<6 ] "+ACR":0 > AcroEtis ;  ! ETIS
 
 
 ! An acronym that may be first part of a compound:
