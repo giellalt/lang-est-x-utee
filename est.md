@@ -1172,11 +1172,12 @@ strictly simplex words; cannot be a part of a compound
 * `  Conjunctions ;            `
 * `  NoninflectingVerbs ;      `
 
-* `  Abbreviations ;             `
+* `  Abbreviations ;              `
 * `  CardinalNumbersSingle ;      `
-* `  OrdinalNumbers ;          `
-* `  Punctuation ;          `
-* `  Symbols     ;          `
+* `  OrdinalNumbers ;             `
+* `  Punctuation ;                `
+* `  Symbols     ;                `
+* `  SymbolStrings     ;          `
 
 * `LEXICON First     ` a simplex word or the first part of a compound 
 
