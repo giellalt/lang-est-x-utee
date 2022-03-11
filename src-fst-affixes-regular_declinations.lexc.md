@@ -1,8 +1,5 @@
 
 
-:%. # ;
-: ABBRDOT ;
-
 flag diacritics can be used for remembering the case 
 
 flag diacritics are used for remembering the case for compounding; 

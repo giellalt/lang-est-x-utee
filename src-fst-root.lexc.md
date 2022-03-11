@@ -649,7 +649,7 @@ strictly simplex words; cannot be a part of a compound
 * `  OrdinalNumbers ;             `
 * `  Punctuation ;                `
 * `  Symbols     ;                `
-* `  SymbolStrings     ;          `
+* `  SymbolStrings     ;          `   .ee .com -ending strings
 
 * `LEXICON First     ` a simplex word or the first part of a compound 
 
