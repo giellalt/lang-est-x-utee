@@ -773,6 +773,8 @@ generator-raw-gt-desc.hfst: generator-raw-gt-desc.weighted.hfst
 # They cannot be a part of the analyser that the tokeniser uses
 # Therefore, dot-ending stuff must be added separately to the default descriptive analyser 
 
+# Plus: insert defined regexes in place of placeholders 
+
 # This is the default, descriptive analyser:
 # Visible tags (ie do NOT remove):
 #   - variant tags
@@ -918,11 +920,13 @@ generator-gt-desc.tmp.hfst: generator-gt-desc.dot.tmp.hfst \
 
 #--- begin guesser-related ad hoc
 
-# insert defined regexes in place of placeholders 
+# relax hyphen and apostrophe writing conventions 
 # 
-analyser-gt-descguess.hfst: analyser-gt-desc.dot.tmp.hfst 
+analyser-gt-descguess.hfst: analyser-gt-desc.dot.tmp.hfst \
+				orthography/punctrelax.compose.hfst
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"$<\" \
+				.o. @\"orthography/punctrelax.compose.hfst\" \
 			;\n\
 		 $(INVERT_HFST)\
 		 save stack $@\n\

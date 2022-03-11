@@ -2,20 +2,33 @@
 # root.lexc:
 # ^Unknowns
 # ^Letters
-
+# ...
+# NB! the symbol classes are probably not complete!!!
 # example containing Unknowns: 杨蔓-maaniale
-define Unknowns [ ?+ 0:"-"] ; 
+define Unknown [ ? ] ; 
 
-define Upper [ A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|Š|Z|Ž|T|U|V|W|Õ|Ä|Ö|Ü|X|Y ] ;
-define Lower [ a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|š|z|ž|t|u|v|w|õ|ä|ö|ü|x|y ] ;
+define Digit ["0" | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ] ;
+
+# alphabet taken from allcaps.xfscript
+define Upper [ A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|Á|À|Â|Ã|Ä|Å|Æ|È|É|Ê|Ë|Ì|Í|Î|Ï|Ð|Ñ|Ò|Ó|Ô|Õ|Ö|Ø|Ù|Ú|Û|Ü|Ý|Þ|Š|Ž ] ;
+define Lower [ a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|á|à|â|ã|ä|å|æ|è|é|ê|ë|ì|í|î|ï|ð|ñ|ò|ó|ô|õ|ö|ø|ù|ú|û|ü|ý|þ|š|ž ] ;
+
+define Bracket [ "(" | ")" | "{" | "}" | "[" | "]" ]+ ;
+define Punct [ "." | "," | ";" | ":" | "!" | "?" | "…" ]+ ;
+#define Apostrophe ['] ;  ! ’
+
+define Unknowns [ Unknown ]+ ; 
 define Letter [Upper | Lower] ;
 define Letters [Letter+] ; 
 
-define Brackets [ "(" | ")" | "{" | "}" | "[" | "]" ]+ ;
-define Puncts [ "." | "," | ";" | ":" | "!" | "?" | "…" ]+ ;
-define Punctuation [Brackets | Puncts]+ ;
+define UnknownName [Upper Lower+] ;
+define Punctuation [Bracket | Punct]+ ;
+
+define UnknownString [Letter | Punctuation | Bracket | Digit | Unknown]+ ;
 
 substitute defined Unknowns for ^Unknowns
 substitute defined Letters for ^Letters
+substitute defined UnknownName for ^UnknownName
 substitute defined Punctuation for ^Punctuation
+substitute defined UnknownString for ^UnknownString
 
