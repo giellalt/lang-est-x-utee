@@ -309,37 +309,56 @@ LEXICON ARMEE    ! VVS 26 ; (productive) i.e. stable type (aktiivne muuttüüp)
 ! ... so the endings are often wrong...
 ! ---------------
 
-!LEXICON AbbrCasesDot
-!              : AbbrNoCaseDot ;                ! mld, vs, ...
-!              : AbbrSomeCase ;
-
-!LEXICON AbbrNoCaseDot
-!              : AbbrNoCase ;
-!!              :%. # ;
-!!              : ABBRDOT ;
-!              : DOTABBR ;
-
 LEXICON AbbrCases
-              : # ;                ! Wc ...
-              : AbbrSomeCase ;     ! Wc-sse, Wc-st, ...
+              : # ;                         ! Wc ...
+              : EndingsExpressingCase ;     ! Wc-sse, Wc-st, ...
 
-!LEXICON AbbrNoCase
-!              :   # ;
 
-! any inflection is possible (this is not correct, of course)
-! actually a subset of inflectional endings that are possible for acronyms
-LEXICON AbbrSomeCase
-              :- Acro1V ;                 ! wc, 2.a, 
-              :- Acro1C ;                 ! DivX, Gbit 
-              :- Acro2C ;                 ! mld 
+! the endings that are attached via hyphen or apostrophe to a word, number, symbol, acronym
+! it is a union of endings from all productive inflectional types
+! used in guessing
+LEXICON EndingsExpressingCase
+
+              :d SG_PARTITIVE ;            ! KT-d
+           +Sg: ALL_SEM_CASES ;            ! KT etc
+           +Pl:d NOMINATIVE ;          ! KT-d
+              :de N_PL_SUBPARA ;        ! KT-de etc  
+              :sid PL_PARTITIVE ;     ! KT-sid
+
+              :i N_SG_SUBPARA ;      ! KEKi etc
+              :i SG_PARTITIVE ;               ! KEKi
+              :i SG_ILLATIVE ;                ! KEKi
+!    +Usage/Hyp:isse SG_ILLATIVE ;     ! KEKisse
+              :ide N_PL_SUBPARA ;     ! KEKide etc
+   +Usage/Rare:isid PL_PARTITIVE ;    ! KEKisid
+              :e PL_PARTITIVE ;            ! KEKe
+
+!              :t SG_PARTITIVE ;            ! NATOt   = ! ETISt
+!           +Sg: ALL_SEM_CASES ;            ! NATO etc  = ! KT etc
+!           +Pl:d NOMINATIVE ;            ! NATOd  = ! KT-d
+!              :de N_PL_SUBPARA ;        ! NATO-de etc = ! KT-de etc 
+!              :sid PL_PARTITIVE ;     ! NATO-sid = ! KT-sid
+
+!              :i N_SG_SUBPARA ;      ! UNIXi etc  = ! KEKi etc
+              :it SG_PARTITIVE ;               ! UNIXit
+              :isse SG_ILLATIVE ;                ! UNIXisse
+              :ite N_PL_SUBPARA ;     ! UNIXite etc
+              :eid PL_PARTITIVE ;            ! UNIXeid
+
+              :e N_SG_SUBPARA ;      ! ETISe etc
+              :t SG_PARTITIVE ;               ! ETISt
+              :esse SG_ILLATIVE ;     ! ETISesse
+              :te N_PL_SUBPARA ;     ! ETISte etc
+              :eid PL_PARTITIVE ;            ! ETISeid
+
 
 ! ---------------
 ! Symbol affixes
 ! ---------------
 
 LEXICON Noun_symbols_possibly_inflected
-     +N+Symbol: AbbrSomeCase ;   ! has the same endings as abbreviations, sometimes wrong
-                             ! (e.g. Pl Gen €-te $-de instead of the correct €-de $-te)
+     +N+Symbol: EndingsExpressingCase ;   ! has the same endings as abbreviations, sometimes wrong
+                                          ! (e.g. Pl Gen €-te $-de instead of the correct €-de $-te)
      +N+Symbol: # ;
 
 LEXICON Noun_symbols_never_inflected

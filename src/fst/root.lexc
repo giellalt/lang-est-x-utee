@@ -794,6 +794,8 @@ Multichar_Symbols
 ^Unknowns  ! smth like [? ?+ "+Guess":-]
 ^Letters   ! smth like [Letter Letter+ ("-") "+Guess":0]
 ^Punctuation
+^UnknownName
+^UnknownString
 ^BlockCap  ! ad hoc for blocking inflectional ending capitalisation for acronyms
 
 !! ### Symbols that need to be escaped on the lower side (towards twolc):
@@ -972,7 +974,8 @@ LEXICON Root !!= * `@CODE@` is the starting point of everything
 ! korraks @R.Part.Bad@@R.NeedPart.One@@P.Part.One@@N.NeedPart.One@ First ;         !! the word part of the blahblah-word 
 ! korraks @R.Part.Bad@@R.NeedPart.Two@@P.Part.Two@@N.NeedPart.Two@ Nonfirst ;         !! the word part of the blahblahword 
 
-  @D.Part@ GuessSmthWord ;
+  @D.Part@ GuessSmthWord ;             ! blablaword, i.e. final part is a word
+  @D.Part@@P.Part.Bad@ GuessEnding ;   ! blabla-ending, i.e. inflectional ending is attached with a hyphen
 
 !! Lexicon-based
 
@@ -989,37 +992,47 @@ LEXICON Root !!= * `@CODE@` is the starting point of everything
 ! --- Guesser: blablaword, i.e. final part is a word
 
 LEXICON GuessSmthWord 
-  ^Unknowns  AfterUnkknowns ;
-  ^Letters^Letters^Letters   AfterLetters ;
-  ^Letters   AfterLettersMinus ;
-  ^Letters^Punctuation   AfterLettersPunct ;
+  ^Unknowns  HyphenWord ;                   ! 杨蔓-word
+  ^Letters   HyphenWord ;                    ! woddr-word
+  ^Letters^Letters^Letters   NoHyphenWord ;
+  ^Letters^Punctuation   DotWord ;
 
 ! add more placeholders here (like numbers, symbols, ...) 
 
 ! The #-sign on the surface side marks the compound component border;
 ! the twol rules need this while checking grade alternation and vowel lowering contexts  
 
-LEXICON AfterUnkknowns             ! 杨蔓-word
-   +Guess# : %# FirstForGuess ;
-
-LEXICON AfterLetters               ! woddrword
-   +Guess# : %# AfterLettersForGuess ;
-
-LEXICON AfterLettersMinus          ! woddr-word
+LEXICON HyphenWord                ! 杨蔓-word, woddr-word
    +Guess# : -%# FirstForGuess ;
 
-LEXICON AfterLettersPunct          ! word.Word
+LEXICON NoHyphenWord               ! woddrword
+   +Guess# : %# OpenClassForGuess ;
+
+LEXICON DotWord                    ! word.Word
    +Guess+PUNCT# : %# SingleForGuess ;
    +Guess+PUNCT# : %# FirstForGuess ;
 
-LEXICON AfterLettersForGuess       ! only the final component of a very permissible compound; open-class word only
+LEXICON OpenClassForGuess       ! only the final component of a very permissible compound; open-class words only
   @P.Part.Bad@  FirstOpenClass ;
 
-LEXICON SingleForGuess
+LEXICON SingleForGuess            ! pretend it is a normal word that does not participate in compounds (following blabla.)
   @P.Part.Bad@  SingleWords ;
 
-LEXICON FirstForGuess
+LEXICON FirstForGuess             ! pretend it is a normal word (following blabla)
   @P.Part.One@ First ;
+
+LEXICON GuessEnding
+  ^UnknownName      NameAndEnding ;
+  ^UnknownString    NounAndEnding ;
+  
+LEXICON NameAndEnding
+   +Guess+N+Prop : - EndingsExpressingCase ;   ! hyphen ending
+   +Guess+N+Prop : ' EndingsExpressingCase ;   ! apostrophe ending
+
+LEXICON NounAndEnding
+   +Guess+N : - EndingsExpressingCase ;   ! hyphen ending
+   +Guess+N : ' EndingsExpressingCase ;   ! apostrophe ending
+
    
 ! --- end guesser
 
@@ -1039,7 +1052,7 @@ LEXICON SingleNonWords
   OrdinalNumbers ;             !!= * `@CODE@`
   Punctuation ;                !!= * `@CODE@`
   Symbols     ;                !!= * `@CODE@`
-  SymbolStrings     ;          !!= * `@CODE@`
+  SymbolStrings     ;          !!= * `@CODE@`   .ee .com -ending strings
 
 LEXICON First     !!= * `@CODE@` a simplex word or the first part of a compound 
   FirstOpenClass ;

@@ -1,0 +1,30 @@
+# define equivalence classes for hyphen and apostrophe
+# and allow any variant to occur 
+
+# hyphen-like symbols; NOT a full list
+
+define hyphen [ "-" ];
+define doublehyphen[ %-%- ];
+define endash [ – ];
+define emdash [ — ];
+define horizontalbar [ ― ];
+define minus [ − ];           # from sme allcaps.xfscript
+
+define someminus[ hyphen (->) [ doublehyphen | endash | emdash | horizontalbar | minus ]];
+
+# apostrophe-like symbols; NOT a full list
+
+define apostrophe ["'"] ;   # = prime symbol
+define acuteaccent ["´"] ;  
+define graveaccent ["`"] ;  
+define aponine [’|❜] ;  
+define aporevnine [‛] ;
+define aposix [‘|❛|ʻ] ;   
+
+define someapo [apostrophe (->) [ acuteaccent | graveaccent | aponine | aporevnine | aposix]] ;
+
+define relax [someminus .o. someapo] ;
+
+regex relax ;
+
+
