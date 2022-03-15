@@ -1165,9 +1165,11 @@ a simplex word, or the first part of a compound
 
 strictly simplex words; cannot be a part of a compound
 
-* `  Adpositions ;             `
-* `  Conjunctions ;            `
-* `  NoninflectingVerbs ;      `
+* `  Adpositions ;              `
+* `  Conjunctions ;             `
+* `  NoninflectingVerbs ;       `
+* `  NoninflectingAdjectiveVa ; `
+* `  NonCompoundingAdverbs ;   `
 
 * `  Abbreviations ;              `
 * `  CardinalNumbersSingle ;      `
@@ -1183,7 +1185,7 @@ strictly simplex words; cannot be a part of a compound
 * `  @P.POS.A@ NoninflectingAdjectives ; `
 * `  @P.POS.AComp@ ComparativeAdjectives ;   `
 * `  @P.POS.AComp@ SuperlativeAdjectives ;   `  ! Superl = Comp in compounding
-* `  @P.POS.Adv@ Adverbs ;                 `
+* `  @P.POS.Adv@ CompoundingAdverbs ;                 `
 * `  @P.POS.N@ Nouns ;                   `
 * `  @P.POS.NProp@@U.Cap.Obl@ ProperNouns ; `  ! always uppercase
 * `  @P.POS.NProp@@U.Cap.Opt@ ProperNouns ; `  ! downcased for derivations
@@ -1191,15 +1193,15 @@ strictly simplex words; cannot be a part of a compound
 * `  @P.POS.NonIntNum@ NonIntegerNumerals ;                `
 * `  @P.POS.NumOrd@ OrdinalNumerals ;                `
 * `  @P.POS.V@ Verbs ;                   `
-* `  @P.POS.Interj@ Interjections ;           `
 * `  @P.POS.GA@@P.Case.Gen@ GenitiveAttributes ;      `
 * `  @P.POS.Pref@ Prefixes ;                `
 
 * `LEXICON FirstClosedClass     ` a simplex word or the first part of a compound 
 * `  @P.POS.Pron@ Pronouns ;                `
 
-* `LEXICON FirstAcro  ` a word-like string that may (or must) be the first part of a compound
-* `  @P.POS.ACR@ Acronyms ;          `
+* `LEXICON FirstWordLike                      ` a word-like string that may (or must) be the first part of a compound
+* `  @P.POS.Interj@ Interjections ;           `
+* `  @P.POS.ACR@ Acronyms ;                   `
 * `  @P.POS.ACRMinus@@P.NeedPart.Two@ Acrominus ;          `
 
 * `LEXICON Latter ` the latter part of a compound
