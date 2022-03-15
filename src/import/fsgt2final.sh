@@ -106,9 +106,13 @@ cat  adjectives.proto \
 | sed '/@R.Part.One@/s/@D.Stem.Guessed@//g' \
 > adjectives.protolexc
 
-echo '\nLEXICON NoninflectingAdjectives\n' \
+echo '\nLEXICON NoninflectingAdjectiveVa\n' \
 > noninflecting_adjectives.protolexc
-cat fs_gt.noninfl.tmp1 | grep '+A:' > noninflecting_adjectives.tmp1
+cat fs_gt.noninfl.tmp1 | grep '^va+A:' >> noninflecting_adjectives.protolexc
+
+echo '\nLEXICON NoninflectingAdjectives\n' \
+>> noninflecting_adjectives.protolexc
+cat fs_gt.noninfl.tmp1 | grep '+A:' | grep -v '^va+A:' > noninflecting_adjectives.tmp1
 
 # mark good words for compounding 
 # by falsely giving them the tag of a shortened form (like vaatamis-),
@@ -203,7 +207,8 @@ cat tmpadv.2 | grep -v '\(^alasti+\)\|\(^alles+\)\|\(^edasi+\)\|\(^eemale+\)\|\(
 
 #>> adverbs.protolexc
 
-echo 'LEXICON Adverbs\n\n CompoundingAdverbs ;\n @P.Part.Bad@ PlainAdverbs ;\n\n' > adverbs.protolexc
+#echo 'LEXICON Adverbs\n\n CompoundingAdverbs ;\n @P.Part.Bad@ PlainAdverbs ;\n\n' > adverbs.protolexc
+echo '!LEXICON Adverbs would be too unspecific; instead we have\n! CompoundingAdverbs and NonCompoundingAdverbs ;\n\n' > adverbs.protolexc
 
 echo 'LEXICON CompoundingAdverbs\n' >> adverbs.protolexc
 cat tmpadv.0 \
@@ -217,7 +222,7 @@ cat tmpadv.1 \
 | sort -u \
 >> adverbs.protolexc
 
-echo '\nLEXICON PlainAdverbs\n' >> adverbs.protolexc
+echo '\nLEXICON NonCompoundingAdverbs\n' >> adverbs.protolexc
 
 cat tmpadv.3 | sort -u >> adverbs.protolexc
 #cat adverbs.tmp2 | sort -u >> adverbs.protolexc

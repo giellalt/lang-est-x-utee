@@ -65,10 +65,10 @@ DerKe = [Letter* Pair k e] ;
 ! [LongV | [Vowel Csonor]]kpt -> gbd, kpt[Csonor] -> gbd, [Vowel]topeltkpt -> kpt, [LongV | [Vowel Csonor]]ss -> s
 ! tundub, et need samad sisehäälikud sobivad selleks, et defineerida II välte sisehäälikuid
 ! (v.a. [LongV | [Vowel Csonor]]ss)
-! JVow on sõnades nagu siesta, fiasko
+! JVow [i Vowel] on sõnades nagu siesta, fiasko
 SiseLeppima = [[LongV [Consonant | [s s] | [Cplosive Csibilant] | [Csibilant Cplosive] ]] | 
                     [Vowel Csonor    [ [s s] | [Cplosive Csibilant] | [Csibilant Cplosive]]] | 
-                    [[Vowel | JVow] [[Consonant Consonant] & ~[Cgbd Csonor] & ~[j Consonant] & ~[\h h] | [h v Ckpt]]]  
+                    [[Vowel | [i Vowel]] [[Consonant Consonant] & ~[Cgbd Csonor] & ~[j Consonant] & ~[\h h] | [h v Ckpt]]]  
                    ] ;
 
 SiseLeppuma = [Vowel Clmnr Ckpt] | 
@@ -77,9 +77,9 @@ SiseLeppuma = [Vowel Clmnr Ckpt] |
 
 ! veel II välte sisehäälikuid
 ! vedru
-SiseIIGL = [[Vowel | JVow] Cgbd Csonor] ;
+SiseIIGL = [[Vowel | [i Vowel]] Cgbd Csonor] ;
 ! piko, siena
-SiseIIK = [Vowel [Ckpt | f | š | z | ž]] | [JVow Consonant];
+SiseIIK = [Vowel [Ckpt | f | š | z | ž]] | [[i Vowel] Consonant];
 
 ! II välde
 SiseII = [SiseLeppima & ~[[LongV | [Vowel Csonor]] s s]] | SiseIIK | SiseIIGL;
@@ -89,7 +89,7 @@ SiseI = [Vowel ShortCons] ;
 
 ! Ainult III välde, s.t. pole võimalik hääldada nagu oleks II välde
 ! jäta wyq välja
-SiseIIIAinult = [[Vowel | LongV | JVow] Consonant+] & ~[SiseI] & ~[SiseII] & ~$[w|y|q];
+SiseIIIAinult = [[Vowel | LongV | [i Vowel]] Consonant+] & ~[SiseI] & ~[SiseII] & ~$[w|y|q];
 
 
 
@@ -99,7 +99,7 @@ SiseIIIAinult = [[Vowel | LongV | JVow] Consonant+] & ~[SiseI] & ~[SiseII] & ~$[
 ! prefix Proto denotes ordinary words, Nimi denotes names
 
 ! video, rodeo, stereo also like ARMEE
-ProtoARMEE = [FirstSyll & [Letter* Vowel]] | [Consonant* [JVow | UVow]];
+ProtoARMEE = [FirstSyll & [Letter* Vowel]] | [Consonant* [[i Vowel] | UVow]];
 
 NimiARMEE = [Letter* [Vowel]] ;
 
@@ -141,14 +141,14 @@ BadGradePere = [[Letter* LongV Consonant Consonant Consonant+ Vowel] |
 
 GradePERE = [Foot & [[Letter* Vowel+ Consonant+ Vowel] & ~BadGradePere ]] ;
 
-SyllPERE = [[Letter* Vowel] & ~ProtoARMEE & ~AASTA] | [Consonant* JVow];
+SyllPERE = [[Letter* Vowel] & ~ProtoARMEE & ~AASTA] | [Consonant* [i Vowel]];
 
 VoorPERE = [Letter* Letter Consonant Vowel Vowel [k|n] e] ; ! karaoke, lantsaroone
 
 ProtoPERE = [[SyllPERE | [SyllAASTA & ~EndAASTA]] & ~DerJa  & ~DerTu & ~DerKe & ~DerNe] | [GradePERE & ~DerNe] | VoorPERE ;
 ! eefeu, panatsea jms kuuluvad ka PERE alla, ehkki tegelt samad vormid saaks ARMEE + AASTA kaudu...
 
-LihtPERE = [Foot & [Letter* Vowel+ Consonant+ Vowel]] | [Consonant* JVow] ;
+LihtPERE = [Foot & [Letter* Vowel+ Consonant+ Vowel]] | [Consonant* [i Vowel]] ;
 
 ! almost anything is possible... e.g. Sydney, Maria, Tanganjika
 NimiPERE =  [Letter* Letter Vowel] & ~[FirstSyll & [Letter* Vowel]];
@@ -162,7 +162,7 @@ DerMine = [m i n e];
 DerLiLaMiNe = DerLine | DerLane | DerMine;
 
 AnyOLULINE = [Letter* Vowel Consonant+ [a|e|i|u] n e] | [[Foot & [Letter* Vowel]] n e] ;  ! ka laiune
-AnyOLULIS =  [Letter* Vowel Consonant+ VowNoDots s] | [[Foot & [Letter* [i|u]]] s] | [[Foot & [Letter* [Vowel - u]]] u s] | [[Letter* Pair Vowel s] & [Letter* [JVow | EVow | UVow] s]];  ! ka laius, avaus; 
+AnyOLULIS =  [Letter* Vowel Consonant+ VowNoDots s] | [[Foot & [Letter* [i|u]]] s] | [[Foot & [Letter* [Vowel - u]]] u s] | [[Letter* Pair Vowel s] & [Letter* [[i Vowel] | [e Vowel] | [u Vowel]] s]];  ! ka laius, avaus; 
 
 ! these patterns can never occur for OLULINE
 SyllSOOLANE = [Consonant* [ShortCSyll & [Vowel Consonant+]] VowNoDots n e] ;                 ! tinane, rublane, mitte kiuline
@@ -194,8 +194,8 @@ ProtoSOOLANE = [Letter* Letter Letter Letter n e] ; ! ei tunne: upne, öine;
 
 NimiSOOLANE = [ProtoSOOLANE] ;
 
-SyllMUUSEUM = [Letter* Vowel [Vowel | Consonant+] Consonant [JVow | EVow] Clmnr] |
-                   [Letter* Vowel Cfš [JVow | EVow] Clmnr];        ! kahtlane: liineal (aga ok: ookean)
+SyllMUUSEUM = [Letter* Vowel [Vowel | Consonant+] Consonant [[i Vowel] | EVow] Clmnr] |
+                   [Letter* Vowel Cfš [[i Vowel] | EVow] Clmnr];        ! kahtlane: liineal (aga ok: ookean)
 ProtoMUUSEUM = SyllMUUSEUM ;
 
 NimiMUUSEUM = [ProtoMUUSEUM] ;
@@ -259,7 +259,7 @@ ProtoLOHAKAS = [[Letter* Letter Vowel k a s] | [Letter* Letter Letter j a s]] & 
 ! polegi vaja 
 !NimiLOHAKAS = [ProtoLOHAKAS] ;
 
-SyllREDEL = [Letter* Consonant] & [[Letter* Foot] | [Consonant* JVow Consonant+]] & ~BadEndKABINET & ~[Letter* Consonant Vowel s] & ~ProtoMUUSEUM ;
+SyllREDEL = [Letter* Consonant] & [[Letter* Foot] | [Consonant* [i Vowel] Consonant+]] & ~BadEndKABINET & ~[Letter* Consonant Vowel s] & ~ProtoMUUSEUM ;
 
 EndREDEL =  [Letter* Vowel Consonant Consonant+ e [l|r]] | [Letter* Vowel Consonant* Cnonsonor [l|r]];  ! minister, Dnestr, Panagl
 AlsoREDEL = [Consonant* Vowel+ [[[Consonant - l] l] | [[Consonant - r] r]]] |
@@ -269,7 +269,7 @@ ProtoREDEL = [SyllREDEL | EndREDEL | AlsoREDEL] ;
 
 NimiREDEL = [ProtoREDEL] | [Letter* Vowel [Vowel | Clmnr] s k];  ! ka Tomsk, Baltiisk; ei tunne Stuart ega Sinead
 
-SyllTAUD = [Letter* Consonant] & ~[Letter* Vowel Consonant+ Vowel s] & ~[Letter* Vowel Consonant+ JVow s] & ~[Letter* Consonant Vowel Ckpt] &
+SyllTAUD = [Letter* Consonant] & ~[Letter* Vowel Consonant+ Vowel s] & ~[Letter* Vowel Consonant+ [i Vowel] s] & ~[Letter* Consonant Vowel Ckpt] &
                 ~[Letter* LongV Consonant+ Vowel ShortCons]  & ~ProtoMUUSEUM & ~[Letter* k o n d];
 AlsoTAUD = [Consonant* Vowel+ Consonant Vowel [[l l] | [s s]] Vowel Clmnr] ;  ! emissar, patisson, leveller
 
