@@ -15,7 +15,8 @@ GT_ORTHOGRAPHIC_REGEX_SRCS=\
 GT_ORTHOGRAPHIC_XFSCRIPT_SRCS=\
 		allcaps.xfscript      \
 		downcase-derived_proper-strings.xfscript \
-		spellrelax-with-tags.xfscript 
+		spellrelax-with-tags.xfscript \
+		punctrelax.xfscript
 
 # Add extra targets here:
 GIELLA_ORTH_EXTRA_TARGETS=

@@ -24,7 +24,7 @@ define Letters [Letter+] ;
 define UnknownName [Upper Lower+] ;
 define Punctuation [Bracket | Punct]+ ;
 
-define UnknownString [Letter | Punctuation | Bracket | Digit | Unknown]+ ;
+define UnknownString [[Letter | Punctuation | Bracket | Digit | Unknown]+ & ~[UnknownName]];
 
 substitute defined Unknowns for ^Unknowns
 substitute defined Letters for ^Letters

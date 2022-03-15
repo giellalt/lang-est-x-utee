@@ -1,4 +1,8 @@
 
+LEXICON NoninflectingAdjectiveVa
+
+va+A:va #  "weight: 8 " ; 
+
 LEXICON NoninflectingAdjectives
 
 aadamaülikonnas+A:˘aadama%#ˈülikonnas GI  "weight: 11 " ; 
@@ -702,7 +706,6 @@ unustuses+A:unustuses GI  "weight: 11 " ;
 @P.Case.Ine@uppis+A:@P.Case.Ine@˘uppis GI  "weight: 11 " ; 
 @P.Case.Ine@urvakil+A:@P.Case.Ine@urvakil GI  "weight: 11 " ; 
 @P.Case.Ine@uurakil+A:@P.Case.Ine@uurakil GI  "weight: 11 " ; 
-va+A:va #  "weight: 8 " ; 
 vaesevõitu+A:v˘aese%#v˘õitu GI  "weight: 11 " ; 
 vahakarva+A:vaha%#k˘arva GI  "weight: 11 " ; 
 vahelduseta+A:vahelduseta GI  "weight: 11 " ; 

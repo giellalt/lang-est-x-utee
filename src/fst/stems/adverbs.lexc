@@ -1,7 +1,5 @@
-LEXICON Adverbs
-
- CompoundingAdverbs ;
- @P.Part.Bad@ PlainAdverbs ;
+!LEXICON Adverbs would be too unspecific; instead we have
+! CompoundingAdverbs and NonCompoundingAdverbs ;
 
 
 LEXICON CompoundingAdverbs
@@ -754,7 +752,7 @@ väärt+Adv:v˘äärt GI  "weight: 7 " ;
 ülle+Adv:˘ülle GI  "weight: 10 " ; 
 ümber+Adv:˘ümber GI  "weight: 5 " ; 
 
-LEXICON PlainAdverbs
+LEXICON NonCompoundingAdverbs
 
 aasta-aastalt+Adv:˘aasta-˘aastalt GI  "weight: 9 " ; 
 aastaringselt+Adv:˘aasta%#r˘ingselt GI  "weight: 10 " ; 

@@ -15,6 +15,7 @@ cat fs_suf \
 > suf.tmp1
 
 grep ':' ../fst/stems/*.lexc \
+| grep -v '<.*>' \
 | grep -v '\/pref' \
 | grep -v '\/final' \
 | sed 's/^[^:]*://' \
