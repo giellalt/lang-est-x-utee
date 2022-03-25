@@ -330,32 +330,33 @@ LEXICON GuessSimplexWord
 
  < [Consonant* ] > ScanWord ;  ! siin saaks paika sättida suurtähelisuse ???
 
+! weights: every letter = +10
 LEXICON ScanWord
 
 ! "silp-silbi" haaval vaata edasi
 ! < [Vowel] >            Vowel ; ! polegi võimalik??? 
 
 ! Vowel Vowel Vowel+ possible variants :
-! < [[[DoubleVow Vowel] & ~[Vowel DoubleVow]] Consonant] >        LongVVowelCons ;   ! (1)
- < [[[Vowel DoubleVow] & ~[DoubleVow Vowel]] Consonant] >        LongVCons ;
- < [[[Vowel DoubleVow] & ~[DoubleVow Vowel]] Consonant Consonant+] >        LongVConsPlus ;
-! < [[[LongV Vowel] & ~[Vowel DoubleVow] & ~[DoubleVow Vowel]] Consonant] >        LongVVowelCons ; ! (2) võib-olla (1) on mittevajalik?
- < [[[LongV Vowel] & ~[Vowel DoubleVow] ] Consonant] >        LongVVowelCons ; ! (2) 
- < [[[LongV Vowel] & ~[Vowel DoubleVow] ] Consonant Consonant+] >        LongVVowelConsPlus ; ! (2) 
- < [[[Vowel Vowel Vowel+] & ~[LongV Vowel] & ~[Vowel DoubleVow]] Consonant+] > LongVConsPlus ; ! elsewhere condition...
+! < [[[DoubleVow Vowel] & ~[Vowel DoubleVow]] Consonant] >        LongVVowelCons "weight: 40" ;   ! (1)
+ < [[[Vowel DoubleVow] & ~[DoubleVow Vowel]] Consonant] >        LongVCons "weight: 30" ;
+ < [[[Vowel DoubleVow] & ~[DoubleVow Vowel]] Consonant Consonant+] >        LongVConsPlus "weight: 50" ;
+! < [[[LongV Vowel] & ~[Vowel DoubleVow] & ~[DoubleVow Vowel]] Consonant] >        LongVVowelCons "weight: 40" ; ! (2) võib-olla (1) on mittevajalik?
+ < [[[LongV Vowel] & ~[Vowel DoubleVow] ] Consonant] >        LongVVowelCons "weight: 40" ; ! (2) 
+ < [[[LongV Vowel] & ~[Vowel DoubleVow] ] Consonant Consonant+] >        LongVVowelConsPlus "weight: 50" ; ! (2) 
+ < [[[Vowel Vowel Vowel+] & ~[LongV Vowel] & ~[Vowel DoubleVow]] Consonant+] > LongVConsPlus "weight: 40" ; ! elsewhere condition...
 
 ! Vowel Vowel possible variants 
- < [LongV Consonant] >        LongVCons ;
- < [LongV Consonant Consonant+] >        LongVConsPlus ;
+ < [LongV Consonant] >        LongVCons "weight: 30" ;
+ < [LongV Consonant Consonant+] >        LongVConsPlus "weight: 40" ;
 ! pole diftong, s.t. siin on kindlasti 2 silbi vahel piir
- < [[[Vowel Vowel] & ~LongV] Consonant] >     VowelVowelCons ;
- < [[[Vowel Vowel] & ~LongV] Consonant Consonant+] >     VowelVowelConsPlus ;
+ < [[[Vowel Vowel] & ~LongV] Consonant] >     VowelVowelCons "weight: 30" ;
+ < [[[Vowel Vowel] & ~LongV] Consonant Consonant+] >     VowelVowelConsPlus "weight: 40" ;
 
 ! Vowel possible variants
- < [Vowel Consonant] >  VowelConsonant ;
- < [Vowel DoubleCons] >  VowelDoubleCons ;
- < [Vowel TwoCons] >  VowelTwoCons ;
- < [Vowel ManyCons] >  VowelManyCons ;
+ < [Vowel Consonant] >  VowelConsonant "weight: 20" ;
+ < [Vowel DoubleCons] >  VowelDoubleCons "weight: 30" ;
+ < [Vowel TwoCons] >  VowelTwoCons "weight: 30" ;
+ < [Vowel ManyCons] >  VowelManyCons "weight: 40" ;
 
  FinalSyllables ;   ! final 1 or 2 syllables; here the inflectional type gets finally defined
 
@@ -404,39 +405,40 @@ LEXICON FinalSyllables
 
 ! --- sõna lõpp, s.t. 1 või 2 viimast silpi
 ! varasem rõhumuster ei loe
- < [[Vowel DoubleVow] & ~[DoubleVow Vowel]] >        GuessARMEE ;
- < [[LongV Vowel]     & ~[Vowel DoubleVow]] >        GuessPERE ; ! Luua, Saue
+ < [[Vowel DoubleVow] & ~[DoubleVow Vowel]] >        GuessARMEE "weight: 30" ;
+ < [[LongV Vowel]     & ~[Vowel DoubleVow]] >        GuessPERE "weight: 30" ; ! Luua, Saue
 ! < [[Vowel Vowel Vowel+] & ~[LongV Vowel] & ~[Vowel DoubleVow]] > GuessSound ; ! mingi häälitsus?
 
 !----------
 ! Vowel Vowel Vowel+ possible variants :
- < [[[Vowel DoubleVow] & ~[DoubleVow Vowel]] Consonant+] >        GuessTAUD ;
- < [[[LongV Vowel] & ~[Vowel DoubleVow] ] s] >        GuessSUULINE ;  
- < [[[LongV Vowel] & ~[Vowel DoubleVow] ] [Consonant - s]] >        GuessREDEL ; ! (?) vaja kontrollida! 
- < [[[LongV Vowel] & ~[Vowel DoubleVow] ] DoubleCons] >        GuessTAUD ;  
- < [[[[LongV Vowel] & ~[Vowel DoubleVow] ] TwoCons] &  [?* i n g]] >        GuessVIRSIK ; !  
- < [[[[LongV Vowel] & ~[Vowel DoubleVow] ] TwoCons] & ~[?* i n g]] >        GuessREDEL ; ! (?) vaja kontrollida! 
- < [[[LongV Vowel] & ~[Vowel DoubleVow] ] ManyCons] >        GuessTAUD ;  
- < [[[Vowel Vowel Vowel+] & ~[?* LongV Vowel] & ~[?* Vowel DoubleVow]] Consonant+] > GuessTAUD ; ! elsewhere condition... (?) vaja kontrollida!
+ < [[[Vowel DoubleVow] & ~[DoubleVow Vowel]] Consonant+] >        GuessTAUD "weight: 40" ;
+ < [[[LongV Vowel] & ~[Vowel DoubleVow] ] s] >        GuessSUULINE "weight: 40" ;  
+ < [[[LongV Vowel] & ~[Vowel DoubleVow] ] [Consonant - s]] >        GuessREDEL "weight: 40" ; ! (?) vaja kontrollida! 
+ < [[[LongV Vowel] & ~[Vowel DoubleVow] ] DoubleCons] >        GuessTAUD "weight: 50" ;  
+ < [[[[LongV Vowel] & ~[Vowel DoubleVow] ] TwoCons] &  [?* i n g]] >        GuessVIRSIK "weight: 50" ; !  
+ < [[[[LongV Vowel] & ~[Vowel DoubleVow] ] TwoCons] & ~[?* i n g]] >        GuessREDEL "weight: 50" ; ! (?) vaja kontrollida! 
+ < [[[LongV Vowel] & ~[Vowel DoubleVow] ] ManyCons] >        GuessTAUD "weight: 60" ;  
+ < [[[Vowel Vowel Vowel+] & ~[?* LongV Vowel] & ~[?* Vowel DoubleVow]] Consonant+] > GuessTAUD "weight: 40" ; ! elsewhere condition... (?) vaja kontrollida!
 
 ! ?? puudu lõpus ak VIRSIK ?
 
 !-------------
 ! StrictLongV = [LongV - SemiDiphtong]
 
- < [StrictLongV] >                  GuessARMEE ;
- < [[StrictLongV Consonant] &  [e u m]] >              EndEUM ;  ! possibly muuseum ?
- < [[StrictLongV Consonant] &  [Diphtong s]] >         EndEUS ;  ! possibly odüsseus ?
- < [[StrictLongV Consonant] & ~[Diphtong s] & ~[e u m]] >     GuessTAUD ;  ! not odüsseus 
- < [LongV Consonant Consonant+] >    GuessTAUD ;    
+ < [StrictLongV] >                  GuessARMEE "weight: 20" ;
+ < [[StrictLongV Consonant] &  [e u m]] >              EndEUM "weight: 30" ;  ! possibly muuseum ?
+ < [[StrictLongV Consonant] &  [Diphtong s]] >         EndEUS "weight: 30" ;  ! possibly odüsseus ?
+ < [[StrictLongV Consonant] & ~[Diphtong s] & ~[e u m]] >     GuessTAUD "weight: 30" ;  ! not odüsseus 
+ < [LongV Consonant Consonant+] & ~$[DoubleCkpt] >    GuessTAUD "weight: 40" ;    ! aakk is not good
  
- < [SemiDiphtong] >   EndIA ;
- < [SemiDiphtong s] >   EndIAS ;
- < [SemiDiphtong Clmnr] >   EndIAL ;  ! = EndEUM...
- < [SemiDiphtong Ckpt] >   EndIAK ;  ! KABINET? FIAT?
- < [SemiDiphtong [Consonant & ~s & ~Clmnr & ~Ckpt]] >   EndIACons ;  ! jms
+ < [SemiDiphtong] >   EndIA "weight: 20" ;
+ < [SemiDiphtong s] >   EndIAS "weight: 30" ;
+ < [SemiDiphtong Clmnr] >   EndIAL "weight: 30" ;  ! = EndEUM...
+ < [SemiDiphtong Ckpt] >   EndIAK "weight: 30" ;  ! KABINET? FIAT?
+ < [SemiDiphtong [Consonant & ~s & ~Clmnr & ~Ckpt]] >   EndIACons "weight: 30" ;  ! jms
 ! [SemiDiphtong Consonant Consonant+] are covered by [LongV Consonant Consonant+]
- 
+
+
 !?? Vowel j a > LOHAKAS
 !?? Vowel k a > LOHAKAS
 !?? Vowel t u > TUNTUD
@@ -446,42 +448,44 @@ LEXICON FinalSyllables
 !?? us
 !?? Vowel ke
 
+
 !Cplosive = [Ckpt | Cgbd] ;
 !Cspirant = [f | h | [h v]];
 !Csibilant = [s|š|z|ž];
 !Csonor = [ Clmnr | j | v] ;                       ! excluding foreign letters y w
 
 
- < [[[Vowel Clmnr] | [LongV]] [d:T2 | g:K2 | b:P2] e] >                IsPINGE ;
- < [Vowel [[t 0:T1] | [k 0:K1] | [p 0:P1]] e] >                       IsPINGE ;
- < [LongV Csonor e] >                IsPINGE ;
- < [Vowel [TwoCons & ~[Clmnr Cgbd]] e] >                       IsPINGE ;
- < [LongV [[s Ckpt] | [Ckpt s]] e] >                       IsPINGE ;
+ < [[[Vowel Clmnr] | [LongV]] [d:T2 | g:K2 | b:P2] e] >   IsPINGE "weight: 40" ;
+ < [Vowel [[t 0:T1] | [k 0:K1] | [p 0:P1]] e] >          IsPINGE "weight: 30" ;
+ < [LongV Csonor e] >                   IsPINGE "weight: 40";
+ < [Vowel [TwoCons & ~[Clmnr Cgbd]] e] >              IsPINGE "weight: 40" ;
+ < [LongV [[s Ckpt] | [Ckpt s]] e] >                IsPINGE "weight: 50" ; 
 
- < [Vowel] >                       EndA ;
- < [Vowel ShortCons [Vowel - e]] > IsKAVA ;
- < [i k] > Endik ;                               ! ik iku ikku; ik iku ikut
- < [e l] > Endel ;
- < [e r] > Ender ;
- < [Vowel DoubleCons] > GuessTAUD ;
- < [i n g] > Ending;                              ! ing ingi ingi; ing ingu ingut
- < [[Vowel TwoCons] & ~[i n g]] > EndTwoCons ;
- < [Vowel ManyCons] > GuessTAUD ;
+ < [Vowel] >                       EndA "weight: 10" ;
+ < [Vowel ShortCons [Vowel - e]] > IsKAVA "weight: 20" ;
+ < [i k] > Endik "weight: 20" ;                               ! ik iku ikku; ik iku ikut
+ < [e l] > Endel  "weight: 20" ;
+ < [e r] > Ender  "weight: 20" ;
+ < [Vowel DoubleCons] > GuessTAUD  "weight: 30" ;
+ < [i n g] > Ending  "weight: 30" ;                              ! ing ingi ingi; ing ingu ingut
+ < [[Vowel TwoCons] & ~[i n g]] > EndTwoCons  "weight: 30" ;
+ < [Vowel ManyCons] & ~$[DoubleCkpt] > GuessTAUD  "weight: 40" ;
  
 
- < [Vowel Ckpt] >                  EndAK ;
- < [[Vowel Consonant] & ~[i k] & ~[e l] & ~[e r] & ~[Vowel Ckpt]] >                 EndAL ; ! Elsewhere
+ < [Vowel Ckpt] >                  EndAK  "weight: 20" ;
+ < [[Vowel Consonant] & ~[i k] & ~[e l] & ~[e r] & ~[Vowel Ckpt]] >  EndAL  "weight: 20" ; ! Elsewhere
 
 
 ! verbs
- < [Vowel Consonant+ e l e ] > IsRABELEMA ;
- < [[Vowel | LongV] Consonant+ l e] > IsHAKLEMA; 
- < [SiseLeppima a] > IsHAKKAMA; 
- < [SiseLeppima i] > IsLEPPIMA; 
- < [SiseLeppuma u] > IsLEPPUMA; 
+! weight = +20 to push them lower
+ < [Vowel Consonant+ e l e ] > IsRABELEMA  "weight: 70" ;
+ < [[Vowel | LongV] Consonant+ l e] > IsHAKLEMA "weight: 70" ; 
+ < [SiseLeppima a] > IsHAKKAMA "weight: 70" ; 
+ < [SiseLeppima i] > IsLEPPIMA "weight: 70" ; 
+ < [SiseLeppuma u] > IsLEPPUMA "weight: 70" ; 
 ! need elama sõnad on ilmselt liiga lubavad...
- < [[Vowel+ Consonant+ Vowel] & ~[[Vowel | LongV] Consonant+ l e] & ~[SiseLeppima i]] > IsELAMA; ! tal on mitme tüübiga paralleele 
- < [Vowel+ Consonant+ Vowel] > EndELAMA; ! follows a stressed syllable; (compare with IsELAMA) 
+ < [[Vowel+ Consonant+ Vowel] & ~[[Vowel | LongV] Consonant+ l e] & ~[SiseLeppima i]] > IsELAMA "weight: 70" ; ! tal on mitme tüübiga paralleele 
+ < [Vowel+ Consonant+ Vowel] > EndELAMA "weight: 70" ; ! follows a stressed syllable; (compare with IsELAMA) 
 
 
 LEXICON EndEUM

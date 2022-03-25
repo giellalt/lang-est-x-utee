@@ -557,7 +557,7 @@ generator-raw-gt-desc.simple.hfst: generator-raw-gt-desc.simple.weightless.hfst
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Emph' -a 0 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Pref' -a 0 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Dim/ke' -a 10 -A \
-	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+ABBR' -a 0 -A \
+	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+ABBR' -a 5 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+ACR' -a 5 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Usage/Rare' -a 30 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Usage/Hyp' -a 30 -A \
@@ -746,7 +746,7 @@ guesser-raw.weighted.hfst: guesser-raw.simple.hfst
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Emph' -a 0 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Pref' -a 0 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Dim/ke' -a 10 -A \
-	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+ABBR' -a 0 -A \
+	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+ABBR' -a 5 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+ACR' -a 5 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Usage/Rare' -a 30 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Usage/Hyp' -a 30 -A \
@@ -829,6 +829,7 @@ analyser-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%                \
 			; \n\
 			define fst \n\
 			set flag-is-epsilon ON\n\
+			set encode-weights ON\n\
 			read regex fst \
 			.o. @\"orthography/inituppercase.compose.$*\"       \
 			.o. @\"orthography/allcaps.compose.$*\"       \
@@ -893,6 +894,7 @@ generator-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%            \
 			.o. @\"filters/remove-infl_deriv-borders.$*\"       \
 			.o. @\"filters/remove-word-boundary.$*\"            \
 			;\n\
+			set encode-weights ON\n\
 			source fst/substitute_blockcap.xfscript\n\
 			source fst/substitutions.xfscript\n\
 		 save stack $@\n\
@@ -924,7 +926,8 @@ generator-gt-desc.tmp.hfst: generator-gt-desc.dot.tmp.hfst \
 # 
 analyser-gt-descguess.hfst: analyser-gt-desc.dot.tmp.hfst \
 				orthography/punctrelax.compose.hfst
-	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+	$(AM_V_XFST_TOOL)$(PRINTF) "set encode-weights ON\n\
+				read regex \
 				@\"$<\" \
 				.o. @\"orthography/punctrelax.compose.hfst\" \
 			;\n\
@@ -934,7 +937,8 @@ analyser-gt-descguess.hfst: analyser-gt-desc.dot.tmp.hfst \
 
 # ... and generators:
 generator-gt-descguess.hfst: generator-gt-desc.dot.tmp.hfst 
-	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+	$(AM_V_XFST_TOOL)$(PRINTF) "set encode-weights ON\n\
+				read regex \
 				@\"$<\" \
 			;\n\
 		 $(INVERT_XFST)$(INVERT_FOMA)\
@@ -1014,7 +1018,8 @@ analyser-raw-gt-desc.xfst: analyser-raw-gt-desc.vocabulary.xfst
 # katsetus
 generator-gt-guess.hfst: generator-gt-descguess.hfst \
 			 generator-raw-gt-guess.hfst
-	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+	$(AM_V_XFST_TOOL)$(PRINTF) "set encode-weights ON\n\
+			read regex \
 			[[ @\"$<\"] | @\"generator-raw-gt-guess.hfst\"] \
 			; \n\
 		 	save stack $@\n\
@@ -1022,7 +1027,8 @@ generator-gt-guess.hfst: generator-gt-descguess.hfst \
 
 analyser-gt-guess.hfst: analyser-gt-descguess.hfst \
 			analyser-raw-gt-guess.hfst
-	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+	$(AM_V_XFST_TOOL)$(PRINTF) "set encode-weights ON\n\
+			read regex \
 			[[ @\"$<\" ] | @\"analyser-raw-gt-guess.hfst\"] \
 			; \n\
 		 	save stack $@\n\

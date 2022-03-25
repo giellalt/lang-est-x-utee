@@ -10,10 +10,10 @@ A B C D E F G H I J K L M N O P Q R S Š Z Ž T U V W Õ Ä Ö Ü X Y
 !! Placeholders
 ! they are substituted by symbol sequences sometime later in the FST-building process
 
- %^Unknowns
  %^Letters
  %^Punctuation
  %^UnknownName
+ %^UnknownWordLike   
  %^UnknownString
  %^BlockCap
  

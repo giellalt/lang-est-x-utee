@@ -118,6 +118,8 @@ cat fs_gt.noninfl.tmp1 | grep '+A:' | grep -v '^va+A:' > noninflecting_adjective
 # by falsely giving them the tag of a shortened form (like vaatamis-),
 # or correctly giving them the tag of inessive case (like punnis, upakil),
 # although these are uninflected words...
+# also,
+# mark bad words for guesser compunding: they are too short and mix easily with inflectional endings
 cat noninflecting_adjectives.tmp1 \
 | sed '/^ekstra+/s/^\([^:]*+A\):\([^;]*;\)\(.*\)/@P.Case.Short@\1:@P.Case.Short@\2\3/' \
 | sed '/^eri+/s/^\([^:]*+A\):\([^;]*;\)\(.*\)/@P.Case.Short@\1:@P.Case.Short@\2\3/' \
@@ -129,6 +131,11 @@ cat noninflecting_adjectives.tmp1 \
 | sed '/^väärt+/s/^\([^:]*+A\):\([^;]*;\)\(.*\)/@P.Case.Short@\1:@P.Case.Short@\2\3/' \
 | sed '/^[^aeiouõäöü]*[aeiouõäöü][aeiouõäöü]*[^aeiouõäöü][^aeiouõäöü]*[aeiu]s+/s/^\([^:]*+A\):\([^;]*;\)\(.*\)/@P.Case.Ine@\1:@P.Case.Ine@\2\3/' \
 | sed '/il+/s/^\([^:]*+A\):\([^;]*;\)\(.*\)/@P.Case.Ine@\1:@P.Case.Ine@\2\3/' \
+\
+| sed '/@...+/s/^\(@.\.[^@]*@[^:@]*+A\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
+| sed '/^...+/s/^\([^:]*+A\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
+| sed '/@....+/s/^\(@.\.[^@]*@[^:@]*+A\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
+| sed '/^....+/s/^\([^:]*+A\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
 > noninflecting_adjectives.tmp2
 
 cat noninflecting_adjectives.tmp2 >> noninflecting_adjectives.protolexc
@@ -214,12 +221,22 @@ echo 'LEXICON CompoundingAdverbs\n' >> adverbs.protolexc
 cat tmpadv.0 \
 | sed '/^üle+/!s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.topelt@\1:@P.Stem.topelt@\2\3/' \
 | sed '/^üle+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.üle@\1:@P.Stem.üle@\2\3/' \
+\
+| sed '/@...+/s/^\(@.\.[^@]*@[^:@]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
+| sed '/^...+/s/^\([^:]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
+| sed '/@....+/s/^\(@.\.[^@]*@[^:@]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
+| sed '/^....+/s/^\([^:]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
 >> adverbs.protolexc
 
 cat tmpadv.1 \
 | sed '/^vähe+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.vähe@\1:@P.Stem.vähe@\2\3/' \
 | sed '/^puht+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.vähe@\1:@P.Stem.vähe@\2\3/' \
 | sort -u \
+\
+| sed '/@...+/s/^\(@.\.[^@]*@[^:@]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
+| sed '/^...+/s/^\([^:]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
+| sed '/@....+/s/^\(@.\.[^@]*@[^:@]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
+| sed '/^....+/s/^\([^:]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
 >> adverbs.protolexc
 
 echo '\nLEXICON NonCompoundingAdverbs\n' >> adverbs.protolexc

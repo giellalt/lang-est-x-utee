@@ -791,10 +791,10 @@ Multichar_Symbols
 
 ! Placeholders for later 'substitute defined'
 
-^Unknowns  ! smth like [? ?+ "+Guess":-]
-^Letters   ! smth like [Letter Letter+ ("-") "+Guess":0]
+^Letters
 ^Punctuation
 ^UnknownName
+^UnknownWordLike   
 ^UnknownString
 ^BlockCap  ! ad hoc for blocking inflectional ending capitalisation for acronyms
 
@@ -992,10 +992,11 @@ LEXICON Root !!= * `@CODE@` is the starting point of everything
 ! --- Guesser: blablaword, i.e. final part is a word
 
 LEXICON GuessSmthWord 
-  ^Unknowns  HyphenWord ;                   ! 杨蔓-word
-  ^Letters   HyphenWord ;                    ! woddr-word
-  ^Letters^Letters^Letters   NoHyphenWord ;
-  ^Letters^Punctuation   DotWord ;
+  ^UnknownString  HyphenWord ;                   ! 杨蔓-word
+  ^UnknownName    HyphenWord ;                    ! woddr-word
+  ^UnknownWordLike   NoHyphenWord ;      ! woddrword ; every letter is weighted anyway, so -100 to position this before a guessed whole-word  
+  ^UnknownString^Punctuation   DotWord ;
+  ^UnknownName^Punctuation     DotWord ;
 
 ! add more placeholders here (like numbers, symbols, ...) 
 
@@ -1013,7 +1014,7 @@ LEXICON DotWord                    ! word.Word
    +Guess+PUNCT# : %# FirstForGuess ;
 
 LEXICON OpenClassForGuess       ! only the final component of a very permissible compound; open-class words only
-  @P.Part.Bad@  FirstOpenClass ;
+  @P.Part.Bad@@P.Stem.Guessed@  FirstOpenClass ;   ! ... but restricted because of guessing
 
 LEXICON SingleForGuess            ! pretend it is a normal word that does not participate in compounds (following blabla.)
   @P.Part.Bad@  SingleWords ;
