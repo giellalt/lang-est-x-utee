@@ -184,7 +184,7 @@ stressing affix gi/ki can be appended to almost any word form
 liide gi/ki
 this ensures that downcasing derivation (helveetslane) works
 
-*hfstol: examples:*
+* hfstol: examples:*
 * *siilgi:* `siil+N+Sg+Nom+Foc/gi`
 * *kottki:* `kott+N+Sg+Nom+Foc/gi`
 
@@ -555,7 +555,7 @@ Genitiivatribuut pole eraldi kategooria / No special tag for genitive attribute 
 * `+Comp `: komparatiiv	/ comparative
 * `+Superl `: superlatiiv	/ superlative
 
-*hfstol: examples:*
+* hfstol: examples:*
 * *asi:* `asi+N+Sg+Nom` (Eng. # thing)
 * *Jaan:* `Jaan+N+Prop+Sg+Nom`
 * *asjalik:* `asjalik+A+Sg+Nom` (Eng. # serious)

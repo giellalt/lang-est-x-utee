@@ -30,7 +30,7 @@ Genitiivatribuut pole eraldi kategooria / No special tag for genitive attribute 
 * `+Comp `: komparatiiv	/ comparative
 * `+Superl `: superlatiiv	/ superlative
 
-*hfstol: examples:*
+* hfstol: examples:*
 * *asi:* `asi+N+Sg+Nom` (Eng. # thing)
 * *Jaan:* `Jaan+N+Prop+Sg+Nom`
 * *asjalik:* `asjalik+A+Sg+Nom` (Eng. # serious)
