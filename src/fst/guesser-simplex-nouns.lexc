@@ -411,14 +411,17 @@ LEXICON FinalSyllables
 
 !----------
 ! Vowel Vowel Vowel+ possible variants :
- < [[[Vowel DoubleVow] & ~[DoubleVow Vowel]] Consonant+] >        GuessTAUD "weight: 40" ;
+ < [[[Vowel DoubleVow] & ~[DoubleVow Vowel]] Consonant+] & ~$[DoubleCkpt] >        GuessTAUD "weight: 40" ;
+ < [[[Vowel DoubleVow] & ~[DoubleVow Vowel]] Consonant+] &  $[DoubleCkpt] >        GuessFIAT "weight: 40" ;    ! elsewhere condition for messed consonants...
  < [[[LongV Vowel] & ~[Vowel DoubleVow] ] s] >        GuessSUULINE "weight: 40" ;  
  < [[[LongV Vowel] & ~[Vowel DoubleVow] ] [Consonant - s]] >        GuessREDEL "weight: 40" ; ! (?) vaja kontrollida! 
  < [[[LongV Vowel] & ~[Vowel DoubleVow] ] DoubleCons] >        GuessTAUD "weight: 50" ;  
  < [[[[LongV Vowel] & ~[Vowel DoubleVow] ] TwoCons] &  [?* i n g]] >        GuessVIRSIK "weight: 50" ; !  
  < [[[[LongV Vowel] & ~[Vowel DoubleVow] ] TwoCons] & ~[?* i n g]] >        GuessREDEL "weight: 50" ; ! (?) vaja kontrollida! 
- < [[[LongV Vowel] & ~[Vowel DoubleVow] ] ManyCons] >        GuessTAUD "weight: 60" ;  
- < [[[Vowel Vowel Vowel+] & ~[?* LongV Vowel] & ~[?* Vowel DoubleVow]] Consonant+] > GuessTAUD "weight: 40" ; ! elsewhere condition... (?) vaja kontrollida!
+ < [[[LongV Vowel] & ~[Vowel DoubleVow] ] ManyCons] & ~$[DoubleCkpt] >        GuessTAUD "weight: 60" ;  
+ < [[[LongV Vowel] & ~[Vowel DoubleVow] ] ManyCons] &  $[DoubleCkpt] >        GuessFIAT "weight: 60" ;    ! elsewhere condition for messed consonants...  
+ < [[[Vowel Vowel Vowel+] & ~[?* LongV Vowel] & ~[?* Vowel DoubleVow]] Consonant+] & ~$[DoubleCkpt] > GuessTAUD "weight: 40" ; ! elsewhere condition... (?) vaja kontrollida!
+ < [[[Vowel Vowel Vowel+] & ~[?* LongV Vowel] & ~[?* Vowel DoubleVow]] Consonant+] &  $[DoubleCkpt] > GuessFIAT "weight: 40" ; ! elsewhere condition... (?) vaja kontrollida!
 
 ! ?? puudu lõpus ak VIRSIK ?
 
@@ -429,7 +432,10 @@ LEXICON FinalSyllables
  < [[StrictLongV Consonant] &  [e u m]] >              EndEUM "weight: 30" ;  ! possibly muuseum ?
  < [[StrictLongV Consonant] &  [Diphtong s]] >         EndEUS "weight: 30" ;  ! possibly odüsseus ?
  < [[StrictLongV Consonant] & ~[Diphtong s] & ~[e u m]] >     GuessTAUD "weight: 30" ;  ! not odüsseus 
+ < [StrictLongV Ckpt] >     GuessFIAT "weight: 30" ;         !  TAUD ~ FIAT ~ PIISKOP 
+ < [StrictLongV Ckpt] >     GuessPIISKOP "weight: 30" ;         !  TAUD ~ FIAT ~ PIISKOP
  < [LongV Consonant Consonant+] & ~$[DoubleCkpt] >    GuessTAUD "weight: 40" ;    ! aakk is not good
+ < [LongV Consonant Consonant+] &  $[DoubleCkpt] >    GuessFIAT "weight: 40" ;    ! elsewhere condition for messed consonants...
  
  < [SemiDiphtong] >   EndIA "weight: 20" ;
  < [SemiDiphtong s] >   EndIAS "weight: 30" ;
@@ -468,8 +474,9 @@ LEXICON FinalSyllables
  < [e r] > Ender  "weight: 20" ;
  < [Vowel DoubleCons] > GuessTAUD  "weight: 30" ;
  < [i n g] > Ending  "weight: 30" ;                              ! ing ingi ingi; ing ingu ingut
- < [[Vowel TwoCons] & ~[i n g]] > EndTwoCons  "weight: 30" ;
- < [Vowel ManyCons] & ~$[DoubleCkpt] > GuessTAUD  "weight: 40" ;
+ < [[Vowel TwoCons] & ~[i n g]] > EndTwoCons  "weight: 30" ;     
+ < [Vowel ManyCons] & ~$[DoubleCkpt] > GuessTAUD  "weight: 40" ;  ! 
+ < [Vowel ManyCons] &  $[DoubleCkpt] > GuessFIAT  "weight: 40" ;  ! elsewhere condition for messed consonants...
  
 
  < [Vowel Ckpt] >                  EndAK  "weight: 20" ;
@@ -519,7 +526,7 @@ LEXICON EndIAL
   @R.Stress.On@@R.Len.I@       GuessTAUD ;     ! rad-<iun> 
   @R.Stress.On@@D.Len.I@       GuessMUUSEUM ;  ! raad-<iun> 
 
-LEXICON EndIAK
+LEXICON EndIAK                ! ?? perhaps TAUD, KABINET and FIAT should be more symmetrical ???
   @D.Stress@                   GuessTAUD ;     ! z<iuk>
   @R.Stress.Off@               GuessKABINET ;     ! raad-ik-<iop>
   @R.Stress.Off@               GuessFIAT ;     ! raad-ik-<iop>
@@ -542,7 +549,7 @@ LEXICON EndA
   @R.Stress.On@@R.Len.III@     GuessAASTA ;  ! aakr-<a>
   @R.Stress.On@@D.Len.III@     GuessPERE ;   ! all-<a>
 
-LEXICON EndAK
+LEXICON EndAK                   ! ?? perhaps TAUD, KABINET and FIAT should be more symmetrical ???
   @D.Stress@                   GuessKABINET ;     ! n<et>
 !  @D.Stress@                   GuessFIAT ;       ! n<et> võiks olla
   @R.Stress.Off@               GuessKABINET ;     ! ka-bin-<et>
