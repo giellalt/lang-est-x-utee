@@ -23,7 +23,12 @@ define aposix [‘|❛|ʻ] ;
 
 define someapo [apostrophe (->) [ acuteaccent | graveaccent | aponine | aporevnine | aposix]] ;
 
-define relax [someminus .o. someapo] ;
+# quotation marks (from generated_files/punctuation.lexc); NOT a full list
+define quotmark [%"] ;
+define fancyquot  [ « | » | ‹ | › | “ | ” | „ | ‟ | ❝ | ❞ | ❠ |〝 | 〞| 〟] ;
+define somequot [quotmark (->) fancyquot] ;
+
+define relax [someminus .o. someapo .o. somequot] ;
 
 regex relax ;
 
