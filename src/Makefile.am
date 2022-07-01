@@ -100,6 +100,10 @@ EST_NUMERAL_FILTERS=filters/reorder-tags.est filters/numeral-filter.est
 #EST_COMPOUND_POST_FILTERS=filters/compound-filter.est
 
 # paired words are words whose both parts inflect, e.g. emb-kumb, kihin-kahin
+# they are compiled into a transducer of its own:
+# initial_part final_part  
+# this transducer is union-ed with the transducer of the rest of vocabulary (?)
+
 # paired words: initial part
 # HFST:
 pair_initial.tmp1.hfst: fst/pair_initial.tmp.hfst \
@@ -125,6 +129,9 @@ pair_initial.tmp1.xfst: fst/pair_initial.tmp.xfst \
 		| $(LEXC) $(VERBOSITY)
 
 # compound numerals where both parts inflect, e.g. viis#sada, viie#saja
+# they are compiled into a transducer of its own
+# this transducer is union-ed with the transducer of the simplex words
+
 # compound numerals: initial part
 # HFST:
 num_initial.tmp1.hfst: fst/num_initial.tmp.hfst \
@@ -197,9 +204,13 @@ num_final.tmp1.xfst: fst/num_final.tmp.xfst \
 		quit\n" \
 		| $(LEXC) $(VERBOSITY)
 
-# create transducer for names:
-# select only nouns, tag them as proper nouns, and upcase
-# both the lexical and the surface side
+# guesser
+
+# guesser for simplex words
+# create draft "phonological" name patterns:
+# select only nouns, tag them as proper nouns, 
+# and upcase both the lexical and the surface side
+# (perhaps this could be done more elegantly, i.e. in some other dir and/or makefile)
 fst/guesser-names.tmp.hfst: fst/guesser-names.tmp0.hfst filters/upcase-guessed-names.est.hfst
 	$(AM_V_XFST_TOOL)$(PRINTF) "set flag-is-epsilon OFF\n\
 			read regex                                                 \
@@ -213,8 +224,7 @@ fst/guesser-names.tmp.hfst: fst/guesser-names.tmp0.hfst filters/upcase-guessed-n
 		 quit\n" | $(XFST_TOOL)
 
 
-# guesser
-
+# phonological simplex word patterns with inflections
 guesser-simplex-nouns.tmp1.hfst: fst/guesser-simplex-nouns.tmp.hfst \
 					 fst/phonology.compose.hfst
 	$(AM_V_INTRSCT)\
@@ -226,6 +236,7 @@ guesser-simplex-nouns.tmp1.hfst: fst/guesser-simplex-nouns.tmp.hfst \
 		| $(HFST_MINIMIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) \
 		-o $@ 
 
+# phonological name patterns with inflections
 guesser-names.tmp1.hfst: fst/guesser-names.tmp.hfst \
 					 fst/phonology.compose.hfst
 	$(AM_V_INTRSCT)\
@@ -319,6 +330,8 @@ num_final.tmp.%: num_final.tmp1.% \
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
+# phonological simplex word and name patterns with inflections
+# (with lexical-side tags ordered correctly)
 guesser-simplex.tmp.%: guesser-simplex-nouns.tmp1.% \
 					guesser-names.tmp1.% \
 					filters/reorder-tags.$(GTLANG).% \
@@ -341,6 +354,7 @@ guesser-simplex.tmp.%: guesser-simplex-nouns.tmp1.% \
 # HFST: generator 
 # Xerox & FOMA: analyser
 #
+# concatenate initial and final part of paired words and numerals
 
 redundant_wordpairs.%: pair_final.tmp.% pair_initial.tmp.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "set flag-is-epsilon ON\n\
@@ -354,8 +368,10 @@ redundant_numerals.%: num_final.tmp.% num_initial.tmp.%
 			.o. @\"num_initial.tmp.$*\"] @\"num_final.tmp.$*\"] \
 			.o. ~[?* » ?*] ; \nsave stack $@\nquit\n" | $(XFST_TOOL)
 
-# We need to add processing of language-specific tags in the generator for paired words:
 # HFST:
+# filter out ungrammatical wordforms of paired words and numerals
+# the result is a transducer that can be unioned with simple words lexicon to arrive at the set of simplex words and derivations
+
 generator-wordpairs-raw.simple.hfst: redundant_wordpairs.hfst \
 					$(EST_WORDPAIR_FILTERS:%=%.hfst)
 	$(AM_V_XFST)$(PRINTF) "set flag-is-epsilon ON\n\
@@ -377,6 +393,7 @@ generator-numerals-raw.simple.hfst: redundant_numerals.hfst \
 		 quit\n" | $(XFST_TOOL)
 
 # guesser: 
+# phological patterns of simplex words and derived words
 guesser-raw.simple.hfst: guesser-simplex.tmp.hfst \
 				$(EST_EXTRA_PRE_FILTERS:%=%.hfst) \
 				$(EST_EXTRA_POST_FILTERS:%=%.hfst) \
@@ -440,9 +457,14 @@ analyser-raw-gt-desc.simple.xfst: analyser-raw-gt-desc.tmp.xfst \
 		 save stack $@\n\
 		 quit\n" | $(XFST) $(VERBOSITY)
 
-# include paired words and compound numerals
-# We need to add processing of language-specific tags in the generator:
 # HFST:
+# 1) make a union of simple words, paired words and compound numerals
+# 2) create derivations from proper names
+# 3) filter out the incorrect derivations (derived from names, verbs, nouns etc)
+# result: lexicon-based simplex words and derivations
+# NB! includes potential compound word initial components tagged as +Guess, e.g. blabla; 
+# they will be legit parts of compound words, once the compound word transducer is created
+
 generator-raw-gt-desc.simple.weightless.hfst: generator-raw-gt-desc.tmp.hfst \
 				generator-numerals-raw.simple.hfst \
 				generator-wordpairs-raw.simple.hfst \
@@ -465,6 +487,8 @@ generator-raw-gt-desc.simple.weightless.hfst: generator-raw-gt-desc.tmp.hfst \
 		 quit\n" | $(XFST_TOOL)
 
 # weights added to all analyses
+# result: lexicon-based simplex words and derivations with weights
+
 # no weight added to compound border '#' here; do it somewhere else
 # 7.01.2019 from Sjur:
 # Hfst - add weights to simplex words if using tropical-semiring fst format:
@@ -578,11 +602,14 @@ generator-raw-gt-desc.simple.hfst: generator-raw-gt-desc.simple.weightless.hfst
 endif !WITH_OFST_TROPICAL
 
 
+# HFST:
 # compound words: 
 # 1. the non-final parts cannot be a form with a focus particle, so filter them out
 # 2. the non-final parts part may end with a hyphen (ajalooline+A+Der/minus:ajaloolis»-), which may be omitted in compounds,
 #    or may have a hyphen appended (for better readabilty of a compound)
-# HFST:
+# result: lexicon-based simplex words, derivations, paired words and numerals, compound words; everything with weights
+# NB! includes words where the first part is marked as +Guess, e.g. blablawords
+
 generator-raw-gt-desc.comp.hfst: generator-raw-gt-desc.simple.hfst \
 				filters/evaluate-flags.est.hfst
 	$(AM_V_XFST)$(PRINTF) "set flag-is-epsilon ON\n\
@@ -619,6 +646,7 @@ analyser-raw-gt-desc.comp.xfst: analyser-raw-gt-desc.simple.xfst \
 		quit\n" | $(XFST) $(VERBOSITY)
 
 # the vocabulary, i.e. words that might be combined with - / or otherwise
+
 # HFST:
 generator-raw-gt-desc.vocabulary.hfst: generator-raw-gt-desc.comp.hfst
 	$(AM_V_XFST)$(PRINTF) "set flag-is-epsilon ON\n\
@@ -653,6 +681,9 @@ generator-raw-gt-desc.weighted.hfst: generator-raw-gt-desc.vocabulary.hfst
 		cp $< $@
 endif !WITH_OFST_TROPICAL
 
+
+# weights added to all guessed simplex word analyses
+# result: guessed simplex words and derivations with weights
 
 # analogy with generator-raw-gt-desc.weighted.hfst
 # notice that the derived forms are weighted LESS, i.e. they are guessed MORE LIKELY than simplex forms
@@ -773,7 +804,9 @@ generator-raw-gt-desc.hfst: generator-raw-gt-desc.weighted.hfst
 # They cannot be a part of the analyser that the tokeniser uses
 # Therefore, dot-ending stuff must be added separately to the default descriptive analyser 
 
-# Plus: insert defined regexes in place of placeholders 
+# .dot transducer is the the base for:
+# 1. -desc, -norm etc transducers
+# 2. guesser
 
 # This is the default, descriptive analyser:
 # Visible tags (ie do NOT remove):
@@ -804,8 +837,6 @@ analyser-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%                \
 					orthography/inituppercase.compose.%       \
 					orthography/allcaps.compose.%       \
 					orthography/spellrelax.compose.%          \
-					fst/substitute_blockcap.xfscript \
-					fst/substitutions.xfscript \
 					$(GLT_DOWNCASE_FILTER)
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"filters/remove-area-tags.$*\"                \
@@ -834,9 +865,7 @@ analyser-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%                \
 			.o. @\"orthography/inituppercase.compose.$*\"       \
 			.o. @\"orthography/allcaps.compose.$*\"       \
 			.o. @\"orthography/spellrelax.compose.$*\"          \
-			;\n\
-			source fst/substitute_blockcap.xfscript\n\
-			source fst/substitutions.xfscript\n\
+			; \n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
@@ -865,8 +894,6 @@ generator-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%            \
 					filters/remove-Use_minus_PMatch-tags.%    \
 					filters/remove-Use_PMatch-strings.%       \
 					filters/remove-mwe-tags.%                 \
-					fst/substitute_blockcap.xfscript \
-					fst/substitutions.xfscript \
 					$(GLT_DOWNCASE_FILTER)
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"filters/make-optional-transitivity-tags.$*\" \
@@ -894,13 +921,12 @@ generator-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%            \
 			.o. @\"filters/remove-infl_deriv-borders.$*\"       \
 			.o. @\"filters/remove-word-boundary.$*\"            \
 			;\n\
-			set encode-weights ON\n\
-			source fst/substitute_blockcap.xfscript\n\
-			source fst/substitutions.xfscript\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
 # override the default descriptive analyser and generator
+# result: lexicon-based analyses
+
 analyser-gt-desc.tmp.hfst: analyser-gt-desc.dot.tmp.hfst \
 					filters/remove-guessed-forms.est.hfst 
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
@@ -922,13 +948,21 @@ generator-gt-desc.tmp.hfst: generator-gt-desc.dot.tmp.hfst \
 
 #--- begin guesser-related ad hoc
 
+# substitute placeholders with fsts containing real symbols;
 # relax hyphen and apostrophe writing conventions 
-# 
+# result: lexicon-based analyses plus blablawords
+# this will be later unioned with simplex word guesser to result in a complete guesser
+
 analyser-gt-descguess.hfst: analyser-gt-desc.dot.tmp.hfst \
-				orthography/punctrelax.compose.hfst
+					fst/substitute_blockcap.xfscript \
+					fst/substitutions.xfscript \
+					orthography/punctrelax.compose.hfst
 	$(AM_V_XFST_TOOL)$(PRINTF) "set encode-weights ON\n\
-				read regex \
-				@\"$<\" \
+				read regex @\"$<\";\n\
+				source fst/substitute_blockcap.xfscript\n\
+				source fst/substitutions.xfscript\n\
+				define fst\n\
+				read regex fst \
 				.o. @\"orthography/punctrelax.compose.hfst\" \
 			;\n\
 		 $(INVERT_HFST)\
@@ -936,11 +970,15 @@ analyser-gt-descguess.hfst: analyser-gt-desc.dot.tmp.hfst \
 		 quit\n" | $(XFST_TOOL)
 
 # ... and generators:
-generator-gt-descguess.hfst: generator-gt-desc.dot.tmp.hfst 
+# substitute placeholders with fsts containing real symbols
+ 
+generator-gt-descguess.hfst: generator-gt-desc.dot.tmp.hfst \
+					fst/substitute_blockcap.xfscript \
+					fst/substitutions.xfscript 
 	$(AM_V_XFST_TOOL)$(PRINTF) "set encode-weights ON\n\
-				read regex \
-				@\"$<\" \
-			;\n\
+				read regex @\"$<\";\n\
+				source fst/substitute_blockcap.xfscript\n\
+				source fst/substitutions.xfscript\n\
 		 $(INVERT_XFST)$(INVERT_FOMA)\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
@@ -975,7 +1013,9 @@ generator-gt-norm.tmp.hfst: generator-gt-desc.tmp.hfst \
 
 
 # HFST:
-# this is probably the pure guesser;
+# simplex word guesser;
+# result: guessed simplex words and derivations with weights
+# (surface side without phonotactics symbols)
 generator-raw-gt-guess.hfst: guesser-raw.weighted.hfst \
 					filters/remove-hyphenation-marks.hfst        \
 					filters/remove-infl_deriv-borders.hfst       \
@@ -990,6 +1030,7 @@ generator-raw-gt-guess.hfst: guesser-raw.weighted.hfst \
 		 quit\n" | $(XFST_TOOL)
 
 # HFST:
+# simplex word guesser, enlarged to cover standard orthography
 # upcasing added (like for analyser-gt-desc)
 # perhaps a spellrelax filter should be also added ?
 analyser-raw-gt-guess.hfst: generator-raw-gt-guess.hfst \
@@ -1013,7 +1054,11 @@ analyser-raw-gt-guess.hfst: generator-raw-gt-guess.hfst \
 analyser-raw-gt-desc.xfst: analyser-raw-gt-desc.vocabulary.xfst 
 		cp $< $@
 
-# generator with a guesser
+# complete guesser
+# includes 
+# 1) phonological patterns for simplex words (and names) and their derivations
+# 2) all the lexicon-based words (simplex, compound, derived; paired)
+# 3) blablawords, i.e. words where the last component gets an analysis, and the rest is +Guess
 
 # katsetus
 generator-gt-guess.hfst: generator-gt-descguess.hfst \
