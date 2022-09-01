@@ -620,23 +620,34 @@ Legitimate strings that are not words: numbers, acronyms, ...
 
 * `LEXICON Root ` is the starting point of everything
 
-This is actually a loop, formed after applying Kleene star 
-concatenation on the simple word transducer with itself.
-When looping, it remembers which paths it has taken in every loop. 
-For remembering it sets up flags on the path:
-1. flag the first 3 loops (thus forbidding any more loops)
-2. in every loop, flag the POS and inflection, to be used in the following loop
-Different paths may result in the same output string, 
+For modelling compounds, the simplex word fst is concatenated with itself.
+For this, Kleene star operation is used, i.e. fst is concatenated zero to any number of times.
+For the lookup process, this creates a possibility of infinitely many passes through the fst, 
+thus allowing infinitely long words.
+For limiting and controlling the passes, flag diacritics are used.
+Lookup process remembers which paths it has taken, and counts the passes. 
+For remembering, it sets up flags on the path:
+1. Flag the first 3 passes through the simplex fst (thus forbidding any more passes)
+(the lexicon contains conventionalised compounds, thus the max number of compound components 
+is larger than three; however, no Estonian word with more than five components has been found yet) 
+2. In every pass, flag the POS and inflection, to be used in the following pass
+Different paths may correspond to the same surface string, 
 e.g. mootoriõlilik = (mootori+õli)+lik and (mootori)+(õli+lik)
 
-Guesser
-
-Lexicon-based
+Lexicon-based passes
 
 strictly simplex word; cannot be a part of a compound
 a simplex word, or the first part of a compound
 
 * `  @D.Part@@P.Part.Two@@P.NeedPart.Three@@P.POS.Num@ CardinalNumbersInCompBeg ;   ` 5-autone etc
+
+Guesser
+assumes that there is only one pass, and that only the final part is important
+(out-of-vocabulary simplex words are treated elsewhere)
+
+--- end guesser
+
+lexicon-based
 
 strictly simplex words; cannot be a part of a compound
 
