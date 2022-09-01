@@ -359,7 +359,7 @@ guesser-simplex.tmp.%: guesser-simplex-nouns.tmp1.% \
 redundant_wordpairs.%: pair_final.tmp.% pair_initial.tmp.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "set flag-is-epsilon ON\n\
 			read regex [ [~[?* \"+Foc/gi\" ?*] \
-			.o. @\"pair_initial.tmp.$*\"] (\"-\") @\"pair_final.tmp.$*\"] \
+			.o. @\"pair_initial.tmp.$*\"] (\"-\") [ 0:\"#\" ] @\"pair_final.tmp.$*\"] \
 			.o. ~[?* » ?*] ; \nsave stack $@\nquit\n" | $(XFST_TOOL)
 
 redundant_numerals.%: num_final.tmp.% num_initial.tmp.%
