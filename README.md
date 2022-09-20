@@ -29,10 +29,8 @@ Documentation
 
 Documentation can be found at:
 
-- [In source documentation generated with github
-   pages](https://giellalt.github.io/lang-est-x-utee/)
--   <https://giellalt.uit.no/index.html>
 -   <https://giellalt.uit.no/lang/experimentest/Links.html>
+-   <https://giellalt.uit.no/index.html>
 
 Core dependencies
 -----------------
