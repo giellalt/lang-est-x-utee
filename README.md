@@ -29,7 +29,7 @@ Documentation
 
 Documentation can be found at:
 
--   <https://giellalt.uit.no/lang/experimentest/Links.html>
+- [Language specific documentation](https://giellalt.github.io/lang-est-x-utee/)
 -   <https://giellalt.uit.no/index.html>
 
 Core dependencies
