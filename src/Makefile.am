@@ -224,13 +224,7 @@ fst/guesser-names.tmp.hfst: fst/guesser-names.tmp0.hfst filters/upcase-guessed-n
 		 quit\n" | $(XFST_TOOL)
 
 
-# guesser
-# HFST:
-# a transducer for blabla- and Blabla-
-guesser-smth.hfst: fst/guesser-smth.hfst
-	$(AM_V_CP)cp $< $@ 
-
-
+# phonological simplex word patterns with inflections
 guesser-simplex-nouns.tmp1.hfst: fst/guesser-simplex-nouns.tmp.hfst \
 					 fst/phonology.compose.hfst
 	$(AM_V_INTRSCT)\
@@ -260,7 +254,7 @@ guesser-names.tmp1.hfst: fst/guesser-names.tmp.hfst \
 
 # acronyms
 # acronyms.tmp1.%: fst/acronyms.tmp.%
-# 	$(AM_V_CP)cp $< $@ 
+# 	cp $< $@ 
 
 # FOMA
 # not implemented...
@@ -603,9 +597,8 @@ generator-raw-gt-desc.simple.hfst: generator-raw-gt-desc.simple.weightless.hfst
 
 else !WITH_OFST_TROPICAL
 
-generator-raw-gt-desc.weighted.hfst: generator-raw-gt-desc.vocabulary.hfst
-	$(AM_V_CP)cp $< $@
-
+generator-raw-gt-desc.simple.hfst: generator-raw-gt-desc.simple.weightless.hfst
+		cp $< $@
 endif !WITH_OFST_TROPICAL
 
 
@@ -797,8 +790,7 @@ guesser-raw.weighted.hfst: guesser-raw.simple.hfst
 else !WITH_OFST_TROPICAL
 
 guesser-raw.weighted.hfst: guesser-raw.simple.hfst 
-	$(AM_V_CP)cp $< $@
-
+		cp $< $@
 endif !WITH_OFST_TROPICAL
 
 # make the raw ones
@@ -806,7 +798,7 @@ endif !WITH_OFST_TROPICAL
 # map the name to GT/Divvun conventions
 
 generator-raw-gt-desc.hfst: generator-raw-gt-desc.weighted.hfst 
-	$(AM_V_CP)cp $< $@
+		cp $< $@
 
 # Tokens ending with a dot (e.g. abbreviations) need special treament by a tokeniser
 # They cannot be a part of the analyser that the tokeniser uses
@@ -829,6 +821,7 @@ analyser-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%                \
 					filters/remove-area-tags.%                \
 					filters/remove-dialect-tags.%             \
 					filters/remove-number-string-tags.%       \
+					filters/remove-usage-tags.%               \
 					filters/remove-semantic-tags.%            \
 					filters/remove-hyphenation-marks.%        \
 					filters/remove-infl_deriv-borders.%       \
@@ -849,6 +842,7 @@ analyser-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%                \
 				@\"filters/remove-area-tags.$*\"                \
 			.o. @\"filters/remove-dialect-tags.$*\"             \
 			.o. @\"filters/remove-number-string-tags.$*\"       \
+			.o. @\"filters/remove-usage-tags.$*\"               \
 			.o. @\"filters/remove-semantic-tags.$*\"            \
 			.o. @\"filters/remove-orig_lang-tags.$*\"           \
 			.o. @\"filters/remove-orthography-tags.$*\"         \
@@ -894,6 +888,7 @@ generator-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%            \
 					filters/remove-number-string-tags.%       \
 					filters/remove-orthography-tags.%         \
 					filters/remove-Orth_IPA-strings.%         \
+					filters/remove-usage-tags.%               \
 					filters/remove-Use_GC-strings.%           \
 					filters/remove-Use_minusGC-tags.%         \
 					filters/remove-Use_minus_PMatch-tags.%    \
@@ -912,6 +907,7 @@ generator-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%            \
 			.o. @\"filters/remove-area-tags.$*\"                \
 			.o. @\"filters/remove-dialect-tags.$*\"             \
 			.o. @\"filters/remove-number-string-tags.$*\"       \
+			.o. @\"filters/remove-usage-tags.$*\"               \
 			.o. @\"filters/remove-orthography-tags.$*\"         \
 			.o. @\"filters/remove-Orth_IPA-strings.$*\"         \
 			.o. @\"filters/remove-Use_minus_PMatch-tags.$*\"    \
@@ -929,23 +925,25 @@ generator-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%            \
 		 quit\n" | $(XFST_TOOL)
 
 # override the default descriptive analyser and generator
-analyser-gt-desc.tmp.hfst: analyser-gt-desc.dot.tmp.hfst 
-	$(AM_V_CP)cp $< $@
+# result: lexicon-based analyses
 
-generator-gt-desc.tmp.hfst: generator-gt-desc.dot.tmp.hfst 
-	$(AM_V_CP)cp $< $@
-
-# make sure to override the default fall-back targets
-# because the default messes with tags...
-analyser-gt-desc.hfst: analyser-gt-desc.tmp.hfst
-	$(AM_V_XFST_TOOL)$(PRINTF) "\
-		 load stack $<\n\
-		 $(INVERT_HFST)\
+analyser-gt-desc.tmp.hfst: analyser-gt-desc.dot.tmp.hfst \
+					filters/remove-guessed-forms.est.hfst 
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"filters/remove-guessed-forms.est.hfst\" \
+			.o. @\"$<\" \
+			;\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
-generator-gt-desc.hfst: generator-gt-desc.tmp.hfst
-	$(AM_V_CP)cp $< $@
+generator-gt-desc.tmp.hfst: generator-gt-desc.dot.tmp.hfst \
+					filters/remove-guessed-forms.est.hfst 
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"filters/remove-guessed-forms.est.hfst\" \
+			.o. @\"$<\" \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
 
 
 #--- begin guesser-related ad hoc
@@ -1054,7 +1052,7 @@ analyser-raw-gt-guess.hfst: generator-raw-gt-guess.hfst \
 # XEROX:
 # probably garbage anyway
 analyser-raw-gt-desc.xfst: analyser-raw-gt-desc.vocabulary.xfst 
-	$(AM_V_CP)cp $< $@
+		cp $< $@
 
 # complete guesser
 # includes 
