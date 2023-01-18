@@ -1004,14 +1004,14 @@ LEXICON GuessSmthWord
 ! the twol rules need this while checking grade alternation and vowel lowering contexts  
 
 LEXICON HyphenWord                ! 杨蔓-word, woddr-word
-   +Guess# : -%# FirstForGuess ;
+   +Guess#% :% -# FirstForGuess ;
 
 LEXICON NoHyphenWord               ! woddrword
-   +Guess# : %# OpenClassForGuess ;
+   +Guess#% :% # OpenClassForGuess ;
 
 LEXICON DotWord                    ! word.Word
-   +Guess+PUNCT# : %# SingleForGuess ;
-   +Guess+PUNCT# : %# FirstForGuess ;
+   +Guess+PUNCT#% :% # SingleForGuess ;
+   +Guess+PUNCT#% :% # FirstForGuess ;
 
 LEXICON OpenClassForGuess       ! only the final component of a very permissible compound; open-class words only
   @P.Part.Bad@@P.Stem.Guessed@  FirstOpenClass ;   ! ... but restricted because of guessing

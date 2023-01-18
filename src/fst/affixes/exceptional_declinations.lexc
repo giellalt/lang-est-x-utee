@@ -336,21 +336,21 @@ LEXICON LAPS    ! only laps, uks; notice the weird (?) use of {W}
 
 LEXICON LAPSELAPS    ! only lapselaps; the N_PL_SUBPARA is different...
 
-                  :lapse%#l˘aP1s SG_NOMINATIVE ;    ! laps
-                  :lapse%#l˘aP1se N_SG_SUBPARA ;    ! lapse etc 
-                  :lapse%#l˘aP1s%{W%}%>t SG_PARTITIVE ;    ! last
-                  :lapse%#l˘aP1se%>sse SG_ILLATIVE ;    ! lapsesse 
-                  :laste%#l˘aP1s%{W%} TE_PL ;    ! laste etc 
-                  :lapse%#l˘aP1s%>i PL_PARTITIVE ;    ! lapsi
+                  :lapse#l˘aP1s SG_NOMINATIVE ;    ! laps
+                  :lapse#l˘aP1se N_SG_SUBPARA ;    ! lapse etc 
+                  :lapse#l˘aP1s%{W%}%>t SG_PARTITIVE ;    ! last
+                  :lapse#l˘aP1se%>sse SG_ILLATIVE ;    ! lapsesse 
+                  :laste#l˘aP1s%{W%} TE_PL ;    ! laste etc 
+                  :lapse#l˘aP1s%>i PL_PARTITIVE ;    ! lapsi
 
 LEXICON LAPSELAPSELAPS    ! only lapselapselaps; the N_PL_SUBPARA is different...
 
-                  :lapse%#lapse%#l˘aP1s SG_NOMINATIVE ;    ! laps
-                  :lapse%#lapse%#l˘aP1se N_SG_SUBPARA ;    ! lapse etc 
-                  :lapse%#lapse%#l˘aP1s%{W%}%>t SG_PARTITIVE ;    ! last
-                  :lapse%#lapse%#l˘aP1se%>sse SG_ILLATIVE ;    ! lapsesse 
-                  :laste%#laste%#l˘aP1s%{W%} TE_PL ;    ! laste etc 
-                  :lapse%#lapse%#l˘aP1s%>i PL_PARTITIVE ;    ! lapsi
+                  :lapse#lapse#l˘aP1s SG_NOMINATIVE ;    ! laps
+                  :lapse#lapse#l˘aP1se N_SG_SUBPARA ;    ! lapse etc 
+                  :lapse#lapse#l˘aP1s%{W%}%>t SG_PARTITIVE ;    ! last
+                  :lapse#lapse#l˘aP1se%>sse SG_ILLATIVE ;    ! lapsesse 
+                  :laste#laste#l˘aP1s%{W%} TE_PL ;    ! laste etc 
+                  :lapse#lapse#l˘aP1s%>i PL_PARTITIVE ;    ! lapsi
 
 LEXICON LÕUNA    ! only lõuna; almost like haare
 
@@ -579,22 +579,22 @@ LEXICON TEINE    ! only teine; almost = NAINE; much like OLULINE
 LEXICON TEIST    ! only -teist(kümmend); much like KÜMMEND
                   
                   : SG_NOMINATIVE ;            ! viisteist
-         +Usage/Rare:%#kümmend SG_NOMINATIVE ;    ! viisteistkümmend
+         +Usage/Rare:#kümmend SG_NOMINATIVE ;    ! viisteistkümmend
                   : SG_PARTITIVE ;             ! viitteist
-         +Usage/Rare:%#kümme%>t SG_PARTITIVE ;    ! viitteistkümmet
-         +Usage/Rare:%#kümmend SG_PARTITIVE ;     ! viitteistkümmend
+         +Usage/Rare:#kümme%>t SG_PARTITIVE ;    ! viitteistkümmet
+         +Usage/Rare:#kümmend SG_PARTITIVE ;     ! viitteistkümmend
          +Usage/Rare: SG_GENITIVE ;              ! viieteist
-                  :%#kümne 2C_STRONG ;          ! viieteistkümne etc
-                  :%#kümne TE_PL ;              ! viieteistkümnete
+                  :#kümne 2C_STRONG ;          ! viieteistkümne etc
+                  :#kümne TE_PL ;              ! viieteistkümnete
 
 LEXICON POOLTEIST     ! only (pool)teist; much like TEINE ?
                   
-                  :%#teist SG_NOMINATIVE ;
-                  :e%#teise N_SG_SUBPARA ;      ! pooleteise etc          
-                  :t%#teis%>t SG_PARTITIVE ;    ! pooltteist
-         +Usage/Rare:%#teis NE_S_COMMON ;         ! poolteise etc
-                  :e%#teise%>sse SG_ILLATIVE ;  ! 
-         +Usage/Rare:%#teise%>sse SG_ILLATIVE ;   ! 
+                  :#teist SG_NOMINATIVE ;
+                  :e#teise N_SG_SUBPARA ;      ! pooleteise etc          
+                  :t#teis%>t SG_PARTITIVE ;    ! pooltteist
+         +Usage/Rare:#teis NE_S_COMMON ;         ! poolteise etc
+                  :e#teise%>sse SG_ILLATIVE ;  ! 
+         +Usage/Rare:#teise%>sse SG_ILLATIVE ;   ! 
 
 LEXICON TUHAT    ! only tuhat; like LOHAKAS
 
