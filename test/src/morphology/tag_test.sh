@@ -23,6 +23,7 @@ fi
 sed -e '1,/LEXICON Root/d' < \
     ../../../src/fst/lexicon.tmp.lexc | # Extract all lines after LEXICON Root
     ${giella_core}/scripts/extract-used-tags.sh | # Extract tags, local mods after this line:
+    grep -v -E '(\+Enter|\+F[1-9])' | # Remove tag like entries found only in EST
     LC_ALL=no_NO.UTF8 sort -u         \
     > "${lexctags}"
 
