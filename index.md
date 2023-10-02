@@ -1,7 +1,7 @@
 # Estonian documentation
 
-[![Maturity: Experiment](https://img.shields.io/badge/Maturity-Experiment-black.svg)](https://giellalt.github.io/MaturityClassification.html)
-![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-est-x-utee%2Fgh-pages%2Flemmacount.json)
+[![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-est-x-utee%2Fgh-pages%2Fmaturity.json)](https://giellalt.github.io/MaturityClassification.html)
+![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-est-x-utee%2Fgh-pages%2Flemmacount.json)
 [![License](https://img.shields.io/github/license/giellalt/lang-est-x-utee)](https://github.com/giellalt/lang-est-x-utee/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-est-x-utee)](https://github.com/giellalt/lang-est-x-utee/issues)
 [![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-est-x-utee/main/badge.svg)](https://github.com/giellalt/lang-est-x-utee/actions)
