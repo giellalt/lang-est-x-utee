@@ -60,7 +60,7 @@ AC_SUBST([GLANG2], [et])
 AC_SUBST([GTLANG2], $GLANG2)
 # GLANGUAGE is the full language name as given by the ISO 639-3 file.
 # GTLANGUAGE is deprecated, defined for backwards compatibility.
-AC_SUBST([GLANGUAGE], ["Estonian"])
+AC_SUBST([GLANGUAGE], ["Estonian (Tartu Ülikool)"])
 AC_SUBST([GTLANGUAGE], $GLANGUAGE)
 
 ### Speller release version (usually different from the package version,
@@ -71,8 +71,8 @@ AC_SUBST([GTLANGUAGE], $GLANGUAGE)
 ### - manifest.toml.in
 ### - tools/spellcheckers/index.*.xml.in
 AC_SUBST([SPELLERVERSION], [0.1.1])
-AC_SUBST([SPELLER_NAME_ENG], ["$GLANGUAGE spellchecker"])
-AC_SUBST([SPELLER_NAME_NATIVE], ["Autonym spellchecker"])
+AC_SUBST([SPELLER_NAME_ENG], ["$GLANGUAGE spellchecker (Tartu Ülikool)"])
+AC_SUBST([SPELLER_NAME_NATIVE], ["Autonym spellchecker (Tartu Ülikool)"])
 AC_SUBST([SPELLER_DESC_ENG], ["A spellchecker for $GLANGUAGE, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"])
 AC_SUBST([SPELLER_DESC_NATIVE], ["TRANSLATE: A spellchecker for $GLANGUAGE, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"])
 
