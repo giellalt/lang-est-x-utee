@@ -1,4 +1,4 @@
-# Estonian description 
+# Estonian (Tartu Ülikool) description 
 
 All documents in one file
 
@@ -175,7 +175,7 @@ VVS stands for Ü. Viks "Väike vormisõnastik" for reference purposes
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/exceptional_declinations.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/affixes/exceptional_declinations.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/exceptional_declinations.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/morphology/affixes/exceptional_declinations.lexc)</small>
 
 ---
 
@@ -190,7 +190,7 @@ this ensures that downcasing derivation (helveetslane) works
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/gi.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/affixes/gi.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/gi.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/morphology/affixes/gi.lexc)</small>
 
 ---
 
@@ -205,7 +205,7 @@ not all the cases must be distinguished
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/regular_declinations.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/affixes/regular_declinations.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/regular_declinations.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/morphology/affixes/regular_declinations.lexc)</small>
 
 ---
 
@@ -216,7 +216,7 @@ LEXICON SAAMA  is a lexicon for saama-type words. ! VVS 37   saama, jääma
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/verbs.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/affixes/verbs.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/verbs.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/morphology/affixes/verbs.lexc)</small>
 
 ---
 
@@ -519,7 +519,7 @@ high vowel lowering in certain contexts
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/phonology.twolc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/phonology.twolc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/phonology.twolc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/morphology/phonology.twolc)</small>
 
 ---
 
@@ -1235,7 +1235,7 @@ järguline	järk+N+Der/line+A  redellik redel+N+Der/lik+A     NOT -autone
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/root.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/root.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/morphology/root.lexc)</small>
 
 ---
 
@@ -1243,7 +1243,7 @@ Acronyms
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/acronyms.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/stems/acronyms.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/acronyms.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/morphology/stems/acronyms.lexc)</small>
 
 ---
 
@@ -1410,7 +1410,7 @@ retracted tongue root			_q
 
 * * *
 
-<small>This (part of) documentation was generated from [src/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-est-x-utee/blob/main/src/phonetics/txt2ipa.xfscript)</small>
+<small>This (part of) documentation was generated from [src/fst/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/phonetics/txt2ipa.xfscript)</small>
 
 ---
 
@@ -1430,7 +1430,7 @@ For example:
 
 * * *
 
-<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-abbrevs2text.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-abbrevs2text.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/transcriptions/transcriptor-abbrevs2text.lexc)</small>
 
 ---
 
@@ -1446,7 +1446,7 @@ For example:
 
 * * *
 
-<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
 
 ---
 

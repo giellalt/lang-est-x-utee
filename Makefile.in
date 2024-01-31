@@ -343,6 +343,10 @@ SEE = @SEE@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 SPELLERVERSION = @SPELLERVERSION@
+SPELLER_DESC_ENG = @SPELLER_DESC_ENG@
+SPELLER_DESC_NATIVE = @SPELLER_DESC_NATIVE@
+SPELLER_NAME_ENG = @SPELLER_NAME_ENG@
+SPELLER_NAME_NATIVE = @SPELLER_NAME_NATIVE@
 STRIP = @STRIP@
 TAR = @TAR@
 TWOLC = @TWOLC@
@@ -936,7 +940,7 @@ regenerate-markdown: generate-markdown
 
 # Generate endpoint json file for shield.io lemma count badge.
 # Only to be stored in the gh-pages branch, ignored in main.
-$(srcdir)/lemmacount.json: $(top_srcdir)/src/fst/stems/*.lexc
+$(srcdir)/lemmacount.json: $(top_srcdir)/src/fst/morphology/stems/*.lexc
 	$(AM_V_GEN)$(GTCORE)/scripts/make-lemmacount.json.sh $(abs_top_srcdir) > $@
 
 # Generate a maturity.json file as endpoint for the maturity badge.
@@ -944,7 +948,7 @@ $(srcdir)/maturity.json:
 	$(AM_V_GEN)$(GTCORE)/scripts/make-maturity.json.sh $(REPONAME) > $@
 
 # Convert source filenames to extracted documentation filenames, VPATH safe:
-# ../../../src/fst/stems/adverbs.lexc => src-fst-stems-adverbs.lexc.md
+# ../../../src/fst/morphology/stems/adverbs.lexc => src-fst-morphology-stems-adverbs.lexc.md
 define src2md
 $(addsuffix .md,$(subst /,-,$(subst $(top_srcdir)/,,$(1))))
 endef

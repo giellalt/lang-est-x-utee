@@ -9,7 +9,7 @@ not all the cases must be distinguished
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/regular_declinations.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/affixes/regular_declinations.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/regular_declinations.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/morphology/affixes/regular_declinations.lexc)</small>
 
 ---
 
