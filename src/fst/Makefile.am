@@ -106,23 +106,23 @@ EST_NUMERAL_FILTERS=filters/reorder-tags.est filters/numeral-filter.est
 
 # paired words: initial part
 # HFST:
-pair_initial.tmp1.hfst: fst/pair_initial.tmp.hfst \
-					 fst/phonology.compose.hfst
+pair_initial.tmp1.hfst: morphology/pair_initial.tmp.hfst \
+					 morphology/phonology.compose.hfst
 	$(AM_V_INTRSCT)\
 		  $(HFST_DETERMINIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) $<\
 		| $(HFST_MINIMIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) \
 		| $(HFST_COMPOSE_INTERSECT) $(COMPOSE_INTERSECT_FLAG) \
 			$(MORE_VERBOSITY) $(HFST_FLAGS) \
-			-2 fst/phonology.compose.hfst \
+			-2 morphology/phonology.compose.hfst \
 		| $(HFST_MINIMIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) \
 		-o $@
 
 # XEROX
-pair_initial.tmp1.xfst: fst/pair_initial.tmp.xfst \
-			 fst/phonology.compose.xfst
+pair_initial.tmp1.xfst: morphology/pair_initial.tmp.xfst \
+			 morphology/phonology.compose.xfst
 	$(AM_V_LEXC)$(PRINTF) \
-		"read-source fst/pair_initial.tmp.xfst\n\
-		read-rules fst/phon.compose.xfst\n\
+		"read-source morphology/pair_initial.tmp.xfst\n\
+		read-rules morphology/phon.compose.xfst\n\
 		compose-result\n\
 		save-result $@\n\
 		quit\n" \
@@ -134,23 +134,23 @@ pair_initial.tmp1.xfst: fst/pair_initial.tmp.xfst \
 
 # compound numerals: initial part
 # HFST:
-num_initial.tmp1.hfst: fst/num_initial.tmp.hfst \
-					 fst/phonology.compose.hfst
+num_initial.tmp1.hfst: morphology/num_initial.tmp.hfst \
+					 morphology/phonology.compose.hfst
 	$(AM_V_INTRSCT)\
 		  $(HFST_DETERMINIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) $<\
 		| $(HFST_MINIMIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) \
 		| $(HFST_COMPOSE_INTERSECT) $(COMPOSE_INTERSECT_FLAG) \
 			$(MORE_VERBOSITY) $(HFST_FLAGS) \
-			-2 fst/phonology.compose.hfst \
+			-2 morphology/phonology.compose.hfst \
 		| $(HFST_MINIMIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) \
 		-o $@
 
 # XEROX
-num_initial.tmp1.xfst: fst/num_initial.tmp.xfst \
-			 fst/phonology.compose.xfst
+num_initial.tmp1.xfst: morphology/num_initial.tmp.xfst \
+			 morphology/phonology.compose.xfst
 	$(AM_V_LEXC)$(PRINTF) \
-		"read-source fst/num_initial.tmp.xfst\n\
-		read-rules fst/phonology.compose.xfst\n\
+		"read-source morphology/num_initial.tmp.xfst\n\
+		read-rules morphology/phonology.compose.xfst\n\
 		compose-result\nsave-result $@\n\
 		quit\n" \
 		| $(LEXC) $(VERBOSITY)
@@ -158,23 +158,23 @@ num_initial.tmp1.xfst: fst/num_initial.tmp.xfst \
 
 # paired words: final part
 # HFST:
-pair_final.tmp1.hfst: fst/pair_final.tmp.hfst \
-					 fst/phonology.compose.hfst
+pair_final.tmp1.hfst: morphology/pair_final.tmp.hfst \
+					 morphology/phonology.compose.hfst
 	$(AM_V_INTRSCT)\
 		  $(HFST_DETERMINIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) $<\
 		| $(HFST_MINIMIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) \
 		| $(HFST_COMPOSE_INTERSECT) $(COMPOSE_INTERSECT_FLAG) \
 			$(MORE_VERBOSITY) $(HFST_FLAGS) \
-			-2 fst/phonology.compose.hfst \
+			-2 morphology/phonology.compose.hfst \
 		| $(HFST_MINIMIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) \
 		-o $@ 
 
 # XEROX
-pair_final.tmp1.xfst: fst/pair_final.tmp.xfst \
-			 fst/phonology.compose.xfst
+pair_final.tmp1.xfst: morphology/pair_final.tmp.xfst \
+			 morphology/phonology.compose.xfst
 	$(AM_V_LEXC)$(PRINTF) \
-		"read-source fst/pair_final.tmp.xfst\n\
-		read-rules fst/phonology.compose.xfst\n\
+		"read-source morphology/pair_final.tmp.xfst\n\
+		read-rules morphology/phonology.compose.xfst\n\
 		compose-result\n\
 		save-result $@\n\
 		quit\n" \
@@ -182,23 +182,23 @@ pair_final.tmp1.xfst: fst/pair_final.tmp.xfst \
 
 # compound numerals: final part
 # HFST:
-num_final.tmp1.hfst: fst/num_final.tmp.hfst \
-					 fst/phonology.compose.hfst
+num_final.tmp1.hfst: morphology/num_final.tmp.hfst \
+					 morphology/phonology.compose.hfst
 	$(AM_V_INTRSCT)\
 		  $(HFST_DETERMINIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) $<\
 		| $(HFST_MINIMIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) \
 		| $(HFST_COMPOSE_INTERSECT) $(COMPOSE_INTERSECT_FLAG) \
 			$(MORE_VERBOSITY) $(HFST_FLAGS) \
-			-2 fst/phonology.compose.hfst \
+			-2 morphology/phonology.compose.hfst \
 		| $(HFST_MINIMIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) \
 		-o $@ 
 
 # XEROX
-num_final.tmp1.xfst: fst/num_final.tmp.xfst \
-			 fst/phonology.compose.xfst
+num_final.tmp1.xfst: morphology/num_final.tmp.xfst \
+			 morphology/phonology.compose.xfst
 	$(AM_V_LEXC)$(PRINTF) \
-		"read-source fst/num_final.tmp.xfst\n\
-		read-rules fst/phonology.compose.xfst\n\
+		"read-source morphology/num_final.tmp.xfst\n\
+		read-rules morphology/phonology.compose.xfst\n\
 		compose-result\n\
 		save-result $@\n\
 		quit\n" \
@@ -211,7 +211,7 @@ num_final.tmp1.xfst: fst/num_final.tmp.xfst \
 # select only nouns, tag them as proper nouns, 
 # and upcase both the lexical and the surface side
 # (perhaps this could be done more elegantly, i.e. in some other dir and/or makefile)
-fst/guesser-names.tmp.hfst: fst/guesser-names.tmp0.hfst filters/upcase-guessed-names.est.hfst
+morphology/guesser-names.tmp.hfst: morphology/guesser-names.tmp0.hfst filters/upcase-guessed-names.est.hfst
 	$(AM_V_XFST_TOOL)$(PRINTF) "set flag-is-epsilon OFF\n\
 			read regex                                                 \
 			[ \"+Guess\" \"+N\" \"+Prop\" <- \"+Guess\" \"+N\" ]        \
@@ -225,26 +225,26 @@ fst/guesser-names.tmp.hfst: fst/guesser-names.tmp0.hfst filters/upcase-guessed-n
 
 
 # phonological simplex word patterns with inflections
-guesser-simplex-nouns.tmp1.hfst: fst/guesser-simplex-nouns.tmp.hfst \
-					 fst/phonology.compose.hfst
+guesser-simplex-nouns.tmp1.hfst: morphology/guesser-simplex-nouns.tmp.hfst \
+					 morphology/phonology.compose.hfst
 	$(AM_V_INTRSCT)\
 		  $(HFST_DETERMINIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) $<\
 		| $(HFST_MINIMIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) \
 		| $(HFST_COMPOSE_INTERSECT) $(COMPOSE_INTERSECT_FLAG) \
 			$(MORE_VERBOSITY) $(HFST_FLAGS) \
-			-2 fst/phonology.compose.hfst \
+			-2 morphology/phonology.compose.hfst \
 		| $(HFST_MINIMIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) \
 		-o $@ 
 
 # phonological name patterns with inflections
-guesser-names.tmp1.hfst: fst/guesser-names.tmp.hfst \
-					 fst/phonology.compose.hfst
+guesser-names.tmp1.hfst: morphology/guesser-names.tmp.hfst \
+					 morphology/phonology.compose.hfst
 	$(AM_V_INTRSCT)\
 		  $(HFST_DETERMINIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) $<\
 		| $(HFST_MINIMIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) \
 		| $(HFST_COMPOSE_INTERSECT) $(COMPOSE_INTERSECT_FLAG) \
 			$(MORE_VERBOSITY) $(HFST_FLAGS) \
-			-2 fst/phonology.compose.hfst \
+			-2 morphology/phonology.compose.hfst \
 		| $(HFST_MINIMIZE) $(MORE_VERBOSITY) $(HFST_FLAGS) \
 		-o $@ 
 
@@ -817,7 +817,7 @@ generator-raw-gt-desc.hfst: generator-raw-gt-desc.weighted.hfst
 #   - homonymy tags
 
 analyser-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%                \
-					fst/abbrevdot.tmp.% \
+					morphology/abbrevdot.tmp.% \
 					filters/remove-area-tags.%                \
 					filters/remove-dialect-tags.%             \
 					filters/remove-number-string-tags.%       \
@@ -852,7 +852,7 @@ analyser-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%                \
 			.o. @\"filters/remove-Use_minusGC-tags.$*\"         \
 			.o. @\"filters/remove-Use_PMatch-strings.$*\"       \
 			.o. @\"filters/remove-mwe-tags.$*\"                 \
-			.o. [@\"$<\" | @\"fst/abbrevdot.tmp.$*\"]           \
+			.o. [@\"$<\" | @\"morphology/abbrevdot.tmp.$*\"]           \
 			    $(GLT_DOWNCASE_COMPOSE) \
 			.o. @\"filters/remove-hyphenation-marks.$*\"        \
 			.o. @\"filters/remove-infl_deriv-borders.$*\"       \
@@ -871,7 +871,7 @@ analyser-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%                \
 
 # This is the default, descriptive generating transducer.
 generator-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%            \
-					fst/abbrevdot.tmp.% \
+					morphology/abbrevdot.tmp.% \
 					filters/make-optional-transitivity-tags.% \
 					filters/make-optional-homonymy-tags.%     \
 					filters/make-optional-hyph-tags.%         \
@@ -915,7 +915,7 @@ generator-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%            \
 			.o. @\"filters/remove-Use_minusGC-tags.$*\"         \
 			.o. @\"filters/remove-Use_PMatch-strings.$*\"       \
 			.o. @\"filters/remove-mwe-tags.$*\"                 \
-			.o. [@\"$<\" | @\"fst/abbrevdot.tmp.$*\"]           \
+			.o. [@\"$<\" | @\"morphology/abbrevdot.tmp.$*\"]           \
 			    $(GLT_DOWNCASE_COMPOSE) \
 			.o. @\"filters/remove-hyphenation-marks.$*\"        \
 			.o. @\"filters/remove-infl_deriv-borders.$*\"       \
@@ -954,13 +954,13 @@ generator-gt-desc.tmp.hfst: generator-gt-desc.dot.tmp.hfst \
 # this will be later unioned with simplex word guesser to result in a complete guesser
 
 analyser-gt-descguess.hfst: analyser-gt-desc.dot.tmp.hfst \
-					fst/substitute_blockcap.xfscript \
-					fst/substitutions.xfscript \
+					morphology/substitute_blockcap.xfscript \
+					morphology/substitutions.xfscript \
 					orthography/punctrelax.compose.hfst
 	$(AM_V_XFST_TOOL)$(PRINTF) "set encode-weights ON\n\
 				read regex @\"$<\";\n\
-				source fst/substitute_blockcap.xfscript\n\
-				source fst/substitutions.xfscript\n\
+				source morphology/substitute_blockcap.xfscript\n\
+				source morphology/substitutions.xfscript\n\
 				define fst\n\
 				read regex fst \
 				.o. @\"orthography/punctrelax.compose.hfst\" \
@@ -973,12 +973,12 @@ analyser-gt-descguess.hfst: analyser-gt-desc.dot.tmp.hfst \
 # substitute placeholders with fsts containing real symbols
  
 generator-gt-descguess.hfst: generator-gt-desc.dot.tmp.hfst \
-					fst/substitute_blockcap.xfscript \
-					fst/substitutions.xfscript 
+					morphology/substitute_blockcap.xfscript \
+					morphology/substitutions.xfscript 
 	$(AM_V_XFST_TOOL)$(PRINTF) "set encode-weights ON\n\
 				read regex @\"$<\";\n\
-				source fst/substitute_blockcap.xfscript\n\
-				source fst/substitutions.xfscript\n\
+				source morphology/substitute_blockcap.xfscript\n\
+				source morphology/substitutions.xfscript\n\
 		 $(INVERT_XFST)$(INVERT_FOMA)\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
