@@ -4,9 +4,14 @@
     * `fst/`
         * `morphology/`
             * `affixes/`
+            * [exceptional_declinations.lexc](src-fst-morphology-affixes-exceptional_declinations.lexc.html) ([src](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/morphology/affixes/exceptional_declinations.lexc))
+            * [gi.lexc](src-fst-morphology-affixes-gi.lexc.html) ([src](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/morphology/affixes/gi.lexc))
+            * [regular_declinations.lexc](src-fst-morphology-affixes-regular_declinations.lexc.html) ([src](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/morphology/affixes/regular_declinations.lexc))
+            * [verbs.lexc](src-fst-morphology-affixes-verbs.lexc.html) ([src](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/morphology/affixes/verbs.lexc))
             * [phonology.twolc](src-fst-morphology-phonology.twolc.html) ([src](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/morphology/phonology.twolc))
             * [root.lexc](src-fst-morphology-root.lexc.html) ([src](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/morphology/root.lexc))
             * `stems/`
+            * [acronyms.lexc](src-fst-morphology-stems-acronyms.lexc.html) ([src](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/morphology/stems/acronyms.lexc))
         * `phonetics/`
             * [txt2ipa.xfscript](src-fst-phonetics-txt2ipa.xfscript.html) ([src](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/phonetics/txt2ipa.xfscript))
         * `transcriptions/`
