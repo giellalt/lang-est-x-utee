@@ -22,7 +22,7 @@
 ###### Variables: #######
 POS=nouns
 ### in ###
-source_file=${srcdir}/../../../src/fst/stems/${POS}.lexc
+source_file=${srcdir}/../../../src/fst/morphology/stems/${POS}.lexc
 generator_file=./../../../src/fst/generator-gt-desc
 analyser_file=./../../../src/fst/analyser-gt-desc
 
