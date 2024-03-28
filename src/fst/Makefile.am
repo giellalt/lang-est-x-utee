@@ -101,8 +101,8 @@ EST_NUMERAL_FILTERS=filters/reorder-tags.est filters/numeral-filter.est
 
 # ---------- Overriding patterns for .generated 
 
-# For Estonian, we must override some "language-independent" pattern rules of building raw transducers. 
-# We accomplish this by defining our own pattern rules for some files created into the .generated directory by default 
+# For Estonian, we must override some "language-independent" pattern rules of building raw and tmp transducers. 
+# We accomplish this by defining our own pattern rules for some files created into the .generated directory by default. 
 # The correct files will be built into the current directory instead, and then copied to .generated 
 
 # NB! Only .hfst transducers have been tested !!!
@@ -138,10 +138,6 @@ analyser-raw-gt-%.hfst: generator-raw-gt-%.hfst
 
 .generated/analyser-gt-norm.hfst: analyser-gt-norm.hfst
 	$(AM_V_CP)cp $< $@
-
-# pattern designed for desc, norm... this is incorrect actually...
-# analyser-gt%.hfst: analyser-gt%.tmp.hfst
-# 	$(AM_V_CP)cp $< $@
 
 # override the default normative analyser and generator
 # (is it necessary actually? where are they used ?)
