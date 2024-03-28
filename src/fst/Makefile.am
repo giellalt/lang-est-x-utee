@@ -99,6 +99,60 @@ EST_NUMERAL_FILTERS=filters/reorder-tags.est filters/numeral-filter.est
 #EST_COMPOUND_PRE_FILTERS=filters/block-compounds.est
 #EST_COMPOUND_POST_FILTERS=filters/compound-filter.est
 
+# ---------- Overriding patterns for .generated 
+
+# For Estonian, we must override some "language-independent" pattern rules of building raw transducers. 
+# We accomplish this by defining our own pattern rules for some files created into the .generated directory by default 
+# The correct files will be built into the current directory instead, and then copied to .generated 
+
+# NB! Only .hfst transducers have been tested !!!
+
+# Two transducers are built correctly into the .generated directory:
+# the "raw_desc_tmp1" transducer results from lexc files + twol
+# .generated/generator-raw-gt-desc.tmp1.hfst 
+# the "raw_desc_tmp" transducer results from "raw_desc_tmp1" + tag reordering filters
+# .generated/generator-raw-gt-desc.tmp.hfst
+
+generator-raw-gt-desc.tmp.hfst: .generated/generator-raw-gt-desc.tmp.hfst
+	$(AM_V_CP)cp $< $@
+	
+analyser-raw-gt-desc.tmp.hfst: generator-raw-gt-desc.tmp.hfst
+	$(AM_V_CP)cp $< $@
+
+analyser-raw-gt-%.hfst: generator-raw-gt-%.hfst
+	$(AM_V_CP)cp $< $@
+
+# override the default pattern rules
+
+.generated/generator-raw-gt-desc.hfst: generator-raw-gt-desc.hfst
+	$(AM_V_CP)cp $< $@
+
+.generated/analyser-raw-gt-desc.hfst: analyser-raw-gt-desc.hfst
+	$(AM_V_CP)cp $< $@
+
+.generated/analyser-gt-desc.tmp.hfst: analyser-gt-desc.tmp.hfst
+	$(AM_V_CP)cp $< $@
+
+.generated/analyser-gt-desc.hfst: analyser-gt-desc.hfst
+	$(AM_V_CP)cp $< $@
+
+.generated/analyser-gt-norm.hfst: analyser-gt-norm.hfst
+	$(AM_V_CP)cp $< $@
+
+# pattern designed for desc, norm... this is incorrect actually...
+# analyser-gt%.hfst: analyser-gt%.tmp.hfst
+# 	$(AM_V_CP)cp $< $@
+
+# override the default normative analyser and generator
+# (is it necessary actually? where are they used ?)
+.generated/analyser-gt-norm.tmp.hfst: analyser-gt-norm.tmp.hfst
+	$(AM_V_CP)cp $< $@
+
+.generated/generator-gt-norm.tmp.hfst: generator-gt-norm.tmp.hfst
+	$(AM_V_CP)cp $< $@
+
+# ---------- End of overriding patterns
+
 # paired words are words whose both parts inflect, e.g. emb-kumb, kihin-kahin
 # they are compiled into a transducer of its own:
 # initial_part final_part  
@@ -979,7 +1033,6 @@ generator-gt-descguess.hfst: generator-gt-desc.dot.tmp.hfst \
 				read regex @\"$<\";\n\
 				source morphology/substitute_blockcap.xfscript\n\
 				source morphology/substitutions.xfscript\n\
-		 $(INVERT_XFST)$(INVERT_FOMA)\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
@@ -1011,7 +1064,26 @@ generator-gt-norm.tmp.hfst: generator-gt-desc.tmp.hfst \
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
+# override the default fallback processing for the -gt-desc.hfst and -gt-norm.hfst analysers and generators:
+analyser-gt%.hfst: analyser-gt%.tmp.hfst \
+				filters/remove-usage-tags.hfst
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"filters/remove-usage-tags.hfst\"  \
+			.o. @\"$<\" \
+			;\n\
+		 $(INVERT_HFST)\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
 
+generator-gt%.hfst: generator-gt%.tmp.hfst \
+				filters/remove-usage-tags.hfst
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"filters/remove-usage-tags.hfst\"  \
+			.o. @\"$<\" \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+#---------
 # HFST:
 # simplex word guesser;
 # result: guessed simplex words and derivations with weights
