@@ -10,6 +10,3 @@ this ensures that downcasing derivation (helveetslane) works
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/gi.lexc](https://github.com/giellalt/lang-est-x-utee/blob/main/src/fst/morphology/affixes/gi.lexc)</small>
-
----
-
