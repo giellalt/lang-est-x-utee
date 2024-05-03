@@ -56,7 +56,7 @@ Z -> z,
 Ü -> ü
 || FLAG _ , FLAG ?* %- _ ] 
 .o. 
-[ %- (->) [] || FLAG ?* _ ] ;
+[ %- (->) [] || FLAG \[»]* _ ] ;     # »- indicates +Der/minus
 
 regex down ;
 

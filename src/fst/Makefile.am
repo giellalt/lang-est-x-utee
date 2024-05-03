@@ -867,6 +867,7 @@ generator-raw-gt-desc.hfst: generator-raw-gt-desc.weighted.hfst
 #   - homonymy tags
 
 analyser-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%                \
+					morphology/substitute_blockcap.xfscript \
 					morphology/abbrevdot.tmp.% \
 					filters/remove-area-tags.%                \
 					filters/remove-dialect-tags.%             \
@@ -916,12 +917,14 @@ analyser-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%                \
 			.o. @\"orthography/allcaps.compose.$*\"       \
 			.o. @\"orthography/spellrelax.compose.$*\"          \
 			; \n\
+			source morphology/substitute_blockcap.xfscript\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
 # This is the default, descriptive generating transducer.
 generator-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%            \
 					morphology/abbrevdot.tmp.% \
+					morphology/substitute_blockcap.xfscript \
 					filters/make-optional-transitivity-tags.% \
 					filters/make-optional-homonymy-tags.%     \
 					filters/make-optional-hyph-tags.%         \
@@ -971,6 +974,7 @@ generator-gt-desc.dot.tmp.%: analyser-raw-gt-desc.%            \
 			.o. @\"filters/remove-infl_deriv-borders.$*\"       \
 			.o. @\"filters/remove-word-boundary.$*\"            \
 			;\n\
+			source morphology/substitute_blockcap.xfscript\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
@@ -1004,12 +1008,10 @@ generator-gt-desc.tmp.hfst: generator-gt-desc.dot.tmp.hfst \
 # this will be later unioned with simplex word guesser to result in a complete guesser
 
 analyser-gt-descguess.hfst: analyser-gt-desc.dot.tmp.hfst \
-					morphology/substitute_blockcap.xfscript \
 					morphology/substitutions.xfscript \
 					orthography/punctrelax.compose.hfst
 	$(AM_V_XFST_TOOL)$(PRINTF) "set encode-weights ON\n\
 				read regex @\"$<\";\n\
-				source morphology/substitute_blockcap.xfscript\n\
 				source morphology/substitutions.xfscript\n\
 				define fst\n\
 				read regex fst \
@@ -1023,11 +1025,9 @@ analyser-gt-descguess.hfst: analyser-gt-desc.dot.tmp.hfst \
 # substitute placeholders with fsts containing real symbols
  
 generator-gt-descguess.hfst: generator-gt-desc.dot.tmp.hfst \
-					morphology/substitute_blockcap.xfscript \
 					morphology/substitutions.xfscript 
 	$(AM_V_XFST_TOOL)$(PRINTF) "set encode-weights ON\n\
 				read regex @\"$<\";\n\
-				source morphology/substitute_blockcap.xfscript\n\
 				source morphology/substitutions.xfscript\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)

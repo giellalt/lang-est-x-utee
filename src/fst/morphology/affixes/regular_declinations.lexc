@@ -357,7 +357,7 @@ LEXICON EndingsExpressingCase
 ! ---------------
 
 LEXICON Noun_symbols_possibly_inflected
-     +N+Symbol: EndingsExpressingCase ;   ! has the same endings as abbreviations, sometimes wrong
+     +N+Symbol:- EndingsExpressingCase ;   ! has the same endings as abbreviations, sometimes wrong
                                           ! (e.g. Pl Gen €-te $-de instead of the correct €-de $-te)
      +N+Symbol: # ;
 
