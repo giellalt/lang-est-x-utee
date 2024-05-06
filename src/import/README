@@ -1,8 +1,56 @@
-Filosoft lexicon into GT infra
+Re-convert Filosoft's Vabamorf lexicon into GT infra
 
-source: https://github.com/Filosoft/vabamorf
+Use with care!
+(if you want to incorporate some changes made in the Vabamorf lexicon, or make big changes in how the files are built) 
 
-lexicon file:
+Source: https://github.com/Filosoft/vabamorf
+
+Lexicon files originate from:
+
 https://github.com/Filosoft/vabamorf/tree/master/dct/data/mrf/fs_lex
+https://github.com/Filosoft/vabamorf/tree/master/dct/data/mrf/fs_suf
+
+Run the following scripts in this directory to overwrite the .lexc files in ../fst/morphology/stems
+(plus one or two .xfscript files in ../fst/filters) 
+NB! This will NOT result in replacing all .lexc files; some .lexc files come from other sources.
+ 
+./fs_lex2gt.sh; ./fsgt2final.sh; ./fs_lex2pluraletantum.sh
+
+--------------------
+fs_lex2gt.sh
+
+Converts entries of Vabamorf lexicon into LEXC-type entries
+1. Convert original inflectional type classification.  
+2. Convert original stems into surface and lexical side representation.
+
+--------------------
+fsgt2final.sh
+
+Creates .lexc files
+1. Create a name for a lexicon, and create a name for a continuation class sublexicon.  
+2. Copy every word to a proper (sub)lexicon. This involves classifying the word, based on some tag in the original Vabamorf lexicon, or some phonological pattern of the word itself. 
+3. Add flag diacritics to some words.
+Both sublexicons and flag diacritics are designed to restrict word compunding. A general rule of compounding relies on word class (noun, adverb etc.), but in order to have finer restrictions, one must divide words into sub-lexicons, or add flag diacritics to individual words.
+
+4. Add weights to lexicons. The weight of a lemma is based on its frequency rank in a frequency dictionary. The most frequent words have rank 0. 
+
+5. Create a filter for eliminating words from a normative speller lexicon. 
+
+--------------------
+fs_suf2gt.sh
+
+(called by fsgt2final.sh)
+Creates final_components.lexc. This file contains continuation classes, each containing a few words that participate in compound forming more freely than other words.
+
+--------------------
+classify_names.sh
+
+(called by fsgt2final.sh)
+Groups proper names into geo, persons and other, thus passing the info from Vabamorf lexicon to propernouns.lexc. 
+
+--------------------
+fs_lex2pluraletantum.sh
+Create a filter for removing singular wordforms of plurale tantum words. This filter is applied while constructing a simplex word Estonian transducer.
+IF you want to use this filter in the transducer building process, you have to copy it yourselt to ../fst/filters
 
 

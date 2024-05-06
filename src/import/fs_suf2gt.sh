@@ -14,7 +14,7 @@ cat fs_suf \
 | LC_COLLATE=C sort | sed 's/ :/_/' \
 > suf.tmp1
 
-grep ':' ../fst/stems/*.lexc \
+grep ':' ../fst/morphology/stems/*.lexc \
 | grep -v '<.*>' \
 | grep -v '\/pref' \
 | grep -v '\/final' \
