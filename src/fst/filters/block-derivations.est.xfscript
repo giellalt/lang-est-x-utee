@@ -136,7 +136,8 @@ define BadDer4 [
     [{omandama} ("+Guess") "+V" "+Der/is"] |
     [Vow {ke} ("+Guess") "+A" "+Der/im"] |   # rohke+im is OK, peenike+im not OK
     [{hea} ("+Guess") "+A" "+Der/im"] |
-    [{asi} ("+Guess") "+N" "+Der/lik"]   # asilik is bad; asjalik is in the lexicon already
+    [{asi} ("+Guess") "+N" "+Der/lik"] |  # asilik is bad; asjalik is in the lexicon already
+    [{hea} ("+Guess") "+A" "+Der/sti"]    # heasti is bad; hästi is in the lexicon already
     ] ;
 
 # some words with certain suffixes make bad components in compounds  

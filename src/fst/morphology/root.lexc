@@ -530,6 +530,12 @@ Multichar_Symbols
 +Der/ist !!= * `@CODE@`
 !!€ kapitalist: kapitalism+N+Der/ist+N+Sg+Nom
 
+!! N Prop --> N
+
++Der/lane !!= * `@CODE@`:  helveetslane:Helveetsia+N+Prop+Der/lane+N+Sg+Nom
+!!€ firenzelane: Firenze+N+Prop+Der/lane+N+Sg+Nom
+!!€ helveetslane: Helveetsia+N+Prop+Der/lane+N+Sg+Nom
+
 !! A --> N, V --> N
 
 +Der/us !!= * `@CODE@`
@@ -540,10 +546,6 @@ Multichar_Symbols
 
 +Der/ti !!= * `@CODE@`
 !!€ lauati: laud+N+Der/ti+Adv
-
-+Der/lane !!= * `@CODE@`:  helveetslane:Helveetsia+N+Prop+Der/lane+N+Sg+Nom
-!!€ firenzelane: Firenze+N+Prop+Der/lane+N+Sg+Nom
-!!€ helveetslane: Helveetsia+N+Prop+Der/lane+N+Sg+Nom
 
 !! N --> N, A --> A
 
