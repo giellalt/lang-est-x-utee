@@ -523,6 +523,12 @@ N --> N
 * `+Der/ist `
 * *kapitalist:* `kapitalism+N+Der/ist+N+Sg+Nom`
 
+N Prop --> N
+
+* `+Der/lane `:  helveetslane:Helveetsia+N+Prop+Der/lane+N+Sg+Nom
+* *firenzelane:* `Firenze+N+Prop+Der/lane+N+Sg+Nom`
+* *helveetslane:* `Helveetsia+N+Prop+Der/lane+N+Sg+Nom`
+
 A --> N, V --> N
 
 * `+Der/us `
@@ -533,10 +539,6 @@ N --> Adv
 
 * `+Der/ti `
 * *lauati:* `laud+N+Der/ti+Adv`
-
-* `+Der/lane `:  helveetslane:Helveetsia+N+Prop+Der/lane+N+Sg+Nom
-* *firenzelane:* `Firenze+N+Prop+Der/lane+N+Sg+Nom`
-* *helveetslane:* `Helveetsia+N+Prop+Der/lane+N+Sg+Nom`
 
 N --> N, A --> A
 
