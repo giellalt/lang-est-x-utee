@@ -1120,6 +1120,11 @@ LEXICON Latter !!= * `@CODE@` the latter part of a compound
   @R.POS.ACRMinus@ LatterAdjective ;      
   @R.POS.Pref@ LatterAdjective ;  ! ebapunane, ökokorralik
   @R.POS.Pref@ LatterAdjectiveComp ;  ! inimtühjem
+  
+  ! noninflecting adjective should be the final component
+  @R.POS.Pref@@P.POS.A@@P.Part.Three@ NIAdjectivesIness ;       ! ülielevil; 
+
+
   @R.Case.Short@ LatterAdjective ;  ! vaatamispunane, astraalpunane
 
   @R.POS.N@@R.Case.Nom@@R.Stem.Nom@ LatterAdjective "weight: 5" ; ! laudõiekas

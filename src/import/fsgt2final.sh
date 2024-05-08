@@ -110,8 +110,6 @@ echo '\nLEXICON NoninflectingAdjectiveVa\n' \
 > noninflecting_adjectives.protolexc
 cat fs_gt.noninfl.tmp1 | grep '^va+A:' >> noninflecting_adjectives.protolexc
 
-echo '\nLEXICON NoninflectingAdjectives\n' \
->> noninflecting_adjectives.protolexc
 cat fs_gt.noninfl.tmp1 | grep '+A:' | grep -v '^va+A:' > noninflecting_adjectives.tmp1
 
 # mark good words for compounding 
@@ -130,7 +128,8 @@ cat noninflecting_adjectives.tmp1 \
 | sed '/^täis+/s/^\([^:]*+A\):\([^;]*;\)\(.*\)/@P.Case.Short@\1:@P.Case.Short@\2\3/' \
 | sed '/^väärt+/s/^\([^:]*+A\):\([^;]*;\)\(.*\)/@P.Case.Short@\1:@P.Case.Short@\2\3/' \
 | sed '/^[^aeiouõäöü]*[aeiouõäöü][aeiouõäöü]*[^aeiouõäöü][^aeiouõäöü]*[aeiu]s+/s/^\([^:]*+A\):\([^;]*;\)\(.*\)/@P.Case.Ine@\1:@P.Case.Ine@\2\3/' \
-| sed '/il+/s/^\([^:]*+A\):\([^;]*;\)\(.*\)/@P.Case.Ine@\1:@P.Case.Ine@\2\3/' \
+| sed '/il+[^#]*$/s/^\([^:]*+A\):\([^;]*;\)\(.*\)/@P.Case.Ine@\1:@P.Case.Ine@\2\3/' \
+| sed '/li+/s/^\([^:]*+A\):\([^;]*;\)\(.*\)/@P.Case.Ine@\1:@P.Case.Ine@\2\3/' \
 \
 | sed '/@...+/s/^\(@.\.[^@]*@[^:@]*+A\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
 | sed '/^...+/s/^\([^:]*+A\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
@@ -138,7 +137,37 @@ cat noninflecting_adjectives.tmp1 \
 | sed '/^....+/s/^\([^:]*+A\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
 > noninflecting_adjectives.tmp2
 
-cat noninflecting_adjectives.tmp2 >> noninflecting_adjectives.protolexc
+# group the words into sublexicons
+cat noninflecting_adjectives.tmp2 \
+| grep '@P.Case.Short@' \
+| sed 's/@P.Case.Short@//g' \
+> noninflecting_adjectives.tmp2.short
+
+cat noninflecting_adjectives.tmp2 \
+| grep '@P.Case.Ine@' \
+| sed 's/@P.Case.Ine@//g' \
+> noninflecting_adjectives.tmp2.ine
+
+cat noninflecting_adjectives.tmp2 \
+| grep -v '@P.Case.Short@' \
+| grep -v '@P.Case.Ine@' \
+> noninflecting_adjectives.tmp2.unspec
+
+#cat noninflecting_adjectives.tmp2 >> noninflecting_adjectives.protolexc
+echo '\nLEXICON NoninflectingAdjectives\n\n  @P.Case.Short@ NIAdjectivesShort ;\n  @P.Case.Ine@ NIAdjectivesIness ;\n  NIAdjectivesUnSpec ;\n' \
+>> noninflecting_adjectives.protolexc
+
+echo '\nLEXICON NIAdjectivesShort\n' \
+>> noninflecting_adjectives.protolexc
+cat noninflecting_adjectives.tmp2.short >> noninflecting_adjectives.protolexc
+
+echo '\nLEXICON NIAdjectivesIness\n' \
+>> noninflecting_adjectives.protolexc
+cat noninflecting_adjectives.tmp2.ine >> noninflecting_adjectives.protolexc
+
+echo '\nLEXICON NIAdjectivesUnSpec\n' \
+>> noninflecting_adjectives.protolexc
+cat noninflecting_adjectives.tmp2.unspec >> noninflecting_adjectives.protolexc
 
 echo 'LEXICON ComparativeAdjectives\n' > comparative_adjectives.protolexc
 cat fs_gt.inflecting.tmp1 | grep '+A+Comp' > comparative_adjectives.tmp1
