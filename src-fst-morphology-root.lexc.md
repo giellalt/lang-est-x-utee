@@ -449,6 +449,9 @@ V --> N
 * `+Der/mus `
 * *küllastumus:* `küllastuma+V+Der/mus+N+Sg+Nom`
 
+* `+Der/vus `
+* *elavus:* `elama+V+Der/vus+N+Sg+Nom`
+
 * `+Der/ng `
 * *devalveering:* `devalveerima+V+Der/ng+N+Sg+Nom`
 
