@@ -201,52 +201,37 @@ cat superlative_adjectives.tmp1 \
 
 cat superlative_adjectives.tmp2 >> superlative_adjectives.protolexc
 
-
-
 # find short adverbs:
 # grep '^[^aeiouõäöü]*[aeiouõäöü]*[^aeiouõäöü][^aeiouõäöü][aeiouõäöü][aeiouõäöü]*[^aeiouõäöü]*[^aeiouõäöü]i*+[^#=]*$'
 
-# lisaks (1), lisaks (2)
+# adverbs need to be grouped according to their potential to partiocipate in compounding
 cat fs_gt.noninfl.tmp1 | grep '+Adv' \
 | grep '\(^järel+\)\|\(^koos+\)\|\(^kõrval+\)\|\(^otse+\)\|\(^piki+\)\|\(^püsti+\)\|\(^ratsa+\)\|\(^taga+\)\|\(^topelt+\)\|\(^vallas+\)\|\(^vastas+\)\|\(^vastu+\)\|\(^üle+\)' \
 > tmpadv.0
 
 cat fs_gt.noninfl.tmp1 | grep '+Adv' \
 | grep -v '\(^järel+\)\|\(^koos+\)\|\(^kõrval+\)\|\(^otse+\)\|\(^piki+\)\|\(^püsti+\)\|\(^ratsa+\)\|\(^taga+\)\|\(^topelt+\)\|\(^vallas+\)\|\(^vastas+\)\|\(^vastu+\)\|\(^üle+\)' \
+| sort -u \
 > tmpadv.alg
+#--------------
 
 cat tmpadv.alg \
-| grep '\(^all+\)\|\(^alt+\)\|\(^eel+\)\|\(^ees+\)\|\(^ise+\)\|\(^jae+\)\|\(^oma+\)\|\(^pea+\)\|\(^ula+\)\|\(^õue+\)\|\(^ära+\)\|\(^üle+\)\|\(^....+\)\|\(^umbes+\)\|\(^....[^s]+[^#-]*$\)\|\(^...ks+[^#-]*$\)\|\(^...*li+[^#-]*$\)\|\(^...*il+[^#-]*$\)\|\(^...*ile+[^#-]*$\)\|\(^[^aeiouõäöü]*[aeiouõäöü][aeiouõäöü]*[^aeiouõäöü][^aeiouõäöü]*si+\)\|\(^hiljuti+\)\|\(^kaheti+\)\|\(^kolmeti+\)\|\(^kunagi+\)\|\(^mitmeti+\)\|\(^teisiti+\)\|\(^tükati+\)\|\(^võõriti+\)\|\(^uuesti+\)\|\(^valesti+\)' \
+| grep '\(^all+\)\|\(^alt+\)\|\(^eel+\)\|\(^ees+\)\|\(^ise+\)\|\(^jae+\)\|\(^oma+\)\|\(^pea+\)\|\(^ula+\)\|\(^õue+\)\|\(^ära+\)\|\(^üle+\)\|\(^umbes+\)\|\(^hiljuti+\)\|\(^kaheti+\)\|\(^kolmeti+\)\|\(^kunagi+\)\|\(^mitmeti+\)\|\(^teisiti+\)\|\(^tükati+\)\|\(^võõriti+\)\|\(^uuesti+\)\|\(^valesti+\)\|\(^alasti+\)\|\(^alles+\)\|\(^edasi+\)\|\(^eemale+\)\|\(^eemalt+\)\|\(^eraldi+\)\|\(^halvasti+\)\|\(^juurde+\)\|\(^järele+\)\|\(^kaotsi+\)\|\(^kaugele+\)\|\(^kaugelt+\)\|\(^kergelt+\)\|\(^kergesti+\)\|\(^kindlaks+\)\|\(^klaariks+\)\|\(^käsitsi+\)\|\(^kõrgelt+\)\|\(^kõrval+\)\|\(^kõrvalt+\)\|\(^kõvaks+\)\|\(^kõrvuti+\)\|\(^külili+\)\|\(^laiali+\)\|\(^raskesti+\)\|\(^seni+\)\|\(^sisse+\)\|\(^tagant+\)\|\(^tagasi+\)\|\(^viimati+\)\|\(^võistu+\)\|\(^vääriti+\)\|\(^äsja+\)' \
+> uustmpadv.1
+
+cat tmpadv.alg \
+| grep '\(^....+\)\|\(^....[^s]+[^#-]*$\)\|\(^...ks+[^#-]*$\)\|\(^...*li+[^#-]*$\)\|\(^...*il+[^#-]*$\)\|\(^...*ile+[^#-]*$\)\|\(^[^aeiouõäöü]*[aeiouõäöü][aeiouõäöü]*[^aeiouõäöü][^aeiouõäöü]*si+\)' \
 | grep -v '\(^miks+\)\|\(^näos+\)\|\(^egas+\)\|\(^kuis+\)\|\(^siis+\)\|\(^teps+\)\|\(^aina+\)\|\(^aiva+\)\|\(^eele+\)\|\(^eelt+\)\|\(^ikka+\)\|\(^istu+\)\|\(^jalu+\)\|\(^jaol+\)\|\(^jokk+\)\|\(^juba+\)\|\(^just+\)\|\(^jõle+\)\|\(^jönt+\)\|\(^kohe+\)\|\(^kole+\)\|\(^kord+\)\|\(^kuhu+\)\|\(^kuna+\)\|\(^küll+\)\|\(^loga+\)\|\(^loha+\)\|\(^losa+\)\|\(^mant+\)\|\(^manu+\)\|\(^nagu+\)\|\(^nõka+\)\|\(^nõus+\)\|\(^nüüd+\)\|\(^olgu+\)\|\(^puha+\)\|\(^põsi+\)\|\(^päta+\)\|\(^seep+\)\|\(^seni+\)\|\(^siva+\)\|\(^sugu+\)\|\(^tuna+\)\|\(^täna+\)\|\(^töhe+\)\|\(^vaid+\)\|\(^vaja+\)\|\(^veel+\)\|\(^vist+\)\|\(^väga+\)\|\(^õige+\)\|\(^õkva+\)\|\(^ähmi+\)\|\(^äkki+\)\|\(^ängi+\)\|\(^äsja+\)\|\(^+ühti\)\|\(^üsna+\)\|\(^abiga+\)\|\(^eduga+\)\|\(^hulga+\)\|\(^jõuga+\)\|\(^liiga+\)\|\(^lõõga+\)\|\(^punga+\)\|\(^seega+\)\|\(^tõega+\)' \
-> tmpadv.1
+>> uustmpadv.1
 
-# lisaks (3)
-cat tmpadv.alg \
-| grep '\(^alasti+\)\|\(^alles+\)\|\(^edasi+\)\|\(^eemale+\)\|\(^eemalt+\)\|\(^eraldi+\)\|\(^halvasti+\)\|\(^juurde+\)\|\(^järele+\)\|\(^kaotsi+\)\|\(^kaugele+\)\|\(^kaugelt+\)\|\(^kergelt+\)\|\(^kergesti+\)\|\(^kindlaks+\)\|\(^klaariks+\)\|\(^käsitsi+\)\|\(^kõrgelt+\)\|\(^kõrval+\)\|\(^kõrvalt+\)\|\(^kõvaks+\)\|\(^kõrvuti+\)\|\(^külili+\)\|\(^laiali+\)\|\(^raskesti+\)\|\(^seni+\)\|\(^sisse+\)\|\(^tagant+\)\|\(^tagasi+\)\|\(^viimati+\)\|\(^võistu+\)\|\(^vääriti+\)\|\(^äsja+\)' \
->> tmpadv.1
+cat tmpadv.0 uustmpadv.1 | sort -u > uustmpadv.1.srt
 
-# NB! see loend olgu sama, mis lisaks (2)
-cat tmpadv.alg \
-| grep '\(^miks+\)\|\(^näos+\)\|\(^egas+\)\|\(^kuis+\)\|\(^siis+\)\|\(^teps+\)\|\(^aina+\)\|\(^aiva+\)\|\(^eele+\)\|\(^eelt+\)\|\(^ikka+\)\|\(^istu+\)\|\(^jalu+\)\|\(^jaol+\)\|\(^jokk+\)\|\(^juba+\)\|\(^just+\)\|\(^jõle+\)\|\(^jönt+\)\|\(^kohe+\)\|\(^kole+\)\|\(^kord+\)\|\(^kuhu+\)\|\(^kuna+\)\|\(^küll+\)\|\(^loga+\)\|\(^loha+\)\|\(^losa+\)\|\(^mant+\)\|\(^manu+\)\|\(^nagu+\)\|\(^nõka+\)\|\(^nõus+\)\|\(^nüüd+\)\|\(^olgu+\)\|\(^puha+\)\|\(^põsi+\)\|\(^päta+\)\|\(^seep+\)\|\(^seni+\)\|\(^siva+\)\|\(^sugu+\)\|\(^tuna+\)\|\(^täna+\)\|\(^töhe+\)\|\(^vaid+\)\|\(^vaja+\)\|\(^veel+\)\|\(^vist+\)\|\(^väga+\)\|\(^õige+\)\|\(^õkva+\)\|\(^ähmi+\)\|\(^äkki+\)\|\(^ängi+\)\|\(^äsja+\)\|\(^+ühti\)\|\(^üsna+\)\|\(^abiga+\)\|\(^eduga+\)\|\(^hulga+\)\|\(^jõuga+\)\|\(^liiga+\)\|\(^lõõga+\)\|\(^punga+\)\|\(^seega+\)\|\(^tõega+\)' \
-> tmpadv.2
+# create the tool for marking 
+cat uustmpadv.1.srt | sed 's/^\([^+]*\)+.*$/s\/^\1+\/__CMP__\&\//' > cmptmpadv.sed
 
-#> adverbs.tmp2
-# NB! see loend olgu sama, mis lisaks (1)
-cat tmpadv.alg \
-| grep -v '\(^all+\)\|\(^alt+\)\|\(^eel+\)\|\(^ees+\)\|\(^ise+\)\|\(^jae+\)\|\(^oma+\)\|\(^pea+\)\|\(^ula+\)\|\(^õue+\)\|\(^ära+\)\|\(^üle+\)\|\(^....+\)\|\(^umbes+\)\|\(^....[^s]+[^#-]*$\)\|\(^...ks+[^#-]*$\)\|\(^...*li+[^#-]*$\)\|\(^...*il+[^#-]*$\)\|\(^...*ile+[^#-]*$\)\|\(^[^aeiouõäöü]*[aeiouõäöü][aeiouõäöü]*[^aeiouõäöü][^aeiouõäöü]*si+\)\|\(^hiljuti+\)\|\(^kaheti+\)\|\(^kolmeti+\)\|\(^kunagi+\)\|\(^mitmeti+\)\|\(^teisiti+\)\|\(^tükati+\)\|\(^võõriti+\)\|\(^uuesti+\)\|\(^valesti+\)' \
->> tmpadv.2
-#>> adverbs.tmp2
-
-# NB! see loend olgu sama, mis lisaks (3)
-cat tmpadv.2 | grep -v '\(^alasti+\)\|\(^alles+\)\|\(^edasi+\)\|\(^eemale+\)\|\(^eemalt+\)\|\(^eraldi+\)\|\(^halvasti+\)\|\(^juurde+\)\|\(^järele+\)\|\(^kaotsi+\)\|\(^kaugele+\)\|\(^kaugelt+\)\|\(^kergelt+\)\|\(^kergesti+\)\|\(^kindlaks+\)\|\(^klaariks+\)\|\(^käsitsi+\)\|\(^kõrgelt+\)\|\(^kõrval+\)\|\(^kõrvalt+\)\|\(^kõvaks+\)\|\(^kõrvuti+\)\|\(^külili+\)\|\(^laiali+\)\|\(^raskesti+\)\|\(^seni+\)\|\(^sisse+\)\|\(^tagant+\)\|\(^tagasi+\)\|\(^viimati+\)\|\(^võistu+\)\|\(^vääriti+\)\|\(^äsja+\)' \
-> tmpadv.3
-
-#>> adverbs.protolexc
-
-#echo 'LEXICON Adverbs\n\n CompoundingAdverbs ;\n @P.Part.Bad@ PlainAdverbs ;\n\n' > adverbs.protolexc
 echo '!LEXICON Adverbs would be too unspecific; instead we have\n! CompoundingAdverbs and NonCompoundingAdverbs ;\n\n' > adverbs.protolexc
 
-echo 'LEXICON CompoundingAdverbs\n' >> adverbs.protolexc
+echo '\nLEXICON CompoundingAdverbs\n\n' >> adverbs.protolexc
 cat tmpadv.0 \
 | sed '/^üle+/!s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.topelt@\1:@P.Stem.topelt@\2\3/' \
 | sed '/^üle+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.üle@\1:@P.Stem.üle@\2\3/' \
@@ -257,10 +242,13 @@ cat tmpadv.0 \
 | sed '/^....+/s/^\([^:]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
 >> adverbs.protolexc
 
-cat tmpadv.1 \
+cat tmpadv.alg \
+| sed -f cmptmpadv.sed \
+| grep '__CMP__' \
+| sed 's/__CMP__//' \
+\
 | sed '/^vähe+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.vähe@\1:@P.Stem.vähe@\2\3/' \
 | sed '/^puht+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.vähe@\1:@P.Stem.vähe@\2\3/' \
-| sort -u \
 \
 | sed '/@...+/s/^\(@.\.[^@]*@[^:@]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
 | sed '/^...+/s/^\([^:]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
@@ -268,10 +256,21 @@ cat tmpadv.1 \
 | sed '/^....+/s/^\([^:]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
 >> adverbs.protolexc
 
-echo '\nLEXICON NonCompoundingAdverbs\n' >> adverbs.protolexc
+echo '\n\nLEXICON NonCompoundingAdverbs\n\n' >> adverbs.protolexc
 
-cat tmpadv.3 | sort -u >> adverbs.protolexc
-#cat adverbs.tmp2 | sort -u >> adverbs.protolexc
+cat tmpadv.alg \
+| sed -f cmptmpadv.sed \
+| grep -v '__CMP__' \
+>> adverbs.protolexc
+
+# märgi siia need, mis esinevad mitmesõnaliste verbide andmebaasis lihtmäärsõnana 
+cat adverbs.protolexc \
+| sed 's/^/@/' \
+| sed -f DB_EMWV_2008_adverbs.sed \
+| sed 's/^@//' \
+| sed 's/^__DB@/__DB__/' \
+| sed 's/^\(.*\)__DB@/__DB__\1@/' \
+> adverbs.protolexc.vers2
 
 echo 'LEXICON Adpositions\n' > adpositions.protolexc
 cat fs_gt.noninfl.tmp1 | grep '+Adp' >> adpositions.protolexc
@@ -379,6 +378,7 @@ LC_COLLATE=C join -t+ -a 1 -a 2 -o 1.1 2.1 2.2 head_esiosad fs_gt.inflecting.tmp
 | sed '/^[k]*ost+/s/heaesi//' \
 | sed '/^õpe+/s/heaesi//' \
 | sed '/^anne+/s/heaesi//' \
+| sed '/^pool+.*TAUD/s/heaesi//' \
 | sed 's/^[^+]*+//' \
 | sed 's/+N_Usage/+N+Usage/' > fs_gt.inflecting.tmp1.tagged
 #----

@@ -414,7 +414,8 @@ LEXICON SUPINE_V
  @R.Part.One@           SUPINE_MA_FORMS ;    ! These can be 1st part of a compound
                       : MINE_DERIVATION ;    ! elamine
                       : JA_DERIVATION ;      ! elaja, õpetaja, õpetajanna, õpetajake, õpetajalik, ...
-                      : V_DERIVATION ;       ! õpetav, õpetavalt, õpetavus, õpetavam, ...
+                      : V_DERIVATION ;       ! õpetav, õpetavalt, õpetavam, ...
+                      : VUS_DERIVATION ;     ! õpetavus
                       : MATU_DERIVATION ;    ! segamatu, segamatult, segamatus, segamatum, ...
                       : MATA_DERIVATION ;     ! segamata
                       : MUS_DERIVATION ;     ! küllastumus, promoveerumus etc
@@ -461,11 +462,12 @@ LEXICON INFINITIVE    ! infinitive, gerund (des-form)
 
                       :%>D7 A_INFINITIVE ;
 
-LEXICON A_INFINITIVE   ! common part of an infinitive, gerund (des-form);
-                       ! also alone in a subparadigm of a few old words
+LEXICON A_INFINITIVE  ! common part of an infinitive, gerund (des-form);
+                      ! also alone in a subparadigm of a few old words
 
- @R.Part.One@             INF_FORMS ;     ! This can be 1st part of a compound
+ @R.Part.One@           INF_FORMS ;     ! This can be 1st part of a compound
                   +Ger:es NO_COMPOUND ;
+                        GER_DERIVATION ;      ! pool+magades, rõht+kirjutades;
 
 LEXICON INF_FORMS
                   +Inf:a GI ;
@@ -508,6 +510,14 @@ LEXICON PL3
 LEXICON NO_COMPOUND           ! this form cannot participate in a compound word
   @R.Part.One@@P.Part.Bad@ GI ;             
 
+! gerund is an exception in compounding and derivation ...
+LEXICON GER_DERIVATION    ! 2nd part of a compound
+ @R.Part.Two@@P.Part.Bad@@R.POS.Pref@  GER_DERIVATION_SUF ;    ! only 2 components: prefix + verb  
+
+LEXICON GER_DERIVATION_SUF       ! A derived adverb (but still tagged as +Verb+Ger)
+                  +Ger:es GI ;
+
+
 ! paradigmatic derivation, i.e. very regular
 ! @R.Part.One@ means that this is not a latter part of a compound 
 ! @R.Case.Par@ and @R.Case.Gen@ mean that this is a latter part of a compound 
@@ -516,8 +526,10 @@ LEXICON NO_COMPOUND           ! this form cannot participate in a compound word
 LEXICON NU_DERIVATION
   @R.Part.One@@P.POS.N@  NU_DERIVATION_SUF ;   ! no previous part; no restrictions   
   @R.Case.Par@@P.POS.N@  NU_DERIVATION_SUF ;
+  @R.Case.Sem@@P.POS.N@  NU_DERIVATION_SUF ;
   @R.Part.One@@P.POS.A@  NUD_DERIVATION_SUF ;   ! no previous part; no restrictions   
   @R.Case.Par@@P.POS.A@  NUD_DERIVATION_SUF ;
+  @R.Case.Sem@@P.POS.N@  NUD_DERIVATION_SUF ;
 
 LEXICON NU_DERIVATION_SUF
              +Der/nu+N:»nu AASTA ;             ! derivation: elanu etc
@@ -529,6 +541,7 @@ LEXICON NUD_DERIVATION_SUF
 LEXICON TU_DERIVATION  !    NB! the morpheme border + d/t is assigned before this lexicon
   @R.Part.One@@P.POS.A@  TU_DERIVATION_SUF ;   ! no previous part; no restrictions   
   @R.Case.Gen@@P.POS.A@  TU_DERIVATION_SUF ;
+  @R.Case.Sem@@P.POS.A@  TU_DERIVATION_SUF ;
 
 LEXICON TU_DERIVATION_SUF  !    NB! the morpheme border + d/t is assigned before this lexicon
              +Der/tu+A:u AASTA ;              ! derivation: elatu etc
@@ -537,6 +550,7 @@ LEXICON TU_DERIVATION_SUF  !    NB! the morpheme border + d/t is assigned before
 LEXICON MATA_DERIVATION
   @R.Part.One@@P.POS.A@  MATA_DERIVATION_SUF ;   ! no previous part; no restrictions   
   @R.Case.Par@@P.POS.A@  MATA_DERIVATION_SUF ;
+  @R.Case.Sem@@P.POS.A@  MATA_DERIVATION_SUF ;
 
 LEXICON MATA_DERIVATION_SUF
            +Der/mata+A:»mata GI ;            ! elamata 
@@ -544,6 +558,7 @@ LEXICON MATA_DERIVATION_SUF
 LEXICON MATU_DERIVATION
   @R.Part.One@@P.POS.N@  MATU_DERIVATION_SUF ;   ! no previous part; no restrictions   
   @R.Case.Gen@@P.POS.N@  MATU_DERIVATION_SUF ;
+  @R.Case.Sem@@P.POS.N@  MATU_DERIVATION_SUF ;
 
 LEXICON MATU_DERIVATION_SUF
            +Der/matu+A:»matu AASTA ;             ! segamatu etc
@@ -551,6 +566,7 @@ LEXICON MATU_DERIVATION_SUF
 LEXICON TAMATU_DERIVATION  !    NB! the morpheme border + d/t is assigned before this lexicon
   @R.Part.One@@P.POS.A@  TAMATU_DERIVATION_SUF ;   ! no previous part; no restrictions   
   @R.Case.Par@@P.POS.A@  TAMATU_DERIVATION_SUF ;
+  @R.Case.Sem@@P.POS.A@  TAMATU_DERIVATION_SUF ;
 
 LEXICON TAMATU_DERIVATION_SUF  !    NB! the morpheme border + d/t is assigned before this lexicon
            +Der/tamatu+A:amatu AASTA ;             ! segatamatu etc
@@ -558,13 +574,22 @@ LEXICON TAMATU_DERIVATION_SUF  !    NB! the morpheme border + d/t is assigned be
 LEXICON V_DERIVATION
   @R.Part.One@@P.POS.A@  V_DERIVATION_SUF ;   ! no previous part; no restrictions   
   @R.Case.Par@@P.POS.A@  V_DERIVATION_SUF ;
+  @R.Case.Sem@@P.POS.A@  V_DERIVATION_SUF ;
 
 LEXICON V_DERIVATION_SUF
               +Der/v+A:»v MAGUS ;              ! elav, elava etc
 
+LEXICON VUS_DERIVATION
+  @R.Part.One@@P.POS.N@  VUS_DERIVATION_SUF ;   ! no previous part; no restrictions   
+  @R.Case.Gen@@P.POS.N@@P.Der.us@@C.NeedNoun@  VUS_DERIVATION_SUF ;
+
+LEXICON VUS_DERIVATION_SUF
+             +Der/vus+N:»vus OLULINE ;         ! elavus, ...
+
 LEXICON TAV_DERIVATION   !    NB! the morpheme border + d/t is assigned before this lexicon
   @R.Part.One@@P.POS.A@  TAV_DERIVATION_SUF ;   ! no previous part; no restrictions   
   @R.Case.Par@@P.POS.A@  TAV_DERIVATION_SUF ;
+  @R.Case.Sem@@P.POS.A@  TAV_DERIVATION_SUF ;
 
 LEXICON TAV_DERIVATION_SUF   !    NB! the morpheme border + d/t is assigned before this lexicon
             +Der/tav+A:av MAGUS ;              ! elatav, elatava etc
@@ -572,6 +597,7 @@ LEXICON TAV_DERIVATION_SUF   !    NB! the morpheme border + d/t is assigned befo
 LEXICON MINE_DERIVATION
   @R.Part.One@@P.POS.N@  MINE_DERIVATION_SUF ;   ! no previous part; no restrictions   
   @R.Case.Gen@@P.POS.N@  MINE_DERIVATION_SUF ;
+  @R.Case.Sem@@P.POS.N@  MINE_DERIVATION_SUF ;
 
 LEXICON MINE_DERIVATION_SUF
            +Der/mine+N:»mine OLULINE ;         ! elamine
@@ -579,6 +605,7 @@ LEXICON MINE_DERIVATION_SUF
 LEXICON JA_DERIVATION
   @R.Part.One@@P.POS.N@  JA_DERIVATION_SUF ;   ! no previous part; no restrictions   
   @R.Case.Gen@@P.POS.N@  JA_DERIVATION_SUF ;
+  @R.Case.Sem@@P.POS.N@  JA_DERIVATION_SUF ;
 
 LEXICON JA_DERIVATION_SUF
              +Der/ja+N:»ja AASTA ;             ! elaja, elajat etc
@@ -593,7 +620,7 @@ LEXICON IS_DERIVATION_SUF
 
 LEXICON MUS_DERIVATION
   @R.Part.One@@P.POS.N@  MUS_DERIVATION_SUF ;   ! no previous part; no restrictions   
-  @R.Case.Gen@@P.POS.N@  MUS_DERIVATION_SUF ;
+  @R.Case.Gen@@P.POS.N@@P.Der.us@@C.NeedNoun@  MUS_DERIVATION_SUF ;
 
 LEXICON MUS_DERIVATION_SUF
              +Der/mus+N:»mus OLULINE ;         ! promoveerumus, elamus, ...
@@ -601,6 +628,7 @@ LEXICON MUS_DERIVATION_SUF
 LEXICON US_DERIVATION_VERB         ! us also changes A -> N; directing to that continuation class 
   @R.Part.One@   US_DERIVATION ;   ! no previous part; no restrictions   
   @R.Case.Gen@   US_DERIVATION ;
+  @R.Case.Sem@   US_DERIVATION ;
 
 LEXICON NG_DERIVATION
   @R.Part.One@@P.POS.N@  NG_DERIVATION_SUF ;   ! no previous part; no restrictions   

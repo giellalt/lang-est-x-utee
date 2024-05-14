@@ -29,7 +29,8 @@ define BadDer1 [
     [~[?* ("+Guess") [["+N"] | ["+Num" "+Card"]]] "+Der/kond"] |
     [~[?* [[ ("+Guess") "+A"] | [("+Guess") "+A" "+Comp"] | [("+Guess") "+A" "+Superl"] | 
           [ ZZ {tama} ("+Guess") "+V"] | [ ZZ {dama} ("+Guess") "+V"] | 
-          [ {hooldama} ("+Guess") "+V"] | [ {soendama} ("+Guess") "+V"] | [ {tsema} ("+Guess") "+V"] | [ ? ? ? {lema} ("+Guess") "+V"]]] "+Der/us"] |
+          [ {hooldama} ("+Guess") "+V"] | [ {soendama} ("+Guess") "+V"] | 
+          [ {tsema} ("+Guess") "+V"] | [ ? ? ? {lema} ("+Guess") "+V"]]] "+Der/us"] |
     [~[?* [[ ZZ {tama} ("+Guess") "+V"] | [ ZZ {dama} ("+Guess") "+V"]]] "+Der/is"] |
     [~[?* [{uma} | {tellima}] ("+Guess") "+V"] "+Der/mus"] |             # devalveeruma - devalveerumus
     [~[?* {eerima} ("+Guess") "+V"] "+Der/ng"] |           # devalveerima - devalveering
@@ -65,7 +66,10 @@ define BadDer2 [
 
 # some suffix sequences are actually bad
 define BadDer3 [
-    [[ "+Der/nu" | "+Der/us" | "+Der/lane" ] "+N" "+Der/ti"]  
+    [[ "+Der/nu" | "+Der/us" | "+Der/lane" ] "+N" "+Der/ti"] | 
+    [[ "+Der/v" | "+Der/tav" | "+Der/nud" | "+Der/matu" | "+Der/tamatu" | "+Der/tu" ] "+A" "+Der/sti"] |  
+    [ "+Der/v" "+A" "+Der/us"] | 
+    [[ "+Der/lik" | "+Der/line" ] "+A" "+Der/sti"]  
     ] ;
 
 # some words are not suitable for certain suffixes 

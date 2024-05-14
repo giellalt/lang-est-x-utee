@@ -552,6 +552,7 @@ generator-raw-gt-desc.simple.hfst: generator-raw-gt-desc.simple.weightless.hfst
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Der/mus' -a 10 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Der/ng' -a 10 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Der/v' -a 10 -A \
+	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Der/vus' -a 10 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Der/tav' -a 10 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Der/nud' -a 10 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Der/mata' -a 10 -A \
@@ -625,7 +626,7 @@ generator-raw-gt-desc.simple.hfst: generator-raw-gt-desc.simple.weightless.hfst
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Neg' -a 1 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Sup' -a 0 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Inf' -a 0 -A \
-	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Ger' -a 0 -A \
+	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Ger' -a 5 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Prc' -a 0 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Foc/gi' -a 0 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Emph' -a 0 -A \
@@ -748,6 +749,7 @@ guesser-raw.weighted.hfst: guesser-raw.simple.hfst
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Der/mus' -a -10 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Der/ng' -a -10 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Der/v' -a -10 -A \
+	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Der/vus' -a 10 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Der/tav' -a -10 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Der/nud' -a -10 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Der/mata' -a -10 -A \
@@ -821,7 +823,7 @@ guesser-raw.weighted.hfst: guesser-raw.simple.hfst
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Neg' -a 1 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Sup' -a 0 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Inf' -a 0 -A \
-	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Ger' -a 0 -A \
+	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Ger' -a 5 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Prc' -a 0 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Foc/gi' -a 0 -A \
 	| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) -S '+Emph' -a 0 -A \

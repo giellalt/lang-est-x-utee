@@ -456,6 +456,9 @@ Multichar_Symbols
 +Der/mus !!= * `@CODE@`
 !!€ küllastumus: küllastuma+V+Der/mus+N+Sg+Nom 
 
++Der/vus !!= * `@CODE@`
+!!€ elavus: elama+V+Der/vus+N+Sg+Nom 
+
 +Der/ng !!= * `@CODE@`
 !!€ devalveering: devalveerima+V+Der/ng+N+Sg+Nom 
 
@@ -713,9 +716,9 @@ Multichar_Symbols
  @D.Stem.topelt@
  @P.Stem.Guessed@   ! stem is guessed, it is not from the lexicon
  @R.Stem.Guessed@
- @D.Stem.Guessed@   ! if a lemma has it, then this lemma is restricted in its ability to be the last part of a compound 
+ @D.Stem.Guessed@   ! if a word has it, then this word cannot follow a guessed stem 
  @C.Stem@
-
+ 
 !! A special condition that is used for filtering derivations and compounds
  @P.NeedAdj.On@         ! +A or +Der/A
  @R.NeedAdj@
@@ -1224,16 +1227,17 @@ LEXICON Latter !!= * `@CODE@` the latter part of a compound
 
   @R.POS.ACRMinus@ AnyLatterVerb ;      
   @R.POS.Pref@ AnyLatterVerb ;  ! ebalugemine
+  @R.POS.Pref@ Verbs ;          ! gerund: poolmagades
 
   @R.POS.N@@R.Case.Gen@ LatterVerb ;   ! lauajooksja
   @R.POS.N@@R.Case.Par@ LatterVerb ;   ! laudajooksnud
 
   @R.POS.N@@R.Case.Nom@@R.Stem.Nom@ AnyLatterVerb ;  ! map orig. case flag for derivation needs
-  @R.POS.N@@R.Case.Sem@ AnyLatterVerb ;  ! map orig. case flag for derivation needs
+  @R.POS.N@@R.Case.Sem@ LatterVerb ;  ! 
   @R.POS.N@@R.Case.Short@ AnyLatterVerb ;  ! investeerimisnõustamine
 
   @R.POS.A@@R.Case.Short@ AnyLatterVerb ;  ! map orig. case flag for derivation needs
-  @R.POS.A@@R.Case.Sem@ AnyLatterVerb ;  ! map orig. case flag for derivation needs
+  @R.POS.A@@R.Case.Sem@ LatterVerb ;  ! 
   @R.POS.AComp@@R.Case.Sem@ AnyLatterVerb ;  ! map orig. case flag for derivation needs
 
   @R.POS.GA@@P.Case.Gen@ LatterVerb ;   ! eestivihkaja
@@ -1253,7 +1257,7 @@ LEXICON Latter !!= * `@CODE@` the latter part of a compound
 ! NB only some pronouns !
   @R.POS.Pron@@R.Case.Gen@ LatterVerb ;  
   @R.POS.Pron@@R.Case.Par@ LatterVerb ;
-  @R.POS.Pron@@R.Case.Sem@ AnyLatterVerb ;
+  @R.POS.Pron@@R.Case.Sem@ LatterVerb ;
 
   @R.POS.V@@D.Case@ AnyLatterVerb ;              ! infinitive
   @R.POS.V@@R.Case.Sem@ AnyLatterVerb ;          ! -ma, -mas etc

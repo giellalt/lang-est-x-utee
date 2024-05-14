@@ -2,7 +2,9 @@
 ! CompoundingAdverbs and NonCompoundingAdverbs ;
 
 
+
 LEXICON CompoundingAdverbs
+
 
 @P.Stem.topelt@järel+Adv:@P.Stem.topelt@järel GI  "weight: 5 " ; 
 @D.Stem.Guessed@@P.Stem.topelt@koos+Adv:@D.Stem.Guessed@@P.Stem.topelt@k˘oos GI  "weight: 4 " ; 
@@ -449,11 +451,10 @@ pooleli+Adv:pooleli GI  "weight: 7 " ;
 poolt+Adv:p˘oolt GI  "weight: 4 " ; 
 praokil+Adv:pr˘aokil GI  "weight: 11 " ; 
 praokile+Adv:pr˘aokile GI  "weight: 11 " ; 
-@D.Stem.Guessed@@P.Stem.vähe@puht+Adv:@D.Stem.Guessed@@P.Stem.vähe@p˘uht GI  "weight: 9 " ; 
-@D.Stem.Guessed@@P.Stem.vähe@vähe+Adv:@D.Stem.Guessed@@P.Stem.vähe@vähe GI  "weight: 5 " ; 
 puhevil+Adv:puhevil GI  "weight: 11 " ; 
 puhevile+Adv:puhevile GI  "weight: 11 " ; 
 puhta+Adv:p˘uhta GI  "weight: 11 " ; 
+@D.Stem.Guessed@@P.Stem.vähe@puht+Adv:@D.Stem.Guessed@@P.Stem.vähe@p˘uht GI  "weight: 9 " ; 
 puhvi+Adv:p˘uhvi GI  "weight: 11 " ; 
 pungi+Adv:p˘ungi GI  "weight: 10 " ; 
 pungil+Adv:pungil GI  "weight: 9 " ; 
@@ -714,6 +715,7 @@ võlgu+Adv:v˘õlgu GI  "weight: 8 " ;
 võõriti+Adv:võõriti GI  "weight: 11 " ; 
 võõrsil+Adv:v˘õõrsil GI  "weight: 8 " ; 
 võõrsile+Adv:v˘õõrsile GI  "weight: 11 " ; 
+@D.Stem.Guessed@@P.Stem.vähe@vähe+Adv:@D.Stem.Guessed@@P.Stem.vähe@vähe GI  "weight: 5 " ; 
 vähem+Adv:vähem GI  "weight: 5 " ; 
 välja+Adv:v˘älʲja GI  "weight: 3 " ; 
 vääri+Adv:vääri GI  "weight: 11 " ; 
@@ -752,7 +754,9 @@ väärt+Adv:v˘äärt GI  "weight: 7 " ;
 @D.Stem.Guessed@ülle+Adv:@D.Stem.Guessed@˘ülle GI  "weight: 10 " ; 
 ümber+Adv:˘ümber GI  "weight: 5 " ; 
 
+
 LEXICON NonCompoundingAdverbs
+
 
 aasta-aastalt+Adv:˘aasta-˘aastalt GI  "weight: 9 " ; 
 aastaringselt+Adv:˘aasta#r˘ingselt GI  "weight: 10 " ; 
