@@ -204,35 +204,31 @@ cat superlative_adjectives.tmp2 >> superlative_adjectives.protolexc
 # find short adverbs:
 # grep '^[^aeiouõäöü]*[aeiouõäöü]*[^aeiouõäöü][^aeiouõäöü][aeiouõäöü][aeiouõäöü]*[^aeiouõäöü]*[^aeiouõäöü]i*+[^#=]*$'
 
-# adverbs need to be grouped according to their potential to partiocipate in compounding
+# adverbs need to be grouped according to their potential to participate in compounding
+# an adverb may be suitable for the first part: adv + verbal derivation, __CMP__
+# or last part: modifier + adv (üli + äkki)  __GL__
+# or neither, or both
+
 cat fs_gt.noninfl.tmp1 | grep '+Adv' \
-| grep '\(^järel+\)\|\(^koos+\)\|\(^kõrval+\)\|\(^otse+\)\|\(^piki+\)\|\(^püsti+\)\|\(^ratsa+\)\|\(^taga+\)\|\(^topelt+\)\|\(^vallas+\)\|\(^vastas+\)\|\(^vastu+\)\|\(^üle+\)' \
 > tmpadv.0
 
-cat fs_gt.noninfl.tmp1 | grep '+Adv' \
-| grep -v '\(^järel+\)\|\(^koos+\)\|\(^kõrval+\)\|\(^otse+\)\|\(^piki+\)\|\(^püsti+\)\|\(^ratsa+\)\|\(^taga+\)\|\(^topelt+\)\|\(^vallas+\)\|\(^vastas+\)\|\(^vastu+\)\|\(^üle+\)' \
-| sort -u \
-> tmpadv.alg
-#--------------
-
-cat tmpadv.alg \
-| grep '\(^all+\)\|\(^alt+\)\|\(^eel+\)\|\(^ees+\)\|\(^ise+\)\|\(^jae+\)\|\(^oma+\)\|\(^pea+\)\|\(^ula+\)\|\(^õue+\)\|\(^ära+\)\|\(^üle+\)\|\(^umbes+\)\|\(^hiljuti+\)\|\(^kaheti+\)\|\(^kolmeti+\)\|\(^kunagi+\)\|\(^mitmeti+\)\|\(^teisiti+\)\|\(^tükati+\)\|\(^võõriti+\)\|\(^uuesti+\)\|\(^valesti+\)\|\(^alasti+\)\|\(^alles+\)\|\(^edasi+\)\|\(^eemale+\)\|\(^eemalt+\)\|\(^eraldi+\)\|\(^halvasti+\)\|\(^juurde+\)\|\(^järele+\)\|\(^kaotsi+\)\|\(^kaugele+\)\|\(^kaugelt+\)\|\(^kergelt+\)\|\(^kergesti+\)\|\(^kindlaks+\)\|\(^klaariks+\)\|\(^käsitsi+\)\|\(^kõrgelt+\)\|\(^kõrval+\)\|\(^kõrvalt+\)\|\(^kõvaks+\)\|\(^kõrvuti+\)\|\(^külili+\)\|\(^laiali+\)\|\(^raskesti+\)\|\(^seni+\)\|\(^sisse+\)\|\(^tagant+\)\|\(^tagasi+\)\|\(^viimati+\)\|\(^võistu+\)\|\(^vääriti+\)\|\(^äsja+\)' \
-> uustmpadv.1
-
-cat tmpadv.alg \
-| grep '\(^....+\)\|\(^....[^s]+[^#-]*$\)\|\(^...ks+[^#-]*$\)\|\(^...*li+[^#-]*$\)\|\(^...*il+[^#-]*$\)\|\(^...*ile+[^#-]*$\)\|\(^[^aeiouõäöü]*[aeiouõäöü][aeiouõäöü]*[^aeiouõäöü][^aeiouõäöü]*si+\)' \
-| grep -v '\(^miks+\)\|\(^näos+\)\|\(^egas+\)\|\(^kuis+\)\|\(^siis+\)\|\(^teps+\)\|\(^aina+\)\|\(^aiva+\)\|\(^eele+\)\|\(^eelt+\)\|\(^ikka+\)\|\(^istu+\)\|\(^jalu+\)\|\(^jaol+\)\|\(^jokk+\)\|\(^juba+\)\|\(^just+\)\|\(^jõle+\)\|\(^jönt+\)\|\(^kohe+\)\|\(^kole+\)\|\(^kord+\)\|\(^kuhu+\)\|\(^kuna+\)\|\(^küll+\)\|\(^loga+\)\|\(^loha+\)\|\(^losa+\)\|\(^mant+\)\|\(^manu+\)\|\(^nagu+\)\|\(^nõka+\)\|\(^nõus+\)\|\(^nüüd+\)\|\(^olgu+\)\|\(^puha+\)\|\(^põsi+\)\|\(^päta+\)\|\(^seep+\)\|\(^seni+\)\|\(^siva+\)\|\(^sugu+\)\|\(^tuna+\)\|\(^täna+\)\|\(^töhe+\)\|\(^vaid+\)\|\(^vaja+\)\|\(^veel+\)\|\(^vist+\)\|\(^väga+\)\|\(^õige+\)\|\(^õkva+\)\|\(^ähmi+\)\|\(^äkki+\)\|\(^ängi+\)\|\(^äsja+\)\|\(^+ühti\)\|\(^üsna+\)\|\(^abiga+\)\|\(^eduga+\)\|\(^hulga+\)\|\(^jõuga+\)\|\(^liiga+\)\|\(^lõõga+\)\|\(^punga+\)\|\(^seega+\)\|\(^tõega+\)' \
->> uustmpadv.1
-
-cat tmpadv.0 uustmpadv.1 | sort -u > uustmpadv.1.srt
-
-# create the tool for marking 
-cat uustmpadv.1.srt | sed 's/^\([^+]*\)+.*$/s\/^\1+\/__CMP__\&\//' > cmptmpadv.sed
-
-echo '!LEXICON Adverbs would be too unspecific; instead we have\n! CompoundingAdverbs and NonCompoundingAdverbs ;\n\n' > adverbs.protolexc
-
-echo '\nLEXICON CompoundingAdverbs\n\n' >> adverbs.protolexc
+# some hard-to-describe words
 cat tmpadv.0 \
+| grep '\(^järel+\)\|\(^koos+\)\|\(^kõrval+\)\|\(^otse+\)\|\(^piki+\)\|\(^püsti+\)\|\(^ratsa+\)\|\(^taga+\)\|\(^topelt+\)\|\(^vallas+\)\|\(^vastas+\)\|\(^vastu+\)\|\(^üle+\)' \
+> tmpadv.1
+
+# make a classifier for them
+cat tmpadv.1 \
+| sed 's/+.*$//' \
+| sed 's/^.*$/\/^&+\/s\/^\.*$\/\&__CMP__\//' \
+| sed '/otse+/s/^.*$/&__GL__\//' \
+| sed '/püsti+/s/^.*$/&__GL__\//' \
+| sed 's/__\/__/____/' \
+> tmpadv1.sed
+
+# classify and classify more by adding flag diactritics
+cat tmpadv.1 \
+| sed -f tmpadv1.sed \
 | sed '/^üle+/!s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.topelt@\1:@P.Stem.topelt@\2\3/' \
 | sed '/^üle+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.üle@\1:@P.Stem.üle@\2\3/' \
 \
@@ -240,12 +236,21 @@ cat tmpadv.0 \
 | sed '/^...+/s/^\([^:]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
 | sed '/@....+/s/^\(@.\.[^@]*@[^:@]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
 | sed '/^....+/s/^\([^:]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
->> adverbs.protolexc
+\
+> tmpadv1.tagged
 
+
+# the rest of the adverbs are not so hard to classify
+cat tmpadv.0 \
+| grep -v '\(^järel+\)\|\(^koos+\)\|\(^kõrval+\)\|\(^otse+\)\|\(^piki+\)\|\(^püsti+\)\|\(^ratsa+\)\|\(^taga+\)\|\(^topelt+\)\|\(^vallas+\)\|\(^vastas+\)\|\(^vastu+\)\|\(^üle+\)' \
+| sort -u \
+> tmpadv.alg
+#--------------
+
+# classify, remove some wrong entries, classify more
 cat tmpadv.alg \
-| sed -f cmptmpadv.sed \
-| grep '__CMP__' \
-| sed 's/__CMP__//' \
+| sed -f tagadv.sed \
+| grep -v '\(^avalalalt+\)\|\(^avera+\)\|\(^lüngi\)' \
 \
 | sed '/^vähe+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.vähe@\1:@P.Stem.vähe@\2\3/' \
 | sed '/^puht+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.vähe@\1:@P.Stem.vähe@\2\3/' \
@@ -254,23 +259,43 @@ cat tmpadv.alg \
 | sed '/^...+/s/^\([^:]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
 | sed '/@....+/s/^\(@.\.[^@]*@[^:@]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
 | sed '/^....+/s/^\([^:]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
+> tmpadvalg.tagged
+
+echo '!LEXICON Adverbs would be too unspecific; instead we have' > adverbs.protolexc
+echo '! Compound-forming adverbs and NonCompoundingAdverbs' >> adverbs.protolexc
+echo '! Position of the adverb in a compound: AdverbsFirst, AdverbsLast, AdverbsFirstOrLast' >> adverbs.protolexc
+
+echo '\n! AdverbsFirst ;  ! Cannot be a latter part'  >> adverbs.protolexc
+echo ' ! AdverbsLast ;  ! Cannot be a first part\n' >> adverbs.protolexc
+
+echo '\nLEXICON AdverbsFirstOrLast\n' >> adverbs.protolexc
+
+cat tmpadv1.tagged tmpadvalg.tagged \
+| grep '__CMP____GL__' \
+| sed 's/__CMP____GL__//' \
 >> adverbs.protolexc
 
-echo '\n\nLEXICON NonCompoundingAdverbs\n\n' >> adverbs.protolexc
+echo '\nLEXICON AdverbsFirst\n' >> adverbs.protolexc
 
-cat tmpadv.alg \
-| sed -f cmptmpadv.sed \
-| grep -v '__CMP__' \
+cat tmpadv1.tagged tmpadvalg.tagged \
+| grep -v '__CMP____GL__' \
+| grep  '__CMP__' \
+| sed 's/__CMP__//' \
 >> adverbs.protolexc
 
-# märgi siia need, mis esinevad mitmesõnaliste verbide andmebaasis lihtmäärsõnana 
-cat adverbs.protolexc \
-| sed 's/^/@/' \
-| sed -f DB_EMWV_2008_adverbs.sed \
-| sed 's/^@//' \
-| sed 's/^__DB@/__DB__/' \
-| sed 's/^\(.*\)__DB@/__DB__\1@/' \
-> adverbs.protolexc.vers2
+echo '\nLEXICON AdverbsLast\n' >> adverbs.protolexc
+
+cat tmpadv1.tagged tmpadvalg.tagged \
+| grep -v '__CMP____GL__' \
+| grep  '__GL__' \
+| sed 's/__GL__//' \
+>> adverbs.protolexc
+
+echo '\n\nLEXICON NonCompoundingAdverbs\n' >> adverbs.protolexc
+cat tmpadv1.tagged tmpadvalg.tagged \
+| grep -v '__' \
+>> adverbs.protolexc
+
 
 echo 'LEXICON Adpositions\n' > adpositions.protolexc
 cat fs_gt.noninfl.tmp1 | grep '+Adp' >> adpositions.protolexc

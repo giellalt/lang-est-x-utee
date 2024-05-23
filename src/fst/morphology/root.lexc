@@ -982,8 +982,8 @@ LEXICON Root !!= * `@CODE@` is the starting point of everything
   @D.Part@@P.Part.Bad@ Single ;      !! strictly simplex word; cannot be a part of a compound
   @D.Part@@P.Part.One@ First ;       !! a simplex word, or the first part of a compound
 
-  @R.Part.One@@P.Part.Two@@N.NeedPart.Two@ Nonfirst "weight: 10" ;                      ! second pass; 
-  @R.Part.Two@@P.Part.Three@@N.NeedPart.Three@ Nonfirst "weight: 10" ;   ! third pass; 
+  @R.Part.One@@P.Part.Two@@N.NeedPart.Two@     Nonfirst "weight: 10" ;       ! second pass; 
+  @R.Part.Two@@P.Part.Three@@N.NeedPart.Three@ Nonfirst "weight: 10" ;       ! third pass; 
 
 ! number starting a word is a special case...
 ! only two components allowed, thus must pretend it has passed LEXICON First already:
@@ -1053,7 +1053,8 @@ LEXICON SingleWords
   Conjunctions ;             !!= * `@CODE@`
   NoninflectingVerbs ;       !!= * `@CODE@`
   NoninflectingAdjectiveVa ; !!= * `@CODE@`
-  NonCompoundingAdverbs ;   !!= * `@CODE@`
+  NonCompoundingAdverbs ;    !!= * `@CODE@`
+  AdverbsLast ;              !!= * `@CODE@`  an adverb that may be either a simplex word, or the second part of a compound 
   
 LEXICON SingleNonWords
   Abbreviations ;              !!= * `@CODE@`
@@ -1074,8 +1075,9 @@ LEXICON FirstOpenClass     !!= * `@CODE@` a simplex word or the first part of a 
   @P.POS.A@ Adjectives ;              !!= * `@CODE@`
   @P.POS.A@ NoninflectingAdjectives ; !!= * `@CODE@`
   @P.POS.AComp@ ComparativeAdjectives ;   !!= * `@CODE@`
-  @P.POS.AComp@ SuperlativeAdjectives ;   !!= * `@CODE@`  ! Superl = Comp in compounding
-  @P.POS.Adv@ CompoundingAdverbs ;                 !!= * `@CODE@`
+  @P.POS.AComp@ SuperlativeAdjectives ;   !!= * `@CODE@`  ! Superlative = Comparative in compounding
+  @P.POS.Adv@ AdverbsFirst ;                 !!= * `@CODE@`        ! cannot be the last part
+  @P.POS.Adv@ AdverbsFirstOrLast ;                 !!= * `@CODE@`  ! may also be the last part
   @P.POS.N@ Nouns ;                   !!= * `@CODE@`
   @P.POS.NProp@@U.Cap.Obl@ ProperNouns ; !!= * `@CODE@`  ! always uppercase
   @P.POS.NProp@@U.Cap.Opt@ ProperNouns ; !!= * `@CODE@`  ! downcased for derivations
@@ -1218,9 +1220,20 @@ LEXICON Latter !!= * `@CODE@` the latter part of a compound
   @R.POS.ACR@@R.Case.Nom@@P.POS.Num@@P.Part.Three@ CardinalNumbersInCompFin ;       ! E10
 
 ! x + adverb
-  @R.POS.Pref@@P.POS.Adv@@P.NeedPart.Three@ CompoundingAdverbs ;  ! era+ratsa+baas, era+järel+valvama+Der/ja 
-  @R.POS.N@@R.Case.Nom@@R.Stem.Nom@@P.POS.Adv@@C.Case@@P.NeedPart.Three@ CompoundingAdverbs ;  ! ehitus+järel+valvama+Der/ja 
-  @R.POS.N@@R.Case.Gen@@P.POS.Adv@@C.Case@@P.NeedPart.Three@ CompoundingAdverbs ;  ! ehitus+järel+valvama+Der/ja 
+!  @R.POS.Pref@@P.POS.Adv@@P.NeedPart.Three@ CompoundingAdverbs ;  ! era+ratsa+baas, era+järel+valvama+Der/ja 
+!  @R.POS.N@@R.Case.Nom@@R.Stem.Nom@@P.POS.Adv@@C.Case@@P.NeedPart.Three@ CompoundingAdverbs ;  ! ehitus+järel+valvama+Der/ja 
+!  @R.POS.N@@R.Case.Gen@@P.POS.Adv@@C.Case@@P.NeedPart.Three@ CompoundingAdverbs ;  ! ehitus+järel+valvama+Der/ja 
+
+  @R.POS.Pref@@P.POS.Adv@@P.NeedPart.Three@ AdverbsFirst ;  ! era+ratsa+baas, era+järel+valvama+Der/ja 
+  @R.POS.Pref@@P.POS.Adv@@P.NeedPart.Three@ AdverbsFirstOrLast ;  ! era+hästi+valvama+Der/ja 
+  @R.POS.N@@R.Case.Nom@@R.Stem.Nom@@P.POS.Adv@@C.Case@@P.NeedPart.Three@ AdverbsFirst ;  ! ehitus+järel+valvama+Der/ja 
+  @R.POS.N@@R.Case.Nom@@R.Stem.Nom@@P.POS.Adv@@C.Case@@P.NeedPart.Three@ AdverbsFirstOrLast ;  ! ehitus+hästi+valvama+Der/ja 
+  @R.POS.N@@R.Case.Gen@@P.POS.Adv@@C.Case@@P.NeedPart.Three@ AdverbsFirst ;  ! ehituse+järel+valvama+Der/ja 
+  @R.POS.N@@R.Case.Gen@@P.POS.Adv@@C.Case@@P.NeedPart.Three@ AdverbsFirstOrLast ;  ! ehituse+hästi+valvama+Der/ja 
+
+  @R.POS.Pref@@R.Part.Two@@P.POS.Adv@@P.Part.Three@ AdverbsLast ;  ! üli + üksinda ; cannot have a third part, thus go to cycle end
+  @R.POS.Pref@@R.Part.Two@@P.POS.Adv@@P.Part.Three@ AdverbsFirstOrLast ;  ! üli + hästi ; cannot have a third part, thus go to cycle end
+
 
 ! x + verb derivation
 ! verb derivations expect previous word to be either in Gen or Par
@@ -1249,7 +1262,7 @@ LEXICON Latter !!= * `@CODE@` the latter part of a compound
   @R.Der.us@@R.Case.Nom@@D.Stem.Nom@@P.Case.Gen@ LatterVerb ;  ! funktsionaalsusjõramine, kindlustusjõramine
 
 
-! NB only short and good adverbs here !!!
+! NB only some adverbs here !!!
   @R.POS.Adv@@D.Case@ AnyLatterVerb ;  ! map orig. case flag for derivation needs
 
   @R.POS.IntNum@@R.Case.Nom@@D.Der.kas@@P.Case.Gen@ LatterVerb ;  ! map orig. case flag for derivation needs
