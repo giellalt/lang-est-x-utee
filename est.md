@@ -1206,7 +1206,8 @@ strictly simplex words; cannot be a part of a compound
 * `  Conjunctions ;             `
 * `  NoninflectingVerbs ;       `
 * `  NoninflectingAdjectiveVa ; `
-* `  NonCompoundingAdverbs ;   `
+* `  NonCompoundingAdverbs ;    `
+* `  AdverbsLast ;              `  an adverb that may be either a simplex word, or the second part of a compound 
 
 * `  Abbreviations ;              `
 * `  CardinalNumbersSingle ;      `
@@ -1221,8 +1222,9 @@ strictly simplex words; cannot be a part of a compound
 * `  @P.POS.A@ Adjectives ;              `
 * `  @P.POS.A@ NoninflectingAdjectives ; `
 * `  @P.POS.AComp@ ComparativeAdjectives ;   `
-* `  @P.POS.AComp@ SuperlativeAdjectives ;   `  ! Superl = Comp in compounding
-* `  @P.POS.Adv@ CompoundingAdverbs ;                 `
+* `  @P.POS.AComp@ SuperlativeAdjectives ;   `  ! Superlative = Comparative in compounding
+* `  @P.POS.Adv@ AdverbsFirst ;                 `        ! cannot be the last part
+* `  @P.POS.Adv@ AdverbsFirstOrLast ;                 `  ! may also be the last part
 * `  @P.POS.N@ Nouns ;                   `
 * `  @P.POS.NProp@@U.Cap.Obl@ ProperNouns ; `  ! always uppercase
 * `  @P.POS.NProp@@U.Cap.Opt@ ProperNouns ; `  ! downcased for derivations
