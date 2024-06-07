@@ -132,11 +132,13 @@ LEXICON ISE    ! ise, iseenese NB! the usage info is possibly wrong...
 
                   :ise SG_NOMINATIVE ;    ! ise
                +Sg:enese STANDARD_GEN_ET_AL ;    ! enese, enesel etc
-      +Sg+Usage/Rare:enda STANDARD_GEN_ET_AL ;    ! enda, endal etc
+    +Sg+Usage/Rare:enda STANDARD_GEN_ET_AL ;    ! enda, endal etc
                   :ennas%>t SG_PARTITIVE ;                               
-         +Usage/Rare:en%>d SG_PARTITIVE ;                               
+       +Usage/Rare:en%>d SG_PARTITIVE ;                               
                +Pl:enes%>te STANDARD_GEN_ET_AL ;
-      +Pl+Usage/Rare:end%>i STANDARD_GEN_ET_AL ;
+    +Pl+Usage/Rare:end%>i STANDARD_GEN_ET_AL ;
+                  :end%>i%>d PL_PARTITIVE ;
+       +Usage/Rare:enese%>i%>d PL_PARTITIVE ;
                   :enese LIK_DERIVATION ;    ! (ise)eneselik
 
 LEXICON OMAENESE    ! omaenese ; few forms; they could be regarded as parallel forms of 'ise'
