@@ -672,7 +672,10 @@ strictly simplex words; cannot be a part of a compound
 
 * `LEXICON First     ` a simplex word or the first part of a compound 
 
+* `  @P.Part.Two@ StartCompoundException ;   ` samasuur, samakõrgusjoon, eneseabi etc
+
 * `LEXICON FirstOpenClass     ` a simplex word or the first part of a compound 
+
 * `  @P.POS.A@ Adjectives ;              `
 * `  @P.POS.A@ NoninflectingAdjectives ; `
 * `  @P.POS.AComp@ ComparativeAdjectives ;   `
@@ -698,6 +701,9 @@ strictly simplex words; cannot be a part of a compound
 * `  @P.POS.ACRMinus@@P.NeedPart.Two@ Acrominus ;          `
 
 * `LEXICON Latter ` the latter part of a compound
+
+* `  @R.POS.Pref@@R.Part.Two@ StartCompoundException ;   ` pref + samasuur, samakõrgusjoon, eneseabi etc
+* `  @R.POS.N@@R.Case.Gen@@R.Part.Two@ StartCompoundException ;   ` noun + samasuur, samakõrgusjoon, eneseabi etc
 
 * `  @P.POS.A@@C.Der@@C.Stem@ Adjectives ;              `
 
