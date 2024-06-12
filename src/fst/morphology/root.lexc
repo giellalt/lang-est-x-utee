@@ -702,18 +702,18 @@ Multichar_Symbols
  @R.Stem.Verb@
  @D.Stem.Verb@
 
- @P.Stem.ise@   ! enese + anything
- @R.Stem.ise@
- @D.Stem.ise@
- @P.Stem.üle@   ! üle + geoname + line (üle+siberi+line)
- @R.Stem.üle@
- @D.Stem.üle@
- @P.Stem.vähe@   ! vähe, puht + adjective
- @R.Stem.vähe@
- @D.Stem.vähe@
- @P.Stem.topelt@   ! Adv topelt et al;  Adv + anything
- @R.Stem.topelt@
- @D.Stem.topelt@
+! @P.Stem.ise@   ! enese + anything
+! @R.Stem.ise@
+! @D.Stem.ise@
+! @P.Stem.üle@   ! üle + geoname + line (üle+siberi+line)
+! @R.Stem.üle@
+! @D.Stem.üle@
+! @P.Stem.vähe@   ! vähe, puht + adjective
+! @R.Stem.vähe@
+! @D.Stem.vähe@
+! @P.Stem.topelt@   ! Adv topelt et al;  Adv + anything
+! @R.Stem.topelt@
+! @D.Stem.topelt@
  @P.Stem.Guessed@   ! stem is guessed, it is not from the lexicon
  @R.Stem.Guessed@
  @D.Stem.Guessed@   ! if a word has it, then this word cannot follow a guessed stem 
@@ -1069,9 +1069,14 @@ LEXICON First     !!= * `@CODE@` a simplex word or the first part of a compound
   FirstClosedClass ;
   FirstWordLike ;
 
+  ! some pronoun or adverb may start a compound...  start an exceptional path through the fst
+  ! (this path is an addition to a normal path for this word as a member of a broader word class)
+  @P.Part.Two@ StartCompoundException ;   !!= * `@CODE@` samasuur, samakõrgusjoon, eneseabi etc
+
 ! va ...
 ! plain adverbs vs compounding adverbs ...
 LEXICON FirstOpenClass     !!= * `@CODE@` a simplex word or the first part of a compound 
+
   @P.POS.A@ Adjectives ;              !!= * `@CODE@`
   @P.POS.A@ NoninflectingAdjectives ; !!= * `@CODE@`
   @P.POS.AComp@ ComparativeAdjectives ;   !!= * `@CODE@`
@@ -1098,9 +1103,9 @@ LEXICON FirstWordLike                      !!= * `@CODE@` a word-like string tha
 
 LEXICON Nonfirst
 
-! D.Der means that the previous word should not be a derived one;
-! it may be too restrictive here...
-! previous word should not be allowed only single, nor one that can be only final
+  ! D.Der means that the previous word should not be a derived one;
+  ! it may be too restrictive here...
+  ! previous word should not be allowed only single, nor one that can be only final
   @D.Stem.Single@@D.Stem.Final@@C.Cap@@D.Case.PlNom@@D.Der.N@@D.Der.A@@D.Der.Adv@ Latter ;   ! a latter part
 
 
@@ -1114,6 +1119,12 @@ LEXICON Latter !!= * `@CODE@` the latter part of a compound
 !  @R.POS.Guess@ Nouns ;
 !  @R.POS.Guess@@P.POS.A@ Adjectives ;
 !  @R.POS.Guess@ AnyLatterVerb ;
+
+! x + exceptional path
+  @R.POS.ACRMinus@ StartCompoundException ;      
+  @R.POS.Pref@@R.Part.Two@ StartCompoundException ;   !!= * `@CODE@` pref + samasuur, samakõrgusjoon, eneseabi etc
+  @R.POS.N@@R.Case.Gen@@R.Part.Two@ StartCompoundException ;   !!= * `@CODE@` noun + samasuur, samakõrgusjoon, eneseabi etc
+  @R.Case.Short@@R.Part.Two@ StartCompoundException ;     ! vaatamiskoosoleng
 
 ! x + prefix
   @R.POS.ACRMinus@ Prefixes ;      
@@ -1129,6 +1140,8 @@ LEXICON Latter !!= * `@CODE@` the latter part of a compound
   ! noninflecting adjective should be the final component
   @R.POS.Pref@@P.POS.A@@P.Part.Three@ NIAdjectivesIness ;       ! ülielevil; 
 
+! NB only some pronouns, i.e. CompoundingPronouns !
+  @R.POS.Pron@@R.Case.Gen@ LatterAdjective_ne ; ! minupunane, meiepõõsaline
 
   @R.Case.Short@ LatterAdjective ;  ! vaatamispunane, astraalpunane
 
@@ -1158,14 +1171,11 @@ LEXICON Latter !!= * `@CODE@` the latter part of a compound
   @R.POS.AComp@@R.Case.Nom@@R.Stem.Nom@ LatterAdjective ;  ! enampunane, enimpunane
   @R.POS.AComp@@R.Case.Gen@ LatterAdjective_ne ;  ! enamaruuduline, enimaruuduline
 
-! NB only some pronouns !
-  @R.POS.Pron@@D.Stem.ise@@R.Case.Gen@ LatterAdjective_ne ; ! minupunane, meiepõõsaline
-  @R.POS.Pron@@R.Stem.ise@@R.Case.Gen@ LatterAdjective ; ! enesepunane, eneseuhke
-
-  @R.POS.Adv@@R.Stem.topelt@ LatterAdjective ;        ! topelthallikas etc 
-  @R.POS.Adv@@R.Stem.vähe@ LatterAdjective ;        ! vähehallikas etc 
-  @R.POS.Adv@@R.Stem.üle@ LatterAdjective ;        ! ülehallikas etc 
-  @R.POS.Adv@@D.Stem.topelt@@D.Stem.vähe@@D.Stem.üle@ LatterAdjective_v ;        ! harvanähtavaid etc 
+  @R.POS.Adv@ LatterAdjective_v ;        ! harvanähtavaid etc 
+!  @R.POS.Adv@@R.Stem.topelt@ LatterAdjective ;        ! topelthallikas etc 
+!  @R.POS.Adv@@R.Stem.vähe@ LatterAdjective ;        ! vähehallikas etc 
+!  @R.POS.Adv@@R.Stem.üle@ LatterAdjective ;        ! ülehallikas etc 
+!  @R.POS.Adv@@D.Stem.topelt@@D.Stem.vähe@@D.Stem.üle@ LatterAdjective_v ;        ! harvanähtavaid etc 
 
 ! x + noun
   @R.POS.ACRMinus@ LatterNoun ;      
@@ -1190,13 +1200,10 @@ LEXICON Latter !!= * `@CODE@` the latter part of a compound
 
   @R.Der.us@@R.Case.Nom@@D.Stem.Nom@ LatterNoun ;  ! funktsionaalsusriiul
 
-! NB only enese, enda !
-  @R.POS.Pron@@R.Case.Gen@@R.Stem.ise@ LatterNoun ;        ! eneseabi, enesekriitika etc 
-
-  @R.POS.Adv@@R.Stem.topelt@ LatterNoun ;        ! topeltriiul etc 
-  @R.POS.Adv@@R.Stem.vähe@@P.NeedAdj.On@@D.NeedDerNe@ LatterNoun ;  ! vähe + kalor +Der/line; not väheautone
-  @R.POS.Adv@@R.Stem.üle@ LatterNoun ;        ! ületoodang etc 
-  @R.POS.Adv@@R.Stem.üle@ LatterProperNounGeo ;          ! ülesiberiline
+!  @R.POS.Adv@@R.Stem.topelt@ LatterNoun ;        ! topeltriiul etc 
+!  @R.POS.Adv@@R.Stem.vähe@@P.NeedAdj.On@@D.NeedDerNe@ LatterNoun ;  ! vähe + kalor +Der/line; not väheautone
+!  @R.POS.Adv@@R.Stem.üle@ LatterNoun ;        ! ületoodang etc 
+!  @R.POS.Adv@@R.Stem.üle@ LatterProperNounGeo ;          ! ülesiberiline
 
 ! x + deverbal noun (in addition to x + noun)
  
@@ -1341,4 +1348,60 @@ LEXICON LatterVerb       ! a verb derivation
               
   @P.POS.V@@C.Der@@P.Stem.Verb@ Verbs ;                   !!= * `@CODE@`
 
+! ---------------------------
+! wordform + continuation lexicon
+! wordform belongs to a class that normally does not precede this continuation lexicon
 
+LEXICON StartCompoundException
+
+  sama+Pron+Sg+Nom:sama NextPlainLatterAdjective ;  ! samasuur
+  ise+Pron+Sg+Gen:enese NextLatterNoun ;        ! eneseabi, enesekriitika etc
+  ise+Pron+Sg+Gen:enese NextPlainLatterAdjective ; ! enesepunane, eneseuhke
+
+  igaüks+Pron+Sg+Gen#:iga#ühe NextLatterNoun ;        ! igaühekriitika etc
+  
+  ! general pattern is Adverb + LatterAdjective_v
+  ! thus we must add Adverb + PlainLatterAdjective, Adverb + LatterAdjective_ne
+  
+  üle+Adv:üle NextLatterProperNounGeo   "weight: 3 " ;           ! ülesiberiline ?
+  üle+Adv:üle NextLatterNoun            "weight: 3 " ;           ! ületoodang etc 
+  üle+Adv:üle NextPlainLatterAdjective  "weight: 3 " ;          ! ülesuur ???
+  üle+Adv:üle NextLatterAdjective_ne   "weight: 3 " ;          ! üleaastaline 
+  vähe+Adv:vähe NextPlainLatterAdjective  "weight: 5 " ;          ! vähesuur
+  vähe+Adv:vähe NextLatterAdjective_ne  "weight: 5 " ;            ! vähekompilatiivne; vähe + kalor +Der/line; not väheautone
+  puht+Adv:puht NextPlainLatterAdjective  "weight: 9 " ;          ! puhtsuur
+  puht+Adv:puht NextLatterAdjective_ne  "weight: 9 " ;            ! puhtkompilatiivne
+
+  otse+Adv:otse NextNounAdj  "weight: 6 " ; 
+  püsti+Adv:p˘üsʲti NextNounAdj  "weight: 6 " ; 
+  järel+Adv:järel NextNounAdj  "weight: 5 " ; 
+  koos+Adv:k˘oos NextNounAdj  "weight: 4 " ; 
+  kõrval+Adv:kõrval NextNounAdj  "weight: 5 " ; 
+  ratsa+Adv:r˘atsa NextNounAdj  "weight: 10 " ; 
+  taga+Adv:taga NextNounAdj  "weight: 5 " ; 
+  topelt+Adv:topelt NextNounAdj  "weight: 9 " ;            ! topeltriiul, topelthallikas, ...
+  vallas+Adv:vallas NextNounAdj  "weight: 11 " ; 
+  vastas+Adv:vastas NextNounAdj  "weight: 8 " ; 
+  vastu+Adv:v˘astu NextNounAdj  "weight: 4 " ; 
+
+LEXICON NextNounAdj  ! umbrella for common continuation lexicons
+  NextLatterNoun ;
+  NextPlainLatterAdjective ;
+  NextLatterAdjective_ne ;
+
+! there might be a hyphen between parts
+! thus we must create a family of NextLatter... leading to Latter...
+
+LEXICON NextLatterNoun      !  there might be a hyphen between parts
+ < "#" 0:[0|"-"] > LatterNoun ;
+ 
+LEXICON NextPlainLatterAdjective      !  there might be a hyphen between parts
+ < "#" 0:[0|"-"] > PlainLatterAdjective ;
+
+LEXICON NextLatterAdjective_ne      !  there might be a hyphen between parts
+ < "#" 0:[0|"-"] > LatterAdjective_ne ;
+
+LEXICON NextLatterProperNounGeo      !  there might be a hyphen between parts
+ < "#" 0:[0|"-"] > LatterProperNounGeo ;
+ 
+ 

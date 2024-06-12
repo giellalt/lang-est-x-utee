@@ -8,8 +8,8 @@
 
 LEXICON AdverbsFirstOrLast
 
-@D.Stem.Guessed@@P.Stem.topelt@otse+Adv:@D.Stem.Guessed@@P.Stem.topelt@otse GI  "weight: 6 " ; 
-@P.Stem.topelt@püsti+Adv:@P.Stem.topelt@p˘üsʲti GI  "weight: 6 " ; 
+@D.Stem.Guessed@otse+Adv:@D.Stem.Guessed@otse GI  "weight: 6 " ; 
+püsti+Adv:p˘üsʲti GI  "weight: 6 " ; 
 ajuti+Adv:ajuti GI  "weight: 9 " ; 
 @D.Stem.Guessed@ammu+Adv:@D.Stem.Guessed@˘ammu GI  "weight: 6 " ; 
 ammukile+Adv:ammukile GI  "weight: 11 " ; 
@@ -241,7 +241,7 @@ vilksti+Adv:v˘ilksti GI  "weight: 11 " ;
 virevile+Adv:virevile GI  "weight: 11 " ; 
 vussi+Adv:v˘usʲsi GI  "weight: 11 " ; 
 võõriti+Adv:võõriti GI  "weight: 11 " ; 
-@D.Stem.Guessed@@P.Stem.vähe@vähe+Adv:@D.Stem.Guessed@@P.Stem.vähe@vähe GI  "weight: 5 " ; 
+@D.Stem.Guessed@vähe+Adv:@D.Stem.Guessed@vähe GI  "weight: 5 " ; 
 õhevile+Adv:õhevile GI  "weight: 11 " ; 
 õitsele+Adv:˘õitsele GI  "weight: 10 " ; 
 ärevile+Adv:ärevile GI  "weight: 11 " ; 
@@ -249,16 +249,16 @@ võõriti+Adv:võõriti GI  "weight: 11 " ;
 
 LEXICON AdverbsFirst
 
-@P.Stem.topelt@järel+Adv:@P.Stem.topelt@järel GI  "weight: 5 " ; 
-@D.Stem.Guessed@@P.Stem.topelt@koos+Adv:@D.Stem.Guessed@@P.Stem.topelt@k˘oos GI  "weight: 4 " ; 
-@P.Stem.topelt@kõrval+Adv:@P.Stem.topelt@kõrval GI  "weight: 5 " ; 
-@P.Stem.topelt@ratsa+Adv:@P.Stem.topelt@r˘atsa GI  "weight: 10 " ; 
-@D.Stem.Guessed@@P.Stem.topelt@taga+Adv:@D.Stem.Guessed@@P.Stem.topelt@taga GI  "weight: 5 " ; 
-@P.Stem.topelt@topelt+Adv:@P.Stem.topelt@topelt GI  "weight: 9 " ; 
-@P.Stem.topelt@vallas+Adv:@P.Stem.topelt@vallas GI  "weight: 11 " ; 
-@P.Stem.topelt@vastas+Adv:@P.Stem.topelt@vastas GI  "weight: 8 " ; 
-@P.Stem.topelt@vastu+Adv:@P.Stem.topelt@v˘astu GI  "weight: 4 " ; 
-@D.Stem.Guessed@@P.Stem.üle@üle+Adv:@D.Stem.Guessed@@P.Stem.üle@üle GI  "weight: 3 " ; 
+järel+Adv:järel GI  "weight: 5 " ; 
+@D.Stem.Guessed@koos+Adv:@D.Stem.Guessed@k˘oos GI  "weight: 4 " ; 
+kõrval+Adv:kõrval GI  "weight: 5 " ; 
+ratsa+Adv:r˘atsa GI  "weight: 10 " ; 
+@D.Stem.Guessed@taga+Adv:@D.Stem.Guessed@taga GI  "weight: 5 " ; 
+topelt+Adv:topelt GI  "weight: 9 " ; 
+vallas+Adv:vallas GI  "weight: 11 " ; 
+vastas+Adv:vastas GI  "weight: 8 " ; 
+vastu+Adv:v˘astu GI  "weight: 4 " ; 
+@D.Stem.Guessed@üle+Adv:@D.Stem.Guessed@üle GI  "weight: 3 " ; 
 abiks+Adv:abiks GI  "weight: 11 " ; 
 ajalt+Adv:ajalt GI  "weight: 10 " ; 
 ajati+Adv:ajati GI  "weight: 11 " ; 
@@ -598,7 +598,7 @@ poolt+Adv:p˘oolt GI  "weight: 4 " ;
 praokil+Adv:pr˘aokil GI  "weight: 11 " ; 
 puhevil+Adv:puhevil GI  "weight: 11 " ; 
 puhta+Adv:p˘uhta GI  "weight: 11 " ; 
-@D.Stem.Guessed@@P.Stem.vähe@puht+Adv:@D.Stem.Guessed@@P.Stem.vähe@p˘uht GI  "weight: 9 " ; 
+@D.Stem.Guessed@puht+Adv:@D.Stem.Guessed@p˘uht GI  "weight: 9 " ; 
 puhvi+Adv:p˘uhvi GI  "weight: 11 " ; 
 pungil+Adv:pungil GI  "weight: 9 " ; 
 punni+Adv:p˘unʲni GI  "weight: 11 " ; 

@@ -18,7 +18,7 @@ if test -z "$GIELLA_CORE" ; then
 fi
 
 ###### Variables: #######
-transducer=gt-norm
+transducer=gt-desc
 Fail=0
 Tests_found=no
 Skipped=no

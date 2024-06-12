@@ -181,6 +181,7 @@ cat comparative_adjectives.tmp1 \
 | sed '/^lühem+/s/^\([^:]*+A+Comp\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^noorem+/s/^\([^:]*+A+Comp\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^parem+/s/^\([^:]*+A+Comp\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
+| sed '/^pahem+/s/^\([^:]*+A+Comp\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^suurem+/s/^\([^:]*+A+Comp\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^vanem+/s/^\([^:]*+A+Comp\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^vähem+/s/^\([^:]*+A+Comp\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
@@ -229,8 +230,6 @@ cat tmpadv.1 \
 # classify and classify more by adding flag diactritics
 cat tmpadv.1 \
 | sed -f tmpadv1.sed \
-| sed '/^üle+/!s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.topelt@\1:@P.Stem.topelt@\2\3/' \
-| sed '/^üle+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.üle@\1:@P.Stem.üle@\2\3/' \
 \
 | sed '/@...+/s/^\(@.\.[^@]*@[^:@]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
 | sed '/^...+/s/^\([^:]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
@@ -238,6 +237,10 @@ cat tmpadv.1 \
 | sed '/^....+/s/^\([^:]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
 \
 > tmpadv1.tagged
+
+# not used since 11.06.2024:
+#| sed '/^üle+/!s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.topelt@\1:@P.Stem.topelt@\2\3/' \
+# | sed '/^üle+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.üle@\1:@P.Stem.üle@\2\3/' \
 
 
 # the rest of the adverbs are not so hard to classify
@@ -248,12 +251,14 @@ cat tmpadv.0 \
 #--------------
 
 # classify, remove some wrong entries, classify more
+
+# not used since 11.06.2024:
+#| sed '/^vähe+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.vähe@\1:@P.Stem.vähe@\2\3/' \
+#| sed '/^puht+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.vähe@\1:@P.Stem.vähe@\2\3/' \
+
 cat tmpadv.alg \
 | sed -f tagadv.sed \
 | grep -v '\(^avalalalt+\)\|\(^avera+\)\|\(^lüngi\)' \
-\
-| sed '/^vähe+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.vähe@\1:@P.Stem.vähe@\2\3/' \
-| sed '/^puht+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.vähe@\1:@P.Stem.vähe@\2\3/' \
 \
 | sed '/@...+/s/^\(@.\.[^@]*@[^:@]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
 | sed '/^...+/s/^\([^:]*+Adv\):\([^;]*;\)\(.*\)/@D.Stem.Guessed@\1:@D.Stem.Guessed@\2\3/' \
@@ -721,16 +726,19 @@ cat fs_gt.inflecting.tmp1 | grep '+Pron' \
 
 # insert LEXICON CompoundingPronouns
 cat pronouns_exceptions.handmade \
-| sed '/ise+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.ise@\1:@P.Stem.ise@\2\3/' \
-| sed '/iseenese+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.ise@\1:@P.Stem.ise@\2\3/' \
 >> pronouns.protolexc
+
+#| sed '/ise+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.ise@\1:@P.Stem.ise@\2\3/' \
+#| sed '/iseenese+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.ise@\1:@P.Stem.ise@\2\3/' \
+
 
 # include list(1) words
 cat fs_gt.inflecting.tmp1 | grep '+Pron' \
 | sed 's/nnolastpart//' \
 | grep '\(^iga+\)\|\(^igaüks+\)\|\(^mitu+\)\|\(^mõlema+\)\|\(^mõni+\)\|\(^sama+\)\|\(^palju+\)' \
-| sed '/igaüks+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.ise@\1:@P.Stem.ise@\2\3/' \
 >> pronouns.protolexc
+
+#| sed '/igaüks+/s/^\([^:]*\):\([^;]*;\)\(.*\)/@P.Stem.ise@\1:@P.Stem.ise@\2\3/' \
 
 echo 'LEXICON NoninflectingVerbs\n' > noninflecting_verbs.protolexc
 cat fs_gt.noninfl.tmp1 | grep '+V:' >> noninflecting_verbs.protolexc
@@ -754,7 +762,7 @@ cat fs_gt.noninfl.tmp1 \
 | sed '/^võsu+/s/^\([^:]*\):\(.*\)$/@R.Part.One@\1:@R.Part.One@\2/' \
 >> genitive_attributes.protolexc
 
-echo 'LEXICON Verbs\n\neel+Pref#:eel# SimpleVerbs ;\neel+Pref#:eel# EerVerbs ;\neelis+Pref#:eelis# SimpleVerbs ;\neelis+Pref#:eelis# EerVerbs ;\nkaug+Pref#:kaug# SimpleVerbs ;\nkaug+Pref#:kaug# EerVerbs ;\nkiir+Pref#:kiir# SimpleVerbs ;\nkiir+Pref#:kiir# EerVerbs ;\nsund+Pref#:sund# SimpleVerbs ;\nsund+Pref#:sund# EerVerbs ;\ntaas+Pref#:taas# SimpleVerbs ;\ntaas+Pref#:taas# EerVerbs ;\nvaeg+Pref#:vaeg# SimpleVerbs ;\nvaeg+Pref#:vaeg# EerVerbs ;\nühis+Pref#:ühis# SimpleVerbs ;\nühis+Pref#:ühis# EerVerbs ;\nde+Pref#:de# EerVerbs ;\nre+Pref#:re# EerVerbs ;\nSimpleVerbs ;\nEerVerbs ;\n' > verbs.protolexc
+echo 'LEXICON Verbs\n\neel+Pref#:eel# SimpleVerbs ;\neel+Pref#:eel# EerVerbs ;\neelis+Pref#:eelis# SimpleVerbs ;\neelis+Pref#:eelis# EerVerbs ;\nkaas+Pref#:kaas# SimpleVerbs ;\nkaas+Pref#:kaas# EerVerbs ;\nkaug+Pref#:kaug# SimpleVerbs ;\nkaug+Pref#:kaug# EerVerbs ;\nkiir+Pref#:kiir# SimpleVerbs ;\nkiir+Pref#:kiir# EerVerbs ;\nkoos+Pref#:koos# SimpleVerbs ;\nkoos+Pref#:koos# EerVerbs ;\nsund+Pref#:sund# SimpleVerbs ;\nsund+Pref#:sund# EerVerbs ;\ntaas+Pref#:taas# SimpleVerbs ;\ntaas+Pref#:taas# EerVerbs ;\nvaeg+Pref#:vaeg# SimpleVerbs ;\nvaeg+Pref#:vaeg# EerVerbs ;\nühis+Pref#:ühis# SimpleVerbs ;\nühis+Pref#:ühis# EerVerbs ;\nde+Pref#:de# EerVerbs ;\nre+Pref#:re# EerVerbs ;\nSimpleVerbs ;\nEerVerbs ;\n' > verbs.protolexc
 echo '\nLEXICON SimpleVerbs\n' >> verbs.protolexc
 cat fs_gt.inflecting.tmp1 | grep '+V:' | grep -v '...eer[iu]ma+' \
 | sed 's/nnolastpart//' \

@@ -786,7 +786,7 @@ LEXICON LINE_DERIVATION
                                             ! and this suffix satisfies its expectation
 LEXICON LINE_DERI
   @D.POS.NProp@ LINE_DERIVATION_SUF ;       ! ordinary derivation
-  @R.POS.NProp@@R.Stem.üle@@P.Part.Bad@@U.Cap.Opt@@C.Cap@ LINE_DERIVATION_SUF ;  ! üle + Siberi +Der/line; downcase and finish
+  @R.POS.NProp@@P.Part.Bad@@U.Cap.Opt@@C.Cap@ LINE_DERIVATION_SUF ;  ! üle + Siberi +Der/line; downcase and finish
 
 LEXICON LINE_DERIVATION_SUF
             +Der/line+A:»line OLULINE ;          ! põõsaline etc

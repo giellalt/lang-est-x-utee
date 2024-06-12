@@ -228,7 +228,7 @@ osavam+A+Comp:osavam MAGUS  "weight: 10 " ;
 otsem+A+Comp:otsem MAGUS  "weight: 10 " ; 
 otsesem+A+Comp:otsesem MAGUS  "weight: 9 " ; 
 otstarbekam+A+Comp:˘ots#t˘arbekam MAGUS  "weight: 9 " ; 
-pahem+A+Comp:pahem MAGUS  "weight: 10 " ; 
+@P.Stem.Nom@pahem+A+Comp:@P.Stem.Nom@pahem MAGUS  "weight: 10 " ; 
 pahvim+A+Comp:pahvim MAGUS  "weight: 11 " ; 
 paksem+A+Comp:paksem MAGUS  "weight: 9 " ; 
 @P.Stem.Nom@parem+A+Comp:@P.Stem.Nom@parem MAGUS  "weight: 4 " ; 

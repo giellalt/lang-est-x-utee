@@ -97,12 +97,12 @@ meie+Pron:me METE  "weight: 11 " ;
 teie+Pron:te METE  "weight: 11 " ; 
 tema+Pron:t TEMA  "weight: 1 " ; 
 nemad+Pron:n NEMAD  "weight: 11 " ; 
-@P.Stem.ise@ise+Pron:@P.Stem.ise@ ISE  "weight: 3 " ; 
-@P.Stem.ise@iseenese+Pron:@P.Stem.ise@ise# ISE  "weight: 6 " ; 
+ise+Pron: ISE  "weight: 3 " ; 
+iseenese+Pron:ise# ISE  "weight: 6 " ; 
 kõik+Pron:kõik KÕIK  "weight: 3 " ; 
 
 iga+Pron:iga RUBLA  "weight: 4 " ; 
-@P.Stem.ise@igaüks+Pron:@P.Stem.ise@iga#˘ü KAKS  "weight: 6 " ; 
+igaüks+Pron:iga#˘ü KAKS  "weight: 6 " ; 
 mitu+Pron:m˘ittU2 HAARE  "weight: 4 " ; 
 mõlema+Pron:mõlem MAGUS  "weight: 5 " ; 
 mõni+Pron:mõn MÕNI  "weight: 4 " ; 
