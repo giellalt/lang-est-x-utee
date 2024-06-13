@@ -692,9 +692,6 @@ Multichar_Symbols
  @P.Stem.Single@   ! does not participate in compounding (used for words that would normally compound)   
  @R.Stem.Single@
  @D.Stem.Single@   ! more restrictive than @R.Part.One@
- @P.Stem.Final@   ! may be only the last part: alam+N, ülem+N, vana+N 
- @R.Stem.Final@
- @D.Stem.Final@
  @P.Stem.Nom@   ! Even if this word is Sg Nom, smth may follow it 
  @R.Stem.Nom@   ! Previous word should have been in Sg Nom
  @D.Stem.Nom@   ! Previous word should not have been in Sg Nom
@@ -702,18 +699,6 @@ Multichar_Symbols
  @R.Stem.Verb@
  @D.Stem.Verb@
 
-! @P.Stem.ise@   ! enese + anything
-! @R.Stem.ise@
-! @D.Stem.ise@
-! @P.Stem.üle@   ! üle + geoname + line (üle+siberi+line)
-! @R.Stem.üle@
-! @D.Stem.üle@
-! @P.Stem.vähe@   ! vähe, puht + adjective
-! @R.Stem.vähe@
-! @D.Stem.vähe@
-! @P.Stem.topelt@   ! Adv topelt et al;  Adv + anything
-! @R.Stem.topelt@
-! @D.Stem.topelt@
  @P.Stem.Guessed@   ! stem is guessed, it is not from the lexicon
  @R.Stem.Guessed@
  @D.Stem.Guessed@   ! if a word has it, then this word cannot follow a guessed stem 
@@ -1105,8 +1090,8 @@ LEXICON Nonfirst
 
   ! D.Der means that the previous word should not be a derived one;
   ! it may be too restrictive here...
-  ! previous word should not be allowed only single, nor one that can be only final
-  @D.Stem.Single@@D.Stem.Final@@C.Cap@@D.Case.PlNom@@D.Der.N@@D.Der.A@@D.Der.Adv@ Latter ;   ! a latter part
+  ! previous word should not be allowed only single
+  @D.Stem.Single@@C.Cap@@D.Case.PlNom@@D.Der.N@@D.Der.A@@D.Der.Adv@ Latter ;   ! a latter part
 
 
 ! the nature of the previous word is reflected by flag diacritics that were set back then
@@ -1354,32 +1339,29 @@ LEXICON LatterVerb       ! a verb derivation
 
 LEXICON StartCompoundException
 
-  sama+Pron+Sg+Nom:sama NextPlainLatterAdjective ;  ! samasuur
-  ise+Pron+Sg+Gen:enese NextLatterNoun ;        ! eneseabi, enesekriitika etc
-  ise+Pron+Sg+Gen:enese NextPlainLatterAdjective ; ! enesepunane, eneseuhke
+  sama+Pron+Sg+Nom:sama NextPlainLatterAdjective  "weight: 4 ";  ! samasuur
+  ise+Pron+Sg+Gen:enese NextLatterNoun  "weight: 4 ";        ! eneseabi, enesekriitika etc
+  ise+Pron+Sg+Gen:enese NextPlainLatterAdjective  "weight: 4 "; ! enesepunane, eneseuhke
 
-  igaüks+Pron+Sg+Gen#:iga#ühe NextLatterNoun ;        ! igaühekriitika etc
+  igaüks+Pron+Sg+Gen#:iga#ühe NextLatterNoun  "weight: 7 " ;        ! igaühekriitika etc
+  mitu+Pron+Sg+Gen#mitme NextLatterNoun  "weight: 5 " ;        ! mitmepäevareis
   
   ! general pattern is Adverb + LatterAdjective_v
   ! thus we must add Adverb + PlainLatterAdjective, Adverb + LatterAdjective_ne
   
-  üle+Adv:üle NextLatterProperNounGeo   "weight: 3 " ;           ! ülesiberiline ?
-  üle+Adv:üle NextLatterNoun            "weight: 3 " ;           ! ületoodang etc 
-  üle+Adv:üle NextPlainLatterAdjective  "weight: 3 " ;          ! ülesuur ???
-  üle+Adv:üle NextLatterAdjective_ne   "weight: 3 " ;          ! üleaastaline 
   vähe+Adv:vähe NextPlainLatterAdjective  "weight: 5 " ;          ! vähesuur
   vähe+Adv:vähe NextLatterAdjective_ne  "weight: 5 " ;            ! vähekompilatiivne; vähe + kalor +Der/line; not väheautone
   puht+Adv:puht NextPlainLatterAdjective  "weight: 9 " ;          ! puhtsuur
   puht+Adv:puht NextLatterAdjective_ne  "weight: 9 " ;            ! puhtkompilatiivne
 
-  otse+Adv:otse NextNounAdj  "weight: 6 " ; 
   püsti+Adv:p˘üsʲti NextNounAdj  "weight: 6 " ; 
-  järel+Adv:järel NextNounAdj  "weight: 5 " ; 
   koos+Adv:k˘oos NextNounAdj  "weight: 4 " ; 
   kõrval+Adv:kõrval NextNounAdj  "weight: 5 " ; 
+  läbi+Adv:läbi NextNounAdj  "weight: 4 " ; 
   ratsa+Adv:r˘atsa NextNounAdj  "weight: 10 " ; 
-  taga+Adv:taga NextNounAdj  "weight: 5 " ; 
-  topelt+Adv:topelt NextNounAdj  "weight: 9 " ;            ! topeltriiul, topelthallikas, ...
+  tagasi+Adv:tagasi NextLatterNoun  "weight: 4 " ; 
+  ümber+Adv:˘ümber NextLatterNoun  "weight: 4 " ; 
+  tasa+Adv:tasa NextNounAdj  "weight: 7 " ; 
   vallas+Adv:vallas NextNounAdj  "weight: 11 " ; 
   vastas+Adv:vastas NextNounAdj  "weight: 8 " ; 
   vastu+Adv:v˘astu NextNounAdj  "weight: 4 " ; 

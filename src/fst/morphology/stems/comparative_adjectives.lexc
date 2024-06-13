@@ -375,7 +375,7 @@ vapram+A+Comp:v˘apram MAGUS  "weight: 11 " ;
 varasem+A+Comp:varasem MAGUS  "weight: 6 " ; 
 varem+A+Comp:varem MAGUS  "weight: 5 " ; 
 varjulisem+A+Comp:varjulisem MAGUS  "weight: 11 " ; 
-vasem+A+Comp:vasem MAGUS  "weight: 8 " ; 
+@P.Stem.Nom@vasem+A+Comp:@P.Stem.Nom@vasem MAGUS  "weight: 8 " ; 
 vastikum+A+Comp:vasʲtikum MAGUS  "weight: 10 " ; 
 vastupidavam+A+Comp:v˘astu#pidavam MAGUS  "weight: 9 " ; 
 vastutustundlikum+A+Comp:vastutus#t˘undlikum MAGUS  "weight: 11 " ; 

@@ -182,6 +182,7 @@ cat comparative_adjectives.tmp1 \
 | sed '/^noorem+/s/^\([^:]*+A+Comp\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^parem+/s/^\([^:]*+A+Comp\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^pahem+/s/^\([^:]*+A+Comp\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
+| sed '/^vasem+/s/^\([^:]*+A+Comp\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^suurem+/s/^\([^:]*+A+Comp\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^vanem+/s/^\([^:]*+A+Comp\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^vähem+/s/^\([^:]*+A+Comp\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
@@ -559,6 +560,14 @@ cat fs_gt.inflecting.tmp1.tagged | grep '\(+N:\)\|\(+N+Usage\)' \
 | sed '/^killustik+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^kapsas+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^nälg+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
+| sed '/^liist+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
+| sed '/^matš+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
+| sed '/^prill+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
+| sed '/^suum+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
+| sed '/^süsi+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
+| sed '/^termostaat+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
+| sed '/^tsitrus+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
+| sed '/^tuhar+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^kameeleon+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 | sed '/^sari+N.*PIIM/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Nom@\1:@P.Stem.Nom@\2\3/' \
 \
@@ -574,11 +583,6 @@ cat nouns.proto1 \
 | sed -f nomstem_first_eit.sed \
 \
 | sed '/;.*mnocompound/s/^\([^:]*+N[^:]*\):\([^;]*;\)\(.*\)mnocompound/@P.Stem.Single@\1:@P.Stem.Single@\2\3/' \
-| sed '/^vana+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Final@\1:@P.Stem.Final@\2\3/' \
-| sed '/^alam+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Final@\1:@P.Stem.Final@\2\3/' \
-| sed '/@alam+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Final@\1:@P.Stem.Final@\2\3/' \
-| sed '/^ülem+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Final@\1:@P.Stem.Final@\2\3/' \
-| sed '/@ülem+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Final@\1:@P.Stem.Final@\2\3/' \
 \
 | sed '/^pee+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Single@\1:@P.Stem.Single@\2\3/' \
 | sed '/^aar+/s/^\([^:]*+N\):\([^;]*;\)\(.*\)/@P.Stem.Single@\1:@P.Stem.Single@\2\3/' \
