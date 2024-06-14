@@ -684,6 +684,27 @@ LC_COLLATE=C join -a 1 -a 2 -t "_" -e "###" -o 1.2 2.1 2.2 names.tmp1 proper.tmp
 > proper.tmp2 
 
 echo 'LEXICON ProperNouns\n  ProperNounsGeo ;\n  ProperNounsPersons ;\n  ProperNounsOther ;\n' > propernouns.protolexc
+
+echo '\nLEXICON ProperNounsGeoPrefixed' >> propernouns.protolexc
+
+# loend8 originates from Vabamorf; the folowing command creates the following entries
+# cat loend8 | sed "s/^.*$/echo '  &-:&-# ProperNounsGeo ; ' >> propernouns.protolexc/"
+echo '  Alam-:Alam-# ProperNounsGeo ; ' >> propernouns.protolexc
+echo '  Edela-:Edela-# ProperNounsGeo ; ' >> propernouns.protolexc
+echo '  Ida-:Ida-# ProperNounsGeo ; ' >> propernouns.protolexc
+echo '  Indo-:Indo-# ProperNounsGeo ; ' >> propernouns.protolexc
+echo '  Kagu-:Kagu-# ProperNounsGeo ; ' >> propernouns.protolexc
+echo '  Kesk-:Kesk-# ProperNounsGeo ; ' >> propernouns.protolexc
+echo '  Kirde-:Kirde-# ProperNounsGeo ; ' >> propernouns.protolexc
+echo '  Ladina-:Ladina-# ProperNounsGeo ; ' >> propernouns.protolexc
+echo '  Loode-:Loode-# ProperNounsGeo ; ' >> propernouns.protolexc
+echo '  Lääne-:Lääne-# ProperNounsGeo ; ' >> propernouns.protolexc
+echo '  Lõuna-:Lõuna-# ProperNounsGeo ; ' >> propernouns.protolexc
+echo '  Põhja-:Põhja-# ProperNounsGeo ; ' >> propernouns.protolexc
+echo '  Suur-:Suur-# ProperNounsGeo ; ' >> propernouns.protolexc
+echo '  Väike-:Väike-# ProperNounsGeo ; ' >> propernouns.protolexc
+echo '  Ülem-:Ülem-# ProperNounsGeo ; ' >> propernouns.protolexc
+
 echo '\nLEXICON ProperNounsGeo\n' >> propernouns.protolexc
 cat proper.tmp2 | grep '^G_' | sed 's/^G_//' >> propernouns.protolexc
 

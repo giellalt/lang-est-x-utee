@@ -4,6 +4,23 @@ LEXICON ProperNouns
   ProperNounsOther ;
 
 
+LEXICON ProperNounsGeoPrefixed
+  Alam-:Alam-# ProperNounsGeo ; 
+  Edela-:Edela-# ProperNounsGeo ; 
+  Ida-:Ida-# ProperNounsGeo ; 
+  Indo-:Indo-# ProperNounsGeo ; 
+  Kagu-:Kagu-# ProperNounsGeo ; 
+  Kesk-:Kesk-# ProperNounsGeo ; 
+  Kirde-:Kirde-# ProperNounsGeo ; 
+  Ladina-:Ladina-# ProperNounsGeo ; 
+  Loode-:Loode-# ProperNounsGeo ; 
+  Lääne-:Lääne-# ProperNounsGeo ; 
+  Lõuna-:Lõuna-# ProperNounsGeo ; 
+  Põhja-:Põhja-# ProperNounsGeo ; 
+  Suur-:Suur-# ProperNounsGeo ; 
+  Väike-:Väike-# ProperNounsGeo ; 
+  Ülem-:Ülem-# ProperNounsGeo ; 
+
 LEXICON ProperNounsGeo
 
 Aachen+N+Prop:˘Aachen REDEL  "weight: 11 " ; 

@@ -1038,6 +1038,7 @@ LEXICON SingleWords
   Conjunctions ;             !!= * `@CODE@`
   NoninflectingVerbs ;       !!= * `@CODE@`
   NoninflectingAdjectiveVa ; !!= * `@CODE@`
+  ProperNounsGeoPrefixed ;   !!= * `@CODE@`  Kagu-Läti, Kesk-Argentiina etc
   NonCompoundingAdverbs ;    !!= * `@CODE@`
   AdverbsLast ;              !!= * `@CODE@`  an adverb that may be either a simplex word, or the second part of a compound 
   
@@ -1157,10 +1158,6 @@ LEXICON Latter !!= * `@CODE@` the latter part of a compound
   @R.POS.AComp@@R.Case.Gen@ LatterAdjective_ne ;  ! enamaruuduline, enimaruuduline
 
   @R.POS.Adv@ LatterAdjective_v ;        ! harvanähtavaid etc 
-!  @R.POS.Adv@@R.Stem.topelt@ LatterAdjective ;        ! topelthallikas etc 
-!  @R.POS.Adv@@R.Stem.vähe@ LatterAdjective ;        ! vähehallikas etc 
-!  @R.POS.Adv@@R.Stem.üle@ LatterAdjective ;        ! ülehallikas etc 
-!  @R.POS.Adv@@D.Stem.topelt@@D.Stem.vähe@@D.Stem.üle@ LatterAdjective_v ;        ! harvanähtavaid etc 
 
 ! x + noun
   @R.POS.ACRMinus@ LatterNoun ;      
@@ -1185,11 +1182,6 @@ LEXICON Latter !!= * `@CODE@` the latter part of a compound
 
   @R.Der.us@@R.Case.Nom@@D.Stem.Nom@ LatterNoun ;  ! funktsionaalsusriiul
 
-!  @R.POS.Adv@@R.Stem.topelt@ LatterNoun ;        ! topeltriiul etc 
-!  @R.POS.Adv@@R.Stem.vähe@@P.NeedAdj.On@@D.NeedDerNe@ LatterNoun ;  ! vähe + kalor +Der/line; not väheautone
-!  @R.POS.Adv@@R.Stem.üle@ LatterNoun ;        ! ületoodang etc 
-!  @R.POS.Adv@@R.Stem.üle@ LatterProperNounGeo ;          ! ülesiberiline
-
 ! x + deverbal noun (in addition to x + noun)
  
   @R.POS.N@@R.Case.Sem@ LatterDeverbal ;  ! mägedesttulek
@@ -1212,10 +1204,6 @@ LEXICON Latter !!= * `@CODE@` the latter part of a compound
   @R.POS.ACR@@R.Case.Nom@@P.POS.Num@@P.Part.Three@ CardinalNumbersInCompFin ;       ! E10
 
 ! x + adverb
-!  @R.POS.Pref@@P.POS.Adv@@P.NeedPart.Three@ CompoundingAdverbs ;  ! era+ratsa+baas, era+järel+valvama+Der/ja 
-!  @R.POS.N@@R.Case.Nom@@R.Stem.Nom@@P.POS.Adv@@C.Case@@P.NeedPart.Three@ CompoundingAdverbs ;  ! ehitus+järel+valvama+Der/ja 
-!  @R.POS.N@@R.Case.Gen@@P.POS.Adv@@C.Case@@P.NeedPart.Three@ CompoundingAdverbs ;  ! ehitus+järel+valvama+Der/ja 
-
   @R.POS.Pref@@P.POS.Adv@@P.NeedPart.Three@ AdverbsFirst ;  ! era+ratsa+baas, era+järel+valvama+Der/ja 
   @R.POS.Pref@@P.POS.Adv@@P.NeedPart.Three@ AdverbsFirstOrLast ;  ! era+hästi+valvama+Der/ja 
   @R.POS.N@@R.Case.Nom@@R.Stem.Nom@@P.POS.Adv@@C.Case@@P.NeedPart.Three@ AdverbsFirst ;  ! ehitus+järel+valvama+Der/ja 
