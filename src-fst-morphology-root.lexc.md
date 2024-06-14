@@ -660,6 +660,7 @@ strictly simplex words; cannot be a part of a compound
 * `  Conjunctions ;             `
 * `  NoninflectingVerbs ;       `
 * `  NoninflectingAdjectiveVa ; `
+* `  ProperNounsGeoPrefixed ;   `  Kagu-Läti, Kesk-Argentiina etc
 * `  NonCompoundingAdverbs ;    `
 * `  AdverbsLast ;              `  an adverb that may be either a simplex word, or the second part of a compound 
 
