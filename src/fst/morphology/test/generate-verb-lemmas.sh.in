@@ -31,8 +31,8 @@ fi
 POS=verbs
 ### in ###
 source_file=@abs_srcdir@/../stems/${POS}.lexc
-generator_file=@abs_builddir@/../../generator-gt-norm
-analyser_file=@abs_builddir@/../../analyser-gt-norm
+generator_file=@abs_builddir@/../../generator-gt-desc
+analyser_file=@abs_builddir@/../../analyser-gt-desc
 tags=+V+Pers+Sup+Ill
 xtags=
 inclusions=
