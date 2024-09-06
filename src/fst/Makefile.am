@@ -10,7 +10,7 @@ SUBDIRS = morphology filters phonetics syllabification orthography transcription
 # Define target variables first, before assigning to them:
 GT_ANALYSERS=
 GT_GENERATORS=
-CUSTOM_FSTS=
+CUSTOM_FSTS=emoticon.hfst
 
 #### Local modifications in *fst processing: ####
 ####

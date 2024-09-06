@@ -36,12 +36,12 @@ emoticon.hfst: $(top_srcdir)/src/fst/emoticon.hfst
 
 # abbreviations with a final dot
 # remove the paths with +Use/-PMatch and the tags +Use/PMatch
-abbrevdot.tmp.hfst:  $(top_srcdir)/src/fst/abbrevdot.tmp.hfst \
-			$(top_srcdir)/src/filters/remove-Use_minus_PMatch-strings.hfst \
-			$(top_srcdir)/src/filters/remove-Use_minus_PMatch-tags.hfst
+abbrevdot.tmp.hfst:  $(top_srcdir)/src/fst/morphology/abbrevdot.tmp.hfst \
+			$(top_srcdir)/src/fst/filters/remove-Use_minus_PMatch-strings.hfst \
+			$(top_srcdir)/src/fst/filters/remove-Use_minus_PMatch-tags.hfst
 	$(PRINTF) "read regex \
-			    @\"$(top_srcdir)/src/filters/remove-Use_minus_PMatch-strings.hfst\" \
-			.o. @\"$(top_srcdir)/src/filters/remove-Use_PMatch-tags.hfst\"          \
+			    @\"$(top_srcdir)/src/fst/filters/remove-Use_minus_PMatch-strings.hfst\" \
+			.o. @\"$(top_srcdir)/src/fst/filters/remove-Use_PMatch-tags.hfst\"          \
 			.o. @\"$<\"                                         \
 			;\n\
 		 save stack $@\n\
