@@ -61,13 +61,11 @@ endif # CAN_XFST
 if CAN_HFST
 GT_ANALYSERS+=analyser-gt-desc.hfst \
 			  analyser-gt-norm.hfst \
-			  analyser-gt-desc.hfst \
 			  analyser-gt-descguess.hfst \
 			  analyser-gt-guess.hfst \
 			  analyser-disamb-gt-desc.hfst
 GT_GENERATORS+=generator-gt-desc.hfst \
 			   generator-gt-norm.hfst \
-			   generator-gt-desc.hfst \
 			   generator-gt-descguess.hfst \
 			   generator-gt-guess.hfst
 
