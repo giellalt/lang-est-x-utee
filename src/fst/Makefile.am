@@ -43,20 +43,6 @@ CUSTOM_FSTS=emoticon.hfst
 ########################################################
 #### Add language-specific transducer targets here: ####
 
-#### Xerox transducers:
-if CAN_XFST
-GT_ANALYSERS+=analyser-gt-desc.xfst \
-			  analyser-gt-norm.xfst \
-			  analyser-disamb-gt-desc.xfst
-GT_GENERATORS+=generator-gt-desc.xfst \
-			   generator-gt-norm.xfst
-
-if WANT_CUSTOM_FSTS
-CUSTOM_FSTS+=
-endif # WANT_CUSTOM_FSTS
-
-endif # CAN_XFST
-
 #### HFST transducers
 if CAN_HFST
 GT_ANALYSERS+=analyser-gt-desc.hfst \
