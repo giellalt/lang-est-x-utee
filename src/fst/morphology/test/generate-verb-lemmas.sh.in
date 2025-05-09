@@ -10,7 +10,7 @@ tags=+V+Pers+Sup+Ill
 # advanced settings (leave empty or write full args)
 xtags=
 inclusions=
-exclusions="--exclude +Pref"
+exclusions="--exclude \+Pref"
 
 # avoid changing common scripting stuff here:
 
