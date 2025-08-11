@@ -570,7 +570,7 @@ Copied from Sami root.lexc
 * `+CLB `: Osalause piir (punkt, koma) / Clause border (full stop, comma..)
 * `+PUNCT `: Kirjavahemärk / Punctuation
 * `+LEFT `: Kirjavahemärgi asetus / Punctuation orientation
-* `+RIGHT `: Kirjavahemärgi asetus / Punctuation orientation
+* `+RIGHT +MIDDLE `: Kirjavahemärgi asetus / Punctuation orientation
 * `+Err/Orth `: Ortograafiaviga (genereeritud failide sümbol)/ orthography error
 
 ## Flag diacritics
