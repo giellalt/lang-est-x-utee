@@ -580,7 +580,7 @@ Multichar_Symbols
 +CLB !!= * `@CODE@`: Osalause piir (punkt, koma) / Clause border (full stop, comma..)
 +PUNCT !!= * `@CODE@`: Kirjavahemärk / Punctuation
 +LEFT !!= * `@CODE@`: Kirjavahemärgi asetus / Punctuation orientation
-+RIGHT !!= * `@CODE@`: Kirjavahemärgi asetus / Punctuation orientation
++RIGHT +MIDDLE !!= * `@CODE@`: Kirjavahemärgi asetus / Punctuation orientation
 +Err/Orth !!= * `@CODE@`: Ortograafiaviga (genereeritud failide sümbol)/ orthography error
 
 !! ## Flag diacritics
