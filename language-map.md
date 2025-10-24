@@ -1,0 +1,15 @@
+```geojson
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Estonian",
+    "radius": 200,
+    "marker-color": "#ff4444",
+    "marker-size": "large"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [25.82, 58.55]
+  }
+}
+```

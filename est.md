@@ -4,7 +4,7 @@ All doc-comment documentation in one large file.
 
 ---
 
-# src-cg3-functions.cg3.md 
+## src-cg3-functions.cg3.md 
 
 
 
@@ -43,7 +43,7 @@ part of the noun phrase of that noun (i.e., "scan to the next NP head")
 
 These were the set types.
 
-## HABITIVE MAPPING
+### HABITIVE MAPPING
 
 * **hab1** 
 
@@ -162,16 +162,16 @@ These were the set types.
 
 * **<opredAAcc** (@<OPRED) for A Acc; if an other accusative to the left, and a transtive verb to the left of it. OR: if a transitive verb to the left, and an accusative to the left of it.
 
-### sma object
+#### sma object
 
 * **<advlEss** (@<ADVL) for ESS-ADVL if; FMAINV to the left
 * **<spredEss** (@<SPRED) for N Ess if; FMAINV to the left is intransitive or bargat
 
-## SUBJ MAPPING - leftovers
+### SUBJ MAPPING - leftovers
 
-## OBJ MAPPING - leftovers
+### OBJ MAPPING - leftovers
 
-## HNOUN MAPPING
+### HNOUN MAPPING
 
 * * *
 
@@ -179,7 +179,7 @@ These were the set types.
 
 ---
 
-# src-fst-morphology-affixes-exceptional_declinations.lexc.md 
+## src-fst-morphology-affixes-exceptional_declinations.lexc.md 
 
 inflectional types and analogue rules for nouns, adjectives and other declinables
 VVS stands for Ü. Viks "Väike vormisõnastik" for reference purposes
@@ -190,7 +190,7 @@ VVS stands for Ü. Viks "Väike vormisõnastik" for reference purposes
 
 ---
 
-# src-fst-morphology-affixes-gi.lexc.md 
+## src-fst-morphology-affixes-gi.lexc.md 
 
 stressing affix gi/ki can be appended to almost any word form
 
@@ -207,7 +207,7 @@ this ensures that downcasing derivation (helveetslane) works
 
 ---
 
-# src-fst-morphology-affixes-regular_declinations.lexc.md 
+## src-fst-morphology-affixes-regular_declinations.lexc.md 
 
 
 
@@ -224,10 +224,10 @@ not all the cases must be distinguished
 
 ---
 
-# src-fst-morphology-affixes-verbs.lexc.md 
+## src-fst-morphology-affixes-verbs.lexc.md 
 
 
-# Verb inflection
+## Verb inflection
 
 LEXICON SAAMA  is a lexicon for saama-type words. ! VVS 37   saama, jääma
 
@@ -237,15 +237,15 @@ LEXICON SAAMA  is a lexicon for saama-type words. ! VVS 37   saama, jääma
 
 ---
 
-# src-fst-morphology-phonology.twolc.md 
+## src-fst-morphology-phonology.twolc.md 
 
-## Phonology
+### Phonology
 
 Placeholders
 
 Sami GT convention 
 
-### Triggers
+#### Triggers
 
 * **%{W%}:0**  Weak grade trigger 
 * **%{F%}:0**  Foreign word flag to prevent application of weak grade trigger, 
@@ -269,7 +269,7 @@ It is used to pair the surface form with the usage tag of the lexical representa
 
 * **%{rare%}:0** rare or less used form (norm) ; e.g. kingasid
 
-### Special surface side symbols, used in rule contexts
+#### Special surface side symbols, used in rule contexts
 
 * **%>** Inflectional suffix boundary
 * **»** Derivational suffix boundary
@@ -278,13 +278,13 @@ Final hyphen for shortened stems:
 ```
 %-
 ```
-### Apostrophe
+#### Apostrophe
 
 Apostrophe is used for separating inflectional affix from a foreign word lemma
 
 * **%{apo%}:0** ... but Sg Nom is without apostrophe
 
-### Morphophonemes
+#### Morphophonemes
 
 If the sound change is unproductive and difficult to relate to its immediate context,
 we use capital letters with numbers to denote them. 
@@ -542,14 +542,14 @@ high vowel lowering in certain contexts
 
 ---
 
-# src-fst-morphology-root.lexc.md 
+## src-fst-morphology-root.lexc.md 
 
 
-# Morphology
+## Morphology
 
-## Multicharacter symbols
+### Multicharacter symbols
 
-### Sõnaliik / Part of speech
+#### Sõnaliik / Part of speech
 
 * `+N `: nimisõna		/ substantive		
 * `+A `: omadussõna		/ adjective		
@@ -565,13 +565,13 @@ high vowel lowering in certain contexts
 
 Genitiivatribuut pole eraldi kategooria / No special tag for genitive attribute : *angoora+N+Sg+Gen*	
 
-### Alamkategooriad / Sub-pos categories
+#### Alamkategooriad / Sub-pos categories
 
 * `+Prop `: pärisnimi	/ proper name		
 * `+Card `: põhiarvsõna	/ cardinal numeral
 * `+Ord `: järgarvsõna	/ ordinal numeral
 
-### Võrdlusastmed / Comparation
+#### Võrdlusastmed / Comparation
 
 * `+Comp `: komparatiiv	/ comparative
 * `+Superl `: superlatiiv	/ superlative
@@ -593,16 +593,16 @@ Genitiivatribuut pole eraldi kategooria / No special tag for genitive attribute 
 * *kaudu:* `kaudu+Adp` (Eng. # via)
 * *eba-:* `eba+Pref` (Eng. # un-, non-)
 
-### Sõnamuutus / Inflection
+#### Sõnamuutus / Inflection
 
-### Käändsõna             / Noun
+#### Käändsõna             / Noun
 
-### Arv 			/ number
+#### Arv 			/ number
 
 * `+Sg `: ainsus	/ singular
 * `+Pl `: mitmus	/ plural
 
-### Kääne	/ Case
+#### Kääne	/ Case
 
 * `+Nom `: nimetav			/ nominative	
 * *part:* `part+N+Sg+Nom`
@@ -693,7 +693,7 @@ Lühike sisseütlev e suunduv pole eraldi kääne (*parti*, *majja*) / Short ill
 * *partidega:* `part+N+Pl+Com`
 * *majadega:* `maja+N+Pl+Com`
 
-### Verb
+#### Verb
 
 Verbil on finiitsed (pöördelised) ja infiniitsed (nn käänduvad) vormid. 
 Pöördelistel vormidel on kategooriad: 
@@ -705,14 +705,14 @@ The finite forms have categories:
 voice, tense, mood, person, number, negation
 (some infinite forms also have voice and tense).
 
-### Pöördelised vormid / Conjugable forms
+#### Pöördelised vormid / Conjugable forms
 
-### Tegumood		/ Voice
+#### Tegumood		/ Voice
 
 * `+Impers `: umbisikuline	/ impersonal
 * `+Pers `: isikuline	/ personal
 
-### Aeg			/ Tense
+#### Aeg			/ Tense
 
 * `+Prs `: olevik	/ present
 * `+Prt `: minevik	/ past (i.e. not present)
@@ -723,14 +723,14 @@ Täisminevik / Past perfect: *olema* (pres) + *nud/tud/dud* (*olen teinud*)
 
 Enneminevik / Past pluperfect: *olema* (impf) + *nud/tud/dud* (*olin teinud*)
 
-### Kõneviis		/ Mood
+#### Kõneviis		/ Mood
 
 * `+Ind `: kindel	/ indicative
 * `+Cond `: tingiv	/ conditional
 * `+Imprt `: käskiv	/ imperative / jussive
 * `+Quot `: kaudne	/ quotative
 
-### Pööre ja arv	/ Person and number
+#### Pööre ja arv	/ Person and number
 
 * `+Sg1 `: ainsuse 1. pööre	/ singular 1st person
 * `+Sg2 `: ainsuse 2. pööre	/ singular 2nd person
@@ -739,12 +739,12 @@ Enneminevik / Past pluperfect: *olema* (impf) + *nud/tud/dud* (*olin teinud*)
 * `+Pl2 `: mitmuse 2. pööre	/ plural   2nd person
 * `+Pl3 `: mitmuse 3. pööre	/ plural   3rd person
 
-### Kõneliik		/ Polarity
+#### Kõneliik		/ Polarity
 
 * `+Aff `: jaatav kõne	/ affirmative
 * `+Neg `: eitav kõne	/ negative
 
-### Infiniitsed (nn käänduvad) verbivormid / Infinite ("declinable") verb forms
+#### Infiniitsed (nn käänduvad) verbivormid / Infinite ("declinable") verb forms
 
 * `+Sup `: ma-tegevusnimi / supine (ma-infinitive)
 
@@ -754,7 +754,7 @@ Enneminevik / Past pluperfect: *olema* (impf) + *nud/tud/dud* (*olin teinud*)
 
 * `+Prc `: kesksõna	 / participle
 
-### Kategooriate võimalikud kombinatsioonid / Possible combinations of categories
+#### Kategooriate võimalikud kombinatsioonid / Possible combinations of categories
 
 allikas / source :
 [Heiki-Jaan Kaalep. Eesti verbi vormistik. Keel ja kirjandus 1/2015 lk 1-15.](http://kjk.eki.ee/ee/issues/2015/1/582) 
@@ -785,7 +785,7 @@ the combinations;
 also note that for *olema*, there are some constellations of categories that are the same for
 a wordform beginning with *ole-* and *pole-* 
 
-### ---- Personal finite forms ----
+#### ---- Personal finite forms ----
 
 * *elan:* `elama+V+Pers+Prs+Ind+Sg1+Aff`
 * *elad:* `elama+V+Pers+Prs+Ind+Sg2+Aff`
@@ -871,7 +871,7 @@ elanud: elama+V+Pers+Prt+Imprt: 1.11.2016 ei genereerita ega tunta ära / not re
 * *elanuvat:* `elama+V+Pers+Prt+Quot`
 * *polnuvat:* `olema+V+Pers+Prt+Quot+Neg`
 
-### ---- Personal infinite forms ----
+#### ---- Personal infinite forms ----
 
 * *elav:* `elama+V+Pers+Prs+Prc`
 * *elanud:* `elama+V+Pers+Prt+Prc`
@@ -884,7 +884,7 @@ elanud: elama+V+Pers+Prt+Imprt: 1.11.2016 ei genereerita ega tunta ära / not re
 * *elamaks:* `elama+V+Pers+Sup+Tra`
 * *elamata:* `elama+V+Pers+Sup+Abe`
 
-### ---- Impersonal finite forms ----
+#### ---- Impersonal finite forms ----
 
 * *elatakse:* `elama+V+Impers+Prs+Ind+Aff`
 * *elata:* `elama+V+Impers+Prs+Ind+Neg`
@@ -917,7 +917,7 @@ NB! ei oldud = poldud
 * *elatuks:* `elama+V+Impers+Prt+Cond`
 * *polduks:* `olema+V+Impers+Prt+Cond+Neg`
 
-### ---- Impersonal infinite forms ----
+#### ---- Impersonal infinite forms ----
 
 * *elatav:* `elama+V+Impers+Prs+Prc`
 * *elatud:* `elama+V+Impers+Prt+Prc`
@@ -926,35 +926,35 @@ NB! ei oldud = poldud
 
 * *elatama:* `elama+V+Impers+Sup`
 
-### ---- Infinite forms with no voice category ----
+#### ---- Infinite forms with no voice category ----
 
 * *elada:* `elama+V+Inf`
 * *elades:* `elama+V+Ger`
 
-### Exceptional cases:
+#### Exceptional cases:
 
 personal present (Prs not implemented????), 3 words:  *kuulukse*, *tunnukse*, *näikse*
 
 * *kuulukse:* `kuulukse+V`
 
-### Negation verb 
+#### Negation verb 
 
 * *ei:* `ei+V+Neg`
 
 Analytical forms (*olen elanud*, *olin elanud*, *oleksin elanud*, *ei olnud elanud*,
 *ei olnuks elanud* etc) are not treated here...
 
-### Partikkel -gi/-ki / Particle -gi/-ki
+#### Partikkel -gi/-ki / Particle -gi/-ki
 
 * `+Foc/gi `
 * *pulkki:* `pulk+N+Sg+Nom+Foc/gi`
 
-###  Kasutust (sagedust jm) iseloomustavad märgendid / Usage-related tags
+####  Kasutust (sagedust jm) iseloomustavad märgendid / Usage-related tags
 
 * `+Emph `: long inflectional forms of personal pronouns *mina*, *sina*, *tema*, *meie*, *teie*, *nemad*
 * *temale:* `tema+Pron+Sg+All+Emph`
 
-### Paralleelvormide erinevat kasutussagedust iseloomustavad / Usage info for parallel forms (either correct according to the norm, or incorrect)
+#### Paralleelvormide erinevat kasutussagedust iseloomustavad / Usage info for parallel forms (either correct according to the norm, or incorrect)
 
 * `+Usage/Rare `: norm, but rare 
 * *puusid:* `puu+N+Pl+Par+Usage/Rare`
@@ -971,15 +971,15 @@ Analytical forms (*olen elanud*, *olin elanud*, *oleksin elanud*, *ei olnud elan
 Oletatav analüüs / Guessed analysis
 * `+Guess `: guessed analysis
 
-### Tuletus / Derivation
+#### Tuletus / Derivation
 
-### Eesliited on harvad, aga ikkagi ... / Prefixes are seldom used, but still...
+#### Eesliited on harvad, aga ikkagi ... / Prefixes are seldom used, but still...
 
 * `+Pref `
 * *taasriigistama:* `taas+Pref#riigistama+V+Pers+Sup+Ill`
 * *reinvesteerima:* `re+Pref#investeerima+V+Pers+Sup+Ill`
 
-### Järelliited / Suffixes
+#### Järelliited / Suffixes
 
 V --> N
 
@@ -1103,7 +1103,7 @@ Num --> N
 * `+Der/kas `
 * *kolmekas:* `kolm+Num+Card+Der/kas+N+Sg+Nom`
 
-### Muud / Other tags
+#### Muud / Other tags
 Copied from Sami root.lexc
 
 * `+Use/Circ `: for arabic and roman numerals; 
@@ -1119,7 +1119,7 @@ Copied from Sami root.lexc
 * `+RIGHT +MIDDLE `: Kirjavahemärgi asetus / Punctuation orientation
 * `+Err/Orth `: Ortograafiaviga (genereeritud failide sümbol)/ orthography error
 
-## Flag diacritics
+### Flag diacritics
 Use the following flag diacritics to control downcasing of derived proper
 nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 these flags. There exists a ready-made regex that will do the actual down-casing
@@ -1155,7 +1155,7 @@ Tokeniser
 
 Guesser
 
-### Symbols that need to be escaped on the lower side (towards twolc):
+#### Symbols that need to be escaped on the lower side (towards twolc):
 Sami GT convention 
 
 * »
@@ -1167,7 +1167,7 @@ Sami GT convention
 
 Legitimate strings that are not words: numbers, acronyms, ...
 
-## Lexicons  
+### Lexicons  
 
 * `LEXICON Root ` is the starting point of everything
 
@@ -1274,7 +1274,7 @@ järguline	järk+N+Der/line+A  redellik redel+N+Der/lik+A     NOT -autone
 
 ---
 
-# src-fst-morphology-stems-acronyms.lexc.md 
+## src-fst-morphology-stems-acronyms.lexc.md 
 
 Acronyms
 
@@ -1284,7 +1284,7 @@ Acronyms
 
 ---
 
-# src-fst-phonetics-txt2ipa.xfscript.md 
+## src-fst-phonetics-txt2ipa.xfscript.md 
 
 
 
@@ -1453,7 +1453,7 @@ retracted tongue root			_q
 
 ---
 
-# src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
+## src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
 
 
 
@@ -1475,7 +1475,7 @@ For example:
 
 ---
 
-# src-fst-transcriptions-transcriptor-numbers-digit2text.lexc.md 
+## src-fst-transcriptions-transcriptor-numbers-digit2text.lexc.md 
 
 
 
@@ -1493,26 +1493,26 @@ For example:
 
 ---
 
-# tools-grammarcheckers-grammarchecker.cg3.md 
+## tools-grammarcheckers-grammarchecker.cg3.md 
 
 
 ESTONIAN  GRAMMAR   CHECKER
 
-# DELIMITERS
+## DELIMITERS
 
-# TAGS AND SETS
+## TAGS AND SETS
 
-## Tags
+### Tags
 
 This section lists all the tags inherited from the fst, and used as tags
 in the syntactic analysis. The next section, **Sets**, contains sets defined
 on the basis of the tags listed here, those set names are not visible in the output.
 
-### Beginning and end of sentence
+#### Beginning and end of sentence
 BOS
 EOS
 
-### Parts of speech tags
+#### Parts of speech tags
 
 N
 A
@@ -1539,7 +1539,7 @@ PUNCT
 COMMA
 ¶
 
-### Tags for POS sub-categories
+#### Tags for POS sub-categories
 
 Pers
 Dem
@@ -1555,7 +1555,7 @@ Allegro
 Arab
 Romertall
 
-### Tags for morphosyntactic properties
+#### Tags for morphosyntactic properties
 
 Nom
 Gen
@@ -1602,7 +1602,7 @@ Sup
 
 Err/Orth
 
-### Semantic tags
+#### Semantic tags
 
 Sem/Act
 Sem/Ani
@@ -1635,7 +1635,7 @@ PROP-SUR
 
 TIME-N-SET
 
-###  Syntactic tags
+####  Syntactic tags
 
 @+FAUXV
 @+FMAINV
@@ -1705,22 +1705,22 @@ OBJ>-OTHERS
 SYN-V
 @X
 
-## Sets containing sets of lists and tags
+### Sets containing sets of lists and tags
 
 This part of the file lists a large number of sets based partly upon the tags defined above, and
 partly upon lexemes drawn from the lexicon.
 See the sourcefile itself to inspect the sets, what follows here is an overview of the set types.
 
-### Sets for Single-word sets
+#### Sets for Single-word sets
 
 INITIAL
 
-### Sets for word or not
+#### Sets for word or not
 
 WORD
 NOT-COMMA
 
-### Case sets
+#### Case sets
 
 ADLVCASE
 
@@ -1730,11 +1730,11 @@ CASE
 NOT-NOM
 NOT-GEN
 
-### Verb sets
+#### Verb sets
 
 NOT-V
 
-### Sets for finiteness and mood
+#### Sets for finiteness and mood
 
 REAL-NEG
 
@@ -1742,7 +1742,7 @@ MOOD-V
 
 NOT-PRFPRC
 
-### Sets for person
+#### Sets for person
 
 SG1-V
 SG2-V
@@ -1754,39 +1754,39 @@ PL1-V
 PL2-V
 PL3-V
 
-### Pronoun sets
+#### Pronoun sets
 
-### Adjectival sets and their complements
+#### Adjectival sets and their complements
 
-### Adverbial sets and their complements
+#### Adverbial sets and their complements
 
-### Sets of elements with common syntactic behaviour
+#### Sets of elements with common syntactic behaviour
 
-### NP sets defined according to their morphosyntactic features
+#### NP sets defined according to their morphosyntactic features
 
-### The PRE-NP-HEAD family of sets
+#### The PRE-NP-HEAD family of sets
 
 These sets model noun phrases (NPs). The idea is to first define whatever can
 occur in front of the head of the NP, and thereafter negate that with the
 expression **WORD - premodifiers**.
 
-### Border sets and their complements
+#### Border sets and their complements
 
 Grammarchecker rules begin here 
 
-### Grammarchecker sets
+#### Grammarchecker sets
 
-## Grammarchecker rules
+### Grammarchecker rules
 
-### Speller rules
+#### Speller rules
 
-### Agreement rules
+#### Agreement rules
 
-### Negation verb rules
+#### Negation verb rules
 
-### Postposition rules
+#### Postposition rules
 
-### Punctuation rules
+#### Punctuation rules
 
 * * *
 
@@ -1794,9 +1794,9 @@ Grammarchecker rules begin here
 
 ---
 
-# tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
 
-# Tokeniser for est
+## Tokeniser for est
 
 Usage:
 ```
@@ -1840,7 +1840,7 @@ ASCII digits
 so far:
 * U+F0B7 for "x in box"
 
-## Unknown handling
+### Unknown handling
 Unknowns are tagged ?? and treated specially with `hfst-tokenise`
 hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
 remove empty analyses from other readings. Empty readings are also
@@ -1859,9 +1859,9 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
-# tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
 
-# Grammar checker tokenisation for est
+## Grammar checker tokenisation for est
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:
@@ -1924,9 +1924,9 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
-# tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
 
-# TTS tokenisation for smj
+## TTS tokenisation for smj
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:

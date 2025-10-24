@@ -4,7 +4,8 @@
 ![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-est-x-utee%2Fgh-pages%2Flemmacount.json)
 [![License](https://img.shields.io/github/license/giellalt/lang-est-x-utee)](https://github.com/giellalt/lang-est-x-utee/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-est-x-utee)](https://github.com/giellalt/lang-est-x-utee/issues)
-[![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-est-x-utee/main/badge.svg)](https://github.com/giellalt/lang-est-x-utee/actions)
+[![Build Status](https://builds.giellalt.org/api/badge/lang-est-x-utee?label=CI)](https://builds.giellalt.org/pipelines/lang-est-x-utee/builds/latest)
+[![Glottolog](https://img.shields.io/badge/Glottolog-green)](https://glottolog.org/resource/languoid/id/esto1258)
 
 This page documents the work on the [UTEE Estonian language model](https://github.com/giellalt/lang-x-utee). There are two language models for Estonian in the GiellaLT infrastructure. The main architect behind this one is Heiki-Jaan Kaalep, at the University of Tartu, Estonia.
 It contains 73000 lemmas, and a full morphological model.
