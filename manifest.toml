@@ -1,17 +1,14 @@
-spellername = "Estonian (Tartu Ülikool)"
-spellerversion = "0.1.1"
-
 # Name of the speller package in various languages.
 # The default is English + autonym:
 [speller.name]
-en = "Estonian (Tartu Ülikool) spellchecker (Tartu Ülikool)"
-et = "Autonym spellchecker (Tartu Ülikool)"
+en = "Estonian (Tartu Ülikool spellchecker (Tartu Ülikool"
+et = "Autonym spellchecker (Tartu Ülikool"
 
 # Description of the speller package in various languages.
 # The default is English + autonym:
 [speller.description]
-en = "A spellchecker for Estonian (Tartu Ülikool), made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"
-et = "TRANSLATE: A spellchecker for Estonian (Tartu Ülikool), made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"
+en = "A spellchecker for Estonian (Tartu Ülikool, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"
+et = "TRANSLATE: A spellchecker for Estonian (Tartu Ülikool, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"
 
 [macos]
 system_pkg_id = "no.divvun.MacDivvun.et"
@@ -22,3 +19,15 @@ legacy_product_codes = [
     { value = "87990427-23D7-4340-96AE-451B1BF37140", kind = "nsis" },
     { value = "6621ACB5-4262-429D-90B0-C791897BD662", kind = "nsis" }
 ]
+
+[package.speller]
+name = "Estonian (Tartu Ülikool"
+version = "0.1.1"
+
+[package.grammar]
+name = "Estonian (Tartu Ülikool"
+version = "0.1.0"
+
+[package.tts-text-proc]
+name = "Estonian (Tartu Ülikool"
+version = "0.1.0"
