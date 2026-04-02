@@ -7,6 +7,7 @@
 <div class="badges" markdown="1">
 [![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-est-x-utee%2Fgh-pages%2Fmaturity.json)](https://giellalt.github.io/MaturityClassification.html) <br/>
 ![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-est-x-utee%2Fgh-pages%2Flemmacount.json) <br/>
+[![Speller suggestion quality](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-est-x-utee%2Fgh-pages%2Fspellersuggs.json)](typosreport/) <br/>
 [![License](https://img.shields.io/github/license/giellalt/lang-est-x-utee)](https://github.com/giellalt/lang-est-x-utee/blob/main/LICENSE) <br/>
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-est)](https://github.com/giellalt/lang-est/issues) <br/>
 [![Build Status](https://builds.giellalt.org/api/badge/lang-est-x-utee?label=CI)](https://builds.giellalt.org/pipelines/lang-est-x-utee/builds/latest) <br/>
