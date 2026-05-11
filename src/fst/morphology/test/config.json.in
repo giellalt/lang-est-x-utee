@@ -1,6 +1,6 @@
 {
-    "analyser": "@abs_builddir@/../../analyser-gt-norm.hfstol",
-    "generator": "@abs_builddir@/../../generator-gt-norm.hfstol",
+    "analyser": "@abs_builddir@/../../analyser-gt-desc.hfstol",
+    "generator": "@abs_builddir@/../../generator-gt-desc.hfstol",
     "nouns": {
         "lexcfile": "@abs_srcdir@/../stems/nouns.lexc",
         "lemmatags": ["+N+Sg+Nom", "+N+Pl+Nom"]
@@ -12,7 +12,7 @@
     "propernouns": {
         "lexcfile": "@abs_srcdir@/../stems/propernouns.lexc",
         "lemmatags": ["+N+Prop+Sg+Nom", "+N+Prop+Pl+Nom"],
-        "exclusions": ["ProperNounGeo"]
+        "exclusions": ["ProperNounsGeo"]
     },
     "verbs": {
         "lexcfile": "@abs_srcdir@/../stems/verbs.lexc",
